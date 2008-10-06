@@ -106,9 +106,7 @@ apertium_sme_modesdir=$(prefix)/share/apertium/modes/
 
 $(PREFIX1).mode: modes.xml 
 	apertium-gen-modes modes.xml
-
-$(PREFIX2).mode: modes.xml 
-	apertium-gen-modes modes.xml
+	cp *.mode modes/
 
 apertium_sme_smj_DATA=$(PREFIX1).automorf.bin \
                     $(PREFIX1).autobil.bin \
