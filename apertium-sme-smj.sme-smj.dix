@@ -1,21 +1,79 @@
 <dictionary>
   <sdefs>
-    <sdef n="A"/>
+    <sdef n="N"      c="Noun"/>
+    <sdef n="A"      c="Adjective"/>
+    <sdef n="V"      c="Verb"/>
+    <sdef n="ADV"    c="Adverb"/>
+    <sdef n="CC"     c="Co-ordinating conjunction"/>
+    <sdef n="CS"     c="Sub-ordinating conjunction"/>
+    <sdef n="PO"     c="Postposition"/>
+    <sdef n="PR"     c="Preposition"/>
+    <sdef n="PCLE"   c="Particle"/>
+
+    <sdef n="Nom"    c="Nominative"/>
+    <sdef n="Acc"    c="Accusative"/>
+    <sdef n="Gen"    c="Genitive"/>
+    <sdef n="Com"    c="Comutative"/>
+    <sdef n="Ess"    c="Essive"/>
+    <sdef n="Ill"    c="Illative"/>
+    <sdef n="Loc"    c="Locative"/>
+
+    <sdef n="Attr"   c=""/>
+    <sdef n="Pred"   c=""/>
+    <sdef n="Comp"   c=""/>
+    <sdef n="Superl" c=""/>
+
+    <sdef n="Pl"     c="Plural"/>
+    <sdef n="Sg"     c="Singular"/>
+
+    <sdef n="PxSg1"  c=""/>
+    <sdef n="PxSg2"  c=""/>
+    <sdef n="PxSg3"  c=""/>
+    <sdef n="PxDu1"  c=""/>
+    <sdef n="PxDu2"  c=""/>
+    <sdef n="PxDu3"  c=""/>
+    <sdef n="PxPl1"  c=""/>
+    <sdef n="PxPl2"  c=""/>
+    <sdef n="PxPl3"  c=""/>
+
+    <sdef n="Prop"   c="Proper"/>
+
+    <sdef n="TV"     c="Transitive"/>
+    <sdef n="IV"     c="Intransitive"/>
+
+    <sdef n="CMPND"  c="Compound"/>
+    <sdef n="IJ"     c="Interjection"/>
+
+    <sdef n="Cond"   c=""/>
+    <sdef n="ConNeg" c=""/>
+    <sdef n="Du1"    c=""/>
+    <sdef n="Du2"    c=""/>
+    <sdef n="Du3"    c=""/>
+    <sdef n="Ger"    c=""/>
+    <sdef n="Imprt"  c=""/>
+    <sdef n="Ind"    c=""/>
+    <sdef n="Inf"    c=""/>
+    <sdef n="Pl1"    c=""/>
+    <sdef n="Pl2"    c=""/>
+    <sdef n="Pl3"    c=""/>
+    <sdef n="Pot"    c=""/>
+    <sdef n="PrfPrc" c=""/>
+    <sdef n="Prs"    c=""/>
+    <sdef n="Prt"    c=""/>
+    <sdef n="Sg1"    c=""/>
+    <sdef n="Sg2"    c=""/>
+    <sdef n="Sg3"    c=""/>
+    <sdef n="VAbess" c=""/>
+    <sdef n="VGen"   c=""/>
+
+
     <sdef n="abbr"/>
-    <sdef n="ADV"/>
-    <sdef n="CC"/>
-    <sdef n="CS"/>
-    <sdef n="N"/>
     <sdef n="num"/>
     <sdef n="p"/>
-    <sdef n="PCLE"/>
-    <sdef n="PO"/>
     <sdef n="pp"/>
-    <sdef n="PR"/>
     <sdef n="pron"/>
-    <sdef n="Prop"/>
-    <sdef n="V"/>
     <sdef n="v_x"/>
+
   </sdefs>
   <section id="main" type="standard">
 
@@ -32596,7 +32654,7 @@
     <e><p><l>leaibmi<s n="N"/></l><r>liejmme<s n="N"/></r></p></e>
     <e><p><l>leaikasit<s n="V"/></l><r>lassjkasit<s n="V"/></r></p></e>
     <e><p><l>leastadianisma<s n="N"/></l><r>leastadianissma<s n="N"/></r></p></e>
-    <e><p><l>leat<s n="V"/></l><r>liehket<s n="V"/></r></p></e>
+    <e><p><l>leat<s n="V"/><s n="IV"/></l><r>liehket<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>leavdnut<s n="V"/></l><r>lievnnut<s n="V"/></r></p></e>
     <e><p><l>leavvudit<s n="V"/></l><r>luovvanit<s n="V"/></r></p></e>
     <e><p><l>leaŋga<s n="N"/></l><r>lieŋga<s n="N"/></r></p></e>
