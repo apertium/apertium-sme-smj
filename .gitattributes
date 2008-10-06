@@ -2,8 +2,11 @@
 /AUTHORS -text
 /COPYING -text
 /ChangeLog -text
+/Makefile.am -text
 /NEWS -text
 /README -text
 /apertium-sme-smj.sme-smj.dix -text
 /apertium-sme-smj.sme.dix -text
 /apertium-sme-smj.smj.dix -text
+/autogen.sh -text
+/configure.ac -text
