@@ -5,7 +5,7 @@ apertium-sme-smj
 
 The usual triplet should work:
 
-$ ./autogen.sh 
+$ sh ./autogen.sh 
 $ make
 
 ==Running==

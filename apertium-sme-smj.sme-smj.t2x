@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interchunk>
+
+  <section-def-cats>
+    <def-cat n="SN">
+      <cat-item tags="SN"/>
+      <cat-item tags="SN.*"/>
+    </def-cat>
+  </section-def-cats>
+
+  <section-def-attrs>
+    <def-attr n="phrase">
+      <attr-item tags="@SUBJ%"/>
+      <attr-item tags="@%SUBJ"/>
+    </def-attr>
+    <def-attr n="nbr">
+      <attr-item tags="Sg"/>
+      <attr-item tags="Pl"/>
+      <attr-item tags="Sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+  </section-def-attrs>
+
+  <section-def-vars>
+    <def-var n="nombre"/>
+    <def-var n="genere"/>
+  </section-def-vars>
+
+  <section-rules>
+
+    <rule>
+      <pattern>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+  </section-rules>
+</interchunk>
