@@ -8,21 +8,17 @@ BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = \
      $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autogen.bin \
-     $(PREFIX1).autopgen.bin $(PREFIX2).automorf.bin $(PREFIX2).autobil.bin \
-     $(PREFIX2).autogen.bin \
-     $(PREFIX2).autopgen.bin \
-     $(PREFIX2).autoorth.bin \
      $(PREFIX1).rlx.bin \
      $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin pre-$(LANG1).t1x.bin \
-     $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
+     $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
 
 ##
 # Northern Sami -> Lule Sami
 ##
 
 $(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dix
-	apertium-validate-dictionary $(BASENAME).$(LANG1).dix
-	lt-comp lr $(BASENAME).$(LANG1).dix $@ $(BASENAME).$(LANG1).acx
+#	apertium-validate-dictionary $(BASENAME).$(LANG1).dix
+	lt-comp lr $(BASENAME).$(LANG1).dix $@ 
 
 $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
@@ -96,11 +92,10 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix $(BASENAME).$(PREFIX1).dix \
 	   $(BASENAME).$(PREFIX1).dix \
 	   $(BASENAME).$(PREFIX1).rlx \
 	   $(BASENAME).symbols.xml \
-           $(PREFIX1).prob $(PREFIX2).prob \
+           $(PREFIX1).prob  \
            $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x \
-           $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x \
-           $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x \
-           modes.xml $(BASENAME).$(LANG1).acx
+           $(BASENAME).$(PREFIX1).t3x \
+           modes.xml 
 
 #           $(LANG1)-tagger-data/README $(LANG2)-tagger-data/README 
 #           $(BASENAME).$(LANG1).tsx 
@@ -115,16 +110,12 @@ $(PREFIX1).mode: modes.xml
 $(PREFIX2).mode: modes.xml 
 	apertium-gen-modes modes.xml
 
-apertium_sme_smj_DATA=$(PREFIX1).automorf.bin $(PREFIX2).automorf.bin \
-                    $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
-                    $(PREFIX1).autogen.bin $(PREFIX2).autogen.bin \
-                    $(PREFIX1).autopgen.bin \
-                    $(PREFIX2).autopgen.bin \
-     		    $(PREFIX2).autoorth.bin \
-                    $(PREFIX1).prob $(PREFIX2).prob \
+apertium_sme_smj_DATA=$(PREFIX1).automorf.bin \
+                    $(PREFIX1).autobil.bin \
+                    $(PREFIX1).autogen.bin \
+                    $(PREFIX1).prob  \
 		    $(PREFIX1).rlx.bin \
 		    $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
-		    $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin pre-$(LANG1).t1x.bin \
 		    $(PREFIX1).mode 
 		    
 #$(PREFIX2).mode

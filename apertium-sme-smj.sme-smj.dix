@@ -4,7 +4,7 @@
     <sdef n="abbr"/>
     <sdef n="ADV"/>
     <sdef n="CC"/>
-    <sdef n="CS/>
+    <sdef n="CS"/>
     <sdef n="N"/>
     <sdef n="num"/>
     <sdef n="p"/>
@@ -26754,8 +26754,8 @@
     <e><p><l>ahkeráhkadus<s n="N"/></l><r>ahkeráhkadus<s n="N"/></r></p></e>
     <e><p><l>ahki<s n="N"/></l><r>ahke<s n="N"/></r></p></e>
     <e><p><l>ahkitvuohta<s n="N"/></l><r>ahketvuohta<s n="N"/></r></p></e>
-    <e><p><l>aht<s n="CS/></l><r>at<s n="CS/></r></p></e>
-    <e><p><l>ahte<s n="CS/></l><r>ahte<s n="CS/></r></p></e>
+    <e><p><l>aht<s n="CS"/></l><r>at<s n="CS"/></r></p></e>
+    <e><p><l>ahte<s n="CS"/></l><r>ahte<s n="CS"/></r></p></e>
     <e><p><l>ahttohallat<s n="V"/></l><r>ahttuhallat<s n="V"/></r></p></e>
     <e><p><l>ai<s n="PCLE"/></l><r>aj<s n="PCLE"/></r></p></e>
     <e><p><l>aiddostahttit<s n="V"/></l><r>ajdustahttet<s n="V"/></r></p></e>
@@ -28300,7 +28300,7 @@
     <e><p><l>dammalaš<s n="N"/></l><r>dammalasj<s n="N"/></r></p></e>
     <e><p><l>dan<s n="ADV"/></l><r>dan<s n="ADV"/></r></p></e>
     <e><p><l>danderet<s n="V"/></l><r>danderit<s n="V"/></r></p></e>
-    <e><p><l>danin<s n="CS/></l><r>danen<s n="CS/></r></p></e>
+    <e><p><l>danin<s n="CS"/></l><r>danen<s n="CS"/></r></p></e>
     <e><p><l>danne<s n="ADV"/></l><r>danne<s n="ADV"/></r></p></e>
     <e><p><l>dapmi<s n="N"/></l><r>dabme<s n="N"/></r></p></e>
     <e><p><l>dappal<s n="N"/></l><r>dappal<s n="N"/></r></p></e>
@@ -28314,10 +28314,10 @@
     <e><p><l>darvviidit<s n="V"/></l><r>dabrijdit<s n="V"/></r></p></e>
     <e><p><l>darvánit<s n="V"/></l><r>dabrrahit<s n="V"/></r></p></e>
     <e><p><l>darwinisma<s n="N"/></l><r>darwinissma<s n="N"/></r></p></e>
-    <e><p><l>das<s n="CS/></l><r>dasik<s n="CS/></r></p></e>
+    <e><p><l>das<s n="CS"/></l><r>dasik<s n="CS"/></r></p></e>
     <e><p><l>dasa<s n="pron"/></l><r>dasi<s n="pron"/></r></p></e>
     <e><p><l>dasadit<s n="V"/></l><r>dasádit<s n="V"/></r></p></e>
-    <e><p><l>dasgo<s n="CS/></l><r>dagu<s n="CS/></r></p></e>
+    <e><p><l>dasgo<s n="CS"/></l><r>dagu<s n="CS"/></r></p></e>
     <e><p><l>dassalit<s n="V"/></l><r>dassalit<s n="V"/></r></p></e>
     <e><p><l>dassat<s n="V"/></l><r>dassat<s n="V"/></r></p></e>
     <e><p><l>dassážii<s n="ADV"/></l><r>dassátjij<s n="ADV"/></r></p></e>
@@ -28410,7 +28410,7 @@
     <e><p><l>defloreret<s n="V"/></l><r>deflorerit<s n="V"/></r></p></e>
     <e><p><l>deformeret<s n="V"/></l><r>deformerit<s n="V"/></r></p></e>
     <e><p><l>degenereret<s n="V"/></l><r>degenererit<s n="V"/></r></p></e>
-    <e><p><l>dego<s n="CS/></l><r>degu<s n="CS/></r></p></e>
+    <e><p><l>dego<s n="CS"/></l><r>degu<s n="CS"/></r></p></e>
     <e><p><l>degraderet<s n="V"/></l><r>degraderit<s n="V"/></r></p></e>
     <e><p><l>dehe<s n="CC"/></l><r>jali<s n="CC"/></r></p></e>
     <e><p><l>dehege<s n="CC"/></l><r>jali<s n="CC"/></r></p></e>
@@ -30405,7 +30405,7 @@
     <e><p><l>gláse<s n="N"/></l><r>gláse<s n="N"/></r></p></e>
     <e><p><l>glássa<s n="N"/></l><r>glássa<s n="N"/></r></p></e>
     <e><p><l>gnostisisma<s n="N"/></l><r>gnostisissma<s n="N"/></r></p></e>
-    <e><p><l>go<s n="CS/></l><r>gå<s n="CS/></r></p></e>
+    <e><p><l>go<s n="CS"/></l><r>gå<s n="CS"/></r></p></e>
     <e><p><l>goabbat<s n="pron"/></l><r>goabbák<s n="pron"/></r></p></e>
     <e><p><l>goabbelii<s n="ADV"/></l><r>goabbelij<s n="ADV"/></r></p></e>
     <e><p><l>goabbeliige<s n="ADV"/></l><r>goabbelijge<s n="ADV"/></r></p></e>
@@ -31844,7 +31844,7 @@
     <e><p><l>jorralit<s n="V"/></l><r>jårrålit<s n="V"/></r></p></e>
     <e><p><l>jorri<s n="N"/></l><r>jårre<s n="N"/></r></p></e>
     <e><p><l>jorridákti<s n="N"/></l><r>jårredákte<s n="N"/></r></p></e>
-    <e><p><l>jos<s n="CS/></l><r>jus<s n="CS/></r></p></e>
+    <e><p><l>jos<s n="CS"/></l><r>jus<s n="CS"/></r></p></e>
     <e><p><l>jostit<s n="V"/></l><r>jåsstet<s n="V"/></r></p></e>
     <e><p><l>jottahit<s n="V"/></l><r>jåttådit<s n="V"/></r></p></e>
     <e><p><l>joule<s n="N"/></l><r>joule<s n="N"/></r></p></e>
@@ -31942,7 +31942,7 @@
     <e><p><l>jury<s n="N"/></l><r>jury<s n="N"/></r></p></e>
     <e><p><l>juryeret<s n="V"/></l><r>juryerit<s n="V"/></r></p></e>
     <e><p><l>jurán<s n="N"/></l><r>jurán<s n="N"/></r></p></e>
-    <e><p><l>jus<s n="CS/></l><r>jus<s n="CS/></r></p></e>
+    <e><p><l>jus<s n="CS"/></l><r>jus<s n="CS"/></r></p></e>
     <e><p><l>juskkihit<s n="V"/></l><r>juskedit<s n="V"/></r></p></e>
     <e><p><l>justa<s n="ADV"/></l><r>jussta<s n="ADV"/></r></p></e>
     <e><p><l>justeret<s n="V"/></l><r>justerit<s n="V"/></r></p></e>
@@ -33515,7 +33515,7 @@
     <e><p><l>mugodit<s n="V"/></l><r>mugudit<s n="V"/></r></p></e>
     <e><p><l>muhamedanisma<s n="N"/></l><r>muhamedanissma<s n="N"/></r></p></e>
     <e><p><l>muhammedanisma<s n="N"/></l><r>muhammedanissma<s n="N"/></r></p></e>
-    <e><p><l>muhte<s n="CS/></l><r>men<s n="CS/></r></p></e>
+    <e><p><l>muhte<s n="CS"/></l><r>men<s n="CS"/></r></p></e>
     <e><p><l>muhtin<s n="pron"/></l><r>muhtem<s n="pron"/></r></p></e>
     <e><p><l>muhto<s n="CC"/></l><r>valla<s n="CC"/></r></p></e>
     <e><p><l>muhtter<s n="N"/></l><r>muhtter<s n="N"/></r></p></e>
@@ -34162,7 +34162,7 @@
     <e><p><l>nubbi<s n="pron"/></l><r>nubbe<s n="pron"/></r></p></e>
     <e><p><l>nudisma<s n="N"/></l><r>nudissma<s n="N"/></r></p></e>
     <e><p><l>nuggá<s n="N"/></l><r>nuggá<s n="N"/></r></p></e>
-    <e><p><l>nugo<s n="CS/></l><r>nåv<b/>gåk<s n="CS/></r></p></e>
+    <e><p><l>nugo<s n="CS"/></l><r>nåv<b/>gåk<s n="CS"/></r></p></e>
     <e><p><l>nuhtat<s n="N"/></l><r>nuhtat<s n="N"/></r></p></e>
     <e><p><l>nukleara<s n="N"/></l><r>nukleara<s n="N"/></r></p></e>
     <e><p><l>nuktalit<s n="V"/></l><r>nuktalit<s n="V"/></r></p></e>
@@ -34598,7 +34598,7 @@
     <e><p><l>ovdagiehta<s n="N"/></l><r>åvddågiehta<s n="N"/></r></p></e>
     <e><p><l>ovdagovva<s n="N"/></l><r>åvddågåvvå<s n="N"/></r></p></e>
     <e><p><l>ovdal<s n="ADV"/></l><r>åvddål<s n="ADV"/></r></p></e>
-    <e><p><l>ovdal<b/>go<s n="CS/></l><r>åvddål<b/>gå<s n="CS/></r></p></e>
+    <e><p><l>ovdal<b/>go<s n="CS"/></l><r>åvddål<b/>gå<s n="CS"/></r></p></e>
     <e><p><l>ovdalii<s n="ADV"/></l><r>åvddålij<s n="ADV"/></r></p></e>
     <e><p><l>ovdamadda<s n="N"/></l><r>åvddåmadda<s n="N"/></r></p></e>
     <e><p><l>ovdamearka<s n="N"/></l><r>åvddåmærkka<s n="N"/></r></p></e>
@@ -37544,10 +37544,10 @@
     <e><p><l>vahátlaboratoriija<s n="N"/></l><r>vahátlaboratorija<s n="N"/></r></p></e>
     <e><p><l>vahátruhta<s n="N"/></l><r>vahátruhta<s n="N"/></r></p></e>
     <e><p><l>vai<s n="CC"/></l><r>vaj<s n="CC"/></r></p></e>
-    <e><p><l>vai<s n="CS/></l><r>vaj<s n="CS/></r></p></e>
+    <e><p><l>vai<s n="CS"/></l><r>vaj<s n="CS"/></r></p></e>
     <e><p><l>vaiadit<s n="V"/></l><r>vajádit,vajádit<s n="V"/></r></p></e>
-    <e><p><l>vaikke<s n="CS/></l><r>vájk<s n="CS/></r></p></e>
-    <e><p><l>vaikko<s n="CS/></l><r>vájku<s n="CS/></r></p></e>
+    <e><p><l>vaikke<s n="CS"/></l><r>vájk<s n="CS"/></r></p></e>
+    <e><p><l>vaikko<s n="CS"/></l><r>vájku<s n="CS"/></r></p></e>
     <e><p><l>vaikko<b/>gii<s n="pron"/></l><r>vájku<b/>guhti<s n="pron"/></r></p></e>
     <e><p><l>vaikko<b/>goabbá<s n="pron"/></l><r>vájku<b/>goabbá<s n="pron"/></r></p></e>
     <e><p><l>vaikko<b/>guhte<s n="pron"/></l><r>vájku<b/>guhti<s n="pron"/></r></p></e>
