@@ -15,6 +15,7 @@
 /autogen.sh -text
 /configure.ac -text
 dev/fictilemmapos.txt -text
+dev/smepronounsfullform.txt -text
 dev/smjintersectionlemma2.txt -text
 /fictilemmapos.txt -text
 /modes.xml -text
