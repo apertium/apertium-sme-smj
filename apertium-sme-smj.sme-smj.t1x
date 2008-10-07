@@ -43,6 +43,10 @@
      <attr-item tags="Prs"/>
   </def-attr>
 
+  <def-attr n="mood">
+     <attr-item tags="Ind"/>
+  </def-attr>
+
   <def-attr n="pers">
      <attr-item tags="Sg1"/>
      <attr-item tags="Sg2"/>
@@ -55,7 +59,8 @@
   <def-attr n="phrase">
      <attr-item tags="@SUBJ→"/>
      <attr-item tags="@←SUBJ"/>
-     <attr-item tags="@+FMAINV"/>
+     <attr-item tags="@SPRED→"/>
+     <attr-item tags="@\+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
   </def-attr>
 </section-def-attrs>
@@ -75,7 +80,7 @@
          <chunk name="nom" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="1" side="tl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="phrase"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
              <tag><clip pos="1" side="tl" part="case"/></tag>
            </tags>
@@ -100,11 +105,12 @@
          <chunk name="verb" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
-             <tag><clip pos="1" side="tl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="phrase"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="mood"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="lemq"/>
