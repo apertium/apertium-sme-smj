@@ -5,12 +5,21 @@
   <def-cat n="nom">
      <cat-item tags="N.*"/>
   </def-cat>
+  <def-cat n="verb">
+     <cat-item tags="V.*"/>
+  </def-cat>
 </section-def-cats>
 
 <section-def-attrs>
   <def-attr n="a_nom">
      <attr-item tags="N"/>
      <attr-item tags="N.Prop"/>
+  </def-attr>
+
+  <def-attr n="a_verb">
+     <attr-item tags="V"/>
+     <attr-item tags="V.IV"/>
+     <attr-item tags="V.TV"/>
   </def-attr>
 
   <def-attr n="nbr">
@@ -29,9 +38,25 @@
      <attr-item tags="Loc"/>
   </def-attr>
 
+  <def-attr n="temps">
+     <attr-item tags="Inf"/>
+     <attr-item tags="Prs"/>
+  </def-attr>
+
+  <def-attr n="pers">
+     <attr-item tags="Sg1"/>
+     <attr-item tags="Sg2"/>
+     <attr-item tags="Sg3"/>
+     <attr-item tags="Pl1"/>
+     <attr-item tags="Pl2"/>
+     <attr-item tags="Pl3"/>
+  </def-attr>
+
   <def-attr n="phrase">
      <attr-item tags="@SUBJ%"/>
      <attr-item tags="@%SUBJ"/>
+     <attr-item tags="@+FMAINV"/>
+     <attr-item tags="@-FMAINV"/>
   </def-attr>
 </section-def-attrs>
 
@@ -65,6 +90,31 @@
        </out>
      </action>
   </rule>
+
+  <rule comment="REGLA: VERB">
+     <pattern>
+       <pattern-item n="verb"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+             <tag><clip pos="1" side="tl" part="phrase"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
 
 </section-rules>
 
