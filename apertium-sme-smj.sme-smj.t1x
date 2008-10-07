@@ -53,8 +53,8 @@
   </def-attr>
 
   <def-attr n="phrase">
-     <attr-item tags="@SUBJ%"/>
-     <attr-item tags="@%SUBJ"/>
+     <attr-item tags="@SUBJ→"/>
+     <attr-item tags="@←SUBJ"/>
      <attr-item tags="@+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
   </def-attr>
