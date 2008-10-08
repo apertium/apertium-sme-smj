@@ -16,6 +16,7 @@
 /configure.ac -text
 dev/fictilemmapos.txt -text
 dev/smepronounsfullform.txt -text
+dev/smepronwithtags.speling.txt -text
 dev/smepronwithtags.txt -text
 dev/smjintersectionlemma2.txt -text
 /fictilemmapos.txt -text
