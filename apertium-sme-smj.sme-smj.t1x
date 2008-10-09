@@ -37,6 +37,7 @@
 
   <def-attr n="a_pronom">
      <attr-item tags="Pron"/>
+     <attr-item tags="Pron.Pers"/>
      <attr-item tags="Pron.Rel"/>
      <attr-item tags="Pron.Refl"/>
      <attr-item tags="Pron.Interr"/>
@@ -148,6 +149,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_pronom"/>
+             <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>
