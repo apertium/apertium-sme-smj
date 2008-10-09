@@ -23,6 +23,16 @@
     <sdef n="Comp"   c=""/>
     <sdef n="Superl" c=""/>
 
+
+    <sdef n="Interr" c="Interrogative"/>
+    <sdef n="Rel"    c="Relative"/>
+    <sdef n="Indef"  c="Indefinite"/>
+    <sdef n="Dem"    c="Demonstrative"/>
+    <sdef n="Recipr" c="Reciprocal"/>
+    <sdef n="Pers"   c="Personal"/>
+    <sdef n="Refl"   c="Reflexive"/>
+
+
     <sdef n="Pl"     c="Plural"/>
     <sdef n="Sg"     c="Singular"/>
 

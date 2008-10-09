@@ -8,6 +8,9 @@
   <def-cat n="verb">
      <cat-item tags="V.*"/>
   </def-cat>
+  <def-cat n="pronom">
+     <cat-item tags="Pron.*"/>
+  </def-cat>
 </section-def-cats>
 
 <section-def-attrs>
@@ -15,6 +18,14 @@
      <attr-item tags="N"/>
      <attr-item tags="N.Prop"/>
   </def-attr>
+
+  <def-attr n="a_pronom">
+     <attr-item tags="Pron"/>
+     <attr-item tags="Pron.Rel"/>
+     <attr-item tags="Pron.Refl"/>
+     <attr-item tags="Pron.Interr"/>
+  </def-attr>
+
 
   <def-attr n="a_verb">
      <attr-item tags="V"/>
@@ -57,6 +68,7 @@
   </def-attr>
 
   <def-attr n="phrase">
+     <attr-item tags="@X"/>
      <attr-item tags="@SUBJ→"/>
      <attr-item tags="@←SUBJ"/>
      <attr-item tags="@SPRED→"/>
@@ -95,6 +107,34 @@
        </out>
      </action>
   </rule>
+
+  <rule comment="REGLA: PRONOM">
+     <pattern>
+       <pattern-item n="pronom"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="pronom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="tl" part="nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_pronom"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <!-- Sintagmes verbals -->
 
   <rule comment="REGLA: VERB">
      <pattern>
