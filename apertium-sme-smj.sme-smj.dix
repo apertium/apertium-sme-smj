@@ -26831,7 +26831,11 @@
     <e><p><l>ain<s n="ADV"/></l><r>ájn<s n="ADV"/></r></p></e>
     <e><p><l>ainjuo<s n="ADV"/></l><r>gåjt<s n="ADV"/></r></p></e>
     <e><p><l>aittos<s n="ADV"/></l><r>ajtu<s n="ADV"/></r></p></e>
+
     <e><p><l>aivve<s n="ADV"/></l><r>dåssju<s n="ADV"/></r></p></e>
+    <e><p><l>dušše<s n="ADV"/></l><r>dåssju<s n="ADV"/></r></p></e>
+    <e><p><l>beare<s n="ADV"/></l><r>beru<s n="ADV"/></r></p></e>
+
     <e><p><l>akademia<s n="N"/></l><r>akademia<s n="N"/></r></p></e>
     <e><p><l>akademiija<s n="N"/></l><r>akademija<s n="N"/></r></p></e>
     <e><p><l>akademisma<s n="N"/></l><r>akademissma<s n="N"/></r></p></e>
@@ -27090,7 +27094,8 @@
     <e><p><l>arriveret<s n="V"/></l><r>arriverit<s n="V"/></r></p></e>
     <e><p><l>arronderet<s n="V"/></l><r>arronderit<s n="V"/></r></p></e>
     <e><p><l>arsenihkka<s n="N"/></l><r>arsenihkka<s n="N"/></r></p></e>
-    <e><p><l>artihkal<s n="N"/></l><r>artihkkal<s n="N"/></r></p></e>
+
+    <e><p><l>artihkal<s n="N"/></l><r>artihkal<s n="N"/></r></p></e>
     <e><p><l>artikulašuvdna<s n="N"/></l><r>artikulasjåvnnå<s n="N"/></r></p></e>
     <e><p><l>artikuleret<s n="V"/></l><r>artikulerit<s n="V"/></r></p></e>
     <e><p><l>artilleriija<s n="N"/></l><r>artillerija<s n="N"/></r></p></e>
@@ -28339,7 +28344,9 @@
     <e><p><l>dahje<s n="CC"/></l><r>jali<s n="CC"/></r></p></e>
     <e><p><l>dahjege<s n="CC"/></l><r>jali<s n="CC"/></r></p></e>
     <e><p><l>dahkalit<s n="V"/></l><r>dahkalit<s n="V"/></r></p></e>
-    <e><p><l>dahkat<s n="V"/></l><r>dahkat<s n="V"/></r></p></e>
+
+    <e><p><l>dahkat<s n="V"/><s n="TV"/></l><r>dahkat<s n="V"/></r></p></e>
+
     <e><p><l>dahkki<s n="N"/></l><r>dahkke<s n="N"/></r></p></e>
     <e><p><l>dahku<s n="N"/></l><r>dahko<s n="N"/></r></p></e>
     <e><p><l>dahkugiehta<s n="N"/></l><r>dahkogiehta<s n="N"/></r></p></e>
@@ -29163,7 +29170,6 @@
     <e><p><l>duála<s n="N"/></l><r>duála<s n="N"/></r></p></e>
     <e><p><l>duđahit<s n="V"/></l><r>dudádit<s n="V"/></r></p></e>
     <e><p><l>duđaidit<s n="V"/></l><r>duoppsidit<s n="V"/></r></p></e>
-    <e><p><l>dušše<s n="ADV"/></l><r>dåssju<s n="ADV"/></r></p></e>
     <e><p><l>duđđut<s n="V"/></l><r>duddut<s n="V"/></r></p></e>
     <e><p><l>dyna<s n="N"/></l><r>dyna<s n="N"/></r></p></e>
     <e><p><l>dynamihkka<s n="N"/></l><r>dynamihkka<s n="N"/></r></p></e>
@@ -32665,7 +32671,8 @@
     <e><p><l>leaibmi<s n="N"/></l><r>liejmme<s n="N"/></r></p></e>
     <e><p><l>leaikasit<s n="V"/></l><r>lassjkasit<s n="V"/></r></p></e>
     <e><p><l>leastadianisma<s n="N"/></l><r>leastadianissma<s n="N"/></r></p></e>
-    <e><p><l>leat<s n="V"/><s n="IV"/></l><r>liehket<s n="V"/><s n="IV"/></r></p></e>
+
+    <e><p><l>leat<s n="V"/><s n="IV"/></l><r>liehket<s n="V"/></r></p></e>
     <e><p><l>leavdnut<s n="V"/></l><r>lievnnut<s n="V"/></r></p></e>
     <e><p><l>leavvudit<s n="V"/></l><r>luovvanit<s n="V"/></r></p></e>
     <e><p><l>leaŋga<s n="N"/></l><r>lieŋga<s n="N"/></r></p></e>
@@ -35849,7 +35856,9 @@
     <e><p><l>rágadit<s n="V"/></l><r>rágádit<s n="V"/></r></p></e>
     <e><p><l>rággeluossa<s n="N"/></l><r>rággeluossa<s n="N"/></r></p></e>
     <e><p><l>rággi<s n="N"/></l><r>rágge<s n="N"/></r></p></e>
-    <e><p><l>ráhkadit<s n="V"/></l><r>dahkat<s n="V"/></r></p></e>
+
+    <e><p><l>ráhkadit<s n="V"/><s n="TV"/></l><r>dahkat<s n="V"/></r></p></e>
+
     <e><p><l>ráhkadus<s n="N"/></l><r>ráhkadus<s n="N"/></r></p></e>
     <e><p><l>ráhkadusiešvuohta<s n="N"/></l><r>ráhkadusiesjvuohta<s n="N"/></r></p></e>
     <e><p><l>ráhkan<s n="N"/></l><r>ráhkan<s n="N"/></r></p></e>
@@ -37149,7 +37158,8 @@
     <e><p><l>sáhpángillár<s n="N"/></l><r>sáhpángillár<s n="N"/></r></p></e>
     <e><p><l>sáhpánnjuolas<s n="N"/></l><r>sáhpánnjuolas<s n="N"/></r></p></e>
     <e><p><l>sáhpánpopulašuvdna<s n="N"/></l><r>sáhpánpopulasjåvnnå<s n="N"/></r></p></e>
-    <e><p><l>sáhttit<s n="V"/></l><r>sáhttet<s n="V"/></r></p></e>
+
+    <e><p><l>sáhttit<s n="V"/><s n="IV"/></l><r>sáhttet<s n="V"/></r></p></e>
     <e><p><l>sáhttu<s n="N"/></l><r>sáhtto<s n="N"/></r></p></e>
     <e><p><l>sáhtán<s n="N"/></l><r>sáhtán<s n="N"/></r></p></e>
     <e><p><l>sáhčalit<s n="V"/></l><r>sáhtjalit<s n="V"/></r></p></e>
@@ -39299,7 +39309,8 @@
     <e><p><l>čállilit<s n="V"/></l><r>tjállelit<s n="V"/></r></p></e>
     <e><p><l>čállindárkkistanprográmma<s n="N"/></l><r>tjállendárkestanprográmma<s n="N"/></r></p></e>
     <e><p><l>čállindárkkistanprošeakta<s n="N"/></l><r>tjállendárkestanprosjækta<s n="N"/></r></p></e>
-    <e><p><l>čállit<s n="V"/></l><r>tjállet<s n="V"/></r></p></e>
+
+    <e><p><l>čállit<s n="V"/><s n="TV"/></l><r>tjállet<s n="V"/></r></p></e>
     <e><p><l>čállásit<s n="V"/></l><r>tjállásit<s n="V"/></r></p></e>
     <e><p><l>šámppu<s n="N"/></l><r>sjámpo<s n="N"/></r></p></e>
     <e><p><l>čáris<s n="A"/></l><r>tjáres<s n="A"/></r></p></e>

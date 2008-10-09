@@ -5,6 +5,9 @@
   <def-cat n="nom">
      <cat-item tags="N.*"/>
   </def-cat>
+  <def-cat n="adj">
+     <cat-item tags="A.*"/>
+  </def-cat>
   <def-cat n="verb">
      <cat-item tags="V.*"/>
   </def-cat>
@@ -17,6 +20,10 @@
   <def-attr n="a_nom">
      <attr-item tags="N"/>
      <attr-item tags="N.Prop"/>
+  </def-attr>
+
+  <def-attr n="a_adj">
+     <attr-item tags="A"/>
   </def-attr>
 
   <def-attr n="a_pronom">
@@ -47,6 +54,11 @@
      <attr-item tags="Ess"/>
      <attr-item tags="Ill"/>
      <attr-item tags="Loc"/>
+  </def-attr>
+
+  <def-attr n="degree">
+     <attr-item tags="Comp"/>
+     <attr-item tags="Superl"/>
   </def-attr>
 
   <def-attr n="temps">
@@ -124,6 +136,33 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_pronom"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+
+  <rule comment="REGLA: ADJ">
+     <pattern>
+       <pattern-item n="adj"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="tl" part="nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_adj"/>
+             <clip pos="1" side="tl" part="degree"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>

@@ -77,6 +77,8 @@
     <sdef n="Sg3"    c=""/>
     <sdef n="VAbess" c=""/>
     <sdef n="VGen"   c=""/>
+    <sdef n="ImprtII"   c=""/>
+    <sdef n="Sup"   c=""/>
 
     <sdef n="Clt"  c=""/>
     <sdef n="Ela"  c=""/>
@@ -37072,6 +37074,5264 @@
       </e>
     </pardef>
 
+    <!-- Nouns -->
+
+    <pardef n="artihk/al__N">
+      <e>
+        <p>
+          <l>an</l>
+          <r>al<s n="N"/><s n="Ess"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kaladagi</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijn</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnema</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijneda</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijneska</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnám</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnát</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnes</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnema</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijneda</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnesa</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalis</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalistema</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalisteda</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalisteska</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalistám</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalistát</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalistes</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalistema</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalisteda</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalistesa</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalij</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalasema</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalaseda</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalaseska</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalasám</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalasát</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalases</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalasema</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalaseda</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalasesa</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalin</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalinema</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalineda</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalineska</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalinám</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalinát</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalines</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalinema</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalineda</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalinesa</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>al</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalimme</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalihtte</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kaliska</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalam</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalat</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalis</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalimme</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalihtte</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalisá</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kala</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalimme</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalihtte</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kaliska</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalam</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalat</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalis</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalimme</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalihtte</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalisá</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalav</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalimme</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalihtte</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kaliska</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalam</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalat</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalis</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalimme</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalihtte</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalisá</l>
+          <r>al<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdagi</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalij</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijeda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijeska</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijám</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kaliját</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijes</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijeda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijesa</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijs</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijstema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijsteda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijsteska</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijstám</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijstát</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijstes</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijstema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijsteda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijstesa</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasimme</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasihtte</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasiska</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasam</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasat</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasis</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasimme</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasihtte</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdasisá</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijn</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijneda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijneska</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnám</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnát</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnes</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijneda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijnesa</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kala</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalij</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijeda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijeska</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijám</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kaliját</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijes</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijeda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijesa</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijt</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdeda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdeska</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdám</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdát</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdes</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdema</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdeda</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>kalijdesa</l>
+          <r>al<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+    </pardef>
+
+
+    <pardef n="ulm/me__N">
+      <e>
+        <p>
+          <l>men</l>
+          <r>me<s n="N"/><s n="Ess"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>edagi</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijn</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnimme</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnihtte</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijniska</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnam</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnat</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnis</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnimme</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnihtte</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnisá</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>es</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estimme</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estihtte</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estiska</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estam</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estat</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estis</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estimme</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estihtte</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>estisá</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>máj</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másimme</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másihtte</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másiska</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másim</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másit</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másis</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másimme</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másihtte</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>másisá</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>en</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>enimme</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>enihtte</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>eniska</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>enam</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>enat</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>enis</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>enimme</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>enihtte</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>enisá</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>me</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>máma</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>máda</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>meska</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>mám</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>mát</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>mes</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>máma</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>máda</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>mesa</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áma</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áda</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>eska</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ám</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>át</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>es</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áma</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áda</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>esa</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ev</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áma</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áda</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>eska</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ám</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>át</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>es</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áma</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áda</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>esa</l>
+          <r>me<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdagi</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ij</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijiska</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijam</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijat</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijis</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijisá</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijs</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstiska</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstam</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstat</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstis</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijstisá</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijda</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdisema</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdiseda</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdiseska</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdisám</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdisát</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdises</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdisema</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdiseda</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdisesa</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijn</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijniska</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnam</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnat</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnis</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijnisá</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ema</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>eda</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>eska</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>em</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>et</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>es</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ema</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>eda</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>esa</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ij</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijiska</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijam</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijat</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijis</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijisá</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijt</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdiska</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdam</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdat</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdis</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdimme</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdihtte</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijdisá</l>
+          <r>me<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+    </pardef>
+
+
+    <pardef n="prosj/ækta__N">
+      <e>
+        <p>
+          <l>æktan</l>
+          <r>ækta<s n="N"/><s n="Ess"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtadagi</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajn</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnimme</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnihtte</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajniska</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnam</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnat</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnis</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnimme</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnihtte</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnisá</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtas</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastimme</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastihtte</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastiska</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastam</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastat</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastis</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastimme</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastihtte</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtastisá</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktaj</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasimme</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasihtte</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasiska</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasim</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasit</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasis</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasimme</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasihtte</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasisá</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ill"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtan</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtanimme</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtanihtte</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtaniska</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtanam</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtanat</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtanis</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtanimme</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtanihtte</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtanisá</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ækta</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktama</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktada</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktaska</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktam</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktat</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktas</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktama</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktada</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>æktasa</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Nom"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evta</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtama</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtada</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtaska</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtam</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtat</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtas</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtama</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtada</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtasa</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtav</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtama</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtada</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtaska</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtam</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtat</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtas</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtama</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtada</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtasa</l>
+          <r>ækta<s n="N"/><s n="Sg"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdagi</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtaj</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajiska</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajam</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajat</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajis</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajisá</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajs</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstiska</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstam</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstat</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstis</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajstisá</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajda</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdisema</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdiseda</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdiseska</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdisám</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdisát</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdises</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdisema</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdiseda</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdisesa</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ill"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajn</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajniska</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnam</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnat</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnis</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajnisá</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evta</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtama</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtada</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtaska</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtam</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtat</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtas</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtama</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtada</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtasa</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Nom"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtaj</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajiska</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajam</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajat</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajis</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajisá</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajt</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdiska</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdam</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdat</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdis</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdimme</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdihtte</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>evtajdisá</l>
+          <r>ækta<s n="N"/><s n="Pl"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+    </pardef>
+
+
+    <!-- Proper nouns -->
+
+    <pardef n="Wikipedia__N_Prop">
+      <e>
+        <p>
+          <l>n</l>
+          <r><s n="N"/><s n="Prop"/><s n="Ess"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>jn</l>
+          <r><s n="N"/><s n="Prop"/><s n="Sg"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>s</l>
+          <r><s n="N"/><s n="Prop"/><s n="Sg"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>j</l>
+          <r><s n="N"/><s n="Prop"/><s n="Sg"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>n</l>
+          <r><s n="N"/><s n="Prop"/><s n="Sg"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l></l>
+          <r><s n="N"/><s n="Prop"/><s n="Sg"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l></l>
+          <r><s n="N"/><s n="Prop"/><s n="Sg"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>v</l>
+          <r><s n="N"/><s n="Prop"/><s n="Sg"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>j</l>
+          <r><s n="N"/><s n="Prop"/><s n="Pl"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>js</l>
+          <r><s n="N"/><s n="Prop"/><s n="Pl"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>jda</l>
+          <r><s n="N"/><s n="Prop"/><s n="Pl"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>jn</l>
+          <r><s n="N"/><s n="Prop"/><s n="Pl"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l></l>
+          <r><s n="N"/><s n="Prop"/><s n="Pl"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>j</l>
+          <r><s n="N"/><s n="Prop"/><s n="Pl"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>jt</l>
+          <r><s n="N"/><s n="Prop"/><s n="Pl"/><s n="Acc"/></r>
+        </p>
+      </e>
+    </pardef>
+
+    <!-- Adjectives -->
+
+    <pardef n="almula/sj__A">
+      <e>
+        <p>
+          <l>ttjat</l>
+          <r>sj<s n="A"/><s n="ADV"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>sj</l>
+          <r>sj<s n="A"/><s n="Attr"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppot</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="ADV"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>p</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Attr"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bbon</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Ess"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppodagi</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Sg"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppujn</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Sg"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppos</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Sg"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bbuj</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Sg"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppon</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Sg"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bbo</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Sg"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppo</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Sg"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppov</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Sg"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppojdagi</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Pl"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppoj</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Pl"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppojs</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Pl"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppojda</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Pl"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppojn</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Pl"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppo</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Pl"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppoj</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Pl"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ppojt</l>
+          <r>sj<s n="A"/><s n="Comp"/><s n="Pl"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjan</l>
+          <r>sj<s n="A"/><s n="Ess"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusit</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="ADV"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>mos</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Attr"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusin</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Ess"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusadagi</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijn</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijneda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijneska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnám</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnát</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnes</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijneda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnesa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusis</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusistema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusisteda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusisteska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusistám</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusistát</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusistes</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusistema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusisteda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusistesa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusij</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusin</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusinema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusineda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusineska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusinám</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusinát</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusines</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusinema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusineda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusinesa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>mos</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusama</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusada</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusaska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusam</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusat</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusas</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusama</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusada</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusasa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Nom"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusama</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusada</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusaska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusam</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusat</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusas</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusama</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusada</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusasa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusav</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusama</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusada</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusaska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusam</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusat</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusas</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusama</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusada</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusasa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Sg"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdagi</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusij</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijs</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijstema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijsteda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijsteska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijstám</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijstát</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijstes</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijstema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijsteda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijstesa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijn</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijneda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijneska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnám</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnát</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnes</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijneda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijnesa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusij</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijt</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdeda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdeska</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdám</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdát</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdes</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdema</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdeda</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>bmusijdesa</l>
+          <r>sj<s n="A"/><s n="Superl"/><s n="Pl"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjadagi</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajn</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnimme</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnihtte</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajniska</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnam</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnat</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnis</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnimme</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnihtte</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnisá</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjas</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastimme</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastihtte</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastiska</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastam</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastat</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastis</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastimme</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastihtte</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjastisá</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjaj</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasimme</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasihtte</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasiska</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasim</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasit</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasis</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasimme</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasihtte</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasisá</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ill"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjan</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjanimme</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjanihtte</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjaniska</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjanam</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjanat</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjanis</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjanimme</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjanihtte</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjanisá</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>sj</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjama</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjada</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjaska</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjam</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjat</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjas</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjama</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjada</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>dtjasa</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Nom"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttja</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjama</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjada</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjaska</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjam</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjat</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjas</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjama</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjada</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjasa</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjav</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjama</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjada</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjaska</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjam</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjat</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjas</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjama</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjada</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjasa</l>
+          <r>sj<s n="A"/><s n="Sg"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdagi</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Abe"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjaj</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajiska</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajam</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajat</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajis</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajisá</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Com"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajs</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstiska</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstam</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstat</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstis</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajstisá</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ela"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajda</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdisema</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdiseda</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdiseska</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdisám</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdisát</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdises</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdisema</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdiseda</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdisesa</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ill"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajn</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajniska</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnam</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnat</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnis</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajnisá</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Ine"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttja</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjama</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjada</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjaska</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjam</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjat</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjas</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjama</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjada</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjasa</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Nom"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjaj</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajiska</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajam</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajat</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajis</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajisá</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Gen"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajt</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxDu1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxDu2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdiska</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxDu3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdam</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxSg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdat</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxSg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdis</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxSg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdimme</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxPl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdihtte</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxPl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ttjajdisá</l>
+          <r>sj<s n="A"/><s n="Pl"/><s n="Acc"/><s n="PxPl3"/></r>
+        </p>
+      </e>
+    </pardef>
+
+
+    <!-- Verbs -->
+    <pardef n="l/iehket__V">
+      <e>
+        <p>
+          <l>ulu</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ulujma</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ulujda</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ulujga</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>uluv</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ulu</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>uluj</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ulujma</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ulujda</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ulun</l>
+          <r>iehket<s n="V"/><s n="Cond"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ehkun</l>
+          <r>iehket<s n="V"/><s n="Imprt"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iehkke</l>
+          <r>iehket<s n="V"/><s n="Imprt"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iehkiska</l>
+          <r>iehket<s n="V"/><s n="Imprt"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iege</l>
+          <r>iehket<s n="V"/><s n="Imprt"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ehkus</l>
+          <r>iehket<s n="V"/><s n="Imprt"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ehkup</l>
+          <r>iehket<s n="V"/><s n="Imprt"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ehkut</l>
+          <r>iehket<s n="V"/><s n="Imprt"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iehkisa</l>
+          <r>iehket<s n="V"/><s n="Imprt"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>in</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ähppe</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>äbá</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ev</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l></l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ip</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ihpit</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l></l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>im</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijma</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijda</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijga</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>idjiv</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>idji</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ij</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijma</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijda</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>idjin</l>
+          <r>iehket<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>iehket</l>
+          <r>iehket<s n="V"/><s n="Inf"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ilin</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ilihppe</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ilibá</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ilav</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ila</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ila</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ilip</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ilihpit</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ili</l>
+          <r>iehket<s n="V"/><s n="Pot"/><s n="Prs"/><s n="Pl3"/></r>
+        </p>
+      </e>
+    </pardef>
+
+    <pardef n="da/hkat__V">
+      <e>
+        <p>
+          <l>gádijn</l>
+          <r>hkat<s n="V"/><s n="Ger"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gá</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkon</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkke</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkiska</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gá</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkis</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkop</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkit</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkisa</l>
+          <r>hkat<s n="V"/><s n="Imprt"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkun</l>
+          <r>hkat<s n="V"/><s n="ImprtII"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkuda</l>
+          <r>hkat<s n="V"/><s n="ImprtII"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkuska</l>
+          <r>hkat<s n="V"/><s n="ImprtII"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hku</l>
+          <r>hkat<s n="V"/><s n="ImprtII"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkus</l>
+          <r>hkat<s n="V"/><s n="ImprtII"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkup</l>
+          <r>hkat<s n="V"/><s n="ImprtII"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkut</l>
+          <r>hkat<s n="V"/><s n="ImprtII"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkusa</l>
+          <r>hkat<s n="V"/><s n="ImprtII"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gá</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkin</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkabihtte</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkaba</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gáv</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gá</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hká</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkap</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkabihtit</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hki</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gájma</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gájda</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gájga</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkiv</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hki</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gáj</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gájma</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gájda</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkin</l>
+          <r>hkat<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkat</l>
+          <r>hkat<s n="V"/><s n="Inf"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>hkam</l>
+          <r>hkat<s n="V"/><s n="PrfPrc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gátjit</l>
+          <r>hkat<s n="V"/><s n="Sup"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>gák</l>
+          <r>hkat<s n="V"/><s n="VAbess"/></r>
+        </p>
+      </e>
+    </pardef>
+
+    <pardef n="sáht/tet__V">
+      <e>
+        <p>
+          <l>edijn</l>
+          <r>tet<s n="V"/><s n="Ger"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ton</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>te</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tiska</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tis</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>top</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tit</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tisa</l>
+          <r>tet<s n="V"/><s n="Imprt"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tun</l>
+          <r>tet<s n="V"/><s n="ImprtII"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tuda</l>
+          <r>tet<s n="V"/><s n="ImprtII"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tuska</l>
+          <r>tet<s n="V"/><s n="ImprtII"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tu</l>
+          <r>tet<s n="V"/><s n="ImprtII"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tus</l>
+          <r>tet<s n="V"/><s n="ImprtII"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tup</l>
+          <r>tet<s n="V"/><s n="ImprtII"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tut</l>
+          <r>tet<s n="V"/><s n="ImprtII"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tusa</l>
+          <r>tet<s n="V"/><s n="ImprtII"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tin</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tebihtte</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>teba</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áv</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>á</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tá</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tep</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tebihtit</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ti</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijma</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijda</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijga</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tiv</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ti</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ij</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijma</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijda</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tin</l>
+          <r>tet<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tet</l>
+          <r>tet<s n="V"/><s n="Inf"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>tám</l>
+          <r>tet<s n="V"/><s n="PrfPrc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>átjit</l>
+          <r>tet<s n="V"/><s n="Sup"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ek</l>
+          <r>tet<s n="V"/><s n="VAbess"/></r>
+        </p>
+      </e>
+    </pardef>
+
+    <pardef n="tjál/let__V">
+      <e>
+        <p>
+          <l>edijn</l>
+          <r>let<s n="V"/><s n="Ger"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lon</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>le</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>liska</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lis</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lop</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lit</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lisa</l>
+          <r>let<s n="V"/><s n="Imprt"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lun</l>
+          <r>let<s n="V"/><s n="ImprtII"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>luda</l>
+          <r>let<s n="V"/><s n="ImprtII"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>luska</l>
+          <r>let<s n="V"/><s n="ImprtII"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lu</l>
+          <r>let<s n="V"/><s n="ImprtII"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lus</l>
+          <r>let<s n="V"/><s n="ImprtII"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lup</l>
+          <r>let<s n="V"/><s n="ImprtII"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lut</l>
+          <r>let<s n="V"/><s n="ImprtII"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lusa</l>
+          <r>let<s n="V"/><s n="ImprtII"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>e</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="ConNeg"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lin</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lebihtte</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>leba</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>áv</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>á</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lá</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lep</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lebihtit</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>li</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prs"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijma</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijda</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijga</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Du3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>liv</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>li</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ij</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Sg3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijma</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl1"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ijda</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl2"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lin</l>
+          <r>let<s n="V"/><s n="Ind"/><s n="Prt"/><s n="Pl3"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>let</l>
+          <r>let<s n="V"/><s n="Inf"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>lám</l>
+          <r>let<s n="V"/><s n="PrfPrc"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>átjit</l>
+          <r>let<s n="V"/><s n="Sup"/></r>
+        </p>
+      </e>
+      <e>
+        <p>
+          <l>ek</l>
+          <r>let<s n="V"/><s n="VAbess"/></r>
+        </p>
+      </e>
+    </pardef>
+
 
     <!-- Adverbs -->
     <pardef n="ájn__ADV">
@@ -37226,6 +42486,32 @@
     <e lm="nubbes"><i>nubbes</i><par n="nubbes__Pron_Indef"/></e>
 
 
+    <!-- Nouns -->
+    <e lm="prosjækta"><i>prosj</i><par n="prosj/ækta__N"/></e>
+    <e lm="ulmme"><i>ulm</i><par n="ulm/me__N"/></e>
+    <e lm="artihkal"><i>artihk</i><par n="artihk/al__N"/></e>
+
+
+
+
+    <!-- Proper nouns -->
+    <e lm="Wikipedia"><i>Wikipedia</i><par n="Wikipedia__N_Prop"/></e>
+
+
+    <!-- Adjectives -->
+    <e lm="almulasj"><i>almula</i><par n="almula/sj__A"/></e>
+
+
+    <!-- Verbs -->
+    <e lm="liehket"><i>l</i><par n="l/iehket__V"/></e>
+    <e lm="dahkat"><i>da</i><par n="da/hkat__V"/></e>
+    <e lm="sáhttet"><i>sáht</i><par n="sáht/tet__V"/></e>
+    <e lm="tjállet"><i>tjál</i><par n="tjál/let__V"/></e>
+
+
+
+    
+
     <!-- Adverbs -->
     <e lm="age"><i>age</i><par n="ájn__ADV"/></e>
     <e lm="agev"><i>agev</i><par n="ájn__ADV"/></e>
@@ -37234,6 +42520,7 @@
     <e lm="gåjt"><i>gåjt</i><par n="ájn__ADV"/></e>
     <e lm="ajtu"><i>ajtu</i><par n="ájn__ADV"/></e>
     <e lm="dåssju"><i>dåssju</i><par n="ájn__ADV"/></e>
+    <e lm="beru"><i>beru</i><par n="ájn__ADV"/></e>
     <e lm="aktan"><i>aktan</i><par n="ájn__ADV"/></e>
     <e lm="avta"><i>avta</i><par n="ájn__ADV"/></e>
     <e lm="dalánagi"><i>dalánagi</i><par n="ájn__ADV"/></e>
