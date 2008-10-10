@@ -1,6 +1,7 @@
 <dictionary>
   <sdefs>
     <sdef n="N"      c="Noun"/>
+    <sdef n="Num"      c="Numeral"/>
     <sdef n="A"      c="Adjective"/>
     <sdef n="V"      c="Verb"/>
     <sdef n="ADV"    c="Adverb"/>
@@ -78,11 +79,12 @@
 
 
     <sdef n="abbr"/>
-    <sdef n="num"/>
     <sdef n="p"/>
     <sdef n="pp"/>
     <sdef n="Pron"/>
     <sdef n="v_x"/>
+
+    <sdef n="sent"    c="End of sentence marker"/>
 
   </sdefs>
   <section id="main" type="standard">
@@ -33444,8 +33446,8 @@
     <e><p><l>militariseret<s n="V"/></l><r>militariserit<s n="V"/></r></p></e>
     <e><p><l>militarisma<s n="N"/></l><r>militarissma<s n="N"/></r></p></e>
     <e><p><l>militäriseret<s n="V"/></l><r>militäriserit<s n="V"/></r></p></e>
-    <e><p><l>milj<s n="num"/></l><r>milj<s n="num"/></r></p></e>
-    <e><p><l>miljon<s n="num"/></l><r>milijåvnnå<s n="num"/></r></p></e>
+    <e><p><l>milj<s n="Num"/></l><r>milj<s n="Num"/></r></p></e>
+    <e><p><l>miljon<s n="Num"/></l><r>milijåvnnå<s n="Num"/></r></p></e>
     <e><p><l>milligrámma<s n="N"/></l><r>milligrámma<s n="N"/></r></p></e>
     <e><p><l>millo<s n="N"/></l><r>millo<s n="N"/></r></p></e>
     <e><p><l>millosit<s n="V"/></l><r>millusit<s n="V"/></r></p></e>
@@ -38056,7 +38058,7 @@
     <e><p><l>vuortnis<s n="N"/></l><r>vuornes<s n="N"/></r></p></e>
     <e><p><l>vuortnuhit<s n="V"/></l><r>vuornodit<s n="V"/></r></p></e>
     <e><p><l>vuoruhit<s n="V"/></l><r>vuorodit<s n="V"/></r></p></e>
-    <e><p><l>vuos<s n="num"/></l><r>vuostasj<s n="num"/></r></p></e>
+    <e><p><l>vuos<s n="Num"/></l><r>vuostasj<s n="Num"/></r></p></e>
     <e><p><l>vuosehit<s n="V"/></l><r>vuosedit<s n="V"/></r></p></e>
     <e><p><l>vuosihit<s n="V"/></l><r>vuosedit<s n="V"/></r></p></e>
     <e><p><l>vuossa<s n="N"/></l><r>vuossa<s n="N"/></r></p></e>
@@ -38065,7 +38067,7 @@
     <e><p><l>vuostebealláigaskkustit<s n="V"/></l><r>vuosstebællájgaskostit<s n="V"/></r></p></e>
     <e><p><l>vuostejienastit<s n="V"/></l><r>vuosstejienastit<s n="V"/></r></p></e>
     <e><p><l>vuostelii<s n="ADV"/></l><r>vuosstelij<s n="ADV"/></r></p></e>
-    <e><p><l>vuosttas<s n="num"/></l><r>vuostasj<s n="num"/></r></p></e>
+    <e><p><l>vuosttas<s n="Num"/></l><r>vuostasj<s n="Num"/></r></p></e>
     <e><p><l>vuosttaskonsuleanta<s n="N"/></l><r>vuostasjkonsulænnta<s n="N"/></r></p></e>
     <e><p><l>vuosttaš<s n="A"/></l><r>vuoastasj<s n="A"/></r></p></e>
     <e><p><l>vuosttašgiella<s n="N"/></l><r>vuostasjgiella<s n="N"/></r></p></e>
@@ -39326,6 +39328,11 @@
     <e><p><l>čávvásit<s n="V"/></l><r>tjávvásit<s n="V"/></r></p></e>
     <e><p><l>čáŋadit<s n="V"/></l><r>tjáŋadit<s n="V"/></r></p></e>
     <e><p><l>čáđggašit<s n="V"/></l><r>tjárgatjit<s n="V"/></r></p></e>
+
+
+
+    <e><re>[.\?;:!·]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+    <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="Num"/></l><r><s n="Num"/></r></p></e>
 
   </section>
 </dictionary>

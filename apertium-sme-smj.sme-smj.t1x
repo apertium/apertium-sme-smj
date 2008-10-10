@@ -5,6 +5,10 @@
   <def-cat n="nom">
      <cat-item tags="N.*"/>
   </def-cat>
+  <def-cat n="num">
+     <cat-item tags="Num"/>
+     <cat-item tags="Num.*"/>
+  </def-cat>
   <def-cat n="adj">
      <cat-item tags="A.*"/>
   </def-cat>
@@ -43,6 +47,10 @@
 
   <def-attr n="a_adv">
      <attr-item tags="ADV"/>
+  </def-attr>
+
+  <def-attr n="a_num">
+     <attr-item tags="Num"/>
   </def-attr>
 
   <def-attr n="a_cnj">
@@ -151,6 +159,30 @@
        </out>
      </action>
   </rule>
+
+  <rule comment="REGLA: NUM">
+     <pattern>
+       <pattern-item n="num"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="num" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="tl" part="nbr"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_num"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
   <rule comment="REGLA: PRONOM">
      <pattern>
