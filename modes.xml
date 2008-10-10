@@ -31,4 +31,40 @@
     </pipeline>
   </mode>
 
+  <mode name="sme-smj-tagger" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="sme-smj.automorf.bin"/>
+      </program>
+      <program name="cg-proc">
+        <file name="sme-smj.rlx.bin"/> 
+      </program>
+      <program name="apertium-tagger -g">
+        <file name="sme-smj.prob"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+  <mode name="sme-smj-chunker" install="no">
+    <pipeline>
+      <program name="lt-proc">
+        <file name="sme-smj.automorf.bin"/>
+      </program>
+      <program name="cg-proc">
+        <file name="sme-smj.rlx.bin"/> 
+      </program>
+      <program name="apertium-tagger -g">
+        <file name="sme-smj.prob"/>
+      </program>
+      <program name="apertium-transfer">
+        <file name="apertium-sme-smj.sme-smj.t1x"/>
+        <file name="sme-smj.t1x.bin"/>
+        <file name="sme-smj.autobil.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
 </modes>
