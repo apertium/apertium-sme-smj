@@ -18,6 +18,11 @@
   <def-cat n="pronom">
      <cat-item tags="Pron.*"/>
   </def-cat>
+
+  <def-cat n="cnjcoo">	
+     <cat-item tags="CC"/>
+     <cat-item tags="CC.*"/>
+  </def-cat>
 </section-def-cats>
 
 <section-def-attrs>
@@ -33,6 +38,10 @@
 
   <def-attr n="a_adv">
      <attr-item tags="ADV"/>
+  </def-attr>
+
+  <def-attr n="a_cnj">
+     <attr-item tags="CC"/>
   </def-attr>
 
   <def-attr n="a_pronom">
@@ -91,6 +100,7 @@
 
   <def-attr n="phrase">
      <attr-item tags="@X"/>
+     <attr-item tags="@CNP"/>
      <attr-item tags="@→N"/>
      <attr-item tags="@←OBJ"/>
      <attr-item tags="@OBJ"/>
@@ -234,6 +244,30 @@
        </out>
      </action>
   </rule>
+
+  <!-- Altres -->
+
+  <rule comment="REGLA: CNJCOO">
+     <pattern>
+       <pattern-item n="cnjcoo"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="cnjcoo" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="CC"/></tag>
+             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_cnj"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
 
 
