@@ -25,6 +25,7 @@ dev/smjintersectionlemmatags.txt -text
 dev/smjnounfullform.txt -text
 dev/smjnounlemma.txt -text
 dev/smjpronouns.txt -text
+dev/smjverbfullform.txt -text
 dev/smjverblemma.txt -text
 /fictilemmapos.txt -text
 /modes.xml -text
