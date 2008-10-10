@@ -114,6 +114,7 @@
 
   <def-attr n="phrase">
      <attr-item tags="@X"/>
+     <attr-item tags="@HNOUN"/>
      <attr-item tags="@CNP"/>
      <attr-item tags="@CVP"/>
      <attr-item tags="@→N"/>
