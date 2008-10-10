@@ -104,11 +104,13 @@
      <attr-item tags="@→N"/>
      <attr-item tags="@←OBJ"/>
      <attr-item tags="@OBJ"/>
+     <attr-item tags="@-F←OBJ"/>
      <attr-item tags="@SUBJ→"/>
      <attr-item tags="@←SUBJ"/>
      <attr-item tags="@SPRED→"/>
      <attr-item tags="@\+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
+     <attr-item tags="@+FAUXV"/>
   </def-attr>
 </section-def-attrs>
 
