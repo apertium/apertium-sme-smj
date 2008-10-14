@@ -14,6 +14,7 @@
 /apertium-sme-smj.smj.dix -text
 /autogen.sh -text
 /configure.ac -text
+dev/dárbahit.paradigm -text
 dev/fictilemmapos.txt -text
 dev/smepronounsfullform.txt -text
 dev/smepronwithtags.speling.txt -text
