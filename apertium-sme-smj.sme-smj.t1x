@@ -97,6 +97,7 @@
   <def-attr n="temps">
      <attr-item tags="Inf"/>
      <attr-item tags="Prs"/>
+     <attr-item tags="Prt"/>
   </def-attr>
 
   <def-attr n="mood">
