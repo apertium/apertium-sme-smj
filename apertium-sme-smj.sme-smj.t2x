@@ -6,6 +6,22 @@
       <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
     </def-cat>
+    
+    <def-cat n="SN_Subj">
+        <cat-item tags="SN.@SUBJ→.*"/>
+        <cat-item tags="SN.@←SUBJ.*"/>
+    </def-cat>
+    
+    <def-cat n="SN_Obj">
+        <cat-item tags="SN.@OBJ→.*"/>
+        <cat-item tags="SN.@←OBJ.*"/>
+    </def-cat>
+    
+    <def-cat n="FMainV">
+        <cat-item tags="SV.@+FMAINV"/>
+        <cat-item tags="SV.@+FMAINV.*"/>
+    </def-cat>
+
   </section-def-cats>
 
   <section-def-attrs>
@@ -43,6 +59,39 @@
         </out>
       </action>
     </rule>
+    
+     <rule>
+      <pattern>
+        <pattern-item n="SN_Subj"/>
+        <pattern-item n="FMainV"/>
+        <pattern-item n="SN_Obj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        <b pos="2"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
   </section-rules>
 </interchunk>
