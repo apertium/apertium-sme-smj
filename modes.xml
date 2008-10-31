@@ -8,7 +8,7 @@
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="apertium-tagger -g">
+      <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
 <!--      <program name="apertium-pretransfer"/> -->
@@ -39,7 +39,7 @@
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="apertium-tagger -g">
+      <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
     </pipeline>
@@ -55,7 +55,7 @@
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="apertium-tagger -g">
+      <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
       <program name="apertium-transfer">
