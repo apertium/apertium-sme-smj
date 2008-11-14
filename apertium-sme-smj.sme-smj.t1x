@@ -87,6 +87,8 @@
      <attr-item tags="Ess"/>
      <attr-item tags="Ill"/>
      <attr-item tags="Loc"/>
+     <attr-item tags="Ine"/>
+     <attr-item tags="Ela"/>
   </def-attr>
 
   <def-attr n="degree">
@@ -135,6 +137,26 @@
   <def-var n="number"/>
 </section-def-vars>
 
+<section-def-macros>
+  <def-macro n="assign_case1" npar="1">
+    <choose>
+      <when>
+        <test>
+          <equal>
+            <clip pos="1" side="sl" part="case"/>
+            <lit-tag v="Loc"/>
+          </equal>
+        </test>
+        <let>
+          <clip pos="1" side="tl" part="case"/>
+          <lit-tag v="Ela"/>
+        </let>
+      </when>
+    </choose>
+  </def-macro>
+</section-def-macros>
+
+
 <section-rules>
 
   <rule comment="REGLA: NOM">
@@ -142,6 +164,9 @@
        <pattern-item n="nom"/>
      </pattern>
      <action>
+       <call-macro n="assign_case1">
+         <with-param pos="1"/>
+       </call-macro>
        <out>
          <chunk name="nom" case="caseFirstWord">
            <tags>
