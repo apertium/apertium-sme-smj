@@ -27782,7 +27782,7 @@
     <e><p><l>boksa<s n="N"/></l><r>båkså<s n="N"/></r></p></e>
     <e><p><l>bokstaveret<s n="V"/></l><r>bokstaverit<s n="V"/></r></p></e>
     <e><p><l>boktalit<s n="V"/></l><r>båktålit<s n="V"/></r></p></e>
-    <e><p><l>bokte<s n="ADV"/></l><r>baktu<s n="ADV"/></r></p></e>
+    <e><p><l>bokte<s n="PO"/></l><r>baktu<s n="PO"/></r></p></e>
     <e><p><l>boktilit<s n="V"/></l><r>båktelit<s n="V"/></r></p></e>
     <e><p><l>boktit<s n="V"/></l><r>båktet<s n="V"/></r></p></e>
     <e><p><l>bolas<s n="N"/></l><r>bålås<s n="N"/></r></p></e>
@@ -28130,6 +28130,7 @@
     <e><p><l>bálašit<s n="V"/></l><r>mugádit<s n="V"/></r></p></e>
     <e><p><l>bálda<s n="N"/></l><r>bállda<s n="N"/></r></p></e>
     <e><p><l>báldal<s n="ADV"/></l><r>bálldal<s n="ADV"/></r></p></e>
+    <e><p><l>báldal<s n="PO"/></l><r>bálldal<s n="PO"/></r></p></e>
     <e><p><l>bálddas<s n="ADV"/></l><r>báldas<s n="ADV"/></r></p></e>
     <e><p><l>bálddastahttit<s n="V"/></l><r>báldastahttet<s n="V"/></r></p></e>
     <e><p><l>bálddis<s n="N"/></l><r>báldes<s n="N"/></r></p></e>
@@ -29349,7 +29350,7 @@
     <e><p><l>ealihit<s n="V"/></l><r>ieledit<s n="V"/></r></p></e>
     <e><p><l>ealli<s n="N"/></l><r>ielle<s n="N"/></r></p></e>
     <e><p><l>ealligovva<s n="N"/></l><r>iellegåvvå<s n="N"/></r></p></e>
-    <e><p><l>eallit<s n="V"/></l><r>iellet<s n="V"/></r></p></e>
+    <e><p><l>eallit<s n="V"/></l><r>iellet<s n="V"/><s n="TV"/></r></p></e>
     <e><p><l>eallu<s n="N"/></l><r>ællo<s n="N"/></r></p></e>
     <e><p><l>ealláhit<s n="V"/></l><r>ælládit<s n="V"/></r></p></e>
     <e><p><l>eallásit<s n="V"/></l><r>ællásit<s n="V"/></r></p></e>
@@ -30465,6 +30466,7 @@
     <e><p><l>girkodepartemeanta<s n="N"/></l><r>girkkodepartemænnta<s n="N"/></r></p></e>
     <e><p><l>girku<s n="N"/></l><r>girkko<s n="N"/></r></p></e>
     <e><p><l>girkudepartemeanta<s n="N"/></l><r>girkkodepartemænnta<s n="N"/></r></p></e>
+    <e><p><l>giron<s n="N"/></l><r>gierun<s n="N"/></r></p></e>
     <e><p><l>girsa<s n="N"/></l><r>girssa<s n="N"/></r></p></e>
     <e><p><l>giráffa<s n="N"/></l><r>giráffa<s n="N"/></r></p></e>
     <e><p><l>gissa<s n="N"/></l><r>gissa<s n="N"/></r></p></e>
@@ -30661,6 +30663,7 @@
     <e><p><l>gorut<s n="N"/></l><r>gårut<s n="N"/></r></p></e>
     <e><p><l>gorži<s n="N"/></l><r>gårttje<s n="N"/></r></p></e>
     <e><p><l>gos<s n="ADV"/></l><r>gåsi<s n="ADV"/></r></p></e>
+    <e><p><l>gosa<s n="ADV"/></l><r>gåsik<s n="ADV"/></r></p></e>
     <e><p><l>gosadit<s n="V"/></l><r>gåsådit<s n="V"/></r></p></e>
     <e><p><l>gosahit<s n="V"/></l><r>gåsådit<s n="V"/></r></p></e>
     <e><p><l>gosihit<s n="V"/></l><r>gåsådit<s n="V"/></r></p></e>
@@ -34459,6 +34462,7 @@
     <e><p><l>oalgguhit<s n="V"/></l><r>alodit<s n="V"/></r></p></e>
     <e><p><l>oalgi<s n="N"/></l><r>oalgge<s n="N"/></r></p></e>
     <e><p><l>oalistit<s n="V"/></l><r>goalestit,oalestit<s n="V"/></r></p></e>
+     <e><p><l>oalle<s n="ADV"/></l><r>oalle<s n="ADV"/></r></p></e>
     <e><p><l>oalle<s n="N"/></l><r>oalle<s n="N"/></r></p></e>
     <e><p><l>oalli<s n="N"/></l><r>oalle<s n="N"/></r></p></e>
     <e><p><l>oallugat<s n="Pron"/></l><r>ållusa<s n="Pron"/></r></p></e>
@@ -38808,6 +38812,7 @@
     <e><p><l>árbmu<s n="N"/></l><r>ármmo<s n="N"/></r></p></e>
     <e><p><l>áren<s n="N"/></l><r>áren<s n="N"/></r></p></e>
     <e><p><l>árga<s n="N"/></l><r>árgga<s n="N"/></r></p></e>
+    <e><p><l>árgabeaivi<s n="N"/></l><r>fertbæjvvásasj<s n="A"/></r></p></e>
     <e><p><l>ária<s n="N"/></l><r>ária<s n="N"/></r></p></e>
     <e><p><l>áristit<s n="V"/></l><r>árestit<s n="V"/></r></p></e>
     <e><p><l>árka<s n="N"/></l><r>árkka<s n="N"/></r></p></e>
