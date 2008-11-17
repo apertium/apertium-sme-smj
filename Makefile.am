@@ -8,7 +8,7 @@ BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = \
      $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autogen.bin \
-     $(PREFIX1).rlx.bin \
+     $(PREFIX1).rlx.bin $(PREFIX1).autopgen.bin \
      $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin pre-$(LANG1).t1x.bin \
      $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
 
@@ -28,9 +28,9 @@ $(PREFIX1).autogen.bin: $(BASENAME).$(LANG2).dix
 	apertium-validate-dictionary $(BASENAME).$(LANG2).dix
 	lt-comp rl $(BASENAME).$(LANG2).dix $@
 
-#$(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
-#	apertium-validate-dictionary $(BASENAME).post-$(LANG2).dix
-#	lt-comp lr $(BASENAME).post-$(LANG2).dix $@
+$(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
+	apertium-validate-dictionary $(BASENAME).post-$(LANG2).dix
+	lt-comp lr $(BASENAME).post-$(LANG2).dix $@
 
 $(PREFIX1).rlx.bin: $(BASENAME).$(PREFIX1).rlx
 	cg-comp $(BASENAME).$(PREFIX1).rlx $@
@@ -111,6 +111,7 @@ $(PREFIX1).mode: modes.xml
 apertium_sme_smj_DATA=$(PREFIX1).automorf.bin \
                     $(PREFIX1).autobil.bin \
                     $(PREFIX1).autogen.bin \
+		    $(PREFIX1).autopgen.bin \ 
                     $(PREFIX1).prob  \
 		    $(PREFIX1).rlx.bin \
 		    $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
