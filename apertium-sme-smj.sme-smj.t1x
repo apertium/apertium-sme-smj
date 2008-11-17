@@ -100,10 +100,15 @@
      <attr-item tags="Inf"/>
      <attr-item tags="Prs"/>
      <attr-item tags="Prt"/>
+     <attr-item tags="PrfPrc"/>
+     <attr-item tags="ConNeg"/>
   </def-attr>
 
   <def-attr n="mood">
      <attr-item tags="Ind"/>
+     <attr-item tags="Imprt"/>
+     <attr-item tags="Pot"/>
+     <attr-item tags="Cond"/>
   </def-attr>
 
   <def-attr n="pers">
