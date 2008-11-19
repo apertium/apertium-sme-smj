@@ -135,6 +135,7 @@
      <attr-item tags="@\+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@+FAUXV"/>
+     <attr-item tags="@ADVL"/>
   </def-attr>
 </section-def-attrs>
 
@@ -184,7 +185,7 @@
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_nom"/>
              <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="case" link-to="4"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
