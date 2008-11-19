@@ -31,6 +31,10 @@
      <cat-item tags="CS"/>
      <cat-item tags="CS.*"/>
   </def-cat>
+  
+  <def-cat n="copula">
+<cat-item lemma="leat" tags="V.IV.*"/>
+    </def-cat>
 
 </section-def-cats>
 
@@ -272,6 +276,31 @@
 
 
   <!-- Sintagmes verbals -->
+
+
+<rule comment="REGLA: COPULA">
+     <pattern>
+       <pattern-item n="copula"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="copula" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_copula"/>
+             <clip pos="1" side="tl" part="mood"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
 
   <rule comment="REGLA: VERB">
      <pattern>
