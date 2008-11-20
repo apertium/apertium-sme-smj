@@ -136,6 +136,7 @@
      <attr-item tags="@SUBJ→"/>
      <attr-item tags="@←SUBJ"/>
      <attr-item tags="@SPRED→"/>
+     <attr-item tags="@←SPRED"/>
      <attr-item tags="@\+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@+FAUXV"/>
