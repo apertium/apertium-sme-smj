@@ -93,8 +93,47 @@
         </out>
       </action>
     </rule>
+
+    <rule> <!--inessive instead of elative in habitive constructions -->
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="Vcop"/>
+      </pattern>
+      <action>
+        <choose>
+          <when> 
+            <test>
+              <equal>
+                <clip pos="1" part="case"/>
+                <lit-tag v="Ela"/>
+              </equal>
+            </test> 
+            <let>
+              <clip pos="1" part="case"/>
+              <lit-tag v="Ine"/>
+            </let>
+          </when>
+        </choose>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
     
-     <rule> <!--SVO becomes SOV -->
+    <rule> <!--SVO becomes SOV -->
       <pattern>
         <pattern-item n="SN_Subj"/>
         <pattern-item n="FMainV"/>
@@ -166,31 +205,6 @@
       </action>
     </rule>
 
-     <rule> <!--inessive instead of elative in habitive constructions -->
-      <pattern>
-        <pattern-item n="SN"/>
-        <pattern-item n="Vcop"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="case"/><lit-tag v="Ine"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
-          <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-        <b pos="2"/>
-        </out>
-      </action>
-    </rule>
 
 
 
