@@ -81,6 +81,7 @@
      <attr-item tags="Sg"/>
      <attr-item tags="Du"/>
      <attr-item tags="Pl"/>
+     <attr-item tags="NN"/>
   </def-attr>
 
   <def-attr n="case">
@@ -149,6 +150,33 @@
 </section-def-vars>
 
 <section-def-macros>
+  <def-macro n="magic_number1" npar="1">
+    <choose>
+      <when>
+        <test>
+          <not>
+            <or>
+              <equal>
+                <clip pos="1" side="tl" part="nbr"/>
+                <lit-tag v="Sg"/>
+              </equal>
+              <equal>
+                <clip pos="1" side="tl" part="nbr"/>
+                <lit-tag v="Pl"/>
+              </equal>
+            </or>
+          </not>
+        </test>
+        <let>
+          <clip pos="1" side="tl" part="a_nom"/>
+          <concat>
+            <clip pos="1" side="tl" part="a_nom"/>
+            <lit-tag v="NN"/>
+          </concat>
+        </let>
+      </when>
+    </choose>
+  </def-macro>
   <def-macro n="assign_case1" npar="1">
     <choose>
       <when>
@@ -176,6 +204,9 @@
      </pattern>
      <action>
        <call-macro n="assign_case1">
+         <with-param pos="1"/>
+       </call-macro>
+       <call-macro n="magic_number1">
          <with-param pos="1"/>
        </call-macro>
        <out>
