@@ -51,6 +51,7 @@
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@+FAUXV"/>
      <attr-item tags="@ADVL"/>
+     <attr-item tags="@HAB"/>
     </def-attr>
     <def-attr n="nbr">
       <attr-item tags="Sg"/>
