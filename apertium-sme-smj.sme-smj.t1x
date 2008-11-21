@@ -142,6 +142,7 @@
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@+FAUXV"/>
      <attr-item tags="@ADVL"/>
+     <attr-item tags="@HAB"/>
   </def-attr>
 </section-def-attrs>
 
@@ -181,10 +182,28 @@
     <choose>
       <when>
         <test>
+        <and>
           <equal>
             <clip pos="1" side="sl" part="case"/>
             <lit-tag v="Loc"/>
           </equal>
+          <equal>
+            <clip pos="1" side="sl" part="phrase"/>
+            <lit-tag v="@HAB"/>
+         </equal>
+        </and>
+        </test>
+        <let>
+        <clip pos="1" side="tl" part="case"/>
+    <lit-tag v="Ine"/>
+        </let>
+        </when>
+        <when>
+        <test>
+        <equal>
+        <clip pos="1" side="sl" part="case"/>
+        <lit-tag v="Loc"/>
+        </equal>
         </test>
         <let>
           <clip pos="1" side="tl" part="case"/>
