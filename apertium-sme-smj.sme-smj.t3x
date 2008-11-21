@@ -23,8 +23,14 @@
     <def-var n="paraula"/>
   </section-def-vars>
 
-  <section-def-macros>
-    <def-macro n="remove_magic_number1" npar="1">
+
+  <section-rules>
+
+    <rule comment="CHUNK:">
+      <pattern>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
       <choose>
         <when>
           <test>
@@ -49,19 +55,6 @@
           </let>
         </when>
       </choose>
-    </def-macro>
-  </section-def-macros>
-
-  <section-rules>
-
-    <rule comment="CHUNK:">
-      <pattern>
-        <pattern-item n="nom"/>
-      </pattern>
-      <action>
-        <call-macro n="remove_magic_number1">
-          <with-param pos="1"/>
-        </call-macro>
         <out>
           <lu>
             <clip pos="1" part="whole"/>
