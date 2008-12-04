@@ -148,7 +148,14 @@
 
 <section-def-vars>
   <def-var n="number"/>
+  <def-var n="main_verb"/>
 </section-def-vars>
+
+<section-def-lists>
+  <def-list n="verbs_stative">
+    <list-item v="ássat"/>
+  </def-list>
+</section-def-lists>
 
 <section-def-macros>
   <def-macro n="magic_number1" npar="1">
@@ -178,32 +185,39 @@
       </when>
     </choose>
   </def-macro>
+
   <def-macro n="assign_case1" npar="1">
     <choose>
       <when>
         <test>
-        <and>
+          <or>
+            <and>
+              <equal>
+                <clip pos="1" side="sl" part="case"/>
+                <lit-tag v="Loc"/>
+              </equal>
+              <equal>
+                <clip pos="1" side="sl" part="phrase"/>
+                <lit-tag v="@HAB"/>
+              </equal>
+            </and>
+            <in caseless="yes">
+              <var n="main_verb"/>
+              <list n="verbs_stative"/>
+            </in>
+          </or>
+        </test>
+        <let>
+          <clip pos="1" side="tl" part="case"/>
+          <lit-tag v="Ine"/>
+        </let>
+      </when>
+      <when>
+        <test>
           <equal>
             <clip pos="1" side="sl" part="case"/>
             <lit-tag v="Loc"/>
           </equal>
-          <equal>
-            <clip pos="1" side="sl" part="phrase"/>
-            <lit-tag v="@HAB"/>
-         </equal>
-        </and>
-        </test>
-        <let>
-        <clip pos="1" side="tl" part="case"/>
-    <lit-tag v="Ine"/>
-        </let>
-        </when>
-        <when>
-        <test>
-        <equal>
-        <clip pos="1" side="sl" part="case"/>
-        <lit-tag v="Loc"/>
-        </equal>
         </test>
         <let>
           <clip pos="1" side="tl" part="case"/>
@@ -212,6 +226,7 @@
       </when>
     </choose>
   </def-macro>
+
 </section-def-macros>
 
 
@@ -358,6 +373,26 @@
        <pattern-item n="verb"/>
      </pattern>
      <action>
+       <choose>
+         <when>
+           <test>
+             <or>
+               <equal>
+                 <clip pos="1" side="sl" part="phrase"/>
+                 <lit-tag v="@\+FMAINV"/>
+               </equal>
+               <equal>
+                 <clip pos="1" side="sl" part="phrase"/>
+                 <lit-tag v="@-FMAINV"/>
+               </equal>
+             </or>
+           </test>
+           <let>
+             <var n="main_verb"/>
+             <clip pos="1" side="sl" part="lem"/>
+           </let>
+         </when>
+       </choose> 
        <out>
          <chunk name="verb" case="caseFirstWord">
            <tags>
