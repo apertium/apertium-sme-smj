@@ -33,8 +33,8 @@
   </def-cat>
   
   <def-cat n="copula">
-<cat-item lemma="leat" tags="V.IV.*"/>
-    </def-cat>
+    <cat-item lemma="leat" tags="V.IV.*"/>
+  </def-cat>
 
 </section-def-cats>
 
@@ -125,7 +125,7 @@
      <attr-item tags="Pl3"/>
   </def-attr>
 
-  <def-attr n="phrase">
+  <def-attr n="syntag">
      <attr-item tags="@X"/>
      <attr-item tags="@HNOUN"/>
      <attr-item tags="@CNP"/>
@@ -140,7 +140,7 @@
      <attr-item tags="@←SPRED"/>
      <attr-item tags="@\+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
-     <attr-item tags="@+FAUXV"/>
+     <attr-item tags="@\+FAUXV"/>
      <attr-item tags="@ADVL"/>
      <attr-item tags="@HAB"/>
   </def-attr>
@@ -213,7 +213,7 @@
                 <lit-tag v="Loc"/>
               </equal>
               <equal>
-                <clip pos="1" side="sl" part="phrase"/>
+                <clip pos="1" side="sl" part="syntag"/>
                 <lit-tag v="@HAB"/>
               </equal>
             </and>
@@ -263,12 +263,12 @@
          <chunk name="nom" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
              <tag><clip pos="1" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="lemh"/> 
              <clip pos="1" side="tl" part="a_nom"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case" link-to="4"/>
@@ -288,7 +288,7 @@
          <chunk name="num" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
            </tags>
            <lu>
@@ -312,7 +312,7 @@
          <chunk name="pronom" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
              <tag><clip pos="1" side="tl" part="case"/></tag>
            </tags>
@@ -339,7 +339,7 @@
          <chunk name="nom" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
              <tag><clip pos="1" side="tl" part="case"/></tag>
            </tags>
@@ -369,7 +369,7 @@
          <chunk name="copula" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -394,26 +394,26 @@
            <test>
              <or>
                <equal>
-                 <clip pos="1" side="sl" part="phrase"/>
-                 <lit-tag v="@\+FMAINV"/>
+                 <clip pos="1" side="sl" part="syntag"/>
+                 <lit-tag v="@+FMAINV"/>
                </equal>
                <equal>
-                 <clip pos="1" side="sl" part="phrase"/>
+                 <clip pos="1" side="sl" part="syntag"/>
                  <lit-tag v="@-FMAINV"/>
                </equal>
              </or>
-           </test>
+           </test> 
            <let>
              <var n="main_verb"/>
-             <clip pos="1" side="sl" part="lem"/>
+             <clip pos="1" side="sl" part="lemh"/>
            </let>
          </when>
-       </choose> 
+       </choose>  
        <out>
          <chunk name="verb" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -438,7 +438,7 @@
          <chunk name="adv" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="Adv"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -461,7 +461,7 @@
          <chunk name="cnjcoo" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="CC"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
@@ -482,7 +482,7 @@
          <chunk name="cnjsub" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="CS"/></tag>
-             <tag><clip pos="1" side="sl" part="phrase"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
