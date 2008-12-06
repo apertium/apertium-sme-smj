@@ -151,9 +151,25 @@
   <def-var n="main_verb"/>
 </section-def-vars>
 
-<section-def-lists>
+<section-def-lists> <!--sme place-verbs, hope they work the same in smj -->
   <def-list n="verbs_stative">
     <list-item v="ássat"/>
+    <list-item v="orrut"/>
+    <list-item v="veallát"/>
+    <list-item v="čuožžut"/>
+    <list-item v="čohkkát"/>
+    <list-item v="čohkahit"/>
+    <list-item v="buolvvastallat"/>
+    <list-item v="buolvvastit"/>
+    <list-item v="čippostallat"/>
+    <list-item v="čuččodit"/>
+    <list-item v="morihit"/>
+    <list-item v="gohččát"/>
+    <list-item v="gullát"/>
+    <list-item v="morránit"/>
+    <list-item v="orodit"/>
+    <list-item v="stuorrut"/>
+    <list-item v="veallahit"/>
   </def-list>
 </section-def-lists>
 
