@@ -22,10 +22,10 @@
   </pardefs>
 
   <section id="main" type="standard">
-    <!-- When 'li' is followed by a vowel, change to 'l' -->
+    <!-- When 'la' is followed by a vowel, change to 'l' -->
     <e>
       <p>
-        <l><a/>li<b/></l>
+        <l><a/>la<b/></l>
         <r>l<b/></r>
       </p>
       <par n="vocals"/>
