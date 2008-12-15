@@ -115,6 +115,15 @@
      <attr-item tags="Pot"/>
      <attr-item tags="Cond"/>
   </def-attr>
+  
+  <def-attr n="voice">
+    <attr-item tags="PassL"/>
+  </def-attr>
+  
+  <def-attr n="derivation">
+    <attr-item tags="Actio"/>
+    <attr-item tags="Actor"/>
+  </def-attr>
 
   <def-attr n="pers">
      <attr-item tags="Sg1"/>
@@ -291,11 +300,13 @@
              <tag><lit-tag v="SN"/></tag>
              <tag><clip pos="1" side="sl" part="syntag"/></tag>
              <tag><clip pos="1" side="tl" part="nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="case"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_num"/>
              <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
@@ -419,6 +430,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="voice"/>
              <clip pos="1" side="tl" part="mood"/>
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="pers"/>
