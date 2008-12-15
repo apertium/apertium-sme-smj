@@ -30598,7 +30598,7 @@
     <e><p><l>gohpi<s n="N"/></l><r>gåhpe<s n="N"/></r></p></e>
     <e><p><l>gohppa<s n="N"/></l><r>gåhppå<s n="N"/></r></p></e>
     <e><p><l>gohppi<s n="N"/></l><r>gåhppe<s n="N"/></r></p></e>
-    <e><p><l>gohčodit<s n="V"/><s n="TV"/></l><r>gåhtjudit<s n="V"/></r></p></e>
+    <e><p><l>gohčodit<s n="V"/><s n="TV"/></l><r>gåhtjudit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>gohču<s n="N"/></l><r>gåhtjo<s n="N"/></r></p></e>
     <e><p><l>gohčuhit<s n="V"/></l><r>gåhtjodit<s n="V"/></r></p></e>
     <e><p><l>gohččut<s n="V"/></l><r>gåhttjot<s n="V"/></r></p></e>
@@ -39379,7 +39379,9 @@
 
 
     <e><re>[.\?;:!·]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
-    <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="Num"/></l><r><s n="Num"/></r></p></e>
+    <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="Num"/><s n="Sg"/><s n="Nom"/></l><r><s n="Num"/><s n="Sg"/><s n="Nom"/></r></p></e>
+    <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="Num"/><s n="Sg"/><s n="Gen"/></l><r><s n="Num"/><s n="Sg"/><s n="Gen"/></r></p></e>
+    <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="Num"/><s n="Sg"/><s n="Acc"/></l><r><s n="Num"/><s n="Sg"/><s n="Acc"/></r></p></e>
 
   </section>
 </dictionary>
