@@ -152,6 +152,12 @@
      <attr-item tags="@\+FAUXV"/>
      <attr-item tags="@ADVL"/>
      <attr-item tags="@HAB"/>
+     <attr-item tags="@Num←"/>
+     <attr-item tags="@→Num"/>
+     <attr-item tags="@INTERJ"/>
+     <attr-item tags="@PCLE"/>
+     <attr-item tags="@OPRED→"/>
+     <attr-item tags="@←OPRED"/>
   </def-attr>
 </section-def-attrs>
 
