@@ -161,7 +161,7 @@
             <clip pos="3" part="chcontent"/>
             <clip pos="3" part="lemq"/>
           </chunk>
-        <b pos="2"/>
+          <b pos="2"/>
         <chunk>
             <clip pos="2" part="lemh"/>
             <clip pos="2" part="tags"/>
