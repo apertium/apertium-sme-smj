@@ -34,6 +34,7 @@
   
    <def-cat n="po">	
      <cat-item tags="Po"/>
+     <cat-item tags="Po.*"/>
   </def-cat>
   
   <def-cat n="pr">
@@ -63,6 +64,10 @@
 
   <def-attr n="a_num">
      <attr-item tags="Num"/>
+  </def-attr>
+
+  <def-attr n="a_adpos">
+     <attr-item tags="Po"/>
   </def-attr>
 
   <def-attr n="a_cnj">
@@ -523,7 +528,7 @@
      </action>
   </rule>
 
-<rule comment="REGLA: PP">
+  <rule comment="REGLA: PP">
      <pattern>
        <pattern-item n="po"/>
      </pattern>
@@ -536,6 +541,7 @@
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_adpos"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
