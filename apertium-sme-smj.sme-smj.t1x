@@ -32,6 +32,14 @@
      <cat-item tags="CS.*"/>
   </def-cat>
   
+   <def-cat n="po">	
+     <cat-item tags="Po"/>
+  </def-cat>
+  
+  <def-cat n="pr">
+     <cat-item tags="Pr"/>
+  </def-cat>
+  
   <def-cat n="copula">
     <cat-item lemma="leat" tags="V.IV.*"/>
   </def-cat>
@@ -158,6 +166,8 @@
      <attr-item tags="@PCLE"/>
      <attr-item tags="@OPRED→"/>
      <attr-item tags="@←OPRED"/>
+     <attr-item tags="@→P"/>
+     <attr-item tags="@P←"/>
   </def-attr>
 </section-def-attrs>
 
@@ -513,6 +523,25 @@
      </action>
   </rule>
 
+<rule comment="REGLA: PP">
+     <pattern>
+       <pattern-item n="po"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="adpos" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="Po"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
 
 
 
