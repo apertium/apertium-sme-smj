@@ -125,8 +125,6 @@ install-data-local:
 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
 	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_sme_modesdir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x $(apertium_sme_smjdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX2).t1x $(apertium_sme_smjdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(BASENAME).$(PREFIX2).t3x $(apertium_sme_smjdir)
-	$(INSTALL_DATA) $(BASENAME).pre-$(LANG1).t1x $(apertium_sme_smjdir)
+	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x  $(apertium_sme_smjdir)
 
 CLEANFILES = -rf $(TARGETS_COMMON) modes
