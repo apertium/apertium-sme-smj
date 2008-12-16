@@ -58,6 +58,8 @@
      <attr-item tags="@PCLE"/>
      <attr-item tags="@OPRED→"/>
      <attr-item tags="@←OPRED"/>
+     <attr-item tags="@→P"/>
+     <attr-item tags="@P←"/>
     </def-attr>
     <def-attr n="nbr">
       <attr-item tags="Sg"/>
