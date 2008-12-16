@@ -7,8 +7,8 @@
     <sdef n="ADV"    c="Adverb"/>
     <sdef n="CC"     c="Co-ordinating conjunction"/>
     <sdef n="CS"     c="Sub-ordinating conjunction"/>
-    <sdef n="PO"     c="Postposition"/>
-    <sdef n="PR"     c="Preposition"/>
+    <sdef n="Po"     c="Postposition"/>
+    <sdef n="Pr"     c="Preposition"/>
     <sdef n="PCLE"   c="Particle"/>
 
     <sdef n="Nom"    c="Nominative"/>
@@ -26902,7 +26902,7 @@
     <e><p><l>al-Qaeda<s n="N"/><s n="Prop"/></l><r>al-Qaeda<s n="N"/><s n="Prop"/></r></p></e>
     <e><p><l>al-Qaida<s n="N"/><s n="Prop"/></l><r>al-Qaida<s n="N"/><s n="Prop"/></r></p></e>
     <e><p><l>ala<s n="ADV"/></l><r>nali<s n="ADV"/></r></p></e>
-    <e><p><l>ala<s n="PO"/></l><r>nali<s n="PO"/></r></p></e>
+    <e><p><l>ala<s n="Po"/></l><r>nali<s n="Po"/></r></p></e>
     <e><p><l>alarmeret<s n="V"/></l><r>alarmerit<s n="V"/></r></p></e>
     <e><p><l>alarmsystema<s n="N"/></l><r>alarmsystebma<s n="N"/></r></p></e>
     <e><p><l>albinisma<s n="N"/></l><r>albinissma<s n="N"/></r></p></e>
@@ -27634,8 +27634,8 @@
     <e><p><l>birastit<s n="V"/></l><r>birástit<s n="V"/></r></p></e>
     <e><p><l>birasčoalli<s n="N"/></l><r>birástjoalle<s n="N"/></r></p></e>
     <e><p><l>biro<s n="N"/></l><r>biro<s n="N"/></r></p></e>
-    <e><p><l>birra<s n="PR"/></l><r>birra<s n="PR"/></r></p></e>
-    <e><p><l>birra<s n="PO"/></l><r>birra<s n="PO"/></r></p></e>
+    <e><p><l>birra<s n="Pr"/></l><r>birra<s n="Pr"/></r></p></e>
+    <e><p><l>birra<s n="Po"/></l><r>birra<s n="Po"/></r></p></e>
     <e><p><l>birradat<s n="N"/></l><r>birradat<s n="N"/></r></p></e>
     <e><p><l>bisihit<s n="V"/></l><r>bisijdit<s n="V"/></r></p></e>
     <e><p><l>bisma<s n="N"/></l><r>bissma<s n="N"/></r></p></e>
@@ -27782,7 +27782,7 @@
     <e><p><l>boksa<s n="N"/></l><r>båkså<s n="N"/></r></p></e>
     <e><p><l>bokstaveret<s n="V"/></l><r>bokstaverit<s n="V"/></r></p></e>
     <e><p><l>boktalit<s n="V"/></l><r>båktålit<s n="V"/></r></p></e>
-    <e><p><l>bokte<s n="PO"/></l><r>baktu<s n="PO"/></r></p></e>
+    <e><p><l>bokte<s n="Po"/></l><r>baktu<s n="Po"/></r></p></e>
     <e><p><l>boktilit<s n="V"/></l><r>båktelit<s n="V"/></r></p></e>
     <e><p><l>boktit<s n="V"/></l><r>båktet<s n="V"/></r></p></e>
     <e><p><l>bolas<s n="N"/></l><r>bålås<s n="N"/></r></p></e>
@@ -28130,7 +28130,7 @@
     <e><p><l>bálašit<s n="V"/></l><r>mugádit<s n="V"/></r></p></e>
     <e><p><l>bálda<s n="N"/></l><r>bállda<s n="N"/></r></p></e>
     <e><p><l>báldal<s n="ADV"/></l><r>bálldal<s n="ADV"/></r></p></e>
-    <e><p><l>báldal<s n="PO"/></l><r>bálldal<s n="PO"/></r></p></e>
+    <e><p><l>báldal<s n="Po"/></l><r>bálldal<s n="Po"/></r></p></e>
     <e><p><l>bálddas<s n="ADV"/></l><r>báldas<s n="ADV"/></r></p></e>
     <e><p><l>bálddastahttit<s n="V"/></l><r>báldastahttet<s n="V"/></r></p></e>
     <e><p><l>bálddis<s n="N"/></l><r>báldes<s n="N"/></r></p></e>
@@ -31199,7 +31199,7 @@
     <e><p><l>hacker<s n="N"/></l><r>hacker<s n="N"/></r></p></e>
     <e><p><l>hadden<s n="N"/></l><r>hadden<s n="N"/></r></p></e>
     <e><p><l>haddi<s n="N"/></l><r>hadde<s n="N"/></r></p></e>
-    <e><p><l>haga<s n="PO"/></l><r>dagá<s n="PO"/></r></p></e>
+    <e><p><l>haga<s n="Po"/></l><r>dagá<s n="Po"/></r></p></e>
     <e><p><l>hahcuhit<s n="V"/></l><r>hasodit<s n="V"/></r></p></e>
     <e><p><l>haksa<s n="N"/></l><r>haksa<s n="N"/></r></p></e>
     <e><p><l>hallusineret<s n="V"/></l><r>hallusinerit<s n="V"/></r></p></e>
@@ -33830,7 +33830,7 @@
     <e><p><l>naigguhit<s n="V"/></l><r>næjkodit<s n="V"/></r></p></e>
     <e><p><l>naivisma<s n="N"/></l><r>naivissma<s n="N"/></r></p></e>
     <e><p><l>nai<s n="PCLE"/></l><r>aj<s n="PCLE"/></r></p></e>
-    <e><p><l>naj<s n="PR"/></l><r>aj<s n="PR"/></r></p></e>
+    <e><p><l>naj<s n="Pr"/></l><r>aj<s n="Pr"/></r></p></e>
     <e><p><l>naladit<s n="V"/></l><r>naládit<s n="V"/></r></p></e>
     <e><p><l>nallat<s n="V"/></l><r>nallat<s n="V"/></r></p></e>
     <e><p><l>nalli<s n="N"/></l><r>nalle<s n="N"/></r></p></e>
@@ -38241,7 +38241,7 @@
     <e><p><l>váruhit<s n="V"/></l><r>várodit<s n="V"/></r></p></e>
     <e><p><l>várá<s n="N"/></l><r>várá<s n="N"/></r></p></e>
     <e><p><l>várálaš<s n="A"/></l><r>várálasj<s n="A"/></r></p></e>
-    <e><p><l>várás<s n="PO"/></l><r>gáktuj<s n="PO"/></r></p></e>
+    <e><p><l>várás<s n="Po"/></l><r>gáktuj<s n="Po"/></r></p></e>
     <e><p><l>vásahus<s n="N"/></l><r>vásádus<s n="N"/></r></p></e>
     <e><p><l>vásedinakšuvdna<s n="N"/></l><r>vásedinaksjåvnnå<s n="N"/></r></p></e>
     <e><p><l>vásihit<s n="V"/></l><r>vásedit<s n="V"/></r></p></e>
