@@ -32,13 +32,11 @@
      <cat-item tags="CS.*"/>
   </def-cat>
   
-   <def-cat n="po">	
+   <def-cat n="adpos">	
      <cat-item tags="Po"/>
      <cat-item tags="Po.*"/>
-  </def-cat>
-  
-  <def-cat n="pr">
      <cat-item tags="Pr"/>
+     <cat-item tags="Pr.*"/>
   </def-cat>
   
   <def-cat n="copula">
@@ -68,6 +66,7 @@
 
   <def-attr n="a_adpos">
      <attr-item tags="Po"/>
+     <attr-item tags="Pr"/>
   </def-attr>
 
   <def-attr n="a_cnj">
@@ -528,16 +527,15 @@
      </action>
   </rule>
 
-  <rule comment="REGLA: PP">
+  <rule comment="REGLA: ADPOS">
      <pattern>
-       <pattern-item n="po"/>
+       <pattern-item n="adpos"/>
      </pattern>
      <action>
        <out>
          <chunk name="adpos" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="Po"/></tag>
-             <tag><clip pos="1" side="sl" part="syntag"/></tag>
+             <tag><clip pos="1" side="tl" part="a_adpos"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
