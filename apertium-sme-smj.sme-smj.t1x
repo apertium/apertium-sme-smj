@@ -259,7 +259,7 @@
                 <lit-tag v="ConNeg"/>
               </equal>
               <equal>
-                <clip pos="1" side="sl" part="tempus"/>
+                <clip pos="1" side="sl" part="temps"/>
                 <lit-tag v="Prs"/>
               </equal>
             </and>
