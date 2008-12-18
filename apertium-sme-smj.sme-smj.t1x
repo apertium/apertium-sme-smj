@@ -462,6 +462,9 @@
        <pattern-item n="verb"/>
      </pattern>
      <action>
+       <call-macro n="assign_neg_tense">
+         <with-param pos="1"/>
+       </call-macro>
        <choose>
          <when>
            <test>
