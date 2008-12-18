@@ -118,14 +118,19 @@
      <attr-item tags="Prs"/>
      <attr-item tags="Prt"/>
      <attr-item tags="PrfPrc"/>
+  </def-attr>
+  
+   <def-attr n="conneg">
      <attr-item tags="ConNeg"/>
   </def-attr>
+  
 
   <def-attr n="mood">
      <attr-item tags="Ind"/>
      <attr-item tags="Imprt"/>
      <attr-item tags="Pot"/>
      <attr-item tags="Cond"/>
+    <attr-item tags="Neg"/> 
   </def-attr>
   
   <def-attr n="voice">
@@ -231,6 +236,42 @@
       </when>
     </choose>
   </def-macro>
+  
+   <def-macro n="assign_neg_tense" npar="1">
+    <choose>
+      <when>
+        <test>
+              <equal>
+                <clip pos="1" side="sl" part="mood"/>
+                <lit-tag v="Neg"/>
+              </equal>
+            </test>
+            <let>
+          <clip pos="1" side="tl" part="mood"/>
+          <lit-tag v="Neg.Prs"/>
+        </let>
+        </when>
+        <when>
+        <test>
+            <and>
+              <equal>
+                <clip pos="1" side="sl" part="conneg"/>
+                <lit-tag v="ConNeg"/>
+              </equal>
+              <equal>
+                <clip pos="1" side="sl" part="tempus"/>
+                <lit-tag v="Prs"/>
+              </equal>
+            </and>
+        </test>
+        <let>
+          <clip pos="1" side="tl" part="conneg"/>
+          <lit-tag v="ConNeg"/>
+        </let>
+        </when>
+    </choose>
+  </def-macro>
+
 
   <def-macro n="assign_case1" npar="1">
     <choose>
