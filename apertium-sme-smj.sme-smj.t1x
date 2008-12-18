@@ -150,6 +150,22 @@
      <attr-item tags="Pl2"/>
      <attr-item tags="Pl3"/>
   </def-attr>
+  
+  <def-attr n="foc">
+    <attr-item tags="Foc_ba"/>
+    <attr-item tags="Foc_ban"/>
+    <attr-item tags="Foc_bat"/>
+    <attr-item tags="Foc_be"/>
+    <attr-item tags="Foc_ge"/>
+    <attr-item tags="Foc_gen"/>
+    <attr-item tags="Foc_ges"/>
+    <attr-item tags="Foc_gis"/>
+    <attr-item tags="Foc_hal"/>
+    <attr-item tags="Foc_han"/>
+    <attr-item tags="Foc_naj"/>
+    <attr-item tags="Foc_son"/>
+  </def-attr>
+
 
   <def-attr n="syntag">
      <attr-item tags="@X"/>
@@ -499,6 +515,7 @@
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="conneg"/>
              <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="foc"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
