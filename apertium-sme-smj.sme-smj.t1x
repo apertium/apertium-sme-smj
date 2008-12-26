@@ -13,8 +13,8 @@
      <cat-item tags="A.*"/>
   </def-cat>
   <def-cat n="adv">
-     <cat-item tags="ADV"/>
-     <cat-item tags="ADV.*"/>
+     <cat-item tags="Adv"/>
+     <cat-item tags="Adv.*"/>
   </def-cat>
   <def-cat n="verb">
      <cat-item tags="V.*"/>
@@ -57,7 +57,7 @@
   </def-attr>
 
   <def-attr n="a_adv">
-     <attr-item tags="ADV"/>
+     <attr-item tags="Adv"/>
   </def-attr>
 
   <def-attr n="a_num">
@@ -199,10 +199,11 @@
 <section-def-vars>
   <def-var n="number"/>
   <def-var n="main_verb"/>
+  <def-var n="adverb"/>
 </section-def-vars>
 
-<section-def-lists> <!--sme place-verbs, hope they work the same in smj -->
-  <def-list n="verbs_stative">
+<section-def-lists> 
+  <def-list n="verbs_stative"><!--sme place-verbs, hope they work the same in smj -->
     <list-item v="ássat"/>
     <list-item v="orrut"/>
     <list-item v="veallát"/>
@@ -222,6 +223,11 @@
     <list-item v="veallahit"/>
     <list-item v="eallit"/>
   </def-list>
+  
+  <def-list n="ine_adv"><!-- sme adverbs that appear with inessive -->
+    <list-item v="gitta"/>
+  </def-list>
+
 </section-def-lists>
 
 <section-def-macros>
@@ -307,6 +313,10 @@
             <in caseless="yes">
               <var n="main_verb"/>
               <list n="verbs_stative"/>
+            </in>
+            <in caseless="yes">
+              <var n="main_verb"/>
+              <list n="ine_adv"/>
             </in>
           </or>
         </test>
