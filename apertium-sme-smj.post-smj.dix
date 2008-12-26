@@ -24,11 +24,11 @@
   <section id="main" type="standard">
     <!-- When 'la' is preceeded by a vowel, change to 'l' -->
     <e>
-     <par n="vocals"/>
       <p>
         <l><a/>la<b/></l>
         <r>l<b/></r>
       </p>
+      <par n="vocals"/>
     </e>
   </section>
 </dictionary>
