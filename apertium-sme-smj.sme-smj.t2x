@@ -31,6 +31,10 @@
         <cat-item lemma="copula" tags="SV"/>
         <cat-item lemma="copula" tags="SV.*"/>
     </def-cat>
+    
+    <def-cat n="ine_adverb">
+        <cat-item lemma="gitta" tags="Adv"/>
+    </def-cat>
 
   </section-def-cats>
 
@@ -107,6 +111,44 @@
       <pattern>
         <pattern-item n="SN"/>
         <pattern-item n="Vcop"/>
+      </pattern>
+      <action>
+        <choose>
+          <when> 
+            <test>
+              <equal>
+                <clip pos="1" part="case"/>
+                <lit-tag v="Ela"/>
+              </equal>
+            </test> 
+            <let>
+              <clip pos="1" part="case"/>
+              <lit-tag v="Ine"/>
+            </let>
+          </when>
+        </choose>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+ <rule> <!--inessive instead of elative before inessive adverbs -->
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="ine_adverb"/>
       </pattern>
       <action>
         <choose>
