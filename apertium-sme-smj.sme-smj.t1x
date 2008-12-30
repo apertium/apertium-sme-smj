@@ -183,7 +183,6 @@
      <attr-item tags="@\+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@\+FAUXV"/>
-     <attr-item tags="@ADVL"/>
      <attr-item tags="@HAB"/>
      <attr-item tags="@Num←"/>
      <attr-item tags="@→Num"/>
@@ -315,7 +314,7 @@
               <list n="verbs_stative"/>
             </in>
             <in caseless="yes">
-              <var n="main_verb"/>
+              <var n="adverb"/>
               <list n="ine_adv"/>
             </in>
           </or>
