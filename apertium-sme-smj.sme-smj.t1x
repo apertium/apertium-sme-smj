@@ -314,10 +314,6 @@
               <var n="main_verb"/>
               <list n="verbs_stative"/>
             </in>
-            <in caseless="yes">
-              <var n="adverb"/>
-              <list n="ine_adv"/>
-            </in>
           </or>
         </test>
         <let>
@@ -552,6 +548,10 @@
            </lu>
          </chunk>
        </out>
+       <let>
+        <var n="adverb"/>
+        <clip pos="1" side="sl" part="lem"/>
+       </let>
      </action>
   </rule>
 
