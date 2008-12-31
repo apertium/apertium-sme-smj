@@ -23,8 +23,8 @@
     </def-cat>
     
     <def-cat n="CC">
-        <cat-item tags="CC"/>
-        <cat-item tags="CC.*"/>
+        <cat-item tags="CC.@CNP"/>
+        <cat-item tags="SV.Neg.Foc_ge.*"/>
     </def-cat>
     
     <def-cat n="Vcop">
@@ -183,6 +183,68 @@
         </out>
       </action>
     </rule>
+    
+     <rule> <!-- coordinated inessive NPs -->
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="CC"/>
+        <pattern-item n="SN"/>
+        <pattern-item n="ine_adverb"/>
+      </pattern>
+      <action>
+      <choose>
+          <when> 
+            <test>
+             <and>
+              <equal>
+                <clip pos="1" part="case"/>
+                <lit-tag v="Ela"/>
+              </equal>
+              <equal>
+                <clip pos="3" part="case"/>
+                <lit-tag v="Ela"/>
+              </equal>
+             </and>
+            </test> 
+            <let>
+              <clip pos="1" part="case"/>
+              <lit-tag v="Ine"/>
+            </let>
+          </when>
+        </choose>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        <b pos="2"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="3"/>
+        <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
 
     
     <rule> <!--SVO becomes SOV -->
