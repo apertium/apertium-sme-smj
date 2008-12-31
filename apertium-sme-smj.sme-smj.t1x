@@ -535,8 +535,12 @@
        <pattern-item n="adv"/>
      </pattern>
      <action>
+       <let>
+         <var n="adverb"/>
+         <clip pos="1" side="sl" part="lem"/>
+       </let>
        <out>
-         <chunk name="adv" case="caseFirstWord">
+         <chunk namefrom="adverb" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="Adv"/></tag>
              <tag><clip pos="1" side="sl" part="syntag"/></tag>
@@ -548,10 +552,6 @@
            </lu>
          </chunk>
        </out>
-       <let>
-        <var n="adverb"/>
-        <clip pos="1" side="sl" part="lem"/>
-       </let>
      </action>
   </rule>
 
