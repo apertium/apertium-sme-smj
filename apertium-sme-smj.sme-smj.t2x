@@ -20,11 +20,14 @@
     <def-cat n="FMainV">
         <cat-item tags="SV.@+FMAINV"/>
         <cat-item tags="SV.@+FMAINV.*"/>
+        <cat-item tags="SV.*.@+FMAINV.*"/>
+        <cat-item tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
     
     <def-cat n="CC">
         <cat-item tags="CC.@CNP"/>
-        <cat-item tags="SV.Neg.Foc_ge.*"/>
+        <cat-item tags="SV.*.Neg.Foc_ge"/>
+        <cat-item tags="SV.*.Neg.Foc_ge.*"/>
     </def-cat>
     
     <def-cat n="Vcop">
@@ -32,7 +35,7 @@
         <cat-item lemma="copula" tags="SV.*"/>
     </def-cat>
     
-    <def-cat n="ine_adverb">
+    <def-cat n="Ine_adverb">
         <cat-item lemma="gitta" tags="Adv"/>
         <cat-item lemma="gitta" tags="Adv.*"/>
     </def-cat>
@@ -149,7 +152,7 @@
  <rule> <!--inessive instead of elative before inessive adverbs -->
       <pattern>
         <pattern-item n="SN"/>
-        <pattern-item n="ine_adverb"/>
+        <pattern-item n="Ine_adverb"/>
       </pattern>
       <action>
         <choose>
@@ -189,7 +192,7 @@
         <pattern-item n="SN"/>
         <pattern-item n="CC"/>
         <pattern-item n="SN"/>
-        <pattern-item n="ine_adverb"/>
+        <pattern-item n="Ine_adverb"/>
       </pattern>
       <action>
       <choose>
@@ -208,6 +211,10 @@
             </test> 
             <let>
               <clip pos="1" part="case"/>
+              <lit-tag v="Ine"/>
+            </let>
+            <let>
+              <clip pos="3" part="case"/>
               <lit-tag v="Ine"/>
             </let>
           </when>
