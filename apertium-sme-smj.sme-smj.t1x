@@ -512,6 +512,8 @@
            <tags>
              <tag><lit-tag v="SV"/></tag>
              <tag><clip pos="1" side="sl" part="syntag"/></tag>
+             <tag><clip pos="1" side="sl" part="mood"/></tag>
+             <tag><clip pos="1" side="sl" part="foc"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
