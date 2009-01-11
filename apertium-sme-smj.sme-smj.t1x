@@ -54,6 +54,7 @@
   <def-attr n="a_adj">
      <attr-item tags="A"/>
      <attr-item tags="A.Attr"/>
+     <attr-item tags="A.Adv"/>
   </def-attr>
 
   <def-attr n="a_adv">
