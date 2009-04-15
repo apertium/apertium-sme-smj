@@ -16,7 +16,7 @@
 /autogen.sh -text
 /configure.ac -text
 dev/apertium_bleu1.txt -text
-dev/dárbahit.paradigm -text
+dev/darbahit.paradigm -text
 dev/fictilemmapos.txt -text
 dev/gohcodit.paradigm -text
 dev/missingsme.txt -text
