@@ -15,6 +15,7 @@
 /apertium-sme-smj.smj.dix -text
 /autogen.sh -text
 /configure.ac -text
+dev/SMJ_TO_GENERATE -text
 dev/apertium_bleu1.txt -text
 dev/darbahit.paradigm -text
 dev/fictilemmapos.txt -text
