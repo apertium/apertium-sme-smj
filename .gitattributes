@@ -18,6 +18,7 @@
 dev/apertium_bleu1.txt -text
 dev/darbahit.paradigm -text
 dev/fictilemmapos.txt -text
+dev/giza_list.txt -text
 dev/gohcodit.paradigm -text
 dev/missingsme.txt -text
 dev/missingsme2.txt -text
@@ -52,7 +53,6 @@ dev/testsentences.txt -text
 dev/veahkki.paradigm -text
 dev/viehkke.paradigm -text
 /fictilemmapos.txt -text
-/giza_list.txt -text
 /modes.xml -text
 /regression-tests.sh -text
 /sme-smj.prob -text
