@@ -43,6 +43,10 @@
     <cat-item lemma="leat" tags="V.IV.*"/>
   </def-cat>
 
+  <def-cat n="sent">
+     <cat-item tags="sent"/>
+  </def-cat>
+
 </section-def-cats>
 
 <section-def-attrs>
@@ -783,6 +787,44 @@
            </lu>
          </chunk>
        </out>
+     </action>
+  </rule>
+
+  <rule comment="REGLA: SENT">
+     <pattern>
+       <pattern-item n="sent"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="punt" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="PUNT"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="whole"/>
+           </lu>
+         </chunk>
+       </out>
+       <let>
+         <var n="number"/>
+         <lit v=""/>
+       </let>
+       <let>
+         <var n="main_verb"/>
+         <lit v=""/>
+       </let>
+       <let>
+         <var n="adverb"/>
+         <lit v=""/>
+       </let>
+       <let>
+         <var n="current_syntag"/>
+         <lit v=""/>
+       </let>
+       <let>
+         <var n="focus_pcle"/>
+         <lit v=""/>
+       </let>
      </action>
   </rule>
 
