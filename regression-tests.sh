@@ -1,29 +1,46 @@
 #!/bin/bash
 
-LIST=`wget -O - -q http://wiki.apertium.org/wiki/Northern_Sami_and_Lule_Sami/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g'`;
+SRCLIST=`mktemp`;
+TRGLIST=`mktemp`;
+TSTLIST=`mktemp`;
 
-cp *.mode modes/
+basedir=`pwd`;
+mode=sme-smj
 
-for LINE in $LIST; do
-	dir=`echo $LINE | cut -f2 -d'(' | cut -f1 -d')'`;
+wget -O - -q http://wiki.apertium.org/wiki/Northern_Sami_and_Lule_Sami/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g' | cut -f2 -d')' | sed 's/<i>//g' | sed 's/<\/i>//g' | cut -f2 -d'*' | sed 's/→/!/g' | cut -f1 -d'!' | sed 's/(note:/!/g' | sed 's/_/ /g' | sed 's/$/./g' > $SRCLIST;
+wget -O - -q http://wiki.apertium.org/wiki/Northern_Sami_and_Lule_Sami/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g' | sed 's/(\w\w)//g' | sed 's/<i>//g' | cut -f2 -d'*' | sed 's/<\/i>_→/!/g' | cut -f2 -d'!' | sed 's/_/ /g' | sed 's/^ *//g' | sed 's/ *$//g' | sed 's/$/./g' > $TRGLIST;
 
-	if [ $dir = "sme" ]; then
-		mode="sme-smj";
-	elif [ $dir = "smj" ]; then
-		mode="smj-sme";
-	else 
-		continue;
-	fi
+apertium -d . $mode < $SRCLIST > $TSTLIST;
 
-	SL=`echo $LINE | cut -f2 -d')' | sed 's/<i>//g' | sed 's/<\/i>//g' | cut -f2 -d'*' | sed 's/→/@/g' | cut -f1 -d'@' | sed 's/(note:/@/g' | sed 's/_/ /g'`;
-	TL=`echo $LINE | sed 's/(\w\w)//g' | sed 's/<i>//g' | cut -f2 -d'*' | sed 's/<\/i>_→/@/g' | cut -f2 -d'@' | sed 's/_/ /g'`;
+cat $SRCLIST | sed 's/\.$//g' > $SRCLIST.n; mv $SRCLIST.n $SRCLIST;
+cat $TRGLIST | sed 's/\.$//g' > $TRGLIST.n; mv $TRGLIST.n $TRGLIST;
+cat $TSTLIST | sed 's/\.$//g' | sed 's/\t/ /g' > $TSTLIST.n; mv $TSTLIST.n $TSTLIST;
 
-	TR=`echo $SL | apertium -d . $mode`;
+TOTAL=0
+CORRECT=0
+for LINE in `paste $SRCLIST $TRGLIST $TSTLIST | sed 's/ /%_%/g' | sed 's/\t/!/g'`; do
+#	echo $LINE;
 
-	if [[ `echo $TR` != `echo $TL` ]]; then 
-		echo -e $mode"\t "$SL"\n \t-$TL\n\t+ "$TR"\n";
+	SRC=`echo $LINE | sed 's/%_%/ /g' | cut -f1 -d'!' | sed 's/^ *//g' | sed 's/ *$//g' | sed 's/  / /g'`;
+	TRG=`echo $LINE | sed 's/%_%/ /g' | cut -f2 -d'!' | sed 's/^ *//g' | sed 's/ *$//g' | sed 's/  / /g'`;
+	TST=`echo $LINE | sed 's/%_%/ /g' | cut -f3 -d'!' | sed 's/^ *//g' | sed 's/ *$//g' | sed 's/  / /g'`;
+
+	
+	echo $TRG | grep "^$TST$" > /dev/null;	
+	if [ $? -eq 1 ]; then
+		echo -e $mode"\t  "$SRC"\n\t- $TRG\n\t+ "$TST"\n";
 	else
-		echo -e $mode"\t "$SL"\nWORKS\t  "$TR"\n";
+		echo -e $mode"\t  "$SRC"\nWORKS\t  $TST\n";
+		CORRECT=`expr $CORRECT + 1`;
 	fi
-
+	TOTAL=`expr $TOTAL + 1`;
 done
+
+echo $CORRECT" / "$TOTAL ;
+if [ -x /usr/bin/calc ]; then
+	WORKING=`calc $CORRECT" / "$TOTAL" * 100" | head -c 7`;
+
+	echo $WORKING"%";
+fi
+
+rm $SRCLIST $TRGLIST $TSTLIST;
