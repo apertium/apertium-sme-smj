@@ -562,6 +562,9 @@
        <pattern-item n="pronom"/>
      </pattern>
      <action>
+       <call-macro n="assign_case1">
+         <with-param pos="1"/>
+       </call-macro>
        <call-macro n="convert_focus1">
          <with-param pos="1"/>
        </call-macro>
