@@ -545,6 +545,7 @@ LIST @→ADVL = @→ADVL ;
 
 LIST @ADVL← = @ADVL← ;
 
+
 LIST @ADVL = @ADVL ;
 LIST @HAB = @HAB ;
  
@@ -699,6 +700,7 @@ SET V-ACT = V - Der_Pass ;
 # Case sets
 # ---------
 
+LIST ADVL = @ADVL @ADVL> @ADVL< @<ADVL @>ADVL @-FADVL ;
 LIST ADVLCASE = Ill Loc Com Ess ;
 
 # Sg Nom - Sg Nom | Pl Nom - Pl Nom
@@ -1318,6 +1320,8 @@ LIST PLURALIZER = "buot" "buotlágan" "buotlágán" "buotlágáš" "earálágan"
     # in periphrastic constructions (together with "leat") they subcategorize for comitative, locative etc. depending on the noun's semantic properties
     
 LIST COM-ADJ = "olles" "oppa" ;
+
+LIST ILL-ADJ = "gullevaš" ;
 
 LIST ACTIVITY-ADJ = "hilbat" "oskkáldas" ;
 
@@ -7457,7 +7461,7 @@ SELECT:r1775 (A Sg Nom) IF (*-1 COPULAS BARRIER NOT-AA LINK 0 Sg3)(NEGATE 0 Inf)
 SELECT:r1776 (A Sg Nom) IF (-1 NP-HEAD-SG-NOM LINK NOT 0 (A Attr) OR Adv)(*-2 COPULAS BARRIER NOT-ADV-PCLE LINK NOT *-1 Nom BARRIER S-BOUNDARY2)(NEGATE 0 Adv LINK 1 Adv)(NEGATE 0 Attr LINK *1 (N Sg Nom) BARRIER CLB OR NPNH);
 	## Dábálaččat lea čuollu guhkit, golbma, njellje firbmebaji guhku.
 
-SELECT:r1777 (Sg Nom) IF (*-1 Ill BARRIER NOT-ADV-PCLE LINK *-1 COPULAS BARRIER NOT-ADV-PCLE)(*-1 V-SG3 BARRIER V-NOT-AUX)(NEGATE 0 PrfPrc)(NEGATE 0 NUMERALS LINK *1 ALU OR ("velggolaš") BARRIER NP-BOUNDARY);
+SELECT:r1777 (Sg Nom) IF (*-1 Ill BARRIER NOT-ADV-PCLE LINK *-1 COPULAS BARRIER NOT-ADV-PCLE)(*-1 V-SG3 BARRIER V-NOT-AUX)(NEGATE 0 PrfPrc OR ILL-ADJ)(NEGATE 0 NUMERALS LINK *1 ALU OR ("velggolaš") BARRIER NP-BOUNDARY);
 	## ...muhtun gii lei sutnje velggolaš logi duhát taleantta.
 	## Mus lea dutnje juoga dadjamuš.
 
@@ -14433,6 +14437,9 @@ MAP:r502 (@HAB) TARGET Loc IF (-1 Mal OR Fem)(0 Ord)(NEGATE 0 HAB-ACTOR-NOT-HUMA
 
 	# Adverbial mappings
 	# ------------------
+	
+MAP (@→ADVL) TARGET @ADVL (1 ILL-ADJ) ;
+    ## Giron lea vuoncceslottiide gullevaš loddi.
 
 MAP:r503 (@→ADVL) TARGET ("dás" Adv) IF (1 ("ovdal"));
 MAP (@→ADVL) TARGET (TIME-UNIT + Acc) IF (1 ("áigi" Adv));
