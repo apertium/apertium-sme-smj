@@ -26771,7 +26771,8 @@
     <e><p><l>agentuvra<s n="N"/></l><r>agentuvra<s n="N"/></r></p></e>
     <e><p><l>aggregáhta<s n="N"/></l><r>aggregáhta<s n="N"/></r></p></e>
     <e><p><l>aggregáhtta<s n="N"/></l><r>aggregáhtta<s n="N"/></r></p></e>
-    <e><p><l>agi<s n="Adv"/></l><r>age,agev<s n="Adv"/></r></p></e>
+    <e><p><l>agi<s n="Adv"/></l><r>agev<s n="Adv"/></r></p></e>
+    <e r="RL"><p><l>agi<s n="Adv"/></l><r>age<s n="Adv"/></r></p></e>
     <e><p><l>agnostisisma<s n="N"/></l><r>agnostisissma<s n="N"/></r></p></e>
     <e><p><l>agoarta<s n="N"/></l><r>agoarta<s n="N"/></r></p></e>
     <e><p><l>agrarpartiija<s n="N"/></l><r>agrarpartija<s n="N"/></r></p></e>
@@ -27052,7 +27053,8 @@
     <e><p><l>badjeluohkká<s n="N"/></l><r>badjeluohkká<s n="N"/></r></p></e>
     <e><p><l>badjemadda<s n="N"/></l><r>badjemadda<s n="N"/></r></p></e>
     <e><p><l>badjeoalli<s n="N"/></l><r>badjeoalle<s n="N"/></r></p></e>
-    <e><p><l>badjeoalul<s n="N"/></l><r>badjeoalol,badjeoalul<s n="N"/></r></p></e>
+    <e><p><l>badjeoalul<s n="N"/></l><r>badjeoalol<s n="N"/></r></p></e>
+    <e r="RL"><p><l>badjeoalul<s n="N"/></l><r>badjeoalul<s n="N"/></r></p></e>
     <e><p><l>badjeváhkká<s n="N"/></l><r>badjeváhkká<s n="N"/></r></p></e>
     <e><p><l>badjil<s n="Adv"/></l><r>badjel<s n="Adv"/></r></p></e>
     <e><p><l>badjin<s n="Adv"/></l><r>badjen<s n="Adv"/></r></p></e>
@@ -29191,7 +29193,7 @@
     <e><p><l>guoksa<s n="N"/></l><r>guoksa<s n="N"/></r></p></e>
     <e><p><l>guokte<s n="N"/></l><r>guokta<s n="N"/></r></p></e>
     <e><p><l>guoktil<s n="Adv"/></l><r>guoktel<s n="Adv"/></r></p></e>
-    <e><p><l>guoktásat<s n="Pron"/></l><r>guoktá,guoktása<s n="Pron"/></r></p></e>
+    <e><p><l>guoktásat<s n="Pron"/></l><r>guoktása<s n="Pron"/></r></p></e>
     <e><p><l>guolbba<s n="N"/></l><r>länndo<s n="N"/></r></p></e>
     <e><p><l>guolbba<s n="N"/></l><r>lænndo<s n="N"/></r></p></e>
     <e><p><l>guolbbaviola<s n="N"/></l><r>guolbbaviola<s n="N"/></r></p></e>
@@ -29275,10 +29277,12 @@
     <e><p><l>gurutgiehta<s n="N"/></l><r>gurutgiehta<s n="N"/></r></p></e>
     <e><p><l>guršu<s n="N"/></l><r>gurssjo<s n="N"/></r></p></e>
     <e><p><l>gusaguoppar<s n="N"/></l><r>gusaguoppar<s n="N"/></r></p></e>
-    <e><p><l>gusagáma<s n="N"/></l><r>gusagáma,guságáma<s n="N"/></r></p></e>
+    <e><p><l>gusagáma<s n="N"/></l><r>guságáma<s n="N"/></r></p></e>
+    <e r="RL"><p><l>gusagáma<s n="N"/></l><r>gusagáma<s n="N"/></r></p></e>
     <e><p><l>gusanáhkki<s n="N"/></l><r>gusánáhkke<s n="N"/></r></p></e>
     <e><p><l>gusasáhpal<s n="N"/></l><r>gusasáhpal<s n="N"/></r></p></e>
-    <e><p><l>gusavuodja<s n="N"/></l><r>gusavuodja,gusávuodja<s n="N"/></r></p></e>
+    <e><p><l>gusavuodja<s n="N"/></l><r>gusávuodja<s n="N"/></r></p></e>
+    <e r="RL"><p><l>gusavuodja<s n="N"/></l><r>gusavuodja<s n="N"/></r></p></e>
     <e><p><l>gussa<s n="N"/></l><r>gussa<s n="N"/></r></p></e>
     <e><p><l>gussamielahisvuohta<s n="N"/></l><r>gussamielahisvuohta<s n="N"/></r></p></e>
     <e><p><l>gussamiella<s n="N"/></l><r>gussamiella<s n="N"/></r></p></e>
@@ -31007,7 +31011,8 @@
     <e><p><l>muorraguohkki<s n="N"/></l><r>muorraguohkke<s n="N"/></r></p></e>
     <e><p><l>muorramátta<s n="N"/></l><r>muorramátta<s n="N"/></r></p></e>
     <e><p><l>muorraruohtas<s n="N"/></l><r>muorraruohtas<s n="N"/></r></p></e>
-    <e><p><l>muorravajus<s n="N"/></l><r>muorravajos,muorravajus<s n="N"/></r></p></e>
+    <e><p><l>muorravajus<s n="N"/></l><r>muorravajos<s n="N"/></r></p></e>
+    <e r="RL"><p><l>muorravajus<s n="N"/></l><r>muorravajus<s n="N"/></r></p></e>
     <e><p><l>muossestellelmas<s n="N"/></l><r>muossestellelmas<s n="N"/></r></p></e>
     <e><p><l>muossi<s n="N"/></l><r>muosse<s n="N"/></r></p></e>
     <e><p><l>muotkkádat<s n="N"/></l><r>muotkkádat<s n="N"/></r></p></e>
@@ -32345,7 +32350,8 @@
     <e><p><l>rábát<s n="N"/></l><r>rábát<s n="N"/></r></p></e>
     <e><p><l>ráddi<s n="N"/></l><r>rádde<s n="N"/></r></p></e>
     <e><p><l>ráddji<s n="N"/></l><r>ráddje<s n="N"/></r></p></e>
-    <e><p><l>rádio<s n="N"/></l><r>radio,rádio<s n="N"/></r></p></e>
+    <e><p><l>rádio<s n="N"/></l><r>rádio<s n="N"/></r></p></e>
+    <e r="RL"><p><l>rádio<s n="N"/></l><r>radio<s n="N"/></r></p></e>
     <e><p><l>rádjebássa<s n="N"/></l><r>rádjebássa<s n="N"/></r></p></e>
     <e><p><l>rádjepássa<s n="N"/></l><r>rádjepássa<s n="N"/></r></p></e>
     <e><p><l>rádjesuodjalus<s n="N"/></l><r>rádjesuodjalus<s n="N"/></r></p></e>
@@ -35007,7 +35013,7 @@
     <e><p><l>accentueret<s n="V"/></l><r>accentuerit<s n="V"/></r></p></e>
     <e><p><l>accepteret<s n="V"/></l><r>accepterit<s n="V"/></r></p></e>
     <e><p><l>accompagneret<s n="V"/></l><r>accompagnerit<s n="V"/></r></p></e>
-    <e><p><l>acklimatiseret<s n="V"/></l><r>acklimátiserit,acklimatiserit<s n="V"/></r></p></e>
+    <e><p><l>acklimatiseret<s n="V"/></l><r>acklimatiserit<s n="V"/></r></p></e>
     <e><p><l>ackorderet<s n="V"/></l><r>ackorderit<s n="V"/></r></p></e>
     <e><p><l>ackumuleret<s n="V"/></l><r>ackumulerit<s n="V"/></r></p></e>
     <e><p><l>ackvireret<s n="V"/></l><r>ackvirerit<s n="V"/></r></p></e>
@@ -35042,7 +35048,7 @@
     <e><p><l>aiddostahttit<s n="V"/><s n="TV"/></l><r>ajdustahttet<s n="V"/></r></p></e>
     <e><p><l>aiget<s n="V"/></l><r>ajgget<s n="V"/></r></p></e>
     <e><p><l>akkederet<s n="V"/></l><r>akkederit<s n="V"/></r></p></e>
-    <e><p><l>akklimatiseret<s n="V"/></l><r>akklimatiserit,akklimátiserit<s n="V"/></r></p></e>
+    <e><p><l>akklimatiseret<s n="V"/></l><r>akklimatiserit<s n="V"/></r></p></e>
     <e><p><l>akkommoderet<s n="V"/></l><r>akkommoderit<s n="V"/></r></p></e>
     <e><p><l>akkompagneret<s n="V"/></l><r>akkompagnerit<s n="V"/></r></p></e>
     <e><p><l>akkorderet<s n="V"/></l><r>akkorderit<s n="V"/></r></p></e>
@@ -35096,7 +35102,8 @@
     <e><p><l>analyseret<s n="V"/><s n="TV"/></l><r>anályserit<s n="V"/></r></p></e>
     <e><p><l>anašit<s n="V"/><s n="TV"/></l><r>anatjit<s n="V"/></r></p></e>
     <e><p><l>anesteseret<s n="V"/></l><r>anesteserit<s n="V"/></r></p></e>
-    <e><p><l>anglifieret<s n="V"/></l><r>anglefeerit,anglifierit<s n="V"/></r></p></e>
+    <e><p><l>anglifieret<s n="V"/></l><r>anglifierit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>anglifieret<s n="V"/></l><r>anglefeerit<s n="V"/></r></p></e>
     <e><p><l>anglifiseret<s n="V"/></l><r>anglifiserit<s n="V"/></r></p></e>
     <e><p><l>angliseret<s n="V"/></l><r>angliserit<s n="V"/></r></p></e>
     <e><p><l>anihit<s n="V"/><s n="TV"/></l><r>anedit<s n="V"/><s n="IV"/></r></p></e>
@@ -35136,7 +35143,7 @@
     <e><p><l>arronderet<s n="V"/></l><r>arronderit<s n="V"/></r></p></e>
     <e><p><l>artikuleret<s n="V"/></l><r>artikulerit<s n="V"/></r></p></e>
     <e><p><l>arvilit<s n="V"/></l><r>harvvelit<s n="V"/></r></p></e>
-    <e><p><l>arvvašit<s n="V"/></l><r>arvatjit,harvasjit<s n="V"/></r></p></e>
+    <e><p><l>arvvašit<s n="V"/></l><r>harvatjit<s n="V"/></r></p></e>
     <e><p><l>arvvestit<s n="V"/><s n="IV"/></l><r>harvestit<s n="V"/></r></p></e>
     <e><p><l>arvvistit<s n="V"/><s n="IV"/></l><r>harvestit<s n="V"/></r></p></e>
     <e><p><l>arvvosmahttit<s n="V"/><s n="TV"/></l><r>arvusmahttet<s n="V"/></r></p></e>
@@ -35209,8 +35216,10 @@
     <e><p><l>bandageret<s n="V"/></l><r>bandagerit<s n="V"/></r></p></e>
     <e><p><l>bandasjeret<s n="V"/></l><r>bandasjerit<s n="V"/></r></p></e>
     <e><p><l>bandašeret<s n="V"/></l><r>bandasjerit<s n="V"/></r></p></e>
-    <e><p><l>banihit<s n="V"/></l><r>banedit,bånedit<s n="V"/></r></p></e>
-    <e><p><l>banistit<s n="V"/></l><r>banestit,bånestit<s n="V"/></r></p></e>
+    <e><p><l>banihit<s n="V"/></l><r>bånedit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>banihit<s n="V"/></l><r>banedit<s n="V"/></r></p></e>
+    <e><p><l>banistit<s n="V"/></l><r>bånestit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>banistit<s n="V"/></l><r>banestit<s n="V"/></r></p></e>
     <e><p><l>barberet<s n="V"/><s n="TV"/></l><r>barberit<s n="V"/></r></p></e>
     <e><p><l>barddašit<s n="V"/></l><r>bårdatjit<s n="V"/></r></p></e>
     <e><p><l>bardilit<s n="V"/></l><r>barddelit<s n="V"/></r></p></e>
@@ -35245,7 +35254,8 @@
     <e><p><l>bažestit<s n="V"/></l><r>båtjestit<s n="V"/></r></p></e>
     <e><p><l>bažihit<s n="V"/></l><r>båtjedit<s n="V"/></r></p></e>
     <e><p><l>beagašit<s n="V"/></l><r>begatjit<s n="V"/></r></p></e>
-    <e><p><l>beaggalit<s n="V"/></l><r>bieggalit,bæggalit<s n="V"/></r></p></e>
+    <e><p><l>beaggalit<s n="V"/></l><r>bæggalit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>beaggalit<s n="V"/></l><r>bieggalit<s n="V"/></r></p></e>
     <e><p><l>beahkilit<s n="V"/></l><r>biehkelit<s n="V"/></r></p></e>
     <e><p><l>beahtestit<s n="V"/></l><r>biehtestit<s n="V"/></r></p></e>
     <e><p><l>beahttalit<s n="V"/><s n="TV"/></l><r>bæhttalit<s n="V"/></r></p></e>
@@ -35307,7 +35317,8 @@
     <e><p><l>biestalit<s n="V"/></l><r>biesstalit<s n="V"/></r></p></e>
     <e><p><l>biestalit<s n="V"/></l><r>biesstelit<s n="V"/></r></p></e>
     <e><p><l>biestit<s n="V"/><s n="TV"/></l><r>biesstet<s n="V"/></r></p></e>
-    <e><p><l>bievladit<s n="V"/><s n="TV"/></l><r>bievladit,bievlladit<s n="V"/></r></p></e>
+    <e><p><l>bievladit<s n="V"/><s n="TV"/></l><r>bievlladit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>bievladit<s n="V"/><s n="TV"/></l><r>bievladit<s n="V"/></r></p></e>
     <e><p><l>bievlladit<s n="V"/><s n="IV"/></l><r>bievladit<s n="V"/></r></p></e>
     <e><p><l>bieđaldahttit<s n="V"/></l><r>biedaldahttet<s n="V"/></r></p></e>
     <e><p><l>bihcudit<s n="V"/><s n="TV"/></l><r>sjuhtjudit<s n="V"/></r></p></e>
@@ -35316,6 +35327,9 @@
     <e><p><l>biiastit<s n="V"/></l><r>biejastit,bijástit<s n="V"/></r></p></e>
     <e><p><l>biiastit<s n="V"/></l><r>bijástit<s n="V"/></r></p></e>
     <e><p><l>biinnidit<s n="V"/><s n="TV"/></l><r>bijnedit<s n="V"/></r></p></e>
+    <e><p><l>bijadit<s n="V"/></l><r>biejadit<s n="V"/></r></p></e>
+    <e><p><l>bijahit<s n="V"/></l><r>biejadit<s n="V"/></r></p></e>
+    <e><p><l>bijastit<s n="V"/></l><r>biejastit<s n="V"/></r></p></e>
     <e><p><l>biktalit<s n="V"/><s n="TV"/></l><r>biktalit<s n="V"/></r></p></e>
     <e><p><l>biktit<s n="V"/></l><r>biktet<s n="V"/></r></p></e>
     <e><p><l>bilbut<s n="V"/></l><r>bilbbut<s n="V"/></r></p></e>
@@ -35345,7 +35359,8 @@
     <e><p><l>bivddildit<s n="V"/></l><r>bivdeldit<s n="V"/></r></p></e>
     <e><p><l>bivdilit<s n="V"/></l><r>bivddelit<s n="V"/></r></p></e>
     <e><p><l>bivdit<s n="V"/><s n="TV"/></l><r>bivddet<s n="V"/></r></p></e>
-    <e><p><l>bivssastit<s n="V"/></l><r>bivsastit,snavkastit<s n="V"/></r></p></e>
+    <e><p><l>bivssastit<s n="V"/></l><r>bivsastit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>bivssastit<s n="V"/></l><r>snavkastit<s n="V"/></r></p></e>
     <e><p><l>bivttastit<s n="V"/><s n="TV"/></l><r>bivtastit<s n="V"/></r></p></e>
     <e><p><l>bivttestit<s n="V"/></l><r>bivtestit<s n="V"/></r></p></e>
     <e><p><l>bivuakkeret<s n="V"/></l><r>bivuakkerit<s n="V"/></r></p></e>
@@ -35356,7 +35371,8 @@
     <e><p><l>blameret<s n="V"/></l><r>blamerit<s n="V"/></r></p></e>
     <e><p><l>blasoneret<s n="V"/></l><r>blasonerit<s n="V"/></r></p></e>
     <e><p><l>blockeret<s n="V"/></l><r>blockerit<s n="V"/></r></p></e>
-    <e><p><l>bloggestit<s n="V"/></l><r>bloggestit,blåggistit<s n="V"/></r></p></e>
+    <e><p><l>bloggestit<s n="V"/></l><r>blåggistit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>bloggestit<s n="V"/></l><r>bloggestit<s n="V"/></r></p></e>
     <e><p><l>blogget<s n="V"/><s n="TV"/></l><r>bloggit<s n="V"/></r></p></e>
     <e><p><l>blokkeret<s n="V"/></l><r>blokkerit<s n="V"/></r></p></e>
     <e><p><l>bláđedit<s n="V"/><s n="TV"/></l><r>sláddidit<s n="V"/></r></p></e>
@@ -35376,7 +35392,8 @@
     <e><p><l>boalddihit<s n="V"/></l><r>boaldedit<s n="V"/></r></p></e>
     <e><p><l>boaldit<s n="V"/><s n="TV"/></l><r>boalldet<s n="V"/></r></p></e>
     <e><p><l>boaluhit<s n="V"/><s n="TV"/></l><r>boalodit<s n="V"/></r></p></e>
-    <e><p><l>boarásmit<s n="V"/><s n="IV"/></l><r>boarásmuvvat,vuorasduvvat<s n="V"/></r></p></e>
+    <e><p><l>boarásmit<s n="V"/><s n="IV"/></l><r>boarásmuvvat<s n="V"/></r></p></e>
+    <e r="RL"><p><l>boarásmit<s n="V"/><s n="IV"/></l><r>vuorasduvvat<s n="V"/></r></p></e>
     <e><p><l>boađadit<s n="V"/><s n="IV"/></l><r>bådadit<s n="V"/></r></p></e>
     <e><p><l>boađestit<s n="V"/></l><r>boadestit<s n="V"/></r></p></e>
     <e><p><l>boađihit<s n="V"/></l><r>boadedit<s n="V"/></r></p></e>
@@ -35416,9 +35433,11 @@
     <e><p><l>boradit<s n="V"/><s n="TV"/></l><r>bårådit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>borahit<s n="V"/><s n="TV"/></l><r>bårådit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>borastahttit<s n="V"/></l><r>båråstahttet<s n="V"/></r></p></e>
-    <e><p><l>borastit<s n="V"/><s n="TV"/></l><r>bårstit,båråstit<s n="V"/></r></p></e>
+    <e><p><l>borastit<s n="V"/><s n="TV"/></l><r>båråstit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>borastit<s n="V"/><s n="TV"/></l><r>bårstit<s n="V"/></r></p></e>
     <e><p><l>borastuvvat<s n="V"/></l><r>båråstuvvat<s n="V"/></r></p></e>
-    <e><p><l>borddašit<s n="V"/></l><r>bårdatjit,bårdåtjit<s n="V"/></r></p></e>
+    <e><p><l>borddašit<s n="V"/></l><r>bårdåtjit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>borddašit<s n="V"/></l><r>bårdatjit<s n="V"/></r></p></e>
     <e><p><l>borddestit<s n="V"/></l><r>bårdestit<s n="V"/></r></p></e>
     <e><p><l>bordilit<s n="V"/></l><r>bårddelit<s n="V"/></r></p></e>
     <e><p><l>bordit<s n="V"/><s n="TV"/></l><r>bårddet<s n="V"/></r></p></e>
@@ -35443,7 +35462,7 @@
     <e><p><l>bosastit<s n="V"/></l><r>båsåstit<s n="V"/></r></p></e>
     <e><p><l>bosihastit<s n="V"/><s n="TV"/></l><r>båsedasstet<s n="V"/></r></p></e>
     <e><p><l>bosihastit<s n="V"/><s n="TV"/></l><r>båsehastit<s n="V"/></r></p></e>
-    <e><p><l>bosihit<s n="V"/><s n="IV"/></l><r>båsodit,båsådit<s n="V"/></r></p></e>
+    <e><p><l>bosihit<s n="V"/><s n="IV"/></l><r>båssit<s n="V"/></r></p></e>
     <e><p><l>bosistit<s n="V"/></l><r>båsestit<s n="V"/></r></p></e>
     <e><p><l>bosodit<s n="V"/><s n="TV"/></l><r>båsudit<s n="V"/></r></p></e>
     <e><p><l>bosostit<s n="V"/></l><r>båsostit<s n="V"/></r></p></e>
@@ -35460,7 +35479,8 @@
     <e><p><l>botnjalit<s n="V"/><s n="TV"/></l><r>bådnjålit<s n="V"/></r></p></e>
     <e><p><l>botnjasit<s n="V"/><s n="IV"/></l><r>bådnjåsit<s n="V"/></r></p></e>
     <e><p><l>botnjat<s n="V"/><s n="TV"/></l><r>bådnjåt<s n="V"/></r></p></e>
-    <e><p><l>bovdehit<s n="V"/><s n="TV"/></l><r>bivddidit,gåhtjodit<s n="V"/></r></p></e>
+    <e><p><l>bovdehit<s n="V"/><s n="TV"/></l><r>bivddidit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>bovdehit<s n="V"/><s n="TV"/></l><r>gåhtjodit<s n="V"/></r></p></e>
     <e><p><l>bovdehit<s n="V"/><s n="TV"/></l><r>bivdodit<s n="V"/></r></p></e>
     <e><p><l>bovttašit<s n="V"/><s n="TV"/></l><r>båvtåtjit<s n="V"/></r></p></e>
     <e><p><l>bovttihit<s n="V"/></l><r>båvtedit<s n="V"/></r></p></e>
@@ -35468,7 +35488,8 @@
     <e><p><l>božestit<s n="V"/></l><r>båtjestit<s n="V"/></r></p></e>
     <e><p><l>božihit<s n="V"/></l><r>båtjedit<s n="V"/></r></p></e>
     <e><p><l>božistit<s n="V"/></l><r>båtjestit<s n="V"/></r></p></e>
-    <e><p><l>boŋkalit<s n="V"/><s n="TV"/></l><r>båŋŋkkålit,båŋŋkålit<s n="V"/></r></p></e>
+    <e><p><l>boŋkalit<s n="V"/><s n="TV"/></l><r>båŋŋkålit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>boŋkalit<s n="V"/><s n="TV"/></l><r>båŋŋkkålit<s n="V"/></r></p></e>
     <e><p><l>boŋkkihit<s n="V"/><s n="IV"/></l><r>båŋkedit<s n="V"/></r></p></e>
     <e><p><l>boŋkkuhit<s n="V"/></l><r>båŋkodit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>braveret<s n="V"/></l><r>braverit<s n="V"/></r></p></e>
@@ -35580,7 +35601,8 @@
     <e><p><l>bálkulit<s n="V"/><s n="TV"/></l><r>bálkkolit<s n="V"/></r></p></e>
     <e><p><l>bálkut<s n="V"/><s n="TV"/></l><r>bálkkut<s n="V"/></r></p></e>
     <e><p><l>bálkádit<s n="V"/><s n="TV"/></l><r>bálkkit<s n="V"/></r></p></e>
-    <e><p><l>bálkáhit<s n="V"/><s n="TV"/></l><r>bálkkidit,bálkkit<s n="V"/></r></p></e>
+    <e><p><l>bálkáhit<s n="V"/><s n="TV"/></l><r>bálkkit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>bálkáhit<s n="V"/><s n="TV"/></l><r>bálkkidit<s n="V"/></r></p></e>
     <e><p><l>bálkásit<s n="V"/><s n="IV"/></l><r>bálkkásit<s n="V"/></r></p></e>
     <e><p><l>bállehit<s n="V"/><s n="TV"/></l><r>bállidit<s n="V"/></r></p></e>
     <e><p><l>bállet<s n="V"/><s n="IV"/></l><r>bállet<s n="V"/></r></p></e>
@@ -35608,7 +35630,7 @@
     <e><p><l>cagahit<s n="V"/></l><r>tsagádit<s n="V"/></r></p></e>
     <e><p><l>caggasit<s n="V"/><s n="IV"/></l><r>tsaggasit<s n="V"/></r></p></e>
     <e><p><l>caggat<s n="V"/><s n="TV"/></l><r>tsaggat<s n="V"/></r></p></e>
-    <e><p><l>cahkiidit<s n="V"/></l><r>tsahkkidit,tsahkkijdit<s n="V"/></r></p></e>
+    <e><p><l>cahkiidit<s n="V"/></l><r>tsahkkát<s n="V"/></r></p></e>
     <e><p><l>cahkkanit<s n="V"/></l><r>tsahkkidit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>cahkkehit<s n="V"/><s n="TV"/></l><r>tsahkkidit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>cahkkát<s n="V"/><s n="IV"/></l><r>tsahkkát<s n="V"/></r></p></e>
@@ -35737,7 +35759,8 @@
     <e><p><l>deahpánit<s n="V"/></l><r>dæhpánit<s n="V"/></r></p></e>
     <e><p><l>deahtistit<s n="V"/><s n="TV"/></l><r>divtestit<s n="V"/></r></p></e>
     <e><p><l>deaividit<s n="V"/><s n="TV"/></l><r>dejvadit<s n="V"/><s n="IV"/></r></p></e>
-    <e><p><l>deaivvadit<s n="V"/><s n="IV"/></l><r>iejvvidit,æjvvalit<s n="V"/></r></p></e>
+    <e><p><l>deaivvadit<s n="V"/><s n="IV"/></l><r>iejvvidit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>deaivvadit<s n="V"/><s n="IV"/></l><r>æjvvalit<s n="V"/></r></p></e>
     <e><p><l>deaivvahit<s n="V"/><s n="TV"/></l><r>dejvadit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>dearistit<s n="V"/><s n="TV"/></l><r>dierestit<s n="V"/></r></p></e>
     <e><p><l>dearppahit<s n="V"/><s n="TV"/></l><r>tsábbmet<s n="V"/></r></p></e>
@@ -35969,7 +35992,8 @@
     <e><p><l>dovdat<s n="V"/><s n="TV"/></l><r>dåbddåt<s n="V"/></r></p></e>
     <e><p><l>dovddadit<s n="V"/><s n="IV"/></l><r>dåbdådit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>dovddahit<s n="V"/><s n="TV"/></l><r>dåbdådit<s n="V"/><s n="IV"/></r></p></e>
-    <e><p><l>dovddastit<s n="V"/><s n="TV"/></l><r>dåbdåstit,dåvdåstit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>dovddastit<s n="V"/><s n="TV"/></l><r>dåbdåstit<s n="V"/></r></p></e>
+    <e><p><l>dovddastit<s n="V"/><s n="TV"/></l><r>dåvdåstit<s n="V"/></r></p></e>
     <e><p><l>dovddiidit<s n="V"/><s n="TV"/></l><r>dåbdijdit<s n="V"/></r></p></e>
     <e><p><l>dovdáhit<s n="V"/><s n="TV"/></l><r>dåbddådit<s n="V"/></r></p></e>
     <e><p><l>doškkodit<s n="V"/></l><r>dåskudit<s n="V"/></r></p></e>
@@ -36346,13 +36370,14 @@
     <e><p><l>galgat<s n="V"/><s n="IV"/></l><r>galggat<s n="V"/></r></p></e>
     <e><p><l>galjedit<s n="V"/></l><r>galjedit<s n="V"/></r></p></e>
     <e><p><l>galjidit<s n="V"/><s n="TV"/></l><r>galjjedit<s n="V"/></r></p></e>
-    <e><p><l>gallidit<s n="V"/></l><r>galledit,gallehit<s n="V"/></r></p></e>
+    <e><p><l>gallidit<s n="V"/></l><r>gallidit<s n="V"/></r></p></e>
     <e><p><l>galljudit<s n="V"/><s n="TV"/></l><r>galljodit<s n="V"/></r></p></e>
     <e><p><l>galljut<s n="V"/><s n="IV"/></l><r>galljut<s n="V"/></r></p></e>
     <e><p><l>galljánit<s n="V"/></l><r>galljánit<s n="V"/></r></p></e>
     <e><p><l>gallánit<s n="V"/><s n="IV"/></l><r>gallánit<s n="V"/></r></p></e>
     <e><p><l>galmmadit<s n="V"/></l><r>galsjedit<s n="V"/></r></p></e>
-    <e><p><l>galmmašit<s n="V"/></l><r>galmatjit,tjåskijdit<s n="V"/></r></p></e>
+    <e><p><l>galmmašit<s n="V"/></l><r>tjåskijdit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>galmmašit<s n="V"/></l><r>galmatjit<s n="V"/></r></p></e>
     <e><p><l>galmmestit<s n="V"/></l><r>galmestit<s n="V"/></r></p></e>
     <e><p><l>galmmihit<s n="V"/><s n="TV"/></l><r>galmedit<s n="V"/></r></p></e>
     <e><p><l>galmmistit<s n="V"/><s n="IV"/></l><r>galmestit<s n="V"/></r></p></e>
@@ -36557,7 +36582,6 @@
     <e><p><l>goikkášit<s n="V"/></l><r>gåjkåtjit<s n="V"/></r></p></e>
     <e><p><l>goivodit<s n="V"/><s n="IV"/></l><r>gåjvudit<s n="V"/></r></p></e>
     <e><p><l>goivvodit<s n="V"/></l><r>gåjvudit<s n="V"/></r></p></e>
-    <e><p><l>gokčat<s n="V"/><s n="TV"/></l><r>gábttjat,gåbttjåt<s n="V"/></r></p></e>
     <e><p><l>gokčat<s n="V"/><s n="TV"/></l><r>gåbttjåt<s n="V"/></r></p></e>
     <e><p><l>golahit<s n="V"/><s n="TV"/></l><r>gålådit<s n="V"/></r></p></e>
     <e><p><l>golbmánit<s n="V"/></l><r>gålmmånit<s n="V"/></r></p></e>
@@ -36587,7 +36611,8 @@
     <e><p><l>gottihit<s n="V"/><s n="TV"/></l><r>gåttedit<s n="V"/></r></p></e>
     <e><p><l>govastit<s n="V"/><s n="TV"/></l><r>gåvåstit<s n="V"/></r></p></e>
     <e><p><l>govddadit<s n="V"/></l><r>båhtånit<s n="V"/></r></p></e>
-    <e><p><l>govddidit<s n="V"/><s n="TV"/></l><r>gåbdedit,gåvdedit<s n="V"/></r></p></e>
+    <e><p><l>govddidit<s n="V"/><s n="TV"/></l><r>gåbdedit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>govddidit<s n="V"/><s n="TV"/></l><r>gåvdedit<s n="V"/></r></p></e>
     <e><p><l>govddihit<s n="V"/><s n="IV"/></l><r>gåvdedit<s n="V"/></r></p></e>
     <e><p><l>govdánit<s n="V"/></l><r>gåvddånit<s n="V"/></r></p></e>
     <e><p><l>govlut<s n="V"/></l><r>gåvllut<s n="V"/></r></p></e>
@@ -36617,7 +36642,7 @@
     <e><p><l>grupperet<s n="V"/></l><r>grupperit<s n="V"/></r></p></e>
     <e><p><l>guhciidit<s n="V"/></l><r>guohtsijdit<s n="V"/></r></p></e>
     <e><p><l>guhkedit<s n="V"/></l><r>guhkedit<s n="V"/><s n="IV"/></r></p></e>
-    <e><p><l>guhkedit<s n="V"/></l><r>guhkedit,guhkidit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>guhkedit<s n="V"/></l><r>guhkidit<s n="V"/></r></p></e>
     <e><p><l>guhkidit<s n="V"/><s n="TV"/></l><r>guhkedit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>guhkkudit<s n="V"/><s n="TV"/></l><r>guhkkudit<s n="V"/></r></p></e>
     <e><p><l>guhkkut<s n="V"/><s n="IV"/></l><r>guhkkut<s n="V"/></r></p></e>
@@ -36631,8 +36656,10 @@
     <e><p><l>gullostit<s n="V"/><s n="IV"/></l><r>gullustit<s n="V"/></r></p></e>
     <e><p><l>gullát<s n="V"/><s n="TV"/></l><r>gullát<s n="V"/></r></p></e>
     <e><p><l>gummieret<s n="V"/></l><r>gummierit<s n="V"/></r></p></e>
-    <e><p><l>gumppostit<s n="V"/><s n="TV"/></l><r>gumpostit,gámssit<s n="V"/></r></p></e>
-    <e><p><l>gumppustit<s n="V"/><s n="IV"/></l><r>gumpostit,gámssit<s n="V"/></r></p></e>
+    <e><p><l>gumppostit<s n="V"/><s n="TV"/></l><r>gámssit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>gumppostit<s n="V"/><s n="TV"/></l><r>gumpostit<s n="V"/></r></p></e>
+    <e><p><l>gumppustit<s n="V"/><s n="IV"/></l><r>gámssit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>gumppustit<s n="V"/><s n="IV"/></l><r>gumpostit<s n="V"/></r></p></e>
     <e><p><l>gunniidit<s n="V"/></l><r>tjivrijdit<s n="V"/></r></p></e>
     <e><p><l>guoddalit<s n="V"/><s n="TV"/></l><r>guoddalit<s n="V"/></r></p></e>
     <e><p><l>guoddit<s n="V"/><s n="TV"/></l><r>guoddet<s n="V"/></r></p></e>
@@ -36652,7 +36679,8 @@
     <e><p><l>guorrasit<s n="V"/><s n="IV"/></l><r>guorrasit<s n="V"/></r></p></e>
     <e><p><l>guorrat<s n="V"/><s n="TV"/></l><r>guorrat<s n="V"/></r></p></e>
     <e><p><l>guorssádit<s n="V"/></l><r>guorsadit<s n="V"/></r></p></e>
-    <e><p><l>guoskadit<s n="V"/><s n="TV"/></l><r>guoskadit,guosskadit<s n="V"/></r></p></e>
+    <e><p><l>guoskadit<s n="V"/><s n="TV"/></l><r>guosskadit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>guoskadit<s n="V"/><s n="TV"/></l><r>guoskadit<s n="V"/></r></p></e>
     <e><p><l>guoskat<s n="V"/><s n="IV"/></l><r>guosskat<s n="V"/></r></p></e>
     <e><p><l>guoskkahit<s n="V"/><s n="TV"/></l><r>guoskadit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>guosmmehit<s n="V"/></l><r>guosmudit<s n="V"/></r></p></e>
@@ -36722,7 +36750,8 @@
     <e><p><l>gálihit<s n="V"/></l><r>gáledit<s n="V"/></r></p></e>
     <e><p><l>gállet<s n="V"/><s n="TV"/></l><r>gállet<s n="V"/></r></p></e>
     <e><p><l>gálljudit<s n="V"/><s n="TV"/></l><r>gálljodit<s n="V"/></r></p></e>
-    <e><p><l>gáludit<s n="V"/></l><r>gievdadit,gálodit<s n="V"/></r></p></e>
+    <e><p><l>gáludit<s n="V"/></l><r>gálodit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>gáludit<s n="V"/></l><r>gievdadit<s n="V"/></r></p></e>
     <e><p><l>gámadit<s n="V"/></l><r>gámadit<s n="V"/></r></p></e>
     <e><p><l>gámahit<s n="V"/></l><r>gámádit<s n="V"/></r></p></e>
     <e><p><l>gámodahttit<s n="V"/></l><r>gámudahttet<s n="V"/></r></p></e>
@@ -36739,7 +36768,7 @@
     <e><p><l>gárrat<s n="V"/><s n="TV"/></l><r>gárrat<s n="V"/></r></p></e>
     <e><p><l>gárrut<s n="V"/><s n="IV"/></l><r>gárrut<s n="V"/></r></p></e>
     <e><p><l>gártadit<s n="V"/><s n="TV"/></l><r>gárttadit<s n="V"/></r></p></e>
-    <e><p><l>gárvodit<s n="V"/><s n="IV"/></l><r>gárvodit,gárvvudit<s n="V"/></r></p></e>
+    <e><p><l>gárvodit<s n="V"/><s n="IV"/></l><r>gárvvunit<s n="V"/></r></p></e>
     <e><p><l>gárvvehit<s n="V"/></l><r>gárvedit<s n="V"/></r></p></e>
     <e><p><l>gárvvihit<s n="V"/></l><r>gárvedit<s n="V"/></r></p></e>
     <e><p><l>gárvvistit<s n="V"/><s n="TV"/></l><r>gárvestit<s n="V"/></r></p></e>
@@ -36798,7 +36827,8 @@
     <e><p><l>heroiseret<s n="V"/></l><r>heroiserit<s n="V"/></r></p></e>
     <e><p><l>herpeseret<s n="V"/></l><r>herpeserit<s n="V"/></r></p></e>
     <e><p><l>hiistalit<s n="V"/></l><r>hisstalit<s n="V"/></r></p></e>
-    <e><p><l>hilggodit<s n="V"/><s n="TV"/></l><r>hilgodit,hilgudit<s n="V"/></r></p></e>
+    <e><p><l>hilggodit<s n="V"/><s n="TV"/></l><r>hilgudit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>hilggodit<s n="V"/><s n="TV"/></l><r>hilgodit<s n="V"/></r></p></e>
     <e><p><l>hilgut<s n="V"/><s n="TV"/></l><r>hilggut<s n="V"/></r></p></e>
     <e><p><l>hipmudit<s n="V"/><s n="IV"/></l><r>hibmodit<s n="V"/></r></p></e>
     <e><p><l>hirrudit<s n="V"/><s n="TV"/></l><r>hirrodit<s n="V"/></r></p></e>
@@ -36834,7 +36864,8 @@
     <e><p><l>hulaidit<s n="V"/></l><r>lillardit<s n="V"/></r></p></e>
     <e><p><l>hulardit<s n="V"/></l><r>tjajmadit<s n="V"/></r></p></e>
     <e><p><l>huleštit<s n="V"/></l><r>runádit<s n="V"/></r></p></e>
-    <e><p><l>humadit<s n="V"/><s n="IV"/></l><r>sáhkadit,ságastit<s n="V"/></r></p></e>
+    <e><p><l>humadit<s n="V"/><s n="IV"/></l><r>ságastit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>humadit<s n="V"/><s n="IV"/></l><r>sáhkadit<s n="V"/></r></p></e>
     <e><p><l>humahit<s n="V"/><s n="TV"/></l><r>sáhkadit<s n="V"/></r></p></e>
     <e><p><l>humaniseret<s n="V"/></l><r>humaniserit<s n="V"/></r></p></e>
     <e><p><l>huoikkahit<s n="V"/></l><r>huvkadit<s n="V"/></r></p></e>
@@ -36918,7 +36949,7 @@
     <e><p><l>illastit<s n="V"/><s n="TV"/></l><r>illastit<s n="V"/></r></p></e>
     <e><p><l>illosit<s n="V"/><s n="IV"/></l><r>illusit<s n="V"/></r></p></e>
     <e><p><l>illuderet<s n="V"/></l><r>illuderit<s n="V"/></r></p></e>
-    <e><p><l>illudit<s n="V"/><s n="IV"/></l><r>illodit,illudit,ávvudallat<s n="V"/></r></p></e>
+    <e><p><l>illudit<s n="V"/><s n="IV"/></l><r>ávvudit<s n="V"/></r></p></e>
     <e><p><l>illumineret<s n="V"/></l><r>illuminerit<s n="V"/></r></p></e>
     <e><p><l>ilmmuhit<s n="V"/><s n="TV"/></l><r>ilmodit<s n="V"/></r></p></e>
     <e><p><l>imagineret<s n="V"/></l><r>imaginerit<s n="V"/></r></p></e>
@@ -37018,7 +37049,8 @@
     <e><p><l>jalastit<s n="V"/></l><r>jalástit<s n="V"/></r></p></e>
     <e><p><l>jalbmalit<s n="V"/></l><r>juhtsádit<s n="V"/></r></p></e>
     <e><p><l>jalggodit<s n="V"/></l><r>jalgudit<s n="V"/></r></p></e>
-    <e><p><l>jalihit<s n="V"/></l><r>jaledit,juhtsalit<s n="V"/></r></p></e>
+    <e><p><l>jalihit<s n="V"/></l><r>juhtsalit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>jalihit<s n="V"/></l><r>jaledit<s n="V"/></r></p></e>
     <e><p><l>jalkalit<s n="V"/></l><r>jalkkahit<s n="V"/></r></p></e>
     <e><p><l>jalkkihit<s n="V"/></l><r>juhtsalit<s n="V"/></r></p></e>
     <e><p><l>jallošit<s n="V"/><s n="IV"/></l><r>jallutjit<s n="V"/></r></p></e>
@@ -37046,7 +37078,8 @@
     <e><p><l>jiekŋudit<s n="V"/><s n="TV"/></l><r>jiegŋodit<s n="V"/></r></p></e>
     <e><p><l>jielastit<s n="V"/></l><r>jielastit<s n="V"/></r></p></e>
     <e><p><l>jienastit<s n="V"/><s n="TV"/></l><r>jienastit<s n="V"/></r></p></e>
-    <e><p><l>jienihit<s n="V"/></l><r>jienadit,jienedit<s n="V"/></r></p></e>
+    <e><p><l>jienihit<s n="V"/></l><r>jienedit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>jienihit<s n="V"/></l><r>jienadit<s n="V"/></r></p></e>
     <e><p><l>jienádit<s n="V"/><s n="TV"/></l><r>jienadit<s n="V"/></r></p></e>
     <e><p><l>jieppadit<s n="V"/></l><r>jieppadit<s n="V"/></r></p></e>
     <e><p><l>jierbmadit<s n="V"/><s n="TV"/></l><r>jiermadit<s n="V"/></r></p></e>
@@ -37054,7 +37087,8 @@
     <e><p><l>jietnadit<s n="V"/><s n="TV"/></l><r>jiednadit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>joaibmudit<s n="V"/></l><r>joajmmodit<s n="V"/></r></p></e>
     <e><p><l>joatkit<s n="V"/><s n="TV"/></l><r>joarkket<s n="V"/></r></p></e>
-    <e><p><l>joazihit<s n="V"/></l><r>joatsedit,juhtsalit<s n="V"/></r></p></e>
+    <e><p><l>joazihit<s n="V"/></l><r>juhtsalit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>joazihit<s n="V"/></l><r>joatsedit<s n="V"/></r></p></e>
     <e><p><l>joderet<s n="V"/></l><r>joderit<s n="V"/></r></p></e>
     <e><p><l>jodiseret<s n="V"/></l><r>jodiserit<s n="V"/></r></p></e>
     <e><p><l>johtalit<s n="V"/><s n="IV"/></l><r>jåhtålit<s n="V"/></r></p></e>
@@ -37079,7 +37113,8 @@
     <e><p><l>jorgasit<s n="V"/><s n="IV"/></l><r>jårggåsit<s n="V"/></r></p></e>
     <e><p><l>jorggastit<s n="V"/><s n="TV"/></l><r>jårgåstit<s n="V"/></r></p></e>
     <e><p><l>jorggehit<s n="V"/><s n="IV"/></l><r>jårgestit<s n="V"/></r></p></e>
-    <e><p><l>jorggihit<s n="V"/><s n="IV"/></l><r>jårgedit,jårgijdit<s n="V"/></r></p></e>
+    <e><p><l>jorggihit<s n="V"/><s n="IV"/></l><r>jårgijdit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>jorggihit<s n="V"/><s n="IV"/></l><r>jårgedit<s n="V"/></r></p></e>
     <e><p><l>jorggiidit<s n="V"/></l><r>jårgijdit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>jorggistit<s n="V"/><s n="IV"/></l><r>jårgestit<s n="V"/></r></p></e>
     <e><p><l>jorggodit<s n="V"/></l><r>jårgudit<s n="V"/></r></p></e>
@@ -37097,13 +37132,14 @@
     <e><p><l>jugestit<s n="V"/></l><r>jugestit<s n="V"/></r></p></e>
     <e><p><l>jugistit<s n="V"/><s n="TV"/></l><r>jugestit<s n="V"/></r></p></e>
     <e><p><l>juhkat<s n="V"/><s n="TV"/></l><r>juhkat<s n="V"/></r></p></e>
-    <e><p><l>julahit<s n="V"/></l><r>juhtsádit,juládit<s n="V"/></r></p></e>
+    <e><p><l>julahit<s n="V"/></l><r>stubmat<s n="V"/></r></p></e>
     <e><p><l>juogadit<s n="V"/><s n="TV"/></l><r>juogadit<s n="V"/></r></p></e>
     <e><p><l>juogustit<s n="V"/><s n="TV"/></l><r>juogadit<s n="V"/></r></p></e>
     <e><p><l>juohkit<s n="V"/><s n="TV"/></l><r>juohket<s n="V"/></r></p></e>
     <e><p><l>juohkásit<s n="V"/><s n="IV"/></l><r>juohkásit<s n="V"/></r></p></e>
     <e><p><l>juoiggastit<s n="V"/><s n="IV"/></l><r>juojgastit<s n="V"/></r></p></e>
-    <e><p><l>juojgadit<s n="V"/></l><r>juoiggadit,juoiggahit<s n="V"/></r></p></e>
+    <e><p><l>juoiggadit<s n="V"/></l><r>juojgadit<s n="V"/></r></p></e>
+    <e><p><l>juoiggahit<s n="V"/></l><r>juojgadit<s n="V"/></r></p></e>
     <e><p><l>juolgadit<s n="V"/><s n="TV"/></l><r>juolgadit<s n="V"/></r></p></e>
     <e><p><l>juolludit<s n="V"/><s n="TV"/></l><r>juollodit<s n="V"/></r></p></e>
     <e><p><l>juorbbádit<s n="V"/></l><r>juorbádit<s n="V"/></r></p></e>
@@ -37347,8 +37383,8 @@
     <e><p><l>leat<s n="V"/><s n="IV"/></l><r>liehket<s n="V"/></r></p></e>
     <e><p><l>leavdnut<s n="V"/></l><r>lievnnut<s n="V"/></r></p></e>
     <e><p><l>leavvudit<s n="V"/></l><r>luovvanit<s n="V"/></r></p></e>
-    <e><p><l>leađggehit<s n="V"/></l><r>liergedit,sliergedit<s n="V"/></r></p></e>
-    <e><p><l>leađggihit<s n="V"/></l><r>liergedit,sliergedit<s n="V"/></r></p></e>
+    <e><p><l>leađggehit<s n="V"/></l><r>slierggit<s n="V"/></r></p></e>
+    <e><p><l>leađggihit<s n="V"/></l><r>slierggit<s n="V"/></r></p></e>
     <e><p><l>legaliseret<s n="V"/><s n="TV"/></l><r>legaliserit<s n="V"/></r></p></e>
     <e><p><l>legeret<s n="V"/></l><r>legerit<s n="V"/></r></p></e>
     <e><p><l>leikkodit<s n="V"/></l><r>lejkudit<s n="V"/></r></p></e>
@@ -37382,7 +37418,8 @@
     <e><p><l>livvadit<s n="V"/><s n="IV"/></l><r>livvadit<s n="V"/></r></p></e>
     <e><p><l>livvohit<s n="V"/><s n="TV"/></l><r>livudit<s n="V"/></r></p></e>
     <e><p><l>livvot<s n="V"/><s n="IV"/></l><r>livvut<s n="V"/></r></p></e>
-    <e><p><l>livvudit<s n="V"/><s n="TV"/></l><r>livodit,livvodit<s n="V"/></r></p></e>
+    <e><p><l>livvudit<s n="V"/><s n="TV"/></l><r>livvodit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>livvudit<s n="V"/><s n="TV"/></l><r>livodit<s n="V"/></r></p></e>
     <e><p><l>livvut<s n="V"/><s n="IV"/></l><r>livvut<s n="V"/></r></p></e>
     <e><p><l>liškut<s n="V"/></l><r>lissjkut<s n="V"/></r></p></e>
     <e><p><l>loahpahit<s n="V"/><s n="TV"/></l><r>låhpadit<s n="V"/><s n="IV"/></r></p></e>
@@ -37415,7 +37452,8 @@
     <e><p><l>loikkašit<s n="V"/></l><r>låjkåtjit<s n="V"/></r></p></e>
     <e><p><l>loikkihit<s n="V"/></l><r>låjkedit<s n="V"/></r></p></e>
     <e><p><l>loikkiidit<s n="V"/></l><r>låjkijdit<s n="V"/></r></p></e>
-    <e><p><l>lokkodit<s n="V"/></l><r>låkkudit,njalludit<s n="V"/></r></p></e>
+    <e><p><l>lokkodit<s n="V"/></l><r>låkkudit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>lokkodit<s n="V"/></l><r>njalludit<s n="V"/></r></p></e>
     <e><p><l>loktet<s n="V"/><s n="TV"/></l><r>låktet<s n="V"/></r></p></e>
     <e><p><l>loktit<s n="V"/><s n="TV"/></l><r>låktet<s n="V"/></r></p></e>
     <e><p><l>loktut<s n="V"/><s n="TV"/></l><r>låktut<s n="V"/></r></p></e>
@@ -37937,7 +37975,8 @@
     <e><p><l>návrruhit<s n="V"/></l><r>návrodit<s n="V"/></r></p></e>
     <e><p><l>náđodit<s n="V"/><s n="IV"/></l><r>nádudit<s n="V"/></r></p></e>
     <e><p><l>náđustit<s n="V"/><s n="IV"/></l><r>nádostit<s n="V"/></r></p></e>
-    <e><p><l>náđđadit<s n="V"/><s n="IV"/></l><r>nahtadit,navddadit<s n="V"/></r></p></e>
+    <e><p><l>náđđadit<s n="V"/><s n="IV"/></l><r>nahtadit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>náđđadit<s n="V"/><s n="IV"/></l><r>navddadit<s n="V"/></r></p></e>
     <e><p><l>náđđut<s n="V"/><s n="IV"/></l><r>náddut<s n="V"/></r></p></e>
     <e><p><l>nøytraliseret<s n="V"/></l><r>nøytraliserit<s n="V"/></r></p></e>
     <e><p><l>oadjudit<s n="V"/><s n="TV"/></l><r>oadjodit<s n="V"/><s n="IV"/></r></p></e>
@@ -37962,7 +38001,8 @@
     <e><p><l>oakkostit<s n="V"/><s n="TV"/></l><r>oakkostit<s n="V"/></r></p></e>
     <e><p><l>oakkuhit<s n="V"/></l><r>oakkodit<s n="V"/></r></p></e>
     <e><p><l>oalgguhit<s n="V"/><s n="TV"/></l><r>alodit<s n="V"/></r></p></e>
-    <e><p><l>oalistit<s n="V"/><s n="TV"/></l><r>goalestit,oalestit<s n="V"/></r></p></e>
+    <e><p><l>oalistit<s n="V"/><s n="TV"/></l><r>oalestit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>oalistit<s n="V"/><s n="TV"/></l><r>goalestit<s n="V"/></r></p></e>
     <e><p><l>oallut<s n="V"/><s n="TV"/></l><r>oallut<s n="V"/></r></p></e>
     <e><p><l>oallásit<s n="V"/></l><r>oallásit<s n="V"/></r></p></e>
     <e><p><l>oamastit<s n="V"/><s n="TV"/></l><r>åmastit<s n="V"/></r></p></e>
@@ -38284,7 +38324,8 @@
     <e><p><l>ratificeret<s n="V"/></l><r>ratificerit<s n="V"/></r></p></e>
     <e><p><l>ratifiseret<s n="V"/><s n="TV"/></l><r>ratifiserit<s n="V"/></r></p></e>
     <e><p><l>rationeret<s n="V"/></l><r>rationerit<s n="V"/></r></p></e>
-    <e><p><l>ravgadit<s n="V"/><s n="TV"/></l><r>ravgadit,ravggadit<s n="V"/></r></p></e>
+    <e><p><l>ravgadit<s n="V"/><s n="TV"/></l><r>ravggadit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>ravgadit<s n="V"/><s n="TV"/></l><r>ravgadit<s n="V"/></r></p></e>
     <e><p><l>ravgehit<s n="V"/><s n="TV"/></l><r>ravggidit<s n="V"/></r></p></e>
     <e><p><l>ravggadit<s n="V"/><s n="IV"/></l><r>ravgadit<s n="V"/></r></p></e>
     <e><p><l>ravggahit<s n="V"/></l><r>ravgadit<s n="V"/></r></p></e>
@@ -38764,7 +38805,7 @@
     <e><p><l>spesifiseret<s n="V"/><s n="TV"/></l><r>spesifiserit<s n="V"/></r></p></e>
     <e><p><l>spesiáliseret<s n="V"/></l><r>spesiáliserit<s n="V"/></r></p></e>
     <e><p><l>spierggadit<s n="V"/></l><r>spiergadit<s n="V"/></r></p></e>
-    <e><p><l>spiidneguođohit<s n="V"/></l><r>svijnneguododi,spijnneguododit<s n="V"/></r></p></e>
+    <e><p><l>spiidneguođohit<s n="V"/></l><r>svijnneguododit<s n="V"/></r></p></e>
     <e><p><l>spiraliseret<s n="V"/></l><r>spiraliserit<s n="V"/></r></p></e>
     <e><p><l>spoleret<s n="V"/></l><r>spolerit<s n="V"/></r></p></e>
     <e><p><l>spálđđildit<s n="V"/></l><r>spáltjeldit<s n="V"/></r></p></e>
@@ -38910,7 +38951,8 @@
     <e><p><l>sárdnut<s n="V"/><s n="TV"/></l><r>sárnnut<s n="V"/></r></p></e>
     <e><p><l>sárgasit<s n="V"/></l><r>sárggasit<s n="V"/></r></p></e>
     <e><p><l>sárggastit<s n="V"/></l><r>sárgastit<s n="V"/></r></p></e>
-    <e><p><l>sárggodit<s n="V"/><s n="TV"/></l><r>sárgodit,sárgudit<s n="V"/></r></p></e>
+    <e><p><l>sárggodit<s n="V"/><s n="TV"/></l><r>sárgudit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>sárggodit<s n="V"/><s n="TV"/></l><r>sárgodit<s n="V"/></r></p></e>
     <e><p><l>sárgulit<s n="V"/></l><r>sárggolit<s n="V"/></r></p></e>
     <e><p><l>sárgut<s n="V"/><s n="TV"/></l><r>sárggut<s n="V"/></r></p></e>
     <e><p><l>sárrasit<s n="V"/><s n="IV"/></l><r>sárrasit<s n="V"/></r></p></e>
@@ -39017,7 +39059,7 @@
     <e><p><l>vagabonderet<s n="V"/></l><r>vagabonderit<s n="V"/></r></p></e>
     <e><p><l>vahágahttit<s n="V"/><s n="TV"/></l><r>vahágahttet<s n="V"/></r></p></e>
     <e><p><l>vaháguhttit<s n="V"/><s n="TV"/></l><r>vaháguhttet<s n="V"/></r></p></e>
-    <e><p><l>vaiadit<s n="V"/></l><r>vajádit,vajádit<s n="V"/></r></p></e>
+    <e><p><l>vaiadit<s n="V"/></l><r>vajádit<s n="V"/></r></p></e>
     <e><p><l>vaiuldit<s n="V"/></l><r>vajoldit<s n="V"/></r></p></e>
     <e><p><l>vajáldahttit<s n="V"/><s n="TV"/></l><r>vajáldahttet<s n="V"/></r></p></e>
     <e><p><l>vajálduhttit<s n="V"/><s n="TV"/></l><r>vajálduhttet<s n="V"/></r></p></e>
@@ -39044,7 +39086,8 @@
     <e><p><l>veahkihit<s n="V"/><s n="TV"/></l><r>viehkedit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>veaiehit<s n="V"/></l><r>viejedit<s n="V"/></r></p></e>
     <e><p><l>veaiestit<s n="V"/></l><r>viejestit<s n="V"/></r></p></e>
-    <e><p><l>veallahit<s n="V"/><s n="IV"/></l><r>vellahit,vællahit<s n="V"/></r></p></e>
+    <e><p><l>veallahit<s n="V"/><s n="IV"/></l><r>vellahit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>veallahit<s n="V"/><s n="IV"/></l><r>vællahit<s n="V"/></r></p></e>
     <e><p><l>veallánit<s n="V"/><s n="IV"/></l><r>vællánit<s n="V"/></r></p></e>
     <e><p><l>vearahit<s n="V"/></l><r>vieradit<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>vearidit<s n="V"/><s n="TV"/></l><r>vieredit<s n="V"/></r></p></e>
@@ -39208,7 +39251,9 @@
     <e><p><l>vákšot<s n="V"/><s n="TV"/></l><r>váksjut<s n="V"/></r></p></e>
     <e><p><l>vákšut<s n="V"/><s n="TV"/></l><r>váksjut<s n="V"/></r></p></e>
     <e><p><l>váldalit<s n="V"/><s n="TV"/></l><r>válldalit<s n="V"/></r></p></e>
-    <e><p><l>válddahit<s n="V"/><s n="TV"/></l><r>buojkodit,gåvvidit,váldadit<s n="V"/></r></p></e>
+    <e><p><l>válddahit<s n="V"/><s n="TV"/></l><r>buojkodit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>válddahit<s n="V"/><s n="TV"/></l><r>gåvvidit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>válddahit<s n="V"/><s n="TV"/></l><r>váldadit<s n="V"/></r></p></e>
     <e><p><l>válddestit<s n="V"/><s n="TV"/></l><r>váldestit<s n="V"/></r></p></e>
     <e><p><l>válddihit<s n="V"/><s n="TV"/></l><r>váldedit<s n="V"/></r></p></e>
     <e><p><l>váldit<s n="V"/><s n="TV"/></l><r>válldet<s n="V"/></r></p></e>
@@ -39314,7 +39359,7 @@
     <e><p><l>čavgut<s n="V"/></l><r>tjavggut<s n="V"/></r></p></e>
     <e><p><l>čavgánit<s n="V"/></l><r>tjavggánit<s n="V"/></r></p></e>
     <e><p><l>čađahit<s n="V"/><s n="TV"/></l><r>tjadádit<s n="V"/><s n="IV"/></r></p></e>
-    <e><p><l>čeakŋuhit<s n="V"/></l><r>tjieggŋidit,tjiegŋodit<s n="V"/></r></p></e>
+    <e><p><l>čeakŋuhit<s n="V"/></l><r>tjægŋodit<s n="V"/></r></p></e>
     <e><p><l>čelodit<s n="V"/></l><r>tjeludit<s n="V"/></r></p></e>
     <e><p><l>šeneret<s n="V"/></l><r>sjenerit<s n="V"/></r></p></e>
     <e><p><l>čerggiidit<s n="V"/><s n="IV"/></l><r>tjergijdit<s n="V"/></r></p></e>
@@ -39432,7 +39477,8 @@
     <e><p><l>čolgasit<s n="V"/></l><r>tjålggåsit<s n="V"/></r></p></e>
     <e><p><l>čolgat<s n="V"/><s n="TV"/></l><r>tjålggåt<s n="V"/></r></p></e>
     <e><p><l>čolggadit<s n="V"/></l><r>tjålgådit<s n="V"/></r></p></e>
-    <e><p><l>čolggahit<s n="V"/></l><r>tjålggådit,tjålgådit<s n="V"/></r></p></e>
+    <e><p><l>čolggahit<s n="V"/></l><r>tjålggådit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>čolggahit<s n="V"/></l><r>tjålgådit<s n="V"/></r></p></e>
     <e><p><l>čollehit<s n="V"/><s n="TV"/></l><r>tjållidit<s n="V"/></r></p></e>
     <e><p><l>čollestit<s n="V"/></l><r>tjållistit<s n="V"/></r></p></e>
     <e><p><l>čollulit<s n="V"/></l><r>tjållolit<s n="V"/></r></p></e>
