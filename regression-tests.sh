@@ -1,8 +1,9 @@
 #!/bin/bash
 
-SRCLIST=`mktemp`;
-TRGLIST=`mktemp`;
-TSTLIST=`mktemp`;
+# Mac mktemp has no default template, this works on both
+SRCLIST=`mktemp -t tmp.XXXXXXXXXX`;
+TRGLIST=`mktemp -t tmp.XXXXXXXXXX`;
+TSTLIST=`mktemp -t tmp.XXXXXXXXXX`;
 
 basedir=`pwd`;
 mode=sme-smj
