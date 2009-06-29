@@ -17,6 +17,7 @@
 /configure.ac -text
 dev/SMJ_TO_GENERATE -text
 dev/apertium_bleu1.txt -text
+dev/basura.py -text
 dev/darbahit.paradigm -text
 dev/fictilemmapos.txt -text
 dev/giza_list.txt -text
@@ -26,6 +27,7 @@ dev/missingsme2.txt -text
 dev/missingsme3.txt -text
 dev/missingsmj.txt -text
 dev/missingsmj2.txt -text
+dev/mod_per_cadena.py -text
 dev/smeparadigms -text
 dev/smeparadigms2.txt -text
 dev/smepronounsfullform.txt -text
