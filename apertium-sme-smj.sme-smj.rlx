@@ -338,6 +338,9 @@ LIST Pr = Pr ;
 
 LIST Pcle = Pcle ;
 LIST Num = Num ;
+LIST Coll = Coll ;
+LIST Actor = Actor ;
+LIST G3 = G3 ;
 LIST Prop = Prop ;
 
 LIST LEFT = LEFT ;
@@ -463,7 +466,7 @@ LIST Ger = Ger ;
 LIST Sup = Sup ;
 LIST Actio = Actio ;
 
-LIST Actor = Actor ;
+LIST VActor = (Der2 Actor) ;
 LIST VAbess = VAbess ;
 
 # Derivation
@@ -615,7 +618,7 @@ LIST @X = @X ;
 # Semantic tags
 # -------------
 
-LIST Ani = Ani ;
+#LIST Ani = Ani ;
 LIST Fem = Fem ;
 LIST Mal = Mal ;
 
@@ -624,7 +627,7 @@ LIST Org = Org ;
 LIST Plc = Plc ;
 
 LIST Sur = Sur ;
-LIST Tit = Tit ;
+#LIST Tit = Tit ;
 
 # Other tags
 # ----------
@@ -911,12 +914,11 @@ SET MO = MO-MANge - ("man" Foc_ge) ;
 LIST PLACE-ADV =  "davá#bealde" "mátta#bealde" "nuortta#bealde" "oarje#bealde" "olggo#beale" ;
 # There will usually be a Gen in front. 
 
-LIST DOPPE = "dakko" "dákko" "dáppe" "diekko" "dieppe" "dokko" "doppe" "duokko" "duoppe" ;
+LIST DOPPE = "badjin" "bajil" "dakko" "dá" "dákko" "dáppe" "diekko" "dieppe" "do" "dokko" "doppe" "duo" "duokko" "duoppe" "olgun" ;
 # Adverbs with a locativic form, but don´t get Loc as a tag. 
 
-LIST DOHKO = "deike" "diehke" "dohko" "duohko" ;
-# Adverbs with a illativic form, but they don´t get Ill as a tag.
- 
+LIST DOHKO = "bajás" "deike" "diehke" "diehko" "dohko" "duohko" "lulás" "olggos" "ruoktot" "sisa" "vuovdimassii" ;
+# Adverbs with a illativic form, but they don´t get Ill as a tag. 
 
 # Coordinators
 # ------------
@@ -953,7 +955,13 @@ LIST ADV-LACCAT = "absoluhtalaš" "agálaččat" "aitosaččat" ("aktiiva" Der_l
 
 LIST ADV-AFTER-NUM = "geardde" ;
 
+LIST DUSSE = "áibbas" "dušše" "erenoamážit" "goitge" "man" "measta" "meastui" "oalle" "oba" "oktii#buot" "oppa" "sullii" ;
+
+LIST EASKKA = "easkka" ; 
+
 LIST ADV-NOT-ARG = "aiddo" "ain" "aivve" "albma" "aŋkke" "álggos" "bái#fáhkka" "beanta" "beare" "dušše" ;
+
+#LIST ADV-NOT-ARG2 = "aiddo" "ain" "aivve" "albma" "aŋkke" "álggos" "álgo#báliid" "álo" "bái#fáhkka" "beanta" "beare" "dakka#viđe" "dal" "dan_dihte" "danne" "dasto" "dattetge" ("dábálaš" Adv) "dávjá" "de" "dieđinge" "dieđusge" "duođaid" "easkka" "fal" "fargga" "fas" "fárrolaga" "gal" "goas" "goasse" "gos" "gosa" "gostege" "govt" "gusto" "hedi" "juo" "justa" "loahpas" "maiddái"  "manin" "manne" "nuppes" "suige" "šat" "vel" "viimmat" "vuos" ;
 
 LIST ADV-NOT-VERB = "dušše" "viimmat" ;
 
@@ -1624,7 +1632,9 @@ LIST PRESENT-MARKER = "dál" "ihttin" "odne" "otne" ("boahtte#áigi" Loc) ("boah
 
 SET TIME-MARKER = PAST-MARKER OR PRESENT-MARKER ;
 
-LIST TIME-ADV =  "easkka" "guhká" ("guhkit" Adv) ;
+LIST OTHER-TIME-ADV =  "árabuš" "árrat" "easkka" "guhká" ("guhkit" Adv) "maŋemustá" "maŋŋel" "maŋŋelaš" "maŋŋeleappos" "maŋŋit" "muhtumin" "ovdal" ;
+
+SET TIME-ADV = TIME-MARKER OR OTHER-TIME-ADV OR GEASSET;
 
 # Amount sets
 # - - - - - -
@@ -2591,7 +2601,9 @@ SET NON-APP = ALLSYNTAG - (@APP);
     # -----------------------------
     
 # These are the most common rules. They are put first, if possible, 
-# in order to get a more efficient parser.   
+# in order to get a more efficient parser. 
+
+REMOVE ABBR (0 Pers OR Adv OR Pcle) ;  
 
     # giella vs. gielas vs. giellat
     # - - - - - - - - - - - - - - -
@@ -2626,7 +2638,7 @@ REMOVE:r1300 VFIN IF (0 ("dušše"))(*1 VFIN BARRIER S-BOUNDARY);
 REMOVE:r1301 VFIN IF (-1 ("leat"))(0 ("dušše"));
 	## Leamaš dušše vihtta dorski nuhtiin.
 
-REMOVE:r1302 Actor IF (0 ("duššat")); 	# Make a set for non-agentive verbs?
+REMOVE:r1302 VActor IF (0 ("duššat")); 	# Make a set for non-agentive verbs?
 	## Oktagaslaš olbmo lonuheami dohkálašvuohta lea stáhtii geavadis duššin.
 
 SELECT:r1303 Adv IF (*-1 BOC BARRIER NOT-PCLE)(0 ADV-NOT-VERB);
@@ -2640,6 +2652,11 @@ SELECT:r1303 Adv IF (*-1 BOC BARRIER NOT-PCLE)(0 ADV-NOT-VERB);
 
  	# Proper nouns
 	# ------------
+
+REMOVE (Der_t) (0 Prop) ;
+REMOVE Prop (0 ("profehta") OR ("vuoigŋa")) ;
+
+SELECT ("mannat" Imprt Prs Du2) ;
 
 
 	# This is a Lule Sámi form.
@@ -2680,7 +2697,7 @@ REMOVE:r869 Prop IF (0 ("unni" Attr))(1 Der_Dimin OR ("mánáš"));
 REMOVE:r540 ACR IF (0 Prop) ;
   	## NRK lea čujuhan iežas áigut leat dehálaš seailluhit sámi servodaga.
 
-SELECT:r541 Prop IF (NEGATE -1 BOS)(0 Adv LINK NOT 0 (Plc Der_t));
+SELECT:r541 Prop IF (NEGATE -1 BOS OR (":"))(0 Adv LINK NOT 0 (Plc Der_t));
     ## Dovddan Anne Olsena.  
     
 
@@ -2707,7 +2724,8 @@ REMOVE:r544 A-DER IF (0 LEX-A);
 REMOVE:r545 Der1 IF (0 Der3 OR Der2);
 REMOVE:r546 Der2 IF (0 Der3);
 REMOVE:r548 V-DER IF (0 LEX-V)(NEGATE 0 (eaddji)); 
-
+REMOVE Attr (0 Der_vuohta) ;
+	# when attribute form predicative form
  
 
  # The negative condition is to avoid ending up with only a PrfPrc reading 
@@ -2969,6 +2987,20 @@ SELECT:r612 ("guhtta") IF (0 ("guđđa"))(1 ("geardde") OR (N Loc)) ;
 	# Choose one lemma, also compounds
 	# - - - - - - - - - - - - - - - - 
 	# where we have two dictionary forms and in other than nominative get two analyses
+
+# The main rule is: pick the plural-lemma, if possible.
+
+LIST SG-LEMMA = "beassáš#doallu" "biebmo#bázahus" "buksa" "doallu" "gávdni" "heasta#bierggas" "mális" "mielke#mális" "sáhka" "šlárva#sáhka" ;
+
+LIST PL-LEMMA = "beassáš#doalut" "biebmo#bázahusat" "buvssat" "doalut" "gávnnit" "heasta#biergasat" "mállásat" "mielke#mállásat" "ságat" "šlárva#ságat" ;	
+
+REMOVE ("doalut") (0 ("doallu") LINK *-1 QUANT-PRON BARRIER NPNHAI) ;
+REMOVE ("ságat") ((0 ("sáhka") LINK *-1 QUANT-PRON OR PLURALIZER BARRIER NPNHAI) OR (0 Ess)) ;
+REMOVE ("šlárva#ságat") ((0 ("šlárva#sáhka") LINK *-1 QUANT-PRON BARRIER NPNHAI) OR (0 Ess)) ;
+
+REMOVE SG-LEMMA IF (0 PL-LEMMA);
+
+REMOVE (V* Attr) (*-1 VFIN BARRIER NP-HEAD)(0 Actor LINK NOT 1 N);
 	
 LIST LEMMA1 = "agi#beaivái" "álbmot" "álggahit" "alimus#riekti" "árran" "biebmo#bázahusat" "beassáš" "boadnji" "boasttuvuohta" "boazo#eamit" "boazo#lohku" "čoahkkin" "čuvla" "dálu#eamit" (".*diibmu"r) "eana#láigo#boahtu" "Elle"
 "gárren#oaivvis" "gávnnit" "gaskka#muddu" "goađe#eamit" "heasta#biergasat" (".*kruvdno"r) "guolle#bivdu" (".*gursa"r) "kaleandar" (".*keallir"r)
@@ -3037,6 +3069,10 @@ SELECT:r626 ("goddin#áitit") IF (0 ("goddi#náitit"));
     # - - - - - - - - -
 SELECT:r627 ("badje#almmái") IF (0 ("badje#albmi"));    
 SELECT:r628 ("ráđđe#almmái") IF (0 ("ráđđe#albmi"));
+
+    # bassi
+    # - - - - - - - - -
+REMOVE Actor IF (0 ("bassi" Ess) LINK 1 VFIN);    
 
     # báitta vs. báitat
     # - - - - - - - - -
@@ -3115,9 +3151,12 @@ SELECT:r672 ("dološ") IF (0 ("doallu" Der_Dimin));
 REMOVE:r675 ("eapmi" Pl) IF (*1 V-SG BARRIER VFIN OR S-BOUNDARY);
 
 	# eana
-	# - - - 	
+	# - - - 
+LIST EANAN = "eanan" "eana" "eatnan" ;
+		
 REMOVE:r677 Sg IF (*-1 ("stáhta") OR ("priváhta") OR ("matrikuleret"))(0 ("eanan" Pl Loc));
     ## Stáhta eatnamiin.
+SELECT ("eanan") (0 EANAN) ;     
    
     # fálli vs. fális
     # - - - - - - - -
@@ -3131,7 +3170,9 @@ REMOVE:r679 ("friddja#agoarta") IF (0 ("friddja#goarta"));
     # - - - - - - - - -
 SELECT:r680 ("giđđa#geassi") IF (0 ("giđđa#geasis"));
 SELECT:r674 ("čakča#geassi") IF (0 ("čakča#geasis"));
-
+REMOVE Actor (0 ("geassi") LINK -1 DURATION-A OR TIME-A) ;
+REMOVE Actor (0 ("geassi")) ;  # This is preliminary
+SELECT Actor (0 ("geres#geassi")) ;
 
 	# gielda vs gieldda
 	# - - - - - - - - -
@@ -3391,6 +3432,8 @@ SELECT:r774 ("riggi") IF (*0 ("dolla") OR ("lávvu") OR ("báthi") OR ("árran")
     # - - - - - - - - - - - -
 SELECT:r776 ("beaive#ruoktu") IF (0 ("beaive#ruktu"));
 SELECT:r777 ("mánáid#ruoktu") IF (0 ("mánáid#ruktu"));
+SELECT:r777 ("ruoktu") IF (0 Px);
+	## Ale bala váldimis Márjjá ruktosat áhkkán.
 
 SELECT:r778 ("poasta#ruktu") IF (0 ("poasta#ruoktu"));
 SELECT:r779 ("turnea#ruktu") IF (0 ("turnea#ruvtto"));
@@ -3511,6 +3554,10 @@ SELECT:r818 ("virgi") IF (0 ("viergi" Loc) LINK 1 COPULAS LINK 1 VIRGI);
 	# vuollebealli
 	# - - - - - - -
 REMOVE:r820 ("Vuolle#bealli") IF (0 ("vuolle#bealli"));
+
+	# vuorru
+	# - - - -
+REMOVE G3 (0 ("vuorru") LINK *-1 (Pers Gen) OR (Mal Gen) OR (Fem Gen) OR (Sur Gen))	;
 
 	# Not noun
 	# --------
@@ -3946,7 +3993,7 @@ SELECT:r940 (PxSg3) IF (-2 N-PX)(-1 CC);
 	
 SELECT:r943 Loc IF (-1 VFIN)(0 PLACE LINK 0 Px)(NEGATE 0 Po OR Pr)(NEGATE 1 Po OR ("mielde") OR ("fárrui")) ;	
 
-REMOVE:r944 (Gen PxSg3) IF (NEGATE *-1 Pr BARRIER NPNH)(1C Prop);
+REMOVE:r944 (Gen PxSg3) IF (NEGATE *-1 Pr BARRIER NPNH)(NOT 0 N-PX)(1C Prop);
 	## erret eará stuorradiggedieđáhusas Sámedikki doaimmaid birra.
 
 REMOVE Loc IF (0 SATNI + Acc)(*0 ("čállit") BARRIER SV-BOUNDARY) ;
@@ -4070,17 +4117,17 @@ SELECT:r968 (V Du3) IF (-1 (N Nom))(*-2 CC BARRIER NPNH LINK -1 (N Nom));
 SELECT:r969 (V Du3) IF (*1 (Sg Nom) BARRIER NPNHA LINK 1 CC LINK *1 (Sg Nom) BARRIER NPNH);
 	## Dá leaba Brita ja Ole Kåven.
 
-REMOVE:r970 (V Sg3) IF (*-1 (N Num Nom) BARRIER SV-BOUNDARY)(0 (V Du3));
+REMOVE:r970 (V Sg3) IF (*-1 (Coll Nom) BARRIER SV-BOUNDARY)(0 (V Du3));
 	## Biera-guovttos Márehiin leaba daid mánáid váhnemat.
-
+	
 	# Pl1 - early cycle, safe rules
 	# - - 
 SELECT:r971 (V Pl1) IF (*-1 MII-PERS BARRIER VFIN OR PUNCT LINK NOT *-1 V-PL1 BARRIER NOT-ADV-PCLE OR CLB);
 	## Mii sápmelaččat gal leat vásihan dán...
 
-SELECT:r972 (V Pl1) IF (*1 MII-PERS BARRIER NOT-ADV-PCLE OR CLB OR ("seamma") LINK NOT *1 V-SG3 BARRIER NOT-AA OR CLB);
+SELECT:r972 (V Pl1) IF (*1 MII-PERS BARRIER NOT-ADV-PCLE OR CLB OR ("seamma") OR S-BOUNDARY LINK NOT *1 V-SG3 BARRIER NOT-AA OR CLB);
 	## Galgat go mii vuordit muhtun eará? 
-
+	
 REMOVE:r973 Imprt IF (-1 MII-PERS OR (N Pl Nom))(0 (V Prs Pl1));
 	## Mii áigut maiddái leat aktiivvalaččat mielde juohke dásis.
 
@@ -5088,8 +5135,9 @@ SELECT:r1185 CS IF (0 go)(1 ("ahte"));
 
 
 	# ============== #
-          SECTION #9 # 
+   #SEC#       SECTION #9 # 
 	# ============== #
+
 
 	# CS selection for specific CS candidates
 	# ---------------------------------------
@@ -5132,7 +5180,7 @@ REMOVE:r1203 CS IF (NEGATE *1 VFIN OR ("leapma" Der_Dimin)); # The latter is "le
 	# ====================== #
 	# Disambiguating adverbs #
 	# ====================== #
-              SECTION #10    #
+    #SEC#      SECTION #10       #
 	# ====================== #
 
 	# General adverb rules
