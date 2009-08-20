@@ -16,6 +16,7 @@
 /autogen.sh -text
 /configure.ac -text
 dev/SMJ_TO_GENERATE -text
+dev/Tromso_workshop_2009/Tromso_workshop_plan.txt -text
 dev/apertium_bleu1.txt -text
 dev/basura.py -text
 dev/darbahit.paradigm -text
