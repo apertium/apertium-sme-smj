@@ -1,7 +1,7 @@
-Workshop
+Workshop on North Sámi to Lule Sámi (sme > smj) Machine Translation
 
 1. day:
-0. what do they expect from a sme-smj MT system
+0. what do users expect from a sme-smj MT system
 1.1. theoretical part:
 1.1.1. Overview MT
 1.1.2. RBMT
@@ -14,7 +14,9 @@ Workshop
     How to edit dictionaries?
     How to interpret testvoc?
     Newspaper
-
+1.3. linguistic discussion
+    What do we know about contrastive sme-smj grammar?
+    What is the status of our sme-smj dictionaries
 2. day:
 2.1. lexicon
 2.2. structural transfer 
