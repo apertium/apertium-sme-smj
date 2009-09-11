@@ -1,36 +1,208 @@
-Workshop on North Sámi to Lule Sámi (sme > smj) Machine Translation
+\documentclass[a4paper,english,12pt]{article}
+\usepackage{babel}
+\usepackage{ucs} %sami letters
+% \usepackage{amssymb} %mathematical
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{harvard}
 
-1. day:
-0. what do users expect from a sme-smj MT system
-1.1. theoretical part:
-1.1.1. Overview MT
-1.1.2. RBMT
-        morphology
-        disambiguation
-        lexicon -
-        syntactic transfer (contrastive syntax)
-1.2. practical part:
-    How to install apertium?
-    How to edit dictionaries?
-    How to interpret testvoc?
-    Newspaper
-1.3. linguistic discussion
-    What do we know about contrastive sme-smj grammar?
-    What is the status of our sme-smj dictionaries
-2. day:
-2.1. lexicon
-2.2. structural transfer 
-2.3. evaluation of the workshop: 
-"have we completely bored you out of your minds?"
-are you able to use the tools for lulesami
-will they be useful in your work/private use  
-what can a sme-smj MT system accomplish (to find out if the expectations stay the same)
-do you think you will be able to contribute to the system in the future
+\usepackage[dvips]{graphicx}
+\usepackage{rotating} 
 
-(adding new words whenever you come up with some etc., or checking existing translations or adding new testsentences)    
+%\usepackage{tikz}
+%\usepackage{array}
+%\usepackage{arydshln} %has to be after array
+%\usepackage{multirow}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{tabularx} %specified width
+\usepackage{tipa}
+\usepackage{booktabs}
+\usepackage{ctable} %loads booktable by default
+\usepackage{colortbl}
+\usepackage{covington}
+\usepackage{url}
+\usepackage{harvard}
+\usepackage[right=2.5cm,left=2.5cm,top=2cm,bottom=2cm]{geometry}
+% \usepackage{bibtexlogo}
+\usepackage{setspace}
+
+\usepackage{fancyhdr}
+\usepackage{linguex}
+
+\pagestyle{fancy}
+%\fancyfoot[LO,LE]{\slshape Rule-based Machine Translation from North to Lule Sámi}
+
+
+\begin{document}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+%\linespread{1.5}
+\begin{spacing}{1.0}
+
+
+\newcommand{\tx}{\mbox{t\hspace{-.35em}-}} % for Sm
+
+
+
+
+\title{{\Large Workshop 29.-30.09.2009 (evtl. 1.-2.09.2009)}}
+% ?? litt mindre kryptisk? bedre?
+
+\author{Francis Tyers and Linda Wiechetek}
+\date{\today}
+\maketitle
+
+
+\thispagestyle{empty}
+\tableofcontents 
+\thispagestyle{empty} %has to be after \maketitle
+
+\newpage
+
+\setcounter{page}{1} %in order to start pagenumbering
+
+\parindent = 0mm
+\parskip = 12pt
+
+
+
+%- contrastive linguistics: sme-smj - it can also be interesting from the linguistic perspective
+
+\section{day (29.09.2009)}
+\subsection{what do they expect from a sme-smj MT system?}
+\begin{itemize}
+\item take a piece of paper and answer 2 questions
+\item what should it be able to do?
+\item where are the limitations?
+\end{itemize}
+
+\begin{itemize}
+\item literal vs. free translation - idiomaticity
+\item functional vs. artistic
+\item why we still need human translators
+\item gisting system vs.
+\item what is a good translation for the automatic system (Francis' example from a former presentation)
+\end{itemize}
+
+\subsection{What is machine translation?}
+\begin{itemize}
+\item Google example and its limitations
+\item Google for smaller languages (lesser resourced /lower density languages
+\item  terms of Rule-based vs. statistical systems and linguistics vs. statistics
+\item    Advantages (and disadvantages) of rule-based systems
+\item    Examples of rule-based MT (GramTrans, Apertium for other languages - demo)
+\end{itemize}
+
+
+\begin{itemize}
+\item Apertium for Lule Sámi as it is now
+\item what is good, what is not good
+\item how does the system look like - modules
+\item dictionaries - monolingual ones, bilingual ones, postediting one - pretty simple: one word corresponds to one word
+\item morphology - how does it work
+\item syntactic transfer
+\item postgeneration (liehket)
+\item our procedure (take a small testkorpus and add the words contained in that + function words and determiners - that's why beana is not in the dictionary and why we have to do lexicon word)
+\item why words shouldn't be in only one of the dictionaries
+\end{itemize}
+
+\begin{figure*} {\footnotesize \setlength{\tabcolsep}{0.5mm}
+\begin{center}
+\begin{tabular}{cccccccc} 
+\\
+\parbox{0.7cm}{SL text} \\ 
+$\downarrow$ \\
+\framebox{\parbox{1.4cm}{de\-formatter}} $\rightarrow$ &
+\framebox{\parbox{0.8cm}{morph. anal.}}  $\rightarrow$ &
+\framebox{\parbox{1.2cm}{PoS tagger}} $\rightarrow$ &
+\framebox{\parbox{1.1cm}{struct.\ transf.}} $\rightarrow$ &
+\framebox{\parbox{0.8cm}{morph. gen.}}  $\rightarrow$ &
+\framebox{\parbox{1.0cm}{post\-genera\-tor}} $\rightarrow$ &
+\framebox{\parbox{1.2cm}{re-format\-ter}} \\ & & & $\updownarrow$ & &
+& $\downarrow$ \\ & & & \framebox{\parbox{1.0cm}{lex.\ transfer}} & &
+& \parbox{0.7cm}{TL text}\\\\
+\end{tabular}
+\end{center} }
+\caption{The eight modules that build the assembly line of the
+shallow-transfer machine translation system.}
+\label{fg:modules}
+\label{pg:modules}
+\end{figure*}
+
+\begin{itemize}
+\item something about contrastive linguistics
+\item things we found out about Lule Sámi vs. North Sámi
+\item orthography - how was the bilingual dictionary made
+\item dat/duot/dat vs....
+\item negation - tense marker in different elements
+\item SVO vs. SOV
+\item case Loc vs. Ine/El
+\item different PoS in some cases gullevaš vs. gullujiddje
+\item why it can be interesting to work as a linguist - being a discoverer
+\item computational systems force you to be accurate - when you need to be accurate you go into depth of linguistic questions
+\end{itemize}
+
+\subsection{Practical questions}
+
+\begin{itemize}
+\item How to install apertium?
+\item    How to edit dictionaries?
+\item what do # * @ and / mean and in which order should they be edited
+\item choosing between parallel forms - choosing a standard
+\item    How to interpret testvoc? Newspaper
+\end{itemize}
+
+
+\section{2. day (30.09.2009)}
+\subsection{lexicon}
+\begin{itemize}
+\item look into the generated newspaper corpus and add sentences that (almost) work to the corpus
+\item add new words in this corpus to all three dictionaries
+\end{itemize}
+
+\subsection{structural transfer} 
+
+\begin{itemize}
+\item search the corpus for SOV and make a set of SOV rules
+\item case rules
+\item any other structural rules that come into our minds when we look at the newspaper translations
+\end{itemize}
+
+\subsection{evaluation of the workshop} 
+\begin{itemize}
+\item answer the two questions from the start once again - what do you expect from an MT system, where are its limitations?
+\item are you able to use the tools for lulesami
+\item will they be useful in your work/private use
+\item do you think you will be able to contribute to the system in the future (adding new words whenever you come up with some etc., or checking existing translations or adding new testsentences)
+\end{itemize}
+%"have we completely bored you out of your minds?"
+%what can a sme-smj MT system accomplish (to find out if the expectations stay the same)
+ 
+
+\section{Goals Francis and Linda}
+
+\begin{itemize}
+\item 1. bigger testkorpus - preferably from the newspaper
+check web thing - copy sentences that work/almost work
+\item translations: corrected testkorpus output (rather than free human translations) grammatically correct vs. idiomatic 
+\item generation of paradigms becomes obsolete because of foma
+\item bilingual dictionary when adding words
+\item (5. syntactic transfer)
+\item SOV study - Lulesámi testkorpus, extract frequency of SOV
+\item Lulesámi testkorpus: analyze different kinds of noun phrases: Adj Adj N, 
+\item newsarticle Avvir , translate it, fix errors - show people a possible use
+\item link on our homepage (giellatekno)
+\end{itemize}   
     
-Practical things:
-Beamer
-Computers
-internet
-room
+\section{Practical things}
+\begin{itemize}
+\item Beamer
+\item Computers - which ones do the participants have? Does everyone have a computer?
+\item    evtl. Geir-Tore
+\item internet
+\item room - 4553
+\item lunch
+\end{itemize}
+\end{document}
