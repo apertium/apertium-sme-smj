@@ -81,19 +81,89 @@
 \begin{itemize}
 \item literal vs. free translation - idiomaticity
 \item functional vs. artistic
-\item why we still need human translators
-\item gisting system vs.
+\item why we still need human translators:
+\item machines make mistakes, make a text that sounds good and idiomatic in the target language
+\item we need examples of bad translation - Trond (English - Norwegian), Norwegian - Sámi (Duomma), Francis Spanish- English
+\item system for dissemination vs. assimilation
 \item what is a good translation for the automatic system (Francis' example from a former presentation)
 \end{itemize}
+
+\begin{quote}
+“... interacciones independientes del esp´ın en unidades de la 
+secci´on eﬁcaz del neutrino de Dirac...” 
+“... interaccions independents de l’esp´ın en unitats de la secci´o 
+eﬁca¸c del neutr´ı de Dirac...” 
+“. . . tornillos que unen el volante de inercia al ´arbol de levas 
+“. . . caragols que uneixen el volant d’in`ercia a l’arbre de lleves 
+. . . ” 
+No: Transformen estructures o patrons i substitueixen el l`exic 
+(parant especial esment al terminol`ogic). 
+\end{quote}
 
 \subsection{What is machine translation?}
 \begin{itemize}
 \item Google example and its limitations
-\item Google for smaller languages (lesser resourced /lower density languages
+\item Google for smaller languages (lesser resourced /lower density languages)
+\item one bad thing about google is that the translations between closely related languages can sometimes come out like paraphrase
 \item  terms of Rule-based vs. statistical systems and linguistics vs. statistics
 \item    Advantages (and disadvantages) of rule-based systems
+\item advantages: easier to detect/fix errors - the makers of the system have competence and gain competence when writing the rules
+\item disadvantages: they sound less fluent because there is no specific target language modelling
 \item    Examples of rule-based MT (GramTrans, Apertium for other languages - demo)
 \end{itemize}
+
+%There are a number of things in which Apertium and Google Translate are
+%completely different. Here are some ideas to help us get a bit more
+%optimistic. If we agree on the following, we can use them as arguments
+%for the validity of our approach even in the wake of these developments.
+%* Statistical machine translation systems often produce output which is
+%"more natural" than that produced by those based on rules. Statistical
+%machine translation attempts to balance, on one hand, the probability
+%that the words of the translation correspond to those of the original
+%sentence ("fidelity") and, on the other hand, the probability that the
+%words of the translated phrase and are precisely those and in that order
+%in the target language ("fluency" "naturalness"). What happens sometimes
+%is that the latter outweighs the former: the result is a deceptively
+%natural and fluent translation but which is not completely faithful to
+%the original (in fact, when postediting statistical machine translation,
+%one should be continually looking at the original because these are
+%"infidelities" are not rare).
+%20:45* Rule-based systems tend to produce translations which are more
+%"mechanical", sometimes less fluid and more "repetitive", so that their
+%errors tend also to be more repetitive and usually very evident, due the
+%absence of any mechanism for "smoothing" the resulting translation to
+%make it more "fluent". This eases the work of posteditors: for instance,
+%you can even search and perform global substitutions in the text.
+%* Another advantage of the rule-based systems is terminological
+%consistency: they produce the same equivalent for the same words
+%(equivalents are chosen by statistical systems chosen according to their
+%probability of translation and overall naturalness, which may not be
+%suitable for subject-specific or technical text).
+%/CurrentM
+%* experts who have designed a system based on rules find it much easier
+%to diagnose and repair the source of a translation error: they know what
+%rule has failed and in which module, or which entry is the wrong in the
+%dictionary.
+%And we have written and published other arguments:
+%"There are distinct advantages to having free/open-source licences for
+%rule-based machine translation: linguistic knowledge for a language pair
+%is encoded explicitly in the form of linguistic data, so that both
+%humans and the machine translation engine can process it. This makes
+%them naturally available to build knowledge for other language pairs or
+%even for other human language technologies besides machine translation,
+%and, conversely, linguistic knowledge from other sources may be reused
+%to build machine translation systems. The free and open scenario makes
+%this reuse easier, and, if copylefted licences are used, builds a
+%commons of knowledge and resources that benefits all the language
+%communities involved. These advantages are even clearer for
+%less-resourced languages, for which large bilingual corpora are not
+%available, and for morphologically rich languages, which even with large
+%corpora suffer from data sparseness. "
+%(http://xixona.dlsi.ua.es/freerbmt09/).
+%And even other people have:
+%http://www.globalwatchtower.com/2009/02/26/rbmt-desktop/
+%So we better shape up, because we have to be able to explain this to
+%future users (and customers) of Apertium.
 
 
 \begin{itemize}
