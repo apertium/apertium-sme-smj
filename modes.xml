@@ -28,9 +28,11 @@
       <program name="lt-proc $1">
         <file name="sme-smj.autogen.bin"/>
       </program>
+<!--
       <program name="lt-proc -p">
         <file name="sme-smj.autopgen.bin"/>
       </program>
+-->
     </pipeline>
   </mode>
 
