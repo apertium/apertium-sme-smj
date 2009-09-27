@@ -1,0 +1,382 @@
+\documentclass[a4paper,english,12pt]{article}
+\usepackage{babel}
+\usepackage{ucs} %sami letters
+% \usepackage{amssymb} %mathematical
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{harvard}
+
+\usepackage[dvips]{graphicx}
+\usepackage{rotating} 
+
+%\usepackage{tikz}
+%\usepackage{array}
+%\usepackage{arydshln} %has to be after array
+%\usepackage{multirow}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{tabularx} %specified width
+\usepackage{tipa}
+\usepackage{booktabs}
+\usepackage{ctable} %loads booktable by default
+\usepackage{colortbl}
+\usepackage{covington}
+\usepackage{url}
+\usepackage{harvard}
+\usepackage[right=2.5cm,left=2.5cm,top=2cm,bottom=2cm]{geometry}
+% \usepackage{bibtexlogo}
+\usepackage{setspace}
+
+\usepackage{fancyhdr}
+\usepackage{linguex}
+
+\pagestyle{fancy}
+%\fancyfoot[LO,LE]{\slshape Rule-based Machine Translation from North to Lule Sámi}
+
+
+\begin{document}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+%\linespread{1.5}
+\begin{spacing}{1.0}
+
+
+\newcommand{\tx}{\mbox{t\hspace{-.35em}-}} % for Sm
+
+
+
+
+\title{{\Large Workshop 29.-30.09.2009 (evtl. 1.-2.09.2009)}}
+% ?? litt mindre kryptisk? bedre?
+
+\author{Francis Tyers and Linda Wiechetek}
+\date{\today}
+\maketitle
+
+
+\thispagestyle{empty}
+\tableofcontents 
+\thispagestyle{empty} %has to be after \maketitle
+
+\newpage
+
+\setcounter{page}{1} %in order to start pagenumbering
+
+\parindent = 0mm
+\parskip = 12pt
+
+
+
+%- contrastive linguistics: sme-smj - it can also be interesting from the linguistic perspective
+
+\section{day (29.09.2009)}
+\subsection{Welcome}
+\begin{itemize}
+\item Welcome to the workshop on sme-smj MT
+\item Present ourselves
+\item MT is good to make bilingual publishing (e.g. daily newspapers) possible where there wouldn't have been money to do that (minority languages)
+\item we are glad to have the workshop: we find out what people want (users), get help with the Lule Sámi linguistic questions we have
+\item increasing number of texts in a language leads to increasing demands for them
+\end{itemize}
+
+\subsection{What do they expect from a sme-smj MT system?}
+\begin{itemize}
+\item take a piece of paper and answer 2 questions:
+\item What do you expect from translation (human translation)?
+\item What do machine translation?
+    \begin{itemize}
+        \item What should it be able to do?
+        \item Where are the limitations?
+    \end{itemize}
+\end{itemize}
+
+\subsection{Google translation}
+\begin{itemize}
+    \item Have you been using Machine Translation? 
+    \item - Google, bablefish, proMT, gramtrans
+\end{itemize}
+
+
+\begin{quote}
+The Guardian 27.9.2009
+Last week, Iran said it was building a second uranium enrichment plant despite UN demands that it stops its development plans.
+\end{quote}
+
+\begin{quote}
+Google en-nob
+Sist uke sa at Iran var det å bygge et sekund anriking av uran anlegg til tross for FNs krav om at den stopper sine utviklingsplaner.
+\end{quote}
+% doesn't recognize the subject
+% doesn't recognize the compound - anriking av uran anlegg
+
+\begin{quote}
+Gramtrans en-nob
+Sist uke, sa Iran det holdt på å bygge et annen uranberigelsesanlæg tross UN krav som det stopper sine utviklingsplaner.
+\end{quote}
+
+% doesn't translate UN into FN
+
+\begin{quote}
+Human translation
+Forrige uke sa Iran at de var i ferd med å bygge enda en urananrikingsfabrikk til tross for FNs krav om å stoppe utviklingsplanene.
+\end{quote}
+
+\begin{quote}
+Google nob-en
+Last week, Iran said that they were about to build another urananrikingsfabrikk despite UN demands to halt development plans. 
+\end{quote}
+
+\begin{quote}
+Gramtrans nob-en
+Forrige week Iran said that they were building still an urananrichingsfabrikk in spite of the UN's demand for stopping the development plans.
+\end{quote}
+
+
+\begin{quote}
+Gramtrans nob-en
+Forrige week Iran said that they were building still an urananrichingsfabrikk in spite of the UN's demand for stopping the development plans.
+\end{quote}
+
+
+\begin{quote}
+Gramtrans nob-en
+Forrige week Iran said that they were building still an urananrichingsfabrikk in spite of the UN's demand for stopping the development plans.
+\end{quote}
+
+\subsection{What is a good tranlsation (vs. machine translation)?}
+
+What is a good translation?
+\begin{itemize}
+\item e.g. novels should capture not only content, but also some message
+\item literal translation vs. free translation
+\item should one feel that the book was originally written in another language/another cultural context or should one identify as much as possible with it and should the characters and setting be from ones own surroundings?
+\item Donald Duck - Vulle Vuojaš
+\item machines can translate Donald Duck, but not make a general effort to capture that
+\end{itemize}
+
+What is good machine translation?
+\begin{itemize}
+\item depends on the text that is to be translated
+\item other types of texts: manuals, weather reports, newspaper texts (more content-oriented)
+\item system for dissemination vs. assimilation
+\item what is a good translation for the automatic system (Francis' example from a former presentation)
+\end{itemize}
+
+\begin{quote}
+Genesis 11,9 (New International Version (NIV))
+That is why it was called Babel because there the LORD confused the language of the whole world. From there the LORD scattered them over the face of the whole earth.
+\end{quote}
+
+\begin{quote}
+Derfor kalte de den Babel. For der forvirret Herren all verdens tungemål, og derfra spredte Herren dem ut over hele jorden.
+http://www.bibel.no
+\end{quote}
+
+\begin{quote}
+Google:
+Derfor ble det kalt Babel fordi det Herren forvirret språket i hele verden. Derfra spredte Herren dem over ansiktet til hele jorden.
+\end{quote}
+
+
+linguistic Mt:
+\begin{itemize}
+\item number of sentences should be the same
+\item closest lexical equivalent
+\item syntactic structure as similar as possible (word order if possible)
+\item PoS should stay the same if possible
+\item content should be preserved
+\end{itemize}
+
+
+\subsection{Translate example-sentences into a good target MT translation}
+
+Exercise:\\
+Translate 5 sentences into good MT (say what would you would do differently for a regular translation)
+list corpus_diff
+
+%\begin{quote}
+%“... interacciones independientes del esp´ın en unidades de la 
+%secci´on eﬁcaz del neutrino de Dirac...” 
+%“... interaccions independents de l’esp´ın en unitats de la secci´o 
+%eﬁca¸c del neutr´ı de Dirac...” 
+%“. . . tornillos que unen el volante de inercia al ´arbol de levas 
+%“. . . caragols que uneixen el volant d’in`ercia a l’arbre de lleves 
+%. . . ” 
+%No: Transformen estructures o patrons i substitueixen el l`exic 
+%(parant especial esment al terminol`ogic). 
+%\end{quote}
+
+\subsection{What is machine translation?}
+\begin{itemize}
+\item  terms of Rule-based vs. statistical systems and linguistics vs. statistics
+\item    Advantages (and disadvantages) of rule-based systems
+\item advantages: easier to detect/fix errors - the makers of the system have competence and gain competence when writing the rules
+\item disadvantages: they sound less fluent because there is no specific target language modelling
+\item    Examples of rule-based MT (GramTrans, Apertium for other languages - demo)
+\end{itemize}
+
+%There are a number of things in which Apertium and Google Translate are
+%completely different. Here are some ideas to help us get a bit more
+%optimistic. If we agree on the following, we can use them as arguments
+%for the validity of our approach even in the wake of these developments.
+%* Statistical machine translation systems often produce output which is
+%"more natural" than that produced by those based on rules. Statistical
+%machine translation attempts to balance, on one hand, the probability
+%that the words of the translation correspond to those of the original
+%sentence ("fidelity") and, on the other hand, the probability that the
+%words of the translated phrase and are precisely those and in that order
+%in the target language ("fluency" "naturalness"). What happens sometimes
+%is that the latter outweighs the former: the result is a deceptively
+%natural and fluent translation but which is not completely faithful to
+%the original (in fact, when postediting statistical machine translation,
+%one should be continually looking at the original because these are
+%"infidelities" are not rare).
+%20:45* Rule-based systems tend to produce translations which are more
+%"mechanical", sometimes less fluid and more "repetitive", so that their
+%errors tend also to be more repetitive and usually very evident, due the
+%absence of any mechanism for "smoothing" the resulting translation to
+%make it more "fluent". This eases the work of posteditors: for instance,
+%you can even search and perform global substitutions in the text.
+%* Another advantage of the rule-based systems is terminological
+%consistency: they produce the same equivalent for the same words
+%(equivalents are chosen by statistical systems chosen according to their
+%probability of translation and overall naturalness, which may not be
+%suitable for subject-specific or technical text).
+%/CurrentM
+%* experts who have designed a system based on rules find it much easier
+%to diagnose and repair the source of a translation error: they know what
+%rule has failed and in which module, or which entry is the wrong in the
+%dictionary.
+%And we have written and published other arguments:
+%"There are distinct advantages to having free/open-source licences for
+%rule-based machine translation: linguistic knowledge for a language pair
+%is encoded explicitly in the form of linguistic data, so that both
+%humans and the machine translation engine can process it. This makes
+%them naturally available to build knowledge for other language pairs or
+%even for other human language technologies besides machine translation,
+%and, conversely, linguistic knowledge from other sources may be reused
+%to build machine translation systems. The free and open scenario makes
+%this reuse easier, and, if copylefted licences are used, builds a
+%commons of knowledge and resources that benefits all the language
+%communities involved. These advantages are even clearer for
+%less-resourced languages, for which large bilingual corpora are not
+%available, and for morphologically rich languages, which even with large
+%corpora suffer from data sparseness. "
+%(http://xixona.dlsi.ua.es/freerbmt09/).
+%And even other people have:
+%http://www.globalwatchtower.com/2009/02/26/rbmt-desktop/
+%So we better shape up, because we have to be able to explain this to
+%future users (and customers) of Apertium.
+
+
+\begin{itemize}
+\item Apertium for Lule Sámi as it is now
+\item what is good, what is not good
+\item how does the system look like - modules
+\item dictionaries - monolingual ones, bilingual ones, postediting one - pretty simple: one word corresponds to one word
+\item morphology - how does it work
+\item syntactic transfer
+\item postgeneration (liehket)
+\item our procedure (take a small testkorpus and add the words contained in that + function words and determiners - that's why beana is not in the dictionary and why we have to do lexicon word)
+\item why words shouldn't be in only one of the dictionaries
+\end{itemize}
+
+\begin{figure*} {\footnotesize \setlength{\tabcolsep}{0.5mm}
+\begin{center}
+\begin{tabular}{cccccccc} 
+\\
+\parbox{0.7cm}{SL text} \\ 
+$\downarrow$ \\
+\framebox{\parbox{1.4cm}{de\-formatter}} $\rightarrow$ &
+\framebox{\parbox{0.8cm}{morph. anal.}}  $\rightarrow$ &
+\framebox{\parbox{1.2cm}{PoS tagger}} $\rightarrow$ &
+\framebox{\parbox{1.1cm}{struct.\ transf.}} $\rightarrow$ &
+\framebox{\parbox{0.8cm}{morph. gen.}}  $\rightarrow$ &
+\framebox{\parbox{1.0cm}{post\-genera\-tor}} $\rightarrow$ &
+\framebox{\parbox{1.2cm}{re-format\-ter}} \\ & & & $\updownarrow$ & &
+& $\downarrow$ \\ & & & \framebox{\parbox{1.0cm}{lex.\ transfer}} & &
+& \parbox{0.7cm}{TL text}\\\\
+\end{tabular}
+\end{center} }
+\caption{The eight modules that build the assembly line of the
+shallow-transfer machine translation system.}
+\label{fg:modules}
+\label{pg:modules}
+\end{figure*}
+
+\begin{itemize}
+\item something about contrastive linguistics
+\item things we found out about Lule Sámi vs. North Sámi
+\item orthography - how was the bilingual dictionary made
+\item dat/duot/dat vs....
+\item negation - tense marker in different elements
+\item SVO vs. SOV
+\item case Loc vs. Ine/El
+\item different PoS in some cases gullevaš vs. gullujiddje
+\item why it can be interesting to work as a linguist - being a discoverer
+\item computational systems force you to be accurate - when you need to be accurate you go into depth of linguistic questions
+\end{itemize}
+
+\subsection{Practical questions}
+
+\begin{itemize}
+\item How to install apertium?
+\item    How to edit dictionaries?
+\item what do # * @ and / mean and in which order should they be edited
+\item choosing between parallel forms - choosing a standard
+\item    How to interpret testvoc? Newspaper
+\end{itemize}
+
+
+\section{2. day (30.09.2009)}
+\subsection{lexicon}
+\begin{itemize}
+\item look into the generated newspaper corpus and add sentences that (almost) work to the corpus
+\item add new words in this corpus to all three dictionaries
+\end{itemize}
+
+\subsection{structural transfer} 
+
+\begin{itemize}
+\item search the corpus for SOV and make a set of SOV rules
+\item case rules
+\item any other structural rules that come into our minds when we look at the newspaper translations
+\end{itemize}
+
+\subsection{evaluation of the workshop} 
+\begin{itemize}
+\item answer the two questions from the start once again - what do you expect from an MT system, where are its limitations?
+\item are you able to use the tools for lulesami
+\item will they be useful in your work/private use
+\item do you think you will be able to contribute to the system in the future (adding new words whenever you come up with some etc., or checking existing translations or adding new testsentences)
+\end{itemize}
+%"have we completely bored you out of your minds?"
+%what can a sme-smj MT system accomplish (to find out if the expectations stay the same)
+ 
+
+\section{Goals Francis and Linda}
+
+\begin{itemize}
+\item 1. bigger testkorpus - preferably from the newspaper
+check web thing - copy sentences that work/almost work
+\item translations: corrected testkorpus output (rather than free human translations) grammatically correct vs. idiomatic 
+\item generation of paradigms becomes obsolete because of foma
+\item bilingual dictionary when adding words
+\item (5. syntactic transfer)
+\item SOV study - Lulesámi testkorpus, extract frequency of SOV
+\item Lulesámi testkorpus: analyze different kinds of noun phrases: Adj Adj N, 
+\item newsarticle Avvir , translate it, fix errors - show people a possible use
+\item link on our homepage (giellatekno)
+\end{itemize}   
+    
+\section{Practical things}
+\begin{itemize}
+\item Beamer
+\item Computers - which ones do the participants have? Does everyone have a computer?
+\item    evtl. Geir-Tore
+\item internet
+\item room - 4553
+\item lunch
+\end{itemize}
+\end{document}
