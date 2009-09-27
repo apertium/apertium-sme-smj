@@ -60,6 +60,7 @@ dev/smjpronouns.txt -text
 dev/smjverbfullform.txt -text
 dev/smjverblemma.txt -text
 dev/testkorpus.txt -text
+dev/testkorpus_diff.txt -text
 dev/testsentences.txt -text
 dev/veahkki.paradigm -text
 dev/viehkke.paradigm -text
