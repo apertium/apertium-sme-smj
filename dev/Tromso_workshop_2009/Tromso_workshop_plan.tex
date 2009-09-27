@@ -40,7 +40,7 @@
 \setcounter{tocdepth}{3}
 %\linespread{1.5}
 \begin{spacing}{1.0}
-
+\end{spacing}
 
 \newcommand{\tx}{\mbox{t\hspace{-.35em}-}} % for Sm
 
@@ -73,16 +73,16 @@
 \section{day (29.09.2009)}
 \subsection{Welcome}
 \begin{itemize}
-\item Welcome to the workshop on sme-smj MT
+\item Welcome to the workshop on {\tt sme-smj} MT
 \item Present ourselves
 \item MT is good to make bilingual publishing (e.g. daily newspapers) possible where there wouldn't have been money to do that (minority languages)
-\item we are glad to have the workshop: we find out what people want (users), get help with the Lule Sámi linguistic questions we have
-\item increasing number of texts in a language leads to increasing demands for them
+\item We are glad to have the workshop: we find out what people want (users), get help with the Lule Sámi linguistic questions we have
+\item Increasing number of texts in a language leads to increasing demands for them
 \end{itemize}
 
 \subsection{What do they expect from a sme-smj MT system?}
 \begin{itemize}
-\item take a piece of paper and answer 2 questions:
+\item Take a piece of paper and answer 2 questions:
 \item What do you expect from translation (human translation)?
 \item What do machine translation?
     \begin{itemize}
@@ -91,109 +91,99 @@
     \end{itemize}
 \end{itemize}
 
-\subsection{Google translation}
+\subsection{Existing machine translation}
+
 \begin{itemize}
-    \item Have you been using Machine Translation? 
-    \item - Google, bablefish, proMT, gramtrans
+    \item Have you used machine translation? 
+    \item - Google, Babelfish, PROMT, Gramtrans
 \end{itemize}
 
-
 \begin{quote}
-The Guardian 27.9.2009
+{\bf The Guardian 27.9.2009}
 Last week, Iran said it was building a second uranium enrichment plant despite UN demands that it stops its development plans.
 \end{quote}
 
 \begin{quote}
-Google en-nob
+{\bf Google en-nb}
 Sist uke sa at Iran var det å bygge et sekund anriking av uran anlegg til tross for FNs krav om at den stopper sine utviklingsplaner.
 \end{quote}
 % doesn't recognize the subject
 % doesn't recognize the compound - anriking av uran anlegg
 
 \begin{quote}
-Gramtrans en-nob
+{\bf Gramtrans en-nb}
 Sist uke, sa Iran det holdt på å bygge et annen uranberigelsesanlæg tross UN krav som det stopper sine utviklingsplaner.
 \end{quote}
-
 % doesn't translate UN into FN
 
 \begin{quote}
-Human translation
+{\bf Human translation}
 Forrige uke sa Iran at de var i ferd med å bygge enda en urananrikingsfabrikk til tross for FNs krav om å stoppe utviklingsplanene.
 \end{quote}
 
 \begin{quote}
-Google nob-en
+{\bf Google nb-en}
 Last week, Iran said that they were about to build another urananrikingsfabrikk despite UN demands to halt development plans. 
 \end{quote}
 
 \begin{quote}
-Gramtrans nob-en
+{\bf Gramtrans nb-en}
 Forrige week Iran said that they were building still an urananrichingsfabrikk in spite of the UN's demand for stopping the development plans.
 \end{quote}
 
+\subsection{What is good translation?}
 
-\begin{quote}
-Gramtrans nob-en
-Forrige week Iran said that they were building still an urananrichingsfabrikk in spite of the UN's demand for stopping the development plans.
-\end{quote}
-
-
-\begin{quote}
-Gramtrans nob-en
-Forrige week Iran said that they were building still an urananrichingsfabrikk in spite of the UN's demand for stopping the development plans.
-\end{quote}
-
-\subsection{What is a good translation (vs. machine translation)?}
-
-What is a good translation?
+\subsubsection{What is a good translation?}
 \begin{itemize}
 \item e.g. novels should capture not only content, but also some message
-\item literal translation vs. free translation
-\item should one feel that the book was originally written in another language/another cultural context or should one identify as much as possible with it and should the characters and setting be from ones own surroundings?
+\item Literal translation vs. free translation
+\item Should one feel that the book was originally written in another language/another 
+   cultural context or should one identify as much as possible with it and should the characters 
+   and setting be from ones own surroundings?
 \item Donald Duck - Vulle Vuojaš
-\item machines can translate Donald Duck, but not make a general effort to capture that
-\end{itemize}
-
-What is good machine translation?
-\begin{itemize}
-\item depends on the text that is to be translated
-\item other types of texts: manuals, weather reports, newspaper texts (more content-oriented)
-\item system for dissemination vs. assimilation
-\item what is a good translation for the automatic system (Francis' example from a former presentation)
+\item Machines can translate Donald Duck, but not make a general effort to capture that
 \end{itemize}
 
 \begin{quote}
-Genesis 11,9 (New International Version (NIV))
-That is why it was called Babel because there the LORD confused the language of the whole world. From there the LORD scattered them over the face of the whole earth.
+{\bf Genesis 11,9 (New International Version (NIV))}
+That is why it was called Babel because there the LORD confused the language of the whole world. From 
+there the LORD scattered them over the face of the whole earth.
 \end{quote}
 
 \begin{quote}
 Derfor kalte de den Babel. For der forvirret Herren all verdens tungemål, og derfra spredte Herren dem ut over hele jorden.
-http://www.bibel.no
+-- \url{http://www.bibel.no}
 \end{quote}
 
 \begin{quote}
-Google:
+{\bf Google:}
 Derfor ble det kalt Babel fordi det Herren forvirret språket i hele verden. Derfra spredte Herren dem over ansiktet til hele jorden.
 \end{quote}
 
+\subsubsection{What is good \emph{machine} translation?}
 
-linguistic Mt:
 \begin{itemize}
-\item number of sentences should be the same
-\item closest lexical equivalent
-\item syntactic structure as similar as possible (word order if possible)
-\item PoS should stay the same if possible
-\item content should be preserved
+  \item Depends on the text that is to be translated
+  \item Other types of texts: manuals, weather reports, newspaper texts (more content-oriented)
+  \item System for dissemination vs. assimilation
+  \item What is a good translation for the automatic system (Francis' example from a former presentation)
 \end{itemize}
 
+\subsubsection{What helps make good machine translation?}
 
-\subsection{Translate example-sentences into a good target MT translation}
+\begin{itemize}
+  \item Number of sentences should be the same
+  \item Closest lexical equivalent
+  \item Syntactic structure as similar as possible (word order if possible)
+  \item PoS should stay the same if possible
+  \item Content should be preserved
+\end{itemize}
 
-Exercise:\\
+\subsection{Translate example sentences into a good target MT translation}
+
+{\bf Exercise:}\\
 Translate 5 sentences into good MT (say what would you would do differently for a regular translation)
-list corpus_diff
+list corpus\_diff
 
 %\begin{quote}
 %“... interacciones independientes del esp´ın en unidades de la 
@@ -209,11 +199,13 @@ list corpus_diff
 
 \subsection{What is machine translation?}
 \begin{itemize}
-\item  terms of Rule-based vs. statistical systems and linguistics vs. statistics
+\item  Rule-based vs. statistical systems -- linguistics vs. statistics
 \item  Advantages (and disadvantages) of rule-based systems
-\item advantages: easier to detect/fix errors - the makers of the system have competence and gain competence when writing the rules
-\item disadvantages: they sound less fluent because there is no specific target language modelling
-\item    Examples of rule-based MT (GramTrans, Apertium for other languages - demo)
+  \begin{itemize}
+     \item {\bf Advantages}: easier to detect/fix errors - the makers of the system have competence and gain competence when writing the rules
+     \item {\bf Disadvantages}: they sound less fluent because there is no specific target language modelling
+  \end{itemize}
+\item  Examples of rule-based MT (GramTrans, Apertium for other languages - demo)
 \end{itemize}
 
 %There are a number of things in which Apertium and Google Translate are
@@ -269,17 +261,18 @@ list corpus_diff
 %So we better shape up, because we have to be able to explain this to
 %future users (and customers) of Apertium.
 
+\subsection{The {\tt apertium-sme-smj} system}
 
 \begin{itemize}
 \item Apertium for Lule Sámi as it is now
-\item what is good, what is not good
-\item how does the system look like - modules
-\item dictionaries - monolingual ones, bilingual ones, postediting one - pretty simple: one word corresponds to one word
-\item morphology - how does it work
-\item syntactic transfer
-\item postgeneration (liehket)
-\item our procedure (take a small testkorpus and add the words contained in that + function words and determiners - that's why beana is not in the dictionary and why we have to do lexicon word)
-\item why words shouldn't be in only one of the dictionaries
+\item What is good, what is not good
+\item How does the system look like - modules
+\item Dictionaries - monolingual ones, bilingual ones, postediting one - pretty simple: one word corresponds to one word
+\item Morphology - how does it work
+\item Syntactic transfer
+\item Postgeneration (liehket)
+\item Our procedure (take a small testkorpus and add the words contained in that + function words and determiners - that's why beana is not in the dictionary and why we have to do lexicon word)
+\item Why words shouldn't be in only one of the dictionaries
 \end{itemize}
 
 \begin{figure*} {\footnotesize \setlength{\tabcolsep}{0.5mm}
@@ -310,25 +303,24 @@ One example on a slide - let them explain the different steps
 
 Trond!!!
 \begin{itemize}
-\item something about contrastive linguistics
-\item things we found out about Lule Sámi vs. North Sámi
-\item orthography - how was the bilingual dictionary made
+\item Something about contrastive linguistics
+\item Things we found out about Lule Sámi vs. North Sámi
+\item Orthography - how was the bilingual dictionary made
 \item dat/duot/dat vs....
-\item negation - tense marker in different elements
+\item Negation - tense marker in different elements
 \item SVO vs. SOV
-\item case Loc vs. Ine/El
-\item different PoS in some cases gullevaš vs. gullujiddje
-\item why it can be interesting to work as a linguist - being a discoverer
-\item computational systems force you to be accurate - when you need to be accurate you go into depth of linguistic questions
+\item Case Loc vs. Ine/El
+\item Different PoS in some cases gullevaš vs. gullujiddje
+\item Why it can be interesting to work as a linguist -- being a discoverer
+\item Computational systems force you to be accurate -- when you need to be accurate you go into depth of linguistic questions
 \end{itemize}
-
 
 \subsection{Practical questions}
 
 \begin{itemize}
 \item How to install apertium?
 \item    How to edit dictionaries?
-\item what do # * @ and / mean and in which order should they be edited
+\item what do \# \* \@ and \/ mean and in which order should they be edited
 \item choosing between parallel forms - choosing a standard
 \item    How to interpret testvoc? Newspaper
 \end{itemize}
@@ -337,24 +329,24 @@ Trond!!!
 \section{2. day (30.09.2009)}
 \subsection{lexicon}
 \begin{itemize}
-\item look into the generated newspaper corpus and add sentences that (almost) work to the corpus
-\item add new words in this corpus to all three dictionaries
+\item Look into the generated newspaper corpus and add sentences that (almost) work to the corpus
+\item Add new words in this corpus to all three dictionaries
 \end{itemize}
 
-\subsection{structural transfer} 
+\subsection{Structural transfer} 
 
 \begin{itemize}
-\item search the corpus for SOV and make a set of SOV rules
-\item case rules
-\item any other structural rules that come into our minds when we look at the newspaper translations
+\item Search the corpus for SOV and make a set of SOV rules
+\item Case rules
+\item Any other structural rules that come into our minds when we look at the newspaper translations
 \end{itemize}
 
-\subsection{evaluation of the workshop} 
+\subsection{Evaluation of the workshop} 
 \begin{itemize}
-\item answer the two questions from the start once again - what do you expect from an MT system, where are its limitations?
-\item are you able to use the tools for lulesami
-\item will they be useful in your work/private use
-\item do you think you will be able to contribute to the system in the future (adding new words whenever you come up with some etc., or checking existing translations or adding new testsentences)
+\item Answer the two questions from the start once again -- what do you expect from an MT system, where are its limitations?
+\item Are you able to use the tools for Lule Sámi 
+\item Will they be useful in your work/private use
+\item Do you think you will be able to contribute to the system in the future (adding new words whenever you come up with some etc., or checking existing translations or adding new testsentences)
 \end{itemize}
 %"have we completely bored you out of your minds?"
 %what can a sme-smj MT system accomplish (to find out if the expectations stay the same)
@@ -370,12 +362,13 @@ check web thing - copy sentences that work/almost work
 \item bilingual dictionary when adding words
 \item (5. syntactic transfer)
 \item SOV study - Lulesámi testkorpus, extract frequency of SOV
-\item Lulesámi testkorpus: analyze different kinds of noun phrases: Adj Adj N, 
+\item Lulesámi testkorpus: analyse different kinds of noun phrases: Adj Adj N, 
 \item newsarticle Avvir , translate it, fix errors - show people a possible use
 \item link on our homepage (giellatekno)
 \end{itemize}   
     
 \section{Practical things}
+
 \begin{itemize}
 \item Beamer
 \item Computers - which ones do the participants have? Does everyone have a computer?
@@ -384,4 +377,5 @@ check web thing - copy sentences that work/almost work
 \item room - 4553
 \item lunch
 \end{itemize}
+
 \end{document}
