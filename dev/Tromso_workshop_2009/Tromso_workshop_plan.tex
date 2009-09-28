@@ -1,3 +1,4 @@
+
 \documentclass[a4paper,english,12pt]{article}
 \usepackage{babel}
 \usepackage{ucs} %sami letters
@@ -302,6 +303,7 @@ One example on a slide - let them explain the different steps
 
 
 Trond!!!
+
 \begin{itemize}
 \item Something about contrastive linguistics
 \item Things we found out about Lule Sámi vs. North Sámi
@@ -314,6 +316,68 @@ Trond!!!
 \item Why it can be interesting to work as a linguist -- being a discoverer
 \item Computational systems force you to be accurate -- when you need to be accurate you go into depth of linguistic questions
 \end{itemize}
+
+\subsubsection{Something about contrastive linguistics}
+
+Komparativ vs. kontrastiv lingvistikk: Den første finn likskapane, den andre finn skilnadene.
+
+Innafor språkvitskap er det vanleg med komparativ lingvistikk, her er vi interessert i det motsette.
+
+Apertium fungerer slik at viss systemet ikkje er i stand til å finne ei omsetjing, eller viss systemet går ut frå at det er likt, sklir ordet elelr konstruksjonen gjennom.
+
+\subsubsection{Things we found out about Lule Sámi vs. North Sámi}
+
+Parallellkorpuset vårt viser at det var fleire skilnader enn vi trudde.
+
+\subsubsection{Orthography - how was the bilingual dictionary made}
+
+Vi laga ei regelfil som gav oss framlegg til ordpar.
+
+Viss input var eit nordsamisk substantiv i nominativ, og output ei lulesamisk ordform som analysatoren vår sa var eit substantiv i nominativ, gjekk vi ut i frå at det var ei riktig omsetjing.
+
+Viss output ikkje var eit substantiv i nominativ, gjekk vi ut i frå at det ikkje var ei riktig omsetjing, og sette ordparet på vent.
+
+
+\subsubsection{dat/duot/dat vs....}
+
+
+\subsubsection{Negation - tense marker in different elements}
+
+\begin{table}[htdp]
+\caption{default}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+ & nord                            & ? & lule \\
+ \hline
+ pres & mun boađán                 & = & mån boadáv  \\
+ pret & mun bohten                 & = & mån båhtiv     \\
+ pret & mun lean boahtán           & = & mon lav boahtám     \\
+ pret & mun ledjen boahtán         & = & mon lidjiv boahtám     \\
+\hline                       
+ pres & mun in boađe               & = & mån iv boade      \\
+ pret & mun in boahtán             & ≠ & mån ittjiv boade      \\
+ pret & mun in leat boahtán        & = & mån iv la boahtám       \\
+ pret & mun in leat leamaš boahtán & ≠ & mån iv lim boahtám       \\
+\hline
+\end{tabular}
+\end{center}
+\label{default}
+\end{table}%
+
+Transferreglar for dette:
+
+
+
+
+
+\subsubsection{SVO vs. SOV}
+\subsubsection{Case Loc vs. Ine/Ela}
+\subsubsection{Different PoS in some cases gullevaš vs. gullujiddje}
+\subsubsection{Why it can be interesting to work as a linguist -- being a discoverer}
+\subsubsection{Computational systems force you to be accurate -- when you need to be accurate you go into} 
+
+
 
 \subsection{Practical questions}
 
