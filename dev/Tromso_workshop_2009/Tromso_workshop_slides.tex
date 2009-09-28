@@ -1,0 +1,365 @@
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{babel}
+\usepackage{ucs} %sami letters
+% \usepackage{amssymb} %mathematical
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{harvard}
+
+\usepackage[dvips]{graphicx}
+%\usepackage{rotating} 
+
+%\usepackage{tikz}
+%\usepackage{array}
+%\usepackage{arydshln} %has to be after array
+%\usepackage{multirow}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{tabularx} %specified width
+\usepackage{tipa}
+\usepackage{booktabs}
+\usepackage{ctable} %loads booktable by default
+\usepackage{colortbl}
+\usepackage{covington}
+\usepackage{url}
+\usepackage{harvard}
+\usepackage[right=2.5cm,left=2.5cm,top=2cm,bottom=2cm]{geometry}
+% \usepackage{bibtexlogo}
+\usepackage{setspace}
+
+\usepackage{fancyhdr}
+\usepackage{linguex}
+
+
+\usetheme{Montpellier} %Montpellier
+
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+\begin{document}
+\title{Workshop i Nordsamisk-lulesamisk maskinomsetjing}  
+\author{Linda Wiechetek, Francis Tyers, Trond Trosterud}
+\date{\today} 
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Innhold}\tableofcontents
+\end{frame} 
+
+
+\section{Bures boahtin!} 
+\begin{frame}\frametitle{Bures boahtin!} 
+\begin{itemize}
+\item maskinoversetting i bilingual publisering (daglige aviser)
+\item daglige aviser
+\item skolebøker
+\item flere tekster betyr også større etterspørsel
+\end{itemize}
+\end{frame}
+
+
+%\subsection{Subsection no.1.1  }
+\begin{frame}\frametitle{Forventninger}  
+\begin{itemize}
+\item Hva forventer du av en oversettelse? \pause
+\item Hva forventer du av maskinoversettelse?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Maskinoversetting}  
+\begin{columns}
+\begin{column}{5cm}
+\begin{itemize}
+\item<1-> Google
+\item<3-> Babelfish
+\item<5-> PROMT
+\item<7-> Gramtrans
+\end{itemize}
+\vspace{3cm} 
+\end{column}
+\begin{column}{5cm}
+\begin{overprint}
+\scalebox{.2}[.2]{\includegraphics<2>{google.png}}
+%\includegraphics<4>{PIC2}
+%\includegraphics<6>{PIC3}
+\scalebox{.2}[.2]{\includegraphics<6>{gramtrans.png}}
+\end{overprint}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame} 
+
+\begin{exampleblock}{The Guardian 27.9.2009}
+Last week, Iran said it was building a second uranium enrichment plant despite UN demands that it stops its development plans.
+\end{exampleblock} \pause
+
+\begin{exampleblock}{Google en-nb}
+Sist uke sa \alert{??} at Iran var det å bygge et \alert{sekund} \alert{anriking av uran anlegg} til tross for FNs krav om at den stopper sine utviklingsplaner.
+\end{exampleblock} \pause
+% doesn't recognize the subject
+% doesn't recognize the compound - anriking av uran anlegg
+
+\begin{exampleblock}{Gramtrans en-nb}
+Sist uke, sa Iran det holdt på å bygge et annen \alert{uranberigelsesanlæg} tross \alert{UN} krav \alert{som} det stopper sine utviklingsplaner.
+\end{exampleblock}
+% doesn't translate UN into FN
+
+\begin{exampleblock}{Manuell oversetting}
+Forrige uke sa Iran at de var i ferd med å bygge enda en urananrikingsfabrikk til tross for FNs krav om å stoppe utviklingsplanene.
+\end{exampleblock}
+
+\end{frame}
+
+\begin{frame}
+\begin{exampleblock}{Google nb-en}
+Last week, Iran said that they were about to build another \alert{urananrikingsfabrikk} despite UN demands to halt development plans.
+\end{exampleblock}
+
+\begin{exampleblock}{Gramtrans nb-en}
+\alert{Forrige} week Iran said that they were building still an \alert{urananrichingsfabrikk} in spite of the UN's demand for stopping the development plans.
+\end{exampleblock}
+
+\end{frame}
+
+\section{Hva er god oversetting?} 
+\begin{frame}\frametitle{Hva er god oversetting?}
+\begin{itemize}
+\item innhold vs. (kunstnerisk) budskap
+\item ordrett vs. fri oversetting 
+\item fremmedgjøring eller identifikasjon 
+\end{itemize} 
+\end{frame}
+
+\begin{frame}\frametitle{Hva er god oversetting?}}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Språk} & \textbf{Navn} \\
+\hline
+Italiensk &  Paolino Paperino  \\
+\hline
+Kroatisk &  Paško Patak  \\
+\hline
+Kinesisk & Tánglăo Yā \\
+\hline
+Litauisk & Ančiukas Donaldas \\
+\hline
+Islandsk & Andrés Önd \\
+\hline
+Nordsamisk & Vulle Vuojaš \\
+\hline
+Engelsk & Donald Duck \\
+\hline
+\end{tabular}
+\end{frame}
+
+%\section{Hva er god maskinoversetting?}
+%
+%\begin{frame}\frametitle{Hva er god maskinoversetting?}
+%
+%\begin{exampleblock}{Genesis 11,9 (New International Version (NIV))}
+%That is why it was called Babel because there the LORD confused the language of the whole world. From 
+%there the LORD scattered them over the face of the whole earth.
+%\end{exampleblock}
+%
+%\begin{exampleblock}{manuell oversettelse}
+%Derfor kalte de den Babel. For der forvirret Herren all verdens tungemål, og derfra spredte Herren dem ut over hele jorden.
+%%-- \url{http://www.bibel.no}
+%\end{exampleblock}
+%
+%\begin{exampleblock}{Google}
+%Derfor ble det kalt Babel fordi det Herren forvirret språket i hele verden. Derfra spredte Herren dem over ansiktet til hele jorden.
+%\end{exampleblock}
+%\end{frame}
+ 
+%\begin{frame}%\frametitle{}
+%\begin{itemize}
+%\item tekstype: manual, avistekster
+%\item assimilsjon - dissiminering
+%\end{itemize} 
+%\end{frame}
+%
+%\begin{frame}%\frametitle{}
+%\begin{itemize}
+%  \item lik antall setninger
+%  \item nærmeste oversettelse av ord
+%  \item syntaktisk struktur skal være så nært som mulig
+%  \item PoS skal være like
+%  \item innhold
+%\end{itemize}
+%\end{frame}
+%
+%
+%\begin{frame}\frametitle{What is machine translation}
+%\begin{itemize}
+%  \item rule-based vs. statistical
+%  \item etc.
+%  \end{itemize}
+%\end{frame}
+%
+%
+%\begin{frame}\frametitle{The apertium-sme-smj system}
+%
+%\end{frame}
+%
+%
+
+%
+%\subsection{Lists II}
+%\begin{frame}\frametitle{numbered lists}
+%\begin{enumerate}
+%\item Introduction to  \LaTeX  
+%\item Course 2 
+%\item Termpapers and presentations with \LaTeX 
+%\item Beamer class
+%\end{enumerate}
+%\end{frame}
+%
+%\begin{frame}\frametitle{numbered lists with pause}
+%\begin{enumerate}
+%\item Introduction to  \LaTeX \pause 
+%\item Course 2 \pause 
+%\item Termpapers and presentations with \LaTeX \pause 
+%\item Beamer class
+%\end{enumerate}
+%\end{frame}
+%
+%\section{Section no.3} 
+%\subsection{Tables}
+%\begin{frame}\frametitle{Tables}
+%\begin{tabular}{|c|c|c|}
+%\hline
+%\textbf{Date} & \textbf{Instructor} & \textbf{Title} \\
+%\hline
+%WS 04/05 & Sascha Frank & First steps with  \LaTeX  \\
+%\hline
+%SS 05 & Sascha Frank & \LaTeX \ Course serial \\
+%\hline
+%\end{tabular}
+%\end{frame}
+%
+%
+%\begin{frame}\frametitle{Tables with pause}
+%\begin{tabular}{c c c}
+%A & B & C \\ 
+%\pause 
+%1 & 2 & 3 \\  
+%\pause 
+%A & B & C \\ 
+%\end{tabular} 
+%\end{frame}
+%
+%
+%\section{Section no. 4}
+%\subsection{blocs}
+%\begin{frame}\frametitle{blocs}
+%
+%\begin{block}{title of the bloc}
+%bloc text
+%\end{block}
+%
+%\begin{exampleblock}{title of the bloc}
+%bloc text
+%\end{exampleblock}
+%
+%
+%\begin{alertblock}{title of the bloc}
+%bloc text
+%\end{alertblock}
+%\end{frame}
+%
+%\section{Section no. 5}
+%\subsection{split screen}
+%
+%\begin{frame}\frametitle{splitting screen}
+%\begin{columns}
+%\begin{column}{5cm}
+%\begin{itemize}
+%\item Beamer 
+%\item Beamer Class 
+%\item Beamer Class Latex 
+%\end{itemize}
+%\end{column}
+%\begin{column}{5cm}
+%\begin{tabular}{|c|c|}
+%\hline
+%\textbf{Instructor} & \textbf{Title} \\
+%\hline
+%Sascha Frank &  \LaTeX \ Course 1 \\
+%\hline
+%Sascha Frank &  Course serial  \\
+%\hline
+%\end{tabular}
+%\end{column}
+%\end{columns}
+%\end{frame}
+%
+%\subsection{Pictures} 
+%\begin{frame}\frametitle{pictures in latex beamer class}
+%\begin{figure}
+%\includegraphics[scale=0.5]{PIC1} 
+%\caption{show an example picture}
+%\end{figure}
+%\end{frame}
+%
+%\subsection{joining picture and lists} 
+%
+%\begin{frame}
+%\frametitle{pictures and lists in beamer class}
+%\begin{columns}
+%\begin{column}{5cm}
+%\begin{itemize}
+%\item<1-> subject 1
+%\item<3-> subject 2
+%\item<5-> subject 3
+%\end{itemize}
+%\vspace{3cm} 
+%\end{column}
+%\begin{column}{5cm}
+%\begin{overprint}
+%\includegraphics<2>{PIC1}
+%\includegraphics<4>{PIC2}
+%\includegraphics<6>{PIC3}
+%\end{overprint}
+%\end{column}
+%\end{columns}
+%\end{frame}
+%
+%
+%\subsection{pictures which need more space} 
+%\begin{frame}[plain]
+%\frametitle{plain, or a way to get more space}
+%\begin{figure}
+%\includegraphics[scale=0.5]{PIC1} 
+%\caption{show an example picture}
+%\end{figure}
+%\end{frame}
+%
+%
+%
+%\section{Kontrastiv lingvistikk} 
+%\subsection{Emne}
+%\begin{frame}\frametitle{unnumbered lists}
+%\begin{itemize}
+%\item Something about contrastive linguistics
+%\item Things we found out about Lule Sámi vs. North Sámi
+%\item Orthography - how was the bilingual dictionary made
+%\item dat/duot/dat vs....
+%\item Negation - tense marker in different elements
+%\item SVO vs. SOV
+%\item Case Loc vs. Ine/El
+%\item Different PoS in some cases gullevaš vs. gullujiddje
+%\item Why it can be interesting to work as a linguist -- being a discoverer
+%\item Computational systems force you to be accurate -- when you need to be accurate you go into depth of linguistic questions
+%\end{itemize} 
+%\end{frame}
+%
+%
+%
+%
+%
+%
+\end{document}
