@@ -7,6 +7,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{harvard}
+\usepackage{multirow}
 %\usepackage{rotating} 
 
 %\usepackage{tikz}
@@ -153,190 +154,138 @@ Engelsk & Donald Duck \\
 \end{tabular}
 \end{frame}
 
-%\section{Hva er god maskinoversetting?}
+\section{Hva er god maskinoversetting?}
 %
-%\begin{frame}\frametitle{Hva er god maskinoversetting?}
+\begin{frame}\frametitle{Hva er god maskinoversetting?}
 %
-%\begin{exampleblock}{Genesis 11,9 (New International Version (NIV))}
-%That is why it was called Babel because there the LORD confused the language of the whole world. From 
-%there the LORD scattered them over the face of the whole earth.
-%\end{exampleblock}
-%
-%\begin{exampleblock}{manuell oversettelse}
-%Derfor kalte de den Babel. For der forvirret Herren all verdens tungemål, og derfra spredte Herren dem ut over hele jorden.
-%%-- \url{http://www.bibel.no}
-%\end{exampleblock}
-%
-%\begin{exampleblock}{Google}
-%Derfor ble det kalt Babel fordi det Herren forvirret språket i hele verden. Derfra spredte Herren dem over ansiktet til hele jorden.
-%\end{exampleblock}
-%\end{frame}
- 
-%\begin{frame}%\frametitle{}
-%\begin{itemize}
-%\item tekstype: manual, avistekster
-%\item assimilsjon - dissiminering
-%\end{itemize} 
-%\end{frame}
-%
-%\begin{frame}%\frametitle{}
-%\begin{itemize}
-%  \item lik antall setninger
-%  \item nærmeste oversettelse av ord
-%  \item syntaktisk struktur skal være så nært som mulig
-%  \item PoS skal være like
-%  \item innhold
-%\end{itemize}
-%\end{frame}
-%
-%
-%\begin{frame}\frametitle{What is machine translation}
-%\begin{itemize}
-%  \item rule-based vs. statistical
-%  \item etc.
-%  \end{itemize}
-%\end{frame}
-%
-%
-%\begin{frame}\frametitle{The apertium-sme-smj system}
-%
-%\end{frame}
-%
-%
+\begin{exampleblock}{Genesis 11,9 (New International Version (NIV))}
+That is why it was called Babel because there the LORD confused the language of the whole world. From 
+there the LORD scattered them over the face of the whole earth.
+\end{exampleblock}
 
-%
-%\subsection{Lists II}
-%\begin{frame}\frametitle{numbered lists}
-%\begin{enumerate}
-%\item Introduction to  \LaTeX  
-%\item Course 2 
-%\item Termpapers and presentations with \LaTeX 
-%\item Beamer class
-%\end{enumerate}
-%\end{frame}
-%
-%\begin{frame}\frametitle{numbered lists with pause}
-%\begin{enumerate}
-%\item Introduction to  \LaTeX \pause 
-%\item Course 2 \pause 
-%\item Termpapers and presentations with \LaTeX \pause 
-%\item Beamer class
-%\end{enumerate}
-%\end{frame}
-%
-%\section{Section no.3} 
-%\subsection{Tables}
-%\begin{frame}\frametitle{Tables}
-%\begin{tabular}{|c|c|c|}
-%\hline
-%\textbf{Date} & \textbf{Instructor} & \textbf{Title} \\
-%\hline
-%WS 04/05 & Sascha Frank & First steps with  \LaTeX  \\
-%\hline
-%SS 05 & Sascha Frank & \LaTeX \ Course serial \\
-%\hline
-%\end{tabular}
-%\end{frame}
-%
-%
-%\begin{frame}\frametitle{Tables with pause}
-%\begin{tabular}{c c c}
-%A & B & C \\ 
-%\pause 
-%1 & 2 & 3 \\  
-%\pause 
-%A & B & C \\ 
-%\end{tabular} 
-%\end{frame}
-%
-%
-%\section{Section no. 4}
-%\subsection{blocs}
-%\begin{frame}\frametitle{blocs}
-%
-%\begin{block}{title of the bloc}
-%bloc text
-%\end{block}
-%
-%\begin{exampleblock}{title of the bloc}
-%bloc text
-%\end{exampleblock}
-%
-%
-%\begin{alertblock}{title of the bloc}
-%bloc text
-%\end{alertblock}
-%\end{frame}
-%
-%\section{Section no. 5}
-%\subsection{split screen}
-%
-%\begin{frame}\frametitle{splitting screen}
-%\begin{columns}
-%\begin{column}{5cm}
-%\begin{itemize}
-%\item Beamer 
-%\item Beamer Class 
-%\item Beamer Class Latex 
-%\end{itemize}
-%\end{column}
-%\begin{column}{5cm}
-%\begin{tabular}{|c|c|}
-%\hline
-%\textbf{Instructor} & \textbf{Title} \\
-%\hline
-%Sascha Frank &  \LaTeX \ Course 1 \\
-%\hline
-%Sascha Frank &  Course serial  \\
-%\hline
-%\end{tabular}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\subsection{Pictures} 
-%\begin{frame}\frametitle{pictures in latex beamer class}
-%\begin{figure}
-%\includegraphics[scale=0.5]{PIC1} 
-%\caption{show an example picture}
-%\end{figure}
-%\end{frame}
-%
-%\subsection{joining picture and lists} 
-%
-%\begin{frame}
-%\frametitle{pictures and lists in beamer class}
-%\begin{columns}
-%\begin{column}{5cm}
-%\begin{itemize}
-%\item<1-> subject 1
-%\item<3-> subject 2
-%\item<5-> subject 3
-%\end{itemize}
-%\vspace{3cm} 
-%\end{column}
-%\begin{column}{5cm}
-%\begin{overprint}
-%\includegraphics<2>{PIC1}
-%\includegraphics<4>{PIC2}
-%\includegraphics<6>{PIC3}
-%\end{overprint}
-%\end{column}
-%\end{columns}
-%\end{frame}
-%
-%
-%\subsection{pictures which need more space} 
-%\begin{frame}[plain]
-%\frametitle{plain, or a way to get more space}
-%\begin{figure}
-%\includegraphics[scale=0.5]{PIC1} 
-%\caption{show an example picture}
-%\end{figure}
-%\end{frame}
-%
-%
-%
+\begin{exampleblock}{manuell oversettelse}
+Derfor kalte de den Babel. For der forvirret Herren all verdens tungemål, og derfra spredte Herren dem ut over hele jorden.
+-- \url{http://www.bibel.no}
+\end{exampleblock}
+
+\begin{exampleblock}{Google}
+Derfor ble det kalt Babel fordi det Herren forvirret språket i hele verden. Derfra spredte Herren dem over ansiktet til hele jorden.
+\end{exampleblock}
+\end{frame}
+ 
+\begin{frame}
+\frametitle{}
+\begin{itemize}
+\item tekstype: manual, avistekster
+\item assimilsjon - dissiminering
+\end{itemize} 
+\end{frame}
+
+\begin{frame}
+\frametitle{Uses of machine translation}
+
+\begin{onlyenv}<1>
+There are two main uses for machine translation, \emph{assimilation} and \emph{dissemination}:\\
+~\\
+\begin{table}
+\begin{tabular}{l|l|l}
+~  & Requirement & Not requirement\\
+\hline
+\multirow{3}{*}{Assimilation} & Understandability         & Syntactic \emph{correctness}\\
+                              & \emph{Online} translation & Lexical \emph{correctness}\\
+                              &                  & \\
+\hline
+\multirow{3}{*}{Dissemination} & Adequate syntactic transfer & Understandability \\
+                               &  Predictable errors   & \emph{Online} translation \\
+                               &  High accuracy (WER $\le$ 15\%)    & \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{onlyenv}
+
+\begin{onlyenv}<2->
+
+- Useful for assimilation, not dissemination:\\
+~\\
+\emph{Erbyn heddiw mae Gaeleg yn dal yn iaith fyw yn y gogledd orllewin. }\\
+\end{onlyenv}
+
+\begin{onlyenv}<3->
+By today a Scots Gaelic is tall in life language in the north west.\\
+\end{onlyenv}
+
+\begin{onlyenv}<4->
+~\\
+`Nowadays Scots Gaelic is still a living language in the north west.'\\ (WER = 43\%)\\
+~\\
+\end{onlyenv}
+
+\begin{onlyenv}<5->
+
+- Useful for dissemination, not assimilation:\\
+~\\
+\emph{Mae'r \alert<7>{mudiad} wedi derbyn canmoliaeth a beirniadaeth.}\\
+\end{onlyenv}
+
+\begin{onlyenv}<6->
+The \alert<7>{migration} has received praise and criticism.\\
+\end{onlyenv}
+
+~\\
+\begin{onlyenv}<7>
+`The \alert<7>{organisation} has received praise and criticism.'\\ (WER = 14\%)\\
+\end{onlyenv}
+
+~\\
+
+\end{frame}
+
+\begin{frame}
+\frametitle{}
+\begin{itemize}
+  \item lik antall setninger
+  \item nærmeste oversettelse av ord
+  \item syntaktisk struktur skal være så nært som mulig
+  \item PoS skal være like
+  \item innhold
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{What is machine translation}
+
+  \begin{centering}
+
+    {\Large rule-based vs. statistical}
+
+    (what we know vs. what we can infer)
+
+  \end{centering}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{The {\tt apertium-sme-smj} system}
+
+\begin{itemize}
+  \item \underline{Prototype} system -- basically proof-of-concept
+  \item Focussed heavily on reuse of existing resources -- testbed for 
+    integrating Giellatekno work with Apertium
+  \begin{itemize}
+    \item Morphological transducers for North and Lule Sámi
+    \item Constraint Grammar disambiguator
+    \item Transfer lexicon (bilingual dictionary) built largely automatically
+  \end{itemize}
+  \item Still under development
+\end{itemize}
+
+\end{frame}
+
+
+
 %\section{Kontrastiv lingvistikk} 
 %\subsection{Emne}
 %\begin{frame}\frametitle{unnumbered lists}
@@ -353,10 +302,6 @@ Engelsk & Donald Duck \\
 %\item Computational systems force you to be accurate -- when you need to be accurate you go into depth of linguistic questions
 %\end{itemize} 
 %\end{frame}
-%
-%
-%
-%
-%
-%
+
+
 \end{document}
