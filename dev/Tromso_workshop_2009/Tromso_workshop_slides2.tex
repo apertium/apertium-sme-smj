@@ -1,0 +1,171 @@
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage[english]{babel}
+\usepackage{ucs} %sami letters
+% \usepackage{amssymb} %mathematical
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{harvard}
+\usepackage{multirow}
+%\usepackage{rotating} 
+
+%\usepackage{tikz}
+%\usepackage{array}
+%\usepackage{arydshln} %has to be after array
+%\usepackage{multirow}
+\usepackage{graphics}
+\usepackage{tabularx} %specified width
+\usepackage{tipa}
+\usepackage{booktabs}
+\usepackage{ctable} %loads booktable by default
+\usepackage{colortbl}
+%\usepackage{covington}
+\usepackage{url}
+%\usepackage[right=2.5cm,left=2.5cm,top=2cm,bottom=2cm]{geometry}
+% \usepackage{bibtexlogo}
+\usepackage{setspace}
+
+\usepackage{fancyhdr}
+\usepackage{linguex}
+
+
+\usetheme{Montpellier} %Montpellier
+
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+\begin{document}
+\title{Workshop i Nordsamisk-lulesamisk maskinoversetting}  
+\author{Linda Wiechetek, Francis Tyers, Trond Trosterud}
+\date{\today} 
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Innhold}
+\tableofcontents
+\end{frame} 
+
+
+\section{The Apertium system} 
+
+\begin{frame}\frametitle{Apertium systemet} 
+\begin{itemize}
+\item set up?
+\item Apertium's moduler
+\item \url{http://www.apertium.org/}
+\item åpen kildekode
+\item kan brukes på nettet for en del språk blant annet bokmål-nynorsk
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\scalebox{.3}[.3]{\includegraphics<2>{apertium.png}}
+\end{frame}
+
+\begin{frame}
+\begin{tiny}
+\begin{figure*} {\footnotesize \setlength{\tabcolsep}{0.5mm}
+\begin{center}
+\begin{tabular}{cccccccc} 
+\\
+\parbox{0.7cm}{SL text} \\ 
+$\downarrow$ \\
+\framebox{\parbox{1.4cm}{de\-formatter}} $\rightarrow$ &
+\framebox{\parbox{0.8cm}{morph. anal.}}  $\rightarrow$ &
+\framebox{\parbox{1.2cm}{PoS tagger}} $\rightarrow$ &
+\framebox{\parbox{1.1cm}{struct.\ transf.}} $\rightarrow$ &
+\framebox{\parbox{0.8cm}{morph. gen.}}  $\rightarrow$ &
+\framebox{\parbox{1.0cm}{post\-genera\-tor}} $\rightarrow$ &
+\framebox{\parbox{1.2cm}{re-format\-ter}} \\ & & & $\updownarrow$ & &
+& $\downarrow$ \\ & & & \framebox{\parbox{1.0cm}{lex.\ transfer}} & &
+& \parbox{0.7cm}{TL text}\\\\
+\end{tabular}
+\end{center} }
+\caption{The eight modules that build the assembly line of the
+shallow-transfer machine translation system.}
+\label{fg:modules}
+\label{pg:modules}
+\end{figure*}
+\end{tiny}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Hva skal vi med det hele?} 
+\begin{itemize}
+\item maskinoversetting i bilingual publisering (daglige aviser)
+\item daglige aviser
+\item skolebøker
+\item flere tekster betyr også større etterspørsel
+\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Hvordan brukes samisk Apertium?}
+
+\begin{exampleblock}
+Mun háliidan bargat "freelance" neavttárin go mu mielas oahppá olmmoš ollu eambbo go ferte bargat feara maid.
+\end{exampleblock}
+
+%ja mun in vuos dieđe ahte álggán go Beaivváš Sámi Našunálateáhterii bistevaš virgái jus oaččun dákkár fálaldaga, čilge Ingá Márjá Sarre.
+%Mån hálijdav barggat "*freelance" *neavttárin gå muv *mielas oahppá *olmmoš ållu ienebuv gå viertti barggat *feara aj ja mån iv vuostak diede ahte álgáv gå *Beaivváš Sámev *Našunálateáhterii *bistevaš *virgái jus oattjov dákkár *fálaldaga, tjielggi *Ingá *Márjá Sarrev.
+ \end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item analysis
+\item 
+\item 
+\item 
+\end{itemize}
+\end{frame}
+
+\section{Lexicon}
+\begin{frame}
+\scalebox{.5}[.5]{\includegraphics<2>{bidix.png}}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item nordsamisk-lulesamisk ordbok?
+\item Ávvir: finne feil og rette på dem (@, \*, \#, /)
+\item missing list
+\end{itemize}
+\end{frame}
+
+\section{Lexical selection}
+\begin{itemize}
+\item "hui"
+\item "ráhkadit"
+\item "váldit"
+\end{itemize}
+\end{frame}
+
+
+\section{Structural transfer} 
+\begin{frame}
+\begin{itemize}
+  \item SOV rules
+  \item (complexity of the objects, e.g. relative clauses)
+  \item Case rules - different valency in North and Lule Sámi
+  \item other structural rules??? (Ávvir)
+\end{itemize}
+\end{frame}
+
+
+\section{Evaluation of the workshop}
+
+\begin{frame}\frametitle{Forventninger}  
+\begin{itemize}
+\item Hva forventer du av en oversetting? \pause
+\item Hva forventer du av maskinoversetting?
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item Use of machine translation? 
+\item Report mistakes
+\item Discussion
+\end{itemize}
+\end{frame}
+\end{document}
