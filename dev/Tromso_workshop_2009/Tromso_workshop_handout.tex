@@ -12,13 +12,14 @@
 
 \usepackage{color}
 % \usepackage{hyperref}
-\usepackage{graphics}
+\usepackage{graphicx}
 \usepackage{covington}
 \usepackage{url}
 \usepackage{harvard}
 \usepackage[right=2.5cm,left=2.5cm,top=2cm,bottom=2cm]{geometry}
 % \usepackage{bibtexlogo}
 \usepackage{setspace}
+\usepackage{multirow}
 
 \usepackage{fancyhdr}
 \usepackage{linguex}
@@ -80,6 +81,8 @@
 \item skolebøker
 \item flere tekster betyr også større etterspørsel
 \end{itemize}
+
+\textbf{Forventninger?}
  
 \begin{itemize}
 \item Hva forventer du av en oversetting?
@@ -89,12 +92,7 @@
 
 \section{Maskinoversetting}
 
-\begin{itemize}
-\item Google
-\item Babelfish
-\item PROMT
-\item Gramtrans
-\end{itemize}
+Google, Babelfish, PROMT, Gramtrans
 
 
 \scalebox{.5}[.5]{\includegraphics{google.png}} \\
@@ -102,38 +100,46 @@
 %\includegraphics<6>{PIC3}
 \scalebox{.5}[.5]{\includegraphics{gramtrans.png}}
 
+\subsection{Eksempel på maskinoversetting}
 
-\begin{quote}{The Guardian 27.9.2009}
+\textbf{The Guardian 27.9.2009}
+\begin{quote}
 Last week, Iran said it was building a second uranium enrichment plant despite UN demands that it stops its development plans.
 \end{quote}  
 
-\begin{quote}{Google en-nb}
+
+\textbf{Google en-nb}
+\begin{quote}
 Sist uke sa \textit{\textbf{subjekt?}} at Iran var det å bygge et \textbf{sekund} \textbf{anriking av uran anlegg} til tross for FNs krav om at den stopper sine utviklingsplaner.
 \end{quote}  
 % doesn't recognize the subject
 % doesn't recognize the compound - anriking av uran anlegg
 
-\begin{quote}{Gramtrans en-nb}
+\textbf{Gramtrans en-nb}
+\begin{quote}
 Sist uke, sa Iran det holdt på å bygge et annen \textbf{uranberigelsesanlæg} tross \textbf{UN} krav \textbf{som} det stopper sine utviklingsplaner.
 \end{quote}
 % doesn't translate UN into FN
 
-\begin{quote}{Manuell oversetting}
+\textbf{Manuell oversetting}
+\begin{quote}
 Forrige uke sa Iran at de var i ferd med å bygge enda en urananrikingsfabrikk til tross for FNs krav om å stoppe utviklingsplanene.
 \end{quote}
 
- 
-\begin{quote}{Google nb-en}
+
+\textbf{Google nb-en} 
+\begin{quote}
 Last week, Iran said that they were about to build another \textbf{urananrikingsfabrikk} despite UN demands to halt development plans.
 \end{quote}
 
-\begin{quote}{Gramtrans nb-en}
+\textbf{Gramtrans nb-en}
+\begin{quote}
 \textbf{Forrige} week Iran said that they were building still an \textbf{urananrichingsfabrikk} in spite of the UN's demand for stopping the development plans.
 \end{quote}
 
  
 
-\section{Hva er god oversetting?} 
+\subsection{Hva er god oversetting?} 
 \begin{itemize}
 \item spesielt i forhold til skjønnlitterære tekster:
 \item innhold vs. (kunstnerisk) budskap
@@ -164,24 +170,26 @@ Engelsk & Donald Duck \\
 \end{tabular}
  
 
-\section{Hva er god maskinoversetting?}
+\subsection{Hva er god maskinoversetting?}
 
-%
-\begin{quote}{Genesis 11,9 (New International Version (NIV))}
+\textbf{Genesis 11,9 (New International Version (NIV))}
+\begin{quote}
 That is why it was called Babel because there the LORD confused the language of the whole world. From 
 there the LORD scattered them over the face of the whole earth.
 \end{quote}
 
-\begin{quote}{manuell ``oversetting''}
+\textbf{manuell ``oversetting''}
+\begin{quote}
 Derfor kalte de den Babel. For der forvirret Herren all verdens tungemål, og derfra spredte Herren dem ut over hele jorden.
 -- \url{http://www.bibel.no}
 \end{quote}
 
-\begin{quote}{Google}
+\textbf{Google}
+\begin{quote}
 Derfor ble det kalt Babel fordi det Herren forvirret språket i hele verden. Derfra spredte Herren dem over ansiktet til hele jorden.
 \end{quote}
  
- 
+\textbf{Conclusions} 
 \begin{itemize}
 \item maskinoversetting oversetter ikke kulturelt ('ansiktet til hele jorden' passer ikke på norsk)
 \item andere teksttyper er mer innholdsorientert: manual, avistekster
@@ -191,7 +199,7 @@ Derfor ble det kalt Babel fordi det Herren forvirret språket i hele verden. Der
  
 \subsection{Uses of machine translation}
 
-\begin{onlyenv}<1>
+
 There are two main uses for machine translation, \emph{assimilation} and \emph{dissemination}:\\
 ~\\
 \begin{table}
@@ -209,44 +217,28 @@ There are two main uses for machine translation, \emph{assimilation} and \emph{d
 \end{tabular}
 \end{table}
 
-\end{onlyenv}
 
-\begin{onlyenv}<2->
 
-- Useful for assimilation, not dissemination:\\
-~\\
+\textbf{- Useful for assimilation, not dissemination:}\\
+
+
 \emph{Erbyn heddiw mae Gaeleg yn dal yn iaith fyw yn y gogledd orllewin. }\\
-\end{onlyenv}
 
-\begin{onlyenv}<3->
+
 By today a Scots Gaelic is tall in life language in the north west.\\
-\end{onlyenv}
 
-\begin{onlyenv}<4->
-~\\
+
 `Nowadays Scots Gaelic is still a living language in the north west.'\\ (WER = 43\%)\\
-~\\
-\end{onlyenv}
 
-\begin{onlyenv}<5->
+\textbf{- Useful for dissemination, not assimilation:}\\
 
-- Useful for dissemination, not assimilation:\\
-~\\
-\emph{Mae'r \textbf<7>{mudiad} wedi derbyn canmoliaeth a beirniadaeth.}\\
-\end{onlyenv}
+\emph{Mae'r \textbf{mudiad} wedi derbyn canmoliaeth a beirniadaeth.}\\
 
-\begin{onlyenv}<6->
-The \textbf<7>{migration} has received praise and criticism.\\
-\end{onlyenv}
 
-~\\
-\begin{onlyenv}<7>
-`The \textbf<7>{organisation} has received praise and criticism.'\\ (WER = 14\%)\\
-\end{onlyenv}
+The \textbf{migration} has received praise and criticism.\\
 
-~\\
+`The \textbf{organisation} has received praise and criticism.'\\ (WER = 14\%)\\
 
- 
 
 \subsection{God maskinoversetting:}
 \begin{itemize}
@@ -254,13 +246,13 @@ The \textbf<7>{migration} has received praise and criticism.\\
   \item nærmeste oversetting av ord
   \item syntaktisk struktur skal være så nært som mulig
   \item PoS skal være like
-  \item innhold
+  \item innholdet skal ikke forandres
 \end{itemize}
  
 
 
  
-\subsection{What is machine translation}
+\subsection{What is machine translation?}
 
   \begin{centering}
 
@@ -289,7 +281,9 @@ The \textbf<7>{migration} has received praise and criticism.\\
 \end{itemize}
 
  
-
+\begin{figure}
+\scalebox{.6}[.6]{\includegraphics{apertium-level2_simplified.pdf}}
+ \end{figure}
 
 
 \section{Kontrastiv lingvistikk} 
@@ -307,7 +301,7 @@ The \textbf<7>{migration} has received praise and criticism.\\
 \item Computational systems force you to be accurate -- when you need to be accurate you go into depth of linguistic questions
 \end{itemize} 
 
-
+\textbf{Hva skal vi med maskinoversetting?}
 \begin{itemize}
 \item maskinoversetting i bilingual publisering (daglige aviser)
 \item daglige aviser
@@ -317,6 +311,15 @@ The \textbf<7>{migration} has received praise and criticism.\\
 
 \subsection{Hvordan brukes samisk Apertium?}
 
+\begin{itemize}
+\item Analysis
+\item Disambiguation
+\item Lexical transfer
+\item Syntactic transfer
+\item Generation
+\end{itemize}
+
+\textbf{Example}
 \begin{quote}
 Mun háliidan bargat "freelance" neavttárin go mu mielas oahppá olmmoš ollu eambbo go ferte bargat feara maid.
 \end{quote}
@@ -324,28 +327,20 @@ Mun háliidan bargat "freelance" neavttárin go mu mielas oahppá olmmoš ollu e
 %ja mun in vuos dieđe ahte álggán go Beaivváš Sámi Našunálateáhterii bistevaš virgái jus oaččun dákkár fálaldaga, čilge Ingá Márjá Sarre.
 %Mån hálijdav barggat "*freelance" *neavttárin gå muv *mielas oahppá *olmmoš ållu ienebuv gå viertti barggat *feara aj ja mån iv vuostak diede ahte álgáv gå *Beaivváš Sámev *Našunálateáhterii *bistevaš *virgái jus oattjov dákkár *fálaldaga, tjielggi *Ingá *Márjá Sarrev.
 
-\begin{itemize}
-\item analysis
-\item 
-\item 
-\item 
-\end{itemize}
 
 \section{Lexicon}
 
 \scalebox{.7}[.7]{\includegraphics{bidix.png}}
 
-\begin{itemize}
-\item nordsamisk-lulesamisk ordbok?
-\item Ávvir: finne feil og rette på dem (@, \*, \#, /)
-\item missing list
-\end{itemize}
 
 \section{Lexical selection}
 \begin{itemize}
-\item "hui"
-\item "ráhkadit"
-\item "váldit"
+\item "hui" - ihkeva, huj, alvos, riek...
+\item "ráhkadit" - stiellit, tsieggit,dahkat, málestit
+\item "váldit" - 
+\item "sáhttit" - vissjat, máhttet, ...
+\item "váldit gihtii" 
+\item "diet" - dat, duot, ...
 \end{itemize}
 
 
@@ -360,16 +355,10 @@ Mun háliidan bargat "freelance" neavttárin go mu mielas oahppá olmmoš ollu e
 
 \section{Evaluering}
 
- 
+
 \begin{itemize}
 \item Hva forventer du av en oversetting?  
 \item Hva forventer du av maskinoversetting?
-\end{itemize}
-
-\begin{itemize}
-\item Use of machine translation? 
-\item Report mistakes
-\item Discussion
 \end{itemize}
 
 \end{spacing}
