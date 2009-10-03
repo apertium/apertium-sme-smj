@@ -24,6 +24,13 @@
         <cat-item tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
     
+    <def-cat n="FAuxV">
+        <cat-item tags="SV.@+FMAUXV"/>
+        <cat-item tags="SV.@+FMAUXV.*"/>
+        <cat-item tags="SV.*.@+FMAUXV.*"/>
+        <cat-item tags="SV.*.*.@+FMAUXV.*"/>
+    </def-cat>
+    
     <def-cat n="CC">
         <cat-item tags="CC.@CNP"/>
         <cat-item tags="CC.*"/> <!--should be removed when we fix CG -->
@@ -39,6 +46,10 @@
     <def-cat n="Ine_adverb">
         <cat-item lemma="gitta" tags="Adv"/>
         <cat-item lemma="gitta" tags="Adv.*"/>
+    </def-cat>
+    
+    <def-cat n="Pcle">
+        <cat-item tags="Pcle.@PCLE"/>
     </def-cat>
 
   </section-def-cats>
@@ -368,6 +379,94 @@
             <clip pos="2" part="tags"/>
             <clip pos="2" part="chcontent"/>
             <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    
+    <rule> <!--SVO becomes SOV in questions-->
+      <pattern>
+        <pattern-item n="FAuxV"/>
+        <pattern-item n="Pcle"/>
+        <pattern-item n="SN_Subj"/>
+        <pattern-item n="FMainV"/>
+        <pattern-item n="SN_Obj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="3"/>
+          <chunk>
+            <clip pos="5" part="lemh"/>
+            <clip pos="5" part="tags"/>
+            <clip pos="5" part="chcontent"/>
+            <clip pos="5" part="lemq"/>
+          </chunk>
+          <b pos="4"/>
+          <chunk>
+            <clip pos="5" part="lemh"/>
+            <clip pos="5" part="tags"/>
+            <clip pos="5" part="chcontent"/>
+            <clip pos="5" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    
+        <rule> <!--SVO becomes SOV in questions without subject-->
+      <pattern>
+        <pattern-item n="FAuxV"/>
+        <pattern-item n="Pcle"/>
+        <pattern-item n="FMainV"/>
+        <pattern-item n="SN_Obj"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
+          </chunk>
+          <b pos="3"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
           </chunk>
         </out>
       </action>
