@@ -8,7 +8,7 @@ BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = \
      $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autogen.bin \
-     $(PREFIX1).rlx.bin $(PREFIX1).autopgen.bin \
+     $(PREFIX1).lex.bin $(PREFIX1).rlx.bin $(PREFIX1).autopgen.bin \
      $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin pre-$(LANG1).t1x.bin \
      $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
 
@@ -34,6 +34,9 @@ $(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
 
 $(PREFIX1).rlx.bin: $(BASENAME).$(PREFIX1).rlx
 	cg-comp $(BASENAME).$(PREFIX1).rlx $@
+
+$(PREFIX1).lex.bin: $(BASENAME).$(PREFIX1).lex
+	cg-comp $(BASENAME).$(PREFIX1).lex $@
 
 $(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
 	apertium-validate-transfer $(BASENAME).$(PREFIX1).t1x
@@ -91,6 +94,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix $(BASENAME).$(PREFIX1).dix \
 	   $(BASENAME).$(LANG2).dix \
 	   $(BASENAME).$(PREFIX1).dix \
 	   $(BASENAME).$(PREFIX1).rlx \
+	   $(BASENAME).$(PREFIX1).lex \
 	   $(BASENAME).symbols.xml \
            $(PREFIX1).prob  \
            $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x \
@@ -114,6 +118,7 @@ apertium_sme_smj_DATA=$(PREFIX1).automorf.bin \
 		    $(PREFIX1).autopgen.bin \ 
                     $(PREFIX1).prob  \
 		    $(PREFIX1).rlx.bin \
+		    $(PREFIX1).lex.bin \
 		    $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
 		    $(PREFIX1).mode 
 		    

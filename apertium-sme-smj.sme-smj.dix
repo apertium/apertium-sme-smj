@@ -86,6 +86,9 @@
 
     <sdef n="sent"    c="End of sentence marker"/>
 
+    <sdef n="S0"/>
+    <sdef n="S1"/>
+
   </sdefs>
   <section id="main" type="standard">
 
@@ -29520,7 +29523,10 @@
     <e><p><l>hudjuvuohta<s n="N"/></l><r>hudjuvuohta<s n="N"/></r></p></e>
     <e><p><l>huhppa<s n="N"/></l><r>huhppa<s n="N"/></r></p></e>
     <e><p><l>huhppá<s n="N"/></l><r>huhppá<s n="N"/></r></p></e>
-    <e><p><l>hui<s n="Adv"/></l><r>huj<s n="Adv"/></r></p></e>
+
+    <e><p><l>hui<s n="Adv"/><s n="S0"/></l><r>huj<s n="Adv"/></r></p></e>
+    <e><p><l>hui<s n="Adv"/><s n="S1"/></l><r>sieldes<s n="Adv"/></r></p></e>
+
     <e><p><l>huksehat<s n="N"/></l><r>huksehat<s n="N"/></r></p></e>
     <e><p><l>huksehatplána<s n="N"/></l><r>huksehatplána<s n="N"/></r></p></e>
     <e><p><l>huksen<s n="N"/></l><r>huksen<s n="N"/></r></p></e>
