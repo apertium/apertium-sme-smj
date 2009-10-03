@@ -5,6 +5,12 @@
   <def-cat n="nom">
      <cat-item tags="N.*"/>
   </def-cat>
+  <def-cat n="genmod">
+     <cat-item tags="N.*.Gen.@→N"/>
+     <cat-item tags="N.*.Gen.*.@→N"/>
+     <cat-item tags="Pron.*.*.Gen.@→N"/>
+     <cat-item tags="A.*.Gen.@→N"/>
+  </def-cat>
   <def-cat n="num">
      <cat-item tags="Num"/>
      <cat-item tags="Num.*"/>
@@ -53,6 +59,13 @@
   <def-attr n="a_nom">
      <attr-item tags="N"/>
      <attr-item tags="N.Prop"/>
+  </def-attr>
+  
+  <def-attr n="a_genmod">
+     <attr-item tags="N"/>
+     <attr-item tags="N.Prop"/>
+     <attr-item tags="Pron.Pers"/>
+     <attr-item tags="A"/>
   </def-attr>
 
   <def-attr n="a_adj">
@@ -524,6 +537,56 @@
              <clip pos="1" side="tl" part="case" link-to="4"/>
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <var n="focus_pcle"/>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+  <rule comment="REGLA: GenMod Nom">
+     <pattern>
+       <pattern-item n="genmod"/>
+       <pattern-item n="nom"/>
+     </pattern>
+     <action>
+       <call-macro n="set_syntag1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="assign_case1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="magic_number1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="convert_focus1">
+         <with-param pos="2"/>
+       </call-macro>
+       <out>
+         <chunk name="genmod_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><var n="current_syntag"/></tag>
+             <tag><clip pos="2" side="tl" part="nbr"/></tag>
+             <tag><clip pos="2" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="a_genmod"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/> <!--space between the words-->
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case" link-to="4"/>
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <var n="focus_pcle"/>
          </chunk>
