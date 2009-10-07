@@ -3,6 +3,7 @@
 
 %\usepackage[nosectionbib]{apacite}
 \usepackage{babel}
+\usepackage{footnote}
 \usepackage{ucs} %sami letters
 % \usepackage{amssymb} %mathematical
 \usepackage[utf8x]{inputenc}
@@ -97,12 +98,14 @@ Google, Babelfish, PROMT, Gramtrans
 
 
 \begin{figure}
+\centering
 \scalebox{.5}[.5]{\includegraphics{google.png}} \\
   \caption{Google Translate: A popular online machine translation service}
 \end{figure}
 %\includegraphics<4>{PIC2}
 %\includegraphics<6>{PIC3}
 \begin{figure}
+\centering
 \scalebox{.5}[.5]{\includegraphics{gramtrans.png}}
   \caption{Gramtrans: Rule-based machine translation for the Scandinavian Germanic languages}
 \end{figure}
@@ -156,6 +159,8 @@ Last week, Iran said that they were about to build another \textbf{urananrikings
  
 
 \subsection{Det "samme" på forskjellige språk}
+\begin{table}
+\centering
 \begin{tabular}{|c|c|}
 \hline
 \textbf{Språk} & \textbf{Navn} \\
@@ -175,6 +180,8 @@ Nordsamisk & Vulle Vuojaš \\
 Engelsk & Donald Duck \\
 \hline
 \end{tabular}
+\caption{Local adaptation: The name \emph{Donald Duck} translated into several languages.}
+\end{table}
  
 
 \subsection{Hva er god maskinoversetting?}
@@ -202,14 +209,13 @@ Derfor ble det kalt Babel fordi det Herren forvirret språket i hele verden. Der
 \item andere teksttyper er mer innholdsorientert: manual, avistekster
 \end{itemize} 
  
-
- 
 \subsection{Uses of machine translation}
 
 
 There are two main uses for machine translation, \emph{assimilation} and \emph{dissemination}:\\
 ~\\
 \begin{table}
+\centering
 \begin{tabular}{l|l|l}
 ~  & Requirement & Not requirement\\
 \hline
@@ -222,6 +228,7 @@ There are two main uses for machine translation, \emph{assimilation} and \emph{d
                                &  High accuracy (WER $\le$ 15\%)    & \\
 \hline
 \end{tabular}
+\caption{Assimilation and dissemination: Features which are required and not required of both.}
 \end{table}
 
 
@@ -289,7 +296,9 @@ The \textbf{migration} has received praise and criticism.\\
 
  
 \begin{figure}
+\centering
 \scalebox{.6}[.6]{\includegraphics{apertium-level2_simplified.pdf}}
+\caption{A schematic of the Apertium translation pipeline.}
  \end{figure}
 
 
@@ -337,7 +346,11 @@ Mun háliidan bargat "freelance" neavttárin go mu mielas oahppá olmmoš ollu e
 
 \section{Lexicon}
 
+\begin{figure}
+\centering
 \scalebox{.7}[.7]{\includegraphics{bidix.png}}
+  \caption{Bilingual dictionary: An example of some entries from the bilingual dictionary of the North--Lule Sámi system}
+\end{figure}
 
 
 \section{Lexical selection}
