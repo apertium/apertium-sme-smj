@@ -9,7 +9,7 @@ BASENAME=apertium-$(PREFIX1)
 TARGETS_COMMON = \
      $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autogen.bin \
      $(PREFIX1).lex.bin $(PREFIX1).rlx.bin $(PREFIX1).autopgen.bin \
-     $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin pre-$(LANG1).t1x.bin \
+     $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).t4x.bin pre-$(LANG1).t1x.bin \
      $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
 
 ##
@@ -47,8 +47,12 @@ $(PREFIX1).t2x.bin: $(BASENAME).$(PREFIX1).t2x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX1).t2x $@
 
 $(PREFIX1).t3x.bin: $(BASENAME).$(PREFIX1).t3x
-	apertium-validate-postchunk $(BASENAME).$(PREFIX1).t3x
+	apertium-validate-interchunk $(BASENAME).$(PREFIX1).t3x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX1).t3x $@
+
+$(PREFIX1).t4x.bin: $(BASENAME).$(PREFIX1).t4x
+	apertium-validate-postchunk $(BASENAME).$(PREFIX1).t4x
+	apertium-preprocess-transfer $(BASENAME).$(PREFIX1).t4x $@
 
 
 
@@ -98,7 +102,7 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix $(BASENAME).$(PREFIX1).dix \
 	   $(BASENAME).symbols.xml \
            $(PREFIX1).prob  \
            $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x \
-           $(BASENAME).$(PREFIX1).t3x \
+           $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX1).t4x\
            modes.xml 
 
 #           $(LANG1)-tagger-data/README $(LANG2)-tagger-data/README 
@@ -119,7 +123,7 @@ apertium_sme_smj_DATA=$(PREFIX1).automorf.bin \
                     $(PREFIX1).prob  \
 		    $(PREFIX1).rlx.bin \
 		    $(PREFIX1).lex.bin \
-		    $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin \
+		    $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).t4x.bin \
 		    $(PREFIX1).mode 
 		    
 #$(PREFIX2).mode
@@ -131,6 +135,6 @@ install-data-local:
 	cp *.mode modes/
 	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_sme_modesdir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x $(apertium_sme_smjdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x  $(apertium_sme_smjdir)
+	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX1).t4x $(apertium_sme_smjdir)
 
 CLEANFILES = -rf $(TARGETS_COMMON) modes

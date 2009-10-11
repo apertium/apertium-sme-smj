@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interchunk>
+
+  <section-def-cats>
+    <def-cat n="SN">
+      <cat-item tags="SN"/>
+      <cat-item tags="SN.*"/>
+    </def-cat>
+    
+    <def-cat n="SN_Subj">
+        <cat-item tags="SN.@SUBJ→.*"/>
+        <cat-item tags="SN.@←SUBJ.*"/>
+    </def-cat>
+    
+    <def-cat n="SN_Obj">
+        <cat-item tags="SN.@OBJ→.*"/>
+        <cat-item tags="SN.@←OBJ.*"/>
+    </def-cat>
+    
+    <def-cat n="FMainV">
+        <cat-item tags="SV.@+FMAINV"/>
+        <cat-item tags="SV.@+FMAINV.*"/>
+        <cat-item tags="SV.*.@+FMAINV.*"/>
+        <cat-item tags="SV.*.*.@+FMAINV.*"/>
+    </def-cat>
+    
+    <def-cat n="FAuxV">
+        <cat-item tags="SV.@+FMAUXV"/>
+        <cat-item tags="SV.@+FMAUXV.*"/>
+        <cat-item tags="SV.*.@+FMAUXV.*"/>
+        <cat-item tags="SV.*.*.@+FMAUXV.*"/>
+    </def-cat>
+    
+    <def-cat n="CC">
+        <cat-item tags="CC.@CNP"/>
+        <cat-item tags="CC.*"/> <!--should be removed when we fix CG -->
+        <cat-item tags="SV.*.Neg.Foc_ge"/>
+        <cat-item tags="SV.*.Neg.Foc_ge.*"/>
+    </def-cat>
+    
+    <def-cat n="Vcop">
+        <cat-item lemma="copula" tags="SV"/>
+        <cat-item lemma="copula" tags="SV.*"/>
+    </def-cat>
+    
+    <def-cat n="Ine_adverb">
+        <cat-item lemma="gitta" tags="Adv"/>
+        <cat-item lemma="gitta" tags="Adv.*"/>
+    </def-cat>
+    
+    <def-cat n="Pcle">
+        <cat-item tags="Pcle.@PCLE"/>
+    </def-cat>
+
+  </section-def-cats>
+
+  <section-def-attrs>
+    <def-attr n="phrase">
+     <attr-item tags="@X"/>
+     <attr-item tags="@HNOUN"/>
+     <attr-item tags="@CNP"/>
+     <attr-item tags="@CVP"/>
+     <attr-item tags="@→N"/>
+     <attr-item tags="@←OBJ"/>
+     <attr-item tags="@OBJ"/>
+     <attr-item tags="@-F←OBJ"/>
+     <attr-item tags="@SUBJ→"/>
+     <attr-item tags="@←SUBJ"/>
+     <attr-item tags="@SPRED→"/>
+     <attr-item tags="@\+FMAINV"/>
+     <attr-item tags="@-FMAINV"/>
+     <attr-item tags="@+FAUXV"/>
+     <attr-item tags="@ADVL"/>
+     <attr-item tags="@HAB"/>
+     <attr-item tags="@Num←"/>
+     <attr-item tags="@→Num"/>
+     <attr-item tags="@INTERJ"/>
+     <attr-item tags="@PCLE"/>
+     <attr-item tags="@OPRED→"/>
+     <attr-item tags="@←OPRED"/>
+     <attr-item tags="@→P"/>
+     <attr-item tags="@P←"/>
+    </def-attr>
+    <def-attr n="nbr">
+      <attr-item tags="Sg"/>
+      <attr-item tags="Pl"/>
+      <attr-item tags="Sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+    <def-attr n="case">
+     <attr-item tags="Nom"/>
+     <attr-item tags="Acc"/>
+     <attr-item tags="Gen"/>
+     <attr-item tags="Com"/>
+     <attr-item tags="Ess"/>
+     <attr-item tags="Ill"/>
+     <attr-item tags="Loc"/>
+     <attr-item tags="Ine"/>
+     <attr-item tags="Ela"/>
+  </def-attr>
+  </section-def-attrs>
+
+  <section-def-vars>
+    <def-var n="nombre"/>
+    <def-var n="genere"/>
+  </section-def-vars>
+
+  <section-rules>
+
+    <rule>
+      <pattern>
+        <pattern-item n="SN"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+  </section-rules>
+</interchunk>
