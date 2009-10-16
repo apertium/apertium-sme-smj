@@ -32,6 +32,15 @@
   <def-cat n="verb">
      <cat-item tags="V.*"/>
   </def-cat>
+  <def-cat n="inf_p">
+     <cat-item tags="*.*.Inf.@←OBJ"/>
+     <cat-item tags="*.*.Inf.@SUBJ→"/>
+  </def-cat>
+  <def-cat n="inf_mod">
+     <cat-item tags="*.*.*.@-FSUBJ→"/>
+     <cat-item tags="*.*.*.@-FOBJ→"/>
+  </def-cat>
+
   <def-cat n="pronom">
      <cat-item tags="Pron.*"/>
   </def-cat>
@@ -50,6 +59,18 @@
      <cat-item tags="Po.*"/>
      <cat-item tags="Pr"/>
      <cat-item tags="Pr.*"/>
+  </def-cat>
+  
+   <def-cat n="po_mod">	
+     <cat-item tags="*.*.*.*.@→P"/>
+     <cat-item tags="*.*.*.*.*.@→P"/>
+     <cat-item tags="*.*.*.@→P"/>
+  </def-cat>
+  
+     <def-cat n="pr_mod">	
+     <cat-item tags="*.*.*.*.@P←"/>
+     <cat-item tags="*.*.*.*.*.@P←"/>
+     <cat-item tags="*.*.*.@P←"/>
   </def-cat>
   
   <def-cat n="copula">
@@ -970,6 +991,110 @@
      </action>
   </rule>
 
+    <rule comment="REGLA: NUM NomMod NomMod NumMod">
+     <pattern>
+       <pattern-item n="num"/>
+       <pattern-item n="attrmod"/>
+       <pattern-item n="attrmod"/>
+       <pattern-item n="num_mod"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="num_mod" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
+             <tag><clip pos="1" side="tl" part="nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_num"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/> <!--space between the words-->
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <b pos="2"/> <!--space between the words-->
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b pos="3"/> <!--space between the words-->
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/> 
+             <clip pos="4" side="tl" part="a_nom"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <clip pos="4" side="tl" part="case" link-to="4"/>
+             <clip pos="4" side="tl" part="poss"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
+    <rule comment="REGLA: NUM NomMod NomMod NomMod NumMod">
+     <pattern>
+       <pattern-item n="num"/>
+       <pattern-item n="attrmod"/>
+       <pattern-item n="attrmod"/>
+       <pattern-item n="attrmod"/>
+       <pattern-item n="num_mod"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="num_mod" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
+             <tag><clip pos="1" side="tl" part="nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_num"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/> <!--space between the words-->
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <b pos="2"/> <!--space between the words-->
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b pos="3"/> <!--space between the words-->
+            <lu>
+             <clip pos="4" side="tl" part="lemh"/> 
+             <clip pos="4" side="tl" part="a_adj"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+           <b pos="4"/> <!--space between the words-->
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/> 
+             <clip pos="5" side="tl" part="a_nom"/>
+             <clip pos="5" side="tl" part="nbr"/>
+             <clip pos="5" side="tl" part="case" link-to="4"/>
+             <clip pos="5" side="tl" part="poss"/>
+             <clip pos="5" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
 
 <rule comment="REGLA: NUM">
      <pattern>
@@ -1146,6 +1271,60 @@
        </out>
      </action>
   </rule>
+  
+  <rule comment="REGLA: InfMod INF">
+     <pattern>
+       <pattern-item n="inf_mod"/>
+       <pattern-item n="inf_p"/>
+     </pattern>
+     <action>
+       <call-macro n="set_syntag1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="assign_case1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="magic_number1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="convert_focus1">
+         <with-param pos="2"/>
+       </call-macro>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
+             <tag><clip pos="1" side="sl" part="mood"/></tag>
+             <tag><clip pos="1" side="sl" part="foc"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="a_genmod"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/> <!--space between the words-->
+             <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="voice"/>
+             <clip pos="2" side="tl" part="mood"/>
+             <clip pos="2" side="tl" part="temps"/>
+             <clip pos="2" side="tl" part="conneg"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <clip pos="2" side="tl" part="foc"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <var n="focus_pcle"/>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
 
   <rule comment="REGLA: ADV">
@@ -1236,6 +1415,69 @@
        </out>
      </action>
   </rule>
+
+  <rule comment="REGLA: PoMod ADPOS">
+     <pattern>
+       <pattern-item n="po_mod"/>
+       <pattern-item n="adpos"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="adpos" case="caseFirstWord">
+           <tags>
+             <tag><clip pos="2" side="tl" part="a_adpos"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="a_genmod"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/> <!--space between the words-->
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_adpos"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+  
+    <rule comment="REGLA: ADPOS PrMod">
+     <pattern>
+       <pattern-item n="adpos"/>
+       <pattern-item n="pr_mod"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="adpos" case="caseFirstWord">
+           <tags>
+             <tag><clip pos="1" side="tl" part="a_adpos"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_adpos"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/> <!--space between the words-->
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="a_genmod"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case"/>
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
   <rule comment="REGLA: SENT">
      <pattern>
