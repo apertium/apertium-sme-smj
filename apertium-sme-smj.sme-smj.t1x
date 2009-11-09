@@ -1409,7 +1409,7 @@
      </action>
   </rule>
 
-  <rule comment="REGLA: ADPOS">
+    <rule comment="REGLA: ADPOS">
      <pattern>
        <pattern-item n="adpos"/>
      </pattern>
@@ -1428,69 +1428,6 @@
        </out>
      </action>
   </rule>
-
-  <rule comment="REGLA: PoMod ADPOS">
-     <pattern>
-       <pattern-item n="po_mod"/>
-       <pattern-item n="adpos"/>
-     </pattern>
-     <action>
-       <out>
-         <chunk name="adpos" case="caseFirstWord">
-           <tags>
-             <tag><clip pos="2" side="tl" part="a_adpos"/></tag>
-           </tags>
-           <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
-             <clip pos="1" side="tl" part="a_genmod"/>
-             <clip pos="1" side="tl" part="pers"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="case"/>
-             <clip pos="1" side="tl" part="poss"/>
-             <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-           <b pos="1"/> <!--space between the words-->
-           <lu>
-             <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="a_adpos"/>
-             <clip pos="2" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
-     </action>
-  </rule>
-  
-    <rule comment="REGLA: ADPOS PrMod">
-     <pattern>
-       <pattern-item n="adpos"/>
-       <pattern-item n="pr_mod"/>
-     </pattern>
-     <action>
-       <out>
-         <chunk name="adpos" case="caseFirstWord">
-           <tags>
-             <tag><clip pos="1" side="tl" part="a_adpos"/></tag>
-           </tags>
-           <lu>
-             <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_adpos"/>
-             <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-           <b pos="1"/> <!--space between the words-->
-           <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
-             <clip pos="2" side="tl" part="a_genmod"/>
-             <clip pos="2" side="tl" part="pers"/>
-             <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="case"/>
-             <clip pos="2" side="tl" part="poss"/>
-             <clip pos="2" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
-     </action>
-  </rule>
-
 
   <rule comment="REGLA: SENT">
      <pattern>
