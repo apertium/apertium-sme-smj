@@ -103,6 +103,11 @@
      <attr-item tags="A.Attr"/>
      <attr-item tags="A.Adv"/>
   </def-attr>
+  
+  <def-attr n="a_attrmod">
+     <attr-item tags="A.Attr"/>
+     <attr-item tags="Num"/>
+  </def-attr>
 
   <def-attr n="a_adv">
      <attr-item tags="Adv"/>
@@ -535,6 +540,8 @@
 
 <section-rules>
 
+    <!-- Noun is the head -->
+
   <rule comment="REGLA: NOM">
      <pattern>
        <pattern-item n="nom"/>
@@ -574,7 +581,7 @@
      </action>
   </rule>
 
-  <rule comment="REGLA: GenMod Nom">
+  <rule comment="REGLA: GenMod Nom">    <!-- Su mánná lea girkus. -->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="nom"/>
@@ -624,7 +631,7 @@
      </action>
   </rule>
  
-   <rule comment="REGLA: GenMod GenMod Nom">
+   <rule comment="REGLA: GenMod GenMod Nom"> <!-- Su máná mánná lea girkus. -->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="genmod"/>
@@ -757,7 +764,7 @@
      </action>
   </rule>
 
-    <rule comment="REGLA: AttrMod Nom">
+    <rule comment="REGLA: AttrMod Nom"> <!-- Mun oainnán 1 máná. -->
      <pattern>
        <pattern-item n="attrmod"/>
        <pattern-item n="nom"/>
@@ -785,7 +792,7 @@
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
-             <clip pos="1" side="tl" part="a_adj"/>
+             <clip pos="1" side="tl" part="a_attrmod"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/> <!--space between the words-->
@@ -832,13 +839,13 @@
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
-             <clip pos="1" side="tl" part="a_adj"/>
+             <clip pos="1" side="tl" part="a_attrmod"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
              <clip pos="2" side="tl" part="lemh"/> 
-             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="a_attrmod"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
@@ -886,19 +893,19 @@
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
-             <clip pos="1" side="tl" part="a_adj"/>
+             <clip pos="1" side="tl" part="a_attrmod"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
              <clip pos="2" side="tl" part="lemh"/> 
-             <clip pos="2" side="tl" part="a_adj"/>
+             <clip pos="2" side="tl" part="a_attrmod"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
              <clip pos="3" side="tl" part="lemh"/> 
-             <clip pos="3" side="tl" part="a_adj"/>
+             <clip pos="3" side="tl" part="a_attrmod"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b pos="3"/> <!--space between the words-->
@@ -915,8 +922,10 @@
        </out>
      </action>
   </rule>
+  
+  <!-- Numeral is the head -->
 
-  <rule comment="REGLA: NUM NomMod">
+  <rule comment="REGLA: NUM NomMod"> <!-- Mus leat 2 máná. -->
      <pattern>
        <pattern-item n="num"/>
        <pattern-item n="num_mod"/>
@@ -1123,6 +1132,7 @@
      </action>
   </rule>
 
+<!-- Pronoun is the head -->
 
   <rule comment="REGLA: PRONOM">
      <pattern>
@@ -1158,6 +1168,7 @@
      </action>
   </rule>
 
+    <!--  -->
 
   <rule comment="REGLA: ADJ">
      <pattern>
