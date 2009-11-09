@@ -17,6 +17,19 @@
         <cat-item tags="SN.@←OBJ.*"/>
     </def-cat>
     
+    <def-cat n="SN_Po">
+        <cat-item tags="SN.@→P.*"/>
+    </def-cat>
+    
+    <def-cat n="SN_Pr">
+        <cat-item tags="SN.@←ADVL.*"/>
+    </def-cat>
+    
+    <def-cat n="SN_Obj">
+        <cat-item tags="SN.@OBJ→.*"/>
+        <cat-item tags="SN.@←OBJ.*"/>
+    </def-cat>
+    
     <def-cat n="FMainV">
         <cat-item tags="SV.@+FMAINV"/>
         <cat-item tags="SV.@+FMAINV.*"/>
@@ -50,6 +63,11 @@
     
     <def-cat n="Pcle">
         <cat-item tags="Pcle.@PCLE"/>
+    </def-cat>
+    
+    <def-cat n="Adp">
+        <cat-item tags="Pr.*"/>
+        <cat-item tags="Po.*"/>
     </def-cat>
 
   </section-def-cats>
@@ -121,6 +139,27 @@
           </chunk>
         </out>
       </action>
+    </rule>
+    
+    <rule comment="REGLA: SNpo + Po"> <!-- Post-positional phrase -->
+      <pattern>
+        <pattern-item n="SN_Po"/> <!-- SN.@→P.* -->
+        <pattern-item n="Adp"/> <!-- Po -->
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <lit v="{"/>
+            <clip pos="1" part="content"/> <!-- Contents of first chunk -->
+            <lit v=" "/>
+            <clip pos="2" part="content"/> <!-- Contents of second chunk -->
+            <lit v="}"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
     </rule>
 
   </section-rules>
