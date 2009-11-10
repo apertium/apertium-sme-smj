@@ -146,7 +146,28 @@
      <action>
        <out>
          <chunk>
-           <clip pos="1" part="lemh"/>
+           <lit v="adpp"/>
+           <clip pos="2" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <lit v=" "/>
+           <clip pos="2" part="content"/>
+           <lit v="}"/>
+           <clip pos="2" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule> 
+
+   <rule>
+     <pattern>
+       <pattern-item n="Adp"/>
+       <pattern-item n="SN_Pr"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <lit v="adpp"/>
            <clip pos="1" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
