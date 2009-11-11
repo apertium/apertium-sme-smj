@@ -264,6 +264,9 @@
      <attr-item tags="@←OPRED"/>
      <attr-item tags="@→P"/>
      <attr-item tags="@P←"/>
+     <attr-item tags="@-FSUBJ→"/>
+     <attr-item tags="@-FOBJ→"/>
+     <attr-item tags="@-F←OBJ"/>
   </def-attr>
 </section-def-attrs>
 
