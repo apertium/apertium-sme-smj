@@ -41,6 +41,7 @@
   <def-cat n="inf_mod">
      <cat-item tags="*.*.*.@-FSUBJ→"/>
      <cat-item tags="*.*.*.@-FOBJ→"/>
+     <cat-item tags="*.*.*.@-F←OBJ"/>
   </def-cat>
 
   <def-cat n="pronom">
@@ -1285,7 +1286,7 @@
      </action>
   </rule>
   
-  <rule comment="REGLA: InfMod INF">
+  <rule comment="REGLA: InfMod INF"><!--Mun oahpan lottiid goddit.-->
      <pattern>
        <pattern-item n="inf_mod"/>
        <pattern-item n="inf_p"/>
@@ -1304,12 +1305,12 @@
          <with-param pos="2"/>
        </call-macro>
        <out>
-         <chunk name="verb" case="caseFirstWord">
+         <chunk name="verb" case="caseSecondWord">
            <tags>
              <tag><lit-tag v="SV"/></tag>
-             <tag><clip pos="1" side="sl" part="syntag"/></tag>
-             <tag><clip pos="1" side="sl" part="mood"/></tag>
-             <tag><clip pos="1" side="sl" part="foc"/></tag>
+             <tag><clip pos="2" side="sl" part="syntag"/></tag>
+             <tag><clip pos="2" side="sl" part="mood"/></tag>
+             <tag><clip pos="2" side="sl" part="foc"/></tag>
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
@@ -1319,6 +1320,7 @@
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
+             <clip pos="1" side="tl" part="syntag"/>
            </lu>
            <b pos="1"/> <!--space between the words-->
              <lu>
@@ -1331,6 +1333,7 @@
              <clip pos="2" side="tl" part="pers"/>
              <clip pos="2" side="tl" part="foc"/>
              <clip pos="2" side="tl" part="lemq"/>
+             <clip pos="2" side="tl" part="syntag"/>
            </lu>
            <var n="focus_pcle"/>
          </chunk>
@@ -1338,6 +1341,60 @@
      </action>
   </rule>
 
+    <rule comment="REGLA: INF InfMod"><!--Mun oahpan goddit lottiid.-->
+     <pattern>
+       <pattern-item n="inf_p"/>
+       <pattern-item n="inf_mod"/>
+     </pattern>
+     <action>
+       <call-macro n="set_syntag1">
+         <with-param pos="1"/>
+       </call-macro>
+       <call-macro n="assign_case1">
+         <with-param pos="1"/>
+       </call-macro>
+       <call-macro n="magic_number1">
+         <with-param pos="1"/>
+       </call-macro>
+       <call-macro n="convert_focus1">
+         <with-param pos="1"/>
+       </call-macro>
+       <out>
+         <chunk name="verb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SV"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
+             <tag><clip pos="1" side="sl" part="mood"/></tag>
+             <tag><clip pos="1" side="sl" part="foc"/></tag>
+           </tags>
+            <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="voice"/>
+             <clip pos="1" side="tl" part="mood"/>
+             <clip pos="1" side="tl" part="temps"/>
+             <clip pos="1" side="tl" part="conneg"/>
+             <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="foc"/>
+             <clip pos="1" side="tl" part="lemq"/>
+             <clip pos="1" side="tl" part="syntag"/>
+            </lu>
+           <b pos="1"/> <!--space between the words-->
+            <lu>
+             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="a_genmod"/>
+             <clip pos="2" side="tl" part="pers"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case"/>
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
+             <clip pos="2" side="tl" part="syntag"/>
+           </lu>
+           <var n="focus_pcle"/>
+         </chunk>
+       </out>
+     </action>
+  </rule>
 
 
   <rule comment="REGLA: ADV">
