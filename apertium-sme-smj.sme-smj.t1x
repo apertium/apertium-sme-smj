@@ -585,7 +585,7 @@
      </action>
   </rule>
 
-  <rule comment="REGLA: GenMod Nom">    <!-- Su mánná lea girkus. -->
+  <rule comment="REGLA: GenMod Nom">    <!-- Su mánná lea girkus. --><!-- Mun oainnán su mánáid. -->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="nom"/>
@@ -635,7 +635,7 @@
      </action>
   </rule>
  
-   <rule comment="REGLA: GenMod GenMod Nom"> <!-- Su máná mánná lea girkus. -->
+   <rule comment="REGLA: GenMod GenMod Nom"> <!-- Su máná mánná lea girkus. --><!-- Mun oainnán su máná máná. -->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="genmod"/>
@@ -696,7 +696,7 @@
      </action>
   </rule>
  
-    <rule comment="REGLA: GenMod GenMod GenMod Nom">
+    <rule comment="REGLA: GenMod GenMod GenMod Nom"><!-- Su máná máná mánná lea girkus. --><!-- Mun oainnán su máná máná máná. -->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="genmod"/>
@@ -1323,7 +1323,6 @@
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
-             <clip pos="1" side="tl" part="syntag"/>
            </lu>
            <b pos="1"/> <!--space between the words-->
              <lu>
@@ -1336,7 +1335,6 @@
              <clip pos="2" side="tl" part="pers"/>
              <clip pos="2" side="tl" part="foc"/>
              <clip pos="2" side="tl" part="lemq"/>
-             <clip pos="2" side="tl" part="syntag"/>
            </lu>
            <var n="focus_pcle"/>
          </chunk>
@@ -1380,7 +1378,7 @@
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="foc"/>
              <clip pos="1" side="tl" part="lemq"/>
-             <clip pos="1" side="tl" part="syntag"/>
+             <!--clip pos="1" side="tl" part="syntag"/-->
             </lu>
            <b pos="1"/> <!--space between the words-->
             <lu>
@@ -1391,7 +1389,7 @@
              <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
-             <clip pos="2" side="tl" part="syntag"/>
+             <!--clip pos="2" side="tl" part="syntag"/-->
            </lu>
            <var n="focus_pcle"/>
          </chunk>
