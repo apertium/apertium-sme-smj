@@ -797,6 +797,8 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
              <clip pos="1" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/> <!--space between the words-->
@@ -844,12 +846,16 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
              <clip pos="1" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
@@ -898,18 +904,24 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
              <clip pos="1" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
              <clip pos="3" side="tl" part="lemh"/> 
              <clip pos="3" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b pos="3"/> <!--space between the words-->
