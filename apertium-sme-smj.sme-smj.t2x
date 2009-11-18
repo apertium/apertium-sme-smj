@@ -17,6 +17,12 @@
         <cat-item tags="SN.@←OBJ.*"/>
     </def-cat>
     
+    <def-cat n="SN_Advl">
+        <cat-item tags="SN.@ADVL→.*"/>
+        <cat-item tags="SN.@←ADVL.*"/>
+        <cat-item tags="SN.@ADVL.*"/>
+    </def-cat>
+    
     <def-cat n="SN_Po">
         <cat-item tags="SN.@→P.*"/>
     </def-cat>
@@ -145,7 +151,7 @@
       </action>
     </rule>
     
-   <rule>
+   <rule comment="REGLA: SN_Po Adp">
      <pattern>
        <pattern-item n="SN_Po"/>
        <pattern-item n="Adp"/>
@@ -166,7 +172,7 @@
      </action>
     </rule> 
 
-   <rule>
+   <rule comment="REGLA: Adp SN_Pr">
      <pattern>
        <pattern-item n="Adp"/>
        <pattern-item n="SN_Pr"/>
@@ -187,11 +193,59 @@
      </action>
     </rule> 
     
-    <rule>
+    <rule comment="REGLA: SN_Obj CNP SN_Obj">
      <pattern>
        <pattern-item n="SN_Obj"/>
        <pattern-item n="CNP"/>
        <pattern-item n="SN_Obj"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <lit v="coor_obj"/>
+           <clip pos="1" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <lit v=" "/>
+           <clip pos="2" part="content"/>
+           <lit v=" "/>
+           <clip pos="3" part="content"/>
+           <lit v="}"/>
+           <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule> 
+
+    <rule comment="REGLA: SN_Subj CNP SN_Subj">
+     <pattern>
+       <pattern-item n="SN_Subj"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="SN_Subj"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <lit v="coor_subj"/>
+           <clip pos="1" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <lit v=" "/>
+           <clip pos="2" part="content"/>
+           <lit v=" "/>
+           <clip pos="3" part="content"/>
+           <lit v="}"/>
+           <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule> 
+
+    <rule comment="REGLA: SN_Advl CNP SN_Advl"><!--Son liikui munnje ja sutnje.--><!--Son liikui mu áhččái ja mu eatnái.-->
+     <pattern>
+       <pattern-item n="SN_Advl"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="SN_Advl"/>
      </pattern>
      <action>
        <out>
