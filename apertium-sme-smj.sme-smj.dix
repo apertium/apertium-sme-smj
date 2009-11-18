@@ -38569,7 +38569,10 @@
     <e><p><l>ráfáidit<s n="V"/><s n="IV"/></l><r>ráfedit<s n="V"/></r></p></e>
     <e><p><l>ráfáiduhttit<s n="V"/><s n="TV"/></l><r>ráfájduhttet<s n="V"/></r></p></e>
     <e><p><l>rágadit<s n="V"/></l><r>rágádit<s n="V"/></r></p></e>
-    <e><p><l>ráhkadit<s n="V"/><s n="TV"/></l><r>stiellit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>ráhkadit<s n="V"/><s n="TV"/></l><r>stiellit<s n="V"/></r></p></e>
+    <e r="RL"><p><l>ráhkadit<s n="V"/><s n="TV"/></l><r>dahkat<s n="V"/></r></p></e>
+    <e r="LR"><p><l>ráhkadit<s n="V"/><s n="TV"/><s n="S0"/></l><r>stiellit<s n="V"/></r></p></e>
+    <e r="LR"><p><l>ráhkadit<s n="V"/><s n="TV"/><s n="S1"/></l><r>dahkat<s n="V"/></r></p></e>
     <e><p><l>ráhkkedit<s n="V"/><s n="TV"/></l><r>ráhkkidit<s n="V"/></r></p></e>
     <e><p><l>ráhkkot<s n="V"/></l><r>ráhkkut<s n="V"/></r></p></e>
     <e><p><l>ráhččat<s n="V"/><s n="TV"/></l><r>ráhttjat<s n="V"/></r></p></e>
