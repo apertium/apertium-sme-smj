@@ -13,6 +13,7 @@
   </def-cat>
   <def-cat n="attrmod">
      <cat-item tags="A.Attr.@→N"/>
+     <cat-item tags="A.*.Attr.@→N"/>
      <cat-item tags="Num.*.*.@→N"/> <!--numerals as modifiers-->
      <cat-item tags="Num.*.*.*.@→N"/>
   </def-cat>
