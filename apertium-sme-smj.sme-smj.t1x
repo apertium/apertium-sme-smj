@@ -628,7 +628,7 @@
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="case" link-to="4"/>
+             <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
@@ -689,7 +689,7 @@
              <clip pos="3" side="tl" part="lemh"/> 
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="nbr"/>
-             <clip pos="3" side="tl" part="case" link-to="4"/>
+             <clip pos="3" side="tl" part="case"/>
              <clip pos="3" side="tl" part="poss"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
@@ -761,7 +761,7 @@
              <clip pos="4" side="tl" part="lemh"/> 
              <clip pos="4" side="tl" part="a_nom"/>
              <clip pos="4" side="tl" part="nbr"/>
-             <clip pos="4" side="tl" part="case" link-to="4"/>
+             <clip pos="4" side="tl" part="case"/>
              <clip pos="4" side="tl" part="poss"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
@@ -809,7 +809,7 @@
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="case" link-to="4"/>
+             <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
@@ -866,7 +866,7 @@
              <clip pos="3" side="tl" part="lemh"/> 
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="nbr"/>
-             <clip pos="3" side="tl" part="case" link-to="4"/>
+             <clip pos="3" side="tl" part="case"/>
              <clip pos="3" side="tl" part="poss"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
@@ -932,7 +932,7 @@
              <clip pos="4" side="tl" part="lemh"/> 
              <clip pos="4" side="tl" part="a_nom"/>
              <clip pos="4" side="tl" part="nbr"/>
-             <clip pos="4" side="tl" part="case" link-to="4"/>
+             <clip pos="4" side="tl" part="case"/>
              <clip pos="4" side="tl" part="poss"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
@@ -970,7 +970,7 @@
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="nbr"/>
-             <clip pos="2" side="tl" part="case" link-to="4"/>
+             <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="poss"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
@@ -1012,7 +1012,7 @@
              <clip pos="3" side="tl" part="lemh"/> 
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="nbr"/>
-             <clip pos="3" side="tl" part="case" link-to="4"/>
+             <clip pos="3" side="tl" part="case"/>
              <clip pos="3" side="tl" part="poss"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
@@ -1061,7 +1061,7 @@
              <clip pos="4" side="tl" part="lemh"/> 
              <clip pos="4" side="tl" part="a_nom"/>
              <clip pos="4" side="tl" part="nbr"/>
-             <clip pos="4" side="tl" part="case" link-to="4"/>
+             <clip pos="4" side="tl" part="case"/>
              <clip pos="4" side="tl" part="poss"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
@@ -1117,7 +1117,7 @@
              <clip pos="5" side="tl" part="lemh"/> 
              <clip pos="5" side="tl" part="a_nom"/>
              <clip pos="5" side="tl" part="nbr"/>
-             <clip pos="5" side="tl" part="case" link-to="4"/>
+             <clip pos="5" side="tl" part="case"/>
              <clip pos="5" side="tl" part="poss"/>
              <clip pos="5" side="tl" part="lemq"/>
            </lu>
