@@ -7,6 +7,12 @@
       <cat-item tags="SN.*"/>
     </def-cat>
     
+    <def-cat n="SV_Obj">
+        <cat-item tags="SV.@OBJ→.*"/>
+        <cat-item tags="SV.@←OBJ.*"/>
+        <cat-item tags="SV.@←OBJ"/>
+    </def-cat>
+
     <def-cat n="SN_Subj">
         <cat-item tags="SN.@SUBJ→.*"/>
         <cat-item tags="SN.@←SUBJ.*"/>
@@ -401,7 +407,7 @@
       <pattern>
         <pattern-item n="SN_Subj"/>
         <pattern-item n="FMainV"/>
-<!--        <pattern-item n="SV_Obj"/> -->
+        <pattern-item n="SV_Obj"/> 
       </pattern>
       <action>
         <out>
