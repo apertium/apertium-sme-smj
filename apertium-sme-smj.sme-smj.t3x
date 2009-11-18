@@ -23,6 +23,16 @@
         <cat-item tags="SV.@←OBJ"/>
     </def-cat>
     
+    <def-cat n="SN_Advl">
+        <cat-item tags="SN.@ADVL→.*"/>
+        <cat-item tags="SN.@←ADVL.*"/>
+        <cat-item tags="SN.@ADVL.*"/>
+    </def-cat>
+    
+    <def-cat n="SN_Po">
+        <cat-item tags="SN.@→P.*"/>
+    </def-cat>
+    
     <def-cat n="FMainV">
         <cat-item tags="SV.@+FMAINV"/>
         <cat-item tags="SV.@+FMAINV.*"/>
@@ -42,6 +52,10 @@
         <cat-item tags="CC.*"/> <!--should be removed when we fix CG -->
         <cat-item tags="SV.*.Neg.Foc_ge"/>
         <cat-item tags="SV.*.Neg.Foc_ge.*"/>
+    </def-cat>
+    
+    <def-cat n="CNP">
+        <cat-item tags="CC.@CNP"/>
     </def-cat>
     
     <def-cat n="Vcop">
@@ -77,6 +91,8 @@
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@+FAUXV"/>
      <attr-item tags="@ADVL"/>
+     <attr-item tags="@←ADVL"/>
+     <attr-item tags="@ADVL→"/>
      <attr-item tags="@HAB"/>
      <attr-item tags="@Num←"/>
      <attr-item tags="@→Num"/>
@@ -553,6 +569,37 @@
       </action>
     </rule>
 
+    <rule> <!--SVA becomes SAV -->
+      <pattern>
+        <pattern-item n="SN_Subj"/>
+        <pattern-item n="FMainV"/>
+        <pattern-item n="SN_Advl"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
 
