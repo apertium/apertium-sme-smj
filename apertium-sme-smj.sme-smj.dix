@@ -28938,7 +28938,10 @@
     <e><p><l>gihtta<s n="N"/></l><r>gihtta<s n="N"/></r></p></e>
 
     <e><p><l>gii<s n="Pron"/></l><r>guhti<s n="Pron"/></r></p></e>
+<!--
     <e><p><l>gii<g><b/>beare</g><s n="Pron"/></l><r>vajku<b/>guhti<s n="Pron"/></r></p></e>
+-->
+    <e><p><l>gii<g><b/>beare</g><s n="Pron"/><s n="Interr"/></l><r>vajku<b/>guhti<s n="Pron"/><s n="Interr"/></r></p></e>
     <e><p><l>giige<s n="Pron"/></l><r>guhtik<s n="Pron"/></r></p></e>
     <e><p><l>giijai<s n="Pron"/></l><r>færttahasj<s n="Pron"/></r></p></e>
     <e><p><l>giimma<s n="N"/></l><r>gijma<s n="N"/></r></p></e>
