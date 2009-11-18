@@ -1727,7 +1727,7 @@ LIST BEDCLOTHES = "beaska" "gávdni" "oađádat" "rátnu" "roavgu" "seaŋga";
 LIST CLOTHES = "báidi" "beaska" "bivttas" "boagán" "buksa" "čikŋa#bivttas" "čuvla" "dálve#bivttas" "dorka" "gákti" "gárvu" "geasse#bivttas" "kamel#guolga#bivttas" "láđđe#bivttas" "láđđe#gákti" "liidne#gákti" "náhkke#boagán" "olgguldas#bivttas" "sáme#bivttas" "sis#báidi" "siste#gákti" "sáme#gákti" "T-báidi" ;
    
 
-LIST FOOD = "beatnat#muorji" "biergu" "bohcco#biergu" "bohccobiergo#borramuš" "borramuš" "čáhppes#muorji" "eana#muorji" "fuođar" "goike#guolli" "gordni" "guosse#mális" "jáfu" "jokŋa" "láibi" "mális" "málli" "meahcce#muorji" "ruksessarva#biergu" "sarrit" "vuodja#gáhkku" ;
+LIST FOOD = "beatnat#muorji" "biebmu" "biergu" "bohcco#biergu" "bohccobiergo#borramuš" "borramuš" "čáhppes#muorji" "eana#muorji" "fuođar" "goike#guolli" "gordni" "guosse#mális" "jáfu" "jokŋa" "láibi" "mális" "málli" "meahcce#muorji" "ruksessarva#biergu" "sarrit" "vuodja#gáhkku" ;
 
     # potential tool for political activity etc., potential place for other food, insects etc.
 
@@ -2287,3 +2287,14 @@ SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ�
 
 # Default (if no other rule applies)
 SUBSTITUTE (A) (A S0) ("boaris"ri A);
+
+# S0: stiellit
+SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
+    # Mun ráhkadan biepmu.
+SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
+    # Mun biepmu ráhkadan.
+
+# Default (if no other rule applies)
+SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V);
+    # Mun ráhkadan plána.
+    # Mun ráhkadan ášši. - Mån ássjev dagáv.
