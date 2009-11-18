@@ -256,6 +256,8 @@
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@\+FAUXV"/>
      <attr-item tags="@ADVL"/>
+     <attr-item tags="@←ADVL"/>
+     <attr-item tags="@ADVL→"/>
      <attr-item tags="@HAB"/>
      <attr-item tags="@Num←"/>
      <attr-item tags="@→Num"/>
@@ -769,7 +771,7 @@
      </action>
   </rule>
 
-    <rule comment="REGLA: AttrMod Nom"> <!-- Mun oainnán 1 máná. -->
+    <rule comment="REGLA: AttrMod Nom"> <!-- Mun oainnán 1 máná. --><!-- Mun oainnán boares máná. -->
      <pattern>
        <pattern-item n="attrmod"/>
        <pattern-item n="nom"/>
