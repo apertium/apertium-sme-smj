@@ -46,6 +46,10 @@
         <cat-item tags="SV.*.Neg.Foc_ge.*"/>
     </def-cat>
     
+    <def-cat n="CNP">
+        <cat-item tags="CC.@CNP"/>
+    </def-cat>
+    
     <def-cat n="Vcop">
         <cat-item lemma="copula" tags="SV"/>
         <cat-item lemma="copula" tags="SV.*"/>
@@ -176,6 +180,30 @@
            <clip pos="1" part="content"/>
            <lit v=" "/>
            <clip pos="2" part="content"/>
+           <lit v="}"/>
+           <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule> 
+    
+    <rule>
+     <pattern>
+       <pattern-item n="SN_Obj"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="SN_Obj"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <lit v="coor_obj"/>
+           <clip pos="1" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <lit v=" "/>
+           <clip pos="2" part="content"/>
+           <lit v=" "/>
+           <clip pos="3" part="content"/>
            <lit v="}"/>
            <clip pos="1" part="lemq"/>
          </chunk>
