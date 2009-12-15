@@ -54,6 +54,7 @@ dev/bidix/TriSaami_sme_pos.txt -text
 dev/bidix/TriSaami_smj.txt -text
 dev/bidix/TriSaami_smj_analyzed.txt -text
 dev/bidix/TriSaami_smj_pos.txt -text
+dev/bidix/TriSaamicorr.txt -text
 dev/bidix/bidixsmjverbs.txt -text
 dev/bidix/bidixsmjverbs_analyzed.txt -text
 dev/darbahit.paradigm -text
