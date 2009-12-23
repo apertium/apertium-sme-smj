@@ -30806,7 +30806,7 @@
     <e><p><l>merren<s n="N"/></l><r>merren<s n="N"/></r></p></e>
     <e><p><l>merres<s n="N"/></l><r>merres<s n="N"/></r></p></e>
     <e><p><l>mesonatoma<s n="N"/></l><r>mesonatoma<s n="N"/></r></p></e>
-    <e><p><l>messet<s n="N"/></l><r>messet<s n="N"/></r></p></e>
+    <e><p><l>messet<s n="N"/></l><r>miessit<s n="N"/></r></p></e>
     <e><p><l>metabola<s n="N"/></l><r>metabola<s n="N"/></r></p></e>
     <e><p><l>metabolisma<s n="N"/></l><r>metabolissma<s n="N"/></r></p></e>
     <e><p><l>metafysihkka<s n="N"/></l><r>metafysihkka<s n="N"/></r></p></e>
@@ -35011,8 +35011,9 @@
 
     <!-- Verbs -->
 
-    <e><p><l>CE-merket<s n="V"/><r>mierkkit<s n="V"/><s n="TV"/></r></p></e>
+    <e><p><l>CE-merket<s n="V"/><r>CE-mierkkit<s n="V"/><s n="TV"/></r></p></e>
     <e><p><l>abandoneret<s n="V"/><r>abandonerit<s n="V"/><s n="TV"/></r></p></e>
+    <e><p><l>abastit<s n="V"/><r>ruhtsuhit<s n="V"/><s n="TV"/></r></p></e>
     <e><p><l>abbonneret<s n="V"/><r>abbonnerit<s n="V"/><s n="TV"/></r></p></e>
     <e><p><l>abbrevieret<s n="V"/><r>abbrevierit<s n="V"/><s n="TV"/></r></p></e>
     <e><p><l>abdiseret<s n="V"/><r>abdiserit<s n="V"/><s n="IV"/></r></p></e>
@@ -39021,8 +39022,8 @@
     <e><p><l>viehkat<s n="V"/><s n="IV"/><r>viehkat<s n="V"/><s n="IV"/></r></p></e>
 
     <e><p><l>abastit<s n="V"/><r>abástit<s n="V"/></r></p></e>
-    <e><p><l>addjohit<s n="V"/><r>adjudit<s n="V"/></r></p></e>
-    <e><p><l>administreret<s n="V"/><s n="TV"/><r>admenistrerit<s n="V"/></r></p></e>
+    <e><p><l>addjohit<s n="V"/><r>addjudit<s n="V"/></r></p></e>
+    <e><p><l>administreret<s n="V"/><s n="TV"/><r>administrerit<s n="V"/></r></p></e>
     <e><p><l>aiddostahttit<s n="V"/><s n="TV"/><r>ajdustahttet<s n="V"/></r></p></e>
     <e><p><l>aiget<s n="V"/><r>ajgget<s n="V"/></r></p></e>
     <e><p><l>albmanahttit<s n="V"/><r>almmanahttet<s n="V"/></r></p></e>
