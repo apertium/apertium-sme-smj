@@ -2298,3 +2298,13 @@ SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OB
 SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V);
     # Mun ráhkadan plána.
     # Mun ráhkadan ášši. - Mån ássjev dagáv.
+    
+# S0: vuojnnet vs. (årrot)
+SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
+    # Orru leamen buorre.
+SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (1 (@←SPRED));
+    # Orru buorre.
+
+# Default (if no other rule applies)
+SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V);
+    #     
