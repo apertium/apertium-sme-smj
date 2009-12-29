@@ -119,6 +119,7 @@
   <def-attr n="a_attrmod">
      <attr-item tags="A.Attr"/>
      <attr-item tags="A.*.Attr"/> <!-- if a sense -->
+     <attr-item tags="A.*.*.Attr"/> <!-- ordinals -->
      <attr-item tags="Num"/>
   </def-attr>
 
@@ -782,7 +783,7 @@
      </action>
   </rule>
 
-    <rule comment="REGLA: AttrMod Nom"> <!-- Mun oainnán 1 máná. --><!-- Mun oainnán boares máná. -->
+    <rule comment="REGLA: AttrMod Nom"> <!-- Mun oainnán 1 máná. --><!-- Mun oainnán boares máná. --><!-- Mun oainnán vuosttaš máná. -->
      <pattern>
        <pattern-item n="attrmod"/>
        <pattern-item n="nom"/>
@@ -868,8 +869,8 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_attrmod"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="case"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
@@ -926,16 +927,16 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_attrmod"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="case"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
              <clip pos="3" side="tl" part="lemh"/> 
              <clip pos="3" side="tl" part="a_attrmod"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="case"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <clip pos="3" side="tl" part="case"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b pos="3"/> <!--space between the words-->
@@ -991,8 +992,8 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_attrmod"/>
-             <!--clip pos="1" side="tl" part="nbr"/-->
-             <!--clip pos="1" side="tl" part="case"/-->
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
