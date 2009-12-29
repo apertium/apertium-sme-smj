@@ -2301,7 +2301,7 @@ SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V);
 
 # Default (if no other rule applies)
 SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V);
-    #         
+    #  Orru jaska!       
 
 # S0: vuojnnet vs. (årrot)
 SUBSTITUTE (V IV S1) (V IV S0) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
