@@ -7,9 +7,13 @@
   </def-cat>
   <def-cat n="genmod">
      <cat-item tags="N.*.Gen.@→N"/>
+     <cat-item tags="N.*.Gen.@→A"/>
      <cat-item tags="N.*.Gen.*.@→N"/>
+     <cat-item tags="N.*.Gen.*.@→A"/>
      <cat-item tags="Pron.*.*.Gen.@→N"/>
+     <cat-item tags="Pron.*.*.Gen.@→A"/>
      <cat-item tags="A.*.Gen.@→N"/>
+     <cat-item tags="A.*.Gen.@→A"/>
   </def-cat>
   <def-cat n="attrmod">
      <cat-item tags="A.Attr.@→N"/>
@@ -58,6 +62,10 @@
      <cat-item tags="CS.*"/>
   </def-cat>
   
+  <def-cat n="CNP">
+    <cat-item tags="CC.@CNP"/>
+  </def-cat>
+  
    <def-cat n="adpos">	
      <cat-item tags="Po"/>
      <cat-item tags="Po.*"/>
@@ -97,17 +105,20 @@
      <attr-item tags="N"/>
      <attr-item tags="N.Prop"/>
      <attr-item tags="Pron.Pers"/>
+     <attr-item tags="Pron"/>
      <attr-item tags="A"/>
   </def-attr>
 
   <def-attr n="a_adj">
      <attr-item tags="A"/>
      <attr-item tags="A.Attr"/>
+     <attr-item tags="A.*.Attr"/>
      <attr-item tags="A.Adv"/>
   </def-attr>
   
   <def-attr n="a_attrmod">
      <attr-item tags="A.Attr"/>
+     <attr-item tags="A.*.Attr"/> <!-- if a sense -->
      <attr-item tags="Num"/>
   </def-attr>
 
@@ -819,7 +830,7 @@
      </action>
   </rule>
 
-    <rule comment="REGLA: AttrMod AttrMod Nom">
+    <rule comment="REGLA: AttrMod AttrMod Nom"><!-- Mun oainnán 1 boares máná. --><!-- Mun oainnán boares boares máná. -->
      <pattern>
        <pattern-item n="attrmod"/>
        <pattern-item n="attrmod"/>
@@ -876,7 +887,7 @@
      </action>
   </rule>
 
-<rule comment="REGLA: AttrMod AttrMod AttrMod Nom">
+<rule comment="REGLA: AttrMod AttrMod AttrMod Nom"><!-- Mun oainnán 1 boares boares máná. --><!-- Mun oainnán boares boares boares máná. -->
      <pattern>
        <pattern-item n="attrmod"/>
        <pattern-item n="attrmod"/>
@@ -941,6 +952,137 @@
        </out>
      </action>
   </rule>
+  
+  <rule comment="REGLA: GenMod AttrMod Nom"><!-- Mun oainnán su boares ádjá. -->
+     <pattern>
+       <pattern-item n="genmod"/>
+       <pattern-item n="attrmod"/>
+       <pattern-item n="nom"/>
+     </pattern>
+     <action>
+       <call-macro n="set_syntag1">
+         <with-param pos="3"/>
+       </call-macro>
+       <call-macro n="assign_case1">
+         <with-param pos="3"/>
+       </call-macro>
+       <call-macro n="magic_number1">
+         <with-param pos="3"/>
+       </call-macro>
+       <call-macro n="convert_focus1">
+         <with-param pos="3"/>
+       </call-macro>
+       <out>
+         <chunk name="gen_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><var n="current_syntag"/></tag>
+             <tag><clip pos="3" side="tl" part="nbr"/></tag>
+             <tag><clip pos="3" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="a_genmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/> <!--space between the words-->
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="a_attrmod"/>
+             <!--clip pos="1" side="tl" part="nbr"/-->
+             <!--clip pos="1" side="tl" part="case"/-->
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <b pos="2"/> <!--space between the words-->
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="a_nom"/>
+             <clip pos="3" side="tl" part="nbr"/>
+             <clip pos="3" side="tl" part="case"/>
+             <clip pos="3" side="tl" part="poss"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <var n="focus_pcle"/>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+  
+    <rule comment="REGLA: GenMod AttrMod CNP AttrMod Nom"><!-- Mun oainnán su boares ja hávskes áddjá. -->
+     <pattern>
+       <pattern-item n="genmod"/>
+       <pattern-item n="attrmod"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="attrmod"/>
+       <pattern-item n="nom"/>
+     </pattern>
+     <action>
+       <call-macro n="set_syntag1">
+         <with-param pos="5"/>
+       </call-macro>
+       <call-macro n="assign_case1">
+         <with-param pos="5"/>
+       </call-macro>
+       <call-macro n="magic_number1">
+         <with-param pos="5"/>
+       </call-macro>
+       <call-macro n="convert_focus1">
+         <with-param pos="5"/>
+       </call-macro>
+       <out>
+         <chunk name="gen_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><var n="current_syntag"/></tag>
+             <tag><clip pos="3" side="tl" part="nbr"/></tag>
+             <tag><clip pos="3" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="a_genmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <b pos="1"/> <!--space between the words-->
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <b pos="2"/> <!--space between the words-->
+           <lu>
+             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="3" side="tl" part="lemq"/>
+           </lu>
+           <b pos="3"/> <!--space between the words-->
+           <lu>
+             <clip pos="4" side="tl" part="lemh"/> 
+             <clip pos="4" side="tl" part="a_cnj"/>
+             <clip pos="4" side="tl" part="lemq"/>
+           </lu>
+           <b pos="4"/> <!--space between the words-->
+           <lu>
+             <clip pos="5" side="tl" part="lemh"/> 
+             <clip pos="5" side="tl" part="a_nom"/>
+             <clip pos="5" side="tl" part="nbr"/>
+             <clip pos="5" side="tl" part="case"/>
+             <clip pos="5" side="tl" part="poss"/>
+             <clip pos="5" side="tl" part="lemq"/>
+           </lu>
+           <var n="focus_pcle"/>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
   
   <!-- Numeral is the head -->
 
