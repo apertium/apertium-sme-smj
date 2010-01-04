@@ -1089,7 +1089,7 @@
   
   <!-- Numeral is the head -->
 
-  <rule comment="REGLA: NUM NomMod"> <!-- Mus leat 2 máná. -->
+  <rule comment="REGLA: NUM NomMod"> <!-- Áhčis leat 2 máná. WORKS-->
      <pattern>
        <pattern-item n="num"/>
        <pattern-item n="num_mod"/>
@@ -1124,7 +1124,7 @@
      </action>
   </rule>
   
-    <rule comment="REGLA: NUM NomMod NumMod">
+    <rule comment="REGLA: NUM NomMod NumMod"><!-- Áhčis leat 2 máná máná. WORKS-->
      <pattern>
        <pattern-item n="num"/>
        <pattern-item n="attrmod"/>
@@ -1215,7 +1215,7 @@
      </action>
   </rule>
 
-    <rule comment="REGLA: NUM NomMod NomMod NomMod NumMod">
+    <rule comment="REGLA: NUM NomMod NomMod NomMod NumMod"><!-- Áhčis leat 2 máná máná máná.-->
      <pattern>
        <pattern-item n="num"/>
        <pattern-item n="attrmod"/>
@@ -1477,7 +1477,7 @@
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
-             <clip pos="1" side="tl" part="a_genmod"/>
+             <clip pos="1" side="tl" part="inf_p"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
@@ -1487,7 +1487,7 @@
            <b pos="1"/> <!--space between the words-->
              <lu>
              <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="a_verb"/>
+             <clip pos="2" side="tl" part="inf_mod"/>
              <clip pos="2" side="tl" part="voice"/>
              <clip pos="2" side="tl" part="mood"/>
              <clip pos="2" side="tl" part="temps"/>
@@ -1530,7 +1530,7 @@
            </tags>
             <lu>
              <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_verb"/>
+             <clip pos="1" side="tl" part="inf_mod"/>
              <clip pos="1" side="tl" part="voice"/>
              <clip pos="1" side="tl" part="mood"/>
              <clip pos="1" side="tl" part="temps"/>
@@ -1543,7 +1543,7 @@
            <b pos="1"/> <!--space between the words-->
             <lu>
              <clip pos="2" side="tl" part="lemh"/> 
-             <clip pos="2" side="tl" part="a_genmod"/>
+             <clip pos="2" side="tl" part="inf_p"/>
              <clip pos="2" side="tl" part="pers"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
