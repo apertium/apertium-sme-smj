@@ -600,7 +600,7 @@
      </action>
   </rule>
 
-  <rule comment="REGLA: GenMod Nom">    <!-- Su mánná lea girkus. --><!-- Mun oainnán su mánáid. -->
+  <rule comment="REGLA: GenMod Nom">    <!-- Su mánná lea girkus. --><!-- Mun oainnán su mánáid. WORKS-->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="nom"/>
@@ -650,7 +650,7 @@
      </action>
   </rule>
  
-   <rule comment="REGLA: GenMod GenMod Nom"> <!-- Su máná mánná lea girkus. --><!-- Mun oainnán su máná máná. -->
+   <rule comment="REGLA: GenMod GenMod Nom"> <!-- Su máná mánná lea girkus. --><!-- Mun oainnán su máná máná. WORKS-->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="genmod"/>
@@ -711,7 +711,7 @@
      </action>
   </rule>
  
-    <rule comment="REGLA: GenMod GenMod GenMod Nom"><!-- Su máná máná mánná lea girkus. --><!-- Mun oainnán su máná máná máná. -->
+    <rule comment="REGLA: GenMod GenMod GenMod Nom"><!-- Su máná máná mánná lea girkus. --><!-- Mun oainnán su máná máná máná. WORKS-->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="genmod"/>
@@ -783,7 +783,7 @@
      </action>
   </rule>
 
-    <rule comment="REGLA: AttrMod Nom"> <!-- Mun oainnán 1 máná. --><!-- Mun oainnán boares máná. --><!-- Mun oainnán vuosttaš máná. -->
+    <rule comment="REGLA: AttrMod Nom"> <!-- Mun oainnán 1 máná. --><!-- Mun oainnán boares máná. WORKS--><!-- Mun oainnán vuosttaš máná. -->
      <pattern>
        <pattern-item n="attrmod"/>
        <pattern-item n="nom"/>
@@ -954,7 +954,7 @@
      </action>
   </rule>
   
-  <rule comment="REGLA: GenMod AttrMod Nom"><!-- Mun oainnán su boares ádjá. -->
+  <rule comment="REGLA: GenMod AttrMod Nom"><!-- Mun oainnán su boares ádjá. WORKS-->
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="attrmod"/>
@@ -1052,22 +1052,22 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/> 
              <clip pos="2" side="tl" part="a_attrmod"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="case"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
              <clip pos="3" side="tl" part="lemh"/> 
-             <clip pos="3" side="tl" part="a_attrmod"/>
-             <clip pos="1" side="tl" part="nbr"/>
-             <clip pos="1" side="tl" part="case"/>
+             <clip pos="3" side="tl" part="a_cnj"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b pos="3"/> <!--space between the words-->
            <lu>
              <clip pos="4" side="tl" part="lemh"/> 
-             <clip pos="4" side="tl" part="a_cnj"/>
+             <clip pos="4" side="tl" part="a_attrmod"/>
+             <clip pos="4" side="tl" part="nbr"/>
+             <clip pos="4" side="tl" part="case"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
            <b pos="4"/> <!--space between the words-->
