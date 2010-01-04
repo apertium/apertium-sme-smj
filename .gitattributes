@@ -55,6 +55,7 @@ dev/bidix/TriSaami_smj.txt -text
 dev/bidix/TriSaami_smj_analyzed.txt -text
 dev/bidix/TriSaami_smj_pos.txt -text
 dev/bidix/TriSaamicorr.txt -text
+dev/bidix/TriSaamicorr_utf8.txt -text
 dev/bidix/bidixsmjverbs.txt -text
 dev/bidix/bidixsmjverbs_analyzed.txt -text
 dev/bidix/bidixsmjverbsone.txt -text
