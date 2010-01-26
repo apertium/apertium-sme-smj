@@ -2297,15 +2297,34 @@ SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OB
 # Default (if no other rule applies)
 SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V);
     # Mun ráhkadan plána.
-    # Mun ráhkadan ášši. - Mån ássjev dagáv.
-
-# Default (if no other rule applies)
-SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V);
-    #  Orru jaska!       
+    # Mun ráhkadan ášši. - Mån ássjev dagáv.  
 
 # S0: vuojnnet vs. (årrot)
-SUBSTITUTE (V IV S1) (V IV S0) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
+SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
     # Orru leamen buorre.
-SUBSTITUTE (V IV S1) (V IV S0) ("orrut"ri V) (1 (@←SPRED));
+SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (1 (@←SPRED));
     # Orru buorre.
 
+# S1: årrot    
+SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (*1 (@>P) BARRIER NPNH LINK 1 ("luhtte"));
+    # Orun ustiba luhtte.
+SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (-1 ("luhtte") LINK -1 (@>P));
+    # Ustiba luhtte orun.
+    
+# Default (if no other rule applies)
+SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V);
+    #  Orru jaska!     
+
+# S0: viessot vs. (iellet)
+SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (*1 Loc LINK NOT 0 PLACE OR HUMAN BARRIER NPNH);
+    # Dálvet eallá boazu energivallji jeagelšattuiguin.
+    SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (-1 Loc LINK NOT 0 PLACE OR HUMAN);
+    # Dálvet boazu energivallji jeagelšattuiguin eallá.
+SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (*-1 ("mo") OR ("movt") OR ("mot") BARRIER PRE-NP-HEAD LINK 1 NP-HEAD-NOM);
+    # Mo don ealát?
+
+# S1: iellet (åndelig)    
+SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (1 ("agálaččat"));
+    # Son eallá agálaččat.
+SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (-1 ("agálaččat"));
+    # Son agálaččat eallá.
