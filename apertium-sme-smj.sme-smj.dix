@@ -27481,7 +27481,10 @@
     <e><p><l>buoretvuohta<s n="N"/></l><r>buoretvuohta<s n="N"/></r></p></e>
     <e><p><l>buoridilli<s n="N"/></l><r>buoredille<s n="N"/></r></p></e>
     <e><p><l>buorimiella<s n="N"/></l><r>buoremiella<s n="N"/></r></p></e>
-    <e><p><l>buorre<s n="A"/></l><r>buorre<s n="A"/></r></p></e>
+    <e r="RL"><p><l>buorre<s n="A"/></l><r>buorre<s n="A"/></r></p></e>
+    <e r="RL"><p><l>buorre<s n="A"/></l><r>jasskat<s n="A"/></r></p></e>
+    <e r="LR"><p><l>buorre<s n="A"/><s n="S1"/></l><r>buorre<s n="A"/></r></p></e>
+    <e r="LR"><p><l>buorre<s n="A"/><s n="S0"/></l><r>jasskat<s n="A"/></r></p></e>
     <e><p><l>buorrelágán<s n="A"/></l><r>buorrelágán<s n="A"/></r></p></e>
     <e><p><l>buorremiella<s n="N"/></l><r>buorremiella<s n="N"/></r></p></e>
     <e><p><l>buorrevuohta<s n="N"/></l><r>buorrevuohta<s n="N"/></r></p></e>
@@ -29787,7 +29790,10 @@
     <e><p><l>jarla<s n="N"/></l><r>jarla<s n="N"/></r></p></e>
     <e><p><l>jarra<s n="N"/></l><r>jarra<s n="N"/></r></p></e>
     <e><p><l>jarri<s n="N"/></l><r>jarre<s n="N"/></r></p></e>
-    <e><p><l>jaska<s n="Adv"/></l><r>jasska<s n="Adv"/></r></p></e>
+    <e r="RL"><p><l>jaska<s n="Adv"/></l><r>jasska<s n="Adv"/></r></p></e>
+    <e r="RL"><p><l>jaska<s n="Adv"/></l><r>sjávot<s n="Adv"/></r></p></e>
+    <e r="LR"><p><l>jaska<s n="Adv"/><s n="S1"/></l><r>jasska<s n="Adv"/></r></p></e>
+    <e r="LR"><p><l>jaska<s n="Adv"/><s n="S0"/></l><r>sjávot<s n="Adv"/></r></p></e>
     <e><p><l>jaskat<s n="A"/></l><r>jasskat<s n="A"/></r></p></e>
     <e><p><l>jassa<s n="N"/></l><r>jassa<s n="N"/></r></p></e>
     <e><p><l>jaŋas<s n="A"/></l><r>jaŋás<s n="A"/></r></p></e>
@@ -31452,6 +31458,7 @@
     <e><p><l>nøytralisma<s n="N"/></l><r>nøytralisma<s n="N"/></r></p></e>
     <e><p><l>oabbá<s n="N"/></l><r>oabbá<s n="N"/></r></p></e>
     <e><p><l>oabna<s n="N"/></l><r>oabna<s n="N"/></r></p></e>
+    <e><p><l>oadjebas<s n="A"/></l><r>jasska<s n="A"/></r></p></e>
     <e><p><l>oadjebasvuohta<s n="N"/></l><r>oadjebasvuohta<s n="N"/></r></p></e>
     <e><p><l>oaffar<s n="N"/></l><r>oaffar<s n="N"/></r></p></e>
     <e><p><l>oaggu<s n="N"/></l><r>oaggo<s n="N"/></r></p></e>
@@ -34666,7 +34673,10 @@
     <e><p><l>čavgat<s n="A"/></l><r>tjavggat<s n="A"/></r></p></e>
     <e><p><l>čađačuohpus<s n="N"/></l><r>tjadátjuohpos<s n="N"/></r></p></e>
     <e><p><l>čeabet<s n="N"/></l><r>tjiebet<s n="N"/></r></p></e>
-    <e><p><l>čeahppi<s n="A"/></l><r>tjiehppe<s n="A"/></r></p></e>
+    <e r="RL"><p><l>čeahppi<s n="A"/></l><r>tjiehppe<s n="A"/></r></p></e>
+    <e r="RL"><p><l>čeahppi<s n="A"/></l><r>smidá<s n="A"/></r></p></e>
+    <e r="LR"><p><l>čeahppi<s n="A"/><s n="S1"/></l><r>tjiehppe<s n="A"/></r></p></e>
+    <e r="LR"><p><l>čeahppi<s n="A"/><s n="S0"/></l><r>smidá<s n="A"/></r></p></e>
     <e><p><l>čeahppi<s n="N"/></l><r>tjiehppe<s n="N"/></r></p></e>
     <e><p><l>čeahppivuohta<s n="N"/></l><r>tjiehppevuohta<s n="N"/></r></p></e>
     <e><p><l>Čeakčahjälmen<s n="N"/><s n="Prop"/></l><r>Čeakčahjälmen<s n="N"/><s n="Prop"/></r></p></e>
