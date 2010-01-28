@@ -2328,3 +2328,23 @@ SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (1 ("agálaččat"));
     # Son eallá agálaččat.
 SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (-1 ("agálaččat"));
     # Son agálaččat eallá.
+    
+
+# S0: jasskat (vs. buorre)    
+SUBSTITUTE (A) (A S0) ("buorre"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
+    # Giella lea mearrideaddji oassi addin dihte buori iešdovddu.
+SUBSTITUTE (A) (A S1) ("buorre"ri A);
+    # Default
+    
+# S1: jasska (vs. sjávot)    
+#SUBSTITUTE (A) (A S1) ("jaska"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu"));
+    # 
+#SUBSTITUTE (A) (A S0) ("jaska"ri A);
+    # Default
+    
+# S0: smidá (vs. tjiehppe)    
+SUBSTITUTE (A) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
+    # Son lea čeahppi borrat.
+    # subsistence words where it is not the talent that is stressed
+SUBSTITUTE (A) (A S0) ("čeahppi"ri A);
+    # Default
