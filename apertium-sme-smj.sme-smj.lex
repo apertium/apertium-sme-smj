@@ -2268,25 +2268,9 @@ SET NON-APP = ALLSYNTAG - (@APP);
 
 SECTION
 
-# S0: huj
-SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C Attr);
 
-# S1: sieldes
-SUBSTITUTE (Adv) (Adv S1) ("hui"ri Adv) (1C A) (NOT 1C Attr);
-
-
-# S0: vuoras
-SUBSTITUTE (A) (A S0) ("boaris"ri A Attr) (1C HUMAN OR ANIMAL);
-SUBSTITUTE (A) (A S0) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
-
-# S1: boares
-SUBSTITUTE (A) (A S1) ("boaris"ri A Attr) (NOT 1C HUMAN OR ANIMAL);
-SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
-SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
-
-
-# Default (if no other rule applies)
-SUBSTITUTE (A) (A S0) ("boaris"ri A);
+# VERBS
+# =====
 
 # S0: stiellit
 SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
@@ -2329,6 +2313,20 @@ SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (1 ("agálaččat"));
 SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (-1 ("agálaččat"));
     # Son agálaččat eallá.
     
+#viessot seksualitehta/identitehta
+#Sij barggi juohkkahattjaj riektáj åvdås, iehtjasa seksuálitehta milta viessot.
+
+# S0: mujttalit (vs. subtsastit)    
+SUBSTITUTE (V) (V TV S1) ("muitalit"ri V) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
+    # Son muitala máidnasiid.
+    # 
+SUBSTITUTE (A) (V TV S0) ("muitalit"ri V);
+    # Default
+    
+    
+# ADJECTIVES
+# ==========
+    
 
 # S0: jasskat (vs. buorre)    
 SUBSTITUTE (A) (A S0) ("buorre"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
@@ -2348,3 +2346,23 @@ SUBSTITUTE (A) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
     # subsistence words where it is not the talent that is stressed
 SUBSTITUTE (A) (A S0) ("čeahppi"ri A);
     # Default
+    
+# S0: huj
+SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C Attr);
+
+# S1: sieldes
+SUBSTITUTE (Adv) (Adv S1) ("hui"ri Adv) (1C A) (NOT 1C Attr);
+
+
+# S0: vuoras
+SUBSTITUTE (A) (A S0) ("boaris"ri A Attr) (1C HUMAN OR ANIMAL);
+SUBSTITUTE (A) (A S0) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
+
+# S1: boares
+SUBSTITUTE (A) (A S1) ("boaris"ri A Attr) (NOT 1C HUMAN OR ANIMAL);
+SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
+SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
+
+
+# Default (if no other rule applies)
+SUBSTITUTE (A) (A S0) ("boaris"ri A);
