@@ -2272,7 +2272,7 @@ SECTION
 # VERBS
 # =====
 
-# S0: stiellit
+# S0: stiellit vs. dahkat
 SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
     # Mun ráhkadan biepmu.
 SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
@@ -2324,8 +2324,8 @@ SUBSTITUTE (A) (V TV S0) ("muitalit"ri V);
     # Default
     
     
-# ADJECTIVES
-# ==========
+# ADJECTIVES AND ADVERBS
+# ======================
     
 
 # S0: jasskat (vs. buorre)    
@@ -2366,3 +2366,11 @@ SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ�
 
 # Default (if no other rule applies)
 SUBSTITUTE (A) (A S0) ("boaris"ri A);
+
+
+# S0: muoduk (vs. láhkáj)   (láhkái/ládje) 
+SUBSTITUTE (Adv) (Adv S0) ("láhkái"ri Adv) (-1 Gen);
+    # Son lea áhčis láhkái.
+    # Vuojnnebihtit gen muoduk le?
+SUBSTITUTE (A) (Adv S1) ("láhkái"ri Adv);
+    # Default
