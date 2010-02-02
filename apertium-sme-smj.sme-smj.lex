@@ -926,6 +926,8 @@ LIST HUMAN-AGENT-V = "áŋgiruššat" "ásahit" "beahttit" "buoridit" "čielggad
 LIST INTELLECTUAL-ACTIVITY-V = "dovdat" "fuobmát" "fuomášit" "huobmát" "jurddahit" "jurddašit" "smiehttat" ;
 
     # According to the rules choosing Loc or Com, the these verbs do not select TOOL, ABSTR-TOOL, CONCEPT or HUMAN in (Pl Loc).
+    
+LIST PSYCH-V = "ballat" "dolkat" "heahpanit" "illudit" "suhttat" "suorganit" ;
 
 LIST VEHICLE-PLACE-V = "addit" "bearrat" "gaikkihit" "gáibidit" "geiget" "oastit" "oažžut" "suoladit" "váldit"  ;
 
@@ -2374,3 +2376,14 @@ SUBSTITUTE (Adv) (Adv S0) ("láhkái"ri Adv) (-1 Gen);
     # Vuojnnebihtit gen muoduk le?
 SUBSTITUTE (A) (Adv S1) ("láhkái"ri Adv);
     # Default
+    
+
+# S0: jámas (vs. sælldát)   metaphorical sense
+# Jámas means dead (adv.) an is used in a metaphorical sense in sme but not smj
+SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+    # Man gallis dain smávvásiin eai leat juo čirron iežaset jámas.
+SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+    # Eará bellodagat leat jámas suorganan válgagiččus.
+SUBSTITUTE (A) (Adv S1) ("jámas"ri Adv);
+    # Default
+    # jámas goallot
