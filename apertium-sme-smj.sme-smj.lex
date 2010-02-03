@@ -2275,26 +2275,26 @@ SECTION
 # =====
 
 # S0: stiellit vs. dahkat
-SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
+SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
     # Mun ráhkadan biepmu.
-SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
+SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
     # Mun biepmu ráhkadan.
 
 # Default (if no other rule applies)
-SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V);
+SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V);
     # Mun ráhkadan plána.
     # Mun ráhkadan ášši. - Mån ássjev dagáv.  
 
 # S0: vuojnnet vs. (årrot)
-SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
+SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
     # Orru leamen buorre.
-SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (1 (@←SPRED));
+SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (1 (@←SPRED));
     # Orru buorre.
 
 # S1: årrot    
-SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (*1 (@>P) BARRIER NPNH LINK 1 ("luhtte"));
+SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (*1 (@>P) BARRIER NPNH LINK 1 ("luhtte"));
     # Orun ustiba luhtte.
-SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (-1 ("luhtte") LINK -1 (@>P));
+SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (-1 ("luhtte") LINK -1 (@>P));
     # Ustiba luhtte orun.
     
 # Default (if no other rule applies)
@@ -2315,6 +2315,10 @@ SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (1 ("agálaččat"));
 SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (-1 ("agálaččat"));
     # Son agálaččat eallá.
     
+# Default (if no other rule applies)
+SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V);
+    #   
+    
 #viessot seksualitehta/identitehta
 #Sij barggi juohkkahattjaj riektáj åvdås, iehtjasa seksuálitehta milta viessot.
 
@@ -2326,8 +2330,8 @@ SUBSTITUTE (A) (V TV S0) ("muitalit"ri V);
     # Default
     
     
-# ADJECTIVES AND ADVERBS
-# ======================
+# ADJECTIVES
+# ==========
     
 
 # S0: jasskat (vs. buorre)    
@@ -2349,11 +2353,6 @@ SUBSTITUTE (A) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
 SUBSTITUTE (A) (A S0) ("čeahppi"ri A);
     # Default
     
-# S0: huj
-SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C Attr);
-
-# S1: sieldes
-SUBSTITUTE (Adv) (Adv S1) ("hui"ri Adv) (1C A) (NOT 1C Attr);
 
 
 # S0: vuoras
@@ -2370,20 +2369,48 @@ SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ�
 SUBSTITUTE (A) (A S0) ("boaris"ri A);
 
 
-# S0: muoduk (vs. láhkáj)   (láhkái/ládje) 
-SUBSTITUTE (Adv) (Adv S0) ("láhkái"ri Adv) (-1 Gen);
+# ADVERBS
+# =======
+
+# muoduk (vs. láhkáj)
+# -------------------
+
+# S0: huj
+SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C Attr);
+
+# S1: sieldes
+SUBSTITUTE (Adv) (Adv S1) ("hui"ri Adv) (1C A) (NOT 1C Attr);
+
+
+# muoduk (vs. láhkáj)
+# -------------------
+# S1: muoduk (vs. láhkáj)   (láhkái/ládje) 
+SUBSTITUTE (Adv) (Adv S1) ("láhkái"ri Adv) (-1 Gen);
     # Son lea áhčis láhkái.
     # Vuojnnebihtit gen muoduk le?
-SUBSTITUTE (A) (Adv S1) ("láhkái"ri Adv);
-    # Default
+SUBSTITUTE (Adv) (Adv S0) ("láhkái"ri Adv);
+    # Sáme kultuvrra, giella ja æládusdåjma li moatte láhkáj gárttjásin ja dætto vuolen stuorra sebrudagás.
     
 
-# S0: jámas (vs. sælldát)   metaphorical sense
+# jámas (vs. sælldát)
+# -------------------
+# S0 jámas: default
+# S1 sælldát: metaphorical sense
+
+# S1: sælldát
 # Jámas means dead (adv.) an is used in a metaphorical sense in sme but not smj
-SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+# adv verb: leat (Pron.Refl/Adv) jámas PrfPrc
+# verb adv: PrfPrc (Adv) jámas
+
+SUBSTITUTE (Adv) (Adv S1) ("jámas"ri Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
     # Man gallis dain smávvásiin eai leat juo čirron iežaset jámas.
-SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+SUBSTITUTE (Adv) (Adv S1) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
     # Eará bellodagat leat jámas suorganan válgagiččus.
-SUBSTITUTE (A) (Adv S1) ("jámas"ri Adv);
+
+# S0: default
+# fin.verb (obj) jámas
+# jámas fin.verb
+SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv);
     # Default
+    # Guovža lei gievra, ja sáhtii fáđustii olbmo jámas.
     # jámas goallot
