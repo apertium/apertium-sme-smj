@@ -2366,48 +2366,56 @@ SUBSTITUTE (A) (V TV S0) ("muitalit"ri V);
 # buorre 
 # ------    
 
-# S0: jasskat (vs. buorre)    
-SUBSTITUTE (A) (A S0) ("buorre"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
-    # Giella lea mearrideaddji oassi addin dihte buori iešdovddu.
-SUBSTITUTE (A) (A S1) ("buorre"ri A);
+SUBSTITUTE (A) (A S0) ("buorre"ri A);
     # Default
+    
+# S0: jasskat (vs. buorre)    
+SUBSTITUTE (A S0) (A S1) ("buorre"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
+    # Giella lea mearrideaddji oassi addin dihte buori iešdovddu.
+
 
 
 # jaska 
 # ----- 
-    
-# S1: jasska (vs. sjávot)    
-#SUBSTITUTE (A) (A S1) ("jaska"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu"));
-    # 
-#SUBSTITUTE (A) (A S0) ("jaska"ri A);
+
+SUBSTITUTE (A) (A S0) ("jaska"ri A);
     # Default
+   
+# S1: jasska (vs. sjávot)    
+SUBSTITUTE (A S0) (A S1) ("jaska"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu"));
+    # 
 
 # čeahppi 
 # -------
     
 # S0: smidá (vs. tjiehppe)    
-SUBSTITUTE (A) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
+SUBSTITUTE (A) (A S0) ("čeahppi"ri A);
+    # Son lea čeahppi.
+    
+#SUBSTITUTE (A) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
+SUBSTITUTE (A S0) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
     # Son lea čeahppi borrat.
     # subsistence words where it is not the talent that is stressed
-SUBSTITUTE (A) (A S0) ("čeahppi"ri A);
-    # Default
     
 
 # boaris 
 # ------ 
 
-# S0: vuoras
-SUBSTITUTE (A) (A S0) ("boaris"ri A Attr) (1C HUMAN OR ANIMAL);
-SUBSTITUTE (A) (A S0) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
-
-# S1: boares
-SUBSTITUTE (A) (A S1) ("boaris"ri A Attr) (NOT 1C HUMAN OR ANIMAL);
-SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
-SUBSTITUTE (A) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
-
-
 # Default (if no other rule applies)
 SUBSTITUTE (A) (A S0) ("boaris"ri A);
+    # Son lea boaris.
+
+## S0: vuoras
+#SUBSTITUTE (A) (A S0) ("boaris"ri A Attr) (1C HUMAN OR ANIMAL);
+#SUBSTITUTE (A) (A S0) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
+
+# S1: boares
+SUBSTITUTE (A S0) (A S1) ("boaris"ri A Attr) (*1 N LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
+SUBSTITUTE (A S0) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
+    # Dat lea boaris.
+SUBSTITUTE (A S0) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
+
+
 
 
 # ADVERBS
@@ -2416,42 +2424,44 @@ SUBSTITUTE (A) (A S0) ("boaris"ri A);
 # hui
 # ---
 
-# S0: huj
-SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C Attr);
+# S0: sieldes
+SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C A);
+    # Dat lea hui buorre.
+# S1: huj
+SUBSTITUTE (Adv S0) (Adv S1) ("hui"ri Adv) (1C Attr);
+    # Son lea hui čeahppes eadni.
 
-# S1: sieldes
-SUBSTITUTE (Adv) (Adv S1) ("hui"ri Adv) (1C A) (NOT 1C Attr);
 
 
 # láhkái
 # ------
-# S1: muoduk (vs. láhkáj)   (láhkái/ládje) 
-SUBSTITUTE (Adv) (Adv S1) ("láhkái"ri Adv) (-1 Gen);
-    # Son lea áhčis láhkái.
-    # Vuojnnebihtit gen muoduk le?
+
 SUBSTITUTE (Adv) (Adv S0) ("láhkái"ri Adv);
     # Sáme kultuvrra, giella ja æládusdåjma li moatte láhkáj gárttjásin ja dætto vuolen stuorra sebrudagás.
+    
+# S1: muoduk (vs. láhkáj)   (láhkái/ládje) 
+SUBSTITUTE (Adv S0) (Adv S1) ("láhkái"ri Adv) (-1 Gen);
+    # Son lea áhčis láhkái.
+    # Vuojnnebihtit gen muoduk le?
+
     
 
 # jámas 
 # -----
-# S0 jámas: default
-# S1 sælldát: metaphorical sense
-
-# S1: sælldát
-# Jámas means dead (adv.) an is used in a metaphorical sense in sme but not smj
-# adv verb: leat (Pron.Refl/Adv) jámas PrfPrc
-# verb adv: PrfPrc (Adv) jámas
-
-SUBSTITUTE (Adv) (Adv S1) ("jámas"ri Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
-    # Man gallis dain smávvásiin eai leat juo čirron iežaset jámas.
-SUBSTITUTE (Adv) (Adv S1) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
-    # Eará bellodagat leat jámas suorganan válgagiččus.
 
 # S0: default
-# fin.verb (obj) jámas
-# jámas fin.verb
+# fin.verb (obj) jámas; jámas fin.verb
 SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv);
     # Default
     # Guovža lei gievra, ja sáhtii fáđustii olbmo jámas.
     # jámas goallot
+
+# S1: sælldát (metaphorical sense)
+# Jámas means dead (adv.) an is used in a metaphorical sense in sme but not smj
+# adv verb: leat (Pron.Refl/Adv) jámas PrfPrc
+# verb adv: PrfPrc (Adv) jámas
+
+SUBSTITUTE (Adv S0) (Adv S1) ("jámas"ri Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+    # Man gallis dain smávvásiin eai leat juo čirron iežaset jámas.
+SUBSTITUTE (Adv S0) (Adv S1) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+    # Eará bellodagat leat jámas suorganan válgagiččus.
