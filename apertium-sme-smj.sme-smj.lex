@@ -2270,9 +2270,30 @@ SET NON-APP = ALLSYNTAG - (@APP);
 
 SECTION
 
+# NOUNS
+# =====
+
+# luohkká 
+# -------
+
+# S0: klássa vs. luohkka
+SUBSTITUTE (N) (N S1) ("luohkká"ri N) (*1 EDUCATION);
+    # 
+SUBSTITUTE (N) (N S1) ("luohkká"ri N) (*-1 EDUCATION);
+    # 
+    
+SUBSTITUTE (N) (N S1) ("luohkká"ri N) (-1 Ord);
+    # Son lea vuosttaš luohkás.
+
+# Default (if no other rule applies)
+SUBSTITUTE (N) (N S0) ("luohkká"ri N);
+    # 
 
 # VERBS
 # =====
+
+# ráhkadit 
+# --------
 
 # S0: stiellit vs. dahkat
 SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
@@ -2284,6 +2305,9 @@ SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OB
 SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V);
     # Mun ráhkadan plána.
     # Mun ráhkadan ášši. - Mån ássjev dagáv.  
+
+# orrut 
+# -----
 
 # S0: vuojnnet vs. (årrot)
 SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
@@ -2300,6 +2324,9 @@ SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (-1 ("luhtte") LINK -1 (@>P));
 # Default (if no other rule applies)
 SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V);
     #  Orru jaska!     
+
+# eallit 
+# ------
 
 # S0: viessot vs. (iellet)
 SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (*1 Loc LINK NOT 0 PLACE OR HUMAN BARRIER NPNH);
@@ -2322,6 +2349,9 @@ SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V);
 #viessot seksualitehta/identitehta
 #Sij barggi juohkkahattjaj riektáj åvdås, iehtjasa seksuálitehta milta viessot.
 
+# muitalit 
+# --------
+
 # S0: mujttalit (vs. subtsastit)    
 SUBSTITUTE (V) (V TV S1) ("muitalit"ri V) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
     # Son muitala máidnasiid.
@@ -2332,19 +2362,28 @@ SUBSTITUTE (A) (V TV S0) ("muitalit"ri V);
     
 # ADJECTIVES
 # ==========
-    
+
+# buorre 
+# ------    
 
 # S0: jasskat (vs. buorre)    
 SUBSTITUTE (A) (A S0) ("buorre"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
     # Giella lea mearrideaddji oassi addin dihte buori iešdovddu.
 SUBSTITUTE (A) (A S1) ("buorre"ri A);
     # Default
+
+
+# jaska 
+# ----- 
     
 # S1: jasska (vs. sjávot)    
 #SUBSTITUTE (A) (A S1) ("jaska"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu"));
     # 
 #SUBSTITUTE (A) (A S0) ("jaska"ri A);
     # Default
+
+# čeahppi 
+# -------
     
 # S0: smidá (vs. tjiehppe)    
 SUBSTITUTE (A) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
@@ -2354,6 +2393,8 @@ SUBSTITUTE (A) (A S0) ("čeahppi"ri A);
     # Default
     
 
+# boaris 
+# ------ 
 
 # S0: vuoras
 SUBSTITUTE (A) (A S0) ("boaris"ri A Attr) (1C HUMAN OR ANIMAL);
@@ -2372,8 +2413,8 @@ SUBSTITUTE (A) (A S0) ("boaris"ri A);
 # ADVERBS
 # =======
 
-# muoduk (vs. láhkáj)
-# -------------------
+# hui
+# ---
 
 # S0: huj
 SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C Attr);
@@ -2382,8 +2423,8 @@ SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C Attr);
 SUBSTITUTE (Adv) (Adv S1) ("hui"ri Adv) (1C A) (NOT 1C Attr);
 
 
-# muoduk (vs. láhkáj)
-# -------------------
+# láhkái
+# ------
 # S1: muoduk (vs. láhkáj)   (láhkái/ládje) 
 SUBSTITUTE (Adv) (Adv S1) ("láhkái"ri Adv) (-1 Gen);
     # Son lea áhčis láhkái.
@@ -2392,8 +2433,8 @@ SUBSTITUTE (Adv) (Adv S0) ("láhkái"ri Adv);
     # Sáme kultuvrra, giella ja æládusdåjma li moatte láhkáj gárttjásin ja dætto vuolen stuorra sebrudagás.
     
 
-# jámas (vs. sælldát)
-# -------------------
+# jámas 
+# -----
 # S0 jámas: default
 # S1 sælldát: metaphorical sense
 
