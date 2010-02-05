@@ -37338,7 +37338,11 @@
     <e><p><l>mugodit<s n="V"/></l><r>muhkot<s n="V"/><s n="IV"/></r></p></e>
     <e><p><l>muhttit<s n="V"/><s n="TV"/></l><r>muhttet<s n="V"/><s n="TV"/></r></p></e>
     <e><p><l>muhttohit<s n="V"/><s n="TV"/></l><r>muhttut<s n="V"/><s n="IV"/></r></p></e>
-    <e><p><l>muitalit<s n="V"/><s n="TV"/></l><r>subtsastit<s n="V"/><s n="TV"/></r></p></e>
+    <e r="RL"><p><l>muitalit<s n="V"/><s n="TV"/></l><r>subtsastit<s n="V"/><s n="TV"/></r></p></e>
+    <e r="RL"><p><l>muitalit<s n="V"/><s n="TV"/></l><r>mujttalit<s n="V"/><s n="TV"/></r></p></e>
+    <e r="LR"><p><l>muitalit<s n="V"/><s n="TV"/><s n="S0"/></l><r>subtsastit<s n="V"/><s n="TV"/></r></p></e>
+    <e r="LR"><p><l>muitalit<s n="V"/><s n="TV"/><s n="S1"/></l><r>mujttalit<s n="V"/><s n="TV"/></r></p></e>
+    <e><p><l>muitalus<s n="N"/></l><r>giehtto<s n="N"/></r></p></e>
     <e><p><l>muitit<s n="V"/><s n="TV"/></l><r>mujttet<s n="V"/><s n="TV"/></r></p></e>
     <e><p><l>muitáhit<s n="V"/><s n="TV"/></l><r>mujttát<s n="V"/><s n="TV"/></r></p></e>
     <e><p><l>muitástit<s n="V"/></l><r>mujttát<s n="V"/><s n="TV"/></r></p></e>
