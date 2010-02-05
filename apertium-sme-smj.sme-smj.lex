@@ -2276,18 +2276,19 @@ SECTION
 # luohkká 
 # -------
 
-# S0: klássa vs. luohkka
-SUBSTITUTE (N) (N S1) ("luohkká"ri N) (*1 EDUCATION);
-    # 
-SUBSTITUTE (N) (N S1) ("luohkká"ri N) (*-1 EDUCATION);
-    # 
-    
-SUBSTITUTE (N) (N S1) ("luohkká"ri N) (-1 Ord);
-    # Son lea vuosttaš luohkás.
-
 # Default (if no other rule applies)
 SUBSTITUTE (N) (N S0) ("luohkká"ri N);
     # 
+
+# S0: klássa vs. luohkka
+SUBSTITUTE (N S0) (N S1) ("luohkká"ri N) (*1 EDUCATION OR LESSON OR ("oahpaheaddji"));
+    # 
+SUBSTITUTE (N S0) (N S1) ("luohkká"ri N) (*-1 EDUCATION OR LESSON OR ("oahpaheaddji"));
+    # 
+    
+SUBSTITUTE (N S0) (N S1) ("luohkká"ri N) (-1 Num);
+    # Son lea vuosttaš luohkás.
+
 
 # VERBS
 # =====
@@ -2295,56 +2296,59 @@ SUBSTITUTE (N) (N S0) ("luohkká"ri N);
 # ráhkadit 
 # --------
 
-# S0: stiellit vs. dahkat
-SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
-    # Mun ráhkadan biepmu.
-SUBSTITUTE (V TV) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
-    # Mun biepmu ráhkadan.
-
 # Default (if no other rule applies)
 SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V);
     # Mun ráhkadan plána.
-    # Mun ráhkadan ášši. - Mån ássjev dagáv.  
+    # Mun ráhkadan ášši. - Mån ássjev dagáv. 
+
+# S0: stiellit vs. dahkat
+SUBSTITUTE (V TV S0) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
+    # Mun ráhkadan biepmu.
+SUBSTITUTE (V TV S0) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
+    # Mun biepmu ráhkadan.
+ 
 
 # orrut 
 # -----
 
+# Default (if no other rule applies)
+SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V);
+    #  Orru jaska!
+    
 # S0: vuojnnet vs. (årrot)
-SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
+SUBSTITUTE (IV) (IV S1) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
     # Orru leamen buorre.
-SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V) (1 (@←SPRED));
+SUBSTITUTE (IV) (IV S1) ("orrut"ri V) (1 (@←SPRED));
     # Orru buorre.
 
-# S1: årrot    
-SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (*1 (@>P) BARRIER NPNH LINK 1 ("luhtte"));
-    # Orun ustiba luhtte.
-SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (-1 ("luhtte") LINK -1 (@>P));
-    # Ustiba luhtte orun.
-    
-# Default (if no other rule applies)
-SUBSTITUTE (V IV) (V IV S1) ("orrut"ri V);
-    #  Orru jaska!     
+## S1: årrot    
+#SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (*1 (@>P) BARRIER NPNH LINK 1 ("luhtte"));
+#    # Orun ustiba luhtte.
+#SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (-1 ("luhtte") LINK -1 (@>P));
+#    # Ustiba luhtte orun.
+         
 
 # eallit 
 # ------
 
-# S0: viessot vs. (iellet)
-SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (*1 Loc LINK NOT 0 PLACE OR HUMAN BARRIER NPNH);
-    # Dálvet eallá boazu energivallji jeagelšattuiguin.
-    SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (-1 Loc LINK NOT 0 PLACE OR HUMAN);
-    # Dálvet boazu energivallji jeagelšattuiguin eallá.
-SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (*-1 ("mo") OR ("movt") OR ("mot") BARRIER PRE-NP-HEAD LINK 1 NP-HEAD-NOM);
-    # Mo don ealát?
-
-# S1: iellet (åndelig)    
-SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (1 ("agálaččat"));
-    # Son eallá agálaččat.
-SUBSTITUTE (V IV) (V IV S1) ("eallit"ri V) (-1 ("agálaččat"));
-    # Son agálaččat eallá.
-    
 # Default (if no other rule applies)
 SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V);
     #   
+    
+## S0: viessot vs. (iellet)
+#SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (*1 Loc LINK NOT 0 PLACE OR HUMAN BARRIER NPNH);
+#    # Dálvet eallá boazu energivallji jeagelšattuiguin.
+#    SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (-1 Loc LINK NOT 0 PLACE OR HUMAN);
+#    # Dálvet boazu energivallji jeagelšattuiguin eallá.
+#SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V) (*-1 ("mo") OR ("movt") OR ("mot") BARRIER PRE-NP-HEAD LINK 1 NP-HEAD-NOM);
+#    # Mo don ealát?
+
+# S1: iellet (åndelig)    
+SUBSTITUTE (V IV S0) (V IV S1) ("eallit"ri V) (1 ("agálaččat"));
+    # Son eallá agálaččat.
+SUBSTITUTE (V IV S0) (V IV S1) ("eallit"ri V) (-1 ("agálaččat"));
+    # Son agálaččat eallá.
+    
     
 #viessot seksualitehta/identitehta
 #Sij barggi juohkkahattjaj riektáj åvdås, iehtjasa seksuálitehta milta viessot.
@@ -2352,12 +2356,15 @@ SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V);
 # muitalit 
 # --------
 
-# S0: mujttalit (vs. subtsastit)    
-SUBSTITUTE (V) (V TV S1) ("muitalit"ri V) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
+SUBSTITUTE (V TV) (V TV S0) ("muitalit"ri V);
+    # Default
+    
+# S0: mujttalit (vs. subtsastit)   
+ 
+SUBSTITUTE (V TV S0) (V TV S1) ("muitalit"ri V) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
     # Son muitala máidnasiid.
     # 
-SUBSTITUTE (A) (V TV S0) ("muitalit"ri V);
-    # Default
+
     
     
 # ADJECTIVES
