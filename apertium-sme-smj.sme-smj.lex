@@ -2381,17 +2381,6 @@ SUBSTITUTE (A S0) (A S1) ("buorre"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu"
     # Giella lea mearrideaddji oassi addin dihte buori iešdovddu.
 
 
-
-# jaska 
-# ----- 
-
-SUBSTITUTE (A) (A S0) ("jaska"ri A);
-    # Default
-   
-# S1: jasska (vs. sjávot)    
-SUBSTITUTE (A S0) (A S1) ("jaska"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu"));
-    # 
-
 # čeahppi 
 # -------
     
@@ -2472,3 +2461,13 @@ SUBSTITUTE (Adv S0) (Adv S1) ("jámas"ri Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-
     # Man gallis dain smávvásiin eai leat juo čirron iežaset jámas.
 SUBSTITUTE (Adv S0) (Adv S1) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
     # Eará bellodagat leat jámas suorganan válgagiččus.
+
+# jaska 
+# ----- 
+
+SUBSTITUTE (Adv) (Adv S0) ("jaska"ri Adv);
+    # Default
+   
+# S1: jasska (vs. sjávot)    
+SUBSTITUTE (Adv S0) (Adv S1) ("jaska"ri Adv) (*1 ("bargat") OR ("boahtit"));
+    # 
