@@ -311,6 +311,7 @@
 <section-def-vars>
   <def-var n="number"/>
   <def-var n="main_verb"/>
+  <def-var n="cur_verb_temps"/> <!-- for neg verbs -->
   <def-var n="adverb"/>
   <def-var n="focus_pcle"/>
   <def-var n="current_syntag"/>
@@ -501,14 +502,34 @@
   </def-macro>
   
    <def-macro n="assign_neg_tense" npar="1">
+    <let>
+      <var n="cur_verb_temps"/>
+      <clip pos="1" side="tl" part="temps"/>
+    </let>
     <choose>
       <when>
         <test>
+          <and>
               <equal>
-                <clip pos="1" side="sl" part="mood"/>
-                <lit-tag v="Neg"/>
+                <clip pos="1" side="sl" part="temps"/>
+                <lit v=""/>
               </equal>
+              <or>
+                <equal>
+                  <clip pos="1" side="sl" part="mood"/>
+                  <lit-tag v="Neg.Ind"/>
+                </equal>
+                <equal>
+                  <clip pos="1" side="sl" part="mood"/>
+                  <lit-tag v="Neg"/>
+                </equal>
+              </or>
+          </and>
             </test>
+            <let>
+          <var n="cur_verb_temps"/>
+          <lit-tag v="Prs"/>
+        </let>
             <let>
           <clip pos="1" side="tl" part="mood"/>
           <lit-tag v="Neg.Ind"/>
@@ -1460,7 +1481,7 @@
              <clip pos="1" side="tl" part="a_verb"/>
              <clip pos="1" side="tl" part="voice"/>
              <clip pos="1" side="tl" part="mood"/>
-             <clip pos="1" side="tl" part="temps"/>
+             <var n="cur_verb_temps"/>
              <clip pos="1" side="tl" part="conneg"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="foc"/>
