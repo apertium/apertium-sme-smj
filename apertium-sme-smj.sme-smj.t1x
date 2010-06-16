@@ -4,6 +4,7 @@
 <section-def-cats>
   <def-cat n="nom">
      <cat-item tags="N.*"/>
+     <cat-item tags="V.*.Der3.Der_n.N.*"/>
   </def-cat>
   <def-cat n="genmod">
      <cat-item tags="N.*.Gen.@→N"/>
@@ -99,6 +100,8 @@
   <def-attr n="a_nom">
      <attr-item tags="N"/>
      <attr-item tags="N.Prop"/>
+     <attr-item tags="V.IV.Der3.Der_n.N"/>
+     <attr-item tags="V.TV.Der3.Der_n.N"/>
   </def-attr>
   
   <def-attr n="a_genmod">
