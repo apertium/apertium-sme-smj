@@ -97,6 +97,9 @@ dev/testkorpus_diff.txt -text
 dev/testsentences.txt -text
 dev/veahkki.paradigm -text
 dev/viehkke.paradigm -text
+dev/xfst2apertium.hashtags.twol -text
+dev/xfst2apertium.relabel -text
+dev/xfst2apertium.useless.twol -text
 /fictilemmapos.txt -text
 /modes.xml -text
 /regression-tests.sh -text
