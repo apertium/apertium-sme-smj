@@ -3202,7 +3202,7 @@ LEXICON GUOTTEDALLAT   !passives on -allat - no actio as first part of compounds
  +V+IV+:%> RAVGGALASSTETStem ; !replaced to avoid pass 
 ! +V+IV+Der3+Der/goahte+V:»goahte%> INFL-EVEN ;
 ! +V+IV:%> INFL-EVEN ;
-! +V+IV+Der3+Actor:»@C.NeedNoun@  ACTORder ;
+! +V+IV+Der2+Actor:»@C.NeedNoun@  ACTORder ;
 ! +V+IV+Der3+Der/lis+A:»Y3liss LIS ;
 ! +V+IV+Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
 
@@ -3212,7 +3212,7 @@ LEXICON HIEBADUVVAT   !passives on -uvvat - no actio as first part of compounds,
  +V+IV+PrfPrc:um%> K ;
 ! +V+IV+Der3+Der/goahte+V:uvva»goahte%> INFL-EVEN ;
 ! +V+IV:uvva%> INFL-EVEN ;
-! +V+IV+Der3+Actor:uvva»@C.NeedNoun@  ACTORder ;
+! +V+IV+Der2+Actor:uvva»@C.NeedNoun@  ACTORder ;
 ! +V+IV+Der3+Der/lis+A:uvva»Y3liss LIS ;
 ! +V+IV+Der3+Der/mus+N:uvva»muss@C.NeedNoun@ MUS ;
 
@@ -3338,18 +3338,18 @@ LEXICON GÁDJOT !o-verbs
 !+V+TV+Der/Pass+V:»Y9u OADDÁTINCH ; NO SHORT PASS HERE! !replaced by individual pointers to avoid pass + actio, reintroduced since it is usual!
 !+V+TV+Der/Pass+V+Der3+Der/goahte+V:»Y9ugoahte%> INFL-EVEN ;
 !+V+TV+Der/Pass+V:»Y9u INFL-CONTRACTED ;
-!+V+TV+Der/Pass+V+Der3+Actor:»Y9ujiddje@C.NeedNoun@  ACTOR ;
+!+V+TV+Der/Pass+V+Der2+Actor:»Y9ujiddje@C.NeedNoun@  ACTOR ;
 !+V+TV+Der/Pass+V+Der3+Der/mus+N:»Y9umuss@C.NeedNoun@ MUS ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/goahte+V:»Q1duvva»goahte%> INFL-EVEN ;
 +V+TV+Der1+Der/Pass+V:»Q1duvva%> INFL-EVEN ;
 +V+TV+Der1+Der/Pass+V+PrfPrc:»Q1duvvu%>m K ;
-+V+TV+Der1+Der/Pass+V+Der3+Actor:»Q1duvva@C.NeedNoun@  ACTOR ;
++V+TV+Der1+Der/Pass+V+Der2+Actor:»Q1duvva@C.NeedNoun@  ACTOR ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/lis+A:»Q1duvva»Y3liss LIS ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/mus+N:»Q1duvva»muss@C.NeedNoun@ MUS ;
 +V+TV+Der1+Der/Pass+Der2+Der/duhtte+V:»Q1duhtte%> BASSATINCH ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/goahte+V:»X7dalla»goahte%> INFL-EVEN ;
 +V+TV+Der1+Der/Pass+V:»X7dalla%> INFL-EVEN ;
-+V+TV+Der1+Der/Pass+V+Der3+Actor:»X7dalla@C.NeedNoun@  ACTOR ;
++V+TV+Der1+Der/Pass+V+Der2+Actor:»X7dalla@C.NeedNoun@  ACTOR ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/lis+A:»X7dalla»Y3liss LIS ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/mus+N:»X7dalla»muss@C.NeedNoun@ MUS ;
 +V+TV+Der1+Der/Pass+Der2+Der/dahtte+V:»X7dahtte%> BASSATINCH ;
@@ -3362,18 +3362,18 @@ LEXICON JÅRGGOT !o-verbs with dim -astit that are hardcoded
 !+V+TV+Der/Pass+V:»Y9u OADDÁTINCH ; NO SHORT PASS HERE! !replaced by individual pointers to avoid pass + actio, reintroduced since it is usual!
 !+V+TV+Der/Pass+V+Der3+Der/goahte+V:»Y9ugoahte%> INFL-EVEN ;
 !+V+TV+Der/Pass+V:»Y9u INFL-CONTRACTED ;
-!+V+TV+Der/Pass+V+Der3+Actor:»Y9ujiddje@C.NeedNoun@  ACTOR ;
+!+V+TV+Der/Pass+V+Der2+Actor:»Y9ujiddje@C.NeedNoun@  ACTOR ;
 !+V+TV+Der/Pass+V+Der3+Der/mus+N:»Y9umuss@C.NeedNoun@ MUS ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/goahte+V:»Q1duvva»goahte%> INFL-EVEN ;
 +V+TV+Der1+Der/Pass+V:»Q1duvva%> INFL-EVEN ;
 +V+TV+Der1+Der/Pass+V+PrfPrc:»Q1duvvu%>m K ;
-+V+TV+Der1+Der/Pass+V+Der3+Actor:»Q1duvva@C.NeedNoun@  ACTOR ;
++V+TV+Der1+Der/Pass+V+Der2+Actor:»Q1duvva@C.NeedNoun@  ACTOR ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/lis+A:»Q1duvva»Y3liss LIS ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/mus+N:»Q1duvva»muss@C.NeedNoun@ MUS ;
 +V+TV+Der1+Der/Pass+Der2+Der/duhtte+V:»Q1duhtte%> BASSATINCH ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/goahte+V:»X7dalla»goahte%> INFL-EVEN ;
 +V+TV+Der1+Der/Pass+V:»X7dalla%> INFL-EVEN ;
-+V+TV+Der1+Der/Pass+V+Der3+Actor:»X7dalla@C.NeedNoun@  ACTOR ;
++V+TV+Der1+Der/Pass+V+Der2+Actor:»X7dalla@C.NeedNoun@  ACTOR ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/lis+A:»X7dalla»Y3liss LIS ;
 +V+TV+Der1+Der/Pass+V+Der3+Der/mus+N:»X7dalla»muss@C.NeedNoun@ MUS ;
 +V+TV+Der1+Der/Pass+Der2+Der/dahtte+V:»X7dahtte%> BASSATINCH ;
@@ -3725,7 +3725,7 @@ LEXICON BASSUT !Passives
  +V+IV+Der3+Der/goahte+V:»goahte%> INFL-EVEN ;
  +V+IV:%> INFL-CONTRACTED ;
  +V+IV: DeverbalVerbsOADDÁT ;
- +V+IV+Der3+Actor:»jiddje@C.NeedNoun@  ACTOR ;
+ +V+IV+Der2+Actor:»jiddje@C.NeedNoun@  ACTOR ;
  +V+IV+Actio+Der3+Der/m:»m@C.NeedNoun@ OADDÁM ;
  +V+IV+Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
 
@@ -4193,20 +4193,20 @@ LEXICON EVEN-PASSIVE
  +Der/Pass+V+:»Y9u OADDÁTINCH ; !replaced by individual pointers to avoid pass 
 ! +Der/Pass+V+Der3+Der/goahte+V:»Y9ugoahte%> INFL-EVEN ;
 ! +Der/Pass+V:»Y9u INFL-CONTRACTED ;
-! +Der/Pass+V+Der3+Actor:»Y9ujiddje@C.NeedNoun@  ACTOR ;
+! +Der/Pass+V+Der2+Actor:»Y9ujiddje@C.NeedNoun@  ACTOR ;
 ! +Der/Pass+V+Der3+Der/mus+N:»Y9umuss@C.NeedNoun@ MUS ;
  +Der1+Der/Pass+V+Der3+Der/goahte+V:»Q1duvva»goahte%> INFL-EVEN ;
  +Der1+Der/Pass+V:»Q1duvva%> INFL-EVEN ;
  +Der1+Der/Pass+V+Actio+Ela:mis K ;
  +Der1+Der/Pass+V+Actio+Der3+Der/m:»Q1duvva»m VSBST-ODD ;
  +Der1+Der/Pass+V+PrfPrc:»Q1duvvu%>m K ;
- +Der1+Der/Pass+V+Der3+Actor:»Q1duvva@C.NeedNoun@  ACTOR ;
+ +Der1+Der/Pass+V+Der2+Actor:»Q1duvva@C.NeedNoun@  ACTOR ;
  +Der1+Der/Pass+V+Der3+Der/lis+A:»Q1duvva»Y3liss LIS ;
  +Der1+Der/Pass+V+Der3+Der/mus+N:»Q1duvva»muss@C.NeedNoun@ MUS ;
  +Der1+Der/Pass+Der2+Der/duhtte+V:»Q1duhtte%> BASSATINCH ;
  +Der1+Der/Pass+V+Der3+Der/goahte+V:»X7dalla»goahte%> INFL-EVEN ;
  +Der1+Der/Pass+V:»X7dalla%> INFL-EVEN ;
- +Der1+Der/Pass+V+Der3+Actor:»X7dalla@C.NeedNoun@  ACTOR ;
+ +Der1+Der/Pass+V+Der2+Actor:»X7dalla@C.NeedNoun@  ACTOR ;
  +Der1+Der/Pass+V+Der3+Der/lis+A:»X7dalla»Y3liss LIS ;
  +Der1+Der/Pass+V+Der3+Der/mus+N:»X7dalla»muss@C.NeedNoun@ MUS ;
  +Der1+Der/Pass+Der2+Der/dahtte+V:»X7dahtte%> BASSATINCH ;
@@ -4217,7 +4217,7 @@ LEXICON ODD-PASSIVE
  +Der1+Der/Pass+V+PrfPrc:»uvvu%>m K ;
 ! +Der1+Der/Pass+V+Der3+Der/goahte+V:»uvva»goahte%> INFL-EVEN ;
 ! +Der1+Der/Pass+V:»uvva%> INFL-EVEN ;
-! +Der1+Der/Pass+V+Der3+Actor:»uvva@C.NeedNoun@  ACTOR ;
+! +Der1+Der/Pass+V+Der2+Actor:»uvva@C.NeedNoun@  ACTOR ;
 ! +Der1+Der/Pass+V+Der3+Der/lis+A:»uvva»Y3liss LIS ;
 ! +Der1+Der/Pass+V+Der3+Der/mus+N:»uvva»muss@C.NeedNoun@ MUS ;
  +Der1+Der/Pass+Der2+Der/duhtte+V:»uhtte%> BASSATINCH ;
@@ -4229,7 +4229,7 @@ LEXICON CONTR-PASSIVE
  +Der1+Der/Pass+V+PrfPrc:»duvvu%>m K ;
 ! +Der1+Der/Pass+V+Der3+Der/goahte+V:»duvva»goahte%> INFL-EVEN ;
 ! +Der1+Der/Pass+V:»duvva%> INFL-EVEN ;
-! +Der1+Der/Pass+V+Der3+Actor:»duvva@C.NeedNoun@  ACTOR ;
+! +Der1+Der/Pass+V+Der2+Actor:»duvva@C.NeedNoun@  ACTOR ;
 ! +Der1+Der/Pass+V+Der3+Der/lis+A:»duvva»Y3liss LIS ;
 ! +Der1+Der/Pass+V+Der3+Der/mus+N:»duvva»muss@C.NeedNoun@ MUS ;
  +Der1+Der/Pass+Der2+Der/duhtte+V:»duhtte%> BASSATINCH ;
@@ -4288,8 +4288,8 @@ LEXICON DeverbalVerbsLÁHPPET
  +Der1+Der/stasste+V:»Q1stasste%> BASSALASSTETINCH ; !Double dim
 
 LEXICON DeverbalNounsBASSAT
- +Der3+Actor:»@C.NeedNoun@  ACTORTVder ;
-! +Der3+Actor+N:»@C.NeedNoun@ DenominalNounsActor ;    !not usual
+ +Der2+Actor:»@C.NeedNoun@  ACTORTVder ;
+! +Der2+Actor+N:»@C.NeedNoun@ DenominalNounsActor ;    !not usual
  +Der3+Der/lis+A:»Y3liss LIS ;
  +Actio+Der3+Der/m:»m@C.NeedNoun@ BOAHTEMTV ;
  +Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
@@ -4297,8 +4297,8 @@ LEXICON DeverbalNounsBASSAT
 ! +Der3+Der/dahka+N:»X7dahka%>Q1 N-EVENWEAKSTEM ; !does not seem usual (TO)
 
 LEXICON DeverbalNounsRAVGGAT
- +Der3+Actor:»@C.NeedNoun@  ACTORder ;
-! +Der3+Actor+N:»@C.NeedNoun@ DenominalNounsActor ;    !not usual
+ +Der2+Actor:»@C.NeedNoun@  ACTORder ;
+! +Der2+Actor+N:»@C.NeedNoun@ DenominalNounsActor ;    !not usual
  +Der3+Der/lis+A:»Y3liss LIS ;
  +Actio+Der3+Der/m:»m@C.NeedNoun@ BOAHTEM ;
  +Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
@@ -4307,7 +4307,7 @@ LEXICON DeverbalNounsRAVGGAT
 
 
 LEXICON DeverbalNounsBASSALASSTET
- +Der3+Actor:»@C.NeedNoun@  ACTORTVder ;
+ +Der2+Actor:»@C.NeedNoun@  ACTORTVder ;
  +Der3+Der/lis+A:»Y3liss LIS ;
  +Actio+Der3+Der/m:»m@C.NeedNoun@ BASSALASSTEMTV ;
  +Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
@@ -4315,7 +4315,7 @@ LEXICON DeverbalNounsBASSALASSTET
 ! +Der3+Der/dahka+N:»X7dahka%>Q1 N-EVENWEAKSTEM ; !does not seem usual (TO)
 
 LEXICON DeverbalNounsRAVGGALASSTET
- +Der3+Actor:»@C.NeedNoun@  ACTORder ;
+ +Der2+Actor:»@C.NeedNoun@  ACTORder ;
  +Der3+Der/lis+A:»Y3liss LIS ;
  +Actio+Der3+Der/m:»m@C.NeedNoun@ BASSALASSTEM ;
  +Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
@@ -4367,26 +4367,26 @@ LEXICON DeverbalVerbsJÅLLÅRIT
 LEXICON DeverbalNounsJÅLLÅRIT
  +Actio+Der2+Der/ibme:»@C.NeedNoun@ VSBST-EVEN ;
  +Actio+N+Sg+Nom+Der4+Der/ahtes:» AHTES ;
- +Der3+Actor:»iddje@C.NeedNoun@ ACTOR ;
+ +Der2+Actor:»iddje@C.NeedNoun@ ACTOR ;
  +Der2+Der/ahkes:»ahkke SÁDNES ;
 
 LEXICON DeverbalNounsUNNEDIT
  +Actio+Der2+Der/ibme:»@C.NeedNoun@ VSBST-EVENTV ;
  +Actio+N+Sg+Nom+Der4+Der/ahtes:» AHTES ;
- +Der3+Actor:»iddje@C.NeedNoun@ ACTORTV ;
+ +Der2+Actor:»iddje@C.NeedNoun@ ACTORTV ;
  +Der2+Der/ahkes:»ahkke SÁDNES ;
 
 
 LEXICON DeverbalNounsMUJTATJIT
  +Actio+Der2+Der/ibme:»@C.NeedNoun@ MUJTATJIBME ;
  +Actio+N+Sg+Nom+Der4+Der/ahtes:» AHTES ;
- +Der3+Actor:»iddje@C.NeedNoun@ ACTORTV ;
+ +Der2+Actor:»iddje@C.NeedNoun@ ACTORTV ;
  +Der2+Der/ahkes:»ahkke SÁDNES ;
 
 LEXICON DeverbalNounsBEGATJIT
  +Actio+Der2+Der/ibme:»@C.NeedNoun@ BEGATJIBME ;
  +Actio+N+Sg+Nom+Der4+Der/ahtes:» AHTES ;
- +Der3+Actor:»iddje@C.NeedNoun@ ACTORTV ;
+ +Der2+Actor:»iddje@C.NeedNoun@ ACTORTV ;
  +Der2+Der/ahkes:»ahkke SÁDNES ;
 
 
@@ -4444,23 +4444,23 @@ LEXICON DeverbalVerbsOADDÁT
 
 
 LEXICON DeverbalNounsOADDÁT
- +Der3+Actor:»jiddje@C.NeedNoun@  ACTOR ;
+ +Der2+Actor:»jiddje@C.NeedNoun@  ACTOR ;
  +Actio+Der3+Der/m:»m@C.NeedNoun@ OADDÁM ;
  +Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
 
 LEXICON DeverbalNounsTJUOLLÁT
- +Der3+Actor:»jiddje@C.NeedNoun@  ACTORTV ;
+ +Der2+Actor:»jiddje@C.NeedNoun@  ACTORTV ;
  +Actio+Der3+Der/m:»m@C.NeedNoun@ TJUOLLÁM ;
  +Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
 
 
 LEXICON DeverbalNounsSTRÁFFUT
- +Der3+Actor:»jiddje@C.NeedNoun@  ACTORTV ;
+ +Der2+Actor:»jiddje@C.NeedNoun@  ACTORTV ;
  +Actio+Der3+Der/m:»m@C.NeedNoun@ BOAHTEMTV ;
  +Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
 
 LEXICON DeverbalNounsDULLUT
- +Der3+Actor:»jiddje@C.NeedNoun@  ACTOR ;
+ +Der2+Actor:»jiddje@C.NeedNoun@  ACTOR ;
  +Actio+Der3+Der/m:»m@C.NeedNoun@ BOAHTEM ;
  +Der3+Der/mus+N:»muss@C.NeedNoun@ MUS ;
 
@@ -4559,8 +4559,6 @@ LEXICON ACTOR
  +N:%>Y6 NE-EVENCASE ;
  +N:%>Y6 ACTORILL ;
  +N:%>Y6 N-EVENWEAKSTEM ;
-! +N:%>Y6 DenominalAdjsV1 ; !not plausible
-! +N:%>Y7 DenominalAdjsV2 ; !not plausible
  +N+CmpN/SgN+CmpN/SgG+CmpN/PlG:%>Y6 ACTORCmp ; !
 
 LEXICON ACTORTV  !+CmpN/SgN +CmpN/SgG +CmpN/PlG +CmpN/SgNomLeft +CmpN/SgGenLeft +CmpN/PlGenLeft
@@ -4568,8 +4566,6 @@ LEXICON ACTORTV  !+CmpN/SgN +CmpN/SgG +CmpN/PlG +CmpN/SgNomLeft +CmpN/SgGenLeft 
  +N:%>Y6 NE-EVENCASE ;
  +N:%>Y6 ACTORILL ;
  +N:%>Y6 N-EVENWEAKSTEM ;
-! +N:%>Y6 DenominalAdjsV1 ; !not plausible
-! +N:%>Y7 DenominalAdjsV2 ; !not plausible
  +N:%>Y6 ACTORCmp ;
 
 LEXICON ACTORder
@@ -4577,8 +4573,6 @@ LEXICON ACTORder
  +N:Y6 NE-EVENCASE ;
  +N:Y6 ACTORILL ;
  +N:Y6 N-EVENWEAKSTEM ;
-! +N:Y6 DenominalAdjsV1 ; !not plausible
-! +N:Y7 DenominalAdjsV2 ; !not plausible
  +N+CmpN/SgN+CmpN/SgG+CmpN/PlG:Y6 ACTORCmp ; !
 
 LEXICON ACTORTVder  !+CmpN/SgN +CmpN/SgG +CmpN/PlG +CmpN/SgNomLeft +CmpN/SgGenLeft +CmpN/PlGenLeft
@@ -4586,8 +4580,6 @@ LEXICON ACTORTVder  !+CmpN/SgN +CmpN/SgG +CmpN/PlG +CmpN/SgNomLeft +CmpN/SgGenLe
  +N:Y6 NE-EVENCASE ;
  +N:Y6 ACTORILL ;
  +N:Y6 N-EVENWEAKSTEM ;
-! +N:Y6 DenominalAdjsV1 ; !not plausible
-! +N:Y7 DenominalAdjsV2 ; !not plausible
  +N:Y6 ACTORCmp ;
 
 LEXICON ACTORILL
@@ -4661,46 +4653,46 @@ LEXICON TJUOLLÁM  !+CmpN/SgN +CmpN/DefSgGen +CmpN/DefPlGen +CmpN/SgNomLeft +Cmp
 ! ---------------
 
 LEXICON NEG
-+Ind+Prs+Sg1:%>iv K ;
-+Ind+Prs+Sg2:%>i K ;
-+Ind+Prs+Sg3:%>ij K ;
-+Ind+Prs+Du1:%>en K ;
- +Ind+Prs+Du1+Use/Sub:%>æn K ; !
-+Ind+Prs+Du2:æhppe%> K ;
-+Ind+Prs+Du3:æbá%> K ;
-+Ind+Prs+Pl1:%>ep K ;
- +Ind+Prs+Pl1+Use/Sub:%>æp K ; !
-+Ind+Prs+Pl2:ehpi%>t K ;
-+Ind+Prs+Pl3:%>e K ;
- +Ind+Prs+Pl3+Use/Sub:%>æ K ; !
++Ind+Prs+Sg1:iv K ;
++Ind+Prs+Sg2:i K ;
++Ind+Prs+Sg3:ij K ;
++Ind+Prs+Du1:en K ;
+ +Ind+Prs+Du1+Use/Sub:æn K ; !
++Ind+Prs+Du2:æhppe K ;
++Ind+Prs+Du3:æbá K ;
++Ind+Prs+Pl1:ep K ;
+ +Ind+Prs+Pl1+Use/Sub:æp K ; !
++Ind+Prs+Pl2:ehpit K ;
++Ind+Prs+Pl3:e K ;
+ +Ind+Prs+Pl3+Use/Sub:æ K ; !
 
-+Ind+Prt+Sg1:ittji%>v K ;
-+Ind+Prt+Sg2:ittji%> K ;
-+Ind+Prt+Sg3:ittji%>j K ;
-+Ind+Prt+Du1:ejma%> K ;
-+Ind+Prt+Du2:ejda%> K ;
-+Ind+Prt+Du3:ejga%> K ;
-+Ind+Prt+Pl1:ejma%> K ;
-+Ind+Prt+Pl2:ejda%> K ;
-+Ind+Prt+Pl3:ettji%>n K ;
++Ind+Prt+Sg1:ittjiv K ;
++Ind+Prt+Sg2:ittji K ;
++Ind+Prt+Sg3:ittjij K ;
++Ind+Prt+Du1:ejma K ;
++Ind+Prt+Du2:ejda K ;
++Ind+Prt+Du3:ejga K ;
++Ind+Prt+Pl1:ejma K ;
++Ind+Prt+Pl2:ejda K ;
++Ind+Prt+Pl3:ettjin K ;
 
-+Imprt+Sg2:ale%> # ;
-+Imprt+Sg3:alli%>s # ;
-+Imprt+Du1:allo%>n # ;
-+Imprt+Du2:al'le%> # ;
-+Imprt+Du3:alli%>ska # ;
-+Imprt+Pl1:allo%>p # ;
-+Imprt+Pl2:alli%>t # ;
-+Imprt+Pl3:alli%>sa # ;
++Imprt+Sg2:ale # ;
++Imprt+Sg3:allis # ;
++Imprt+Du1:allon # ;
++Imprt+Du2:al'le # ;
++Imprt+Du3:alliska # ;
++Imprt+Pl1:allop # ;
++Imprt+Pl2:allit # ;
++Imprt+Pl3:allisa # ;
 
-+ImprtII+Sg2:allu%> # ;
-+ImprtII+Sg3:allu%>s # ;
-+ImprtII+Du1:allu%>n # ;
-+ImprtII+Du2:allu%>da # ;
-+ImprtII+Du3:allu%>ska # ;
-+ImprtII+Pl1:allu%>p # ;
-+ImprtII+Pl2:allu%>t # ;
-+ImprtII+Pl3:allu%>sa # ;
++ImprtII+Sg2:allu # ;
++ImprtII+Sg3:allus # ;
++ImprtII+Du1:allun # ;
++ImprtII+Du2:alluda # ;
++ImprtII+Du3:alluska # ;
++ImprtII+Pl1:allup # ;
++ImprtII+Pl2:allut # ;
++ImprtII+Pl3:allusa # ;
 
 LEXICON ÅRROT
 +Inf:ro%>t K ;
@@ -4721,6 +4713,7 @@ LEXICON LIEHKET
 +Ind+Prs+Sg1:lav K ;
 +Ind+Prs+Sg2:la K ;
 +Ind+Prs+Sg3:la K ;
++Ind+Prs+Sg3+Clt:l ENDLEX ;
 +Ind+Prs+Du1:lin K ;
 +Ind+Prs+Du2:lihppe K ;
 +Ind+Prs+Du3:libá K ;
@@ -4788,7 +4781,7 @@ LEXICON LIEHKET
 +Pot+Du3:littjaba K ;
 +Pot+Pl1:littjap K ;
 +Pot+Pl2:littjabihtit K ;
- +Pot+Pl2+Use/Sub:littjabehtit K ; !
++Pot+Pl2+Use/Sub:littjabehtit K ; !
 +Pot+Pl3:littji K ;
 
 
@@ -4853,13 +4846,13 @@ LEXICON V-ODD-PRET
 +Sg3:j K ;
 +Du1:jma K ;
 +Du2:jda K ;
- +Du1+Use/Sub:jme K ; !
- +Du2+Use/Sub:jde K ; !
++Du1+Use/Sub:jme K ; !
++Du2+Use/Sub:jde K ; !
 +Du3:jga K ;
 +Pl1:jma K ;
 +Pl2:jda K ;
- +Pl1+Use/Sub:jme K ; !
- +Pl2+Use/Sub:jde K ; !
++Pl1+Use/Sub:jme K ; !
++Pl2+Use/Sub:jde K ; !
 +Pl3:n K ;
 
 LEXICON V-ODD-POT
@@ -4867,10 +4860,10 @@ LEXICON V-ODD-POT
 +Prs+Sg2:la K ;
 +Prs+Sg3:la K ;
 +Prs+Du1:lin K ;
-+Prs+Du2:lihppe%> K ;
-+Prs+Du3:libá%> K ;
++Prs+Du2:lihppe K ;
++Prs+Du3:libá K ;
 +Prs+Pl1:lip K ;
-+Prs+Pl2:lihpi%>t K ;
++Prs+Pl2:lihpit K ;
 +Prs+Pl3:li K ;
 
 
@@ -18865,10 +18858,11 @@ LEXICON iind
 ! =========
 
 LEXICON PCLE
-+Pcle:%> # ;
++Pcle: # ;
 
 LEXICON QPCLE
- +Qst+Pcle:%> # ; !Only Qst?
+! +Qst+Pcle:%> # ; !Only Qst?
++Pcle: # ; ! only +Pcle, for sme harmonisation XXX
 
 LEXICON Particle
 aj PCLE ;
