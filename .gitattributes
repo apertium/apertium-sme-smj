@@ -82,5 +82,6 @@ dev/xfst2apertium.useless.analysis.twol -text
 dev/xfst2apertium.useless.generation.twol -text
 /lexchoicebil.xsl -text
 /modes.xml -text
+/pending-tests.sh -text
 /regression-tests.sh -text
 /sme-smj.prob -text
