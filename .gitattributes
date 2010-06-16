@@ -79,6 +79,7 @@ dev/update-lexc-smj.sh -text
 dev/xfst2apertium.hashtags.twol -text
 dev/xfst2apertium.relabel -text
 dev/xfst2apertium.useless.twol -text
+/lexchoicebil.xsl -text
 /modes.xml -text
 /regression-tests.sh -text
 /sme-smj.prob -text

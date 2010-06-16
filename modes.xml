@@ -2,19 +2,19 @@
 <modes>
   <mode name="sme-smj" install="yes">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="cg-proc">
+      <program name="cg-proc -w">
         <file name="sme-smj.lex.bin"/> 
       </program>
       <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
-<!--      <program name="apertium-pretransfer"/> -->
+      <program name="apertium-pretransfer"/> 
       <program name="apertium-transfer">
         <file name="apertium-sme-smj.sme-smj.t1x"/>
         <file name="sme-smj.t1x.bin"/>
@@ -50,13 +50,13 @@
 
   <mode name="sme-smj-lex" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="cg-proc">
+      <program name="cg-proc -w">
         <file name="sme-smj.lex.bin"/> 
       </program>
     </pipeline>
@@ -65,13 +65,13 @@
 
   <mode name="sme-smj-tagger" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="cg-proc">
+      <program name="cg-proc -w">
         <file name="sme-smj.lex.bin"/> 
       </program>
       <program name="apertium-tagger -g $2">
@@ -84,18 +84,19 @@
 
   <mode name="sme-smj-chunker" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="cg-proc">
+      <program name="cg-proc -w">
         <file name="sme-smj.lex.bin"/> 
       </program>
       <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
+      <program name="apertium-pretransfer"/> 
       <program name="apertium-transfer">
         <file name="apertium-sme-smj.sme-smj.t1x"/>
         <file name="sme-smj.t1x.bin"/>
@@ -106,18 +107,19 @@
 
   <mode name="sme-smj-interchunk1" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="cg-proc">
+      <program name="cg-proc -w">
         <file name="sme-smj.lex.bin"/> 
       </program>
       <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
+      <program name="apertium-pretransfer"/> 
       <program name="apertium-transfer">
         <file name="apertium-sme-smj.sme-smj.t1x"/>
         <file name="sme-smj.t1x.bin"/>
@@ -134,18 +136,19 @@
 
   <mode name="sme-smj-interchunk2" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="cg-proc">
+      <program name="cg-proc -w">
         <file name="sme-smj.lex.bin"/> 
       </program>
       <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
+      <program name="apertium-pretransfer"/> 
       <program name="apertium-transfer">
         <file name="apertium-sme-smj.sme-smj.t1x"/>
         <file name="sme-smj.t1x.bin"/>
@@ -164,18 +167,19 @@
 
   <mode name="sme-smj-interchunk3" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="cg-proc">
+      <program name="cg-proc -w">
         <file name="sme-smj.lex.bin"/> 
       </program>
       <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
+      <program name="apertium-pretransfer"/> 
       <program name="apertium-transfer">
         <file name="apertium-sme-smj.sme-smj.t1x"/>
         <file name="sme-smj.t1x.bin"/>
@@ -199,18 +203,19 @@
 
   <mode name="sme-smj-postchunk" install="no">
     <pipeline>
-      <program name="hfst-proc">
+      <program name="hfst-proc -w">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
       </program>
-      <program name="cg-proc">
+      <program name="cg-proc -w">
         <file name="sme-smj.lex.bin"/> 
       </program>
       <program name="apertium-tagger -g $2">
         <file name="sme-smj.prob"/>
       </program>
+      <program name="apertium-pretransfer"/> 
       <program name="apertium-transfer">
         <file name="apertium-sme-smj.sme-smj.t1x"/>
         <file name="sme-smj.t1x.bin"/>

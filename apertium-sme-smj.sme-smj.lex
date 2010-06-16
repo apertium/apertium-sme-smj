@@ -2398,18 +2398,18 @@ SUBSTITUTE (A S0) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat")
 # ------ 
 
 # Default (if no other rule applies)
-SUBSTITUTE (A) (A S0) ("boaris"ri A);
+#SUBSTITUTE ("boaris") ("boaris:0") ("boaris"ri A);
     # Son lea boaris.
 
 ## S0: vuoras
-#SUBSTITUTE (A) (A S0) ("boaris"ri A Attr) (1C HUMAN OR ANIMAL);
-#SUBSTITUTE (A) (A S0) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
+#SUBSTITUTE ("boaris:0") ("boaris:0") ("boaris"ri A Attr) (1C HUMAN OR ANIMAL);
+#SUBSTITUTE ("boaris:0") ("boaris:0") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
 
 # S1: boares
-SUBSTITUTE (A S0) (A S1) ("boaris"ri A Attr) (*1 N LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
-SUBSTITUTE (A S0) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
+SUBSTITUTE ("boaris"ri) ("boaris:1"ri) ("boaris"ri A Attr) (*1 N LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
+SUBSTITUTE ("boaris"ri) ("boaris:1"ri) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"i));
     # Dat lea boaris.
-SUBSTITUTE (A S0) (A S1) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
+SUBSTITUTE ("boaris"ri) ("boaris:1"ri) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
 
 
 
@@ -2465,9 +2465,9 @@ SUBSTITUTE (Adv S0) (Adv S1) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-R
 # jaska 
 # ----- 
 
-SUBSTITUTE (Adv) (Adv S0) ("jaska"ri Adv);
+#SUBSTITUTE (Adv) (Adv S0) ("jaska"ri Adv);
     # Default
    
 # S1: jasska (vs. sjávot)    
-SUBSTITUTE (Adv S0) (Adv S1) ("jaska"ri Adv) (*1 ("bargat") OR ("boahtit"));
+SUBSTITUTE ("jaska"ri) ("jaska:1"ri) ("jaska"ri Adv) (*1 ("bargat") OR ("boahtit"));
     # 
