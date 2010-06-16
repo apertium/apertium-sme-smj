@@ -14,8 +14,8 @@ if test x$(uname -s) = xDarwin; then
 	ECHO=/opt/local/bin/gecho; 
 fi
 
-wget -O - -q http://wiki.apertium.org/wiki/Northern_Sami_and_Lule_Sami/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g' | cut -f2 -d')' | sed 's/<i>//g' | sed 's/<\/i>//g' | cut -f2 -d'*' | sed 's/→/!/g' | cut -f1 -d'!' | sed 's/(note:/!/g' | sed 's/_/ /g' | sed 's/$/./g' > $SRCLIST;
-wget -O - -q http://wiki.apertium.org/wiki/Northern_Sami_and_Lule_Sami/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g' | sed 's/(\w\w)//g' | sed 's/<i>//g' | cut -f2 -d'*' | sed 's/<\/i>_→/!/g' | cut -f2 -d'!' | sed 's/_/ /g' | sed 's/^ *//g' | sed 's/ *$//g' | sed 's/$/./g' > $TRGLIST;
+wget -O - -q http://wiki.apertium.org/wiki/Northern_Sámi_and_Lule_Sámi/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g' | cut -f2 -d')' | sed 's/<i>//g' | sed 's/<\/i>//g' | cut -f2 -d'*' | sed 's/→/!/g' | cut -f1 -d'!' | sed 's/(note:/!/g' | sed 's/_/ /g' | sed 's/$/./g' > $SRCLIST;
+wget -O - -q http://wiki.apertium.org/wiki/Northern_Sámi_and_Lule_Sámi/Regression_tests | grep '<li>' | sed 's/<.*li>//g' | sed 's/ /_/g' | sed 's/(\w\w)//g' | sed 's/<i>//g' | cut -f2 -d'*' | sed 's/<\/i>_→/!/g' | cut -f2 -d'!' | sed 's/_/ /g' | sed 's/^ *//g' | sed 's/ *$//g' | sed 's/$/./g' > $TRGLIST;
 
 apertium -d . $mode < $SRCLIST > $TSTLIST;
 

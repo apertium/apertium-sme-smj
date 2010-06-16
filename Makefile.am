@@ -36,9 +36,14 @@ TARGETS_COMMON = \
 #
 # These are scripts that remove unwanted tags
 #
-.deps/xfst2apertium.useless.twol.hfst: dev/xfst2apertium.useless.twol
+.deps/xfst2apertium.useless.generation.twol.hfst: dev/xfst2apertium.useless.generation.twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -r -i dev/xfst2apertium.useless.twol -o $@
+	hfst-twolc -r -i dev/xfst2apertium.useless.generation.twol -o $@
+
+.deps/xfst2apertium.useless.analysis.twol.hfst: dev/xfst2apertium.useless.analysis.twol
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-twolc -r -i dev/xfst2apertium.useless.analysis.twol -o $@
+
 
 .deps/xfst2apertium.hashtags.twol.hfst: dev/xfst2apertium.hashtags.twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
@@ -61,10 +66,10 @@ TARGETS_COMMON = \
 #
 # The default form of the transducer is optimised
 #
-$(PREFIX1).automorf.hfst: .deps/$(BASENAME).$(LANG1).hfst .deps/xfst2apertium.useless.twol.hfst .deps/xfst2apertium.hashtags.twol.hfst dev/xfst2apertium.relabel
+$(PREFIX1).automorf.hfst: .deps/$(BASENAME).$(LANG1).hfst .deps/xfst2apertium.useless.analysis.twol.hfst .deps/xfst2apertium.hashtags.twol.hfst dev/xfst2apertium.relabel
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	hfst-invert .deps/$(BASENAME).$(LANG1).hfst -o .deps/$(PREFIX1).automorf.hfst
-	hfst-compose-intersect -l .deps/$(PREFIX1).automorf.hfst .deps/xfst2apertium.useless.twol.hfst -o .deps/$@.1.tmp
+	hfst-compose-intersect -l .deps/$(PREFIX1).automorf.hfst .deps/xfst2apertium.useless.analysis.twol.hfst -o .deps/$@.1.tmp
 	hfst-compose-intersect -l .deps/$@.1.tmp .deps/xfst2apertium.hashtags.twol.hfst -o .deps/$@.2.tmp
 	hfst-substitute -F dev/xfst2apertium.relabel -i .deps/$@.2.tmp -o .deps/$(PREFIX1).automorf.hfst
 	hfst-lookup-optimize .deps/$(PREFIX1).automorf.hfst -o $@
@@ -72,9 +77,9 @@ $(PREFIX1).automorf.hfst: .deps/$(BASENAME).$(LANG1).hfst .deps/xfst2apertium.us
 #
 # The default form of the transducer is optimised
 #
-$(PREFIX1).autogen.hfst: .deps/$(BASENAME).$(LANG2).hfst .deps/xfst2apertium.useless.twol.hfst .deps/xfst2apertium.hashtags.twol.hfst dev/xfst2apertium.relabel
+$(PREFIX1).autogen.hfst: .deps/$(BASENAME).$(LANG2).hfst .deps/xfst2apertium.useless.generation.twol.hfst .deps/xfst2apertium.hashtags.twol.hfst dev/xfst2apertium.relabel
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-compose-intersect -l .deps/$(BASENAME).$(LANG2).hfst .deps/xfst2apertium.useless.twol.hfst -o .deps/$@.1.tmp
+	hfst-compose-intersect -l .deps/$(BASENAME).$(LANG2).hfst .deps/xfst2apertium.useless.generation.twol.hfst -o .deps/$@.1.tmp
 	hfst-compose-intersect -l .deps/$@.1.tmp .deps/xfst2apertium.hashtags.twol.hfst -o .deps/$@.2.tmp
 	hfst-substitute -F dev/xfst2apertium.relabel -i .deps/$@.2.tmp -o .deps/$(PREFIX1).autogen.hfst
 	hfst-lookup-optimize .deps/$(PREFIX1).autogen.hfst -o $@

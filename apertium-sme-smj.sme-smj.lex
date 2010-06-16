@@ -309,10 +309,10 @@ LIST @CVP = @CVP ;
 LIST @CNP = @CNP ;
 
 LIST OBJ = @←OBJ @OBJ→ @OBJ @-F%OBJ @-FOBJ→ ;
-LIST <OBJ = @-F←OBJ @←OBJ ;
+LIST ←OBJ = @-F←OBJ @←OBJ ;
 LIST OBJ→ = @OBJ→ @-FOBJ→ ;
 
-SET <OBJ-OTHERS = <OBJ OR (Gen) OR (Nom) OR (Ess) OR (Loc) OR (Adv) ;
+SET ←OBJ-OTHERS = ←OBJ OR (Gen) OR (Nom) OR (Ess) OR (Loc) OR (Adv) ;
 SET OBJ→-OTHERS = OBJ→ OR (Gen) OR (Nom) OR (Ess) OR (Loc) OR (Adv) ;
 
 
@@ -2322,9 +2322,9 @@ SUBSTITUTE ("orrut") ("orrut:1") ("orrut"ri V IV) (1 (@←SPRED));
     # Orru buorre.
 
 ## S1: årrot    
-#SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (*1 (@>P) BARRIER NPNH LINK 1 ("luhtte"));
+#SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (*1 (@→P) BARRIER NPNH LINK 1 ("luhtte"));
 #    # Orun ustiba luhtte.
-#SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (-1 ("luhtte") LINK -1 (@>P));
+#SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V) (-1 ("luhtte") LINK -1 (@→P));
 #    # Ustiba luhtte orun.
          
 
