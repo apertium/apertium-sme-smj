@@ -5,6 +5,7 @@
   <def-cat n="nom">
      <cat-item tags="N.*"/>
      <cat-item tags="V.*.Der3.Der_n.N.*"/>
+     <cat-item tags="V.*.Der2.Actor.N.*"/>
   </def-cat>
   <def-cat n="genmod">
      <cat-item tags="N.*.Gen.@→N"/>
@@ -29,6 +30,10 @@
   <def-cat n="num_mod"> <!--modifiers of numerals-->
      <cat-item tags="*.*.*.@Num←"/>
      <cat-item tags="*.*.*.*.@Num←"/>
+  </def-cat>
+  <def-cat n="pcle">
+     <cat-item tags="Pcle.*"/>
+     <cat-item tags="Qst.Pcle.*"/>
   </def-cat>
   <def-cat n="adj">
      <cat-item tags="A.*"/>
@@ -106,6 +111,8 @@
      <attr-item tags="N.Prop.Plc"/>
      <attr-item tags="V.IV.Der3.Der_n.N"/>
      <attr-item tags="V.TV.Der3.Der_n.N"/>
+     <attr-item tags="V.IV.Der2.Actor.N"/>
+     <attr-item tags="V.TV.Der2.Actor.N"/>
   </def-attr>
   
   <def-attr n="a_genmod">
@@ -145,6 +152,11 @@
   <def-attr n="a_adpos">
      <attr-item tags="Po"/>
      <attr-item tags="Pr"/>
+  </def-attr>
+
+  <def-attr n="a_pcle">
+     <attr-item tags="Pcle"/>
+     <attr-item tags="Qst.Pcle"/>
   </def-attr>
 
   <def-attr n="a_cnj">
@@ -203,7 +215,6 @@
    <def-attr n="conneg">
      <attr-item tags="ConNeg"/>
   </def-attr>
-  
 
   <def-attr n="mood">
     <attr-item tags="Ind"/>
@@ -211,6 +222,7 @@
     <attr-item tags="Pot"/>
     <attr-item tags="Cond"/>
     <attr-item tags="Neg"/> 
+    <attr-item tags="Neg.Ind"/> 
   </def-attr>
   
   <def-attr n="poss">
@@ -499,7 +511,7 @@
             </test>
             <let>
           <clip pos="1" side="tl" part="mood"/>
-          <lit-tag v="Neg.Prs"/>
+          <lit-tag v="Neg.Ind"/>
         </let>
         </when>
         <when>
@@ -1595,6 +1607,28 @@
   </rule>
 
   <!-- Altres -->
+
+  <rule comment="REGLA: PARTICLE">
+     <pattern>
+       <pattern-item n="pcle"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk name="pcle" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="PCLE"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_pcle"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
 
   <rule comment="REGLA: CNJCOO">
      <pattern>

@@ -9,7 +9,8 @@
     <sdef n="CS"     c="Sub-ordinating conjunction"/>
     <sdef n="Po"     c="Postposition"/>
     <sdef n="Pr"     c="Preposition"/>
-    <sdef n="PCLE"   c="Particle"/>
+    <sdef n="Pcle"   c="Particle"/>
+    <sdef n="Qst"    c="Question marker"/>
 
     <sdef n="Nom"    c="Nominative"/>
     <sdef n="Acc"    c="Accusative"/>
@@ -26790,7 +26791,7 @@
     <e><p><l>ahkitvuohta<s n="N"/></l><r>ahketvuohta<s n="N"/></r></p></e>
     <e><p><l>aht<s n="CS"/></l><r>at<s n="CS"/></r></p></e>
     <e><p><l>ahte<s n="CS"/></l><r>ahte<s n="CS"/></r></p></e>
-    <e><p><l>ai<s n="PCLE"/></l><r>aj<s n="PCLE"/></r></p></e>
+    <e><p><l>ai<s n="Pcle"/></l><r>aj<s n="Pcle"/></r></p></e>
     <e><p><l>ain<s n="Adv"/></l><r>ájn<s n="Adv"/></r></p></e>
     <e><p><l>ainjuo<s n="Adv"/></l><r>gåjt<s n="Adv"/></r></p></e>
     <e><p><l>aittos<s n="Adv"/></l><r>ajtu<s n="Adv"/></r></p></e>
@@ -27710,7 +27711,7 @@
     <e><p><l>davás<s n="Adv"/></l><r>davás<s n="Adv"/></r></p></e>
     <e><p><l>daŋas<s n="N"/></l><r>daŋás<s n="N"/></r></p></e>
     <e><p><l>dađistaga<s n="Adv"/></l><r>maŋenagi<s n="Adv"/></r></p></e>
-    <e><p><l>de<s n="PCLE"/></l><r>de<s n="PCLE"/></r></p></e>
+    <e><p><l>de<s n="Pcle"/></l><r>de<s n="Pcle"/></r></p></e>
     <e><p><l>deadjogovva<s n="N"/></l><r>guojttegåvvå<s n="N"/></r></p></e>
     <e><p><l>deahkkeatrofiija<s n="N"/></l><r>diehkkeatrofija<s n="N"/></r></p></e>
     <e><p><l>deahkkedystrofiija<s n="N"/></l><r>diehkkedystrofija<s n="N"/></r></p></e>
@@ -28686,7 +28687,7 @@
     <e><p><l>gait<b/>diinnat<s n="Pron"/></l><r>gájkdivna<s n="Pron"/></r></p></e>
     <e><p><l>gait<b/>divnnat<s n="Pron"/></l><r>gájkdivna<s n="Pron"/></r></p></e>
     <e><p><l>gait<b/>tiinnat<s n="Pron"/></l><r>gájkdivna<s n="Pron"/></r></p></e>
-    <e><p><l>gal<s n="PCLE"/></l><r>gal<s n="PCLE"/></r></p></e>
+    <e><p><l>gal<s n="Pcle"/></l><r>gal<s n="Pcle"/></r></p></e>
     <e><p><l>galanteriija<s n="N"/></l><r>galanterija<s n="N"/></r></p></e>
     <e><p><l>galba<s n="N"/></l><r>galbba<s n="N"/></r></p></e>
     <e><p><l>galbmalatnja<s n="N"/></l><r>galmmaladnja<s n="N"/></r></p></e>
@@ -28748,7 +28749,7 @@
     <e><p><l>gazza<s n="N"/></l><r>gadtsa<s n="N"/></r></p></e>
     <e><p><l>gazzadákti<s n="N"/></l><r>gadtsadákte<s n="N"/></r></p></e>
     <e><p><l>gažaldat<s n="N"/></l><r>gatjálvis<s n="N"/></r></p></e>
-    <e><p><l>ge<s n="PCLE"/></l><r>ga<s n="PCLE"/></r></p></e>
+    <e><p><l>ge<s n="Pcle"/></l><r>ga<s n="Pcle"/></r></p></e>
     <e><p><l>geahpa<s n="N"/></l><r>giehpa<s n="N"/></r></p></e>
     <e><p><l>geahpis<s n="N"/></l><r>giehpes<s n="N"/></r></p></e>
     <e><p><l>geahttu<s n="N"/></l><r>giehtto<s n="N"/></r></p></e>
@@ -28997,8 +28998,9 @@
     <e><p><l>glássa<s n="N"/></l><r>glássa<s n="N"/></r></p></e>
     <e><p><l>gnostisisma<s n="N"/></l><r>gnostisissma<s n="N"/></r></p></e>
     <e><p><l>go<s n="CS"/></l><r>gå<s n="CS"/></r></p></e>
-    <e><p><l>go<s n="PCLE"/></l><r>gus<s n="PCLE"/></r></p></e>
-    <e r="RL"><p><l>go<s n="PCLE"/></l><r>gu<s n="PCLE"/></r></p></e>
+    <!--<e><p><l>go<s n="Pcle"/></l><r>gå<s n="Qst"/><s n="Pcle"/></r></p></e>-->
+    <e><p><l>go<s n="Pcle"/></l><r>gu<s n="Qst"/><s n="Pcle"/></r></p></e>
+    <e r="RL"><p><l>go<s n="Pcle"/></l><r>gus<s n="Qst"/><s n="Pcle"/></r></p></e>
     <e><p><l>goabbat<s n="Pron"/></l><r>goabbák<s n="Pron"/></r></p></e>
     <e><p><l>goabbelii<s n="Adv"/></l><r>goabbelij<s n="Adv"/></r></p></e>
     <e><p><l>goabbeliige<s n="Adv"/></l><r>goabbelijge<s n="Adv"/></r></p></e>
@@ -31132,14 +31134,14 @@
     <e><p><l>máŋga<s n="Num"/></l><r>moadda<s n="Num"/></r></p></e>
     <e><p><l>máŋggagielat<s n="A"/></l><r>moattegielak<s n="A"/></r></p></e>
     <e><p><l>máššil<s n="A"/></l><r>mássjel<s n="A"/></r></p></e>
-    <e><p><l>na<s n="PCLE"/></l><r>na<s n="PCLE"/></r></p></e>
+    <e><p><l>na<s n="Pcle"/></l><r>na<s n="Pcle"/></r></p></e>
     <e><p><l>naftalena<s n="N"/></l><r>naftalena<s n="N"/></r></p></e>
     <e><p><l>naga<s n="Adv"/></l><r>naga<s n="Adv"/></r></p></e>
     <e><p><l>nagir<s n="N"/></l><r>nager<s n="N"/></r></p></e>
     <e><p><l>nagirlaboratoriija<s n="N"/></l><r>nagerlaboratorija<s n="N"/></r></p></e>
     <e><p><l>nagirvárri<s n="N"/></l><r>nagervárre<s n="N"/></r></p></e>
-    <e><p><l>nai<s n="PCLE"/></l><r>naj<s n="PCLE"/></r></p></e>
-    <e r="RL"><p><l>nai<s n="PCLE"/></l><r>aj<s n="PCLE"/></r></p></e>
+    <e><p><l>nai<s n="Pcle"/></l><r>naj<s n="Pcle"/></r></p></e>
+    <e r="RL"><p><l>nai<s n="Pcle"/></l><r>aj<s n="Pcle"/></r></p></e>
     <e><p><l>naivisma<s n="N"/></l><r>naivissma<s n="N"/></r></p></e>
     <e><p><l>naj<s n="Pr"/></l><r>aj<s n="Pr"/></r></p></e>
     <e><p><l>nalli<s n="N"/></l><r>nalle<s n="N"/></r></p></e>
@@ -31342,8 +31344,8 @@
     <e><p><l>njárga<s n="N"/></l><r>njárgga<s n="N"/></r></p></e>
     <e><p><l>njárri<s n="A"/></l><r>njárre<s n="A"/></r></p></e>
     <e><p><l>njávvi<s n="N"/></l><r>njávve<s n="N"/></r></p></e>
-    <e><p><l>no<s n="PCLE"/></l><r>nå<s n="PCLE"/></r></p></e>
-    <e><p><l>noa<s n="PCLE"/></l><r>noa<s n="PCLE"/></r></p></e>
+    <e><p><l>no<s n="Pcle"/></l><r>nå<s n="Pcle"/></r></p></e>
+    <e><p><l>noa<s n="Pcle"/></l><r>noa<s n="Pcle"/></r></p></e>
     <e><p><l>noahtal<s n="N"/></l><r>noahtal<s n="N"/></r></p></e>
     <e><p><l>noaiddástalli<s n="N"/></l><r>noajdástalle<s n="N"/></r></p></e>
     <e><p><l>noaidi<s n="N"/></l><r>noajdde<s n="N"/></r></p></e>
@@ -34965,9 +34967,8 @@
     <e><p><l>headju<s n="N"/></l><r>hädjo<s n="N"/></r></p></e>
     <e><p><l>juoga<s n="N"/></l><r>juoga<s n="N"/></r></p></e>
 
-    <e><p><l>dat<s n="PCLE"/></l><r>dat<s n="PCLE"/></r></p></e>
-    <e><p><l>go<s n="PCLE"/></l><r>gå<s n="PCLE"/></r></p></e>
-    <e><p><l>son<s n="PCLE"/></l><r>så<s n="PCLE"/></r></p></e>
+    <e><p><l>dat<s n="Pcle"/></l><r>dat<s n="Pcle"/></r></p></e>
+    <e><p><l>son<s n="Pcle"/></l><r>så<s n="Pcle"/></r></p></e>
 
     <e><p><l>áigi<s n="Po"/></l><r>ájgge<s n="Po"/></r></p></e>
     <e><p><l>badjelii<s n="Po"/></l><r>badjelij<s n="Po"/></r></p></e>
