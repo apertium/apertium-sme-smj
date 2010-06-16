@@ -406,7 +406,7 @@ SET V-ACT = V - Der_Pass ;
 # Case sets
 # ---------
 
-LIST ADVL = @ADVL @ADVL> @ADVL< @<ADVL @>ADVL @-FADVL ;
+LIST ADVL = @ADVL @ADVL→ @ADVL← @←ADVL @→ADVL @-FADVL ;
 LIST ADVLCASE = Ill Loc Com Ess ;
 
 # Sg Nom - Sg Nom | Pl Nom - Pl Nom

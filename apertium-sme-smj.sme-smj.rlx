@@ -703,7 +703,7 @@ SET V-ACT = V - Der_Pass ;
 # Case sets
 # ---------
 
-LIST ADVL = @ADVL @ADVL> @ADVL< @<ADVL @>ADVL @-FADVL ;
+LIST ADVL = @ADVL @ADVL→ @ADVL← @←ADVL @→ADVL @-FADVL ;
 LIST ADVLCASE = Ill Loc Com Ess ;
 
 # Sg Nom - Sg Nom | Pl Nom - Pl Nom
@@ -14974,16 +14974,16 @@ MAP (@←SPRED) TARGET Nom IF (*-1 (@CNP) OR COMMA BARRIER NPNHA LINK -1 (@←SP
 MAP:r3408 (@SPRED→) TARGET (A Nom) IF (1 ("leat") LINK 1 CS); 
 	## Buorre lei go bohtet.
 
-MAP (@<PPRED) TARGET Nom IF (*-1 (N @←SPRED) BARRIER NOT-ADV OR MO)(0 N OR A);
+MAP (@←PPRED) TARGET Nom IF (*-1 (N @←SPRED) BARRIER NOT-ADV OR MO)(0 N OR A);
 	## Márehis lea oaivi bávččas.
 
-MAP (@<PPRED) TARGET Ess IF (*-1 (N @←SPRED) BARRIER NOT-ADV)(0 N);
+MAP (@←PPRED) TARGET Ess IF (*-1 (N @←SPRED) BARRIER NOT-ADV)(0 N);
 	## Máhtes lea Jovnna reaŋgan.
 
-MAP (@<PPRED) TARGET Ess IF (*-1 ("leat") BARRIER NPNH LINK -1 @HAB)(0 HUMAN);
+MAP (@←PPRED) TARGET Ess IF (*-1 ("leat") BARRIER NPNH LINK -1 @HAB)(0 HUMAN);
 	## Makkár vuoigatvuođat dain leat Norgga riikavuložin?
 
-MAP (@<PPRED) TARGET Ess IF (*-1 (A Nom) BARRIER NPNH LINK *-1 COPULAS BARRIER NOT-ADV) ;	
+MAP (@←PPRED) TARGET Ess IF (*-1 (A Nom) BARRIER NPNH LINK *-1 COPULAS BARRIER NOT-ADV) ;	
 	## Erenoamážit jokŋa lea leamaš deaŧalaš vuovdingálvun.
 
 MAP (@SUBJ→) TARGET Nom IF (NEGATE *-1 VFIN BARRIER S-BOUNDARY2)(*1 VFIN BARRIER S-BOUNDARY2 OR @SUBJ→);
