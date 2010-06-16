@@ -2421,10 +2421,10 @@ SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LIN
 # ---
 
 # S0: sieldes
-SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C A);
+#SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C A);
     # Dat lea hui buorre.
 # S1: huj
-SUBSTITUTE (Adv S0) (Adv S1) ("hui"ri Adv) (1C Attr);
+SUBSTITUTE ("hui") ("hui:1") ("hui" Adv) (1C Attr);
     # Son lea hui čeahppes eadni.
 
 
@@ -2432,11 +2432,11 @@ SUBSTITUTE (Adv S0) (Adv S1) ("hui"ri Adv) (1C Attr);
 # láhkái
 # ------
 
-SUBSTITUTE (Adv) (Adv S0) ("láhkái"ri Adv);
+#SUBSTITUTE (Adv) (Adv S0) ("láhkái"ri Adv);
     # Sáme kultuvrra, giella ja æládusdåjma li moatte láhkáj gárttjásin ja dætto vuolen stuorra sebrudagás.
     
 # S1: muoduk (vs. láhkáj)   (láhkái/ládje) 
-SUBSTITUTE (Adv S0) (Adv S1) ("láhkái"ri Adv) (-1 Gen);
+SUBSTITUTE ("láhkái") ("láhkái:1") ("láhkái" Adv) (-1 Gen);
     # Son lea áhčis láhkái.
     # Vuojnnebihtit gen muoduk le?
 

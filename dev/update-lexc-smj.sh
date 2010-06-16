@@ -115,17 +115,22 @@ echo 'done.';
 echo -n '+++ Adverbs... '
 
 ADVLEXC=$SRC/adv-$LANG2-lex.txt
-adv_point=`grep -nH 'LEXICON Adverb$' $ADVLEXC | cut -f2 -d':' `;
-adv_lenfile=`cat $ADVLEXC | wc -l`;
-adv_tail=`expr $adv_lenfile - $adv_point`;
 
-adv_infl_point=`grep -nH 'LEXICON gadv' $ADVLEXC | cut -f2 -d':' `;
-adv_infl_tail=`expr $adv_lenfile - $adv_infl_point`;
+##adv_point=`grep -nH 'LEXICON Adverb$' $ADVLEXC | cut -f2 -d':' `;
+##adv_lenfile=`cat $ADVLEXC | wc -l`;
+##adv_tail=`expr $adv_lenfile - $adv_point`;
+##
+##adv_infl_point=`grep -nH 'LEXICON gadv' $ADVLEXC | cut -f2 -d':' `;
+##adv_infl_tail=`expr $adv_lenfile - $adv_infl_point`;
+##
+##tail -n `expr $adv_infl_tail + 1` $ADVLEXC  | grep -v '^!' >> $OUTFILE;
+##
+##head -n $adv_point $ADVLEXC >> $OUTFILE; 
+##grepextract '<Adv' $ADVLEXC $ATMP;
 
-tail -n `expr $adv_infl_tail + 1` $ADVLEXC  | grep -v '^!' >> $OUTFILE;
+cat $ADVLEXC >> $OUTFILE;
 
-head -n $adv_point $ADVLEXC >> $OUTFILE; 
-grepextract '<Adv' $ADVLEXC $ATMP;
+echo 'done.';
 
 
 ### Extract subordinating conjunctions 
