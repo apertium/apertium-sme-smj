@@ -96,6 +96,8 @@ dev/smjverblemma.txt -text
 dev/testkorpus.txt -text
 dev/testkorpus_diff.txt -text
 dev/testsentences.txt -text
+dev/update-lexc-sme.sh -text
+dev/update-lexc-smj.sh -text
 dev/veahkki.paradigm -text
 dev/viehkke.paradigm -text
 dev/xfst2apertium.hashtags.twol -text
