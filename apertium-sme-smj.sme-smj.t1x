@@ -175,6 +175,13 @@
   </def-attr>
 
 
+  <def-attr n="a_inf_p">
+     <attr-item tags="V.TV"/>
+     <attr-item tags="V.IV"/>
+  </def-attr>
+  <def-attr n="a_inf_mod">
+     <attr-item tags="N"/>
+  </def-attr>
   <def-attr n="a_verb">
      <attr-item tags="V"/>
      <attr-item tags="V.IV"/>
@@ -1521,7 +1528,7 @@
            </tags>
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
-             <clip pos="1" side="tl" part="inf_mod"/>
+             <clip pos="1" side="tl" part="a_inf_mod"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
@@ -1531,7 +1538,7 @@
            <b pos="1"/> <!--space between the words-->
              <lu>
              <clip pos="2" side="tl" part="lemh"/>
-             <clip pos="2" side="tl" part="inf_p"/>
+             <clip pos="2" side="tl" part="a_inf_p"/>
              <clip pos="2" side="tl" part="voice"/>
              <clip pos="2" side="tl" part="mood"/>
              <clip pos="2" side="tl" part="temps"/>
@@ -1574,7 +1581,7 @@
            </tags>
             <lu>
              <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="inf_p"/>
+             <clip pos="1" side="tl" part="a_inf_p"/>
              <clip pos="1" side="tl" part="voice"/>
              <clip pos="1" side="tl" part="mood"/>
              <clip pos="1" side="tl" part="temps"/>
@@ -1587,7 +1594,7 @@
            <b pos="1"/> <!--space between the words-->
             <lu>
              <clip pos="2" side="tl" part="lemh"/> 
-             <clip pos="2" side="tl" part="inf_mod"/>
+             <clip pos="2" side="tl" part="a_inf_mod"/>
              <clip pos="2" side="tl" part="pers"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
