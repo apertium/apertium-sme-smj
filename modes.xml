@@ -2,8 +2,8 @@
 <modes>
   <mode name="sme-smj" install="yes">
     <pipeline>
-      <program name="lt-proc">
-        <file name="sme-smj.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
@@ -36,8 +36,8 @@
         <file name="apertium-sme-smj.sme-smj.t5x"/>
         <file name="sme-smj.t5x.bin"/>
       </program>
-      <program name="lt-proc $1">
-        <file name="sme-smj.autogen.bin"/>
+      <program name="hfst-proc $1">
+        <file name="sme-smj.autogen.hfst"/>
       </program>
 <!--
       <program name="lt-proc -p">
@@ -50,8 +50,8 @@
 
   <mode name="sme-smj-lex" install="no">
     <pipeline>
-      <program name="lt-proc">
-        <file name="sme-smj.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
@@ -65,8 +65,8 @@
 
   <mode name="sme-smj-tagger" install="no">
     <pipeline>
-      <program name="lt-proc">
-        <file name="sme-smj.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
@@ -84,8 +84,8 @@
 
   <mode name="sme-smj-chunker" install="no">
     <pipeline>
-      <program name="lt-proc">
-        <file name="sme-smj.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
@@ -106,8 +106,8 @@
 
   <mode name="sme-smj-interchunk1" install="no">
     <pipeline>
-      <program name="lt-proc">
-        <file name="sme-smj.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
@@ -134,8 +134,8 @@
 
   <mode name="sme-smj-interchunk2" install="no">
     <pipeline>
-      <program name="lt-proc">
-        <file name="sme-smj.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
@@ -164,8 +164,8 @@
 
   <mode name="sme-smj-interchunk3" install="no">
     <pipeline>
-      <program name="lt-proc">
-        <file name="sme-smj.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
@@ -199,8 +199,8 @@
 
   <mode name="sme-smj-postchunk" install="no">
     <pipeline>
-      <program name="lt-proc">
-        <file name="sme-smj.automorf.bin"/>
+      <program name="hfst-proc">
+        <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc">
         <file name="sme-smj.rlx.bin"/> 
@@ -234,7 +234,5 @@
       </program>
     </pipeline>
   </mode>
-
-
 
 </modes>

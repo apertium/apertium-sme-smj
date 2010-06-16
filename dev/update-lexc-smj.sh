@@ -13,14 +13,14 @@ LANG1=sme
 LANG2=smj
 BASENAME=apertium-$LANG1-$LANG2
 PREFIX1=$LANG1-$LANG2
-SRC=$GTHOME/gt/$LANG1/src
+SRC=$GTHOME/gt/$LANG2/src
 EXP=`mktemp /tmp/exp.XXXXX`;
 VTMP=`mktemp /tmp/vtmp.XXXX`;
 NTMP=`mktemp /tmp/ntmp.XXXX`;
 ATMP=`mktemp /tmp/atmp.XXXX`;
 NPTMP=`mktemp /tmp/nptmp.XXXX`;
 DEV=`dirname $0`
-OUTFILE=$DEV/../$BASENAME.$LANG1.lexc
+OUTFILE=$DEV/../$BASENAME.$LANG2.lexc
 
 echo "GTHOME in $SRC";
 echo "OUTFILE is $OUTFILE";
@@ -46,19 +46,19 @@ function grepextract {
 
 ### Extract contents of bilingual dictionary (lema + pos)
 
-lt-expand $DEV/../$BASENAME.$PREFIX1.dix  | grep -v REGEX | cut -f1-2 -d'>' > $EXP 
+lt-expand $DEV/../$BASENAME.$PREFIX1.dix  | grep -v REGEX | sed 's/:>:/:/g' | sed 's/:<:/:/g' | cut -f2 -d':' | cut -f1-2 -d'>' > $EXP 
 
 ### Extract head 
 
-#cat $SRC/$LANG1-lex.txt > $OUTFILE
-cat $SRC/$LANG1-lex.txt | grep -v '+Use\/NG' | grep -v '!^NG^' | grep -v '; !SUB' | grep -v '! !SOUTH' | grep -v '+Nom.*+Use\/Sub' | grep -v '+Gen.*+Use\/Sub' | grep -v '+Use\/Sub.*+V+TV' | grep -v '+Attr.*+Use\/Sub' | grep -v 'LEXICON PRSPRCTOADJ !SUB' | grep -v '+Imprt.*+Use\/Sub' > $OUTFILE
+#cat $SRC/$LANG2-lex.txt > $OUTFILE
+cat $SRC/$LANG2-lex.txt | grep -v '+Use\/NG' | grep -v '!^NG^' | grep -v '; !SUB' | grep -v '! !SOUTH' | grep -v '+Nom.*+Use\/Sub' | grep -v '+Gen.*+Use\/Sub' | grep -v '+Use\/Sub.*+V+TV' | grep -v '+Attr.*+Use\/Sub' | grep -v 'LEXICON PRSPRCTOADJ !SUB' | grep -v '+Imprt.*+Use\/Sub' > $OUTFILE
 
 
 
 ### Extract verbs
 echo -n '+++ Verbs... '
 
-VERBLEXC=$SRC/verb-$LANG1-lex.txt
+VERBLEXC=$SRC/verb-$LANG2-lex.txt
 v_point=`grep -nH ' VerbRoot' $VERBLEXC | cut -f2 -d':'`;
 v_lenfile=`cat $VERBLEXC | wc -l`;
 v_tail=`expr $v_lenfile - $v_point`;
@@ -69,7 +69,7 @@ grepextract '<V' $VERBLEXC $VTMP;
 ### Extract noun
 echo -n '+++ Nouns... '
 
-NOUNLEXC=$SRC/noun-$LANG1-lex.txt
+NOUNLEXC=$SRC/noun-$LANG2-lex.txt
 n_point=`grep -nH ' NounRoot$' $NOUNLEXC | cut -f2 -d':'`;
 n_lenfile=`cat $NOUNLEXC | wc -l`;
 n_tail=`expr $n_lenfile - $n_point`;
@@ -80,7 +80,7 @@ grepextract '<N' $NOUNLEXC $NTMP;
 ### Extract adjectives 
 echo -n '+++ Adjectives... '
 
-ADJLEXC=$SRC/adj-$LANG1-lex.txt
+ADJLEXC=$SRC/adj-$LANG2-lex.txt
 adj_point=`grep -nH 'LEXICON AdjectiveRoot$' $ADJLEXC | cut -f2 -d':' `;
 adj_lenfile=`cat $ADJLEXC | wc -l`;
 adj_tail=`expr $adj_lenfile - $adj_point`;
@@ -92,12 +92,12 @@ grepextract '<A' $ADJLEXC $ATMP;
 
 echo -n '+++ Proper nouns... ';
 
-NPLEXC=$SRC/propernoun-$LANG1-lex.txt
+NPLEXC=$SRC/propernoun-$LANG2-lex.txt
 np_point=`grep -nH ' ProperNoun$' $NPLEXC | cut -f2 -d':'`;
 np_lenfile=`cat $NPLEXC | wc -l`;
 np_tail=`expr $np_lenfile - $np_point`;
 
-cat $SRC/propernoun-$LANG1-morph.txt >> $OUTFILE;
+cat $SRC/propernoun-$LANG2-morph.txt >> $OUTFILE;
 
 head -n $np_point $NPLEXC >> $OUTFILE;
 grepextract '<N><Prop' $NPLEXC $NPTMP;
@@ -105,7 +105,7 @@ grepextract '<N><Prop' $NPLEXC $NPTMP;
 ### Extract conjunctions
 echo -n '+++ Conjunctions... ';
 
-CCLEXC=$SRC/conjunction-$LANG1-lex.txt
+CCLEXC=$SRC/conjunction-$LANG2-lex.txt
 
 cat $CCLEXC >> $OUTFILE;
 
@@ -114,7 +114,7 @@ echo 'done.';
 ### Extract adverbs
 echo -n '+++ Adverbs... '
 
-ADVLEXC=$SRC/adv-$LANG1-lex.txt
+ADVLEXC=$SRC/adv-$LANG2-lex.txt
 adv_point=`grep -nH 'LEXICON Adverb$' $ADVLEXC | cut -f2 -d':' `;
 adv_lenfile=`cat $ADVLEXC | wc -l`;
 adv_tail=`expr $adv_lenfile - $adv_point`;
@@ -131,7 +131,7 @@ grepextract '<Adv' $ADVLEXC $ATMP;
 ### Extract subordinating conjunctions 
 echo -n '+++ Subjunctions... ';
 
-CSLEXC=$SRC/subjunction-$LANG1-lex.txt
+CSLEXC=$SRC/subjunction-$LANG2-lex.txt
 
 cat $CSLEXC >> $OUTFILE;
 
@@ -140,7 +140,7 @@ echo 'done.';
 ### Extract pronouns 
 echo -n '+++ Pronouns... ';
 
-PRONLEXC=$SRC/pronoun-$LANG1-lex.txt
+PRONLEXC=$SRC/pronoun-$LANG2-lex.txt
 
 cat $PRONLEXC >> $OUTFILE;
 
@@ -149,7 +149,7 @@ echo 'done.';
 ### Extract particles
 echo -n '+++ Particles... ';
 
-PARTLEXC=$SRC/particle-$LANG1-lex.txt
+PARTLEXC=$SRC/particle-$LANG2-lex.txt
 
 cat $PARTLEXC >> $OUTFILE;
 
@@ -158,7 +158,7 @@ echo 'done.';
 ### Extract adpositions
 echo -n '+++ Adpositions... ';
 
-PPLEXC=$SRC/pp-$LANG1-lex.txt
+PPLEXC=$SRC/pp-$LANG2-lex.txt
 
 cat $PPLEXC >> $OUTFILE;
 
@@ -167,7 +167,7 @@ echo 'done.';
 ### Extract adpositions
 echo -n '+++ Numerals... ';
 
-NUMLEXC=$SRC/numeral-$LANG1-lex.txt
+NUMLEXC=$SRC/numeral-$LANG2-lex.txt
 
 cat $NUMLEXC >> $OUTFILE;
 
@@ -176,7 +176,7 @@ echo 'done.';
 ### Add abbreviations
 echo -n '+++ Abbreviations... ';
 
-ABBRLEXC=$SRC/abbr-$LANG1-lex.txt
+ABBRLEXC=$SRC/abbr-$LANG2-lex.txt
 
 cat $ABBRLEXC >> $OUTFILE;
 
@@ -185,7 +185,7 @@ echo 'done.';
 ### Add punctuation
 echo -n '+++ Punctuation... ';
 
-PUNCTLEXC=$SRC/punct-$LANG1-lex.txt
+PUNCTLEXC=$SRC/punct-$LANG2-lex.txt
 
 punct_point=`grep -nH ' real pilcrow' $PUNCTLEXC | cut -f2 -d':'`;
 head -n $punct_point $PUNCTLEXC >> $OUTFILE;

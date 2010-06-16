@@ -84,7 +84,7 @@
     <sdef n="Pron"/>
     <sdef n="v_x"/>
 
-    <sdef n="sent"    c="End of sentence marker"/>
+    <sdef n="CLB"    c="Clause boundary"/>
 
     <sdef n="S0"/>
     <sdef n="S1"/>
@@ -39684,7 +39684,8 @@
 
     <!-- Punctuation -->
 
-    <e><re>[.\?;:!·]</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+    <e><re>[.\?;:!·]+</re><p><l><s n="CLB"/></l><r><s n="CLB"/></r></p></e>
+    <e><re>,</re><p><l><s n="CLB"/></l><r><s n="CLB"/></r></p></e>
     <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="Num"/><s n="Sg"/><s n="Nom"/></l><r><s n="Num"/><s n="Sg"/><s n="Nom"/></r></p></e>
     <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="Num"/><s n="Sg"/><s n="Gen"/></l><r><s n="Num"/><s n="Sg"/><s n="Gen"/></r></p></e>
     <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="Num"/><s n="Sg"/><s n="Acc"/></l><r><s n="Num"/><s n="Sg"/><s n="Acc"/></r></p></e>

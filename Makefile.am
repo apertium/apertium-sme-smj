@@ -7,7 +7,7 @@ PREFIX2=$(LANG2)-$(LANG1)
 BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = \
-     $(PREFIX1).automorf.bin $(PREFIX1).autobil.bin $(PREFIX1).autogen.bin \
+     $(PREFIX1).automorf.hfst $(PREFIX1).autobil.bin $(PREFIX1).autogen.hfst \
      $(PREFIX1).lex.bin $(PREFIX1).rlx.bin $(PREFIX1).autopgen.bin \
      $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).t4x.bin $(PREFIX1).t5x.bin pre-$(LANG1).t1x.bin \
      $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
@@ -16,27 +16,99 @@ TARGETS_COMMON = \
 # Northern Sami -> Lule Sami
 ##
 
-$(PREFIX1).automorf.bin: $(BASENAME).$(LANG1).dix
-#	apertium-validate-dictionary $(BASENAME).$(LANG1).dix
-	lt-comp lr $(BASENAME).$(LANG1).dix $@ 
+# First we compile the twol and lexc files.
+.deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-twolc -r -i $(BASENAME).$(LANG1).twol -o $@
+
+.deps/$(LANG1).lexc.hfst: $(BASENAME).$(LANG1).lexc
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-lexc $(BASENAME).$(LANG1).lexc -o $@
+
+.deps/$(LANG2).twol.hfst: $(BASENAME).$(LANG2).twol
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-twolc -r -i $(BASENAME).$(LANG2).twol -o $@
+
+.deps/$(LANG2).lexc.hfst: $(BASENAME).$(LANG2).lexc
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-lexc $(BASENAME).$(LANG2).lexc -o $@
+
+#
+# These are scripts that remove unwanted tags
+#
+.deps/xfst2apertium.useless.twol.hfst: dev/xfst2apertium.useless.twol
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-twolc -r -i dev/xfst2apertium.useless.twol -o $@
+
+.deps/xfst2apertium.hashtags.twol.hfst: dev/xfst2apertium.hashtags.twol
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-twolc -r -i dev/xfst2apertium.hashtags.twol -o $@
+
+#
+# This is a generator 'apertium-sme-smj.sme.hfst'
+#
+.deps/$(BASENAME).$(LANG1).hfst: .deps/$(LANG1).lexc.hfst .deps/$(LANG1).twol.hfst dev/xfst2apertium.relabel 
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-compose-intersect -l .deps/$(LANG1).lexc.hfst .deps/$(LANG1).twol.hfst -o $@
+
+#
+# This is a generator 'apertium-sme-smj.smj.hfst'
+#
+.deps/$(BASENAME).$(LANG2).hfst: .deps/$(LANG2).lexc.hfst .deps/$(LANG2).twol.hfst dev/xfst2apertium.relabel 
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-compose-intersect -l .deps/$(LANG2).lexc.hfst .deps/$(LANG2).twol.hfst -o $@
+
+#
+# The default form of the transducer is optimised
+#
+$(PREFIX1).automorf.hfst: .deps/$(BASENAME).$(LANG1).hfst .deps/xfst2apertium.useless.twol.hfst .deps/xfst2apertium.hashtags.twol.hfst dev/xfst2apertium.relabel
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-invert .deps/$(BASENAME).$(LANG1).hfst -o .deps/$(PREFIX1).automorf.hfst
+	hfst-compose-intersect -l .deps/$(PREFIX1).automorf.hfst .deps/xfst2apertium.useless.twol.hfst -o .deps/$@.1.tmp
+	hfst-compose-intersect -l .deps/$@.1.tmp .deps/xfst2apertium.hashtags.twol.hfst -o .deps/$@.2.tmp
+	hfst-substitute -F dev/xfst2apertium.relabel -i .deps/$@.2.tmp -o .deps/$(PREFIX1).automorf.hfst
+	hfst-lookup-optimize .deps/$(PREFIX1).automorf.hfst -o $@
+	rm .deps/$@.1.tmp .deps/$@.2.tmp
+#
+# The default form of the transducer is optimised
+#
+$(PREFIX1).autogen.hfst: .deps/$(BASENAME).$(LANG2).hfst .deps/xfst2apertium.useless.twol.hfst .deps/xfst2apertium.hashtags.twol.hfst dev/xfst2apertium.relabel
+	if [ ! -d .deps ]; then mkdir .deps; fi
+	hfst-compose-intersect -l .deps/$(BASENAME).$(LANG2).hfst .deps/xfst2apertium.useless.twol.hfst -o .deps/$@.1.tmp
+	hfst-compose-intersect -l .deps/$@.1.tmp .deps/xfst2apertium.hashtags.twol.hfst -o .deps/$@.2.tmp
+	hfst-substitute -F dev/xfst2apertium.relabel -i .deps/$@.2.tmp -o .deps/$(PREFIX1).autogen.hfst
+	hfst-lookup-optimize .deps/$(PREFIX1).autogen.hfst -o $@
+	rm .deps/$@.1.tmp .deps/$@.2.tmp
+
+#
+# Bidix
+#
 
 $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
 	lt-comp lr $(BASENAME).$(PREFIX1).dix $@
 
-$(PREFIX1).autogen.bin: $(BASENAME).$(LANG2).dix
-	apertium-validate-dictionary $(BASENAME).$(LANG2).dix
-	lt-comp rl $(BASENAME).$(LANG2).dix $@
+#
+# Postgeneration dictionary
+#
 
 $(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
 	apertium-validate-dictionary $(BASENAME).post-$(LANG2).dix
 	lt-comp lr $(BASENAME).post-$(LANG2).dix $@
+
+#
+# Constraint grammars
+#
 
 $(PREFIX1).rlx.bin: $(BASENAME).$(PREFIX1).rlx
 	cg-comp $(BASENAME).$(PREFIX1).rlx $@
 
 $(PREFIX1).lex.bin: $(BASENAME).$(PREFIX1).lex
 	cg-comp $(BASENAME).$(PREFIX1).lex $@
+
+#
+# Transfer rules
+#
 
 $(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
 	apertium-validate-transfer $(BASENAME).$(PREFIX1).t1x
@@ -58,48 +130,8 @@ $(PREFIX1).t5x.bin: $(BASENAME).$(PREFIX1).t5x
 	apertium-validate-postchunk $(BASENAME).$(PREFIX1).t5x
 	apertium-preprocess-transfer $(BASENAME).$(PREFIX1).t5x $@
 
-
-
-##
-# Lule Sami -> Northern Sami
-##
-
-
-#$(PREFIX2).automorf.bin: $(BASENAME).$(LANG2).dix
-#	apertium-validate-dictionary $(BASENAME).$(LANG2).dix
-#	lt-comp lr $(BASENAME).$(LANG2).dix $@
-
-#$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
-#	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
-#	lt-comp rl $(BASENAME).$(PREFIX1).dix $@
-
-#$(PREFIX2).autogen.bin: $(BASENAME).$(LANG1).dix
-#	apertium-validate-dictionary $(BASENAME).$(LANG1).dix
-#	lt-comp rl $(BASENAME).$(LANG1).dix $@
-
-#$(PREFIX2).autopgen.bin: $(BASENAME).post-$(LANG1).dix
-#	apertium-validate-dictionary $(BASENAME).post-$(LANG1).dix
-#	lt-comp lr $(BASENAME).post-$(LANG1).dix $@
-
-
-#$(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
-#	apertium-validate-transfer $(BASENAME).$(PREFIX2).t1x
-#	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t1x $@
-
-#$(PREFIX2).t2x.bin: $(BASENAME).$(PREFIX2).t2x
-#	apertium-validate-interchunk $(BASENAME).$(PREFIX2).t2x
-#	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t2x $@
-
-#$(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
-#	apertium-validate-postchunk $(BASENAME).$(PREFIX2).t3x
-#	apertium-preprocess-transfer $(BASENAME).$(PREFIX2).t3x $@
-
-
-EXTRA_DIST=$(BASENAME).$(LANG1).dix $(BASENAME).$(PREFIX1).dix \
+EXTRA_DIST=$(BASENAME).$(LANG1).lexc $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).post-$(LANG1).dix $(BASENAME).post-$(LANG2).dix \
-	   $(BASENAME).$(LANG2).dix \
-	   $(BASENAME).$(LANG1).dix \
-	   $(BASENAME).$(LANG2).dix \
 	   $(BASENAME).$(PREFIX1).dix \
 	   $(BASENAME).$(PREFIX1).rlx \
 	   $(BASENAME).$(PREFIX1).lex \
@@ -120,9 +152,9 @@ $(PREFIX1).mode: modes.xml
 	apertium-gen-modes modes.xml
 	cp *.mode modes/
 
-apertium_sme_smj_DATA=$(PREFIX1).automorf.bin \
+apertium_sme_smj_DATA=$(PREFIX1).automorf.hfst \
                     $(PREFIX1).autobil.bin \
-                    $(PREFIX1).autogen.bin \
+                    $(PREFIX1).autogen.hfst \
 		    $(PREFIX1).autopgen.bin \
                     $(PREFIX1).prob  \
 		    $(PREFIX1).rlx.bin \
