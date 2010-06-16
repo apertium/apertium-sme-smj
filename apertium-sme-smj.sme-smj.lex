@@ -2277,16 +2277,16 @@ SECTION
 # -------
 
 # Default (if no other rule applies)
-SUBSTITUTE (N) (N S0) ("luohkká"ri N);
+#SUBSTITUTE (N) (N S0) ("luohkká"ri N);
     # 
 
 # S0: klássa vs. luohkka
-SUBSTITUTE (N S0) (N S1) ("luohkká"ri N) (*1 EDUCATION OR LESSON OR ("oahpaheaddji"));
+SUBSTITUTE ("luohkká") ("luohkká:1") ("luohkká" N) (*1 EDUCATION OR LESSON OR ("oahpaheaddji"));
     # 
-SUBSTITUTE (N S0) (N S1) ("luohkká"ri N) (*-1 EDUCATION OR LESSON OR ("oahpaheaddji"));
+SUBSTITUTE ("luohkká") ("luohkká:1") ("luohkká" N) (*-1 EDUCATION OR LESSON OR ("oahpaheaddji"));
     # 
     
-SUBSTITUTE (N S0) (N S1) ("luohkká"ri N) (-1 Num);
+SUBSTITUTE ("luohkká") ("luohkká:1") ("luohkká" N) (-1 Num);
     # Son lea vuosttaš luohkás.
 
 
@@ -2297,14 +2297,14 @@ SUBSTITUTE (N S0) (N S1) ("luohkká"ri N) (-1 Num);
 # --------
 
 # Default (if no other rule applies)
-SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V);
+#SUBSTITUTE (V TV) (V TV S0) ("ráhkadit"ri V);
     # Mun ráhkadan plána.
     # Mun ráhkadan ášši. - Mån ássjev dagáv. 
 
 # S0: stiellit vs. dahkat
-SUBSTITUTE (V TV S0) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
+SUBSTITUTE ("ráhkadit") ("ráhkadit:1") ("ráhkadit" V TV) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
     # Mun ráhkadan biepmu.
-SUBSTITUTE (V TV S0) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
+SUBSTITUTE ("ráhkadit") ("ráhkadit:1") ("ráhkadit" V TV) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
     # Mun biepmu ráhkadan.
  
 
@@ -2312,13 +2312,13 @@ SUBSTITUTE (V TV S0) (V TV S1) ("ráhkadit"ri V) (0 FMAINV)(*-1 FOOD LINK 0 (@�
 # -----
 
 # Default (if no other rule applies)
-SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V);
+#SUBSTITUTE (V IV) (V IV S0) ("orrut"ri V);
     #  Orru jaska!
     
 # S0: vuojnnet vs. (årrot)
-SUBSTITUTE (IV) (IV S1) ("orrut"ri V) (1 ("leat") LINK 0 Ess);
+SUBSTITUTE ("orrut") ("orrut:1") ("orrut"ri V IV) (1 ("leat") LINK 0 Ess);
     # Orru leamen buorre.
-SUBSTITUTE (IV) (IV S1) ("orrut"ri V) (1 (@←SPRED));
+SUBSTITUTE ("orrut") ("orrut:1") ("orrut"ri V IV) (1 (@←SPRED));
     # Orru buorre.
 
 ## S1: årrot    
@@ -2332,7 +2332,7 @@ SUBSTITUTE (IV) (IV S1) ("orrut"ri V) (1 (@←SPRED));
 # ------
 
 # Default (if no other rule applies)
-SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V);
+#SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V);
     #   
     
 ## S0: viessot vs. (iellet)
@@ -2344,9 +2344,9 @@ SUBSTITUTE (V IV) (V IV S0) ("eallit"ri V);
 #    # Mo don ealát?
 
 # S1: iellet (åndelig)    
-SUBSTITUTE (V IV S0) (V IV S1) ("eallit"ri V) (1 ("agálaččat"));
+SUBSTITUTE ("eallit") ("eallit:1") ("eallit"ri V IV) (1 ("agálaččat"));
     # Son eallá agálaččat.
-SUBSTITUTE (V IV S0) (V IV S1) ("eallit"ri V) (-1 ("agálaččat"));
+SUBSTITUTE ("eallit") ("eallit:1") ("eallit"ri V IV) (-1 ("agálaččat"));
     # Son agálaččat eallá.
     
     
@@ -2356,12 +2356,12 @@ SUBSTITUTE (V IV S0) (V IV S1) ("eallit"ri V) (-1 ("agálaččat"));
 # muitalit 
 # --------
 
-SUBSTITUTE (V TV) (V TV S0) ("muitalit"ri V);
+#SUBSTITUTE (V TV) (V TV S0) ("muitalit"ri V);
     # Default
     
 # S0: mujttalit (vs. subtsastit)   
  
-SUBSTITUTE (V TV S0) (V TV S1) ("muitalit"ri V) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
+SUBSTITUTE ("muitalit") ("muitalit:1") ("muitalit" V TV) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
     # Son muitala máidnasiid.
     # 
 
@@ -2373,11 +2373,11 @@ SUBSTITUTE (V TV S0) (V TV S1) ("muitalit"ri V) (*1 (@OBJ) LINK 0 ("máinnas") O
 # buorre 
 # ------    
 
-SUBSTITUTE (A) (A S0) ("buorre"ri A);
+#SUBSTITUTE (A) (A S0) ("buorre"ri A);
     # Default
     
 # S0: jasskat (vs. buorre)    
-SUBSTITUTE (A S0) (A S1) ("buorre"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
+SUBSTITUTE ("buorre") ("buorre:1") ("buorre" A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
     # Giella lea mearrideaddji oassi addin dihte buori iešdovddu.
 
 
@@ -2385,11 +2385,11 @@ SUBSTITUTE (A S0) (A S1) ("buorre"ri A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu"
 # -------
     
 # S0: smidá (vs. tjiehppe)    
-SUBSTITUTE (A) (A S0) ("čeahppi"ri A);
+#SUBSTITUTE (A) (A S0) ("čeahppi"ri A);
     # Son lea čeahppi.
     
 #SUBSTITUTE (A) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
-SUBSTITUTE (A S0) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
+SUBSTITUTE ("čeahppi") ("čeahppi:1") ("čeahppi" A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
     # Son lea čeahppi borrat.
     # subsistence words where it is not the talent that is stressed
     
