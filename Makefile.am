@@ -123,7 +123,7 @@ $(PREFIX1).mode: modes.xml
 apertium_sme_smj_DATA=$(PREFIX1).automorf.bin \
                     $(PREFIX1).autobil.bin \
                     $(PREFIX1).autogen.bin \
-		    $(PREFIX1).autopgen.bin \ 
+		    $(PREFIX1).autopgen.bin \
                     $(PREFIX1).prob  \
 		    $(PREFIX1).rlx.bin \
 		    $(PREFIX1).lex.bin \

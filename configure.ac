@@ -63,5 +63,47 @@ then
   AC_MSG_ERROR([You don't have cg-proc installed.])
 fi
 
+AC_PATH_PROG(HFSTPROC, hfst-proc, no)
+if test x$ac_cv_path_HFSTPROC = x
+then
+  AC_MSG_ERROR([You don't have hfst-proc installed.])
+fi
+if test x$ac_cv_path_HFSTPROC = xno
+then
+  AC_MSG_ERROR([You don't have hfst-proc installed.])
+fi
+
+AC_PATH_PROG(HFSTLEXC, hfst-lexc, no)
+if test x$ac_cv_path_HFSTLEXC = x
+then
+  AC_MSG_ERROR([You don't have hfst-lexc installed.])
+fi
+if test x$ac_cv_path_HFSTLEXC = xno
+then
+  AC_MSG_ERROR([You don't have hfst-lexc installed.])
+fi
+
+AC_PATH_PROG(HFSTTWOLC, hfst-twolc, no)
+if test x$ac_cv_path_HFSTTWOLC = x
+then
+  AC_MSG_ERROR([You don't have hfst-twolc installed.])
+fi
+if test x$ac_cv_path_HFSTTWOLC = xno
+then
+  AC_MSG_ERROR([You don't have hfst-twolc installed.])
+fi
+
+AC_PATH_PROG(HFSTSUBSTITUTE, hfst-substitute, no)
+if test x$ac_cv_path_HFSTSUBSTITUTE = x
+then
+  AC_MSG_ERROR([You don't have hfst-subsitute installed.])
+fi
+if test x$ac_cv_path_HFSTSUBSTITUTE = xno
+then
+  AC_MSG_ERROR([You don't have hfst-substitute installed.])
+fi
+
+
+
 
 AC_OUTPUT([Makefile])
