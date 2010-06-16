@@ -2406,10 +2406,10 @@ SUBSTITUTE (A S0) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat")
 #SUBSTITUTE ("boaris:0") ("boaris:0") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
 
 # S1: boares
-SUBSTITUTE ("boaris"ri) ("boaris:1"ri) ("boaris"ri A Attr) (*1 N LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
-SUBSTITUTE ("boaris"ri) ("boaris:1"ri) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"i));
+SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A Attr) (*1 N LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
+SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"i));
     # Dat lea boaris.
-SUBSTITUTE ("boaris"ri) ("boaris:1"ri) ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
+SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
 
 
 
@@ -2447,7 +2447,7 @@ SUBSTITUTE (Adv S0) (Adv S1) ("láhkái"ri Adv) (-1 Gen);
 
 # S0: default
 # fin.verb (obj) jámas; jámas fin.verb
-SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv);
+#SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv);
     # Default
     # Guovža lei gievra, ja sáhtii fáđustii olbmo jámas.
     # jámas goallot
@@ -2457,9 +2457,9 @@ SUBSTITUTE (Adv) (Adv S0) ("jámas"ri Adv);
 # adv verb: leat (Pron.Refl/Adv) jámas PrfPrc
 # verb adv: PrfPrc (Adv) jámas
 
-SUBSTITUTE (Adv S0) (Adv S1) ("jámas"ri Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+SUBSTITUTE ("jámas") ("jámas:1") ("jámas" Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
     # Man gallis dain smávvásiin eai leat juo čirron iežaset jámas.
-SUBSTITUTE (Adv S0) (Adv S1) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+SUBSTITUTE ("jámas") ("jámas:1") ("jámas" Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
     # Eará bellodagat leat jámas suorganan válgagiččus.
 
 # jaska 
@@ -2469,5 +2469,5 @@ SUBSTITUTE (Adv S0) (Adv S1) ("jámas"ri Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-R
     # Default
    
 # S1: jasska (vs. sjávot)    
-SUBSTITUTE ("jaska"ri) ("jaska:1"ri) ("jaska"ri Adv) (*1 ("bargat") OR ("boahtit"));
+SUBSTITUTE ("jaska") ("jaska:1") ("jaska"ri Adv) (*1 ("bargat") OR ("boahtit"));
     # 

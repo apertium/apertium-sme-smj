@@ -29953,10 +29953,8 @@
     <e><p><l>jáhpi<s n="N"/></l><r>jáhpe<s n="N"/></r></p></e>
     <e><p><l>jálluvuohta<s n="N"/></l><r>jálluvuohta<s n="N"/></r></p></e>
     <e><p><l>jálás<s n="N"/></l><r>jálás<s n="N"/></r></p></e>  
-    <e r="RL"><p><l>jámas<s n="Adv"/></l><r>sælldát<s n="Adv"/></r></p></e>
-    <e r="RL"><p><l>jámas<s n="Adv"/></l><r>jámás<s n="Adv"/></r></p></e>
-    <e r="LR"><p><l>jámas<s n="Adv"/><s n="S1"/></l><r>sælldát<s n="Adv"/></r></p></e>
-    <e r="LR"><p><l>jámas<s n="Adv"/><s n="S0"/></l><r>jámás<s n="Adv"/></r></p></e>
+    <e c="0"><p><l>jámas<s n="Adv"/></l><r>jámás<s n="Adv"/></r></p></e>
+    <e slr="1"><p><l>jámas<s n="Adv"/></l><r>sælldát<s n="Adv"/></r></p></e>
     <e><p><l>jámet<s n="N"/></l><r>jámet<s n="N"/></r></p></e>
     <e><p><l>jápmaassi<s n="N"/></l><r>jábmaasse<s n="N"/></r></p></e>
     <e><p><l>jápmaoažži<s n="N"/></l><r>jábmaoadtje<s n="N"/></r></p></e>

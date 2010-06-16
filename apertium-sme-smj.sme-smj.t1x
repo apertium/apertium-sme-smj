@@ -100,6 +100,9 @@
   <def-attr n="a_nom">
      <attr-item tags="N"/>
      <attr-item tags="N.Prop"/>
+     <attr-item tags="N.Prop.Org"/>
+     <attr-item tags="N.Prop.Mal"/>
+     <attr-item tags="N.Prop.Sur"/>
      <attr-item tags="N.Prop.Plc"/>
      <attr-item tags="V.IV.Der3.Der_n.N"/>
      <attr-item tags="V.TV.Der3.Der_n.N"/>
@@ -108,6 +111,9 @@
   <def-attr n="a_genmod">
      <attr-item tags="N"/>
      <attr-item tags="N.Prop"/>
+     <attr-item tags="N.Prop.Mal"/>
+     <attr-item tags="N.Prop.Org"/>
+     <attr-item tags="N.Prop.Sur"/>
      <attr-item tags="N.Prop.Plc"/>
      <attr-item tags="Pron.Pers"/>
      <attr-item tags="Pron"/>
