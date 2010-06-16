@@ -549,7 +549,7 @@
             </and>
         </test>
           <let>
-            <clip pos="1" side="tl" part="temps"/>
+            <var n="cur_verb_temps"/>
             <lit v=""/>
           </let>
         </when>
