@@ -2,7 +2,11 @@
 <!-- -*- nxml -*- -->
 <postchunk>
   <section-def-cats>
-    <def-cat n="nom">
+    <def-cat n="nom2">
+      <cat-item name="genmod_nom"/>
+    </def-cat>
+
+    <def-cat n="nom1">
       <cat-item name="nom"/>
     </def-cat>
   </section-def-cats>
@@ -28,7 +32,7 @@
 
     <rule comment="CHUNK:">
       <pattern>
-        <pattern-item n="nom"/>
+        <pattern-item n="nom1"/>
       </pattern>
       <action>
       <choose>
@@ -62,6 +66,48 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="CHUNK:">
+      <pattern>
+        <pattern-item n="nom2"/>
+      </pattern>
+      <action>
+      <choose>
+        <when>
+          <test>
+            <and>
+              <not>
+                <equal>
+                  <clip pos="2" part="nbr"/>
+                  <lit-tag v="Sg"/>
+                </equal>
+              </not>
+              <not>
+                <equal>
+                  <clip pos="2" part="nbr"/>
+                  <lit-tag v="Pl"/>
+                </equal>
+              </not>
+             </and>
+          </test>
+          <let>
+            <clip pos="2" part="nbr"/>
+            <lit v=""/>
+          </let>
+        </when>
+      </choose>
+        <out>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
+          <b pos="1"/>
+          <lu>
+            <clip pos="2" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
 
   </section-rules>
 </postchunk>
