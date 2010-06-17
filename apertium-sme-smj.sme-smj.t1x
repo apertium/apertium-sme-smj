@@ -35,12 +35,14 @@
      <cat-item tags="Pcle.*"/>
      <cat-item tags="Qst.Pcle.*"/>
   </def-cat>
-  <def-cat n="adj">
-     <cat-item tags="A.*"/>
-  </def-cat>
   <def-cat n="adv">
      <cat-item tags="Adv"/>
      <cat-item tags="Adv.*"/>
+     <cat-item tags="A.Der2.Der_at.Adv"/>
+     <cat-item tags="A.Der2.Der_at.Adv.*"/>
+  </def-cat>
+  <def-cat n="adj">
+     <cat-item tags="A.*"/>
   </def-cat>
   <def-cat n="verb">
      <cat-item tags="V.*"/>
@@ -141,8 +143,13 @@
      <attr-item tags="Num"/>
   </def-attr>
 
+  <def-attr n="a_attr">
+     <attr-item tags="Attr"/>
+  </def-attr>
+
   <def-attr n="a_adv">
      <attr-item tags="Adv"/>
+     <attr-item tags="A.Der2.Der_at.Adv"/>
   </def-attr>
 
   <def-attr n="a_num">
@@ -172,6 +179,7 @@
      <attr-item tags="Pron.Interr"/>
      <attr-item tags="Pron.Dem"/>
      <attr-item tags="Pron.Indef"/>
+     <attr-item tags="Pron.Indef.Attr"/> <!-- muhtun -->
   </def-attr>
 
 
@@ -186,6 +194,11 @@
      <attr-item tags="V"/>
      <attr-item tags="V.IV"/>
      <attr-item tags="V.TV"/>
+  </def-attr>
+
+  <def-attr n="gen"> <!-- for proper names -->
+     <attr-item tags="Masc"/>
+     <attr-item tags="Fem"/>
   </def-attr>
 
   <def-attr n="nbr">
@@ -610,6 +623,31 @@
 
 <section-rules>
 
+  <rule comment="REGLA: ADV">
+     <pattern>
+       <pattern-item n="adv"/>
+     </pattern>
+     <action>
+       <let>
+         <var n="adverb"/>
+         <clip pos="1" side="sl" part="lem"/>
+       </let>
+       <out>
+         <chunk namefrom="adverb" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="Adv"/></tag>
+             <tag><clip pos="1" side="sl" part="syntag"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_adv"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+         </chunk>
+       </out>
+     </action>
+  </rule>
+
     <!-- Noun is the head -->
 
   <rule comment="REGLA: NOM">
@@ -640,9 +678,11 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/> 
              <clip pos="1" side="tl" part="a_nom"/>
+             <clip pos="1" side="tl" part="gen"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="a_attr"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
            <var n="focus_pcle"/>
@@ -1609,31 +1649,6 @@
      </action>
   </rule>
 
-
-  <rule comment="REGLA: ADV">
-     <pattern>
-       <pattern-item n="adv"/>
-     </pattern>
-     <action>
-       <let>
-         <var n="adverb"/>
-         <clip pos="1" side="sl" part="lem"/>
-       </let>
-       <out>
-         <chunk namefrom="adverb" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="Adv"/></tag>
-             <tag><clip pos="1" side="sl" part="syntag"/></tag>
-           </tags>
-           <lu>
-             <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_adv"/>
-             <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-         </chunk>
-       </out>
-     </action>
-  </rule>
 
   <!-- Altres -->
 

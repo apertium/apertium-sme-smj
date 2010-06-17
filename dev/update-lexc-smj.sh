@@ -14,6 +14,7 @@ LANG2=smj
 BASENAME=apertium-$LANG1-$LANG2
 PREFIX1=$LANG1-$LANG2
 SRC=$GTHOME/gt/$LANG2/src
+SMESRC=$GTHOME/gt/sme/src
 EXP=`mktemp /tmp/exp.XXXXX`;
 VTMP=`mktemp /tmp/vtmp.XXXX`;
 NTMP=`mktemp /tmp/ntmp.XXXX`;
@@ -101,6 +102,14 @@ cat $SRC/propernoun-$LANG2-morph.txt >> $OUTFILE;
 
 head -n $np_point $NPLEXC >> $OUTFILE;
 grepextract '<N><Prop' $NPLEXC $NPTMP;
+
+echo 'done.'
+
+echo -n '++++ Extracting proper names from sme/src/propernoun-sme-lex.txt ...'
+
+perl $GTHOME/gt/script/smesmjdump.pl $SMESRC/propernoun-sme-lex.txt >> $OUTFILE;
+
+echo 'done.'
 
 ### Extract conjunctions
 echo -n '+++ Conjunctions... ';
