@@ -98,7 +98,8 @@
   </def-cat>
 
   <def-cat n="sent">
-     <cat-item tags="sent"/>
+     <cat-item tags="CLB"/>
+     <cat-item tags="CLB.*"/>
   </def-cat>
 
 </section-def-cats>
