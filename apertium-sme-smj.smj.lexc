@@ -11276,6 +11276,8 @@ re^presentasjåvnnå:re^presenta INSTITUTION ;
 resolusjåvnnå:resolu INSTITUTION ;
 re^spækta:re^sp KOLLEKT ;
 re^striksjåvnnå:re^strik INSTITUTION ;
+ resurssa MUORRA ; !^LOAN
+ resurssa+N+CmpN/SgN+CmpN/SgN:resurs%> R ; !
 retorihkka:retori ANTIKK ;
 revisjåvnnå:revi PENSION ;
 revolusjåvnnå:revolu INSTITUTION ;
