@@ -10,7 +10,7 @@ TARGETS_COMMON = \
      $(PREFIX1).automorf.hfst $(PREFIX1).autobil.bin $(PREFIX1).autogen.hfst \
      $(PREFIX1).lex.bin $(PREFIX1).rlx.bin $(PREFIX1).autopgen.bin \
      $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).t4x.bin $(PREFIX1).t5x.bin pre-$(LANG1).t1x.bin \
-     $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin modes
+     $(PREFIX2).t2x.bin $(PREFIX2).t3x.bin $(PREFIX2).automorf.hfst modes 
 
 ##
 # Northern Sami -> Lule Sami
@@ -84,6 +84,10 @@ $(PREFIX1).autogen.hfst: .deps/$(BASENAME).$(LANG2).hfst .deps/xfst2apertium.use
 	hfst-substitute -F dev/xfst2apertium.relabel -i .deps/$@.2.tmp -o .deps/$(PREFIX1).autogen.hfst
 	hfst-lookup-optimize .deps/$(PREFIX1).autogen.hfst -o $@
 	rm .deps/$@.1.tmp .deps/$@.2.tmp
+
+$(PREFIX2).automorf.hfst: .deps/$(PREFIX1).autogen.hfst
+	hfst-invert .deps/$(PREFIX1).autogen.hfst -o .deps/$@
+	hfst-lookup-optimize .deps/$@ -o $@
 
 #
 # Bidix
@@ -164,6 +168,7 @@ $(PREFIX1).mode: modes.xml
 apertium_sme_smj_DATA=$(PREFIX1).automorf.hfst \
                     $(PREFIX1).autobil.bin \
                     $(PREFIX1).autogen.hfst \
+                    $(PREFIX2).automorf.hfst \
 		    $(PREFIX1).autopgen.bin \
                     $(PREFIX1).prob  \
 		    $(PREFIX1).rlx.bin \
