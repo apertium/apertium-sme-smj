@@ -2406,11 +2406,17 @@ SUBSTITUTE ("čeahppi") ("čeahppi:1") ("čeahppi" A) (1 Inf LINK 0 ("borrat") O
 #SUBSTITUTE ("boaris:0") ("boaris:0") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
 
 # S1: boares
-SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A Attr) (*1 N LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
-SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"i));
+SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A Attr) (*1 N BARRIER NOT-Attr LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
+SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
     # Dat lea boaris.
 SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
 
+# S2: boares
+SUBSTITUTE ("boaris") ("boaris:2") ("boaris"ri A Attr) (0 WORD LINK *1 ("ođđa" A Attr));
+    # Boares dilli lea vássán, o@@a dilli lea boahtán.
+    
+SUBSTITUTE ("boaris") ("boaris:2") ("boaris"ri A Attr) (1 N LINK 0 FOOD);
+SUBSTITUTE ("boaris") ("boaris:2") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 FOOD);
 
 
 
