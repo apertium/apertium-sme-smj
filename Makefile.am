@@ -72,7 +72,8 @@ $(PREFIX1).automorf.hfst: .deps/$(BASENAME).$(LANG1).hfst .deps/xfst2apertium.us
 	hfst-compose-intersect -1 .deps/$(PREFIX1).automorf.hfst -2 .deps/xfst2apertium.useless.analysis.twol.hfst -o .deps/$@.1.tmp
 	hfst-compose-intersect -1 .deps/$@.1.tmp -2 .deps/xfst2apertium.hashtags.twol.hfst -o .deps/$@.2.tmp
 	hfst-substitute -F dev/xfst2apertium.relabel -i .deps/$@.2.tmp -o .deps/$(PREFIX1).automorf.hfst
-	hfst-lookup-optimize .deps/$(PREFIX1).automorf.hfst -o $@
+#	hfst-lookup-optimize .deps/$(PREFIX1).automorf.hfst -o $@ # next line
+	hfst-fst2fst -O -i  .deps/$(PREFIX1).automorf.hfst -o $@ # should it be .ol for -o file?
 	rm .deps/$@.1.tmp .deps/$@.2.tmp
 #
 # The default form of the transducer is optimised
@@ -82,12 +83,16 @@ $(PREFIX1).autogen.hfst: .deps/$(BASENAME).$(LANG2).hfst .deps/xfst2apertium.use
 	hfst-compose-intersect -1 .deps/$(BASENAME).$(LANG2).hfst -2 .deps/xfst2apertium.useless.generation.twol.hfst -o .deps/$@.1.tmp
 	hfst-compose-intersect -1 .deps/$@.1.tmp -2 .deps/xfst2apertium.hashtags.twol.hfst -o .deps/$@.2.tmp
 	hfst-substitute -F dev/xfst2apertium.relabel -i .deps/$@.2.tmp -o .deps/$(PREFIX1).autogen.hfst
-	hfst-lookup-optimize .deps/$(PREFIX1).autogen.hfst -o $@
+#	hfst-lookup-optimize .deps/$(PREFIX1).autogen.hfst -o $@
+	hfst-fst2fst -O -i  .deps/$(PREFIX1).autogen.hfst -o $@
+# Note: hfst-lookup-optimize is gone, use instead hfst-fst2fst -O -i infile.hfst -o outfile.hfst.ol
+
 	rm .deps/$@.1.tmp .deps/$@.2.tmp
 
 $(PREFIX2).automorf.hfst: .deps/$(PREFIX1).autogen.hfst
 	hfst-invert .deps/$(PREFIX1).autogen.hfst -o .deps/$@
-	hfst-lookup-optimize .deps/$@ -o $@
+	hfst-fst2fst -O -i .deps/$@ -o $@
+#	hfst-lookup-optimize .deps/$@ -o $@
 
 #
 # Bidix
