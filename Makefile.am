@@ -188,9 +188,10 @@ apertium_sme_smj_DATA=$(PREFIX1).automorf.hfst \
 install-data-local:
 	apertium-gen-modes modes.xml apertium-$(PREFIX1)
 	cp *.mode modes/
-	$(INSTALL_DATA) $(PREFIX1).mode $(apertium_sme_modesdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x $(apertium_sme_smjdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX1).t4x $(apertium_sme_smjdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t5x $(apertium_sme_smjdir)
+	test -d $(DESTDIR)$(apertium_sme_modesdir) || mkdir $(DESTDIR)$(apertium_sme_modesdir)
+	$(INSTALL_DATA) $(PREFIX1).mode $(DESTDIR)$(apertium_sme_modesdir)
+	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(BASENAME).$(PREFIX1).t2x $(DESTDIR)$(apertium_sme_smjdir)
+	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t3x $(BASENAME).$(PREFIX1).t4x $(DESTDIR)$(apertium_sme_smjdir)
+	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t5x $(DESTDIR)$(apertium_sme_smjdir)
 
 CLEANFILES = -rf $(TARGETS_COMMON) modes
