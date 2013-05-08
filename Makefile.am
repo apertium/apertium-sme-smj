@@ -19,35 +19,35 @@ TARGETS_COMMON = \
 # First we compile the twol and lexc files.
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -R -i $(BASENAME).$(LANG1).twol -o $@
+	hfst-twolc -f foma -R -i $(BASENAME).$(LANG1).twol -o $@
 
 .deps/$(LANG1).lexc.hfst: $(BASENAME).$(LANG1).lexc
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-lexc $(BASENAME).$(LANG1).lexc -o $@
+	hfst-lexc -f foma $(BASENAME).$(LANG1).lexc -o $@
 
 .deps/$(LANG2).twol.hfst: $(BASENAME).$(LANG2).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -R -i $(BASENAME).$(LANG2).twol -o $@
+	hfst-twolc -f foma -R -i $(BASENAME).$(LANG2).twol -o $@
 
 .deps/$(LANG2).lexc.hfst: $(BASENAME).$(LANG2).lexc
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-lexc $(BASENAME).$(LANG2).lexc -o $@
+	hfst-lexc -f foma $(BASENAME).$(LANG2).lexc -o $@
 
 #
 # These are scripts that remove unwanted tags
 #
 .deps/xfst2apertium.useless.generation.twol.hfst: dev/xfst2apertium.useless.generation.twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -R -i dev/xfst2apertium.useless.generation.twol -o $@
+	hfst-twolc -f foma -R -i dev/xfst2apertium.useless.generation.twol -o $@
 
 .deps/xfst2apertium.useless.analysis.twol.hfst: dev/xfst2apertium.useless.analysis.twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -R -i dev/xfst2apertium.useless.analysis.twol -o $@
+	hfst-twolc -f foma -R -i dev/xfst2apertium.useless.analysis.twol -o $@
 
 
 .deps/xfst2apertium.hashtags.twol.hfst: dev/xfst2apertium.hashtags.twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -R -i dev/xfst2apertium.hashtags.twol -o $@
+	hfst-twolc -f foma -R -i dev/xfst2apertium.hashtags.twol -o $@
 
 #
 # This is a generator 'apertium-sme-smj.sme.hfst'
