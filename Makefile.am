@@ -16,14 +16,22 @@ TARGETS_COMMON = \
 # Northern Sami -> Lule Sami
 ##
 
-# First we compile the twol and lexc files.
-.deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol
+.deps/$(PREFIX1).autobil.prefixes: $(PREFIX1).autobil.bin
 	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-twolc -f foma -R -i $(BASENAME).$(LANG1).twol -o $@
+	lt-print $(PREFIX1).autobil.bin | sed 's/ /@_SPACE_@/g' > .deps/$(PREFIX1).autobil.att
+	hfst-txt2fst -e ε <  .deps/$(PREFIX1).autobil.att > .deps/$(PREFIX1).autobil.hfst
+	hfst-project -p upper .deps/$(PREFIX1).autobil.hfst > .deps/$(PREFIX1).autobil.upper
+	echo " ?* " | hfst-regexp2fst > .deps/any-symbol.hfst
+	hfst-concatenate -1 .deps/$(PREFIX1).autobil.upper -2 .deps/any-symbol.hfst -o .deps/$(PREFIX1).autobil.prefixes
 
-.deps/$(LANG1).lexc.hfst: $(BASENAME).$(LANG1).lexc
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-lexc -f foma $(BASENAME).$(LANG1).lexc -o $@
+$(PREFIX1).automorf.hfst: $(BASENAME).$(LANG1).att.gz .deps/$(PREFIX1).autobil.prefixes
+	$(ZCAT) $< | hfst-txt2fst > .deps/$(LANG1).automorf.hfst
+	hfst-compose-intersect -1 .deps/$(LANG1).automorf.hfst -2 .deps/$(PREFIX1).autobil.prefixes -o .deps/$(PREFIX1).automorf.trimmed
+	hfst-fst2fst -O -i .deps/$(PREFIX1).automorf.trimmed -o $@
+
+
+
+# First we compile the twol and lexc files.
 
 .deps/$(LANG2).twol.hfst: $(BASENAME).$(LANG2).twol
 	if [ ! -d .deps ]; then mkdir .deps; fi
@@ -49,12 +57,6 @@ TARGETS_COMMON = \
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	hfst-twolc -f foma -R -i dev/xfst2apertium.hashtags.twol -o $@
 
-#
-# This is a generator 'apertium-sme-smj.sme.hfst'
-#
-.deps/$(BASENAME).$(LANG1).hfst: .deps/$(LANG1).lexc.hfst .deps/$(LANG1).twol.hfst dev/xfst2apertium.relabel 
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-compose-intersect -1 .deps/$(LANG1).lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
 
 #
 # This is a generator 'apertium-sme-smj.smj.hfst'
@@ -63,18 +65,7 @@ TARGETS_COMMON = \
 	if [ ! -d .deps ]; then mkdir .deps; fi
 	hfst-compose-intersect -1 .deps/$(LANG2).lexc.hfst -2 .deps/$(LANG2).twol.hfst -o $@
 
-#
-# The default form of the transducer is optimised
-#
-$(PREFIX1).automorf.hfst: .deps/$(BASENAME).$(LANG1).hfst .deps/xfst2apertium.useless.analysis.twol.hfst .deps/xfst2apertium.hashtags.twol.hfst dev/xfst2apertium.relabel
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	hfst-invert .deps/$(BASENAME).$(LANG1).hfst -o .deps/$(PREFIX1).automorf.hfst
-	hfst-compose-intersect -1 .deps/$(PREFIX1).automorf.hfst -2 .deps/xfst2apertium.useless.analysis.twol.hfst -o .deps/$@.1.tmp
-	hfst-compose-intersect -1 .deps/$@.1.tmp -2 .deps/xfst2apertium.hashtags.twol.hfst -o .deps/$@.2.tmp
-	hfst-substitute -F dev/xfst2apertium.relabel -i .deps/$@.2.tmp -o .deps/$(PREFIX1).automorf.hfst
-#	hfst-lookup-optimize .deps/$(PREFIX1).automorf.hfst -o $@ # next line
-	hfst-fst2fst -O -i  .deps/$(PREFIX1).automorf.hfst -o $@ # should it be .ol for -o file?
-	rm .deps/$@.1.tmp .deps/$@.2.tmp
+
 #
 # The default form of the transducer is optimised
 #
@@ -98,13 +89,9 @@ $(PREFIX2).automorf.hfst: .deps/$(PREFIX1).autogen.hfst
 # Bidix
 #
 
-.deps/$(BASENAME).$(PREFIX1).dix: $(BASENAME).$(PREFIX1).dix lexchoicebil.xsl
-	if [ ! -d .deps ]; then mkdir .deps; fi
-	xsltproc lexchoicebil.xsl $(BASENAME).$(PREFIX1).dix > $@
-
-$(PREFIX1).autobil.bin: .deps/$(BASENAME).$(PREFIX1).dix
-	apertium-validate-dictionary .deps/$(BASENAME).$(PREFIX1).dix
-	lt-comp lr .deps/$(BASENAME).$(PREFIX1).dix $@
+$(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $(BASENAME).$(PREFIX1).dix
+	lt-comp lr $(BASENAME).$(PREFIX1).dix $@
 
 #
 # Postgeneration dictionary

@@ -93,14 +93,19 @@ then
   AC_MSG_ERROR([You don't have hfst-twolc installed.])
 fi
 
-AC_PATH_PROG(HFSTSUBSTITUTE, hfst-substitute, no)
-if test x$ac_cv_path_HFSTSUBSTITUTE = x
+AC_PATH_PROG(GZCAT, gzcat, no)
+AC_PATH_PROG(ZCAT, zcat, no)
+
+if test x$ac_cv_path_GZCAT = xno
 then
-  AC_MSG_ERROR([You don't have hfst-subsitute installed.])
-fi
-if test x$ac_cv_path_HFSTSUBSTITUTE = xno
-then
-  AC_MSG_ERROR([You don't have hfst-substitute installed.])
+  if test x$ac_cv_path_ZCAT = xno
+  then
+    AC_MSG_ERROR([No working zcat installed.])
+  else
+    AC_SUBST(ZCAT,[zcat])
+  fi
+else
+  AC_SUBST(ZCAT,[gzcat])
 fi
 
 
