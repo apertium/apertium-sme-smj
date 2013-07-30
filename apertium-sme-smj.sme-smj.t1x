@@ -3,9 +3,9 @@
 
 <section-def-cats>
   <def-cat n="nom">
-     <cat-item tags="N.*"/>
-     <cat-item tags="V.*.Der3.Der_n.N.*"/>
-     <cat-item tags="V.*.Der2.Actor.N.*"/>
+     <cat-item tags="n.*"/>
+     <cat-item tags="v.*.der_n.n.*"/>
+     <cat-item tags="v.*.actor.n.*"/>
   </def-cat>
   <def-cat n="genmod">
      <cat-item tags="N.*.Gen.@→N"/>
@@ -62,12 +62,12 @@
   </def-cat>
 
   <def-cat n="cnjcoo">	
-     <cat-item tags="CC"/>
-     <cat-item tags="CC.*"/>
+     <cat-item tags="cc"/>
+     <cat-item tags="cc.*"/>
   </def-cat>
   <def-cat n="cnjsub">	
-     <cat-item tags="CS"/>
-     <cat-item tags="CS.*"/>
+     <cat-item tags="cs"/>
+     <cat-item tags="cs.*"/>
   </def-cat>
   
   <def-cat n="CNP">
@@ -106,16 +106,16 @@
 
 <section-def-attrs>
   <def-attr n="a_nom">
-     <attr-item tags="N"/>
-     <attr-item tags="N.Prop"/>
-     <attr-item tags="N.Prop.Org"/>
-     <attr-item tags="N.Prop.Mal"/>
-     <attr-item tags="N.Prop.Sur"/>
-     <attr-item tags="N.Prop.Plc"/>
-     <attr-item tags="V.IV.Der3.Der_n.N"/>
-     <attr-item tags="V.TV.Der3.Der_n.N"/>
-     <attr-item tags="V.IV.Der2.Actor.N"/>
-     <attr-item tags="V.TV.Der2.Actor.N"/>
+     <attr-item tags="n"/>
+     <attr-item tags="n.prop"/>
+     <attr-item tags="n.prop.org"/>
+     <attr-item tags="n.prop.mal"/>
+     <attr-item tags="n.prop.sur"/>
+     <attr-item tags="n.prop.plc"/>
+     <attr-item tags="v.iv.der_n.n"/>
+     <attr-item tags="v.tv.der_n.n"/>
+     <attr-item tags="v.iv.actor.n"/>
+     <attr-item tags="v.tv.actor.n"/>
   </def-attr>
   
   <def-attr n="a_genmod">
@@ -168,8 +168,8 @@
   </def-attr>
 
   <def-attr n="a_cnj">
-     <attr-item tags="CC"/>
-     <attr-item tags="CS"/>
+     <attr-item tags="cc"/>
+     <attr-item tags="cs"/>
   </def-attr>
 
   <def-attr n="a_pronom">
