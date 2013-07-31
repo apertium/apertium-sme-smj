@@ -93,6 +93,16 @@ then
   AC_MSG_ERROR([You don't have hfst-twolc installed.])
 fi
 
+AC_PATH_PROG(LTPRINT, lt-print, no)
+if test x$ac_cv_path_LTPRINT = x
+then
+  AC_MSG_ERROR([You don't have lt-print installed.])
+fi
+if test x$ac_cv_path_LTPRINT = xno
+then
+  AC_MSG_ERROR([You don't have lt-print installed.])
+fi
+
 AC_PATH_PROG(GZCAT, gzcat, no)
 AC_PATH_PROG(ZCAT, zcat, no)
 
