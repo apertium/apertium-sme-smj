@@ -10,22 +10,8 @@ AC_PROG_LN_S
 AC_PROG_AWK
 AC_CONFIG_HEADER([config])
 
-AC_DEFUN([PKG_CHECK_LTTOOLBOX], [
-  LTTOOLBOX_VER=0
-  PKG_CHECK_MODULES(LTTOOLBOX, lttoolbox-3.1 >= 3.1.0,
-  [
-    LTTOOLBOX_VER=31
-  ],
-  [
-    PKG_CHECK_MODULES(LTTOOLBOX, lttoolbox-3.2 >= 3.2.0)
-    LTTOOLBOX_VER=32
-  ])
-  AC_SUBST(LTTOOLBOX_VER)
-
-m4_define([required_apertium_version], [3.2.0])
-PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version, [], [PKG_CHECK_MODULES(APERTIUM,   apertium-3.2 >= required_apertium_version)])
-
-PKG_CHECK_LTTOOLBOX
+m4_define([required_apertium_version], [3.3.0])
+PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version)
 
 APERTIUM_VER=30
 
