@@ -4,25 +4,24 @@
 
 AC_PREREQ(2.52)
 
-AC_INIT([apertium-sme-smj], [0.1.0], [giellalinda@users.sourceforge.net])
-AM_INIT_AUTOMAKE([apertium-sme-smj], [0.1.0], no-define)
+m4_define([required_apertium_version], [3.3.0])
+m4_define([required_lttoolbox_version], [3.3.0])
+
+AC_INIT([apertium-sme-nob], [0.5.1], [trondtr@users.sourceforge.net])
+AM_INIT_AUTOMAKE([apertium-sme-nob], [0.5.1], no-define)
 AC_PROG_LN_S
 AC_PROG_AWK
-AC_CONFIG_HEADER([config])
 
-m4_define([required_apertium_version], [3.3.0])
-PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version)
+PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version, [], [PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version)])
+PKG_CHECK_MODULES(LTTOOLBOX,   lttoolbox >= required_lttoolbox_version, [], [PKG_CHECK_MODULES(LTTOOLBOX,   lttoolbox >= required_lttoolbox_version)])
 
-APERTIUM_VER=30
-
-AC_SUBST(APERTIUM_VER)
 
 AC_PATH_PROG(CGCOMP, cg-comp, no)
 if test x$ac_cv_path_CGCOMP = x
 then
   AC_MSG_ERROR([You don't have cg-comp installed.])
 fi
-if test x$ac_cv_path_CGPROC = xno
+if test x$ac_cv_path_CGCOMP = xno
 then
   AC_MSG_ERROR([You don't have cg-comp installed.])
 fi
@@ -57,24 +56,14 @@ then
   AC_MSG_ERROR([You don't have hfst-lexc installed.])
 fi
 
-AC_PATH_PROG(HFSTTWOLC, hfst-twolc, no)
-if test x$ac_cv_path_HFSTTWOLC = x
+AC_PATH_PROG(XSLTPROC, xsltproc, no)
+if test x$ac_cv_path_XSLTPROC = x
 then
-  AC_MSG_ERROR([You don't have hfst-twolc installed.])
+  AC_MSG_ERROR([You don't have xsltproc installed.])
 fi
-if test x$ac_cv_path_HFSTTWOLC = xno
+if test x$ac_cv_path_XSLTPROC = xno
 then
-  AC_MSG_ERROR([You don't have hfst-twolc installed.])
-fi
-
-AC_PATH_PROG(LTPRINT, lt-print, no)
-if test x$ac_cv_path_LTPRINT = x
-then
-  AC_MSG_ERROR([You don't have lt-print installed.])
-fi
-if test x$ac_cv_path_LTPRINT = xno
-then
-  AC_MSG_ERROR([You don't have lt-print installed.])
+  AC_MSG_ERROR([You don't have xsltproc installed.])
 fi
 
 AC_PATH_PROG(GZCAT, gzcat, no)
@@ -93,6 +82,12 @@ else
 fi
 
 
+m4_ifdef([AP_CHECK_LING],[],[AC_MSG_ERROR([AP_CHECK_LING not defined, is apertium.m4 in ACLOCAL_PATH? See: http://wiki.apertium.org/wiki/Installation_troubleshooting])])
+
+AP_CHECK_LING([1], [giella-sme])
+AP_CHECK_LING([2], [giella-smj])
+
+AP_MKINCLUDE
 
 
 AC_OUTPUT([Makefile])
