@@ -2,11 +2,14 @@
 <modes>
   <mode name="sme-smj" install="yes">
     <pipeline>
-      <program name="hfst-proc -w">
+      <program name="hfst-proc -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc">
-        <file name="sme-smj.rlx.bin"/> 
+      <program name="cg-proc -w">
+        <file name="sme-smj.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="sme-smj.syn.rlx.bin"/>
       </program>
       <program name="cg-proc -w">
         <file name="sme-smj.autolex.bin"/> 
