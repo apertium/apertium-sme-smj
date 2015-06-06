@@ -4,81 +4,81 @@
 <section-def-cats>
   <def-cat n="nom">
      <cat-item tags="n.*"/>
-     <cat-item tags="v.*.der_n.n.*"/>
-     <cat-item tags="v.*.actor.n.*"/>
+     <cat-item tags="vblex.*.der_n.n.*"/>
+     <cat-item tags="vblex.*.actor.n.*"/>
   </def-cat>
   <def-cat n="genmod">
-     <cat-item tags="N.*.Gen.@→N"/>
-     <cat-item tags="N.*.Gen.@→A"/>
-     <cat-item tags="N.*.Gen.*.@→N"/>
-     <cat-item tags="N.*.Gen.*.@→A"/>
-     <cat-item tags="Pron.*.*.Gen.@→N"/>
-     <cat-item tags="Pron.*.*.Gen.@→A"/>
-     <cat-item tags="A.*.Gen.@→N"/>
-     <cat-item tags="A.*.Gen.@→A"/>
+     <cat-item tags="n.*.gen.@→N"/>
+     <cat-item tags="n.*.gen.@→A"/>
+     <cat-item tags="n.*.gen.*.@→N"/>
+     <cat-item tags="n.*.gen.*.@→A"/>
+     <cat-item tags="pron.*.*.gen.@→N"/>
+     <cat-item tags="pron.*.*.gen.@→A"/>
+     <cat-item tags="a.*.gen.@→N"/>
+     <cat-item tags="a.*.gen.@→A"/>
   </def-cat>
   <def-cat n="attrmod">
-     <cat-item tags="A.Attr.@→N"/>
-     <cat-item tags="A.*.Attr.@→N"/>
-     <cat-item tags="Num.*.*.@→N"/> <!--numerals as modifiers-->
-     <cat-item tags="Num.*.*.*.@→N"/>
+     <cat-item tags="a.attr.@→N"/>
+     <cat-item tags="a.*.attr.@→N"/>
+     <cat-item tags="num.*.*.@→N"/> <!--numerals as modifiers-->
+     <cat-item tags="num.*.*.*.@→N"/>
   </def-cat>
   <def-cat n="num">
-     <cat-item tags="Num"/>
-     <cat-item tags="Num.*"/>
+     <cat-item tags="num"/>
+     <cat-item tags="num.*"/>
   </def-cat>
   <def-cat n="num_mod"> <!--modifiers of numerals-->
-     <cat-item tags="*.*.*.@Num←"/>
-     <cat-item tags="*.*.*.*.@Num←"/>
+     <cat-item tags="*.*.*.@NUM←"/>
+     <cat-item tags="*.*.*.*.@NUM←"/>
   </def-cat>
   <def-cat n="pcle">
-     <cat-item tags="Pcle.*"/>
-     <cat-item tags="Qst.Pcle.*"/>
+     <cat-item tags="pcle.*"/>
+     <cat-item tags="qst.pcle.*"/>
   </def-cat>
   <def-cat n="adv">
-     <cat-item tags="Adv"/>
-     <cat-item tags="Adv.*"/>
-     <cat-item tags="A.Der2.Der_at.Adv"/>
-     <cat-item tags="A.Der2.Der_at.Adv.*"/>
+     <cat-item tags="adv"/>
+     <cat-item tags="adv.*"/>
+     <cat-item tags="a.der2.der_at.adv"/>
+     <cat-item tags="a.der2.der_at.adv.*"/>
   </def-cat>
   <def-cat n="adj">
-     <cat-item tags="A.*"/>
+     <cat-item tags="a.*"/>
   </def-cat>
   <def-cat n="verb">
-     <cat-item tags="V.*"/>
+     <cat-item tags="vblex.*"/>
   </def-cat>
   <def-cat n="inf_p">
-     <cat-item tags="V.*.Inf.@←OBJ"/>
-     <cat-item tags="V.*.Inf.@SUBJ→"/>
+     <cat-item tags="vblex.*.inf.@←OBJ"/>
+     <cat-item tags="vblex.*.inf.@SUBJ→"/>
   </def-cat>
   <def-cat n="inf_mod">
-     <cat-item tags="N.*.*.@-FSUBJ→"/>
-     <cat-item tags="N.*.*.@-FOBJ→"/>
-     <cat-item tags="N.*.*.@-F←OBJ"/>
+     <cat-item tags="n.*.*.@-FSUBJ→"/>
+     <cat-item tags="n.*.*.@-FOBJ→"/>
+     <cat-item tags="n.*.*.@-F←OBJ"/>
   </def-cat>
 
   <def-cat n="pronom">
-     <cat-item tags="Pron.*"/>
+     <cat-item tags="pron.*"/>
   </def-cat>
 
   <def-cat n="cnjcoo">	
-     <cat-item tags="cc"/>
-     <cat-item tags="cc.*"/>
+     <cat-item tags="cnjcoo"/>
+     <cat-item tags="cnjcoo.*"/>
   </def-cat>
   <def-cat n="cnjsub">	
-     <cat-item tags="cs"/>
-     <cat-item tags="cs.*"/>
+     <cat-item tags="cnjsub"/>
+     <cat-item tags="cnjsub.*"/>
   </def-cat>
   
   <def-cat n="CNP">
-    <cat-item tags="CC.@CNP"/>
+    <cat-item tags="cnjcoo.@CNP"/>
   </def-cat>
   
    <def-cat n="adpos">	
-     <cat-item tags="Po"/>
-     <cat-item tags="Po.*"/>
-     <cat-item tags="Pr"/>
-     <cat-item tags="Pr.*"/>
+     <cat-item tags="po"/>
+     <cat-item tags="po.*"/>
+     <cat-item tags="pr"/>
+     <cat-item tags="pr.*"/>
   </def-cat>
   
    <def-cat n="po_mod">	
@@ -94,12 +94,12 @@
   </def-cat>
   
   <def-cat n="copula">
-    <cat-item lemma="leat" tags="V.IV.*"/>
+    <cat-item lemma="leat" tags="vblex.iv.*"/>
   </def-cat>
 
   <def-cat n="sent">
-     <cat-item tags="CLB"/>
-     <cat-item tags="CLB.*"/>
+     <cat-item tags="clb"/>
+     <cat-item tags="clb.*"/>
   </def-cat>
 
 </section-def-cats>
@@ -112,186 +112,186 @@
      <attr-item tags="n.prop.mal"/>
      <attr-item tags="n.prop.sur"/>
      <attr-item tags="n.prop.plc"/>
-     <attr-item tags="v.iv.der_n.n"/>
-     <attr-item tags="v.tv.der_n.n"/>
-     <attr-item tags="v.iv.actor.n"/>
-     <attr-item tags="v.tv.actor.n"/>
+     <attr-item tags="vblex.iv.der_n.n"/>
+     <attr-item tags="vblex.tv.der_n.n"/>
+     <attr-item tags="vblex.iv.actor.n"/>
+     <attr-item tags="vblex.tv.actor.n"/>
   </def-attr>
   
   <def-attr n="a_genmod">
-     <attr-item tags="N"/>
-     <attr-item tags="N.Prop"/>
-     <attr-item tags="N.Prop.Mal"/>
-     <attr-item tags="N.Prop.Org"/>
-     <attr-item tags="N.Prop.Sur"/>
-     <attr-item tags="N.Prop.Plc"/>
-     <attr-item tags="Pron.Pers"/>
-     <attr-item tags="Pron"/>
-     <attr-item tags="A"/>
+     <attr-item tags="n"/>
+     <attr-item tags="n.prop"/>
+     <attr-item tags="n.prop.mal"/>
+     <attr-item tags="n.prop.org"/>
+     <attr-item tags="n.prop.sur"/>
+     <attr-item tags="n.prop.plc"/>
+     <attr-item tags="pron.pers"/>
+     <attr-item tags="pron"/>
+     <attr-item tags="a"/>
   </def-attr>
 
   <def-attr n="a_adj">
-     <attr-item tags="A"/>
-     <attr-item tags="A.Ord"/>
-     <attr-item tags="A.Ord.Attr"/>
-     <attr-item tags="A.Attr"/>
-     <attr-item tags="A.Adv"/>
+     <attr-item tags="a"/>
+     <attr-item tags="a.ord"/>
+     <attr-item tags="a.ord.attr"/>
+     <attr-item tags="a.attr"/>
+     <attr-item tags="a.adv"/>
   </def-attr>
   
   <def-attr n="a_attrmod">
-     <attr-item tags="A.Attr"/>
-     <attr-item tags="A.Ord.Attr"/> <!-- ordinals -->
-     <attr-item tags="Num"/>
+     <attr-item tags="a.attr"/>
+     <attr-item tags="a.ord.attr"/> <!-- ordinals -->
+     <attr-item tags="num"/>
   </def-attr>
 
   <def-attr n="a_attr">
-     <attr-item tags="Attr"/>
+     <attr-item tags="attr"/>
   </def-attr>
 
   <def-attr n="a_adv">
-     <attr-item tags="Adv"/>
-     <attr-item tags="A.Der2.Der_at.Adv"/>
+     <attr-item tags="adv"/>
+     <attr-item tags="a.der2.der_at.adv"/>
   </def-attr>
 
   <def-attr n="a_num">
-     <attr-item tags="Num"/>
+     <attr-item tags="num"/>
   </def-attr>
 
   <def-attr n="a_adpos">
-     <attr-item tags="Po"/>
-     <attr-item tags="Pr"/>
+     <attr-item tags="po"/>
+     <attr-item tags="pr"/>
   </def-attr>
 
   <def-attr n="a_pcle">
-     <attr-item tags="Pcle"/>
-     <attr-item tags="Qst.Pcle"/>
+     <attr-item tags="pcle"/>
+     <attr-item tags="qst.pcle"/>
   </def-attr>
 
   <def-attr n="a_cnj">
-     <attr-item tags="cc"/>
-     <attr-item tags="cs"/>
+     <attr-item tags="cnjcoo"/>
+     <attr-item tags="cnjsub"/>
   </def-attr>
 
   <def-attr n="a_pronom">
-     <attr-item tags="Pron"/>
-     <attr-item tags="Pron.Pers"/>
-     <attr-item tags="Pron.Rel"/>
-     <attr-item tags="Pron.Refl"/>
-     <attr-item tags="Pron.Interr"/>
-     <attr-item tags="Pron.Dem"/>
-     <attr-item tags="Pron.Indef"/>
-     <attr-item tags="Pron.Indef.Attr"/> <!-- muhtun -->
+     <attr-item tags="pron"/>
+     <attr-item tags="pron.pers"/>
+     <attr-item tags="pron.rel"/>
+     <attr-item tags="pron.refl"/>
+     <attr-item tags="pron.interr"/>
+     <attr-item tags="pron.dem"/>
+     <attr-item tags="pron.indef"/>
+     <attr-item tags="pron.indef.attr"/> <!-- muhtun -->
   </def-attr>
 
 
   <def-attr n="a_inf_p">
-     <attr-item tags="V.TV"/>
-     <attr-item tags="V.IV"/>
+     <attr-item tags="vblex.tv"/>
+     <attr-item tags="vblex.iv"/>
   </def-attr>
   <def-attr n="a_inf_mod">
-     <attr-item tags="N"/>
+     <attr-item tags="n"/>
   </def-attr>
   <def-attr n="a_verb">
-     <attr-item tags="V"/>
-     <attr-item tags="V.IV"/>
-     <attr-item tags="V.TV"/>
+     <attr-item tags="vblex"/>
+     <attr-item tags="vblex.iv"/>
+     <attr-item tags="vblex.tv"/>
   </def-attr>
 
   <def-attr n="gen"> <!-- for proper names -->
-     <attr-item tags="Masc"/>
-     <attr-item tags="Fem"/>
+     <attr-item tags="masc"/>
+     <attr-item tags="fem"/>
   </def-attr>
 
   <def-attr n="nbr">
-     <attr-item tags="Sg"/>
-     <attr-item tags="Du"/>
-     <attr-item tags="Pl"/>
-     <attr-item tags="NN"/>
+     <attr-item tags="sg"/>
+     <attr-item tags="du"/>
+     <attr-item tags="pl"/>
+     <attr-item tags="nn"/>
   </def-attr>
 
   <def-attr n="case">
-     <attr-item tags="Nom"/>
-     <attr-item tags="Acc"/>
-     <attr-item tags="Gen"/>
-     <attr-item tags="Com"/>
-     <attr-item tags="Ess"/>
-     <attr-item tags="Ill"/>
-     <attr-item tags="Loc"/>
-     <attr-item tags="Ine"/>
-     <attr-item tags="Ela"/>
+     <attr-item tags="nom"/>
+     <attr-item tags="acc"/>
+     <attr-item tags="gen"/>
+     <attr-item tags="com"/>
+     <attr-item tags="ess"/>
+     <attr-item tags="ill"/>
+     <attr-item tags="loc"/>
+     <attr-item tags="ine"/>
+     <attr-item tags="ela"/>
   </def-attr>
 
   <def-attr n="degree">
-     <attr-item tags="Comp"/>
-     <attr-item tags="Superl"/>
+     <attr-item tags="comp"/>
+     <attr-item tags="superl"/>
   </def-attr>
 
   <def-attr n="temps">
-     <attr-item tags="Inf"/>
-     <attr-item tags="Prs"/>
-     <attr-item tags="Prt"/>
-     <attr-item tags="PrfPrc"/>
+     <attr-item tags="inf"/>
+     <attr-item tags="prs"/>
+     <attr-item tags="prt"/>
+     <attr-item tags="prfprc"/>
   </def-attr>
   
    <def-attr n="conneg">
-     <attr-item tags="ConNeg"/>
+     <attr-item tags="conneg"/>
   </def-attr>
 
   <def-attr n="mood">
-    <attr-item tags="Ind"/>
-    <attr-item tags="Imprt"/>
-    <attr-item tags="Pot"/>
-    <attr-item tags="Cond"/>
-    <attr-item tags="Neg"/> 
-    <attr-item tags="Neg.Ind"/> 
+    <attr-item tags="ind"/>
+    <attr-item tags="imprt"/>
+    <attr-item tags="pot"/>
+    <attr-item tags="cond"/>
+    <attr-item tags="neg"/> 
+    <attr-item tags="neg.ind"/> 
   </def-attr>
   
   <def-attr n="poss">
-     <attr-item tags="PxSg1"/>
-     <attr-item tags="PxSg2"/>
-     <attr-item tags="PxSg3"/>
-     <attr-item tags="PxDu1"/>
-     <attr-item tags="PxDu2"/>
-     <attr-item tags="PxDu3"/>
-     <attr-item tags="PxPl1"/>
-     <attr-item tags="PxPl2"/>
-     <attr-item tags="PxPl3"/>
+     <attr-item tags="pxsg1"/>
+     <attr-item tags="pxsg2"/>
+     <attr-item tags="pxsg3"/>
+     <attr-item tags="pxdu1"/>
+     <attr-item tags="pxdu2"/>
+     <attr-item tags="pxdu3"/>
+     <attr-item tags="pxpl1"/>
+     <attr-item tags="pxpl2"/>
+     <attr-item tags="pxpl3"/>
   </def-attr>
   
   <def-attr n="voice">
-    <attr-item tags="PassL"/>
+    <attr-item tags="passl"/>
   </def-attr>
   
   <def-attr n="derivation">
-    <attr-item tags="Actio"/>
-    <attr-item tags="Actor"/>
+    <attr-item tags="actio"/>
+    <attr-item tags="actor"/>
   </def-attr>
 
   <def-attr n="pers">
-     <attr-item tags="Sg1"/>
-     <attr-item tags="Sg2"/>
-     <attr-item tags="Sg3"/>
-     <attr-item tags="Du1"/>
-     <attr-item tags="Du2"/>
-     <attr-item tags="Du3"/>
-     <attr-item tags="Pl1"/>
-     <attr-item tags="Pl2"/>
-     <attr-item tags="Pl3"/>
+     <attr-item tags="sg1"/>
+     <attr-item tags="sg2"/>
+     <attr-item tags="sg3"/>
+     <attr-item tags="du1"/>
+     <attr-item tags="du2"/>
+     <attr-item tags="du3"/>
+     <attr-item tags="pl1"/>
+     <attr-item tags="pl2"/>
+     <attr-item tags="pl3"/>
   </def-attr>
   
   <def-attr n="foc">
-    <attr-item tags="Foc_ba"/>
-    <attr-item tags="Foc_ban"/>
-    <attr-item tags="Foc_bat"/>
-    <attr-item tags="Foc_be"/>
-    <attr-item tags="Foc_ge"/>
-    <attr-item tags="Foc_gen"/>
-    <attr-item tags="Foc_ges"/>
-    <attr-item tags="Foc_gis"/>
-    <attr-item tags="Foc_hal"/>
-    <attr-item tags="Foc_han"/>
-    <attr-item tags="Foc_naj"/>
-    <attr-item tags="Foc_son"/>
+    <attr-item tags="foc_ba"/>
+    <attr-item tags="foc_ban"/>
+    <attr-item tags="foc_bat"/>
+    <attr-item tags="foc_be"/>
+    <attr-item tags="foc_ge"/>
+    <attr-item tags="foc_gen"/>
+    <attr-item tags="foc_ges"/>
+    <attr-item tags="foc_gis"/>
+    <attr-item tags="foc_hal"/>
+    <attr-item tags="foc_han"/>
+    <attr-item tags="foc_naj"/>
+    <attr-item tags="foc_son"/>
   </def-attr>
 
 
@@ -308,9 +308,9 @@
      <attr-item tags="@←SUBJ"/>
      <attr-item tags="@SPRED→"/>
      <attr-item tags="@←SPRED"/>
-     <attr-item tags="@\+FMAINV"/>
+     <attr-item tags="@+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
-     <attr-item tags="@\+FAUXV"/>
+     <attr-item tags="@+FAUXV"/>
      <attr-item tags="@ADVL"/>
      <attr-item tags="@←ADVL"/>
      <attr-item tags="@ADVL→"/>
@@ -378,14 +378,14 @@
         <test>
           <equal>
             <clip pos="1" side="sl" part="foc"/>
-            <lit-tag v="Foc_bat"/>
+            <lit-tag v="foc_bat"/>
           </equal>
         </test>
         <let>
           <var n="focus_pcle"/>
           <concat>
             <lit v=" ^gus"/>
-            <lit-tag v="PCLE"/>
+            <lit-tag v="pcle"/>
             <lit v="$"/>
           </concat>
         </let>
@@ -399,11 +399,11 @@
           <or>
             <equal>
               <clip pos="1" side="sl" part="foc"/>
-              <lit-tag v="Foc_han"/>
+              <lit-tag v="foc_han"/>
             </equal>
             <equal>
               <clip pos="1" side="sl" part="foc"/>
-              <lit-tag v="Foc_hal"/>
+              <lit-tag v="foc_hal"/>
             </equal>
           </or>
         </test>
@@ -411,7 +411,7 @@
           <var n="focus_pcle"/>
           <concat>
             <lit v=" ^ham"/>
-            <lit-tag v="PCLE"/>
+            <lit-tag v="pcle"/>
             <lit v="$"/>
           </concat>
         </let>
@@ -425,11 +425,11 @@
           <or>
             <equal>
               <clip pos="1" side="sl" part="foc"/>
-              <lit-tag v="Foc_gis"/>
+              <lit-tag v="foc_gis"/>
             </equal>
             <equal>
               <clip pos="1" side="sl" part="foc"/>
-              <lit-tag v="Foc_ges"/>
+              <lit-tag v="foc_ges"/>
             </equal>
           </or>
         </test>
@@ -437,7 +437,7 @@
           <var n="focus_pcle"/>
           <concat>
             <lit v=" ^gis"/>
-            <lit-tag v="PCLE"/>
+            <lit-tag v="pcle"/>
             <lit v="$"/>
           </concat>
         </let>
@@ -457,7 +457,7 @@
           <var n="focus_pcle"/>
           <concat>
             <lit v=" ^aj"/>
-            <lit-tag v="PCLE"/>
+            <lit-tag v="pcle"/>
             <lit v="$"/>
           </concat>
         </let>
@@ -502,11 +502,11 @@
             <or>
               <equal>
                 <clip pos="1" side="tl" part="nbr"/>
-                <lit-tag v="Sg"/>
+                <lit-tag v="sg"/>
               </equal>
               <equal>
                 <clip pos="1" side="tl" part="nbr"/>
-                <lit-tag v="Pl"/>
+                <lit-tag v="pl"/>
               </equal>
             </or>
           </not>
@@ -515,7 +515,7 @@
           <clip pos="1" side="tl" part="a_nom"/>
           <concat>
             <clip pos="1" side="tl" part="a_nom"/>
-            <lit-tag v="NN"/>
+            <lit-tag v="nn"/>
           </concat>
         </let>
       </when>
@@ -538,22 +538,22 @@
               <or>
                 <equal>
                   <clip pos="1" side="sl" part="mood"/>
-                  <lit-tag v="Neg.Ind"/>
+                  <lit-tag v="neg.ind"/>
                 </equal>
                 <equal>
                   <clip pos="1" side="sl" part="mood"/>
-                  <lit-tag v="Neg"/>
+                  <lit-tag v="neg"/>
                 </equal>
               </or>
           </and>
             </test>
             <let>
           <var n="cur_verb_temps"/>
-          <lit-tag v="Prs"/>
+          <lit-tag v="prs"/>
         </let>
             <let>
           <clip pos="1" side="tl" part="mood"/>
-          <lit-tag v="Neg.Ind"/>
+          <lit-tag v="neg.ind"/>
         </let>
         </when>
         <when>
@@ -561,11 +561,11 @@
             <and>
               <equal>
                 <clip pos="1" side="sl" part="conneg"/>
-                <lit-tag v="ConNeg"/>
+                <lit-tag v="conneg"/>
               </equal>
               <equal>
                 <clip pos="1" side="sl" part="temps"/>
-                <lit-tag v="Prs"/>
+                <lit-tag v="prs"/>
               </equal>
             </and>
         </test>
@@ -586,7 +586,7 @@
             <and>
               <equal>
                 <clip pos="1" side="sl" part="case"/>
-                <lit-tag v="Loc"/>
+                <lit-tag v="loc"/>
               </equal>
               <equal>
                 <clip pos="1" side="sl" part="syntag"/>
@@ -601,19 +601,19 @@
         </test>
         <let>
           <clip pos="1" side="tl" part="case"/>
-          <lit-tag v="Ine"/>
+          <lit-tag v="ine"/>
         </let>
       </when>
       <when>
         <test>
           <equal>
             <clip pos="1" side="sl" part="case"/>
-            <lit-tag v="Loc"/>
+            <lit-tag v="loc"/>
           </equal>
         </test>
         <let>
           <clip pos="1" side="tl" part="case"/>
-          <lit-tag v="Ela"/>
+          <lit-tag v="ela"/>
         </let>
       </when>
     </choose>
@@ -636,7 +636,7 @@
        <out>
          <chunk namefrom="adverb" case="caseFirstWord">
            <tags>
-             <tag><lit-tag v="Adv"/></tag>
+             <tag><lit-tag v="ADV"/></tag>
              <tag><clip pos="1" side="sl" part="syntag"/></tag>
            </tags>
            <lu>

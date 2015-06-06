@@ -13,13 +13,13 @@
 
   <section-def-attrs>
     <def-attr n="a_nom">
-      <attr-item tags="N"/>
-      <attr-item tags="N.Prop"/>
+      <attr-item tags="n"/>
+      <attr-item tags="n.prop"/>
     </def-attr>
     <def-attr n="nbr">
-      <attr-item tags="Sg"/>
-      <attr-item tags="Pl"/>
-      <attr-item tags="NN"/>
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="nn"/>
     </def-attr>
   </section-def-attrs>
 
@@ -42,13 +42,13 @@
               <not>
                 <equal>
                   <clip pos="1" part="nbr"/>
-                  <lit-tag v="Sg"/>
+                  <lit-tag v="sg"/>
                 </equal>
               </not>
               <not>
                 <equal>
                   <clip pos="1" part="nbr"/>
-                  <lit-tag v="Pl"/>
+                  <lit-tag v="pl"/>
                 </equal>
               </not>
              </and>
@@ -79,13 +79,13 @@
               <not>
                 <equal>
                   <clip pos="2" part="nbr"/>
-                  <lit-tag v="Sg"/>
+                  <lit-tag v="sg"/>
                 </equal>
               </not>
               <not>
                 <equal>
                   <clip pos="2" part="nbr"/>
-                  <lit-tag v="Pl"/>
+                  <lit-tag v="pl"/>
                 </equal>
               </not>
              </and>
