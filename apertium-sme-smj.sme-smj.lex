@@ -2281,12 +2281,12 @@ SECTION
     # 
 
 # S0: klássa vs. luohkka
-SUBSTITUTE ("luohkká") ("luohkká:1") ("luohkká" N) (*1 EDUCATION OR LESSON OR ("oahpaheaddji"));
+SELECT ("klássa") (0 ("<luohkká>") + N) (*1 EDUCATION OR LESSON OR ("oahpaheaddji"));
     # 
-SUBSTITUTE ("luohkká") ("luohkká:1") ("luohkká" N) (*-1 EDUCATION OR LESSON OR ("oahpaheaddji"));
+SELECT ("klássa") (0 ("<luohkká>") + N) (*-1 EDUCATION OR LESSON OR ("oahpaheaddji"));
     # 
     
-SUBSTITUTE ("luohkká") ("luohkká:1") ("luohkká" N) (-1 Num);
+SELECT ("klássa") (0 ("<luohkká>") + N) (-1 Num);
     # Son lea vuosttaš luohkás.
 
 
@@ -2302,9 +2302,9 @@ SUBSTITUTE ("luohkká") ("luohkká:1") ("luohkká" N) (-1 Num);
     # Mun ráhkadan ášši. - Mån ássjev dagáv. 
 
 # S0: stiellit vs. dahkat
-SUBSTITUTE ("ráhkadit") ("ráhkadit:1") ("ráhkadit" V TV) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
+SELECT ("stiellit") (0 ("<ráhkadit>") + TV) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
     # Mun ráhkadan biepmu.
-SUBSTITUTE ("ráhkadit") ("ráhkadit:1") ("ráhkadit" V TV) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
+SELECT ("stiellit") (0 ("<ráhkadit>") + TV) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
     # Mun biepmu ráhkadan.
  
 
@@ -2316,9 +2316,9 @@ SUBSTITUTE ("ráhkadit") ("ráhkadit:1") ("ráhkadit" V TV) (0 FMAINV)(*-1 FOOD 
     #  Orru jaska!
     
 # S0: vuojnnet vs. (årrot)
-SUBSTITUTE ("orrut") ("orrut:1") ("orrut"ri V IV) (1 ("leat") LINK 0 Ess);
+SELECT ("vuojnnet") (0 ("<orrut>"i) + IV) (1 ("leat") LINK 0 Ess);
     # Orru leamen buorre.
-SUBSTITUTE ("orrut") ("orrut:1") ("orrut"ri V IV) (1 (@←SPRED));
+SELECT ("vuojnnet") (0 ("<orrut>"i) + IV) (1 (@←SPRED));
     # Orru buorre.
 
 ## S1: årrot    
@@ -2344,9 +2344,9 @@ SUBSTITUTE ("orrut") ("orrut:1") ("orrut"ri V IV) (1 (@←SPRED));
 #    # Mo don ealát?
 
 # S1: iellet (åndelig)    
-SUBSTITUTE ("eallit") ("eallit:1") ("eallit"ri V IV) (1 ("agálaččat"));
+SELECT ("iellet") (0 ("<eallit>"i) + IV) (1 ("agálaččat"));
     # Son eallá agálaččat.
-SUBSTITUTE ("eallit") ("eallit:1") ("eallit"ri V IV) (-1 ("agálaččat"));
+SELECT ("iellet") (0 ("<eallit>"i) + IV) (-1 ("agálaččat"));
     # Son agálaččat eallá.
     
     
@@ -2361,7 +2361,7 @@ SUBSTITUTE ("eallit") ("eallit:1") ("eallit"ri V IV) (-1 ("agálaččat"));
     
 # S0: mujttalit (vs. subtsastit)   
  
-SUBSTITUTE ("muitalit") ("muitalit:1") ("muitalit" V TV) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
+SELECT ("mujttalit") (0 ("<muitalit>") + TV) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
     # Son muitala máidnasiid.
     # 
 
@@ -2377,7 +2377,7 @@ SUBSTITUTE ("muitalit") ("muitalit:1") ("muitalit" V TV) (*1 (@OBJ) LINK 0 ("má
     # Default
     
 # S0: jasskat (vs. buorre)    
-SUBSTITUTE ("buorre") ("buorre:1") ("buorre" A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
+SELECT ("jasskat") (0 ("<buorre>") + A) (0 Attr)(1 ("iešdovdu") OR ("oamedovdu") OR ("referánsaeaktu"));
     # Giella lea mearrideaddji oassi addin dihte buori iešdovddu.
 
 
@@ -2389,7 +2389,7 @@ SUBSTITUTE ("buorre") ("buorre:1") ("buorre" A) (0 Attr)(1 ("iešdovdu") OR ("oa
     # Son lea čeahppi.
     
 #SUBSTITUTE (A) (A S1) ("čeahppi"ri A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
-SUBSTITUTE ("čeahppi") ("čeahppi:1") ("čeahppi" A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
+SELECT ("tjiehppe") (0 ("<čeahppi>") + A) (1 Inf LINK 0 ("borrat") OR ("juhkat"));
     # Son lea čeahppi borrat.
     # subsistence words where it is not the talent that is stressed
     
@@ -2406,17 +2406,18 @@ SUBSTITUTE ("čeahppi") ("čeahppi:1") ("čeahppi" A) (1 Inf LINK 0 ("borrat") O
 #SUBSTITUTE ("boaris:0") ("boaris:0") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
 
 # S1: boares
-SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A Attr) (*1 N BARRIER NOT-Attr LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
-SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
+
+SELECT ("boares") (0 ("<boaris>"i) + A + Attr) (*1 N BARRIER NOT-Attr LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
+SELECT ("boares") (0 ("<boaris>"i) + A + @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
     # Dat lea boaris.
-SUBSTITUTE ("boaris") ("boaris:1") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
+SELECT ("boares") (0 ("<boaris>"i) + A + @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
 
 # S2: boares
-SUBSTITUTE ("boaris") ("boaris:2") ("boaris"ri A Attr) (0 WORD LINK *1 ("ođđa" A Attr));
+SELECT ("oames") (0 ("<boaris>"i) + A + Attr) (0 WORD LINK *1 ("ođđa" A Attr));
     # Boares dilli lea vássán, o@@a dilli lea boahtán.
-    
-SUBSTITUTE ("boaris") ("boaris:2") ("boaris"ri A Attr) (1 N LINK 0 FOOD);
-SUBSTITUTE ("boaris") ("boaris:2") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 FOOD);
+
+SELECT ("oames") (0 ("<boaris>"i) + A + Attr) (1 N LINK 0 FOOD);
+SELECT ("oames") (0 ("<boaris>"i) + A + @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 FOOD);
 
 
 
@@ -2430,7 +2431,7 @@ SUBSTITUTE ("boaris") ("boaris:2") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LIN
 #SUBSTITUTE (Adv) (Adv S0) ("hui"ri Adv) (1C A);
     # Dat lea hui buorre.
 # S1: huj
-SUBSTITUTE ("hui") ("hui:1") ("hui" Adv) (1C Attr);
+SELECT ("huj") (0 ("<hui>") + Adv) (1C Attr);
     # Son lea hui čeahppes eadni.
 
 
@@ -2442,7 +2443,7 @@ SUBSTITUTE ("hui") ("hui:1") ("hui" Adv) (1C Attr);
     # Sáme kultuvrra, giella ja æládusdåjma li moatte láhkáj gárttjásin ja dætto vuolen stuorra sebrudagás.
     
 # S1: muoduk (vs. láhkáj)   (láhkái/ládje) 
-SUBSTITUTE ("láhkái") ("láhkái:1") ("láhkái" Adv) (-1 Gen);
+SELECT ("muoduk") (0 ("<láhkái>") + Adv) (-1 Gen);
     # Son lea áhčis láhkái.
     # Vuojnnebihtit gen muoduk le?
 
@@ -2463,9 +2464,9 @@ SUBSTITUTE ("láhkái") ("láhkái:1") ("láhkái" Adv) (-1 Gen);
 # adv verb: leat (Pron.Refl/Adv) jámas PrfPrc
 # verb adv: PrfPrc (Adv) jámas
 
-SUBSTITUTE ("jámas") ("jámas:1") ("jámas" Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+SELECT ("sælldát") (0 ("<jámas>") + Adv) (*-1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
     # Man gallis dain smávvásiin eai leat juo čirron iežaset jámas.
-SUBSTITUTE ("jámas") ("jámas:1") ("jámas" Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
+SELECT ("sælldát") (0 ("<jámas>") + Adv) (*1 PSYCH-V BARRIER NOT-ADV-PCLE-Refl);
     # Eará bellodagat leat jámas suorganan válgagiččus.
 
 # jaska 
@@ -2475,5 +2476,21 @@ SUBSTITUTE ("jámas") ("jámas:1") ("jámas" Adv) (*1 PSYCH-V BARRIER NOT-ADV-PC
     # Default
    
 # S1: jasska (vs. sjávot)    
-SUBSTITUTE ("jaska") ("jaska:1") ("jaska"ri Adv) (*1 ("bargat") OR ("boahtit"));
+SELECT ("jasska") (0 ("<jaska>"i) + Adv) (*1 ("bargat") OR ("boahtit"));
     # 
+
+
+SELECT:fallback ("luohkka") (0 ("<luohkká>") + N);
+SELECT:fallback ("vuoras") (0 ("<boaris>") + A);
+SELECT:fallback ("vuoras") (0 ("<boaris>") + A);
+SELECT:fallback ("buorre") (0 ("<buorre>") + A);
+SELECT:fallback ("smidá") (0 ("<čeahppi>") + A);
+SELECT:fallback ("sieldes") (0 ("<hui>") + Adv);
+SELECT:fallback ("sjávot") (0 ("<jaska>") + Adv);
+SELECT:fallback ("jámás") (0 ("<jámas>") + Adv);
+SELECT:fallback ("láhkáj") (0 ("<ládje>") + Adv);
+SELECT:fallback ("láhkáj") (0 ("<láhkái>") + Adv);
+SELECT:fallback ("viessot") (0 ("<eallit>") + V);
+SELECT:fallback ("subtsastit") (0 ("<muitalit>") + V);
+SELECT:fallback ("årrot") (0 ("<orrut>") + V);
+SELECT:fallback ("dahkat") (0 ("<ráhkadit>") + V);
