@@ -4,83 +4,35 @@
 
 AC_PREREQ(2.52)
 
-m4_define([required_apertium_version], [3.3.0])
-m4_define([required_lttoolbox_version], [3.3.0])
-
-AC_INIT([apertium-sme-nob], [0.5.1], [trondtr@users.sourceforge.net])
-AM_INIT_AUTOMAKE([apertium-sme-nob], [0.5.1], no-define)
+AC_INIT([apertium-sme-smj], [0.5.1], [trondtr@users.sourceforge.net])
+AM_INIT_AUTOMAKE([apertium-sme-smj], [0.5.1], no-define)
 AC_PROG_LN_S
 AC_PROG_AWK
 
-PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version, [], [PKG_CHECK_MODULES(APERTIUM,   apertium >= required_apertium_version)])
-PKG_CHECK_MODULES(LTTOOLBOX,   lttoolbox >= required_lttoolbox_version, [], [PKG_CHECK_MODULES(LTTOOLBOX,   lttoolbox >= required_lttoolbox_version)])
+m4_define([required_apertium_version], [3.3.0])
+PKG_CHECK_MODULES(APERTIUM, apertium >= required_apertium_version, [], [PKG_CHECK_MODULES(APERTIUM, apertium-3.2 >= required_apertium_version)])
 
 
-AC_PATH_PROG(CGCOMP, cg-comp, no)
-if test x$ac_cv_path_CGCOMP = x
-then
-  AC_MSG_ERROR([You don't have cg-comp installed.])
-fi
-if test x$ac_cv_path_CGCOMP = xno
-then
-  AC_MSG_ERROR([You don't have cg-comp installed.])
-fi
+AC_PATH_PROG([HFSTLEXC], [hfst-lexc], [false], [$PATH$PATH_SEPARATOR$with_hfst_lexc/bin])
+AS_IF([test x$HFSTLEXC = xfalse], [AC_MSG_ERROR([You don't have hfst-lexc installed])])
 
-AC_PATH_PROG(CGPROC, cg-proc, no)
-if test x$ac_cv_path_CGPROC = x
-then
-  AC_MSG_ERROR([You don't have cg-proc installed.])
-fi
-if test x$ac_cv_path_CGPROC = xno
-then
-  AC_MSG_ERROR([You don't have cg-proc installed.])
-fi
+AC_PATH_PROG([HFSTTWOLC], [hfst-twolc], [false], [$PATH$PATH_SEPARATOR$with_hfst_twolc/bin])
+AS_IF([test x$HFSTTWOLC = xfalse], [AC_MSG_ERROR([You don't have hfst-twolc installed])])
 
-AC_PATH_PROG(HFSTPROC, hfst-proc, no)
-if test x$ac_cv_path_HFSTPROC = x
-then
-  AC_MSG_ERROR([You don't have hfst-proc installed.])
-fi
-if test x$ac_cv_path_HFSTPROC = xno
-then
-  AC_MSG_ERROR([You don't have hfst-proc installed.])
-fi
+AC_PATH_PROG([CGCOMP], [cg-comp], [false], [$PATH$PATH_SEPARATOR$with_cg_comp/bin])
+AS_IF([test x$CGCOMP = xfalse], [AC_MSG_ERROR([You don't have cg-comp installed])])
 
-AC_PATH_PROG(HFSTLEXC, hfst-lexc, no)
-if test x$ac_cv_path_HFSTLEXC = x
-then
-  AC_MSG_ERROR([You don't have hfst-lexc installed.])
-fi
-if test x$ac_cv_path_HFSTLEXC = xno
-then
-  AC_MSG_ERROR([You don't have hfst-lexc installed.])
-fi
+AC_PATH_PROG([CGPROC], [cg-proc], [false], [$PATH$PATH_SEPARATOR$with_cg_proc/bin])
+AS_IF([test x$CGPROC = xfalse], [AC_MSG_ERROR([You don't have cg-proc installed])])
 
-AC_PATH_PROG(XSLTPROC, xsltproc, no)
-if test x$ac_cv_path_XSLTPROC = x
-then
-  AC_MSG_ERROR([You don't have xsltproc installed.])
-fi
-if test x$ac_cv_path_XSLTPROC = xno
-then
-  AC_MSG_ERROR([You don't have xsltproc installed.])
-fi
+AC_PATH_PROG([LRXCOMP], [lrx-comp], [false], [$PATH$PATH_SEPARATOR$with_lrx_comp/bin])
+AS_IF([test x$LRXCOMP = xfalse], [AC_MSG_ERROR([You don't have lrx-comp installed])])
 
-AC_PATH_PROG(GZCAT, gzcat, no)
-AC_PATH_PROG(ZCAT, zcat, no)
+AC_PATH_PROG([LRXPROC], [lrx-proc], [false], [$PATH$PATH_SEPARATOR$with_lrx_proc/bin])
+AS_IF([test x$LRXPROC = xfalse], [AC_MSG_ERROR([You don't have lrx-proc installed])])
 
-if test x$ac_cv_path_GZCAT = xno
-then
-  if test x$ac_cv_path_ZCAT = xno
-  then
-    AC_MSG_ERROR([No working zcat installed.])
-  else
-    AC_SUBST(ZCAT,[zcat])
-  fi
-else
-  AC_SUBST(ZCAT,[gzcat])
-fi
-
+AC_PATH_PROGS(ZCAT, [gzcat zcat], [false])
+AS_IF([test x$ZCAT = xfalse], [AC_MSG_ERROR([You don't have zcat nor gzcat installed])])
 
 m4_ifdef([AP_CHECK_LING],[],[AC_MSG_ERROR([AP_CHECK_LING not defined, is apertium.m4 in ACLOCAL_PATH? See: http://wiki.apertium.org/wiki/Installation_troubleshooting])])
 
@@ -88,6 +40,5 @@ AP_CHECK_LING([1], [giella-sme])
 AP_CHECK_LING([2], [giella-smj])
 
 AP_MKINCLUDE
-
 
 AC_OUTPUT([Makefile])

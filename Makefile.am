@@ -2,7 +2,7 @@
 ## Makefile for sme-smj
 ###############################################################################
 
-VERSION=0.1.0
+VERSION=0.5.1
 LANG1=sme
 LANG2=smj
 PREFIX1=$(LANG1)-$(LANG2)
@@ -28,6 +28,10 @@ TARGETS_COMMON = \
 # This include desmees goals for install-modes, .deps/.d and .mode files:
 @ap_include@
 
+###############################################################################
+## Bidix-prefixes for trimming morphology
+###############################################################################
+
 .deps/$(PREFIX1).autobil.prefixes: $(PREFIX1).autobil.bin .deps/.d
 	lt-print $< | sed 's/ /@_SPACE_@/g' > .deps/$(PREFIX1).autobil.att
 	hfst-txt2fst -e ε <  .deps/$(PREFIX1).autobil.att > .deps/$(PREFIX1).autobil.hfst
@@ -51,7 +55,7 @@ TARGETS_COMMON = \
 	hfst-concatenate -1 .deps/$(PREFIX2).autobil.nonplussed -2 .deps/$(PREFIX2).autobil.postplus.0,1 -o $@
 
 ###############################################################################
-## Finnish→Estonian monolingual transducers
+## Northern Saami→Lule Saami monolingual transducers
 ###############################################################################
 
 # sme->smj mor
