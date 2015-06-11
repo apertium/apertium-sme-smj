@@ -79,6 +79,8 @@ dev/xfst2apertium.useless.analysis.twol -text
 dev/xfst2apertium.useless.generation.twol -text
 /modes.xml -text
 /sme-smj.prob -text
+t/README.org -text
+t/config.sh -text
 t/latest-pending.results -text
 t/latest-regression.results -text
 t/pending-tests -text
