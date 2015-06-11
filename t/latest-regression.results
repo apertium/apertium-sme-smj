@@ -1,0 +1,218 @@
+Revision: 60735
+AP_SRC1 Revision: 114855
+AP_SRC2 Revision: 114770
+Running Regression-tests with mode "sme-smj" with updated tests ...
+
+sme-smj	  Anne ráhkada biepmu.
+	- Anne biebmov stielli.
+	+ Annev stielli biebmov.
+
+
+sme-smj	  Son lea boaris.
+	- Sån la vuoras.
+	+ Sån la boares.
+
+
+sme-smj	  Áddjá lea boaris.
+	- Áddjá la vuoras.
+	+ Áddjá la boares.
+
+
+sme-smj	  In.
+WORKS	  Iv.
+
+
+sme-smj	  In dieđe.
+WORKS	  Iv diede.
+
+
+sme-smj	  Máhtte ii sáhttán boahtit ovdal.
+	- Máhttin ij máhttám boahtet åvddål.
+	+ Máhttin ij #máhttet boahtep åvddål.
+
+
+sme-smj	  Ii oro nu vuogas.
+WORKS	  Ij åro nåv vuogas.
+
+
+sme-smj	  In háliit duinna doarrut.
+	- Iv hálijda dujna doarrut.
+	+ Iv #hálijdit dujna #doarrut.
+
+
+sme-smj	  It go sáhte muitalit?
+	- I gu máhte subtsastit?
+	+ I #gu máhte mujttalip?
+
+
+sme-smj	  Eat go sáhttán vuolgit?
+	- Ep gu máhttám vuolgget?
+	+ Ep #gu #máhttet #vuolgget?
+
+
+sme-smj	  Eat šat gille.
+	- Ep desti visjá.
+	+ Ep desti giellin.
+
+
+sme-smj	  Sii eai liiko, go mii hárdit sin.
+	- Sij e lijkku, gå mij sijáv hárddep.
+	+ Sij e #lijkkut, #gu #mij #hárddet sijáv.
+
+
+sme-smj	  Eai oro nu vuohkkasat.
+	- E åro nåv vuohkasa.
+	+ E åro nåv #vuogas.
+
+
+sme-smj	  Miriam Paulsen.
+	- Miriam Paulsen.
+	+ Miriamav Paulsenav.
+
+
+sme-smj	  Hui jorbadit.
+	- Sieldes jårbbådit.
+	+ Huj #jårbbåt.
+
+
+sme-smj	  Dát áššit leat dehálaččat.
+	- Dá ássje li ájnnasa.
+	+ Dá ássje la/le #ájnas.
+
+
+sme-smj	  Mánná lea láiki.
+WORKS	  Mánná la lájkke.
+
+
+sme-smj	  Mánát leat láikkit.
+	- Máná li lájke.
+	+ Máná la/le #lájkke.
+
+
+sme-smj	  Girji lea hálbi.
+WORKS	  Girjje la hálbbe.
+
+
+sme-smj	  Girjjit leat hálbbit.
+	- Girje li hálbe.
+	+ Girje la/le #hálbedit.
+
+
+sme-smj	  Sevnnjoda.
+WORKS	  Sjevnjut.
+
+
+sme-smj	  Vuolgit lea suohtas.
+	- Vuolgget la suohtas.
+	+ #Vuolgget la suohtas.
+
+
+sme-smj	  Sakŋida.
+WORKS	  Sagŋet.
+
+
+sme-smj	  Máhtte boahtá.
+WORKS	  Máhttin boahtá.
+
+
+sme-smj	  Goabbá vuoitá?
+WORKS	  Goabbá vuojttá?
+
+
+sme-smj	  Doppe boahtá áhčči.
+WORKS	  Dåppe boahtá áhttje.
+
+
+sme-smj	  Boađán.
+WORKS	  Boadáv.
+
+
+sme-smj	  Gii bođii?
+	- Guhti bådij?
+	+ #Guhti bådij?
+
+
+sme-smj	  Liikojit go guollái?
+	- Lijkkuji gu guolláj?
+	+ Lijkkuji #gu guolláj?
+
+
+sme-smj	  Áddjá lea boahtán.
+	- Áddjá la boahtám.
+	+ Áddjá la #boahtet.
+
+
+sme-smj	  Buorre lei go bohtet.
+	- Buorre lij gå båhti.
+	+ Buorre lij #gu båhtit.
+
+
+sme-smj	  Biekkastii.
+	- Biekkastij.
+	+ Biekkaj.
+
+
+sme-smj	  Čájeheahkki munnje.
+WORKS	  Vuosedihtte munji.
+
+
+sme-smj	  Manni doai dohko.
+	- Manne dåj dåhku.
+	+ Mannev dåj dåhku.
+
+
+sme-smj	  Gean don oidnet.
+	- Gev dån vuojnni.
+	+ #Guhti dån vuojnnit.
+
+
+sme-smj	  Son vuittii golli.
+	- Sån gållev vuojtij.
+	+ Sån vuojtij gållev.
+
+
+sme-smj	  Boahtti veahkkin.
+	- Boahtte viehkken.
+	+ #Boahtte viehkken.
+
+
+sme-smj	  Máhtte lea viššalis bargi.
+	- Máhttin la vissjalis bargge.
+	+ Máhttin la vissjalis barggev.
+
+
+sme-smj	  Ahte gielistii lea vissis.
+	- Ahte gielestij la visses.
+	+ #Ahte gielestij la visses.
+
+
+sme-smj	  Leage buorre.
+WORKS	  Liege buorre.
+
+
+sme-smj	  Buorre lei go bohtet.
+	- Buorre lij gå båhti.
+	+ Buorre lij #gu båhtit.
+
+
+sme-smj	  Ean muital suohttasiiddáme earáide.
+	- En subtsasta suohttasijdema iehtjádijda.
+	+ En #mujttalit #suohtas iehtjádijda.
+
+
+sme-smj	  Eat muital suohttasiiddámet earáide.
+	- Ep subtsasta suohttasijdema iehtjádijda.
+	+ Ep #mujttalit #suohtas iehtjádijda.
+
+
+sme-smj	  In muital suohttasiiddán earáide.
+	- Iv subtsasta suohttasijdám iehtjádijda.
+	+ Iv #mujttalit #suohtas iehtjádijda.
+
+
+sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
+	- Teáhtera ulmmen la nannit sámij identitehtav ja kultuvrav.
+	+ #Teáhter ulmmen la #nannit sámijt identitehtav/identitiehtav ja kultuvrav.
+
+
+13 / 45, ~28.88888888888888888889%

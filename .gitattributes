@@ -2,6 +2,7 @@
 /AUTHORS -text
 /COPYING -text
 /ChangeLog -text
+/HACKING -text
 /Makefile.am -text
 /NEWS -text
 /README -text
@@ -77,6 +78,10 @@ dev/xfst2apertium.relabel -text
 dev/xfst2apertium.useless.analysis.twol -text
 dev/xfst2apertium.useless.generation.twol -text
 /modes.xml -text
-/pending-tests.sh -text
-/regression-tests.sh -text
 /sme-smj.prob -text
+t/latest-pending.results -text
+t/latest-regression.results -text
+t/pending-tests -text
+t/regression-tests -text
+t/update-latest -text
+t/wiki-tests -text

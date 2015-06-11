@@ -216,3 +216,14 @@ install-data-local: install-modes
 CLEANFILES = $(TARGETS_COMMON)
 clean-local: 
 	-rm -rf .deps modes
+
+
+###############################################################################
+## Test
+###############################################################################
+
+test: all
+	echo "Leage buorre" | apertium -d . sme-smj | tee .test-mt
+	@echo "Liege buorre" > .test-ref
+	@diff .test-ref .test-mt
+	@rm .test-ref .test-mt
