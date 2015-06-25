@@ -1,6 +1,6 @@
-Revision: 60735
-AP_SRC1 Revision: 114855
-AP_SRC2 Revision: 114770
+Revision: 61066
+AP_SRC1 Revision: 116392
+AP_SRC2 Revision: 116418
 Running Pending-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Wikipedia dárbbaša du veahki.
@@ -15,7 +15,7 @@ sme-smj	  Sámegielat Wikipedias leat dál 2,717 artihkkala.
 
 sme-smj	  Isak Saba 1875-1921 lei sápmelaš oahpaheaddji ja politihkkár.
 	- Isak Saba 1875-1921 lij sábmelasj åhpadiddje ja politihkkár.
-	+ Isakav Sabav 1875-1921:v lij sábmelasj #oahppat ja *politihkkár.
+	+ Isakav Sabav 1875-1921:v lij sábmelasj åhpadiddjev ja *politihkkár.
 
 
 sme-smj	  Son beroštii arkeologalaš bargguin, ja son čokkii dávviriid ja dávttiid boares hávddiin.
@@ -40,7 +40,7 @@ sme-smj	  Sámiid ássanguovlu gohčoduvvo Sápmin.
 
 sme-smj	  Odne gávdnojit maiddái ollu sámit geat eai šat sámás ja identitehtavuođđu lea dál varas dehe sogas iige gielas gitta.
 	- Uddni gávnnuji aj ållo sáme gudi e desti sámásta ja identitæhttavuodo la dál varán jali berajvuodan ijge gielan gitta.
-	+ Uddni gávnni #aj ållu sáme #guhti e desti #sámástit ja #identitæhtta vuodo la dálla varás jali berajvuodas #ij giela gitta.
+	+ Uddni gávnni #aj ållu sáme #guhti e desti #sámástit ja #identitæhtta vuodo la dálla varás jali berajvuodas ij @\^giellat gitta.
 
 
 sme-smj	  Amerihká ovttastuvvan stáhtain leat 50 oassestáhta, mat leat oalle muddui iešstivrejeaddjit.
@@ -75,7 +75,7 @@ sme-smj	  Sii leat čeahpit.
 
 sme-smj	  Iibat oaččo basadit?
 	- Ij gus oattjo basádit?
-	+ Ij #gus oattjo bassap?
+	+ Ij @\^oažžut bassap?
 
 
 sme-smj	  Lehpet go dárbbašan ollu veahki?
@@ -85,7 +85,7 @@ sme-smj	  Lehpet go dárbbašan ollu veahki?
 
 sme-smj	  Oahpaheddjiin lea ollu bargu.
 	- Åhpadiddjijn la ållo barggo.
-	+ #Oahppat la ållu barggon.
+	+ Åhpadiddjijs la ållu barggon.
 
 
 sme-smj	  Diet lea mu.
@@ -130,12 +130,11 @@ sme-smj	  Áddjá elii hui boarisin.
 
 sme-smj	  Dán jagi son lea oahpaheaddjin.
 	- Dán jage sån la åhpadiddjen.
-	+ Dáv jagev sån la #oahppat.
+	+ Dáv jagev sån la åhpadiddjen.
 
 
 sme-smj	  Son lea oahpaheaddjin hui čeahppi.
-	- Sån la åhpadiddjen huj tjiehppe.
-	+ Sån la #oahppat huj tjiehppe.
+WORKS	  Sån la åhpadiddjen huj tjiehppe.
 
 
 sme-smj	  Gos áhččát lea?
@@ -184,7 +183,8 @@ sme-smj	  Maid don barggat odne?
 
 
 sme-smj	  Soai leaba čeahpit.
-WORKS	  Såj libá tjiehpe.
+	- Såj libá tjiehpe.
+	+ Såj libá @\^čeahppi.
 
 
 sme-smj	  It go sáhte muitalit midjiide.
@@ -202,8 +202,7 @@ sme-smj	  Soai boahtiba dán geainnu.
 
 
 sme-smj	  Son šaddá buorrin oahpaheaddjin.
-	- Sån sjaddá buorren åhpadiddjen.
-	+ Sån sjaddá buorren #oahppat.
+WORKS	  Sån sjaddá buorren åhpadiddjen.
 
 
 sme-smj	  Oro jaska!
@@ -252,8 +251,7 @@ sme-smj	  Maid siđat odne?
 
 
 sme-smj	  Álgge oahpaheaddjin!
-	- Álge åhpadiddjen!
-	+ Álge #oahppat!
+WORKS	  Álge åhpadiddjen!
 
 
 sme-smj	  Orrot jaska.
@@ -343,17 +341,17 @@ sme-smj	  Leat go viežžan buot girjjiidat?
 
 sme-smj	  Leaččan go buot muitán?
 	- Littjav gu divna mujttám?
-	+ Lilav #gu #divnna #mujtte?
+	+ #Liehket #gu #divnna #mujtte?
 
 
 sme-smj	  Leaččat go buot muitán?
 	- Littja gu divna mujttám?
-	+ Lila #gu #divnna #mujtte?
+	+ #Liehket #gu #divnna #mujtte?
 
 
 sme-smj	  Leaččan go buot váldán?
 	- Littjav gu divna válldám?
-	+ Lilav #gu #divnna #vállde?
+	+ #Liehket #gu #divnna #vállde?
 
 
 sme-smj	  Boarrásepmosat sáhttet bargat.
@@ -363,7 +361,7 @@ sme-smj	  Boarrásepmosat sáhttet bargat.
 
 sme-smj	  Máhtte lea dát iige duot.
 	- Máhttin la dát ijge duot.
-	+ Máhttin la dá #ij duo.
+	+ Máhttin la dá ij @\^duot.
 
 
-2 / 73, ~2.73972602739726027397%
+4 / 73, ~5.47945205479452054795%

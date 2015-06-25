@@ -1,6 +1,6 @@
-Revision: 60735
-AP_SRC1 Revision: 114855
-AP_SRC2 Revision: 114770
+Revision: 61066
+AP_SRC1 Revision: 116392
+AP_SRC2 Revision: 116418
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Anne ráhkada biepmu.
@@ -28,7 +28,7 @@ WORKS	  Iv diede.
 
 sme-smj	  Máhtte ii sáhttán boahtit ovdal.
 	- Máhttin ij máhttám boahtet åvddål.
-	+ Máhttin ij #máhttet boahtep åvddål.
+	+ Máhttin ij #máhttet boahtep #åvddål.
 
 
 sme-smj	  Ii oro nu vuogas.
@@ -158,7 +158,7 @@ WORKS	  Vuosedihtte munji.
 
 sme-smj	  Manni doai dohko.
 	- Manne dåj dåhku.
-	+ Mannev dåj dåhku.
+	+ Mannev dåj dåhku/dåk.
 
 
 sme-smj	  Gean don oidnet.
