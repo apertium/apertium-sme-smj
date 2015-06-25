@@ -12,8 +12,8 @@
      <cat-item tags="n.*.gen.@→A"/>
      <cat-item tags="n.*.gen.*.@→N"/>
      <cat-item tags="n.*.gen.*.@→A"/>
-     <cat-item tags="pron.*.*.gen.@→N"/>
-     <cat-item tags="pron.*.*.gen.@→A"/>
+     <cat-item tags="prn.*.*.gen.@→N"/>
+     <cat-item tags="prn.*.*.gen.@→A"/>
      <cat-item tags="a.*.gen.@→N"/>
      <cat-item tags="a.*.gen.@→A"/>
   </def-cat>
@@ -58,7 +58,7 @@
   </def-cat>
 
   <def-cat n="pronom">
-     <cat-item tags="pron.*"/>
+     <cat-item tags="prn.*"/>
   </def-cat>
 
   <def-cat n="cnjcoo">	
@@ -125,8 +125,8 @@
      <attr-item tags="n.prop.org"/>
      <attr-item tags="n.prop.sur"/>
      <attr-item tags="n.prop.plc"/>
-     <attr-item tags="pron.pers"/>
-     <attr-item tags="pron"/>
+     <attr-item tags="prn.pers"/>
+     <attr-item tags="prn"/>
      <attr-item tags="a"/>
   </def-attr>
 
@@ -173,14 +173,14 @@
   </def-attr>
 
   <def-attr n="a_pronom">
-     <attr-item tags="pron"/>
-     <attr-item tags="pron.pers"/>
-     <attr-item tags="pron.rel"/>
-     <attr-item tags="pron.refl"/>
-     <attr-item tags="pron.interr"/>
-     <attr-item tags="pron.dem"/>
-     <attr-item tags="pron.indef"/>
-     <attr-item tags="pron.indef.attr"/> <!-- muhtun -->
+     <attr-item tags="prn"/>
+     <attr-item tags="prn.pers"/>
+     <attr-item tags="prn.rel"/>
+     <attr-item tags="prn.refl"/>
+     <attr-item tags="prn.interr"/>
+     <attr-item tags="prn.dem"/>
+     <attr-item tags="prn.indef"/>
+     <attr-item tags="prn.indef.attr"/> <!-- muhtun -->
   </def-attr>
 
 
@@ -221,9 +221,10 @@
      <attr-item tags="ela"/>
   </def-attr>
 
-  <def-attr n="degree">
+  <def-attr n="grau">
      <attr-item tags="comp"/>
-     <attr-item tags="superl"/>
+     <attr-item tags="sup"/>
+     <attr-item tags="pst"/>
   </def-attr>
 
   <def-attr n="temps">
@@ -238,12 +239,12 @@
   </def-attr>
 
   <def-attr n="mood">
-    <attr-item tags="ind"/>
+    <attr-item tags="indic"/>
     <attr-item tags="imprt"/>
     <attr-item tags="pot"/>
     <attr-item tags="cond"/>
     <attr-item tags="neg"/> 
-    <attr-item tags="neg.ind"/> 
+    <attr-item tags="neg.indic"/> 
   </def-attr>
   
   <def-attr n="poss">
@@ -538,7 +539,7 @@
               <or>
                 <equal>
                   <clip pos="1" side="sl" part="mood"/>
-                  <lit-tag v="neg.ind"/>
+                  <lit-tag v="neg.indic"/>
                 </equal>
                 <equal>
                   <clip pos="1" side="sl" part="mood"/>
@@ -553,7 +554,7 @@
         </let>
             <let>
           <clip pos="1" side="tl" part="mood"/>
-          <lit-tag v="neg.ind"/>
+          <lit-tag v="neg.indic"/>
         </let>
         </when>
         <when>
@@ -1445,7 +1446,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_adj"/>
-             <clip pos="1" side="tl" part="degree"/>
+             <clip pos="1" side="tl" part="grau"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="poss"/>
