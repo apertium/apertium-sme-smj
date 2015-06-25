@@ -125,7 +125,7 @@
   </mode>
 
 
-  <mode name="sme-smj-lextor" install="no">
+  <mode name="sme-smj-lex" install="no">
     <pipeline>
       <program name="hfst-proc -w -e">
         <file name="sme-smj.automorf.hfst"/>
@@ -143,7 +143,8 @@
       <program name="lt-proc -b">
         <file name="sme-smj.autobil.bin"/>
       </program>
-      <program name="cg-proc">
+      <program name="cg-conv -a"/>
+      <program name="vislcg3 --trace --grammar">
         <file name="sme-smj.autolex.bin"/>
       </program>
     </pipeline>
@@ -493,7 +494,7 @@
     </pipeline>
   </mode>
 
-  <mode name="usme-smj-lextor" install="no">
+  <mode name="usme-smj-lex" install="no">
     <pipeline>
       <program name="hfst-proc -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
@@ -511,7 +512,8 @@
       <program name="lt-proc -b">
         <file name="sme-smj.autobil.bin"/>
       </program>
-      <program name="lrx-proc -m -t">
+      <program name="cg-conv -a"/>
+      <program name="vislcg3 --trace --grammar">
         <file name="sme-smj.autolex.bin"/>
       </program>
     </pipeline>
