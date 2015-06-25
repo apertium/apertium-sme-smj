@@ -29,11 +29,11 @@ LIST EOS = (<<<) (</s>);
 LIST N = n ;
 LIST A = a ;
 LIST Adv = adv ;
-LIST V = v ;
-LIST Pron = pron ;
+LIST V = vblex ;
+LIST Pron = prn ;
 
-LIST CS = cs ;
-LIST CCC = cc ;
+LIST CS = cnjsub ;
+LIST CCC = cnjcoo ;
 SET CC = CCC - ("sihke") ;
 SET CC-CS = CC OR CS ;
 LIST Po = po ;
@@ -50,7 +50,7 @@ LIST LEFT = left ;
 LIST RIGHT = right ;
 LIST WEB = web ;
 
-LIST V* = v* ;
+LIST V* = vblex* ;
 
 # POS sub-categories
 # ------------------
@@ -108,24 +108,25 @@ LIST PxPl2 = pxpl2 ;
 LIST PxPl3 = pxpl3 ;
 
 LIST Comp = comp ;
-LIST Superl = superl ;
+LIST Superl = sup ;
 
 LIST Attr = attr ;
 LIST Ord = ord ;
  
 LIST Qst = qst ;
- 
-LIST Foc_ge = foc_ge ;
-LIST Foc_gen = foc_gen ;
-LIST Foc_ges = foc_ges ;
-LIST Foc_gis = foc_gis ;
-LIST Foc_naj = foc_naj ;
-LIST Foc_ba = foc_ba ;
-LIST Foc_be = foc_be ;
-LIST Foc_hal = foc_hal ;
-LIST Foc_han = foc_han ;
-LIST Foc_bat = foc_bat ;
-LIST Foc_son = foc_son ;
+
+# The ("ge" pcle) etc. are used in Apertium
+LIST Foc_ge = foc_ge ("<ge>" pcle) ;
+LIST Foc_gen = foc_gen ("<gen>" pcle) ;
+LIST Foc_ges = foc_ges ("<ges>" pcle) ;
+LIST Foc_gis = foc_gis ("<gis>" pcle) ;
+LIST Foc_naj = foc_naj ("<naj>" pcle) ;
+LIST Foc_ba = foc_ba ("<ba>" pcle) ;
+LIST Foc_be = foc_be ("<be>" pcle) ;
+LIST Foc_hal = foc_hal ("<hal>" pcle) ;
+LIST Foc_han = foc_han ("<han>" pcle) ;
+LIST Foc_bat = foc_bat ("<bat>" pcle) ;
+LIST Foc_son = foc_son ("<son>" pcle) ;
 
 LIST IV = iv ;
 LIST TV = tv ;
@@ -136,7 +137,7 @@ LIST Prt = prt;
 LIST Prs = prs ;
  
 
-LIST Ind = ind ;
+LIST Ind = indic ;
 LIST Pot = pot ;
 LIST Cond = cond ;
 
@@ -166,7 +167,7 @@ LIST PrsPrc = prsprc ;
  
 
 LIST Ger = ger ;
-LIST Sup = sup ;
+LIST Sup = supn ;
 LIST Actio = actio ;
 
 LIST VActor = (der2 actor) ;
@@ -373,7 +374,7 @@ LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
 
 # Word or not
 # -----------
-LIST WORD = n a adv v pron cs cc po pr interj pcle num abbr acr  \? ;
+LIST WORD = n a adv vblex prn cnjsub cnjcoo po pr interj pcle num abbr acr  \? ;
  # any word
 
 SET REALWORD = WORD - Num - Ord ;
@@ -391,9 +392,9 @@ LIST V-DER = der_adda der_alla der_asti der_d der_g der_h der_halla der_hudda de
 LIST N-DER = der_eaddji der_dimin der_eamoš der_eapmi der_heapmi der_n der_š der_muš der_upmi der_us der_vuohta actor ;
  # Actio ;
 
-LIST A-DER = der_diibmosaš der_eaddji der_geahtes der_keahtes der_heapmi der_lágan der_laš der_meahttun (v* a);
+LIST A-DER = der_diibmosaš der_eaddji der_geahtes der_keahtes der_heapmi der_lágan der_laš der_meahttun (vblex* a);
 
-LIST A-V = (v* a) ;
+LIST A-V = (vblex* a) ;
 
 SET A-NOT-V = A - A-V ;
 
@@ -458,32 +459,32 @@ SET NOT-PRFPRC = WORD - PrfPrc ;
 # Person
 # - - - - 
 
-LIST V-SG1 = (v ind prs sg1)  (v ind prt sg1) (v cond prs sg1) 
-             (v cond prt sg1) (v pot prs sg1) (v neg ind sg1);
+LIST V-SG1 = (vblex indic prs sg1)  (vblex indic prt sg1) (vblex cond prs sg1) 
+             (vblex cond prt sg1) (vblex pot prs sg1) (vblex neg indic sg1);
  
-LIST V-SG2 = (v ind prs sg2)  (v ind prt sg2) (v cond prs sg2) 
-             (v cond prt sg2) (v pot prs sg2) (v neg ind sg2);
+LIST V-SG2 = (vblex indic prs sg2)  (vblex indic prt sg2) (vblex cond prs sg2) 
+             (vblex cond prt sg2) (vblex pot prs sg2) (vblex neg indic sg2);
  
-LIST V-SG3 = (v ind prs sg3)  (v ind prt sg3) (v cond prs sg3) 
-             (v cond prt sg3) (v pot prs sg3) (v neg ind sg3);
+LIST V-SG3 = (vblex indic prs sg3)  (vblex indic prt sg3) (vblex cond prs sg3) 
+             (vblex cond prt sg3) (vblex pot prs sg3) (vblex neg indic sg3);
  
-LIST V-DU1 = (v ind prs du1)  (v ind prt du1) (v cond prs du1) 
-     	     (v cond prt du1) (v pot prs du1) (v neg ind du1);
+LIST V-DU1 = (vblex indic prs du1)  (vblex indic prt du1) (vblex cond prs du1) 
+     	     (vblex cond prt du1) (vblex pot prs du1) (vblex neg indic du1);
  
-LIST V-DU2 = (v ind prs du2)  (v ind prt du2) (v cond prs du2) 
-	         (v cond prt du2) (v pot prs du2) (v neg ind du2);
+LIST V-DU2 = (vblex indic prs du2)  (vblex indic prt du2) (vblex cond prs du2) 
+	         (vblex cond prt du2) (vblex pot prs du2) (vblex neg indic du2);
  
-LIST V-DU3 = (v ind prs du3)  (v ind prt du3) (v cond prs du3) 
-	         (v cond prt du3) (v pot prs du3) (v neg ind du3);
+LIST V-DU3 = (vblex indic prs du3)  (vblex indic prt du3) (vblex cond prs du3) 
+	         (vblex cond prt du3) (vblex pot prs du3) (vblex neg indic du3);
  
-LIST V-PL1 = (v ind prs pl1)  (v ind prt pl1) (v cond prs pl1) 
-             (v cond prt pl1) (v pot prs pl1) (v neg ind pl1);
+LIST V-PL1 = (vblex indic prs pl1)  (vblex indic prt pl1) (vblex cond prs pl1) 
+             (vblex cond prt pl1) (vblex pot prs pl1) (vblex neg indic pl1);
  
-LIST V-PL2 = (v ind prs pl2)  (v ind prt pl2) (v cond prs pl2) 
-             (v cond prt pl2) (v pot prs pl2) (v neg ind pl2);
+LIST V-PL2 = (vblex indic prs pl2)  (vblex indic prt pl2) (vblex cond prs pl2) 
+             (vblex cond prt pl2) (vblex pot prs pl2) (vblex neg indic pl2);
  
-LIST V-PL3 = (v ind prs pl3)  (v ind prt pl3) (v cond prs pl3) 
-             (v cond prt pl3) (v pot prs pl3) (v neg ind pl3);
+LIST V-PL3 = (vblex indic prs pl3)  (vblex indic prt pl3) (vblex cond prs pl3) 
+             (vblex cond prt pl3) (vblex pot prs pl3) (vblex neg indic pl3);
  
 
  # Note that imperative verbs are not included in these sets!
@@ -512,34 +513,34 @@ SET V-3  = V-SG3 OR V-DU3 OR V-PL3 ;
 
 # Sets consisting of forms of "leat" (these ones need to be rewritten)
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-LIST LEAN = ("leat" v ind prs sg1) ("leat" v prfprc);
-LIST LEAT = ("leat" v ind prs pl1) ("leat" v ind prs pl3) 
+LIST LEAN = ("leat" vblex indic prs sg1) ("leat" vblex prfprc);
+LIST LEAT = ("leat" vblex indic prs pl1) ("leat" vblex indic prs pl3) 
       ("leat" V Ind Prs Sg2) ("leat" V Inf) ("leat" V Ind Prs ConNeg);
 
-LIST LEAT-FIN-NOT-IMP = ("leat" v ind) ("leat" v cond) ("leat" v pot);
+LIST LEAT-FIN-NOT-IMP = ("leat" vblex indic) ("leat" vblex cond) ("leat" vblex pot);
  
-LIST VPRFPRC = (v prfprc) ;
+LIST VPRFPRC = (vblex prfprc) ;
 LIST LEATPRFPRC = ("leat" prfprc) ;
 SET PRC-NOT-LEAT = VPRFPRC - LEATPRFPRC ;
     # In order to distinguish between real leat-constructions and participles of other verbs
-LIST HABEO-SG3 = ("leat" sg3) (v neg sg3) ("šaddat" sg3) ;
+LIST HABEO-SG3 = ("leat" sg3) (vblex neg sg3) ("šaddat" sg3) ;
 
-LIST HABEO-PL3 = ("leat" pl3) (v neg pl3) ("šaddat" pl3) ;
+LIST HABEO-PL3 = ("leat" pl3) (vblex neg pl3) ("šaddat" pl3) ;
 
 SET HABEO-3 = HABEO-SG3 OR HABEO-PL3 ;
 
 # Pronoun sets
 # ------------
 
-LIST MUN = (pron pers sg1 nom);
-LIST DON = (pron pers sg2 nom);
+LIST MUN = (prn pers sg1 nom);
+LIST DON = (prn pers sg2 nom);
 LIST SON = ("son" pron pers sg3 nom);
-LIST MOAI = (pron pers du1 nom);
-LIST DOAI = (pron pers du2 nom);
-LIST SOAI = (pron pers du3 nom);
-LIST MII-PERS = (pron pers pl1 nom);
-LIST DII = (pron pers pl2 nom);
-LIST SII = ("son" pron pers pl3 nom);
+LIST MOAI = (prn pers du1 nom);
+LIST DOAI = (prn pers du2 nom);
+LIST SOAI = (prn pers du3 nom);
+LIST MII-PERS = (prn pers pl1 nom);
+LIST DII = (prn pers pl2 nom);
+LIST SII = ("son" prn pers pl3 nom);
 
 SET PPRON-NOM-NOT-DAT = MUN OR DON OR SON OR MOAI OR DOAI OR SOAI OR MII-PERS OR DII OR SII ;
 
@@ -557,14 +558,14 @@ LIST PPRON-GEN = (sg1 gen) (sg2 gen) (sg3 gen) (du1 gen) (du2 gen) (du3 gen)
 
 SET PPRON-NOT-GEN = (Pron Pers) - PPRON-GEN ;
 
-LIST DEM-SG = (pron dem sg nom);
-LIST DEM-PL = (pron dem pl nom);
+LIST DEM-SG = (prn dem sg nom);
+LIST DEM-PL = (prn dem pl nom);
 SET NOT-DEM = WORD - Dem ;
 
-LIST SGPRON = (pron sg1) (pron sg2) (pron sg3) (pron sg) (pron pxsg1) (pron pxsg2) (pron pxsg3);
-LIST DUPRON = (pron du1) (pron du2) (pron du3)  (pron pxdu1) (pron pxdu2) (pron pxdu3);
-LIST PLPRON = (pron pl1) (pron pl2) (pron pl3) (pron pl) (pron pxpl1) (pron pxpl2) (pron pxpl3);
-LIST DUPRON-NOTPX = (pron du1) (pron du2) (pron du3) ;
+LIST SGPRON = (prn sg1) (prn sg2) (prn sg3) (prn sg) (prn pxsg1) (prn pxsg2) (prn pxsg3);
+LIST DUPRON = (prn du1) (prn du2) (prn du3)  (prn pxdu1) (prn pxdu2) (prn pxdu3);
+LIST PLPRON = (prn pl1) (prn pl2) (prn pl3) (prn pl) (prn pxpl1) (prn pxpl2) (prn pxpl3);
+LIST DUPRON-NOTPX = (prn du1) (prn du2) (prn du3) ;
 
 SET PRON-NOT-SG = DUPRON OR PLPRON ;
 
@@ -579,7 +580,7 @@ SET LEX-A = A - A-DER ;
 
 SET A-CASE = A - Attr - Adv ;
 
-LIST A-CC = a cc ;
+LIST A-CC = a cnjcoo ;
 
 SET NOT-ADJ = WORD - A ;
 SET NOT-ADJ-COMMA = WORD - A - COMMA ;
