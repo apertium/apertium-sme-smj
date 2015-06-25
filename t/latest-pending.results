@@ -115,7 +115,7 @@ sme-smj	  Son lea áhčis láhkái.
 
 sme-smj	  Son lea boarráseamos.
 	- Sån la boarrásamos.
-	+ Sån la #boares.
+	+ Sån la #vuoras.
 
 
 sme-smj	  Diet girji lea mu.
@@ -125,7 +125,7 @@ sme-smj	  Diet girji lea mu.
 
 sme-smj	  Áddjá elii hui boarisin.
 	- Áddjá viesoj huj boarrásin.
-	+ Áddjá #iellet huj boarrásin.
+	+ Áddjá #iellet sieldes vuorrasin.
 
 
 sme-smj	  Dán jagi son lea oahpaheaddjin.
@@ -134,7 +134,8 @@ sme-smj	  Dán jagi son lea oahpaheaddjin.
 
 
 sme-smj	  Son lea oahpaheaddjin hui čeahppi.
-WORKS	  Sån la åhpadiddjen huj tjiehppe.
+	- Sån la åhpadiddjen huj tjiehppe.
+	+ Sån la åhpadiddjen sieldes tjiehppe.
 
 
 sme-smj	  Gos áhččát lea?
@@ -144,7 +145,7 @@ sme-smj	  Gos áhččát lea?
 
 sme-smj	  Sii leat boarrásepmosat.
 	- Sij li boarrásabmusa.
-	+ Sij la/le boarrásabmusa.
+	+ Sij la/le vuorrasabmusa.
 
 
 sme-smj	  Sii leat stuoribut.
@@ -207,7 +208,7 @@ WORKS	  Sån sjaddá buorren åhpadiddjen.
 
 sme-smj	  Oro jaska!
 	- Åro sjávo!
-	+ Åro #jasska!
+	+ Åro sjávot!
 
 
 sme-smj	  Dál moai boradetne.
@@ -256,12 +257,12 @@ WORKS	  Álge åhpadiddjen!
 
 sme-smj	  Orrot jaska.
 	- Årrujip sjávo.
-	+ Årrut #jasska.
+	+ Årrut sjávot.
 
 
 sme-smj	  Mu boares áddjá ii šaddan vuolgit.
 	- Muv boares áddjá ij sjaddam vuolgget.
-	+ Muv boares áddjá ij #sjaddat #vuolgget.
+	+ Muv vuoras áddjá ij #sjaddat #vuolgget.
 
 
 sme-smj	  Diet girjjit gullet munnje.
@@ -364,4 +365,4 @@ sme-smj	  Máhtte lea dát iige duot.
 	+ Máhttin la dá ij @\^duot.
 
 
-4 / 73, ~5.47945205479452054795%
+3 / 73, ~4.10958904109589041096%
