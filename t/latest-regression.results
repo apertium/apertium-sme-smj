@@ -1,4 +1,4 @@
-Revision: 61113
+Revision: 61158
 AP_SRC1 Revision: 116842
 AP_SRC2 Revision: 116421
 Running Regression-tests with mode "sme-smj" with updated tests ...
@@ -93,7 +93,7 @@ WORKS	  Girjje la hálbbe.
 
 sme-smj	  Girjjit leat hálbbit.
 	- Girje li hálbe.
-	+ Girje la/le #hálbedit.
+	+ Girje la/le #hálbbe.
 
 
 sme-smj	  Sevnnjoda.

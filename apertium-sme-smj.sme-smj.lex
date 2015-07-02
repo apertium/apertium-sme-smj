@@ -27,7 +27,7 @@ LIST EOS = (<<<) (</s>);
 # ---------------
 
 LIST N = n ;
-LIST A = a ;
+LIST A = adj ;
 LIST Adv = adv ;
 LIST V = vblex ;
 LIST Pron = prn ;
@@ -57,15 +57,15 @@ LIST V* = vblex* ;
 
 LIST Pers = pers ;
 LIST Dem = dem ;
-LIST Interr = interr ;
+LIST Interr = itg ;
 
-LIST Indef = indef ;
+LIST Indef = ind ;
 
-LIST Recipr = recipr ;
-LIST Refl = refl ;
+LIST Recipr = res ;
+LIST Refl = ref ;
 LIST Rel = rel ;
  
-LIST Interj = interj ;
+LIST Interj = ij ;
 LIST Adp = adp ;
  
 
@@ -87,7 +87,7 @@ LIST Sg = sg ;
 LIST Pl = pl ;
 LIST Du = du ;
 
-LIST Cmpnd = cmpnd ;
+LIST Cmpnd = cmp ;
  
 LIST SgNomCmp = sgnomcmp ;
  
@@ -133,8 +133,8 @@ LIST TV = tv ;
 
 LIST Der_Pass = der_passl der_passs ;
 
-LIST Prt = prt;
-LIST Prs = prs ;
+LIST Prt = pret;
+LIST Prs = pres ;
  
 
 LIST Ind = indic ;
@@ -358,7 +358,7 @@ LIST go = "go" ;
 # Initials
 # --------
 
-LIST INITIAL = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
+LIST INITIAL = "adj" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
         "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
         "á" "æ" "ø" "å" "ö" "ä" ;
 
@@ -459,32 +459,32 @@ SET NOT-PRFPRC = WORD - PrfPrc ;
 # Person
 # - - - - 
 
-LIST V-SG1 = (vblex indic prs sg1)  (vblex indic prt sg1) (vblex cond prs sg1) 
-             (vblex cond prt sg1) (vblex pot prs sg1) (vblex neg indic sg1);
+LIST V-SG1 = (vblex indic pres sg1)  (vblex indic pret sg1) (vblex cond pres sg1) 
+             (vblex cond pret sg1) (vblex pot pres sg1) (vblex neg indic sg1);
  
-LIST V-SG2 = (vblex indic prs sg2)  (vblex indic prt sg2) (vblex cond prs sg2) 
-             (vblex cond prt sg2) (vblex pot prs sg2) (vblex neg indic sg2);
+LIST V-SG2 = (vblex indic pres sg2)  (vblex indic pret sg2) (vblex cond pres sg2) 
+             (vblex cond pret sg2) (vblex pot pres sg2) (vblex neg indic sg2);
  
-LIST V-SG3 = (vblex indic prs sg3)  (vblex indic prt sg3) (vblex cond prs sg3) 
-             (vblex cond prt sg3) (vblex pot prs sg3) (vblex neg indic sg3);
+LIST V-SG3 = (vblex indic pres sg3)  (vblex indic pret sg3) (vblex cond pres sg3) 
+             (vblex cond pret sg3) (vblex pot pres sg3) (vblex neg indic sg3);
  
-LIST V-DU1 = (vblex indic prs du1)  (vblex indic prt du1) (vblex cond prs du1) 
-     	     (vblex cond prt du1) (vblex pot prs du1) (vblex neg indic du1);
+LIST V-DU1 = (vblex indic pres du1)  (vblex indic pret du1) (vblex cond pres du1) 
+     	     (vblex cond pret du1) (vblex pot pres du1) (vblex neg indic du1);
  
-LIST V-DU2 = (vblex indic prs du2)  (vblex indic prt du2) (vblex cond prs du2) 
-	         (vblex cond prt du2) (vblex pot prs du2) (vblex neg indic du2);
+LIST V-DU2 = (vblex indic pres du2)  (vblex indic pret du2) (vblex cond pres du2) 
+	         (vblex cond pret du2) (vblex pot pres du2) (vblex neg indic du2);
  
-LIST V-DU3 = (vblex indic prs du3)  (vblex indic prt du3) (vblex cond prs du3) 
-	         (vblex cond prt du3) (vblex pot prs du3) (vblex neg indic du3);
+LIST V-DU3 = (vblex indic pres du3)  (vblex indic pret du3) (vblex cond pres du3) 
+	         (vblex cond pret du3) (vblex pot pres du3) (vblex neg indic du3);
  
-LIST V-PL1 = (vblex indic prs pl1)  (vblex indic prt pl1) (vblex cond prs pl1) 
-             (vblex cond prt pl1) (vblex pot prs pl1) (vblex neg indic pl1);
+LIST V-PL1 = (vblex indic pres pl1)  (vblex indic pret pl1) (vblex cond pres pl1) 
+             (vblex cond pret pl1) (vblex pot pres pl1) (vblex neg indic pl1);
  
-LIST V-PL2 = (vblex indic prs pl2)  (vblex indic prt pl2) (vblex cond prs pl2) 
-             (vblex cond prt pl2) (vblex pot prs pl2) (vblex neg indic pl2);
+LIST V-PL2 = (vblex indic pres pl2)  (vblex indic pret pl2) (vblex cond pres pl2) 
+             (vblex cond pret pl2) (vblex pot pres pl2) (vblex neg indic pl2);
  
-LIST V-PL3 = (vblex indic prs pl3)  (vblex indic prt pl3) (vblex cond prs pl3) 
-             (vblex cond prt pl3) (vblex pot prs pl3) (vblex neg indic pl3);
+LIST V-PL3 = (vblex indic pres pl3)  (vblex indic pret pl3) (vblex cond pres pl3) 
+             (vblex cond pret pl3) (vblex pot pres pl3) (vblex neg indic pl3);
  
 
  # Note that imperative verbs are not included in these sets!
@@ -513,9 +513,8 @@ SET V-3  = V-SG3 OR V-DU3 OR V-PL3 ;
 
 # Sets consisting of forms of "leat" (these ones need to be rewritten)
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-LIST LEAN = ("leat" vblex indic prs sg1) ("leat" vblex prfprc);
-LIST LEAT = ("leat" vblex indic prs pl1) ("leat" vblex indic prs pl3) 
-      ("leat" V Ind Prs Sg2) ("leat" V Inf) ("leat" V Ind Prs ConNeg);
+LIST LEAN = ("leat" vblex indic pres sg1) ("leat" vblex prfprc);
+LIST LEAT = ("leat" vblex indic pres pl1) ("leat" vblex indic pres pl3) ("leat" vblex indic pres sg2) ("leat" vblex inf) ("leat" vblex indic pres conneg);
 
 LIST LEAT-FIN-NOT-IMP = ("leat" vblex indic) ("leat" vblex cond) ("leat" vblex pot);
  
@@ -1119,17 +1118,15 @@ SET NP-HEAD-GEN    = (pron gen) OR (N Gen) OR (A Gen) - Cmpnd - Dem - ("buorre")
 # The PRE-NP-HEAD family of sets
 # - - - - - - - - - - - - - - - -
 
-SET PRE-NP-HEAD = (Prop Attr) OR (Prop @→N) OR (A Attr) OR (ABBR Attr) OR ("buorre") OR (Pron Pers Gen) OR (N Gen) OR 
-         Num OR Cmpnd OR CC OR (Pron Dem) OR (Pron Refl Gen) OR (Pron Indef) OR 
-         (PrfPrc @→N) OR PrsPrc OR (A Ord) ;
+SET PRE-NP-HEAD = (prop attr) OR (prop @→N) OR (adj attr) OR (abbr attr) OR ("buorre") OR (prn pers gen) OR (n gen) OR Num OR Cmpnd OR CC OR (prn dem) OR (prn ref gen) OR (prn ind) OR (prfprc @→N) OR PrsPrc OR (adj ord) ;
          # The strict version of items that can only be premodifiers, not parts of the predicate
          
-SET V-PRE-NP = PrfPrc OR PrsPrc OR Actor OR Actio OR (V A) OR (Ind Prs Sg3) OR (Ind Prs Sg1) OR (Imprt Prs Du2) ;
+SET V-PRE-NP = PrfPrc OR PrsPrc OR Actor OR Actio OR (vblex adj) OR (indic pres sg3) OR (indic pres sg1) OR (imprt pres du2) ;
     # to be used together with PRE-NP-HEAD before @→N is disambiguated
          
 SET NP-MEMBER   = PRE-NP-HEAD OR N ;
 
-SET PRE-A-N     = (Pron Pers Gen) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl Gen) ;
+SET PRE-A-N     = (prn pers gen) OR (prn ind) OR Num OR (adj ord) OR (prn dem) OR (prn ref gen) ;
 
 SET NOT-PRE-A-N = WORD - PRE-A-N ;
 

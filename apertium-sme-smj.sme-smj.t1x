@@ -14,12 +14,12 @@
      <cat-item tags="n.*.gen.*.@→A"/>
      <cat-item tags="prn.*.*.gen.@→N"/>
      <cat-item tags="prn.*.*.gen.@→A"/>
-     <cat-item tags="a.*.gen.@→N"/>
-     <cat-item tags="a.*.gen.@→A"/>
+     <cat-item tags="adj.*.gen.@→N"/>
+     <cat-item tags="adj.*.gen.@→A"/>
   </def-cat>
   <def-cat n="attrmod">
-     <cat-item tags="a.attr.@→N"/>
-     <cat-item tags="a.*.attr.@→N"/>
+     <cat-item tags="adj.attr.@→N"/>
+     <cat-item tags="adj.*.attr.@→N"/>
      <cat-item tags="num.*.*.@→N"/> <!--numerals as modifiers-->
      <cat-item tags="num.*.*.*.@→N"/>
   </def-cat>
@@ -38,11 +38,11 @@
   <def-cat n="adv">
      <cat-item tags="adv"/>
      <cat-item tags="adv.*"/>
-     <cat-item tags="a.der2.der_at.adv"/>
-     <cat-item tags="a.der2.der_at.adv.*"/>
+     <cat-item tags="adj.der2.der_at.adv"/>
+     <cat-item tags="adj.der2.der_at.adv.*"/>
   </def-cat>
   <def-cat n="adj">
-     <cat-item tags="a.*"/>
+     <cat-item tags="adj.*"/>
   </def-cat>
   <def-cat n="verb">
      <cat-item tags="vblex.*"/>
@@ -127,20 +127,20 @@
      <attr-item tags="n.prop.plc"/>
      <attr-item tags="prn.pers"/>
      <attr-item tags="prn"/>
-     <attr-item tags="a"/>
+     <attr-item tags="adj"/>
   </def-attr>
 
   <def-attr n="a_adj">
-     <attr-item tags="a"/>
-     <attr-item tags="a.ord"/>
-     <attr-item tags="a.ord.attr"/>
-     <attr-item tags="a.attr"/>
-     <attr-item tags="a.adv"/>
+     <attr-item tags="adj"/>
+     <attr-item tags="adj.ord"/>
+     <attr-item tags="adj.ord.attr"/>
+     <attr-item tags="adj.attr"/>
+     <attr-item tags="adj.adv"/>
   </def-attr>
   
   <def-attr n="a_attrmod">
-     <attr-item tags="a.attr"/>
-     <attr-item tags="a.ord.attr"/> <!-- ordinals -->
+     <attr-item tags="adj.attr"/>
+     <attr-item tags="adj.ord.attr"/> <!-- ordinals -->
      <attr-item tags="num"/>
   </def-attr>
 
@@ -150,7 +150,7 @@
 
   <def-attr n="a_adv">
      <attr-item tags="adv"/>
-     <attr-item tags="a.der2.der_at.adv"/>
+     <attr-item tags="adj.der2.der_at.adv"/>
   </def-attr>
 
   <def-attr n="a_num">
@@ -176,11 +176,11 @@
      <attr-item tags="prn"/>
      <attr-item tags="prn.pers"/>
      <attr-item tags="prn.rel"/>
-     <attr-item tags="prn.refl"/>
+     <attr-item tags="prn.ref"/>
      <attr-item tags="prn.itg"/>
      <attr-item tags="prn.dem"/>
-     <attr-item tags="prn.indef"/>
-     <attr-item tags="prn.indef.attr"/> <!-- muhtun -->
+     <attr-item tags="prn.ind"/>
+     <attr-item tags="prn.ind.attr"/> <!-- muhtun -->
   </def-attr>
 
 
@@ -229,8 +229,8 @@
 
   <def-attr n="temps">
      <attr-item tags="inf"/>
-     <attr-item tags="prs"/>
-     <attr-item tags="prt"/>
+     <attr-item tags="pres"/>
+     <attr-item tags="pret"/>
      <attr-item tags="prfprc"/>
   </def-attr>
   
@@ -550,7 +550,7 @@
             </test>
             <let>
           <var n="cur_verb_temps"/>
-          <lit-tag v="prs"/>
+          <lit-tag v="pres"/>
         </let>
             <let>
           <clip pos="1" side="tl" part="mood"/>
@@ -566,7 +566,7 @@
               </equal>
               <equal>
                 <clip pos="1" side="sl" part="temps"/>
-                <lit-tag v="prs"/>
+                <lit-tag v="pres"/>
               </equal>
             </and>
         </test>
