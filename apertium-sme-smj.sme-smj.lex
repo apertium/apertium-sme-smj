@@ -544,7 +544,7 @@ LIST SII = ("son" prn pers pl3 nom);
 
 SET PPRON-NOM-NOT-DAT = MUN OR DON OR SON OR MOAI OR DOAI OR SOAI OR MII-PERS OR DII OR SII ;
 
-SET PPRON-NOT-DAT = (Pron Pers) - ("dat") ;
+SET PPRON-NOT-DAT = (pron pers) - ("dat") ;
 
 SET PPRON-DU-PL = MOAI OR DOAI OR SOAI OR MII-PERS OR DII OR SII ;
 SET PPRON-PL = MII-PERS OR DII OR SII ;
@@ -556,7 +556,7 @@ SET PPRON-NOT-SII = MUN OR DON OR SON OR MOAI OR DOAI OR SOAI OR MII-PERS OR DII
 LIST PPRON-GEN = (sg1 gen) (sg2 gen) (sg3 gen) (du1 gen) (du2 gen) (du3 gen) 
 	(Pl1 Gen) (Pl2 Gen) (Pl3 Gen);
 
-SET PPRON-NOT-GEN = (Pron Pers) - PPRON-GEN ;
+SET PPRON-NOT-GEN = (pron pers) - PPRON-GEN ;
 
 LIST DEM-SG = (prn dem sg nom);
 LIST DEM-PL = (prn dem pl nom);
@@ -1113,8 +1113,8 @@ SET NP-HEAD-PL     = PLPRON OR (N Pl) OR (A Pl) - Cmpnd  - Dem - ("buorre");
 SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg Nom) OR (A Sg Nom) - ("buorre") - Cmpnd ;
 SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl Nom) OR (A Pl Nom) - Cmpnd  - ("buorre");
 SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
-SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - Cmpnd - Dem - ("buorre");
-SET NP-HEAD-GEN    = (Pron Gen) OR (N Gen) OR (A Gen) - Cmpnd - Dem - ("buorre");
+SET NP-HEAD-ACC    = (pron acc) OR (N Acc) OR (A Acc) - Cmpnd - Dem - ("buorre");
+SET NP-HEAD-GEN    = (pron gen) OR (N Gen) OR (A Gen) - Cmpnd - Dem - ("buorre");
 
 # The PRE-NP-HEAD family of sets
 # - - - - - - - - - - - - - - - -
@@ -2166,20 +2166,20 @@ SET NOT-CAP-INITIAL-CC = WORD - CAP-INITIAL - CC ;
 # Border sets and their complements
 # ---------------------------------
 
-SET CP = (Pron Interr) OR (Pron Rel) OR MO ;
+SET CP = (pron itg) OR (prn rel) OR MO ;
 
  
 LIST SEMICOL = "\;" ;
 
 LIST COL = ":" ;
 
-SET S-BOUNDARY  = (Pron Interr) OR (Pron Rel) OR ("muhto") OR MO OR ("\;") OR (":") OR ("-") OR ("–") OR CS ;
+SET S-BOUNDARY  = (prn itg) OR (prn rel) OR ("muhto") OR MO OR ("\;") OR (":") OR ("-") OR ("–") OR CS ;
 	# includes CP. Remember that (",") and CC are potential sentence boundaries, too
 
-SET S-BOUNDARY1  = (Pron Interr) OR (Pron Rel) OR ("muhto") OR MO OR ("\;") OR (":") OR ("-") OR ("–") ;
+SET S-BOUNDARY1  = (prn itg) OR (prn rel) OR ("muhto") OR MO OR ("\;") OR (":") OR ("-") OR ("–") ;
 	# includes not CS because of "go" in questions, before it is disambugated.
 	
-SET S-BOUNDARY2 = (Pron Interr) OR (Pron Rel) OR ("muhto") OR MO OR ("\;") OR (":") OR ("-") OR ("–") OR (@CVP) ;
+SET S-BOUNDARY2 = (prn itg) OR (prn rel) OR ("muhto") OR MO OR ("\;") OR (":") OR ("-") OR ("–") OR (@CVP) ;
  
 	# includes CP
 	# this one includes @CVP, the conjunction which actually connects two sentences (each with a finite verb) to each other, 

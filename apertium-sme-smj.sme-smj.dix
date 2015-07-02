@@ -27,7 +27,7 @@
     <sdef n="superl" c=""/>
 
 
-    <sdef n="interr" c="Interrogative"/>
+    <sdef n="itg" c="Interrogative"/>
     <sdef n="rel"    c="Relative"/>
     <sdef n="indef"  c="Indefinite"/>
     <sdef n="dem"    c="Demonstrative"/>
@@ -179,7 +179,7 @@
     <e><p><l>gallis<s n="prn"/></l><r>galles<s n="prn"/></r></p></e>
     <e><p><l>gallát<s n="prn"/></l><r>galládin<s n="prn"/></r></p></e>
     <e><p><l>gii<g><b/>beare</g><s n="prn"/></l><r>vajku<b/>guhti<s n="prn"/></r></p></e>
-    <e><p><l>gii<g><b/>beare</g><s n="prn"/><s n="interr"/></l><r>vajku<b/>guhti<s n="prn"/><s n="interr"/></r></p></e>
+    <e><p><l>gii<g><b/>beare</g><s n="prn"/><s n="itg"/></l><r>vajku<b/>guhti<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>gii<s n="prn"/></l><r>guhti<s n="prn"/></r></p></e>
     <e><p><l>giige<s n="prn"/></l><r>guhtik<s n="prn"/></r></p></e>
     <e><p><l>giijai<s n="prn"/></l><r>færttahasj<s n="prn"/></r></p></e>
@@ -3622,6 +3622,8 @@
     <e><p><l>lissa<s n="n"/></l><r>lissa<s n="n"/></r></p></e>
     <e><p><l>lista<s n="n"/></l><r>lissta<s n="n"/></r></p></e>
     <e><p><l>listu<s n="n"/></l><r>lissto<s n="n"/></r></p></e>
+    <e r="LR"><p><l>diibmolista<s n="n"/></l><r>tijmmalissta<s n="n"/></r></p></e>
+    <e><p><l>diibmolistu<s n="n"/></l><r>tijmmalissta<s n="n"/></r></p></e>
     <e><p><l>litaniija<s n="n"/></l><r>litanija<s n="n"/></r></p></e>
     <e><p><l>litchi<s n="n"/></l><r>litchi<s n="n"/></r></p></e>
     <e><p><l>litografiija<s n="n"/></l><r>litografija<s n="n"/></r></p></e>
