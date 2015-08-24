@@ -1,11 +1,11 @@
-Revision: 61158
-AP_SRC1 Revision: 116842
-AP_SRC2 Revision: 116421
+Revision: 61419
+AP_SRC1 Revision: 118535
+AP_SRC2 Revision: 118380
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Anne ráhkada biepmu.
 	- Anne biebmov stielli.
-	+ Annev dahká biebmov.
+	+ Anne dahká biebmov.
 
 
 sme-smj	  Son lea boaris.
@@ -26,7 +26,7 @@ WORKS	  Iv diede.
 
 sme-smj	  Máhtte ii sáhttán boahtit ovdal.
 	- Máhttin ij máhttám boahtet åvddål.
-	+ Máhttin ij #máhttet boahtep #åvddål.
+	+ Máhttin ij #máhttet boahtet #åvddål.
 
 
 sme-smj	  Ii oro nu vuogas.
@@ -34,48 +34,44 @@ WORKS	  Ij åro nåv vuogas.
 
 
 sme-smj	  In háliit duinna doarrut.
-	- Iv hálijda dujna doarrut.
-	+ Iv #hálijdit dujna #doarrut.
+WORKS	  Iv hálijda dujna doarrut.
 
 
 sme-smj	  It go sáhte muitalit?
 	- I gu máhte subtsastit?
-	+ I #gu máhte subtsastip?
+	+ I #gu máhte subtsastit?
 
 
 sme-smj	  Eat go sáhttán vuolgit?
 	- Ep gu máhttám vuolgget?
-	+ Ep #gu #máhttet #vuolgget?
+	+ Ep #gu #máhttet vuolgget?
 
 
 sme-smj	  Eat šat gille.
-	- Ep desti visjá.
-	+ Ep desti giellin.
+WORKS	  Ep desti visjá.
 
 
 sme-smj	  Sii eai liiko, go mii hárdit sin.
 	- Sij e lijkku, gå mij sijáv hárddep.
-	+ Sij e #lijkkut, #gu #mij #hárddet sijáv.
+	+ Sij e lijkku, gå mij hárddep sijáv.
 
 
 sme-smj	  Eai oro nu vuohkkasat.
-	- E åro nåv vuohkasa.
-	+ E åro nåv #vuogas.
+WORKS	  E åro nåv vuohkasa.
 
 
 sme-smj	  Miriam Paulsen.
 	- Miriam Paulsen.
-	+ Miriamav Paulsenav.
+	+ #Miriam Paulsen.
 
 
 sme-smj	  Hui jorbadit.
 	- Sieldes jårbbådit.
-	+ Huj #jårbbåt.
+	+ Huj jårbbådabbo.
 
 
 sme-smj	  Dát áššit leat dehálaččat.
-	- Dá ássje li ájnnasa.
-	+ Dá ássje la/le #ájnas.
+WORKS	  Dá ássje li ájnnasa.
 
 
 sme-smj	  Mánná lea láiki.
@@ -83,8 +79,7 @@ WORKS	  Mánná la lájkke.
 
 
 sme-smj	  Mánát leat láikkit.
-	- Máná li lájke.
-	+ Máná la/le #lájkke.
+WORKS	  Máná li lájke.
 
 
 sme-smj	  Girji lea hálbi.
@@ -92,8 +87,7 @@ WORKS	  Girjje la hálbbe.
 
 
 sme-smj	  Girjjit leat hálbbit.
-	- Girje li hálbe.
-	+ Girje la/le #hálbbe.
+WORKS	  Girje li hálbe.
 
 
 sme-smj	  Sevnnjoda.
@@ -101,8 +95,7 @@ WORKS	  Sjevnjut.
 
 
 sme-smj	  Vuolgit lea suohtas.
-	- Vuolgget la suohtas.
-	+ #Vuolgget la suohtas.
+WORKS	  Vuolgget la suohtas.
 
 
 sme-smj	  Sakŋida.
@@ -126,8 +119,7 @@ WORKS	  Boadáv.
 
 
 sme-smj	  Gii bođii?
-	- Guhti bådij?
-	+ #Guhti bådij?
+WORKS	  Guhti bådij?
 
 
 sme-smj	  Liikojit go guollái?
@@ -136,18 +128,15 @@ sme-smj	  Liikojit go guollái?
 
 
 sme-smj	  Áddjá lea boahtán.
-	- Áddjá la boahtám.
-	+ Áddjá la #boahtet.
+WORKS	  Áddjá la boahtám.
 
 
 sme-smj	  Buorre lei go bohtet.
-	- Buorre lij gå båhti.
-	+ Buorre lij #gu båhtit.
+WORKS	  Buorre lij gå båhti.
 
 
 sme-smj	  Biekkastii.
-	- Biekkastij.
-	+ Biekkaj.
+WORKS	  Biekkastij.
 
 
 sme-smj	  Čájeheahkki munnje.
@@ -156,12 +145,12 @@ WORKS	  Vuosedihtte munji.
 
 sme-smj	  Manni doai dohko.
 	- Manne dåj dåhku.
-	+ Mannev dåj dåhku/dåk.
+	+ Manne dåj dåhku/dåk.
 
 
 sme-smj	  Gean don oidnet.
 	- Gev dån vuojnni.
-	+ #Guhti dån vuojnnit.
+	+ #Guhti dån vuojnni.
 
 
 sme-smj	  Son vuittii golli.
@@ -170,18 +159,15 @@ sme-smj	  Son vuittii golli.
 
 
 sme-smj	  Boahtti veahkkin.
-	- Boahtte viehkken.
-	+ #Boahtte viehkken.
+WORKS	  Boahtte viehkken.
 
 
 sme-smj	  Máhtte lea viššalis bargi.
-	- Máhttin la vissjalis bargge.
-	+ Máhttin la vissjalis barggev.
+WORKS	  Máhttin la vissjalis bargge.
 
 
 sme-smj	  Ahte gielistii lea vissis.
-	- Ahte gielestij la visses.
-	+ #Ahte gielestij la visses.
+WORKS	  Ahte gielestij la visses.
 
 
 sme-smj	  Leage buorre.
@@ -189,28 +175,27 @@ WORKS	  Liege buorre.
 
 
 sme-smj	  Buorre lei go bohtet.
-	- Buorre lij gå båhti.
-	+ Buorre lij #gu båhtit.
+WORKS	  Buorre lij gå båhti.
 
 
 sme-smj	  Ean muital suohttasiiddáme earáide.
 	- En subtsasta suohttasijdema iehtjádijda.
-	+ En #subtsastit #suohtas iehtjádijda.
+	+ En subtsasta #suohtas iehtjádijda.
 
 
 sme-smj	  Eat muital suohttasiiddámet earáide.
 	- Ep subtsasta suohttasijdema iehtjádijda.
-	+ Ep #subtsastit #suohtas iehtjádijda.
+	+ Ep subtsasta #suohtas iehtjádijda.
 
 
 sme-smj	  In muital suohttasiiddán earáide.
 	- Iv subtsasta suohttasijdám iehtjádijda.
-	+ Iv #subtsastit #suohtas iehtjádijda.
+	+ Iv subtsasta #suohtas iehtjádijda.
 
 
 sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 	- Teáhtera ulmmen la nannit sámij identitehtav ja kultuvrav.
-	+ #Teáhter ulmmen la #nannit sámijt identitehtav/identitiehtav ja kultuvrav.
+	+ Teáhttara ulmmen la nannit sámij identitehtav/identitiehtav ja kultuvrav.
 
 
-15 / 45, ~33.33333333333333333333%
+30 / 45, ~66.66666666666666666667%

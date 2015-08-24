@@ -81,6 +81,7 @@ dev/xfst2apertium.hashtags.twol -text
 dev/xfst2apertium.relabel -text
 dev/xfst2apertium.useless.analysis.twol -text
 dev/xfst2apertium.useless.generation.twol -text
+/gt2apertium.cg3r -text
 /modes.xml -text
 /sme-smj.prob -text
 t/README.org -text
