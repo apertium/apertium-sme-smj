@@ -1,6 +1,6 @@
 Revision: 61419
 AP_SRC1 Revision: 119934
-AP_SRC2 Revision: 119936
+AP_SRC2 Revision: 119958
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Anne ráhkada biepmu.
@@ -38,13 +38,12 @@ WORKS	  Iv hálijda dujna doarrut.
 
 
 sme-smj	  It go sáhte muitalit?
-	- I gu máhte subtsastit?
-	+ I #gu máhte subtsastit?
+WORKS	  I gu máhte subtsastit?
 
 
 sme-smj	  Eat go sáhttán vuolgit?
 	- Ep gu máhttám vuolgget?
-	+ Ep #gu #máhttet vuolgget?
+	+ Ep gu #máhttet vuolgget?
 
 
 sme-smj	  Eat šat gille.
@@ -122,8 +121,7 @@ WORKS	  Guhti bådij?
 
 
 sme-smj	  Liikojit go guollái?
-	- Lijkkuji gu guolláj?
-	+ Lijkkuji #gu guolláj?
+WORKS	  Lijkkuji gu guolláj?
 
 
 sme-smj	  Áddjá lea boahtán.
@@ -196,4 +194,4 @@ sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 	+ Teáhttara ulmmen la nannit sámij identitehtav/identitiehtav ja kultuvrav.
 
 
-32 / 45, ~71.11111111111111111111%
+34 / 45, ~75.55555555555555555556%

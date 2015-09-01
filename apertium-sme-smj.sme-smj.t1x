@@ -33,7 +33,7 @@
   </def-cat>
   <def-cat n="pcle">
      <cat-item tags="pcle.*"/>
-     <cat-item tags="qst.pcle.*"/>
+     <cat-item tags="pcle.qst.*"/>
   </def-cat>
   <def-cat n="adv">
      <cat-item tags="adv"/>
@@ -164,7 +164,7 @@
 
   <def-attr n="a_pcle">
      <attr-item tags="pcle"/>
-     <attr-item tags="qst.pcle"/>
+     <attr-item tags="pcle.qst"/>
   </def-attr>
 
   <def-attr n="a_cnj">

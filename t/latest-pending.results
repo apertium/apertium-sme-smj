@@ -1,6 +1,6 @@
 Revision: 61419
 AP_SRC1 Revision: 119934
-AP_SRC2 Revision: 119936
+AP_SRC2 Revision: 119958
 Running Pending-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Wikipedia dárbbaša du veahki.
@@ -79,7 +79,7 @@ sme-smj	  Iibat oaččo basadit?
 
 sme-smj	  Lehpet go dárbbašan ollu veahki?
 	- Lehpit gu dárbaham ållo viehkev?
-	+ Lihpit #gu dárbaham #ållo viehkev/viehkkev?
+	+ Lihpit gu dárbaham #ållo viehkev/viehkkev?
 
 
 sme-smj	  Oahpaheddjiin lea ollu bargu.
@@ -153,12 +153,11 @@ sme-smj	  Sii leat stuoribut.
 
 sme-smj	  Boađát go dál?
 	- Boadá gu dál?
-	+ Boadá #gu dálla?
+	+ Boadá gu dálla?
 
 
 sme-smj	  Vuolgibeahtti go girdiin?
-	- Vuolggebihtte gu girddijn?
-	+ Vuolggebihtte #gu girddijn?
+WORKS	  Vuolggebihtte gu girddijn?
 
 
 sme-smj	  Mun heahpanan jámas!
@@ -215,12 +214,12 @@ sme-smj	  Dál moai boradetne.
 
 sme-smj	  Dárbbašehpet go veahki?
 	- Dárbahihpit gu viehkev?
-	+ Dárbahihpit #gu viehkev/viehkkev?
+	+ Dárbahihpit gu viehkev/viehkkev?
 
 
 sme-smj	  Eahppi go boađe?
 	- Æhppe gu boade?
-	+ Ähppe/Æhppe #gu boade?
+	+ Ähppe/Æhppe gu boade?
 
 
 sme-smj	  Mii eat ipmir maidege.
@@ -303,7 +302,7 @@ sme-smj	  Mii ávkkiid lea min doppe johtit?
 
 sme-smj	  Lehpet go viežžan buot girjjiideattet?
 	- Lehpit gu viedtjam divna girjijdihtte?
-	+ Lihpit #gu viedtjam #divnna girjijdihtte?
+	+ Lihpit gu viedtjam #divnna girjijdihtte?
 
 
 sme-smj	  Don fertet ieš čállit.
@@ -313,7 +312,7 @@ sme-smj	  Don fertet ieš čállit.
 
 sme-smj	  Leahppi go oaidnán áhčáde?
 	- Læhppe gu vuojnnám áhtjáda?
-	+ Lihppe #gu vuojnnám áhtjáda?
+	+ Lihppe gu vuojnnám áhtjáda?
 
 
 sme-smj	  Eaba muital suohttasiiddiska earáide.
@@ -323,32 +322,32 @@ sme-smj	  Eaba muital suohttasiiddiska earáide.
 
 sme-smj	  Leahppi go gávdnan gusade?
 	- Læhppe gu gávnnam gusáda?
-	+ Lihppe #gu gávnnam gusáda?
+	+ Lihppe gu gávnnam gusáda?
 
 
 sme-smj	  Leahppi go viežžan buot girjjiideatte?
 	- Læhppe gu viedtjam divna girjijdihtte?
-	+ Lihppe #gu viedtjam #divnna girjijdihtte?
+	+ Lihppe gu viedtjam #divnna girjijdihtte?
 
 
 sme-smj	  Leat go viežžan buot girjjiidat?
 	- Le gu viedtjam divna girjijdat?
-	+ La #gu viedtjam #divnna girjijdat/girjijdit?
+	+ La gu viedtjam #divnna girjijdat/girjijdit?
 
 
 sme-smj	  Leaččan go buot muitán?
 	- Littjav gu divna mujttám?
-	+ #Liehket #gu #divnna mujttám?
+	+ #Liehket gu #divnna mujttám?
 
 
 sme-smj	  Leaččat go buot muitán?
 	- Littja gu divna mujttám?
-	+ #Liehket #gu #divnna mujttám?
+	+ #Liehket gu #divnna mujttám?
 
 
 sme-smj	  Leaččan go buot váldán?
 	- Littjav gu divna válldám?
-	+ #Liehket #gu #divnna válldám?
+	+ #Liehket gu #divnna válldám?
 
 
 sme-smj	  Boarrásepmosat sáhttet bargat.
@@ -360,4 +359,4 @@ sme-smj	  Máhtte lea dát iige duot.
 	+ Máhttin la dát ij @\^duot.
 
 
-8 / 73, ~10.95890410958904109589%
+9 / 73, ~12.32876712328767123288%
