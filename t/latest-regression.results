@@ -1,6 +1,6 @@
 Revision: 61419
 AP_SRC1 Revision: 119934
-AP_SRC2 Revision: 119958
+AP_SRC2 Revision: 119970
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Anne ráhkada biepmu.
@@ -175,18 +175,15 @@ WORKS	  Buorre lij gå båhti.
 
 
 sme-smj	  Ean muital suohttasiiddáme earáide.
-	- En subtsasta suohttasijdema iehtjádijda.
-	+ En subtsasta #suohtas iehtjádijda.
+WORKS	  En subtsasta suohttasijdema iehtjádijda.
 
 
 sme-smj	  Eat muital suohttasiiddámet earáide.
-	- Ep subtsasta suohttasijdema iehtjádijda.
-	+ Ep subtsasta #suohtas iehtjádijda.
+WORKS	  Ep subtsasta suohttasijdema iehtjádijda.
 
 
 sme-smj	  In muital suohttasiiddán earáide.
-	- Iv subtsasta suohttasijdám iehtjádijda.
-	+ Iv subtsasta #suohtas iehtjádijda.
+WORKS	  Iv subtsasta suohttasijdám iehtjádijda.
 
 
 sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
@@ -194,4 +191,4 @@ sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 	+ Teáhttara ulmmen la nannit sámij identitehtav/identitiehtav ja kultuvrav.
 
 
-34 / 45, ~75.55555555555555555556%
+37 / 45, ~82.22222222222222222222%
