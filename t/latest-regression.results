@@ -1,11 +1,11 @@
 Revision: 61419
-AP_SRC1 Revision: 118535
-AP_SRC2 Revision: 118380
+AP_SRC1 Revision: 119934
+AP_SRC2 Revision: 119936
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Anne ráhkada biepmu.
 	- Anne biebmov stielli.
-	+ Anne dahká biebmov.
+	+ Anne biebmov dahká.
 
 
 sme-smj	  Son lea boaris.
@@ -52,8 +52,7 @@ WORKS	  Ep desti visjá.
 
 
 sme-smj	  Sii eai liiko, go mii hárdit sin.
-	- Sij e lijkku, gå mij sijáv hárddep.
-	+ Sij e lijkku, gå mij hárddep sijáv.
+WORKS	  Sij e lijkku, gå mij sijáv hárddep.
 
 
 sme-smj	  Eai oro nu vuohkkasat.
@@ -154,8 +153,7 @@ sme-smj	  Gean don oidnet.
 
 
 sme-smj	  Son vuittii golli.
-	- Sån gållev vuojtij.
-	+ Sån vuojtij gållev.
+WORKS	  Sån gållev vuojtij.
 
 
 sme-smj	  Boahtti veahkkin.
@@ -198,4 +196,4 @@ sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 	+ Teáhttara ulmmen la nannit sámij identitehtav/identitiehtav ja kultuvrav.
 
 
-30 / 45, ~66.66666666666666666667%
+32 / 45, ~71.11111111111111111111%

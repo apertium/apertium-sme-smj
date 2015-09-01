@@ -1,11 +1,11 @@
 Revision: 61419
-AP_SRC1 Revision: 118535
-AP_SRC2 Revision: 118380
+AP_SRC1 Revision: 119934
+AP_SRC2 Revision: 119936
 Running Pending-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Wikipedia dárbbaša du veahki.
 	- Wikipedia duv viehkev dárbaj.
-	+ Wikipedia dárbaj duv viehkev/viehkkev.
+	+ Wikipedia duv viehkev/viehkkev dárbaj.
 
 
 sme-smj	  Sámegielat Wikipedias leat dál 2,717 artihkkala.
@@ -20,7 +20,7 @@ sme-smj	  Isak Saba 1875-1921 lei sápmelaš oahpaheaddji ja politihkkár.
 
 sme-smj	  Son beroštii arkeologalaš bargguin, ja son čokkii dávviriid ja dávttiid boares hávddiin.
 	- Sån berustij arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt boares hávdijs.
-	+ Sån berustij #arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt boares hávdijs.
+	+ Sån #arkeologalasj bargojs berustij, ja sån dávverijt ja dávtijt tjåkkij boares hávdijs.
 
 
 sme-smj	  Girjái Áillohaš lea čoaggán historjjálaš govaid sámiin birra máilmmi.
@@ -30,7 +30,7 @@ sme-smj	  Girjái Áillohaš lea čoaggán historjjálaš govaid sámiin birra m
 
 sme-smj	  Sámit dahjege sápmelaččat ásset Ruoššas, Suomas, Ruoŧas ja Norggas.
 	- Sáme jali sábmelattja årru Ruossjan, Suoman, Svierigin ja Vuonan.
-	+ Sáme jali sábmelattja årru Ruossjas, Suomas, Svierigis ja Vuonas.
+	+ Sáme jali sábmelattja Ruossjan årru, Suomas, Svierigis ja Vuonas.
 
 
 sme-smj	  Sámiid ássanguovlu gohčoduvvo Sápmin.
@@ -50,12 +50,12 @@ sme-smj	  Amerihká ovttastuvvan stáhtain leat 50 oassestáhta, mat leat oalle 
 
 sme-smj	  Doppe mánát ohppet giela lunddolaččat árgabeaivvi bargguid ja stoahkama bokte.
 	- Dåppe máná gielav oahppi luondulattjat árggabiejve bargoj ja ståhkama baktu.
-	+ Dåppe máná oahppi gielav #luondulattjat árggabiejve bargoj ja #ståhkam baktu.
+	+ Dåppe máná gielav oahppi #luondulattjat árggabiejve bargoj ja #ståhkam baktu.
 
 
 sme-smj	  Giron lea vuoncceslottiide gullevaš loddi, mii eallá duottarguovlluin.
 	- Gierun la vuonntsálåttijda gullujiddje lådde, mij ællá duottarguovlojn.
-	+ Gierun la *vuoncceslottiide #gullujiddje lådde, mij viessu #duottarguovllo.
+	+ Gierun la *vuoncceslottiide #gullujiddje lådde, mij #duottarguovllo viessu.
 
 
 sme-smj	  Wikipedia lea máŋggagielat prošeakta man ulbmilin lea ráhkadit almmolaš diehtosátnegirjji gosa gii beare sáhttá čállit artihkkaliid.
@@ -108,7 +108,7 @@ sme-smj	  Gean láhkái son lea?
 
 sme-smj	  Son lea áhčis láhkái.
 	- Sån guorrá áhtjev.
-	+ Sån la áhtjes láhkáj.
+	+ Sån áhtjes la láhkáj.
 
 
 sme-smj	  Son lea boarráseamos.
@@ -167,7 +167,8 @@ sme-smj	  Mun heahpanan jámas!
 
 
 sme-smj	  Son liiko guollái.
-WORKS	  Sån lijkku guolláj.
+	- Sån lijkku guolláj.
+	+ Sån guolláj lijkku.
 
 
 sme-smj	  Maid sihtabeahtti odne?
@@ -189,12 +190,13 @@ sme-smj	  It go sáhte muitalit midjiide.
 
 
 sme-smj	  Son váldá mu gihtii.
-WORKS	  Sån válldá muv giehtaj.
+	- Sån válldá muv giehtaj.
+	+ Sån muv giehtaj válldá.
 
 
 sme-smj	  Soai boahtiba dán geainnu.
 	- Såj boahteba dán gæjno.
-	+ Såj boahteba #dát gäjno/gæjno.
+	+ Såj #dát gäjno/gæjno boahteba.
 
 
 sme-smj	  Son šaddá buorrin oahpaheaddjin.
@@ -228,7 +230,7 @@ sme-smj	  Mii eat ipmir maidege.
 
 sme-smj	  Dii vujiidet duon luotta.
 	- Dij vuojijda duon luotta.
-	+ Dij vuojijda #duot luotta.
+	+ Dij #duot luotta vuojijda.
 
 
 sme-smj	  Mun oainnán ahte dii lehpet boahtán.
@@ -261,11 +263,12 @@ sme-smj	  Mu boares áddjá ii šaddan vuolgit.
 
 sme-smj	  Diet girjjit gullet munnje.
 	- Da girje gulluji munji.
-	+ Dá girje gulli munji.
+	+ Dá girje munji gulli.
 
 
 sme-smj	  Manne don geahčat munnje?
-WORKS	  Manen dån gehtja munji?
+	- Manen dån gehtja munji?
+	+ Manen dån munji gehtja?
 
 
 sme-smj	  Gos don dál boađát?
@@ -279,7 +282,8 @@ sme-smj	  Diet girji lea mu.
 
 
 sme-smj	  Mii oruimet doppe jagi.
-WORKS	  Mij årojma dåppe jagev.
+	- Mij årojma dåppe jagev.
+	+ Mij årojma dåppe jagen.
 
 
 sme-smj	  Maid mii galgat muitalit sutnje?
@@ -356,4 +360,4 @@ sme-smj	  Máhtte lea dát iige duot.
 	+ Máhttin la dát ij @\^duot.
 
 
-12 / 73, ~16.43835616438356164384%
+8 / 73, ~10.95890410958904109589%
