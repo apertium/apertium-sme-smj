@@ -4,7 +4,7 @@
 
   <mode name="sme-smj" install="yes">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -52,7 +52,7 @@
 
   <mode name="sme-smj-morph" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
     </pipeline>
@@ -60,7 +60,7 @@
 
   <mode name="sme-smj-disam" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -73,7 +73,7 @@
 
   <mode name="sme-smj-syntax" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -89,7 +89,7 @@
 
   <mode name="sme-smj-tagger" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -105,7 +105,7 @@
 
   <mode name="sme-smj-biltrans" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -127,7 +127,7 @@
 
   <mode name="sme-smj-lex" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -153,7 +153,7 @@
 
   <mode name="sme-smj-chunker" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -181,7 +181,7 @@
 
   <mode name="sme-smj-interchunk1" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -210,7 +210,7 @@
 
   <mode name="sme-smj-interchunk2" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -246,7 +246,7 @@
 
   <mode name="sme-smj-interchunk3" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -287,7 +287,7 @@
 
   <mode name="sme-smj-postchunk" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -331,7 +331,7 @@
 
   <mode name="sme-smj-dgen">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -380,7 +380,7 @@
   <!-- untrimmed sme-smj, for debug: -->
   <mode name="usme-smj" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -428,7 +428,7 @@
 
   <mode name="usme-smj-morph" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
     </pipeline>
@@ -436,7 +436,7 @@
 
   <mode name="usme-smj-disam" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -447,7 +447,7 @@
 
   <mode name="usme-smj-syntax" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -461,7 +461,7 @@
 
   <mode name="usme-smj-tagger" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -475,7 +475,7 @@
 
   <mode name="usme-smj-biltrans" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -496,7 +496,7 @@
 
   <mode name="usme-smj-lex" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -521,7 +521,7 @@
 
   <mode name="usme-smj-chunker" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -549,7 +549,7 @@
 
   <mode name="usme-smj-interchunk1" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -576,7 +576,7 @@
 
   <mode name="usme-smj-interchunk2" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -612,7 +612,7 @@
 
   <mode name="usme-smj-interchunk3" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -652,7 +652,7 @@
 
   <mode name="usme-smj-postchunk" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -696,7 +696,7 @@
 
   <mode name="usme-smj-dgen">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
       <program name="cg-proc -w">
@@ -746,7 +746,7 @@
 
   <mode name="smj-sme-morph" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="smj-sme.automorf.hfst"/>
       </program>
     </pipeline>
@@ -754,7 +754,7 @@
 
   <mode name="usmj-sme-morph" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="smj-sme.automorf-untrimmed.hfst"/>
       </program>
     </pipeline>
@@ -762,7 +762,7 @@
 
   <mode name="smj-sme" install="no">
     <pipeline>
-      <program name="hfst-proc -w -e">
+      <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="smj-sme.automorf.hfst"/>
       </program>
       <program name="cg-proc -w">

@@ -64,10 +64,10 @@ TARGETS_COMMON =			\
 	hfst-compose-intersect -1 $< -2 .deps/$(PREFIX1).autobil.prefixes -o $@
 
 $(PREFIX1).automorf.hfst: .deps/$(PREFIX1).automorf-trimmed.hfst
-	hfst-fst2fst -O -i $< -o $@
+	hfst-fst2fst -w -i $< -o $@
 
 $(PREFIX1).automorf-untrimmed.hfst: .deps/$(LANG1).automorf.hfst
-	hfst-fst2fst -O -i $< -o $@
+	hfst-fst2fst -w -i $< -o $@
 
 # -------------------
 # Northern Saami generation:
@@ -102,10 +102,10 @@ $(PREFIX2).autogen.hfst: .deps/$(LANG1).autogen.hfst
 	hfst-compose-intersect -1 $< -2 .deps/$(PREFIX2).autobil.prefixes -o $@
 
 $(PREFIX2).automorf.hfst: .deps/$(PREFIX2).automorf-trimmed.hfst
-	hfst-fst2fst -O -i $< -o $@
+	hfst-fst2fst -w -i $< -o $@
 
 $(PREFIX2).automorf-untrimmed.hfst: .deps/$(LANG2).automorf.hfst
-	hfst-fst2fst -O -i $< -o $@
+	hfst-fst2fst -w -i $< -o $@
 
 # -------------------
 # Lule Saami generation:
