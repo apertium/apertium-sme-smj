@@ -119,13 +119,6 @@ $(PREFIX1).autogen.hfst: .deps/$(LANG2).autogen.hfst
 
 
 ###############################################################################
-## Prob files for tagger
-###############################################################################
-
-#$(PREFIX1).prob: $(AP_SRC1)/$(LANG1).prob
-#	cp $< $@
-
-###############################################################################
 ## Bilingual dictionaries
 ###############################################################################
 
@@ -207,9 +200,7 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 ###############################################################################
 
 # Files which are distributed, but not built:
-EXTRA_DIST=$(PREFIX1).prob \
-	   $(PREFIX2).prob \
-	   $(BASENAME).$(PREFIX1).t1x \
+EXTRA_DIST=$(BASENAME).$(PREFIX1).t1x \
 	   $(BASENAME).$(PREFIX1).t2x \
 	   $(BASENAME).$(PREFIX1).t3x \
 	   $(BASENAME).$(PREFIX1).t4x \
