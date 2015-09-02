@@ -1,6 +1,6 @@
 Revision: 61419
 AP_SRC1 Revision: 119934
-AP_SRC2 Revision: 119970
+AP_SRC2 Revision: 120028
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Anne ráhkada biepmu.
@@ -146,8 +146,7 @@ sme-smj	  Manni doai dohko.
 
 
 sme-smj	  Gean don oidnet.
-	- Gev dån vuojnni.
-	+ #Guhti dån vuojnni.
+WORKS	  Gev dån vuojnni.
 
 
 sme-smj	  Son vuittii golli.
@@ -191,4 +190,4 @@ sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 	+ Teáhttara ulmmen la nannit sámij identitehtav/identitiehtav ja kultuvrav.
 
 
-37 / 45, ~82.22222222222222222222%
+38 / 45, ~84.44444444444444444444%
