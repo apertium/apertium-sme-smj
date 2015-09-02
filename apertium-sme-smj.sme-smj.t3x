@@ -6,70 +6,70 @@
       <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
     </def-cat>
-    
+
     <def-cat n="SN_Subj">
         <cat-item tags="SN.@SUBJ→.*"/>
         <cat-item tags="SN.@←SUBJ.*"/>
     </def-cat>
-    
+
     <def-cat n="SN_Obj">
         <cat-item tags="SN.@OBJ→.*"/>
         <cat-item tags="SN.@←OBJ.*"/>
     </def-cat>
-    
+
     <def-cat n="SN_Pr">
         <cat-item tags="SN.@←ADVL.*"/>
     </def-cat>
-    
+
     <def-cat n="SN_Advl">
         <cat-item tags="SN.@ADVL→.*"/>
         <cat-item tags="SN.@←ADVL.*"/>
         <cat-item tags="SN.@ADVL.*"/>
     </def-cat>
-    
+
     <def-cat n="SN_Po">
         <cat-item tags="SN.@→P.*"/>
     </def-cat>
-    
+
     <def-cat n="FMainV">
         <cat-item tags="SV.@+FMAINV"/>
         <cat-item tags="SV.@+FMAINV.*"/>
         <cat-item tags="SV.*.@+FMAINV.*"/>
         <cat-item tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
-    
+
     <def-cat n="FAuxV">
         <cat-item tags="SV.@+FMAUXV"/>
         <cat-item tags="SV.@+FMAUXV.*"/>
         <cat-item tags="SV.*.@+FMAUXV.*"/>
         <cat-item tags="SV.*.*.@+FMAUXV.*"/>
     </def-cat>
-    
+
     <def-cat n="CC">
         <cat-item tags="CC.@CNP"/>
         <cat-item tags="CC.*"/> <!--should be removed when we fix CG -->
         <cat-item tags="SV.*.neg.foc_ge"/>
         <cat-item tags="SV.*.neg.foc_ge.*"/>
     </def-cat>
-    
+
     <def-cat n="CNP">
         <cat-item tags="CC.@CNP"/>
     </def-cat>
-    
+
     <def-cat n="Vcop">
         <cat-item lemma="copula" tags="SV"/>
         <cat-item lemma="copula" tags="SV.*"/>
     </def-cat>
-    
+
     <def-cat n="Ine_adverb">
         <cat-item lemma="gitta" tags="ADV"/>
         <cat-item lemma="gitta" tags="ADV.*"/>
     </def-cat>
-    
+
     <def-cat n="Pcle">
         <cat-item tags="PCLE.@PCLE"/>
     </def-cat>
-    
+
     <def-cat n="Adp">
         <cat-item tags="pr.*"/>
         <cat-item tags="pr"/>

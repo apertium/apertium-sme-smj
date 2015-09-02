@@ -11,6 +11,17 @@
      <cat-item tags="vblex.*.der_upmi.n.*"/>
      <cat-item tags="vblex.*.der_vuohta.n.*"/>
   </def-cat>
+
+  <def-cat n="nom_cmp">
+     <cat-item tags="n.*.cmp"/>
+     <cat-item tags="vblex.*.der_dimin.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_muš.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_nomact.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_nomag.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_upmi.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_vuohta.n.*.cmp"/>
+  </def-cat>
+
   <def-cat n="genmod">
      <cat-item tags="n.*.gen.@→N"/>
      <cat-item tags="n.*.gen.@→A"/>
@@ -69,38 +80,38 @@
      <cat-item tags="prn.*"/>
   </def-cat>
 
-  <def-cat n="cnjcoo">	
+  <def-cat n="cnjcoo">
      <cat-item tags="cnjcoo"/>
      <cat-item tags="cnjcoo.*"/>
   </def-cat>
-  <def-cat n="cnjsub">	
+  <def-cat n="cnjsub">
      <cat-item tags="cnjsub"/>
      <cat-item tags="cnjsub.*"/>
   </def-cat>
-  
+
   <def-cat n="CNP">
     <cat-item tags="cnjcoo.@CNP"/>
   </def-cat>
-  
-   <def-cat n="adpos">	
+
+   <def-cat n="adpos">
      <cat-item tags="po"/>
      <cat-item tags="po.*"/>
      <cat-item tags="pr"/>
      <cat-item tags="pr.*"/>
   </def-cat>
-  
-   <def-cat n="po_mod">	
+
+   <def-cat n="po_mod">
      <cat-item tags="*.*.*.*.@→P"/>
      <cat-item tags="*.*.*.*.*.@→P"/>
      <cat-item tags="*.*.*.@→P"/>
   </def-cat>
-  
-     <def-cat n="pr_mod">	
+
+     <def-cat n="pr_mod">
      <cat-item tags="*.*.*.*.@P←"/>
      <cat-item tags="*.*.*.*.*.@P←"/>
      <cat-item tags="*.*.*.@P←"/>
   </def-cat>
-  
+
   <def-cat n="copula">
     <cat-item lemma="leat" tags="vblex.iv.*"/>
   </def-cat>
@@ -133,7 +144,7 @@
      <attr-item tags="vblex.tv.der_upmi.n"/>
      <attr-item tags="vblex.tv.der_vuohta.n"/>
   </def-attr>
-  
+
   <def-attr n="a_genmod">
      <attr-item tags="n"/>
      <attr-item tags="n.prop"/>
@@ -153,7 +164,7 @@
      <attr-item tags="adj.attr"/>
      <attr-item tags="adj.adv"/>
   </def-attr>
-  
+
   <def-attr n="a_attrmod">
      <attr-item tags="adj.attr"/>
      <attr-item tags="adj.ord.attr"/> <!-- ordinals -->
@@ -252,7 +263,7 @@
      <attr-item tags="prfprc"/>
      <attr-item tags="prsprc"/>
   </def-attr>
-  
+
    <def-attr n="conneg">
      <attr-item tags="conneg"/>
   </def-attr>
@@ -262,10 +273,10 @@
     <attr-item tags="imprt"/>
     <attr-item tags="pot"/>
     <attr-item tags="cond"/>
-    <attr-item tags="neg"/> 
-    <attr-item tags="neg.indic"/> 
+    <attr-item tags="neg"/>
+    <attr-item tags="neg.indic"/>
   </def-attr>
-  
+
   <def-attr n="poss">
      <attr-item tags="pxsg1"/>
      <attr-item tags="pxsg2"/>
@@ -277,7 +288,7 @@
      <attr-item tags="pxpl2"/>
      <attr-item tags="pxpl3"/>
   </def-attr>
-  
+
   <def-attr n="voice">
     <attr-item tags="der_passl.vblex"/>
     <attr-item tags="der_passs.vblex"/>
@@ -295,7 +306,7 @@
      <attr-item tags="pl2"/>
      <attr-item tags="pl3"/>
   </def-attr>
-  
+
   <def-attr n="foc">
     <attr-item tags="foc_ba"/>
     <attr-item tags="foc_ban"/>
@@ -399,7 +410,7 @@
   <def-var n="current_syntag"/>
 </section-def-vars>
 
-<section-def-lists> 
+<section-def-lists>
   <def-list n="verbs_stative"><!--sme place-verbs, hope they work the same in smj -->
     <list-item v="ássat"/>
     <list-item v="orrut"/>
@@ -420,7 +431,7 @@
     <list-item v="veallahit"/>
     <list-item v="eallit"/>
   </def-list>
-  
+
   <def-list n="ine_adv"><!-- sme adverbs that appear with inessive -->
     <list-item v="gitta"/>
   </def-list>
@@ -527,7 +538,7 @@
             <lit v=""/>
         </let>
       </when>
-    </choose> 
+    </choose>
   </def-macro>
 
   <def-macro n="set_syntag1" npar="1">
@@ -554,7 +565,7 @@
       </otherwise>
     </choose>
   </def-macro>
- 
+
   <def-macro n="magic_number1" npar="1">
     <choose>
       <when>
@@ -582,7 +593,7 @@
       </when>
     </choose>
   </def-macro>
-  
+
    <def-macro n="assign_neg_tense" npar="1">
     <let>
       <var n="cur_verb_temps"/>
@@ -738,7 +749,7 @@
              <tag><clip pos="1" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_nom"/>
              <clip pos="1" side="tl" part="gen"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -750,6 +761,58 @@
            <var n="focus_pcle"/>
          </chunk>
        </out>
+     </action>
+  </rule>
+
+  <rule comment="REGLA: NOM_CMP NOM"> <!-- eallinbiras -->
+     <pattern>
+       <pattern-item n="nom_cmp"/>
+       <pattern-item n="nom"/>
+     </pattern>
+     <action>
+       <call-macro n="set_syntag1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="assign_case1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="magic_number1">
+         <with-param pos="2"/>
+       </call-macro>
+       <call-macro n="convert_focus1">
+         <with-param pos="2"/>
+       </call-macro>
+       <out>
+         <chunk name="cmp_nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><var n="current_syntag"/></tag>
+             <tag><clip pos="2" side="tl" part="nbr"/></tag>
+             <tag><clip pos="2" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_nom"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <lu>
+             <clip pos="2" side="tl" part="lemh"/>
+             <clip pos="2" side="tl" part="a_nom"/>
+             <clip pos="2" side="tl" part="nbr"/>
+             <clip pos="2" side="tl" part="case"/>
+             <clip pos="2" side="tl" part="poss"/>
+             <clip pos="2" side="tl" part="lemq"/>
+           </lu>
+           <var n="focus_pcle"/>
+         </chunk>
+       </out>
+       <choose><when>
+         <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+         <out><b pos="1"/></out>
+       </when></choose>
      </action>
   </rule>
 
@@ -780,7 +843,7 @@
              <tag><clip pos="2" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_genmod"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -790,7 +853,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
@@ -802,7 +865,7 @@
        </out>
      </action>
   </rule>
- 
+
    <rule comment="REGLA: GenMod GenMod Nom"> <!-- Su máná mánná lea girkus. --><!-- Mun oainnán su máná máná. WORKS-->
      <pattern>
        <pattern-item n="genmod"/>
@@ -831,7 +894,7 @@
              <tag><clip pos="3" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_genmod"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -841,7 +904,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_genmod"/>
              <clip pos="2" side="tl" part="pers"/>
              <clip pos="2" side="tl" part="nbr"/>
@@ -851,7 +914,7 @@
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="nbr"/>
              <clip pos="3" side="tl" part="case"/>
@@ -863,7 +926,7 @@
        </out>
      </action>
   </rule>
- 
+
     <rule comment="REGLA: GenMod GenMod GenMod Nom"><!-- Su máná máná mánná lea girkus. --><!-- Mun oainnán su máná máná máná. WORKS-->
      <pattern>
        <pattern-item n="genmod"/>
@@ -893,7 +956,7 @@
              <tag><clip pos="4" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_genmod"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -903,7 +966,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_genmod"/>
              <clip pos="2" side="tl" part="pers"/>
              <clip pos="2" side="tl" part="nbr"/>
@@ -913,7 +976,7 @@
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_genmod"/>
              <clip pos="3" side="tl" part="pers"/>
              <clip pos="3" side="tl" part="nbr"/>
@@ -923,7 +986,7 @@
            </lu>
            <b pos="3"/> <!--space between the words-->
            <lu>
-             <clip pos="4" side="tl" part="lemh"/> 
+             <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_nom"/>
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="case"/>
@@ -963,7 +1026,7 @@
              <tag><clip pos="2" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_attrmod"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
@@ -971,7 +1034,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
@@ -1012,7 +1075,7 @@
              <tag><clip pos="3" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_attrmod"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
@@ -1020,7 +1083,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_attrmod"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
@@ -1028,7 +1091,7 @@
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="nbr"/>
              <clip pos="3" side="tl" part="case"/>
@@ -1070,7 +1133,7 @@
              <tag><clip pos="4" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_attrmod"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
@@ -1078,7 +1141,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_attrmod"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
@@ -1086,7 +1149,7 @@
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_attrmod"/>
              <clip pos="3" side="tl" part="nbr"/>
              <clip pos="3" side="tl" part="case"/>
@@ -1094,7 +1157,7 @@
            </lu>
            <b pos="3"/> <!--space between the words-->
            <lu>
-             <clip pos="4" side="tl" part="lemh"/> 
+             <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_nom"/>
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="case"/>
@@ -1106,7 +1169,7 @@
        </out>
      </action>
   </rule>
-  
+
   <rule comment="REGLA: GenMod AttrMod Nom"><!-- Mun oainnán su boares ádjá. WORKS-->
      <pattern>
        <pattern-item n="genmod"/>
@@ -1135,7 +1198,7 @@
              <tag><clip pos="3" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_genmod"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -1144,7 +1207,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_attrmod"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
@@ -1152,7 +1215,7 @@
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="nbr"/>
              <clip pos="3" side="tl" part="case"/>
@@ -1164,7 +1227,7 @@
        </out>
      </action>
   </rule>
-  
+
     <rule comment="REGLA: GenMod AttrMod CNP AttrMod Nom"><!-- Mun oainnán su boares ja hávskes áddjá. -->
      <pattern>
        <pattern-item n="genmod"/>
@@ -1195,7 +1258,7 @@
              <tag><clip pos="3" side="tl" part="case"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_genmod"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -1204,7 +1267,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_attrmod"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
@@ -1212,13 +1275,13 @@
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_cnj"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b pos="3"/> <!--space between the words-->
            <lu>
-             <clip pos="4" side="tl" part="lemh"/> 
+             <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_attrmod"/>
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="case"/>
@@ -1226,7 +1289,7 @@
            </lu>
            <b pos="4"/> <!--space between the words-->
            <lu>
-             <clip pos="5" side="tl" part="lemh"/> 
+             <clip pos="5" side="tl" part="lemh"/>
              <clip pos="5" side="tl" part="a_nom"/>
              <clip pos="5" side="tl" part="nbr"/>
              <clip pos="5" side="tl" part="case"/>
@@ -1239,7 +1302,7 @@
      </action>
   </rule>
 
-  
+
   <!-- Numeral is the head -->
 
   <rule comment="REGLA: NUM NomMod"> <!-- Áhčis leat 2 máná. WORKS-->
@@ -1265,7 +1328,7 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
@@ -1276,7 +1339,7 @@
        </out>
      </action>
   </rule>
-  
+
     <rule comment="REGLA: NUM NomMod NumMod"><!-- Áhčis leat 2 máná máná. WORKS-->
      <pattern>
        <pattern-item n="num"/>
@@ -1301,13 +1364,13 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_adj"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_nom"/>
              <clip pos="3" side="tl" part="nbr"/>
              <clip pos="3" side="tl" part="case"/>
@@ -1344,19 +1407,19 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_adj"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_adj"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b pos="3"/> <!--space between the words-->
            <lu>
-             <clip pos="4" side="tl" part="lemh"/> 
+             <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_nom"/>
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="case"/>
@@ -1394,25 +1457,25 @@
            </lu>
            <b pos="1"/> <!--space between the words-->
            <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_adj"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
            <b pos="2"/> <!--space between the words-->
            <lu>
-             <clip pos="3" side="tl" part="lemh"/> 
+             <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_adj"/>
              <clip pos="3" side="tl" part="lemq"/>
            </lu>
            <b pos="3"/> <!--space between the words-->
             <lu>
-             <clip pos="4" side="tl" part="lemh"/> 
+             <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_adj"/>
              <clip pos="4" side="tl" part="lemq"/>
            </lu>
            <b pos="4"/> <!--space between the words-->
            <lu>
-             <clip pos="5" side="tl" part="lemh"/> 
+             <clip pos="5" side="tl" part="lemh"/>
              <clip pos="5" side="tl" part="a_nom"/>
              <clip pos="5" side="tl" part="nbr"/>
              <clip pos="5" side="tl" part="case"/>
@@ -1571,13 +1634,13 @@
                  <lit-tag v="@-FMAINV"/>
                </equal>
              </or>
-           </test> 
+           </test>
            <let>
              <var n="main_verb"/>
              <clip pos="1" side="sl" part="lemh"/>
            </let>
          </when>
-       </choose>  
+       </choose>
        <out>
          <chunk name="verb" case="caseFirstWord">
            <tags>
@@ -1602,7 +1665,7 @@
        </out>
      </action>
   </rule>
-  
+
   <rule comment="REGLA: InfMod INF"><!--Mun oahpan lottiid goddit.-->
      <pattern>
        <pattern-item n="inf_mod"/>
@@ -1630,7 +1693,7 @@
              <tag><clip pos="2" side="sl" part="foc"/></tag>
            </tags>
            <lu>
-             <clip pos="1" side="tl" part="lemh"/> 
+             <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_inf_mod"/>
              <clip pos="1" side="tl" part="pers"/>
              <clip pos="1" side="tl" part="nbr"/>
@@ -1696,7 +1759,7 @@
             </lu>
            <b pos="1"/> <!--space between the words-->
             <lu>
-             <clip pos="2" side="tl" part="lemh"/> 
+             <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_inf_mod"/>
              <clip pos="2" side="tl" part="pers"/>
              <clip pos="2" side="tl" part="nbr"/>
