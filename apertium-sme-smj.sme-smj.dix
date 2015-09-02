@@ -53,6 +53,25 @@
     <sdef n="tv"     c="Transitive"/>
     <sdef n="iv"     c="Intransitive"/>
 
+    <sdef n="inf"     c="infinitive"/>
+    <sdef n="imprt"   c="Imperative"/>
+    <sdef n="imp"     c="Imperative"/>
+    <sdef n="pres"     c="Present"/>
+    <sdef n="pret"     c="Preterite"/>
+    <sdef n="prfprc"  c="Perfect participle"/>
+    <sdef n="prsprc"  c="Present participle"/>
+    <sdef n="pp"      c="Perfect participle"/>
+
+    <sdef n="indic"     c="Indicative"/>
+    <sdef n="cond"    c="Conditional"/>
+    <sdef n="cond2"    c="Conditional slr2"/>
+    <sdef n="cond3"    c="Conditional slr3"/>
+    <sdef n="pot"     c="Potentialis"/>
+    <sdef n="supn"     c="Supine/Supinum"/>
+
+    <sdef n="conneg"  c="Negation form"/>
+    <sdef n="neg"     c="Negation verb 'ii'"/>
+
     <sdef n="ij"     c="interjection"/>
 
     <!-- Punctuation -->
@@ -61,10 +80,7 @@
     <sdef n="left"/>
     <sdef n="right"/>
 
-
     <sdef n="abbr"/>
-    <sdef n="pp"/>
-    <sdef n="v_x"/>
 
     <sdef n="der_passl" c="Passive derivation"/>
     <sdef n="der_passs" c="Passive derivation"/>
@@ -85,6 +101,11 @@
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgnomcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sggencmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="gen"/></r></p></e>
+
+      <e>   <p><l><s n="indic"/><s n="pret"/></l><r><s n="indic"/><s n="pret"/></r></p></e>
+      <e>   <p><l><s n="indic"/><s n="pres"/></l><r><s n="indic"/><s n="pres"/></r></p></e>
+      <e r="LR">  <p><l><s n="indic"/><s n="pret"/><s n="conneg"/></l><r><s n="indic"/><s n="conneg"/></r></p></e>
+      <e r="LR">  <p><l><s n="indic"/><s n="pres"/><s n="conneg"/></l><r><s n="indic"/><s n="conneg"/></r></p></e>
 
       <!-- let anything else through -->
       <e>   <p><l></l><r></r></p></e>
@@ -4661,7 +4682,6 @@
     <e><p><l>olgu<s n="n"/></l><r>ålggo<s n="n"/></r></p></e>
     <e><p><l>oligarkiija<s n="n"/></l><r>olegarkija<s n="n"/></r></p></e>
     <e><p><l>oliiva<s n="n"/></l><r>oliiva<s n="n"/></r></p></e>
-    <e><p><l>ollalit<s n="v_x"/></l><r>ållålit<s n="v_x"/></r></p></e>
     <e><p><l>olle<s n="n"/></l><r>ålle<s n="n"/></r></p></e>
     <e><p><l>olli<s n="n"/></l><r>ålle<s n="n"/></r></p></e>
     <e><p><l>ollisgovva<s n="n"/></l><r>ållesgåvvå<s n="n"/></r></p></e>
@@ -7942,6 +7962,7 @@
 
 <!-- Verbs -->
 <!-- TODO: these had their lemmas autocorrected, need checking: -->
+<e><p><l>ollalit<s n="vblex"/><s n="iv"/></l><r>ållålit<s n="vblex"/><s n="iv"/></r></p></e>
 <e><p><l>čáđggašit<s n="vblex"/><s n="iv"/></l><r>tjárggat<s n="vblex"/><s n="iv"/></r></p><par n="verb"/></e>
 <e><p><l>šávdásit<s n="vblex"/><s n="iv"/></l><r>sjávddet<s n="vblex"/><s n="iv"/></r></p><par n="verb"/></e>
 <e><p><l>čábbut<s n="vblex"/><s n="iv"/></l><r>tjábbot<s n="vblex"/><s n="iv"/></r></p><par n="verb"/></e>
