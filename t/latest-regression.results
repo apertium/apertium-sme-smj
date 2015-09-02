@@ -1,6 +1,6 @@
 Revision: 61419
 AP_SRC1 Revision: 119934
-AP_SRC2 Revision: 120028
+AP_SRC2 Revision: 120072
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Anne ráhkada biepmu.
@@ -9,11 +9,13 @@ sme-smj	  Anne ráhkada biepmu.
 
 
 sme-smj	  Son lea boaris.
-WORKS	  Sån la vuoras.
+	- Sån la vuoras.
+	+ Sån la boares.
 
 
 sme-smj	  Áddjá lea boaris.
-WORKS	  Áddjá la vuoras.
+	- Áddjá la vuoras.
+	+ Áddjá la boares.
 
 
 sme-smj	  In.
@@ -25,8 +27,7 @@ WORKS	  Iv diede.
 
 
 sme-smj	  Máhtte ii sáhttán boahtit ovdal.
-	- Máhttin ij máhttám boahtet åvddål.
-	+ Máhttin ij #máhttet boahtet #åvddål.
+WORKS	  Máhttin ij máhte boahtet åvddål.
 
 
 sme-smj	  Ii oro nu vuogas.
@@ -42,8 +43,7 @@ WORKS	  I gu máhte subtsastit?
 
 
 sme-smj	  Eat go sáhttán vuolgit?
-	- Ep gu máhttám vuolgget?
-	+ Ep gu #máhttet vuolgget?
+WORKS	  Ep gu máhte vuolgget?
 
 
 sme-smj	  Eat šat gille.

@@ -1,6 +1,6 @@
 Revision: 61419
 AP_SRC1 Revision: 119934
-AP_SRC2 Revision: 120028
+AP_SRC2 Revision: 120072
 Running Pending-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Wikipedia dárbbaša du veahki.
@@ -112,8 +112,7 @@ sme-smj	  Son lea áhčis láhkái.
 
 
 sme-smj	  Son lea boarráseamos.
-	- Sån la boarrásamos.
-	+ Sån la vuorrasamos.
+WORKS	  Sån la boarrásamos.
 
 
 sme-smj	  Diet girji lea mu.
@@ -123,7 +122,7 @@ sme-smj	  Diet girji lea mu.
 
 sme-smj	  Áddjá elii hui boarisin.
 	- Áddjá viesoj huj boarrásin.
-	+ Áddjá viesoj sieldes vuorrasin.
+	+ Áddjá viesoj sieldes boarrásin.
 
 
 sme-smj	  Dán jagi son lea oahpaheaddjin.
@@ -142,8 +141,7 @@ sme-smj	  Gos áhččát lea?
 
 
 sme-smj	  Sii leat boarrásepmosat.
-	- Sij li boarrásabmusa.
-	+ Sij li vuorrasabmusa.
+WORKS	  Sij li boarrásabmusa.
 
 
 sme-smj	  Sii leat stuoribut.
@@ -256,8 +254,7 @@ sme-smj	  Orrot jaska.
 
 
 sme-smj	  Mu boares áddjá ii šaddan vuolgit.
-	- Muv boares áddjá ij sjaddam vuolgget.
-	+ Muv vuoras áddjá ij #sjaddat vuolgget.
+WORKS	  Muv boares áddjá ij sjatta vuolgget.
 
 
 sme-smj	  Diet girjjit gullet munnje.
@@ -357,4 +354,4 @@ sme-smj	  Máhtte lea dát iige duot.
 	+ Máhttin la dát ij ga duo.
 
 
-11 / 73, ~15.06849315068493150685%
+14 / 73, ~19.17808219178082191781%

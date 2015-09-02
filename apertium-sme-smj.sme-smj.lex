@@ -1,3 +1,9 @@
+# -*- cg-pre-pipe: "apertium -d . sme-smj-biltrans|cg-conv -a 2>/dev/null" -*-
+
+#Distributed under the terms of the GNU General Public License version 2
+# or any later version.
+
+
 # ========== #
 # Delimiters #
 # ========== #
@@ -2267,9 +2273,9 @@ SELECT ("klássa") (0 ("<luohkká>") + N) (-1 Num);
     # Mun ráhkadan ášši. - Mån ássjev dagáv. 
 
 # S0: stiellit vs. dahkat
-SELECT ("stiellit") (0 ("<ráhkadit>") + TV) (0 FMAINV)(*1 FOOD LINK 0 (@←OBJ) BARRIER NPNHA);
+SELECT ("stiellit") (0 ("<ráhkadit>") + TV) (0 FMAINV)(*1 FOOD BARRIER NPNHA LINK 0 (@←OBJ));
     # Mun ráhkadan biepmu.
-SELECT ("stiellit") (0 ("<ráhkadit>") + TV) (0 FMAINV)(*-1 FOOD LINK 0 (@→OBJ) BARRIER NPNHA);
+SELECT ("stiellit") (0 ("<ráhkadit>") + TV) (0 FMAINV)(*-1 FOOD BARRIER NPNHA LINK 0 (@→OBJ));
     # Mun biepmu ráhkadan.
  
 
@@ -2326,7 +2332,7 @@ SELECT ("iellet") (0 ("<eallit>"i) + IV) (-1 ("agálaččat"));
     
 # S0: mujttalit (vs. subtsastit)   
  
-SELECT ("mujttalit") (0 ("<muitalit>") + TV) (*1 (@OBJ) LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") BARRIER NPNH );
+SELECT ("mujttalit") (0 ("<muitalit>") + TV) (*1 (@OBJ) BARRIER NPNH LINK 0 ("máinnas") OR ("muitalus") OR ("suvccas") OR ("cuvccas") );
     # Son muitala máidnasiid.
     # 
 
@@ -2362,17 +2368,13 @@ SELECT ("tjiehppe") (0 ("<čeahppi>") + A) (1 Inf LINK 0 ("borrat") OR ("juhkat"
 # boaris 
 # ------ 
 
-# Default (if no other rule applies)
-#SUBSTITUTE ("boaris") ("boaris:0") ("boaris"ri A);
-    # Son lea boaris.
-
-## S0: vuoras
-#SUBSTITUTE ("boaris:0") ("boaris:0") ("boaris"ri A Attr) (1C HUMAN OR ANIMAL);
-#SUBSTITUTE ("boaris:0") ("boaris:0") ("boaris"ri A @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
+# S0: vuoras
+#SELECT ("vuoras") (0 ("<boaris>"i) + A + Attr) (1C HUMAN OR ANIMAL);
+#SELECT ("vuoras") (0 ("<boaris>"i) + A + @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 HUMAN OR ANIMAL OR (Pron Pers) LINK NOT 0 ("dat"ri));
 
 # S1: boares
 
-SELECT ("boares") (0 ("<boaris>"i) + A + Attr) (*1 N BARRIER NOT-Attr LINK NOT 0 HUMAN OR ANIMAL BARRIER NOT-Attr);
+SELECT ("boares") (0 ("<boaris>"i) + A + Attr) (*1 N BARRIER NOT-Attr LINK NOT 0 HUMAN OR ANIMAL);
 SELECT ("boares") (0 ("<boaris>"i) + A + @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 ("dat"ri));
     # Dat lea boaris.
 SELECT ("boares") (0 ("<boaris>"i) + A + @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK NOT 0 HUMAN OR ANIMAL OR (Pron Pers));
@@ -2384,6 +2386,7 @@ SELECT ("oames") (0 ("<boaris>"i) + A + Attr) (0 WORD LINK *1 ("ođđa" A Attr))
 SELECT ("oames") (0 ("<boaris>"i) + A + Attr) (1 N LINK 0 FOOD);
 SELECT ("oames") (0 ("<boaris>"i) + A + @←SPRED) (*-1 REALCOPULAS LINK *-1 (@SUBJ→) LINK 0 FOOD);
 
+SELECT:fallback ("boares") (0 ("<boaris>") + A);
 
 
 # ADVERBS
@@ -2446,8 +2449,6 @@ SELECT ("jasska") (0 ("<jaska>"i) + Adv) (*1 ("bargat") OR ("boahtit"));
 
 
 SELECT:fallback ("luohkka") (0 ("<luohkká>") + N);
-SELECT:fallback ("vuoras") (0 ("<boaris>") + A);
-SELECT:fallback ("vuoras") (0 ("<boaris>") + A);
 SELECT:fallback ("buorre") (0 ("<buorre>") + A);
 SELECT:fallback ("smidá") (0 ("<čeahppi>") + A);
 SELECT:fallback ("sieldes") (0 ("<hui>") + Adv);
