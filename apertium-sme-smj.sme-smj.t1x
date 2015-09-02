@@ -4,8 +4,12 @@
 <section-def-cats>
   <def-cat n="nom">
      <cat-item tags="n.*"/>
-     <cat-item tags="vblex.*.der_n.n.*"/>
-     <cat-item tags="vblex.*.actor.n.*"/>
+     <cat-item tags="vblex.*.der_dimin.n.*"/>
+     <cat-item tags="vblex.*.der_muš.n.*"/>
+     <cat-item tags="vblex.*.der_nomact.n.*"/>
+     <cat-item tags="vblex.*.der_nomag.n.*"/>
+     <cat-item tags="vblex.*.der_upmi.n.*"/>
+     <cat-item tags="vblex.*.der_vuohta.n.*"/>
   </def-cat>
   <def-cat n="genmod">
      <cat-item tags="n.*.gen.@→N"/>
@@ -38,8 +42,12 @@
   <def-cat n="adv">
      <cat-item tags="adv"/>
      <cat-item tags="adv.*"/>
-     <cat-item tags="adj.der2.der_at.adv"/>
-     <cat-item tags="adj.der2.der_at.adv.*"/>
+     <cat-item tags="adj.der_at.adv"/>
+     <cat-item tags="adj.der_at.adv.*"/>
+     <cat-item tags="adj.sup.der_at.adv"/>
+     <cat-item tags="adj.sup.der_at.adv.*"/>
+     <cat-item tags="adj.comp.der_at.adv"/>
+     <cat-item tags="adj.comp.der_at.adv.*"/>
   </def-cat>
   <def-cat n="adj">
      <cat-item tags="adj.*"/>
@@ -112,10 +120,18 @@
      <attr-item tags="n.prop.mal"/>
      <attr-item tags="n.prop.sur"/>
      <attr-item tags="n.prop.plc"/>
-     <attr-item tags="vblex.iv.der_n.n"/>
-     <attr-item tags="vblex.tv.der_n.n"/>
-     <attr-item tags="vblex.iv.actor.n"/>
-     <attr-item tags="vblex.tv.actor.n"/>
+     <attr-item tags="vblex.iv.der_dimin.n"/>
+     <attr-item tags="vblex.iv.der_muš.n"/>
+     <attr-item tags="vblex.iv.der_nomact.n"/>
+     <attr-item tags="vblex.iv.der_nomag.n"/>
+     <attr-item tags="vblex.iv.der_upmi.n"/>
+     <attr-item tags="vblex.iv.der_vuohta.n"/>
+     <attr-item tags="vblex.tv.der_dimin.n"/>
+     <attr-item tags="vblex.tv.der_muš.n"/>
+     <attr-item tags="vblex.tv.der_nomact.n"/>
+     <attr-item tags="vblex.tv.der_nomag.n"/>
+     <attr-item tags="vblex.tv.der_upmi.n"/>
+     <attr-item tags="vblex.tv.der_vuohta.n"/>
   </def-attr>
   
   <def-attr n="a_genmod">
@@ -150,7 +166,9 @@
 
   <def-attr n="a_adv">
      <attr-item tags="adv"/>
-     <attr-item tags="adj.der2.der_at.adv"/>
+     <attr-item tags="adj.der_at.adv"/>
+     <attr-item tags="adj.comp.der_at.adv"/>
+     <attr-item tags="adj.sup.der_at.adv"/>
   </def-attr>
 
   <def-attr n="a_num">
@@ -260,12 +278,9 @@
   </def-attr>
   
   <def-attr n="voice">
-    <attr-item tags="passl"/>
-  </def-attr>
-  
-  <def-attr n="derivation">
-    <attr-item tags="actio"/>
-    <attr-item tags="actor"/>
+    <attr-item tags="der_passl.vblex"/>
+    <attr-item tags="der_passs.vblex"/>
+    <attr-item tags="der_pass.vblex"/>
   </def-attr>
 
   <def-attr n="pers">
