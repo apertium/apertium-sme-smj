@@ -52,8 +52,8 @@ TARGETS_COMMON =			\
 	hfst-project -p upper .deps/$(PREFIX1).autobil.hfst > .deps/$(PREFIX1).autobil.upper                                   # bidix
 	echo ' [ ? - %+ ]* ' | hfst-regexp2fst > .deps/$(PREFIX1).any-nonplus.hfst                                             # [^+]*
 	hfst-concatenate -1 .deps/$(PREFIX1).autobil.upper -2 .deps/$(PREFIX1).any-nonplus.hfst -o .deps/$(PREFIX1).autobil.nonplussed    # bidix [^+]*
-	echo ' %+ ' | hfst-regexp2fst > .deps/single-plus.hfst                                                                 # +
-	hfst-concatenate -1 .deps/single-plus.hfst -2 .deps/$(PREFIX1).autobil.nonplussed -o .deps/$(PREFIX1).autobil.postplus # + bidix [^+]*
+	echo ' %+ ' | hfst-regexp2fst > .deps/$*.single-plus.hfst                                                                 # +
+	hfst-concatenate -1 .deps/$*.single-plus.hfst -2 .deps/$(PREFIX1).autobil.nonplussed -o .deps/$(PREFIX1).autobil.postplus # + bidix [^+]*
 	hfst-repeat -f0 -t1 -i .deps/$(PREFIX1).autobil.postplus -o .deps/$(PREFIX1).autobil.postplus.0,1                      # (+ bidix [^+]*){0,1} -- gives at most one +
 	hfst-concatenate -1 .deps/$(PREFIX1).autobil.nonplussed -2 .deps/$(PREFIX1).autobil.postplus.0,1 -o $@                 # bidix [^+]* (+ bidix [^+]*){0,1}
 
@@ -90,8 +90,8 @@ $(PREFIX2).autogen.hfst: .deps/$(LANG1).autogen.hfst
 	hfst-project -p upper .deps/$(PREFIX2).autobil.hfst > .deps/$(PREFIX2).autobil.upper                                   # bidix
 	echo ' [ ? - %+ ]* ' | hfst-regexp2fst > .deps/$(PREFIX2).any-nonplus.hfst                                             # [^+]*
 	hfst-concatenate -1 .deps/$(PREFIX2).autobil.upper -2 .deps/$(PREFIX2).any-nonplus.hfst -o .deps/$(PREFIX2).autobil.nonplussed    # bidix [^+]*
-	echo ' %+ ' | hfst-regexp2fst > .deps/single-plus.hfst                                                                 # +
-	hfst-concatenate -1 .deps/single-plus.hfst -2 .deps/$(PREFIX2).autobil.nonplussed -o .deps/$(PREFIX2).autobil.postplus # + bidix [^+]*
+	echo ' %+ ' | hfst-regexp2fst > .deps/$*.single-plus.hfst                                                                 # +
+	hfst-concatenate -1 .deps/$*.single-plus.hfst -2 .deps/$(PREFIX2).autobil.nonplussed -o .deps/$(PREFIX2).autobil.postplus # + bidix [^+]*
 	hfst-repeat -f0 -t1 -i .deps/$(PREFIX2).autobil.postplus -o .deps/$(PREFIX2).autobil.postplus.0,1                      # (+ bidix [^+]*){0,1} -- gives at most one +
 	hfst-concatenate -1 .deps/$(PREFIX2).autobil.nonplussed -2 .deps/$(PREFIX2).autobil.postplus.0,1 -o $@                 # bidix [^+]* (+ bidix [^+]*){0,1}
 
