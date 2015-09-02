@@ -80,7 +80,12 @@
     <pardef n="verb" c="Regular verbs">
       <e r="LR">  <p><l><s n="der_passs"/></l><r><s n="der_pass"/></r></p></e>
       <e>         <p><l><s n="der_passl"/></l><r><s n="der_pass"/></r></p></e>
-      <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sgnomcmp"/></r></p></e>
+
+      <!-- compounds to unmarked forms; for smj→sme, would need corresponding RL's -->
+      <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgnomcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
+      <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sggencmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="gen"/></r></p></e>
+
       <!-- let anything else through -->
       <e>   <p><l></l><r></r></p></e>
     </pardef>
