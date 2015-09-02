@@ -250,6 +250,7 @@
      <attr-item tags="pres"/>
      <attr-item tags="pret"/>
      <attr-item tags="prfprc"/>
+     <attr-item tags="prsprc"/>
   </def-attr>
   
    <def-attr n="conneg">
