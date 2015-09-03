@@ -171,10 +171,6 @@
      <attr-item tags="num"/>
   </def-attr>
 
-  <def-attr n="a_attr">
-     <attr-item tags="attr"/>
-  </def-attr>
-
   <def-attr n="a_adv">
      <attr-item tags="adv"/>
      <attr-item tags="adj.der_at.adv"/>
@@ -226,9 +222,20 @@
      <attr-item tags="vblex.tv"/>
   </def-attr>
 
-  <def-attr n="gen"> <!-- for proper names -->
-     <attr-item tags="masc"/>
-     <attr-item tags="fem"/>
+  <def-attr n="gen">            <!-- for proper names -->
+     <attr-item tags="sem_fem"/>
+     <attr-item tags="sem_masc"/>
+  </def-attr>
+
+  <def-attr n="sem">
+     <attr-item tags="sem_fem"/>
+     <attr-item tags="sem_masc"/>
+     <attr-item tags="sem_sur"/>
+     <attr-item tags="sem_plc"/>
+  </def-attr>
+
+  <def-attr n="a_attr"> <!-- for proper names -->
+     <attr-item tags="attr"/>
   </def-attr>
 
   <def-attr n="nbr">
@@ -566,29 +573,54 @@
     </choose>
   </def-macro>
 
+  <def-macro n="fix_np_tags1" npar="1">
+    <choose><when>
+      <test>
+        <begins-with><clip pos="1" side="tl" part="a_nom"/><lit-tag v="n.prop"/></begins-with>
+      </test>
+      <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
+      <let><clip pos="1" side="tl" part="sem"/><lit v=""/></let> <!-- semtags are optional in the generator. TODO: Are alternatives ever only disambiguated on semtags? -->
+      <choose>
+        <when>
+          <test><and>
+            <not><equal><clip pos="1" side="tl" part="case"/><lit-tag v="ess"/></equal></not>
+            <not>
+              <or>
+                <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></equal>
+                <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+              </or>
+            </not>
+          </and></test>
+          <let>
+            <clip pos="1" side="tl" part="a_nom"/>
+            <concat><clip pos="1" side="tl" part="a_nom"/><lit-tag v="sg"/></concat>
+          </let>
+        </when>
+      </choose>
+      <choose>
+        <when>
+          <test><equal><clip pos="1" side="tl" part="case"/><lit v=""/></equal></test>
+          <let>
+            <clip pos="1" side="tl" part="a_nom"/>
+            <concat><clip pos="1" side="tl" part="a_nom"/><lit-tag v="nom"/></concat>
+          </let>
+        </when>
+      </choose>
+    </when></choose>
+  </def-macro>
+
   <def-macro n="magic_number1" npar="1">
     <choose>
       <when>
-        <test>
-          <not>
-            <or>
-              <equal>
-                <clip pos="1" side="tl" part="nbr"/>
-                <lit-tag v="sg"/>
-              </equal>
-              <equal>
-                <clip pos="1" side="tl" part="nbr"/>
-                <lit-tag v="pl"/>
-              </equal>
-            </or>
-          </not>
-        </test>
+        <test><not>
+          <or>
+            <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></equal>
+            <equal><clip pos="1" side="tl" part="nbr"/><lit-tag v="pl"/></equal>
+          </or>
+        </not></test>
         <let>
           <clip pos="1" side="tl" part="a_nom"/>
-          <concat>
-            <clip pos="1" side="tl" part="a_nom"/>
-            <lit-tag v="nn"/>
-          </concat>
+          <concat><clip pos="1" side="tl" part="a_nom"/><lit-tag v="nn"/></concat>
         </let>
       </when>
     </choose>
@@ -728,6 +760,9 @@
        <pattern-item n="nom"/>
      </pattern>
      <action>
+       <call-macro n="fix_np_tags1">
+         <with-param pos="1"/>
+       </call-macro>
        <call-macro n="set_syntag1">
          <with-param pos="1"/>
        </call-macro>
