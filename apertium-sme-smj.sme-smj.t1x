@@ -418,6 +418,10 @@
 </section-def-vars>
 
 <section-def-lists>
+  <def-list n="mainv">
+    <list-item v="@+FMAINV"/>
+    <list-item v="@-FMAINV"/>
+  </def-list>
   <def-list n="verbs_stative"><!--sme place-verbs, hope they work the same in smj -->
     <list-item v="ássat"/>
     <list-item v="orrut"/>
@@ -626,58 +630,24 @@
     </choose>
   </def-macro>
 
-   <def-macro n="assign_neg_tense" npar="1">
-    <let>
-      <var n="cur_verb_temps"/>
-      <clip pos="1" side="tl" part="temps"/>
-    </let>
+  <def-macro n="assign_neg_tense1" npar="1">
+    <let><var n="cur_verb_temps"/><clip pos="1" side="tl" part="temps"/></let>
     <choose>
       <when>
-        <test>
-          <and>
-              <equal>
-                <clip pos="1" side="sl" part="temps"/>
-                <lit v=""/>
-              </equal>
-              <or>
-                <equal>
-                  <clip pos="1" side="sl" part="mood"/>
-                  <lit-tag v="neg.indic"/>
-                </equal>
-                <equal>
-                  <clip pos="1" side="sl" part="mood"/>
-                  <lit-tag v="neg"/>
-                </equal>
-              </or>
-          </and>
-            </test>
-            <let>
-          <var n="cur_verb_temps"/>
-          <lit-tag v="pres"/>
-        </let>
-            <let>
-          <clip pos="1" side="tl" part="mood"/>
-          <lit-tag v="neg.indic"/>
-        </let>
-        </when>
-        <when>
-        <test>
-            <and>
-              <equal>
-                <clip pos="1" side="sl" part="conneg"/>
-                <lit-tag v="conneg"/>
-              </equal>
-              <equal>
-                <clip pos="1" side="sl" part="temps"/>
-                <lit-tag v="pres"/>
-              </equal>
-            </and>
-        </test>
-          <let>
-            <var n="cur_verb_temps"/>
-            <lit v=""/>
-          </let>
-        </when>
+        <test><and>
+          <equal><clip pos="1" side="sl" part="temps"/><lit v=""/></equal>
+          <begins-with><clip pos="1" side="sl" part="mood"/><lit-tag v="neg"/></begins-with>
+        </and></test>
+        <let><var n="cur_verb_temps"/><lit-tag v="pres"/></let>
+        <let><clip pos="1" side="tl" part="mood"/><lit-tag v="neg.indic"/></let>
+      </when>
+      <when>
+        <test><and>
+          <equal><clip pos="1" side="sl" part="conneg"/><lit-tag v="conneg"/></equal>
+          <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="pres"/></equal>
+        </and></test>
+        <let><var n="cur_verb_temps"/><lit v=""/></let>
+      </when>
     </choose>
   </def-macro>
 
@@ -1646,60 +1616,43 @@
   </rule>
 
   <rule comment="REGLA: VERB">
-     <pattern>
-       <pattern-item n="verb"/>
-     </pattern>
-     <action>
-       <call-macro n="assign_neg_tense">
-         <with-param pos="1"/>
-       </call-macro>
-       <call-macro n="convert_focus1">
-         <with-param pos="1"/>
-       </call-macro>
-       <choose>
-         <when>
-           <test>
-             <or>
-               <equal>
-                 <clip pos="1" side="sl" part="syntag"/>
-                 <lit-tag v="@+FMAINV"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="sl" part="syntag"/>
-                 <lit-tag v="@-FMAINV"/>
-               </equal>
-             </or>
-           </test>
-           <let>
-             <var n="main_verb"/>
-             <clip pos="1" side="sl" part="lemh"/>
-           </let>
-         </when>
-       </choose>
-       <out>
-         <chunk name="verb" case="caseFirstWord">
-           <tags>
-             <tag><lit-tag v="SV"/></tag>
-             <tag><clip pos="1" side="sl" part="syntag"/></tag>
-             <tag><clip pos="1" side="sl" part="mood"/></tag>
-             <tag><clip pos="1" side="sl" part="foc"/></tag>
-           </tags>
-           <lu>
-             <clip pos="1" side="tl" part="lemh"/>
-             <clip pos="1" side="tl" part="a_verb"/>
-             <clip pos="1" side="tl" part="voice"/>
-             <clip pos="1" side="tl" part="mood"/>
-             <var n="cur_verb_temps"/>
-             <clip pos="1" side="tl" part="conneg"/>
-             <clip pos="1" side="tl" part="pers"/>
-             <clip pos="1" side="tl" part="foc"/>
-             <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-           <var n="focus_pcle"/>
-         </chunk>
-       </out>
-     </action>
+    <pattern>
+      <pattern-item n="verb"/>
+    </pattern>
+    <action>
+      <call-macro n="assign_neg_tense1"><with-param pos="1"/></call-macro>
+      <call-macro n="convert_focus1"><with-param pos="1"/></call-macro>
+      <choose>
+        <when>
+          <test><in><clip pos="1" side="sl" part="syntag"/><list n="mainv"/></in></test>
+          <let><var n="main_verb"/><clip pos="1" side="sl" part="lemh"/></let>
+        </when>
+      </choose>
+      <out>
+        <chunk name="verb" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><clip pos="1" side="sl" part="syntag"/></tag>
+            <tag><clip pos="1" side="sl" part="mood"/></tag>
+            <tag><clip pos="1" side="sl" part="foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="tl" part="a_verb"/>
+            <clip pos="1" side="tl" part="voice"/>
+            <clip pos="1" side="tl" part="mood"/>
+            <var n="cur_verb_temps"/>
+            <clip pos="1" side="tl" part="conneg"/>
+            <clip pos="1" side="tl" part="pers"/>
+            <clip pos="1" side="tl" part="foc"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <var n="focus_pcle"/>
+        </chunk>
+      </out>
+    </action>
   </rule>
+
 
   <rule comment="REGLA: InfMod INF"><!--Mun oahpan lottiid goddit.-->
      <pattern>
