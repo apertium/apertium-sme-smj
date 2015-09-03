@@ -30,7 +30,7 @@ sme-smj	  Girjái Áillohaš lea čoaggán historjjálaš govaid sámiin birra m
 
 sme-smj	  Sámit dahjege sápmelaččat ásset Ruoššas, Suomas, Ruoŧas ja Norggas.
 	- Sáme jali sábmelattja årru Ruossjan, Suoman, Svierigin ja Vuonan.
-	+ Sáme jali sábmelattja Ruossjan årru, Suomas, Svierigis ja Vuonas.
+	+ Sáme jali sábmelattja Ruossjas årru, Suomas, Svierigis ja Vuonas.
 
 
 sme-smj	  Sámiid ássanguovlu gohčoduvvo Sápmin.
@@ -254,7 +254,8 @@ sme-smj	  Orrot jaska.
 
 
 sme-smj	  Mu boares áddjá ii šaddan vuolgit.
-WORKS	  Muv boares áddjá ij sjatta vuolgget.
+	- Muv boares áddjá ij sjatta vuolgget.
+	+ Muv boares áddjá ittjij sjatta vuolgget.
 
 
 sme-smj	  Diet girjjit gullet munnje.
@@ -278,8 +279,7 @@ sme-smj	  Diet girji lea mu.
 
 
 sme-smj	  Mii oruimet doppe jagi.
-	- Mij årojma dåppe jagev.
-	+ Mij årojma dåppe jagen.
+WORKS	  Mij årojma dåppe jagev.
 
 
 sme-smj	  Maid mii galgat muitalit sutnje?

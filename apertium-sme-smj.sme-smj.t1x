@@ -66,6 +66,14 @@
   <def-cat n="verb">
      <cat-item tags="vblex.*"/>
   </def-cat>
+  <def-cat n="negverb">
+     <cat-item tags="vblex.*.neg"/>
+     <cat-item tags="vblex.*.neg.*"/>
+  </def-cat>
+  <def-cat n="connegverb">
+     <cat-item tags="vblex.*.conneg"/>
+     <cat-item tags="vblex.*.conneg.*"/>
+  </def-cat>
   <def-cat n="inf_p">
      <cat-item tags="vblex.*.inf.@←OBJ"/>
      <cat-item tags="vblex.*.inf.@SUBJ→"/>
@@ -314,7 +322,7 @@
      <attr-item tags="pl3"/>
   </def-attr>
 
-  <def-attr n="foc">
+  <def-attr n="foc">            <!-- TODO: these are now +han<pcle> etc. -->
     <attr-item tags="foc_ba"/>
     <attr-item tags="foc_ban"/>
     <attr-item tags="foc_bat"/>
@@ -635,17 +643,15 @@
     <choose>
       <when>
         <test><and>
-          <equal><clip pos="1" side="sl" part="temps"/><lit v=""/></equal>
-          <begins-with><clip pos="1" side="sl" part="mood"/><lit-tag v="neg"/></begins-with>
+          <equal><clip pos="1" side="tl" part="temps"/><lit v=""/></equal>
+          <begins-with><clip pos="1" side="tl" part="mood"/><lit-tag v="neg"/></begins-with>
         </and></test>
+        <!-- fallback to pres if we haven't matched the main verb -->
         <let><var n="cur_verb_temps"/><lit-tag v="pres"/></let>
         <let><clip pos="1" side="tl" part="mood"/><lit-tag v="neg.indic"/></let>
       </when>
       <when>
-        <test><and>
-          <equal><clip pos="1" side="sl" part="conneg"/><lit-tag v="conneg"/></equal>
-          <equal><clip pos="1" side="sl" part="temps"/><lit-tag v="pres"/></equal>
-        </and></test>
+        <test><equal><clip pos="1" side="tl" part="conneg"/><lit-tag v="conneg"/></equal></test>
         <let><var n="cur_verb_temps"/><lit v=""/></let>
       </when>
     </choose>
@@ -1646,6 +1652,135 @@
             <clip pos="1" side="tl" part="pers"/>
             <clip pos="1" side="tl" part="foc"/>
             <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <var n="focus_pcle"/>
+        </chunk>
+      </out>
+    </action>
+  </rule>
+
+  <rule comment="REGLA: NEGVERB CONNEGVERB">
+    <pattern>
+      <pattern-item n="negverb"/>
+      <pattern-item n="connegverb"/>
+    </pattern>
+    <action>
+      <call-macro n="convert_focus1"><with-param pos="1"/></call-macro> <!-- e.g. itgo; but does focus ever go on mainverb? -->
+      <choose>
+        <when>
+          <test><in><clip pos="2" side="sl" part="syntag"/><list n="mainv"/></in></test>
+          <let><var n="main_verb"/><clip pos="2" side="sl" part="lemh"/></let>
+          <!-- connegverb could be another aux, in which case we *don't* set it as main_verb -->
+        </when>
+      </choose>
+      <out>
+        <chunk name="verb" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><clip pos="1" side="sl" part="syntag"/></tag>
+            <tag><clip pos="1" side="sl" part="mood"/></tag>
+            <tag><clip pos="1" side="sl" part="foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="tl" part="a_verb"/>
+            <clip pos="1" side="tl" part="voice"/>
+            <clip pos="1" side="tl" part="mood"/>
+            <clip pos="2" side="tl" part="temps"/> <!-- temps moved! -->
+            <clip pos="1" side="tl" part="conneg"/>
+            <clip pos="1" side="tl" part="pers"/>
+            <clip pos="1" side="tl" part="foc"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+          <var n="focus_pcle"/>
+        </chunk>
+        <b pos="1"/>
+        <chunk name="verb" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><clip pos="2" side="sl" part="syntag"/></tag>
+            <tag><clip pos="2" side="sl" part="mood"/></tag>
+            <tag><clip pos="2" side="sl" part="foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="2" side="tl" part="lemh"/>
+            <clip pos="2" side="tl" part="a_verb"/>
+            <clip pos="2" side="tl" part="voice"/>
+            <clip pos="2" side="tl" part="mood"/>
+            <clip pos="2" side="tl" part="conneg"/>
+            <clip pos="2" side="tl" part="pers"/>
+            <clip pos="2" side="tl" part="foc"/>
+            <clip pos="2" side="tl" part="lemq"/>
+          </lu>
+        </chunk>
+      </out>
+    </action>
+  </rule>
+
+  <rule comment="REGLA: NEGVERB PARTICLE CONNEGVERB">
+    <pattern>
+      <pattern-item n="negverb"/>
+      <pattern-item n="pcle"/>
+      <pattern-item n="connegverb"/>
+    </pattern>
+    <action>
+      <call-macro n="convert_focus1"><with-param pos="3"/></call-macro>
+      <choose>
+        <when>
+          <test><in><clip pos="3" side="sl" part="syntag"/><list n="mainv"/></in></test>
+          <let><var n="main_verb"/><clip pos="3" side="sl" part="lemh"/></let>
+          <!-- connegverb could be another aux, in which case we *don't* set it as main_verb -->
+        </when>
+      </choose>
+      <out>
+        <chunk name="verb" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><clip pos="1" side="sl" part="syntag"/></tag>
+            <tag><clip pos="1" side="sl" part="mood"/></tag>
+            <tag><clip pos="1" side="sl" part="foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="1" side="tl" part="lemh"/>
+            <clip pos="1" side="tl" part="a_verb"/>
+            <clip pos="1" side="tl" part="voice"/>
+            <clip pos="1" side="tl" part="mood"/>
+            <clip pos="3" side="tl" part="temps"/> <!-- temps moved! -->
+            <clip pos="1" side="tl" part="conneg"/>
+            <clip pos="1" side="tl" part="pers"/>
+            <clip pos="1" side="tl" part="foc"/>
+            <clip pos="1" side="tl" part="lemq"/>
+          </lu>
+        </chunk>
+        <b pos="1"/>
+        <chunk name="pcle" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="PCLE"/></tag>
+            <tag><clip pos="2" side="sl" part="syntag"/></tag>
+          </tags>
+          <lu>
+            <clip pos="2" side="tl" part="lemh"/>
+            <clip pos="2" side="tl" part="a_pcle"/>
+            <clip pos="2" side="tl" part="lemq"/>
+          </lu>
+        </chunk>
+        <b pos="2"/>
+        <chunk name="verb" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><clip pos="3" side="sl" part="syntag"/></tag>
+            <tag><clip pos="3" side="sl" part="mood"/></tag>
+            <tag><clip pos="3" side="sl" part="foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="3" side="tl" part="lemh"/>
+            <clip pos="3" side="tl" part="a_verb"/>
+            <clip pos="3" side="tl" part="voice"/>
+            <clip pos="3" side="tl" part="mood"/>
+            <clip pos="3" side="tl" part="conneg"/>
+            <clip pos="3" side="tl" part="pers"/>
+            <clip pos="3" side="tl" part="foc"/>
+            <clip pos="3" side="tl" part="lemq"/>
           </lu>
           <var n="focus_pcle"/>
         </chunk>
