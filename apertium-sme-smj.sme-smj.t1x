@@ -14,12 +14,13 @@
 
   <def-cat n="nom_cmp">
      <cat-item tags="n.*.cmp"/>
-     <cat-item tags="vblex.*.der_dimin.n.*.cmp"/>
-     <cat-item tags="vblex.*.der_muš.n.*.cmp"/>
-     <cat-item tags="vblex.*.der_nomact.n.*.cmp"/>
-     <cat-item tags="vblex.*.der_nomag.n.*.cmp"/>
-     <cat-item tags="vblex.*.der_upmi.n.*.cmp"/>
-     <cat-item tags="vblex.*.der_vuohta.n.*.cmp"/>
+     <!-- TODO: not handled yet by the rule: -->
+     <!-- <cat-item tags="vblex.*.der_dimin.n.*.cmp"/> -->
+     <!-- <cat-item tags="vblex.*.der_muš.n.*.cmp"/> -->
+     <!-- <cat-item tags="vblex.*.der_nomact.n.*.cmp"/> -->
+     <!-- <cat-item tags="vblex.*.der_nomag.n.*.cmp"/> -->
+     <!-- <cat-item tags="vblex.*.der_upmi.n.*.cmp"/> -->
+     <!-- <cat-item tags="vblex.*.der_vuohta.n.*.cmp"/> -->
   </def-cat>
 
   <def-cat n="genmod">
@@ -244,6 +245,11 @@
 
   <def-attr n="a_attr"> <!-- for proper names -->
      <attr-item tags="attr"/>
+  </def-attr>
+
+  <def-attr n="a_cmp">
+     <attr-item tags="sggencmp.cmp"/>
+     <attr-item tags="sgnomcmp.cmp"/>
   </def-attr>
 
   <def-attr n="nbr">
@@ -794,7 +800,7 @@
          <with-param pos="2"/>
        </call-macro>
        <out>
-         <chunk name="cmp_nom" case="caseFirstWord">
+         <chunk name="nom" case="caseFirstWord">
            <tags>
              <tag><lit-tag v="SN"/></tag>
              <tag><var n="current_syntag"/></tag>
@@ -806,10 +812,10 @@
              <clip pos="1" side="tl" part="a_nom"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="a_cmp"/>
              <clip pos="1" side="tl" part="poss"/>
              <clip pos="1" side="tl" part="lemq"/>
-           </lu>
-           <lu>
+             <lit v="+"/>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_nom"/>
              <clip pos="2" side="tl" part="nbr"/>
