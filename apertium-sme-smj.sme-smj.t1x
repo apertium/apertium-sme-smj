@@ -2,7 +2,7 @@
 <transfer default="chunk">
 
 <section-def-cats>
-  <def-cat n="nom">
+  <def-cat n="nom_head">
      <cat-item tags="n.*"/>
      <cat-item tags="vblex.*.der_dimin.n.*"/>
      <cat-item tags="vblex.*.der_muš.n.*"/>
@@ -14,13 +14,12 @@
 
   <def-cat n="nom_cmp">
      <cat-item tags="n.*.cmp"/>
-     <!-- TODO: not handled yet by the rule: -->
-     <!-- <cat-item tags="vblex.*.der_dimin.n.*.cmp"/> -->
-     <!-- <cat-item tags="vblex.*.der_muš.n.*.cmp"/> -->
-     <!-- <cat-item tags="vblex.*.der_nomact.n.*.cmp"/> -->
-     <!-- <cat-item tags="vblex.*.der_nomag.n.*.cmp"/> -->
-     <!-- <cat-item tags="vblex.*.der_upmi.n.*.cmp"/> -->
-     <!-- <cat-item tags="vblex.*.der_vuohta.n.*.cmp"/> -->
+     <cat-item tags="vblex.*.der_dimin.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_muš.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_nomact.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_nomag.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_upmi.n.*.cmp"/>
+     <cat-item tags="vblex.*.der_vuohta.n.*.cmp"/>
   </def-cat>
 
   <def-cat n="genmod">
@@ -739,7 +738,7 @@
 
   <rule comment="REGLA: NOM">
      <pattern>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="fix_np_tags1">
@@ -784,7 +783,7 @@
   <rule comment="REGLA: NOM_CMP NOM"> <!-- eallinbiras -->
      <pattern>
        <pattern-item n="nom_cmp"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
@@ -836,7 +835,7 @@
   <rule comment="REGLA: GenMod Nom">    <!-- Su mánná lea girkus. --><!-- Mun oainnán su mánáid. WORKS-->
      <pattern>
        <pattern-item n="genmod"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
@@ -887,7 +886,7 @@
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="genmod"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
@@ -949,7 +948,7 @@
        <pattern-item n="genmod"/>
        <pattern-item n="genmod"/>
        <pattern-item n="genmod"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
@@ -1019,7 +1018,7 @@
     <rule comment="REGLA: AttrMod Nom"> <!-- Mun oainnán 1 máná. --><!-- Mun oainnán boares máná. WORKS--><!-- Mun oainnán vuosttaš máná. -->
      <pattern>
        <pattern-item n="attrmod"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
@@ -1068,7 +1067,7 @@
      <pattern>
        <pattern-item n="attrmod"/>
        <pattern-item n="attrmod"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
@@ -1126,7 +1125,7 @@
        <pattern-item n="attrmod"/>
        <pattern-item n="attrmod"/>
        <pattern-item n="attrmod"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
@@ -1191,7 +1190,7 @@
      <pattern>
        <pattern-item n="genmod"/>
        <pattern-item n="attrmod"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
@@ -1251,7 +1250,7 @@
        <pattern-item n="attrmod"/>
        <pattern-item n="CNP"/>
        <pattern-item n="attrmod"/>
-       <pattern-item n="nom"/>
+       <pattern-item n="nom_head"/>
      </pattern>
      <action>
        <call-macro n="set_syntag1">
