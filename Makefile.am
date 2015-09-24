@@ -63,7 +63,13 @@ TARGETS_COMMON =			\
 .deps/$(PREFIX1).automorf-trimmed.hfst: .deps/$(LANG1).automorf.hfst .deps/$(PREFIX1).autobil.prefixes
 	hfst-compose-intersect -1 $< -2 .deps/$(PREFIX1).autobil.prefixes -o $@
 
-$(PREFIX1).automorf.hfst: .deps/$(PREFIX1).automorf-trimmed.hfst
+.deps/rm-deriv-cmp.hfst: rm-deriv-cmp.twol .deps/.d
+	hfst-twolc -i $< -o $@
+
+.deps/$(PREFIX1).automorf-trimmed-rmderiv.hfst: .deps/$(PREFIX1).automorf-trimmed.hfst .deps/rm-deriv-cmp.hfst
+	hfst-compose-intersect -1 $< -2 .deps/rm-deriv-cmp.hfst -o $@
+
+$(PREFIX1).automorf.hfst: .deps/$(PREFIX1).automorf-trimmed-rmderiv.hfst
 	hfst-fst2fst -w -i $< -o $@
 
 $(PREFIX1).automorf-untrimmed.hfst: .deps/$(LANG1).automorf.hfst
@@ -189,15 +195,19 @@ $(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
 ###############################################################################
 
 # Files which are distributed, but not built:
-EXTRA_DIST=$(BASENAME).$(PREFIX1).t1x \
-	   $(BASENAME).$(PREFIX1).t2x \
-	   $(BASENAME).$(PREFIX1).t3x \
-	   $(BASENAME).$(PREFIX1).t4x \
-	   $(BASENAME).$(PREFIX1).t5x \
-	   $(BASENAME).$(PREFIX2).t1x \
-	   $(BASENAME).$(PREFIX2).t2x \
-	   $(BASENAME).$(PREFIX2).t3x \
-	   modes.xml
+EXTRA_DIST=				\
+	$(BASENAME).$(PREFIX1).lex	\
+	$(BASENAME).$(PREFIX1).t1x	\
+	$(BASENAME).$(PREFIX1).t2x	\
+	$(BASENAME).$(PREFIX1).t3x	\
+	$(BASENAME).$(PREFIX1).t4x	\
+	$(BASENAME).$(PREFIX1).t5x	\
+	$(BASENAME).$(PREFIX2).t1x	\
+	$(BASENAME).$(PREFIX2).t2x	\
+	$(BASENAME).$(PREFIX2).t3x	\
+	gt2apertium.cg3r		\
+	rm-deriv-cmp.twol		\
+	modes.xml
 
 
 ###############################################################################

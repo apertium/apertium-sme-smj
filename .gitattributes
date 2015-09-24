@@ -76,6 +76,7 @@ dev/testsentences.txt -text
 dev/xfst2apertium.relabel -text
 /gt2apertium.cg3r -text
 /modes.xml -text
+/rm-deriv-cmp.twol -text
 t/README.org -text
 t/config.sh -text
 t/latest-pending.results -text
