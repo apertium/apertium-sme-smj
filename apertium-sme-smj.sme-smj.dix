@@ -108,6 +108,16 @@
       <!-- let anything else through -->
       <e>   <p><l></l><r></r></p></e>
     </pardef>
+
+    <pardef n="pron__:pl.nom" c="Turn all cases to nom for these, add pl">
+      <!-- TODO: is buot→divnna ever sg? -->
+      <e>   <p><l><s n="nom"/></l><r><s n="pl"/><s n="nom"/></r></p></e>
+      <e r="LR">  <p><l><s n="acc"/></l><r><s n="pl"/><s n="nom"/></r></p></e>
+      <e r="LR">  <p><l><s n="gen"/></l><r><s n="pl"/><s n="nom"/></r></p></e>
+      <e r="LR">  <p><l><s n="ill"/></l><r><s n="pl"/><s n="nom"/></r></p></e>
+      <e r="LR">  <p><l><s n="loc"/></l><r><s n="pl"/><s n="nom"/></r></p></e>
+      <e r="LR">  <p><l><s n="ess"/></l><r><s n="pl"/><s n="nom"/></r></p></e>
+    </pardef>
   </pardefs>
 
   <section id="main" type="standard">
@@ -184,7 +194,7 @@
 
     <e><p><l>aktahat<s n="prn"/></l><r>avtagasj<s n="prn"/></r></p></e>
     <e><p><l>buohkat<s n="prn"/></l><r>gájka<s n="prn"/></r></p></e>
-    <e><p><l>buot<s n="prn"/><s n="ind"/></l><r>divnna<s n="prn"/><s n="ind"/></r></p></e> <!-- sme: Pron.Indef, smj: Pron.Indef.Sg.Nom -->
+    <e><p><l>buot<s n="prn"/><s n="ind"/></l><r>divnna<s n="prn"/><s n="ind"/></r></p><par n="pron__:pl.nom"/></e>
     <e><p><l>dahtanaga<s n="prn"/></l><r>dahtak<s n="prn"/></r></p></e>
     <e><p><l>dakkar<s n="prn"/></l><r>dakkir<s n="prn"/></r></p></e>
     <e><p><l>dakkár<s n="prn"/></l><r>dakkár<s n="prn"/></r></p></e>
