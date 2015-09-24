@@ -102,6 +102,9 @@
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgnomcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sggencmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="gen"/></r></p></e>
 
+      <e r="LR">  <p><l><s n="pot"/><s n="pres"/></l><r><s n="pot"/></r></p></e>
+      <e r="LR">  <p><l><s n="pot"/><s n="pret"/></l><r><s n="pot"/></r></p></e>
+
       <!-- let anything else through -->
       <e>   <p><l></l><r></r></p></e>
     </pardef>
