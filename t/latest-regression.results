@@ -1,6 +1,6 @@
 Revision: 62104
 AP_SRC1 Revision: 121685
-AP_SRC2 Revision: 121597
+AP_SRC2 Revision: 121794
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Anne ráhkada biepmu.
@@ -186,7 +186,7 @@ WORKS	  Iv subtsasta suohttasijdám iehtjádijda.
 
 sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 	- Teáhtera ulmmen la nannit sámij identitehtav ja kultuvrav.
-	+ Teáhttara ulmmen la nannit sámij identitehtav/identitiehtav ja kultuvrav.
+	+ Teáhttara ulmmen la nannit sámij identitiehtav ja kultuvrav.
 
 
 39 / 45, 86.67%
