@@ -1,7 +1,12 @@
-Revision: 61922
-AP_SRC1 Revision: 121224
-AP_SRC2 Revision: 120072
+Revision: 62104
+AP_SRC1 Revision: 121685
+AP_SRC2 Revision: 121597
 Running Pending-tests with mode "sme-smj" with updated tests ...
+
+sme-smj	  oavssit ja lasttat mat gullet oktii.
+	- oavse ja lasta ma aktan gulluji.
+	+ oavse ja lasta ma aktaj gulli.
+
 
 sme-smj	  Wikipedia dárbbaša du veahki.
 	- Wikipedia duv viehkev dárbaj.
@@ -45,7 +50,7 @@ sme-smj	  Odne gávdnojit maiddái ollu sámit geat eai šat sámás ja identite
 
 sme-smj	  Amerihká ovttastuvvan stáhtain leat 50 oassestáhta, mat leat oalle muddui iešstivrejeaddjit.
 	- Amerijka aktidum stáhtajn li 50 oassestáhta, ma li oalle mudduj iesjráddijiddje.
-	+ *Amerihká aktidam stáhtajs li 50 #oassestáhtta, #mij li oalle mudduj #iesjráddijiddje.
+	+ *Amerihká aktidam stáhtajs li 50 #oassestáhtta, ma li oalle mudduj #iesjráddijiddje.
 
 
 sme-smj	  Doppe mánát ohppet giela lunddolaččat árgabeaivvi bargguid ja stoahkama bokte.
@@ -351,4 +356,4 @@ sme-smj	  Máhtte lea dát iige duot.
 	+ Máhttin la dát ij ga duo.
 
 
-17 / 73, 23.29%
+17 / 74, 22.97%
