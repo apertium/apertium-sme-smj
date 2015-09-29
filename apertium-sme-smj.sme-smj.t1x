@@ -27,8 +27,10 @@
      <cat-item tags="n.*.gen.@→A"/>
      <cat-item tags="n.*.gen.*.@→N"/>
      <cat-item tags="n.*.gen.*.@→A"/>
-     <cat-item tags="prn.*.*.gen.@→N"/>
-     <cat-item tags="prn.*.*.gen.@→A"/>
+     <cat-item tags="prn.pers.*.gen.@→N"/>
+     <cat-item tags="prn.pers.*.gen.@→A"/>
+     <cat-item tags="prn.rel.*.gen.@→N"/>
+     <cat-item tags="prn.rel.*.gen.@→A"/>
      <cat-item tags="adj.*.gen.@→N"/>
      <cat-item tags="adj.*.gen.@→A"/>
   </def-cat>
@@ -161,6 +163,7 @@
      <attr-item tags="n.prop.sur"/>
      <attr-item tags="n.prop.plc"/>
      <attr-item tags="prn.pers"/>
+     <attr-item tags="prn.rel"/>
      <attr-item tags="prn"/>
      <attr-item tags="adj"/>
   </def-attr>

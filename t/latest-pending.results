@@ -1,4 +1,4 @@
-Revision: 62104
+Revision: 62124
 AP_SRC1 Revision: 121685
 AP_SRC2 Revision: 121794
 Running Pending-tests with mode "sme-smj" with updated tests ...
@@ -65,7 +65,7 @@ sme-smj	  Giron lea vuoncceslottiide gullevaš loddi, mii eallá duottarguovllui
 
 sme-smj	  Wikipedia lea máŋggagielat prošeakta man ulbmilin lea ráhkadit almmolaš diehtosátnegirjji gosa gii beare sáhttá čállit artihkkaliid.
 	- Wikipedia la moattegielak prosjækta man ulmmen la dahkat almulasj diehtobáhkogirjev masi vajku guhti sáhttá tjállet artihkkalijt.
-	+ Wikipedia la moattegielak prosjäkta/prosjækta #mij ulmmen la dahkat almulasj #diehtobáhkogirjje #masi guhti beru máhttá tjállet artihkkalijt.
+	+ Wikipedia la moattegielak prosjäkta/prosjækta man ulmmen la dahkat almulasj #diehtobáhkogirjje #masi guhti beru máhttá tjállet artihkkalijt.
 
 
 sme-smj	  Maid son diehtá?
@@ -108,7 +108,7 @@ sme-smj	  Diet gápmagat leat áhči.
 
 sme-smj	  Gean láhkái son lea?
 	- Gev sån guorrá?
-	+ #Guhti láhkáj sån la?
+	+ Gen láhkáj sån la?
 
 
 sme-smj	  Son lea áhčis láhkái.
@@ -131,8 +131,7 @@ sme-smj	  Áddjá elii hui boarisin.
 
 
 sme-smj	  Dán jagi son lea oahpaheaddjin.
-	- Dán jage sån la åhpadiddjen.
-	+ #Dát jage sån la åhpadiddjen.
+WORKS	  Dán jage sån la åhpadiddjen.
 
 
 sme-smj	  Son lea oahpaheaddjin hui čeahppi.
@@ -198,7 +197,7 @@ sme-smj	  Son váldá mu gihtii.
 
 sme-smj	  Soai boahtiba dán geainnu.
 	- Såj boahteba dán gæjno.
-	+ Såj #dát gäjno/gæjno boahteba.
+	+ Såj boahteba dán gäjno/gæjno.
 
 
 sme-smj	  Son šaddá buorrin oahpaheaddjin.
@@ -231,8 +230,7 @@ sme-smj	  Mii eat ipmir maidege.
 
 
 sme-smj	  Dii vujiidet duon luotta.
-	- Dij vuojijda duon luotta.
-	+ Dij #duot luotta vuojijda.
+WORKS	  Dij vuojijda duon luotta.
 
 
 sme-smj	  Mun oainnán ahte dii lehpet boahtán.
@@ -356,4 +354,4 @@ sme-smj	  Máhtte lea dát iige duot.
 	+ Máhttin la dát ij ga duo.
 
 
-17 / 74, 22.97%
+19 / 74, 25.68%
