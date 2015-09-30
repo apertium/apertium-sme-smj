@@ -22,6 +22,16 @@
      <cat-item tags="vblex.*.der_vuohta.n.*.cmp"/>
   </def-cat>
 
+  <def-cat n="nom_rcmp">
+     <cat-item tags="n.*.rcmpnd.*"/>
+     <cat-item tags="vblex.*.der_dimin.n.*.rcmpnd.*"/>
+     <cat-item tags="vblex.*.der_muš.n.*.rcmpnd.*"/>
+     <cat-item tags="vblex.*.der_nomact.n.*.rcmpnd.*"/>
+     <cat-item tags="vblex.*.der_nomag.n.*.rcmpnd.*"/>
+     <cat-item tags="vblex.*.der_upmi.n.*.rcmpnd.*"/>
+     <cat-item tags="vblex.*.der_vuohta.n.*.rcmpnd.*"/>
+  </def-cat>
+
   <def-cat n="genmod">
      <cat-item tags="n.*.gen.@→N"/>
      <cat-item tags="n.*.gen.@→A"/>
@@ -251,7 +261,9 @@
 
   <def-attr n="a_cmp">
      <attr-item tags="sggencmp.cmp"/>
+     <attr-item tags="sggencmp.rcmpnd"/>
      <attr-item tags="sgnomcmp.cmp"/>
+     <attr-item tags="sgnomcmp.rcmpnd"/>
   </def-attr>
 
   <def-attr n="nbr">
@@ -737,8 +749,41 @@
      </action>
   </rule>
 
-    <!-- Noun is the head -->
+  <rule comment="REGLA: NOM_RCMP"> <!-- ovttasbargu- -->
+     <pattern>
+       <pattern-item n="nom_rcmp"/>
+     </pattern>
+     <action>
+       <call-macro n="set_syntag1">
+         <with-param pos="1"/>
+       </call-macro>
+       <call-macro n="convert_focus1">
+         <with-param pos="1"/>
+       </call-macro>
+       <out>
+         <chunk name="nom" case="caseFirstWord">
+           <tags>
+             <tag><lit-tag v="SN"/></tag>
+             <tag><var n="current_syntag"/></tag>
+             <tag><clip pos="1" side="tl" part="nbr"/></tag>
+             <tag><clip pos="1" side="tl" part="case"/></tag>
+           </tags>
+           <lu>
+             <clip pos="1" side="tl" part="lemh"/>
+             <clip pos="1" side="tl" part="a_nom"/>
+             <clip pos="1" side="tl" part="nbr"/>
+             <clip pos="1" side="tl" part="case"/>
+             <clip pos="1" side="tl" part="a_cmp"/>
+             <clip pos="1" side="tl" part="poss"/>
+             <clip pos="1" side="tl" part="lemq"/>
+           </lu>
+           <var n="focus_pcle"/>
+         </chunk>
+       </out>
+     </action>
+  </rule>
 
+  <!-- Noun is the head -->
   <rule comment="REGLA: NOM">
      <pattern>
        <pattern-item n="nom_head"/>
