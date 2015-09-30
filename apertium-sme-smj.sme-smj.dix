@@ -102,10 +102,6 @@
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgnomcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sggencmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="gen"/></r></p></e>
 
-      <!-- due to some bug in lt-proc -b, we need these entries as well as the empty fall-through: -->
-      <e>   <p><l><s n="der_nomact"/></l><r><s n="der_nomact"/></r></p></e>
-      <e>   <p><l><s n="der_nomact"/><s n="n"/></l><r><s n="der_nomact"/><s n="n"/></r></p></e>
-
       <e r="LR">  <p><l><s n="pot"/><s n="pres"/></l><r><s n="pot"/></r></p></e>
       <e r="LR">  <p><l><s n="pot"/><s n="pret"/></l><r><s n="pot"/></r></p></e>
 

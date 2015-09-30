@@ -1,5 +1,5 @@
-Revision: 62124
-AP_SRC1 Revision: 121685
+Revision: 62155
+AP_SRC1 Revision: 121849
 AP_SRC2 Revision: 121794
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
@@ -65,6 +65,10 @@ WORKS	  Miriam Paulsen.
 sme-smj	  Hui jorbadit.
 	- Sieldes jårbbådit.
 	+ Huj jårbbådabbo.
+
+
+sme-smj	  kultursuodjaleapmi.
+WORKS	  kultuvrrasuodjalibme.
 
 
 sme-smj	  Dát áššit leat dehálaččat.
@@ -189,4 +193,4 @@ sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 	+ Teáhttara ulmmen la nannit sámij identitiehtav ja kultuvrav.
 
 
-39 / 45, 86.67%
+40 / 46, 86.96%
