@@ -39,14 +39,14 @@
     <sdef n="pl"     c="Plural"/>
     <sdef n="sg"     c="Singular"/>
 
-    <sdef n="pxsg1"  c=""/>
-    <sdef n="pxsg2"  c=""/>
-    <sdef n="pxsg3"  c=""/>
-    <sdef n="pxdu2"  c=""/>
-    <sdef n="pxdu3"  c=""/>
-    <sdef n="pxpl1"  c=""/>
-    <sdef n="pxpl2"  c=""/>
-    <sdef n="pxpl3"  c=""/>
+    <sdef n="px1sg"  c=""/>
+    <sdef n="px2sg"  c=""/>
+    <sdef n="px3sg"  c=""/>
+    <sdef n="px2du"  c=""/>
+    <sdef n="px3du"  c=""/>
+    <sdef n="px1pl"  c=""/>
+    <sdef n="px2pl"  c=""/>
+    <sdef n="px3pl"  c=""/>
 
     <sdef n="prop"   c="Proper"/>
 
@@ -87,7 +87,7 @@
     <sdef n="der_pass" c="Passive derivation (smj)"/>
     <sdef n="der_nomact" c="deverbal noun (action/process)"/>
 
-    <sdef n="sggencmp" c="Singular genitive compound-left"/>
+    <sdef n="sggencmp" c="Singular genitive compound-left"/> <!--TODO-->
     <sdef n="sgnomcmp" c="Singular nominative compound-left"/>
     <sdef n="sgcmp" c="Singular ? compound-left"/>
   </sdefs>

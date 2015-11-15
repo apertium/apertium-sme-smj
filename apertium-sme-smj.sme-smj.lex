@@ -101,17 +101,17 @@ LIST SgGenCmp = sggencmp ;
 
 LIST ShCmp = shcmp ;
 
-LIST PxSg1 = pxsg1 ;
-LIST PxSg2 = pxsg2 ;
-LIST PxSg3 = pxsg3 ;
+LIST PxSg1 = px1sg ;
+LIST PxSg2 = px2sg ;
+LIST PxSg3 = px3sg ;
  
-LIST PxDu1 = pxdu1 ;
-LIST PxDu2 = pxdu2 ;
-LIST PxDu3 = pxdu3 ;
+LIST PxDu1 = px1du ;
+LIST PxDu2 = px2du ;
+LIST PxDu3 = px3du ;
  
-LIST PxPl1 = pxpl1 ;
-LIST PxPl2 = pxpl2 ;
-LIST PxPl3 = pxpl3 ;
+LIST PxPl1 = px1pl ;
+LIST PxPl2 = px2pl ;
+LIST PxPl3 = px3pl ;
 
 LIST Comp = comp ;
 LIST Superl = sup ;
@@ -150,17 +150,17 @@ LIST Cond = cond ;
 LIST Imprt = imprt ;
 LIST ImprtII = imprtii ;
 
-LIST Sg1 = sg1 ;
-LIST Sg2 = sg2 ;
-LIST Sg3 = sg3 ;
+LIST Sg1 = (p1 sg) ;
+LIST Sg2 = (p2 sg) ;
+LIST Sg3 = (p3 sg) ;
 
-LIST Du1 = du1 ;
-LIST Du2 = du2 ;
-LIST Du3 = du3 ;
+LIST Du1 = (p1 du) ;
+LIST Du2 = (p2 du) ;
+LIST Du3 = (p3 du) ;
 
-LIST Pl1 = pl1 ;
-LIST Pl2 = pl2 ;
-LIST Pl3 = pl3 ;
+LIST Pl1 = (p1 pl) ;
+LIST Pl2 = (p2 pl) ;
+LIST Pl3 = (p3 pl) ;
 
 LIST Inf = inf ;
 LIST ConNeg = conneg ;
@@ -465,32 +465,32 @@ SET NOT-PRFPRC = WORD - PrfPrc ;
 # Person
 # - - - - 
 
-LIST V-SG1 = (vblex indic pres sg1)  (vblex indic pret sg1) (vblex cond pres sg1) 
-             (vblex cond pret sg1) (vblex pot pres sg1) (vblex neg indic sg1);
+LIST V-SG1 = (vblex indic pres p1 sg)  (vblex indic pret p1 sg) (vblex cond pres p1 sg) 
+             (vblex cond pret p1 sg) (vblex pot pres p1 sg) (vblex neg indic p1 sg);
  
-LIST V-SG2 = (vblex indic pres sg2)  (vblex indic pret sg2) (vblex cond pres sg2) 
-             (vblex cond pret sg2) (vblex pot pres sg2) (vblex neg indic sg2);
+LIST V-SG2 = (vblex indic pres p2 sg)  (vblex indic pret p2 sg) (vblex cond pres p2 sg) 
+             (vblex cond pret p2 sg) (vblex pot pres p2 sg) (vblex neg indic p2 sg);
  
-LIST V-SG3 = (vblex indic pres sg3)  (vblex indic pret sg3) (vblex cond pres sg3) 
-             (vblex cond pret sg3) (vblex pot pres sg3) (vblex neg indic sg3);
+LIST V-SG3 = (vblex indic pres p3 sg)  (vblex indic pret p3 sg) (vblex cond pres p3 sg) 
+             (vblex cond pret p3 sg) (vblex pot pres p3 sg) (vblex neg indic p3 sg);
  
-LIST V-DU1 = (vblex indic pres du1)  (vblex indic pret du1) (vblex cond pres du1) 
-     	     (vblex cond pret du1) (vblex pot pres du1) (vblex neg indic du1);
+LIST V-DU1 = (vblex indic pres p1 du)  (vblex indic pret p1 du) (vblex cond pres p1 du) 
+     	     (vblex cond pret p1 du) (vblex pot pres p1 du) (vblex neg indic p1 du);
  
-LIST V-DU2 = (vblex indic pres du2)  (vblex indic pret du2) (vblex cond pres du2) 
-	         (vblex cond pret du2) (vblex pot pres du2) (vblex neg indic du2);
+LIST V-DU2 = (vblex indic pres p2 du)  (vblex indic pret p2 du) (vblex cond pres p2 du) 
+	         (vblex cond pret p2 du) (vblex pot pres p2 du) (vblex neg indic p2 du);
  
-LIST V-DU3 = (vblex indic pres du3)  (vblex indic pret du3) (vblex cond pres du3) 
-	         (vblex cond pret du3) (vblex pot pres du3) (vblex neg indic du3);
+LIST V-DU3 = (vblex indic pres p3 du)  (vblex indic pret p3 du) (vblex cond pres p3 du) 
+	         (vblex cond pret p3 du) (vblex pot pres p3 du) (vblex neg indic p3 du);
  
-LIST V-PL1 = (vblex indic pres pl1)  (vblex indic pret pl1) (vblex cond pres pl1) 
-             (vblex cond pret pl1) (vblex pot pres pl1) (vblex neg indic pl1);
+LIST V-PL1 = (vblex indic pres p1 pl)  (vblex indic pret p1 pl) (vblex cond pres p1 pl) 
+             (vblex cond pret p1 pl) (vblex pot pres p1 pl) (vblex neg indic p1 pl);
  
-LIST V-PL2 = (vblex indic pres pl2)  (vblex indic pret pl2) (vblex cond pres pl2) 
-             (vblex cond pret pl2) (vblex pot pres pl2) (vblex neg indic pl2);
+LIST V-PL2 = (vblex indic pres p2 pl)  (vblex indic pret p2 pl) (vblex cond pres p2 pl) 
+             (vblex cond pret p2 pl) (vblex pot pres p2 pl) (vblex neg indic p2 pl);
  
-LIST V-PL3 = (vblex indic pres pl3)  (vblex indic pret pl3) (vblex cond pres pl3) 
-             (vblex cond pret pl3) (vblex pot pres pl3) (vblex neg indic pl3);
+LIST V-PL3 = (vblex indic pres p3 pl)  (vblex indic pret p3 pl) (vblex cond pres p3 pl) 
+             (vblex cond pret p3 pl) (vblex pot pres p3 pl) (vblex neg indic p3 pl);
  
 
  # Note that imperative verbs are not included in these sets!
@@ -519,8 +519,8 @@ SET V-3  = V-SG3 OR V-DU3 OR V-PL3 ;
 
 # Sets consisting of forms of "leat" (these ones need to be rewritten)
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-LIST LEAN = ("leat" vblex indic pres sg1) ("leat" vblex prfprc);
-LIST LEAT = ("leat" vblex indic pres pl1) ("leat" vblex indic pres pl3) ("leat" vblex indic pres sg2) ("leat" vblex inf) ("leat" vblex indic pres conneg);
+LIST LEAN = ("leat" vblex indic pres p1 sg) ("leat" vblex prfprc);
+LIST LEAT = ("leat" vblex indic pres p1 pl) ("leat" vblex indic pres p3 pl) ("leat" vblex indic pres p2 sg) ("leat" vblex inf) ("leat" vblex indic pres conneg);
 
 LIST LEAT-FIN-NOT-IMP = ("leat" vblex indic) ("leat" vblex cond) ("leat" vblex pot);
  
@@ -528,24 +528,24 @@ LIST VPRFPRC = (vblex prfprc) ;
 LIST LEATPRFPRC = ("leat" prfprc) ;
 SET PRC-NOT-LEAT = VPRFPRC - LEATPRFPRC ;
     # In order to distinguish between real leat-constructions and participles of other verbs
-LIST HABEO-SG3 = ("leat" sg3) (vblex neg sg3) ("šaddat" sg3) ;
+LIST HABEO-SG3 = ("leat" p3 sg) (vblex neg p3 sg) ("šaddat" p3 sg) ;
 
-LIST HABEO-PL3 = ("leat" pl3) (vblex neg pl3) ("šaddat" pl3) ;
+LIST HABEO-PL3 = ("leat" p3 pl) (vblex neg p3 pl) ("šaddat" p3 pl) ;
 
 SET HABEO-3 = HABEO-SG3 OR HABEO-PL3 ;
 
 # Pronoun sets
 # ------------
 
-LIST MUN = (prn pers sg1 nom);
-LIST DON = (prn pers sg2 nom);
-LIST SON = ("son" pron pers sg3 nom);
-LIST MOAI = (prn pers du1 nom);
-LIST DOAI = (prn pers du2 nom);
-LIST SOAI = (prn pers du3 nom);
-LIST MII-PERS = (prn pers pl1 nom);
-LIST DII = (prn pers pl2 nom);
-LIST SII = ("son" prn pers pl3 nom);
+LIST MUN = (prn pers p1 sg nom);
+LIST DON = (prn pers p2 sg nom);
+LIST SON = ("son" pron pers p3 sg nom);
+LIST MOAI = (prn pers p1 du nom);
+LIST DOAI = (prn pers p2 du nom);
+LIST SOAI = (prn pers p3 du nom);
+LIST MII-PERS = (prn pers p1 pl nom);
+LIST DII = (prn pers p2 pl nom);
+LIST SII = ("son" prn pers p3 pl nom);
 
 SET PPRON-NOM-NOT-DAT = MUN OR DON OR SON OR MOAI OR DOAI OR SOAI OR MII-PERS OR DII OR SII ;
 
@@ -558,8 +558,8 @@ SET PRON-DU = MOAI OR DOAI OR SOAI ;
 
 SET PPRON-NOT-SII = MUN OR DON OR SON OR MOAI OR DOAI OR SOAI OR MII-PERS OR DII ;
 
-LIST PPRON-GEN = (sg1 gen) (sg2 gen) (sg3 gen) (du1 gen) (du2 gen) (du3 gen) 
-	(Pl1 Gen) (Pl2 Gen) (Pl3 Gen);
+LIST PPRON-GEN = (p1 sg gen) (p2 sg gen) (p3 sg gen) (p1 du gen) (p2 du gen) (p3 du gen) 
+	(p1 pl gen) (p2 pl gen) (p3 pl gen);
 
 SET PPRON-NOT-GEN = (pron pers) - PPRON-GEN ;
 
@@ -567,10 +567,10 @@ LIST DEM-SG = (prn dem sg nom);
 LIST DEM-PL = (prn dem pl nom);
 SET NOT-DEM = WORD - Dem ;
 
-LIST SGPRON = (prn sg1) (prn sg2) (prn sg3) (prn sg) (prn pxsg1) (prn pxsg2) (prn pxsg3);
-LIST DUPRON = (prn du1) (prn du2) (prn du3)  (prn pxdu1) (prn pxdu2) (prn pxdu3);
-LIST PLPRON = (prn pl1) (prn pl2) (prn pl3) (prn pl) (prn pxpl1) (prn pxpl2) (prn pxpl3);
-LIST DUPRON-NOTPX = (prn du1) (prn du2) (prn du3) ;
+LIST SGPRON = (prn p1 sg) (prn p2 sg) (prn p3 sg) (prn sg) (prn px1sg) (prn px2sg) (prn px3sg);
+LIST DUPRON = (prn p1 du) (prn p2 du) (prn p3 du)  (prn px1du) (prn px2du) (prn px3du);
+LIST PLPRON = (prn p1 pl) (prn p2 pl) (prn p3 pl) (prn pl) (prn px1pl) (prn px2pl) (prn px3pl);
+LIST DUPRON-NOTPX = (prn p1 du) (prn p2 du) (prn p3 du) ;
 
 SET PRON-NOT-SG = DUPRON OR PLPRON ;
 
@@ -751,7 +751,7 @@ SET V-TRANS-ACT-NOT-ACT-NOT-AUX = V-TRANS - Der_Pass - Der_n - Actio - Actor - A
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 # This is the list of strictly transitive verbs. In the rules, refer not to STVLIST, but to the set STV defined below.
-LIST STVLIST = (iv der_ahtti) (iv der_h) "addit" "amašit" "atnit" "ánssášit" "árvalit" "árvidit" "árvvoštallat" "ásahit" "ávžžuhit" "bajidit" "bearrat" "biebmat" "bidjat" "bilidit" "billistit" "bissehit" "bisuhit" "boaldit" "boktit" "buhtadit" "buktit" "buoridit" "caggat" "coggalit" "cealkit" "cegget" "čađahit" "čielggadit" "čoaggit" "čoavdit" "čohkket" "čuoččuhit" "čuohppat" "čuovvulit" "čuovvut" "dadjat" "dagahit" "dahkat" "dáhkidit" "dáhttut" "dárbbahit" "dárbbašit" "dárkkistit" "dávistit" "deaivat" "deattuhit" "deavdit" "diehtit" "diktit" "doahttalit" "doaimmahit" "doalahit" "doallat" "doarjut" "dohkkehit" "dovdat" "dovddahit" "duođaštit" "eahpidit" "eaiggáduššat" "eaktudit" "ealáskahttit" "eavttuhit" "evttohit" "fállat" "fidnet" "fievrridit" "fuolahit" "fuomášit" "garvit" "gaskkustit" "gádjut" "gáhttet" "gáibidit" "gáržžidit" "gávdnat" ("gávnnadit" sg1) ("gávnnadit" sg2) ("gávnnadit" sg3) "geahčadit" "geahččat" "geassit" "geatnegahttit" "geavahit" "gieđahallat" "giddet" "goddit" "gohččut" "gohčodit" "gokčat" "gozihit" "guoddalit" "guođđit" "guođohit" "guorahallat" "guorrat" "guoskkahit" "hábmet" "háhkat" "hálddašit" "heaittihit" "heivehit" "hilgut" "ipmirdit" "jođihit" "juksat" "juohkit" "juolludit" "kártet" "lágidit" "láhčit" "láigohit" "loahpahit" "lohkat" "lohpidit" "loktet" "luoikat" "luoikkahit" "luoitit" "massit" "mearkkašit" "mielddis#buktit" "movttiidahttit" "muddet" "muitalit" "muittuhit" "namahit" "nammadit" "namuhit" "nannet" "nanosmahttit" "nuppástuhttit" "oaidnit" "oastit" "oaivvildit" "oamastit" "oažžut" "ođasmahttit" "ođastit" "ollašuhttit" "organiseret" "ovdan#buktit" "ovdánahttit" "ovddastit" "ovddidit" "prioriteret" "ráddjet" "ráđđet" "ráfáidahttit" "ráfáiduhttit" "ráhkadit" "rávvet" "rievdadit" "rihkkut" "sáddet" "seaguhit" "seailluhit" "sihkkarastit" "sihtat" "siskkildit" "sisttis#doallat" "suodjalit" "suovvat" "unnidit" "vahágahttit" "váillahit" "váldit" "válljet" "várret" "vásihit" "váttásmahttit" "viiddidit" "vuhtii#váldit" "vuođđudit" "vuohttit" "vuojuhit" "vuoruhit" "vuosttaldit" "vuovdit" ;
+LIST STVLIST = (iv der_ahtti) (iv der_h) "addit" "amašit" "atnit" "ánssášit" "árvalit" "árvidit" "árvvoštallat" "ásahit" "ávžžuhit" "bajidit" "bearrat" "biebmat" "bidjat" "bilidit" "billistit" "bissehit" "bisuhit" "boaldit" "boktit" "buhtadit" "buktit" "buoridit" "caggat" "coggalit" "cealkit" "cegget" "čađahit" "čielggadit" "čoaggit" "čoavdit" "čohkket" "čuoččuhit" "čuohppat" "čuovvulit" "čuovvut" "dadjat" "dagahit" "dahkat" "dáhkidit" "dáhttut" "dárbbahit" "dárbbašit" "dárkkistit" "dávistit" "deaivat" "deattuhit" "deavdit" "diehtit" "diktit" "doahttalit" "doaimmahit" "doalahit" "doallat" "doarjut" "dohkkehit" "dovdat" "dovddahit" "duođaštit" "eahpidit" "eaiggáduššat" "eaktudit" "ealáskahttit" "eavttuhit" "evttohit" "fállat" "fidnet" "fievrridit" "fuolahit" "fuomášit" "garvit" "gaskkustit" "gádjut" "gáhttet" "gáibidit" "gáržžidit" "gávdnat" ("gávnnadit" p1 sg) ("gávnnadit" p2 sg) ("gávnnadit" p3 sg) "geahčadit" "geahččat" "geassit" "geatnegahttit" "geavahit" "gieđahallat" "giddet" "goddit" "gohččut" "gohčodit" "gokčat" "gozihit" "guoddalit" "guođđit" "guođohit" "guorahallat" "guorrat" "guoskkahit" "hábmet" "háhkat" "hálddašit" "heaittihit" "heivehit" "hilgut" "ipmirdit" "jođihit" "juksat" "juohkit" "juolludit" "kártet" "lágidit" "láhčit" "láigohit" "loahpahit" "lohkat" "lohpidit" "loktet" "luoikat" "luoikkahit" "luoitit" "massit" "mearkkašit" "mielddis#buktit" "movttiidahttit" "muddet" "muitalit" "muittuhit" "namahit" "nammadit" "namuhit" "nannet" "nanosmahttit" "nuppástuhttit" "oaidnit" "oastit" "oaivvildit" "oamastit" "oažžut" "ođasmahttit" "ođastit" "ollašuhttit" "organiseret" "ovdan#buktit" "ovdánahttit" "ovddastit" "ovddidit" "prioriteret" "ráddjet" "ráđđet" "ráfáidahttit" "ráfáiduhttit" "ráhkadit" "rávvet" "rievdadit" "rihkkut" "sáddet" "seaguhit" "seailluhit" "sihkkarastit" "sihtat" "siskkildit" "sisttis#doallat" "suodjalit" "suovvat" "unnidit" "vahágahttit" "váillahit" "váldit" "válljet" "várret" "vásihit" "váttásmahttit" "viiddidit" "vuhtii#váldit" "vuođđudit" "vuohttit" "vuojuhit" "vuoruhit" "vuosttaldit" "vuovdit" ;
 
 	# Strictly transitiv-verbs - a start. This set is ment as a help choosing Acc or Gen. Example: "Mun borren eatni kafeás." - there is Gen, no Acc, even if the verb is transitive. That´s why "borrat" is not in this set.
 	# These verbs: "addit", "fidnet" and "oažžut" can, when it´s about sex, be without object: "Son oaččui gonagasa bártnis." 
@@ -1127,7 +1127,7 @@ SET NP-HEAD-GEN    = (pron gen) OR (N Gen) OR (A Gen) - Cmpnd - Dem - ("buorre")
 SET PRE-NP-HEAD = (prop attr) OR (prop @→N) OR (adj attr) OR (abbr attr) OR ("buorre") OR (prn pers gen) OR (n gen) OR Num OR Cmpnd OR CC OR (prn dem) OR (prn ref gen) OR (prn ind) OR (prfprc @→N) OR PrsPrc OR (adj ord) ;
          # The strict version of items that can only be premodifiers, not parts of the predicate
          
-SET V-PRE-NP = PrfPrc OR PrsPrc OR Actor OR Actio OR (vblex adj) OR (indic pres sg3) OR (indic pres sg1) OR (imprt pres du2) ;
+SET V-PRE-NP = PrfPrc OR PrsPrc OR Actor OR Actio OR (vblex adj) OR (indic pres p3 sg) OR (indic pres p1 sg) OR (imprt pres p2 du) ;
     # to be used together with PRE-NP-HEAD before @→N is disambiguated
          
 SET NP-MEMBER   = PRE-NP-HEAD OR N ;
@@ -2103,13 +2103,13 @@ LIST HEADOFPARTS = "nisson#oassi" "oassi" "váldo#oassi" "bealli" "guhtemuš" "g
 
 # Miscellaneous sets
 # ------------------
-LIST Px = pxsg1 pxsg2 pxsg3 pxdu1 pxdu2 pxdu3 pxpl1 pxpl2 pxpl3 ;
+LIST Px = px1sg px2sg px3sg px1du px2du px3du px1pl px2pl px3pl ;
 
-LIST PX1 = pxsg1 pxdu1 pxpl1 ;
+LIST PX1 = px1sg px1du px1pl ;
 
-LIST PX2 = pxsg2 pxdu2 pxpl2 ;
+LIST PX2 = px2sg px2du px2pl ;
 
-LIST PX3 = pxsg3 pxdu3 pxpl3 ;
+LIST PX3 = px3sg px3du px3pl ;
 
 SET PXNOTSG1 = Px - PxSg1 ;
 SET PXNOTSG2 = Px - PxSg2 ;

@@ -313,33 +313,21 @@
   </def-attr>
 
   <def-attr n="poss">
-     <attr-item tags="pxsg1"/>
-     <attr-item tags="pxsg2"/>
-     <attr-item tags="pxsg3"/>
-     <attr-item tags="pxdu1"/>
-     <attr-item tags="pxdu2"/>
-     <attr-item tags="pxdu3"/>
-     <attr-item tags="pxpl1"/>
-     <attr-item tags="pxpl2"/>
-     <attr-item tags="pxpl3"/>
+     <attr-item tags="px1sg"/>
+     <attr-item tags="px2sg"/>
+     <attr-item tags="px3sg"/>
+     <attr-item tags="px1du"/>
+     <attr-item tags="px2du"/>
+     <attr-item tags="px3du"/>
+     <attr-item tags="px1pl"/>
+     <attr-item tags="px2pl"/>
+     <attr-item tags="px3pl"/>
   </def-attr>
 
   <def-attr n="voice">
     <attr-item tags="der_passl.vblex"/>
     <attr-item tags="der_passs.vblex"/>
     <attr-item tags="der_pass.vblex"/>
-  </def-attr>
-
-  <def-attr n="pers">
-     <attr-item tags="sg1"/>
-     <attr-item tags="sg2"/>
-     <attr-item tags="sg3"/>
-     <attr-item tags="du1"/>
-     <attr-item tags="du2"/>
-     <attr-item tags="du3"/>
-     <attr-item tags="pl1"/>
-     <attr-item tags="pl2"/>
-     <attr-item tags="pl3"/>
   </def-attr>
 
   <def-attr n="foc">            <!-- TODO: these are now +han<pcle> etc. -->
