@@ -39,13 +39,11 @@ WORKS	  Iv hálijda dujna doarrut.
 
 
 sme-smj	  It go sáhte muitalit?
-	- I gu máhte subtsastit?
-	+ I #gu máhte subtsastit?
+WORKS	  I gu máhte subtsastit?
 
 
 sme-smj	  Eat go sáhttán vuolgit?
-	- Ejma gu máhte vuolgget?
-	+ Ejma #gu máhte vuolgget?
+WORKS	  Ejma gu máhte vuolgget?
 
 
 sme-smj	  Eat šat gille.
@@ -127,8 +125,7 @@ WORKS	  Guhti bådij?
 
 
 sme-smj	  Liikojit go guollái?
-	- Lijkkuji gu guolláj?
-	+ Lijkkuji #gu guolláj?
+WORKS	  Lijkkuji gu guolláj?
 
 
 sme-smj	  Áddjá lea boahtán.
@@ -196,4 +193,4 @@ sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 	+ Teáhttara ulmmen la nannit sámij identitiehtav ja kultuvrav.
 
 
-37 / 46, 80.43%
+40 / 46, 86.96%
