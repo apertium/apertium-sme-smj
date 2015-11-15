@@ -144,7 +144,14 @@
 </section-def-cats>
 
 <section-def-attrs>
-  <def-attr n="a_nom">
+
+    <def-attr n="pers">
+       <attr-item tags="p1"/>
+       <attr-item tags="p2"/>
+       <attr-item tags="p3"/>
+    </def-attr>
+
+    <def-attr n="a_nom">
      <attr-item tags="n"/>
      <attr-item tags="n.prop"/>
      <attr-item tags="n.prop.org"/>
@@ -1655,6 +1662,7 @@
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="conneg"/>
              <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="lemq"/>
            </lu>
          </chunk>
@@ -1691,6 +1699,7 @@
             <var n="cur_verb_temps"/>
             <clip pos="1" side="tl" part="conneg"/>
             <clip pos="1" side="tl" part="pers"/>
+            <clip pos="1" side="tl" part="nbr"/>
             <clip pos="1" side="tl" part="foc"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
@@ -1730,6 +1739,7 @@
             <clip pos="2" side="tl" part="temps"/> <!-- temps moved! -->
             <clip pos="1" side="tl" part="conneg"/>
             <clip pos="1" side="tl" part="pers"/>
+            <clip pos="1" side="tl" part="nbr"/>
             <clip pos="1" side="tl" part="foc"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
@@ -1750,6 +1760,7 @@
             <clip pos="2" side="tl" part="mood"/>
             <clip pos="2" side="tl" part="conneg"/>
             <clip pos="2" side="tl" part="pers"/>
+            <clip pos="2" side="tl" part="nbr"/>
             <clip pos="2" side="tl" part="foc"/>
             <clip pos="2" side="tl" part="lemq"/>
           </lu>
@@ -1789,6 +1800,7 @@
             <clip pos="3" side="tl" part="temps"/> <!-- temps moved! -->
             <clip pos="1" side="tl" part="conneg"/>
             <clip pos="1" side="tl" part="pers"/>
+            <clip pos="1" side="tl" part="nbr"/>
             <clip pos="1" side="tl" part="foc"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
@@ -1820,6 +1832,7 @@
             <clip pos="3" side="tl" part="mood"/>
             <clip pos="3" side="tl" part="conneg"/>
             <clip pos="3" side="tl" part="pers"/>
+            <clip pos="3" side="tl" part="nbr"/>
             <clip pos="3" side="tl" part="foc"/>
             <clip pos="3" side="tl" part="lemq"/>
           </lu>
@@ -1874,6 +1887,7 @@
              <clip pos="2" side="tl" part="temps"/>
              <clip pos="2" side="tl" part="conneg"/>
              <clip pos="2" side="tl" part="pers"/>
+             <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="foc"/>
              <clip pos="2" side="tl" part="lemq"/>
            </lu>
@@ -1917,6 +1931,7 @@
              <clip pos="1" side="tl" part="temps"/>
              <clip pos="1" side="tl" part="conneg"/>
              <clip pos="1" side="tl" part="pers"/>
+             <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="foc"/>
              <clip pos="1" side="tl" part="lemq"/>
              <!--clip pos="1" side="tl" part="syntag"/-->
