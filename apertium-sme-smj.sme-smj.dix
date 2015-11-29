@@ -376,7 +376,10 @@
 
     <!-- Nouns -->
 
+    <e><p><l>beana<s n="n"/></l><r>bena<s n="n"/></r></p></e>
+    <e><p><l>gárdin<s n="n"/></l><r>gárdde<s n="n"/></r></p></e>
     <e><p><l>sihkkarvuohta<s n="n"/></l><r>sihkkarvuohta<s n="n"/></r></p></e>
+    <e><p><l>biila<s n="n"/></l><r>bijla<s n="n"/></r></p></e>
     <e><p><l>áddejupmi<s n="n"/></l><r>dádjadus<s n="n"/></r></p></e>
     <e><p><l>headju<s n="n"/></l><r>hædjo<s n="n"/></r></p></e>
     <e><p><l>juoga<s n="n"/></l><r>juoga<s n="n"/></r></p></e>
@@ -991,6 +994,7 @@
     <e><p><l>bronsa<s n="n"/></l><r>brånsså<s n="n"/></r></p></e>
     <e><p><l>bronsamedállja<s n="n"/></l><r>brånssåmedállja<s n="n"/></r></p></e>
     <e><p><l>brugga<s n="n"/></l><r>brugga<s n="n"/></r></p></e>
+    <e><p><l>dállu<s n="n"/></l><r>ståhpe<s n="n"/></r></p></e>
     <e><p><l>brutto<s n="n"/></l><r>brutto<s n="n"/></r></p></e>
     <e><p><l>bruvsa<s n="n"/></l><r>bruvssa<s n="n"/></r></p></e>
     <e><p><l>bráhkka<s n="n"/></l><r>bráhkka<s n="n"/></r></p></e>
@@ -1070,7 +1074,7 @@
     <e><p><l>buser<s n="n"/></l><r>buser<s n="n"/></r></p></e>
     <e><p><l>bussa<s n="n"/></l><r>bussa<s n="n"/></r></p></e>
     <e><p><l>busse<s n="n"/></l><r>busse<s n="n"/></r></p></e>
-    <e><p><l>bussá<s n="n"/></l><r>bussá<s n="n"/></r></p></e>
+    <e><p><l>bussá<s n="n"/></l><r>gáhtto<s n="n"/></r></p></e>
     <e><p><l>butká<s n="n"/></l><r>butká<s n="n"/></r></p></e>
     <e><p><l>buvda<s n="n"/></l><r>buvdda<s n="n"/></r></p></e>
     <e><p><l>buvdda<s n="n"/></l><r>buvda<s n="n"/></r></p></e>
@@ -7990,6 +7994,10 @@
 
 <!-- Verbs -->
 <!-- TODO: these had their lemmas autocorrected, need checking: -->
+<e><p><l>nagodit<s n="vblex"/><s n="tv"/></l><r>nahkat<s n="vblex"/><s n="tv"/></r></p></e>
+<e><p><l>govvet<s n="vblex"/><s n="tv"/></l><r>gåvvit<s n="vblex"/><s n="tv"/></r></p></e>
+<e><p><l>báhcit<s n="vblex"/><s n="iv"/></l><r>báhtset<s n="vblex"/><s n="iv"/></r></p></e>
+<e><p><l>hupmat<s n="vblex"/><s n="iv"/></l><r>hållat<s n="vblex"/><s n="iv"/></r></p></e>
 <e><p><l>ollalit<s n="vblex"/><s n="iv"/></l><r>ållålit<s n="vblex"/><s n="iv"/></r></p></e>
 <e><p><l>čáđggašit<s n="vblex"/><s n="iv"/></l><r>tjárggat<s n="vblex"/><s n="iv"/></r></p><par n="verb"/></e>
 <e><p><l>šávdásit<s n="vblex"/><s n="iv"/></l><r>sjávddet<s n="vblex"/><s n="iv"/></r></p><par n="verb"/></e>
@@ -14015,6 +14023,7 @@
     <e><p><l>Ann-Kristine<s n="n"/><s n="prop"/></l><r>Ann-Kristine<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Ann-Mari<s n="n"/><s n="prop"/></l><r>Ann-Mari<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Ann-Sissel<s n="n"/><s n="prop"/></l><r>Ann-Sissel<s n="n"/><s n="prop"/></r></p></e>
+    <e><p><l>Máret<s n="n"/><s n="prop"/></l><r>Marit<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Anna<s n="n"/><s n="prop"/></l><r>Anna<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Annaba<s n="n"/><s n="prop"/></l><r>Annaba<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Annabel<s n="n"/><s n="prop"/></l><r>Annabel<s n="n"/><s n="prop"/></r></p></e>
@@ -14525,7 +14534,6 @@
     <e><p><l>Aurenes<s n="n"/><s n="prop"/></l><r>Aurenes<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Aureosen<s n="n"/><s n="prop"/></l><r>Aureosen<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Duommá<s n="n"/><s n="prop"/></l><r>Duommá<s n="n"/><s n="prop"/></r></p></e>
-    <e><p><l>Máret<s n="n"/><s n="prop"/></l><r>Máret<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Aurinkotupa<s n="n"/><s n="prop"/></l><r>Aurinkotupa<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Aurland<s n="n"/><s n="prop"/></l><r>Aurland<s n="n"/><s n="prop"/></r></p></e>
     <e><p><l>Aurora<s n="n"/><s n="prop"/></l><r>Aurora<s n="n"/><s n="prop"/></r></p></e>
