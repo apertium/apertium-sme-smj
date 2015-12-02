@@ -32,7 +32,7 @@ LIST EOS = (<<<) (</s>);
 # Parts of speech
 # ---------------
 
-LIST N = n ;
+LIST N = n np ;
 LIST A = adj ;
 LIST Adv = adv ;
 LIST V = vblex ;
@@ -50,10 +50,10 @@ LIST Num = num ;
 LIST Coll = coll ;
 LIST Actor = actor ;
 LIST G3 = g3 ;
-LIST Prop = prop ;
+LIST Prop = np ;
 
-LIST LEFT = left ;
-LIST RIGHT = right ;
+LIST LEFT = lquot ;
+LIST RIGHT = rquot ;
 LIST WEB = web ;
 
 LIST V* = vblex* ;
@@ -329,8 +329,8 @@ LIST @X = @X ;
 # -------------
 
 #LIST Ani = Ani ;
-LIST Fem = fem ;
-LIST Mal = mal ;
+LIST Fem = fem f ;
+LIST Mal = mal m ;
 
 LIST Obj = obj ;
 LIST Org = org ;
@@ -344,10 +344,10 @@ LIST Sur = sur ;
 
 LIST ABBR = abbr ;
 LIST ACR = acr ;
-LIST CLB = clb ;
+LIST CLB = sent cm ;
 
 LIST QMARK = """ ; # ADD " FOR SYNTAX COLOURING.
-LIST PPUNCT = punct ;
+LIST PPUNCT = punct guio quot ;
 SET PUNCT = PPUNCT - QMARK ;
 
 
@@ -1096,35 +1096,37 @@ LIST POINT-IN-TIME-SPEC = "dološ" "eará" "nubbi" ;
 # NP sets defined according to their morphosyntactic features
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-LIST N-SG-NOM = (n sg nom);
-LIST N-PL-NOM = (n pl nom);
+LIST N-SG-NOM = (n sg nom) OR (np sg nom);
+LIST N-PL-NOM = (n pl nom) OR (np pl nom);
 
 SET LEX-N = N - N-DER;
 
-LIST PROP = (n prop);
+LIST PROP = np;
 
 SET CNOUN = N - Prop;
 
 SET HNOUN = N - Cmpnd ;
 
-SET HNOUN-NOM = (N Nom) - Cmpnd ;
+LIST N-NOM = (n nom) (np nom);
+SET HNOUN-NOM = N-NOM - Cmpnd ;
 
-SET N-NOT-GEN = N - (N Gen) ;
+LIST N-GEN = (n gen) (np gen);
+SET N-NOT-GEN = N - N-GEN ;
 
 SET NP = N OR A ;                      # anything that can take except numerals
 SET NP-HEAD        = Pron OR HNOUN - ("buorre") ;
-SET NP-HEAD-SG     = SGPRON OR (N Sg) OR (A Sg) - Cmpnd  - Dem - ("buorre");
-SET NP-HEAD-PL     = PLPRON OR (N Pl) OR (A Pl) - Cmpnd  - Dem - ("buorre");
-SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg Nom) OR (A Sg Nom) - ("buorre") - Cmpnd ;
-SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl Nom) OR (A Pl Nom) - Cmpnd  - ("buorre");
+SET NP-HEAD-SG     = SGPRON OR (n sg) OR (np sg) OR (a sg) - Cmpnd  - Dem - ("buorre");
+SET NP-HEAD-PL     = PLPRON OR (n pl) OR (np pl) OR (a pl) - Cmpnd  - Dem - ("buorre");
+SET NP-HEAD-SG-NOM = SGPRON + Nom OR (n sg nom) OR (np sg nom) OR (a sg nom) - ("buorre") - Cmpnd ;
+SET NP-HEAD-PL-NOM = PLPRON + Nom OR (n pl nom) OR (np pl nom) OR (a pl nom) - Cmpnd  - ("buorre");
 SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
-SET NP-HEAD-ACC    = (pron acc) OR (N Acc) OR (A Acc) - Cmpnd - Dem - ("buorre");
-SET NP-HEAD-GEN    = (pron gen) OR (N Gen) OR (A Gen) - Cmpnd - Dem - ("buorre");
+SET NP-HEAD-ACC    = (pron acc) OR (n acc) OR (np acc) OR (a acc) - Cmpnd - Dem - ("buorre");
+SET NP-HEAD-GEN    = (pron gen) OR (n gen) OR (np gen) OR (a gen) - Cmpnd - Dem - ("buorre");
 
 # The PRE-NP-HEAD family of sets
 # - - - - - - - - - - - - - - - -
 
-SET PRE-NP-HEAD = (prop attr) OR (prop @→N) OR (adj attr) OR (abbr attr) OR ("buorre") OR (prn pers gen) OR (n gen) OR Num OR Cmpnd OR CC OR (prn dem) OR (prn ref gen) OR (prn ind) OR (prfprc @→N) OR PrsPrc OR (adj ord) ;
+SET PRE-NP-HEAD = (np attr) OR (np @→N) OR (adj attr) OR (abbr attr) OR ("buorre") OR (prn pers gen) OR (n gen) OR (np gen) OR Num OR Cmpnd OR CC OR (prn dem) OR (prn ref gen) OR (prn ind) OR (prfprc @→N) OR PrsPrc OR (adj ord) ;
          # The strict version of items that can only be premodifiers, not parts of the predicate
          
 SET V-PRE-NP = PrfPrc OR PrsPrc OR Actor OR Actio OR (vblex adj) OR (indic pres p3 sg) OR (indic pres p1 sg) OR (imprt pres p2 du) ;
@@ -1136,8 +1138,8 @@ SET PRE-A-N     = (prn pers gen) OR (prn ind) OR Num OR (adj ord) OR (prn dem) O
 
 SET NOT-PRE-A-N = WORD - PRE-A-N ;
 
-LIST PUNCT-LEFT = (punct left) ;
-LIST PUNCT-RIGHT = (punct right) ;
+LIST PUNCT-LEFT = lquot ;
+LIST PUNCT-RIGHT = rquot ;
 
 SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
  # This set ist not only for what can
@@ -1546,7 +1548,7 @@ LIST PREGEN = "álgogeahčen" "bealle#muttus" "bealle#muddu" ("bealli" n sg loc)
 # INSTITUTION              +                      x               x		    |
 # INDUSTRY                 +                                      x		    |
 
-LIST FAMILY-ONLY-HUMAN = (prop mal) (prop fem) (prop sur) "áddjut" "áhkká" "áhkkut" "bárdne#mánná" "boadnji" "čeahci" "čeahcit" "dálu#eamit" "eahki" "eamit" "eammi" "eanu" "goaski" "guoibmi" "isit" "lunta" "mánáid#mánná" "mannji" "máttar#áddjá" "máttar#áhkku" "muoŧŧa" "muoŧŧal" "náittos#guoibmi" "neahpi" "oabbá" "oabbá#bealli" "oambealli" "oappáš" "oarpmealli" "osku#guoibmi" "rist#vánhen" "siessal" "siessá" "vieljaš" "viellja" "viellja#bealli" "vilbealli" "vuohppa" "vuon#áhkku" "vuoni" ;
+LIST FAMILY-ONLY-HUMAN = (np ant) (np sem_sur) "áddjut" "áhkká" "áhkkut" "bárdne#mánná" "boadnji" "čeahci" "čeahcit" "dálu#eamit" "eahki" "eamit" "eammi" "eanu" "goaski" "guoibmi" "isit" "lunta" "mánáid#mánná" "mannji" "máttar#áddjá" "máttar#áhkku" "muoŧŧa" "muoŧŧal" "náittos#guoibmi" "neahpi" "oabbá" "oabbá#bealli" "oambealli" "oappáš" "oarpmealli" "osku#guoibmi" "rist#vánhen" "siessal" "siessá" "vieljaš" "viellja" "viellja#bealli" "vilbealli" "vuohppa" "vuon#áhkku" "vuoni" ;
 # These can only be possessed by HUMAN-INDIVIDUAL, HUMAN-GROUP, PROFESSION, OFFICE, HUM-FUNCTION, ABSTR-TEXT
 
 LIST FAMILY-ALSO-ABSTRACT = "áhčči" "áddjá" "áhkku" "bearaš" "eadni" "oapmahaš" "sohka" "sohka#goddi" "váhnen" "veahka" ;
@@ -1897,7 +1899,7 @@ SET PLACE = GEOGRAPHICAL-PLACE OR POLITICAL-PLACE OR GENERAL-PLACE OR ROUTE OR B
 ##What else: STATE
 #=========================================================================================================================
 
-LIST ORGANIZATION = (prop org) "alimus#riekti" "álbmot#allaskuvla" "alla#skuvla" "ámmát#organisašuvdna" "ámmát#skuvla" "ámta#diggi" "ásahus" "bargo#kantuvra" "báhpa#skuvla" "báikkálaš#searvi" "bálvalan#doaibma" "bearráigeahččan#orgána" "bellodat" "birasgáhtten#departemeanta" "boazo#doallo#searvi" "buohcce#stohpu" "buohcce#viessu" "buohcciid#siida" 
+LIST ORGANIZATION = (np sem_org) "alimus#riekti" "álbmot#allaskuvla" "alla#skuvla" "ámmát#organisašuvdna" "ámmát#skuvla" "ámta#diggi" "ásahus" "bargo#kantuvra" "báhpa#skuvla" "báikkálaš#searvi" "bálvalan#doaibma" "bearráigeahččan#orgána" "bellodat" "birasgáhtten#departemeanta" "boazo#doallo#searvi" "buohcce#stohpu" "buohcce#viessu" "buohcciid#siida" 
 "dearvvašvuođa#ásahus" "dearvvašvuođa#fitnodat" "departemeanta" "departementa" "dearvvašvuođadutkan#guovddáš" "diggi" "doaibma#guovddáš" "duopmo#stuollu" "dutkan#departemeanta" "dutkan#ráđđi" 
 "ealáhus#ráđđi" "eanandoallo#departemeanta" "eanandoallo#departementa" "eanan#doallo#searvi" "eanan#juohkin#diggi" "eise#váldi" "etáhta" "etáhtta" 
 "fakultehta" "Finnmárkku#kommišuvdna" "firbmá" "fitnodat" "fylkka#gielda" 

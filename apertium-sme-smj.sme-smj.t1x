@@ -18,6 +18,7 @@
 
   <def-cat n="nom_cmp">
      <cat-item tags="n.*.cmp"/>
+     <cat-item tags="np.*.cmp"/>
      <cat-item tags="vblex.*.der_dimin.n.*.cmp"/>
      <cat-item tags="vblex.*.der_muš.n.*.cmp"/>
      <cat-item tags="vblex.*.der_nomact.n.*.cmp"/>
@@ -28,6 +29,7 @@
 
   <def-cat n="nom_rcmp">
      <cat-item tags="n.*.rcmpnd.*"/>
+     <cat-item tags="np.*.rcmpnd.*"/>
      <cat-item tags="vblex.*.der_dimin.n.*.rcmpnd.*"/>
      <cat-item tags="vblex.*.der_muš.n.*.rcmpnd.*"/>
      <cat-item tags="vblex.*.der_nomact.n.*.rcmpnd.*"/>
@@ -38,9 +40,13 @@
 
   <def-cat n="genmod">
      <cat-item tags="n.*.gen.@→N"/>
+     <cat-item tags="np.*.gen.@→N"/>
      <cat-item tags="n.*.gen.@→A"/>
+     <cat-item tags="np.*.gen.@→A"/>
      <cat-item tags="n.*.gen.*.@→N"/>
+     <cat-item tags="np.*.gen.*.@→N"/>
      <cat-item tags="n.*.gen.*.@→A"/>
+     <cat-item tags="np.*.gen.*.@→A"/>
      <cat-item tags="prn.pers.*.gen.@→N"/>
      <cat-item tags="prn.pers.*.gen.@→A"/>
      <cat-item tags="prn.rel.*.gen.@→N"/>
@@ -98,8 +104,11 @@
   </def-cat>
   <def-cat n="inf_mod">
      <cat-item tags="n.*.*.@-FSUBJ→"/>
+     <cat-item tags="np.*.*.@-FSUBJ→"/>
      <cat-item tags="n.*.*.@-FOBJ→"/>
+     <cat-item tags="np.*.*.@-FOBJ→"/>
      <cat-item tags="n.*.*.@-F←OBJ"/>
+     <cat-item tags="np.*.*.@-F←OBJ"/>
   </def-cat>
 
   <def-cat n="pronom">
@@ -143,8 +152,10 @@
   </def-cat>
 
   <def-cat n="sent">
-     <cat-item tags="clb"/>
-     <cat-item tags="clb.*"/>
+     <cat-item tags="sent"/>
+     <cat-item tags="sent.*"/>
+     <cat-item tags="cm"/>
+     <cat-item tags="cm.*"/>
   </def-cat>
 
 </section-def-cats>
@@ -160,11 +171,11 @@
     <def-attr n="a_nom">
      <attr-item tags="n"/>
      <attr-item tags="np"/>
-     <attr-item tags="n.prop"/>
-     <attr-item tags="n.prop.org"/>
-     <attr-item tags="n.prop.mal"/>
-     <attr-item tags="n.prop.sur"/>
-     <attr-item tags="n.prop.plc"/>
+     <attr-item tags="np.sem_org"/>
+     <attr-item tags="np.ant.m"/>
+     <attr-item tags="np.ant.f"/>
+     <attr-item tags="np.sem_sur"/>
+     <attr-item tags="np.sem_plc"/>
      <attr-item tags="vblex.iv.der_dimin.n"/>
      <attr-item tags="vblex.iv.der_muš.n"/>
      <attr-item tags="vblex.iv.der_nomact.n"/>
@@ -181,11 +192,12 @@
 
   <def-attr n="a_genmod">
      <attr-item tags="n"/>
-     <attr-item tags="n.prop"/>
-     <attr-item tags="n.prop.mal"/>
-     <attr-item tags="n.prop.org"/>
-     <attr-item tags="n.prop.sur"/>
-     <attr-item tags="n.prop.plc"/>
+     <attr-item tags="np"/>
+     <attr-item tags="np.sem_org"/>
+     <attr-item tags="np.ant.m"/>
+     <attr-item tags="np.ant.f"/>
+     <attr-item tags="np.sem_sur"/>
+     <attr-item tags="np.sem_plc"/>
      <attr-item tags="prn.pers"/>
      <attr-item tags="prn.rel"/>
      <attr-item tags="prn"/>
@@ -258,9 +270,15 @@
   </def-attr>
 
   <def-attr n="gen">            <!-- for proper names -->
-     <attr-item tags="sem_fem"/>
-     <attr-item tags="sem_masc"/>
+     <attr-item tags="ant.f"/>
+     <attr-item tags="ant.m"/>
   </def-attr>
+
+  <def-attr n="sem">
+     <attr-item tags="ant.f"/>
+     <attr-item tags="ant.m"/>
+     <attr-item tags="sem_sur"/>
+     <attr-item tags="sem_plc"/>
 
   <def-attr n="a_attr"> <!-- for proper names -->
      <attr-item tags="attr"/>
@@ -770,7 +788,7 @@
   <def-macro n="fix_np_tags1" npar="1">
     <choose><when>
       <test>
-        <begins-with><clip pos="1" side="tl" part="a_nom"/><lit-tag v="n.prop"/></begins-with>
+        <begins-with><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np"/></begins-with>
       </test>
       <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let> <!-- semtags are optional in the generator. TODO: Are alternatives ever only disambiguated on semtags? -->

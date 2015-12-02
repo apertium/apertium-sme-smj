@@ -1,6 +1,7 @@
 <dictionary>
   <sdefs>
-    <sdef n="n"      c="Noun"/>
+    <sdef n="n"      c="Noun, common"/>
+    <sdef n="np"      c="Noun, proper"/>
     <sdef n="vblex"      c="Verb"/>
     <sdef n="num"    c="Numeral"/>
     <sdef n="adj"      c="Adjective"/>
@@ -46,9 +47,6 @@
     <sdef n="px2pl"  c=""/>
     <sdef n="px3pl"  c=""/>
 
-    <sdef n="prop"   c="Proper"/>
-    <sdef n="np"   c="Proper"/>
-
     <sdef n="tv"     c="Transitive"/>
     <sdef n="iv"     c="Intransitive"/>
 
@@ -74,10 +72,12 @@
     <sdef n="ij"     c="interjection"/>
 
     <!-- Punctuation -->
-    <sdef n="clb"    c="Clause boundary"/>
-    <sdef n="punct"/>
-    <sdef n="left"/>
-    <sdef n="right"/>
+    <sdef n="punct"   c="Punctuation"/>
+    <sdef n="sent"    c="Sentence boundary"/>
+    <sdef n="cm"      c="Comma"/>
+    <sdef n="guio"     c="Dash"/>
+    <sdef n="lquot"   c="Left quotation mark"/>
+    <sdef n="rquot"   c="Right quotation mark"/>
 
     <sdef n="abbr"/>
 
@@ -39732,12 +39732,14 @@
 
     <!-- Punctuation -->
 
-    <e><re>[…;:,.\?¿¶]+</re><p><l><s n="clb"/></l><r><s n="clb"/></r></p></e>
-    <e><p><l>excl<s n="clb"/></l><r>excl<s n="clb"/></r></p></e>
-    <e><p><l>pipe<s n="clb"/></l><r>pipe<s n="clb"/></r></p></e>
-    <e><re>[±´&amp;\+`%@=\-"'·–]+</re><p><l><s n="punct"/></l><r><s n="punct"/></r></p></e>
-    <e><re>[«\(‘“„]</re><p><l><s n="punct"/><s n="left"/></l><r><s n="punct"/><s n="left"/></r></p></e>
-    <e><re>[»\)’”]</re><p><l><s n="punct"/><s n="right"/></l><r><s n="punct"/><s n="right"/></r></p></e>
+    <e><re>[…;:.\?¿¶]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+    <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
+    <e><p><l>!<s n="sent"/></l><r>!<s n="sent"/></r></p></e>
+    <e><p><l>|<s n="sent"/></l><r>|<s n="sent"/></r></p></e>
+    <e><p><l>-<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
+    <e><re>[±´&amp;\+`%@="'·–]+</re><p><l><s n="punct"/></l><r><s n="punct"/></r></p></e>
+    <e><re>[«\(‘“„]</re><p><l><s n="lquot"/></l><r><s n="lquot"/></r></p></e>
+    <e><re>[»\)’”]</re><p><l><s n="rquot"/></l><r><s n="rquot"/></r></p></e>
 
     <e><re>[0-9]+([., \-–]+[0-9]+)*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
     <e><re>[0-9]+([., \-–]+[0-9]+)*</re><p><l><s n="adj"/></l><r><s n="adj"/></r></p></e>

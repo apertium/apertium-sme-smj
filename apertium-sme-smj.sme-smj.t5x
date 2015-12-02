@@ -14,7 +14,7 @@
   <section-def-attrs>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
-      <attr-item tags="n.prop"/>
+      <attr-item tags="np"/>
     </def-attr>
     <def-attr n="nbr">
       <attr-item tags="sg"/>
