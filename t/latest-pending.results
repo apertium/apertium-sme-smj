@@ -1,6 +1,6 @@
-Revision: 63169
-AP_SRC1 Revision: 121849
-AP_SRC2 Revision: 121794
+Revision: 63496
+AP_SRC1 Revision: 126125
+AP_SRC2 Revision: 126147
 Running Pending-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  oavssit ja lasttat mat gullet oktii.
@@ -20,7 +20,7 @@ sme-smj	  Sámegielat Wikipedias leat dál 2,717 artihkkala.
 
 sme-smj	  Isak Saba 1875-1921 lei sápmelaš oahpaheaddji ja politihkkár.
 	- Isak Saba 1875-1921 lij sábmelasj åhpadiddje ja politihkkár.
-	+ Isak Saba 1875-1921 lij sáme åhpadiddje ja politihkkár.
+	+ Isaka Saba 1875-1921 lij sáme åhpadiddje ja politihkkár.
 
 
 sme-smj	  Son beroštii arkeologalaš bargguin, ja son čokkii dávviriid ja dávttiid boares hávddiin.
@@ -29,8 +29,7 @@ sme-smj	  Son beroštii arkeologalaš bargguin, ja son čokkii dávviriid ja dá
 
 
 sme-smj	  Girjái Áillohaš lea čoaggán historjjálaš govaid sámiin birra máilmmi.
-	- Girjjáj Ájluhasj la tjoaggám histårjålasj gåvåjt sámijs birra værálda.
-	+ Girjjáj Ájluhasj la tjoaggám histårjålasj gåvåjt sámijs birra värálda/værálda.
+WORKS	  Girjjáj Ájluhasj la tjoaggám histårjålasj gåvåjt sámijs birra værálda.
 
 
 sme-smj	  Sámit dahjege sápmelaččat ásset Ruoššas, Suomas, Ruoŧas ja Norggas.
@@ -40,7 +39,7 @@ sme-smj	  Sámit dahjege sápmelaččat ásset Ruoššas, Suomas, Ruoŧas ja Nor
 
 sme-smj	  Sámiid ássanguovlu gohčoduvvo Sápmin.
 	- Sámij årromguovllo gåhtjuduvvá Sábmen.
-	+ Sámij årromguovllo #gåhtset Sábmen.
+	+ Sámij årromguovllo #gåhtjudit Sábmen.
 
 
 sme-smj	  Odne gávdnojit maiddái ollu sámit geat eai šat sámás ja identitehtavuođđu lea dál varas dehe sogas iige gielas gitta.
@@ -65,7 +64,7 @@ sme-smj	  Giron lea vuoncceslottiide gullevaš loddi, mii eallá duottarguovllui
 
 sme-smj	  Wikipedia lea máŋggagielat prošeakta man ulbmilin lea ráhkadit almmolaš diehtosátnegirjji gosa gii beare sáhttá čállit artihkkaliid.
 	- Wikipedia la moattegielak prosjækta man ulmmen la dahkat almulasj diehtobáhkogirjev masi vajku guhti sáhttá tjállet artihkkalijt.
-	+ Wikipedia la moattegielak prosjäkta/prosjækta man ulmmen la dahkat almulasj #diehtobáhkogirjje *gosa guhti beru máhttá tjállet artihkkalijt.
+	+ Wikipedia la moattegielak projækta/prosjækta man ulmmen la dahkat almulasj #diehtobáhkogirjje *gosa guhti beru máhttá tjállet artihkkalijt.
 
 
 sme-smj	  Maid son diehtá?
@@ -79,7 +78,7 @@ sme-smj	  Sii leat čeahpit.
 
 sme-smj	  Iibat oaččo basadit?
 	- Ij gus oattjo basádit?
-	+ Ij @bat oattjo bassat?
+	+ *Iibat oattjo bassat?
 
 
 sme-smj	  Lehpet go dárbbašan ollu veahki?
@@ -196,8 +195,7 @@ sme-smj	  Son váldá mu gihtii.
 
 
 sme-smj	  Soai boahtiba dán geainnu.
-	- Såj boahteba dán gæjno.
-	+ Såj boahteba dán gäjno/gæjno.
+WORKS	  Såj boahteba dán gæjno.
 
 
 sme-smj	  Son šaddá buorrin oahpaheaddjin.
@@ -220,8 +218,7 @@ sme-smj	  Dárbbašehpet go veahki?
 
 
 sme-smj	  Eahppi go boađe?
-	- Æhppe gu boade?
-	+ Ähppe/Æhppe gu boade?
+WORKS	  Æhppe gu boade?
 
 
 sme-smj	  Mii eat ipmir maidege.
@@ -314,8 +311,7 @@ sme-smj	  Leahppi go oaidnán áhčáde?
 
 
 sme-smj	  Eaba muital suohttasiiddiska earáide.
-	- Æbá subtsasta suohttasijdeska iehtjádijda.
-	+ Äbá/Æbá subtsasta suohttasijdeska iehtjádijda.
+WORKS	  Æbá subtsasta suohttasijdeska iehtjádijda.
 
 
 sme-smj	  Leahppi go gávdnan gusade?
@@ -354,4 +350,4 @@ sme-smj	  Máhtte lea dát iige duot.
 	+ Máhttin la dát ij ga duo.
 
 
-19 / 74, 25.68%
+23 / 74, 31.08%

@@ -172,8 +172,8 @@
      <attr-item tags="n"/>
      <attr-item tags="np"/>
      <attr-item tags="np.sem_org"/>
-     <attr-item tags="np.ant.m"/>
-     <attr-item tags="np.ant.f"/>
+     <attr-item tags="np.ant"/>
+     <attr-item tags="np.ant"/>
      <attr-item tags="np.sem_sur"/>
      <attr-item tags="np.sem_plc"/>
      <attr-item tags="vblex.iv.der_dimin.n"/>
@@ -194,8 +194,8 @@
      <attr-item tags="n"/>
      <attr-item tags="np"/>
      <attr-item tags="np.sem_org"/>
-     <attr-item tags="np.ant.m"/>
      <attr-item tags="np.ant.f"/>
+     <attr-item tags="np.ant.m"/>
      <attr-item tags="np.sem_sur"/>
      <attr-item tags="np.sem_plc"/>
      <attr-item tags="prn.pers"/>
@@ -213,8 +213,8 @@
   </def-attr>
 
   <def-attr n="a_attrmod">
-     <attr-item tags="adj.attr"/>
-     <attr-item tags="adj.ord.attr"/> <!-- ordinals -->
+     <attr-item tags="adj"/>
+     <attr-item tags="adj.ord"/> <!-- ordinals -->
      <attr-item tags="num"/>
   </def-attr>
 
@@ -270,18 +270,11 @@
   </def-attr>
 
   <def-attr n="gen">            <!-- for proper names -->
-     <attr-item tags="ant.f"/>
-     <attr-item tags="ant.m"/>
+     <attr-item tags="f"/>
+     <attr-item tags="m"/>
   </def-attr>
 
-  <def-attr n="sem">
-     <attr-item tags="ant.f"/>
-     <attr-item tags="ant.m"/>
-     <attr-item tags="sem_sur"/>
-     <attr-item tags="sem_plc"/>
-  </def-attr>
-
-  <def-attr n="a_attr"> <!-- for proper names -->
+  <def-attr n="a_attr"> <!-- for proper names, adjs -->
      <attr-item tags="attr"/>
   </def-attr>
 
@@ -1273,6 +1266,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="a_attr"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>
@@ -1322,6 +1316,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="a_attr"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>
@@ -1330,6 +1325,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_attrmod"/>
+             <clip pos="2" side="tl" part="a_attr"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
@@ -1380,6 +1376,7 @@
            <lu>
              <clip pos="1" side="tl" part="lemh"/>
              <clip pos="1" side="tl" part="a_attrmod"/>
+             <clip pos="1" side="tl" part="a_attr"/>
              <clip pos="1" side="tl" part="nbr"/>
              <clip pos="1" side="tl" part="case"/>
              <clip pos="1" side="tl" part="lemq"/>
@@ -1388,6 +1385,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_attrmod"/>
+             <clip pos="2" side="tl" part="a_attr"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
@@ -1396,6 +1394,7 @@
            <lu>
              <clip pos="3" side="tl" part="lemh"/>
              <clip pos="3" side="tl" part="a_attrmod"/>
+             <clip pos="3" side="tl" part="a_attr"/>
              <clip pos="3" side="tl" part="nbr"/>
              <clip pos="3" side="tl" part="case"/>
              <clip pos="3" side="tl" part="lemq"/>
@@ -1454,6 +1453,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_attrmod"/>
+             <clip pos="2" side="tl" part="a_attr"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
@@ -1514,6 +1514,7 @@
            <lu>
              <clip pos="2" side="tl" part="lemh"/>
              <clip pos="2" side="tl" part="a_attrmod"/>
+             <clip pos="2" side="tl" part="a_attr"/>
              <clip pos="2" side="tl" part="nbr"/>
              <clip pos="2" side="tl" part="case"/>
              <clip pos="2" side="tl" part="lemq"/>
@@ -1528,6 +1529,7 @@
            <lu>
              <clip pos="4" side="tl" part="lemh"/>
              <clip pos="4" side="tl" part="a_attrmod"/>
+             <clip pos="4" side="tl" part="a_attr"/>
              <clip pos="4" side="tl" part="nbr"/>
              <clip pos="4" side="tl" part="case"/>
              <clip pos="4" side="tl" part="lemq"/>
