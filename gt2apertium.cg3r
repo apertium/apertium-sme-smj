@@ -66,6 +66,20 @@ MAP (<smj>) (←smj→);
 MAP (<ext>) (←ext→);
 MAP (<vdic>) (←vdic→);
 
+LIST was_clb = cm sent;
+MAP (CLB) was_clb;
+
+LIST was_punct = quot punct ("-" guio);
+MAP (PUNCT) was_punct;
+
+MAP ("excl") ("!");
+
+MAP (Prop) (np);
+MAP (N)    (n) OR (np);
+
+MAP (Sem/Fem) (sem_fem) OR (ant f);
+MAP (Sem/Mal) (sem_mal) OR (ant m);
+
 # The rest are simply lowercasing and s/>/→/;s/</←/;s/\//_/
 MAP (@>A) (@→A);
 MAP (@A<) (@A←);
@@ -122,7 +136,6 @@ MAP (ACR) (acr);
 MAP (Actio) (actio);
 MAP (Adv) (adv);
 MAP (Attr) (attr);
-MAP (CLB) (clb);
 MAP (Cmpnd) (cmpnd);
 MAP (Coll) (coll);
 MAP (Com) (com);
@@ -208,7 +221,6 @@ MAP (Inf) (inf);
 MAP (IV) (iv);
 MAP (LEFT) (left);
 MAP (Loc) (loc);
-MAP (N) (n);
 MAP (Neg) (neg);
 MAP (Nom) (nom);
 MAP (NomAg) (nomag);
@@ -222,11 +234,9 @@ MAP (Po) (po);
 MAP (Pot) (pot);
 MAP (Pr) (pr);
 MAP (PrfPrc) (prfprc);
-MAP (Prop) (prop);
 MAP (PrsPrc) (prsprc);
-MAP (PUNCT) (punct);
 MAP (Qst) (qst);
-MAP (RCmpnd) (rcmpnd);
+MAP (Cmp/SplitR) (rcmpnd);
 MAP (Recipr) (recipr);
 MAP (Rel) (rel);
 MAP (RIGHT) (right);
@@ -328,7 +338,6 @@ MAP (Sem/Feat-phys_Wthr) (sem_feat-phys_wthr);
 MAP (Sem/Feat_Plant) (sem_feat_plant);
 MAP (Sem/Feat-psych) (sem_feat-psych);
 MAP (Sem/Feat-psych_Hum) (sem_feat-psych_hum);
-MAP (Sem/Fem) (sem_fem);
 MAP (Sem/Food) (sem_food);
 MAP (Sem/Food-med) (sem_food-med);
 MAP (Sem/Food_Perc-phys) (sem_food_perc-phys);
@@ -361,7 +370,6 @@ MAP (Sem/Hum_Wthr) (sem_hum_wthr);
 MAP (Sem/Ideol) (sem_ideol);
 MAP (Sem/Lang) (sem_lang);
 MAP (Sem/Lang_Tool) (sem_lang_tool);
-MAP (Sem/Mal) (sem_mal);
 MAP (Sem/Mat) (sem_mat);
 MAP (Sem/Mat_Plant) (sem_mat_plant);
 MAP (Sem/Mat_Txt) (sem_mat_txt);
@@ -449,9 +457,9 @@ MAP (Sem/Wpn) (sem_wpn);
 MAP (Sem/Wthr) (sem_wthr);
 MAP (Sem/Year) (sem_year);
 MAP (Sg) (sg);
-MAP (SgGenCmp) (sggencmp);
-MAP (SgNomCmp) (sgnomcmp);
-MAP (ShCmp) (shcmp);
+MAP (Cmp/SgGen) (sggencmp);
+MAP (Cmp/SgNom) (sgnomcmp);
+MAP (Cmp/Sh) (shcmp);
 MAP (TV) (tv);
 MAP (VAbess) (vabess);
 MAP (VGen) (vgen);
