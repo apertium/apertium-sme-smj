@@ -279,6 +279,7 @@
      <attr-item tags="ant.m"/>
      <attr-item tags="sem_sur"/>
      <attr-item tags="sem_plc"/>
+  </def-attr>
 
   <def-attr n="a_attr"> <!-- for proper names -->
      <attr-item tags="attr"/>
