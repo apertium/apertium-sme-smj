@@ -46,6 +46,7 @@ dev/Tromso_workshop_2009/linguistic-notes.txt -text
 dev/analyse-all-stages.sh -text
 dev/apertium_bleu1.txt -text
 dev/basura.py -text
+dev/bidix-sanity.sh -text
 dev/bidix/Duomma_missinglist_smj.txt -text
 dev/bidix/TriSaami.txt -text
 dev/bidix/TriSaami_mod.txt -text
