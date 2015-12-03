@@ -24,6 +24,7 @@
 
     <sdef n="attr"   c=""/>
     <sdef n="pred"   c=""/>
+    <sdef n="g3"   c=""/>
     <sdef n="comp"   c=""/>
     <sdef n="superl" c=""/>
 
@@ -1069,7 +1070,7 @@
     <e><p><l>buser<s n="n"/></l><r>buser<s n="n"/></r></p></e>
     <e><p><l>bussa<s n="n"/></l><r>bussa<s n="n"/></r></p></e>
     <e><p><l>busse<s n="n"/></l><r>busse<s n="n"/></r></p></e>
-    <e><p><l>bussá<s n="n"/></l><r>gáhtto<s n="n"/></r></p></e>
+    <e><p><l>bussá<s n="n"/><s n="g3"/></l><r>gáhtto<s n="n"/></r></p></e>
     <e><p><l>butká<s n="n"/></l><r>butká<s n="n"/></r></p></e>
     <e><p><l>buvda<s n="n"/></l><r>buvdda<s n="n"/></r></p></e>
     <e><p><l>buvdda<s n="n"/></l><r>buvda<s n="n"/></r></p></e>
