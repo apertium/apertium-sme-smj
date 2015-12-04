@@ -88,5 +88,7 @@ t/update-latest -text
 t/wiki-tests -text
 texts/brosjyre_foresatte_np08_sme.txt -text
 texts/brosjyre_foresatte_np08_smj.txt -text
+texts/samastit_skuvlahist_sme.txt -text
+texts/samastit_skuvlahist_smj.txt -text
 texts/samediggidiedadus_samegiela_birra_2012.smj.txt -text
 texts/tarina.sme.txt -text
