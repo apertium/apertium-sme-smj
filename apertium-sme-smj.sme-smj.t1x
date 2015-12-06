@@ -638,6 +638,12 @@
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_sâš"/></let> 
         </when>
+        <when>
+          <test>
+               <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_goahti"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_goahte"/></let> 
+        </when>
      </choose>
     </def-macro>  
 
@@ -869,6 +875,7 @@
         <pattern-item n="mainverb"/>
       </pattern>
       <action>
+        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
