@@ -38,7 +38,11 @@
       <cat-item tags="adj.cmp_sgnom.cmp.*"/> 
     </def-cat>
   <def-cat n="negverb">
-      <cat-item tags="vblex.iv.neg.indic.p3.sg"/>
+<!--ij<vblex><iv><neg><indic><pres><p3><sg>-->
+      <cat-item tags="vblex.iv.neg.indic.p3.*"/>
+    </def-cat>
+  <def-cat n="connegverb">
+      <cat-item tags="vblex.*.conneg.*"/>
     </def-cat>
    <def-cat n="foc">
       <cat-item lemma="ge" tags="pcle.*"/>
@@ -53,6 +57,7 @@
     </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
+      <cat-item tags="np.*"/>
       <cat-item tags="adj.der_vuohta.n.*"/>
       <cat-item tags="vblex.*.der_nomact.n.*"/>
       <cat-item tags="vblex.der_nomact.n.*"/>
@@ -93,11 +98,11 @@
     <def-cat n="n-sg-gen">                             
       <cat-item tags="n.*.sg.gen.*"/>                     
     </def-cat>  
-
-<!-- from sme-nob starts -->
     <def-cat n="prn">
       <cat-item tags="prn.*"/>
     </def-cat>
+
+<!-- from sme-nob starts -->
     <def-cat n="prn-rel">
       <cat-item tags="prn.rel.*"/>
     </def-cat>
@@ -194,6 +199,18 @@
     <def-attr n="a_npagree_type">
        <attr-item tags="adj.ord"/>
        <attr-item tags="prn.ind"/>
+    </def-attr>
+    <def-attr n="a_mood">
+      <attr-item tags="indic"/>
+    </def-attr>
+    <def-attr n="a_temps">
+      <attr-item tags="pret"/>
+      <attr-item tags="pres"/>
+    </def-attr>
+    <def-attr n="a_temps_mood">
+      <attr-item tags="indic"/>
+      <attr-item tags="indic.pres"/>
+      <attr-item tags="indic.pret"/>
     </def-attr>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
@@ -526,6 +543,28 @@
     <def-list n="actio_ill_verbs">
       <list-item v="liikot"/>
     </def-list>
+  <def-list n="verbs_stative"><!--sme place-verbs, hope they work the same in smj -->
+    <list-item v="ássat"/>
+    <list-item v="orrut"/>
+    <list-item v="veallát"/>
+    <list-item v="čuožžut"/>
+    <list-item v="čohkkát"/>
+    <list-item v="čohkahit"/>
+    <list-item v="buolvvastallat"/>
+    <list-item v="buolvvastit"/>
+    <list-item v="čippostallat"/>
+    <list-item v="čuččodit"/>
+    <list-item v="morihit"/>
+    <list-item v="gohččát"/>
+    <list-item v="gullát"/>
+    <list-item v="morránit"/>
+    <list-item v="orodit"/>
+    <list-item v="stuorrut"/>
+    <list-item v="veallahit"/>
+    <list-item v="eallit"/>
+  </def-list>
+
+
   </section-def-lists>
   <section-def-macros>
     <def-macro n="remove-semtag1" npar="1">
@@ -658,11 +697,120 @@
 		</choose>    
     </def-macro>  
 
+  <def-macro n="assign-case1" npar="1">
+    <choose>      
+      <when>
+        <test><or>
+                <and><equal><clip pos="1" side="sl" part="a_cas"/><lit-tag v="loc"/></equal><equal><clip pos="1" side="sl" part="syntag"/><lit-tag v="@HAB"/></equal></and><in caseless="yes"><var n="current_verb"/><list n="verbs_stative"/></in>
+              </or></test>
+              <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ine"/></let>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_cas"/><lit-tag v="loc"/></equal></test>
+        <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ela"/></let></when>
+      </choose>
+  </def-macro>
 
 
   </section-def-macros>
   <section-rules>
 
+    <rule comment="REGLA: negverb">
+      <pattern>
+        <pattern-item n="negverb"/>
+      </pattern>
+      <action>
+        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
+        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+        <!-- neg verb alone is probably disam. fail with interjection -->
+        <let><clip pos="1" side="tl" part="a_temps_mood"/>
+             <concat><clip pos="1" side="tl" part="a_mood"/><lit-tag v="pres"/></concat>
+        </let>
+        <out>
+          <chunk name="neg" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+  <rule comment="REGLA: NEGVERB CONNEGVERB">
+    <pattern>
+      <pattern-item n="negverb"/>
+      <pattern-item n="connegverb"/>
+    </pattern>
+    <action>
+        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv1"><with-param pos="2"/></call-macro>
+        <call-macro n="remove-semtag1"><with-param pos="2"/></call-macro>
+        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+        <let><clip pos="2" side="tl" part="x_func"/><lit v=""/></let>
+        <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_temps_mood"/>
+             <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
+        </let>
+        <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
+      <out>
+        <chunk name="verb" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><clip pos="1" side="sl" part="syntag"/></tag>
+            <tag><clip pos="1" side="sl" part="mood"/></tag>
+            <tag><clip pos="1" side="sl" part="foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+        <b pos="1"/>
+        <chunk name="verb" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><clip pos="2" side="sl" part="syntag"/></tag>
+            <tag><clip pos="2" side="sl" part="mood"/></tag>
+            <tag><clip pos="2" side="sl" part="foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+      </out>
+    </action>
+  </rule>
+
+
+
+    <rule comment="REGLA: prn">
+      <pattern>
+        <pattern-item n="prn"/>
+      </pattern>
+      <action>
+        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case1"><with-param pos="1"/></call-macro>
+        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+        <out>
+          <chunk name="prn" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="REGLA: nom">
       <pattern>
@@ -671,6 +819,7 @@
       <action>
         <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
         <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case1"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <out>
@@ -685,6 +834,7 @@
         </out>
       </action>
     </rule>
+
     <rule comment="REGLA: nnomcmp">
       <pattern>
         <pattern-item n="nnomcmp"/>
@@ -693,6 +843,7 @@
       <action>
         <call-macro n="convert-deriv1"><with-param pos="2"/></call-macro>
         <call-macro n="remove-semtag1"><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case1"><with-param pos="2"/></call-macro>
         <let><clip pos="2" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
         <out>
