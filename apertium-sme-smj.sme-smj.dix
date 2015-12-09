@@ -5050,10 +5050,10 @@
     <e><p><l>sykkeltrimmen<s n="n"/></l><r>sykkeltrimmen<s n="n"/></r></p></e>
     <e><p><l>bitumen<s n="n"/></l><r>bitumen<s n="n"/></r></p></e>
     <e><p><l>eksámen<s n="n"/></l><r>eksámen<s n="n"/></r></p></e>
-    <e><p><l>váhnen<s n="n"/></l><r>váhnen<s n="n"/></r></p></e>
-    <e><p><l>aktováhnen<s n="n"/></l><r>aktováhnen<s n="n"/></r></p></e>
-    <e><p><l>risváhnen<s n="n"/></l><r>risváhnen<s n="n"/></r></p></e>
-    <e><p><l>ristváhnen<s n="n"/></l><r>ristváhnen<s n="n"/></r></p></e>
+    <e><p><l>váhnen<s n="n"/></l><r>æjgát<s n="n"/></r></p></e>
+    <e><p><l>aktováhnen<s n="n"/></l><r>aktoæjgát<s n="n"/></r></p></e>
+    <e><p><l>risváhnen<s n="n"/></l><r>risæjgát<s n="n"/></r></p></e>
+    <e><p><l>ristváhnen<s n="n"/></l><r>ristæjgát<s n="n"/></r></p></e>
     <e><p><l>dinen<s n="n"/></l><r>dinen<s n="n"/></r></p></e>
     <e><p><l>sisadinen<s n="n"/></l><r>sisadinen<s n="n"/></r></p></e>
     <e><p><l>fánen<s n="n"/></l><r>fánen<s n="n"/></r></p></e>
@@ -6005,7 +6005,7 @@
     <e><p><l>mieres<s n="n"/></l><r>mieres<s n="n"/></r></p></e>
     <e><p><l>mieris<s n="n"/></l><r>mieres<s n="n"/></r></p></e>
     <e><p><l>meres<s n="n"/></l><r>meres<s n="n"/></r></p></e>
-    <e><p><l>boađus<s n="n"/></l><r>skierres<s n="n"/></r></p></e>
+    <e><p><l>boađus<s n="n"/></l><r>boados<s n="n"/></r></p></e>
     <e><p><l>merres<s n="n"/></l><r>merres<s n="n"/></r></p></e>
     <e><p><l>čeavrris<s n="n"/></l><r>tjievres<s n="n"/></r></p></e>
     <e><p><l>lássis<s n="n"/></l><r>lásses<s n="n"/></r></p></e>
@@ -6817,6 +6817,7 @@
     <e><p><l>boska<s n="n"/></l><r>båsskå<s n="n"/></r></p></e>
     <e><p><l>boská<s n="n"/></l><r>båsskå<s n="n"/></r></p></e>
     <e><p><l>čoska<s n="n"/></l><r>tjåsskå<s n="n"/></r></p></e>
+    <e><p><l>bajilčála<s n="n"/></l><r>bajeltjála<s n="n"/></r></p></e>
     <e><p><l>jovla<s n="n"/></l><r>jåvllå<s n="n"/></r></p></e>
     <e><p><l>skovlá<s n="n"/></l><r>skåvllå<s n="n"/></r></p></e>
     <e><p><l>skuvla<s n="n"/></l><r>skåvllå<s n="n"/></r></p></e>
@@ -12424,8 +12425,8 @@
     <e><p><l>meahcástit<s n="vblex"/><s n="iv"/></l><r>mæhtsástit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>mearkadit<s n="vblex"/><s n="tv"/></l><r>merkadit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>mearkkahit<s n="vblex"/><s n="tv"/></l><r>merkadit<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>mearkkašit<s n="vblex"/><s n="tv"/></l><r>merkatjit<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>mearkkašit<s n="vblex"/><s n="tv"/></l><r>mærkátjit<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>mearkkašit<s n="vblex"/><s n="tv"/></l><r>merkahit<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>mearkkašit<s n="vblex"/><s n="tv"/></l><r>merkahit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>mieškkuhit<s n="vblex"/><s n="tv"/></l><r>smiesjkodit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>mihtidit<s n="vblex"/><s n="tv"/></l><r>mihtedit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>millosit<s n="vblex"/><s n="iv"/></l><r>millusit<s n="vblex"/></r></p><par n="verb"/></e>
@@ -12611,6 +12612,7 @@
     <e><p><l>al-Qaida<s n="np"/></l><r>al-Qaida<s n="np"/></r></p></e>
     <e><p><l>bargiidbellodat<s n="np"/></l><r>barggijbelludahka<s n="np"/></r></p></e>
     <e><p><l>by<s n="np"/></l><r>by<s n="np"/></r></p></e>
+    <e><p><l>Divttasvuotna<s n="np"/></l><r>Divtasvuodna<s n="np"/></r></p></e>
     <e><p><l>eNorge<s n="np"/></l><r>eNorge<s n="np"/></r></p></e>
     <e><p><l>emacs<s n="np"/></l><r>emacs<s n="np"/></r></p></e>
     <e><p><l>høgskole<s n="np"/></l><r>høgskole<s n="np"/></r></p></e>
@@ -38911,6 +38913,7 @@
     <e><p><l>Vuolukka<s n="np"/></l><r>Vuolukka<s n="np"/></r></p></e>
     <e><p><l>Vuolát<s n="np"/></l><r>Vuolát<s n="np"/></r></p></e>
     <e><p><l>Vuomajoki<s n="np"/></l><r>Vuomajoki<s n="np"/></r></p></e>
+    <e><p><l>Vuonak<b/>sámemáná<s n="np"/></l><r>Vuonak<b/>sámemáná<s n="np"/></r></p></e>
     <e><p><l>Vuontisjärvi<s n="np"/></l><r>Vuontisjärvi<s n="np"/></r></p></e>
     <e><p><l>Vuontiskero<s n="np"/></l><r>Vuontiskero<s n="np"/></r></p></e>
     <e><p><l>Vuontispirtti<s n="np"/></l><r>Vuontispirtti<s n="np"/></r></p></e>
