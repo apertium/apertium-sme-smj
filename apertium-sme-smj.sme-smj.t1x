@@ -269,14 +269,20 @@
        <attr-item tags="der_dimin.n"/>
        <attr-item tags="der_at"/>
        <attr-item tags="der_goahti"/>
+       <attr-item tags="der_goahte"/>
        <attr-item tags="der_l"/>
        <attr-item tags="der_ahtti"/>
+       <attr-item tags="der_ahtte"/>
        <attr-item tags="der_vuohta"/>
        <attr-item tags="der_d"/>
        <attr-item tags="der_lágan"/>
+       <attr-item tags="der_lágán"/>
        <attr-item tags="der_nammasaš"/>
+       <attr-item tags="der_nammasasj"/>
         <attr-item tags="der_saš"/>
+        <attr-item tags="der_sasj"/>
         <attr-item tags="der_laš"/>
+        <attr-item tags="der_lasj"/>
    </def-attr>
 
     <def-attr n="a_sem">
@@ -611,38 +617,44 @@
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_vuohta"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_vuotâ"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_vuohta"/></let> 
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_laš"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lâš"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lasj"/></let> 
         </when>
 
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_at"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_avt"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_at"/></let> 
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_lágan"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lagan"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lágán"/></let> 
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_saš"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_sâš"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_sasj"/></let> 
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_goahti"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_goahte"/></let> 
+        </when>
+        <when>
+          <test>
+               <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_ahtti"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_ahtte"/></let> 
         </when>
      </choose>
     </def-macro>  
