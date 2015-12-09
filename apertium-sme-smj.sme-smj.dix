@@ -94,9 +94,6 @@
 
   <pardefs>
     <pardef n="verb" c="Regular verbs">
-<!--      <e r="LR">  <p><l><s n="der_passs"/></l><r><s n="der_pass"/></r></p></e>
-      <e>         <p><l><s n="der_passl"/></l><r><s n="der_pass"/></r></p></e>
--->
       <!-- compounds to unmarked forms; for smj→sme, would need corresponding RL's -->
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
       <e r="LR">  <p><l><s n="der_nomact"/><s n="n"/><s n="sgnomcmp"/></l><r><s n="der_nomact"/><s n="n"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -130,9 +127,7 @@
     <e><p><l>gal<s n="pcle"/></l><r>gal<s n="pcle"/></r></p></e>
     <e><p><l>ge<s n="pcle"/></l><r>ga<s n="pcle"/></r></p></e>
 
-    <e><p><l>go<s n="pcle"/></l><r>gu<s n="pcle"/></r></p></e>
-    <e r="RL"><p><l>go<s n="pcle"/></l><r>gå<s n="pcle"/></r></p></e>
-    <e r="RL"><p><l>go<s n="pcle"/></l><r>gus<s n="pcle"/></r></p></e>
+    <e><p><l>go<s n="pcle"/></l><r>gus<s n="pcle"/></r></p></e>
 
     <e><p><l>na<s n="pcle"/></l><r>na<s n="pcle"/></r></p></e>
 
@@ -145,8 +140,8 @@
 
     <!-- Conjunctions -->
 
-    <e><p><l>aht<s n="cnjsub"/></l><r>at<s n="cnjsub"/></r></p></e>
-    <e><p><l>ahte<s n="cnjsub"/></l><r>ahte<s n="cnjsub"/></r></p></e>
+    <e><p><l>aht<s n="cnjsub"/></l><r>jut<s n="cnjsub"/></r></p></e>
+    <e><p><l>ahte<s n="cnjsub"/></l><r>jut<s n="cnjsub"/></r></p></e>
     <e><p><l>amas<s n="cnjsub"/></l><r>amás<s n="cnjsub"/></r></p></e>
     <e><p><l>dan<b/>botta<b/>go<s n="cnjsub"/></l><r>dav<b/>båttåv<b/>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>danin<b/>go<s n="cnjsub"/></l><r>danen<b/>gå<s n="cnjsub"/></r></p></e>
@@ -7259,7 +7254,7 @@
     <e><p><l>kvalitatiiva<s n="adj"/></l><r>kvalitatijvva<s n="adj"/></r></p></e>
     <e><p><l>konservatiiva<s n="adj"/></l><r>konservatijvva<s n="adj"/></r></p></e>
     <e><p><l>kognitiiva<s n="adj"/></l><r>kognitijvva<s n="adj"/></r></p></e>
-    <e><p><l>hálbi<s n="adj"/></l><r>hálbbe<s n="adj"/></r></p></e>
+    <e><p><l>hálbi<s n="adj"/></l><r>álbbe<s n="adj"/></r></p></e>
     <e><p><l>čuorbi<s n="adj"/></l><r>tjuorbbe<s n="adj"/></r></p></e>
     <e><p><l>buoidi<s n="adj"/></l><r>buojdde<s n="adj"/></r></p></e>
     <e><p><l>seaggi<s n="adj"/></l><r>siegge<s n="adj"/></r></p></e>
@@ -8531,8 +8526,8 @@
     <e><p><l>bonjadit<s n="vblex"/><s n="tv"/></l><r>bådnjåt<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>bonjahit<s n="vblex"/><s n="tv"/></l><r>bådnjåt<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>bonjastit<s n="vblex"/><s n="tv"/></l><r>bådnjåt<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>boradit<s n="vblex"/><s n="tv"/></l><r>bårråt¹<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>borahit<s n="vblex"/><s n="tv"/></l><r>bårråt¹<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>boradit<s n="vblex"/><s n="tv"/></l><r>bårådit<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>borahit<s n="vblex"/><s n="tv"/></l><r>bårådit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>borastahttit<s n="vblex"/><s n="tv"/></l><r>bårråt¹<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>borastit<s n="vblex"/><s n="tv"/></l><r>bårråt¹<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>borastuvvat<s n="vblex"/><s n="iv"/></l><r>båråstit<s n="vblex"/></r></p><par n="verb"/></e>
@@ -10766,8 +10761,8 @@
     <e><p><l>orkestreret<s n="vblex"/><s n="tv"/></l><r>orkestrerit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>ornamenteret<s n="vblex"/><s n="tv"/></l><r>ornamenterit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>orodit<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>orrostit<s n="vblex"/><s n="iv"/></l><r>årrut<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>orrot<s n="vblex"/><s n="iv"/></l><r>årrut<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>orrostit<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>orrot<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
     <e c="0"><p><l>orrut<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
     <e slr="1"><p><l>orrut<s n="vblex"/><s n="iv"/></l><r>vuojnnet<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>orustit<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
