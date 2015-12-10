@@ -1,8 +1,15 @@
 <rules>
   <rule>
-    <match lemma="boahtet" tags="v.*"><select lemma="boahtit" tags="v.*"/></match>
+    <match lemma="boahtet" tags="vblex.*"><select lemma="boahtit" tags="vblex.*"/></match>
   </rule>
+  
+  <rule>
+    <match lemma="ii"/>
+    <match lemma="orrut" tags="vblex.*"><select lemma="liehket" tags="vblex.*"/></match>
+  </rule>
+        
 </rules>
+
 
 <!--
 Resources:
