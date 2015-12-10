@@ -265,6 +265,9 @@
       <attr-item tags="iv"/>
       <attr-item tags="tv"/>
     </def-attr>
+    <def-attr n="a_hab">
+      <attr-item tags="←hab→"/>
+    </def-attr>
     <def-attr n="a_deriv">
        <attr-item tags="der_dimin.n"/>
        <attr-item tags="der_at"/>
@@ -719,7 +722,7 @@
     <choose>      
       <when>
         <test><or>
-                <and><equal><clip pos="1" side="sl" part="a_cas"/><lit-tag v="loc"/></equal><equal><clip pos="1" side="sl" part="syntag"/><lit-tag v="@HAB"/></equal></and><in caseless="yes"><var n="current_verb"/><list n="verbs_stative"/></in>
+                <and><equal><clip pos="1" side="sl" part="a_cas"/><lit-tag v="loc"/></equal><equal><clip pos="1" side="sl" part="a_hab"/><lit-tag v="←hab→"/></equal></and><in caseless="yes"><var n="current_verb"/><list n="verbs_stative"/></in>
               </or></test>
               <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ine"/></let>
       </when>
