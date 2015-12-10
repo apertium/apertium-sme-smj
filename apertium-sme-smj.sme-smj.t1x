@@ -39,10 +39,13 @@
     </def-cat>
   <def-cat n="negverb">
 <!--ij<vblex><iv><neg><indic><pres><p3><sg>-->
+      <cat-item tags="vblex.iv.neg.indic.p1.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.*"/>
       <cat-item tags="vblex.iv.neg.indic.p3.*"/>
     </def-cat>
   <def-cat n="connegverb">
-      <cat-item tags="vblex.*.conneg.*"/>
+      <cat-item tags="vblex.*.*.*.conneg.*"/>
+      <cat-item tags="vblex.*.*.conneg.*"/>
     </def-cat>
    <def-cat n="foc">
       <cat-item lemma="ge" tags="pcle.*"/>
@@ -779,7 +782,7 @@
         <let><clip pos="1" side="tl" part="a_temps_mood"/>
              <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
         </let>
-        <!--<let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>-->
+        <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
       <out>
         <chunk name="verb" case="caseFirstWord">
           <tags>
