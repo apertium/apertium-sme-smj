@@ -779,7 +779,7 @@
         <let><clip pos="1" side="tl" part="a_temps_mood"/>
              <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
         </let>
-        <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
+        <!--<let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>-->
       <out>
         <chunk name="verb" case="caseFirstWord">
           <tags>
