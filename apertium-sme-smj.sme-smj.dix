@@ -27,6 +27,7 @@
     <sdef n="g3"   c=""/>
     <sdef n="comp"   c=""/>
     <sdef n="superl" c=""/>
+    <sdef n="nomag" c=""/>
 
     <sdef n="itg" c="Interrogative"/>
     <sdef n="rel"    c="Relative"/>
@@ -4026,7 +4027,7 @@
     <e><p><l>áicisadji<s n="n"/></l><r>ájttsesadje<s n="n"/></r></p></e>
     <e><p><l>ovdasadji<s n="n"/></l><r>åvddåsadje<s n="n"/></r></p></e>
     <e><p><l>eaddji<s n="n"/></l><r>ieddje<s n="n"/></r></p></e>
-    <e><p><l>oahpaheaddji<s n="n"/></l><r>åhpadiddje<s n="n"/></r></p></e>
+    <e><p><l>oahpaheaddji<s n="n"/><s n="nomag"/></l><r>åhpadiddje<s n="n"/></r></p></e>
     <e><p><l>hoavda<s n="n"/></l><r>jådediddje<s n="n"/></r></p></e>
     <e><p><l>jođiheaddji<s n="n"/></l><r>jådediddje<s n="n"/></r></p></e>
     <e><p><l>vuoddji<s n="n"/></l><r>vuoddje<s n="n"/></r></p></e>
@@ -7724,7 +7725,6 @@
     <e><p><l>guovdelii<s n="adv"/></l><r>guovddelij<s n="adv"/></r></p></e>
     <e><p><l>guovttegávdnái<s n="adv"/></l><r>guovtegávnnáj<s n="adv"/></r></p></e>
     <e><p><l>guovttá<s n="adv"/></l><r>guovtá<s n="adv"/></r></p></e>
-    <e c="0"><p><l>hui<s n="adv"/></l><r>sieldes<s n="adv"/></r></p></e>
     <e slr="1"><p><l>hui<s n="adv"/></l><r>huj<s n="adv"/></r></p></e>
     <e><p><l>hálva<s n="adv"/></l><r>hálvva<s n="adv"/></r></p></e>
     <e><p><l>hávskit<s n="adv"/></l><r>hávssket<s n="adv"/></r></p></e>
@@ -7778,7 +7778,7 @@
     <e><p><l>njuolga<s n="adv"/></l><r>njuolgga<s n="adv"/></r></p></e>
     <e><p><l>njálmmedievva<s n="adv"/></l><r>njálmedievva<s n="adv"/></r></p></e>
     <e><p><l>njálmmálaččat<s n="adv"/></l><r>njálmálattjat<s n="adv"/></r></p></e>
-    <e><p><l>nu<s n="adv"/></l><r>nåv<s n="adv"/></r></p></e>
+    <e><p><l>nu<s n="adv"/></l><r>nav<s n="adv"/></r></p></e>
     <e><p><l>nuortal<s n="adv"/></l><r>nuorttal<s n="adv"/></r></p></e>
     <e><p><l>nuortalačča<s n="adv"/></l><r>nuorttalattja<s n="adv"/></r></p></e>
     <e><p><l>nuortalii<s n="adv"/></l><r>nuorttalij<s n="adv"/></r></p></e>
@@ -10459,7 +10459,6 @@
     <e><p><l>muhttit<s n="vblex"/><s n="tv"/></l><r>muhttet<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>muhttohit<s n="vblex"/><s n="tv"/></l><r>muhttut<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>muitalit<s n="vblex"/><s n="tv"/></l><r>subtsastit<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>muitalit<s n="vblex"/><s n="tv"/></l><r>mujttalit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>muitit<s n="vblex"/><s n="tv"/></l><r>mujttet<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>muitáhit<s n="vblex"/><s n="tv"/></l><r>mujttát<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>muitástit<s n="vblex"/><s n="tv"/></l><r>mujttát<s n="vblex"/></r></p><par n="verb"/></e>
@@ -10764,6 +10763,7 @@
     <e><p><l>orodit<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>orrostit<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>orrot<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>orrut<s n="vblex"/><s n="iv"/></l><r>liehket<s n="vblex"/></r></p><par n="verb"/></e>
     <e c="0"><p><l>orrut<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
     <e slr="1"><p><l>orrut<s n="vblex"/><s n="iv"/></l><r>vuojnnet<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>orustit<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
