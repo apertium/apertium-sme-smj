@@ -42,7 +42,7 @@ LIST CS = cnjsub ;
 LIST CCC = cnjcoo ;
 SET CC = CCC - ("sihke") ;
 SET CC-CS = CC OR CS ;
-LIST Po = po ;
+LIST Po = post ;
 LIST Pr = pr ;
 
 LIST Pcle = pcle ;
@@ -147,7 +147,7 @@ LIST Ind = indic ;
 LIST Pot = pot ;
 LIST Cond = cond ;
 
-LIST Imprt = imprt ;
+LIST Imprt = imp ;
 LIST ImprtII = imprtii ;
 
 LIST Sg1 = (p1 sg) ;
@@ -380,7 +380,7 @@ LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
 
 # Word or not
 # -----------
-LIST WORD = n a adv vblex prn cnjsub cnjcoo po pr interj pcle num abbr acr  \? ;
+LIST WORD = n a adv vblex prn cnjsub cnjcoo post pr interj pcle num abbr acr  \? ;
  # any word
 
 SET REALWORD = WORD - Num - Ord ;
@@ -1129,7 +1129,7 @@ SET NP-HEAD-GEN    = (pron gen) OR (n gen) OR (np gen) OR (a gen) - Cmpnd - Dem 
 SET PRE-NP-HEAD = (np attr) OR (np @→N) OR (adj attr) OR (abbr attr) OR ("buorre") OR (prn pers gen) OR (n gen) OR (np gen) OR Num OR Cmpnd OR CC OR (prn dem) OR (prn ref gen) OR (prn ind) OR (prfprc @→N) OR PrsPrc OR (adj ord) ;
          # The strict version of items that can only be premodifiers, not parts of the predicate
          
-SET V-PRE-NP = PrfPrc OR PrsPrc OR Actor OR Actio OR (vblex adj) OR (indic pres p3 sg) OR (indic pres p1 sg) OR (imprt pres p2 du) ;
+SET V-PRE-NP = PrfPrc OR PrsPrc OR Actor OR Actio OR (vblex adj) OR (indic pres p3 sg) OR (indic pres p1 sg) OR (imp pres p2 du) ;
     # to be used together with PRE-NP-HEAD before @→N is disambiguated
          
 SET NP-MEMBER   = PRE-NP-HEAD OR N ;

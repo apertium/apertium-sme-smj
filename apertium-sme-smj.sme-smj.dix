@@ -9,7 +9,7 @@
     <sdef n="adv"    c="Adverb"/>
     <sdef n="cnjcoo"     c="Co-ordinating conjunction"/>
     <sdef n="cnjsub"     c="Sub-ordinating conjunction"/>
-    <sdef n="po"     c="Postposition"/>
+    <sdef n="post"     c="Postposition"/>
     <sdef n="pr"     c="Preposition"/>
     <sdef n="pcle"   c="Particle"/>
     <sdef n="qst"    c="Question marker"/>
@@ -53,8 +53,7 @@
     <sdef n="iv"     c="Intransitive"/>
 
     <sdef n="inf"     c="infinitive"/>
-    <sdef n="imprt"   c="Imperative"/>
-    <sdef n="imp"     c="Imperative"/>
+    <sdef n="imp"   c="Imperative"/>
     <sdef n="pres"     c="Present"/>
     <sdef n="pret"     c="Preterite"/>
     <sdef n="prfprc"  c="Perfect participle"/>
@@ -291,45 +290,45 @@
 
     <!-- Adpositions -->
 
-    <e><p><l>ala<s n="po"/></l><r>nali<s n="po"/></r></p></e>
-    <e><p><l>birra<s n="po"/></l><r>birra<s n="po"/></r></p></e>
-    <e><p><l>bokte<s n="po"/></l><r>baktu<s n="po"/></r></p></e>
-    <e><p><l>báldal<s n="po"/></l><r>bálldal<s n="po"/></r></p></e>
-    <e><p><l>bálddas<s n="po"/></l><r>báldan<s n="po"/></r></p></e>
-    <e><p><l>gasku<s n="po"/></l><r>gassko<s n="po"/></r></p></e>
-    <e><p><l>guhkkut<s n="po"/></l><r>miehtáj<s n="po"/></r></p></e>
-    <e><p><l>guora<s n="po"/></l><r>guorav<s n="po"/></r></p></e>
-    <e><p><l>guovddáš<s n="po"/></l><r>gassko<s n="po"/></r></p></e>
-    <e><p><l>haga<s n="po"/></l><r>dagá<s n="po"/></r></p></e>
-    <e><p><l>lahka<s n="po"/></l><r>lahka<s n="po"/></r></p></e>
-    <e><p><l>lusa<s n="po"/></l><r>lusi<s n="po"/></r></p></e>
-    <e><p><l>maŋil<s n="po"/></l><r>maŋŋel<s n="po"/></r></p></e>
-    <e><p><l>mielde<s n="po"/></l><r>milta<s n="po"/></r></p></e>
-    <e><p><l>ovdal<s n="po"/></l><r>åvddål<s n="po"/></r></p></e>
-    <e><p><l>rádjái<s n="po"/></l><r>rádjáj<s n="po"/></r></p></e>
-    <e><p><l>sisa<s n="po"/></l><r>sisi<s n="po"/></r></p></e>
-    <e><p><l>siste<s n="po"/></l><r>sinne<s n="po"/></r></p></e>
-    <e><p><l>vuollel<s n="po"/></l><r>vuollel<s n="po"/></r></p></e>
-    <e><p><l>vuollil<s n="po"/></l><r>vuollel<s n="po"/></r></p></e>
-    <e><p><l>vuostá<s n="po"/></l><r>vuosstij<s n="po"/></r></p></e>
-    <e><p><l>vuostái<s n="po"/></l><r>vuosstij<s n="po"/></r></p></e>
-    <e><p><l>várás<s n="po"/></l><r>gáktuj<s n="po"/></r></p></e>
-    <e><p><l>áigi<s n="po"/></l><r>ájgge<s n="po"/></r></p></e>
+    <e><p><l>ala<s n="post"/></l><r>nali<s n="post"/></r></p></e>
+    <e><p><l>birra<s n="post"/></l><r>birra<s n="post"/></r></p></e>
+    <e><p><l>bokte<s n="post"/></l><r>baktu<s n="post"/></r></p></e>
+    <e><p><l>báldal<s n="post"/></l><r>bálldal<s n="post"/></r></p></e>
+    <e><p><l>bálddas<s n="post"/></l><r>báldan<s n="post"/></r></p></e>
+    <e><p><l>gasku<s n="post"/></l><r>gassko<s n="post"/></r></p></e>
+    <e><p><l>guhkkut<s n="post"/></l><r>miehtáj<s n="post"/></r></p></e>
+    <e><p><l>guora<s n="post"/></l><r>guorav<s n="post"/></r></p></e>
+    <e><p><l>guovddáš<s n="post"/></l><r>gassko<s n="post"/></r></p></e>
+    <e><p><l>haga<s n="post"/></l><r>dagá<s n="post"/></r></p></e>
+    <e><p><l>lahka<s n="post"/></l><r>lahka<s n="post"/></r></p></e>
+    <e><p><l>lusa<s n="post"/></l><r>lusi<s n="post"/></r></p></e>
+    <e><p><l>maŋil<s n="post"/></l><r>maŋŋel<s n="post"/></r></p></e>
+    <e><p><l>mielde<s n="post"/></l><r>milta<s n="post"/></r></p></e>
+    <e><p><l>ovdal<s n="post"/></l><r>åvddål<s n="post"/></r></p></e>
+    <e><p><l>rádjái<s n="post"/></l><r>rádjáj<s n="post"/></r></p></e>
+    <e><p><l>sisa<s n="post"/></l><r>sisi<s n="post"/></r></p></e>
+    <e><p><l>siste<s n="post"/></l><r>sinne<s n="post"/></r></p></e>
+    <e><p><l>vuollel<s n="post"/></l><r>vuollel<s n="post"/></r></p></e>
+    <e><p><l>vuollil<s n="post"/></l><r>vuollel<s n="post"/></r></p></e>
+    <e><p><l>vuostá<s n="post"/></l><r>vuosstij<s n="post"/></r></p></e>
+    <e><p><l>vuostái<s n="post"/></l><r>vuosstij<s n="post"/></r></p></e>
+    <e><p><l>várás<s n="post"/></l><r>gáktuj<s n="post"/></r></p></e>
+    <e><p><l>áigi<s n="post"/></l><r>ájgge<s n="post"/></r></p></e>
 
 <!-- TODO: these are not pr's (or missing) in smj.lexc, need other translations: -->
-    <!-- <e><p><l>gaskal<s n="po"/></l><r>gasskal<s n="po"/></r></p></e> -->
+    <!-- <e><p><l>gaskal<s n="post"/></l><r>gasskal<s n="post"/></r></p></e> -->
     <!-- <e><p><l>gasku<s n="pr"/></l><r>gassko<s n="pr"/></r></p></e> -->
-    <!-- <e><p><l>badjelii<s n="po"/></l><r>badjelij<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>bealis<s n="po"/></l><r>bielen<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>dáfus<s n="po"/></l><r>hárráj<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>gaskka<s n="po"/></l><r>gaska<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>gaskkas<s n="po"/></l><r>gaskan<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>olggobealde<s n="po"/></l><r>ålgusjbielen<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>ovddas<s n="po"/></l><r>åvdån<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>rájes<s n="po"/></l><r>rájes<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>vuolde<s n="po"/></l><r>vuolen<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>vuollai<s n="po"/></l><r>vuolláj<s n="po"/></r></p></e> -->
-    <!-- <e><p><l>vuollái<s n="po"/></l><r>vuolláj<s n="po"/></r></p></e> -->
+    <!-- <e><p><l>badjelii<s n="post"/></l><r>badjelij<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>bealis<s n="post"/></l><r>bielen<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>dáfus<s n="post"/></l><r>hárráj<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>gaskka<s n="post"/></l><r>gaska<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>gaskkas<s n="post"/></l><r>gaskan<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>olggobealde<s n="post"/></l><r>ålgusjbielen<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>ovddas<s n="post"/></l><r>åvdån<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>rájes<s n="post"/></l><r>rájes<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>vuolde<s n="post"/></l><r>vuolen<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>vuollai<s n="post"/></l><r>vuolláj<s n="post"/></r></p></e> -->
+    <!-- <e><p><l>vuollái<s n="post"/></l><r>vuolláj<s n="post"/></r></p></e> -->
 
     <e><p><l>badjelii<s n="pr"/></l><r>badjelij<s n="pr"/></r></p></e>
     <e><p><l>birra<s n="pr"/></l><r>birra<s n="pr"/></r></p></e>

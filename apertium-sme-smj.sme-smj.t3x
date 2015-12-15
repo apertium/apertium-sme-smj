@@ -73,8 +73,8 @@
     <def-cat n="Adp">
         <cat-item tags="pr.*"/>
         <cat-item tags="pr"/>
-        <cat-item tags="po.*"/>
-        <cat-item tags="po"/>
+        <cat-item tags="post.*"/>
+        <cat-item tags="post"/>
     </def-cat>
 
   </section-def-cats>
