@@ -152,26 +152,26 @@
     <e><p><l>dasgo<s n="cnjsub"/></l><r>dagu<s n="cnjsub"/></r></p></e>
     <e><p><l>de<s n="cnjsub"/></l><r>de<b/><s n="cnjsub"/></r></p></e>
     <e><p><l>dego<s n="cnjsub"/></l><r>degu<s n="cnjsub"/></r></p></e>
-    <e><p><l>dušše<b/>go<s n="cnjsub"/></l><r>dåssjå<b/>gå<s n="cnjsub"/></r></p></e>
+    <e><p><l>dušše<b/>go<s n="cnjsub"/></l><r>dåssju<b/>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>go<s n="cnjsub"/></l><r>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>jos<s n="cnjsub"/></l><r>jus<s n="cnjsub"/></r></p></e>
     <e><p><l>jus<s n="cnjsub"/></l><r>jus<s n="cnjsub"/></r></p></e>
-    <e><p><l>mo<s n="cnjsub"/></l><r>gåk<s n="cnjsub"/></r></p></e>
-    <e><p><l>movt<s n="cnjsub"/></l><r>gåk<s n="cnjsub"/></r></p></e>
+    <e><p><l>mo<s n="cnjsub"/></l><r>gåktu<s n="cnjsub"/></r></p></e>
+    <e><p><l>movt<s n="cnjsub"/></l><r>gåktu<s n="cnjsub"/></r></p></e>
     <!--<e><p><l>muhte<s n="cnjsub"/></l><r>men<s n="cnjsub"/></r></p></e>-->
-    <e><p><l>nu<b/>ahte<s n="cnjsub"/></l><r>ahte<s n="cnjsub"/></r></p></e>
+    <e><p><l>nu<b/>ahte<s n="cnjsub"/></l><r>jut<s n="cnjsub"/></r></p></e>
     <e><p><l>nu<b/>guhkásgo<s n="cnjsub"/></l><r>nåv<b/>guhkás<b/>gå<s n="cnjsub"/></r></p></e>
-    <e><p><l>nugo<s n="cnjsub"/></l><r>nåv<b/>gåk<s n="cnjsub"/></r></p></e>
+    <e><p><l>nugo<s n="cnjsub"/></l><r>navti<b/>gåktu<s n="cnjsub"/></r></p></e>
     <e><p><l>ovdal<b/>go<s n="cnjsub"/></l><r>åvddål<b/>gå<s n="cnjsub"/></r></p></e>
-    <e><p><l>seammás<b/>go<s n="cnjsub"/></l><r>daŋga<b/>bále<s n="cnjsub"/></r></p></e>
+    <e><p><l>seammás<b/>go<s n="cnjsub"/></l><r>sæmmi<b/>bále<s n="cnjsub"/></r></p></e>
     <e><p><l>vai<s n="cnjsub"/></l><r>vaj<s n="cnjsub"/></r></p></e>
     <e><p><l>vaikke<s n="cnjsub"/></l><r>vájk<s n="cnjsub"/></r></p></e>
     <e><p><l>vaikko<s n="cnjsub"/></l><r>vájku<s n="cnjsub"/></r></p></e>
 
-    <e><p><l>ahte<s n="cnjcoo"/></l><r>ahte<s n="cnjcoo"/></r></p></e>
+    <e><p><l>ahte<s n="cnjcoo"/></l><r>jut<s n="cnjcoo"/></r></p></e>
     <e><p><l>dahe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dahege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
-    <e><p><l>dahje<s n="cnjcoo"/></l><r>dahje<s n="cnjcoo"/></r></p></e>
+    <e><p><l>dahje<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <!--<e><p><l>dahje<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>-->
     <e><p><l>dahjege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dehe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
@@ -188,7 +188,7 @@
 
     <e><p><l>aktahat<s n="prn"/></l><r>avtagasj<s n="prn"/></r></p></e>
     <e><p><l>buohkat<s n="prn"/></l><r>gájka<s n="prn"/></r></p></e>
-    <e><p><l>buot<s n="prn"/><s n="ind"/></l><r>divnna<s n="prn"/><s n="ind"/></r></p><par n="pron__:pl.nom"/></e>
+    <e><p><l>buot<s n="prn"/><s n="ind"/></l><r>divna<s n="prn"/><s n="ind"/></r></p><par n="pron__:pl.nom"/></e>
     <e><p><l>dahtanaga<s n="prn"/></l><r>dahtak<s n="prn"/></r></p></e>
     <e><p><l>dakkar<s n="prn"/></l><r>dakkir<s n="prn"/></r></p></e>
     <e><p><l>dakkár<s n="prn"/></l><r>dakkár<s n="prn"/></r></p></e>
@@ -227,7 +227,7 @@
     <e><p><l>gii<g><b/>beare</g><s n="prn"/></l><r>vajku<b/>guhti<s n="prn"/></r></p></e>
     <e><p><l>gii<g><b/>beare</g><s n="prn"/><s n="itg"/></l><r>vajku<b/>guhti<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>gii<s n="prn"/></l><r>guhti<s n="prn"/></r></p></e>
-    <e><p><l>giige<s n="prn"/></l><r>guhtik<s n="prn"/></r></p></e>
+    <e><p><l>giige<s n="prn"/></l><r>aktak<s n="prn"/></r></p></e>
     <e><p><l>giijai<s n="prn"/></l><r>færttahasj<s n="prn"/></r></p></e>
     <e><p><l>giinai<s n="prn"/></l><r>færttahasj<s n="prn"/></r></p></e>
     <e><p><l>goabbat<s n="prn"/></l><r>goabbák<s n="prn"/></r></p></e>
@@ -286,7 +286,7 @@
     <e><p><l>vaikko<b/>guhtemuš<s n="prn"/></l><r>vájku<b/>guhtimusj<s n="prn"/></r></p></e>
     <e><p><l>vaikko<b/>makkár<s n="prn"/></l><r>vájku<b/>makkár<s n="prn"/></r></p></e>
     <e><p><l>vaikko<b/>mii<s n="prn"/></l><r>vájku<b/>mij<s n="prn"/></r></p></e>
-    <e><p><l>veaháš<s n="prn"/></l><r>unnán<s n="prn"/></r></p></e>
+    <e><p><l>veaháš<s n="prn"/></l><r>vehi<s n="prn"/></r></p></e>
 
     <!-- Adpositions -->
 
@@ -298,8 +298,8 @@
     <e><p><l>gasku<s n="post"/></l><r>gassko<s n="post"/></r></p></e>
     <e><p><l>guhkkut<s n="post"/></l><r>miehtáj<s n="post"/></r></p></e>
     <e><p><l>guora<s n="post"/></l><r>guorav<s n="post"/></r></p></e>
-    <e><p><l>guovddáš<s n="post"/></l><r>gassko<s n="post"/></r></p></e>
-    <e><p><l>haga<s n="post"/></l><r>dagá<s n="post"/></r></p></e>
+    <e><p><l>guovddáš<s n="post"/></l><r>gassko<s n="post"/></r></p></e> <!-- guovdásj, N in smj -->
+    <e><p><l>haga<s n="post"/></l><r>dagi<s n="post"/></r></p></e>
     <e><p><l>lahka<s n="post"/></l><r>lahka<s n="post"/></r></p></e>
     <e><p><l>lusa<s n="post"/></l><r>lusi<s n="post"/></r></p></e>
     <e><p><l>maŋil<s n="post"/></l><r>maŋŋel<s n="post"/></r></p></e>
@@ -350,8 +350,8 @@
 
     <!-- Numerals -->
 
-    <e><p><l>milj<s n="num"/></l><r>milj<s n="num"/></r></p></e>
-    <e><p><l>miljon<s n="num"/></l><r>milijåvnnå<s n="num"/></r></p></e>
+    <e><p><l>milj<s n="num"/></l><r>millijåvnnå<s n="num"/></r></p></e>
+    <e><p><l>miljon<s n="num"/></l><r>millijåvnnå<s n="num"/></r></p></e>
     <e><p><l>máŋga<s n="num"/></l><r>moadda<s n="num"/></r></p></e>
     <e><p><l>vuos<s n="num"/></l><r>vuostasj<s n="num"/></r></p></e>
     <e><p><l>vuosttas<s n="num"/></l><r>vuostasj<s n="num"/></r></p></e>
@@ -373,30 +373,30 @@
     <e><p><l>bussá<s n="n"/><s n="g3"/></l><r>gáhtto<s n="n"/></r></p></e>
     <e><p><l>ášši<s n="n"/><s n="g3"/></l><r>ássje<s n="n"/></r></p></e>
     <e><p><l>anti-<s n="n"/></l><r>anti-<s n="n"/></r></p></e>
-    <e><p><l>gabba<s n="n"/></l><r>gabba<s n="n"/></r></p></e>
+    <e><p><l>gabba<s n="n"/></l><r>bejuk<s n="n"/></r></p></e>
     <e><p><l>hillagabba<s n="n"/></l><r>hillagabba<s n="n"/></r></p></e>
     <e><p><l>nibba<s n="n"/></l><r>nibba<s n="n"/></r></p></e>
     <e><p><l>gaiba<s n="n"/></l><r>gajbba<s n="n"/></r></p></e>
     <e><p><l>galba<s n="n"/></l><r>galbba<s n="n"/></r></p></e>
     <e><p><l>silba<s n="n"/></l><r>silbba<s n="n"/></r></p></e>
     <e><p><l>duolba<s n="n"/></l><r>duolbba<s n="n"/></r></p></e>
-    <e><p><l>vearba<s n="n"/></l><r>verbba<s n="n"/></r></p></e>
-    <e><p><l>u-vearba<s n="n"/></l><r>u-verbba<s n="n"/></r></p></e>
-    <e><p><l>kopulavearba<s n="n"/></l><r>kopulaverbba<s n="n"/></r></p></e>
-    <e><p><l>modálavearba<s n="n"/></l><r>modálaverbba<s n="n"/></r></p></e>
-    <e><p><l>habituálavearba<s n="n"/></l><r>habetuálaverbba<s n="n"/></r></p></e>
-    <e><p><l>finihttavearba<s n="n"/></l><r>finehttaverbba<s n="n"/></r></p></e>
-    <e><p><l>infinihttavearba<s n="n"/></l><r>infinihttaverbba<s n="n"/></r></p></e>
-    <e><p><l>passiivavearba<s n="n"/></l><r>passijvaverbba<s n="n"/></r></p></e>
-    <e><p><l>detransitiivavearba<s n="n"/></l><r>detranssetijvaverbba<s n="n"/></r></p></e>
-    <e><p><l>intransitiivavearba<s n="n"/></l><r>intranssetijvaverbba<s n="n"/></r></p></e>
-    <e><p><l>kuratiivavearba<s n="n"/></l><r>kurátijvaverbba<s n="n"/></r></p></e>
-    <e><p><l>orientašuvdnaadvearba<s n="n"/></l><r>orientasjåvnnåadverbba<s n="n"/></r></p></e>
-    <e><p><l>oaivevearba<s n="n"/></l><r>oajvveverbba<s n="n"/></r></p></e>
-    <e><p><l>bárahisstávvalvearba<s n="n"/></l><r>báráhisstávvalverbba<s n="n"/></r></p></e>
-    <e><p><l>gieldinvearba<s n="n"/></l><r>gielldenverbba<s n="n"/></r></p></e>
-    <e><p><l>resiprohkavearba<s n="n"/></l><r>reseprohkoverbba<s n="n"/></r></p></e>
-    <e><p><l>progrešuvdnavearba<s n="n"/></l><r>progresjåvnnåverbba<s n="n"/></r></p></e>
+    <e><p><l>vearba<s n="n"/></l><r>værbba<s n="n"/></r></p></e>
+    <e><p><l>u-vearba<s n="n"/></l><r>ij-værbba<s n="n"/></r></p></e>
+    <e><p><l>kopulavearba<s n="n"/></l><r>kopulaværbba<s n="n"/></r></p></e>
+    <e><p><l>modálavearba<s n="n"/></l><r>modálaværbba<s n="n"/></r></p></e>
+    <e><p><l>habituálavearba<s n="n"/></l><r>habetuálaværbba<s n="n"/></r></p></e>
+    <e><p><l>finihttavearba<s n="n"/></l><r>finihttaværbba<s n="n"/></r></p></e>
+    <e><p><l>infinihttavearba<s n="n"/></l><r>infinihttaværbba<s n="n"/></r></p></e>
+    <e><p><l>passiivavearba<s n="n"/></l><r>passijvaværbba<s n="n"/></r></p></e>
+    <e><p><l>detransitiivavearba<s n="n"/></l><r>detranssetijvaværbba<s n="n"/></r></p></e>
+    <e><p><l>intransitiivavearba<s n="n"/></l><r>intranssetijvaværbba<s n="n"/></r></p></e>
+    <e><p><l>kuratiivavearba<s n="n"/></l><r>kurátijvaværbba<s n="n"/></r></p></e>
+    <e><p><l>orientašuvdnaadvearba<s n="n"/></l><r>orientasjåvnnåadværbba<s n="n"/></r></p></e>
+    <e><p><l>oaivevearba<s n="n"/></l><r>oajvveværbba<s n="n"/></r></p></e>
+    <e><p><l>bárahisstávvalvearba<s n="n"/></l><r>báráhisstávvalværbba<s n="n"/></r></p></e>
+    <e><p><l>gieldinvearba<s n="n"/></l><r>gielldenværbba<s n="n"/></r></p></e>
+    <e><p><l>resiprohkavearba<s n="n"/></l><r>reseprohkoværbba<s n="n"/></r></p></e>
+    <e><p><l>progrešuvdnavearba<s n="n"/></l><r>progresjåvnnåværbba<s n="n"/></r></p></e>
     <e><p><l>skárba<s n="n"/></l><r>skárbba<s n="n"/></r></p></e>
     <e><p><l>klubba<s n="n"/></l><r>klubba<s n="n"/></r></p></e>
     <e><p><l>pubba<s n="n"/></l><r>pubba<s n="n"/></r></p></e>
@@ -407,9 +407,9 @@
     <e><p><l>giehtaspábba<s n="n"/></l><r>giehtaspábba<s n="n"/></r></p></e>
     <e><p><l>muohtaspábba<s n="n"/></l><r>muohtaspábba<s n="n"/></r></p></e>
     <e><p><l>gieddespábba<s n="n"/></l><r>gieddespábba<s n="n"/></r></p></e>
-    <e><p><l>advearba<s n="n"/></l><r>advearba<s n="n"/></r></p></e>
-    <e><p><l>proadvearba<s n="n"/></l><r>proadvearba<s n="n"/></r></p></e>
-    <e><p><l>konvearba<s n="n"/></l><r>konverba<s n="n"/></r></p></e>
+    <e><p><l>advearba<s n="n"/></l><r>adværbba<s n="n"/></r></p></e>
+    <e><p><l>proadvearba<s n="n"/></l><r>proadværbba<s n="n"/></r></p></e>
+    <e><p><l>konvearba<s n="n"/></l><r>konværbba<s n="n"/></r></p></e>
     <e><p><l>lesba<s n="n"/></l><r>lesba<s n="n"/></r></p></e>
     <e><p><l>puba<s n="n"/></l><r>puba<s n="n"/></r></p></e>
     <e><p><l>keruba<s n="n"/></l><r>keruba<s n="n"/></r></p></e>
@@ -474,12 +474,12 @@
     <e><p><l>stáhtadieđa<s n="n"/></l><r>stáhtadieda<s n="n"/></r></p></e>
     <e><p><l>luonddudieđa<s n="n"/></l><r>luondodieda<s n="n"/></r></p></e>
     <e><p><l>dálkkasdieđa<s n="n"/></l><r>dálkasdieda<s n="n"/></r></p></e>
-    <e><p><l>sámojeda<s n="n"/></l><r>sámojeda<s n="n"/></r></p></e>
-    <e><p><l>logopeda<s n="n"/></l><r>logopeda<s n="n"/></r></p></e>
+    <e><p><l>sámojeda<s n="n"/></l><r>samojehta<s n="n"/></r></p></e>
+    <e><p><l>logopeda<s n="n"/></l><r>logopehta<s n="n"/></r></p></e>
     <e><p><l>mopeda<s n="n"/></l><r>mopeda<s n="n"/></r></p></e>
-    <e><p><l>smaragda<s n="n"/></l><r>smarágda<s n="n"/></r></p></e>
-    <e><p><l>smarágda<s n="n"/></l><r>smarágda<s n="n"/></r></p></e>
-    <e><p><l>hybrida<s n="n"/></l><r>hybrida<s n="n"/></r></p></e>
+    <e><p><l>smaragda<s n="n"/></l><r>smarágdda<s n="n"/></r></p></e>
+    <e><p><l>smarágda<s n="n"/></l><r>smarágdda<s n="n"/></r></p></e>
+    <e><p><l>hybrida<s n="n"/></l><r>hybrijdda<s n="n"/></r></p></e>
     <e><p><l>buoidda<s n="n"/></l><r>buojda<s n="n"/></r></p></e>
     <e><p><l>gielda<s n="n"/></l><r>giellda<s n="n"/></r></p></e>
     <e><p><l>bilda<s n="n"/></l><r>billda<s n="n"/></r></p></e>
@@ -488,8 +488,8 @@
     <e><p><l>legeanda<s n="n"/></l><r>legeanda<s n="n"/></r></p></e>
     <e><p><l>stipeanda<s n="n"/></l><r>stipeanda<s n="n"/></r></p></e>
     <e><p><l>oahppostipeanda<s n="n"/></l><r>oahppostipeanda<s n="n"/></r></p></e>
-    <e><p><l>agenda<s n="n"/></l><r>agenda<s n="n"/></r></p></e>
-    <e><p><l>stipenda<s n="n"/></l><r>stipenda<s n="n"/></r></p></e>
+    <e><p><l>agenda<s n="n"/></l><r>agænndá<s n="n"/></r></p></e>
+    <e><p><l>stipenda<s n="n"/></l><r>stipænnda<s n="n"/></r></p></e>
     <e><p><l>rockebanda<s n="n"/></l><r>råckebannda<s n="n"/></r></p></e>
     <e><p><l>boanda<s n="n"/></l><r>boannda<s n="n"/></r></p></e>
     <e><p><l>foanda<s n="n"/></l><r>foannda<s n="n"/></r></p></e>
@@ -517,8 +517,8 @@
     <e><p><l>dáhkkerinda<s n="n"/></l><r>dáhkkerinnda<s n="n"/></r></p></e>
     <e><p><l>punda<s n="n"/></l><r>punnda<s n="n"/></r></p></e>
     <e><p><l>rockbánda<s n="n"/></l><r>råckbánnda<s n="n"/></r></p></e>
-    <e><p><l>gánda<s n="n"/></l><r>gánnda<s n="n"/></r></p></e>
-    <e><p><l>nuorragánda<s n="n"/></l><r>nuorragánnda<s n="n"/></r></p></e>
+    <e><p><l>gánda<s n="n"/></l><r>báhttja<s n="n"/></r></p></e>
+    <e><p><l>nuorragánda<s n="n"/></l><r>nuorrabáhttja<s n="n"/></r></p></e>
     <e><p><l>stánda<s n="n"/></l><r>stánnda<s n="n"/></r></p></e>
     <e><p><l>divideanda<s n="n"/></l><r>dividænnda<s n="n"/></r></p></e>
     <e><p><l>allehonda<s n="n"/></l><r>allehonda<s n="n"/></r></p></e>
@@ -572,33 +572,33 @@
     <e><p><l>teosofa<s n="n"/></l><r>teosufa<s n="n"/></r></p></e>
     <e><p><l>hieroglyfa<s n="n"/></l><r>hieroglyfa<s n="n"/></r></p></e>
     <e><p><l>gráfa<s n="n"/></l><r>gráfa<s n="n"/></r></p></e>
-    <e><p><l>paragráfa<s n="n"/></l><r>paragráfa<s n="n"/></r></p></e>
-    <e><p><l>páragráfa<s n="n"/></l><r>páragráfa<s n="n"/></r></p></e>
-    <e><p><l>telegráfa<s n="n"/></l><r>telegráfa<s n="n"/></r></p></e>
-    <e><p><l>kalligráfa<s n="n"/></l><r>kalligráfa<s n="n"/></r></p></e>
-    <e><p><l>kemigráfa<s n="n"/></l><r>kemigráfa<s n="n"/></r></p></e>
-    <e><p><l>serigráfa<s n="n"/></l><r>serigráfa<s n="n"/></r></p></e>
-    <e><p><l>videográfa<s n="n"/></l><r>videográfa<s n="n"/></r></p></e>
-    <e><p><l>geográfa<s n="n"/></l><r>geográfa<s n="n"/></r></p></e>
-    <e><p><l>paleográfa<s n="n"/></l><r>paleográfa<s n="n"/></r></p></e>
-    <e><p><l>koreográfa<s n="n"/></l><r>koreográfa<s n="n"/></r></p></e>
-    <e><p><l>biográfa<s n="n"/></l><r>biográfa<s n="n"/></r></p></e>
-    <e><p><l>bibliográfa<s n="n"/></l><r>bibliográfa<s n="n"/></r></p></e>
-    <e><p><l>historiográfa<s n="n"/></l><r>historiográfa<s n="n"/></r></p></e>
-    <e><p><l>leksikográfa<s n="n"/></l><r>leksikográfa<s n="n"/></r></p></e>
-    <e><p><l>diskográfa<s n="n"/></l><r>diskográfa<s n="n"/></r></p></e>
-    <e><p><l>oseanográfa<s n="n"/></l><r>oseanográfa<s n="n"/></r></p></e>
-    <e><p><l>stenográfa<s n="n"/></l><r>stenográfa<s n="n"/></r></p></e>
-    <e><p><l>monográfa<s n="n"/></l><r>monográfa<s n="n"/></r></p></e>
-    <e><p><l>pornográfa<s n="n"/></l><r>pornográfa<s n="n"/></r></p></e>
-    <e><p><l>etnográfa<s n="n"/></l><r>etnográfa<s n="n"/></r></p></e>
-    <e><p><l>topográfa<s n="n"/></l><r>topográfa<s n="n"/></r></p></e>
-    <e><p><l>typográfa<s n="n"/></l><r>typográfa<s n="n"/></r></p></e>
-    <e><p><l>xerográfa<s n="n"/></l><r>xerográfa<s n="n"/></r></p></e>
-    <e><p><l>petrográfa<s n="n"/></l><r>petrográfa<s n="n"/></r></p></e>
-    <e><p><l>fotográfa<s n="n"/></l><r>fotográfa<s n="n"/></r></p></e>
-    <e><p><l>ortográfa<s n="n"/></l><r>ortográfa<s n="n"/></r></p></e>
-    <e><p><l>autográfa<s n="n"/></l><r>autográfa<s n="n"/></r></p></e>
+    <e><p><l>paragráfa<s n="n"/></l><r>paragráffa<s n="n"/></r></p></e>
+    <e><p><l>páragráfa<s n="n"/></l><r>páragráffa<s n="n"/></r></p></e>
+    <e><p><l>telegráfa<s n="n"/></l><r>telegráffa<s n="n"/></r></p></e>
+    <e><p><l>kalligráfa<s n="n"/></l><r>kalligráffa<s n="n"/></r></p></e>
+    <e><p><l>kemigráfa<s n="n"/></l><r>kemigráffa<s n="n"/></r></p></e>
+    <e><p><l>serigráfa<s n="n"/></l><r>serigráffa<s n="n"/></r></p></e>
+    <e><p><l>videográfa<s n="n"/></l><r>videográffa<s n="n"/></r></p></e>
+    <e><p><l>geográfa<s n="n"/></l><r>geográffa<s n="n"/></r></p></e>
+    <e><p><l>paleográfa<s n="n"/></l><r>paleográffa<s n="n"/></r></p></e>
+    <e><p><l>koreográfa<s n="n"/></l><r>koreográffa<s n="n"/></r></p></e>
+    <e><p><l>biográfa<s n="n"/></l><r>biográffa<s n="n"/></r></p></e>
+    <e><p><l>bibliográfa<s n="n"/></l><r>bibliográffa<s n="n"/></r></p></e>
+    <e><p><l>historiográfa<s n="n"/></l><r>historiográffa<s n="n"/></r></p></e>
+    <e><p><l>leksikográfa<s n="n"/></l><r>leksikográffa<s n="n"/></r></p></e>
+    <e><p><l>diskográfa<s n="n"/></l><r>diskográffa<s n="n"/></r></p></e>
+    <e><p><l>oseanográfa<s n="n"/></l><r>oseanográffa<s n="n"/></r></p></e>
+    <e><p><l>stenográfa<s n="n"/></l><r>stenográffa<s n="n"/></r></p></e>
+    <e><p><l>monográfa<s n="n"/></l><r>monográffa<s n="n"/></r></p></e>
+    <e><p><l>pornográfa<s n="n"/></l><r>pornográffa<s n="n"/></r></p></e>
+    <e><p><l>etnográfa<s n="n"/></l><r>etnográffa<s n="n"/></r></p></e>
+    <e><p><l>topográfa<s n="n"/></l><r>topográffa<s n="n"/></r></p></e>
+    <e><p><l>typográfa<s n="n"/></l><r>typográffa<s n="n"/></r></p></e>
+    <e><p><l>xerográfa<s n="n"/></l><r>xerográffa<s n="n"/></r></p></e>
+    <e><p><l>petrográfa<s n="n"/></l><r>petrográffa<s n="n"/></r></p></e>
+    <e><p><l>fotográfa<s n="n"/></l><r>fotográffa<s n="n"/></r></p></e>
+    <e><p><l>ortográfa<s n="n"/></l><r>ortográffa<s n="n"/></r></p></e>
+    <e><p><l>autográfa<s n="n"/></l><r>autográffa<s n="n"/></r></p></e>
     <e><p><l>saga<s n="n"/></l><r>saga<s n="n"/></r></p></e>
     <e><p><l>kollega<s n="n"/></l><r>kollega<s n="n"/></r></p></e>
     <e><p><l>stratega<s n="n"/></l><r>stratega<s n="n"/></r></p></e>
@@ -3638,7 +3638,7 @@
     <e><p><l>ekstensiiva<s n="n"/></l><r>ekstensiiva<s n="n"/></r></p></e>
     <e><p><l>essiiva<s n="n"/></l><r>essiiva<s n="n"/></r></p></e>
     <e><p><l>abessiiva<s n="n"/></l><r>abessiiva<s n="n"/></r></p></e>
-    <e><p><l>vearbaabessiiva<s n="n"/></l><r>vearbaabessiiva<s n="n"/></r></p></e>
+    <e><p><l>vearbaabessiiva<s n="n"/></l><r>værbbaabessiiva<s n="n"/></r></p></e>
     <e><p><l>adessiiva<s n="n"/></l><r>adessiiva<s n="n"/></r></p></e>
     <e><p><l>inessiiva<s n="n"/></l><r>inessiiva<s n="n"/></r></p></e>
     <e><p><l>ekspressiiva<s n="n"/></l><r>ekspressiiva<s n="n"/></r></p></e>
@@ -3692,7 +3692,7 @@
     <e><p><l>privatiiva<s n="n"/></l><r>privatiiva<s n="n"/></r></p></e>
     <e><p><l>konservatiiva<s n="n"/></l><r>konservatiiva<s n="n"/></r></p></e>
     <e><p><l>genetiiva<s n="n"/></l><r>genetiiva<s n="n"/></r></p></e>
-    <e><p><l>vearbagenetiiva<s n="n"/></l><r>vearbagenetiiva<s n="n"/></r></p></e>
+    <e><p><l>vearbagenetiiva<s n="n"/></l><r>værbbagenetiiva<s n="n"/></r></p></e>
     <e><p><l>priváhtiiva<s n="n"/></l><r>priváhtiiva<s n="n"/></r></p></e>
     <e><p><l>habitiiva<s n="n"/></l><r>habitiiva<s n="n"/></r></p></e>
     <e><p><l>additiiva<s n="n"/></l><r>additiiva<s n="n"/></r></p></e>
