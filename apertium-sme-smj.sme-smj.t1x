@@ -724,9 +724,24 @@
   <def-macro n="assign-case1" npar="1">
     <choose>      
       <when>
-        <test><or>
-                <and><equal><clip pos="1" side="sl" part="a_cas"/><lit-tag v="loc"/></equal><equal><clip pos="1" side="sl" part="a_hab"/><lit-tag v="←hab→"/></equal></and><in caseless="yes"><var n="current_verb"/><list n="verbs_stative"/></in>
-              </or></test>
+        <test>
+	  <or>
+                <and>
+		  <equal>
+		    <clip pos="1" side="sl" part="a_cas"/>
+		    <lit-tag v="loc"/>
+		  </equal>
+		  <equal>
+		    <clip pos="1" side="sl" part="a_hab"/>
+		    <lit-tag v="←hab→"/>
+		  </equal>
+		</and>
+                <in caseless="yes">
+		  <var n="current_verb"/>
+		  <list n="verbs_stative"/>
+		</in>
+              </or>
+	</test>
               <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ine"/></let>
       </when>
       <when>
