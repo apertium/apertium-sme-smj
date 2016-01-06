@@ -277,6 +277,7 @@
     <e><p><l>seammá<s n="prn"/></l><r>sæmmi<s n="prn"/></r></p></e>
     <e><p><l>simme<s n="prn"/></l><r>sæmmi<s n="prn"/></r></p></e>
     <e><p><l>soamis<s n="prn"/></l><r>soames<s n="prn"/></r></p></e>
+    <e><p><l>soames<s n="prn"/></l><r>soames<s n="prn"/></r></p></e>
     <e><p><l>son<s n="prn"/></l><r>sån<s n="prn"/></r></p></e>
     <e><p><l>unnán<s n="prn"/></l><r>unnán<s n="prn"/></r></p></e>
     <e><p><l>unnánaš<s n="prn"/></l><r>unnánasj<s n="prn"/></r></p></e>
@@ -11668,7 +11669,7 @@
     <e><p><l>šiehtadit<s n="vblex"/><s n="tv"/></l><r>sjiehttat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>šiehttadit<s n="vblex"/><s n="tv"/></l><r>sjiehttadit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>šiehttat<s n="vblex"/><s n="tv"/></l><r>sjiehttat<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>suhttat<s n="vblex"/><s n="tv"/></l><r>suhttat<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>suhttat<s n="vblex"/><s n="iv"/></l><r>suhttat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čiekčalit<s n="vblex"/><s n="tv"/></l><r>tjiektjat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čiekčat<s n="vblex"/><s n="tv"/></l><r>tjiektjat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čiekŋudit<s n="vblex"/><s n="tv"/></l><r>tjiegŋodit<s n="vblex"/></r></p><par n="verb"/></e>
@@ -11751,7 +11752,7 @@
     <e><p><l>čohkkedit<s n="vblex"/><s n="iv"/></l><r>tjåhkkidit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čohkkehit<s n="vblex"/><s n="tv"/></l><r>tjåhkkidit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čohkket<s n="vblex"/><s n="tv"/></l><r>tjoahkkit<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>dohkket<s n="vblex"/><s n="tv"/></l><r>dåhkkit<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>dohkket<s n="vblex"/><s n="iv"/></l><r>dåhkkit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čohkkáhit<s n="vblex"/><s n="tv"/></l><r>tjåhkkåhit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čohkulit<s n="vblex"/><s n="tv"/></l><r>tjåhkot<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>šokkeret<s n="vblex"/><s n="tv"/></l><r>sjokkerit<s n="vblex"/></r></p><par n="verb"/></e>
@@ -17742,6 +17743,7 @@
     <e><p><l>Elkjær<s n="np"/></l><r>Elkjær<s n="np"/></r></p></e>
     <e><p><l>Ella<s n="np"/></l><r>Ella<s n="np"/></r></p></e>
     <e><p><l>Ellasar<s n="np"/></l><r>Ellasar<s n="np"/></r></p></e>
+    <e><p><l>Elle<s n="np"/></l><r>Elle<s n="np"/></r></p></e>
     <e><p><l>Elle-Katri<s n="np"/></l><r>Elle-Katri<s n="np"/></r></p></e>
     <e><p><l>Ellef<s n="np"/></l><r>Ellef<s n="np"/></r></p></e>
     <e><p><l>Ellefsen<s n="np"/></l><r>Ellefsen<s n="np"/></r></p></e>
