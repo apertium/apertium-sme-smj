@@ -522,6 +522,8 @@
     <e><p><l>vuordda<s n="n"/></l><r>vuorda<s n="n"/></r></p></e>
     <e><p><l>leopárda<s n="n"/></l><r>leopárda<s n="n"/></r></p></e>
     <e><p><l>bulevárda<s n="n"/></l><r>bulevárda<s n="n"/></r></p></e>
+    <e><p><l>čoavdda<s n="n"/></l><r>tjåvda<s n="n"/></r></p></e>
+    <e><p><l>biilačoavdda<s n="n"/></l><r>bijllatjåvda<s n="n"/></r></p></e>
     <e><p><l>duovdda<s n="n"/></l><r>duovda<s n="n"/></r></p></e>
     <e><p><l>duvdda<s n="n"/></l><r>duvda<s n="n"/></r></p></e>
     <e><p><l>báda<s n="n"/></l><r>báda<s n="n"/></r></p></e>
@@ -1447,6 +1449,7 @@
     <e><p><l>gálka<s n="n"/></l><r>gálkka<s n="n"/></r></p></e>
     <e><p><l>kálka<s n="n"/></l><r>kálkka<s n="n"/></r></p></e>
     <e><p><l>skálka<s n="n"/></l><r>skálkka<s n="n"/></r></p></e>
+    <e><p><l>skeaŋka<s n="n"/></l><r>vattáldahka<s n="n"/></r></p></e>
     <e><p><l>suokka<s n="n"/></l><r>suokka<s n="n"/></r></p></e>
     <e><p><l>ruohtassuokka<s n="n"/></l><r>ruohtassuokka<s n="n"/></r></p></e>
     <e><p><l>vearka<s n="n"/></l><r>vierkka<s n="n"/></r></p></e>
@@ -3681,6 +3684,7 @@
     <e><p><l>gieddi<s n="n"/></l><r>giedde<s n="n"/></r></p></e>
     <e><p><l>gieđđi<s n="n"/></l><r>giedde<s n="n"/></r></p></e>
     <e><p><l>girdigieddi<s n="n"/></l><r>girddegiedde<s n="n"/></r></p></e>
+    <e><p><l>báidi<s n="n"/></l><r>skirtto<s n="n"/></r></p></e>
     <e><p><l>veaddi<s n="n"/></l><r>viedde<s n="n"/></r></p></e>
     <e><p><l>noaidi<s n="n"/></l><r>noajdde<s n="n"/></r></p></e>
     <e><p><l>geaidi<s n="n"/></l><r>giejdde<s n="n"/></r></p></e>
@@ -5436,6 +5440,7 @@
     <e><p><l>veahčir<s n="n"/></l><r>viehtjer<s n="n"/></r></p></e>
     <e><p><l>hacker<s n="n"/></l><r>hacker<s n="n"/></r></p></e>
     <e><p><l>lohkkir<s n="n"/></l><r>låhkker<s n="n"/></r></p></e>
+    <e><p><l>geallir<s n="n"/></l><r>tjieller<s n="n"/></r></p></e>
     <e><p><l>suokker<s n="n"/></l><r>suokker<s n="n"/></r></p></e>
     <e><p><l>seller<s n="n"/></l><r>seller<s n="n"/></r></p></e>
     <e><p><l>hiller<s n="n"/></l><r>hiller<s n="n"/></r></p></e>
@@ -7321,6 +7326,7 @@
     <e><p><l>jorbat<s n="adj"/></l><r>jårbbåt<s n="adj"/></r></p></e>
     <e><p><l>čorgat<s n="adj"/></l><r>tjårggåt<s n="adj"/></r></p></e>
     <e><p><l>lossat<s n="adj"/></l><r>låssåt<s n="adj"/></r></p></e>
+    <e><p><l>heittot<s n="adj"/></l><r>nievrre<s n="adj"/></r></p></e>
     <e><p><l>eambbo<s n="adj"/></l><r>ienebu<s n="adj"/></r></p></e>
     <e c="0"><p><l>čeahppi<s n="adj"/></l><r>smidá<s n="adj"/></r></p></e>
     <e><p><l>bahá<s n="adj"/></l><r>bahá<s n="adj"/></r></p></e>
@@ -11662,6 +11668,7 @@
     <e><p><l>šiehtadit<s n="vblex"/><s n="tv"/></l><r>sjiehttat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>šiehttadit<s n="vblex"/><s n="tv"/></l><r>sjiehttadit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>šiehttat<s n="vblex"/><s n="tv"/></l><r>sjiehttat<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>suhttat<s n="vblex"/><s n="tv"/></l><r>suhttat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čiekčalit<s n="vblex"/><s n="tv"/></l><r>tjiektjat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čiekčat<s n="vblex"/><s n="tv"/></l><r>tjiektjat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čiekŋudit<s n="vblex"/><s n="tv"/></l><r>tjiegŋodit<s n="vblex"/></r></p><par n="verb"/></e>
@@ -11744,6 +11751,7 @@
     <e><p><l>čohkkedit<s n="vblex"/><s n="iv"/></l><r>tjåhkkidit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čohkkehit<s n="vblex"/><s n="tv"/></l><r>tjåhkkidit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čohkket<s n="vblex"/><s n="tv"/></l><r>tjoahkkit<s n="vblex"/></r></p><par n="verb"/></e>
+    <e><p><l>dohkket<s n="vblex"/><s n="tv"/></l><r>dåhkkit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čohkkáhit<s n="vblex"/><s n="tv"/></l><r>tjåhkkåhit<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čohkulit<s n="vblex"/><s n="tv"/></l><r>tjåhkot<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>šokkeret<s n="vblex"/><s n="tv"/></l><r>sjokkerit<s n="vblex"/></r></p><par n="verb"/></e>
