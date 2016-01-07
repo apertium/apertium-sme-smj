@@ -72,11 +72,17 @@ dev/giza_list.txt -text
 dev/missinglist.txt -text
 dev/mod_per_cadena.py -text
 dev/sanityoutput -text
+dev/sikor.sme.A.freq.cmp.missing -text
 dev/sikor.sme.A.freq.missing -text
+dev/sikor.sme.A.freq.nocmp.missing -text
 dev/sikor.sme.Adv.freq.missing -text
+dev/sikor.sme.N.freq.cmp.missing -text
 dev/sikor.sme.N.freq.missing -text
+dev/sikor.sme.N.freq.nocmp.missing -text
 dev/sikor.sme.Pron.freq.missing -text
+dev/sikor.sme.V.freq.der.missing -text
 dev/sikor.sme.V.freq.missing -text
+dev/sikor.sme.V.freq.noder.missing -text
 dev/smjadverbs.txt -text
 dev/smjintersectionlemma2.txt -text
 dev/smjpronouns.txt -text
