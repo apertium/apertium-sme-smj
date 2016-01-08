@@ -587,32 +587,32 @@
     </def-macro>
     <def-macro n="agreement-adj-sg-2Posit" npar="2">  
         <let>
-        	<clip pos="1" side="tl" part="tags"/><concat>
+        	<clip pos="2" side="tl" part="tags"/><concat>
             <lit-tag v="n.sg"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
         </let> 
         <let>
-        	<clip pos="2" side="tl" part="tags"/><concat>
-            <clip pos="2" side="tl" part="a_npagree_type"/><clip pos="1" side="tl" part="a_nbr"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
+        	<clip pos="1" side="tl" part="tags"/><concat>
+            <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_cas"/> </concat>                
         </let> 
     </def-macro>
     <def-macro n="agreement-adj-2Posit" npar="2">
         <let>
-        	<clip pos="1" side="tl" part="tags"/><concat>
+        	<clip pos="2" side="tl" part="tags"/><concat>
             <lit-tag v="n.pl"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
         </let> 
         <let>
-        	<clip pos="2" side="tl" part="tags"/><concat>
-            <clip pos="2" side="tl" part="a_npagree_type"/><clip pos="1" side="tl" part="a_nbr"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
+        	<clip pos="1" side="tl" part="tags"/><concat>
+            <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_cas"/> </concat>                
         </let> 
     </def-macro> 
     <def-macro n="agreement-ind-pl-2Posit" npar="2">
         <let>
-        	<clip pos="1" side="tl" part="tags"/><concat>
-            <lit-tag v="n.pl"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
+        	<clip pos="2" side="tl" part="tags"/><concat>
+            <lit-tag v="n.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>                
         </let> 
         <let>
-        	<clip pos="2" side="tl" part="tags"/><concat>
-            <lit-tag v="prn.ind.pl"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
+        	<clip pos="1" side="tl" part="tags"/><concat>
+            <lit-tag v="prn.ind.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>                
         </let> 
     </def-macro>
 
