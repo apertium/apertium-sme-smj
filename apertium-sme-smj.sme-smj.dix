@@ -122,18 +122,13 @@
     <!-- Particles -->
 
     <e><p><l>ai<s n="pcle"/></l><r>aj<s n="pcle"/></r></p></e>
-    <!--<e><p><l>dat<s n="pcle"/></l><r>dat<s n="pcle"/></r></p></e>-->
+    <e><p><l>dat<s n="pcle"/></l><r>dat<s n="pcle"/></r></p></e>
     <e><p><l>de<s n="pcle"/></l><r>de<s n="pcle"/></r></p></e>
     <e><p><l>gal<s n="pcle"/></l><r>gal<s n="pcle"/></r></p></e>
     <e><p><l>ge<s n="pcle"/></l><r>ga<s n="pcle"/></r></p></e>
-
     <e><p><l>go<s n="pcle"/></l><r>gus<s n="pcle"/></r></p></e>
-
     <e><p><l>na<s n="pcle"/></l><r>na<s n="pcle"/></r></p></e>
-
-    <!--<e><p><l>nai<s n="pcle"/></l><r>naj<s n="pcle"/></r></p></e>-->
     <e><p><l>nai<s n="pcle"/></l><r>aj<s n="pcle"/></r></p></e>
-
     <e><p><l>no<s n="pcle"/></l><r>nå<s n="pcle"/></r></p></e>
     <e><p><l>noa<s n="pcle"/></l><r>noa<s n="pcle"/></r></p></e>
     <e><p><l>son<s n="pcle"/></l><r>så<s n="pcle"/></r></p></e>
@@ -158,7 +153,6 @@
     <e><p><l>jus<s n="cnjsub"/></l><r>jus<s n="cnjsub"/></r></p></e>
     <e><p><l>mo<s n="cnjsub"/></l><r>gåktu<s n="cnjsub"/></r></p></e>
     <e><p><l>movt<s n="cnjsub"/></l><r>gåktu<s n="cnjsub"/></r></p></e>
-    <!--<e><p><l>muhte<s n="cnjsub"/></l><r>men<s n="cnjsub"/></r></p></e>-->
     <e><p><l>nu<b/>ahte<s n="cnjsub"/></l><r>jut<s n="cnjsub"/></r></p></e>
     <e><p><l>nu<b/>guhkásgo<s n="cnjsub"/></l><r>nåv<b/>guhkás<b/>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>nugo<s n="cnjsub"/></l><r>navti<b/>gåktu<s n="cnjsub"/></r></p></e>
@@ -172,7 +166,6 @@
     <e><p><l>dahe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dahege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dahje<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
-    <!--<e><p><l>dahje<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>-->
     <e><p><l>dahjege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dehe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dehege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
@@ -180,6 +173,7 @@
     <e><p><l>elege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>ja<s n="cnjcoo"/></l><r>ja<s n="cnjcoo"/></r></p></e>
     <e><p><l>muhto<s n="cnjcoo"/></l><r>valla<s n="cnjcoo"/></r></p></e>
+    <e><p><l>muhte<s n="cnjcoo"/></l><r>valla<s n="cnjcoo"/></r></p></e>
     <e><p><l>sihke<s n="cnjcoo"/></l><r>sihke<s n="cnjcoo"/></r></p></e>
 
     <e><p><l>vai<s n="cnjcoo"/></l><r>vaj<s n="cnjcoo"/></r></p></e>
@@ -8109,7 +8103,7 @@
     <e><p><l>njammat<s n="vblex"/><s n="tv"/></l><r>njammat<s n="vblex"/></r></p><par n="verb"/></e>
 <e><p><l>njammásit<s n="vblex"/><s n="iv"/></l><r>njammat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>hulardit<s n="vblex"/><s n="iv"/></l><r>tjajmmat<s n="vblex"/></r></p><par n="verb"/></e>
-    <e><p><l>čaibmat<s n="vblex"/><s n="tv"/></l><r>tjajmmat<s n="vblex"/></r></p><par n="verb"/></e> <!-- FIXME -->
+    <e><p><l>čaibmat<s n="vblex"/><s n="tv"/></l><r>tjajmmat<s n="vblex"/></r></p><par n="verb"/></e>  
     <e><p><l>čaimmadit<s n="vblex"/><s n="tv"/></l><r>tjajmmat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čaimmahit<s n="vblex"/><s n="tv"/></l><r>tjajmmat<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>čaimmehit<s n="vblex"/><s n="tv"/></l><r>tjajmmat<s n="vblex"/></r></p><par n="verb"/></e>
@@ -12070,7 +12064,6 @@
     <e><p><l>orrot<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>orustit<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
    <e><p><l>ássat<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p><par n="verb"/></e>
-    <!--<e><p><l>eallit<s n="vblex"/><s n="iv"/></l><r>viesot<s n="vblex"/></r></p><par n="verb"/></e>-->
 <e><p><l>assut<s n="vblex"/><s n="iv"/></l><r>assot<s n="vblex"/></r></p><par n="verb"/></e>
 <e><p><l>gassut<s n="vblex"/><s n="iv"/></l><r>gassot<s n="vblex"/></r></p><par n="verb"/></e>
     <e><p><l>eallit<s n="vblex"/><s n="iv"/></l><r>viessot<s n="vblex"/></r></p><par n="verb"/></e>
