@@ -579,13 +579,13 @@
 
   </section-def-lists>
   <section-def-macros>
-    <def-macro n="remove-semtag1" npar="1">
+    <def-macro n="remove-semtag-1Posit" npar="1">
           <let>
             <clip pos="1" side="tl" part="a_sem"/>
             <lit v=""/>
           </let>
     </def-macro>
-    <def-macro n="agreement-adj-sg2" npar="2">  
+    <def-macro n="agreement-adj-sg-2Posit" npar="2">  
         <let>
         	<clip pos="1" side="tl" part="tags"/><concat>
             <lit-tag v="n.sg"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
@@ -595,7 +595,7 @@
             <clip pos="2" side="tl" part="a_npagree_type"/><clip pos="1" side="tl" part="a_nbr"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
         </let> 
     </def-macro>
-    <def-macro n="agreement-adj-pl2" npar="2">
+    <def-macro n="agreement-adj-2Posit" npar="2">
         <let>
         	<clip pos="1" side="tl" part="tags"/><concat>
             <lit-tag v="n.pl"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
@@ -605,7 +605,7 @@
             <clip pos="2" side="tl" part="a_npagree_type"/><clip pos="1" side="tl" part="a_nbr"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
         </let> 
     </def-macro> 
-    <def-macro n="agreement-ind-pl2" npar="2">
+    <def-macro n="agreement-ind-pl-2Posit" npar="2">
         <let>
         	<clip pos="1" side="tl" part="tags"/><concat>
             <lit-tag v="n.pl"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
@@ -616,7 +616,7 @@
         </let> 
     </def-macro>
 
-    <def-macro n="convert-deriv1" npar="1">
+    <def-macro n="convert-deriv-1Posit" npar="1">
       <choose>
 
         <when>
@@ -665,7 +665,7 @@
      </choose>
     </def-macro>  
 
-    <def-macro n="inherenttag-px2" npar="2">
+    <def-macro n="inherenttag-px-Posit2" npar="2">
 		<choose>   
 		<when>
 		<test><equal><clip pos="1" side="tl" part="a_person"/><lit-tag v="p1"/></equal></test>
@@ -721,7 +721,7 @@
 		</choose>    
     </def-macro>  
 
-  <def-macro n="assign-case1" npar="1">
+  <def-macro n="assign-case-1Posit" npar="1">
     <choose>      
       <when>
         <test>
@@ -759,8 +759,8 @@
         <pattern-item n="negverb"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
-        <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Posit"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <!-- neg verb alone is probably disam. fail with interjection -->
@@ -786,10 +786,10 @@
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
-        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
-        <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
-        <call-macro n="convert-deriv1"><with-param pos="2"/></call-macro>
-        <call-macro n="remove-semtag1"><with-param pos="2"/></call-macro>
+        <call-macro n="convert-deriv-1Posit"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Posit"><with-param pos="2"/></call-macro>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="2"/></call-macro>
         <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <let><clip pos="2" side="tl" part="x_func"/><lit v=""/></let>
@@ -833,9 +833,9 @@
         <pattern-item n="prn"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
-        <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
-        <call-macro n="assign-case1"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Posit"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Posit"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <out>
@@ -856,9 +856,9 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
-        <call-macro n="remove-semtag1"><with-param pos="1"/></call-macro>
-        <call-macro n="assign-case1"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Posit"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Posit"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <out>
@@ -880,9 +880,9 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv1"><with-param pos="2"/></call-macro>
-        <call-macro n="remove-semtag1"><with-param pos="2"/></call-macro>
-        <call-macro n="assign-case1"><with-param pos="2"/></call-macro>
+        <call-macro n="convert-deriv-1Posit"><with-param pos="2"/></call-macro>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Posit"><with-param pos="2"/></call-macro>
         <let><clip pos="2" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
         <out>
@@ -908,7 +908,7 @@
         <pattern-item n="mainverb"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv1"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Posit"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
