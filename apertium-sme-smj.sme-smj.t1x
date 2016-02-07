@@ -557,6 +557,7 @@
     </def-list>
   <def-list n="verbs_stative"><!--sme place-verbs, hope they work the same in smj -->
     <list-item v="ássat"/>
+    <list-item v="leat"/>
     <list-item v="orrut"/>
     <list-item v="veallát"/>
     <list-item v="čuožžut"/>
@@ -746,12 +747,12 @@
       </when>
       <when>
         <test><equal><clip pos="1" side="sl" part="a_cas"/><lit-tag v="loc"/></equal></test>
-        <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ela"/></let></when>
+        <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ine"/></let></when> <!-- was: ela, but ine we want -->
       </choose>
   </def-macro>
-
-
   </section-def-macros>
+
+
   <section-rules>
 
     <rule comment="REGLA: negverb">
