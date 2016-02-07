@@ -364,6 +364,10 @@
 
     <!-- Nouns -->
 
+     <e><p><l>rolla<s n="n"/></l><r>rolla<s n="n"/></r></p></e>
+     <e><p><l>ovddideapmi<s n="n"/></l><r>åvddånahttem<s n="n"/></r></p></e>
+     <e><p><l>ruoktu<s n="n"/></l><r>sijdda<s n="n"/></r></p></e>
+     <e><p><l>čilgehus<s n="n"/></l><r>tjielggidus<s n="n"/></r></p></e>
      <e><p><l>sápmi<s n="n"/></l><r>sábme<s n="n"/></r></p></e>
      <e><p><l>jahki<s n="n"/></l><r>jahke<s n="n"/></r></p></e>
      <e><p><l>olmmoš<s n="n"/></l><r>ulmusj<s n="n"/></r></p></e>
@@ -6890,13 +6894,19 @@
 
      <e c="0"><p><l>buorre<s n="adj"/></l><r>buorre<s n="adj"/></r></p></e>
      <e slr="1"><p><l>buorre<s n="adj"/></l><r>jasskat<s n="adj"/></r></p></e>
-     <e><p><l>stuoris<s n="adj"/></l><r>stuorre<s n="adj"/></r></p></e>
+     <e><p><l>našuvnnalaš<s n="adj"/></l><r>nasjonála<s n="adj"/></r></p></e>
+     <e><p><l>prinsihpalaš<s n="adj"/></l><r>prinsihpalasj<s n="adj"/></r></p></e>
+     <e><p><l>čerdalaš<s n="adj"/></l><r>tjerdalasj<s n="adj"/></r></p></e>
+     <e><p><l>máŋggagielalaš<s n="adj"/></l><r>moattegielak<s n="adj"/></r></p></e>
+     <e><p><l>guovttegielat<s n="adj"/></l><r>guovtegielak<s n="adj"/></r></p></e>
+     <e><p><l>geográfalaš<s n="adj"/></l><r>geográfalasj<s n="adj"/></r></p></e>
+     <e><p><l>čálalaš<s n="adj"/></l><r>tjálalasj<s n="adj"/></r></p></e>
      <e><p><l>stuoris<s n="adj"/></l><r>stuores<s n="adj"/></r></p></e>
      <e><p><l>ođas<s n="adj"/></l><r>ådås<s n="adj"/></r></p></e>
      <e><p><l>ollu<s n="adj"/></l><r>ållo<s n="adj"/></r></p></e>
      <e><p><l>dehálaš<s n="adj"/></l><r>ájnas<s n="adj"/></r></p></e>
      <e><p><l>eanet<s n="adj"/></l><r>ienep<s n="adj"/></r></p></e>
-     <e><p><l>vuosttaš<s n="adj"/></l><r>vuoastasj<s n="adj"/></r></p></e>
+     <e><p><l>vuosttaš<s n="adj"/></l><r>vuostasj<s n="adj"/></r></p></e>
      <e><p><l>olu<s n="adj"/></l><r>ednak<s n="adj"/></r></p></e>
      <e><p><l>vejolaš<s n="adj"/></l><r>vejulasj<s n="adj"/></r></p></e>
      <e><p><l>sierra<s n="adj"/></l><r>sierra<s n="adj"/></r></p></e>
@@ -7084,7 +7094,7 @@
      <e><p><l>beaivásaš<s n="adj"/></l><r>bæjvvásasj<s n="adj"/></r></p></e>
      <e><p><l>iešráđálaš<s n="adj"/></l><r>iesjrádálasj<s n="adj"/></r></p></e>
      <e><p><l>suvrris<s n="adj"/></l><r>suvres<s n="adj"/></r></p></e>
-     <e><p><l>nuppát<s n="adj"/></l><r>moadda<s n="adj"/></r></p></e>
+     <e><p><l>nuppát<s n="adj"/></l><r>moadda<s n="prn"/></r></p></e>
      <e><p><l>váibmil<s n="adj"/></l><r>vájmmel<s n="adj"/></r></p></e>
      <e><p><l>guoirras<s n="adj"/></l><r>guojrras<s n="adj"/></r></p></e>
      <e><p><l>hánis<s n="adj"/></l><r>hánes<s n="adj"/></r></p></e>
@@ -7412,7 +7422,6 @@
     <e slr="1"><p><l>láhkái<s n="adv"/></l><r>muoduk<s n="adv"/></r></p></e>
     <e><p><l>lávda<s n="adv"/></l><r>lávdda<s n="adv"/></r></p></e>
     <e><p><l>lávga<s n="adv"/></l><r>lávgga<s n="adv"/></r></p></e>
-    <!-- TODO: aj not in smj.lexc as adv -->
     <e><p><l>maid<s n="adv"/></l><r>aj<s n="adv"/></r></p></e>
     <e><p><l>maiddái<s n="adv"/></l><r>aj<s n="adv"/></r></p></e>
     <e><p><l>man<s n="adv"/></l><r>man<s n="adv"/></r></p></e>
@@ -7626,6 +7635,7 @@
 
     <!-- Verbs -->
 
+     <e><p><l>sisttisdoallat<s n="vblex"/><s n="tv"/></l><r>sisadnet<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>leat<s n="vblex"/><s n="iv"/></l><r>liehket<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>ii<s n="vblex"/><s n="iv"/></l><r>ij<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>galgat<s n="vblex"/><s n="iv"/></l><r>galggat<s n="vblex"/></r></p><par n="verb"/></e>
