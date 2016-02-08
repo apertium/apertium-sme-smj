@@ -40,6 +40,7 @@
 
     <sdef n="pl"     c="Plural"/>
     <sdef n="sg"     c="Singular"/>
+    <sdef n="du"     c="Dualis"/>
 
     <sdef n="px1sg"  c=""/>
     <sdef n="px2sg"  c=""/>
@@ -72,6 +73,8 @@
     <sdef n="neg"     c="Negation verb 'ii'"/>
 
     <sdef n="ij"     c="interjection"/>
+    <sdef n="sem_dummytag"     c="sem_dummytag"/>
+    <sdef n="sem_event"     c="sem_event"/>
 
     <!-- Punctuation -->
     <sdef n="punct"   c="Punctuation"/>
@@ -241,6 +244,12 @@
     <e><p><l>guoibmi<s n="prn"/></l><r>guojmme<s n="prn"/></r></p></e>
     <e><p><l>guoktásat<s n="prn"/></l><r>guoktása<s n="prn"/></r></p></e>
     <e><p><l>ieš<s n="prn"/></l><r>iesj<s n="prn"/></r></p></e>
+    <e><p><l>ieš<s n="prn"/><s n="ref"/><s n="sg"/><s n="nom"/></l><r>iesj<s n="prn"/><s n="ref"/><s n="sg"/><s n="nom"/></r></p></e>
+    <e><p><l>ieš<s n="prn"/><s n="ref"/><s n="du"/><s n="nom"/></l><r>iesj<s n="prn"/><s n="ref"/><s n="du"/><s n="nom"/></r></p></e>
+    <e><p><l>ieš<s n="prn"/><s n="ref"/><s n="pl"/><s n="nom"/></l><r>iesj<s n="prn"/><s n="ref"/><s n="pl"/><s n="nom"/></r></p></e>
+
+    <e><p><l>ieš<s n="prn"/><s n="ref"/></l><r>iesj<s n="prn"/><s n="ref"/><s n="sg"/></r></p></e>
+    <e><p><l>ieš<s n="prn"/><s n="ref"/></l><r>iesj<s n="prn"/><s n="ref"/><s n="pl"/></r></p></e>
     <e><p><l>iešgiige<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
     <e><p><l>iešgiijai<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
     <e><p><l>iešguhte<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
@@ -1139,7 +1148,7 @@
      <e><p><l>beahci<s n="n"/></l><r>biehtse<s n="n"/></r></p></e>
      <e><p><l>vihtta<s n="n"/></l><r>vihtta<s n="n"/></r></p></e>
      <e><p><l>lihkadus<s n="n"/></l><r>lihkadus<s n="n"/></r></p></e>
-     <e><p><l>riemut<s n="n"/><s n="pl"/></l><r>riebmo<s n="n"/><s n="sg"/></r></p></e> <!-- OBS sme: pl -->
+     <e><p><l>riemut<s n="n"/></l><r>ávvudallam<s n="n"/></r></p></e> 
      <e><p><l>árbmu<s n="n"/></l><r>ármmo<s n="n"/></r></p></e>
      <e><p><l>goarta<s n="n"/></l><r>goartta<s n="n"/></r></p></e>
      <e><p><l>rohkki<s n="n"/></l><r>råhkke<s n="n"/></r></p></e>
@@ -1176,6 +1185,7 @@
      <e><p><l>prostitušuvdna<s n="n"/></l><r>prostitusjåvnnå<s n="n"/></r></p></e>
      <e><p><l>bárra<s n="n"/></l><r>párra<s n="n"/></r></p></e>
      <e><p><l>beassi<s n="n"/></l><r>biesse<s n="n"/></r></p></e>
+     <e><p><l>beassi<s n="n"/><s n="g3"/></l><r>biesse<s n="n"/></r></p></e>
      <e><p><l>variašuvdna<s n="n"/></l><r>variasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>temperatuvra<s n="n"/></l><r>temperatuvrra<s n="n"/></r></p></e>
      <e><p><l>soahpameahttunvuohta<s n="n"/></l><r>soahpameahttunvuohta<s n="n"/></r></p></e>
@@ -2934,7 +2944,7 @@
      <e><p><l>duokŋas<s n="n"/></l><r>duogŋas<s n="n"/></r></p></e>
      <e><p><l>ceahkes<s n="n"/></l><r>tsiehkes<s n="n"/></r></p></e>
      <e><p><l>gulahus<s n="n"/></l><r>guládus<s n="n"/></r></p></e>
-     <e><p><l>viehtagat<s n="n"/><s n="pl"/></l><r>viehtak<s n="n"/><s n="sg"/></r></p></e> <!-- OBS sme Pl -->
+     <e><p><l>viehtagat<s n="n"/><s n="sem_dummytag"/><s n="pl"/></l><r>viehtak<s n="n"/><s n="sg"/></r></p></e> <!-- OBS sme Pl -->
      <e><p><l>njuorat<s n="n"/></l><r>njuorat<s n="n"/></r></p></e>
      <e><p><l>ragat<s n="n"/></l><r>ragát<s n="n"/></r></p></e>
      <e><p><l>dáhkká<s n="n"/></l><r>dáhkká<s n="n"/></r></p></e>
