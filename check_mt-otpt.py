@@ -142,7 +142,7 @@ def main():
     # parameters to be adjusted as needed
     total = len(sys.argv)
     i_file = ''
-    i_dir = 'tmx_data_test'
+    i_dir = 'tmx_data'
     o_dir = 'otpt_dir'
 
     if (total == 3):
