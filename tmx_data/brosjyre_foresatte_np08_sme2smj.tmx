@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx>
+   <header segtype="sentence"
+           o-tmf="OmegaT TMX"
+           adminlang="EN-US"
+           srclang="sme"
+           datatype="plaintext"/>
+   <body>
+      <tu id="1">
+         <tuv lang="sme">
+            <seg>Dieđut našuvnnalaš geahččalemiid birra</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Diehto nasjonálalasj gæhttjalimij birra</seg>
+         </tuv>
+      </tu>
+      <tu id="2">
+         <tuv lang="sme">
+            <seg>Ovddasteddjiide geain leat mánát 5 ja 8. ceahkis</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>5. ja 8. klássagij åvdåstiddjida/æjgádijda</seg>
+         </tuv>
+      </tu>
+      <tu id="3">
+         <tuv lang="sme">
+            <seg>Máhttoministara álgosánit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Åvddåtjála diehtominisstaris</seg>
+         </tuv>
+      </tu>
+      <tu id="4">
+         <tuv lang="sme">
+            <seg>Min oahppit ánssášit nu buori skuvlla go vejolaš, ja mii fertet bargat heaittikeahttá buoridit oahpahusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Mijá oahppe ánssidi buoremuslágásj skåvlåv, ja vierttip aktelattjat barggat åhpadusáv buoredit.</seg>
+         </tuv>
+      </tu>
+      <tu id="5">
+         <tuv lang="sme">
+            <seg>Okta skuvlla deaŧaleamos bargguin lea fuolahit ahte oahppit ožžot vuođđogálggaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Akta skåvlå ájnnasamos dáhkamusájs le oahppijda åmastahttet dárbulasj vuodov ja máhtudagáv.</seg>
+         </tuv>
+      </tu>
+      <tu id="6">
+         <tuv lang="sme">
+            <seg>Našuvnnalaš geahččalemiid galget sihke skuvllat, suohkan ja našuvnnalaš eiseválddit geavahit oažžun dihte dieđuid ohppiid oahppama birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Nasjonálalasj gæhttjalime galggi aneduvvat skåvlåjs, suohkanijs ja oajvválattjajs diedojt oadtjot oahppij oahpo birra.</seg>
+         </tuv>
+      </tu>
+      <tu id="7">
+         <tuv lang="sme">
+            <seg>Diehtu das maid oahppit máhttet ja maid eai máhte, lea áibbas dárbbašlaš vai diehtit gokko dárbbašit lasi doaimmaid bidjat johtui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Diedo oahppij máhtudagá birra l ájnas váj le tjielgas majna l dárbbo ienebut barggat.</seg>
+         </tuv>
+      </tu>
+      <tu id="8">
+         <tuv lang="sme">
+            <seg>Dát guoská sihke ovttaskas ohppiide, luohkáide ja skuvllaide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Dát guosská oahppijda, klássajda ja skåvlåjda.</seg>
+         </tuv>
+      </tu>
+      <tu id="9">
+         <tuv lang="sme">
+            <seg>Ovddasteaddjit galget maid oažžut dieđuid iežaset mánáid bohtosiid birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Åvdåstiddje/ æjgáda galggi mánáj båhtusij birra diededuvvat.</seg>
+         </tuv>
+      </tu>
+      <tu id="10">
+         <tuv lang="sme">
+            <seg>Mun ávžžuhan ge ovddasteddjiid hupmat mánáiguin našuvnnalaš geahččalemiid birra ja hupmat oahpaheddjiin bohtosiid birra ja movt sii dáid čuovvolit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Ávttjiv åvdåstiddjijt/ æjgádijt nasjonálalasj gæhttjalimij birra ietjas mánáj ságastit ja åhpadiddjij båhtusij birra ságastit ja buorre tjoavddusijt gávnnat.</seg>
+         </tuv>
+      </tu>
+      <tu id="11">
+         <tuv lang="sme">
+            <seg>Ovttas eará árvvoštallanvugiiguin galget našuvnnalaš geahččaleamit addit nanu vuođu buoridit oahpahusa kvalitehta.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Aktan ietjá árvustallamij galggi nasjonálalasj gæhttjalime buorre vuodov vaddet ja buoredit åhpadusá dásev.</seg>
+         </tuv>
+      </tu>
+      <tu id="12">
+         <tuv lang="sme">
+            <seg>Bård Vegar Solhjell</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Bård Vegar Solhjell</seg>
+         </tuv>
+      </tu>
+      <tu id="13">
+         <tuv lang="sme">
+            <seg>Manne našuvnnalaš geahččaleamit?</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Manen nasjonálalasj gæhttjalimijt tjadádit?</seg>
+         </tuv>
+      </tu>
+      <tu id="14">
+         <tuv lang="sme">
+            <seg>Našuvnnalaš geahččaleamit galget muitalit vástidit go ohppiid vuođđogálggat oahppoplána mihttomeriide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Nasjonálalasj gæhttjalime galggi diededit jus oahppij máhtudahka l oahppoulmij milta.</seg>
+         </tuv>
+      </tu>
+      <tu id="15">
+         <tuv lang="sme">
+            <seg>Oahppoplánas leat vuođđogálggat ná meroštallojuvvon:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Oahppoplánan le vuodotjehpudahka dán láhkáj tjielggiduvvam:</seg>
+         </tuv>
+      </tu>
+      <tu id="16">
+         <tuv lang="sme">
+            <seg>Máhttit njálmmálaččat ovdanbuktit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Máhttet njálmálattjat åvddånbuktet</seg>
+         </tuv>
+      </tu>
+      <tu id="17">
+         <tuv lang="sme">
+            <seg>Máhttit čálalaččat ovdanbuktit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Máhttet tjálalattjat åvddånbuktet</seg>
+         </tuv>
+      </tu>
+      <tu id="18">
+         <tuv lang="sme">
+            <seg>Máhttit lohkat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Máhttet låhkåt</seg>
+         </tuv>
+      </tu>
+      <tu id="19">
+         <tuv lang="sme">
+            <seg>Máhttit rehkenastit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Máhttet riekknit</seg>
+         </tuv>
+      </tu>
+      <tu id="20">
+         <tuv lang="sme">
+            <seg>Máhttit geavahit digitála reaidduid</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Máhttet digitála vædsagijt adnet</seg>
+         </tuv>
+      </tu>
+      <tu id="21">
+         <tuv lang="sme">
+            <seg>Dát gálggat leat deaŧalaččat oahppamii ja ovdáneapmái buot fágain ja dain lea stuora mearkkašupmi dasa movt oahppit birgejit skuvllas ja maŋŋel eallimis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Dá máhtudagá li ájnnasa åhpadussaj ja åvddånibmáj juohkka fágan ja merkaj ålov gåktu oahppe rijbadi skåvlån ja boahtte ájgen.</seg>
+         </tuv>
+      </tu>
+      <tu id="22">
+         <tuv lang="sme">
+            <seg>Dan dihte leat vuođđogálggat oassin juohke fágas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Danen le vuodotjehpudahka oasse juohkka fágajn.</seg>
+         </tuv>
+      </tu>
+      <tu id="23">
+         <tuv lang="sme">
+            <seg>Oahppit fertejit ovdamearkka dihte máhttit lohkat go galget čohkket dieđuid, dulkot ja guorahallat luonddufága sisdoalu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Oahppe hæhttuji buojkulvissan máhttet låhkåt váj diedojt máhttet tjoahkkit, máhttet dålkkut ja ájádallat luonndofága sisano birra.</seg>
+         </tuv>
+      </tu>
+      <tu id="24">
+         <tuv lang="sme">
+            <seg>Sii fertejit máhttit rehkenastit vai sáhttet gieđahallat ja buohtastahttit loguid servodatfága fágafáttáin,</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Hæhttuji máhttet riekknit váj bukti giehtadallat ja buohtastahttet tállajt ja lågojt fáhkalasj tiemáj birra sebrudakfágan.</seg>
+         </tuv>
+      </tu>
+      <tu id="25">
+         <tuv lang="sme">
+            <seg>ja sii fertejit máhttit lohkat bagadusaid ja rehkenastit hivvodagaid go galget biepmu ráhkadit fágas biebmu ja dearvvašvuohta.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Biebbmo ja varresvuodafágan vierttiji barggonjuolgadusájt máhttet låhkåt ja vierttiji aj buktet riekknit man ålov dárbahi gå galggi biebojt dahkat.</seg>
+         </tuv>
+      </tu>
+      <tu id="26">
+         <tuv lang="sme">
+            <seg>2008:s galget čađahuvvot golbma našuvnnalaš geahččaleami 5. ja 8. ceahkis:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Jagen 2008 galggi 5. ja 8. klássaga gålmmå nasjonálalasj gæhttjalime tjadádit:</seg>
+         </tuv>
+      </tu>
+      <tu id="27">
+         <tuv lang="sme">
+            <seg>Dárogiela lohkan</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Dárogiella låhkåt</seg>
+         </tuv>
+      </tu>
+      <tu id="28">
+         <tuv lang="sme">
+            <seg>Rehkenastin</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Riekknit</seg>
+         </tuv>
+      </tu>
+      <tu id="29">
+         <tuv lang="sme">
+            <seg>Eŋgelasgiela lohkan</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Iieŋŋilsgiellaj låhkåt</seg>
+         </tuv>
+      </tu>
+      <tu id="30">
+         <tuv lang="sme">
+            <seg>Našuvnnalaš geahččaleapmi eŋgelasgiela lohkamis lea elektrovnnalaš geahččaleapmi man oahppit galget PCs čađahit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Nasjonálalasj gæhttjalime ieŋŋilisgiellaj galggi elektråvnålattjat tjadáduvvat.</seg>
+         </tuv>
+      </tu>
+      <tu id="31">
+         <tuv lang="sme">
+            <seg>Dárogiela lohkama ja rehkenastima geahččalemiid galget oahppit čađahit báberhámis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Låhkåm dárogiellaj ja riekknim tjadáduvvi vas giehtatjállema baktu.</seg>
+         </tuv>
+      </tu>
+      <tu id="32">
+         <tuv lang="sme">
+            <seg>Dát eai leat geahččaleamit fágain dárogiella ja matematihkka, muhto lohkamis ja rehkenastimis máŋgga fágas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Dá ælla gæhttjalime dárogielfágan ja matematikkfágan, valla låhkåmin ja reikknimin moattelágásj fágajn.</seg>
+         </tuv>
+      </tu>
+      <tu id="33">
+         <tuv lang="sme">
+            <seg>Geahččalemiid bohtosat addet dieđu ohppiid lohkan-, rehkenastin- ja eŋgelasgiela lohkangálggain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Gæhttjalime båhtusa vuosedi oahppij dásev låhkåmin, riekknimin ja låhkåmin ieŋŋilsgiellaj.</seg>
+         </tuv>
+      </tu>
+      <tu id="34">
+         <tuv lang="sme">
+            <seg>Skuvllat, suohkanat ja guovddášeiseválddit galget geavahit dán dieđu barggus buoridit oahpahusa kvalitehta.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Skåvlå, suohkana ja oajválattja galggi dáv diedov adnet váj åhpadibme buoremus lágijn tjadáduvvá.</seg>
+         </tuv>
+      </tu>
+      <tu id="35">
+         <tuv lang="sme">
+            <seg>Geat galget čađahit geahččalemiid?</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Guhti gæhttjalimijt galggi tjadádit?</seg>
+         </tuv>
+      </tu>
+      <tu id="36">
+         <tuv lang="sme">
+            <seg>Našuvnnalaš geahččaleamit galget 2008:s čađahuvvot vuođđoskuvlla 5. ja 8. cehkiin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>2008 nasjonálalasj gæhttjalime tjadáduvvi oahppijda 5. ja 8. klássan, vuodoskåvlån.</seg>
+         </tuv>
+      </tu>
+      <tu id="37">
+         <tuv lang="sme">
+            <seg>Geahččaleamit leat geatnegahttojuvvon buot ohppiide dáin cehkiin, vrd. oahpahuslága láhkaásahusain, geassemánu 23.b.2006, §2-4, ja priváhtaskuvlalága láhkaásahusain, suoidnemánu 14. b.2006, §2-4.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Gæhttjalime li bákkulattja, gehtja åhpaduslága biehtsemáno 23. biejve 2006 njuolgadusájt, § 2-4, ja privatskåvllålága snjilltjamáno 14. biejve 2006 njuolgadusájt, § 2-4.</seg>
+         </tuv>
+      </tu>
+      <tu id="38">
+         <tuv lang="sme">
+            <seg>Skuvla sáhttá mearridit ahte oahppi ii dárbbaš oasálastit našuvnnalaš geahččalemiide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Skåvllå máhttá mierredit bessat sæbrramis nasjonálalasj gæhttjalimijda.</seg>
+         </tuv>
+      </tu>
+      <tu id="39">
+         <tuv lang="sme">
+            <seg>Geatnegasvuođas sáhttá luvvet ovdamearkka dihte ohppiid geat ožžot erenoamášoahpahusa oahpahuslága 5. kapihttala mielde, dahje ohppiid geat ožžot erenoamáš giellaoahpahusa oahpahuslága mielde.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Oahppijn gænna li sierralágásj dárbo åhpaduslága 5. kapihttala milta, jali oahppijn gænna li sierralágásj giellaåhpadibme åhpaduslága milta bessi nasjonálalasj gæhttjalimijda sæbrramis.</seg>
+         </tuv>
+      </tu>
+      <tu id="40">
+         <tuv lang="sme">
+            <seg>Vaikko oahppi deavdá ge luvveneavttuid, de sáhttá goitge oahppi ieš dahje ovddasteaddjit mearridit ahte oahppi galgá čađahit geahččaleami.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Vájku oahppe ij dárbaha sæbrrat, de máhttá huoman iesj/ åvdåstiddje mierredit jus sihtá gæhttjalimev tjadádit.</seg>
+         </tuv>
+      </tu>
+      <tu id="41">
+         <tuv lang="sme">
+            <seg>Oahppit geaidda ii leat vejolaš čađahit ovtta dahje eanet našuvnnalaš geahččalemiid geahččalanbeaivvi, galget oažžut fálaldaga čađahit geahččaleami maŋŋel.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Oahppe guhti e nasjonálalasj gæhttjalimijt mierredimbæjvváj tjadáda, oadtju vejulasjvuodav gæhttjalimev maŋŋela tjadádit.</seg>
+         </tuv>
+      </tu>
+      <tu id="42">
+         <tuv lang="sme">
+            <seg>Goas geahččaleamit čađahuvvojit?</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Goassa gæhttjalime galggi tjadáduvvat?</seg>
+         </tuv>
+      </tu>
+      <tu id="43">
+         <tuv lang="sme">
+            <seg>Buot geahččaleamit galget čađahuvvot dán jagi čakčamánu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Dán jage, ragátmáno galggi divna gæhttjalime tjadáduvvat.</seg>
+         </tuv>
+      </tu>
+      <tu id="44">
+         <tuv lang="sme">
+            <seg>5. ceahki čađaheamit:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Tjadádibme 5. klássagijda</seg>
+         </tuv>
+      </tu>
+      <tu id="45">
+         <tuv lang="sme">
+            <seg>Disdaga 23.09: Rehkenastin</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Dijstahka 23.09: Riekknim</seg>
+         </tuv>
+      </tu>
+      <tu id="46">
+         <tuv lang="sme">
+            <seg>Duorastaga 25.09: Dárogiela lohkan</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Duorastahka 25.09: Låhkåm dárogiellaj</seg>
+         </tuv>
+      </tu>
+      <tu id="47">
+         <tuv lang="sme">
+            <seg>36. ja 37. vahkkuid: Eŋgelasgiela lohkan (elektrovnnalaš geahččaleapmi)</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>36 ja 37 váhko: Ieŋŋilsgiellaj låhkåt (elektråvnnålasj gæhttjalibme)</seg>
+         </tuv>
+      </tu>
+      <tu id="48">
+         <tuv lang="sme">
+            <seg>8. ceahki čađaheamit:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Tjadádibme 8. klássagijda</seg>
+         </tuv>
+      </tu>
+      <tu id="49">
+         <tuv lang="sme">
+            <seg>Disdaga 23.09: Rehkenastin</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Dijstahka 23.09: Riekknim</seg>
+         </tuv>
+      </tu>
+      <tu id="50">
+         <tuv lang="sme">
+            <seg>Duorastaga 25.09: Dárogiela lohkan</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Duorastahka 25.09: Dárogiellaj låhkåt</seg>
+         </tuv>
+      </tu>
+      <tu id="51">
+         <tuv lang="sme">
+            <seg>38. ja 39. vahkkuid: Eŋgelasgiela lohkan (elektrovnnalaš geahččaleapmi)</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>38 ja 39 váhko: Ieŋŋilsgiellaj låhkåt (elektråvnnålasj gæhttjalibme)</seg>
+         </tuv>
+      </tu>
+      <tu id="52">
+         <tuv lang="sme">
+            <seg>Dárogiela lohkamis ja rehkenastimis lea geahččalanáigi 90 minuhta goappašat cehkiin,</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Låhkåma ja riekknima gæhttalimij ájgge le 90 minuhta goappátjij dásijn.</seg>
+         </tuv>
+      </tu>
+      <tu id="53">
+         <tuv lang="sme">
+            <seg>ja geahččalanáigi elektrovnnalaš geahččaleamis eŋgelasgiela lohkamis lea 60 minuhta goappašat cehkiin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Elektråvnnålasj gæhttjalibme låhkåmis ieŋŋilsgielan vihpá 60 minuhta goappátjij dásijn.</seg>
+         </tuv>
+      </tu>
+      <tu id="54">
+         <tuv lang="sme">
+            <seg>Makkár bargguid galget oahppit čoavdit?</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Makkir dahkamusájt oahppe galggi tjoavddet?</seg>
+         </tuv>
+      </tu>
+      <tu id="55">
+         <tuv lang="sme">
+            <seg>Geahččalemiin leat seahkálaga máŋgaválljenbargobihtát ja rabas bargobihtát.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Gæhttjalimij sisado l kombinasjåvnnå motteválljimdahkamusáj ja rabás dahkamusáj gaskan.</seg>
+         </tuv>
+      </tu>
+      <tu id="56">
+         <tuv lang="sme">
+            <seg>Rabas bargobihtáin galget oahppit vástidit iežaset sániiguin dahje loguiguin, ja máŋgaválljenbargobihtáin fas galgá oahppi válljet ovtta vástádusa máŋgga vástádusmolssaeavttu gaskkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Rabás dahkamusájn galggi oahppe ietjas bágoj jali lågoj vásstedit, madin moatteválljimdahkamusá merkahi oahppe máhtti válljit avtav moattet vásstedimvejulasjvuodas.</seg>
+         </tuv>
+      </tu>
+      <tu id="57">
+         <tuv lang="sme">
+            <seg>Eanas oahppit vásihit ahte muhtin bihtát leat álkit ja earát fas váddásat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Ienemus oasse oahppijs sjaddi vásedit muhtem dahkamusá li álke ja ietjá vas gássjela.</seg>
+         </tuv>
+      </tu>
+      <tu id="58">
+         <tuv lang="sme">
+            <seg>Oahpahusdirektoráhta neahttasiiddus leat bihttáovdamearkkat vai ohppiin lea vejolaš oahpásnuvvat daidda bargobihttáhámiide mat geavahuvvojit našuvnnalaš geahččalemiin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Åhpadusdirektoráhta sijddasijdon li buojkulvisá dahkamusslájajda ma aneduvvi nasjonálalasj gæhttjalimijn ja majna oahppe máhtti oahpásmuvvat.</seg>
+         </tuv>
+      </tu>
+      <tu id="59">
+         <tuv lang="sme">
+            <seg>Geat ožžot bohtosiid oaidnit?</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Gut båhtusijt bessi vuojnnet?</seg>
+         </tuv>
+      </tu>
+      <tu id="60">
+         <tuv lang="sme">
+            <seg>Oahppi ja oahppi ovddasteaddjit galget oažžut dieđuid oahpaheaddjis geahččalemiid bohtosiid birra, ja movt sii bohtosiid čuovvolit oahpahusas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Oahppe ja oahppij åvdåstiddje/æjgáda galggi åhpadiddjes oadtjot gæhttjalimij båhtusijt gullat, ja gåktu åhpadusás båhtusa tjuovoduvvi.</seg>
+         </tuv>
+      </tu>
+      <tu id="61">
+         <tuv lang="sme">
+            <seg>Geahččaleami bohtosat galget maid leat fáddán ohppiidságastallamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Gæhttjalimij båhtusa galggi aj oahppij ságastallamin liehket tiebmán.</seg>
+         </tuv>
+      </tu>
+      <tu id="62">
+         <tuv lang="sme">
+            <seg>Skuvlla bohtosat leat rektora ja skuvlaeaiggáda olámuttus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Skåvlå båhtusa galggi liehket gehtjadibmáj rektorij ja skåvlåæjgádij.</seg>
+         </tuv>
+      </tu>
+      <tu id="63">
+         <tuv lang="sme">
+            <seg>Dáid bohtosiid galget geavahit vuolggasadjin bargat buoridit oahpahusa kvalitehta.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Dá båhtusa galggi aneduvvat vuodon bargguj buoredit åhpadusá dásev.</seg>
+         </tuv>
+      </tu>
+      <tu id="64">
+         <tuv lang="sme">
+            <seg>Almmolašvuođaláhka gusto maiddái našuvnnalaš geahččalemiide, muhto Oahpahusdirektoráhtta ii heivet bohtosiid nu ahte sáhttá skuvllaid bidjat árvvu mielde maŋŋálagaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Almmulasjvuodaláhka guosská aj nasjonálalasj gæhttjalimijda, valla åhpadusdirektoráhtta ij sidá skåvlåjt gárggalit.</seg>
+         </tuv>
+      </tu>
+      <tu id="65">
+         <tuv lang="sme">
+            <seg>Suohkaniid ja fylkkaid bohtosat almmuhuvvojit Skuvlaverráhis www.udir.no/skoleporten.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>Suohkanij ja fylkaj båhtusa almmuduvvi sijddasijdon Skoleporten www.udir.no/ skoleporten.</seg>
+         </tuv>
+      </tu>
+   </body>
+</tmx>
