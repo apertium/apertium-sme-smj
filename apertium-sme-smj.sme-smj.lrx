@@ -1,13 +1,13 @@
 <rules>
-  <rule>
+  <rule weight="1.0">
     <match lemma="boahtet" tags="vblex.*"><select lemma="boahtit" tags="vblex.*"/></match>
   </rule>
   
-  <rule>
+  <rule weight="1.0">
     <match lemma="ii"/>
     <match lemma="orrut" tags="vblex.*"><select lemma="liehket" tags="vblex.*"/></match>
   </rule>
-        
+
 
   <rule weight="1.0">
     <match lemma="ieš" tags="prn.ref.*">
