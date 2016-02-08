@@ -17,7 +17,7 @@
       <program name="lt-proc -b">
         <file name="sme-smj.autobil.bin"/>
       </program>
-      <program name="cg-proc">
+      <program name="lrx-proc">
         <file name="sme-smj.autolex.bin"/>
       </program>
       <program name="apertium-transfer -b">
