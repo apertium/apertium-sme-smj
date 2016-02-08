@@ -95,10 +95,10 @@ def getAMT(f,o_dir):
         p = Popen('echo '+'\''+tu[0][0].text+'\''+cmd, shell=True, stdout=PIPE, stderr=PIPE)
         out, err = p.communicate()
         
-        tr_smn = ET.SubElement(o_table, 'tr')
-        th_smn = ET.SubElement(tr_smn, 'th')
-        th_smn.set('class', 'tg-smn')
-        th_smn.text = tu[1][0].text
+        tr_smj = ET.SubElement(o_table, 'tr')
+        th_smj = ET.SubElement(tr_smj, 'th')
+        th_smj.set('class', 'tg-smj')
+        th_smj.text = tu[1][0].text
         
         tr_amt = ET.SubElement(o_table, 'tr')
         th_amt = ET.SubElement(tr_amt, 'th')
@@ -114,11 +114,11 @@ def getAMT(f,o_dir):
                     method="xml")
     print('DONE ' + str(f) + '\n\n')
 
-table_style = '<style type="text/css">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:8px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg th{text-align:left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:8px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg .tg-sme{background-color:#c0c0c0;vertical-align:top;font-weight:bold;}\n.tg .tg-smn{background-color:#efefef;vertical-align:top;font-style:normal;}\n.tg .tg-amt{vertical-align:top;font-style:normal;border-bottom: 2pt solid;}</style>'
+table_style = '<style type="text/css">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:8px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg th{text-align:left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:8px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg .tg-sme{background-color:#c0c0c0;vertical-align:top;font-weight:bold;}\n.tg .tg-smj{background-color:#efefef;vertical-align:top;font-style:normal;}\n.tg .tg-amt{vertical-align:top;font-style:normal;border-bottom: 2pt solid;}</style>'
 
 # parameters to be adjusted as needed
 s_lang = 'sme'
-t_lang = 'smn'
+t_lang = 'smj'
 
 try:
     os.environ["APERTIUM_HOME"]
