@@ -243,7 +243,7 @@
     <e><p><l>ieš<s n="prn"/></l><r>iesj<s n="prn"/></r></p></e>
     <e><p><l>iešgiige<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
     <e><p><l>iešgiijai<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
-    <e><p><l>iešguhtet<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
+    <e><p><l>iešguhte<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
     <e><p><l>iežá<s n="prn"/></l><r>ietjá<s n="prn"/></r></p></e>
     <e><p><l>juobbá<s n="prn"/></l><r>juobbá<s n="prn"/></r></p></e>
     <e><p><l>juobbágoabbá<s n="prn"/></l><r>juobbá<s n="prn"/></r></p></e>
@@ -7222,6 +7222,7 @@
      <e><p><l>bahásmielalaš<s n="adj"/></l><r>bahásmielalasj<s n="adj"/></r></p></e>
      <e><p><l>bahámielalaš<s n="adj"/></l><r>bahámielalasj<s n="adj"/></r></p></e>
      <e><p><l>našunálalaš<s n="adj"/></l><r>nasjonálalasj<s n="adj"/></r></p></e>
+     <e><p><l>našuvnnalaš<s n="adj"/></l><r>nasjonála<s n="adj"/></r></p></e>
      <e><p><l>arktalaš<s n="adj"/></l><r>arktalasj<s n="adj"/></r></p></e>
      <e><p><l>journalistalaš<s n="adj"/></l><r>journalistalasj<s n="adj"/></r></p></e>
      <e><p><l>mettolaš<s n="adj"/></l><r>mettulasj<s n="adj"/></r></p></e>
@@ -7770,8 +7771,8 @@
      <e><p><l>dutkat<s n="vblex"/><s n="tv"/></l><r>dutkat<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>goddit<s n="vblex"/><s n="tv"/></l><r>gåddet<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>čohkket<s n="vblex"/><s n="tv"/></l><r>tjoahkkit<s n="vblex"/></r></p><par n="verb"/></e>
-     <e><p><l>olahit<s n="vblex"/><s n="tv"/></l><r>ållet<s n="vblex"/></r></p><par n="verb"/></e>
-     <e><p><l>olahit<s n="vblex"/><s n="tv"/></l><r>ålådit<s n="vblex"/></r></p><par n="verb"/></e>
+<!--     <e><p><l>olahit<s n="vblex"/><s n="tv"/></l><r>ållet<s n="vblex"/></r></p><par n="verb"/></e>  iv-->
+     <e><p><l>olahit<s n="vblex"/><s n="tv"/></l><r>jåksåt<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>doalahit<s n="vblex"/><s n="tv"/></l><r>dållat<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>guođđit<s n="vblex"/><s n="tv"/></l><r>guoddet<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>viežžat<s n="vblex"/><s n="tv"/></l><r>viedtjat<s n="vblex"/></r></p><par n="verb"/></e>
