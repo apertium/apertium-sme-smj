@@ -351,7 +351,7 @@ HandledDerivations =
 %<der%_passs%>      ! 29189
 %<der%_passl%>      ! 23625
 %<der%_st%>         ! 17455
-!%<der%_at%>        ! 11718
+%<der%_at%>        ! 11718
 !%<der%_heapmi%>    ! 11292
 %<der%_alla%>       ! 10369
 %<der%_l%>         ! 5793
@@ -362,6 +362,7 @@ HandledDerivations =
 !%<der%_huvva%>     ! 2009
 !%<der%_meahttun%>  ! 1355
 !%<der%_lágan%>     ! 1208
+%<der%_goahti%>     ! 
 ;
 
 ;				! end of Sets
