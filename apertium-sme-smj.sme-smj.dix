@@ -139,7 +139,6 @@
 
     <!-- Conjunctions -->
 
-    <e><p><l>aht<s n="cnjsub"/></l><r>jut<s n="cnjsub"/></r></p></e>
     <e><p><l>ahte<s n="cnjsub"/></l><r>jut<s n="cnjsub"/></r></p></e>
     <e><p><l>amas<s n="cnjsub"/></l><r>amás<s n="cnjsub"/></r></p></e>
     <e><p><l>dan<b/>botta<b/>go<s n="cnjsub"/></l><r>dav<b/>båttåv<b/>gå<s n="cnjsub"/></r></p></e>
@@ -166,7 +165,7 @@
     <e><p><l>vaikke<s n="cnjsub"/></l><r>vájk<s n="cnjsub"/></r></p></e>
     <e><p><l>vaikko<s n="cnjsub"/></l><r>vájku<s n="cnjsub"/></r></p></e>
 
-    <e><p><l>ahte<s n="cnjcoo"/></l><r>jut<s n="cnjcoo"/></r></p></e>
+    <e><p><l>ahte<s n="cnjcoo"/></l><r>ja<s n="cnjcoo"/></r></p></e>
     <e><p><l>dahe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dahege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dahje<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
@@ -179,7 +178,6 @@
     <e><p><l>muhto<s n="cnjcoo"/></l><r>valla<s n="cnjcoo"/></r></p></e>
     <e><p><l>muhte<s n="cnjcoo"/></l><r>valla<s n="cnjcoo"/></r></p></e>
     <e><p><l>sihke<s n="cnjcoo"/></l><r>sihke<s n="cnjcoo"/></r></p></e>
-
     <e><p><l>vai<s n="cnjcoo"/></l><r>vaj<s n="cnjcoo"/></r></p></e>
 
     <!-- Pronouns -->
@@ -319,22 +317,18 @@
     <e><p><l>vuostái<s n="post"/></l><r>vuosstij<s n="post"/></r></p></e>
     <e><p><l>várás<s n="post"/></l><r>gáktuj<s n="post"/></r></p></e>
     <e><p><l>áigi<s n="post"/></l><r>ájgge<s n="post"/></r></p></e>
-
-<!-- TODO: these are not pr's (or missing) in smj.lexc, need other translations: -->
-    <!-- <e><p><l>gaskal<s n="post"/></l><r>gasskal<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>gasku<s n="pr"/></l><r>gassko<s n="pr"/></r></p></e> -->
-    <!-- <e><p><l>badjelii<s n="post"/></l><r>badjelij<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>bealis<s n="post"/></l><r>bielen<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>dáfus<s n="post"/></l><r>hárráj<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>gaskka<s n="post"/></l><r>gaska<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>gaskkas<s n="post"/></l><r>gaskan<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>olggobealde<s n="post"/></l><r>ålgusjbielen<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>ovddas<s n="post"/></l><r>åvdån<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>rájes<s n="post"/></l><r>rájes<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>vuolde<s n="post"/></l><r>vuolen<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>vuollai<s n="post"/></l><r>vuolláj<s n="post"/></r></p></e> -->
-    <!-- <e><p><l>vuollái<s n="post"/></l><r>vuolláj<s n="post"/></r></p></e> -->
-
+    <e><p><l>gaskal<s n="post"/></l><r>gasskal<s n="post"/></r></p></e>    
+    <e><p><l>gasku<s n="pr"/></l><r>gassko<s n="pr"/></r></p></e>          
+    <e><p><l>badjelii<s n="post"/></l><r>badjelij<s n="post"/></r></p></e> 
+    <e><p><l>bealis<s n="post"/></l><r>bielen<s n="post"/></r></p></e>     
+    <e><p><l>dáfus<s n="post"/></l><r>hárráj<s n="post"/></r></p></e>      
+    <e><p><l>gaskka<s n="post"/></l><r>gaska<s n="post"/></r></p></e>      
+    <e><p><l>gaskkas<s n="post"/></l><r>gaskan<s n="post"/></r></p></e>    
+    <e><p><l>ovddas<s n="post"/></l><r>åvdån<s n="post"/></r></p></e>    
+    <e><p><l>rájes<s n="post"/></l><r>rájes<s n="post"/></r></p></e>     
+    <e><p><l>vuolde<s n="post"/></l><r>vuolen<s n="post"/></r></p></e>   
+    <e><p><l>vuollai<s n="post"/></l><r>vuolláj<s n="post"/></r></p></e> 
+    <e><p><l>vuollái<s n="post"/></l><r>vuolláj<s n="post"/></r></p></e> 
     <e><p><l>badjelii<s n="pr"/></l><r>badjelij<s n="pr"/></r></p></e>
     <e><p><l>birra<s n="pr"/></l><r>birra<s n="pr"/></r></p></e>
     <e><p><l>guhkkut<s n="pr"/></l><r>gætjo<s n="pr"/></r></p></e>
@@ -344,14 +338,16 @@
     <e><p><l>ovdal<s n="pr"/></l><r>åvddål<s n="pr"/></r></p></e>
     <e><p><l>vuollel<s n="pr"/></l><r>vuollel<s n="pr"/></r></p></e>
     <e><p><l>vuollil<s n="pr"/></l><r>vuollel<s n="pr"/></r></p></e>
+    <e><p><l>maŋŋel<s n="pr"/></l><r>maŋŋel<s n="pr"/></r></p></e>    
+    <e><p><l>gaskal<s n="pr"/></l><r>gasskal<s n="pr"/></r></p></e>   
+    <e><p><l>vuostá<s n="pr"/></l><r>vuosstij<s n="pr"/></r></p></e>  
+    <e><p><l>vuostái<s n="pr"/></l><r>vuosstij<s n="pr"/></r></p></e> 
 
-<!-- TODO: these are not pr's (or missing) in smj.lexc, need other translations: -->
-    <!-- <e><p><l>gaskal<s n="pr"/></l><r>gasskal<s n="pr"/></r></p></e> -->
+<!-- TODO: these are not pr or post (or missing) in smj.lexc, need other translations: -->
     <!-- <e><p><l>earret<s n="pr"/></l><r>ietján<b/>gå<s n="pr"/></r></p></e> -->
-    <!-- <e><p><l>maŋŋel<s n="pr"/></l><r>maŋŋel<s n="pr"/></r></p></e> -->
     <!-- <e><p><l>olggobealde<s n="pr"/></l><r>ålgusjbielen<s n="pr"/></r></p></e> -->
-    <!-- <e><p><l>vuostá<s n="pr"/></l><r>vuosstij<s n="pr"/></r></p></e> -->
-    <!-- <e><p><l>vuostái<s n="pr"/></l><r>vuosstij<s n="pr"/></r></p></e> -->
+    <!-- <e><p><l>olggobealde<s n="post"/></l><r>ålgusjbielen<s n="post"/></r></p></e> -->
+   
 
     <!-- Numerals -->
 
@@ -7587,15 +7583,25 @@
     <e><p><l>veaháš<s n="adv"/></l><r>vehi<s n="adv"/></r></p></e>
     <e><p><l>vuostá<s n="adv"/></l><r>vuosstij<s n="adv"/></r></p></e>
     <e><p><l>vuos<s n="adv"/></l><r>vuostak<s n="adv"/></r></p></e>
-    <!-- TODO: missing from smj, but looks like it should be there: -->
     <e><p><l>ná<s n="adv"/></l><r>náv<s n="adv"/></r></p></e>
     <e><p><l>gaskat<s n="adv"/></l><r>gasskat<s n="adv"/></r></p></e>
     <e><p><l>fas<s n="adv"/></l><r>vas<s n="adv"/></r></p></e>
-    <e><p><l>haga<s n="adv"/></l><r>dagi<s n="adv"/></r></p></e>
     <e><p><l>mielde<s n="adv"/></l><r>maŋen<s n="adv"/></r></p></e>
+    <e><p><l>badjelii<s n="adv"/></l><r>badjelij<s n="adv"/></r></p></e>   
+    <e><p><l>guhkkin<s n="adv"/></l><r>guhkken<s n="adv"/></r></p></e>     
+    <e><p><l>maŋemus<s n="adv"/></l><r>maŋemus<s n="adv"/></r></p></e>     
+    <e><p><l>maŋimus<s n="adv"/></l><r>maŋemus<s n="adv"/></r></p></e>     
+    <e><p><l>maŋŋelaš<s n="adv"/></l><r>maŋŋelasj<s n="adv"/></r></p></e>  
+    <e><p><l>oarjelii<s n="adv"/></l><r>oarjjelij<s n="adv"/></r></p></e>  
+    <e><p><l>oktiibuot<s n="adv"/></l><r>tjoahkkáj<s n="adv"/></r></p></e> 
+    <e><p><l>omd<s n="adv"/></l><r>buojk.<s n="adv"/></r></p></e>          
+    <e><p><l>sihke<s n="adv"/></l><r>sihke<s n="adv"/></r></p></e>         
+    <e><p><l>vuollel<s n="adv"/></l><r>vuollel<s n="adv"/></r></p></e>     
+    <e><p><l>vuollil<s n="adv"/></l><r>vuollel<s n="adv"/></r></p></e>     
+    <e><p><l>vuollái<s n="adv"/></l><r>vuolláj<s n="adv"/></r></p></e>     
+    <e><p><l>vuollai<s n="adv"/></l><r>vuolláj<s n="adv"/></r></p></e>     
 
 <!-- TODO: these are not adverbs (or missing) in smj.lexc, need other translations: -->
-    <!-- <e><p><l>badjelii<s n="adv"/></l><r>badjelij<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>dainna<s n="adv"/></l><r>dajna<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>dasto<s n="adv"/></l><r>dasmaŋŋela<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>dievva<s n="adv"/></l><r>dievva<s n="adv"/></r></p></e> -->
@@ -7604,22 +7610,11 @@
     <!-- <e><p><l>eanet<s n="adv"/></l><r>ienep<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>goitge<s n="adv"/></l><r>gåjtge<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>gosa<s n="adv"/></l><r>masi<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>guhkkin<s n="adv"/></l><r>guhkken<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>lagabui<s n="adv"/></l><r>lagábuj<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>maninge<s n="adv"/></l><r>manenge<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>maŋemus<s n="adv"/></l><r>maŋemus<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>maŋimus<s n="adv"/></l><r>maŋemus<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>maŋŋelaš<s n="adv"/></l><r>maŋŋelasj<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>oarjelii<s n="adv"/></l><r>oarjjelij<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>oktiibuot<s n="adv"/></l><r>tjoahkkáj<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>olggobealde<s n="adv"/></l><r>ålgusjbielen<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>omd<s n="adv"/></l><r>dagu<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>ovddas<s n="adv"/></l><r>åvdås<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>seammás<s n="adv"/></l><r>sæmmi<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>sihke<s n="adv"/></l><r>sihke<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>vuollel<s n="adv"/></l><r>vuollel<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>vuollil<s n="adv"/></l><r>vuollel<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>vuollái<s n="adv"/></l><r>vuolláj<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>áigges<b/>áigái<s n="adv"/></l><r>ájges<b/>ájggáj<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>dan<b/>láhkái<s n="adv"/></l><r>dan<b/>láhkáj<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>muhtun<b/>muddui<s n="adv"/></l><r>muhtem<b/>mudduj<s n="adv"/></r></p></e> -->
@@ -7640,9 +7635,8 @@
     <!-- <e><p><l>seammá<s n="adv"/></l><r>sæmmá<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>unnánaš<s n="adv"/></l><r>unnánasj<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>várás<s n="adv"/></l><r>diehti<s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>vuollai<s n="adv"/></l><r>vuolláj<s n="adv"/></r></p></e> -->
     <!-- <e><p><l>liige<s n="adv"/></l><r><s n="adv"/></r></p></e> -->
-    <!-- <e><p><l>mielde<s n="adv"/></l><r>milta<s n="adv"/></r></p></e> -->
+
 
     <!-- Verbs -->
 
