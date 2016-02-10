@@ -11,7 +11,7 @@
     </def-cat>
      <def-cat n="liehket">
       <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
-      <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
+      <cat-item lemma="leat" tags="vblex.*.indic.*.conneg.*"/>
     </def-cat>
      <def-cat n="word">
       <cat-item tags="adv"/>
