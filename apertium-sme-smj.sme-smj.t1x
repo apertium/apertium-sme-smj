@@ -3,13 +3,33 @@
 <transfer default="chunk">
 
   <section-def-cats>
+     <def-cat n="negverb23">
+      <cat-item tags="vblex.neg.indic.p3.pl.*"/>
+      <cat-item tags="vblex.neg.indic.p2.sg.*"/>
+      <cat-item tags="vblex.*.neg.indic.p3.pl.*"/>
+      <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
+    </def-cat>
+     <def-cat n="liehket">
+      <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
+      <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
+    </def-cat>
      <def-cat n="word">
-      <cat-item tags="adv.*"/>
-      <cat-item tags="pcle.*"/>
       <cat-item tags="adv"/>
+      <cat-item tags="adv.*"/>
       <cat-item tags="pcle"/>
+      <cat-item tags="pcle.*"/>
       <cat-item tags="cnjsub"/>
       <cat-item tags="cnjsub.*"/>
+      <cat-item tags="n"/>
+      <cat-item tags="n.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="vblex"/>
+      <cat-item tags="vblex.*"/>
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.*"/>
     </def-cat>
      <def-cat n="propcmp">
       <cat-item tags="np.*.cmp"/>
@@ -210,6 +230,12 @@
     <def-attr n="a_npagree_type">
        <attr-item tags="adj.ord"/>
        <attr-item tags="prn.ind"/>
+    </def-attr>
+    <def-attr n="a_verb_p_nr">
+      <attr-item tags="p2.sg"/>
+      <attr-item tags="p2.sg"/>
+      <attr-item tags="p3.pl"/>
+      <attr-item tags="p3.pl"/>
     </def-attr>
     <def-attr n="a_mood">
       <attr-item tags="indic"/>
@@ -789,7 +815,7 @@
       </action>
     </rule>
 
-<rule comment="REGLA: NEGVERB CONNEGVERB">
+<rule comment="REGLA: NEGVERB CONNEGVERB"> <!-- Dábálasj neg: Iv sidá dujna doarrut -->
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="connegverb"/>
@@ -835,7 +861,39 @@
     </action>
   </rule>
 
-<rule comment="REGLA: NEGVERB word  CONNEGVERB">
+
+<rule comment="REGLA: NEGVERB liehket"> <!-- Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim -->
+    <pattern>
+      <pattern-item n="negverb23"/>
+      <pattern-item n="liehket"/>
+      <pattern-item n="word"/>
+    </pattern>
+    <action>
+        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_temps_mood"/>
+             <concat><clip pos="2" side="tl" part="a_temps_mood"/></concat>
+        </let>
+        <let><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></let>
+         <let><clip pos="3" side="tl" part="a_func"/><lit v=""/></let>
+      <out>
+        <chunk name="negverb" case="caseFirstWord">
+        <tags>
+        <tag><lit-tag v="SV"/></tag>
+        </tags>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+            <b/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+      </out>
+    </action>
+  </rule>
+
+
+<rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word"/>
