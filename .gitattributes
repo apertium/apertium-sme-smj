@@ -70,6 +70,7 @@ dev/bidix/sjavo_jasska.txt -text
 dev/bidix/smesmj_bestbothdirPos -text
 dev/fictilemmapos.txt -text
 dev/giza_list.txt -text
+dev/hash-report.freq -text
 dev/missinglist.txt -text
 dev/mod_per_cadena.py -text
 dev/sanityoutput -text
