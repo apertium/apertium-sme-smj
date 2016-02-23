@@ -43,20 +43,20 @@ TARGETS_COMMON =			\
 ###############################################################################
 
 # Override prefixes from ap_include, since we need the derivation-pos-changes:
-#.deps/%.autobil.prefixes: %.autobil.bin .deps/.d
-#	lt-print $< | sed 's/ /@_SPACE_@/g' > .deps/$*.autobil.att
-#	hfst-txt2fst -e ε -i  .deps/$*.autobil.att -o .deps/$*.autobil.hfst
-#	hfst-project -p upper .deps/$*.autobil.hfst -o .deps/$*.autobil.upper                                   # bidix
-#	echo '[ %<n%> -> [ %<n%> | %<ex_n%> ] ] | [ %<vblex%> -> [ %<vblex%> | %<ex_vblex%> ] ] | [ %<adj%> -> [ %<adj%> | %<ex_adj%> ] ]' \
-		| hfst-regexp2fst -o .deps/$*.derivpos.hfst
-#	hfst-compose -1 .deps/$*.autobil.upper -2 .deps/$*.derivpos.hfst -o .deps/$*.autobil-derivpos.hfst
-#	hfst-project -p lower .deps/$*.autobil-derivpos.hfst -o .deps/$*.autobil-derivpos.hfsa                  # bidix with n -> n|ex_n
-#	echo ' [ ? - %+ ]* ' | hfst-regexp2fst > .deps/$*.any-nonplus.hfst                                                        # [^+]*
-#	hfst-concatenate -1 .deps/$*.autobil-derivpos.hfsa -2 .deps/$*.any-nonplus.hfst -o .deps/$*.autobil.nonplussed    # bidix [^+]*
-#	echo ' %+ ' | hfst-regexp2fst > .deps/$*.single-plus.hfst                                                                 # +
-#	hfst-concatenate -1 .deps/$*.single-plus.hfst -2 .deps/$*.autobil.nonplussed -o .deps/$*.autobil.postplus # + bidix [^+]*
-#	hfst-repeat -f0 -t3 -i .deps/$*.autobil.postplus -o .deps/$*.autobil.postplus.0,3                      # (+ bidix [^+]*){0,3} -- gives at most three +
-#	hfst-concatenate -1 .deps/$*.autobil.nonplussed -2 .deps/$*.autobil.postplus.0,3 -o $@                 # bidix [^+]* (+ bidix [^+]*){0,3}
+.deps/%.autobil.prefixes: %.autobil.bin .deps/.d
+	lt-print $< | sed 's/ /@_SPACE_@/g' > .deps/$*.autobil.att
+	hfst-txt2fst -e ε -i  .deps/$*.autobil.att -o .deps/$*.autobil.hfst
+	hfst-project -p upper .deps/$*.autobil.hfst -o .deps/$*.autobil.upper                                   # bidix
+	echo '[ %<n%> -> [ %<n%> | %<ex%_n%> ] ] | [ %<vblex%> -> [ %<vblex%> | %<ex%_vblex%> ] ] | [ %<adj%> -> [ %<adj%> | %<ex%_adj%> ] ]' \
+   	| hfst-regexp2fst -o .deps/$*.derivpos.hfst
+	hfst-compose -1 .deps/$*.autobil.upper -2 .deps/$*.derivpos.hfst -o .deps/$*.autobil-derivpos.hfst
+	hfst-project -p lower .deps/$*.autobil-derivpos.hfst -o .deps/$*.autobil-derivpos.hfsa                  # bidix with n -> n|ex_n
+	echo ' [ ? - %+ ]* ' | hfst-regexp2fst > .deps/$*.any-nonplus.hfst                                                        # [^+]*
+	hfst-concatenate -1 .deps/$*.autobil-derivpos.hfsa -2 .deps/$*.any-nonplus.hfst -o .deps/$*.autobil.nonplussed    # bidix [^+]*
+	echo ' %+ ' | hfst-regexp2fst > .deps/$*.single-plus.hfst                                                                 # +
+	hfst-concatenate -1 .deps/$*.single-plus.hfst -2 .deps/$*.autobil.nonplussed -o .deps/$*.autobil.postplus # + bidix [^+]*
+	hfst-repeat -f0 -t3 -i .deps/$*.autobil.postplus -o .deps/$*.autobil.postplus.0,3                      # (+ bidix [^+]*){0,3} -- gives at most three +
+	hfst-concatenate -1 .deps/$*.autobil.nonplussed -2 .deps/$*.autobil.postplus.0,3 -o $@                 # bidix [^+]* (+ bidix [^+]*){0,3}
 
 # -------------------
 # Northern Saami analysis:
