@@ -29,7 +29,36 @@
  <or><match tags="n.*.pl.*"/>
  <match tags="n.*.*.pl.*"/></or>
   </rule>
+
+
+
+
+
+
+  <rule weight="1.0">
+    <match lemma="ieš" tags="prn.ref.*">
+      <select lemma="iesj" tags="prn.ref.sg.*"/>
+    </match>
+  </rule>
+
+
+  <rule weight="0.5">
+    <match lemma="ieš" tags="prn.ref.*">
+      <select lemma="iesj" tags="prn.ref.pl.*"/>
+    </match>
+  </rule>
+
+  <rule weight="0.6">
+    <match lemma="ieš" tags="prn.ref.*">
+      <select lemma="iesj" tags="prn.ref.pl.*"/>
+    </match>
+ <or><match tags="n.*.pl.*"/>
+ <match tags="n.*.*.pl.*"/></or>
+  </rule>
 </rules>
+
+
+
 
 
 <!--
