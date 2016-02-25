@@ -50,9 +50,13 @@
     </def-cat>
    <def-cat n="nnomcmp">
       <cat-item tags="n.cmp_sgnom.cmp"/>
+      <cat-item tags="n.*.cmp_sgnom.cmp"/>
       <cat-item tags="n.cmp_sgnom.cmp.*"/>
+      <cat-item tags="n.*.cmp_sgnom.cmp.*"/>
       <cat-item tags="n.cmp_sggen.cmp.*"/> 
+      <cat-item tags="n.*.cmp_sggen.cmp.*"/> 
       <cat-item tags="n.cmp_sggen.cmp"/> 
+      <cat-item tags="n.*.cmp_sggen.cmp"/> 
       <cat-item tags="np.top.cmp.*"/> 
       <cat-item tags="np.top.cmp"/> 
       <cat-item tags="vblex.*.der_nomact.n.cmp_sg.cmp"/> 
@@ -262,6 +266,8 @@
       <attr-item tags="loc"/>
       <attr-item tags="com"/>
       <attr-item tags="abe"/>
+      <attr-item tags="ela"/>
+      <attr-item tags="ine"/>
     </def-attr>
     <def-attr n="a_nbr">
       <attr-item tags="sg"/>
@@ -999,6 +1005,7 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="1"/></call-macro>
         <call-macro n="convert-deriv-1Posit"><with-param pos="2"/></call-macro>
         <call-macro n="remove-semtag-1Posit"><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Posit"><with-param pos="2"/></call-macro>
