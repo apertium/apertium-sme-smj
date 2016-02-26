@@ -766,20 +766,28 @@
     <choose>      
       <when>
         <test>
+        <or>
                 <and>
 		  <equal>
 		    <clip pos="1" side="sl" part="a_cas"/>
 		    <lit-tag v="loc"/>
 		  </equal>
-<!--		  <equal>
+		  <equal>
 		    <clip pos="1" side="sl" part="a_hab"/>
 		    <lit-tag v="←hab→"/>
-		  </equal> -->
+		  </equal> 
+		</and>
+         <and>
+		  <equal>
+		    <clip pos="1" side="sl" part="a_cas"/>
+		    <lit-tag v="loc"/>
+		  </equal>
                 <in caseless="yes">
 		  <var n="current_verb"/>
 		  <list n="verbs_stative"/>
 		</in>
 		</and>
+        </or>
 	</test>
               <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ine"/></let>
       </when>
