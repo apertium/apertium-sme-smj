@@ -304,7 +304,7 @@
     <e><p><l>lusa<s n="post"/></l><r>lusi<s n="post"/></r></p></e>
     <e><p><l>maŋil<s n="post"/></l><r>maŋŋel<s n="post"/></r></p></e>
     <e><p><l>mielde<s n="post"/></l><r>milta<s n="post"/></r></p></e>
-    <e><p><l>ovdal<s n="post"/></l><r>åvddål<s n="post"/></r></p></e>
+    <e><p><l>ovdal<s n="post"/></l><r>åvddåla<s n="post"/></r></p></e>
     <e><p><l>rádjái<s n="post"/></l><r>rádjáj<s n="post"/></r></p></e>
     <e><p><l>sisa<s n="post"/></l><r>sisi<s n="post"/></r></p></e>
     <e><p><l>siste<s n="post"/></l><r>sinne<s n="post"/></r></p></e>
@@ -333,7 +333,7 @@
     <e><p><l>guovddáš<s n="pr"/></l><r>gassko<s n="pr"/></r></p></e>
     <e><p><l>lahka<s n="pr"/></l><r>lahka<s n="pr"/></r></p></e>
     <e><p><l>maŋŋel<s n="pr"/></l><r>maŋŋel<s n="pr"/></r></p></e>    
-    <e><p><l>ovdal<s n="pr"/></l><r>åvddål<s n="pr"/></r></p></e>
+    <e><p><l>ovdal<s n="pr"/></l><r>åvddåla<s n="pr"/></r></p></e>
     <e><p><l>vuollel<s n="pr"/></l><r>vuollel<s n="pr"/></r></p></e>
     <e><p><l>vuollil<s n="pr"/></l><r>vuollel<s n="pr"/></r></p></e>
     <e><p><l>vuostá<s n="pr"/></l><r>vuosstij<s n="pr"/></r></p></e>  
@@ -3376,6 +3376,7 @@
      <e><p><l>kulturmuitoprošeakta<s n="n"/></l><r>kulturmujttoprosjækta<s n="n"/></r></p></e>
      <e><p><l>kulturorganisašuvdna<s n="n"/></l><r>kulturorganisasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>kulturradikalisma<s n="n"/></l><r>kulturradikalissma<s n="n"/></r></p></e>
+     <e><p><l>kultursuodjaleapmi<s n="n"/></l><r>kultuvrrasuodjalibme<s n="n"/></r></p></e>
      <e><p><l>kulturviessoprošeakta<s n="n"/></l><r>kulturviessoprosjækta<s n="n"/></r></p></e>
      <e><p><l>kultuvra<s n="n"/></l><r>kultuvrra<s n="n"/></r></p></e>
      <e><p><l>kumma<s n="n"/><s n="g3"/></l><r>kumma<s n="n"/></r></p></e>
@@ -5875,7 +5876,8 @@
      <e><p><l>stulla<s n="n"/></l><r>stulla<s n="n"/></r></p></e>
      <e><p><l>stullalas<s n="n"/></l><r>stullalas<s n="n"/></r></p></e>
      <e><p><l>stuolla<s n="n"/></l><r>stuolla<s n="n"/></r></p></e>
-     <e><p><l>stuollá<s n="n"/></l><r>stuollá<s n="n"/></r></p></e>
+     <e><p><l>stuollá<s n="n"/></l><r>dágge<s n="n"/></r></p></e>
+     <e><p><l>stuollu<s n="n"/></l><r>ståvllå<s n="n"/></r></p></e>
      <e><p><l>stuoragára<s n="n"/></l><r>stuorgára<s n="n"/></r></p></e>
      <e><p><l>stuorat<s n="n"/></l><r>stuorat<s n="n"/></r></p></e>
      <e><p><l>stuorisvuohta<s n="n"/></l><r>stuoresvuohta<s n="n"/></r></p></e>
@@ -7763,7 +7765,7 @@
     <e><p><l>ollásit<s n="adv"/></l><r>ållåsit<s n="adv"/></r></p></e>
     <e><p><l>omd<s n="adv"/></l><r>buojk.<s n="adv"/></r></p></e>          
     <e><p><l>oppa<s n="adv"/></l><r>åppå<s n="adv"/></r></p></e>
-    <e><p><l>ovdal<s n="adv"/></l><r>åvddål<s n="adv"/></r></p></e>
+    <e><p><l>ovdal<s n="adv"/></l><r>åvddåla<s n="adv"/></r></p></e>
     <e><p><l>ovdalii<s n="adv"/></l><r>åvddålij<s n="adv"/></r></p></e>
     <e><p><l>ovdan<s n="adv"/></l><r>åvddån<s n="adv"/></r></p></e>
     <e><p><l>ovddibui<s n="adv"/></l><r>åvdebuj<s n="adv"/></r></p></e>
@@ -8872,7 +8874,7 @@
      <e><p><l>doarostit<s n="vblex"/><s n="tv"/></l><r>doarrot<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>doarredit<s n="vblex"/><s n="tv"/></l><r>doarredit<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>doarridit<s n="vblex"/><s n="tv"/></l><r>doarredit<s n="vblex"/></r></p><par n="verb"/></e>
-     <e><p><l>doarrut<s n="vblex"/><s n="tv"/></l><r>doarrut<s n="vblex"/></r></p><par n="verb"/></e>
+     <e><p><l>doarrut<s n="vblex"/><s n="tv"/></l><r>doarrot<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>doarrát<s n="vblex"/><s n="iv"/></l><r>doarrát<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>doaruhit<s n="vblex"/><s n="tv"/></l><r>doarrot<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>dobadit<s n="vblex"/><s n="iv"/></l><r>dåhpåt<s n="vblex"/></r></p><par n="verb"/></e>
