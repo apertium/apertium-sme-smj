@@ -1,21 +1,28 @@
-Revision: 63496
-AP_SRC1 Revision: 126125
-AP_SRC2 Revision: 126147
+Revision: 66187
+AP_SRC1 Revision: 130745
+AP_SRC2 Revision: 130745
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
-sme-smj	  Anne ráhkada biepmu.
-	- Anne biebmov stielli.
-	+ Anne biebmov dahká.
+sme-smj	  Isak boahtá goađis.
+WORKS	  Isak boahtá goades.
 
 
-sme-smj	  Son lea boaris.
-	- Sån la vuoras.
-	+ Sån la boares.
+sme-smj	  Don čohkahat stuolus.
+	- Dån tjåhkkåha ståvlån.
+	+ Dån tjåhkkåha *stuolus.
 
 
-sme-smj	  Áddjá lea boaris.
-	- Áddjá la vuoras.
-	+ Áddjá la boares.
+sme-smj	  Ii oro buorre.
+	- Ij la buorre.
+	+ Ij la/le buorre.
+
+
+sme-smj	  Eaba orron buorre.
+WORKS	  Ejga lim buorre.
+
+
+sme-smj	  Ehpet orron hávski.
+WORKS	  Ejda lim hávsske.
 
 
 sme-smj	  In.
@@ -26,45 +33,129 @@ sme-smj	  In dieđe.
 WORKS	  Iv diede.
 
 
+sme-smj	  In borran.
+WORKS	  Ittjiv bårå.
+
+
+sme-smj	  Ii borran.
+WORKS	  Ittjij bårå.
+
+
 sme-smj	  Isak ii sáhttán boahtit ovdal.
-WORKS	  Isak ittjij máhte boahtet åvddål.
+	- Isak ittjij máhte boahtet åvddåla.
+	+ Isak ittjij máhte boahtet åvddål.
 
 
 sme-smj	  Ii oro nu vuogas.
-WORKS	  Ij åro nåv vuogas.
+	- Ij la nav vuogas.
+	+ Ij la/le nav vuogas.
 
 
 sme-smj	  In háliit duinna doarrut.
-WORKS	  Iv hálijda dujna doarrut.
+	- Iv sidá dujna doarrot.
+	+ Iv sidá dujna doarrut.
+
+
+sme-smj	  Sii eai liiko, go mii hárdit sin.
+WORKS	  Sij e lijkku, gå mij hárddep sijáv.
 
 
 sme-smj	  It go sáhte muitalit?
-WORKS	  I gu máhte subtsastit?
+WORKS	  I gus máhte subtsastit?
 
 
 sme-smj	  Eat go sáhttán vuolgit?
-WORKS	  Ejma gu máhte vuolgget?
+WORKS	  Ejma gus máhte vuolgget?
 
 
 sme-smj	  Eat šat gille.
 WORKS	  Ep desti visjá.
 
 
-sme-smj	  Sii eai liiko, go mii hárdit sin.
-WORKS	  Sij e lijkku, gå mij sijáv hárddep.
+sme-smj	  In leat.
+	- Iv la.
+	+ Iv la/le.
 
 
-sme-smj	  Eai oro nu vuohkkasat.
-WORKS	  E åro nåv vuohkasa.
+sme-smj	  In lean.
+	- Iv lim.
+	+ Ittjiv lim.
 
 
-sme-smj	  Miriam Paulsen.
-WORKS	  Miriam Paulsen.
+sme-smj	  Ii leat.
+	- Ij la.
+	+ Ij la/le.
 
 
-sme-smj	  Hui jorbadit.
-	- Sieldes jårbbådit.
-	+ Huj jårbbådabbo.
+sme-smj	  Ii lean.
+	- Ij lim.
+	+ Ittjij lim.
+
+
+sme-smj	  Ean leat.
+	- En la.
+	+ En la/le.
+
+
+sme-smj	  Eat lean.
+WORKS	  Ejma lim.
+
+
+sme-smj	  Eahppi leat.
+	- Æhppe la.
+	+ Æhppe la/le.
+
+
+sme-smj	  Eahppi lean.
+WORKS	  Ejda lim.
+
+
+sme-smj	  Eaba leat.
+	- Æbá la.
+	+ Æbá la/le.
+
+
+sme-smj	  Eaba lean.
+WORKS	  Ejga lim.
+
+
+sme-smj	  Don it leat nu johtil.
+	- Dån illa nav jåhtel.
+	+ Dån illa/ille nav jåhtel.
+
+
+sme-smj	  Sii eai oro nu johtilat.
+	- Sij ælla nav jåhtela.
+	+ Sij ælla/ælle nav jåhtela.
+
+
+sme-smj	  Sii eai orron nu johtilat.
+WORKS	  Sij ællim nav jåhtela.
+
+
+sme-smj	  Don it oro nu johtil.
+	- Dån illa nav jåhtel.
+	+ Dån illa/ille nav jåhtel.
+
+
+sme-smj	  Don it orron nu johtil.
+WORKS	  Dån illim nav jåhtel.
+
+
+sme-smj	  Don it lean nu johtil.
+WORKS	  Dån illim nav jåhtel.
+
+
+sme-smj	  Sii eai lean boahtán.
+WORKS	  Sij ællim boahtám.
+
+
+sme-smj	  Vihken hui johtilit.
+WORKS	  Viehkiv huj jåhtelit.
+
+
+sme-smj	  Oaččun dan hálbbit.
+WORKS	  Oattjov dav álbet.
 
 
 sme-smj	  kultursuodjaleapmi.
@@ -85,11 +176,11 @@ WORKS	  Máná li lájke.
 
 
 sme-smj	  Girji lea hálbi.
-WORKS	  Girjje la hálbbe.
+WORKS	  Girjje la álbbe.
 
 
 sme-smj	  Girjjit leat hálbbit.
-WORKS	  Girje li hálbe.
+WORKS	  Girje li álbe.
 
 
 sme-smj	  Sevnnjoda.
@@ -125,7 +216,7 @@ WORKS	  Guhti bådij?
 
 
 sme-smj	  Liikojit go guollái?
-WORKS	  Lijkkuji gu guolláj?
+WORKS	  Lijkkuji gus guolláj?
 
 
 sme-smj	  Áddjá lea boahtán.
@@ -153,7 +244,7 @@ WORKS	  Gev dån vuojnni.
 
 
 sme-smj	  Son vuittii golli.
-WORKS	  Sån gållev vuojtij.
+WORKS	  Sån vuojtij gållev.
 
 
 sme-smj	  Boahtti veahkkin.
@@ -161,11 +252,12 @@ WORKS	  Boahtte viehkken.
 
 
 sme-smj	  Isak lea viššalis bargi.
-WORKS	  Isak la vissjalis bargge.
+	- Isak la vissjalis bargge.
+	+ Isak la vissjalis #bargge.
 
 
 sme-smj	  Ahte gielistii lea vissis.
-WORKS	  Ahte gielestij la visses.
+WORKS	  Jut gielestij la visses.
 
 
 sme-smj	  Leage buorre.
@@ -189,8 +281,19 @@ WORKS	  Iv subtsasta suohttasijdám iehtjádijda.
 
 
 sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
-	- Teáhtera ulmmen la nannit sámij identitehtav ja kultuvrav.
-	+ Teáhttara ulmmen la nannit sámij identitehtav ja kultuvrav.
+WORKS	  Teáhttara ulmmen la nannit sámij identitehtav ja kultuvrav.
 
 
-40 / 46, 86.96%
+sme-smj	  Anne ráhkada biepmu.
+WORKS	  Anne stielli biebmov.
+
+
+sme-smj	  Son lea boaris.
+WORKS	  Sån la boares.
+
+
+sme-smj	  Áddjá lea boaris.
+WORKS	  Áddjá la boares.
+
+
+52 / 69, 75.36%
