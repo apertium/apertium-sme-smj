@@ -60,7 +60,8 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -t -w">
+      <program name="cg-conv -a"/>
+      <program name="vislcg3 --trace --grammar">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
     </pipeline>
