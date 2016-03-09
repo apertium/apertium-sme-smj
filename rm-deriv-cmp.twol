@@ -18,7 +18,7 @@ Alphabet
 %<der%_amoš%>
 %<der%_asat%>
 %<der%_asti%>
-%<der%_at%>
+%<der%_aadv%>
 %<der%_beaivásaš%>
 %<der%_bealat%>
 %<der%_bealjat%>
@@ -142,7 +142,7 @@ Alphabet
 %<der%_veara%>
 %<der%_vigat%>
 %<der%_viđá%>
-%<der%_vuohta%>
+%<der%_vuota%>
 %<der%_vuovttat%>
 %<der%_vuđot%>
 %<der%_váillat%>
@@ -189,7 +189,7 @@ Derivations =
 %<der%_amoš%>
 %<der%_asat%>
 %<der%_asti%>
-%<der%_at%>
+%<der%_aadv%>
 %<der%_beaivásaš%>
 %<der%_bealat%>
 %<der%_bealjat%>
@@ -313,7 +313,7 @@ Derivations =
 %<der%_veara%>
 %<der%_vigat%>
 %<der%_viđá%>
-%<der%_vuohta%>
+%<der%_vuota%>
 %<der%_vuovttat%>
 %<der%_vuđot%>
 %<der%_váillat%>
@@ -346,12 +346,12 @@ HandledDerivations =
 ! TODO: can probably just change it to der_lasj:
 !%<der%_laš%>       ! 50394
 %<der%_dimin%>      ! 49664
-%<der%_vuohta%>     ! 40246
+%<der%_vuota%>     ! 40246
 %<der%_d%>          ! 34868
 %<der%_passs%>      ! 29189
 %<der%_passl%>      ! 23625
 %<der%_st%>         ! 17455
-%<der%_at%>        ! 11718
+%<der%_aadv%>        ! 11718
 !%<der%_heapmi%>    ! 11292
 %<der%_alla%>       ! 10369
 %<der%_l%>         ! 5793
