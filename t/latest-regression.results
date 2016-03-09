@@ -1,4 +1,4 @@
-Revision: 66187
+Revision: 66208
 AP_SRC1 Revision: 130745
 AP_SRC2 Revision: 130745
 Running Regression-tests with mode "sme-smj" with updated tests ...
@@ -8,8 +8,7 @@ WORKS	  Isak boahtá goades.
 
 
 sme-smj	  Don čohkahat stuolus.
-	- Dån tjåhkkåha ståvlån.
-	+ Dån tjåhkkåha *stuolus.
+WORKS	  Dån tjåhkkåha ståvlån.
 
 
 sme-smj	  Ii oro buorre.
@@ -43,7 +42,7 @@ WORKS	  Ittjij bårå.
 
 sme-smj	  Isak ii sáhttán boahtit ovdal.
 	- Isak ittjij máhte boahtet åvddåla.
-	+ Isak ittjij máhte boahtet åvddål.
+	+ Isak ittjij máhte boahtet #åvddåla.
 
 
 sme-smj	  Ii oro nu vuogas.
@@ -52,8 +51,7 @@ sme-smj	  Ii oro nu vuogas.
 
 
 sme-smj	  In háliit duinna doarrut.
-	- Iv sidá dujna doarrot.
-	+ Iv sidá dujna doarrut.
+WORKS	  Iv sidá dujna doarrot.
 
 
 sme-smj	  Sii eai liiko, go mii hárdit sin.
@@ -160,7 +158,7 @@ WORKS	  Oattjov dav álbet.
 
 sme-smj	  kultursuodjaleapmi.
 	- kultuvrrasuodjalibme.
-	+ *kultursuodjaleapmi.
+	+ #kultuvrrasuodjalibme.
 
 
 sme-smj	  Dát áššit leat dehálaččat.
@@ -296,4 +294,4 @@ sme-smj	  Áddjá lea boaris.
 WORKS	  Áddjá la boares.
 
 
-52 / 69, 75.36%
+54 / 69, 78.26%
