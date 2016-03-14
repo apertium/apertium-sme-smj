@@ -230,7 +230,7 @@
     <e><p><l>goabbánai<s n="prn"/></l><r>goabbásik<s n="prn"/></r></p></e>
     <e><p><l>goappašagat<s n="prn"/></l><r>goappátjagá<s n="prn"/></r></p></e>
     <e><p><l>goappašat<s n="prn"/></l><r>goappátja<s n="prn"/></r></p></e>
-    <e><p><l>goappešat<s n="prn"/></l><r>goappátja<s n="prn"/></r></p></e>
+    <e><p><l>goappašat<s n="prn"/></l><r>goappátja<s n="prn"/></r></p></e>
     <e><p><l>guhte<s n="prn"/></l><r>guhti<s n="prn"/></r></p></e>
     <e><p><l>guhtege<s n="prn"/></l><r>guhtik<s n="prn"/></r></p></e>
     <e><p><l>guhtemuš<s n="prn"/></l><r>guhtimusj<s n="prn"/></r></p></e>
@@ -278,7 +278,7 @@
     <e><p><l>soamis<s n="prn"/></l><r>soames<s n="prn"/></r></p></e>
     <e><p><l>soames<s n="prn"/></l><r>soames<s n="prn"/></r></p></e>
     <e><p><l>son<s n="prn"/></l><r>sån<s n="prn"/></r></p></e>
-    <e><p><l>unnán<s n="prn"/></l><r>unnán<s n="prn"/></r></p></e>
+    <e><p><l>unnán<s n="prn"/></l><r>vehi<s n="prn"/></r></p></e>
     <e><p><l>unnánaš<s n="prn"/></l><r>unnánasj<s n="prn"/></r></p></e>
     <e><p><l>vaikko<b/>gii<s n="prn"/></l><r>vájku<b/>guhti<s n="prn"/></r></p></e>
     <e><p><l>vaikko<b/>goabbá<s n="prn"/></l><r>vájku<b/>goabbá<s n="prn"/></r></p></e>
@@ -5126,7 +5126,6 @@
      <e><p><l>rohči<s n="n"/></l><r>råhtje<s n="n"/></r></p></e>
      <e><p><l>rojalisma<s n="n"/></l><r>rojalissma<s n="n"/></r></p></e>
      <e><p><l>rolla<s n="n"/></l><r>roalla<s n="n"/></r></p></e>
-     <e><p><l>rolla<s n="n"/></l><r>rolla<s n="n"/></r></p></e>
      <e><p><l>romantihkka<s n="n"/></l><r>romantihkka<s n="n"/></r></p></e>
      <e><p><l>romána<s n="n"/></l><r>romádna<s n="n"/></r></p></e>
      <e><p><l>rotisseriija<s n="n"/></l><r>rotisserijja<s n="n"/></r></p></e>
@@ -6810,6 +6809,7 @@
      <e><p><l>áigi<s n="n"/></l><r>ájgge<s n="n"/></r></p></e>
      <e><p><l>áigodat<s n="n"/></l><r>gávdda<s n="n"/></r></p></e>
      <e><p><l>áigodat<s n="n"/></l><r>ájgegávdda<s n="n"/></r></p></e>
+     <e><p><l>áigumuš<s n="n"/></l><r>ájggomus<s n="n"/></r></p></e>
      <e><p><l>áirras<s n="n"/></l><r>ájras<s n="n"/></r></p></e>
      <e><p><l>áiru<s n="n"/></l><r>ájrro<s n="n"/></r></p></e>
      <e><p><l>áiti<s n="n"/></l><r>ájtte<s n="n"/></r></p></e>
@@ -7182,7 +7182,7 @@
      <e><p><l>eahpeáššálaš<s n="adj"/></l><r>iehpeássjálasj<s n="adj"/></r></p></e>
      <e><p><l>eahpiduohta<s n="adj"/></l><r>iehpeduohta<s n="adj"/></r></p></e>
      <e><p><l>eallái<s n="adj"/></l><r>ielle<s n="adj"/></r></p></e>
-     <e><p><l>eambbo<s n="adj"/></l><r>ienebu<s n="adj"/></r></p></e>
+     <e><p><l>eambbo<s n="adj"/></l><r>ienep<s n="adj"/></r></p></e>
      <e><p><l>eanas<s n="adj"/></l><r>ienemus<s n="adj"/></r></p></e>
      <e><p><l>eanaš<s n="adj"/></l><r>ienemus<s n="adj"/></r></p></e>
      <e><p><l>eanet<s n="adj"/></l><r>ienep<s n="adj"/></r></p></e>
