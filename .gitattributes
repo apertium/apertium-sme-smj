@@ -97,6 +97,7 @@ freqsorted_dix/adj_sme2smj_dix.xml -text
 freqsorted_dix/n_sme2smj_dix.xml -text
 freqsorted_dix/np_sme2smj_dix.xml -text
 freqsorted_dix/v_sme2smj_dix.xml -text
+/hash.sh -text
 /modes.xml -text
 /rm-deriv-cmp.twol -text
 t/README.org -text
