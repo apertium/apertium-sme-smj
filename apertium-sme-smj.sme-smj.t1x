@@ -17,6 +17,17 @@
       <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
       <cat-item lemma="leat" tags="vblex.*.indic.*.conneg.*"/>
     </def-cat>
+     <def-cat n="bealisPx">
+      <cat-item lemma="bealis" tags="adv.px1sg.*"/>
+      <cat-item lemma="bealis" tags="adv.px2sg.*"/>
+      <cat-item lemma="bealis" tags="adv.px3sg.*"/>
+      <cat-item lemma="bealis" tags="adv.px1du.*"/>
+      <cat-item lemma="bealis" tags="adv.px2du.*"/>
+      <cat-item lemma="bealis" tags="adv.px3du.*"/>
+      <cat-item lemma="bealis" tags="adv.px1pl.*"/>
+      <cat-item lemma="bealis" tags="adv.px2pl.*"/>
+      <cat-item lemma="bealis" tags="adv.px3pl.*"/>
+   </def-cat>
      <def-cat n="word">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
@@ -1026,6 +1037,30 @@
   </rule>
 
 
+<rule comment="REGLA: bealis Px">
+    <pattern>
+    <pattern-item n="bealisPx"/>
+    </pattern>
+    <action>
+    <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+      <out>
+        <chunk name="adv" case="caseFirstWord">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+          </tags>
+          <lu>
+            <lit v="iesj"/>
+            <lit-tag v="prn.ref.sg.gen"/>
+            <clip pos="1" side="tl" part="a_poss"/>
+          </lu>
+        <b/> 
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+      </out>
+    </action>
+  </rule>  
 
     <rule comment="REGLA: prn">
       <pattern>
