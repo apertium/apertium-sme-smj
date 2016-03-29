@@ -337,6 +337,7 @@
    <e><p><l>guhkkut<s n="pr"/></l><r>gætjo<s n="pr"/></r></p></e>
     <e><p><l>guovddáš<s n="pr"/></l><r>gassko<s n="pr"/></r></p></e>
     <e><p><l>lahka<s n="pr"/></l><r>lahka<s n="pr"/></r></p></e>
+    <e><p><l>miehtá<s n="pr"/></l><r>miehtáj<s n="post"/></r></p></e>
     <e><p><l>maŋŋel<s n="pr"/></l><r>maŋŋel<s n="pr"/></r></p></e>    
     <e><p><l>ovdal<s n="pr"/></l><r>åvddåla<s n="pr"/></r></p></e>
     <e><p><l>vuollel<s n="pr"/></l><r>vuollel<s n="pr"/></r></p></e>
@@ -352,12 +353,11 @@
     <e><p><l>čađa<s n="post"/></l><r>tjadá<s n="post"/></r></p></e>
     <e><p><l>čađa<s n="pr"/></l><r>tjadá<s n="pr"/></r></p></e>
 
-<!-- TODO: these are not pr or post (or missing) in smj.lexc, need other translations: -->
-    <!-- <e><p><l>earret<s n="pr"/></l><r>ietján<b/>gå<s n="pr"/></r></p></e> -->
-    <!-- <e><p><l>olggobealde<s n="pr"/></l><r>ålgusjbielen<s n="pr"/></r></p></e> -->
-    <!-- <e><p><l>olggobealde<s n="post"/></l><r>ålgusjbielen<s n="post"/></r></p></e> -->
+    <e><p><l>earret<s n="pr"/></l><r>ietján<b/>gå<s n="pr"/></r></p></e>
+    <e><p><l>olggobealde<s n="pr"/></l><r>ålggolin<s n="pr"/></r></p></e>
+    <e><p><l>olggobealde<s n="post"/></l><r>ålggolin<s n="post"/></r></p></e>
   
-  
+ 
     <e><p><l>áŋgiruššat<s n="vblex"/><s n="tv"/></l><r>vissjalit<b/>barggat<s n="vblex"/></r></p></e>
     <e><p><l>ovttasbargat<s n="vblex"/><s n="iv"/></l><r>aktan<b/>barggat<s n="vblex"/></r></p></e>
     <e><p><l>fárret<s n="vblex"/><s n="iv"/></l><r>jåhtet<s n="vblex"/></r></p></e>
