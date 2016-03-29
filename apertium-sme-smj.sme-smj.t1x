@@ -3,6 +3,10 @@
 <transfer default="chunk">
 
   <section-def-cats>
+     <def-cat n="miehtá">
+       <cat-item lemma="miehtá" tags="pr.*"/>
+       <cat-item lemma="miehtá" tags="post.*"/>
+     </def-cat>
      <def-cat n="negverb23">
       <cat-item tags="vblex.neg.indic.p3.pl.*"/>
       <cat-item tags="vblex.neg.indic.p2.sg.*"/>
@@ -1162,6 +1166,61 @@
             </lu>
           </chunk>
         </out>
+      </action>
+    </rule>
+    
+      <rule comment="REGLA: miehtá noun">
+         <pattern>
+          <pattern-item n="miehtá"/>
+        <pattern-item n="nom-gen"/>
+         </pattern>
+         <action>   
+        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="2"/></call-macro>
+        <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
+        <let><clip pos="2" side="tl" part="a_cas"/><lit-tag v="acc"/></let> 
+       <out>
+           <chunk name="pp" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+                <lu>
+              <clip pos="2" side="tl" part="whole"/>    
+                    </lu>
+                <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>    
+                </lu>
+            </chunk>
+            </out>
+      </action>
+    </rule>
+ 
+        <rule comment="REGLA: noun  miehtá">
+         <pattern>
+ 
+        <pattern-item n="nom-gen"/>
+          <pattern-item n="miehtá"/>
+    </pattern>
+         <action>   
+        <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
+        <call-macro n="remove-semtag-1Posit"><with-param pos="1"/></call-macro>
+        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="acc"/></let> 
+       <out>
+           <chunk name="pp" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+                <lu>
+              <clip pos="1" side="tl" part="whole"/>    
+                    </lu>
+                <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>    
+                </lu>
+    </chunk>
+             </out>
       </action>
     </rule>
 
