@@ -68,6 +68,7 @@ dev/bidix/bidixsmjverbsone.txt -text
 dev/bidix/iellet_viessot.txt -text
 dev/bidix/sjavo_jasska.txt -text
 dev/bidix/smesmj_bestbothdirPos -text
+dev/check_sme_verbs.sh -text
 dev/fictilemmapos.txt -text
 dev/giza_list.txt -text
 dev/hash-report.freq -text
