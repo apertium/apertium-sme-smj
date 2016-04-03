@@ -26,6 +26,16 @@
     <def-cat n="SN_Po">
         <cat-item tags="SN.@→P.*"/>
     </def-cat>
+   <def-cat n="PR_PO">
+       <cat-item lemma="pr_po" tags="*"/>
+    </def-cat>
+  
+     <def-cat n="GenCompl">
+      <cat-item tags="NumG"/>
+      <cat-item tags="NumG.*"/>
+      <cat-item tags="SN"/>
+      <cat-item tags="SN.*"/>
+    </def-cat>
     
     <def-cat n="SN_Pr">
         <cat-item tags="SN.@←ADVL.*"/>
@@ -266,6 +276,24 @@
        </out>
      </action>
     </rule> 
+ 
+    <rule comment="REGLA: PR_PO">
+    <pattern>
+       <pattern-item n="PR_PO"/>
+       <pattern-item n="GenCompl"/>
+    </pattern>
+      <action>
+    <out>
+      <chunk>
+        <clip pos="2" part="whole"/>
+      </chunk>
+      <b pos="1"/>
+        <chunk>
+        <clip pos="1" part="whole"/>
+      </chunk>
+    </out>
+      </action>
+    </rule>
 
   </section-rules>
 </interchunk>
