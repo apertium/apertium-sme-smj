@@ -89,6 +89,7 @@ dev/sikor.sme.Pron.freq.missing -text
 dev/sikor.sme.V.freq.der.missing -text
 dev/sikor.sme.V.freq.missing -text
 dev/sikor.sme.V.freq.noder.missing -text
+dev/sme_bidix_sanity.sh -text
 dev/smjadverbs.txt -text
 dev/smjintersectionlemma2.txt -text
 dev/smjpronouns.txt -text
