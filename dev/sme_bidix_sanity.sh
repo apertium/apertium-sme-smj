@@ -77,6 +77,7 @@ cat proper |$LOOKUP $GTHOME/langs/sme/src/analyser-gt-desc.xfst |grep '+Prop' | 
 echo '' >> missingsme.txt
 echo 'Propernouns:' >> missingsme.txt
 comm -23 proper genproper | LOOKUP $GTHOME/langs/sme/src/analyser-gt-desc.xfst >> missingsme.txt
+rm  tvverbs ivverbs  gentv geniv nouns gennouns advs genadvs adjs genadjs post genpost pre genpre num gennum prn genprn cnjcoo gencnjcoo cnjsub gencnjsub pcle genpcle proper genproper  
 
 
 open missingsme.txt
