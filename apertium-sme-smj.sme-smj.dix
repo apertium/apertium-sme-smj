@@ -239,7 +239,7 @@
     <e><p><l>iešgiige<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
     <e><p><l>iešgiijai<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
     <e><p><l>iešguhte<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
-     <e><p><l>iešguhtet<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
+    <e><p><l>iešguhtet<s n="prn"/></l><r>iesjguhtik<s n="prn"/></r></p></e>
     <e><p><l>iežá<s n="prn"/></l><r>ietjá<s n="prn"/></r></p></e>
     <e><p><l>juobbá<s n="prn"/></l><r>juobbá<s n="prn"/></r></p></e>
     <e><p><l>juobbágoabbá<s n="prn"/></l><r>juobbá<s n="prn"/></r></p></e>
@@ -248,7 +248,6 @@
     <e><p><l>juohkehaš<s n="prn"/></l><r>juohkkahasj<s n="prn"/></r></p></e>
     <e><p><l>makkár<s n="prn"/></l><r>makkár<s n="prn"/></r></p></e>
     <e><p><l>mihkke<s n="prn"/></l><r>mige<s n="prn"/></r></p></e>
-    <e><p><l>mihkkege<s n="prn"/></l><r>mige<s n="prn"/></r></p></e>
     <e><p><l>mihkkige<s n="prn"/></l><r>mige<s n="prn"/></r></p></e>
     <e><p><l>mii<s n="prn"/></l><r>mij<s n="prn"/></r></p></e>
     <e><p><l>miijai<s n="prn"/></l><r>soames<s n="prn"/></r></p></e>
@@ -3940,6 +3939,7 @@
      <e><p><l>láhka<s n="n"/></l><r>láhka<s n="n"/></r></p></e>
      <e><p><l>láhkadieđa<s n="n"/></l><r>láhkadieda<s n="n"/></r></p></e>
      <e><p><l>láhkaproposišuvdna<s n="n"/></l><r>láhkaproposisjåvnnå<s n="n"/></r></p></e>
+     <e><p><l>láhkarievdadus<s n="n"/></l><r>láhkarievddadibme<s n="n"/></r></p></e>
      <e><p><l>láhkasuodjalus<s n="n"/></l><r>láhkasuodjalus<s n="n"/></r></p></e>
      <e><p><l>láhkaásahus<s n="n"/></l><r>láhkaásadus<s n="n"/></r></p></e>
      <e><p><l>láhkaásahus<s n="n"/></l><r>njuolgadustjála<s n="n"/></r></p></e>
@@ -11801,7 +11801,7 @@
      <e><p><l>signeret<s n="vblex"/><s n="tv"/></l><r>signierit<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>sihkastit<s n="vblex"/><s n="tv"/></l><r>sihkastit<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>sihkestit<s n="vblex"/><s n="tv"/></l><r>sihkastit<s n="vblex"/></r></p><par n="verb"/></e>
-     <e><p><l>sihkkarastit<s n="vblex"/><s n="tv"/></l><r>tjårggit<s n="vblex"/></r></p><par n="verb"/></e>
+     <e><p><l>sihkkarastit<s n="vblex"/><s n="tv"/></l><r>sihkarasstet<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>sihkkasit<s n="vblex"/><s n="iv"/></l><r>sihkasit<s n="vblex"/></r></p><par n="verb"/></e>
      <e><p><l>sihkkut<s n="vblex"/><s n="tv"/></l><r>sihkkot<s n="vblex"/></r></p></e>
      <e><p><l>sihkkut<s n="vblex"/><s n="tv"/></l><r>sihkkot<s n="vblex"/></r></p><par n="verb"/></e>
