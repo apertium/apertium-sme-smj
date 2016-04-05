@@ -385,10 +385,10 @@ Rules
 ! "Don't allow derivations as left-compounds"
 ! : /<= _ Derivations :* Cmp ;
 
-"Don't allow more than two left-compounds"
-: /<= _ Cmp :* Cmp :* Cmp ;
+!"Don't allow more than two left-compounds"
+!: /<= _ Cmp :* Cmp :* Cmp ;
 
-"Don't allow derivations of derivations"
-: /<= _ Derivations :* Derivations ;
+!"Don't allow derivations of derivations"
+!: /<= _ Derivations :* Derivations ;
 
 ;				! end of Rules
