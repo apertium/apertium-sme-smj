@@ -6,6 +6,8 @@
   	 <def-cat n="mihkkege">
   	 	<cat-item lemma="mihkke" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="mihkke" tags="*.foc_pos-ge.*"/>
+  	 	<cat-item lemma="guhtemuš" tags="*.foc_neg-ge.*"/>
+  	 	<cat-item lemma="guhtemuš" tags="*.foc_pos-ge.*"/>
   	 </def-cat>
      <def-cat n="miehtá">
        <cat-item lemma="miehtá" tags="pr.*"/>
