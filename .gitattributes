@@ -112,7 +112,6 @@ t/pending-tests -text
 t/regression-tests -text
 t/update-latest -text
 t/wiki-tests -text
-texts/SP-01-2012_sme.txt -text
 texts/SP-03-2012_sme.txt -text
 texts/SP-04-2012_sme.txt -text
 texts/SP-07-2012_sme.txt -text
@@ -131,6 +130,7 @@ texts/samediggidiedadus_samegiela_birra_2012.smj.txt -text
 texts/sametingsprot2012-15_MT.txt -text
 texts/sametingsprot2012-15_sme.txt -text
 texts/samibaikkit_sme.txt -text
+texts/stp-one_sentence_pr_line/SP-01-2012_sme.txt -text
 texts/stp-one_sentence_pr_line/SP-02-2012_sme.txt -text
 texts/stp-one_sentence_pr_line/SP-05-2012_sme.txt -text
 texts/stp-one_sentence_pr_line/SP-06-2012_sme.txt -text
