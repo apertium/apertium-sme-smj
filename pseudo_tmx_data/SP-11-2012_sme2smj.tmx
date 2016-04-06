@@ -1,0 +1,4410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx>
+   <header segtype="sentence"
+           o-tmf="OmegaT TMX"
+           adminlang="EN-US"
+           srclang="sme"
+           datatype="plaintext"/>
+   <body>
+      <tu id="2">
+         <tuv lang="sme">
+            <seg>Ášši/Sak EKL 002/12 Ášši/Sak DC 011/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="3">
+         <tuv lang="sme">
+            <seg>Cealkámuš 2012 eanadoallošiehtadallamiidda</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="4">
+         <tuv lang="sme">
+            <seg>Arkiivaáššenr. 11/542306 / 25 - 58</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="5">
+         <tuv lang="sme">
+            <seg>Meannudeamit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="6">
+         <tuv lang="sme">
+            <seg>Politihkalaš dássi Beaivi Áššenr.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="7">
+         <tuv lang="sme">
+            <seg>Sámediggeráđđi 17.01.12 SR 007/12 Ealáhus- ja kulturlávdegoddi 20.–21.02.12 EKL 002/12 Sámedikki dievasčoahkkin 22.–24.02.12 DC 011/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="8">
+         <tuv lang="sme">
+            <seg>Ášši meannudeapmi álggahuvvui 24.02.12 dii. 08.55</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="9">
+         <tuv lang="sme">
+            <seg>I Mildosat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="10">
+         <tuv lang="sme">
+            <seg>Nr. Beaivi Geas/Geasa Namahus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="11">
+         <tuv lang="sme">
+            <seg>17.01.12 Sámediggeráđi/Sametingsrådet Ášši/Sak 007/12 - Cealkámuš 2012 eanadoallošiehtadallamiidda/Innspill til jordbruksforhandlingene 2012 16.12.11 Troms bondelag Innspill til jordbruksforhandlingene 2012 09.01.12 Sametinget Rapportering om Sametingets tilskudd til jordbruk i</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="12">
+         <tuv lang="sme">
+            <seg>10.11.12 Deanu gielda Landbrukspolitisk uttalelse fra Tana kommunestyre 06.12.11 Jon-Harald Nedrum Landbruk 24.11.11 Lyngen bondelag Lyngen bondelag ber om at Sametinget støtter denne uttalelsen</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="13">
+         <tuv lang="sme">
+            <seg>II Evttohusat ja mearkkašumit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="14">
+         <tuv lang="sme">
+            <seg>Sámediggeráđi mearrádusárvalus:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="15">
+         <tuv lang="sme">
+            <seg>Eanadoallu sámi guovlluin lea leamaš deaŧalaš vuođđoávdnasiidbuvttadeaddjin, barggolašvuhtii ja vuođđun ássamii sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="16">
+         <tuv lang="sme">
+            <seg>Eanadoalus lea ain dát rolla, muhto dat rolla lea geahnohuvvamin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="17">
+         <tuv lang="sme">
+            <seg>Eanadoallu lea deaŧalaš maiddái sámi giela ja kulturárbevieruid gaskkusteapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="18">
+         <tuv lang="sme">
+            <seg>Sámedikki mielas lea mávssolaš ahte eanadoalus leat buorit rámmaeavttut doibmii ja ovddideapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="19">
+         <tuv lang="sme">
+            <seg>Eanadoallo- ja biebmodepartemeanta ovddidii stuorradiggedieđáhusa ođđa eanadoallo- ja biebmopolitihka birra 2011:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="20">
+         <tuv lang="sme">
+            <seg>Dieđáhusa bajimuš ulbmilin lea borramušgálvosihkarvuohta, eanadoallu galgá leat miehtá riikka, eanet árvoháhkan ja ceavzilis eanadoallu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="21">
+         <tuv lang="sme">
+            <seg>Eanadoalus lea maŋimuš jagiin leamaš hárehis ovdáneapmi sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="22">
+         <tuv lang="sme">
+            <seg>Finnmárkku fylkkas lea doaluid lohku njiedjan čielgasit jagi 2004 rájes 2011 rádjai, 438 eanadoallofitnodagas leat báhcán 352.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="23">
+         <tuv lang="sme">
+            <seg>Njiedjan lea badjel 20 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="24">
+         <tuv lang="sme">
+            <seg>Romssas leat vel eanet geahppánan doalut 2004:s ledje 1462 doalu ja 2010:s vel 1083 doalu, njiedjan 26 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="25">
+         <tuv lang="sme">
+            <seg>Máŋgga gielddas lea eanadoallu nu vátnon ahte áibbas moadde doalu leat vel báhcán.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="26">
+         <tuv lang="sme">
+            <seg>Nubbi eará bealli lea dat go persovnnalaš doallit leat boarásmuvvan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="27">
+         <tuv lang="sme">
+            <seg>Finnmárkkus ledje 18 % dolliin badjel 60 jagi 2004:s ja juo 25 % 2011:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="28">
+         <tuv lang="sme">
+            <seg>Romssas lea ovdáneapmi seammalágan – gos seamma logut leat 18 % 2004:s ja 26 % 2011:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="29">
+         <tuv lang="sme">
+            <seg>Barggolašvuođa doalaheapmi lea okta daid stuorámus hástalusain sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="30">
+         <tuv lang="sme">
+            <seg>Sámediggi lea iskan ealáhusovdáneami 22 dihto sámi gielddain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="31">
+         <tuv lang="sme">
+            <seg>Dát čájeha ahte barggolašvuohta guolásteamis ja eanadoalus lea njiedjan 200:n jagiin 2009 ja 2010.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="32">
+         <tuv lang="sme">
+            <seg>Dát njiedjan lea 8,6 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="33">
+         <tuv lang="sme">
+            <seg>Ássanrievdan čájeha negatiiva tendeanssa sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="34">
+         <tuv lang="sme">
+            <seg>Doallologu njiedjan lea liigeeanet balddihahtti dan sivas go eanadoallobirrasat sámi guovlluin leat juo unnit go buohtastahttá eanadoaluin riikadásis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="35">
+         <tuv lang="sme">
+            <seg>Eanadoalu vel eanet goarráneapmi hástala danne sámi ealáhuseallima ja áitá ealáhusa mávssolaš kultur- ja giellaarenan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="36">
+         <tuv lang="sme">
+            <seg>Geahppáneapmi čuohcá negatiivvalaččat maiddái borramušbuvttadeapmái, meieriijaide, njuovahagaide, nállašuhttin rusttegiidda ja gávpeealáhussii sámi ássanguovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="37">
+         <tuv lang="sme">
+            <seg>Ealli gilit dáhkidit buoremusat sámi kultuvrii ja gillii sihkkaris boahtteáiggi.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="38">
+         <tuv lang="sme">
+            <seg>Dáláš doallostruktuvrra sihkkarastin ja barggolašvuođa bisuheapmi ealáhusas ja gánnáhahttivuođa buorideapmi leat vealtameahttun deaŧalaččat ealli giliid bisuheapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="39">
+         <tuv lang="sme">
+            <seg>Danne lea Sámediggái deaŧalaš gievrudahttit sámi eanadoalu doaibmavuođu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="40">
+         <tuv lang="sme">
+            <seg>Sámedikki guhkes áiggi mihttomearrin lea nannet barggolašvuođa ja buvttadeami ealáhusas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="41">
+         <tuv lang="sme">
+            <seg>Okta váikkuhangaskaoapmi mii Sámedikkis lea, lea doarjja investeremiidda ja sierra doaibmabijuide – golahus maŋimuš jagiin lea rievddadan 4 ja 5 miljon ruvnnu gaskka eanadoalu ulbmiliidda.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="42">
+         <tuv lang="sme">
+            <seg>Doarjagat leat eanaš juolluduvvon investeren-, ovddidan- ja ovttasbargodoaibmabijuide eanadoalus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="43">
+         <tuv lang="sme">
+            <seg>Eanadoallodieđáhusas lea erenoamáš áŋgiruššansuorgin árktalaš eanadoallu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="44">
+         <tuv lang="sme">
+            <seg>Árktalaš eanadoalu buktagiin lea stuorra potensiála sihke dasa mii guoská kvalitehtii ja árktalašguovlluid mearkagálvun.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="45">
+         <tuv lang="sme">
+            <seg>Dáid doahpagiid ferte heivehit boahttevaš eanadoallošiehtadusaide – ferte láhččit diliid nu ahte sáhttá čalmmustahttit ja vuovdalit árktalaš eanadoalu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="46">
+         <tuv lang="sme">
+            <seg>Dálkkádat dagaha ahte mis lea oaneheabbo šaddoáigodat, ja dasto eana mii ii šaddat johtilit, dagaha ahte mii dárbbašit stuorra areálaid ja leat alla doaibmagolut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="47">
+         <tuv lang="sme">
+            <seg>Gaskamearálaš doallosturrodat lea 270 mihtu Finnmárkkus, 227 mihtu Romssas ja 219 mihtu muđui riikkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="48">
+         <tuv lang="sme">
+            <seg>Areála sturrodat addá boasttu gova go galgá čájehit eanadoallobuvttadeami viidodaga.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="49">
+         <tuv lang="sme">
+            <seg>Areáladárbu juohke ealli nammii lea eambbo go duppal geardde stuorát davvin go daid buoremus eanadoalloguovlluin riikkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="50">
+         <tuv lang="sme">
+            <seg>Dat go lea okta láddjen geasis davvi guovlluin mielddisbuktá ahte areáladárbu gártá leat duppal geardde stuorát dáin guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="51">
+         <tuv lang="sme">
+            <seg>Dát maiddái dagaha stuorát investeremiid juohke ealli nammii go buohtastahttá máttit guovlluin riikkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="52">
+         <tuv lang="sme">
+            <seg>Dasto lea árktalaš dálkkádat givrodahkan danne go dakkár oktavuođas ii dárbbaš geavahit cirgguhanávdnasiid šattuide, ja dan geažil oažžut kvalitehta, buhtis ja sihkkaris biebmu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="53">
+         <tuv lang="sme">
+            <seg>Nubbi positiivalaš bealli lea ahte hárve lea váttisvuohta gávnnat areálaid muhkkiide davvin dan sivas go davvin lea stuorát areálat juohke ealli nammii go máddelis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="54">
+         <tuv lang="sme">
+            <seg>Dálkkádatrievdamat buktet stuorámus váikkuhusaid árktalaš ja vuolleárktalaš guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="55">
+         <tuv lang="sme">
+            <seg>Mii leat juo vásihan guhkkit šaddosesoŋŋa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="56">
+         <tuv lang="sme">
+            <seg>Váikkuhusaid lea váttis einnostit, muhto guhkit sesoŋŋa buktá vejolašvuođaid gilvit ođđa šattuid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="57">
+         <tuv lang="sme">
+            <seg>Dasto sáhttet dálkkádatrievdamat buktit hástalusaid ođđa dávddaid, vahátboatkadivrriid ja amas šattuid ihtimii ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="58">
+         <tuv lang="sme">
+            <seg>Eanadoalu mearkkašupmi sámi kultuvrra bisuheapmái ja ovddideapmái ollu sámi guovlluin, ja go ealáhusas lea fuones ovdáneapmi, mearkkaša ahte ferte álggahit máŋga doaibmabiju maiguin erenoamážit nannet eanadoalu vejolašvuođaid ja vuođu sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="59">
+         <tuv lang="sme">
+            <seg>Danne árvvoštallat ahte dát cealkámuš doaibmabijuid ektui eanadoallošiehtadallamiin lea hui deaŧalaš sámi servodahkii, sihke servodat- ja ealáhuspolitihkalaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="60">
+         <tuv lang="sme">
+            <seg>Sámediggi háliida oažžut vejolašvuođa váikkuhit eanadoalu rámmaeavttuid sihkkarastima, ja dieinna lágiin váikkuhit ealli sámi birrasiid ja giliid bisuheami.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="61">
+         <tuv lang="sme">
+            <seg>Sámediggi čujuha Soria Moria julggaštussii gos earret eará čuožžu ahte:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="62">
+         <tuv lang="sme">
+            <seg>”Regjeringen ønsker å bidra til gode rammevilkår både for tradisjonelle næringer og moderne arbeidsplasser knyttet til kultur og teknologi i samiske bosettingsområder.” (Ráđđehus háliida addit buriid rámmaeavttuid sihke árbevirolaš ealáhusaide ja ođđaáigásaš bargosajiide kultuvrra ja teknologiija oktavuođas sámi ássánguovlluin.)</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="63">
+         <tuv lang="sme">
+            <seg>Dasto čuožžu ahte:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="64">
+         <tuv lang="sme">
+            <seg>”Regjeringen vil sikre et landbruk med en variert bruksstruktur over hele landet gjennom en klar distriktsprofil, og videreføre styrking av det grasbaserte husdyrholdet” (Ráđđehus áigu sihkkarastit dakkár eanadoalu mas lea máŋggalágan doallostruktuvra miehtá riikka čielga distriktaprofiila bokte, ja viidáseappot nannet suoidnevuđot oapmedoalu.)</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="65">
+         <tuv lang="sme">
+            <seg>Sámediggi ovddida čuovvovaš cealkámuša eanadoallošiehtadallamiidda 2012:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="66">
+         <tuv lang="sme">
+            <seg>1. Gánnáhahttivuohta</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="67">
+         <tuv lang="sme">
+            <seg>Eanadoalu leahkimii ja ovddideapmái lea áibbas deaŧalaš eaktu ahte eanadoalus lea buorre gánnáhahttivuohta ja ahte dat nagoda gilvalit eará ámmáhiid ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="68">
+         <tuv lang="sme">
+            <seg>Nu ii leat dál ja dat vuhtto ealáhusas go ohpihii heaittihuvvojit doalut ja rekrutteren ealáhussii váilu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="69">
+         <tuv lang="sme">
+            <seg>Jos ovttasge galggaš leat beroštupmi bargat boandan eará ámmáhiid sajis, de ferte dat leat ekonomalaččat miellagiddevaš.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="70">
+         <tuv lang="sme">
+            <seg>Šállošahtti lea go dienaserohusat eanadoalu ja eará joavkkuid gaskka servodagas leat menddo stuorrát.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="71">
+         <tuv lang="sme">
+            <seg>2012 eanadoallošiehtadusas ferte hui sakka loktet dietnasa dan dássái ahte boanddas lea dakkár dienasvuođđu mii dávista bargohivvodahkii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="72">
+         <tuv lang="sme">
+            <seg>Ferte unnidit dan stuorra dienaserohusa mii lea eanadoalu ja eará joavkkuid gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="73">
+         <tuv lang="sme">
+            <seg>Dienasvuođu ferte nannet nu ahte lea vejolaš bissut dušše boandaámmáhis ja oažžut das dohkálaš dietnasa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="74">
+         <tuv lang="sme">
+            <seg>Dát geasuhivččii nuorra olbmuid ealáhussii ja livčče mearkkašahtti deaŧalaš nuoraid rekrutteremii boandan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="75">
+         <tuv lang="sme">
+            <seg>Eanadoallodieđáhusas lea jurdda vuoruhit roavvafuođarvuđot buvttadusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="76">
+         <tuv lang="sme">
+            <seg>Dákkár politihkka dávistivčče dan ovdáneapmái maid Sámediggi sávvá.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="77">
+         <tuv lang="sme">
+            <seg>Mielkebuvttadus ja sávzadoallu dat guddet sámi guovlluid eanadoalu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="78">
+         <tuv lang="sme">
+            <seg>Sávzadoallu geavaha meahci divdna ja dasa ferte sihkkarastojuvvot positiivvalaš ekonomalaš ovdáneapmi 2012:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="79">
+         <tuv lang="sme">
+            <seg>Buvttadandoarjagis lea mearrideaddji váikkuhus gánnáhahttivuhtii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="80">
+         <tuv lang="sme">
+            <seg>Vaikko vel Romssas ja Finnmárkkus leat stuorát máksomearit go muđui riikkas, de heaittihuvvojit eanet ja eanet doalut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="81">
+         <tuv lang="sme">
+            <seg>Buorre gánnáhahttivuohta dagašii eanadoalus eanet geasuheaddji ealáhusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="82">
+         <tuv lang="sme">
+            <seg>Juo dán eanadoallošiehtadusas ferte doarjjamáksomeriid areálaide, mielkái ja birgui bajidit Romssas ja Finnmárkkus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="83">
+         <tuv lang="sme">
+            <seg>Buvttadanlasáhusaid fertešii ain juo muddet haddegoarkŋuma ektui eanadoalus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="84">
+         <tuv lang="sme">
+            <seg>Eanadoallodieđáhusas oidno ahte departemeanta áigu geahčadit buvttadandoarjagiid distriktaprofiila.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="85">
+         <tuv lang="sme">
+            <seg>Sámediggi rehkenastá beassat leat mielde dán barggus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="86">
+         <tuv lang="sme">
+            <seg>Spiinnebiergobuvttadusa geahppáneapmi Romssas lea suorggahahtti.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="87">
+         <tuv lang="sme">
+            <seg>Jagi 2000 rájes jahkái 2010 njidje ealihanspiinnit 870 rájes 578 rádjai fylkkas – njiedjan lei 33 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="88">
+         <tuv lang="sme">
+            <seg>Doaluid lohku unnui beliin 25 dollui jagis 2010.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="89">
+         <tuv lang="sme">
+            <seg>Buvttadanbiras lea unnon dan geažil go eai leat šat nu ollu buvttadeaddjit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="90">
+         <tuv lang="sme">
+            <seg>Spiinnebierggu buvttadeami geahppáneapmi sáhttá maiddái buktit váttisvuođaid njuovahagaide ja viidáset nállašuhttimii Málatvuomi njuovahagas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="91">
+         <tuv lang="sme">
+            <seg>Spiinnebierggu buvttadeami sáhtášii nannet jos lasihivččii distriktadoarjaga spiinnebirgui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="92">
+         <tuv lang="sme">
+            <seg>Buoret ekonomiija sihkkarastášii dasto buvttadusa boahtteáiggis Málatvuomi njuovahagas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="93">
+         <tuv lang="sme">
+            <seg>2. Investeremat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="94">
+         <tuv lang="sme">
+            <seg>Investerengoluid lassáneapmi eanadoalus ja stuorát doaluid huksen mearkkaša ahte investerendoarjja ortnegiid ferte rievdadit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="95">
+         <tuv lang="sme">
+            <seg>Dát guoská dávjá erenoamážit nuorra álggaheddjiide geat eai nagot čohkket iežas kapitála.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="96">
+         <tuv lang="sme">
+            <seg>Doarjjameari nuoraide ferte loktet nu ahte dat lea 10 % eanet sámi guovlluin otnáža ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="97">
+         <tuv lang="sme">
+            <seg>Eanadoalus lea ovdalis áiggiid leamaš vejolašvuohta eanadoalu foandasajušteapmái mii galggai geavahuvvot boahtteáiggi hukseninvesteremiidda.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="98">
+         <tuv lang="sme">
+            <seg>Dát ferte fas ođđasis váldojuvvot atnui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="99">
+         <tuv lang="sme">
+            <seg>Foandasajušteapmi attášii vejolašvuođa plánet boahtteáiggi investeremiid buoret vuogi mielde.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="100">
+         <tuv lang="sme">
+            <seg>Dasto attašii dat einnostanvejolašvuođa vearroplánemis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="101">
+         <tuv lang="sme">
+            <seg>Muđuid ferte eanadoalu investerenortnegiid bisuhit vai boanddaide sihkkarastojuvvo einnostanvejolašvuohta.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="102">
+         <tuv lang="sme">
+            <seg>Huksendoaimmat rievddadit jagis jahkái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="103">
+         <tuv lang="sme">
+            <seg>Jos sámi guovlluin galggašedje leat áiggi mielde huksejuvvon visttit, de ferte addojuvvo vejolašvuohta oažžut investerendoarjaga maiddái doaibmavistti bajásdoallamii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="104">
+         <tuv lang="sme">
+            <seg>Dát geasuhivččii nuoraid eanet váldit badjelasaset doalu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="105">
+         <tuv lang="sme">
+            <seg>Dilli lea odne nu ahte ollu doalut heaittihuvvojit danne go daid fertešii divodit ja go doalut leat boaresáigásaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="106">
+         <tuv lang="sme">
+            <seg>3. Álggahanbáhkat nuoraide</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="107">
+         <tuv lang="sme">
+            <seg>Njealjádasoassi Romssa ja Finnmárkku boanddain leat badjel 60 jagi.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="108">
+         <tuv lang="sme">
+            <seg>Danne lea stuorra dárbu ođđa rekrutteremii eanadollui, jos doaluid lohku ii galggaš ollu geahppánit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="109">
+         <tuv lang="sme">
+            <seg>Mihttomearrin ferte leat oažžut gaskamearálaš agi bodnelii, muhto eaktun dasa lea ahte gánnáhahttivuohta eanadoalus loktejuvvo.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="110">
+         <tuv lang="sme">
+            <seg>Ealáhussii rekrutteren gáibida dasto buriid gelbbolašvuođa- ja oahppofálaldagaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="111">
+         <tuv lang="sme">
+            <seg>Movttiidahttin dihte nuoraid álgit eanadoaluin ferte álggahit ekonomalaš doaibmabijuid, sihkkarastin dihte rekrutterema.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="112">
+         <tuv lang="sme">
+            <seg>Ferte ásahuvvot mielkeearreortnet nuorra álggaheddjiide geat áigot álgit bargat doaluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="113">
+         <tuv lang="sme">
+            <seg>Sii fertejit dávjá oastit buvttadanareálaid, šibihiid, reaidduid ja visttiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="114">
+         <tuv lang="sme">
+            <seg>Muhtumat válljejit oastit eanadoalloopmodagaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="115">
+         <tuv lang="sme">
+            <seg>Go sii dasa lassin fertejit oastit mielkeeari stáhta haddái (3,50 ru lihttera nammii) dahje priváhta márkanis, de lea váttis nuoraide birget ekonomalaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="116">
+         <tuv lang="sme">
+            <seg>Rekrutterema sihkkarastima dihte ferte ásahit oiddoleappo ortnegiid nuoraide geat háliidit álgit eanadoaluin bargat – nuvttá mielkeeriid daidda nuoraide sámi guovlluin, geat leat vuollel 35 jagi ja háliidit álgit bargat doaluin dahje viiddidit dan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="117">
+         <tuv lang="sme">
+            <seg>4. Mielkeearit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="118">
+         <tuv lang="sme">
+            <seg>Sihkkarastin dihte máŋggalágan doallostruktuvrra, de ferte daid unnimus dolliid vuoruhit mielkeeriid lasiheami oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="119">
+         <tuv lang="sme">
+            <seg>Mielkeeari lasiheapmi buoridivččii dáid doaluid ekonomalaš vuođu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="120">
+         <tuv lang="sme">
+            <seg>Dat lea mielde sihkkarastimin eanadoalu sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="121">
+         <tuv lang="sme">
+            <seg>5. Geasehandoarjja</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="122">
+         <tuv lang="sme">
+            <seg>Mielkebuvttadandoaluid logu unnun lea buktán digaštallama ekonomalaš vuođu birra njuovahagaid ja meieriijaid bisuheami oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="123">
+         <tuv lang="sme">
+            <seg>Unnit hivvodat ovttaskas eanadoallobuvttadeaddjis buvttiha stuorát geasehan- ja buvttadangoluid ovttadaga nammii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="124">
+         <tuv lang="sme">
+            <seg>Viidáset nállašuhttinfitnodagat, mat dávjá leat ovttasdoaibmafitnodagat, leat maiddái sorjavaččat gánnáhahttivuođain doaibmamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="125">
+         <tuv lang="sme">
+            <seg>Dáid goarideapmi leat dán rádjai dagahan doallái stuorát geasehangoluid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="126">
+         <tuv lang="sme">
+            <seg>Njuovahagaid heaittiheapmi buvttiha guhkit geasehangaskkaid ja nie divrudahttá geasehangoluid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="127">
+         <tuv lang="sme">
+            <seg>Doallologu njiedjan dagaha maiddái ahte šaddá guhkit gaska doaluid gaskka ja dan geažil lassánit maiddái geasehangolut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="128">
+         <tuv lang="sme">
+            <seg>Dán ferte máksit movt nu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="129">
+         <tuv lang="sme">
+            <seg>Dienasovdáneapmi biergovuovdimis ii leat čuvvon geasehangoluid ovdáneami njuovahahkii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="130">
+         <tuv lang="sme">
+            <seg>Dan geažil lea dárbu oažžut stuorát doarjaga geaseheami ovddas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="131">
+         <tuv lang="sme">
+            <seg>Seamma guoská maiddái dahkkofuođđariid ja fápmofuođđariid geasehangoluide, go fápmofuođar dárbu lea lassánan mealgat dađi mielde go gusat leat eanet bahčigoahtán mielkki.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="132">
+         <tuv lang="sme">
+            <seg>Geasehandoarjaga rievdadeapmi galggašii dássidahttit buvttadeaddji hatti sorjjakeahttá geasehangaskkain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="133">
+         <tuv lang="sme">
+            <seg>6. Boraspiriid geahpedeapmi buoridan dihte sávzadoalu ekonomiija</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="134">
+         <tuv lang="sme">
+            <seg>Sávzadoallu ealáhussan gáibida ollu areálaid man oktavuođas meahci geavaheapmi lea leamaš vealtameahttun deaŧalaš ekonomalaš bohtosii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="135">
+         <tuv lang="sme">
+            <seg>Váidudeaddji doaibmabijut maid boraspirehálddašeapmi lea bidjan johtui unnidan dihtii vahágiid maid ráfáidahtton boraspiret leat dagahan, leat dagahan dan ahte sávzadoallit earret eará leat ferten geahpedit meahci geavaheami ja bidjat sávzzaid gittiide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="136">
+         <tuv lang="sme">
+            <seg>Eanet gittiid geavaheapmi ollu oktavuođain bajida goluid go ferte eanet gilvit ja bargat eatnamiin ja áidut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="137">
+         <tuv lang="sme">
+            <seg>Dán lágan geavaheapmi sáhttá maiddái buktit stuorát parasihtta- ja infekšuvdnavára (ollu sávzzat ovtta sajis).</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="138">
+         <tuv lang="sme">
+            <seg>Váidudeaddji doaibmabijut divrudit sávzadoalu ja hehttejit dolliid geavaheamis meahci nu ollu go vejolaš.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="139">
+         <tuv lang="sme">
+            <seg>Vaikko sávzalohku maid boraspiret leat goddán 2011:s leage unnon, de hehtte alla boraspirelohku sávzadoalu positiivvalaš ovdáneami.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="140">
+         <tuv lang="sme">
+            <seg>Eanadoalus lea dárbu geahččat guhkes áiggi badjel ja oažžut einnostanvejolašvuođa doarjjaortnegiid ektui maiguin sihkkarastit ahte omiid sáhttá luoitit meahccái guohtut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="141">
+         <tuv lang="sme">
+            <seg>Boraspirepolitihkka váikkuha njuolga sávzadoalu ekonomalaš bohtosa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="142">
+         <tuv lang="sme">
+            <seg>Boraspiresoabahus mearkkaša ahte riikkas galget leat sihke guohtoneallit ja boraspiret.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="143">
+         <tuv lang="sme">
+            <seg>Sámedikki oainnu mielde ii sáhte dáid mihttomeriid oppage bidjat oktii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="144">
+         <tuv lang="sme">
+            <seg>7. Riidoeastadeaddji doaibmabijut</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="145">
+         <tuv lang="sme">
+            <seg>Boazoáiddiid huksen lea lossat ekonomalaččat, muhto dat lea investeren máŋgga jahkái ovddasguvlui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="146">
+         <tuv lang="sme">
+            <seg>Áiddiid huksemiin sáhttá eanadoallu maŋit áiggis seastit iežas liigebarggus, seammás go šattut sihkkarastojuvvojit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="147">
+         <tuv lang="sme">
+            <seg>Sámedikki mielas lea dárbbašlaš ahte stáhta eiseválddit vuoruhit barggu riidoeastadeaddji doaibmabijuiguin buoridan dihte áddejumi nuppi ealáhussii ja oktii ordnen dihte sierra geavaheaddjiberoštumiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="148">
+         <tuv lang="sme">
+            <seg>Diehtojuohkin earáid ealáhusaid birra lea deaŧalaš oassi riidoeastadeaddji doaibmabijuin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="149">
+         <tuv lang="sme">
+            <seg>Dát lea deaŧalaš vai sáhttá eastadit riidduid lassáneamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="150">
+         <tuv lang="sme">
+            <seg>Dat psykososiála deaddu sáhttá guhkkit áiggi badjel dagahit vahágiid guoskevaš beliide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="151">
+         <tuv lang="sme">
+            <seg>Sámediggi evttoha ahte ásahuvvošedje gulahallanarenat maid ulbmilin lea lonuhallat oainnuid ja čilget nubbi nubbái doaibmadili birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="152">
+         <tuv lang="sme">
+            <seg>Dán lágan arena sáhtášii leat positiivvalaš doaibmabidju mainna eastadit riidduid šaddamis ja sáhtášii leat álkit gávdnat konstruktiivvalaš čovdosiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="153">
+         <tuv lang="sme">
+            <seg>Dáinna lágiin sáhtášii buoridit olmmošgaskavuođaid beliid gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="154">
+         <tuv lang="sme">
+            <seg>Dál lea unnán máhttu biologalaš dili birra guovlluin gos sávzzat ja bohccot guhtot fárrolaga.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="155">
+         <tuv lang="sme">
+            <seg>Danne háliida ge Sámediggi eanet máhttu ja dutkama guohtonminstariid birra biotohpa geavaheami ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="156">
+         <tuv lang="sme">
+            <seg>Dárbu lea maiddái oažžut eanet máhttu dávddaid njoammumis elliid gaskka mat guhtot meahcis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="157">
+         <tuv lang="sme">
+            <seg>Muhtun oktavuođain sáhttá leat áigeguovdil áidut sisa stuorát guovlluid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="158">
+         <tuv lang="sme">
+            <seg>Dás sáhttá leat sáhka dakkár areálain main lea juo lunddolaš rádji eatnamis, huksehusain jna.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="159">
+         <tuv lang="sme">
+            <seg>Berrešii leat vejolašvuohta juolludit doarjaga maiddái dán lágan riidoeastadeaddji doaibmabijuide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="160">
+         <tuv lang="sme">
+            <seg>Dát eaktuda soabalašvuođa beliid gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="161">
+         <tuv lang="sme">
+            <seg>8. Gittiid guorban dálvet ja šaddovahágat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="162">
+         <tuv lang="sme">
+            <seg>Eanadoalus leat guokte ortnega vahágiid várás maid dálkkádat dagaha – dálvevahágiin lea oktavuohta beliide mat dáhpáhuvvet dálveáigodagas ja šaddováttisvuohta giđđat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="163">
+         <tuv lang="sme">
+            <seg>Eanadoallu lea árktalaš man oktavuođas sáhttet šaddat vahágat sihke dálvit ja šaddováttisvuohta šaddoáigodagas, ovtta ja seamma jagis nugo dáhpáhuvai Romssas 2010:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="164">
+         <tuv lang="sme">
+            <seg>Gieddevahátbuhtadanortnegat eai leat heivehuvvon Romsii ja Finnmárkui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="165">
+         <tuv lang="sme">
+            <seg>Eatnašat sáhttet láddjet eanet go oktii jagis dálkkádaga geažil.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="166">
+         <tuv lang="sme">
+            <seg>Dáin guovlluin lea dasto eanadoalus ollu láigoeana, eanabihtát leat bieđgguid ja bihtáid gaskka lea dávjá guhkes gaska.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="167">
+         <tuv lang="sme">
+            <seg>Dán lágan vahágat buktet stuorra hástalusaid dalle go gittiid ferte ođđasis fas gilvit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="168">
+         <tuv lang="sme">
+            <seg>Buhtadusortnegat dálvevahágiid ovddas bohtet fápmui easkka dalle go vahágat leat eanet go 20 % areálain ja go dat leat divvojuvvon.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="169">
+         <tuv lang="sme">
+            <seg>Máksomearri lea seamma miehtá riikka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="170">
+         <tuv lang="sme">
+            <seg>Buhtadan dihte dan stuorra areáladárbbu ja dálkkádat diliid, de ferte Romssas ja Finnmárkkus unnidit iežas oasi 10 prosentii dálvevahágiid ovddas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="171">
+         <tuv lang="sme">
+            <seg>Šaddovahágiin lea iežas oassi 30 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="172">
+         <tuv lang="sme">
+            <seg>Nugo dálvevahágiid ovddas gittiin lea seamma proseantamearri miehtá riikka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="173">
+         <tuv lang="sme">
+            <seg>Dát lea eahpeoiddolaš sámi guovlluid eanadollui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="174">
+         <tuv lang="sme">
+            <seg>Earret hástalusaid geažil mat leat namahuvvon bajábealde, de ii sáhte eanadoalli davvin rehkenastit gilvit eatnama vahátjagi ja seamma jagi oažžut šattu oppanassii ge.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="175">
+         <tuv lang="sme">
+            <seg>Molssaeaktun lea juogo njuovvat omiid dahje oastit dálvebiebmu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="176">
+         <tuv lang="sme">
+            <seg>Iežas oasi dálvevahágiin sámi guovlluin fertešii unnidit beliin 15 prosentii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="177">
+         <tuv lang="sme">
+            <seg>9. Sámedikki doarjjaortnegat ealáhusovddideapmái</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="178">
+         <tuv lang="sme">
+            <seg>Sámedikki doaibma siskkilda daid guovlluid riikkas gos sámit ásset.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="179">
+         <tuv lang="sme">
+            <seg>Oassi Sámedikki cealkámušain eanadoallošiehtadallamiid oktavuođas leat vuhtii váldojuvvon maŋimuš jagiin, muhto dat leat ráddjejuvvon guoskat Finnmárkku fylkii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="180">
+         <tuv lang="sme">
+            <seg>Sihke areálarájiid rievdadeamis doarjaga ektui ja eanet mielkeearit leat boahtán ávkin sámi álbmogii, muhto ii buohkaide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="181">
+         <tuv lang="sme">
+            <seg>Leat ollu guovllut olggobealde Finnmárkku gos ásset sámit geat barget eanadoaluin – dat guoská erenoamážit Romsii ja davit osiide Norlánddas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="182">
+         <tuv lang="sme">
+            <seg>Ekonomalaš doaibmabijut mat biddjojuvvojit johtui sámi guovlluin galget guoskat stuorát guovlluide go dušše Finnmárkui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="183">
+         <tuv lang="sme">
+            <seg>Eanadoallo- ja biebmodepartemeantta juolludus Sámedikki ealáhusovddidandoarjjaortnegii lea 2,0 miljon ruvnnu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="184">
+         <tuv lang="sme">
+            <seg>Ruđat eai leat loktejuvvon máŋgga jahkái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="185">
+         <tuv lang="sme">
+            <seg>Golut visttiide ja eará doaibmabijuide eanadoalus leat lassánan jagis jahkái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="186">
+         <tuv lang="sme">
+            <seg>Sámediggi lea maiddái viiddidan ortnega doaibmaguovllu seamma áigodagas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="187">
+         <tuv lang="sme">
+            <seg>Eanadoalu geahppáneapmi sámi guovlluin dagaha dasto dárbbašlažžan rahpat movttiidahttin doaibmabijuid ruhtadeami várás sihkkarastin dihte rekrutterema eanadollui ja sihkkarastin dihte eanadoalu dáin guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="188">
+         <tuv lang="sme">
+            <seg>Ruđaid ferte lasihit nu ahte dat leat 4,0 miljon ruvnnu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="189">
+         <tuv lang="sme">
+            <seg>Ealáhus- ja kulturlávdegotti árvalus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="190">
+         <tuv lang="sme">
+            <seg>Álggahus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="191">
+         <tuv lang="sme">
+            <seg>Sámedikki dievasčoahkkin láve jahkásaččat buktit cealkámuša eanadoallošiehtadallamiidda.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="192">
+         <tuv lang="sme">
+            <seg>Sámediggi oaidná ahte eanadoalus leat ovddabealde stuorra hástalusat boahtteáiggis ja dat gusket erenoamážit eanadoallostruktuvrii maid ollugat leat gohčodišgoahtán árktalaš guovlun.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="193">
+         <tuv lang="sme">
+            <seg>Sámediggi lea maiddái bidjan merkii ahte ráđđehus lea ovddidan Stuorradiggái bajimuš dási dieđáhusa eanadoallo- ja biebmopolitihka birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="194">
+         <tuv lang="sme">
+            <seg>Evttohus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="195">
+         <tuv lang="sme">
+            <seg>Evttohus Bargiidbellodaga sámediggejoavkkus Knut Store, Inga-Lill Sundset, Heidi Persdatter Greiner Haaker, Margit Eli Anti Oskal ja Inger Jørstad, Norgga Sámiid Riikkasearvvi (NSR) lahtuin Geir Tommy Pedersen, Mathis Nilsen Eira ja Randi A. Skum ja Norgga Sámiid Riikkasearvvi (NSR) /Sámeálbmotbellodaga (Sáb) lahtus Gunn-Britt Retter, Árja lahtus Olaf Eliassen, Johttisámiid listta lahtus Per A.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="196">
+         <tuv lang="sme">
+            <seg>Bæhr ja Nordkalottfolket (NKF) lahtus Toril Bakken Kåven</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="197">
+         <tuv lang="sme">
+            <seg>Evttohus 1</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="198">
+         <tuv lang="sme">
+            <seg>Vuosttaš cealkaga sadjái vuosttaš teakstaoasis:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="199">
+         <tuv lang="sme">
+            <seg>Eanadoallu lea leamaš ja lea ain deaŧalaš vuođđun šibitfuođđariid ja borramušgálvvuid buvttadeapmái, barggaheaddjin, kulturguoddin ja ássama vuođđun sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="200">
+         <tuv lang="sme">
+            <seg>Nubbi teakstaoassi sihkkojuvvo .</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="201">
+         <tuv lang="sme">
+            <seg>Goalmmát teakstaoasi sadjái biddjojuvvo čuovvovaš: Eanadoalus lea maŋimuš jagiin leamaš hárehis ovdáneapmi sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="202">
+         <tuv lang="sme">
+            <seg>Finnmárkku fylkkas lea doaluid lohku njiedjan čielgasit jagi 2004 rájes 2011 rádjai, 438 eanadoallofitnodagas leat báhcán 352.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="203">
+         <tuv lang="sme">
+            <seg>Njiedjan lea badjel 20 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="204">
+         <tuv lang="sme">
+            <seg>Romssas leat vel eanet geahppánan doalut 2004:s ledje 1462 doalu ja 2010:s vel 1083 doalu, njiedjan 26 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="205">
+         <tuv lang="sme">
+            <seg>Doallologu njiedjan ii leat buorre erenoamážit danne go eanadoallobirrasat sámi guovlluin leat unnit go buohtastahttá daid eanadoaluin riikadásis ja ollu gielddain sámi guovlluin lea eanadoallu nu unnon ahte eai leat báhcán šat nu galle buvttadeaddji.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="206">
+         <tuv lang="sme">
+            <seg>Doaluid geahppáneapmi buktá fuones váikkuhusaid biebmobuvttadeapmái, meieriijáide, njuovahagaide, nállašuhttinrusttegiidda ja gávppiide sámi ássanguovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="207">
+         <tuv lang="sme">
+            <seg>Eanadoalu ain eanet unnun hástala danne sámi ealáhuseallima ja áitá ealáhusa deaŧalaš kultur- ja giellaarenan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="208">
+         <tuv lang="sme">
+            <seg>Nubbin maŋimuš cealkka goalmmát teakstaoasis sihkkojuvvo ja biddjojuvvo čuovvovaš teakstaoassin ja rievdaduvvo leat ná:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="209">
+         <tuv lang="sme">
+            <seg>Nubbi eará bealli lea dat go persovnnalaš doallit leat boarásmuvvan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="210">
+         <tuv lang="sme">
+            <seg>Finnmárkkus ledje 18 % dolliin badjel 60 jagi 2004:s ja juo 25 % 2011:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="211">
+         <tuv lang="sme">
+            <seg>Romssas lea ovdáneapmi seammalágan - gos seamma logut leat 18 % 2004:s ja 26 % 2011:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="212">
+         <tuv lang="sme">
+            <seg>Viđát teakstaoassi sihkkojuvvo.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="213">
+         <tuv lang="sme">
+            <seg>Čihččet teakstaoasi, vuosttaš cealkka rievdaduvvo leat ná: Ollugat geavahit doahpaga árktalaš eanadoallu ja Sámediggi háliida erenoamážit áŋgiruššat árktalaš eanadoaluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="214">
+         <tuv lang="sme">
+            <seg>Vuosttaš cealkka goalmmát teakstaoasi čuoggá 1 vuolde, Gánnáhahttivuohta, rievdaduvvo leat ná: Sámediggi oaivvilda ahte roavvafuođarvuđot buvttadus galgá vuoruhuvvot erenoamážit davvi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="215">
+         <tuv lang="sme">
+            <seg>Nubbi cealkka goalmmát teakstaoasi čuoggá 1 vuolde Gánnáhahttivuohta sihkkojuvvo.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="216">
+         <tuv lang="sme">
+            <seg>Maŋimuš cealkka goalmmát teakstaoasi čuoggá 1 vuolde Gánnáhahttivuohta sihkkojuvvo.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="217">
+         <tuv lang="sme">
+            <seg>Njealját teakstaoassi rievdaduvvo leat ná: Dalle go departemeanta áigu geahčadit buvttadandoarjagiid distriktaprofiila, rehkenastá Sámediggi beassat leat mielde dán barggus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="218">
+         <tuv lang="sme">
+            <seg>Njealját čuoggá bajilčála rievdaduvvo leat dát:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="219">
+         <tuv lang="sme">
+            <seg>4. Mielkebuvttadeapmi</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="220">
+         <tuv lang="sme">
+            <seg>Ođđa nubbi teakstaoassi čuoggá 4 vuollái:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="221">
+         <tuv lang="sme">
+            <seg>Gáicaealáhus lea leamaš ja lea viidát nuppástuhttojuvvomin gáicadikšuma ektui Norggas, ja mihttomearrin lea oažžut eret muhtun dávddaid mat bohtet gáiccaide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="222">
+         <tuv lang="sme">
+            <seg>Sámediggi lea erenoamážit fuolas dan geažil go doalut heaittihuvvojit dikšunprošeavtta geažil ja deattuha ahte álggahuvvojit ođđa doaibmabijut eanadoallošiehtadallamiid oktavuođas maiguin sihkkarastojuvvo ain ceavzilis gáicaealáhus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="223">
+         <tuv lang="sme">
+            <seg>Viđát čuoggá vuolde rievdaduvvo nubbin maŋimuš cealkka ja dat galgá leat ná:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="224">
+         <tuv lang="sme">
+            <seg>Dat seamma guoská maiddái gieddegilvagiid ja šibitjáffuid geasehangoluide, go dárbu šibitjáffuide lea lassánan mealgat dađi mielde go mielkebuvttadeaddji gusat ealli nammii leat eanet bahčigoahtán.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="225">
+         <tuv lang="sme">
+            <seg>Ođđa guđát čuokkis: Buolvvas bulvii leat sámit ávkkástallan mehciin; lotnolagaid sierra ealáhusaid gaskka, nugo eanadoalu, meahcceealáhusaid ja mearrabivddu gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="226">
+         <tuv lang="sme">
+            <seg>Áinnas lea leamaš váldodienas eanadoalus, muhto vižže dietnasa maiddái eará ealáhusain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="227">
+         <tuv lang="sme">
+            <seg>Dat leat leamaš sáivaguollebivdu, murjjiid ja urtasiid čoaggin, meahccedoallu ja eará.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="228">
+         <tuv lang="sme">
+            <seg>Meahcceealáhus lei ovdal nanus miehtá riikka, muhto várra nannoseamos davvin, gos ollu olbmot barge meahcceealáhusaiguin almmá ahte livčče čadnojuvvon eanadollui muđui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="229">
+         <tuv lang="sme">
+            <seg>Dálkkádaga ja guhkes gaskkaid geažil fertejedje olbmot lonuhallat ávkkástallama, ja sierra lasseealáhusaid bokte ožžo oktiibuot doarvái dietnasa birgejupmái jahkeáigodagain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="230">
+         <tuv lang="sme">
+            <seg>Meahcceealáhusat, sihke eanadoalu oalgeealáhussan ja iešheanalis ealáhussan leat ain deaŧalaš sámi kulturguoddit davvi guovlluin, muhto rahčet stuorra hástalusaiguin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="231">
+         <tuv lang="sme">
+            <seg>Sámi eanadoalu nannema oktavuođas ferte bidjat guovddážii maiddái meahcceealáhusaid; dát sáhttet addit deaŧalaš ja gánnáhahtti lasseealáhusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="232">
+         <tuv lang="sme">
+            <seg>Erenoamážit berre bidjat guovddážii ovddidanbarggu sáivaguollebivddu, murjjiid ja urtasiid čoaggima siskkobealde.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="233">
+         <tuv lang="sme">
+            <seg>Guđát čuokkis rievdá čihččet čuokkisin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="234">
+         <tuv lang="sme">
+            <seg>Nubbi teakstaoassi Sámediggeráđi mearrádusárvalusa guđát čuoggás sihkkojuvvo ja sadjái biddjojuvvo dát:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="235">
+         <tuv lang="sme">
+            <seg>Sámediggi lea bidjan merkii ahte boraspiriid goddán sávzalohku lea unnon 2011:s, ja fuomášuhttá ahte sivvan dasa sáhttá leat go sávzadoalut leat geahppánan guovlluin gos leat ollu boraspiret.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="236">
+         <tuv lang="sme">
+            <seg>Alla boraspirelohku hehtte positiivvalaš ovdáneami sávzadoalus ja guohtonguovllut eai galggašii mannat boraspiriide doaluid heaittihemiid geažil.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="237">
+         <tuv lang="sme">
+            <seg>Eanadoallu dárbbaša guhkes áiggi ja einnostahtti doarjjaortnegiid maiguin sihkkarastojuvvo dat ahte oamit sáhttet guohtut meahcit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="238">
+         <tuv lang="sme">
+            <seg>Boraspirepolitihkka váikkuha njuolga sávzadoaluid ekonomalaš bohtosii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="239">
+         <tuv lang="sme">
+            <seg>Boraspiresoabahusain oaivvilduvvo ahte galget leat sihke guohtoneallit ja boraspiret meahcis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="240">
+         <tuv lang="sme">
+            <seg>Sámedikki oaivila mielde buktá dát mihttomearri váttisvuođaid muhtun guohtonguovlluide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="241">
+         <tuv lang="sme">
+            <seg>Čihččet čuokkis rievdá gávccát čuoggán.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="242">
+         <tuv lang="sme">
+            <seg>Teakstaosiid ráidu čihččet čuoggás Sámediggeráđi mearrádusárvalusas rievdaduvvo ja dat šaddá ná:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="243">
+         <tuv lang="sme">
+            <seg>Sámediggi evttoha ahte ásahuvvošedje gulahallanarenat maid ulbmilin lea lonuhallat oainnuid ja čilget nubbi nubbái doaibmadili birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="244">
+         <tuv lang="sme">
+            <seg>Dán lágan arena sáhtášii leat positiivvalaš doaibmabidju mainna eastadit riidduid šaddamis ja sáhtášii lea álkit gávdnat konstruktiivvalaš čovdosiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="245">
+         <tuv lang="sme">
+            <seg>Dáinna lágiin sáhtášii buoridit olmmošgaskavuođaid beliid gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="246">
+         <tuv lang="sme">
+            <seg>Sámedikki mielas lea dárbbašlaš ahte stáhta eiseválddit vuoruhit barggu riidoeastadeaddji doaibmabijuiguin buoridan dihte áddejumi nuppi ealáhussii ja oktii ordnen dihte sierra geavaheaddjiberoštumiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="247">
+         <tuv lang="sme">
+            <seg>Diehtojuohkin earáid ealáhusaid birra lea deaŧalaš oassi riidoeastadeaddji doaibmabijuin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="248">
+         <tuv lang="sme">
+            <seg>Dát lea deaŧalaš vai sáhttá eastadit riidduid lassáneamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="249">
+         <tuv lang="sme">
+            <seg>Dat psykososiála deaddu sáhttá guhkkit áiggi badjel dagahit vahágiid guoskevaš beliide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="250">
+         <tuv lang="sme">
+            <seg>Boazoáiddiid huksen lea lossat ekonomalaččat, muhto dat lea investeren máŋgga jahkái ovddasguvlui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="251">
+         <tuv lang="sme">
+            <seg>Áiddiid huksemiin sáhttá eanadoallu maŋit áiggis seastit iežas liigebarggus, seammás go njuovvaneallit sihkkarastojuvvojit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="252">
+         <tuv lang="sme">
+            <seg>Muhtun oktavuođain sáhttá leat áigeguovdil áidut sisa stuorát guovlluid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="253">
+         <tuv lang="sme">
+            <seg>Dás sáhttá leat sáhka dakkár areálain main lea juo lunddolaš rádji eatnamis, huksehusain jna.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="254">
+         <tuv lang="sme">
+            <seg>Berrešii leat vejolašvuohta juolludit doarjaga maiddái dán lágan riidoeastadeaddji doaibmabijuide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="255">
+         <tuv lang="sme">
+            <seg>Dát eaktuda soabalašvuođa beliid gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="256">
+         <tuv lang="sme">
+            <seg>Dál lea unnán máhttu biologalaš dili birra guovlluin gos sávzzat ja bohccot guhtot fárrolaga.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="257">
+         <tuv lang="sme">
+            <seg>Danne háliida ge Sámediggi eanet máhttu ja dutkama guohtonminstariid birra biotohpa geavaheami ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="258">
+         <tuv lang="sme">
+            <seg>Dárbu lea maiddái oažžut eanet máhttu dávddaid njoammumis elliid gaskka mat guhtot meahcis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="259">
+         <tuv lang="sme">
+            <seg>Čuokkis 8 rievdaduvvo leat čuokkis 9.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="260">
+         <tuv lang="sme">
+            <seg>Čuokkis 9 rievdaduvvo leat čuokkis 10.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="261">
+         <tuv lang="sme">
+            <seg>Vuosttaš teakstaoassi Sámediggeráđi mearrádusárvalusa ovccát čuoggás rievdaduvvo leat ná:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="262">
+         <tuv lang="sme">
+            <seg>Sámedikki doaibma siskkilda daid guovlluid riikkas gos sámit ásset.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="263">
+         <tuv lang="sme">
+            <seg>Oassi Sámedikki cealkámušain eanadoallošiehtadallamiid oktavuođas leat vuhtii váldojuvvon maŋimuš jagiin, muhto dat leat geográfalaččat ráddjejuvvon.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="264">
+         <tuv lang="sme">
+            <seg>Sihke areálarájiid rievdadeamis doarjaga ektui ja eanet mielkeearit leat boahtán ávkin sámi álbmogii, muhto ii buohkaide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="265">
+         <tuv lang="sme">
+            <seg>Leat ollu guovllut olggobealde gos ásset sámit geat barget eanadoaluin erenoamážit Romssas ja davit osiin Norlánddas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="266">
+         <tuv lang="sme">
+            <seg>Ekonomalaš doaibmabijut mat biddjojuvvojit johtui sámi guovlluin galget guoskat stuorát geográfalaš guovlluide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="267">
+         <tuv lang="sme">
+            <seg>Nubbi teakstaoassi Sámediggeráđi mearrádusárvalusa ovccát čuoggás rievdaduvvo leat ná:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="268">
+         <tuv lang="sme">
+            <seg>Eanadoallo- ja biebmodepartemeantta juolludus Sámedikki ealáhusovddidandoarjjaortnegii lei 2,0 miljon ruvnnu 2001:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="269">
+         <tuv lang="sme">
+            <seg>Ruđat eai leat heivehuvvon máŋgga jahkái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="270">
+         <tuv lang="sme">
+            <seg>Ođđa goalmmát teakstaoassi: Sámediggi lea oaidnán ahte Eanadoallo- ja biebmodepartemeanta lea ovddidan stuorradiggedieđáhusa eanadoallo- ja biebmopolitihka birra, stuorradiggedieđáhus 9, man namma lea "velkommen til bords" (2011-2012).</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="271">
+         <tuv lang="sme">
+            <seg>Dieđáhusas leat bajimuš mihttomearit nugo earret eará borramušgálvosihkarvuohta, eanadoallu miehtá riikka, buoret árvoháhkan ja ceavzilis eanadoallu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="272">
+         <tuv lang="sme">
+            <seg>Dieđáhusa Stuorradikkis meannudeapmi lea vuođđun eanadoallopolitihkkii ovddasguvlui ja Sámediggi háliida leat deaŧalaš eavttuid biddji sihkkarastin ja nannen dihtii eanadoalu rámmaeavttuid sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="273">
+         <tuv lang="sme">
+            <seg>Evttohus Norgga Sámiid Riikasearvvis Geir Tommy Pedersen, Mathis Nilsen Eira og Randi A. Skum, Norgga Sámiid Riikasearvvis (NSR) /Sámeálbmotbellodagas (Sáb) Gunn-Britt Retter ja Árjas Olaf Eliassen</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="274">
+         <tuv lang="sme">
+            <seg>Evttohus 2</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="275">
+         <tuv lang="sme">
+            <seg>Ođđa maŋimuš teakstaoassi:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="276">
+         <tuv lang="sme">
+            <seg>Sámediggi lea oaidnán ahte Eanadoallo- ja biebmodepartemeanta lea ovddidan stuorradiggedieđáhusa eanadoallo- ja biebmopolitihka birra, stuorradiggedieđáhus 9, man namma lea "velkommen til bords" (2011-2012).</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="277">
+         <tuv lang="sme">
+            <seg>Sámedikki mielas lea lunddolaš ahte dán stuorradiggedieđáhusa meannudeami oktavuođas nannejuvvo Sámedikki rolla eanadoallopolitihkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="278">
+         <tuv lang="sme">
+            <seg>Sámediggi ferte oažžut viidábuš rollaid sierra sámi fágasurggiid siskkobealde, ja vuordá ahte eanadoalu várás ovddiduvvo konsultašuvdnašiehtadus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="279">
+         <tuv lang="sme">
+            <seg>Sámediggi háliida oažžut vejolašvuođa váikkuhit dan ahte eanadoalu rámmaeavttut sihkkarastojuvvojit ja nannejuvvojit, ja dieinna lágiin čuovvolit geatnegasvuođaid ealáhusa guovdu, earret eará ovddasvástádusa mii Sámedikkis lea ealli sámi giliid ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="280">
+         <tuv lang="sme">
+            <seg>Sámediggi gáibida ahte eanadoallošiehtadusa šiehtadallaninstituhtta ođasmahttojuvvo nu ahte dat dávista álbmotrievttálaš ovddideapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="281">
+         <tuv lang="sme">
+            <seg>Sámediggi berre oažžut buot dieđuid ja berre searvat buot dásiin mearrádusproseassain, ja galgá sáhttit addit ovdagihtii miehtama doaibmabidjoevttohusaide ja ekonomalaš rámmaide ja ahte sin oainnut ja árvvoštallamat bohtet ovdan das maid eará departemeanttat lohket ja proposišuvnnas Stuorradiggái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="282">
+         <tuv lang="sme">
+            <seg>Dát mearkkaša dan ahte Sámediggi ja Eanadoallo- ja biebmodepartemeanta galget soahpat bargovugiid go guoská sierra proseassaide mat loahpalaččat buvttihit eanadoallošiehtadusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="283">
+         <tuv lang="sme">
+            <seg>Dasto bivdá Sámediggi ahte maiddái eanadoallošiehtadusa šiehtadallaninstituhtta árvvoštallojuvvo, maiddái beliid gaskasaš šiehtadallamiin Sámedikki, Norgga Boanddaidsearvvi, Norgga Boanddaid ja Smávvadálolaččaid searvvi ja stáhta gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="284">
+         <tuv lang="sme">
+            <seg>Nugo struktuvra dál lea earret eará eanadoallošiehtadallamiin, de ii dávis dat Sámedikki oainnu mielde álbmotrievttálaš geatnegasvuođaide mat Norggas leat sámiid guovdu go dat lea álgoálbmot.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="285">
+         <tuv lang="sme">
+            <seg>Evttohus Norgga Sámiid Riikasearvvis Geir Tommy Pedersen, Mathis Nilsen Eira og Randi A.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="286">
+         <tuv lang="sme">
+            <seg>Skum, Norgga Sámiid Riikasearvvis (NSR) /Sámeálbmotbellodagas (Sáb) Gunn-Britt Retter, Ovddádusbellodagas Selmer Johansen, Johttisámiid listtas Per A. Bæhr ja Nordkalottfolket (NKF) lahtus Toril Bakken Kåven</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="287">
+         <tuv lang="sme">
+            <seg>Evttohus 3</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="288">
+         <tuv lang="sme">
+            <seg>Sámediggi áigu meannudit Eanadoallo- ja biebmodepartemeantta ovddidan stuorradiggedieđáhusa eanadoallo- ja biebmopolitihka birra, stuorradiggedieđáhus 9, man namma lea "velkommen til bords" (2011-2012), boahtte dievasčoahkkimis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="289">
+         <tuv lang="sme">
+            <seg>Evttohus Ovddádusbellodagas Selmer Johansen bokte</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="290">
+         <tuv lang="sme">
+            <seg>Evttohus 4</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="291">
+         <tuv lang="sme">
+            <seg>Sámediggeráđi mearrádusárvalus sihkkojuvvo ja sadjái biddjojuvvo čuovvovaš:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="292">
+         <tuv lang="sme">
+            <seg>Eanadoallošiehtadallanortnet lea doaibman 1950 logu rájes .</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="293">
+         <tuv lang="sme">
+            <seg>Eanadoallošiehtadusas regulerejuvvo earret eará gortni, mielkki, maniid ja spiinne- ja lábbábierggu haddi buvttadandoarjaga juohku geográfalaččat boanddaid dienas ja dasto buvttadanmihttu</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="294">
+         <tuv lang="sme">
+            <seg>Juovlamánu 2. b. 2011 ovddiduvvui ođđa stuorradiggedieđáhus eanadoalu várás.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="295">
+         <tuv lang="sme">
+            <seg>Dan rájes lei gollan logi jagi dan rájes go ovddit eanadoallopolitihkalaš dieđáhus lei meannuduvvon.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="296">
+         <tuv lang="sme">
+            <seg>Dán áigodagas leat leamaš stuorra rievdadusat Norgga eanadoalus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="297">
+         <tuv lang="sme">
+            <seg>Juohke jagi heaittihuvvojit lagabui 1 000 doalu (measta 2-3 doalu beaivvis), ja badjel 36 000 doalu leat gurrosat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="298">
+         <tuv lang="sme">
+            <seg>Veaháš badjelaš 44 000 doalu ohce buvttadandoarjaga 2011:s; nu ahte leat birrasii 53 000 bargi vuođđobuvttadusas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="299">
+         <tuv lang="sme">
+            <seg>Dattetge lea nu ahte váile 13-14 proseantta dáin duođai barget eanadoaluin olles áiggi, badjel 2/3 viežžá váldodietnasa olggobealde ealáhusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="300">
+         <tuv lang="sme">
+            <seg>Dát addá dakkár gova ahte mii buvttadit borramuša Norggas lotnolasbargun.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="301">
+         <tuv lang="sme">
+            <seg>Maŋimuš áiggiin lea leamaš áigeguovdil oktavuohta márkana stivrejeddjiide Tine, Nortura ja Norske Felleskjøp go mis lea leamaš stuorra dárbu duhtadit jearaldagaid riikka siste vuođđoborramušgálvvuid ektui nugo šibitbiergu, spiinnebiergu, sávzzabiergu, mielki ja vuodja, ja ii heive vajálduhttit gortni borramuša várás ja fuođđarbuvttadusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="302">
+         <tuv lang="sme">
+            <seg>Mis odne lea dakkár vuogádat mii sihkkarastá iežamet atnui váile 41-44 proseantta vuođđoborramušgálvvuin Norgga eanadoalus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="303">
+         <tuv lang="sme">
+            <seg>Ja seammás fievrridit mii badjel 17 miljárdda ruvnnu jahkásaččat eanadollui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="304">
+         <tuv lang="sme">
+            <seg>Sullii 61 proseantta boandda jahkedietnasis boahtá almmolaš ruhtadeamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="305">
+         <tuv lang="sme">
+            <seg>Dasto vuovdit mii eará vuođđoealáhusain; namalassii guolástusas ja mearrageavahusas lagabui 55 miljárdda ruvnnu ovddas jahkásaččat, mii dahká birrasii 38 miljovnna guollebiebmu olbmo nammii juohke beaivvi.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="306">
+         <tuv lang="sme">
+            <seg>Dát ii lohkkojuvvo mielde iežas atnui geavahussii, muhto Sámedikki oaivila mielde lea guolli maid borramuš.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="307">
+         <tuv lang="sme">
+            <seg>Gitta jagi 2005 rádjai lei maiddái guolástusain hui moalkás regulerenvuogádat nugo eanadoalus lea, muhto ođđaregulerema maŋŋá lea ealáhus ieš oaidnán vejolašvuođaidis gánnáhahttivuođa árvvoštallamiid bokte ja geahččala oppa áiggi hutkat ođđa ja viiddidit buvttadusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="308">
+         <tuv lang="sme">
+            <seg>Dál mis lea gávpesuođđan Ruŧŧii lagabui 11 miljárdda ru ovddas jahkásaččat Statistihkalaš Guovddáš doaimmahaga dieđuid mielde, mas sullii bealli sáhttet leat borramušgálvvut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="309">
+         <tuv lang="sme">
+            <seg>Dát čuohcá erenoamážit eanadoallo- ja ealáhusávnnasbuvttadeapmái Østlánddas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="310">
+         <tuv lang="sme">
+            <seg>Sámediggi oaivvilda ahte dáláš eanadoallopolitihkka lea eanet go láddan rievdadusaide ja áigu nu ollu go lea vejolaš bidjat guovddážii láhčima ahte sii geat háliidit bargat eanadoalus olles áiggi galget oažžut buoremus rámmaeavttuid vai nagodit dan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="311">
+         <tuv lang="sme">
+            <seg>Sámedikki oaivila mielde lea deaŧaleamos láhčit diliid nu ahte eanadoalus lea gánnáhahttivuohta ja baicce duvdilit dobbelii distriktapolitihkalaš beroštumiid sihkkarastin dihte ássama birrasiin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="312">
+         <tuv lang="sme">
+            <seg>Sámediggi oaivvilda ahte go galgat juksat dáid mihttomeriid de ferte ođđasis reguleret eanadoalu sihkkarastin dihte ealáhusbargiide duohta ja juridihkalaš stivrejumi iežaset opmodaga badjel ja váldit eret buvttaduscakkiid nugo dáláš earremeari geažil.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="313">
+         <tuv lang="sme">
+            <seg>Jos mis Norggas galgá sáhttit leat gánnáhahtti eanadoallu ja mii sáhttá gilvalit min lagamus ránnjáriikkaiguin, de ferte eanadoallopolitihka rievdadit hui ollu ja dan ferte dahkat dál.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="314">
+         <tuv lang="sme">
+            <seg>Ollu buoret lea go mii ieža álggahit dán proseassa dan sadjái go midjiide earát muitalit movt mii galgat dahkat, go oaidnit ovdáneami EO:s ja go jurddašit WTO šiehtadallamiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="315">
+         <tuv lang="sme">
+            <seg>Dán vuođul ovddida Sámediggi čuovvovaš cealkámuša 2012 eanadoallošiehtadallamiidda:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="316">
+         <tuv lang="sme">
+            <seg>Eanadoallošiehtadusa áigodat muddejuvvo čuovvut kaleanddarjagi, ja ahte šiehtadallamat bohtet sisa oassin bušeahttaproseassas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="317">
+         <tuv lang="sme">
+            <seg>Buoret rámmaeavttut boanddaide geat háliidit áŋgiruššat iešheanalis ealáhusdoallin olles áiggi Evttohit dárbbašlaš láhkarievdadusaid nu ahte ássan- ja doaibmageatnegasvuođa ja eanadoalloopmodaga hadderegulerema sáhttá heaittihit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="318">
+         <tuv lang="sme">
+            <seg>Rievdadit eanalága mearrádusaid juohkingildosa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="319">
+         <tuv lang="sme">
+            <seg>Viiddidit vejolašvuođa válljet friija organisašuvdnavugiid eanadoalu siskkobealde (eanadoallu ja meahccedoallu) doaimma ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="320">
+         <tuv lang="sme">
+            <seg>Rievdadit buvttadandoarjaga mii lea šibihiid várás dáláš ceahkkálastojuvvon dásis nu ahte buvttadandoarjja šaddá seamma stuoris ealli nammii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="321">
+         <tuv lang="sme">
+            <seg>Rievdadit ovttasdoaimma njuolggadusaid, nu ahte šattašii stuorát dávggasvuohta ja ahte livččii buoret vejolašvuohta oažžut máŋggabealat ja juohkelágan doallostruktuvrra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="322">
+         <tuv lang="sme">
+            <seg>Heaittihit geográfalaš ráddjemiid ja oasseváldilogu ovttasdoibmii searvama oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="323">
+         <tuv lang="sme">
+            <seg>Heaittihit bajimuš earredási buvttadusas Addit lobi doallat čájáhusvuovdimiid ja guossohit galledemiid oktavuođas buvttadanlokálain dahje daid oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="324">
+         <tuv lang="sme">
+            <seg>Váikkuhit dan ahte bargu dihtomárkan- ja erenoamášbuktagiid ovddidemiin eanadoalus ja dasto daid vuovdalemiin, beavttálmahttojuvvo.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="325">
+         <tuv lang="sme">
+            <seg>Eanet áŋgiruššat bio-energiijain eanadoalu siskkobealde.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="326">
+         <tuv lang="sme">
+            <seg>Lávdegotti ráva</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="327">
+         <tuv lang="sme">
+            <seg>Lávdegottis eai leat eanet mearkkašumit dahje evttohusat ja rávve Sámedikki mearridit čuovvovaččat:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="328">
+         <tuv lang="sme">
+            <seg>Muđui doarju Sámediggi Sámediggeráđi mearrádusárvalusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="329">
+         <tuv lang="sme">
+            <seg>Mearkašumit Norgga Sámiid Riikasearvvi (NSR) ja Sámeálbmotbellodat (Sáb) ovddidit čuovvovaš mearkkašumi:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="330">
+         <tuv lang="sme">
+            <seg>Sámediggi lea oaidnán ahte Eanadoallo- ja biebmodepartemeanta lea ovddidan stuorradiggedieđáhusa eanadoallo- ja biebmopolitihka birra, stuorradiggedieđáhus 9, man namma lea "velkommen til bords" (2011-2012).</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="331">
+         <tuv lang="sme">
+            <seg>Sámedikki mielas lea lunddolaš ahte dán stuorradiggedieđáhusa meannudeami oktavuođas nannejuvvo Sámedikki rolla eanadoallopolitihkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="332">
+         <tuv lang="sme">
+            <seg>Sámediggi gáibida ahte eanadoallošiehtadusa šiehtadallaninstituhtta ođasmahttojuvvo nu ahte dat dávista álbmotrievttálaš ovddideapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="333">
+         <tuv lang="sme">
+            <seg>Sámediggi berre oažžut buot dieđuid ja berre searvat buot dásiin mearrádusproseassain, ja galgá sáhttit addit ovdagihtii miehtama doaibmabidjoevttohusaide ja ekonomalaš rámmaide ja ahte sin oainnut ja árvvoštallamat bohtet ovdan das maid eará departemeanttat lohket ja proposišuvnnas Stuorradiggái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="334">
+         <tuv lang="sme">
+            <seg>Dát mearkkaša dan ahte Sámediggi ja Eanadoallo- ja biebmodepartemeanta galget soahpat bargovugiid go guoská sierra proseassaide mat loahpalaččat buvttihit eanadoallošiehtadusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="335">
+         <tuv lang="sme">
+            <seg>Dasto bivdá Sámediggi ahte maiddái eanadoallošiehtadusa šiehtadallaninstituhtta árvvoštallojuvvo, maiddái beliid gaskasaš šiehtadallamiin Sámedikki, Norgga Boanddaidsearvvi, Norgga Boanddaid ja Smávvadálolaččaid searvvi ja stáhta gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="336">
+         <tuv lang="sme">
+            <seg>Evttohus 5, áirras Geir Tommy Pedersen, NSR:a sámediggejoavku.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="337">
+         <tuv lang="sme">
+            <seg>Buktán sisa maŋŋil áigemearri ja dohkkejuvvon dievasčoahkkimis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="338">
+         <tuv lang="sme">
+            <seg>Ođđa teakstaoassi čuoggá 4 vuollái maŋŋil vuosttaš teakstaoasi</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="339">
+         <tuv lang="sme">
+            <seg>Villasávzadoallu lea maŋimuš jagiid lassánan garrasit, ja muhtun guovlluin leat bidjan ollu barggu viidáseappot nállašuhttimii ja buvttaovddideapmái mas vuolggasadjin leat villasávzzat/olgosávzzat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="340">
+         <tuv lang="sme">
+            <seg>Ollugiidda lea dát mearkkašan dan ahte váldit atnui fas daid sávzanáliid mat “lunddolaččat” gullet dihto guvlui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="341">
+         <tuv lang="sme">
+            <seg>Dát sávzanálli orru bures birgemin ja heivemin davviguovlluide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="342">
+         <tuv lang="sme">
+            <seg>Seammás go dát nálli buorebut birge guohtumin go dábálaš sávzzat, de lea dain gal unnit deaddu ealli nammii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="343">
+         <tuv lang="sme">
+            <seg>Guohtonelliid heiveheapmi lea deaŧalaš boahtteáiggi eanadoalus, ja berre álggahit doaibmabijuid maid bokte ovddidit villasávzzaid duohta ja gánnáhahtti molssaeaktun doppe gosa dát sávzanálli orru heivemin erenoamáš bures.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="344">
+         <tuv lang="sme">
+            <seg>III Jienasteapmi</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="345">
+         <tuv lang="sme">
+            <seg>39 áirasis ledje 37 čoahkis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="346">
+         <tuv lang="sme">
+            <seg>Jienasteapmi dahkkojuvvui čuovvovaš vuogi mielde:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="347">
+         <tuv lang="sme">
+            <seg>Evttohus 5 mearriduvvui ovttajienalaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="348">
+         <tuv lang="sme">
+            <seg>Evttohus 4 hilgojuvvui 34 jienain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="349">
+         <tuv lang="sme">
+            <seg>3 jienastedje beali.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="350">
+         <tuv lang="sme">
+            <seg>Evttohus 1 mearriduvvui 34 jienain 3 jiena vuostá.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="351">
+         <tuv lang="sme">
+            <seg>Evttohus 2 mearriduvvui 34 jienain 3 jiena vuostá.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="352">
+         <tuv lang="sme">
+            <seg>Oasit evttohusas rievdaduvvo mearkkaášupmin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="353">
+         <tuv lang="sme">
+            <seg>Evttohus 3 mearriduvvui ovttajienalaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="354">
+         <tuv lang="sme">
+            <seg>Čuovvovaš cealkka sihkkojuvvo evttohusas: “boahtte dievasčoahkkimis” .</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="355">
+         <tuv lang="sme">
+            <seg>Ealáhus- ja kulturlávdegotti ráva mearriduvvui 34 jienain 3 jiena vuostá.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="356">
+         <tuv lang="sme">
+            <seg>IV Beavdegirjelasáhusat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="357">
+         <tuv lang="sme">
+            <seg>Dán áššis ii ovddiduvvon beavdegirjelasáhus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="358">
+         <tuv lang="sme">
+            <seg>V Sáhkavuorrolistu ja replihkat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="359">
+         <tuv lang="sme">
+            <seg>Sáhkavuorru Replihkka 1 Geir Tommy Pedersen, áššejođiheaddji Olaf Eliassen</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="360">
+         <tuv lang="sme">
+            <seg>Willy Ørnebakk, čoahkkinortnegii Geir Tommy Pedersen 2 Selmer Johansen Olaf Eliassen Geir Tommy Pedersen Willy Ørnebakk 3 Geir Tommy Pedersen 4 Heidi Persdatter Greiner Haaker 5 Per Andersen Bæhr 6 Gunn-Britt Retter 7 Willy Ørnebakk Geir Tommy Pedersen Olaf Eliassen Alf Isaksen 8 Mathis Nilsen Eira 9 Olaf Eliassen 10 Marianne Balto Olaf Eliassen Alf Isaksen Geir Tommy Pedersen Marianne Balto 11 Geir Tommy Pedersen Willy Ørnebakk Geir Tommy Pedersen 12 Per Andersen Bæhr 13 Anne-Marit Eira Geir Tommy Pedersen, áššejođiheaddji</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="361">
+         <tuv lang="sme">
+            <seg>VI Sámedikki mearrádus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="362">
+         <tuv lang="sme">
+            <seg>Eanadoallu lea leamaš ja lea ain deaŧalaš vuođđun šibitfuođđariid ja borramušgálvvuid buvttadeapmái, barggaheaddjin, kulturguoddin ja ássama vuođđun sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="363">
+         <tuv lang="sme">
+            <seg>Eanadoalus lea ain dát rolla, muhto dat rolla lea geahnohuvvamin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="364">
+         <tuv lang="sme">
+            <seg>Eanadoallu lea deaŧalaš maiddái sámi giela ja kulturárbevieruid gaskkusteapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="365">
+         <tuv lang="sme">
+            <seg>Sámedikki mielas lea mávssolaš ahte eanadoalus leat buorit rámmaeavttut doibmii ja ovddideapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="366">
+         <tuv lang="sme">
+            <seg>Eanadoalus lea maŋimuš jagiin leamaš hárehis ovdáneapmi sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="367">
+         <tuv lang="sme">
+            <seg>Finnmárkku fylkkas lea doaluid lohku njiedjan čielgasit jagi 2004 rájes 2011 rádjai, 438 eanadoallofitnodagas leat báhcán 352.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="368">
+         <tuv lang="sme">
+            <seg>Njiedjan lea badjel 20 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="369">
+         <tuv lang="sme">
+            <seg>Romssas leat vel eanet geahppánan doalut 2004:s ledje 1462 doalu ja 2010:s vel 1083 doalu, njiedjan 26 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="370">
+         <tuv lang="sme">
+            <seg>Doallologu njiedjan ii leat buorre erenoamážit danne go eanadoallobirrasat sámi guovlluin leat unnit go buohtastahttá daid eanadoaluin riikadásis ja ollu gielddain sámi guovlluin lea eanadoallu nu unnon ahte eai leat báhcán šat nu galle buvttadeaddji.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="371">
+         <tuv lang="sme">
+            <seg>Doaluid geahppáneapmi buktá fuones váikkuhusaid biebmobuvttadeapmái, meieriijáide, njuovahagaide, nállašuhttinrusttegiidda ja gávppiide sámi ássanguovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="372">
+         <tuv lang="sme">
+            <seg>Eanadoalu ain eanet unnun hástala danne sámi ealáhuseallima ja áitá ealáhusa deaŧalaš kultur- ja giellaarenan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="373">
+         <tuv lang="sme">
+            <seg>Nubbi eará bealli lea dat go persovnnalaš doallit leat boarásmuvvan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="374">
+         <tuv lang="sme">
+            <seg>Finnmárkkus ledje 18 % dolliin badjel 60 jagi 2004:s ja juo 25 % 2011:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="375">
+         <tuv lang="sme">
+            <seg>Romssas lea ovdáneapmi seammalágan - gos seamma logut leat 18 % 2004:s ja 26 % 2011:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="376">
+         <tuv lang="sme">
+            <seg>Barggolašvuođa doalaheapmi lea okta daid stuorámus hástalusain sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="377">
+         <tuv lang="sme">
+            <seg>Sámediggi lea iskan ealáhusovdáneami 22 dihto sámi gielddain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="378">
+         <tuv lang="sme">
+            <seg>Dát čájeha ahte barggolašvuohta guolásteamis ja eanadoalus lea njiedjan 200:n jagiin 2009 ja 2010.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="379">
+         <tuv lang="sme">
+            <seg>Ássanrievdan čájeha negatiiva tendeanssa sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="380">
+         <tuv lang="sme">
+            <seg>Ealli gilit dáhkidit buoremusat sámi kultuvrii ja gillii sihkkaris boahtteáiggi.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="381">
+         <tuv lang="sme">
+            <seg>Dáláš doallostruktuvrra sihkkarastin ja barggolašvuođa bisuheapmi ealáhusas ja gánnáhahttivuođa buorideapmi leat vealtameahttun deaŧalaččat ealli giliid bisuheapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="382">
+         <tuv lang="sme">
+            <seg>Danne lea Sámediggái deaŧalaš gievrudahttit sámi eanadoalu doaibmavuođu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="383">
+         <tuv lang="sme">
+            <seg>Sámedikki guhkes áiggi mihttomearrin lea nannet barggolašvuođa ja buvttadeami ealáhusas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="384">
+         <tuv lang="sme">
+            <seg>Okta váikkuhangaskaoapmi mii Sámedikkis lea, lea doarjja investeremiidda ja sierra doaibmabijuide – golahus maŋimuš jagiin lea rievddadan 4 ja 5 miljon ruvnnu gaskka eanadoalu ulbmiliidda.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="385">
+         <tuv lang="sme">
+            <seg>Doarjagat leat eanaš juolluduvvon investeren-, ovddidan- ja ovttasbargodoaibmabijuide eanadoalus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="386">
+         <tuv lang="sme">
+            <seg>Ollugat geavahit doahpaga árktalaš eanadoallu ja Sámediggi háliida erenoamážit áŋgiruššat árktalaš eanadoaluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="387">
+         <tuv lang="sme">
+            <seg>Árktalaš eanadoalu buktagiin lea stuorra potensiála sihke dasa mii guoská kvalitehtii ja árktalašguovlluid mearkagálvun.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="388">
+         <tuv lang="sme">
+            <seg>Dáid doahpagiid ferte heivehit boahttevaš eanadoallošiehtadusaide – ferte láhččit diliid nu ahte sáhttá čalmmustahttit ja vuovdalit árktalaš eanadoalu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="389">
+         <tuv lang="sme">
+            <seg>Dálkkádat dagaha ahte mis lea oaneheabbo šaddoáigodat, ja dasto eana mii ii šaddat johtilit, dagaha ahte mii dárbbašit stuorra areálaid ja leat alla doaibmagolut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="390">
+         <tuv lang="sme">
+            <seg>Gaskamearálaš doallosturrodat lea 270 mihtu Finnmárkkus, 227 mihtu Romssas ja 219 mihtu muđui riikkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="391">
+         <tuv lang="sme">
+            <seg>Areála sturrodat addá boasttu gova go galgá čájehit eanadoallobuvttadeami viidodaga.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="392">
+         <tuv lang="sme">
+            <seg>Areáladárbu juohke ealli nammii lea eambbo go duppal geardde stuorát davvin go daid buoremus eanadoalloguovlluin riikkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="393">
+         <tuv lang="sme">
+            <seg>Dat go lea okta láddjen geasis davvi guovlluin mielddisbuktá ahte areáladárbu gártá leat duppal geardde stuorát dáin guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="394">
+         <tuv lang="sme">
+            <seg>Dát maiddái dagaha stuorát investeremiid juohke ealli nammii go buohtastahttá máttit guovlluin riikkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="395">
+         <tuv lang="sme">
+            <seg>Dasto lea árktalaš dálkkádat givrodahkan danne go dakkár oktavuođas ii dárbbaš geavahit cirgguhanávdnasiid šattuide, ja dan geažil oažžut kvalitehta, buhtis ja sihkkaris biebmu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="396">
+         <tuv lang="sme">
+            <seg>Nubbi positiivalaš bealli lea ahte hárve lea váttisvuohta gávnnat areálaid muhkkiide davvin dan sivas go davvin lea stuorát areálat juohke ealli nammii go máddelis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="397">
+         <tuv lang="sme">
+            <seg>Dálkkádatrievdamat buktet stuorámus váikkuhusaid árktalaš ja vuolleárktalaš guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="398">
+         <tuv lang="sme">
+            <seg>Mii leat juo vásihan guhkkit šaddosesoŋŋa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="399">
+         <tuv lang="sme">
+            <seg>Váikkuhusaid lea váttis einnostit, muhto guhkit sesoŋŋa buktá vejolašvuođaid gilvit ođđa šattuid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="400">
+         <tuv lang="sme">
+            <seg>Dasto sáhttet dálkkádatrievdamat buktit hástalusaid ođđa dávddaid, vahátboatkadivrriid ja amas šattuid ihtimii ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="401">
+         <tuv lang="sme">
+            <seg>Eanadoalu mearkkašupmi sámi kultuvrra bisuheapmái ja ovddideapmái ollu sámi guovlluin, ja go ealáhusas lea fuones ovdáneapmi, mearkkaša ahte ferte álggahit máŋga doaibmabiju maiguin erenoamážit nannet eanadoalu vejolašvuođaid ja vuođu sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="402">
+         <tuv lang="sme">
+            <seg>Danne árvvoštallat ahte dát cealkámuš doaibmabijuid ektui eanadoallošiehtadallamiin lea hui deaŧalaš sámi servodahkii, sihke servodat- ja ealáhuspolitihkalaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="403">
+         <tuv lang="sme">
+            <seg>Sámediggi háliida oažžut vejolašvuođa váikkuhit eanadoalu rámmaeavttuid sihkkarastima, ja dieinna lágiin váikkuhit ealli sámi birrasiid ja giliid bisuheami.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="404">
+         <tuv lang="sme">
+            <seg>Sámediggi čujuha Soria Moria julggaštussii gos earret eará čuožžu ahte:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="405">
+         <tuv lang="sme">
+            <seg>”Regjeringen ønsker å bidra til gode rammevilkår både for tradisjonelle næringer og moderne arbeidsplasser knyttet til kultur og teknologi i samiske bosettingsområder.” (Ráđđehus háliida addit buriid rámmaeavttuid sihke árbevirolaš ealáhusaide ja ođđaáigásaš bargosajiide kultuvrra ja teknologiija oktavuođas sámi ássánguovlluin.)</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="406">
+         <tuv lang="sme">
+            <seg>Dasto čuožžu ahte:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="407">
+         <tuv lang="sme">
+            <seg>”Regjeringen vil sikre et landbruk med en variert bruksstruktur over hele landet gjennom en klar distriktsprofil, og videreføre styrking av det grasbaserte husdyrholdet” (Ráđđehus áigu sihkkarastit dakkár eanadoalu mas lea máŋggalágan doallostruktuvra miehtá riikka čielga distriktaprofiila bokte, ja viidáseappot nannet suoidnevuđot oapmedoalu.)</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="408">
+         <tuv lang="sme">
+            <seg>Sámediggi ovddida čuovvovaš cealkámuša eanadoallošiehtadallamiidda 2012:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="409">
+         <tuv lang="sme">
+            <seg>1. Gánnáhahttivuohta</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="410">
+         <tuv lang="sme">
+            <seg>Eanadoalu leahkimii ja ovddideapmái lea áibbas deaŧalaš eaktu ahte eanadoalus lea buorre gánnáhahttivuohta ja ahte dat nagoda gilvalit eará ámmáhiid ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="411">
+         <tuv lang="sme">
+            <seg>Nu ii leat dál ja dat vuhtto ealáhusas go ohpihii heaittihuvvojit doalut ja rekrutteren ealáhussii váilu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="412">
+         <tuv lang="sme">
+            <seg>Jos ovttasge galggaš leat beroštupmi bargat boandan eará ámmáhiid sajis, de ferte dat leat ekonomalaččat miellagiddevaš.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="413">
+         <tuv lang="sme">
+            <seg>Šállošahtti lea go dienaserohusat eanadoalu ja eará joavkkuid gaskka servodagas leat menddo stuorrát.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="414">
+         <tuv lang="sme">
+            <seg>2012 eanadoallošiehtadusas ferte hui sakka loktet dietnasa dan dássái ahte boanddas lea dakkár dienasvuođđu mii dávista bargohivvodahkii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="415">
+         <tuv lang="sme">
+            <seg>Ferte unnidit dan stuorra dienaserohusa mii lea eanadoalu ja eará joavkkuid gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="416">
+         <tuv lang="sme">
+            <seg>Dienasvuođu ferte nannet nu ahte lea vejolaš bissut dušše boandaámmáhis ja oažžut das dohkálaš dietnasa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="417">
+         <tuv lang="sme">
+            <seg>Dát geasuhivččii nuorra olbmuid ealáhussii ja livčče mearkkašahtti deaŧalaš nuoraid rekrutteremii boandan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="418">
+         <tuv lang="sme">
+            <seg>Sámediggi oaivvilda ahte roavvafuođarvuđot buvttadus galgá vuoruhuvvot erenoamážit davvi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="419">
+         <tuv lang="sme">
+            <seg>Mielkebuvttadus ja sávzadoallu dat guddet sámi guovlluid eanadoalu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="420">
+         <tuv lang="sme">
+            <seg>Sávzadoallu geavaha meahci divdna ja dasa ferte sihkkarastojuvvot positiivvalaš ekonomalaš ovdáneapmi 2012:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="421">
+         <tuv lang="sme">
+            <seg>Buvttadandoarjagis lea mearrideaddji váikkuhus gánnáhahttivuhtii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="422">
+         <tuv lang="sme">
+            <seg>Vaikko vel Romssas ja Finnmárkkus leat stuorát máksomearit go muđui riikkas, de heaittihuvvojit eanet ja eanet doalut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="423">
+         <tuv lang="sme">
+            <seg>Buorre gánnáhahttivuohta dagašii eanadoalus eanet geasuheaddji ealáhusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="424">
+         <tuv lang="sme">
+            <seg>Juo dán eanadoallošiehtadusas ferte doarjjamáksomeriid areálaide, mielkái ja birgui bajidit Romssas ja Finnmárkkus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="425">
+         <tuv lang="sme">
+            <seg>Dalle go departemeanta áigu geahčadit buvttadandoarjagiid distriktaprofiila, rehkenastá Sámediggi beassat leat mielde dán barggus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="426">
+         <tuv lang="sme">
+            <seg>Spiinnebiergobuvttadusa geahppáneapmi Romssas lea suorggahahtti.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="427">
+         <tuv lang="sme">
+            <seg>Jagi 2000 rájes jahkái 2010 njidje ealihanspiinnit 870 rájes 578 rádjai fylkkas – njiedjan lei 33 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="428">
+         <tuv lang="sme">
+            <seg>Doaluid lohku unnui beliin 25 dollui jagis 2010.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="429">
+         <tuv lang="sme">
+            <seg>Buvttadanbiras lea unnon dan geažil go eai leat šat nu ollu buvttadeaddjit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="430">
+         <tuv lang="sme">
+            <seg>Spiinnebierggu buvttadeami geahppáneapmi sáhttá maiddái buktit váttisvuođaid njuovahagaide ja viidáset nállašuhttimii Málatvuomi njuovahagas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="431">
+         <tuv lang="sme">
+            <seg>Spiinnebierggu buvttadeami sáhtášii nannet jos lasihivččii distriktadoarjaga spiinnebirgui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="432">
+         <tuv lang="sme">
+            <seg>Buoret ekonomiija sihkkarastášii dasto buvttadusa boahtteáiggis Málatvuomi njuovahagas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="433">
+         <tuv lang="sme">
+            <seg>2. Investeremat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="434">
+         <tuv lang="sme">
+            <seg>Investerengoluid lassáneapmi eanadoalus ja stuorát doaluid huksen mearkkaša ahte investerendoarjja ortnegiid ferte rievdadit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="435">
+         <tuv lang="sme">
+            <seg>Dát guoská dávjá erenoamážit nuorra álggaheddjiide geat eai nagot čohkket iežas kapitála.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="436">
+         <tuv lang="sme">
+            <seg>Doarjjameari nuoraide ferte loktet nu ahte dat lea 10 % eanet sámi guovlluin otnáža ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="437">
+         <tuv lang="sme">
+            <seg>Eanadoalus lea ovdalis áiggiid leamaš vejolašvuohta eanadoalu foandasajušteapmái mii galggai geavahuvvot boahtteáiggi hukseninvesteremiidda.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="438">
+         <tuv lang="sme">
+            <seg>Dát ferte fas ođđasis váldojuvvot atnui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="439">
+         <tuv lang="sme">
+            <seg>Foandasajušteapmi attášii vejolašvuođa plánet boahtteáiggi investeremiid buoret vuogi mielde.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="440">
+         <tuv lang="sme">
+            <seg>Dasto attašii dat einnostanvejolašvuođa vearroplánemis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="441">
+         <tuv lang="sme">
+            <seg>Muđuid ferte eanadoalu investerenortnegiid bisuhit vai boanddaide sihkkarastojuvvo einnostanvejolašvuohta.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="442">
+         <tuv lang="sme">
+            <seg>Huksendoaimmat rievddadit jagis jahkái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="443">
+         <tuv lang="sme">
+            <seg>Jos sámi guovlluin galggašedje leat áiggi mielde huksejuvvon visttit, de ferte addojuvvo vejolašvuohta oažžut investerendoarjaga maiddái doaibmavistti bajásdoallamii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="444">
+         <tuv lang="sme">
+            <seg>Dát geasuhivččii nuoraid eanet váldit badjelasaset doalu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="445">
+         <tuv lang="sme">
+            <seg>Dilli lea odne nu ahte ollu doalut heaittihuvvojit danne go daid fertešii divodit ja go doalut leat boaresáigásaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="446">
+         <tuv lang="sme">
+            <seg>3. Álggahanbáhkat nuoraide</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="447">
+         <tuv lang="sme">
+            <seg>Njealjádasoassi Romssa ja Finnmárkku boanddain leat badjel 60 jagi.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="448">
+         <tuv lang="sme">
+            <seg>Danne lea stuorra dárbu ođđa rekrutteremii eanadollui, jos doaluid lohku ii galggaš ollu geahppánit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="449">
+         <tuv lang="sme">
+            <seg>Mihttomearrin ferte leat oažžut gaskamearálaš agi bodnelii, muhto eaktun dasa lea ahte gánnáhahttivuohta eanadoalus loktejuvvo.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="450">
+         <tuv lang="sme">
+            <seg>Ealáhussii rekrutteren gáibida dasto buriid gelbbolašvuođa- ja oahppofálaldagaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="451">
+         <tuv lang="sme">
+            <seg>Movttiidahttin dihte nuoraid álgit eanadoaluin ferte álggahit ekonomalaš doaibmabijuid, sihkkarastin dihte rekrutterema.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="452">
+         <tuv lang="sme">
+            <seg>Ferte ásahuvvot mielkeearreortnet nuorra álggaheddjiide geat áigot álgit bargat doaluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="453">
+         <tuv lang="sme">
+            <seg>Sii fertejit dávjá oastit buvttadanareálaid, šibihiid, reaidduid ja visttiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="454">
+         <tuv lang="sme">
+            <seg>Muhtumat válljejit oastit eanadoalloopmodagaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="455">
+         <tuv lang="sme">
+            <seg>Go sii dasa lassin fertejit oastit mielkeeari stáhta haddái (3,50 ru lihttera nammii) dahje priváhta márkanis, de lea váttis nuoraide birget ekonomalaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="456">
+         <tuv lang="sme">
+            <seg>Rekrutterema sihkkarastima dihte ferte ásahit oiddoleappo ortnegiid nuoraide geat háliidit álgit eanadoaluin bargat – nuvttá mielkeeriid daidda nuoraide sámi guovlluin, geat leat vuollel 35 jagi ja háliidit álgit bargat doaluin dahje viiddidit dan.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="457">
+         <tuv lang="sme">
+            <seg>4. Mielkebuvttadeapmi</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="458">
+         <tuv lang="sme">
+            <seg>Sihkkarastin dihte máŋggalágan doallostruktuvrra, de ferte daid unnimus dolliid vuoruhit mielkeeriid lasiheami oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="459">
+         <tuv lang="sme">
+            <seg>Mielkeeari lasiheapmi buoridivččii dáid doaluid ekonomalaš vuođu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="460">
+         <tuv lang="sme">
+            <seg>Dat lea mielde sihkkarastimin eanadoalu sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="461">
+         <tuv lang="sme">
+            <seg>Gáicaealáhus lea leamaš ja lea viidát nuppástuhttojuvvomin gáicadikšuma ektui Norggas, ja mihttomearrin lea oažžut eret muhtun dávddaid mat bohtet gáiccaide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="462">
+         <tuv lang="sme">
+            <seg>Sámediggi lea erenoamážit fuolas dan geažil go doalut heaittihuvvojit dikšunprošeavtta geažil ja deattuha ahte álggahuvvojit ođđa doaibmabijut eanadoallošiehtadallamiid oktavuođas maiguin sihkkarastojuvvo ain ceavzilis gáicaealáhus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="463">
+         <tuv lang="sme">
+            <seg>Villasávzadoallu lea maŋimuš jagiid lassánan garrasit, ja muhtun guovlluin leat bidjan ollu barggu viidáseappot nállašuhttimii ja buvttaovddideapmái mas vuolggasadjin leat villasávzzat/olgosávzzat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="464">
+         <tuv lang="sme">
+            <seg>Ollugiidda lea dát mearkkašan dan ahte váldit atnui fas daid sávzanáliid mat “lunddolaččat” gullet dihto guvlui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="465">
+         <tuv lang="sme">
+            <seg>Dát sávzanálli orru bures birgemin ja heivemin davviguovlluide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="466">
+         <tuv lang="sme">
+            <seg>Seammás go dát nálli buorebut birge guohtumin go dábálaš sávzzat, de lea dain gal unnit deaddu ealli nammii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="467">
+         <tuv lang="sme">
+            <seg>Guohtonelliid heiveheapmi lea deaŧalaš boahtteáiggi eanadoalus, ja berre álggahit doaibmabijuid maid bokte ovddidit villasávzzaid duohta ja gánnáhahtti molssaeaktun doppe gosa dát sávzanálli orru heivemin erenoamáš bures.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="468">
+         <tuv lang="sme">
+            <seg>5. Geasehandoarjja</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="469">
+         <tuv lang="sme">
+            <seg>Mielkebuvttadandoaluid logu unnun lea buktán digaštallama ekonomalaš vuođu birra njuovahagaid ja meieriijaid bisuheami oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="470">
+         <tuv lang="sme">
+            <seg>Unnit hivvodat ovttaskas eanadoallobuvttadeaddjis buvttiha stuorát geasehan- ja buvttadangoluid ovttadaga nammii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="471">
+         <tuv lang="sme">
+            <seg>Viidáset nállašuhttinfitnodagat, mat dávjá leat ovttasdoaibmafitnodagat, leat maiddái sorjavaččat gánnáhahttivuođain doaibmamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="472">
+         <tuv lang="sme">
+            <seg>Dáid goarideapmi leat dán rádjai dagahan doallái stuorát geasehangoluid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="473">
+         <tuv lang="sme">
+            <seg>Njuovahagaid heaittiheapmi buvttiha guhkit geasehangaskkaid ja nie divrudahttá geasehangoluid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="474">
+         <tuv lang="sme">
+            <seg>Doallologu njiedjan dagaha maiddái ahte šaddá guhkit gaska doaluid gaskka ja dan geažil lassánit maiddái geasehangolut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="475">
+         <tuv lang="sme">
+            <seg>Dán ferte máksit movt nu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="476">
+         <tuv lang="sme">
+            <seg>Dienasovdáneapmi biergovuovdimis ii leat čuvvon geasehangoluid ovdáneami njuovahahkii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="477">
+         <tuv lang="sme">
+            <seg>Dan geažil lea dárbu oažžut stuorát doarjaga geaseheami ovddas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="478">
+         <tuv lang="sme">
+            <seg>Dat seamma guoská maiddái gieddegilvagiid ja šibitjáffuid geasehangoluide, go dárbu šibitjáffuide lea lassánan mealgat dađi mielde go mielkebuvttadeaddji gusat ealli nammii leat eanet bahčigoahtán.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="479">
+         <tuv lang="sme">
+            <seg>Geasehandoarjaga rievdadeapmi galggašii dássidahttit buvttadeaddji hatti sorjjakeahttá geasehangaskkain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="480">
+         <tuv lang="sme">
+            <seg>6.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="481">
+         <tuv lang="sme">
+            <seg>Buolvvas bulvii leat sámit ávkkástallan mehciin; lotnolagaid sierra ealáhusaid gaskka, nugo eanadoalu, meahcceealáhusaid ja mearrabivddu gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="482">
+         <tuv lang="sme">
+            <seg>Áinnas lea leamaš váldodienas eanadoalus, muhto vižže dietnasa maiddái eará ealáhusain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="483">
+         <tuv lang="sme">
+            <seg>Dat leat leamaš sáivaguollebivdu, murjjiid ja urtasiid čoaggin, meahccedoallu ja eará.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="484">
+         <tuv lang="sme">
+            <seg>Meahcceealáhus lei ovdal nanus miehtá riikka, muhto várra nannoseamos davvin, gos ollu olbmot barge meahcceealáhusaiguin almmá ahte livčče čadnojuvvon eanadollui muđui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="485">
+         <tuv lang="sme">
+            <seg>Dálkkádaga ja guhkes gaskkaid geažil fertejedje olbmot lonuhallat ávkkástallama, ja sierra lasseealáhusaid bokte ožžo oktiibuot doarvái dietnasa birgejupmái jahkeáigodagain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="486">
+         <tuv lang="sme">
+            <seg>Meahcceealáhusat, sihke eanadoalu oalgeealáhussan ja iešheanalis ealáhussan leat ain deaŧalaš sámi kulturguoddit davvi guovlluin, muhto rahčet stuorra hástalusaiguin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="487">
+         <tuv lang="sme">
+            <seg>Sámi eanadoalu nannema oktavuođas ferte bidjat guovddážii maiddái meahcceealáhusaid; dát sáhttet addit deaŧalaš ja gánnáhahtti lasseealáhusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="488">
+         <tuv lang="sme">
+            <seg>Erenoamážit berre bidjat guovddážii ovddidanbarggu sáivaguollebivddu, murjjiid ja urtasiid čoaggima siskkobealde.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="489">
+         <tuv lang="sme">
+            <seg>7. Boraspiriid geahpedeapmi buoridan dihte sávzadoalu ekonomiija</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="490">
+         <tuv lang="sme">
+            <seg>Sávzadoallu ealáhussan gáibida ollu areálaid man oktavuođas meahci geavaheapmi lea leamaš vealtameahttun deaŧalaš ekonomalaš bohtosii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="491">
+         <tuv lang="sme">
+            <seg>Váidudeaddji doaibmabijut maid boraspirehálddašeapmi lea bidjan johtui unnidan dihtii vahágiid maid ráfáidahtton boraspiret leat dagahan, leat dagahan dan ahte sávzadoallit earret eará leat ferten geahpedit meahci geavaheami ja bidjat sávzzaid gittiide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="492">
+         <tuv lang="sme">
+            <seg>Eanet gittiid geavaheapmi ollu oktavuođain bajida goluid go ferte eanet gilvit ja bargat eatnamiin ja áidut.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="493">
+         <tuv lang="sme">
+            <seg>Dán lágan geavaheapmi sáhttá maiddái buktit stuorát parasihtta- ja infekšuvdnavára (ollu sávzzat ovtta sajis).</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="494">
+         <tuv lang="sme">
+            <seg>Váidudeaddji doaibmabijut divrudit sávzadoalu ja hehttejit dolliid geavaheamis meahci nu ollu go vejolaš.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="495">
+         <tuv lang="sme">
+            <seg>Sámediggi lea bidjan merkii ahte boraspiriid goddán sávzalohku lea unnon 2011:s, ja fuomášuhttá ahte sivvan dasa sáhttá leat go sávzadoalut leat geahppánan guovlluin gos leat ollu boraspiret.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="496">
+         <tuv lang="sme">
+            <seg>Alla boraspirelohku hehtte positiivvalaš ovdáneami sávzadoalus ja guohtonguovllut eai galggašii mannat boraspiriide doaluid heaittihemiid geažil.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="497">
+         <tuv lang="sme">
+            <seg>Eanadoallu dárbbaša guhkes áiggi ja einnostahtti doarjjaortnegiid maiguin sihkkarastojuvvo dat ahte oamit sáhttet guohtut meahcit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="498">
+         <tuv lang="sme">
+            <seg>Boraspirepolitihkka váikkuha njuolga sávzadoaluid ekonomalaš bohtosii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="499">
+         <tuv lang="sme">
+            <seg>Boraspiresoabahusain oaivvilduvvo ahte galget leat sihke guohtoneallit ja boraspiret meahcis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="500">
+         <tuv lang="sme">
+            <seg>Sámedikki oaivila mielde buktá dát mihttomearri váttisvuođaid muhtun guohtonguovlluide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="501">
+         <tuv lang="sme">
+            <seg>8. Riidoeastadeaddji doaibmabijut</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="502">
+         <tuv lang="sme">
+            <seg>Sámediggi evttoha ahte ásahuvvošedje gulahallanarenat maid ulbmilin lea lonuhallat oainnuid ja čilget nubbi nubbái doaibmadili birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="503">
+         <tuv lang="sme">
+            <seg>Dán lágan arena sáhtášii leat positiivvalaš doaibmabidju mainna eastadit riidduid šaddamis ja sáhtášii lea álkit gávdnat konstruktiivvalaš čovdosiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="504">
+         <tuv lang="sme">
+            <seg>Dáinna lágiin sáhtášii buoridit olmmošgaskavuođaid beliid gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="505">
+         <tuv lang="sme">
+            <seg>Sámedikki mielas lea dárbbašlaš ahte stáhta eiseválddit vuoruhit barggu riidoeastadeaddji doaibmabijuiguin buoridan dihte áddejumi nuppi ealáhussii ja oktii ordnen dihte sierra geavaheaddjiberoštumiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="506">
+         <tuv lang="sme">
+            <seg>Diehtojuohkin earáid ealáhusaid birra lea deaŧalaš oassi riidoeastadeaddji doaibmabijuin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="507">
+         <tuv lang="sme">
+            <seg>Dát lea deaŧalaš vai sáhttá eastadit riidduid lassáneamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="508">
+         <tuv lang="sme">
+            <seg>Dat psykososiála deaddu sáhttá guhkkit áiggi badjel dagahit vahágiid guoskevaš beliide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="509">
+         <tuv lang="sme">
+            <seg>Boazoáiddiid huksen lea lossat ekonomalaččat, muhto dat lea investeren máŋgga jahkái ovddasguvlui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="510">
+         <tuv lang="sme">
+            <seg>Áiddiid huksemiin sáhttá eanadoallu maŋit áiggis seastit iežas liigebarggus, seammás go njuovvaneallit sihkkarastojuvvojit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="511">
+         <tuv lang="sme">
+            <seg>Muhtun oktavuođain sáhttá leat áigeguovdil áidut sisa stuorát guovlluid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="512">
+         <tuv lang="sme">
+            <seg>Dás sáhttá leat sáhka dakkár areálain main lea juo lunddolaš rádji eatnamis, huksehusain jna.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="513">
+         <tuv lang="sme">
+            <seg>Berrešii leat vejolašvuohta juolludit doarjaga maiddái dán lágan riidoeastadeaddji doaibmabijuide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="514">
+         <tuv lang="sme">
+            <seg>Dát eaktuda soabalašvuođa beliid gaskka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="515">
+         <tuv lang="sme">
+            <seg>Dál lea unnán máhttu biologalaš dili birra guovlluin gos sávzzat ja bohccot guhtot fárrolaga.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="516">
+         <tuv lang="sme">
+            <seg>Danne háliida ge Sámediggi eanet máhttu ja dutkama guohtonminstariid birra biotohpa geavaheami ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="517">
+         <tuv lang="sme">
+            <seg>Dárbu lea maiddái oažžut eanet máhttu dávddaid njoammumis elliid gaskka mat guhtot meahcis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="518">
+         <tuv lang="sme">
+            <seg>9. Gittiid guorban dálvet ja šaddovahágat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="519">
+         <tuv lang="sme">
+            <seg>Eanadoalus leat guokte ortnega vahágiid várás maid dálkkádat dagaha – dálvevahágiin lea oktavuohta beliide mat dáhpáhuvvet dálveáigodagas ja šaddováttisvuohta giđđat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="520">
+         <tuv lang="sme">
+            <seg>Eanadoallu lea árktalaš man oktavuođas sáhttet šaddat vahágat sihke dálvit ja šaddováttisvuohta šaddoáigodagas, ovtta ja seamma jagis nugo dáhpáhuvai Romssas 2010:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="521">
+         <tuv lang="sme">
+            <seg>Gieddevahátbuhtadanortnegat eai leat heivehuvvon Romsii ja Finnmárkui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="522">
+         <tuv lang="sme">
+            <seg>Eatnašat sáhttet láddjet eanet go oktii jagis dálkkádaga geažil.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="523">
+         <tuv lang="sme">
+            <seg>Dáin guovlluin lea dasto eanadoalus ollu láigoeana, eanabihtát leat bieđgguid ja bihtáid gaskka lea dávjá guhkes gaska.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="524">
+         <tuv lang="sme">
+            <seg>Dán lágan vahágat buktet stuorra hástalusaid dalle go gittiid ferte ođđasis fas gilvit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="525">
+         <tuv lang="sme">
+            <seg>Buhtadusortnegat dálvevahágiid ovddas bohtet fápmui easkka dalle go vahágat leat eanet go 20 % areálain ja go dat leat divvojuvvon.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="526">
+         <tuv lang="sme">
+            <seg>Máksomearri lea seamma miehtá riikka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="527">
+         <tuv lang="sme">
+            <seg>Buhtadan dihte dan stuorra areáladárbbu ja dálkkádat diliid, de ferte Romssas ja Finnmárkkus unnidit iežas oasi 10 prosentii dálvevahágiid ovddas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="528">
+         <tuv lang="sme">
+            <seg>Šaddovahágiin lea iežas oassi 30 %.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="529">
+         <tuv lang="sme">
+            <seg>Nugo dálvevahágiid ovddas gittiin lea seamma proseantamearri miehtá riikka.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="530">
+         <tuv lang="sme">
+            <seg>Dát lea eahpeoiddolaš sámi guovlluid eanadollui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="531">
+         <tuv lang="sme">
+            <seg>Earret hástalusaid geažil mat leat namahuvvon bajábealde, de ii sáhte eanadoalli davvin rehkenastit gilvit eatnama vahátjagi ja seamma jagi oažžut šattu oppanassii ge.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="532">
+         <tuv lang="sme">
+            <seg>Molssaeaktun lea juogo njuovvat omiid dahje oastit dálvebiebmu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="533">
+         <tuv lang="sme">
+            <seg>Iežas oasi dálvevahágiin sámi guovlluin fertešii unnidit beliin 15 prosentii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="534">
+         <tuv lang="sme">
+            <seg>10. Sámedikki doarjjaortnegat ealáhusovddideapmái</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="535">
+         <tuv lang="sme">
+            <seg>Sámedikki doaibma siskkilda daid guovlluid riikkas gos sámit ásset.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="536">
+         <tuv lang="sme">
+            <seg>Oassi Sámedikki cealkámušain eanadoallošiehtadallamiid oktavuođas leat vuhtii váldojuvvon maŋimuš jagiin, muhto dat leat geográfalaččat ráddjejuvvon.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="537">
+         <tuv lang="sme">
+            <seg>Sihke areálarájiid rievdadeamis doarjaga ektui ja eanet mielkeearit leat boahtán ávkin sámi álbmogii, muhto ii buohkaide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="538">
+         <tuv lang="sme">
+            <seg>Leat ollu guovllut olggobealde gos ásset sámit geat barget eanadoaluin erenoamážit Romssas ja davit osiin Norlánddas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="539">
+         <tuv lang="sme">
+            <seg>Ekonomalaš doaibmabijut mat biddjojuvvojit johtui sámi guovlluin galget guoskat stuorát geográfalaš guovlluide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="540">
+         <tuv lang="sme">
+            <seg>Eanadoallo- ja biebmodepartemeantta juolludus Sámedikki ealáhusovddidandoarjjaortnegii lei 2,0 miljon ruvnnu 2001:s.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="541">
+         <tuv lang="sme">
+            <seg>Ruđat eai leat heivehuvvon máŋgga jahkái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="542">
+         <tuv lang="sme">
+            <seg>Sámediggi lea oaidnán ahte Eanadoallo- ja biebmodepartemeanta lea ovddidan stuorradiggedieđáhusa eanadoallo- ja biebmopolitihka birra, stuorradiggedieđáhus 9, man namma lea "velkommen til bords" (2011-2012).</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="543">
+         <tuv lang="sme">
+            <seg>Dieđáhusas leat bajimuš mihttomearit nugo earret eará borramušgálvosihkarvuohta, eanadoallu miehtá riikka, buoret árvoháhkan ja ceavzilis eanadoallu.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="544">
+         <tuv lang="sme">
+            <seg>Dieđáhusa Stuorradikkis meannudeapmi lea vuođđun eanadoallopolitihkkii ovddasguvlui ja Sámediggi háliida leat deaŧalaš eavttuid biddji sihkkarastin ja nannen dihtii eanadoalu rámmaeavttuid sámi guovlluin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="545">
+         <tuv lang="sme">
+            <seg>Sámedikki mielas lea lunddolaš ahte dán stuorradiggedieđáhusa meannudeami oktavuođas nannejuvvo Sámedikki rolla eanadoallopolitihkas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="546">
+         <tuv lang="sme">
+            <seg>Sámediggi ferte oažžut viidábuš rollaid sierra sámi fágasurggiid siskkobealde, ja vuordá ahte eanadoalu várás ovddiduvvo konsultašuvdnašiehtadus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="547">
+         <tuv lang="sme">
+            <seg>Sámediggi háliida oažžut vejolašvuođa váikkuhit dan ahte eanadoalu rámmaeavttut sihkkarastojuvvojit ja nannejuvvojit, ja dieinna lágiin čuovvolit geatnegasvuođaid ealáhusa guovdu, earret eará ovddasvástádusa mii Sámedikkis lea ealli sámi giliid ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="548">
+         <tuv lang="sme">
+            <seg>Nugo struktuvra dál lea earret eará eanadoallošiehtadallamiin, de ii dávis dat Sámedikki oainnu mielde álbmotrievttálaš geatnegasvuođaide mat Norggas leat sámiid guovdu go dat lea álgoálbmot.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="549">
+         <tuv lang="sme">
+            <seg>Sámediggi áigu meannudit Eanadoallo- ja biebmodepartemeantta ovddidan stuorradiggedieđáhusa eanadoallo- ja biebmopolitihka birra, stuorradiggedieđáhus 9, man namma lea "velkommen til bords" (2011-2012).</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="550">
+         <tuv lang="sme">
+            <seg>Ášši meannudeapmi loahpahuvvui 24.02.12 dii. 09.55.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="551">
+         <tuv lang="sme">
+            <seg>Vuođđogiella: Dárogiella</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+   </body>
+</tmx>

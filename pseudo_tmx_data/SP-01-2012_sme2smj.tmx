@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx>
+   <header segtype="sentence"
+           o-tmf="OmegaT TMX"
+           adminlang="EN-US"
+           srclang="sme"
+           datatype="plaintext"/>
+   <body>
+      <tu id="1">
+         <tuv lang="sme">
+            <seg>Sámedikki dievasčoahkkin Čoahkkingirji 001/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="2">
+         <tuv lang="sme">
+            <seg>Ávjuvárgeaidnu 50, N-9730 Kárášjohka Telefon +47 78 47 40 00</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="3">
+         <tuv lang="sme">
+            <seg>Telefaks +47 78 47 40 90 samediggi@samediggi.no www.samediggi.no</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="4">
+         <tuv lang="sme">
+            <seg>Áigi: 20.02.-24.02.12 Báiki: Kárášjogas</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="5">
+         <tuv lang="sme">
+            <seg>Áššelistu</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="6">
+         <tuv lang="sme">
+            <seg>Saksnr. Sakstittel</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="7">
+         <tuv lang="sme">
+            <seg>001/12 Vuođđudeapmi 002/12 Sámediggeráđđi doaibmadieđáhus 003/12 Gažaldagat Sámediggeráđđái 004/12 Ođđa áššiid dieđiheapmi 005/12 Sámedikki 2011 jahkedieđáhus 006/12 Ovttasbargošiehtadus Sámedikki ja Stáhtavuvddiid gaskka 007/12 Sámedikki dieđáhus oahpahusa ja oahpu birra 008/12 Rievdadusat boazodoallohálddašeamis – vuođđu ja eavttut 009/12 Sámedikki lávdegodde- ja dievasčoahkkimat 2012 - čoahkkinplána 010/12 Sámedikki lávdegodde- ja dievasčoahkkimat 2013 - čoahkkinplána 011/12 Cealkámuš 2012 eanadoallošiehtadallamiidda 012/12 Gárrenmirkodikšu ja gárrenmirkogeavaheami easttadeapmi</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="8">
+         <tuv lang="sme">
+            <seg>Čoahkkináiggit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="9">
+         <tuv lang="sme">
+            <seg>Áigi Ášši Siidu</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="10">
+         <tuv lang="sme">
+            <seg>22.02.12 dii. 08.30 - 08.45 001/12 dii. 09.00 - 12.15 002/12 dii. 15.00 - 17.40 003/12 dii. 17.40 - 19.15 004/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="11">
+         <tuv lang="sme">
+            <seg>23.02.12 dii. 08.30 - 11.00 005/12 dii. 11.00 - 15.55 006/12 digaštallan dii. 15.55 - 18.25 007/12 dii. 18.30 - 19.50 008/12 dii. 19.50 - 20.05 009/12 dii. 20.05 - 20.10 010/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="12">
+         <tuv lang="sme">
+            <seg>24.02.12 dii. 08.30 - 09.55 011/12 dii. 09.55 - 10.10 006/12 jienasteapmi dii. 10.35 - 12.00 012/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="13">
+         <tuv lang="sme">
+            <seg>Vuođđogiella: Dárogiella</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="14">
+         <tuv lang="sme">
+            <seg>Ášši/Sak DC 001/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="15">
+         <tuv lang="sme">
+            <seg>Čoahkkima vuođđudeapmi</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="16">
+         <tuv lang="sme">
+            <seg>Ášši meannudeapmi álggahuvvui 22.02. 2012 dii. 08.30</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="17">
+         <tuv lang="sme">
+            <seg>Áirasat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="18">
+         <tuv lang="sme">
+            <seg>Čuovvovaš áirasat ledje vuođđudeamis:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="19">
+         <tuv lang="sme">
+            <seg>1. Mariann Wollmann Magga 21. Odd Iver Sara 2. Gunn-Britt Retter 22. Geir Tommy Pedersen 3. Knut Inge Store 23. Willy Ørnebakk 4. Trond Are Anti 24. Randi A. Skum 5. Ragnhild M. Aslaksen 25. Margit Eli Anti Oskal 6. Hans J. Eriksen 26. Selmer Johansen (Aud Marthinsen ovddas) 7. Alf Isaksen 27. Rolf Johansen 8. Aili Keskitalo 28. Ann-Mari Thomassen 9. Ronny Wilhelmsen 29. Inga-Lill Sundset 10. Per Andersen Bæhr 30. Miriam Paulsen 11. Olaf Eliassen 31. Nanna Thomassen (Åge Nordkild ovddas 23.-24.02.12) 12. Mathis Nilsen Eira 32. Geir Johnsen 13. Marit Kirsten Anti Gaup (Anne Helene Moeng Saari ovddas) 33. Jarle Jonassen</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="20">
+         <tuv lang="sme">
+            <seg>14. Anders Somby jr 34. Aina Kristine Kant (Sten Erling Jønsson ovddas) Knut Roger Hanssen 35. Leif Aksel Renfjell (Ida Marie Bransfjell ovddas) 16. Ii várrelahtu Hilde Anita Nyvoll ovddas 36. Jørn Are Gaski 17. Arthur Johan Tørfoss 37. Kirsti Guvsám 18. Toril Bakken Kåven 38. Monica Balto (Marie Therese N. Aslaksen ovddas) 19. Silje Karine Muotka 39. Heidi P. Greiner Haaker 20. Inger Jørstad</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="21">
+         <tuv lang="sme">
+            <seg>Čoahkkingirjji čállit: Ellen Aina Eira/Ellen Mienna</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="22">
+         <tuv lang="sme">
+            <seg>4 siidu 379 siiddus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="23">
+         <tuv lang="sme">
+            <seg>Juolluduvvon permišuvnnat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="24">
+         <tuv lang="sme">
+            <seg>Permišuvnnat olles dievasčoahkkimis</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="25">
+         <tuv lang="sme">
+            <seg>Áirras nr. 13 Anne Helene Moeng Saari Áirras nr. 16 Hilde Anita Nyvoll Áirras nr. 26 Aud Marthinsen Áirras nr. 31 Åge Nordkild Áirras nr. 34 Sten Erling Jønsson Áirras nr. 35 Ida Marie Bransfjell Áirras nr. 38 Marie Therese N. Aslaksen</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="26">
+         <tuv lang="sme">
+            <seg>Permišuvnnat osiid dievasčoahkkimis</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="27">
+         <tuv lang="sme">
+            <seg>Áirras nr. 3 Knut Store 23.02.12 dii. 15.00 rájes gitta 24.02.12 rádjai.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="28">
+         <tuv lang="sme">
+            <seg>Áirras nr. 9 Ronny Wilhelmsen 22.02.12 dii. 17.30 rájes</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="29">
+         <tuv lang="sme">
+            <seg>Áirras nr. 15 Knut Roger Hanssen 22.02. dii. 12.00 rájes gitta 24.02.12 rádjai</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="30">
+         <tuv lang="sme">
+            <seg>Áirras nr. 18 Toril Bakken Kåven 24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="31">
+         <tuv lang="sme">
+            <seg>Áirras nr. 24 Randi A. Skum 24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="32">
+         <tuv lang="sme">
+            <seg>Várrelahtu Leif Aksel Renfjell 24.02.12 dii. 10.30 rájes</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="33">
+         <tuv lang="sme">
+            <seg>Várrelahtut</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="34">
+         <tuv lang="sme">
+            <seg>Várrelahtu Marit Kirsten Anti Gaup lei čoahkkimis áirasa nr. 13 Anne Helene Moeng Saari ovddas 22.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="35">
+         <tuv lang="sme">
+            <seg>Várrelahtu Selmer Johansen lei čoahkkimis áirasa nr. 26 Aud Marthinsen ovddas 22.-24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="36">
+         <tuv lang="sme">
+            <seg>Várrelahtu Aina Kristine Kant lei čoahkkimis áirasa nr. 34 Sten Erling Jønsson ovddas 22.-24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="37">
+         <tuv lang="sme">
+            <seg>Várrelahtu Leif Aksel Renfjell lei čoahkkimis áirasa nr. 35 Ida Marie Bransfjell ovddas 22.-24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="38">
+         <tuv lang="sme">
+            <seg>Várrelahtu Monica Balto lei čoahkkimis áirasa nr. 38 Marie Therese N. Aslaksen ovddas 22.-24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="39">
+         <tuv lang="sme">
+            <seg>Várrelahtu Stig Furu lei čoahkkimis áirasa nr. 18 Toril Bakken Kåven ovddas 24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="40">
+         <tuv lang="sme">
+            <seg>Várrelahtu Anne-Marit Eira lei čoahkkimis áirasa nr. 15 Knut Roger Hanssen ovddas 23.-24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="41">
+         <tuv lang="sme">
+            <seg>Várrelahtu Nanna Thomassen lei čoahkkimis áirasa nr. 31 Åge Nordkild ovddas 23.-24.02.12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="42">
+         <tuv lang="sme">
+            <seg>I Áššebáhpirat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="43">
+         <tuv lang="sme">
+            <seg>03.02. 2012 beaiváduvvon gohččun ja áššelistu</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="44">
+         <tuv lang="sme">
+            <seg>II Evttohusat ja mearkkašumit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="45">
+         <tuv lang="sme">
+            <seg>Dievasčoahkkinjođihangotti árvalus Sámediggái</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="46">
+         <tuv lang="sme">
+            <seg>03.02. 2012 beaiváduvvon gohččun, áššelistu, prográmma ja sárdnunáigi dohkkehuvvo</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="47">
+         <tuv lang="sme">
+            <seg>Dievasčoahkkinjođiheaddji Jarle Jonassen ovddidii dárbbu válljet čoahkkinboddosaš coahkkinjođiheaddji permišuvnnaid geažil.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="48">
+         <tuv lang="sme">
+            <seg>Willy Ørnebakk evttohii Inger Jørstad čoahkkinjođiheaddjin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="49">
+         <tuv lang="sme">
+            <seg>Evttohus mearriduvvui ovttajienalaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="50">
+         <tuv lang="sme">
+            <seg>III Jienasteapmi</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="51">
+         <tuv lang="sme">
+            <seg>39 áirasis ledje 37 čoahkis. Jienasteapmi dahkkojuvvui čuovvovaš vuogi mielde:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="52">
+         <tuv lang="sme">
+            <seg>Dievasčoahkkinjođihangotti árvalus mearriduvvui ovttajienalaččat.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="53">
+         <tuv lang="sme">
+            <seg>IV Beavdegirjelasáhusat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="54">
+         <tuv lang="sme">
+            <seg>Dán áššis ii ovddiduvvon beavdegirjelasáhus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="55">
+         <tuv lang="sme">
+            <seg>Čoahkkingirjji čállit: Ellen Aina Eira/Ellen Mienna 5 siidu 379 siiddus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="56">
+         <tuv lang="sme">
+            <seg>V Sáhkavuorrolistu ja replihkat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="57">
+         <tuv lang="sme">
+            <seg>Sáhkavuorru Replihkka 1 Jarle Jonassen, dievasčoahkkinjođiheaddji Ann-Mari Thomassen, čoahkkinordnegii Willy Ørnebakk, čoahkkinordnegii</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="58">
+         <tuv lang="sme">
+            <seg>VI Sámedikki mearrádus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="59">
+         <tuv lang="sme">
+            <seg>03.02.12 beaiváduvvon gohččun oktan áššelisttuin, prográmmain ja sárdnunáiggiin dohkkehuvvo.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="60">
+         <tuv lang="sme">
+            <seg>Inger Jørstad válljejuvvo čoahkkinjođiheaddjin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="61">
+         <tuv lang="sme">
+            <seg>Ášši meannudeapmi loahpahuvvui 22.02.12 dii. 08.45.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="62">
+         <tuv lang="sme">
+            <seg>Čoahkkingirjji čállit: Ellen Aina Eira/Ellen Mienna</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="63">
+         <tuv lang="sme">
+            <seg>6 siidu 379 siiddus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="64">
+         <tuv lang="sme">
+            <seg>Vuođđogiella: Dárogiella</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+   </body>
+</tmx>

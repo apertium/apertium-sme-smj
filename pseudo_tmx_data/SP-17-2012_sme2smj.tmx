@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx>
+   <header segtype="sentence"
+           o-tmf="OmegaT TMX"
+           adminlang="EN-US"
+           srclang="sme"
+           datatype="plaintext"/>
+   <body>
+      <tu id="2">
+         <tuv lang="sme">
+            <seg>Ášši/Sak BFOL 003/12 Ášši/Sak DC017/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="3">
+         <tuv lang="sme">
+            <seg>Sámi vuoigatvuođat bioteknologalaš ovddideamis</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="4">
+         <tuv lang="sme">
+            <seg>Arkiivaáššenr. 11/202106 / 25 - 58</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="5">
+         <tuv lang="sme">
+            <seg>Meannudeamit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="6">
+         <tuv lang="sme">
+            <seg>Politihkalaš dássi Beaivi Áššenr.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="7">
+         <tuv lang="sme">
+            <seg>Sámediggeráđi 13.03.12SR 049/12 Bajásšaddan-, fuolahus- ja oahppolávdegoddi 16. – 17.04.12BFOL Sámedikki dievasčoahkkin 18. – 19.04.12DC 017/12</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="8">
+         <tuv lang="sme">
+            <seg>Ášši meannudeapmi álggahuvvui duorastaga cuoŋománu 19. b. 2012 dii. 12.45.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="9">
+         <tuv lang="sme">
+            <seg>I Mildosat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="10">
+         <tuv lang="sme">
+            <seg>Nr.BeaiviGeas/GeasaNamahus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="11">
+         <tuv lang="sme">
+            <seg>13.03.12 Sámediggeráđđi Ášši SR 049/12 Sámi vuoigatvuođat bioteknologalaš ovddideamis</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="12">
+         <tuv lang="sme">
+            <seg>II Evttohusat ja mearkkašumit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="13">
+         <tuv lang="sme">
+            <seg>Sámediggeráđi mearrádusárvalus:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="14">
+         <tuv lang="sme">
+            <seg>Sámediggi dovddasta ahte bioteknologalaš ovdáneapmi buktá sámi servodahkii ođđa hástalusaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="15">
+         <tuv lang="sme">
+            <seg>Dát ovdáneapmi rahpá vejolašvuođaid sihke buhcciiddikšui, máhttoovddideapmái ja dutkamii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="16">
+         <tuv lang="sme">
+            <seg>Áŋgiruššan sáhttá leat buorre ávkin boahttevaš dearvvašvuođabálvalussii, muhto hui deaŧalaš lea ahte áŋgiruššan čađahuvvo juridihkalaš ja etihkalaš dohkálaš vugiin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="17">
+         <tuv lang="sme">
+            <seg>Sápmelaččain álgoálbmogin leat maiddái beroštusat maid ferte vuhtiiváldit dán barggus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="18">
+         <tuv lang="sme">
+            <seg>Álgoálbmogiid genetihkalaš ávdnasiid eaiggáduššan ja hálddašeapmi lea dakkár suorgi mas Ráđđehus ja Sámediggi fertejit giddet fuomášumi.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="19">
+         <tuv lang="sme">
+            <seg>Sámediggi čujuha ILO konvenšuvdnii nr 168 álgoálbmogiid ja čearddalaš álbmogiid birra, artihkal 2.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="20">
+         <tuv lang="sme">
+            <seg>Ja ON 12.9.2007 mannosaš julggaštussii álgoálbmotvuoigatvuođaid birra, artihkal 31, mii válddaha álgoálbmogiid vuoigatvuođa mielváikkuheapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="21">
+         <tuv lang="sme">
+            <seg>Sámediggi čujuha maiddái Sámeparlamentarihkkárkonferánsii Girkonjárggas gos čuovvovaš cealkámuš dohkkehuvvui: Bioteknologalaš ovdáneapmi buktá sámi álbmogii ođđa hástalusaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="22">
+         <tuv lang="sme">
+            <seg>Konferánsa deattuha ahte sámi álbmot ferte ieš hálddašit ja eaiggáduššat dieđuid iežas genaid (DNA) birra, ja ahte sámi álbmot dađistaga galgá gulahallat stáhtalaš eiseválddiiguin ja dutkanbirrasiiguin vai sáhttá čuovvut dán ovdáneami ja váikkuhit dasa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="23">
+         <tuv lang="sme">
+            <seg>Dat ahte dutkat sámi álbmoga bohciidahttá gažaldaga humána biologalaš ávdnasiid eaiggáduššama ja hálddašeami birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="24">
+         <tuv lang="sme">
+            <seg>Dát šaddá fáddán konsultašuvnnnain Ráđđehusain lágaid ja boahttevaš plánaid ja proseassaid árvvoštallamis dán suorggis</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="25">
+         <tuv lang="sme">
+            <seg>BFOL 003/12: Sámi vuoigatvuođat bioteknologalaš ovddideamis Bajásšaddan-, fuolahus- ja oahppolávdegotti árvalus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="26">
+         <tuv lang="sme">
+            <seg>Álggahus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="27">
+         <tuv lang="sme">
+            <seg>Bajásšaddan-, fuolahus- ja oahppolávdegoddi lea meannudan sámediggeráđi mearrádusevttohusa áššis 17/12 Sámi vuoigatvuođat bioteknologalaš ovdáneamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="28">
+         <tuv lang="sme">
+            <seg>Mearkkašumit</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="29">
+         <tuv lang="sme">
+            <seg>Mearkkašupmi Norgga sámiid riikkasearvvi (NSR) lahtuin Silje Karine Muotka, Kirsti Guvsám ja Nanna Thomassen, Norgga sámiid riikkasearvvi /Sámeálbmotbellodaga (NSR/Sáb) lahtus Trond Are Anti, Bargiidbellodaga sámedikkejoavkku (Bp) lahtuin Mariann Wollmann Magga, Jørn Are Gaski ja Marit Kirsten A.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="30">
+         <tuv lang="sme">
+            <seg>Gaup, Árja lahtus Odd Iver Sara, Åarjel-Saemiej Gielh (ÅaSG) lahtus Ida Marie Bransfjell ja Badjeolbmuidlistta (Bl) lahtus Anders Somby jr.:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="31">
+         <tuv lang="sme">
+            <seg>Lávdegoddi lea duhtavaš go sámediggeráđđi čuovvola parlamentarihkkárkonferánssa mearrádusa Girkonjárggas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="32">
+         <tuv lang="sme">
+            <seg>Lávdegoddi ávžžuha sámediggeráđi árvvoštallat ovttasbarggu riikkarájiid rastá sámi vuoigatvuođaid oktavuođas bioteknologalaš ovdáneamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="33">
+         <tuv lang="sme">
+            <seg>Sámediggeráđđi lea lágidan seminára " Sámi vuoigatvuođat bioteknologalaš ovdáneamis" , mas leat boahtán ovdan máŋga čuolbmačilgehusa, dieđut ja ođđa máhttu go Sámediggi lea meannudan ášši.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="34">
+         <tuv lang="sme">
+            <seg>Lávdegoddi diehtá ahte bioteknologiijaláhka lea ođasmahttojuvvomin, ja ahte áigumuš lea árvvoštallama meannudit Stuorradikkis cuoŋománus 2013.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="35">
+         <tuv lang="sme">
+            <seg>Lávdegoddi háliida ahte Sámediggi ovddida árvalusaid bioteknologiijalága árvvoštallamii, ja bivdá danne sámediggeráđi ráhkkanahttit áššin dievasčoahkkimii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="36">
+         <tuv lang="sme">
+            <seg>Lávdegoddi háliida erenoamážit ahte láhka árvvoštallojuvvo sámi diliid ektui, ja dan ahte fuolaha go dat daid oktasaš perspektiivvaid ja etihkalaš norpmaid mat sohpet min sámi kulturárbái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="37">
+         <tuv lang="sme">
+            <seg>Lávdegoddi deattuha ahte stáhta eiseválddit fertejit sihkkarastit ahte ILO konvenšuvnna nr 169 ollašuhttojuvvo mielváikkuhanvuoigatvuođa ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="38">
+         <tuv lang="sme">
+            <seg>Lávdegoddi oaivvilda ahte dat sáhttá dahkkojuvvot árjjalaš oassálastima bokte ráđiin, lávdegottiin ja vejolaš eará orgánain mat leat doaimmas bioteknologiija oktavuođas dahje galget ásahuvvot dan oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="39">
+         <tuv lang="sme">
+            <seg>Livččii deaŧalaš ahte dain orgánain ja ásahusat mat barget dáid áššiiguin, lea gelbbolašvuohta olmmošvuoigatvuođain, ja erenoamážit oktasaš vuoigatvuođain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="40">
+         <tuv lang="sme">
+            <seg>Dat mo álgoálbmogiid genehtalaš ávdnasiid eaiggáduššan ja hálddašeapmi gieđahallojuvvo, lea mearrideaddji deaŧalaš dasa ahte buhcciiddikšu, dutkan, patenteren ja muđui registariid oktiičatnan sáhttá veahkehit álgoálbmogiid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="41">
+         <tuv lang="sme">
+            <seg>Lávdegoddi háliida ahte sámediggeráđđi árvvoštallá dárbbu ja vejolašvuođaid ásahit dutkanetihkalaš njuolggadusaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="42">
+         <tuv lang="sme">
+            <seg>Das leat iešguđetlágan čuolbmačilgehusat dan ektui ahte ásahit dakkár njuolggadusaid, ja áigeperspektiiva lea okta dain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="43">
+         <tuv lang="sme">
+            <seg>Eará čuolbmačilgehusat leat dat ahte guđe dásis njuolggadusat galget ásahuvvot, gii lea olahusjoavkun, gean dat geatnegahttá, guđe ráŋggáštanvejolašvuođat gávdnojit.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="44">
+         <tuv lang="sme">
+            <seg>Lávdegoddi háliida ahte sámediggeráđđi árvvoštallá fuolahit go dálá njuolggadusat sámi vuoigatvuođaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="45">
+         <tuv lang="sme">
+            <seg>Berre árvvoštallat dan ahte lea go dárbu nannet Databearráigeahču kollektiiva perspektiivvaid ja álgoálbmotgelbbolašvuođa dáfus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="46">
+         <tuv lang="sme">
+            <seg>Evttohusat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="47">
+         <tuv lang="sme">
+            <seg>Evttohus 1</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="48">
+         <tuv lang="sme">
+            <seg>Evttohus Norgga sámiid riikkasearvvi (NSR) lahtuin Silje Karine Muotka, Kirsti Guvsám ja Nanna Thomassen, Norgga sámiid riikkasearvvi /Sámeálbmotbellodaga (NSR/Sáb) lahtus Trond Are Anti, Bargiidbellodaga sámedikkejoavkku (Bp) lahtuin Mariann Wollmann Magga, Jørn Are Gaski ja Marit Kirsten A.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="49">
+         <tuv lang="sme">
+            <seg>Gaup, Árja</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="50">
+         <tuv lang="sme">
+            <seg>Čoahkkingirjji čállit: Marit Ellen Mienna /Tove Anti</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="51">
+         <tuv lang="sme">
+            <seg>68 siidu 90 siiddus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="52">
+         <tuv lang="sme">
+            <seg>lahtus Odd Iver Sara, Åarjel-Saemiej Gielh (ÅaSG) lahtus Ida Marie Bransfjell ja Badjeolbmuidlistta (Bl) lahtus Anders Somby jr:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="53">
+         <tuv lang="sme">
+            <seg>Lasseevttohus, biddjojuvvo sisa ovdal maŋimus teakstaoasi:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="54">
+         <tuv lang="sme">
+            <seg>Lávdegoddi deattuha ahte stáhta eiseválddit fertejit sihkkarastit ahte ILO konvenšuvnna nr 169 ollašuhttojuvvo mielváikkuhanvuoigatvuođa ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="55">
+         <tuv lang="sme">
+            <seg>Sámediggi oivvilda ahte dat sáhttá dahkkojuvvot árjjalaš oassálastima bokte ráđiin, lávdegottiin ja vejolaš eará orgánain mat leat doaimmas bioteknologiija oktavuođas dahje galget ásahuvvot dan oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="56">
+         <tuv lang="sme">
+            <seg>Livččii deaŧalaš ahte dain orgánain ja ásahusat mat barget dáid áššiiguin, lea gelbbolašvuohta olmmošvuoigatvuođain, ja erenoamážit oktasaš vuoigatvuođain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="57">
+         <tuv lang="sme">
+            <seg>Dan oktavuođas go bioteknologiijaláhka lea ođasmahttojuvvomin, lea hui deaŧalaš ahte ráhkkanahttojuvvo stuorát ášši dievasčoahkkimii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="58">
+         <tuv lang="sme">
+            <seg>Sámi servodagas dárbbašuvvo máhtto- ja kapasitehtalokten, ja dan geažil lea deaŧalaš ahte Sámediggi meannuda eanet áššiid main bioteknologiija lea fáddán.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="59">
+         <tuv lang="sme">
+            <seg>Ferte árvvoštallat fuolahit go bioteknologiijaláhka ja gullevaš lágat sámi diliid, oktasaš perspektiivva ja etihkalaš norpmaid nu mo dat bohtet ovdan min sámi kulturárbbis, ja ahte dat fuolahit sámi álbmoga vuoigatvuođa hálddašit iežaset árbeávdnasiid ja eaiggáduššat máhtu iežaset árbeávdnasiid birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="60">
+         <tuv lang="sme">
+            <seg>Evttohus 2</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="61">
+         <tuv lang="sme">
+            <seg>Evttohus Ovddádusbellodagas (Frp) Hans Eriksen :</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="62">
+         <tuv lang="sme">
+            <seg>Boahtá ollásit sámediggeráđi evttohusa sadjái:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="63">
+         <tuv lang="sme">
+            <seg>Sámediggi oaidná ahte bioteknologalaš ovdáneapmi buktá servodahkii hástalusaid, muhto maiddá issoras stuorra vejolašvuođaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="64">
+         <tuv lang="sme">
+            <seg>Ollu olbmot ellet dál guhkit ja sis lea buoret eallin gena- ja bioteknologiija ovdáneami geažil.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="65">
+         <tuv lang="sme">
+            <seg>Dát teknologiija lea earret eará addán buoret dálkasiid ja borramuša sihke olbmuide ja elliide.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="66">
+         <tuv lang="sme">
+            <seg>Sámedikkis lea boahtteáiggediđolaš ja positiiva guottut daidda vejolašvuođaide mat rahpasit gena- ja bioteknologiijadutkama ja -geavaheami geažil.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="67">
+         <tuv lang="sme">
+            <seg>Lea buorre go Norggas muddejuvvojit dát suorggit mealgat garraseappot go dain riikkain maiguin mis lea lunddolaš buohtastahttit iežamet.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="68">
+         <tuv lang="sme">
+            <seg>Sámediggi oaivvilda ahte Norga dárbbaša njuolggadusaid mat dagahit ahte Norga sáhttá šaddat ovddasmanni riikan gena- ja bioteknologiijadutkamis ja -ovddideamis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="69">
+         <tuv lang="sme">
+            <seg>Ii galgga dárbbašuvvot politihkalaš seaguheapmi gena- ja bioteknologiija muddemii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="70">
+         <tuv lang="sme">
+            <seg>Dattetge fertejit leat dohkálaš sihkkarvuođamekanismmat mat sihkkarastet dohkálaš ovdáneami dán suorggis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="71">
+         <tuv lang="sme">
+            <seg>Dasa lassin fertejit etihkalaš njuolggadusat láidestit dán teknologiija geavaheami.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="72">
+         <tuv lang="sme">
+            <seg>Dakkár etihkalaš vuođu vuolggasadji ferte leat ovttaskas olbmo válljema árvvusatnin, ja olbmuid gávnni vuhtiiváldin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="73">
+         <tuv lang="sme">
+            <seg>Vai sihkkarastojuvvo genaja bioteknologiija dohkálaš lávdu, de lea deaŧalaš viežžat lobi diehtojuohkima vuođul, ovdamearkka dihtii genamuddejuvvon borramuša merkema bokte.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="74">
+         <tuv lang="sme">
+            <seg>Sihkkarastin dihtii ahte teknologiija ovdána, erret eará váibmo- ja varrasuotnadávddaid ja borasdávddaid dikšuma oktavuođas, de ferte priváhta ealáhuseallin searvvahuvvot dutkamii ja ovddideapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="75">
+         <tuv lang="sme">
+            <seg>Gena- ja bioteknologiija geavaheapmi ii galgga guđe ge suorggis ráddjejuvvot dušše guoskat daidda doaimmaide ja ásahusaide, maid almmolašvuohta eaiggáduššá.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="76">
+         <tuv lang="sme">
+            <seg>Medisiidnasuorggis berre buot doaibma mii lea lobálaš almmolaš ásahusain, maiddái leat lobálaš priváhta suorggis, dearvvašvuođaeiseválddiid dábálaš geahčču vuolde.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="77">
+         <tuv lang="sme">
+            <seg>Sámediggi bivdá Stuorradikki:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="78">
+         <tuv lang="sme">
+            <seg>bargat dainna ulbmiliin ahte gena- ja bioteknologiija ovdána buori láhkai ja ođđaáiggi jurddašami vuođul gohččut merket genamuddejuvvon borramuša eanedit dutkanáŋgiruššama Norggas</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="79">
+         <tuv lang="sme">
+            <seg>Čoahkkingirjji čállit: Marit Ellen Mienna /Tove Anti</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="80">
+         <tuv lang="sme">
+            <seg>69 siidu 90 siiddus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="81">
+         <tuv lang="sme">
+            <seg>Lávdegotti ráva</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="82">
+         <tuv lang="sme">
+            <seg>Lávdegottis eai leat eanet mearkkašumit dahje evttohusat ja rávve Sámedikki mearridit čuovvovačča:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="83">
+         <tuv lang="sme">
+            <seg>Sámediggi doarju muđui sámediggeráđi árvalusevttohusa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="84">
+         <tuv lang="sme">
+            <seg>III Jienasteapmi</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="85">
+         <tuv lang="sme">
+            <seg>39 áirasis ledje 29 čoahkis.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="86">
+         <tuv lang="sme">
+            <seg>Jienasteapmi dahkkojuvvui čuovvovaš vuogi mielde:</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="87">
+         <tuv lang="sme">
+            <seg>Evttohus 2 hilgojuvvui 28 jienain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="88">
+         <tuv lang="sme">
+            <seg>1 jienastii beali.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="89">
+         <tuv lang="sme">
+            <seg>Evttohus 1 mearriduvvui 28 jienain 1 jiena vuostá.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="90">
+         <tuv lang="sme">
+            <seg>Bajásšaddan- fuolahus- ja oahppolávdegotti ráva mearriduvvui 28 jienain 1 jiena vuostá.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="91">
+         <tuv lang="sme">
+            <seg>IV Beavdegirjelasáhusat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="92">
+         <tuv lang="sme">
+            <seg>Dán áššis ii ovddiduvvon beavdegirjelasáhus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="93">
+         <tuv lang="sme">
+            <seg>V Sáhkavuorrolistu ja replihkat</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="94">
+         <tuv lang="sme">
+            <seg>Sáhkavuorru Replihkka 1 Kirsti Guvsám, áššejođiheaddji 2 Hans EriksenSilje Karine Muotka Kirsti Guvsám Jørn Are Gaski 3 Silje Karine Muotka 4 Jørn Are GaskiSilje Karine Muotka Aud Marthinsen Jørn Are Gaski 5 Mariann Wollmann Magga 6 Inga-Lill SundsetJørn Are Gaski Silje Karine Muotka Kirsti Guvsám Inga-Lill Sundset 7 Trond Are Anti 8 Anders Somby jr. 9 Silje Karine Muotka Kirsti Guvsám Alf Isaksen Kirsti Guvsám, áššejođiheaddji</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="95">
+         <tuv lang="sme">
+            <seg>VI Sámedikki mearrádus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="96">
+         <tuv lang="sme">
+            <seg>Sámediggi dovddasta ahte bioteknologalaš ovdáneapmi buktá sámi servodahkii ođđa hástalusaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="97">
+         <tuv lang="sme">
+            <seg>Dát ovdáneapmi rahpá vejolašvuođaid sihke buhcciiddikšui, máhttoovddideapmái ja dutkamii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="98">
+         <tuv lang="sme">
+            <seg>Áŋgiruššan sáhttá leat buorre ávkin boahttevaš dearvvašvuođabálvalussii, muhto hui deaŧalaš lea ahte áŋgiruššan čađahuvvo juridihkalaš ja etihkalaš dohkálaš vugiin.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="99">
+         <tuv lang="sme">
+            <seg>Sápmelaččain álgoálbmogin leat maiddái beroštusat maid ferte vuhtiiváldit dán barggus.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="100">
+         <tuv lang="sme">
+            <seg>Álgoálbmogiid genetihkalaš ávdnasiid eaiggáduššan ja hálddašeapmi lea dakkár suorgi mas Ráđđehus ja Sámediggi fertejit giddet fuomášumi.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="101">
+         <tuv lang="sme">
+            <seg>Sámediggi čujuha ILO konvenšuvdnii nr 168 álgoálbmogiid ja čearddalaš álbmogiid birra, artihkal 2.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="102">
+         <tuv lang="sme">
+            <seg>Ja ON 12.9.2007 mannosaš julggaštussii álgoálbmotvuoigatvuođaid birra, artihkal 31, mii válddaha álgoálbmogiid vuoigatvuođa mielváikkuheapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="103">
+         <tuv lang="sme">
+            <seg>Čoahkkingirjji čállit: Marit Ellen Mienna /Tove Anti 70 siidu 90 siiddus Sámediggi čujuha maiddái Sámeparlamentarihkkárkonferánsii Girkonjárggas gos čuovvovaš cealkámuš dohkkehuvvui: Bioteknologalaš ovdáneapmi buktá sámi álbmogii ođđa hástalusaid.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="104">
+         <tuv lang="sme">
+            <seg>Konferánsa deattuha ahte sámi álbmot ferte ieš hálddašit ja eaiggáduššat dieđuid iežas genaid (DNA) birra, ja ahte sámi álbmot dađistaga galgá gulahallat stáhtalaš eiseválddiiguin ja dutkanbirrasiiguin vai sáhttá čuovvut dán ovdáneami ja váikkuhit dasa.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="105">
+         <tuv lang="sme">
+            <seg>Sámediggi deattuha ahte stáhta eiseválddit fertejit sihkkarastit ahte ILO konvenšuvnna nr 169 ollašuhttojuvvo mielváikkuhanvuoigatvuođa ektui.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="106">
+         <tuv lang="sme">
+            <seg>Sámediggi oivvilda ahte dat sáhttá dahkkojuvvot árjjalaš oassálastima bokte ráđiin, lávdegottiin ja vejolaš eará orgánain mat leat doaimmas bioteknologiija oktavuođas dahje galget ásahuvvot dan oktavuođas.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="107">
+         <tuv lang="sme">
+            <seg>Livččii deaŧalaš ahte dain orgánain ja ásahusat mat barget dáid áššiiguin, lea gelbbolašvuohta olmmošvuoigatvuođain, ja erenoamážit oktasaš vuoigatvuođain.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="108">
+         <tuv lang="sme">
+            <seg>Dan oktavuođas go bioteknologiijaláhka lea ođasmahttojuvvomin, lea hui deaŧalaš ahte ráhkkanahttojuvvo stuorát ášši dievasčoahkkimii.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="109">
+         <tuv lang="sme">
+            <seg>Sámi servodagas dárbbašuvvo máhtto- ja kapasitehtalokten, ja dan geažil lea deaŧalaš ahte Sámediggi meannuda eanet áššiid main bioteknologiija lea fáddán.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="110">
+         <tuv lang="sme">
+            <seg>Ferte árvvoštallat fuolahit go bioteknologiijaláhka ja gullevaš lágat sámi diliid, oktasaš perspektiivva ja etihkalaš norpmaid nu mo dat bohtet ovdan min sámi kulturárbbis, ja ahte dat fuolahit sámi álbmoga vuoigatvuođa hálddašit iežaset árbeávdnasiid ja eaiggáduššat máhtu iežaset árbeávdnasiid birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="111">
+         <tuv lang="sme">
+            <seg>Dat ahte dutkat sámi álbmoga bohciidahttá gažaldaga humána biologalaš ávdnasiid eaiggáduššama ja hálddašeami birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="112">
+         <tuv lang="sme">
+            <seg>Dát šaddá fáddán konsultašuvnnnain Ráđđehusain lágaid ja boahttevaš plánaid ja proseassaid árvvoštallamis dán suorggis</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="113">
+         <tuv lang="sme">
+            <seg>Ášši meannudeapmi loahpahuvvui 19.04.12 dii. 13.50.</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="114">
+         <tuv lang="sme">
+            <seg>Čoahkkingirjji čállit: Marit Ellen Mienna /Tove Anti</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="115">
+         <tuv lang="sme">
+            <seg>71 siidu 90 siiddus</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+      <tu id="116">
+         <tuv lang="sme">
+            <seg>Vuođđogiella: Dárogiella</seg>
+         </tuv>
+         <tuv lang="smj">
+            <seg>MONOLINGUAL</seg>
+         </tuv>
+      </tu>
+   </body>
+</tmx>
