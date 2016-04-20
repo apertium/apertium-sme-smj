@@ -114,6 +114,9 @@ def getAMT(f,o_dir,src_only,wer):
             th_amt.set('style', 'border-bottom: 2pt solid;')
 
         if (wer):
+            htrans = 'human translation' 
+            mtrans = 'machine translation'
+            wer_value = 'calculate getWER(htrans,mtrans)'
             tr_wer = ET.SubElement(o_table, 'tr')
             td_wer = ET.SubElement(tr_wer, 'td')
             td_wer.set('class', 'tg-wer')
