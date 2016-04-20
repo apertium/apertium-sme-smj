@@ -57,10 +57,52 @@ def prettify(elem):
     reparsed = minidom.parseString(rough_string)
     return reparsed.toprettyxml(indent="\t")
 
+
+# testing a WER calculation function
+# borrowed from
+# https://martin-thoma.com/word-error-rate-calculation/
+# to be tested against the Apertium WER calculation module 
+def getWER(r, h):
+    """
+        Calculation of WER with Levenshtein distance.
+        Works only for iterables up to 254 elements (uint8).
+        O(nm) time ans space complexity.
+
+        >>> wer("who is there".split(), "is there".split())
+        1
+        >>> wer("who is there".split(), "".split())
+        3
+        >>> wer("".split(), "who is there".split())
+        3
+    """
+    # initialisation
+    import numpy
+    d = numpy.zeros((len(r)+1)*(len(h)+1), dtype=numpy.uint8)
+    d = d.reshape((len(r)+1, len(h)+1))
+    for i in range(len(r)+1):
+        for j in range(len(h)+1):
+            if i == 0:
+                d[0][j] = j
+            elif j == 0:
+                d[i][0] = i
+
+    # computation
+    for i in range(1, len(r)+1):
+        for j in range(1, len(h)+1):
+            if r[i-1] == h[j-1]:
+                d[i][j] = d[i-1][j-1]
+            else:
+                substitution = d[i-1][j-1] + 1
+                insertion    = d[i][j-1] + 1
+                deletion     = d[i-1][j] + 1
+                d[i][j] = min(substitution, insertion, deletion)
+
+    return d[len(r)][len(h)]
+
 def getAMT(f,o_dir,src_only,wer):
     """Return a XML structure enriched with the Apertium MT output.
     """
-    print('... processing ' + str(f))
+    print('... PROCESSING ' + str(f))
 
     cwd = os.getcwd()
     out_dir_path = os.path.join(cwd,o_dir)
@@ -93,7 +135,7 @@ def getAMT(f,o_dir,src_only,wer):
         th_sme.set('colspan', '2')
         th_sme.text = tu[0][0].text
         
-        print('processing ' + str(tu[0][0].text) + '\n')
+        print('PROCESSING ' + str(tu[0][0].text) + '\n')
 
         p = Popen('echo '+'\''+tu[0][0].text+'\''+cmd, shell=True, stdout=PIPE, stderr=PIPE)
         out, err = p.communicate()
@@ -116,12 +158,14 @@ def getAMT(f,o_dir,src_only,wer):
         if (wer):
             htrans = 'human translation' 
             mtrans = 'machine translation'
-            wer_value = 'calculate getWER(htrans,mtrans)'
+            wer_value = getWER(th_smj.text.split(),th_amt.text.split())
             tr_wer = ET.SubElement(o_table, 'tr')
             td_wer = ET.SubElement(tr_wer, 'td')
             td_wer.set('class', 'tg-wer')
             td_wer.set('style', 'border-bottom: 5pt solid;')
-            td_wer.text = 'WER = value'
+            #print '___ WER ' + str(wer_value) 
+
+            td_wer.text = str(wer_value)
             td_ble = ET.SubElement(tr_wer, 'td')
             td_ble.set('class', 'tg-wer')
             td_ble.set('style', 'border-bottom: 5pt solid;')
@@ -166,7 +210,7 @@ def main():
     i_file = ''
     i_dir = 'tmx_data'
     o_dir = 'otpt_dir'
-    src_only = True
+    src_only = False
     wer = True
 
     if (src_only):
