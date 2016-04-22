@@ -2,9 +2,9 @@
 <interchunk>
 
   <section-def-cats>
-    <def-cat n="SN">
-      <cat-item tags="SN"/>
-      <cat-item tags="SN.*"/>
+    <def-cat n="NP">
+      <cat-item tags="NP"/>
+      <cat-item tags="NP.*"/>
     </def-cat>
     
     <def-cat n="SV_Obj">
@@ -13,28 +13,28 @@
         <cat-item tags="SV.@←OBJ"/>
     </def-cat>
 
-    <def-cat n="SN_Subj">
-        <cat-item tags="SN.@SUBJ→.*"/>
-        <cat-item tags="SN.@←SUBJ.*"/>
+    <def-cat n="NP_Subj">
+        <cat-item tags="NP.@SUBJ→.*"/>
+        <cat-item tags="NP.@←SUBJ.*"/>
     </def-cat>
     
-    <def-cat n="SN_Obj">
-        <cat-item tags="SN.@OBJ→.*"/>
-        <cat-item tags="SN.@←OBJ.*"/>
+    <def-cat n="NP_Obj">
+        <cat-item tags="NP.@OBJ→.*"/>
+        <cat-item tags="NP.@←OBJ.*"/>
     </def-cat>
     
-    <def-cat n="SN_Pr">
-        <cat-item tags="SN.@←ADVL.*"/>
+    <def-cat n="NP_Pr">
+        <cat-item tags="NP.@←ADVL.*"/>
     </def-cat>
     
-    <def-cat n="SN_Advl">
-        <cat-item tags="SN.@ADVL→.*"/>
-        <cat-item tags="SN.@←ADVL.*"/>
-        <cat-item tags="SN.@ADVL.*"/>
+    <def-cat n="NP_Advl">
+        <cat-item tags="NP.@ADVL→.*"/>
+        <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="NP.@ADVL.*"/>
     </def-cat>
     
-    <def-cat n="SN_Po">
-        <cat-item tags="SN.@→P.*"/>
+    <def-cat n="NP_Po">
+        <cat-item tags="NP.@→P.*"/>
     </def-cat>
     
     <def-cat n="FMainV">
@@ -144,7 +144,7 @@
   <section-rules>
     <rule> <!--inessive instead of elative in habitive constructions -->
       <pattern>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
         <pattern-item n="Vcop"/>
       </pattern>
       <action>
@@ -182,7 +182,7 @@
 
  <rule> <!--inessive instead of elative before inessive adverbs -->
       <pattern>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
         <pattern-item n="Ine_adverb"/>
       </pattern>
       <action>
@@ -220,9 +220,9 @@
     
      <rule> <!-- coordinated inessive NPs -->
       <pattern>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
         <pattern-item n="CC"/>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
         <pattern-item n="Ine_adverb"/>
       </pattern>
       <action>
@@ -284,11 +284,11 @@
 
 <rule> <!-- double coordinated inessive NPs -->
       <pattern>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
         <pattern-item n="CC"/>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
         <pattern-item n="CC"/>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
         <pattern-item n="Ine_adverb"/>
       </pattern>
       <action>
@@ -373,9 +373,9 @@
     
     <rule> <!--SVO becomes SOV -->
       <pattern>
-        <pattern-item n="SN_Subj"/>
+        <pattern-item n="NP_Subj"/>
         <pattern-item n="FMainV"/>
-        <pattern-item n="SN_Obj"/>
+        <pattern-item n="NP_Obj"/>
       </pattern>
       <action>
         <out>
@@ -405,7 +405,7 @@
     
         <rule> <!--SVO becomes SOV, verbal objects--><!-- Mun oahpan lohkat girjjiid.-->
       <pattern>
-        <pattern-item n="SN_Subj"/>
+        <pattern-item n="NP_Subj"/>
         <pattern-item n="FMainV"/>
         <pattern-item n="SV_Obj"/> 
       </pattern>
@@ -439,9 +439,9 @@
       <pattern>
         <pattern-item n="FAuxV"/>
         <pattern-item n="Pcle"/>
-        <pattern-item n="SN_Subj"/>
+        <pattern-item n="NP_Subj"/>
         <pattern-item n="FMainV"/>
-        <pattern-item n="SN_Obj"/>
+        <pattern-item n="NP_Obj"/>
       </pattern>
       <action>
         <out>
@@ -488,7 +488,7 @@
         <pattern-item n="FAuxV"/>
         <pattern-item n="Pcle"/>
         <pattern-item n="FMainV"/>
-        <pattern-item n="SN_Obj"/>
+        <pattern-item n="NP_Obj"/>
       </pattern>
       <action>
         <out>
@@ -525,9 +525,9 @@
     
     <rule> <!--no SOV with complex coordinated objects -->
       <pattern>
-        <pattern-item n="SN_Subj"/>
+        <pattern-item n="NP_Subj"/>
         <pattern-item n="FMainV"/>
-        <pattern-item n="SN_Obj"/>
+        <pattern-item n="NP_Obj"/>
         <pattern-item n="CC"/>
       </pattern>
       <action>
@@ -565,9 +565,9 @@
 
     <rule> <!--SVA becomes SAV -->
       <pattern>
-        <pattern-item n="SN_Subj"/>
+        <pattern-item n="NP_Subj"/>
         <pattern-item n="FMainV"/>
-        <pattern-item n="SN_Advl"/>
+        <pattern-item n="NP_Advl"/>
       </pattern>
       <action>
         <out>

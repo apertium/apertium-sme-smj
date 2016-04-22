@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interchunk>
   <section-def-cats>
-    <def-cat n="SN">
-      <cat-item tags="SN"/>
-      <cat-item tags="SN.*"/>
+    <def-cat n="NP">
+      <cat-item tags="NP"/>
+      <cat-item tags="NP.*"/>
     </def-cat>
   </section-def-cats>
 
@@ -27,9 +27,9 @@
   </section-def-macros>
 
   <section-rules>
-    <rule comment="REGLA: SN">
+    <rule comment="REGLA: NP">
       <pattern>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
       </pattern>
       <action>
         <out>

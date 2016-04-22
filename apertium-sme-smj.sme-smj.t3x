@@ -2,33 +2,33 @@
 <interchunk>
 
   <section-def-cats>
-    <def-cat n="SN">
-      <cat-item tags="SN"/>
-      <cat-item tags="SN.*"/>
+    <def-cat n="NP">
+      <cat-item tags="NP"/>
+      <cat-item tags="NP.*"/>
     </def-cat>
 
-    <def-cat n="SN_Subj">
-        <cat-item tags="SN.@SUBJ→.*"/>
-        <cat-item tags="SN.@←SUBJ.*"/>
+    <def-cat n="NP_Subj">
+        <cat-item tags="NP.@SUBJ→.*"/>
+        <cat-item tags="NP.@←SUBJ.*"/>
     </def-cat>
 
-    <def-cat n="SN_Obj">
-        <cat-item tags="SN.@OBJ→.*"/>
-        <cat-item tags="SN.@←OBJ.*"/>
+    <def-cat n="NP_Obj">
+        <cat-item tags="NP.@OBJ→.*"/>
+        <cat-item tags="NP.@←OBJ.*"/>
     </def-cat>
 
-    <def-cat n="SN_Pr">
-        <cat-item tags="SN.@←ADVL.*"/>
+    <def-cat n="NP_Pr">
+        <cat-item tags="NP.@←ADVL.*"/>
     </def-cat>
 
-    <def-cat n="SN_Advl">
-        <cat-item tags="SN.@ADVL→.*"/>
-        <cat-item tags="SN.@←ADVL.*"/>
-        <cat-item tags="SN.@ADVL.*"/>
+    <def-cat n="NP_Advl">
+        <cat-item tags="NP.@ADVL→.*"/>
+        <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="NP.@ADVL.*"/>
     </def-cat>
 
-    <def-cat n="SN_Po">
-        <cat-item tags="SN.@→P.*"/>
+    <def-cat n="NP_Po">
+        <cat-item tags="NP.@→P.*"/>
     </def-cat>
 
     <def-cat n="FMainV">
@@ -139,7 +139,7 @@
 
     <rule>
       <pattern>
-        <pattern-item n="SN"/>
+        <pattern-item n="NP"/>
       </pattern>
       <action>
         <out>

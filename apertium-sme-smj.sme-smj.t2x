@@ -2,29 +2,26 @@
 <interchunk>
 
   <section-def-cats>
-    <def-cat n="SN">
-      <cat-item tags="SN"/>
-      <cat-item tags="SN.*"/>
+    <def-cat n="NP">
+      <cat-item tags="NP.*"/>
+    </def-cat>
+    <def-cat n="SV">
+      <cat-item tags="SV.*"/>
+    </def-cat>
+    <def-cat n="CNP">
+      <cat-item tags="cnjcoo.@CNP.*"/>
+      <cat-item tags="cnjcoo.@CNP"/>
+    </def-cat>
+    <def-cat n="CVP">
+      <cat-item tags="cnjcoo.@CVP.*"/>
+      <cat-item tags="cnjcoo.@CVP"/>
     </def-cat>
     
-    <def-cat n="SN_Subj">
-        <cat-item tags="SN.@SUBJ→.*"/>
-        <cat-item tags="SN.@←SUBJ.*"/>
-    </def-cat>
     
-    <def-cat n="SN_Obj">
-        <cat-item tags="SN.@OBJ→.*"/>
-        <cat-item tags="SN.@←OBJ.*"/>
-    </def-cat>
     
-    <def-cat n="SN_Advl">
-        <cat-item tags="SN.@ADVL→.*"/>
-        <cat-item tags="SN.@←ADVL.*"/>
-        <cat-item tags="SN.@ADVL.*"/>
-    </def-cat>
     
-    <def-cat n="SN_Po">
-        <cat-item tags="SN.@→P.*"/>
+    <def-cat n="NP_Po">
+        <cat-item tags="NP.@→P.*"/>
     </def-cat>
    <def-cat n="PR_PO">
        <cat-item lemma="pr_po" tags="*"/>
@@ -33,12 +30,12 @@
      <def-cat n="GenCompl">
       <cat-item tags="NumG"/>
       <cat-item tags="NumG.*"/>
-      <cat-item tags="SN"/>
-      <cat-item tags="SN.*"/>
+      <cat-item tags="NP"/>
+      <cat-item tags="NP.*"/>
     </def-cat>
     
-    <def-cat n="SN_Pr">
-        <cat-item tags="SN.@←ADVL.*"/>
+    <def-cat n="NP_Pr">
+        <cat-item tags="NP.@←ADVL.*"/>
     </def-cat>
     
     <def-cat n="FMainV">
@@ -62,9 +59,6 @@
         <cat-item tags="SV.*.neg.foc_ge.*"/>
     </def-cat>
     
-    <def-cat n="CNP">
-        <cat-item tags="CC.@CNP"/>
-    </def-cat>
     
     <def-cat n="Vcop">
         <cat-item lemma="copula" tags="SV"/>
@@ -146,32 +140,16 @@
   </section-def-vars>
 
   <section-rules>
-
-    <rule>
-      <pattern>
-        <pattern-item n="SN"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
     
-   <rule comment="REGLA: SN_Po Adp">
+   <rule comment="REGLA: NP_Po Adp">
      <pattern>
-       <pattern-item n="SN_Po"/>
+       <pattern-item n="NP_Po"/>
        <pattern-item n="Adp"/>
      </pattern>
      <action>
        <out>
          <chunk>
-           <lit v="adpp"/>
+           <get-case-from pos="1"><lit v="adpp"/></get-case-from>
            <clip pos="2" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
@@ -184,15 +162,15 @@
      </action>
     </rule> 
 
-   <rule comment="REGLA: Adp SN_Pr">
+   <rule comment="REGLA: Adp NP_Pr">
      <pattern>
        <pattern-item n="Adp"/>
-       <pattern-item n="SN_Pr"/>
+       <pattern-item n="NP_Pr"/>
      </pattern>
      <action>
        <out>
          <chunk>
-           <lit v="adpp"/>
+           <get-case-from pos="1"><lit v="adpp"/></get-case-from>
            <clip pos="1" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
@@ -204,78 +182,54 @@
        </out>
      </action>
     </rule> 
-    
-    <rule comment="REGLA: SN_Obj CNP SN_Obj">
-     <pattern>
-       <pattern-item n="SN_Obj"/>
-       <pattern-item n="CNP"/>
-       <pattern-item n="SN_Obj"/>
-     </pattern>
-     <action>
+     
+    <rule comment="REGLA: NP CNP NP">
+      <pattern>
+        <pattern-item n="NP"/>
+        <pattern-item n="CNP"/>
+        <pattern-item n="NP"/>
+      </pattern>
+      <action>
        <out>
          <chunk>
-           <lit v="coor_obj"/>
-           <clip pos="1" part="tags"/>
+           <clip pos="3" part="lem"/>
+           <clip pos="3" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
-           <lit v=" "/>
+           <b pos="1"/>
            <clip pos="2" part="content"/>
-           <lit v=" "/>
+           <b pos="2"/>
            <clip pos="3" part="content"/>
            <lit v="}"/>
-           <clip pos="1" part="lemq"/>
          </chunk>
        </out>
-     </action>
-    </rule> 
+      </action>
+    </rule>
 
-    <rule comment="REGLA: SN_Subj CNP SN_Subj">
-     <pattern>
-       <pattern-item n="SN_Subj"/>
-       <pattern-item n="CNP"/>
-       <pattern-item n="SN_Subj"/>
-     </pattern>
-     <action>
-       <out>
-         <chunk>
-           <lit v="coor_subj"/>
-           <clip pos="1" part="tags"/>
-           <lit v="{"/>
-           <clip pos="1" part="content"/>
-           <lit v=" "/>
-           <clip pos="2" part="content"/>
-           <lit v=" "/>
-           <clip pos="3" part="content"/>
-           <lit v="}"/>
-           <clip pos="1" part="lemq"/>
-         </chunk>
-       </out>
-     </action>
-    </rule> 
-
-    <rule comment="REGLA: SN_Advl CNP SN_Advl"><!--Son liikui munnje ja sutnje.--><!--Son liikui mu áhččái ja mu eatnái.-->
-     <pattern>
-       <pattern-item n="SN_Advl"/>
-       <pattern-item n="CNP"/>
-       <pattern-item n="SN_Advl"/>
-     </pattern>
-     <action>
-       <out>
-         <chunk>
-           <lit v="coor_obj"/>
-           <clip pos="1" part="tags"/>
-           <lit v="{"/>
-           <clip pos="1" part="content"/>
-           <lit v=" "/>
-           <clip pos="2" part="content"/>
-           <lit v=" "/>
-           <clip pos="3" part="content"/>
-           <lit v="}"/>
-           <clip pos="1" part="lemq"/>
-         </chunk>
-       </out>
-     </action>
-    </rule> 
+    <rule comment="REGLA: SV CVP SV">
+      <pattern>
+        <pattern-item n="SV"/>
+        <pattern-item n="CVP"/>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+        <let><clip pos="3" part="a_chunktype"/><lit-tag v="SVCOORD"/></let>
+        <out>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <lit-tag v="coord"/>
+            <lit v="{"/>
+            <clip pos="1" part="content"/>
+            <b pos="1"/>
+            <clip pos="2" part="content"/>
+            <b pos="2"/>
+            <clip pos="3" part="content"/>
+            <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
  
     <rule comment="REGLA: PR_PO">
     <pattern>
