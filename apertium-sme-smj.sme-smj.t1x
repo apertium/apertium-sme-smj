@@ -77,22 +77,22 @@
       <cat-item tags="n.*.cmp_sgnom.cmp"/>
       <cat-item tags="n.cmp_sgnom.cmp.*"/>
       <cat-item tags="n.*.cmp_sgnom.cmp.*"/>
-      <cat-item tags="n.cmp_sggen.cmp.*"/> 
-      <cat-item tags="n.*.cmp_sggen.cmp.*"/> 
-      <cat-item tags="n.cmp_sggen.cmp"/> 
-      <cat-item tags="n.*.cmp_sggen.cmp"/> 
-      <cat-item tags="np.top.cmp.*"/> 
-      <cat-item tags="np.top.cmp"/> 
-      <cat-item tags="np.*.guio"/> 
-      <cat-item tags="vblex.*.der_nomact.n.cmp_sg.cmp"/> 
-      <cat-item tags="vblex.der_nomact.n.cmp_sg.cmp"/> 
-      <cat-item tags="vblex.*.der_nomact.n.cmp_sg.cmp.*"/> 
-      <cat-item tags="vblex.der_nomact.n.cmp_sg.cmp.*"/> 
-      <cat-item tags="vblex.*.der_nomact.n.cmp_sgnom.cmp"/> 
-      <cat-item tags="vblex.der_nomact.n.cmp_sgnom.cmp"/> 
-      <cat-item tags="vblex.*.der_nomact.n.cmp_sgnom.cmp.*"/> 
-      <cat-item tags="vblex.der_nomact.n.cmp_sgnom.cmp.*"/> 
-      <cat-item tags="adj.cmp_sgnom.cmp.*"/> 
+      <cat-item tags="n.cmp_sggen.cmp.*"/>
+      <cat-item tags="n.*.cmp_sggen.cmp.*"/>
+      <cat-item tags="n.cmp_sggen.cmp"/>
+      <cat-item tags="n.*.cmp_sggen.cmp"/>
+      <cat-item tags="np.top.cmp.*"/>
+      <cat-item tags="np.top.cmp"/>
+      <cat-item tags="np.*.guio"/>
+      <cat-item tags="vblex.*.der_nomact.n.cmp_sg.cmp"/>
+      <cat-item tags="vblex.der_nomact.n.cmp_sg.cmp"/>
+      <cat-item tags="vblex.*.der_nomact.n.cmp_sg.cmp.*"/>
+      <cat-item tags="vblex.der_nomact.n.cmp_sg.cmp.*"/>
+      <cat-item tags="vblex.*.der_nomact.n.cmp_sgnom.cmp"/>
+      <cat-item tags="vblex.der_nomact.n.cmp_sgnom.cmp"/>
+      <cat-item tags="vblex.*.der_nomact.n.cmp_sgnom.cmp.*"/>
+      <cat-item tags="vblex.der_nomact.n.cmp_sgnom.cmp.*"/>
+      <cat-item tags="adj.cmp_sgnom.cmp.*"/>
     </def-cat>
   <def-cat n="negverb">
 <!--ij<vblex><iv><neg><indic><pres><p3><sg>-->
@@ -131,10 +131,10 @@
       <cat-item tags="adj.der_at.adv.*"/>
       <cat-item tags="adv.*"/>
     </def-cat>
-    <def-cat n="num-nomacc">                           
-      <cat-item tags="num.sg.nom.*"/>                  
-      <cat-item tags="num.sg.acc.*"/>                  
-    </def-cat>                                         
+    <def-cat n="num-nomacc">
+      <cat-item tags="num.sg.nom.*"/>
+      <cat-item tags="num.sg.acc.*"/>
+    </def-cat>
      <def-cat n="jagi">
       <cat-item lemma="jahki" tags="n.*.sg.gen.*"/>
       <cat-item lemma="jahki" tags="n.sg.gen.*"/>
@@ -142,22 +142,22 @@
      <def-cat n="boaris">
       <cat-item lemma="boaris" tags="adj.*"/>
     </def-cat>
-    <def-cat n="agreement-attr">                             
-      <cat-item lemma="vuosttas" tags="adj.ord.attr.*"/> <!-- put under vuosttaš as lemma in sme -->                   
-      <cat-item lemma="vuosttaš" tags="adj.ord.attr.*"/>                    
-      <cat-item lemma="muhtun" tags="prn.ind.attr.*"/> 
-    </def-cat>  
-    <def-cat n="hupmat-v">                             
-      <cat-item lemma="hupmat" tags="vblex.*"/>                    
-      <cat-item lemma="hállat" tags="vblex.*"/>                    
-      <cat-item lemma="muitalit" tags="vblex.*"/>                    
-    </def-cat>  
-    <def-cat n="n-sg-nom">                             
-      <cat-item tags="n.*.sg.nom.*"/>                   
-    </def-cat>  
-    <def-cat n="n-sg-gen">                             
-      <cat-item tags="n.*.sg.gen.*"/>                     
-    </def-cat>  
+    <def-cat n="agreement-attr">
+      <cat-item lemma="vuosttas" tags="adj.ord.attr.*"/> <!-- put under vuosttaš as lemma in sme -->
+      <cat-item lemma="vuosttaš" tags="adj.ord.attr.*"/>
+      <cat-item lemma="muhtun" tags="prn.ind.attr.*"/>
+    </def-cat>
+    <def-cat n="hupmat-v">
+      <cat-item lemma="hupmat" tags="vblex.*"/>
+      <cat-item lemma="hállat" tags="vblex.*"/>
+      <cat-item lemma="muitalit" tags="vblex.*"/>
+    </def-cat>
+    <def-cat n="n-sg-nom">
+      <cat-item tags="n.*.sg.nom.*"/>
+    </def-cat>
+    <def-cat n="n-sg-gen">
+      <cat-item tags="n.*.sg.gen.*"/>
+    </def-cat>
     <def-cat n="prn">
       <cat-item tags="prn.*"/>
     </def-cat>
@@ -188,59 +188,59 @@
       <cat-item tags="prn.pers.*.acc.*"/>
     </def-cat>
 <!-- from sme-nob ends -->
-    <def-cat n="prep">                             
-      <cat-item tags="pr.*"/>                    
-    </def-cat>  
-    <def-cat n="nom-gen">                             
-      <cat-item tags="n.*.sg.gen.*"/>                     
-      <cat-item tags="n.*.pl.gen.*"/>                     
-      <cat-item tags="np.sg.gen.*"/>                     
-      <cat-item tags="np.*.pl.gen.*"/>                     
-      <cat-item tags="np.*.sg.gen.*"/>                     
-      <cat-item tags="np.pl.gen.*"/>                     
-      <cat-item tags="prn.*.p3.sg.gen.*"/>                     
-      <cat-item tags="prn.*.p2.sg.gen.*"/>                     
-      <cat-item tags="prn.*.p1.sg.gen.*"/>                     
-      <cat-item tags="prn.*.p3.pl.gen.*"/>                     
-      <cat-item tags="prn.*.p2.pl.gen.*"/>                     
-      <cat-item tags="prn.*.p1.pl.gen.*"/>                     
-      <cat-item tags="prn.*.p3.du.gen.*"/>                     
-      <cat-item tags="prn.*.p2.du.gen.*"/>                     
-      <cat-item tags="prn.*.p1.du.gen.*"/>                     
-    </def-cat>  
-    <def-cat n="agreem-sg-gen">                             
-      <cat-item tags="n.*.sg.gen.*"/>                    
-      <cat-item tags="n.*.sg.ill.*"/>                    
-      <cat-item tags="n.*.sg.loc.*"/>                    
-      <cat-item tags="n.*.sg.abe.*"/>                    
-      <cat-item tags="n.*.ess.*"/>                    
-    </def-cat>  
-    <def-cat n="agreem-sg">                             
-      <cat-item tags="n.*.sg.nom.*"/>                   
-      <cat-item tags="n.*.sg.acc.*"/>                    
-      <cat-item tags="n.*.sg.com.*"/>                    
-    </def-cat>  
+    <def-cat n="prep">
+      <cat-item tags="pr.*"/>
+    </def-cat>
+    <def-cat n="nom-gen">
+      <cat-item tags="n.*.sg.gen.*"/>
+      <cat-item tags="n.*.pl.gen.*"/>
+      <cat-item tags="np.sg.gen.*"/>
+      <cat-item tags="np.*.pl.gen.*"/>
+      <cat-item tags="np.*.sg.gen.*"/>
+      <cat-item tags="np.pl.gen.*"/>
+      <cat-item tags="prn.*.p3.sg.gen.*"/>
+      <cat-item tags="prn.*.p2.sg.gen.*"/>
+      <cat-item tags="prn.*.p1.sg.gen.*"/>
+      <cat-item tags="prn.*.p3.pl.gen.*"/>
+      <cat-item tags="prn.*.p2.pl.gen.*"/>
+      <cat-item tags="prn.*.p1.pl.gen.*"/>
+      <cat-item tags="prn.*.p3.du.gen.*"/>
+      <cat-item tags="prn.*.p2.du.gen.*"/>
+      <cat-item tags="prn.*.p1.du.gen.*"/>
+    </def-cat>
+    <def-cat n="agreem-sg-gen">
+      <cat-item tags="n.*.sg.gen.*"/>
+      <cat-item tags="n.*.sg.ill.*"/>
+      <cat-item tags="n.*.sg.loc.*"/>
+      <cat-item tags="n.*.sg.abe.*"/>
+      <cat-item tags="n.*.ess.*"/>
+    </def-cat>
+    <def-cat n="agreem-sg">
+      <cat-item tags="n.*.sg.nom.*"/>
+      <cat-item tags="n.*.sg.acc.*"/>
+      <cat-item tags="n.*.sg.com.*"/>
+    </def-cat>
 
-    <def-cat n="agreem-pl">                             
-      <cat-item tags="n.*.pl.nom.*"/>                    
-      <cat-item tags="n.*.pl.gen.*"/>                    
-      <cat-item tags="n.*.pl.acc.*"/>                    
-      <cat-item tags="n.*.pl.ill.*"/>                    
-      <cat-item tags="n.*.pl.loc.*"/>                    
-      <cat-item tags="n.*.pl.abe.*"/>                    
-    </def-cat>  
-    <def-cat n="agreem-pl-gen">                             
-      <cat-item tags="n.*.pl.com.*"/>                    
-    </def-cat>  
-    <def-cat n="attr">                             
-      <cat-item tags="adj.attr.*"/>                    
-    </def-cat>  
-    <def-cat n="birra-po">                             
-      <cat-item lemma="birra" tags="post.*"/>                    
-    </def-cat>  
-    <def-cat n="birra-adv">                             
-      <cat-item lemma="birra" tags="adv.*"/>                    
-    </def-cat>  
+    <def-cat n="agreem-pl">
+      <cat-item tags="n.*.pl.nom.*"/>
+      <cat-item tags="n.*.pl.gen.*"/>
+      <cat-item tags="n.*.pl.acc.*"/>
+      <cat-item tags="n.*.pl.ill.*"/>
+      <cat-item tags="n.*.pl.loc.*"/>
+      <cat-item tags="n.*.pl.abe.*"/>
+    </def-cat>
+    <def-cat n="agreem-pl-gen">
+      <cat-item tags="n.*.pl.com.*"/>
+    </def-cat>
+    <def-cat n="attr">
+      <cat-item tags="adj.attr.*"/>
+    </def-cat>
+    <def-cat n="birra-po">
+      <cat-item lemma="birra" tags="post.*"/>
+    </def-cat>
+    <def-cat n="birra-adv">
+      <cat-item lemma="birra" tags="adv.*"/>
+    </def-cat>
 
     <def-cat n="sent">
       <cat-item tags="sent"/>
@@ -719,35 +719,35 @@
     </def-macro>
     <def-macro n="agreement-adj-sg-2Param" npar="2"
                c="param1: adj
-                  param2: noun">  
+                  param2: noun">
         <let>
         	<clip pos="2" side="tl" part="tags"/><concat>
-            <lit-tag v="n.sg"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
-        </let> 
+            <lit-tag v="n.sg"/><clip pos="1" side="tl" part="a_cas"/> </concat>
+        </let>
         <let>
         	<clip pos="1" side="tl" part="tags"/><concat>
-            <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_cas"/> </concat>                
-        </let> 
+            <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_cas"/> </concat>
+        </let>
     </def-macro>
     <def-macro n="agreement-adj-2Param" npar="2">
         <let>
         	<clip pos="2" side="tl" part="tags"/><concat>
-            <lit-tag v="n.pl"/><clip pos="1" side="tl" part="a_cas"/> </concat>                
-        </let> 
+            <lit-tag v="n.pl"/><clip pos="1" side="tl" part="a_cas"/> </concat>
+        </let>
         <let>
         	<clip pos="1" side="tl" part="tags"/><concat>
-            <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_cas"/> </concat>                
-        </let> 
-    </def-macro> 
+            <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_cas"/> </concat>
+        </let>
+    </def-macro>
     <def-macro n="agreement-ind-pl-2Param" npar="2">
         <let>
         	<clip pos="2" side="tl" part="tags"/><concat>
-            <lit-tag v="n.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>                
-        </let> 
+            <lit-tag v="n.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>
+        </let>
         <let>
         	<clip pos="1" side="tl" part="tags"/><concat>
-            <lit-tag v="prn.ind.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>                
-        </let> 
+            <lit-tag v="prn.ind.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>
+        </let>
     </def-macro>
 
     <def-macro n="convert-deriv-1Param" npar="1">
@@ -757,50 +757,50 @@
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_vuohta"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_vuohta"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_vuohta"/></let>
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_laš"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lasj"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lasj"/></let>
         </when>
 
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_at"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_at"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_at"/></let>
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_lágan"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lágán"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lágán"/></let>
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_saš"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_sasj"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_sasj"/></let>
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_goahti"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_goahte"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_goahte"/></let>
         </when>
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_ahtti"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_ahtte"/></let> 
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_ahtte"/></let>
         </when>
      </choose>
-    </def-macro>  
+    </def-macro>
 
     <def-macro n="inherenttag-px-Param2" npar="2">
-		<choose>   
+		<choose>
 		<when>
 		<test><equal><clip pos="1" side="tl" part="a_person"/><lit-tag v="p1"/></equal></test>
          <let>
@@ -852,11 +852,11 @@
          <let><clip pos="2" side="tl" part="tags"/><concat><clip pos="2" side="tl" part="tags"/><lit-tag v="px3pl"/></concat>
          </let>
 		</when>
-		</choose>    
-    </def-macro>  
+		</choose>
+    </def-macro>
 
   <def-macro n="assign-case-1Param" npar="1">
-    <choose>      
+    <choose>
       <when>
         <test>
         <or>
@@ -868,7 +868,7 @@
 		  <equal>
 		    <clip pos="1" side="sl" part="a_hab"/>
 		    <lit-tag v="←hab→"/>
-		  </equal> 
+		  </equal>
 		</and>
          <and>
 		  <equal>
@@ -915,7 +915,7 @@
           </chunk>
         </out>
       </action>
-    </rule>  
+    </rule>
 
     <rule comment="REGLA: negverb">
       <pattern>
@@ -956,11 +956,11 @@
              <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
         </let>
     <choose><when>
-    <test><not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not></test> 
+    <test><not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not></test>
         <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
         </when>
         </choose>
-        
+
       <out>
         <chunk name="verb" case="caseFirstWord">
           <tags>
@@ -1036,11 +1036,11 @@
              <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="3" side="tl" part="a_temps"/></concat>
         </let>
     <choose><when>
-    <test><not><equal><clip pos="3" side="tl" part="lem"/><lit v="liehket"/></equal></not></test> 
+    <test><not><equal><clip pos="3" side="tl" part="lem"/><lit v="liehket"/></equal></not></test>
         <let><clip pos="3" side="tl" part="a_temps"/><lit v=""/></let>
         </when>
         </choose>
-        
+
       <out>
         <chunk name="verb" case="caseFirstWord">
           <tags>
@@ -1073,7 +1073,6 @@
     </action>
   </rule>
 
-
 <rule comment="REGLA: bealis Px">
     <pattern>
     <pattern-item n="bealisPx"/>
@@ -1090,14 +1089,14 @@
             <lit-tag v="prn.ref.sg.gen"/>
             <clip pos="1" side="tl" part="a_poss"/>
           </lu>
-        <b/> 
+        <b/>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu>
         </chunk>
       </out>
     </action>
-  </rule>  
+  </rule>
 
     <rule comment="REGLA: prn">
       <pattern>
@@ -1240,56 +1239,56 @@
         </out>
       </action>
     </rule>
-    
+
       <rule comment="REGLA: miehtá noun">
          <pattern>
           <pattern-item n="miehtá"/>
         <pattern-item n="nom-gen"/>
          </pattern>
-         <action>   
+         <action>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <call-macro n="remove-semtag-1Param"><with-param pos="2"/></call-macro>
         <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="2" side="tl" part="a_cas"/><lit-tag v="acc"/></let> 
+        <let><clip pos="2" side="tl" part="a_cas"/><lit-tag v="acc"/></let>
        <out>
            <chunk name="pp" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
                 <lu>
-              <clip pos="2" side="tl" part="whole"/>    
+              <clip pos="2" side="tl" part="whole"/>
                     </lu>
                 <b/>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>    
+              <clip pos="1" side="tl" part="whole"/>
                 </lu>
             </chunk>
             </out>
       </action>
     </rule>
- 
+
         <rule comment="REGLA: noun  miehtá">
          <pattern>
- 
+
         <pattern-item n="nom-gen"/>
           <pattern-item n="miehtá"/>
     </pattern>
-         <action>   
+         <action>
         <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
         <call-macro n="remove-semtag-1Param"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="acc"/></let> 
+        <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="acc"/></let>
        <out>
            <chunk name="pp" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
                 <lu>
-              <clip pos="1" side="tl" part="whole"/>    
+              <clip pos="1" side="tl" part="whole"/>
                     </lu>
                 <b/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>    
+              <clip pos="2" side="tl" part="whole"/>
                 </lu>
     </chunk>
              </out>
