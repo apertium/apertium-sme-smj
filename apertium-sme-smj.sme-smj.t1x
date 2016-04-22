@@ -1037,7 +1037,7 @@
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="indef" case="caseFirstWord">
+          <chunk name="indef" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1061,7 +1061,7 @@
              <concat><clip pos="1" side="tl" part="a_mood"/><lit-tag v="pres"/></concat>
         </let>
         <out>
-          <chunk name="neg" case="caseFirstWord">
+          <chunk name="neg" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1090,7 +1090,7 @@
       </when></choose>
 
       <out>
-        <chunk name="verb" case="caseFirstWord">
+        <chunk name="verb" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -1102,7 +1102,7 @@
           </lu>
         </chunk>
         <b pos="1"/>
-        <chunk name="verb" case="caseFirstWord">
+        <chunk name="verb">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -1131,7 +1131,7 @@
       </let>
       <let><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></let>
       <out>
-        <chunk name="negverb" case="caseFirstWord">
+        <chunk name="negverb" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -1171,7 +1171,7 @@
       </choose>
 
       <out>
-        <chunk name="verb" case="caseFirstWord">
+        <chunk name="verb" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -1183,7 +1183,7 @@
           </lu>
         </chunk>
         <b pos="1"/>
-        <chunk name="verb" case="caseFirstWord">
+        <chunk name="verb">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -1209,7 +1209,7 @@
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
       <out>
-        <chunk name="adv" case="caseFirstWord">
+        <chunk name="adv">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -1236,7 +1236,7 @@
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="prn" case="caseFirstWord">
+          <chunk name="prn" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1257,7 +1257,7 @@
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="nom" case="caseFirstWord">
+          <chunk name="nom" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1279,7 +1279,7 @@
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <out>
-          <chunk name="nom" case="caseFirstWord">
+          <chunk name="nom" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1306,7 +1306,7 @@
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
         <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
         <out>
-          <chunk name="mainverb" case="caseFirstWord">
+          <chunk name="mainverb" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1328,7 +1328,7 @@
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
         <out>
-          <chunk name="sent" case="caseFirstWord">
+          <chunk name="sent" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SENT"/></tag>
               <tag><var n="func"/></tag>
@@ -1349,7 +1349,7 @@
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
         <out>
-          <chunk name="default" case="caseFirstWord">
+          <chunk name="default" case="caseFirstword">
             <tags>
               <tag><lit-tag v="DEFAULT"/></tag>
               <tag><var n="func"/></tag>
@@ -1371,7 +1371,7 @@
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <let><clip pos="2" side="tl" part="a_cas"/><lit-tag v="acc"/></let>
         <out>
-          <chunk name="pp" case="caseFirstWord">
+          <chunk name="pp" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1397,7 +1397,7 @@
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="acc"/></let>
         <out>
-          <chunk name="pp" case="caseFirstWord">
+          <chunk name="pp" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
