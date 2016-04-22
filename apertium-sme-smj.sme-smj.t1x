@@ -770,12 +770,6 @@
       </when></choose>
     </def-macro>
 
-    <def-macro n="remove-semtag-1Param" npar="1">
-      <let>
-        <clip pos="1" side="tl" part="a_sem"/>
-        <lit v=""/>
-      </let>
-    </def-macro>
     <def-macro n="agreement-adj-sg-2Param" npar="2"
                c="param1: adj
                   param2: noun">
@@ -977,6 +971,61 @@
       <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
     </def-macro>
+
+    <def-macro n="general-macro-2Param" npar="2" c="Use for all chunks of two pattern-items
+                                                    param1: first pattern-item; used to set caseFirstword
+                                                    param2: second pattern-item; used to set func variable">
+      <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+      <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
+      <choose><when>
+        <test><and>
+          <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FMAINV"/></equal>
+          <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/></equal>
+        </and></test>
+        <let><var n="func"/><lit-tag v="@+FMAINV"/></let>
+      </when></choose>
+    </def-macro>
+    <def-macro n="general-macro-2Param-headfirst" npar="2" c="Use for all chunks of two pattern-items where the head is first
+                                                              param1: first pattern-item; used to set caseFirstword and func variable">
+      <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+      <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
+      <choose><when>
+        <test><and>
+          <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FMAINV"/></equal>
+          <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/></equal>
+        </and></test>
+        <let><var n="func"/><lit-tag v="@+FMAINV"/></let>
+      </when></choose>
+    </def-macro>
+
+    <def-macro n="general-macro-3Param" npar="3" c="Use for all chunks of three pattern-items
+                                                    param1: first pattern-item; used to set caseFirstword
+                                                    param2: second pattern-item
+                                                    param3: third pattern-item; used to set func variable">
+      <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="general-macro-1Param"><with-param pos="3"/></call-macro>
+      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
+      <choose><when>
+        <test><and>
+          <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@-FMAINV"/></equal>
+          <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/></equal>
+        </and></test>
+        <let><var n="func"/><lit-tag v="@+FMAINV"/></let>
+      </when></choose>
+    </def-macro>
+
+    <def-macro n="general-macro-4Param" npar="3" c="Use for all chunks of four pattern-items
+                                                    param1: first pattern-item; used to set caseFirstword
+                                                    param2: second pattern-item
+                                                    param3: third pattern-item
+                                                    param4: fourth pattern-item; used to set func variable">
+      <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <call-macro n="general-macro-1Param"><with-param pos="4"/></call-macro>
+      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
+    </def-macro>
+
   </section-def-macros>
 
 
@@ -986,14 +1035,12 @@
         <pattern-item n="mihkkege"/>
       </pattern>
       <action>
-        <call-macro n="remove-semtag-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="a-foc"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
-         <chunk name="indef" case="caseFirstWord">
-          <tags>
+          <chunk name="indef" case="caseFirstWord">
+            <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1008,10 +1055,7 @@
         <pattern-item n="negverb"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="remove-semtag-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <!-- neg verb alone is probably disam. fail with interjection -->
         <let><clip pos="1" side="tl" part="a_temps_mood"/>
              <concat><clip pos="1" side="tl" part="a_mood"/><lit-tag v="pres"/></concat>
@@ -1020,6 +1064,7 @@
           <chunk name="neg" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1035,17 +1080,14 @@
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
-        <call-macro n="convert-deriv-1Param"><with-param pos="2"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_temps_mood"/>
-             <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
-        </let>
-    <choose><when>
-    <test><not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not></test>
+      <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+      <let><clip pos="1" side="tl" part="a_temps_mood"/>
+      <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
+      </let>
+      <choose><when>
+        <test><not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not></test>
         <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
-        </when>
-        </choose>
+      </when></choose>
 
       <out>
         <chunk name="verb" case="caseFirstWord">
@@ -1076,56 +1118,57 @@
   </rule>
 
 
-<rule comment="REGLA: NEGVERB liehket"> <!-- Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim -->
+  <rule comment="REGLA: NEGVERB liehket"> <!-- Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim -->
     <pattern>
       <pattern-item n="negverb23"/>
       <pattern-item n="liehket"/>
       <pattern-item n="word"/>
     </pattern>
     <action>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_temps_mood"/>
-             <concat><clip pos="2" side="tl" part="a_temps_mood"/></concat>
-        </let>
-        <let><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></let>
-         <let><clip pos="3" side="tl" part="a_func"/><lit v=""/></let>
+      <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <let><clip pos="1" side="tl" part="a_temps_mood"/>
+      <concat><clip pos="2" side="tl" part="a_temps_mood"/></concat>
+      </let>
+      <let><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></let>
       <out>
         <chunk name="negverb" case="caseFirstWord">
-        <tags>
-        <tag><lit-tag v="SV"/></tag>
-        </tags>
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><var n="func"/></tag>
+          </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu>
-            <b/>
+          <b pos="1"/>
           <lu>
             <clip pos="3" side="tl" part="whole"/>
           </lu>
         </chunk>
       </out>
+      <choose><when>
+        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
     </action>
   </rule>
 
 
-<rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
+  <rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word"/>
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
-        <call-macro n="convert-deriv-1Param"><with-param pos="3"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="3" side="tl" part="a_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_temps_mood"/>
-             <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="3" side="tl" part="a_temps"/></concat>
-        </let>
-    <choose><when>
-    <test><not><equal><clip pos="3" side="tl" part="lem"/><lit v="liehket"/></equal></not></test>
+      <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <let><clip pos="1" side="tl" part="a_temps_mood"/>
+      <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="3" side="tl" part="a_temps"/></concat>
+      </let>
+      <choose><when>
+        <test><not><equal><clip pos="3" side="tl" part="lem"/><lit v="liehket"/></equal></not></test>
         <let><clip pos="3" side="tl" part="a_temps"/><lit v=""/></let>
-        </when>
-        </choose>
+      </when>
+      </choose>
 
       <out>
         <chunk name="verb" case="caseFirstWord">
@@ -1150,7 +1193,7 @@
           <lu>
             <clip pos="2" side="tl" part="whole"/>
           </lu>
-        <b/>
+          <b pos="2"/>
           <lu>
             <clip pos="3" side="tl" part="whole"/>
           </lu>
@@ -1159,23 +1202,24 @@
     </action>
   </rule>
 
-<rule comment="REGLA: bealis Px">
+  <rule comment="REGLA: bealis Px">
     <pattern>
-    <pattern-item n="bealisPx"/>
+      <pattern-item n="bealisPx"/>
     </pattern>
     <action>
-    <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+      <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
       <out>
         <chunk name="adv" case="caseFirstWord">
           <tags>
             <tag><lit-tag v="SV"/></tag>
+            <tag><var n="func"/></tag>
           </tags>
           <lu>
             <lit v="iesj"/>
             <lit-tag v="prn.ref.sg.gen"/>
             <clip pos="1" side="tl" part="a_poss"/>
           </lu>
-        <b/>
+          <b/>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu>
@@ -1189,15 +1233,13 @@
         <pattern-item n="prn"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="remove-semtag-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <out>
           <chunk name="prn" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1212,15 +1254,13 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="remove-semtag-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <out>
           <chunk name="nom" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1236,26 +1276,23 @@
         <pattern-item n="nom"/>
       </pattern>
       <action>
-        <call-macro n="remove-semtag-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="convert-deriv-1Param"><with-param pos="2"/></call-macro>
-        <call-macro n="remove-semtag-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
-        <let><clip pos="2" side="tl" part="x_func"/><lit v=""/></let>
-        <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
         <out>
           <chunk name="nom" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <mlu>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-             <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
-             </mlu>
-        </chunk>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+            </mlu>
+          </chunk>
         </out>
       </action>
     </rule>
@@ -1265,15 +1302,14 @@
         <pattern-item n="mainverb"/>
       </pattern>
       <action>
-        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
         <out>
           <chunk name="mainverb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1289,13 +1325,13 @@
         <pattern-item n="sent"/>
       </pattern>
       <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <out>
           <chunk name="sent" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SENT"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1310,13 +1346,13 @@
         <pattern-item n="default"/>
       </pattern>
       <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
         <out>
           <chunk name="default" case="caseFirstWord">
             <tags>
-              <tag><clip pos="1" side="sl" part="a_func"/></tag>
+              <tag><lit-tag v="DEFAULT"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1326,58 +1362,55 @@
       </action>
     </rule>
 
-      <rule comment="REGLA: miehtá noun">
-         <pattern>
-          <pattern-item n="miehtá"/>
+    <rule comment="REGLA: miehtá noun">
+      <pattern>
+        <pattern-item n="miehtá"/>
         <pattern-item n="nom-gen"/>
-         </pattern>
-         <action>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
-        <call-macro n="remove-semtag-1Param"><with-param pos="2"/></call-macro>
-        <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <let><clip pos="2" side="tl" part="a_cas"/><lit-tag v="acc"/></let>
-       <out>
-           <chunk name="pp" case="caseFirstWord">
+        <out>
+          <chunk name="pp" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
-                <lu>
+            <lu>
               <clip pos="2" side="tl" part="whole"/>
-                    </lu>
-                <b/>
+            </lu>
+            <b pos="1"/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
-                </lu>
-            </chunk>
-            </out>
+            </lu>
+          </chunk>
+        </out>
       </action>
     </rule>
 
-        <rule comment="REGLA: noun  miehtá">
-         <pattern>
-
+    <rule comment="REGLA: noun  miehtá">
+      <pattern>
         <pattern-item n="nom-gen"/>
-          <pattern-item n="miehtá"/>
-    </pattern>
-         <action>
-        <let><clip pos="2" side="tl" part="a_func"/><lit v=""/></let>
-        <call-macro n="remove-semtag-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+        <pattern-item n="miehtá"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="acc"/></let>
-       <out>
-           <chunk name="pp" case="caseFirstWord">
+        <out>
+          <chunk name="pp" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
-                <lu>
+            <lu>
               <clip pos="1" side="tl" part="whole"/>
-                    </lu>
-                <b/>
+            </lu>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
-                </lu>
-    </chunk>
-             </out>
+            </lu>
+          </chunk>
+        </out>
       </action>
     </rule>
 
