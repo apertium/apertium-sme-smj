@@ -1,6 +1,6 @@
-Revision: 66210
-AP_SRC1 Revision: 130745
-AP_SRC2 Revision: 130745
+Revision: 67453
+AP_SRC1 Revision: 132836
+AP_SRC2 Revision: 132804
 Running Pending-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Son čállá goappašiid gieđaiguin.
@@ -10,7 +10,7 @@ sme-smj	  Son čállá goappašiid gieđaiguin.
 
 sme-smj	  Son vállje juoppá máná.
 	- Sån váljjij juoppáv mánáv.
-	+ Sån vállji juoppá mánáv.
+	+ Sån vállji juoppáv mánáv.
 
 
 sme-smj	  Son oaččui nuppi mánás reivve.
@@ -23,18 +23,32 @@ WORKS	  Mån vaddiv nuppe mánnáj vattáldagáv.
 
 
 sme-smj	  Miriam Paulsen.
-	- Miriam Paulsen.
-	+ Miriamav Paulsena.
+WORKS	  Miriam Paulsen.
+
+
+sme-smj	  Ráđđehus galgá bealistis sihkkarastit ahte barggut čađahuvvojit.
+	- Ráddidus galggá ietjas bielestis sihkarasstet jut bargo tjadáduvvi.
+	+ Ráddidus galggá bielestis sihkarasstet jut bargo tjadáduvvi.
+
+
+sme-smj	  Sámediggi bealistis anii dehálažžan oažžut čađahuvvot eará láhkarievdadusaid.
+	- Sámedigge ietjas bielestis ani ájnnasin oadtjot tjadáduvvat ietjá láhkarievddadusájt.
+	+ Sámedigge bielestis anij ájnnasin oadtjot tjadáduvvat ietjá láhkarievddadimijt.
+
+
+sme-smj	  Bealistan in dieđe dása ollislaš duođaštusaid.
+	- Ietjam bielestam iv diede dási åbbålasj duodastusájt.
+	+ Bielestam iv diede dási åbbålasj duodastusájt.
 
 
 sme-smj	  oavssit ja lasttat mat gullet oktii.
 	- oavse ja lasta ma aktan gulluji.
-	+ oavse ja lasta ma gulli aktaj.
+	+ oavse ja lasta ma gulli akti.
 
 
 sme-smj	  Wikipedia dárbbaša du veahki.
 	- Wikipedia duv viehkev dárbaj.
-	+ Wikipedia dárbaj duv viehkev/viehkkev.
+	+ Wikipedia dárbaj duv viehkev.
 
 
 sme-smj	  Sámegielat Wikipedias leat dál 2,717 artihkkala.
@@ -44,12 +58,11 @@ sme-smj	  Sámegielat Wikipedias leat dál 2,717 artihkkala.
 
 sme-smj	  Isak Saba 1875-1921 lei sápmelaš oahpaheaddji ja politihkkár.
 	- Isak Saba 1875-1921 lij sábmelasj åhpadiddje ja politihkkár.
-	+ Isaka Saba 1875-1921 lij sáme åhpadiddje ja politihkkár.
+	+ Isak Saba 1875-1921 lij sáme #åhpadiddje ja politihkkár.
 
 
 sme-smj	  Son beroštii arkeologalaš bargguin, ja son čokkii dávviriid ja dávttiid boares hávddiin.
-	- Sån berustij arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt boares hávdijs.
-	+ Sån berustij #arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt boares hávdijs.
+WORKS	  Sån berustij arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt boares hávdijs.
 
 
 sme-smj	  Girjái Áillohaš lea čoaggán historjjálaš govaid sámiin birra máilmmi.
@@ -62,12 +75,12 @@ WORKS	  Sáme jali sábmelattja årru Ruossjan, Suoman, Svierigin ja Vuonan.
 
 sme-smj	  Sámiid ássanguovlu gohčoduvvo Sápmin.
 	- Sámij årromguovllo gåhtjuduvvá Sábmen.
-	+ Sámij årromguovllo *gohčoduvvo Sábmen.
+	+ Sámij årromguovllo gåhtjoduvvá Sábmen.
 
 
 sme-smj	  Odne gávdnojit maiddái ollu sámit geat eai šat sámás ja identitehtavuođđu lea dál varas dehe sogas iige gielas gitta.
 	- Uddni gávnnuji aj ållo sáme gudi e desti sámásta ja identitæhttavuodo la dál varán jali berajvuodan ijge gielan gitta.
-	+ Uddni gávnni #aj #ållo sáme #guhti e desti sámásta ja identitehtavuodo la dálla varás jali berajvuodan #ij gielas gitta.
+	+ Uddni gávnni aj #ållo sáme gudi e desti sámásta ja identitiehttavuodo la dálla varás jali berajvuodan #ij gielan gitta.
 
 
 sme-smj	  Amerihká ovttastuvvan stáhtain leat 50 oassestáhta, mat leat oalle muddui iešstivrejeaddjit.
@@ -87,7 +100,7 @@ sme-smj	  Giron lea vuoncceslottiide gullevaš loddi, mii eallá duottarguovllui
 
 sme-smj	  Wikipedia lea máŋggagielat prošeakta man ulbmilin lea ráhkadit almmolaš diehtosátnegirjji gosa gii beare sáhttá čállit artihkkaliid.
 	- Wikipedia la moattegielak prosjækta man ulmmen la dahkat almulasj diehtobáhkogirjev masi vajku guhti sáhttá tjállet artihkkalijt.
-	+ Wikipedia la moattegielak projækta/prosjækta man ulmmen la stiellit almulasj #diehtobáhkogirjje *gosa guhti beru máhttá tjállet artihkkalijt.
+	+ Wikipedia la moattegielak prosjækta man ulmmen la stiellit almulasj #diehtobáhkogirjje *gosa guhti beru máhttá tjállet artihkkalijt.
 
 
 sme-smj	  Maid son diehtá?
@@ -106,12 +119,12 @@ sme-smj	  Iibat oaččo basadit?
 
 sme-smj	  Lehpet go dárbbašan ollu veahki?
 	- Lehpit gu dárbaham ållo viehkev?
-	+ Lihpit gus dárbaham #ållo viehkev/viehkkev?
+	+ Lihpit gus dárbaham #ållo viehkev?
 
 
 sme-smj	  Oahpaheddjiin lea ollu bargu.
 	- Åhpadiddjijn la ållo barggo.
-	+ Åhpadiddjijs la #ållo barggo.
+	+ #Åhpadiddje la #ållo barggo.
 
 
 sme-smj	  Diet lea mu.
@@ -153,12 +166,13 @@ sme-smj	  Áddjá elii hui boarisin.
 
 
 sme-smj	  Dán jagi son lea oahpaheaddjin.
-WORKS	  Dán jage sån la åhpadiddjen.
+	- Dán jage sån la åhpadiddjen.
+	+ Dán jage sån la #åhpadiddje.
 
 
 sme-smj	  Son lea oahpaheaddjin hui čeahppi.
 	- Sån la åhpadiddjen huj tjiehppe.
-	+ Sån la åhpadiddjen huj smidá.
+	+ Sån la #åhpadiddje huj smidá.
 
 
 sme-smj	  Gos áhččát lea?
@@ -221,7 +235,8 @@ WORKS	  Såj boahteba dán gæjno.
 
 
 sme-smj	  Son šaddá buorrin oahpaheaddjin.
-WORKS	  Sån sjaddá buorren åhpadiddjen.
+	- Sån sjaddá buorren åhpadiddjen.
+	+ Sån sjaddá buorren #åhpadiddje.
 
 
 sme-smj	  Oro jaska!
@@ -236,7 +251,7 @@ sme-smj	  Dál moai boradetne.
 
 sme-smj	  Dárbbašehpet go veahki?
 	- Dárbahihpit gu viehkev?
-	+ Dárbahihpit gus viehkev/viehkkev?
+	+ Dárbahihpit gus viehkev?
 
 
 sme-smj	  Eahppi go boađe?
@@ -246,7 +261,7 @@ sme-smj	  Eahppi go boađe?
 
 sme-smj	  Mii eat ipmir maidege.
 	- Mij ep dádjada majdik.
-	+ Mij ep dádjada #mige.
+	+ Mij ep dádjada mavga.
 
 
 sme-smj	  Dii vujiidet duon luotta.
@@ -268,12 +283,13 @@ WORKS	  Majt sidá uddni?
 
 
 sme-smj	  Álgge oahpaheaddjin!
-WORKS	  Álge åhpadiddjen!
+	- Álge åhpadiddjen!
+	+ Álge #åhpadiddje!
 
 
 sme-smj	  Orrot jaska.
 	- Årrujip sjávo.
-	+ Årrut #jasska.
+	+ Årrop #jasska.
 
 
 sme-smj	  Mu boares áddjá ii šaddan vuolgit.
@@ -319,7 +335,7 @@ sme-smj	  Mii ávkkiid lea min doppe johtit?
 
 sme-smj	  Lehpet go viežžan buot girjjiideattet?
 	- Lehpit gu viedtjam divna girjijdihtte?
-	+ Lihpit gus viedtjam #divna girjijdihtte?
+	+ Lihpit gus viedtjam divna girjijdihtte?
 
 
 sme-smj	  Don fertet ieš čállit.
@@ -342,27 +358,27 @@ sme-smj	  Leahppi go gávdnan gusade?
 
 sme-smj	  Leahppi go viežžan buot girjjiideatte?
 	- Læhppe gu viedtjam divna girjijdihtte?
-	+ Lihppe gus viedtjam #divna girjijdihtte?
+	+ Lihppe gus viedtjam divna girjijdihtte?
 
 
 sme-smj	  Leat go viežžan buot girjjiidat?
 	- Le gu viedtjam divna girjijdat?
-	+ La gus viedtjam #divna girjijdat/girjijdit?
+	+ La gus viedtjam divna girjijdat?
 
 
 sme-smj	  Leaččan go buot muitán?
 	- Littjav gu divna mujttám?
-	+ Littjav gus #divna mujttám?
+	+ Littjav gus divna mujttám?
 
 
 sme-smj	  Leaččat go buot muitán?
 	- Littja gu divna mujttám?
-	+ Littja gus #divna mujttám?
+	+ Littja gus divna mujttám?
 
 
 sme-smj	  Leaččan go buot váldán?
 	- Littjav gu divna válldám?
-	+ Littjav gus #divna válldám?
+	+ Littjav gus divna válldám?
 
 
 sme-smj	  Boarrásepmosat sáhttet bargat.
@@ -374,4 +390,4 @@ sme-smj	  Máhtte lea dát iige duot.
 	+ Máhttin la dát #ij duot.
 
 
-24 / 79, 30.38%
+23 / 82

@@ -1,7 +1,15 @@
-Revision: 66210
-AP_SRC1 Revision: 130745
-AP_SRC2 Revision: 130745
+Revision: 67453
+AP_SRC1 Revision: 132836
+AP_SRC2 Revision: 132804
 Running Regression-tests with mode "sme-smj" with updated tests ...
+
+sme-smj	  Son viehká miehtá máilmmi.
+WORKS	  Sån viehká væráldav miehtáj.
+
+
+sme-smj	  Son viehká máilmmi miehtá.
+WORKS	  Sån viehká væráldav miehtáj.
+
 
 sme-smj	  Isak boahtá goađis.
 WORKS	  Isak boahtá goades.
@@ -12,8 +20,7 @@ WORKS	  Dån tjåhkkåha ståvlån.
 
 
 sme-smj	  Ii oro buorre.
-	- Ij la buorre.
-	+ Ij la/le buorre.
+WORKS	  Ij la buorre.
 
 
 sme-smj	  Eaba orron buorre.
@@ -41,13 +48,11 @@ WORKS	  Ittjij bårå.
 
 
 sme-smj	  Isak ii sáhttán boahtit ovdal.
-	- Isak ittjij máhte boahtet åvddåla.
-	+ Isak ittjij máhte boahtet #åvddåla.
+WORKS	  Isak ittjij máhte boahtet åvddåla.
 
 
 sme-smj	  Ii oro nu vuogas.
-	- Ij la nav vuogas.
-	+ Ij la/le nav vuogas.
+WORKS	  Ij la nav vuogas.
 
 
 sme-smj	  In háliit duinna doarrut.
@@ -71,8 +76,7 @@ WORKS	  Ep desti visjá.
 
 
 sme-smj	  In leat.
-	- Iv la.
-	+ Iv la/le.
+WORKS	  Iv la.
 
 
 sme-smj	  In lean.
@@ -81,8 +85,7 @@ sme-smj	  In lean.
 
 
 sme-smj	  Ii leat.
-	- Ij la.
-	+ Ij la/le.
+WORKS	  Ij la.
 
 
 sme-smj	  Ii lean.
@@ -91,8 +94,7 @@ sme-smj	  Ii lean.
 
 
 sme-smj	  Ean leat.
-	- En la.
-	+ En la/le.
+WORKS	  En la.
 
 
 sme-smj	  Eat lean.
@@ -100,8 +102,7 @@ WORKS	  Ejma lim.
 
 
 sme-smj	  Eahppi leat.
-	- Æhppe la.
-	+ Æhppe la/le.
+WORKS	  Æhppe la.
 
 
 sme-smj	  Eahppi lean.
@@ -109,8 +110,7 @@ WORKS	  Ejda lim.
 
 
 sme-smj	  Eaba leat.
-	- Æbá la.
-	+ Æbá la/le.
+WORKS	  Æbá la.
 
 
 sme-smj	  Eaba lean.
@@ -118,13 +118,11 @@ WORKS	  Ejga lim.
 
 
 sme-smj	  Don it leat nu johtil.
-	- Dån illa nav jåhtel.
-	+ Dån illa/ille nav jåhtel.
+WORKS	  Dån illa nav jåhtel.
 
 
 sme-smj	  Sii eai oro nu johtilat.
-	- Sij ælla nav jåhtela.
-	+ Sij ælla/ælle nav jåhtela.
+WORKS	  Sij ælla nav jåhtela.
 
 
 sme-smj	  Sii eai orron nu johtilat.
@@ -132,8 +130,7 @@ WORKS	  Sij ællim nav jåhtela.
 
 
 sme-smj	  Don it oro nu johtil.
-	- Dån illa nav jåhtel.
-	+ Dån illa/ille nav jåhtel.
+WORKS	  Dån illa nav jåhtel.
 
 
 sme-smj	  Don it orron nu johtil.
@@ -157,8 +154,7 @@ WORKS	  Oattjov dav álbet.
 
 
 sme-smj	  kultursuodjaleapmi.
-	- kultuvrrasuodjalibme.
-	+ #kultuvrrasuodjalibme.
+WORKS	  kultuvrrasuodjalibme.
 
 
 sme-smj	  Dát áššit leat dehálaččat.
@@ -250,8 +246,7 @@ WORKS	  Boahtte viehkken.
 
 
 sme-smj	  Isak lea viššalis bargi.
-	- Isak la vissjalis bargge.
-	+ Isak la vissjalis #bargge.
+WORKS	  Isak la vissjalis bargge.
 
 
 sme-smj	  Ahte gielistii lea vissis.
@@ -279,7 +274,7 @@ WORKS	  Iv subtsasta suohttasijdám iehtjádijda.
 
 
 sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
-WORKS	  Teáhttara ulmmen la nannit sámij identitehtav ja kultuvrav.
+WORKS	  Teáhttara ulmmen la nannit sámij identitiehtav ja kultuvrav.
 
 
 sme-smj	  Anne ráhkada biepmu.
@@ -294,4 +289,4 @@ sme-smj	  Áddjá lea boaris.
 WORKS	  Áddjá la boares.
 
 
-54 / 69, 78.26%
+69 / 71
