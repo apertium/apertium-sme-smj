@@ -1075,58 +1075,58 @@
       </action>
     </rule>
 
-<rule comment="REGLA: NEGVERB CONNEGVERB"> <!-- Dábálasj neg: Iv sidá dujna doarrut -->
-    <pattern>
-      <pattern-item n="negverb"/>
-      <pattern-item n="connegverb"/>
-    </pattern>
-    <action>
-      <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
-      <!-- c="First we copy the temps from mainverb onto negverb" -->
-      <let>
-        <clip pos="1" side="tl" part="a_temps_mood"/>
-        <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
-      </let>
-      <choose>
-        <when>
-          <test>
-            <not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not>
-          </test>
-          <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
-        </when>
-        <when>
-          <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
-        </when>
-      </choose>
+    <rule comment="REGLA: NEGVERB CONNEGVERB"> <!-- Dábálasj neg: Iv sidá dujna doarrut -->
+      <pattern>
+        <pattern-item n="negverb"/>
+        <pattern-item n="connegverb"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <!-- c="First we copy the temps from mainverb onto negverb" -->
+        <let>
+          <clip pos="1" side="tl" part="a_temps_mood"/>
+          <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
+        </let>
+        <choose>
+          <when>
+            <test>
+              <not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+            </test>
+            <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
+          </when>
+          <when>
+            <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
+            <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
+          </when>
+        </choose>
 
-      <out>
-        <chunk name="verb" case="caseFirstword">
-          <tags>
-            <tag><lit-tag v="SV"/></tag>
-            <tag><var n="func"/></tag>
-            <tag><clip pos="1" side="sl" part="a_mood"/></tag>
-            <tag><clip pos="1" side="sl" part="a_foc"/></tag>
-          </tags>
-          <lu>
-            <clip pos="1" side="tl" part="whole"/>
-          </lu>
-        </chunk>
-        <b pos="1"/>
-        <chunk name="verb">
-          <tags>
-            <tag><lit-tag v="SV"/></tag>
-            <tag><var n="func"/></tag>
-            <tag><clip pos="2" side="sl" part="a_mood"/></tag>
-            <tag><clip pos="2" side="sl" part="a_foc"/></tag>
-          </tags>
-          <lu>
-            <clip pos="2" side="tl" part="whole"/>
-          </lu>
-        </chunk>
-      </out>
-    </action>
-  </rule>
+        <out>
+          <chunk name="verb" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="1" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="1" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+          <b pos="1"/>
+          <chunk name="verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="2" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="2" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
   <rule comment="REGLA: NEGVERB liehket"> <!-- Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim -->
@@ -1172,13 +1172,22 @@
     </pattern>
     <action>
       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
-      <let><clip pos="1" side="tl" part="a_temps_mood"/>
-      <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="3" side="tl" part="a_temps"/></concat>
+      <!-- c="First we copy the temps from mainverb onto negverb" -->
+      <let>
+        <clip pos="1" side="tl" part="a_temps_mood"/>
+        <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="3" side="tl" part="a_temps"/></concat>
       </let>
-      <choose><when>
-        <test><not><equal><clip pos="3" side="tl" part="lem"/><lit v="liehket"/></equal></not></test>
-        <let><clip pos="3" side="tl" part="a_temps"/><lit v=""/></let>
-      </when>
+      <choose>
+        <when>
+          <test>
+            <not><equal><clip pos="3" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+          </test>
+          <let><clip pos="3" side="tl" part="a_temps"/><lit v=""/></let>
+        </when>
+        <when>
+          <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
+        </when>
       </choose>
 
       <out>
