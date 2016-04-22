@@ -256,13 +256,51 @@
   </section-def-cats>
 
   <section-def-attrs>
+    <def-attr n="a_mode">
+      <attr-item tags="indic"/>
+      <attr-item tags="pot"/>
+      <attr-item tags="cond"/>
+      <attr-item tags="imprt"/>
+    </def-attr>
+    <def-attr n="a_foc">
+      <attr-item tags="foc_ba"/>
+      <attr-item tags="foc_bahal"/>
+      <attr-item tags="foc_bahan"/>
+      <attr-item tags="foc_bason"/>
+      <attr-item tags="foc_ban"/>
+      <attr-item tags="foc_bat"/>
+      <attr-item tags="foc_be"/>
+      <attr-item tags="foc_behal"/>
+      <attr-item tags="foc_behan"/>
+      <attr-item tags="foc_beson"/>
+      <attr-item tags="foc_neg-ge"/>
+      <attr-item tags="foc_pos-ge"/>
+      <attr-item tags="foc_gen"/>
+      <attr-item tags="foc_ges"/>
+      <attr-item tags="foc_gin"/>
+      <attr-item tags="foc_gis"/>
+      <attr-item tags="foc_hal"/>
+      <attr-item tags="foc_han"/>
+      <attr-item tags="foc_naj"/>
+      <attr-item tags="foc_nii"/>
+      <attr-item tags="foc_uv"/>
+      <attr-item tags="foc_son"/>
+      <attr-item tags="foc_sun"/>
+    </def-attr>
+    <def-attr n="a_exthab">
+      <attr-item tags="←ext→"/>
+      <attr-item tags="←hab→"/>
+    </def-attr>
+    <def-attr n="a_south">
+      <attr-item tags="south"/>
+    </def-attr>
     <def-attr n="a-foc">
-    	<attr-item tags="foc_neg-ge"/>
-    	<attr-item tags="foc_pos-ge"/>
+      <attr-item tags="foc_neg-ge"/>
+      <attr-item tags="foc_pos-ge"/>
     </def-attr>
     <def-attr n="a_npagree_type">
-       <attr-item tags="adj.ord"/>
-       <attr-item tags="prn.ind"/>
+      <attr-item tags="adj.ord"/>
+      <attr-item tags="prn.ind"/>
     </def-attr>
     <def-attr n="a_verb_p_nr">
       <attr-item tags="p2.sg"/>
@@ -323,15 +361,15 @@
       <attr-item tags="prn.ref"/>
     </def-attr>
     <def-attr n="a_poss">
-       <attr-item tags="px1sg"/>
-       <attr-item tags="px2sg"/>
-       <attr-item tags="px3sg"/>
-       <attr-item tags="px1du"/>
-       <attr-item tags="px2du"/>
-       <attr-item tags="px3du"/>
-       <attr-item tags="px1pl"/>
-       <attr-item tags="px2pl"/>
-       <attr-item tags="px3pl"/>
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px3sg"/>
+      <attr-item tags="px1du"/>
+      <attr-item tags="px2du"/>
+      <attr-item tags="px3du"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3pl"/>
     </def-attr>
     <def-attr n="a_trans">
       <attr-item tags="iv"/>
@@ -341,24 +379,24 @@
       <attr-item tags="←hab→"/>
     </def-attr>
     <def-attr n="a_deriv">
-       <attr-item tags="der_dimin.n"/>
-       <attr-item tags="der_at"/>
-       <attr-item tags="der_goahti"/>
-       <attr-item tags="der_goahte"/>
-       <attr-item tags="der_l"/>
-       <attr-item tags="der_ahtti"/>
-       <attr-item tags="der_ahtte"/>
-       <attr-item tags="der_vuohta"/>
-       <attr-item tags="der_d"/>
-       <attr-item tags="der_lágan"/>
-       <attr-item tags="der_lágán"/>
-       <attr-item tags="der_nammasaš"/>
-       <attr-item tags="der_nammasasj"/>
-        <attr-item tags="der_saš"/>
-        <attr-item tags="der_sasj"/>
-        <attr-item tags="der_laš"/>
-        <attr-item tags="der_lasj"/>
-   </def-attr>
+      <attr-item tags="der_dimin.n"/>
+      <attr-item tags="der_at"/>
+      <attr-item tags="der_goahti"/>
+      <attr-item tags="der_goahte"/>
+      <attr-item tags="der_l"/>
+      <attr-item tags="der_ahtti"/>
+      <attr-item tags="der_ahtte"/>
+      <attr-item tags="der_vuohta"/>
+      <attr-item tags="der_d"/>
+      <attr-item tags="der_lágan"/>
+      <attr-item tags="der_lágán"/>
+      <attr-item tags="der_nammasaš"/>
+      <attr-item tags="der_nammasasj"/>
+      <attr-item tags="der_saš"/>
+      <attr-item tags="der_sasj"/>
+      <attr-item tags="der_laš"/>
+      <attr-item tags="der_lasj"/>
+    </def-attr>
 
     <def-attr n="a_sem">
       <attr-item tags="sem_act"/>
@@ -669,9 +707,11 @@
   </section-def-attrs>
 
   <section-def-vars>
+    <def-var n="func"/> <!-- a_func -->
     <def-var n="number"/>
     <def-var n="current_verb"/>
     <def-var n="adpos_chunk_name"/>
+    <def-var n="caseFirstword"/> 
   </section-def-vars>
 
   <section-def-lists>
@@ -711,6 +751,25 @@
 
   </section-def-lists>
   <section-def-macros>
+
+    <def-macro n="set_caseFirstword" npar="1"
+               c="Set the typographic case to be carried by the chunk.
+                  - if argument is _not_ a proper noun: caseFirstword is the case of the lemma, and the lemma gets lowercase.
+                  - if argument _is_ a proper noun: caseFirstword is lowercase, and lemma stays unchanged.
+
+                  We treat UPPERCASE as proper nouns.">
+      <let><var n="caseFirstword"/><lit v="aa"/></let>
+      <choose><when>
+        <test><not><or>
+          <begins-with><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np"/></begins-with>
+          <!-- <equal><clip pos="1" side="tl" part="lettercase"/><lit-tag v="fixedcase"/></equal> -->
+          <equal><get-case-from pos="1"><lit v="aa"/></get-case-from><lit v="AA"/></equal>
+        </or></not></test>
+        <let><var n="caseFirstword"/><get-case-from pos="1"><lit v="aa"/></get-case-from></let>
+        <modify-case><clip pos="1" side="tl" part="lemh"/><lit v="aa"/></modify-case>
+      </when></choose>
+    </def-macro>
+
     <def-macro n="remove-semtag-1Param" npar="1">
       <let>
         <clip pos="1" side="tl" part="a_sem"/>
@@ -891,6 +950,33 @@
         </when>
       </choose>
     </def-macro>
+
+    <def-macro n="foc-1Param" npar="1">
+      <choose>
+        <when>
+          <test><equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_pos-k"/></let>
+        </when>
+        <when>
+          <test><equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-k"/></let>
+        </when>
+      </choose>
+    </def-macro>
+
+    <def-macro n="general-macro-1Param" npar="1" c="Use for all chunks of one pattern-item">
+      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
+      <choose><when>
+          <test><not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
+          <let><var n="func"/><clip pos="1" side="sl" part="a_func"/></let>
+      </when></choose>
+      <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+      <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
+      <let><clip pos="1" side="tl" part="a_south"/><lit v=""/></let>
+      <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
+      <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>
+      <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+    </def-macro>
   </section-def-macros>
 
 
@@ -965,9 +1051,9 @@
         <chunk name="verb" case="caseFirstWord">
           <tags>
             <tag><lit-tag v="SV"/></tag>
-            <tag><clip pos="1" side="sl" part="syntag"/></tag>
-            <tag><clip pos="1" side="sl" part="mood"/></tag>
-            <tag><clip pos="1" side="sl" part="foc"/></tag>
+            <tag><var n="func"/></tag>
+            <tag><clip pos="1" side="sl" part="a_mood"/></tag>
+            <tag><clip pos="1" side="sl" part="a_foc"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -977,9 +1063,9 @@
         <chunk name="verb" case="caseFirstWord">
           <tags>
             <tag><lit-tag v="SV"/></tag>
-            <tag><clip pos="2" side="sl" part="syntag"/></tag>
-            <tag><clip pos="2" side="sl" part="mood"/></tag>
-            <tag><clip pos="2" side="sl" part="foc"/></tag>
+            <tag><var n="func"/></tag>
+            <tag><clip pos="2" side="sl" part="a_mood"/></tag>
+            <tag><clip pos="2" side="sl" part="a_foc"/></tag>
           </tags>
           <lu>
             <clip pos="2" side="tl" part="whole"/>
@@ -1045,9 +1131,9 @@
         <chunk name="verb" case="caseFirstWord">
           <tags>
             <tag><lit-tag v="SV"/></tag>
-            <tag><clip pos="1" side="sl" part="syntag"/></tag>
-            <tag><clip pos="1" side="sl" part="mood"/></tag>
-            <tag><clip pos="1" side="sl" part="foc"/></tag>
+            <tag><var n="func"/></tag>
+            <tag><clip pos="1" side="sl" part="a_mood"/></tag>
+            <tag><clip pos="1" side="sl" part="a_foc"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -1057,9 +1143,9 @@
         <chunk name="verb" case="caseFirstWord">
           <tags>
             <tag><lit-tag v="SV"/></tag>
-            <tag><clip pos="3" side="sl" part="syntag"/></tag>
-            <tag><clip pos="3" side="sl" part="mood"/></tag>
-            <tag><clip pos="3" side="sl" part="foc"/></tag>
+            <tag><var n="func"/></tag>
+            <tag><clip pos="3" side="sl" part="a_mood"/></tag>
+            <tag><clip pos="3" side="sl" part="a_foc"/></tag>
           </tags>
           <lu>
             <clip pos="2" side="tl" part="whole"/>
