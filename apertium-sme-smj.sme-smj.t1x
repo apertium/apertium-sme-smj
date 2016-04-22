@@ -338,6 +338,7 @@
     </def-attr>
     <def-attr n="a_nbr">
       <attr-item tags="sg"/>
+      <attr-item tags="du"/>
       <attr-item tags="pl"/>
     </def-attr>
     <def-attr n="a_adpos">
@@ -1081,13 +1082,23 @@
     </pattern>
     <action>
       <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
-      <let><clip pos="1" side="tl" part="a_temps_mood"/>
-      <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
+      <!-- c="First we copy the temps from mainverb onto negverb" -->
+      <let>
+        <clip pos="1" side="tl" part="a_temps_mood"/>
+        <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
       </let>
-      <choose><when>
-        <test><not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not></test>
-        <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
-      </when></choose>
+      <choose>
+        <when>
+          <test>
+            <not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+          </test>
+          <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
+        </when>
+        <when>
+          <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
+        </when>
+      </choose>
 
       <out>
         <chunk name="verb" case="caseFirstword">
