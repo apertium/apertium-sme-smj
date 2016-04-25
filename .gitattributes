@@ -21,6 +21,7 @@
 /apertium-sme-smj.smj-sme.t3x -text
 /autogen.sh -text
 /check_mt-otpt.py -text
+/check_mt-otpt_wer.py -text
 /configure.ac -text
 dev/TriSaami.txt -text
 dev/TriSaami_mod.txt -text
