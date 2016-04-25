@@ -704,6 +704,9 @@
       <attr-item tags="←hab→"/>
     </def-attr>
 
+  	 <def-attr n="foclemma">
+  	 	<attr-item tags="prn.ind.*"/>
+  	 </def-attr>
 
   </section-def-attrs>
 
@@ -961,12 +964,17 @@
 
     <def-macro n="general-macro-1Param" npar="1" c="Use for all chunks of one pattern-item">
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
-      <choose><when>
+      <choose>
+      <when>
           <test><not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
           <let><var n="func"/><clip pos="1" side="sl" part="a_func"/></let>
-      </when></choose>
+      </when>
+      <when>
+          <test><not><in><clip pos="1" side="sl" part="lem"/><list n="foclemma"/></in></not></test>
+           <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
+      </when>
+      </choose>
       <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
-      <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
       <let><clip pos="1" side="tl" part="a_south"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>
