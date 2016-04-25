@@ -308,6 +308,17 @@
       <attr-item tags="p3.pl"/>
       <attr-item tags="p3.pl"/>
     </def-attr>
+    <def-attr n="a_PoS">
+      <attr-item tags="adv"/>
+      <attr-item tags="prn"/>
+      <attr-item tags="vblex"/>
+      <attr-item tags="n"/>
+      <attr-item tags="adj"/>
+      <attr-item tags="post"/>
+      <attr-item tags="pr"/>
+      <attr-item tags="ij"/>
+      <attr-item tags="num"/>
+    </def-attr>
     <def-attr n="a_mood">
       <attr-item tags="indic"/>
     </def-attr>
@@ -969,8 +980,10 @@
           <test><not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
           <let><var n="func"/><clip pos="1" side="sl" part="a_func"/></let>
       </when>
+      </choose>
+      <choose>
       <when>
-          <test><not><equal><clip pos="1" side="tl" part="a_prn"/><lit-tag v="prn.ind"/></equal></not></test>
+          <test><not><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="prn"/></equal></not></test>
            <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
       </when>
       </choose>
@@ -1333,7 +1346,6 @@
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
         <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
-           <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let> <!-- to the macro -->
         <out>
           <chunk name="mainverb" case="caseFirstword">
             <tags>
