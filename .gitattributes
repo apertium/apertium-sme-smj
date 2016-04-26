@@ -23,6 +23,7 @@
 /check_mt-otpt.py -text
 /check_mt-otpt_wer.py -text
 /configure.ac -text
+dev/SP_missing.txt -text
 dev/TriSaami.txt -text
 dev/TriSaami_mod.txt -text
 dev/TriSaami_sme.txt -text
