@@ -13,14 +13,15 @@ hálddahuslaš	hálddahuslaš+A+Attr
 
 ceavzilis	ceavzil+A+Attr
 ceavzilis	ceavzil+A+Sg+Loc
+ceavzil		ceavzil+A+Sg+Nom	guoddel
 
 SNPL	SNPL+N+ACR+Sg+Acc
 SNPL	SNPL+N+ACR+Sg+Gen
-SNPL	SNPL+N+ACR+Sg+Nom
+SNPL	SNPL+N+ACR+Sg+Nom	SNPL
 
 vuođul,	vuođul,	+?
 
-hábmet	hábmet+V+TV+Inf
+hábmet	hábmet+V+TV+Inf	hábbmit
 hábmet	hábmet+V+TV+Ind+Prs+Pl1
 hábmet	hábmet+V+TV+Ind+Prs+Sg2
 hábmet	hábmet+V+TV+Der/h+V+Imprt+Sg2
@@ -36,7 +37,7 @@ for	for	+?
 
 SF	SF+N+ACR+Sg+Acc
 SF	SF+N+ACR+Sg+Gen
-SF	SF+N+ACR+Sg+Nom
+SF	SF+N+ACR+Sg+Nom	SF
 
 MW.	MW.	+?
 
@@ -46,12 +47,12 @@ konsulteren	konsul+N+Cmp/SgGen+Cmp#teret+V+TV+Der/NomAct+N+Sg+Nom
 konsulteren	konsul+N+Cmp/SgGen+Cmp#teret+V+TV+Der/NomAct+N+Sg+Gen
 konsulteren	konsul+N+Cmp/SgNom+Cmp#teret+V+TV+Der/NomAct+N+Sg+Nom
 konsulteren	konsul+N+Cmp/SgNom+Cmp#teret+V+TV+Der/NomAct+N+Sg+Gen
-konsulteren	konsulteren+N+Sg+Nom
+konsulteren	konsulteren+N+Sg+Nom	konsultierim
 konsulteren	konsulteren+N+Sg+Gen
 konsulteren	konsulteret+V+TV+PrfPrc
 konsulteren	konsulteret+V+TV+Ind+Prs+Sg1
 konsulteren	konsulteret+V+TV+Actio+Gen
-konsulteren	konsulteret+V+TV+Actio+Nom
+konsulteren	konsulteret+V+TV+Actio+Nom	
 konsulteren	konsulteret+V+TV+Ind+Prt+ConNeg
 konsulteren	konsulteret+V+TV+Der/NomAct+N+Sg+Nom
 konsulteren	konsulteret+V+TV+Der/NomAct+N+Sg+Gen
@@ -60,12 +61,14 @@ geatnegahttojuvvon	geatnegahttit+V+TV+Der/PassL+V+IV+Ind+Prs+Sg1
 geatnegahttojuvvon	geatnegahttit+V+TV+Der/PassL+V+IV+Ind+Prt+ConNeg
 geatnegahttojuvvon	geatnegahttit+V+TV+Der/PassL+V+IV+PrfPrc
 
+geatnegahttit	geatnegahttit+V+TV+Inf
+
 Riikkaantikvára	riika+N+Cmp/SgGen+Cmp#antikvára+N+Sg+Acc
 Riikkaantikvára	riika+N+Cmp/SgGen+Cmp#antikvára+N+Sg+Nom
 Riikkaantikvára	riika+N+Cmp/SgGen+Cmp#antikvára+N+Sg+Gen+Allegro
 Riikkaantikvára	riika+N+Cmp/SgGen+Cmp#antikvára+N+Sg+Gen
 Riikkaantikvára	riikkaantikvára+N+Sg+Acc
-Riikkaantikvára	riikkaantikvára+N+Sg+Nom
+Riikkaantikvára	riikkaantikvára+N+Sg+Nom	rijkaantikvárra
 Riikkaantikvára	riikkaantikvára+N+Sg+Gen+Allegro
 Riikkaantikvára	riikkaantikvára+N+Sg+Gen
 
@@ -75,7 +78,7 @@ konsulteret	konsul+N+Cmp/SgGen+Cmp#teret+N+Sg+Gen+Err/Orth
 konsulteret	konsul+N+Cmp/SgNom+Cmp#teret+N+Sg+Nom
 konsulteret	konsul+N+Cmp/SgNom+Cmp#teret+N+Sg+Acc+Err/Orth
 konsulteret	konsul+N+Cmp/SgNom+Cmp#teret+N+Sg+Gen+Err/Orth
-konsulteret	konsulteret+V+TV+Inf
+konsulteret	konsulteret+V+TV+Inf	konsultierit
 konsulteret	konsulteret+V+TV+Ind+Prs+Pl1
 konsulteret	konsulteret+V+TV+Ind+Prs+Sg2
 konsulteret	konsulteret+V+TV+Der/h+V+Imprt+Sg2
@@ -92,6 +95,7 @@ jr.	jr+N+ABBR+Nom
 
 psykalaš	psyhkalaš+Err/Orth+A+Sg+Nom
 psykalaš	psyhkalaš+Err/Orth+A+Attr
+psyhkalaš	psyhkalaš+A+Sg+Nom	psykalasj
 
 konsultašuvdnaprosedyraid	konsultašuvdna+N+Cmp/SgNom+Cmp#prosedyra+N+Pl+Acc
 konsultašuvdnaprosedyraid	konsultašuvdna+N+Cmp/SgNom+Cmp#prosedyra+N+Pl+Gen
@@ -101,14 +105,17 @@ konsultašuvdnaprosedyraid	konsultašuvdnaprosedyra+N+Pl+Acc
 konsultašuvdnaprosedyraid	konsultašuvdnaprosedyra+N+Pl+Gen
 konsultašuvdnaprosedyraid	konsultašuvdnaprosedyra+N+Err/Orth+Pl+Acc
 konsultašuvdnaprosedyraid	konsultašuvdnaprosedyra+N+Err/Orth+Pl+Gen
+konsultašuvdnaprosedyra	konsultašuvdnaprosedyra+N+Sg+Nom	konsultasjåvnnåprosedijrra
 
 beroštusaid	beroštus+v1+N+Pl+Acc
 beroštusaid	beroštus+v1+N+Pl+Gen
 beroštusaid	beroštus+v1+N+Err/Orth+Pl+Acc
 beroštusaid	beroštus+v1+N+Err/Orth+Pl+Gen
+beroštus	beroštus+v1+N+Sg+Nom	berustibme
 
 nana	nana+Interj
 nana	nanus+A+Attr
+nanus	nanus+A+Sg+Nom	nanos
 
 elfápmorusttega	elfápmu+N+Cmp/SgNom+Cmp#rusttet+N+Sg+Acc
 elfápmorusttega	elfápmu+N+Cmp/SgNom+Cmp#rusttet+N+Sg+Gen
@@ -238,12 +245,6 @@ cuoŋománus	cuoŋománnu+N+Sg+Loc
 
 Saemien	Saemien+N+Prop+Attr
 
-IV	IV+Num+Rom+Sg+Nom
-IV	IV+A+Rom+Ord
-IV	IV+N+ACR+Sg+Acc
-IV	IV+N+ACR+Sg+Gen
-IV	IV+N+ACR+Sg+Nom
-
 Báhccavuona	Báhccavuotna+N+Prop+Sem/Plc+Sg+Gen
 Báhccavuona	Báhccavuotna+N+Prop+Sem/Plc+Sg+Acc
 Báhccavuona	Báhccavuotna+N+Prop+Sem/Sur+Sg+Gen
@@ -283,6 +284,12 @@ gosa	gosa+Adv
 dávista	dávistit+V+TV+Ind+Prs+Sg3
 
 dakko	dakko+Adv
+
+IV	IV+Num+Rom+Sg+Nom
+IV	IV+A+Rom+Ord
+IV	IV+N+ACR+Sg+Acc
+IV	IV+N+ACR+Sg+Gen
+IV	IV+N+ACR+Sg+Nom
 
 Áššenr.	áššenr+Err/Orth+N+ABBR+Acc
 Áššenr.	áššenr+Err/Orth+N+ABBR+Attr
@@ -326,12 +333,6 @@ Raudfjellet	Raudfjellet+N+Prop+Sem/Sur+Sg+Gen+Allegro
 Raudfjellet	Raudfjellet+N+Prop+Sem/Plc+Attr
 Raudfjellet	Raudfjellet+N+Prop+Sem/Plc+Sg+Nom
 Raudfjellet	Raudfjellet+N+Prop+Sem/Plc+Sg+Gen+Allegro
-
-III	III+Num+Rom+Sg+Nom
-III	III+A+Rom+Ord
-III	III+N+ACR+Sg+Acc
-III	III+N+ACR+Sg+Gen
-III	III+N+ACR+Sg+Nom
 
 váldomihttomearrin	váldu+N+Cmp/SgNom+Cmp#mieđu+N+Cmp/SgGen+Cmp#mearrat+V+TV+Der/NomAg+N+Sg+Loc+South+Err/Orth
 váldomihttomearrin	váldu+N+Cmp/SgNom+Cmp#mieđu+N+Cmp/SgGen+Cmp#mearrat+V+TV+Der/NomAg+N+Ess
@@ -380,16 +381,16 @@ Vindkraft	Vindkraft+N+Prop+Sem/Org+Sg+Acc
 Vindkraft	Vindkraft+N+Prop+Sem/Org+Sg+Gen
 Vindkraft	Vindkraft+N+Prop+Sem/Org+Sg+Nom
 
-VI	VI+Num+Rom+Sg+Nom
-VI	VI+A+Rom+Ord
-VI	VI+N+ACR+Sg+Acc
-VI	VI+N+ACR+Sg+Gen
-VI	VI+N+ACR+Sg+Nom
-
 KV	kV+N+ABBR
 KV	KV+N+ACR+Sg+Acc
 KV	KV+N+ACR+Sg+Gen
 KV	KV+N+ACR+Sg+Nom
+
+III	III+Num+Rom+Sg+Nom
+III	III+A+Rom+Ord
+III	III+N+ACR+Sg+Acc
+III	III+N+ACR+Sg+Gen
+III	III+N+ACR+Sg+Nom
 
 EMRIP	EMRIP+N+ACR+Sg+Acc
 EMRIP	EMRIP+N+ACR+Sg+Gen
@@ -444,6 +445,12 @@ finai	fitnat+V+IV+Ind+Prt+Err/Orth+Sg3
 
 dásseárvosaš	dásseárvosaš+A+Sg+Nom
 dásseárvosaš	dásseárvosaš+A+Attr
+
+VI	VI+Num+Rom+Sg+Nom
+VI	VI+A+Rom+Ord
+VI	VI+N+ACR+Sg+Acc
+VI	VI+N+ACR+Sg+Gen
+VI	VI+N+ACR+Sg+Nom
 
 Porsáŋggu	Porsáŋgu+N+Prop+Sem/Plc+Sg+Gen
 Porsáŋggu	Porsáŋgu+N+Prop+Sem/Plc+Sg+Acc
@@ -4352,11 +4359,6 @@ Aktij/Aktan/Aktesne	Aktij/Aktan/Aktesne	+?
 Ávnnaskeahtes	ávnnas+N+Der/geahtes+A+Attr
 Ávnnaskeahtes	ávnnastit+V+TV+VAbess+A+Attr
 
-Ávjuvárgeaidnu	Ávjovárgeaidnu+Err/Orth+N+Prop+Sem/Sur+Attr
-Ávjuvárgeaidnu	Ávjovárgeaidnu+Err/Orth+N+Prop+Sem/Sur+Sg+Nom
-Ávjuvárgeaidnu	Ávjovárgeaidnu+Err/Orth+N+Prop+Sem/Plc+Attr
-Ávjuvárgeaidnu	Ávjovárgeaidnu+Err/Orth+N+Prop+Sem/Plc+Sg+Nom
-
 Ávjovárri:	Ávjovárri:	+?
 
 Árjjas,	Árjjas,	+?
@@ -4388,8 +4390,6 @@ Aktij/Aktan/Aktesne	Aktij/Aktan/Aktesne	+?
 Áinnas	áinnas+Adv
 
 www.sametinget.#nå	www.sametinget.#nå	+?
-
-www.samediggi.#nå	www.samediggi.#nå	+?
 
 workshopas	workshop+N+Sg+Acc+PxSg3
 workshopas	workshop+N+Sg+Gen+PxSg3
@@ -5179,8 +5179,6 @@ sanerenprošeakta	sanerenprošeakta+N+Sg+Nom
 sanerenprošeakta	saneret+V+TV+Der/NomAct+N+Cmp/SgNom+Cmp#prošeakta+N+Sg+Nom
 
 sanerejuvvot,	sanerejuvvot,	+?
-
-samediggi@samediggi.#nå	samediggi@samediggi.#nå	+?
 
 sajusteami,	sajusteami,	+?
 
@@ -11093,6 +11091,11 @@ NSR:V/SÁB	NSR:V/SÁB	+?
 
 Åarjelsaemiej	Åarjelsaemiej	+?
 
+Ávjuvárgeaidnu	Ávjovárgeaidnu+Err/Orth+N+Prop+Sem/Sur+Attr
+Ávjuvárgeaidnu	Ávjovárgeaidnu+Err/Orth+N+Prop+Sem/Sur+Sg+Nom
+Ávjuvárgeaidnu	Ávjovárgeaidnu+Err/Orth+N+Prop+Sem/Plc+Attr
+Ávjuvárgeaidnu	Ávjovárgeaidnu+Err/Orth+N+Prop+Sem/Plc+Sg+Nom
+
 Árvoštallojuvvo	Árvoštallojuvvo	+?
 
 Árjá,	Árjá,	+?
@@ -11120,6 +11123,10 @@ NSR:V/SÁB	NSR:V/SÁB	+?
 ÁHP-boatsoj	ÁHP-boatsoj	+?
 
 youth	youth	+?
+
+www.samediggi.#nå&lt;pcle&gt;	www.samediggi.#nå&lt;pcle&gt;	+?
+
+www.samediggi.#nå	www.samediggi.#nå	+?
 
 www.barentsindigenous.org.	www.barentsindigenous.org.	+?
 
@@ -12104,6 +12111,10 @@ samfunnsforhold.	samfunnsforhold.	+?
 sametingsgruppe	sametingsgruppe	+?
 
 sameloven	sameloven	+?
+
+samediggi@samediggi.#nå&lt;pcle&gt;	samediggi@samediggi.#nå&lt;pcle&gt;	+?
+
+samediggi@samediggi.#nå	samediggi@samediggi.#nå	+?
 
 sajuštemiin	sajušteapmi+N+Pl+Loc
 sajuštemiin	sajušteapmi+N+Pl+Loc+Err/Orth
