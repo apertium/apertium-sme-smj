@@ -164,7 +164,7 @@ def main():
     i_dir = 'tmx_data'
     o_dir = 'otpt_dir'
     src_only = True
-    wer = True
+    wer = False
 
     if (src_only):
         wer = False
