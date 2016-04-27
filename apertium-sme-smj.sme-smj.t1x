@@ -318,6 +318,7 @@
     </def-attr>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
+      <attr-item tags="np"/>
     </def-attr>
     <def-attr n="a_cas">
       <attr-item tags="nom"/>
