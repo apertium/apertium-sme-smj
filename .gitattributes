@@ -99,6 +99,7 @@ dev/testkorpus_diff.txt -text
 dev/testsentences.txt -text
 dev/xfst2apertium.relabel -text
 doc/gt2apertium.cg3r -text
+/evaluate_xml.sh -text
 freqsorted_dix/adj_sme2smj_dix.xml -text
 freqsorted_dix/n_sme2smj_dix.xml -text
 freqsorted_dix/np_sme2smj_dix.xml -text
