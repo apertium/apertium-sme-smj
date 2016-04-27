@@ -21,7 +21,6 @@
 /apertium-sme-smj.smj-sme.t3x -text
 /autogen.sh -text
 /check_mt-otpt.py -text
-/check_mt-otpt_wer.py -text
 /configure.ac -text
 dev/SP_missing.txt -text
 dev/SP_missing_frekv.txt -text
@@ -172,3 +171,4 @@ tmx_data/brosjyre_foresatte_np08_sme2smj.tmx -text
 tmx_data/samastit_skuvlahist_sme2smj.tmx -text
 tmx_data/samediggeweb_sme2smj.tmx -text
 tmx_data/samediggidiedadus_samegiela_birra_2012_sme2smj.tmx -text
+/wercheck_mt-otpt.py -text
