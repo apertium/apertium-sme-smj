@@ -1,4 +1,30 @@
 <rules>
+
+  <rule weight="1.0">
+    <match lemma="gullat">
+      <select lemma="gullat"/>
+    </match>
+  </rule>
+
+
+  <rule weight="0.5">
+    <match lemma="gullat">
+      <select lemma="gullut"/>
+    </match>
+  </rule>
+  
+    <rule weight="0.6">
+    <match lemma="gullat">
+      <select lemma="gullut"/>
+    </match>
+    <or><match tags="n.*.*.ill.*"/>
+    <match tags="n.*.*.*.ill.*"/>
+    <match tags="prn.*.*.*.ill.*"/>
+        <match lemma="oktii"/>
+        <match lemma="dohko"/>
+    </or>
+  </rule>
+
   <rule weight="1.0">
     <match lemma="boahtet" tags="vblex.*"><select lemma="boahtit" tags="vblex.*"/></match>
   </rule>
