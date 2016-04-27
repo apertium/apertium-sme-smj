@@ -73,26 +73,11 @@
     </def-cat>
    <def-cat n="nnomcmp">
       <cat-item tags="n.*.guio"/>
-      <cat-item tags="n.cmp_sgnom.cmp"/>
-      <cat-item tags="n.*.cmp_sgnom.cmp"/>
-      <cat-item tags="n.cmp_sgnom.cmp.*"/>
-      <cat-item tags="n.*.cmp_sgnom.cmp.*"/>
-      <cat-item tags="n.cmp_sggen.cmp.*"/>
-      <cat-item tags="n.*.cmp_sggen.cmp.*"/>
-      <cat-item tags="n.cmp_sggen.cmp"/>
-      <cat-item tags="n.*.cmp_sggen.cmp"/>
-      <cat-item tags="np.top.cmp.*"/>
-      <cat-item tags="np.top.cmp"/>
+      <cat-item tags="n.*.cmp"/>
+      <cat-item tags="np.*.cmp"/>
       <cat-item tags="np.*.guio"/>
-      <cat-item tags="vblex.*.der_nomact.n.cmp_sg.cmp"/>
-      <cat-item tags="vblex.der_nomact.n.cmp_sg.cmp"/>
-      <cat-item tags="vblex.*.der_nomact.n.cmp_sg.cmp.*"/>
-      <cat-item tags="vblex.der_nomact.n.cmp_sg.cmp.*"/>
-      <cat-item tags="vblex.*.der_nomact.n.cmp_sgnom.cmp"/>
-      <cat-item tags="vblex.der_nomact.n.cmp_sgnom.cmp"/>
-      <cat-item tags="vblex.*.der_nomact.n.cmp_sgnom.cmp.*"/>
-      <cat-item tags="vblex.der_nomact.n.cmp_sgnom.cmp.*"/>
-      <cat-item tags="adj.cmp_sgnom.cmp.*"/>
+      <cat-item tags="vblex.*.der_nomact.*.cmp"/>
+      <cat-item tags="adj.*.cmp"/>
     </def-cat>
   <def-cat n="negverb">
 <!--ij<vblex><iv><neg><indic><pres><p3><sg>-->
