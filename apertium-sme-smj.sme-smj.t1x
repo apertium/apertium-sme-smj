@@ -945,6 +945,7 @@
       </choose>
     </def-macro>
 
+<!--
     <def-macro n="foc-1Param" npar="1">
       <choose>
         <when>
@@ -958,6 +959,7 @@
       </choose>
     </def-macro>
 
+-->
     <def-macro n="general-macro-1Param" npar="1" c="Use for all chunks of one pattern-item">
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
       <choose>
