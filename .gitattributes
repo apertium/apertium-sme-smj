@@ -94,6 +94,7 @@ dev/sme_bidix_sanity.sh -text
 dev/smjadverbs.txt -text
 dev/smjintersectionlemma2.txt -text
 dev/smjpronouns.txt -text
+dev/sorting_sanityoutput.sh -text
 dev/testkorpus.txt -text
 dev/testkorpus_diff.txt -text
 dev/testsentences.txt -text
