@@ -57,6 +57,9 @@
       <cat-item tags="np.cmp"/>
       <cat-item tags="np.*.guio"/>
     </def-cat>
+    <def-cat n="numsem">
+      <cat-item tags="num.*"/>
+    </def-cat>
      <def-cat n="numcmp">
       <cat-item tags="num.cmp"/>
       <cat-item tags="num.*.guio"/>
@@ -386,6 +389,7 @@
       <attr-item tags="der_ahtte"/>
       <attr-item tags="der_vuohta"/>
       <attr-item tags="der_d"/>
+      <attr-item tags="der_h"/>
       <attr-item tags="der_lágan"/>
       <attr-item tags="der_lágán"/>
       <attr-item tags="der_nammasaš"/>
@@ -618,6 +622,9 @@
       <attr-item tags="sem_wpn"/>
       <attr-item tags="sem_wthr"/>
     </def-attr>
+    <def-attr n="sem_year">
+      <attr-item tags="sem_year"/>
+    </def-attr>
 
     <def-attr n="a_func">
       <attr-item tags="@→A"/>
@@ -809,15 +816,9 @@
 
         <when>
           <test>
-            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_vuohta"/></equal>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_h"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_vuohta"/></let>
-        </when>
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_laš"/></equal>
-          </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lasj"/></let>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_d"/></let>
         </when>
 
         <when>
@@ -831,18 +832,6 @@
             <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_lágan"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lágán"/></let>
-        </when>
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_saš"/></equal>
-          </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_sasj"/></let>
-        </when>
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_goahti"/></equal>
-          </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_goahte"/></let>
         </when>
         <when>
           <test>
@@ -1266,6 +1255,28 @@
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="prn" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: numeral - 1 position in-out">
+      <pattern>
+        <pattern-item n="numsem"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <let><clip pos="1" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
+        <out>
+          <chunk name="num" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
