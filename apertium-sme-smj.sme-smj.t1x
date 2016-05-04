@@ -106,17 +106,17 @@
     <def-cat n="nom">
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
-      <cat-item tags="adj.der_vuohta.n.*"/>
+      <cat-item tags="adj.der_vuota.n.*"/>
       <cat-item tags="vblex.*.der_nomact.n.*"/>
       <cat-item tags="vblex.der_nomact.n.*"/>
     </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj.*"/>
-      <cat-item tags="n.der_sâš.adj.*"/>
-      <cat-item tags="n.der_lâš.adj.*"/>
+      <cat-item tags="n.der_sasj.adj.*"/>
+      <cat-item tags="n.der_lasj.adj.*"/>
     </def-cat>
     <def-cat n="adv">
-      <cat-item tags="adj.der_at.adv.*"/>
+      <cat-item tags="adj.der_aadv.adv.*"/>
       <cat-item tags="adv.*"/>
     </def-cat>
     <def-cat n="num-nomacc">
@@ -380,14 +380,12 @@
       <attr-item tags="←hab→"/>
     </def-attr>
     <def-attr n="a_deriv">
-      <attr-item tags="der_dimin.n"/>
-      <attr-item tags="der_at"/>
-      <attr-item tags="der_goahti"/>
-      <attr-item tags="der_goahte"/>
+      <attr-item tags="der_dimin"/>
+      <attr-item tags="der_aadv"/>
       <attr-item tags="der_l"/>
       <attr-item tags="der_ahtti"/>
       <attr-item tags="der_ahtte"/>
-      <attr-item tags="der_vuohta"/>
+      <attr-item tags="der_vuota"/>
       <attr-item tags="der_d"/>
       <attr-item tags="der_h"/>
       <attr-item tags="der_lágan"/>
@@ -396,8 +394,11 @@
       <attr-item tags="der_nammasasj"/>
       <attr-item tags="der_saš"/>
       <attr-item tags="der_sasj"/>
-      <attr-item tags="der_laš"/>
       <attr-item tags="der_lasj"/>
+    </def-attr>
+    <def-attr n="a_comp-superl">
+      <attr-item tags="comp"/>
+      <attr-item tags="sup"/>
     </def-attr>
 
     <def-attr n="a_sem">
@@ -810,6 +811,12 @@
         <lit-tag v="prn.ind.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>
       </let>
     </def-macro>
+    <def-macro n="remove-advtag-1Param" npar="1"> <!--  +Adv+Comp +Adv+Superl to +Adv -->
+          <let>
+            <clip pos="1" side="tl" part="a_comp-superl"/>
+            <lit v=""/>
+          </let>
+    </def-macro>
 
     <def-macro n="convert-deriv-1Param" npar="1">
       <choose>
@@ -821,12 +828,6 @@
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_d"/></let>
         </when>
 
-        <when>
-          <test>
-            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_at"/></equal>
-          </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_at"/></let>
-        </when>
         <when>
           <test>
             <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_lágan"/></equal>
@@ -1246,6 +1247,27 @@
     </action>
   </rule>
 
+  <rule comment="REGLA: adv">
+    <pattern>
+      <pattern-item n="adv"/>
+    </pattern>
+    <action>
+      <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+       <call-macro n="remove-advtag-1Param"><with-param pos="1"/></call-macro>
+     <out>
+        <chunk name="adv">
+          <tags>
+            <tag><lit-tag v="ADVL"/></tag>
+            <tag><var n="func"/></tag>
+          </tags>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+      </out>
+    </action>
+  </rule>
+
     <rule comment="REGLA: prn">
       <pattern>
         <pattern-item n="prn"/>
@@ -1275,6 +1297,7 @@
           <with-param pos="1"/>
         </call-macro>
         <let><clip pos="1" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstword">
             <tags>
@@ -1330,6 +1353,36 @@
               </lu>
               <lu>
                 <clip pos="2" side="tl" part="whole"/>
+              </lu>
+            </mlu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: nnomcmp 3 in">
+      <pattern>
+        <pattern-item n="nnomcmp"/>
+        <pattern-item n="nnomcmp"/>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+        <out>
+          <chunk name="nom" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <mlu>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
               </lu>
             </mlu>
           </chunk>
