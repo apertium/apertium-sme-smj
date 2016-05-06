@@ -62,6 +62,7 @@
     </def-cat>
      <def-cat n="numcmp">
       <cat-item tags="num.cmp"/>
+      <cat-item tags="num.*.cmp"/>
       <cat-item tags="num.*.guio"/>
     </def-cat>
      <def-cat n="geahččatverb">
@@ -74,13 +75,9 @@
       <cat-item tags="vblex.*.inf.*"/>
       <cat-item tags="vblex.inf.*"/>
     </def-cat>
-   <def-cat n="nnomcmp">
-      <cat-item tags="n.*.guio"/>
-      <cat-item tags="n.*.cmp"/>
-      <cat-item tags="np.*.cmp"/>
-      <cat-item tags="np.*.guio"/>
-      <cat-item tags="vblex.*.der_nomact.*.cmp"/>
-      <cat-item tags="adj.*.cmp"/>
+   <def-cat n="nouncmp">
+      <cat-item tags="*.cmp"/>
+      <cat-item tags="*.cmp.guio"/>
     </def-cat>
   <def-cat n="negverb">
 <!--ij<vblex><iv><neg><indic><pres><p3><sg>-->
@@ -1255,7 +1252,7 @@
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
        <call-macro n="remove-advtag-1Param"><with-param pos="1"/></call-macro>
      <out>
-        <chunk name="adv">
+        <chunk name="adv" case="caseFirstword">
           <tags>
             <tag><lit-tag v="ADVL"/></tag>
             <tag><var n="func"/></tag>
@@ -1335,7 +1332,7 @@
 
     <rule comment="REGLA: nnomcmp">
       <pattern>
-        <pattern-item n="nnomcmp"/>
+        <pattern-item n="nouncmp"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
@@ -1361,8 +1358,8 @@
     </rule>
     <rule comment="REGLA: nnomcmp 3 in">
       <pattern>
-        <pattern-item n="nnomcmp"/>
-        <pattern-item n="nnomcmp"/>
+        <pattern-item n="nouncmp"/>
+        <pattern-item n="nouncmp"/>
         <pattern-item n="nom"/>
       </pattern>
       <action>
