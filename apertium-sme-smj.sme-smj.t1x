@@ -60,6 +60,12 @@
     <def-cat n="numeral">
       <cat-item tags="num.*"/>
     </def-cat>
+    <def-cat n="váste">
+      <cat-item lemma="váste" tags="post.*"/>
+    </def-cat>
+    <def-cat n="gen">
+      <cat-item tags="*.gen.*"/>
+    </def-cat>
      <def-cat n="numcmp">
       <cat-item tags="num.cmp"/>
       <cat-item tags="num.*.cmp"/>
@@ -289,10 +295,6 @@
     <def-attr n="a_south">
       <attr-item tags="south"/>
     </def-attr>
-    <def-attr n="a-foc">
-      <attr-item tags="foc_neg-ge"/>
-      <attr-item tags="foc_pos-ge"/>
-    </def-attr>
     <def-attr n="a_npagree_type">
       <attr-item tags="adj.ord"/>
       <attr-item tags="prn.ind"/>
@@ -330,7 +332,7 @@
       <attr-item tags="n"/>
       <attr-item tags="np"/>
     </def-attr>
-    <def-attr n="a_cas">
+    <def-attr n="a_case">
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
       <attr-item tags="ill"/>
@@ -791,31 +793,31 @@
                   param2: noun">
       <let>
         <clip pos="2" side="tl" part="tags"/><concat>
-        <lit-tag v="n.sg"/><clip pos="1" side="tl" part="a_cas"/> </concat>
+        <lit-tag v="n.sg"/><clip pos="1" side="tl" part="a_case"/> </concat>
       </let>
       <let>
         <clip pos="1" side="tl" part="tags"/><concat>
-        <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_cas"/> </concat>
+        <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_case"/> </concat>
       </let>
     </def-macro>
     <def-macro n="agreement-adj-2Param" npar="2">
       <let>
         <clip pos="2" side="tl" part="tags"/><concat>
-        <lit-tag v="n.pl"/><clip pos="1" side="tl" part="a_cas"/> </concat>
+        <lit-tag v="n.pl"/><clip pos="1" side="tl" part="a_case"/> </concat>
       </let>
       <let>
         <clip pos="1" side="tl" part="tags"/><concat>
-        <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_cas"/> </concat>
+        <clip pos="1" side="tl" part="a_npagree_type"/><clip pos="2" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_case"/> </concat>
       </let>
     </def-macro>
     <def-macro n="agreement-ind-pl-2Param" npar="2">
       <let>
         <clip pos="2" side="tl" part="tags"/><concat>
-        <lit-tag v="n.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>
+        <lit-tag v="n.pl"/><clip pos="2" side="tl" part="a_case"/> </concat>
       </let>
       <let>
         <clip pos="1" side="tl" part="tags"/><concat>
-        <lit-tag v="prn.ind.pl"/><clip pos="2" side="tl" part="a_cas"/> </concat>
+        <lit-tag v="prn.ind.pl"/><clip pos="2" side="tl" part="a_case"/> </concat>
       </let>
     </def-macro>
     <def-macro n="remove-advtag-1Param" npar="1"> <!--  +Adv+Comp +Adv+Superl to +Adv -->
@@ -913,7 +915,7 @@
             <or>
               <and>
                 <equal>
-                  <clip pos="1" side="sl" part="a_cas"/>
+                  <clip pos="1" side="sl" part="a_case"/>
                   <lit-tag v="loc"/>
                 </equal>
                 <equal>
@@ -923,7 +925,7 @@
               </and>
               <and>
                 <equal>
-                  <clip pos="1" side="sl" part="a_cas"/>
+                  <clip pos="1" side="sl" part="a_case"/>
                   <lit-tag v="loc"/>
                 </equal>
                 <in caseless="yes">
@@ -933,17 +935,16 @@
               </and>
             </or>
           </test>
-          <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ine"/></let>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
         </when>
 
         <when>
-          <test><equal><clip pos="1" side="sl" part="a_cas"/><lit-tag v="loc"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="ela"/></let>
+          <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
         </when>
       </choose>
     </def-macro>
 
-<!--
     <def-macro n="foc-1Param" npar="1">
       <choose>
         <when>
@@ -957,7 +958,6 @@
       </choose>
     </def-macro>
 
--->
     <def-macro n="general-macro-1Param" npar="1" c="Use for all chunks of one pattern-item">
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
       <choose>
@@ -1277,11 +1277,21 @@
 
     <rule comment="REGLA: prn">
       <pattern>
-        <pattern-item n="prn"/>
+        <pattern-item n="prn"/>  
       </pattern>
       <action>
+      <choose><when>
+      <test><and>
+      <equal><clip pos="1" side="sl" part="a_prn"/><lit-tag v="prn.ref"/></equal>
+      <not><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal></not>
+      </and></test>
+       <let><clip pos="1" side="tl" part="tags"/><concat><clip pos="1" side="tl" part="a_prn"/><lit-tag v="sg"/>
+       <clip pos="1" side="tl" part="a_case"/><clip pos="1" side="tl" part="a_poss"/></concat>
+       </let>
+      </when></choose> 
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="prn" case="caseFirstword">
             <tags>
@@ -1295,6 +1305,59 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: váste  - 1 position out"> <!-- illative instead of pp with váste -->
+      <pattern>
+        <pattern-item n="gen"/>
+        <pattern-item n="váste"/>
+      </pattern>
+      <action>
+           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>
+         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+           <let><var n="func"/><clip pos="2" side="sl" part="a_func"/></let>
+       <out>
+          <chunk name="noun" case="caseFirstword">
+             <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+           <lu>
+            <clip pos="1" side="tl" part="whole"/>            
+           </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: váste  - 1 position out"> <!-- illative instead of pp with váste -->
+      <pattern>
+        <pattern-item n="nouncmp"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="váste"/>
+      </pattern>
+      <action>
+           <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ill"/></let>
+         <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+           <let><var n="func"/><clip pos="3" side="sl" part="a_func"/></let>
+       <out>
+          <chunk name="noun" case="caseFirstword">
+             <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+           <mlu>
+           <lu>
+            <clip pos="1" side="tl" part="whole"/>            
+           </lu>
+           <lu>
+            <clip pos="2" side="tl" part="whole"/>            
+           </lu>
+           </mlu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+ 
     <rule comment="REGLA: numeral - 1 position in-out">
       <pattern>
         <pattern-item n="numeral"/>
@@ -1522,7 +1585,7 @@
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <let><clip pos="2" side="tl" part="a_cas"/><lit-tag v="acc"/></let>
+        <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></let>
         <out>
           <chunk name="pp" case="caseFirstword">
             <tags>
@@ -1548,7 +1611,7 @@
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_cas"/><lit-tag v="acc"/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>
         <out>
           <chunk name="pp" case="caseFirstword">
             <tags>
