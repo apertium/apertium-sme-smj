@@ -100,12 +100,22 @@
       <cat-item tags="vblex.*.@+FMAINV"/>
       <cat-item tags="vblex.*.@-FMAINV"/>
     </def-cat>
-    <def-cat n="nom">
-      <cat-item tags="n.*"/>
-      <cat-item tags="np.*"/>
-      <cat-item tags="adj.der_vuota.n.*"/>
-      <cat-item tags="vblex.*.der_nomact.n.*"/>
-      <cat-item tags="vblex.der_nomact.n.*"/>
+    <def-cat n="noun"> 
+      <cat-item tags="*.n.*.sg.*"/>
+      <cat-item tags="*.n.*.pl.*"/>
+      <cat-item tags="*.n.*.ess.*"/>
+      <cat-item tags="*.n.sg.*"/>
+      <cat-item tags="*.n.pl.*"/>
+      <cat-item tags="*.n.ess.*"/>
+      <cat-item tags="n.*.sg.*"/>
+      <cat-item tags="n.*.pl.*"/>
+      <cat-item tags="n.*.ess.*"/>
+      <cat-item tags="n.*.*.sg.*"/>
+      <cat-item tags="n.*.*.pl.*"/>
+      <cat-item tags="n.*.*.ess.*"/>
+      <cat-item tags="n.sg.*"/>
+      <cat-item tags="n.pl.*"/>
+      <cat-item tags="n.ess.*"/>
     </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj.*"/>
@@ -1309,15 +1319,35 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: nom">
+    <rule comment="REGLA: adj">
       <pattern>
-        <pattern-item n="nom"/>
+        <pattern-item n="adj"/>
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="nom" case="caseFirstword">
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: nom">
+      <pattern>
+        <pattern-item n="noun"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1333,13 +1363,13 @@
     <rule comment="REGLA: nnomcmp">
       <pattern>
         <pattern-item n="nouncmp"/>
-        <pattern-item n="nom"/>
+        <pattern-item n="noun"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <out>
-          <chunk name="nom" case="caseFirstword">
+          <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1360,13 +1390,13 @@
       <pattern>
         <pattern-item n="nouncmp"/>
         <pattern-item n="nouncmp"/>
-        <pattern-item n="nom"/>
+        <pattern-item n="noun"/>
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
         <out>
-          <chunk name="nom" case="caseFirstword">
+          <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1391,13 +1421,13 @@
         <pattern-item n="nouncmp"/>
         <pattern-item n="nouncmp"/>
         <pattern-item n="nouncmp"/>
-        <pattern-item n="nom"/>
+        <pattern-item n="noun"/>
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="4"/></call-macro>
         <out>
-          <chunk name="nom" case="caseFirstword">
+          <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -1450,7 +1480,6 @@
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
         <out>
           <chunk name="sent" case="caseFirstword">
             <tags>
@@ -1471,7 +1500,7 @@
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="default" case="caseFirstword">
             <tags>
