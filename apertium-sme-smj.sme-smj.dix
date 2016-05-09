@@ -635,6 +635,9 @@
       <e><p><l>fáhkkestaga<s n="adv"/></l><r>hæhkkat<s n="adv"/></r></p></e>
    <e><p><l>luhtte<s n="post"/></l><r>lunna<s n="post"/></r></p></e> 
    
+     <e><p><l>háliidit<s n="vblex"/><s n="tv"/></l><r>hálijdit<s n="vblex"/></r></p></e>   
+     <e><p><l>fuobmát<s n="vblex"/><s n="tv"/></l><r>ájttsat<s n="vblex"/></r></p></e>   
+     <e><p><l>heivet<s n="vblex"/><s n="iv"/></l><r>hiehpat<s n="vblex"/></r></p></e>
      <e><p><l>ealáskahttit<s n="vblex"/><s n="tv"/></l><r>ælládahttet<s n="vblex"/></r></p></e>
      <e><p><l>ovdanbuktit<s n="vblex"/><s n="tv"/></l><r>åvddånbuktet<s n="vblex"/></r></p></e>
      <e><p><l>vuolláičállit<s n="vblex"/><s n="tv"/></l><r>vuollájtjállet<s n="vblex"/></r></p></e>
@@ -52833,9 +52836,6 @@
      <e><p><l>Riddu<b/>Riđđu<s n="np"/></l><r>Riddu<b/>Riđđu<s n="np"/></r></p></e>
      <e><p><l>Riddu<b/>Riđđu-festivála<s n="np"/></l><r>Riddu<b/>Riđđu-festivála<s n="np"/></r></p></e>
      <e><p><l>Roddenjárgga<b/>Čáhcebákti<s n="np"/></l><r>Roddenjárgga<b/>Čáhcebákti<s n="np"/></r></p></e>
-     <e><p><l>Romssa<b/>fylkkasuohkan<s n="np"/></l><r>Romssa<b/>fylkkasuohkan<s n="np"/></r></p></e>
-     <e><p><l>Romssa<b/>suohkan<s n="np"/></l><r>Romssa<b/>suohkan<s n="np"/></r></p></e>
-     <e><p><l>Romssa<b/>universitehta<s n="np"/></l><r>Romssa<b/>universitehta<s n="np"/></r></p></e>
      <e><p><l>Rorschacha<b/>bleahkkareidehat<s n="np"/></l><r>Rorschacha<b/>bleahkkareidehat<s n="np"/></r></p></e>
      <e><p><l>Ross<b/>jiekŋaravda<s n="np"/></l><r>Ross<b/>jiekŋaravda<s n="np"/></r></p></e>
      <e><p><l>Ruohtervađa<b/>Rávdojávri<s n="np"/></l><r>Ruohtervađa<b/>Rávdojávri<s n="np"/></r></p></e>
@@ -52953,7 +52953,6 @@
      <e><p><l>Sámegiel<b/>Berošteaddjik<s n="np"/></l><r>Sámegiel<b/>Berošteaddjik<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>Cup<s n="np"/></l><r>Sámi<b/>Cup<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>Jienat<s n="np"/></l><r>Sámi<b/>Jienat<s n="np"/></r></p></e>
-     <e><p><l>Sámi<b/>Parlamentáralaš<b/>Ráđđi<s n="np"/></l><r>Sámi<b/>Parlamentáralaš<b/>Ráđđi<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>Siida<b/>ro.<s n="np"/></l><r>Sámi<b/>Siida<b/>ro.<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>Teáhter<s n="np"/></l><r>Sámi<b/>Teáhter<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>Valáštallan<b/>Lihttu<s n="np"/></l><r>Sámi<b/>Valáštallan<b/>Lihttu<s n="np"/></r></p></e>
@@ -52962,12 +52961,10 @@
      <e><p><l>Sámi<b/>boy<s n="np"/></l><r>Sámi<b/>boy<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>joatkkaskuvla<s n="np"/></l><r>Sámi<b/>joatkkaskuvla<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>joatkkaskuvla<b/>ja<b/>boazodoalloskuvla<s n="np"/></l><r>Sámi<b/>joatkkaskuvla<b/>ja<b/>boazodoalloskuvla<s n="np"/></r></p></e>
-     <e><p><l>Sámi<b/>parlamentáralaš<b/>ráđđi<s n="np"/></l><r>Sámi<b/>parlamentáralaš<b/>ráđđi<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>soga<b/>lávlla<s n="np"/></l><r>Sámi<b/>soga<b/>lávlla<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>teáhter<s n="np"/></l><r>Sámi<b/>teáhter<s n="np"/></r></p></e>
      <e><p><l>Sámi<b/>válgalihttu<s n="np"/></l><r>Sámi<b/>válgalihttu<s n="np"/></r></p></e>
      <e><p><l>Sámiid<b/>Vuorká-Dávvirat<s n="np"/></l><r>Sámiid<b/>Vuorká-Dávvirat<s n="np"/></r></p></e>
-     <e><p><l>Sámisoga<b/>lávlla<s n="np"/></l><r>Sámisoga<b/>lávlla<s n="np"/></r></p></e>
      <e><p><l>Sára<b/>Máhte<b/>guolbba<s n="np"/></l><r>Sára<b/>Máhte<b/>guolbba<s n="np"/></r></p></e>
      <e><p><l>Uhca<b/>Belt<s n="np"/></l><r>Uhca<b/>Belt<s n="np"/></r></p></e>
      <e><p><l>Uhca<b/>Bolloš<s n="np"/></l><r>Uhca<b/>Bolloš<s n="np"/></r></p></e>
