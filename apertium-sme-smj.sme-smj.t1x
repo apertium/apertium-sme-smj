@@ -114,7 +114,6 @@
       <cat-item tags="*.n.pl.*"/>
       <cat-item tags="*.n.ess.*"/>
       <cat-item tags="n.*.sg.*"/>
-      <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
       <cat-item tags="n.*.pl.*"/>
       <cat-item tags="n.*.ess.*"/>
       <cat-item tags="n.*.*.sg.*"/>
@@ -123,6 +122,7 @@
       <cat-item tags="n.sg.*"/>
       <cat-item tags="n.pl.*"/>
       <cat-item tags="n.ess.*"/>
+      <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
     </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj.*"/>

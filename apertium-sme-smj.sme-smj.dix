@@ -594,9 +594,17 @@
        <e><p><l>potensiála<s n="n"/></l><r>potensiálla<s n="n"/></r></p></e>
        <e><p><l>kontinuitehta<s n="n"/></l><r>kontinuitiehtta<s n="n"/></r></p></e>
        <e><p><l>divššohas<s n="n"/></l><r>pasiænnta<s n="n"/></r></p></e>
+       <e><p><l>raporta<s n="n"/></l><r>rappårttå<s n="n"/></r></p></e>
+       <e><p><l>julevsápmi<s n="n"/></l><r>julevsábme<s n="n"/></r></p></e>
+       <e><p><l>fitnodat<s n="n"/></l><r>vidnudahka<s n="n"/></r></p></e>
+       <e><p><l>dadjamuš<s n="n"/></l><r>moalgedibme<s n="n"/></r></p></e>
+       <e><p><l>buhtadus<s n="n"/></l><r>buohtto<s n="n"/></r></p></e>
+       <e><p><l>stoahkanhearva<s n="n"/></l><r>stågan<s n="n"/></r></p></e>
+       <e><p><l>mehter<s n="n"/></l><r>miehtar<s n="n"/></r></p></e>
+       <e><p><l>dienas<s n="n"/></l><r>ruhtavuojtto<s n="n"/></r></p></e>
+    
        
-       
-
+     <e><p><l>Vindkraft<s n="np"/></l><r>Vindkraft<s n="np"/></r></p></e>
      <e><p><l>Nordlandsforskning<s n="np"/></l><r>Nordlandsforskning<s n="np"/></r></p></e>
      <e><p><l>Melleby<s n="np"/></l><r>Melleby<s n="np"/></r></p></e>
      <e><p><l>Raudfjell<s n="np"/></l><r>Raudfjell<s n="np"/></r></p></e>
@@ -606,6 +614,7 @@
      <e><p><l>KV<s n="n"/></l><r>KV<s n="n"/></r></p></e>
      <e><p><l>SANKS<s n="np"/></l><r>SANKS<s n="np"/></r></p></e>
      <e><p><l>RDD<s n="n"/></l><r>RDD<s n="n"/></r></p></e>
+     <e><p><l>EMRIP<s n="n"/></l><r>EMRIP<s n="n"/></r></p></e>
 
      <e><p><l>Fjordtun<s n="np"/></l><r>Fjordtun<s n="np"/></r></p></e>
      <e><p><l>Larine<s n="np"/></l><r>Larine<s n="np"/></r></p></e>
@@ -635,7 +644,10 @@
      <e><p><l>nuvttá<s n="adv"/></l><r>nåvku<s n="adv"/></r></p></e>
       <e><p><l>fáhkkestaga<s n="adv"/></l><r>hæhkkat<s n="adv"/></r></p></e>
    <e><p><l>luhtte<s n="post"/></l><r>lunna<s n="post"/></r></p></e> 
-   
+   <e><p><l>jeavddalaččat<s n="adv"/></l><r>juovnnát<s n="adv"/></r></p></e> 
+
+     <e><p><l>njiedjat<s n="vblex"/><s n="iv"/></l><r>binnot<s n="vblex"/></r></p></e>
+     <e><p><l>lassánit<s n="vblex"/><s n="iv"/></l><r>lassánit<s n="vblex"/></r></p></e>
      <e><p><l>háliidit<s n="vblex"/><s n="tv"/></l><r>hálijdit<s n="vblex"/></r></p></e>   
      <e><p><l>fuobmát<s n="vblex"/><s n="tv"/></l><r>ájttsat<s n="vblex"/></r></p></e>   
      <e><p><l>heivet<s n="vblex"/><s n="iv"/></l><r>hiehpat<s n="vblex"/></r></p></e>
@@ -4918,7 +4930,6 @@
      <e><p><l>sálti<s n="n"/></l><r>sállte<s n="n"/></r></p></e>
      <e><p><l>sálvia<s n="n"/></l><r>salvijja<s n="n"/></r></p></e>
      <e><p><l>sálvu<s n="n"/></l><r>sálvvo<s n="n"/></r></p></e>
-     <e><p><l>sámediggejoavku<s n="n"/></l><r>sámediggejuogos<s n="n"/></r></p></e>
      <e><p><l>sámediggeplána<s n="n"/></l><r>sámediggepládna<s n="n"/></r></p></e>
      <e><p><l>sámediggepresideanta<s n="n"/></l><r>sámedikkepresidænnta<s n="n"/></r></p></e>
      <e><p><l>sámediggeráđđi<s n="n"/></l><r>sámedikkeráde<s n="n"/></r></p></e>
@@ -5776,6 +5787,7 @@
      <e><p><l>geassásaš<s n="adj"/></l><r>gæssásasj<s n="adj"/></r></p></e>
      <e><p><l>geatnegas<s n="adj"/></l><r>velgulasj<s n="adj"/></r></p></e>
      <e><p><l>geatnegahtton<s n="adj"/></l><r>bákkulasj<s n="adj"/></r></p></e>
+     <e><p><l>geatnegahttit<s n="vblex"/><s n="tv"/><s n="der_passl"/><s n="vblex"/><s n="iv"/><s n="prfprc"/></l><r>bákkulasj<s n="adj"/><s n="sg"/><s n="nom"/></r></p></e>
      <e><p><l>geazzi<s n="adj"/></l><r>giedtse<s n="adj"/></r></p></e>
      <e><p><l>geográfalaš<s n="adj"/></l><r>geografalasj<s n="adj"/></r></p></e>
      <e><p><l>gielalaš<s n="adj"/></l><r>gielalasj<s n="adj"/></r></p></e>
@@ -5926,7 +5938,7 @@
      <e><p><l>ovttaskas<s n="adj"/></l><r>aktugasj<s n="adj"/></r></p></e>
      <e><p><l>ovttaárvosaš<s n="adj"/></l><r>avtaárvvusasj<s n="adj"/></r></p></e>
      <e><p><l>ođas<s n="adj"/></l><r>ådås<s n="adj"/></r></p></e>
-     <e><p><l>parlamentáralaš<s n="adj"/></l><r>parlamentáralasj<s n="adj"/></r></p></e>
+     <e><p><l>parlamentáralaš<s n="adj"/></l><r>parlamentaralasj<s n="adj"/></r></p></e>
      <e><p><l>poehtalaš<s n="adj"/></l><r>poehtalasj<s n="adj"/></r></p></e>
      <e><p><l>politihkalaš<s n="adj"/></l><r>politihkalasj<s n="adj"/></r></p></e>
      <e><p><l>positiivvalaš<s n="adj"/></l><r>positijvalasj<s n="adj"/></r></p></e>
@@ -10621,7 +10633,7 @@
      <e><p><l>Deatnu<s n="np"/></l><r>Dædno<s n="np"/></r></p></e>
      <e><p><l>Sara<s n="np"/></l><r>Sara<s n="np"/></r></p></e>
      <e><p><l>Nils<s n="np"/></l><r>Nils<s n="np"/></r></p></e>
-     <e><p><l>Áltá<s n="np"/></l><r>Áltá<s n="np"/></r></p></e>
+     <e><p><l>Áltá<s n="np"/></l><r>Álltá<s n="np"/></r></p></e>
      <e><p><l>Gaup<s n="np"/></l><r>Gaup<s n="np"/></r></p></e>
      <e><p><l>Ruoŧŧa<s n="np"/></l><r>Svierik<s n="np"/></r></p></e>
      <e><p><l>Johan<s n="np"/></l><r>Johan<s n="np"/></r></p></e>
@@ -39997,7 +40009,6 @@
      <e><p><l>Eallájohka<s n="np"/></l><r>Eallájohka<s n="np"/></r></p></e>
      <e><p><l>Eallájávri<s n="np"/></l><r>Eallájávri<s n="np"/></r></p></e>
      <e><p><l>Ealánvárri<s n="np"/></l><r>Ealánvárri<s n="np"/></r></p></e>
-     <e><p><l>Eanandoallodepartemeanta<s n="np"/></l><r>Eanandoallodepartemeanta<s n="np"/></r></p></e>
      <e><p><l>Eanavárri<s n="np"/></l><r>Eanavárri<s n="np"/></r></p></e>
      <e><p><l>Eandagohppi<s n="np"/></l><r>Eandagohppi<s n="np"/></r></p></e>
      <e><p><l>Eanodat<s n="np"/></l><r>Eanodat<s n="np"/></r></p></e>
@@ -52675,7 +52686,6 @@
      <e><p><l>Duottar-Mávnna<b/>ráhppát<s n="np"/></l><r>Duottar-Mávnna<b/>ráhppát<s n="np"/></r></p></e>
      <e><p><l>Dávvet<b/>Ásllat<b/>jávri<s n="np"/></l><r>Dávvet<b/>Ásllat<b/>jávri<s n="np"/></r></p></e>
      <e><p><l>Ealáhus-<b/>ja<b/>gávpedepartemeanta<s n="np"/></l><r>Ealáhus-<b/>ja<b/>gávpedepartemeanta<s n="np"/></r></p></e>
-     <e><p><l>Eanandoallo-<b/>ja<b/>biebmodepartemeanta<s n="np"/></l><r>Eanandoallo-<b/>ja<b/>biebmodepartemeanta<s n="np"/></r></p></e>
      <e><p><l>Eirrá<b/>Máhte<b/>johka<s n="np"/></l><r>Eirrá<b/>Máhte<b/>johka<s n="np"/></r></p></e>
      <e><p><l>Ell<b/>Ásllat<b/>Goahtečopma<s n="np"/></l><r>Ell<b/>Ásllat<b/>Goahtečopma<s n="np"/></r></p></e>
      <e><p><l>Ell-áhko<b/>jeaggi<s n="np"/></l><r>Ell-áhko<b/>jeaggi<s n="np"/></r></p></e>
