@@ -321,6 +321,9 @@
     </def-attr>
     <def-attr n="a_mood">
       <attr-item tags="indic"/>
+      <attr-item tags="cond"/>
+      <attr-item tags="pot"/>
+      <attr-item tags="imp"/>
     </def-attr>
     <def-attr n="a_temps">
       <attr-item tags="pret"/>
@@ -963,6 +966,12 @@
 
     <def-macro n="general-macro-1Param" npar="1" c="Use for all chunks of one pattern-item">
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
+        <choose>
+      <when>
+          <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_temps"/><lit v=""/></let>
+      </when>
+      </choose>
       <choose>
       <when>
           <test><not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
@@ -973,12 +982,6 @@
       <when>
           <test><not><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="prn"/></equal></not></test>
            <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
-      </when>
-      </choose>
-        <choose>
-      <when>
-          <test><equal><clip pos="1" side="tl" part="a_mood"/><lit v="cond"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_temps"/><lit v=""/></let>
       </when>
       </choose>
     <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
