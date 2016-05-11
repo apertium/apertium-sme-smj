@@ -128,6 +128,8 @@
       <cat-item tags="adj.*"/>
       <cat-item tags="n.der_sasj.adj.*"/>
       <cat-item tags="n.der_lasj.adj.*"/>
+      <cat-item tags="n.*.der_sasj.adj.*"/>
+      <cat-item tags="n.*.der_lasj.adj.*"/>
     </def-cat>
     <def-cat n="adv">
       <cat-item tags="adj.der_aadv.adv.*"/>
@@ -973,7 +975,13 @@
            <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
       </when>
       </choose>
-      <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+        <choose>
+      <when>
+          <test><equal><clip pos="1" side="tl" part="a_mood"/><lit v="cond"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_temps"/><lit v=""/></let>
+      </when>
+      </choose>
+    <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
       <let><clip pos="1" side="tl" part="a_south"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>
@@ -1424,6 +1432,32 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: nouncmp adj">
+      <pattern>
+        <pattern-item n="nouncmp"/>
+        <pattern-item n="adj"/> <!-- usually derivated from noun -->
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <mlu>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+            </mlu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
     <rule comment="REGLA: nnomcmp">
       <pattern>
         <pattern-item n="nouncmp"/>
