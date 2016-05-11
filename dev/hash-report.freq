@@ -1,36 +1,36 @@
- 179 #ållo<adj><attr>
+ 179 #ållo<adj><attr>	FIXED
  151 #ienep<adj><der_aadv><adv>
-  73 #Eanandoallo-
+  73 #Eanandoallo-	FIXED?
   67 #Sámi	FIXED
-  64 #iesjguhtik<prn><ind><attr>
+  64 #iesjguhtik<prn><ind><attr>	FIXED?
   61 #Finnmárkku	FIXED
   60 #parlamentáralasj<adj><attr>	FIXED
-  56 #liehket<vblex><cond><pres><p3><sg>
-  48 #sæmmi<prn><ind><attr>
-  36 #suohkan<n><der_lasj><adj><attr>
+  56 #liehket<vblex><cond><pres><p3><sg>	FIXED
+  48 #sæmmi<prn><ind><attr>	FIXED
+  36 #suohkan<n><der_lasj><adj><attr>	FIXED
   35 #sámediggejuogos<n><sg><nom>
-  32 #máhttet<vblex><cond><pres><p3><sg>
-  32 #galggat<vblex><cond><pres><p3><sg>
-  29 #gullat<vblex><der_alla><vblex><prfprc>
-  26 #Varresvuoda-
-  26 #Norgga
-  25 #Muotka<np><attr>
-  24 #gullat<vblex><der_alla><vblex><inf>
+  32 #máhttet<vblex><cond><pres><p3><sg>	FIXED
+  32 #galggat<vblex><cond><pres><p3><sg>	FIXED
+  29 #gullat<vblex><der_alla><vblex><prfprc>	FIXED
+  26 #Varresvuoda-	FIXED
+  26 #Norgga	FIXED
+  25 #Muotka<np><attr>	FIXED
+  24 #gullat<vblex><der_alla><vblex><inf>	FIXED
   23 #Áltá<np><top><sg><gen>	FIXED
-  23 #ráfedit<vblex><der_d><vblex><der_passl><vblex><iv><prfprc>
+  23 #ráfedit<vblex><der_d><vblex><der_passl><vblex><iv><prfprc>	FIXED?
   23 #Davvi-Trøndeláhka<np><top><sg><gen>
-  22 #sæmmi
+  22 #sæmmi	FIXED
   22 #Vuorodimsuorgge<n><sg><nom>
   21 #Áltá<np><top><sg><ela>	FIXED
   20 #tsieggimláhka<n><sg><gen>
-  20 #tjalmostit<vblex><der_d><vblex><tv><inf>
+  20 #tjalmostit<vblex><der_d><vblex><tv><inf>	FIXED
   20 #mij<prn><rel><sg><acc><known>
-  19 #Árja<np><sg><nom>
-  18 #Åhpadusdirektoráhtta<np><sg><nom>
-  18 #dåhkålasj<adj><attr>
+  19 #Árja<np><sg><nom>	FIXED?
+  18 #Åhpadusdirektoráhtta<np><sg><nom>	FIXED?
+  18 #dåhkålasj<adj><attr>	FIXED?
   18 #doallo<n><pl><gen>
-  17 #sæmme<adv>
-  17 #Mánáid-
+  17 #sæmme<adv>	FIXED?
+  17 #Mánáid-	FIXED?
   17 #Bakken<np><attr>
   16 #makkár<prn><ind><attr><foc_neg-k>
   16 #doallo<n><pl><nom>
@@ -68,7 +68,7 @@
   11 #Áltá<np><top><sg><nom>	FIXED
   11 #stuorradigge<n><cmp_sgnom><cmp>diedádusáv
   11 #sierraláhka<n><sg><ine>
-  11 #nuorra<adj><cmp_plgen><cmp>
+  11 #nuorra<adj><cmp_plgen><cmp>	FIXED
   11 #nubbe<prn><res><attr>
   11 #gåhtset<vblex><der_passl><vblex><iv><indic><pres><p3><pl>
   11 #doallo<n><sg><gen>
