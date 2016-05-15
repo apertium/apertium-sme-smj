@@ -130,6 +130,7 @@
       <cat-item tags="n.der_lasj.adj.*"/>
       <cat-item tags="n.*.der_sasj.adj.*"/>
       <cat-item tags="n.*.der_lasj.adj.*"/>
+      <cat-item tags="n.*.der_dibme.adj.*"/>
     </def-cat>
     <def-cat n="adv">
       <cat-item tags="adj.der_aadv.adv.*"/>
@@ -410,6 +411,8 @@
       <attr-item tags="der_saš"/>
       <attr-item tags="der_sasj"/>
       <attr-item tags="der_lasj"/>
+      <attr-item tags="der_dibme"/>
+      <attr-item tags="der_car"/>
     </def-attr>
     <def-attr n="a_comp-superl">
       <attr-item tags="comp"/>
@@ -854,6 +857,12 @@
             <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_ahtti"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_ahtte"/></let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_car"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_dibme"/></let>
         </when>
       </choose>
     </def-macro>
