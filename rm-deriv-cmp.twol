@@ -6,6 +6,7 @@ Alphabet
 %<der%_a%>
 %<der%_adv%>
 %<der%_car%>
+%<der%_caus%>
 %<der%_dimin%>
 %<der%_nomact%>
 %<der%_nomag%>
@@ -65,6 +66,7 @@ Derivations =
 %<der%_a%>
 %<der%_adv%>
 %<der%_car%>
+%<der%_caus%>
 %<der%_dimin%>
 %<der%_nomact%>
 %<der%_nomag%>
@@ -118,6 +120,7 @@ HandledDerivations =
                     ! ----------
 %<der%_nomact%>     ! 165550
 %<der%_nomag%>      ! 103985
+%<der%_caus%>
 %<der%_h%>          ! 60906
 %<der%_goahti%>
 %<der%_lasj%>       ! 50394
