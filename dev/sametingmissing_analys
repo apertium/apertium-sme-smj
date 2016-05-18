@@ -1,9 +1,9 @@
 jr	jr+N+ABBR
 
-gustovaš	gustovaš+A+Sg+Nom
+gustovaš	gustovaš+A+Sg+Nom	guoskavasj
 gustovaš	gustovaš+A+Attr
 
-gaskaboddasaš	gaskaboddasaš+A+Sg+Nom
+gaskaboddasaš	gaskaboddasaš+A+Sg+Nom	gasskabåddåsasj
 gaskaboddasaš	gaskaboddasaš+A+Attr
 
 oainnusmahttit	oainnusmahttit+V+TV+Inf
@@ -14,71 +14,78 @@ oainnusmahttit	oainnusmahttit+V+TV+Ind+Prs+Pl1
 Áššenr	áššenr+Err/Orth+N+ABBR+Nom
 
 juohkelágan	juohkelágan+v1+A+Attr
-juohkelágan	juohkelágan+v1+A+Sg+Nom
+juohkelágan	juohkelágan+v1+A+Sg+Nom	juohkkalágásj
 juohkelágan	juohkelágan+v1+A+Sg+Acc
 
 fuones	fuotni+A+Attr
+fuotni	fuotni+A+Sg+Nom	nievrre
 
-ođđaáigásaš	ođđaáigásaš+A+Sg+Nom
+ođđaáigásaš	ođđaáigásaš+A+Sg+Nom	ådåájggásasj
 ođđaáigásaš	ođđaáigásaš+A+Attr
 
 deattasta	deattastit+V+TV+Ind+Prs+Sg3
+deattastit	deattastit+V+TV+Inf	dættodit
 
-baicce	baicce+Adv
+baicce	baicce+Adv	farra
 
-KV	kV+N+ABBR
+KV	kV+N+ABBR	kV
 KV	KV+N+ACR+Sg+Acc
-KV	KV+N+ACR+Sg+Nom
+KV	KV+N+ACR+Sg+Nom	KV
 
 iešalddis	iešalddis+Adv
 
-mealgat	mealgat+Adv
+mealgat	mealgat+Adv	riek
 mealgat	mealgat+A+Attr
 mealgat	mealgat+A+Sg+Acc
-mealgat	mealgat+A+Sg+Nom
+mealgat	mealgat+A+Sg+Nom	ednak
 
 eahpeoiddolaš	eahpeoiddolaš+A+Attr
-eahpeoiddolaš	eahpeoiddolaš+A+Sg+Nom
+eahpeoiddolaš	eahpeoiddolaš+A+Sg+Nom	vuorbedibme
 eahpeoiddolaš	eahpeoiddolaš+A+Attr
 eahpeoiddolaš	eahpeoiddolaš+A+Sg+Nom
 
 bihtánsámi	bihtánsápmi+N+Sg+Acc
+bihtánsápmi	bihtánsápmi+N+Sg+Nom	bihtámsábme
 
 seammalágan	seammalágan+v1+A+Attr
-seammalágan	seammalágan+v1+A+Sg+Nom
+seammalágan	seammalágan+v1+A+Sg+Nom	sæmmilágásj
 seammalágan	seammalágan+v1+A+Sg+Acc
 
-nammasaš	nammasaš+A+Sg+Nom
+nammasaš	nammasaš+A+Sg+Nom	nammasasj
 nammasaš	nammasaš+A+Attr
 
 mannosaš	mannosaš+A+Sg+Nom
 mannosaš	mannosaš+A+Attr
 
 iešguđetládje	iešguđet ládje+Err/Orth+Adv
+iešguđet ládje	iešguđet ládje+Adv	iesjguhtik láhkáj
 
 fuolas	fuolla+N+Sg+Loc
 fuolas	fuolla+N+Sg+Acc+PxSg3
+fuolla	fuolla+N+Sg+Nom	hukso
 
 Ovttasdoaibmanođastusa	ovttasdoaibmanođastus+N+Sg+Acc
+ovttasdoaibmanođastus	ovttasdoaibmanođastus+N+Sg+Nom	avtastallamådåstus
 
 Arkiivaáššenr	arkiivaáššenr+N+ABBR+Acc
 Arkiivaáššenr	arkiivaáššenr+N+ABBR+Attr
 Arkiivaáššenr	arkiivaáššenr+N+ABBR+Nom
+arkiiva	arkiiva+N+Sg+Nom	arkijvva
 
-no	no+Pcle
-no	no+Adv
+no	no+Pcle	nav
+no	no+Adv	nav
 
-máttabealde	máttabealde+Adv
+máttabealde	máttabealde+Adv	oarjjelin
 
 PFL	PFL+N+ACR+Sg+Acc
-PFL	PFL+N+ACR+Sg+Nom
+PFL	PFL+N+ACR+Sg+Nom	PFL
 
-vuosttaldit	vuosttaldit+V+TV+Inf
+vuosttaldit	vuosttaldit+V+TV+Inf	vuosteldit
 vuosttaldit	vuosttaldit+V+TV+Ind+Prs+Pl1
 vuosttaldit	vuosttaldit+V+TV+Ind+Prs+Pl3
 vuosttaldit	vuosttaldit+V+TV+Ind+Prt+Sg2
 
-vuhtiiváldit	vuhtiiváldit+V+TV+Inf
+vuhtiiváldit	vuhtiiváldit+V+TV+Inf	vieledit
 vuhtiiváldit	vuhtiiváldit+V+TV+Ind+Prs+Pl1
 
 ruvdnosaš	ruvdnosaš+A+Sg+Nom
@@ -88,64 +95,70 @@ raporteren	raporteret+V+TV+PrfPrc
 raporteren	raporteret+V+TV+Ind+Prs+Sg1
 raporteren	raporteret+V+TV+Actio+Nom
 raporteren	raporteret+V+TV+Ind+Prt+ConNeg
+raporteret	raporteret+V+TV+Inf	rapportierit
 
-movttet	movttet+A+Sg+Nom
+movttet	movttet+A+Sg+Nom	måvtugis
 movttet	movttet+A+Sg+Acc+Err/Orth
 
 gárrenmirkkuid	gárrenmirku+N+Err/Orth+Pl+Acc
 gárrenmirkkuid	gárrenmirku+N+Pl+Acc
 gárrenmirkkuid	gárrenmirko+N+Err/Orth+Pl+Acc
 gárrenmirkkuid	gárrenmirko+N+Pl+Acc
+gárrenmirku	gárrenmirku+N+Sg+Nom	gárevsælgga
 
 geatnegahttá	geatnegahttit+V+TV+Ind+Prs+Sg3
 
 geatnegahtti	geatnegahttit+V+TV+PrsPrc
 
-gearggus	gearggus+A+Sg+Nom
+gearggus	gearggus+A+Sg+Nom	gárves
 
 ealáhushutkan	ealáhushutkan+N+Sg+Nom
+hutkan	hutkan+N+Sg+Nom	ådådahko
 
-eahpesihkarvuohta	eahpesihkarvuohta+v1+N+Sg+Nom
+eahpesihkarvuohta	eahpesihkarvuohta+v1+N+Sg+Nom	iehpesihkarvuohta
 
-beaktu	beaktu+N+Sg+Nom
+beaktu	beaktu+N+Sg+Nom	vájkkudus
 
 at	at+Err/Lex+CC
 
 RPU	RPU+N+ACR+Sg+Acc
-RPU	RPU+N+ACR+Sg+Nom
+RPU	RPU+N+ACR+Sg+Nom	RPU
 
 CO2	CO2+N+ACR+Sg+Acc
 CO2	CO2+N+ACR+Sg+Nom
 
 šállošahtti	šállošahtti+A+Attr
 šállošahtti	šállošahtti+A+Sg+Acc
-šállošahtti	šállošahtti+A+Sg+Nom
+šállošahtti	šállošahtti+A+Sg+Nom	vájválasj
 
 áinnas	áinnas+Adv
 
 sorjá	sorját+V+IV+Ind+Prs+ConNeg
 sorjá	sorját+V+IV+Ind+Prs+Sg3
+sorját	sorját+V+IV+Inf	givnnjat
 
 sisabahkkemiid	sisabahkken+N+Pl+Acc
 
-sierranas	sierranas+A+Attr
+sierranas	sierranas+A+Attr	sierra
 
-seailut	seailut+V+IV+Inf
+seailut	seailut+V+IV+Inf	rijbbat
 seailut	seailut+V+IV+Ind+Prs+Pl1
 seailut	seailudit+V+TV+Ind+Prs+ConNeg
 
 rihkkuma	rihkkun+N+Sg+Acc
+rihkkun	rihkkun+N+Sg+Nom	mieddem
 
-ovddabealde	ovddabealde+Po
-ovddabealde	ovddabealde+Adv
+ovddabealde	ovddabealde+Po	åvddålin
+ovddabealde	ovddabealde+Adv	åvddålin
 
-máilmmiviidosaš	máilmmiviidosaš+A+Sg+Nom
+máilmmiviidosaš	máilmmiviidosaš+A+Sg+Nom	globála
 máilmmiviidosaš	máilmmiviidosaš+A+Attr
 
 muddenplánii	muddenplána+N+Sg+Ill
 
 lágádusat	lágádus+N+Pl+Nom
 lágádusat	lágádus+N+Sg+Acc+PxSg2
+lágádus	lágádus+N+Sg+Nom	ásadus
 
 loahpageahčen	loahpageahčen+Po
 loahpageahčen	loahpageahčen+Pr
@@ -157,50 +170,57 @@ jeavddalaš	jeavddalaš+A+Sg+Nom
 hehttehussan	hehttehus+N+Sg+Nom+PxSg1
 hehttehussan	hehttehus+N+Sg+Acc+PxSg1
 hehttehussan	hehttehus+N+Ess
+hehttehus	hehttehus+N+Sg+Nom	hieredus
 
 gárrenávnnas	gárrenávnnas+N+Sg+Nom
 
 guhtot	guohtut+V+TV+Ind+Prs+Pl3
 guhtot	guohtut+V+TV+Ind+Prt+Sg2
+guohtut	guohtut+V+TV+Inf	guohtot
 
-fárrolaga	fárrolaga+Adv
+fárrolaga	fárrolaga+Adv	maŋen
 
 fápmolinnjá	fápmolinnjá+N+Sg+Nom
 fápmolinnjá	fápmolinnjá+N+Sg+Acc
 
 eahpečielga	eahpečielggas+A+Attr
+eahpečielggas	eahpečielggas+A+Sg+Nom	iehpetjielgas
 
 dovdomassii	dovdomassii+Adv
 
 deattu	deaddu+N+Sg+Acc
+deaddu	deaddu+N+Sg+Nom	dæddo
 
-analysa	analysa+N+Sg+Nom
+analysa	analysa+N+Sg+Nom	analijssa
 analysa	analysa+N+Sg+Acc
 
 SR	SR+N+ACR+Sg+Acc
-SR	SR+N+ACR+Sg+Nom
+SR	SR+N+ACR+Sg+Nom	SR
 
 Jo3	Jo3+N+ACR+Sg+Acc
-Jo3	Jo3+N+ACR+Sg+Nom
+Jo3	Jo3+N+ACR+Sg+Nom	jo3
 
 AWG	AWG+N+ACR+Sg+Acc
-AWG	AWG+N+ACR+Sg+Nom
+AWG	AWG+N+ACR+Sg+Nom	AWG
 
 čoahkádus	čoahkkádus+Err/Orth+N+Sg+Nom
 
 čanastagaid	čanastat+N+Pl+Acc
 čanastagaid	čanastat+N+Err/Orth+Pl+Acc
+čanastat	čanastat+N+Sg+Nom	tjanástahka
 
-áidut	áidut+V+TV+Inf
+áidut	áidut+V+TV+Inf	gárddot
 áidut	áidut+V+TV+Ind+Prs+Pl1
 
 váttuid	váddu+N+Err/Orth+Pl+Acc
 váttuid	váddu+N+Pl+Acc
+váddu	váddu+N+Sg+Nom	
 
-vuhtiiváldin	vuhtiiváldin+N+Sg+Nom
+vuhtiiváldin	vuhtiiváldin+N+Sg+Nom	vieledus
 vuhtiiváldin	vuhtiiváldit+V+TV+Actio+Nom
 
 ulbmilolahusa	ulbmilolahus+N+Sg+Acc
+olahus	olahus+N+Sg+Nom
 
 sisabahkkemat	sisabahkken+N+Sg+Acc+PxSg2
 sisabahkkemat	sisabahkken+N+Sg+Nom+PxSg2
@@ -210,28 +230,27 @@ ruoŧa	ruoŧŧa+Err/Lex+N+Sg+Acc
 ruoŧa	ruoŧa+A+Attr
 
 rihkkot	rihkku+N+Sg+Nom+PxSg2
+rihkku	rihkku+N+Sg+Nom	mieddem
 rihkkot	rihkkut+V+TV+Ind+Prs+Pl3
 rihkkot	rihkkut+V+TV+Ind+Prt+Sg2
+rihkkut	rihkkut+V+TV+Inf	mieddet
 
 rievdá	rievdat+V+IV+Ind+Prs+Sg3
-
-rievdda	rievdat+V+IV+Ind+Prs+ConNeg
-
-raporterejit	raporteret+V+TV+Ind+Prs+Pl3
-raporterejit	raporteret+V+TV+Ind+Prt+Sg2
+rievdat	rievdat+V+IV+Inf	rievddat
 
 ovttaoaivilii	ovttaoaivilii+Adv
 
-otnáš	otnáš+A+Sg+Nom
+otnáš	otnáš+A+Sg+Nom	udnásj
 otnáš	otnáš+A+Sg+Acc+Err/Orth
 otnáš	otnáš+A+Attr
 
-oktiiheivehit	oktiiheivehit+V+TV+Inf
+oktiiheivehit	oktiiheivehit+V+TV+Inf	aktidit
 oktiiheivehit	oktiiheivehit+V+TV+Ind+Prs+Pl1
 oktiiheivehit	oktiiheivehit+V+TV+Ind+Prs+Pl3
 oktiiheivehit	oktiiheivehit+V+TV+Ind+Prt+Sg2
 
 noađđin	noađđi+N+Ess
+noađđi	noađđi+N+Sg+Nom	noade
 
 njuovahagaide	njuovahat+N+Pl+Ill
 njuovahagaide	njuovahat+N+Err/Orth+Pl+Ill
