@@ -203,17 +203,17 @@
     <e><p><l>gii<g><b/>beare</g><s n="prn"/></l><r>vajku<b/>guhti<s n="prn"/></r></p></e>
     <e><p><l>gii<g><b/>beare</g><s n="prn"/><s n="itg"/></l><r>vajku<b/>guhti<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>gii<s n="prn"/></l><r>guhti<s n="prn"/></r></p></e>
-    <e><p><l>giige<s n="prn"/></l><r>aktak<s n="prn"/></r></p></e>
+    <e><p><l>gii<s n="prn"/></l><r>akta<s n="prn"/></r></p></e>
     <e><p><l>giijai<s n="prn"/></l><r>færttahasj<s n="prn"/></r></p></e>
     <e><p><l>giinai<s n="prn"/></l><r>færttahasj<s n="prn"/></r></p></e>
-    <e><p><l>goabbat<s n="prn"/></l><r>goabbák<s n="prn"/></r></p></e>
+    <e><p><l>goabbat<s n="prn"/></l><r>goabbá<s n="prn"/></r></p></e>
     <e><p><l>goabbá<s n="prn"/></l><r>goabbá<s n="prn"/></r></p></e>
-    <e><p><l>goabbáge<s n="prn"/></l><r>goabbák<s n="prn"/></r></p></e>
+    <e><p><l>goabbá<s n="prn"/></l><r>goabbá<s n="prn"/></r></p></e>
     <e><p><l>goabbánai<s n="prn"/></l><r>goabbásik<s n="prn"/></r></p></e>
     <e><p><l>goappašagat<s n="prn"/></l><r>goappátjagá<s n="prn"/></r></p></e>
     <e><p><l>goappašat<s n="prn"/></l><r>goappátja<s n="prn"/></r></p></e>
     <e><p><l>guhte<s n="prn"/></l><r>guhti<s n="prn"/></r></p></e>
-    <e><p><l>guhtege<s n="prn"/></l><r>guhtik<s n="prn"/></r></p></e>
+    <e><p><l>guhte<s n="prn"/></l><r>guhtik<s n="prn"/></r></p></e>
     <e><p><l>guhtemuš<s n="prn"/></l><r>guhtimusj<s n="prn"/></r></p></e>
     <e><p><l>guhtenai<s n="prn"/></l><r>færttahasj<s n="prn"/></r></p></e>
     <e><p><l>guktot<s n="prn"/></l><r>goappásj<s n="prn"/></r></p></e>
@@ -453,9 +453,8 @@
     <e><p><l>gánnáhahtti<s n="adj"/></l><r>mávsán<s n="adj"/></r></p></e>
     <e><p><l>goalmmát<s n="adj"/></l><r>goalmát<s n="adj"/></r></p></e>
     <e><p><l>friija<s n="adj"/></l><r>friddja<s n="adj"/></r></p></e>
-    <e><p><l>máŋggalágan+v1<s n="adj"/></l><r>moattelágásj<s n="adj"/></r></p></e>
     <e><p><l>siviila<s n="adj"/></l><r>sivijlla<s n="adj"/></r></p></e>
-    <e><p><l>juohkelágan+v1<s n="adj"/></l><r>juohkkalágásj<s n="adj"/></r></p></e>
+    <e><p><l>juohkelágan<s n="adj"/></l><r>juohkkalágásj<s n="adj"/></r></p></e>
     <e><p><l>smávis<s n="adj"/></l><r>smávve<s n="adj"/></r></p></e>
     <e><p><l>eaktodáhtolaš<s n="adj"/></l><r>iesjmiellusasj<s n="adj"/></r></p></e>
     <e><p><l>sullasaš<s n="adj"/></l><r>muodugasj<s n="adj"/></r></p></e>
@@ -532,7 +531,6 @@
      <e><p><l>áidna<s n="adj"/></l><r>ájnna<s n="adj"/></r></p></e> 
       <e><p><l>fáhkka<s n="adj"/></l><r>hæhkka<s n="adj"/></r></p></e> 
      <e><p><l>fáhkka<s n="adv"/></l><r>hæhkkat<s n="adv"/></r></p></e> 
-    <e><p><l>hárvvis<s n="adv"/></l><r>vuorjját<s n="adv"/></r></p></e>
     <e><p><l>hárvvis<s n="adj"/></l><r>vuorjjá<s n="adj"/></r></p></e>
      <e><p><l>hárve<s n="adv"/></l><r>vuorjját<s n="adv"/></r></p></e>
      <e><p><l>beakkán<s n="adj"/></l><r>mihtos<s n="adj"/></r></p></e>
@@ -2245,7 +2243,7 @@
      <e><p><l>gieibmi<s n="n"/></l><r>giejmme<s n="n"/></r></p></e>
      <e><p><l>gielas<s n="n"/></l><r>gielas<s n="n"/></r></p></e>
      <e><p><l>gielda<s n="n"/></l><r>suohkan<s n="n"/></r></p></e>
-     <e><p><l>gieldadepartemeanta<s n="n"/></l><r>gielldadepartemænnta<s n="n"/></r></p></e>
+     <e><p><l>gieldadepartemeanta<s n="n"/></l><r>suohkandepartemænnta<s n="n"/></r></p></e>
      <e><p><l>gieldaláhka<s n="n"/></l><r>gielldaláhka<s n="n"/></r></p></e>
      <e><p><l>gieldda<s n="n"/></l><r>buorggo<s n="n"/></r></p></e>
      <e><p><l>gielddapolitihkka<s n="n"/></l><r>suohkanpolitihkka<s n="n"/></r></p></e>
@@ -5793,7 +5791,6 @@
      <e><p><l>dálá<s n="adj"/></l><r>dálásj<s n="adj"/></r></p></e>
      <e><p><l>dáláš<s n="adj"/></l><r>dálásj<s n="adj"/></r></p></e>
      <e><p><l>dámis<s n="adj"/></l><r>dámes<s n="adj"/></r></p></e>
-     <e><p><l>dárbbalaš<s n="adj"/></l><r>dárbalasj<s n="adj"/></r></p></e>
      <e><p><l>dárbbašlaš<s n="adj"/></l><r>dárbulasj<s n="adj"/></r></p></e>
      <e><p><l>dárkil<s n="adj"/></l><r>dárkkel<s n="adj"/></r></p></e>
      <e><p><l>dássásaš<s n="adj"/></l><r>dássásasj<s n="adj"/></r></p></e>
@@ -5897,7 +5894,6 @@
      <e><p><l>kritihkalaš<s n="adj"/></l><r>lájttális<s n="adj"/></r></p></e>
      <e><p><l>kultuvrralaš<s n="adj"/></l><r>kultuvralasj<s n="adj"/></r></p></e>
      <e><p><l>kvalitatiiva<s n="adj"/></l><r>kvalitatijvva<s n="adj"/></r></p></e>
-     <e><p><l>lahka<s n="adj"/></l><r>lahka<s n="adj"/></r></p></e>
      <e><p><l>lieggalágaš<s n="adj"/></l><r>lieggalágásj<s n="adj"/></r></p></e>
      <e><p><l>liekkas<s n="adj"/></l><r>liekkas<s n="adj"/></r></p></e>
      <e><p><l>linis<s n="adj"/></l><r>lines<s n="adj"/></r></p></e>
@@ -38684,7 +38680,6 @@
      <e><p><l>Buljusvuopmi<s n="np"/></l><r>Buljusvuopmi<s n="np"/></r></p></e>
      <e><p><l>Bulkejohka<s n="np"/></l><r>Bulkejohka<s n="np"/></r></p></e>
      <e><p><l>Bulkejávri<s n="np"/></l><r>Bulkejávri<s n="np"/></r></p></e>
-     <e><p><l>Bullju<s n="np"/></l><r>Bullju<s n="np"/></r></p></e>
      <e><p><l>Bulljáraš<s n="np"/></l><r>Bulljáraš<s n="np"/></r></p></e>
      <e><p><l>Bullojohka<s n="np"/></l><r>Bullojohka<s n="np"/></r></p></e>
      <e><p><l>Bulmmukjávri<s n="np"/></l><r>Bulmmukjávri<s n="np"/></r></p></e>
@@ -39398,7 +39393,6 @@
      <e><p><l>Davvinuortaeana<s n="np"/></l><r>Davvinuortaeana<s n="np"/></r></p></e>
      <e><p><l>Davvinásti<s n="np"/></l><r>Davvinásti<s n="np"/></r></p></e>
      <e><p><l>Davvioarjeuniversitehta<s n="np"/></l><r>Davvioarjeuniversitehta<s n="np"/></r></p></e>
-     <e><p><l>Davvipola<s n="np"/></l><r>Davvipola<s n="np"/></r></p></e>
      <e><p><l>Davviriikalaš<s n="np"/></l><r>Davviriikalaš<s n="np"/></r></p></e>
      <e><p><l>Davviriikkat<s n="np"/></l><r>Davviriikkat<s n="np"/></r></p></e>
      <e><p><l>Davvisuolu<s n="np"/></l><r>Davvisuolu<s n="np"/></r></p></e>
@@ -40949,7 +40943,6 @@
      <e><p><l>Gielasnjunni<s n="np"/></l><r>Gielasnjunni<s n="np"/></r></p></e>
      <e><p><l>Gielasvárri<s n="np"/></l><r>Gielasvárri<s n="np"/></r></p></e>
      <e><p><l>Gielda<s n="np"/></l><r>Gielda<s n="np"/></r></p></e>
-     <e><p><l>gieldadepartemeanta<s n="np"/></l><r>suohkandepartemænnta<s n="np"/></r></p></e>
      <e><p><l>Gieldaluohjohka<s n="np"/></l><r>Gieldaluohjohka<s n="np"/></r></p></e>
      <e><p><l>Gieldaluohjávri<s n="np"/></l><r>Gieldaluohjávri<s n="np"/></r></p></e>
      <e><p><l>Gieldaluohvággi<s n="np"/></l><r>Gieldaluohvággi<s n="np"/></r></p></e>
@@ -44785,7 +44778,6 @@
      <e><p><l>Lásárluoppal<s n="np"/></l><r>Lásárluoppal<s n="np"/></r></p></e>
      <e><p><l>Látnabuolža<s n="np"/></l><r>Látnabuolža<s n="np"/></r></p></e>
      <e><p><l>Látnjajohka<s n="np"/></l><r>Látnjajohka<s n="np"/></r></p></e>
-     <e><p><l>Látnjajotoaivvi<s n="np"/></l><r>Látnjajotoaivvi<s n="np"/></r></p></e>
      <e><p><l>Látnjajávri<s n="np"/></l><r>Látnjajávri<s n="np"/></r></p></e>
      <e><p><l>Látnjajávrrit<s n="np"/></l><r>Látnjajávrrit<s n="np"/></r></p></e>
      <e><p><l>Látnjaroggejávri<s n="np"/></l><r>Látnjaroggejávri<s n="np"/></r></p></e>
@@ -46674,7 +46666,7 @@
      <e><p><l>Olggut<s n="np"/></l><r>Olggut<s n="np"/></r></p></e>
      <e><p><l>Olgo-Vuoksá<s n="np"/></l><r>Olgo-Vuoksá<s n="np"/></r></p></e>
      <e><p><l>Olgoriikadepartemeanta<s n="np"/></l><r>Ålggorijkadepartemænnta<s n="np"/></r></p></e>
-     <e><p><l>olgoriikadepartemeanta<s n="n"/></l><r>ålggorijkadepartemænnta<s n="n"/></r></p></e>
+     <e><p><l>olgoriikkadepartemeanta<s n="n"/></l><r>ålggorijkadepartemænnta<s n="n"/></r></p></e>
      <e><p><l>Olgovárri<s n="np"/></l><r>Olgovárri<s n="np"/></r></p></e>
      <e><p><l>Olgoáššiidministeriija<s n="np"/></l><r>Olgoáššiidministeriija<s n="np"/></r></p></e>
      <e><p><l>Olgá<s n="np"/></l><r>Olgá<s n="np"/></r></p></e>
