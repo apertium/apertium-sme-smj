@@ -203,7 +203,7 @@
     <e><p><l>gii<g><b/>beare</g><s n="prn"/></l><r>vajku<b/>guhti<s n="prn"/></r></p></e>
     <e><p><l>gii<g><b/>beare</g><s n="prn"/><s n="itg"/></l><r>vajku<b/>guhti<s n="prn"/><s n="itg"/></r></p></e>
     <e><p><l>gii<s n="prn"/></l><r>guhti<s n="prn"/></r></p></e>
-    <e><p><l>gii<s n="prn"/></l><r>akta<s n="prn"/></r></p></e>
+    <e><p><l>gii<s n="prn"/><s n="ind"/></l><r>akta<s n="prn"/><s n="ind"/></r></p></e>
     <e><p><l>giijai<s n="prn"/></l><r>færttahasj<s n="prn"/></r></p></e>
     <e><p><l>giinai<s n="prn"/></l><r>færttahasj<s n="prn"/></r></p></e>
     <e><p><l>goabbat<s n="prn"/></l><r>goabbá<s n="prn"/></r></p></e>
@@ -671,6 +671,30 @@
      <e><p><l>vuhtiiváldin<s n="n"/></l><r>vieledus<s n="n"/></r></p></e>     
      <e><p><l>rihkku<s n="n"/></l><r>mieddem<s n="n"/></r></p></e>
      <e><p><l>noađđi<s n="n"/></l><r>noade<s n="n"/></r></p></e>
+     <e><p><l>hálddašeapmi<s n="n"/></l><r>háldadibme<s n="n"/></r></p></e>
+     <e><p><l>modealla<s n="n"/><s n="g3"/></l><r>modælla<s n="n"/></r></p></e>
+     <e><p><l>oahpahus<s n="n"/></l><r>åhpadus<s n="n"/></r></p></e>
+     <e><p><l>ássanminsttar<s n="n"/></l><r>årromvuohke<s n="n"/></r></p></e>
+     <e><p><l>válljejupmi<s n="n"/></l><r>válljim<s n="n"/></r></p></e>
+     <e><p><l>vallji<s n="n"/></l><r>vallje<s n="n"/></r></p></e>
+     <e><p><l>speallu<s n="n"/></l><r>spælla<s n="n"/></r></p></e>
+     <e><p><l>metoda<s n="n"/></l><r>metåvddåd<s n="n"/></r></p></e>
+     <e><p><l>meahcásteapmi<s n="n"/></l><r>tjuohppam<s n="n"/></r></p></e>
+     <e><p><l>maori<s n="n"/></l><r>maori<s n="n"/></r></p></e>
+     <e><p><l>giella<s n="n"/></l><r>giella<s n="n"/></r></p></e>
+     <e><p><l>logaldalli<s n="n"/></l><r>lågådalle<s n="n"/></r></p></e>
+     <e><p><l>lagasvuohta<s n="n"/></l><r>lahkavuohta<s n="n"/></r></p></e>
+     <e><p><l>huksejupmi<s n="n"/></l><r>tsieggim<s n="n"/></r></p></e>
+     <e><p><l>haddegoargŋun<s n="n"/></l><r>haddelassánibme<s n="n"/></r></p></e>
+     <e><p><l>fenomena<s n="n"/></l><r>fenomiedna<s n="n"/></r></p></e>
+     <e><p><l>dáhttu<s n="n"/></l><r>miella<s n="n"/></r></p></e>
+     <e><p><l>dáhkádus<s n="n"/></l><r>buohttidus<s n="n"/></r></p></e>
+     <e><p><l>dvd<s n="n"/></l><r>dvd<s n="n"/></r></p></e>
+     <e><p><l>filbma<s n="n"/></l><r>filmma<s n="n"/></r></p></e>
+     <e><p><l>dieđ<s n="n"/></l><r>died<s n="n"/></r></p></e>
+     <e><p><l>ahki<s n="n"/></l><r>ahke<s n="n"/></r></p></e>
+     <e><p><l>čoahkkádus<s n="n"/></l><r>tjoahkkájbiedjam<s n="n"/></r></p></e>
+     <e><p><l>GPS<s n="n"/></l><r>GPS<s n="n"/></r></p></e>
 
      <e><p><l>njuovahat<s n="n"/></l><r>njuovadahka<s n="n"/></r></p></e>
      <e><p><l>mearranjiččehas<s n="n"/></l><r>merranjammelij<s n="n"/></r></p></e>
@@ -736,8 +760,21 @@
    <e><p><l>no<s n="pcle"/></l><r>nav<s n="pcle"/></r></p></e> 
    <e><p><l>sierranas<s n="adj"/></l><r>sierra<s n="adj"/></r></p></e> 
 
+   <e><p><l>dovdomassii<s n="adv"/></l><r>viehka<s n="adv"/></r></p></e> 
+   <e><p><l>valjit<s n="adv"/></l><r>valjet<s n="adv"/></r></p></e> 
+   <e><p><l>olámuttos<s n="adv"/></l><r>sadjihin<s n="adv"/></r></p></e> 
+   <e><p><l>oktilaččat<s n="adv"/></l><r>aktelattjat<s n="adv"/></r></p></e> 
 
 
+      <e><p><l>hálddašit<s n="vblex"/><s n="tv"/></l><r>háldadit<s n="vblex"/></r></p></e>
+      <e><p><l>nákcet<s n="vblex"/><s n="iv"/></l><r>nahkat<s n="vblex"/></r></p></e>
+      <e><p><l>čiekŋudit<s n="vblex"/><s n="tv"/></l><r>tjiegŋudit<s n="vblex"/></r></p></e>
+      <e><p><l>álkidahttit<s n="vblex"/><s n="tv"/></l><r>giehpedit<s n="vblex"/></r></p></e>
+      <e><p><l>meahcástit<s n="vblex"/><s n="iv"/></l><r>tjuohppat<s n="vblex"/></r></p></e>
+      <e><p><l>earuhit<s n="vblex"/><s n="tv"/></l><r>sieradit<s n="vblex"/></r></p></e>
+      <e><p><l>dáhttut<s n="vblex"/><s n="tv"/></l><r>sihtat<s n="vblex"/></r></p></e>
+      <e><p><l>ceavzit<s n="vblex"/><s n="iv"/></l><r>messat<s n="vblex"/></r></p></e>
+      <e><p><l>borrat<s n="vblex"/><s n="tv"/></l><r>bårråt<s n="vblex"/></r></p></e>
      <e><p><l>deattastit<s n="vblex"/><s n="tv"/></l><r>dættodit<s n="vblex"/></r></p></e>
      <e><p><l>vuosttaldit<s n="vblex"/><s n="tv"/></l><r>vuosteldit<s n="vblex"/></r></p></e>
      <e><p><l>vuhtiiváldit<s n="vblex"/><s n="tv"/></l><r>vieledit<s n="vblex"/></r></p></e>
