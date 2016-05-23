@@ -4,12 +4,6 @@
       1 #Gába
      17 #Uhca
       1 #Canada
-      1 #Moadda
-      5 #Moadda
-      1 #Niejdda
-      1 #Sijdda
-      1 #Skåvllåájgegávdda
-      2 #Skåvllåájgegávdda
       1 #Vuotnasiida
       2 #Vuotnasiida
      62 #Davvesiida
@@ -44,6 +38,9 @@
       1 #Islánda
       1 #Vestlánda
       3 #Vestlánda
+      1 #Østlánda
+      1 #Østlánda
+      2 #Østlánda
       4 #Skottlánda
       3 #Reisránda
       5 #Reisránda
@@ -61,9 +58,6 @@
       1 #Álbmotmusea
       3 #Sámekomitea
       5 #Sámekomitea
-      1 #Ednaga
-      1 #Álga
-      3 #Juoga
       1 #Gaska-Norga
       2 #Gaska-Norga
       1 #Mátta-Norga
@@ -223,12 +217,6 @@
       1 #Stuora-Británnia
       1 #Asia
       1 #Skandinavia
-      1 #Guolevuodja
-      1 #Sierradoarjja
-      1 #Niellja
-      1 #Niellja
-      1 #Niellja
-      2 #Duodjeladnja
       1 #Leavdnja
       1 #Leavdnja
      11 #Leavdnja
@@ -239,15 +227,7 @@
       8 #Leavdnja
       1 #Espánnja
       1 #Ruossja
-      1 #Goappátja
-      1 #Goappátja
-      1 #Goappátja
-      2 #Goappátja
-      3 #Goappátja
-     16 #Goappátja
       1 #Ráigeája
-      1 #Lahka
-      1 #Lahka
       1 #Barggijbelludahka
       1 #Johka
       1 #Álddajohka
@@ -315,10 +295,6 @@
       1 #Rávttošjohka
       1 #Šuoššjohka
       1 #Šuoššjohka
-      1 #Duodjefáhka
-      1 #Sámegielfáhka
-      1 #Sámegielfáhka
-      1 #Sierraláhka
       1 #Davvi-Trøndeláhka
       5 #Davvi-Trøndeláhka
       5 #Davvi-Trøndeláhka
@@ -355,9 +331,6 @@
       1 #Vuovdaguoika
       1 #Remáguoika
       2 #Remáguoika
-     35 #Lijka
-      1 #Gájka
-      3 #Gájka
       2 #Afrihkka
       1 #Fránskka
       1 #Fránskka
@@ -372,19 +345,10 @@
       3 #Dánska
       1 #Murmánska
       1 #Murmánska
-      2 #Gasska
       1 #Joatka
       1 #Joatka
       1 #Uppsala
       1 #Áila
-      1 #Miella
-      1 #Dánsskagiella
-      2 #Dánsskagiella
-      1 #Sámegiella
-      1 #Dárogiella
-      1 #Dárogiella
-      4 #Dárogiella
-      1 #Sosiálla
       1 #Karla
       1 #Guvla
       1 #Sámeskuvla
@@ -401,10 +365,8 @@
       1 #Stockholbma
       1 #Suobma
       1 #Helma
-      2 #Dárogielnamma
       1 #Soma
       1 #Giepma
-      1 #Gáma
       1 #Jåma
       1 #Tana
      11 #Tana
@@ -449,13 +411,6 @@
       8 #Sámemiššuvdna
       1 #Rávdna
       4 #Rávdna
-      1 #Bádna
-      1 #Fágapládna
-      1 #Fágapládna
-      1 #Fágapládna
-      1 #Fágapládna
-      2 #Fágapládna
-      1 #Tsieggimpládna
       1 #Magna
       1 #Aanna
       1 #Ristiinna
@@ -778,9 +733,6 @@
       1 #Roahpa
       1 #Skiipa
       1 #Skiipa
-      1 #Báhppa
-      4 #Suohkanbáhppa
-      8 #Suohkanbáhppa
       1 #Loppa
       1 #Loppa
       1 #Loppa
@@ -799,7 +751,6 @@
       3 #Skiippagurra
       1 #Hillágurra
       1 #Hillágurra
-      1 #Kultuvrra
       1 #Finnmárkkukantuvra
       1 #Finnmárkkukantuvra
       1 #Finnmárkkukantuvra
@@ -890,16 +841,6 @@
       1 #Lofuohta
       1 #Lofuohta
       2 #Lofuohta
-      1 #Berajvuohta
-      1 #Varresvuohta
-      1 #Priváhta
-      1 #Akta
-      1 #Riekta
-      7 #Riekta
-      1 #Guokta
-      1 #Guokta
-      3 #Guokta
-      1 #Lågenanguokta
       1 #Gieldaluokta
       2 #Gieldaluokta
       1 #Govdaluokta
@@ -958,7 +899,6 @@
       1 #Rumašluokta
       3 #Rumašluokta
       1 #Čuvošluokta
-      1 #Giellaprosjækta
       1 #Gálta
       1 #Eanandoallodepartemeanta
      12 #Eanandoallodepartemeanta
@@ -967,12 +907,7 @@
       4 #Eanandoallodepartemeanta
       5 #Eanandoallodepartemeanta
       1 #Guolástusdepartemeanta
-      1 #Studænnta
-      1 #Gielldadepartemænnta
-      1 #Gielldadepartemænnta
-      4 #Gielldadepartemænnta
       1 #Suodjalimdepartemænnta
-      1 #Finansdepartemænnta
       1 #Barta
       2 #Suorta
      20 #Hámmárfeasta
@@ -987,28 +922,17 @@
       2 #Hámmárfeasta
      42 #Hámmárfeasta
      28 #Hámmárfeasta
-      1 #Fássta
       1 #Aarsehtta
       2 #Aarsehtta
       3 #Aarsehtta
-      2 #Vihtta
-      2 #Vihtta
       1 #Davvikalohtta
       1 #Davvikalohtta
       3 #Davvikalohtta
-      1 #Guhtta
-      1 #Guhtta
-      1 #Internáhtta
-      2 #Nuortta
-      1 #Mátta
+      1 #Åhpadusdirektoráhtta
+      1 #Åhpadusdirektoráhtta
+      2 #Åhpadusdirektoráhtta
       1 #Builuovta
       1 #Náhpolsáiva
-      5 #Rijkkaarkijvva
-      6 #Rijkkaarkijvva
-      1 #Stáhtaarkijvva
-      4 #Stáhtaarkijvva
-      4 #Stáhtaarkijvva
-      6 #Stáhtaarkijvva
       1 #Sørøya
       1 #Giđđa
       1 #Giđđa
@@ -1035,9 +959,6 @@
       1 #Lerresfjord
       1 #Oksfjord
       1 #Balsfjord
-      3 #Nubbe
-      1 #Mádde
-      2 #Áhpegádde
       1 #Ánde
       1 #Ánde
       1 #Ánde
@@ -1045,26 +966,7 @@
       1 #Ánde
       6 #Ánde
       1 #Aajege
-      1 #Stuorradigge
-      1 #Stuorradigge
-      1 #Stuorradigge
-      1 #Stuorradigge
-      2 #Stuorradigge
-      2 #Stuorradigge
-      2 #Stuorradigge
-      3 #Stuorradigge
-      4 #Stuorradigge
-     15 #Stuorradigge
-      6 #Stuorradigge
-     37 #Stuorradigge
-      8 #Stuorradigge
-     19 #Stuorradigge
       1 #Ájgge
-      1 #Ájgge
-      1 #Bargge
-      1 #Boatsojbargge
-      1 #Virgge
-      1 #Mige
       1 #Sverige
       2 #Sverige
       1 #Norge
@@ -1080,25 +982,9 @@
       1 #Árviesjávrrie
       1 #Badje
       3 #Badje
-      1 #Dibmaduodje
-      1 #Garraduodje
-      1 #Garraduodje
-      1 #Garraduodje
-      1 #Muorraduodje
-      2 #Muorraduodje
-      1 #Giehtaduodje
-      1 #Girjje
-      1 #Biellje
       1 #Södertälje
       1 #Oarje
       1 #Plassje
-      1 #Diggeássje
-      1 #Áhttje
-      1 #Vihke
-      1 #Vihke
-      1 #Náhkke
-      1 #Náhkke
-      1 #Bájkke
       1 #Folke
       2 #Lappiske
       1 #Måske
@@ -1112,17 +998,9 @@
       1 #Čiskke-Elle
       2 #Olle
       5 #Olle
-      7 #Dalle
-      2 #Duohtadille
       1 #Vuolle
       1 #Vuolle
-      6 #Lulle
       1 #Sábme
-      1 #Sábme
-      1 #Sábme
-      2 #Sábme
-      4 #Sæmme
-      2 #Guddne
       2 #Hanne
       1 #Finne
       1 #Finne
@@ -1130,26 +1008,21 @@
       1 #Finne
       5 #Finne
       9 #Finne
-      1 #Bárnne
      21 #Ánne
       2 #Ánne
       3 #Ánne
       9 #Ánne
       1 #Bávval-Ánne
-      1 #Ståhpe
       1 #Indre
       1 #Vualtjere
       1 #Sire
       1 #Store
       1 #Store
-      1 #Sarre
-      1 #Sarre
-      1 #Mierre
-      1 #Bårre
       2 #Ytre
       1 #Dure
       1 #Dure
       5 #Dure
+      1 #Øvre
       1 #Káre
       2 #Káre
       2 #Káre
@@ -1162,16 +1035,7 @@
       2 #Lasse
       4 #Lasse
       8 #Lasse
-      1 #Uhttse
-      1 #Mánájoahttse
-      1 #Buohttse
-      1 #Buohttse
-      1 #Buohttse
-      1 #Buohttse
-      2 #Buohttse
       1 #Tvete
-      1 #Soahte
-      2 #Tjuohte
       1 #Sijte
       3 #Ánte
      13 #Ánte
@@ -1191,10 +1055,6 @@
       3 #Kirste
       4 #Kirste
      14 #Kirste
-      1 #Sisste
-      1 #Boahtte
-      1 #Boahtte
-      4 #Boahtte
       1 #Máhtte
       1 #Máhtte
       2 #Máhtte
@@ -1203,10 +1063,8 @@
       2 #Máhtte
       3 #Máhtte
       8 #Máhtte
-      1 #Mujtte
       1 #Ántte
       3 #Tove
-      2 #Davve
       1 #Synnøve
      40 #Máze
       1 #Máze
@@ -1220,6 +1078,7 @@
       5 #Máze
      77 #Máze
      18 #Máze
+     13 #af
       3 #Leif
       2 #Trøndelag
       2 #Trøndelag
@@ -1334,7 +1193,6 @@
       1 #Skiehttebiergi
       1 #Skiehttebiergi
       1 #Hámmanbirgi
-      3 #Vehi
       1 #Báhčaveadji
       1 #Báhčaveadji
       2 #Báhčaveadji
@@ -1414,8 +1272,6 @@
       1 #Deanunjálbmi
       1 #Deanunjálbmi
       1 #Kemi
-     43 #Sæmmi
-      7 #Sæmmi
       2 #Áravuopmi
       2 #Áravuopmi
       1 #Nuortavuopmi
@@ -1578,12 +1434,12 @@
       2 #Gáisi
       8 #Gáisi
       1 #Bassi
-      1 #Guhti
       1 #Loddebákti
       1 #Loddebákti
       2 #Čiesti
       1 #Levi
       1 #Sálašoaivi
+      1 #4H-searvi
       1 #Pirttijärvi
       1 #Kivijärvi
       1 #Enojärvi
@@ -1620,34 +1476,6 @@
       1 #Sámiráđđi
       4 #Sámiráđđi
       4 #Sámiráđđi
-      1 #Ij
-      1 #Ij
-      3 #Ij
-     28 #Ij
-      1 #Duodaj
-      1 #Mij
-      1 #Mij
-      2 #Mij
-      1 #Gallegasj
-      1 #Gallegasj
-      4 #Parlamentáralasj
-      1 #Teorehtalasj
-      4 #Teorehtalasj
-      1 #Dramáhtalasj
-      1 #Stáhtalasj
-      1 #Maŋŋelasj
-      1 #Maŋŋelasj
-      1 #Bæjválasj
-      1 #Bæjválasj
-      1 #Dåhkålasj
-      1 #Vuostasj
-      1 #Ádjásj
-      1 #Vuolásj
-      1 #Goappásj
-      1 #Goappásj
-      1 #Guovtegielak
-      2 #Guovtegielak
-      2 #Guovtegielak
       4 #Polmak
       1 #Ivvárstádik
      20 #Skánik
@@ -1658,11 +1486,9 @@
       7 #Skánik
       1 #Svierik
       1 #Henrik
-      7 #Iesjguhtik
       4 #Talvik
       1 #Narvik
       1 #Narvik
-     10 #Buojk
       1 #Frank
       3 #Karasjok
      15 #Finnmark
@@ -1673,21 +1499,16 @@
       2 #Russisk
       1 #Statistisk
       1 #Murmansk
-      1 #Aluk
-      1 #Álmmuk
-      1 #Álmmuk
       1 #Loabák
       1 #Loabák
       2 #Loabák
       8 #Loabák
      38 #Loabák
       9 #Loabák
-      3 #Goabbák
       1 #Márkománák
       1 #Rivtták
       4 #Rivtták
       4 #Rivtták
-      2 #Dal
       6 #Obal
       1 #Real
       2 #Real
@@ -1714,10 +1535,10 @@
       3 #Muorral
       7 #Muorral
       1 #Poastal
-      1 #Stávval
       2 #Israel
       1 #Julevsámegiel
       1 #Suenjel
+      2 #Åarjel
       1 #Mihkkel
       1 #Pavel
       1 #Suonjil
@@ -1738,11 +1559,6 @@
       2 #Sámmul
       1 #Černobyl
       1 #Migál
-      1 #Juojggam
-      1 #Juojggam
-      1 #Ståhkam
-      1 #Ståhkam
-      1 #Hållam
       1 #Hoem
       1 #Čum
       1 #Vuorjám
@@ -1753,7 +1569,6 @@
       1 #Guolban
       2 #Guolban
       2 #Juhan
-      1 #Vuodjan
       1 #Márkan
       1 #Márkan
       1 #Sállan
@@ -1781,6 +1596,7 @@
       2 #Korhámman
       2 #Länsman
       4 #Länsman
+      1 #van
       3 #Neiden
       1 #Ballangen
       3 #Lavangen
@@ -1796,10 +1612,8 @@
       1 #Manndalen
      14 #Ellen
       1 #Polen
-      3 #Danen
       1 #Porsangmoen
       1 #Porsangmoen
-      2 #Murren
       1 #Wexelsen
       1 #Grønnåsen
       1 #Alten
@@ -1830,6 +1644,7 @@
      15 #Von
       1 #Ámmon
       1 #Giron
+     72 #von
       1 #Gárasavvon
       1 #Gárasavvon
       1 #Gárasavvon
@@ -1840,7 +1655,6 @@
       1 #Vefsn
       1 #Rafsbotn
       1 #Nordkjosbotn
-      1 #Oaggun
       1 #Ámmun
       1 #København
       1 #Beahcán
@@ -1862,19 +1676,10 @@
       1 #Njuorggán
       3 #Njuorggán
       1 #Gárgán
-      2 #Mån
-      2 #Mån
-      1 #Sån
       1 #Bo
       1 #Bo
       5 #Bo
-      1 #Gaskamuddo
-      2 #Gaskamuddo
-      1 #Sárggo
-      1 #Rivggo
       1 #Juho
-      1 #Hædjo
-      1 #Hædjo
       1 #Jáhko
       1 #Áilo
      10 #Oslo
@@ -1893,14 +1698,7 @@
       1 #Guovddagæjnno
       2 #Guovddagæjnno
       4 #Guovddagæjnno
-      1 #Oahppo
       4 #Gro
-      1 #Goarro
-      1 #Goarro
-      1 #Vierro
-      1 #Juo
-      1 #Guhkep
-     15 #Ienep
       1 #Nordkapp
       2 #Nordkapp
       1 #Bear
@@ -1941,7 +1739,6 @@
       1 #Gávvir
       1 #Gávvir
       1 #Bájddár
-      1 #Duodjár
       1 #Ávskár
       1 #Ávskár
       2 #Ávskár
@@ -1973,22 +1770,15 @@
       1 #Viestterálas
       1 #Viestterálas
       1 #Guitanas
-      1 #Ábnas
-      1 #Ájnas
-      1 #Ájnas
       1 #Ándaras
       1 #Čohkkiras
       1 #Čohkkiras
-      1 #Vuoras
       1 #Hoanttas
-      2 #Dievas
       1 #Guhkes
       1 #Sandnes
       1 #Stangnes
       2 #Boares
-      2 #Stuores
       1 #Movsses
-      2 #Moattes
      14 #Girjjis
       1 #Justis
       2 #Geavŋŋis
@@ -2005,13 +1795,7 @@
       1 #Røros
       1 #Mars
       1 #Mars
-      1 #Fábmodus
       3 #Čálliidlágádus
-      1 #Ienemus
-      2 #Ienemus
-      4 #Ienemus
-     47 #Ienemus
-      9 #Ienemus
       1 #Oarjjimus
       1 #Vuolimus
       1 #Lulimus
@@ -2023,11 +1807,6 @@
       7 #Sámás
       1 #Njunnás
       1 #Ijäs
-      1 #Dat
-      1 #Dat
-      2 #Dat
-      2 #Dat
-      2 #Sjaddat
       1 #Ovddádusbellodat
       1 #Ovddádusbellodat
       2 #Ovddádusbellodat
@@ -2052,10 +1831,6 @@
       1 #Lodegat
       1 #Lodegat
       2 #Lodegat
-      1 #Galggat
-      1 #Galggat
-      1 #Galggat
-     14 #Galggat
       1 #Goarahat
       2 #Goarahat
       1 #Hearjjat
@@ -2082,30 +1857,17 @@
       1 #Davvi-Várjjat
       1 #Davvi-Várjjat
       1 #Davvi-Várjjat
-      1 #Suohkat
       1 #Davviriikkat
       2 #Davviriikkat
       2 #Davviriikkat
       1 #Siellat
       3 #Siellat
-      1 #Gullat
-      2 #Gullat
       1 #Cohkolat
       1 #Áslat
       2 #Vuolleeatnamat
       2 #Vuolleeatnamat
       2 #Vuolleeatnamat
-      1 #Hiehpat
-      1 #Rihpat
-      1 #Rihpat
-      4 #Rihpat
       1 #Heandarat
-      1 #Njuorat
-      1 #Árrat
-      1 #Árrat
-      1 #Árrat
-      2 #Árrat
-      2 #Árrat
       1 #Boazodoalloođđasat
       1 #Boazodoalloođđasat
       1 #Boazodoalloođđasat
@@ -2113,23 +1875,9 @@
       4 #Boazodoalloođđasat
       6 #Boazodoalloođđasat
       1 #Issat
-      1 #Buohtsat
-      2 #Sávvat
-      1 #Vuorddet
-      1 #Vuorddet
       2 #Birgget
       4 #Kongeriget
-      1 #Liehket
-      1 #Liehket
-      1 #Liehket
-      1 #Liehket
-      1 #Liehket
-      1 #Liehket
-     34 #Liehket
-      7 #Liehket
-      4 #Jáhkket
       1 #Állet
-      1 #Tjállet
       1 #Álet
       1 #Lemet
       1 #Lemet
@@ -2141,8 +1889,6 @@
       1 #Clemet
       1 #Áhččámet
       1 #Áhččámet
-      1 #Adnet
-      2 #Vuojnnet
       1 #Beret
       1 #Beret
      10 #Biret
@@ -2158,36 +1904,14 @@
       1 #Jovsset
       1 #Jovsset
       4 #Jovsset
-      2 #Boahtet
-      1 #Diehtet
-      2 #Dárojduhttet
-      1 #Máhttet
-      1 #Máhttet
-      1 #Máhttet
-     11 #Máhttet
-      4 #Máhttet
-      1 #Soajttet
-      1 #Soajttet
-      1 #Vuojttet
       1 #Dávvet
       1 #Návet
       1 #Návet
       1 #Kraft
-      1 #Suddadit
-      1 #Dádjadit
-      3 #Hálijdit
-      1 #Imájdit
-      1 #Tjadádit
-      1 #Jæskádit
-      1 #Jæskádit
-     15 #Jæskádit
-      1 #Muossádit
-      1 #Muossádit
       1 #Ivvárstádit
       1 #Ivvárstádit
       6 #Ivvárstádit
       8 #Ivvárstádit
-      1 #Dárbahit
       2 #Siskkit
       5 #Siskkit
       1 #Vuolit
@@ -2197,23 +1921,13 @@
       3 #Skánit
       4 #Skánit
       1 #Stuorit
-      2 #Bierrit
-      1 #Guossit
-      1 #Subtsastit
-      1 #Vierttit
       1 #Davit
-      1 #Majt
       1 #Kent
-      1 #Ájggot
-      1 #Oadtjot
       1 #Kárášjot
       2 #Ihkkot
       1 #Fearasullot
       1 #Fearasullot
       1 #Sámiálbmot
-      1 #Sárnnot
-      1 #Låssot
-      1 #Divvot
       1 #Vest
       1 #Hammerfest
       2 #Hammerfest
@@ -2226,11 +1940,6 @@
       1 #Gurut
      45 #Gurut
       1 #Dieđut
-      1 #Dát
-      1 #Dát
-      1 #Dát
-      1 #Dát
-      1 #Loabát
       1 #Loabát
       1 #Loabát
       7 #Loabát
@@ -2258,7 +1967,6 @@
      22 #Buolbmát
       3 #Buolbmát
      19 #Buolbmát
-      2 #Nuppát
       1 #Muosát
       1 #Muosát
       1 #Muosát
@@ -2281,13 +1989,11 @@
       1 #Fávle-Iččát
       1 #Fávle-Iččát
       2 #Fávle-Iččát
-      1 #Dåbddåt
       1 #Klubbu
       2 #Klubbu
       2 #Klubbu
       2 #Klubbu
       2 #Klubbu
-      1 #Ienebu
       1 #Beardu
       1 #Skárfu
       1 #Gárggu
@@ -2442,7 +2148,6 @@
       1 #Likšu
       1 #Likšu
       1 #Áššu
-      1 #Gietjav
       1 #Liv
       1 #Lakselv
       6 #May
@@ -2462,8 +2167,6 @@
       1 #Má
       2 #Má
       2 #Má
-      2 #Oabbá
-      1 #Goabbá
       1 #Bokcá
       2 #Bokcá
       2 #Bokcá
@@ -2505,7 +2208,6 @@
       4 #Kátjá
       7 #Kátjá
      19 #Kátjá
-      1 #Lihká
       1 #Hirsaluohkká
       1 #Hirsaluohkká
       1 #Hirsaluohkká
@@ -2564,13 +2266,6 @@
       5 #Rávdná
       2 #Kiinná
       1 #Ristiinná
-      1 #Mánná
-      1 #Sámemánná
-      1 #Sámemánná
-      1 #Sámemánná
-      1 #Sámemánná
-      1 #Sámemánná
-      3 #Sámemánná
       1 #Muoná
       1 #Eurohpá
       1 #Eurohpá
@@ -2662,10 +2357,6 @@
       1 #Kárásjjåhkå
       1 #Kárásjjåhkå
       2 #Kárásjjåhkå
-      1 #Skåvllå
-      1 #Skåvllå
-      2 #Gålmmå
-      2 #Histåvrrå
       1 #Råmsså
       1 #Råmsså
       2 #Näätämö
