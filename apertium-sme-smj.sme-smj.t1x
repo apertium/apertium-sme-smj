@@ -457,6 +457,7 @@
       <attr-item tags="sem_body_clth"/>
       <attr-item tags="sem_body_food"/>
       <attr-item tags="sem_body_group_hum"/>
+      <attr-item tags="sem_body_group_hum_time"/>
       <attr-item tags="sem_body_hum"/>
       <attr-item tags="sem_body_mat"/>
       <attr-item tags="sem_body_measr"/>
@@ -464,6 +465,8 @@
       <attr-item tags="sem_body_plc"/>
       <attr-item tags="sem_body_time"/>
       <attr-item tags="sem_build"/>
+      <attr-item tags="sem_build_event_org"/>
+      <attr-item tags="sem_build_obj"/>
       <attr-item tags="sem_build-part"/>
       <attr-item tags="sem_build-part_plc"/>
       <attr-item tags="sem_build_build-part"/>
