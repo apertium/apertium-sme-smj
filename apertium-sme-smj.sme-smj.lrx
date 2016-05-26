@@ -1,12 +1,36 @@
 <rules>
 
+
+  <rule weight="1.0">
+    <match lemma="boaris">
+      <select lemma="vuoras"/>
+    </match>
+  </rule>
+  
+  <rule weight="0.5">
+    <match lemma="boaris">
+      <select lemma="boares"/>
+    </match>
+  </rule>
+
+  <rule weight="1.0">
+    <match lemma="čeahppi">
+      <select lemma="tjiehppe"/>
+    </match>
+  </rule>
+
+  <rule weight="0.5">
+    <match lemma="čeahppi">
+      <select lemma="smidá"/>
+    </match>
+  </rule>
+
   <rule weight="1.0">
     <match lemma="eallit">
       <select lemma="viessot"/>
     </match>
   </rule>
-
-
+  
   <rule weight="0.5">
     <match lemma="eallit">
       <select lemma="iellet"/>
@@ -68,13 +92,9 @@
     </match>
  <or><match tags="n.*.pl.*"/>
  <match tags="n.*.*.pl.*"/></or>
-  </rule>
-
-
-
-
-
-
+  </rule> 
+  
+  
   <rule weight="1.0">
     <match lemma="ieš" tags="prn.ref.*">
       <select lemma="iesj" tags="prn.ref.sg.*"/>
