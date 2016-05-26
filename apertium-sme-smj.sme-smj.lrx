@@ -1,6 +1,20 @@
 <rules>
 
   <rule weight="1.0">
+    <match lemma="eallit">
+      <select lemma="viessot"/>
+    </match>
+  </rule>
+
+
+  <rule weight="0.5">
+    <match lemma="eallit">
+      <select lemma="iellet"/>
+    </match>
+  </rule>
+
+
+  <rule weight="1.0">
     <match lemma="gullat">
       <select lemma="gullat"/>
     </match>
