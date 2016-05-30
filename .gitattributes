@@ -97,6 +97,7 @@ dev/smjadverbs.txt -text
 dev/smjintersectionlemma2.txt -text
 dev/smjpronouns.txt -text
 dev/sorting_sanityoutput.sh -text
+dev/star-report.freq -text
 dev/testkorpus.txt -text
 dev/testkorpus_diff.txt -text
 dev/testsentences.txt -text
