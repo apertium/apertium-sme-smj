@@ -799,7 +799,7 @@
       <e><p><l>fáhkkestaga<s n="adv"/></l><r>hæhkkat<s n="adv"/></r></p></e>
    <e><p><l>luhtte<s n="post"/></l><r>lunna<s n="post"/></r></p></e> 
    <e><p><l>jeavddalaččat<s n="adv"/></l><r>juovnnát<s n="adv"/></r></p></e> 
-   <e><p><l>dohkálaš<s n="adj"/></l><r>dåhkkidahtte<s n="vblex"/><s n="adj"/></r></p></e> 
+   <e><p><l>dohkálaš<s n="adj"/></l><r>dåhkkidahtte<s n="adj"/></r></p></e> 
    <e><p><l>suohkanlaš<s n="adj"/></l><r>suohkanlasj<s n="adj"/></r></p></e> 
 
    <e><p><l>ovddabealde<s n="post"/></l><r>åvddålin<s n="post"/></r></p></e> 
@@ -2095,6 +2095,7 @@
      <e><p><l>epigrámma<s n="n"/><s n="g3"/></l><r>epigrámma<s n="n"/></r></p></e>
      <e><p><l>epihkka<s n="n"/></l><r>epihkka<s n="n"/></r></p></e>
      <e><p><l>epikureisma<s n="n"/></l><r>epikureissma<s n="n"/></r></p></e>
+     <e><p><l>erenoamášdieđiheaddji<s n="n"/></l><r>sierradiedediddje<s n="n"/></r></p></e>
      <e><p><l>ergonomiija<s n="n"/></l><r>ergonomijja<s n="n"/></r></p></e>
      <e><p><l>ergoterapiija<s n="n"/></l><r>ergoterapijja<s n="n"/></r></p></e>
      <e><p><l>erotihkka<s n="n"/></l><r>erotihkka<s n="n"/></r></p></e>
@@ -4571,10 +4572,10 @@
      <e><p><l>sieludilli<s n="n"/></l><r>sielodille<s n="n"/></r></p></e>
      <e><p><l>sierat<s n="n"/></l><r>sierat<s n="n"/></r></p></e>
      <e><p><l>sierrabibliotehka<s n="n"/></l><r>sierrabibliotiehkka<s n="n"/></r></p></e>
+
      <e><p><l>sierradilli<s n="n"/></l><r>sierradille<s n="n"/></r></p></e>
      <e><p><l>sierradoarjja<s n="n"/></l><r>sierradoarjja<s n="n"/></r></p></e>
      <e><p><l>sierraiešvuohta<s n="n"/></l><r>sierraiesjvuohta<s n="n"/></r></p></e>
-     <e><p><l>sierraláhka<s n="n"/></l><r>sierraláhka<s n="n"/></r></p></e>
      <e><p><l>sierrapedagoga<s n="n"/></l><r>sierrapedagåvggå<s n="n"/></r></p></e>
      <e><p><l>sierravuohta<s n="n"/></l><r>sierravuohta<s n="n"/></r></p></e>
      <e><p><l>siessal<s n="n"/></l><r>siessal<s n="n"/></r></p></e>
@@ -48097,7 +48098,7 @@
      <e><p><l>Sadjinvuopmi<s n="np"/></l><r>Sadjinvuopmi<s n="np"/></r></p></e>
      <e><p><l>Sadjinvággi<s n="np"/></l><r>Sadjinvággi<s n="np"/></r></p></e>
      <e><p><l>Sadjinvárri<s n="np"/></l><r>Sadjinvárri<s n="np"/></r></p></e>
-     <e><p><l>Saemien<s n="np"/></l><r>Saemien<s n="np"/></r></p></e>
+     <e><p><l>Saemien<b/>Sijte<s n="np"/></l><r>Saemien<b/>Sïjte<s n="np"/></r></p></e>
      <e><p><l>Sagai<s n="np"/></l><r>Sagai<s n="np"/></r></p></e>
      <e><p><l>Sagarmatha<s n="np"/></l><r>Sagarmatha<s n="np"/></r></p></e>
      <e><p><l>Sahájohka<s n="np"/></l><r>Sahájohka<s n="np"/></r></p></e>
@@ -53149,8 +53150,8 @@
      <e><p><l>Ánddeš-Bier<b/>jávri<s n="np"/></l><r>Ánddeš-Bier<b/>jávri<s n="np"/></r></p></e>
      <e><p><l>Ánin<b/>Dánin<s n="np"/></l><r>Ánin<b/>Dánin<s n="np"/></r></p></e>
      <e><p><l>Ánot-Biret<b/>suolu<s n="np"/></l><r>Ánot-Biret<b/>suolu<s n="np"/></r></p></e>
-     <e><p><l>Árktalaš<b/>Ráđđi<s n="np"/></l><r>Árktalaš<b/>Ráđđi<s n="np"/></r></p></e>
-     <e><p><l>Árktalaš<b/>ráđđi<s n="np"/></l><r>Árktalaš<b/>ráđđi<s n="np"/></r></p></e>
+     <e><p><l>Árktalaš<b/>Ráđđi<s n="np"/></l><r>Árktalaš<b/>Ráđe<s n="np"/></r></p></e>
+     <e><p><l>Árktalaš<b/>ráđđi<s n="np"/></l><r>Árktalaš<b/>ráđe<s n="np"/></r></p></e>
      <e><p><l>Áro<b/>Čáhcebákti<s n="np"/></l><r>Áro<b/>Čáhcebákti<s n="np"/></r></p></e>
      <e><p><l>Árran<b/>julevsáme<b/>guovdásj<s n="np"/></l><r>Árran<b/>julevsáme<b/>guovdásj<s n="np"/></r></p></e>
      <e><p><l>Ásllat-Pier<b/>várri<s n="np"/></l><r>Ásllat-Pier<b/>várri<s n="np"/></r></p></e>
