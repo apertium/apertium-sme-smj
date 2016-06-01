@@ -121,6 +121,8 @@ LIST Ord = ord ;
  
 LIST Qst = qst ;
 
+LIST Known = known ;
+
 # The ("ge" pcle) etc. are used in Apertium
 LIST Foc_ge = foc_ge ("<ge>" pcle) ;
 LIST Foc_gen = foc_gen ("<gen>" pcle) ;
