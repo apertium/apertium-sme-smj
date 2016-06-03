@@ -42,6 +42,7 @@
     <sdef n="ref"   c="Reflexive"/>
     
     <sdef n="known"   c="known"/>
+    <sdef n="foc_neg-ge"   c="foc/neg-ge"/>
 
     <sdef n="pl"     c="Plural"/>
     <sdef n="sg"     c="Singular"/>
@@ -239,6 +240,7 @@
     <e><p><l>juohkehaš<s n="prn"/></l><r>juohkkahasj<s n="prn"/></r></p></e>
     <e><p><l>makkár<s n="prn"/></l><r>makkir<s n="prn"/></r></p></e>
     <e><p><l>mihkke<s n="prn"/></l><r>mige<s n="prn"/></r></p></e>
+    <e><p><l>mihkke<s n="prn"/><s n="ind"/><s n="sg"/><s n="acc"/><s n="foc_neg-ge"/></l><r>mige<s n="prn"/><s n="ind"/><s n="pl"/><s n="acc"/></r></p></e>
     <e><p><l>mii<s n="prn"/></l><r>mij<s n="prn"/></r></p></e>
     <e><p><l>mii<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></l><r>mij<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
     <e><p><l>mii<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/><s n="known"/></l><r>mij<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></r></p></e>
