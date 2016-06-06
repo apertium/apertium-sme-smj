@@ -87,10 +87,37 @@
       <cat-item tags="*.cmp.guio"/>
     </def-cat>
   <def-cat n="negverb">
-<!--ij<vblex><iv><neg><indic><pres><p3><sg>-->
-      <cat-item tags="vblex.iv.neg.indic.p1.*"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.*"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.*"/>
+<!--ij<vblex><iv><neg><indic><pres><p3><sg>--> 
+      <cat-item tags="vblex.iv.neg.indic.p1.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.du.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.du.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.du.@+FAUXV"/>
+
+      <cat-item tags="vblex.iv.neg.indic.p1.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.du.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.du.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.du.foc_neg-ge.@+FAUXV"/>
+    </def-cat>
+  <def-cat n="negverbqst">
+      <cat-item tags="vblex.iv.neg.indic.p1.sg.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.sg.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.sg.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.du.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.du.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.du.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.pl.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.pl.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.pl.qst.*"/>
     </def-cat>
   <def-cat n="connegverb">
       <cat-item tags="vblex.*.*.*.conneg.*"/>
@@ -731,6 +758,9 @@
       <attr-item tags="@VOC"/>
       <attr-item tags="@X"/>
     </def-attr>
+    <def-attr n="a_qst">
+       <attr-item tags="qst"/>
+    </def-attr>
 
     <def-attr n="x_func">
       <attr-item tags="←ext→"/>
@@ -1187,6 +1217,65 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: NEGVERB qst CONNEGVERB"> 
+      <pattern>
+        <pattern-item n="negverbqst"/>
+        <pattern-item n="connegverb"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <!-- c="First we copy the temps from mainverb onto negverb" -->
+        <let>
+          <clip pos="1" side="tl" part="a_temps_mood"/>
+          <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
+        </let>
+        <choose>
+          <when>
+            <test>
+              <not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+            </test>
+            <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
+          </when>
+          <when>
+            <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
+            <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
+          </when>
+        </choose>
+            <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>
+
+        <out>
+          <chunk name="verb" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="1" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="1" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+           <b/>
+         <lu>
+            <lit v="gus"/>
+            <lit-tag v="pcle.qst"/>
+          </lu>
+          </chunk>
+          <b pos="1"/>
+          <chunk name="verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="2" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="2" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
   <rule comment="REGLA: NEGVERB liehket"> <!-- Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim -->
     <pattern>
@@ -1430,6 +1519,7 @@
       </pattern>
       <action>
       <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
       <choose>
       <when>
           <test><and>
