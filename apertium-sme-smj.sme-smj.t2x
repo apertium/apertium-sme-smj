@@ -74,6 +74,11 @@
         <cat-item tags="PCLE.@PCLE"/>
     </def-cat>
     
+      <def-cat n="Pcle_delete">
+        <cat-item lemma="datpcle" tags="PCLE"/>
+    </def-cat>
+ 
+    
     <def-cat n="Adp">
         <cat-item tags="pr.*"/>
         <cat-item tags="pr"/>
@@ -249,6 +254,21 @@
     </out>
       </action>
     </rule>
+
+   <rule comment="REGLA: Pcle_delete">
+      <pattern>
+        <pattern-item n="NP"/>
+        <pattern-item n="Pcle_delete"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+                <clip pos="1"  part="whole"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
   </section-rules>
 </interchunk>

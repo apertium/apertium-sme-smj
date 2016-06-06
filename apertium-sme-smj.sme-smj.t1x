@@ -179,6 +179,9 @@
       <cat-item tags="adj.der_aadv.adv.*"/>
       <cat-item tags="adv.*"/>
     </def-cat>
+    <def-cat n="datpcle">
+      <cat-item lemma="dat" tags="pcle.*"/>
+    </def-cat>
     <def-cat n="num-nomacc">
       <cat-item tags="num.sg.nom.*"/>
       <cat-item tags="num.sg.acc.*"/>
@@ -1873,18 +1876,18 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DEFAULT">
+    
+     <rule comment="REGLA: dat pcle">
       <pattern>
-        <pattern-item n="default"/>
+        <pattern-item n="datpcle"/>
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="default" case="caseFirstword">
+          <chunk name="datpcle" case="caseFirstword">
             <tags>
-              <tag><lit-tag v="DEFAULT"/></tag>
-              <tag><var n="func"/></tag>
+              <tag><lit-tag v="PCLE"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -1940,6 +1943,26 @@
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: DEFAULT">
+      <pattern>
+        <pattern-item n="default"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="default" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="DEFAULT"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
