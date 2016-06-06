@@ -1480,8 +1480,9 @@
       <pattern-item n="adv"/>
     </pattern>
     <action>
+           <call-macro n="remove-advtag-1Param"><with-param pos="1"/></call-macro>
+
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-       <call-macro n="remove-advtag-1Param"><with-param pos="1"/></call-macro>
      <out>
         <chunk name="adv" case="caseFirstword">
           <tags>
