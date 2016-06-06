@@ -1352,7 +1352,7 @@
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
       <out>
-        <chunk name="adv">
+        <chunk name="adv" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
