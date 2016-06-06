@@ -168,6 +168,9 @@
     <def-cat n="prn">
       <cat-item tags="prn.*"/>
     </def-cat>
+    <def-cat n="prn-dem">
+      <cat-item tags="prn.dem.*"/>
+    </def-cat>
 
 <!-- from sme-nob starts -->
     <def-cat n="prn-rel">
@@ -998,6 +1001,15 @@
       </choose>
       <choose>
       <when>
+          <test><and>
+          <equal><clip pos="1" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal>
+          <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+          </and></test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+      </when>
+      </choose>
+      <choose>
+      <when>
           <test><not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
           <let><var n="func"/><clip pos="1" side="sl" part="a_func"/></let>
       </when>
@@ -1028,7 +1040,11 @@
           <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/></equal>
         </and></test>
         <let><var n="func"/><lit-tag v="@+FMAINV"/></let>
-      </when></choose>
+      </when>
+            <otherwise>
+       <let><var n="func"/><clip pos="2" side="sl" part="a_func"/></let>
+            </otherwise>
+       </choose>
     </def-macro>
     <def-macro n="general-macro-2Param-headfirst" npar="2" c="Use for all chunks of two pattern-items where the head is first
                                                               param1: first pattern-item; used to set caseFirstword and func variable">
@@ -1406,6 +1422,42 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="REGLA: prn-dem pluss noun">
+      <pattern>
+        <pattern-item n="prn-dem"/>  
+        <pattern-item n="noun"/>  
+      </pattern>
+      <action>
+      <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+      <choose>
+      <when>
+          <test><and>
+          <equal><clip pos="1" side="sl" part="a_prn"/><lit-tag v="prn.dem"/></equal>
+          <equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal>
+          <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+          </and></test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+      </when>
+      </choose>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+             <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+         </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: váste  - 1 position out"> <!-- illative instead of pp with váste -->
       <pattern>
