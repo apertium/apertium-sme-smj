@@ -121,7 +121,7 @@
   
     <!-- Particles -->
 
-    <e><p><l>dat<s n="pcle"/></l><r>dat<s n="pcle"/></r></p></e>
+    <e><p><l>dat<s n="pcle"/></l><r><s n="pcle"/></r></p></e> <!-- no pcle dat in smj, deleted in t1x -->
     <e><p><l>gal<s n="adv"/></l><r>gal<s n="pcle"/></r></p></e>
     <e><p><l>ge<s n="pcle"/></l><r>ga<s n="pcle"/></r></p></e>
     <e><p><l>go<s n="pcle"/></l><r>gus<s n="pcle"/></r></p></e>
@@ -6129,6 +6129,7 @@
      <e><p><l>ávdin<s n="adj"/></l><r>ávtas<s n="adj"/></r></p></e>
      <e><p><l>áŋgir<s n="adj"/></l><r>vissjal<s n="adj"/></r></p></e>
      <e><p><l>áššálaš<s n="adj"/></l><r>ássjálasj<s n="adj"/></r></p></e>
+     <e><p><l>ávnnaslaš<s n="adj"/></l><r>materiælla<s n="adj"/></r></p></e>
      <e><p><l>šaddil<s n="adj"/></l><r>sjaddel<s n="adj"/></r></p></e>
      <e><p><l>šalkkas<s n="adj"/></l><r>sjalkas<s n="adj"/></r></p></e>
      <e><p><l>šallat<s n="adj"/></l><r>sjallat<s n="adj"/></r></p></e>
@@ -8012,7 +8013,7 @@
      <e><p><l>govvidit<s n="vblex"/><s n="tv"/></l><r>gåvvit<s n="vblex"/></r></p></e>
      <e><p><l>govádit<s n="vblex"/><s n="tv"/></l><r>gåvådit<s n="vblex"/></r></p></e>
      <e><p><l>gozašit<s n="vblex"/><s n="iv"/></l><r>gåhtset<s n="vblex"/></r></p></e>
-     <e><p><l>gozihit<s n="vblex"/><s n="tv"/></l><r>gåhtset<s n="vblex"/></r></p></e>
+     <e><p><l>gozihit<s n="vblex"/><s n="tv"/></l><r>gåtsedit<s n="vblex"/></r></p></e>
      <e><p><l>gozádit<s n="vblex"/><s n="tv"/></l><r>gåtsådit<s n="vblex"/></r></p></e>
      <e><p><l>gođahit<s n="vblex"/><s n="tv"/></l><r>gådet<s n="vblex"/></r></p></e>
      <e><p><l>gožžadit<s n="vblex"/><s n="tv"/></l><r>gåttjådit<s n="vblex"/></r></p></e>
@@ -10389,7 +10390,7 @@
      <e><p><l>árvidahttit<s n="vblex"/><s n="tv"/></l><r>árvvedit<s n="vblex"/></r></p></e>
      <e><p><l>árvidit<s n="vblex"/><s n="tv"/></l><r>árvvedit<s n="vblex"/></r></p></e>
      <e><p><l>árvvoštallat<s n="vblex"/><s n="tv"/></l><r>árvustallat<s n="vblex"/></r></p></e>
-     <e><p><l>ásahit<s n="vblex"/><s n="tv"/></l><r>ássat<s n="vblex"/></r></p></e>
+     <e><p><l>ásahit<s n="vblex"/><s n="tv"/></l><r>ásadit<s n="vblex"/></r></p></e>
      <e><p><l>ássalit<s n="vblex"/><s n="iv"/></l><r>ássat<s n="vblex"/></r></p></e>
      <e><p><l>ássat<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p></e>
      <e><p><l>ássut<s n="vblex"/><s n="tv"/></l><r>ássat<s n="vblex"/></r></p></e>
