@@ -1,5 +1,54 @@
 <rules>
 
+  <rule weight="1.0">
+    <match lemma="gos">
+      <select lemma="gånnå"/>
+    </match>
+  </rule>
+  
+  <rule weight="0.5">
+    <match lemma="gos">
+      <select lemma="gåsstå"/>
+    </match>
+  </rule>
+  
+  
+    <rule weight="0.6">
+    <match lemma="gos">
+      <select lemma="gåsstå"/>
+    </match>
+    <or>
+        <match lemma="fárret"/>
+        <match lemma="boahtit"/>
+    </or>
+  </rule>
+  
+    
+    <rule weight="0.6">
+    <match lemma="gos">
+      <select lemma="gåsstå"/>
+    </match>
+       <match />
+    <or>
+        <match lemma="fárret"/>
+        <match lemma="boahtit"/>
+    </or>
+  </rule>
+  
+    
+    <rule weight="0.6">
+    <match lemma="gos">
+      <select lemma="gåsstå"/>
+    </match>
+       <match />
+       <match />
+    <or>
+        <match lemma="fárret"/>
+        <match lemma="boahtit"/>
+    </or>
+  </rule>
+
+
 
   <rule weight="1.0">
     <match lemma="boaris">
