@@ -578,7 +578,7 @@
        <e><p><l>siskkabealde<s n="adv"/></l><r>sissŋelin<s n="adv"/></r></p></e>
        <e><p><l>ártet<s n="adj"/></l><r>imáj<s n="adj"/></r></p></e>
        <e><p><l>imaš<s n="adj"/></l><r>imáj<s n="adj"/></r></p></e>
-       <e><p><l>ovttaoaivilis<s n="adv"/></l><r>avtamielalasj<s n="adj"/></r></p></e>
+       <e><p><l>ovttaoaivilis<s n="adv"/></l><r>avtamielalasj<s n="adj"/><s n="sg"/><s n="nom"/></r></p></e>
        <e><p><l>eahpeformálalaš<s n="adj"/></l><r>iehpeformálalasj<s n="adj"/></r></p></e>
        <e><p><l>olmmošlaš<s n="adj"/></l><r>almasjlasj<s n="adj"/></r></p></e>
        <e><p><l>ovttagielat<s n="adj"/></l><r>avtagielak<s n="adj"/></r></p></e>
@@ -780,6 +780,7 @@
       <e><p><l>maŋos<b/>guvlui<s n="adv"/></l><r>maŋus<s n="adv"/></r></p></e>
      <e><p><l>vulos<s n="adv"/></l><r>vuolus<s n="adv"/></r></p></e>
      <e><p><l>ihttin<s n="adv"/></l><r>idet<s n="adv"/></r></p></e>
+     <e><p><l>ihtin<s n="adv"/></l><r>idet<s n="adv"/></r></p></e>
      <e><p><l>vuot<s n="adv"/></l><r>vat<s n="adv"/></r></p></e>
      <e><p><l>iđđedis<s n="adv"/></l><r>idet<s n="n"/><s n="sg"/><s n="ela"/></r></p></e>
      <e><p><l>goasii<s n="adv"/></l><r>vargga<s n="adv"/></r></p></e>
@@ -53158,8 +53159,8 @@
      <e><p><l>Ánddeš-Bier<b/>jávri<s n="np"/></l><r>Ánddeš-Bier<b/>jávri<s n="np"/></r></p></e>
      <e><p><l>Ánin<b/>Dánin<s n="np"/></l><r>Ánin<b/>Dánin<s n="np"/></r></p></e>
      <e><p><l>Ánot-Biret<b/>suolu<s n="np"/></l><r>Ánot-Biret<b/>suolu<s n="np"/></r></p></e>
-     <e><p><l>Árktalaš<b/>Ráđđi<s n="np"/></l><r>Arktalaš<b/>Ráđe<s n="np"/></r></p></e>
-     <e><p><l>Árktalaš<b/>ráđđi<s n="np"/></l><r>Arktalaš<b/>ráđe<s n="np"/></r></p></e>
+     <e><p><l>Árktalaš<b/>Ráđđi<s n="np"/></l><r>Arktalasj<b/>Ráde<s n="np"/></r></p></e>
+     <e><p><l>Árktalaš<b/>ráđđi<s n="np"/></l><r>Arktalasj<b/>ráde<s n="np"/></r></p></e>
      <e><p><l>Áro<b/>Čáhcebákti<s n="np"/></l><r>Áro<b/>Čáhcebákti<s n="np"/></r></p></e>
      <e><p><l>Árran<b/>julevsáme<b/>guovdásj<s n="np"/></l><r>Árran<b/>julevsáme<b/>guovdásj<s n="np"/></r></p></e>
      <e><p><l>Ásllat-Pier<b/>várri<s n="np"/></l><r>Ásllat-Pier<b/>várri<s n="np"/></r></p></e>
