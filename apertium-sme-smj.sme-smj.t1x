@@ -118,6 +118,15 @@
       <cat-item tags="vblex.iv.neg.indic.p1.pl.qst.*"/>
       <cat-item tags="vblex.iv.neg.indic.p2.pl.qst.*"/>
       <cat-item tags="vblex.iv.neg.indic.p3.pl.qst.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.sg.foc_bat.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.sg.foc_bat.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.sg.foc_bat.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.du.foc_bat.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.du.foc_bat.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.du.foc_bat.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.pl.foc_bat.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.pl.foc_bat.*"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.pl.foc_bat.*"/>
     </def-cat>
   <def-cat n="connegverb">
       <cat-item tags="vblex.*.*.*.conneg.*"/>
@@ -131,8 +140,13 @@
       <cat-item lemma="buorre" tags="adj.*.@→N"/>
     </def-cat>
     <def-cat n="mainverb">
-      <cat-item tags="vblex.*.@+FMAINV"/>
+      <cat-item tags="vblex.*.sg.@+FMAINV"/>
+      <cat-item tags="vblex.*.du.@+FMAINV"/>
+      <cat-item tags="vblex.*.pl.@+FMAINV"/>
       <cat-item tags="vblex.*.@-FMAINV"/>
+    </def-cat>
+    <def-cat n="mainverbqst">
+      <cat-item tags="vblex.*.qst.@+FMAINV"/>
     </def-cat>
     <def-cat n="noun"> 
       <cat-item tags="*.n.*.sg.*"/>
@@ -760,6 +774,7 @@
     </def-attr>
     <def-attr n="a_qst">
        <attr-item tags="qst"/>
+       <attr-item tags="foc_bat"/>
     </def-attr>
 
     <def-attr n="x_func">
@@ -1800,6 +1815,33 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: mainverbqst">
+      <pattern>
+        <pattern-item n="mainverbqst"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
+        <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
+            <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>
+        <out>
+          <chunk name="mainverb" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+           <b/>
+         <lu>
+            <lit v="gus"/>
+            <lit-tag v="pcle.qst"/>
+          </lu>
           </chunk>
         </out>
       </action>
