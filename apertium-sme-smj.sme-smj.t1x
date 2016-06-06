@@ -310,12 +310,6 @@
   </section-def-cats>
 
   <section-def-attrs>
-    <def-attr n="a_mode">
-      <attr-item tags="indic"/>
-      <attr-item tags="pot"/>
-      <attr-item tags="cond"/>
-      <attr-item tags="imprt"/>
-    </def-attr>
     <def-attr n="a_foc">
       <attr-item tags="foc_ba"/>
       <attr-item tags="foc_bahal"/>
@@ -368,6 +362,7 @@
       <attr-item tags="pr"/>
       <attr-item tags="ij"/>
       <attr-item tags="num"/>
+      <attr-item tags="pcle"/>
     </def-attr>
     <def-attr n="a_mood">
       <attr-item tags="indic"/>
