@@ -1538,6 +1538,7 @@
       </pattern>
       <action>
       <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
       <choose>
       <when>
