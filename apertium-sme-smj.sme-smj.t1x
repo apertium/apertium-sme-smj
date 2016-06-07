@@ -831,6 +831,9 @@
     <list-item v="veallahit"/>
     <list-item v="eallit"/>
   </def-list>
+  <def-list n="foclemmas">
+    <list-item v="okta"/>
+  </def-list>
 
 
   </section-def-lists>
@@ -1064,7 +1067,10 @@
       </choose>
       <choose>
       <when>
-          <test><not><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="prn"/></equal></not></test>
+         <test><and>
+         <not><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="prn"/></equal></not>
+         <not><in><clip pos="1" side="tl" part="lem"/><list n="foclemmas"/></in></not>
+         </and></test>
            <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
       </when>
       </choose>
