@@ -82,7 +82,7 @@
       <cat-item tags="vblex.*.inf.*"/>
       <cat-item tags="vblex.inf.*"/>
     </def-cat>
-   <def-cat n="nouncmp">
+   <def-cat n="n-cmp">
       <cat-item tags="*.cmp"/>
       <cat-item tags="*.cmp.guio"/>
     </def-cat>
@@ -161,10 +161,11 @@
       <cat-item tags="n.*.*.sg.*"/>
       <cat-item tags="n.*.*.pl.*"/>
       <cat-item tags="n.*.*.ess.*"/>
-      <cat-item tags="n.abbr.*"/>
       <cat-item tags="n.sg.*"/>
+      <cat-item tags="n.abbr.*"/>
       <cat-item tags="n.pl.*"/>
       <cat-item tags="n.ess.*"/>
+      <cat-item tags="np.*"/>
       <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
     </def-cat>
     <def-cat n="adj">
@@ -1574,7 +1575,7 @@
       </pattern>
       <action>
            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>
-         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
            <let><var n="func"/><clip pos="2" side="sl" part="a_func"/></let>
        <out>
           <chunk name="noun" case="caseFirstword">
@@ -1592,13 +1593,13 @@
 
     <rule comment="REGLA: váste  - 1 position out"> <!-- illative instead of pp with váste -->
       <pattern>
-        <pattern-item n="nouncmp"/>
+        <pattern-item n="n-cmp"/>
         <pattern-item n="gen"/>
         <pattern-item n="váste"/>
       </pattern>
       <action>
            <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ill"/></let>
-         <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
            <let><var n="func"/><clip pos="3" side="sl" part="a_func"/></let>
        <out>
           <chunk name="noun" case="caseFirstword">
@@ -1686,7 +1687,7 @@
 
     <rule comment="REGLA: nouncmp adj">
       <pattern>
-        <pattern-item n="nouncmp"/>
+        <pattern-item n="n-cmp"/>
         <pattern-item n="adj"/> <!-- usually derivated from noun -->
       </pattern>
       <action>
@@ -1712,7 +1713,7 @@
     </rule>
     <rule comment="REGLA: nnomcmp">
       <pattern>
-        <pattern-item n="nouncmp"/>
+        <pattern-item n="n-cmp"/>
         <pattern-item n="noun"/>
       </pattern>
       <action>
@@ -1738,8 +1739,8 @@
     </rule>
     <rule comment="REGLA: nnomcmp 3 in">
       <pattern>
-        <pattern-item n="nouncmp"/>
-        <pattern-item n="nouncmp"/>
+        <pattern-item n="n-cmp"/>
+        <pattern-item n="n-cmp"/>
         <pattern-item n="noun"/>
       </pattern>
       <action>
@@ -1768,9 +1769,9 @@
     </rule>
     <rule comment="REGLA: nnomcmp 4"> <!-- bieggamillofápmorusttet --> 
       <pattern>
-        <pattern-item n="nouncmp"/>
-        <pattern-item n="nouncmp"/>
-        <pattern-item n="nouncmp"/>
+        <pattern-item n="n-cmp"/>
+        <pattern-item n="n-cmp"/>
+        <pattern-item n="n-cmp"/>
         <pattern-item n="noun"/>
       </pattern>
       <action>
