@@ -10,6 +10,7 @@
 /apertium-sme-smj.sme-smj.dix -text
 /apertium-sme-smj.sme-smj.lex -text
 /apertium-sme-smj.sme-smj.lrx -text
+/apertium-sme-smj.sme-smj.metalrx -text
 /apertium-sme-smj.sme-smj.t1x -text
 /apertium-sme-smj.sme-smj.t2x -text
 /apertium-sme-smj.sme-smj.t3x -text
@@ -109,6 +110,7 @@ freqsorted_dix/n_sme2smj_dix.xml -text
 freqsorted_dix/np_sme2smj_dix.xml -text
 freqsorted_dix/v_sme2smj_dix.xml -text
 /hash.sh -text
+/metalrx-to-lrx.xslt -text
 /modes.xml -text
 o_smj_sh/i_sme_sh/2016-04-28_skuvla/sme/facta/skuvla.info/minaigi1.html.txt -text
 o_smj_sh/i_sme_sh/2016-04-28_skuvla/sme/facta/skuvla.info/minaigi10.html.txt -text
