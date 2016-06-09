@@ -121,8 +121,9 @@ HandledDerivations =
 %<der%_nomact%>     ! 165550
 %<der%_nomag%>      ! 103985
 %<der%_caus%>
+%<der%_car%>
 %<der%_h%>          ! 60906
-%<der%_goahti%>
+%<der%_inchl%>
 %<der%_lasj%>       ! 50394
 %<der%_sasj%>       ! 
 %<der%_dimin%>      ! 49664
@@ -132,16 +133,14 @@ HandledDerivations =
 %<der%_passl%>      ! 23625
 %<der%_st%>         ! 17455
 %<der%_aadv%>        ! 11718
-!%<der%_heapmi%>    ! 11292
 %<der%_alla%>       ! 10369
-%<der%_car%>
 %<der%_l%>         ! 5793
 !%<der%_t%>         ! 3542
 !%<der%_muš%>       ! 3199
 %<der%_halla%>      ! 2917
 !%<der%_huvva%>     ! 2009
 !%<der%_meahttun%>  ! 1355
-!%<der%_lágan%>     ! 1208
+%<der%_lágan%>     ! 1208
 ;
 
 ;				! end of Sets
