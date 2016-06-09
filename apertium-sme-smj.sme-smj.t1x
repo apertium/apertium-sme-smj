@@ -335,6 +335,7 @@
       <attr-item tags="foc_uv"/>
       <attr-item tags="foc_son"/>
       <attr-item tags="foc_sun"/>
+      <attr-item tags="foc_neg-k"/>
     </def-attr>
     <def-attr n="a_exthab">
       <attr-item tags="←ext→"/>
