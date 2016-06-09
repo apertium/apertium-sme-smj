@@ -151,7 +151,7 @@ $(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
 ## Lexical selection rules
 ###############################################################################
 
-testing-$(BASENAME).$(PREFIX1).lrx: metalrx-to-lrx.xslt $(BASENAME).$(PREFIX1).metalrx
+%.lrx: metalrx-to-lrx.xslt %.metalrx
 	xsltproc $^ > $@
 
 $(PREFIX1).autolex.bin: $(BASENAME).$(PREFIX1).lrx

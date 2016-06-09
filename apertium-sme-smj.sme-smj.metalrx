@@ -1,6 +1,13 @@
 <metalrx>
 
   <def-seqs>
+    <def-seq n="non-verb">
+      <or>
+        <match tags="n.*"/>
+        <match tags="adv.*"/>
+        <match tags="adj.*"/>
+      </or>
+    </def-seq>
     <def-seq n="ela-verbs">
       <or>
         <match lemma="fárret"/>

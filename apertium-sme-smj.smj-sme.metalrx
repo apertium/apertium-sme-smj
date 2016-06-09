@@ -1,3 +1,14 @@
+<metalrx>
+
+  <def-seqs>
+    <def-seq n="foo-verbs">
+      <or>
+        <match lemma="foo"/>
+        <match lemma="bar"/>
+      </or>
+    </def-seq>
+  </def-seqs>
+
 <rules>
   <rule>
     <match lemma="boahtet" tags="vblex.*"><select lemma="boahtit" tags="vblex.*"/></match>
@@ -19,3 +30,4 @@ Resources:
     http://wiki.apertium.org/wiki/Learning_rules_from_parallel_and_non-parallel_corpora
 -->
 
+</metalrx>
