@@ -1041,6 +1041,7 @@
 
     <def-macro n="general-macro-1Param" npar="1" c="Use for all chunks of one pattern-item">
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
+      <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
         <choose>
       <when>
           <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
@@ -1335,6 +1336,8 @@
       </when></choose>
     </action>
   </rule>
+
+
 
 
   <rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
@@ -1886,18 +1889,6 @@
         <pattern-item n="datpcle"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="datpcle" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="PCLE"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
       </action>
     </rule>
 
