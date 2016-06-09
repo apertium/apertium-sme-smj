@@ -1,9 +1,9 @@
     518 *skuvlahistorjá
     270 *norsk
-    269 *På
+    266 *På
     187 *og
     184 *læ
-    178 *han
+    177 *han
     164 *skuvlahistorjjá
      87 *dárogiel
      86 *for
@@ -27,9 +27,9 @@
      49 *sámeskuvlla
      47 *gå
      47 *English
-     47 *duiskalaččat
      47 *1800-logu
      46 *skuvlahistorjjás
+     46 *duiskalaččat
      45 *oahppogirjjiid
      43 *nuoraidskuvla
      41 *dáruiduhttinpolitihka
@@ -48,9 +48,9 @@
      37 *Artihkalráidu
      37 *álbmotskuvlla
      36 *læk
+     35 *oahpaheaddjiskuvllas
      35 *doaimmahusjoavkku
      34 *sámeskuvllas
-     34 *oahpaheaddjiskuvllas
      34 *doaimmahusjoavkkus
      33 *skuvladirektevrra
      33 *skuvlaáiggi
@@ -92,15 +92,15 @@
      24 *om
      24 *obanassiige
      24 *norgalaš
-     24 *hal
      24 *boazodoalloskuvla
-     24 *álgooahpu
      24 *5-girjjis
      23 *skuvlavisti
      23 *ovdaolmmoš
      23 *iešdovddu
      23 *hirbmadit
+     23 *hal
      23 *bat
+     23 *álgooahpu
      22 *veadjemeahttun
      22 *sosiálalaš
      22 *skuvlaáiggis
@@ -115,25 +115,23 @@
      21 *loahpageahčen
      21 *gaskkohagaid
      21 *dássážii
-     21 *dálueamit
      21 *ábuhan
-     20 *skuvlavásáhusat
      20 *sikke
      20 *samiske
      20 *šad'*dá
-     20 *ođđadárogiela
      20 *oaž'*žot
+     20 *moanat
      20 *gis
      20 *Finmarksbiblioteket)
+     20 *dálueamit
      19 *æmbu
+     19 *skuvlavásáhusat
      19 *skuvlastivrras
-     19 *skuvlahistorjá?
      19 *sámegieloahpaheaddjin
+     19 *ođđadárogiela
      19 *oahpaheaddjiskuvla
-     19 *moanat
      19 *láttegiela
      19 *gait
-     19 *fidnooahpus
      19 *er
      19 *ealáhahkii
      19 *čállinvuogi
@@ -141,17 +139,15 @@
      18 *ærá
      18 *skuvlastivrii
      18 *skuvlamánát
+     18 *skuvlahistorjá?
      18 *ruovttufidnoskuvla
      18 *oap'*pat
      18 *oahpahusdepartemeanta
      18 *njulgestaga
      18 *Larine
      18 *já
-     18 *gaskaneamet
-     18 *fidnooahppun
-     18 *Diehtemeahttunvuohta
+     18 *fidnooahpus
      18 *Dálueamit
-     18 *Boazodoallooahpu
      17 *Skuvlastivra
      17 *skuvlahistorjjá?
      17 *skuvlaeiseválddit
@@ -162,6 +158,10 @@
      17 *mekánalaš
      17 *lii
      17 *guhkkelii
+     17 *gaskaneamet
+     17 *fidnooahppun
+     17 *Diehtemeahttunvuohta
+     17 *Boazodoallooahpu
      17 *at
      17 *6-girjjis
      17 *1900-logu
@@ -169,9 +169,7 @@
      16 *váldosiidu
      16 *skuvlaváz'*zit
      16 *skuvlavázzin
-     16 *Skuvlajagi
      16 *sisafárrejeaddjit
-     16 *Lullioahpaheddjiid
      16 *Lempi
      16 *leak
      16 *gurut
@@ -184,10 +182,11 @@
      15 *váidalit
      15 *stáhtainternáhtta
      15 *SSH-2)
-     15 *skuvlalanjas
      15 *skuvlajagis
+     15 *Skuvlajagi
      15 *skuv'*la
      15 *Lullisámi
+     15 *Lullioahpaheddjiid
      15 *hoallat
      15 *hávális
      15 *gárttai
@@ -201,9 +200,11 @@
      15 *ber'*re
      15 *bearehaga
      15 *ad'*dit
+     15 *1980-logus
      15 *1970-logu
      14 *suorgejuhkkojuvvon
      14 *skuvlaviesu
+     14 *skuvlalanjas
      14 *skuvlabeaivvi
      14 *sát'*tet
      14 *Sámelávdegotti
@@ -225,7 +226,6 @@
      14 *boazodoallosuorggi
      14 *álbmotskuvla
      14 *9-jagi
-     14 *1980-logus
      14 *1960-logu
      13 *åp'*pet
      13 *virgelohpi
@@ -289,7 +289,6 @@
      12 *Haksui
      12 *govvačoakkáldat)
      12 *eatnašat
-     12 *earáláhkái
      12 *eanu
      12 *dittii
      12 *daina
@@ -333,6 +332,7 @@
      11 *giellaváttisvuođat
      11 *geavai
      11 *geafes
+     11 *earáláhkái
      11 *deaivan
      11 *daguhii
      11 *daggár
@@ -350,7 +350,6 @@
      10 *váldogiellan
      10 *unohas
      10 *sæmma
-     10 *SSH-1)
      10 *skuvlavázzimis
      10 *skuvlamánáid
      10 *skuvlalága
@@ -362,7 +361,6 @@
      10 *sámegielmáhtu
      10 *ruovttufidnoskuvlla
      10 *penšunistan
-     10 *ollašuvvan
      10 *oarjjabealde
      10 *oahpahusdepartementii
      10 *oahpaheddjiidsearvvi
@@ -403,6 +401,7 @@
       9 *stáhtainternáhta
       9 *SSH5)
       9 *SSH1)
+      9 *SSH-1)
       9 *skuvlaviessu
       9 *Skuvlaváz'*zit
       9 *Skuvlavázzin
@@ -414,7 +413,6 @@
       9 *skuvlabiirres
       9 *sisafárren
       9 *searválaga
-      9 *sámegieloahpaheddjiid
       9 *sámegielmáhttu
       9 *Sámefoanddas
       9 *Sámefoanda
@@ -422,11 +420,13 @@
       9 *ovdaskuvlaoahpaheaddjioahpu
       9 *ortodoksa
       9 *originála
+      9 *ollašuvvan
       9 *ođđadárogillii
       9 *oahppogirjjiin
       9 *oahppogirjji
       9 *oahpaheaddjiohppui
       9 *oahpaheaddjibarggu
+      9 *nuortalašgiela
       9 *mihtilmas
       9 *miel'de
       9 *Medalen
@@ -435,7 +435,6 @@
       9 *mánáidskuvla
       9 *máhcce
       9 *máhcai
-      9 *lovttas
       9 *leastadialaš
       9 *krise
       9 *kommune
@@ -510,6 +509,7 @@
       8 *servodatfágas
       8 *searvegotti
       8 *seahkalagaid
+      8 *sámegieloahpaheddjiid
       8 *sámegielhállit
       8 *Sámefondii
       8 *Sámefoandda
@@ -527,7 +527,6 @@
       8 *oahppogirji
       8 *oahpaheaddjiallaskuvllas
       8 *nuorttabealde
-      8 *nuortalašgiela
       8 *njozet
       8 *Muht
       8 *miellaguottuid
@@ -535,6 +534,7 @@
       8 *máhccen
       8 *læba
       8 *luteránalaš
+      8 *lovttas
       8 *lestadiánalaš
       8 *Lasseartihkkalat
       8 *lapponicum
@@ -733,10 +733,10 @@
       7 *Bæivi
       7 *buiga
       7 *boazosámi
-      7 *boazodoallofága
       7 *boaittobeale
       7 *Bismagoddedirekšuvdna
       7 *biirečoahkkin
+      7 *biigá
       7 *beal
       7 *bargagohten
       7 *ávkálaš
@@ -925,11 +925,9 @@
       6 *buok
       6 *botket
       6 *boazodoallosámit
-      6 *boazodoallobearrašis
       6 *blei
       6 *bistit
       6 *bistá
-      6 *biigá
       6 *bargosadji
       6 *bargoneavvuid
       6 *bárehuoččat
@@ -946,7 +944,6 @@
       6 *ad'*dá
       6 *ábut
       6 *50-logus
-      6 *1930-logus
       6 *1880-logu
       5 *åccat
       5 *æmbo
@@ -1095,8 +1092,8 @@
       5 *liiká
       5 *liigedieđuid
       5 *liigebargu
-      5 *Leigland
       5 *leastadialaččat
+      5 *leap
       5 *láttegiella
       5 *lášmmohallanlatnja
       5 *lášmmohallan
@@ -1113,6 +1110,7 @@
       5 *johttisápmelaččaid
       5 *jegolaš
       5 *Jeg
+      5 *jeđđet
       5 *interneahttaveršuvnnas
       5 *im
       5 *Hr
@@ -1232,6 +1230,8 @@
       5 *bohccobierggu
       5 *boazodoalloskuvlii
       5 *boazodoallohálddahusas
+      5 *boazodoallofága
+      5 *boazodoallobearrašis
       5 *boatta
       5 *boatkanii
       5 *boaittobealde
@@ -1278,6 +1278,7 @@
       5 *30-logus
       5 *1-girjjis
       5 *1960-jagiin
+      5 *1930-logus
       5 *1900-logus
       5 *1600-logu
       5 *1500-logu
@@ -1367,7 +1368,6 @@
       4 *skuvlapolitihkka
       4 *skuvlaoahpu
       4 *skuvlamuitalus
-      4 *Skuvlamánát
       4 *skuvlamánáide
       4 *skuvlaluohkás
       4 *skuvlaleaira
@@ -1387,6 +1387,7 @@
       4 *skuvlabráhkaid
       4 *skuvlabiiriid
       4 *skovlot
+      4 *skovlájagi
       4 *skovlajagi
       4 *SJSBS)
       4 *sivahallan
@@ -1475,7 +1476,6 @@
       4 *okte
       4 *oktasaškultuvrii»
       4 *ohcamušat
-      4 *ođđajagis
       4 *ođđaáiggi
       4 *obanassii
       4 *oap'*po-*áv'*dnas
@@ -1558,6 +1558,7 @@
       4 *lihkastagat
       4 *lihccut
       4 *leirii
+      4 *Leigland
       4 *leavvan
       4 *leavssut
       4 *leavssuideaset
@@ -1588,7 +1589,6 @@
       4 *jienastuslohkui
       4 *ješ
       4 *jegi
-      4 *jeđđet
       4 *jahkebeale
       4 *interneahttaveršuvnna
       4 *internáhttaskuvlla
@@ -1674,7 +1674,6 @@
       4 *folkemuseum)
       4 *Flere
       4 *fiskes
-      4 *finnmárkulaččat
       4 *finnmárkolaččat
       4 *fidnoskuvllas
       4 *fidnooahppu
@@ -1769,7 +1768,6 @@
       4 *boazodoallooahpahusa
       4 *boazodoallonuorat
       4 *boazodoallofágain
-      4 *boazodilis
       4 *boaresáigásaš
       4 *boahtám
       4 *bivttasskábe
@@ -1883,7 +1881,6 @@
       3 *vássánáiggi
       3 *várreáirrasin
       3 *várddus
-      3 *várálaš
       3 *válgafágan
       3 *vál'*dujuvvun
       3 *váldoulbmil
@@ -1974,6 +1971,7 @@
       3 *skuvlamuittuid
       3 *skuvlameaštára
       3 *skuvlamátki
+      3 *Skuvlamánát
       3 *skuvlamánáiguin
       3 *Skuvlaleairraid
       3 *skuvlaleairra
@@ -2016,7 +2014,6 @@
       3 *skovlogii
       3 *Skovlema
       3 *skovlájagiid
-      3 *skovlájagi
       3 *skole»
       3 *Skole
       3 *skohterat
@@ -2087,6 +2084,7 @@
       3 *sálbmagirjjis
       3 *sak
       3 *ságadoalli
+      3 *saddat
       3 *šaddagoahtán
       3 *sabmelaš
       3 *ruvvanaga
@@ -2196,6 +2194,7 @@
       3 *ofelašbarggus
       3 *ođđasithuksenáiggis
       3 *ođđamállet
+      3 *ođđajagis
       3 *Obalohkái
       3 *oasálastit
       3 *oasálastán
@@ -2246,6 +2245,7 @@
       3 *oahpahallisaji
       3 *oaffaruššat
       3 *nuvttásajit
+      3 *Nuvt
       3 *nuppelágan
       3 *Nuorttanasttes
       3 *Nuorttanaste-avijsas
@@ -2363,7 +2363,6 @@
       3 *lihkohis
       3 *lihccojuvvui
       3 *lektor
-      3 *leap
       3 *leaŋggaid
       3 *leairrat
       3 *lávlunbottuide
@@ -2547,7 +2546,6 @@
       3 *giellaoahpahusas
       3 *giellaoahpahus
       3 *Giellamolsun
-      3 *giellamáhtu
       3 *giellamáhtolašvuođa
       3 *giellageavaheapmái
       3 *giellagáddi
@@ -2663,6 +2661,7 @@
       3 *eahpádusas
       3 *eahkes
       3 *dusse
+      3 *duššadit
       3 *duppalgiela
       3 *duottarstohpu
       3 *duottarstobus
@@ -2782,7 +2781,6 @@
       3 *Čiestti
       3 *čierastii
       3 *ceaggát
-      3 *ceaggái
       3 *čavgejedje
       3 *čállinvuogis
       3 *čállingiella
@@ -2806,6 +2804,7 @@
       3 *Bratland
       3 *Boekraad
       3 *boazosápmelašmánát
+      3 *boazoealáhusas
       3 *boazoeaiggádiin
       3 *Boazodoallosuorggi
       3 *Boazodoalloskuvllas
@@ -2813,6 +2812,7 @@
       3 *boazodoallooahpahussii
       3 *Boazodoallooahpahus
       3 *boazodoallobirrasis
+      3 *boazodilis
       3 *boasttuipmárdusat
       3 *boaresvánhemat
       3 *Blix
@@ -3103,6 +3103,7 @@
       2 *vásideimmek
       2 *vártnuheamit
       2 *várdádanbáikin
+      2 *várálaš
       2 *vánhemiida
       2 *vanhemak
       2 *vál'*ljet
@@ -3509,6 +3510,7 @@
       2 *siidaguoimmit
       2 *siidagili
       2 *siidabirrasis
+      2 *sihtap
       2 *sihkkarvuođapolitihkka
       2 *sierralágán
       2 *sieráhiin
@@ -3661,7 +3663,6 @@
       2 *šaddogárddis
       2 *saddijuvvut
       2 *saddem
-      2 *saddat
       2 *šaddašii
       2 *šaddaši
       2 *šaddadanskuvla
@@ -3699,6 +3700,7 @@
       2 *ruovttubáikkiide
       2 *ruovttubáikkiidasaset
       2 *ruovttubáikki
+      2 *ruovttooahpahus
       2 *Ruovttoluotta
       2 *ruovtot
       2 *Ruovtot
@@ -3845,6 +3847,7 @@
       2 *proavásin
       2 *proavásgoddái
       2 *Proavás
+      2 *proavas
       2 *priváhtaviesuin
       2 *priváhtaskuvllaid
       2 *prinisihpalaš
@@ -4136,7 +4139,6 @@
       2 *nuvttásajiide
       2 *Nuvttásajiid
       2 *nuvttásaji
-      2 *Nuvt
       2 *nuppes
       2 *nuppelot
       2 *Nuppeláhkái
@@ -4300,6 +4302,7 @@
       2 *mižženiidda
       2 *Mižženiidda
       2 *Miššunearat
+      2 *miššonvirgegoddái
       2 *miššonmátkkiid
       2 *misjonsskole
       2 *minstar-*sár'*gon
@@ -4414,7 +4417,6 @@
       2 *mánáidskuvllain
       2 *mánáidskuvlamánáid
       2 *mánáidruktui
-      2 *mánáidpsykiátralaš
       2 *mánáidmánát
       2 *mánáidisgu
       2 *manaidi
@@ -5122,6 +5124,7 @@
       2 *giellamoivi
       2 *giellamielbargit
       2 *giellamielbargin
+      2 *giellamáhtu
       2 *giellalávgun
       2 *giellakurssat
       2 *giellaguovllu
@@ -5307,6 +5310,7 @@
       2 *folkedrakt
       2 *Folk
       2 *Fjordfolket
+      2 *finnmárkulaččat
       2 *Finnmarksbiblioteket)
       2 *Finnmarksbiblioteket
       2 *finnmárkoskuvllaid
@@ -5430,6 +5434,7 @@
       2 *eallinagistis
       2 *eallinagis
       2 *ealas
+      2 *ealáhusbargguin
       2 *eahpenjuolgadit
       2 *eahpelunddolaš
       2 *eahpeduođalaš
@@ -5440,6 +5445,7 @@
       2 *eahpádusa
       2 *eahketkurssaid
       2 *eahkesborramuša
+      2 *ea
       2 *dåv'#<pcle>
       2 *daaroen
       2 *dåk'*kejit
@@ -5453,7 +5459,6 @@
       2 *Dušše
       2 *duššat
       2 *duššálaš
-      2 *duššadit
       2 *Duran
       2 *duppaltekstejuvvon
       2 *duppalteavsttain
@@ -5738,6 +5743,7 @@
       2 *čevllohallen
       2 *čevllohallagoahtán»
       2 *ceagganii
+      2 *ceaggái
       2 *ceaggá
       2 *čázevuollái
       2 *čázetnjunit
@@ -5819,6 +5825,7 @@
       2 *buhttet
       2 *buhtisin
       2 *buhtis
+      2 *buhtadit
       2 *buhcciidsiiddas
       2 *buerebe
       2 *buđetviehkan
@@ -5863,7 +5870,6 @@
       2 *boazosámemánát
       2 *boazo-mer'*ken
       2 *boazoguotton-*distrivtaid
-      2 *boazoealáhusas
       2 *boazoeaiggádat
       2 *boazodoalloterminologiija
       2 *boazodoallosuorgái
@@ -5986,7 +5992,6 @@
       2 *bátnedoaktára
       2 *Bastøy
       2 *basadanlihtti
-      2 *bás
       2 *bas
       2 *bárttit
       2 *bárttiid
@@ -7528,7 +7533,6 @@
       1 *Tvang
       1 *tuvrraskuvla
       1 *tuvrras
-      1 *tuvrraid
       1 *tuvra
       1 *Tusenhjem-bráhkka
       1 *turistastašuvdna
@@ -7834,7 +7838,6 @@
       1 *suŋgár2
       1 *Sundsbø
       1 *sundi
-      1 *sundedállui
       1 *sunddiin
       1 *sulledassan
       1 *šukulada
@@ -8221,7 +8224,6 @@
       1 *soalddátjoavkkut
       1 *soalddáhiin
       1 *soalddáhiiguin
-      1 *soaimmahalle
       1 *soaiggus
       1 *soaibmat
       1 *soaibmanguottut
@@ -8238,7 +8240,6 @@
       1 *soahtešiljus
       1 *Soahtesálaš
       1 *soahtemuitun
-      1 *Soahtejagiid
       1 *soahtejagi
       1 *soahtehistorjjálaš
       1 *soahtehistorjjá
@@ -9667,6 +9668,7 @@
       1 *sámegiellaåhpadusáv
       1 *sámegiellariidu
       1 *sámegiellaoahpuin
+      1 *sámegiellaoahpahusa
       1 *sámegiellaluohkás
       1 *sámegiellaluohkáid
       1 *sámegiellabargu
@@ -9857,8 +9859,6 @@
       1 *ságastallandiimmut
       1 *ságastallagohte
       1 *Sagastaladedin
-      1 *ságaiduvvat
-      1 *ságahuvaimet
       1 *sagahanmuitalusaid
       1 *saga
       1 *SÁFFO–
@@ -9957,6 +9957,7 @@
       1 *ruovttuoahpus
       1 *ruovttuoahpu
       1 *ruovttuoahppoluohkás)
+      1 *ruovttuoahpahus
       1 *ruovttumátkkiin
       1 *ruovttuluotta
       1 *ruovttuindustriija
@@ -10020,7 +10021,7 @@
       1 *Ruovttubálgá
       1 *ruovttubáikái
       1 *ruovttoskuvllas
-      1 *ruovttooahpahus
+      1 *ruovttooahpahusa
       1 *ruovttoluottarahčalassan
       1 *ruovttoguovllustis
       1 *ruovttogiella
@@ -10548,7 +10549,7 @@
       1 *rávesolbmuidoahpahagas
       1 *rávesolbmuidkurssat
       1 *rávesolbmuidkursa
-      1 *Rávdul-Iellin
+      1 *Rávdul-Viessun
       1 *ravdnut
       1 *Rávdnji
       1 *ravdnji
@@ -10771,7 +10772,6 @@
       1 *ráđđe
       1 *rad
       1 *rábmostan
-      1 *rábmojuvvui
       1 *rábmo
       1 *rábme
       1 *Rabihin
@@ -10841,7 +10841,6 @@
       1 *proavasat
       1 *Proavása
       1 *proavás-
-      1 *proavas
       1 *Proavas
       1 *priváhtaviesus
       1 *priváhtaorrun
@@ -10991,6 +10990,7 @@
       1 *patos
       1 *Pastor
       1 *passiivvalaš
+      1 *passiivvalas
       1 *passiivagielat
       1 *passiivagielagiidda
       1 *passiivagielagat
@@ -11221,6 +11221,7 @@
       1 *ortodoksat
       1 *ortnetvuohta
       1 *ortnetdássi
+      1 *orrup
       1 *orrunvistti
       1 *orrunvissui
       1 *orrunviesus
@@ -11511,6 +11512,7 @@
       1 *Ohcamušastis
       1 *Ohcamušaide
       1 *Ohcamuša
+      1 *ohčaleame
       1 *ohcagohte
       1 *og/ja
       1 *Og
@@ -11931,6 +11933,7 @@
       1 *oahpahusráđđin
       1 *oahpahusráđđái
       1 *Oahpahusráđđai
+      1 *oahpahusprošeavttaid
       1 *oahpahusprinsihpat
       1 *oahpahuspolitihkalaš
       1 *oahpahuspolitihka
@@ -12970,7 +12973,6 @@
       1 *Miššunáiggis
       1 *miššovdnaorganisašuvnna
       1 *miššonvirgi
-      1 *miššonvirgegoddái
       1 *miššonservviid
       1 *Miššonsearvvi
       1 *miššonsearvi
@@ -13513,6 +13515,7 @@
       1 *Mánáidskovllás
       1 *mánáidsálii
       1 *mánáidruoktu
+      1 *mánáidpsykiátralaš
       1 *mánáidprográmma
       1 *Mánáidoahpu
       1 *mánáidmáná
@@ -14240,7 +14243,6 @@
       1 *láttegielas
       1 *láttašii
       1 *latnji
-      1 *latnjaskuohpuin
       1 *latnjaskihpárat
       1 *latnjadárbbut
       1 *látnii;
@@ -14410,7 +14412,6 @@
       1 *láhttema
       1 *láhttejuvvo
       1 *lahttejin
-      1 *láhttejedje
       1 *láhttebassi
       1 *lahttebassi
       1 *láhttastalle
@@ -14695,6 +14696,7 @@
       1 *Kongelig
       1 *Konge
       1 *konflikt?
+      1 *konfirmeremis
       1 *konfirmerejuvvui
       1 *konfirmerejuvvojedje
       1 *konfirmašuvdnaskuvllas
@@ -15197,6 +15199,7 @@
       1 *jeđđekeahtes
       1 *Jeđđehussan
       1 *jeđđehus
+      1 *jeđđedii
       1 *ječasga
       1 *ječas
       1 *ječamek
@@ -16892,7 +16895,6 @@
       1 *giliviesus
       1 *giliviesuin
       1 *giliviessun
-      1 *giliskuvllaš
       1 *Giliskuvllas
       1 *giliskuvllain
       1 *giliskuvllaid
@@ -17802,6 +17804,7 @@
       1 *fröken
       1 *frykt
       1 *Frugaard
+      1 *Frugård
       1 *Fru
       1 *Fronter
       1 *Fronas
@@ -17889,6 +17892,7 @@
       1 *formingskurs
       1 *forming»
       1 *formaliseret
+      1 *Formaliserejuvvon
       1 *forlengst
       1 *Forklaring
       1 *Forholdet
@@ -18626,7 +18630,6 @@
       1 *ealáhusovdáneami
       1 *ealáhuskantuvrras
       1 *Ealáhusdepartemeanta
-      1 *ealáhusbargguin
       1 *ealáhatagis
       1 *Ealáhatagis
       1 *ealáhagain
@@ -19299,6 +19302,7 @@
       1 *Dellie
       1 *dekána
       1 *deina
+      1 *dehke
       1 *deháleamoš
       1 *dehálas
       1 *degu
@@ -19707,7 +19711,6 @@
       1 *dálusápmelaččat
       1 *dálusámi
       1 *dáluortnetvuođa
-      1 *dáluolmmoš
       1 *dáluolbmuin
       1 *dáluolbmuid
       1 *dálumánáin
@@ -20154,6 +20157,7 @@
       1 *čierustuvven
       1 *čierrugohten
       1 *čierrugođii
+      1 *čierostuvai
       1 *čierastit
       1 *čierastin
       1 *čierastanluohkká
@@ -20616,7 +20620,6 @@
       1 *buhtistanrusttegiiguin
       1 *buhtisindoallat
       1 *buhtisáimmut
-      1 *buhtadit
       1 *buhcciidvisoža
       1 *buhcciidsiidii
       1 *Buhcciidsiidda
@@ -20833,6 +20836,7 @@
       1 *boazodoallooahpaheaddjin
       1 *boazodoallonuoraid
       1 *boazodoallo-Norgga
+      1 *boazodoallonissonat
       1 *boazodoallománát
       1 *Boazodoallománáidgárddis
       1 *boazodoallománáide
@@ -20929,6 +20933,7 @@
       1 *boaittobealskuvlaortnet
       1 *Boaittobealguovllut
       1 *boaitobeal
+      1 *boahttevas
       1 *boahtteáigásaš
       1 *boahtigohtet
       1 *boahtastahtta
@@ -21262,6 +21267,7 @@
       1 *befal»
       1 *bedste»
       1 *bedste
+      1 *bedjelgeahča
       1 *beavžžabealohppiid
       1 *beavžžabealde
       1 *beavttálmasat
@@ -21395,6 +21401,7 @@
       1 *basaldahkan
       1 *basadangárrái
       1 *basadanbáiki
+      1 *bás
       1 *bártniguovttos
       1 *Bártnehuoččain
       1 *Bártnažat
@@ -21696,6 +21703,7 @@
       1 *báikeeahkesskovlláin
       1 *báidnan
       1 *báidegoarrumis
+      1 *baičče
       1 *bahuid
       1 *báhtáreaddjivásáhus
       1 *báhtareaddjiid
@@ -21731,6 +21739,8 @@
       1 *báhkinmáttut
       1 *bahkadasaiguin
       1 *báhče
+      1 *bahččavuođan
+      1 *bahččagak
       1 *Báhčaveai--*nuorttalaččat
       1 *Báhčaveaijotgáttis
       1 *Báhčaveai-
@@ -22439,6 +22449,7 @@
       1 *aktonas
       1 *ákto
       1 *aktive
+      1 *aktiivvalas
       1 *akten
       1 *áktejumi
       1 *aktasaš
@@ -22490,6 +22501,7 @@
       1 *aigin
       1 *áigiin
       1 *áigiid
+      1 *aiggun
       1 *áiggiidaseat
       1 *aiggi
       1 *áiggegoluid;
@@ -22525,7 +22537,6 @@
       1 *áicilvuohta
       1 *áicilvuođa
       1 *áiccalmasttii
-      1 *áicanluohkkái
       1 *áicáhii
       1 *áicagohten
       1 *áicagoahtán

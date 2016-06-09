@@ -1,15 +1,6 @@
-   1214 #mij<prn><nom>
-    560 #mij<prn><pl><nom>
-    268 #mij<prn><ela>
     257 #Davvi
-    180 #mij<prn><pl><acc>
-    155 #mij<prn><ine>
-    131 #mij<prn><gen>
     114 #i<n><abbr><sg><attr>
      87 #Min
-     83 #mige<prn><nom>
-     76 #mij<prn><ill>
-     70 #mij<prn><pl><ela>
      64 #J<n><abbr><sg><attr>
      61 #vehi<prn><ind><sg><nom>
      61 #Sámi
@@ -19,13 +10,9 @@
      50 #<pcle>
      50 #akta<prn><ind><attr><foc_neg-k>
      47 #von<np><attr>
-     46 #mij<prn><pl><gen>
      46 #akta<prn><ind><sg><nom><foc_neg-ge>
-     42 #Mij<prn><nom>
-     41 #mij<prn><pl><ine>
      36 #suohkanbáhppa<n><sg><nom>
      34 #rievtes<adj><sg><nom>
-     33 #mij<prn><com>
      33 #badjelij<adv><px3sg>
      31 #Porsáŋgu<np><top><sg><gen>
      31 #N<n><abbr><sg><attr>
@@ -37,7 +24,6 @@
      26 #Állas<adv>
      25 #tjadádit<vblex><imp><conneg>
      24 #Porsáŋgu<np><top><sg><ine>
-     24 #mij<prn><pl><ill>
      24 #ij<vblex><neg><indic><p3><pl>
      24 #akta<num><sg><ine><attr>
      23 #M<n><abbr><sg><attr>
@@ -54,20 +40,18 @@
      18 #Stuora
      18 #Samisk<np><attr>
      17 #Statens<np><attr>
-     17 #Ij<vblex><neg><supn><p3><sg>
      17 #Dav
      17 #danen<cnjsub><qst>
      16 #Uhca<np><attr>
      16 #nr<n><abbr><sg><attr>
      16 #Ja<ij>
+     16 #Ij<vblex><neg><supn><p3><sg>
      16 #H<n><abbr><sg><attr>
      15 #teorehtalasj<adj><attr>
-     15 #mige<prn><gen>
      15 #ij<vblex><neg><indic><p1><sg>
      14 #sæmmi<prn><ind><sg><acc>
      14 #s<n><abbr><sg><attr>
      14 #n<n><abbr><sg><attr>
-     14 #mij<prn><pl><com>
      14 #juo<adv><qst>
      14 #I<n><abbr><sg><attr>
      14 #Finnmarken<np><top><sg><gen>
@@ -76,9 +60,9 @@
      13 #mån<prn><pers><p1><pl><loc>
      13 #jáhkket<vblex><actio><ine>
      13 #goarro<n><nomag><pl><nom>
-     13 #ednak<adj><sg><ela>
      12 #Von<np><attr>
      12 #makkir<prn><ind><attr><foc_pos-k>
+     12 #ednak<adj><sg><ela>
      12 #ednak<adj><sg><acc>
      12 #ássje<n><nomag><pl><nom>
      11 #sámemánná<n><pl><gen>
@@ -90,7 +74,6 @@
      10 #uhtset<adv>
      10 #tjadádit<vblex><indic><pres><conneg>
      10 #mij<prn><ind><sg><acc>
-     10 #mige<prn>
      10 #maŋŋet<adj><sg><nom>
      10 #máhttet<vblex><indic><pret><conneg>
      10 #mádde<n><ess>
@@ -136,7 +119,7 @@
       7 #positijvva<adj><sg><nom>
       7 #P<n><abbr><sg><attr>
       7 #nubbe<prn><res><attr>
-      7 #mige<prn><nom><foc_neg-ge>
+      7 #mige<prn><ind><sg><nom><foc_neg-ge>
       7 #L<n><abbr><sg><attr>
       7 #jasska<adj><ess>
       7 #ij<vblex><neg><supn><p3><sg>
@@ -155,7 +138,6 @@
       6 #<post>
       6 #pasiænnta<n><nomag><sg><nom>
       6 #pasiænnta<n><nomag><sg><ill>
-      6 #Mij<prn><gen>
       6 #ij<vblex><neg><indic><p1><pl>
       6 #ietjá<prn><ind><attr><qst>
       6 #ietjá<prn><ind><attr><foc_pos-k>
@@ -184,7 +166,6 @@
       5 #NRK
       5 #Norge<np><top><sg><ela>
       5 #moadda<prn><ind><pl><gen>
-      5 #mige<prn><ill>
       5 #mierre<n><der_dibme><adj><attr>
       5 #jasska<adj><sg><nom>
       5 #jasska<adj><der_aadv><adv>
@@ -199,7 +180,6 @@
       5 #Finnmarken<np><top><sg><gen>avijsas
       5 #duhtadit<vblex><indic><pres><conneg>
       5 #duhtadit<vblex><imp><conneg>
-      5 #diehtet<vblex><indic><pret><conneg>
       5 #danne<adv><qst>
       5 #Bo<np><ess><qst>
       5 #bessat<vblex><indic><pret><conneg>
@@ -219,7 +199,6 @@
       4 #ståhkam<n><sg><gen>
       4 #stávit<vblex><imp><conneg>
       4 #stáhtaarkijvva<n><sg><ela>
-      4 #skåvllå<n><sg><loc>
       4 #sjaddo<n><der_dibme><adj><attr>
       4 #sámemánná<n><pl><acc>
       4 #Sámekomitea<np><sg><gen>
@@ -245,6 +224,7 @@
       4 #E<n><abbr><sg><attr>
       4 #dåssju
       4 #dån<prn><pers><p2><sg><acc><qst>
+      4 #diehtet<vblex><indic><pret><conneg>
       4 #dassat<vblex><indic><pres><conneg>
       4 #dalle<adv><qst>
       4 #buojkodit<vblex><der_alla><der_nomact><n><pl><nom>
@@ -259,7 +239,6 @@
       4 #ájggeguovddelis<adj><ess>
       4 #9<num><cmp><guio>#jahke<n><der_sasj><adj><attr>
       4 #1960<num><arab><cmp_splitr>
-      3 #åvdusj<adj><sg><acc>
       3 #ålle<n><sg><ill>
       3 #ålle<n><sg><gen>
       3 #ådås<n><sg><nom>
@@ -280,6 +259,7 @@
       3 #suohkanbáhppa<n><sg><ela>
       3 #Stáhtaarkijvva<n><sg><ine>
       3 #S<n><abbr><sg><attr>#t<n><abbr><sg><attr>
+      3 #skåvllå<n><sg><loc>
       3 #skåvllåájgegávdda<n><sg><ela>
       3 #Skánit<np><top><pl><gen>
       3 #sjávo<adj><sg><gen>
@@ -309,7 +289,6 @@
       3 #Moadda<prn><ind><pl><nom>
       3 #mij<prn><ind><sg><ill>
       3 #mij<prn><ind><pl><gen>
-      3 #Mij<prn><ela>
       3 #miehtemiella<n><sg><nom>
       3 #miehtemiella<n><sg><ine>
       3 #miehtemiella<n><der_lasj><adj><attr>
@@ -366,6 +345,7 @@
       3 #1970<num><arab><cmp_splitr>
       3 #17<num><cmp><guio>#jahke<n><der_sasj><adj><sg><nom>
       3 #10<num><arab><cmp_splitr>
+      2 #åvdusj<adj><sg><acc>
       2 #åvddånahttet<vblex><indic><pret><conneg>
       2 #årrot<vblex><indic><pres><conneg>
       2 #ålle<n><der_dibme><adj><comp><sg><nom>
@@ -467,7 +447,6 @@
       2 #moadda<prn><ind><pl><com>
       2 #mij<prn><ind><sg><nom>
       2 #mij<prn><ind><sg><ela>
-      2 #Mij<prn><ill>
       2 #miella<n><nomag><sg><acc>
       2 #miehtemiella<n><sg><acc>
       2 #miededit<vblex><indic><pres><conneg>
@@ -986,17 +965,9 @@
       1 #Moadda<prn><ind><pl><gen>
       1 #m<n><abbr><sg><attr>#m<n><abbr><sg><attr>
       1 #misjonierit<vblex><actio><ine>
-      1 #Mij<prn><pl><nom>
-      1 #Mij<prn><pl><gen>
-      1 #mij<prn><ine>'
       1 #mij<prn><ind><sg><ine>
       1 #Mij<prn><ind><sg><gen>
-      1 #mij<prn><ess>
-      1 #Mij<prn><com>
-      1 #mige<prn><pl><gen>
-      1 #mige<prn><nom>»
-      1 #mige<prn><loc>
-      1 #mige<prn><ess>
+      1 #mige<prn><ind><sg><loc>
       1 #mierredit<vblex><vabess><adj><attr>
       1 #miella<n><sg><loc>
       1 #miella<n><nomag><sg><ill>
@@ -1282,6 +1253,7 @@
       1 #dat<prn><dem><sg><nom><foc_neg-ge>
       1 #dát<prn><dem><sg><nom><foc_gis>
       1 #dát<prn><dem><sg><loc><attr>
+      1 #dát<prn><dem><sg><loc>
       1 #dat<prn><dem><sg><ine><foc_pos-ge>
       1 #dat<prn><dem><sg><ill><foc_pos-k>
       1 #dat<prn><dem><sg><gen><foc_pos-k>
@@ -1302,7 +1274,6 @@
       1 #Čum<np><cmp_sgnom><cmp><guio>#namma<n><der_sasj><adj><attr>
       1 #Čohkkiras<np><top><sg><ela>
       1 #Čohkkiras<np><top><sg><acc>
-      1 #bårråt¹<vblex><indic><pret><conneg>
       1 #Bårre<n><nomag><sg><ine>
       1 #bådnjåt<vblex><der_alla><der_nomact><n><sg><ine>
       1 #buoredit<vblex><indic><pres><conneg>
