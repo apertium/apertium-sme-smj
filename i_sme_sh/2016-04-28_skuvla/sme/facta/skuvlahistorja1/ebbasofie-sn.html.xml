@@ -1,0 +1,80 @@
+<document xml:lang="sme" id="no_id">
+  <header>
+    <title>Internáhtta buoret go giliskuvla</title>
+    <genre code="facta"/>
+    <author>
+      <person firstname="Svein" lastname="Lund" sex="m" born="1951" nationality="no"/>
+    </author>
+    <translator>
+      <person firstname="Marit Eira" lastname="Gaino" sex="f" born="" nationality="NO"/>
+    </translator>
+    <translated_from xml:lang="nno"/>
+    <year>2005</year>
+    <publChannel>
+      <publication>
+        <publisher>Davvi Girji</publisher>
+      </publication>
+    </publChannel>
+    <wordcount>1199</wordcount>
+    <availability>
+      <free/>
+    </availability>
+    <submitter name="Børre Gaup" email="borre.gaup@uit.no"/>
+    <origFileName>http://skuvla.info/skolehist/ebbasofie-sn.htm</origFileName>
+    <parallel_text location="ebbasofie-e.html" xml:lang="eng"/>
+    <parallel_text location="ebbasofie_n.html" xml:lang="nno"/>
+    <parallel_text location="ebbasofie-s.html" xml:lang="sma"/>
+    <metadata>
+      <uncomplete/>
+    </metadata>
+    <version>XSLtemplate $Revision$; file-specific xsl  Revision; common.xsl  $Revision: 105912 $; </version>
+  </header>
+  <body>
+    <p>På norsk Åarjelh-saemien gielesne In English</p>
+    <p>Artihkkal girjjis Sámi skuvlahistorjá 1 . Davvi Girji 2005.</p>
+    <p type="title">Sofie Kappfjell ja Ebba Westerfjell:</p>
+    <p type="title">Internáhtta buoret go giliskuvla</p>
+    <p type="title">Svein Lund lea jearahallan.Davvisámegillii jorgalan: Marit Eira Gaino</p>
+    <p><em type="bold">Svein Lund lea jearahallan Ebba Westerfjell ja Sofie Kappfjell Maajehjaevries 2003 </em>(Govva: Basia Głowacka) </p>
+    <p>
+      <em type="bold">Maajehjaevries Lulli-Nordlánddas orruba oappážagat geat goappašagat leaba leamaš oahppit sámeskuvllas Havikas, ja maid bargan sámi skuvllas Aarbortes. Muhto earret dan, de leat sudnos maid hui goabbatlágan vásáhusat. </em>
+    </p>
+    <p>Sofie Kappfjell lea riegádan 1921:s ja vázzán olles skuvlaáiggi Havikas jagiid 1928-35.</p>
+    <p>Ebba Vesterfjell lea ovcci jagi nuorat, ja váccii dušše ovtta jagi Havika skuvllas ovdal soađi. Loahpa skuvlaáiggis váccii son Maajeh-jávrri giliskuvllas. mii leat humadan oktanaga oappážagaiguin.</p>
+    <p type="title">Iežas siste vuosttaldii</p>
+    <p>Lei Sámemiššuvdna mii jođihii Havika skuvlla, muitala Sofie. - Muhto doppe ii lean obage sámegiella, ii ge oktage oahpaheaddji hupman lullisámegiela. Eai eará bargit ge internáhtas hupman sámegiela.</p>
+    <p>- Go buot manai dárogillii, man ollu de ipmirdit doppe? - Ipmirdin gal veahá dárogiela go álgen skuvlii, muhto ledje earát geat ledje čeahpibut. Doppe beasai gullat dakkár cealkagiid oahpaheddjjiin dego ahte: <span type="quote">"Son lea čeahpit, go sus lea eanet dárogiella ruovttus."</span> Dalle mun jurddášin ahte manin bat dasto ii sáhttán leat sámegiella. Dainna lágiin dego vuosttaldin iežan siste. muhtin mánáin ledje váttisvuođat go máhtte unnán dárogiela go álge.</p>
+    <p type="title">
+      <span type="quote">"Buvrohavika"</span>
+    </p>
+    <p>- Skuvla lei dovddus dasa ahte lei sreaŋggis, movt don vásihit dan? - Mu mielas ii lean doppe nu sreaŋggis. Fertii han dakkár báikkis njuolggadusaid čuovvut. Ohppiin ledje fásta barggut maid galge bargat internáhtas. Mii basaimet ohppiid bevddiid, guttiimet muoraid sisa ja barggaimet eará diekkár bargguid. Dasa mun liikojin bures, mu mielas ii lean beare ollu bargu. Muhtimat gohčodedje skuvlla <span type="quote">"Buvrohavika"</span> go mii oaččuimet nu ollu buvrru doppe. Hávvarbuvru sieráhiin! Muhto mu mielas lei njálgga ja nu lea ain dál. Maŋŋil, go lean humadan earáiguin geat vázze Havikas skuvlla, de lean oaidnán ahte mis lei ieš guđet lágan oaidnu soames áššiide doppe. Earát leat váidalan áššiid mat mu mielas ledje buorit. Vearrámus lei go lei buohcci internáhtas. dalle veallájin ja jurddášin ahte livččii buoremus leat ruovttus.</p>
+    <p>
+      <em type="bold">Maajehjaevrie lea leamaš báiki gos lullisámit leat gávnnadan. Earret eará leat sámemiššuvnnas leamaš čoákkámat dáppe guovtti geardde jagis. Dát govva lea váldon jagi 1930. </em>
+    </p>
+    <p>(Govva: Samenes venn /Rogstad: Streif i sør-samenes saga)</p>
+    <p type="title">Givssiduvvon giliskuvllas</p>
+    <p>Ebba váccii dušše ovtta jagi Havika skuvllas. - Mun vázzen doppe dego sávza mii ii ipmirdan nu ollu. Ledje guokte oahppi geaiguin hupmen sámegiela friddjaáiggis. Muđui ii leat nu ollu maid muittán dan skuvlajagis. Muhto de bođii soahti ja Havikas ii lean skuvla šat ovdal go soahti lei nohkan. Loahpa mu skuvlaáiggis vázzen mun Maajehjaevries. Doppe lei skuvla ovtta lanjas girkus, mii gohčodeimmet dan unna-lanjažin. 1.- 3- luohkká vázze ovtta vahkku ja 4.- 7. luohkká dan nuppi vahkku. Doppe lei ahkit vázzit. Ledjen čađat áidna sámi mánná doppe, 2.- 7. luohkás. Ii lean suohtas, doaivvun livččii leamaš suohttasit jus eará sámi mánát livčče leamaš doppe. In livčče háliidan eallit oktii vel dieid jagiid, in mainna ge lágiin.</p>
+    <p>- Mii lei stuorimus váttisvuohtan, oahpaheaddjit vai dat eará oahppit? - Ledje dat eará oahppit, eai oahpaheaddjit. Ii oainnat galgan oahpaheddjiide váidalit. Eai sii lean nu ollu olgun ahte oidne mii dáhpáhuvai. Muittán oktii go mis lei leamaš geahččaleapmi dárogielas. Oahpaheaddji dajai luohkkái: <span type="quote">"Lea stuora heahpat. Ebba hupma sámegiela ruovttus, muhto lihkká lea čeahpit dárogielas go dii."</span> Dan ii lean goasse galgat dadjat Diet friddagoartil šattai hirpmus munnje. Dat lei nu vearrái ahte eai geavahan mu nama ge, dušše fasttit dadje. Maid sii dadje lei nu fasti ahte dan in sáhte oba muitalit ge.</p>
+    <p>Mun muitalin dan ruovttus. Áhčči dajai ahte go muhtin jagit vásset, gal hal de <span type="quote">"dážat"</span> ohppet. Ožžon dan ipmárdusa ahte dážat leat veahá ovttageardánat. De fárrii okta ruovde- máđi ovdaolmmoš deike iežas guvttiin nieiddain, ja nubbi dain nieiddain šattai mu buoremus olmmái. dan maŋŋil buorránii, ja hárdin unnui veahá.</p>
+    <p type="title">Dálueamit Aarbortes</p>
+    <p>1958:s bivdojuvvui Sofie boahtit Aarbortii doaibmat dálueamidin sámi skuvllas. - Ledjen gullan nu ollu váidagiid internáhttaskuvllain, ahte jurddášin ahte mun gal dohko in vuolgge. Muhto mun dárbbašin barggu, ja go juo bivde, de jurddášin ahte geahččalan bargat doppe jagi dahje guokte. Muhto bargen doppe badjel guokte logi jagi, 1958:s ja 80- lohkui. Mun lean álo liikon mánáide, muhto mus ii leat oahppu bargat mánáiguin. Muhto dálu- eamit skuvlla ledjen vázzán.</p>
+    <p>Dálueamidin bargat internáhtas ii lean makkárge ovccis njealji rádjái bargu. Bargu lei goasi birra jándora, ja lei lossa bargu. Muhto mus lei friddja juohke nuppi sotnabeavvi! Go mus alddán ii lean bearaš, de šattái internáhtta dego mu ruoktun buot dáid jagiid. Munnje lea leamaš illun eallin ja bargu doppe. Muhto loahpas álge julggiin nu bákčasat, ahte šadden oadjovuostáiváldi. Dan maŋŋil huksejin viesu dása Maajehjaevrii.</p>
+    <p>
+      <em type="bold">Skuvlaoahpaheapmi geassemánu 14. beaivvi 1962. Gurutbealde dálueamit Sofie Kappfjell. </em>
+    </p>
+    <p>(Govva: Sigrid Bergli Sørnes)</p>
+    <p type="title">Dárogiella internáhtas</p>
+    <p>- Internáhtas lei eanas dárogiella. Sáhtii gal leaikkastallat ja hupmat sámegiela singuin geat máhtte sámegiela. Muhto juo dan áiggi ledje ollu mánát skuvllas geat eai máhttán sámástit. Jus mii leimmet geavahit eanet sámegiela, de lei sidjiide šaddat váddásit. Eat ožžon váhnemiin ge sávaldagaid ahte geavahit eanet sámegiela go hupmat sin mánáiguin.</p>
+    <p>Ebba lea maid bargan sámi skuvllas Aarbortes, máŋga áigodaga 1970- ja 80- logus. Dalle ledje álgán oahpahit sámegiela skuvllas, muhto dušše 1- 2 diimmu vahkkus. Vuosttaš áiggi go sámegiel- oahpahus álggii skuvllas leigga Lars Børgefjell (Burkien Laara) ja Nils Kappfjell (Gaebpien Næjla) oahpaheaddjin. Sudnos ii lean mihkkege oahpuid, ja eaba ge diehtán movt giela galgá oahpahit mánáide. Dalle ii lean vel sámegielas almmolaš stahtus fágan.</p>
+    <p type="title">Iežas mánát internáhtas</p>
+    <p>Ebba lea bajásgeassán vihtta máná. - Go sii galge álgit skuvlii, de in eahpidan ge ahte buoremus lei sáddet sin internáhttaskuvlii. Dan vuođul maid ieš ledjen vásihan giliskuvllas, de jurddášin ahte dan seamma eai galgga mu mánát dárbbašit vásihit.</p>
+    <p>Dán áiggi ii leat šat seammalágan hárdin sámi mánáin go mu skuvlaáiggis. Dál ii leat šat skuvla Maajehjaevries. Skuvla heaittihuvvui 5-6 jagi áigi. Sámi mánát dáppe eret vázzet dál Troforsas, ja muhtin vahkkuid leat sii sámi skuvllas Aarbortes gos besset oahppat lullisámi giela ja kultuvrra.</p>
+    <p type="title">Boahtteáigi lullisámegielas?</p>
+    <p>Dalle juo go Sofie ja Ebba leigga mánát,de lei lullisámegiella juo unnán anus. - Sámegiella šattai measta čiegus giellan, muitala Sofie. - Ruovttus humaimet sámegiela, muhto dakkaviđe go dárogielagat ledje doppe, de dárusteimmet. Muhtomin lei váttis čađahit dan. Eadni humai dušše sámegiela ruovttus, ja son lei hui hubmái. In hal mun gal sáhttán dárustit suinna. Dalle fertejin hupmat sámegiela vaikko ledje earát das.</p>
+    <p>Oappážagat eaba jáhke lullisámegiela nagodit nu bures seailut boahtteáiggis. - Mun balan dat jávká, dadjá Sofie. - Ledjen maid eahpádusas go áigo lullisámegiela oahpu álggahit skuvllas, muhto in sáhttán vuosttaldit dan go bođii johtui.</p>
+    <p>Okta sis guhte álggii bargat oažžut lullisámegiela oahpahusa skuvlii, lei Sofie ja Ebba oabbá, Anna Jacobsen (Jaahkenelkien Aanna). Son lea leamaš oahpaheaddji ja lea maid čállán oahppogirjjiid lullisámegillii.[Anna Jacobsen jámii moadde mánu maŋŋil dán jearahallama. (red.)]</p>
+    <p>- Son fárrii luksa ja náitalii doppe, muhto bođii fas ruovttoluotta, muitaleaba soai. Eai lean sus galle oahppogirjji go álggii. Áidna sátnegirji lullisámegielas lei duiskkagillii (Lagerkrantz), muhto Anna oahpahalai duiskkagiela ja nu sáhtii lohkat dan sátnegirjji.</p>
+    <p>Lei buorre go oaččuimet čállingiela, dat mis ii lean ovdal. Son guhte háliida oahppat, sáhttá dahkat dan dál. Leat maid earát go lullisápmelaččat geain lea beroštupmi oahppat min giela. Okta duiskalaš bođii ja oahpai sihke lulli- ja davvisámegiela.</p>
+    <p>Eanet artihkkalat sámi skuvlahistorjjás 1</p>
+  </body>
+</document>
