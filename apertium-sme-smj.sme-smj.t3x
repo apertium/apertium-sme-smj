@@ -19,11 +19,17 @@
 
     <def-cat n="NP_Pr">
         <cat-item tags="NP.@←ADVL.*"/>
-    </def-cat>
+        <cat-item tags="NP.@←ADVL-ela.*"/>
+        <cat-item tags="NP.@←ADVL-ine.*"/>
+  </def-cat>
 
     <def-cat n="NP_Advl">
         <cat-item tags="NP.@ADVL→.*"/>
         <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="NP.@ADVL-ela→.*"/>
+        <cat-item tags="NP.@←ADVL-ela.*"/>
+        <cat-item tags="NP.@ADVL-ine→.*"/>
+        <cat-item tags="NP.@←ADVL-ine.*"/>
         <cat-item tags="NP.@ADVL.*"/>
     </def-cat>
 
@@ -92,11 +98,16 @@
      <attr-item tags="@SUBJ→"/>
      <attr-item tags="@←SUBJ"/>
      <attr-item tags="@SPRED→"/>
-     <attr-item tags="@+FMAINV"/>
+     <attr-item tags="@\+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@+FAUXV"/>
+     <attr-item tags="@ADVL→"/>
+     <attr-item tags="@ADVL-ine→"/>
+     <attr-item tags="@ADVL-ela→"/>
      <attr-item tags="@ADVL"/>
      <attr-item tags="@←ADVL"/>
+     <attr-item tags="@←ADVL-ine"/>
+     <attr-item tags="@←ADVL-ela"/>
      <attr-item tags="@ADVL→"/>
      <attr-item tags="@HAB"/>
      <attr-item tags="@Num←"/>

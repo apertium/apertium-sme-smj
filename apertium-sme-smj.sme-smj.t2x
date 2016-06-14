@@ -36,6 +36,8 @@
     
     <def-cat n="NP_Pr">
         <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="NP.@←ADVL-ela.*"/>
+        <cat-item tags="NP.@←ADVL-ine.*"/>
     </def-cat>
     
     <def-cat n="FMainV">
@@ -104,8 +106,13 @@
      <attr-item tags="@\+FMAINV"/>
      <attr-item tags="@-FMAINV"/>
      <attr-item tags="@+FAUXV"/>
+     <attr-item tags="@ADVL→"/>
+     <attr-item tags="@ADVL-ine→"/>
+     <attr-item tags="@ADVL-ela→"/>
      <attr-item tags="@ADVL"/>
      <attr-item tags="@←ADVL"/>
+     <attr-item tags="@←ADVL-ine"/>
+     <attr-item tags="@←ADVL-ela"/>
      <attr-item tags="@ADVL→"/>
      <attr-item tags="@HAB"/>
      <attr-item tags="@Num←"/>
