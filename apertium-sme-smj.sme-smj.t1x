@@ -1000,6 +1000,38 @@
           </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
         </when>
+        
+        <when>
+          <test>
+          <or>
+          <and>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
+          </and>
+          <and>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
+          </and>
+          </or>
+          </test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
+         </when>
+         
+         <when>
+          <test>
+          <or>
+          <and>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ine"/></equal>
+          </and>
+          <and>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ine→"/></equal>
+          </and>
+          </or>
+          </test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
+         </when>
 
         <when>
           <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal></test>
