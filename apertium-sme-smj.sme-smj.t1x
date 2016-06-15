@@ -213,9 +213,11 @@
     <def-cat n="prn">
       <cat-item tags="prn.*"/>
     </def-cat>
-    <def-cat n="prn-dem">
+    <def-cat n="dem-num">
       <cat-item tags="prn.dem.*"/>
-    </def-cat>
+      <cat-item tags="num.sg.*"/>
+      <cat-item tags="num.arab.sg.*"/>
+   </def-cat>
 
 <!-- from sme-nob starts -->
     <def-cat n="prn-rel">
@@ -1557,21 +1559,46 @@
 
     <rule comment="REGLA: prn-dem pluss noun">
       <pattern>
-        <pattern-item n="prn-dem"/>  
+        <pattern-item n="dem-num"/>  
         <pattern-item n="noun"/>  
       </pattern>
       <action>
       <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
       <choose>
       <when>
           <test><and>
-          <equal><clip pos="1" side="sl" part="a_prn"/><lit-tag v="prn.dem"/></equal>
           <equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal>
           <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
           </and></test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+      </when>
+      <when>
+          <test><or>
+          <and>
+          <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+          <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+          <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
+         </and>
+           <and>
+          <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+          <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+          <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
+         </and>
+        </or>
+         </test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
+      </when>
+      <when>
+          <test>
+          <and>
+          <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+          <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+          <not><equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal></not>
+          <not><equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal></not>
+         </and>
+         </test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
       </when>
       </choose>
         <out>
