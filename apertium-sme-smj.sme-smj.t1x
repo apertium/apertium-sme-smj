@@ -213,8 +213,9 @@
     <def-cat n="prn">
       <cat-item tags="prn.*"/>
     </def-cat>
-    <def-cat n="dem-num">
+    <def-cat n="prn-num">
       <cat-item tags="prn.dem.*"/>
+      <cat-item tags="prn.ind.*"/>
       <cat-item tags="num.sg.*"/>
       <cat-item tags="num.arab.sg.*"/>
    </def-cat>
@@ -975,7 +976,7 @@
 
     <def-macro n="assign-case-1Param" npar="1">
       <choose>
-        <when>
+<!--        <when>
           <test>
             <or>
               <and>
@@ -1001,7 +1002,7 @@
             </or>
           </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
-        </when>
+        </when> -->
         
         <when>
           <test>
@@ -1021,24 +1022,15 @@
          
          <when>
           <test>
-          <or>
           <and>
             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
-            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ine"/></equal>
+            <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal></not>
+            <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal></not>
           </and>
-          <and>
-            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
-            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ine→"/></equal>
-          </and>
-          </or>
           </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
          </when>
 
-        <when>
-          <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
-        </when>
       </choose>
     </def-macro>
 
@@ -1559,7 +1551,7 @@
 
     <rule comment="REGLA: prn-dem pluss noun">
       <pattern>
-        <pattern-item n="dem-num"/>  
+        <pattern-item n="prn-num"/>  
         <pattern-item n="noun"/>  
       </pattern>
       <action>
@@ -1620,8 +1612,8 @@
     </rule>
     <rule comment="REGLA: prn-dem pluss noun">
       <pattern>
-        <pattern-item n="dem-num"/>  
-        <pattern-item n="dem-num"/>  
+        <pattern-item n="prn-num"/>  
+        <pattern-item n="prn-num"/>  
         <pattern-item n="noun"/>  
       </pattern>
       <action>
