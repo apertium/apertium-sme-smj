@@ -7,7 +7,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -74,7 +74,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -t -w">
@@ -88,7 +88,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -w">
@@ -104,7 +104,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -123,7 +123,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -145,7 +145,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -170,7 +170,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -196,7 +196,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -229,7 +229,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -267,7 +267,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -308,7 +308,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -354,7 +354,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -418,7 +418,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -t -w">
@@ -432,7 +432,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -450,7 +450,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -471,7 +471,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -496,7 +496,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -520,7 +520,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -553,7 +553,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -590,7 +590,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
@@ -631,7 +631,7 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf-untrimmed.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
       <program name="cg-proc -n -1 -w">
