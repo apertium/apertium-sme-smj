@@ -135,6 +135,7 @@
 
     <e><p><l>ahte<s n="cnjsub"/></l><r>jut<s n="cnjsub"/></r></p></e>
     <e><p><l>amas<s n="cnjsub"/></l><r>vaj<s n="cnjsub"/></r></p></e>
+    <e><p><l>dalle<b/>go<s n="cnjsub"/></l><r>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>dan<b/>botta<b/>go<s n="cnjsub"/></l><r>dav<b/>båttåv<b/>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>danin<b/>go<s n="cnjsub"/></l><r>danen<b/>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>danin<s n="adv"/></l><r>danen<s n="cnjsub"/></r></p></e>
@@ -463,7 +464,7 @@
     <e><p><l>friija<s n="adj"/></l><r>friddja<s n="adj"/></r></p></e>
     <e><p><l>siviila<s n="adj"/></l><r>sivijlla<s n="adj"/></r></p></e>
     <e><p><l>juohkelágan<s n="adj"/></l><r>juohkkalágásj<s n="adj"/></r></p></e>
-    <e><p><l>smávis<s n="adj"/></l><r>smávve<s n="adj"/></r></p></e>
+    <e><p><l>smávis<s n="adj"/></l><r>unne<s n="adj"/></r></p></e>
     <e><p><l>eaktodáhtolaš<s n="adj"/></l><r>iesjmiellusasj<s n="adj"/></r></p></e>
     <e><p><l>sullasaš<s n="adj"/></l><r>muodugasj<s n="adj"/></r></p></e>
     <e><p><l>erenoamášpedagogalaš<s n="adj"/></l><r>sierrapedagogalasj<s n="adj"/></r></p></e>
@@ -508,7 +509,6 @@
      <e><p><l>negatiivvalaš<s n="adj"/></l><r>negatijvalasj<s n="adj"/></r></p></e>
      <e><p><l>gaskaboddosaš<s n="adj"/></l><r>båddåsasj<s n="adj"/></r></p></e>
      <e><p><l>sávahahtti<s n="adj"/></l><r>sávadahtte<s n="adj"/></r></p></e>
-     <e><p><l>smávis<s n="adj"/></l><r>smávve<s n="adj"/></r></p></e>
      <e><p><l>sihkar<s n="adj"/></l><r>sihkar<s n="adj"/></r></p></e>
      <e><p><l>oanehaš<s n="adj"/></l><r>ånigasj<s n="adj"/></r></p></e>
      <e><p><l>elfápmu<s n="n"/></l><r>elfábmo<s n="n"/></r></p></e>
@@ -878,7 +878,7 @@
 
      <e><p><l>njiedjat<s n="vblex"/><s n="iv"/></l><r>binnot<s n="vblex"/></r></p></e>
      <e><p><l>lassánit<s n="vblex"/><s n="iv"/></l><r>lassánit<s n="vblex"/></r></p></e>
-     <e><p><l>háliidit<s n="vblex"/><s n="tv"/></l><r>hálijdit<s n="vblex"/></r></p></e>   
+     <e><p><l>háliidit<s n="vblex"/><s n="tv"/></l><r>sihtat<s n="vblex"/></r></p></e>   
      <e><p><l>fuobmát<s n="vblex"/><s n="tv"/></l><r>ájttsat<s n="vblex"/></r></p></e>   
      <e><p><l>heivet<s n="vblex"/><s n="iv"/></l><r>hiehpat<s n="vblex"/></r></p></e>
      <e><p><l>ealáskahttit<s n="vblex"/><s n="tv"/></l><r>ælládahttet<s n="vblex"/></r></p></e>
@@ -1170,6 +1170,7 @@
     <e><p><l>t<s n="n"/><s n="abbr"/></l><r>t<s n="n"/><s n="abbr"/></r></p></e>
     <e><p><l>u<s n="n"/><s n="abbr"/></l><r>u<s n="n"/><s n="abbr"/></r></p></e>
     <e><p><l>v<s n="n"/><s n="abbr"/></l><r>v<s n="n"/><s n="abbr"/></r></p></e>
+    <e><p><l>su<s n="adv"/><s n="abbr"/></l><r>su<s n="adv"/><s n="abbr"/></r></p></e>
 
   
 
@@ -2902,6 +2903,7 @@
      <e><p><l>jolli<s n="n"/><s n="g3"/></l><r>jålle<s n="n"/></r></p></e>
      <e><p><l>jorbmi<s n="n"/></l><r>jårmme<s n="n"/></r></p></e>
      <e><p><l>jorgalanbargu<s n="n"/></l><r>jårggålimbarggo<s n="n"/></r></p></e>
+     <e><p><l>jorgalus<s n="n"/></l><r>jårggålibme<s n="n"/></r></p></e>
      <e><p><l>jorri<s n="n"/></l><r>jårun<s n="n"/></r></p></e>
      <e><p><l>jorridákti<s n="n"/></l><r>bieddaris<s n="n"/></r></p></e>
      <e><p><l>journalisma<s n="n"/></l><r>journalissma<s n="n"/></r></p></e>
@@ -4582,7 +4584,7 @@
      <e><p><l>skorpijuvdna<s n="n"/></l><r>skorpijåvnnå<s n="n"/></r></p></e>
      <e><p><l>skorpiovdna<s n="n"/></l><r>skorpijåvnnå<s n="n"/></r></p></e>
      <e><p><l>skorpiuvdna<s n="n"/></l><r>skorpijåvnnå<s n="n"/></r></p></e>
-     <e><p><l>skovvi<s n="n"/></l><r>skåvve<s n="n"/></r></p></e>
+     <e><p><l>skovvi<s n="n"/></l><r>sjiebmá<s n="n"/></r></p></e>
      <e><p><l>skredderiija<s n="n"/></l><r>skredderijja<s n="n"/></r></p></e>
      <e><p><l>skruvva<s n="n"/><s n="g3"/></l><r>skruvva<s n="n"/></r></p></e>
      <e><p><l>skuhči<s n="n"/></l><r>skuhtje<s n="n"/></r></p></e>
@@ -5430,6 +5432,7 @@
      <e><p><l>ámmát<s n="n"/></l><r>ámmát<s n="n"/></r></p></e>
      <e><p><l>ámmátdoaibma<s n="n"/></l><r>ámmátdoajmma<s n="n"/></r></p></e>
      <e><p><l>ámmátorganisašuvdna<s n="n"/></l><r>ámmátorganisasjåvnnå<s n="n"/></r></p></e>
+     <e><p><l>anárašgiella<s n="n"/></l><r>anársámegiella<s n="n"/></r></p></e>
      <e><p><l>ánjis<s n="n"/></l><r>ánjes<s n="n"/></r></p></e>
      <e><p><l>ápmil<s n="n"/></l><r>ábmel<s n="n"/></r></p></e>
      <e><p><l>ára<s n="n"/></l><r>ára<s n="n"/></r></p></e>
@@ -6300,7 +6303,7 @@
     <e><p><l>lávda<s n="adv"/></l><r>lávdda<s n="adv"/></r></p></e>
     <e><p><l>lávga<s n="adv"/></l><r>lávgga<s n="adv"/></r></p></e>
     <e><p><l>maid<s n="adv"/></l><r>aj<s n="adv"/></r></p></e>
-    <e><p><l>maiddái<s n="adv"/></l><r>aj<s n="adv"/></r></p></e>
+    <e><p><l>maiddái<s n="adv"/></l><r>adjáj<s n="adv"/></r></p></e>
     <e><p><l>man<s n="adv"/></l><r>man<s n="adv"/></r></p></e>
     <e><p><l>manin<s n="adv"/></l><r>manen<s n="adv"/></r></p></e>
     <e><p><l>manne<s n="adv"/></l><r>manen<s n="adv"/></r></p></e>
@@ -6358,7 +6361,7 @@
     <e><p><l>ovdan<s n="adv"/></l><r>åvddån<s n="adv"/></r></p></e>
     <e><p><l>ovddibui<s n="adv"/></l><r>åvdebuj<s n="adv"/></r></p></e>
     <e><p><l>ovdán<s n="adv"/></l><r>åvddån<s n="adv"/></r></p></e>
-    <e><p><l>ovttas<s n="adv"/></l><r>aktij<s n="adv"/></r></p></e>
+    <e><p><l>ovttas<s n="adv"/></l><r>aktan<s n="adv"/></r></p></e>
     <e><p><l>piano<s n="adv"/></l><r>suojmma<s n="adv"/></r></p></e>
     <e><p><l>rabas<s n="adv"/></l><r>rahppot<s n="adv"/></r></p></e>
     <e><p><l>rahpasit<s n="adv"/></l><r>rahpasit<s n="adv"/></r></p></e>
@@ -40914,6 +40917,7 @@
      <e><p><l>Giellasansavu<s n="np"/></l><r>Giellasansavu<s n="np"/></r></p></e>
      <e><p><l>Giellasjohka<s n="np"/></l><r>Giellasjohka<s n="np"/></r></p></e>
      <e><p><l>Giellasvuolejávri<s n="np"/></l><r>Giellasvuolejávri<s n="np"/></r></p></e>
+     <e><p><l>Giellatekno<s n="np"/></l><r>Giellatekno<s n="np"/></r></p></e>
      <e><p><l>Giellavárjohka<s n="np"/></l><r>Giellavárjohka<s n="np"/></r></p></e>
      <e><p><l>Giellačállosat<s n="np"/></l><r>Giellačállosat<s n="np"/></r></p></e>
      <e><p><l>Gielleduottar<s n="np"/></l><r>Gielleduottar<s n="np"/></r></p></e>
