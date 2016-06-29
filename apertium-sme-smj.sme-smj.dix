@@ -97,6 +97,7 @@
     <sdef n="der_passs" c="Passive derivation"/>
     <sdef n="der_pass" c="Passive derivation (smj)"/>
     <sdef n="der_nomact" c="deverbal noun (action/process)"/>
+    <sdef n="der_k" c="der_k"/>
 
     <sdef n="sggencmp" c="Singular genitive compound-left"/> <!--TODO-->
     <sdef n="sgnomcmp" c="Singular nominative compound-left"/>
@@ -2096,6 +2097,7 @@
      <e><p><l>endosseanta<s n="n"/></l><r>endossænnta<s n="n"/></r></p></e>
      <e><p><l>energiija<s n="n"/></l><r>enersjijja<s n="n"/></r></p></e>
      <e><p><l>ensyklopediija<s n="n"/></l><r>ensyklopedijja<s n="n"/></r></p></e>
+     <e><p><l>e-boasta<s n="n"/></l><r>e-mæjlla<s n="n"/></r></p></e>
      <e><p><l>entitehta<s n="n"/></l><r>entitiehtta<s n="n"/></r></p></e>
      <e><p><l>epigrámma<s n="n"/><s n="g3"/></l><r>epigrámma<s n="n"/></r></p></e>
      <e><p><l>epihkka<s n="n"/></l><r>epihkka<s n="n"/></r></p></e>
@@ -5704,6 +5706,7 @@
      <e><p><l>cieggil<s n="adj"/></l><r>tsieggel<s n="adj"/></r></p></e>
      <e><p><l>dakkáraš<s n="adj"/></l><r>dakkár<s n="adj"/></r></p></e>
      <e><p><l>dalá<s n="adj"/></l><r>dallusj<s n="adj"/></r></p></e>
+     <e><p><l>davvisámegiel<s n="adj"/><s n="attr"/></l><r>nuorttasámegiella<s n="n"/><s n="der_k"/><s n="adj"/><s n="attr"/></r></p></e>
      <e><p><l>deaŧalaš<s n="adj"/></l><r>ájnas<s n="adj"/></r></p></e>
      <e><p><l>deduktiiva<s n="adj"/></l><r>deduktijvva<s n="n"/></r></p></e>
      <e><p><l>dehálaš<s n="adj"/></l><r>ájnas<s n="adj"/></r></p></e>
@@ -6095,6 +6098,7 @@
      <e><p><l>čađat<s n="adv"/></l><r>aktelt<s n="adv"/></r></p></e>
      <e><p><l>dasto<s n="adv"/></l><r>ja de<s n="adv"/></r></p></e>
      <e><p><l>davviriikkalaččat<s n="adv"/></l><r>nuorttaguovlulattjat<s n="adv"/></r></p></e>
+     <e><p><l>dáinna<b/>lágiin<s n="adv"/></l><r>dán<b/>láhkáj<s n="adv"/></r></p></e>
      <e><p><l>dieđusge<s n="adv"/></l><r>diedon<s n="adv"/></r></p></e>
      <e><p><l>gal<s n="adv"/></l><r>galla<s n="adv"/></r></p></e>
      <e><p><l>goitge<s n="adv"/></l><r>gåjt<s n="adv"/></r></p></e>
