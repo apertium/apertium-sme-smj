@@ -467,10 +467,10 @@ suotna	suodna	åre/streng/sene	8	17	127	1
 suotna	árran	åre/streng/sene	8	849	127	4
 
 oktavuođaorgána	aktijvuohtaorgádna	kontaktorgan	1	0	3	0
-oktavuođaorgána	Aktisasjvuohtaorgádna	kontaktorgan	1	0	3	0
+oktavuođaorgána	aktisasjvuohtaorgádna	kontaktorgan	1	0	3	0
 oktavuođaorgána	aktisasjvuohtaorgádna	kontaktorgan	1	0	3	0
 oktavuođaorgána	aktijvuohtaorgána	kontaktorgan	1	0	3	0
-oktavuođaorgána	Aktisasjvuohtaorgána	kontaktorgan	1	0	3	0
+oktavuođaorgána	aktisasjvuohtaorgána	kontaktorgan	1	0	3	0
 oktavuođaorgána	aktisasjvuohtaorgána	kontaktorgan	1	0	3	0
 
 ovttasbargoorgána	aktisasjbarggoorgádna	samarbeidsorgan	24	10	40	3
@@ -855,7 +855,7 @@ fylkkalávdegoddi	fylkanammadus	fylkesutvalg	8	0	6	0
 oktavuođalávdegoddi	aktijvuodanammadus	kontaktutvalg	2	0	6	0
 oktavuođalávdegoddi	aktisasjvuodanammadus	kontaktutvalg	2	0	6	0
 oktavuođalávdegoddi	aktijvuohtanammadus	kontaktutvalg	2	0	6	0
-oktavuođalávdegoddi	Aktisasjvuohtanammadus	kontaktutvalg	2	0	6	0
+oktavuođalávdegoddi	aktisasjvuohtanammadus	kontaktutvalg	2	0	6	0
 oktavuođalávdegoddi	aktisasjvuohtanammadus	kontaktutvalg	2	0	6	0
 
 bargolávdegoddi	barggonammadus	arbeidsutvalg	24	0	39	0
@@ -1009,7 +1009,7 @@ bušeahttavuohki	budsjæhttavuohke	budsjettprosedyre	2	0	22	0
 oktavuođavuohki	aktijvuodavuohke	kontaktform	1	0	1	0
 oktavuođavuohki	aktisasjvuodavuohke	kontaktform	1	0	1	0
 oktavuođavuohki	aktijvuohtavuohke	kontaktform	1	0	1	0
-oktavuođavuohki	Aktisasjvuohtavuohke	kontaktform	1	0	1	0
+oktavuođavuohki	aktisasjvuohtavuohke	kontaktform	1	0	1	0
 oktavuođavuohki	aktisasjvuohtavuohke	kontaktform	1	0	1	0
 
 geavahanvuohki	anovuohke	bruksmåte/bruksform	6	0	4	0
@@ -1088,7 +1088,7 @@ oktavuođadoalli	aktijvuohtatjuorgga	kontaktpunkt	1	0	6	0
 oktavuođadoalli	aktijvuodadoalle	kontaktpunkt	1	0	6	0
 oktavuođadoalli	aktisasjvuodadoalle	kontaktpunkt	1	0	6	0
 oktavuođadoalli	aktijvuohtadoalle	kontaktpunkt	1	0	6	0
-oktavuođadoalli	Aktisasjvuohtadoalle	kontaktpunkt	1	0	6	0
+oktavuođadoalli	aktisasjvuohtadoalle	kontaktpunkt	1	0	6	0
 oktavuođadoalli	aktisasjvuohtadoalle	kontaktpunkt	1	0	6	0
 
 bieggadilli	bieggadille	vindforhold	1	0	2	0
@@ -1279,7 +1279,7 @@ ođđafuomášeapmi	innovasjåvnnå	nyskapning/innovasjon	1	12	73	1
 oktavuođagaskaoapmi	aktijvuodatjuorgga	kontaktpunkt	1	0	6	0
 oktavuođagaskaoapmi	aktijvuohtatjuorgga	kontaktpunkt	1	0	6	0
 oktavuođagaskaoapmi	aktijvuohtanævvo	kontaktpunkt	1	0	6	0
-oktavuođagaskaoapmi	Aktisasjvuohtanævvo	kontaktpunkt	1	0	6	0
+oktavuođagaskaoapmi	aktisasjvuohtanævvo	kontaktpunkt	1	0	6	0
 oktavuođagaskaoapmi	aktisasjvuohtanævvo	kontaktpunkt	1	0	6	0
 
 veahkkegaskaoapmi	ræjddo	hjelpemiddel	1	111	50	2
@@ -1586,10 +1586,10 @@ bušeahttačoahkkin	budsjehtatjoahkke	budsjettmøte	1	0	2	0
 oktavuođačoahkkin	aktijvuodatjoahkke	kontaktmøte	2	0	14	0
 oktavuođačoahkkin	aktisasjvuodatjoahkke	kontaktmøte	2	0	14	0
 oktavuođačoahkkin	aktijvuohtatjoahkke	kontaktmøte	2	0	14	0
-oktavuođačoahkkin	Aktisasjvuohtatjoahkke	kontaktmøte	2	0	14	0
+oktavuođačoahkkin	aktisasjvuohtatjoahkke	kontaktmøte	2	0	14	0
 oktavuođačoahkkin	aktisasjvuohtatjoahkke	kontaktmøte	2	0	14	0
 oktavuođačoahkkin	aktijvuohtatjåhkanibme	kontaktmøte	2	0	14	0
-oktavuođačoahkkin	Aktisasjvuohtatjåhkanibme	kontaktmøte	2	0	14	0
+oktavuođačoahkkin	aktisasjvuohtatjåhkanibme	kontaktmøte	2	0	14	0
 oktavuođačoahkkin	aktisasjvuohtatjåhkanibme	kontaktmøte	2	0	14	0
 
 biirrečoahkkin	bijratjoahkke	kretsmøte	1	0	1	0
@@ -1748,7 +1748,7 @@ bargobivttas	barggobivtas	kjeledress	2	0	1	0
 bargobivttas	bargobivtas	kjeledress	2	0	1	0
 
 oktavuođalađas	aktijvuohtaladás	bindeledd/kontaktledd	1	0	5	0
-oktavuođalađas	Aktisasjvuohtaladás	bindeledd/kontaktledd	1	0	5	0
+oktavuođalađas	aktisasjvuohtaladás	bindeledd/kontaktledd	1	0	5	0
 oktavuođalađas	aktisasjvuohtaladás	bindeledd/kontaktledd	1	0	5	0
 
 sárggis	linnja	linje/strek	9	226	129	11
@@ -1896,7 +1896,7 @@ arkiivabálvalus	arkijvvadievnastus	arkivtjeneste	3	0	4	0
 oktavuođabálvalus	aktijvuodadievnastus	kontakttjeneste	1	0	1	0
 oktavuođabálvalus	aktisasjvuodadievnastus	kontakttjeneste	1	0	1	0
 oktavuođabálvalus	aktijvuohtadievnastus	kontakttjeneste	1	0	1	0
-oktavuođabálvalus	Aktisasjvuohtadievnastus	kontakttjeneste	1	0	1	0
+oktavuođabálvalus	aktisasjvuohtadievnastus	kontakttjeneste	1	0	1	0
 oktavuođabálvalus	aktisasjvuohtadievnastus	kontakttjeneste	1	0	1	0
 
 dearvvasvuođabálvalus	varresvuodadievnastus	helsetjeneste	6	43	75	12
@@ -2102,7 +2102,7 @@ mannolat	ássje	prosess	5	1601	371	1
 oktavuođačanastat	aktisasjvuodalinnja	forbindelseslinje	1	0	2	0
 oktavuođačanastat	aktisasjvuohtalinnja	forbindelseslinje	1	0	2	0
 oktavuođačanastat	aktijvuohtatjanástahka	forbindelseslinje	1	0	2	0
-oktavuođačanastat	Aktisasjvuohtatjanástahka	forbindelseslinje	1	0	2	0
+oktavuođačanastat	aktisasjvuohtatjanástahka	forbindelseslinje	1	0	2	0
 oktavuođačanastat	aktisasjvuohtatjanástahka	forbindelseslinje	1	0	2	0
 oktavuođačanastat	aktisasjvuohtasáhtso	forbindelseslinje	1	0	2	0
 
@@ -2500,7 +2500,7 @@ veahtu	hieredus	hefte/hindring	1	12	38	1
 oktavuođadiehtu	aktijvuodadiehto	kontaktregister/kontaktinformasjon	2	0	15	0
 oktavuođadiehtu	aktisasjvuodadiehto	kontaktregister/kontaktinformasjon	2	0	15	0
 oktavuođadiehtu	aktijvuohtadiehto	kontaktregister/kontaktinformasjon	2	0	15	3
-oktavuođadiehtu	Aktisasjvuohtadiehto	kontaktregister/kontaktinformasjon	2	0	15	0
+oktavuođadiehtu	aktisasjvuohtadiehto	kontaktregister/kontaktinformasjon	2	0	15	0
 oktavuođadiehtu	aktisasjvuohtadiehto	kontaktregister/kontaktinformasjon	2	0	15	0
 oktavuođadiehtu	aktijvuohtalågos	kontaktregister	2	0	1	0
 
