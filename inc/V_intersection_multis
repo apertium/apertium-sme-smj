@@ -9,7 +9,6 @@ belljes	gullát	høre	1	214	410	3
 
 riibat	messat	holde seg	2	4	0	0
 riibat	bissot	holde seg	2	630	0	0
-riibat	bissut	holde seg	2	7	0	0
 
 máhccat	sjaddat	snu/komme	138	2961	854	14
 máhccat	ållet	snu/komme	138	1538	854	10
@@ -318,7 +317,6 @@ láidet	jådedit	lede/leie	58	410	255	41
 
 gáldet	guosskat	kastrere/gjelde	7	564	797	39
 gáldet	gullat	kastrere/gjelde	7	3163	797	21
-gáldet	gullu	kastrere/gjelde	7	548	797	0
 
 hovdet	jåhtet	lede	15	757	424	40
 hovdet	jådedit	lede	15	410	424	40
@@ -473,7 +471,6 @@ murret	tjuollat	hugge	28	162	4	0
 murret	tjuohppat	hugge	28	90	4	0
 
 gevret	gåhttjot	pålegge/utvise/bortvise/kommandere	8	1315	33	0
-gevret	gåhttjut	utvise/bortvise	8	1	10	0
 
 fáhtet	gávnnat	finne/oppfange	28	2501	549	108
 fáhtet	dádjadit	finne/oppfange	28	1149	549	2
@@ -645,7 +642,6 @@ bieguhit	vuornnot	plage	5	126	25	0
 
 bájuhit	referierit	gjengi/referere/sitere	11	8	27	2
 bájuhit	sitierit	gjengi	11	2	31	0
-bájuhit	refererit	gjengi/referere/sitere	11	8	27	0
 
 ádjit	rievddat	drive/jage	42	362	212	0
 ádjit	doajmmat	drive/jage	42	1270	212	7

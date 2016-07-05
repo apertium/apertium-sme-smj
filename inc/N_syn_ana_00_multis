@@ -1,12 +1,4 @@
 
-áššebábermearri	dokumænntavaljesvuoda	dokumentmengd	1	0	1	0
-dokumeantahivvodat	dokumænntavaljesvuoda	dokumentmengd	1	0	1	0
-áššebábermearri	dokumænntavaljesvuohta	dokumentmengd	1	0	1	0
-dokumeantahivvodat	dokumænntavaljesvuohta	dokumentmengd	1	0	1	0
-
-fápmogaskavuohta	fábmodille	styrkeforhold	1	0	3	0
-fápmogaskavuohta	fábmogisvuodaámmát	styrkeforhold	1	0	3	0
-
 vuovdinbeavdi	oasesbievdde	stand	1	1	205	0
 vuovdinbeavdi	virgge	stand	1	341	205	1
 vuovdinbeavdi	ámmát	stand	1	17	205	0
@@ -22,29 +14,13 @@ láhtten	dahko	adferd/atferd	52	363	14	0
 
 mátkkálaš	turissta	reisende	9	86	11	0
 
-ealáhusčohkkehus	æládusgihppo	næringsklynge	1	0	3	0
-ealáhusčoakkáldat	æládusgihppo	næringsklynge	1	0	3	0
-
-drošša	táksi	drosje	1	0	10	0
-drošše	táksi	drosje	11	0	10	0
-
 eallinvuorbi	loadda	skjebne	3	0	7	0
 eallinvuorbi	oasse	skjebne	3	2133	7	0
-
-dinennákca	boahtovejulasjvuohta	inntjeningsevne	1	0	4	0
-dienasnákca	boahtovejulasjvuohta	inntjeningsevne	1	0	4	0
-dinenvejolašvuohta	boahtovejulasjvuohta	inntjeningsevne	2	0	4	0
-dienasvejolašvuohta	boahtovejulasjvuohta	inntjeningsevne	2	0	4	0
-dinennákca	boahtomáhtukvuohta	inntjeningsevne	1	0	4	0
-dienasnákca	boahtomáhtukvuohta	inntjeningsevne	1	0	4	0
-dinenvejolašvuohta	boahtomáhtukvuohta	inntjeningsevne	2	0	4	0
-dienasvejolašvuohta	boahtomáhtukvuohta	inntjeningsevne	2	0	4	0
 
 spihčá	svihtja	svepe	3	4	0	0
 spihčá	ruosská	svepe	3	6	0	0
 
 váivvádus	duojkke	ulempe	2	48	52	0
-váivvádus	hieredibme	ulempe	2	5	52	0
 váivvádus	hárenis	ulempe	2	1	52	0
 váivvádus	hieredus	ulempe	2	12	52	0
 
@@ -52,7 +28,6 @@ lassá	biervvek	firkantet ramme av tre	132	1	0	0
 lassá	sjielmmá	firkantet ramme av tre	132	9	0	0
 lassá	uksasjielmmá	firkantet ramme av tre	132	0	0	0
 
-iešstivren	autonomiddja	selvstyre	11	0	33	0
 iešstivren	suverenitiehtta	selvstyre	11	0	33	0
 
 ruovttudoallooahppa	sijddadoajmma	heimstadlære	1	2	4	0
@@ -70,9 +45,6 @@ attus	ásadus	ytelse	4	331	18	0
 prognosa	bájna	prognose	3	0	13	0
 einnostus	bájna	prognose	3	0	13	0
 vuordu	bájna	prognose	4	0	13	0
-prognosa	tsoavttsom	prognose	3	0	13	0
-einnostus	tsoavttsom	prognose	3	0	13	0
-vuordu	tsoavttsom	prognose	4	0	13	0
 
 liiba	aktijvuohta	høve	14	779	18	0
 liiba	vejulasjvuohta	høve	14	82	18	1
@@ -85,17 +57,12 @@ logus	låhkåm	lesestoff	68	525	2	0
 deaddilanlohku	dæddalibme	opplag	3	0	27	0
 deaddileapmi	dæddalibme	opplag	18	0	27	0
 
-gieddebargu	diehtotjoahkkim	feltoppdrag	7	0	1	0
-gieddebargu	ålggobarggo	feltoppdrag	7	1	1	0
-
 sátnevuorru	replihkka	innlegg	10	11	131	0
 álgosáhkavuorru	replihkka	innlegg	1	11	131	0
 sátnevuorru	hålla	innlegg	10	572	131	2
 álgosáhkavuorru	hålla	innlegg	1	572	131	2
 sátnevuorru	álggotjála	innlegg	10	2	131	0
 sátnevuorru	álgadiddje	innlegg	10	30	131	0
-sátnevuorru	álggooasse	innlegg	10	0	131	0
-álgosáhkavuorru	álggooasse	innlegg	1	0	131	0
 sátnevuorru	lågådallam	innlegg	10	71	131	0
 álgosáhkavuorru	lågådallam	innlegg	1	71	131	0
 sátnevuorru	sárnos	innlegg	10	8	131	1
@@ -108,15 +75,6 @@ sátnevuorru	nammadus	innlegg	10	191	131	0
 sealggálassii	gielas	rygg	1	200	14	0
 sealggát	gielas	rygg	1	200	14	0
 
-bággolonistanvejolašvuohta	ekspropriasjåvnnåloahpe	ekspropriasjonsadgang	1	0	1	0
-bággolonistanlohpi	ekspropriasjåvnnåloahpe	ekspropriasjonsadgang	1	0	1	0
-
-beassanlohpi	biergasvejulasjvuohta	tilgang	1	0	273	0
-beassan	biergasvejulasjvuohta	tilgang	381	0	273	0
-beassanláhki	biergasvejulasjvuohta	tilgang	2	0	273	0
-
-gilkkas	melodiddja	klang	0	3	5	0
-skádja	melodiddja	klang	3	3	5	0
 gilkkas	tjuodja	klang	0	57	5	0
 skádja	tjuodja	klang	3	57	5	0
 gilkkas	tjuojalvis	klang	0	53	5	0
@@ -144,12 +102,9 @@ oaivámuš	njunnjusj	høvding	15	129	6	0
 stuorideapmi	bivgge	utbygging	4	0	238	0
 stuorideapmi	tsiekkadus	utbygging	4	137	238	0
 
-doavttergrádabargu	dåktårgrádabarggo	doktorgradsavhandling	3	0	2	0
-
 heaitin	hivástahttem	frafall/avskjed fra embete eller stilling	8	6	11	0
 heaitin	hivás	frafall/avskjed fra embete eller stilling	8	27	11	0
 
-báikedoallu	goahtevehka	husholdning	7	0	23	0
 báikedoallu	sijddadoajmma	husholdning	7	2	23	0
 báikedoallu	sijddadoajmmaoahppa	husholdning	7	0	23	0
 báikedoallu	goahte	husholdning	7	722	23	0
@@ -159,18 +114,9 @@ bivdda	oajvvadus	anmodning	2	241	64	0
 bivdda	hasodus	anmodning	2	0	64	0
 bivdda	ávttjimus	anmodning	2	1	64	0
 
-buhtadanortnet	buvtadusårnik	erstatningsordning	2	0	23	0
-buhtadusortnet	buvtadusårnik	erstatningsordning	14	0	23	0
-
-boallobeavdečoavddus	boallobievddetjoavdos	tegnsettløsning	1	0	1	0
-boallobeavdečoavddus	boallobievdetjoavdos	tegnsettløsning	1	0	1	0
-
 mieđiheapmi	miededibme	tilslutning	10	8	70	0
 goallostus	miededibme	tilslutning	1	8	70	0
 guorraseapmi	miededibme	tilslutning	2	8	70	0
-mieđiheapmi	dåbdijdibme	tilslutning	10	0	70	0
-goallostus	dåbdijdibme	tilslutning	1	0	70	0
-guorraseapmi	dåbdijdibme	tilslutning	2	0	70	0
 mieđiheapmi	dåbdåstibme	tilslutning	10	18	70	0
 goallostus	dåbdåstibme	tilslutning	1	18	70	0
 guorraseapmi	dåbdåstibme	tilslutning	2	18	70	0
@@ -183,10 +129,6 @@ guorraseapmi	dádjadus	tilslutning	2	237	70	0
 mieđiheapmi	dåbdåstus	tilslutning	10	5	70	0
 goallostus	dåbdåstus	tilslutning	1	5	70	0
 guorraseapmi	dåbdåstus	tilslutning	2	5	70	0
-
-árvohuksen	árvvoháhkuhibme	verdiskaping	1	4	156	0
-árvolassáneapmi	árvvoháhkuhibme	verdiskaping	2	4	156	0
-árvolokten	árvvoháhkuhibme	verdiskaping	4	4	156	0
 
 háhkan	ásadibme	rekruttering	74	142	310	0
 besten	ásadibme	rekruttering	8	142	310	0
@@ -204,14 +146,6 @@ vuodjin	mannulahka	kjøring	136	36	31	0
 vuodjin	jåhtulahka	kjøring	136	10	31	0
 vuodjin	jåhtålibme	kjøring	136	4	31	0
 vuodjin	jåhtålus	kjøring	136	0	31	0
-
-kártenláhka	guoradallamláhka	kartleggingslovgiving	1	0	2	0
-kártenláhkaaddin	guoradallamláhka	kartleggingslovgiving	1	0	2	0
-kártenláhka	guoradallamláhkaásadibme	kartleggingslovgiving	1	0	2	0
-kártenláhkaaddin	guoradallamláhkaásadibme	kartleggingslovgiving	1	0	2	0
-
-divodandoaibmabidju	bisodimdoajmma	restaureringstiltak	1	0	1	0
-divodandoaibmabidju	hoajddodåjmalasjvuohta	restaureringstiltak	1	0	1	0
 
 iskosiidváldin	åtsådibme	prøveuttak	1	250	14	0
 geahččalanroggan	åtsådibme	prøveuttak	2	250	14	0
@@ -242,13 +176,9 @@ smávvadállodoallu	sijdda	småbruk	1	1159	8	0
 smávvadoallu	sijdda	småbruk	2	1159	8	0
 smávvadállodoallu	goahte	småbruk	1	722	8	0
 smávvadoallu	goahte	småbruk	2	722	8	0
-smávvadállodoallu	ådåtsiekkadus	småbruk	1	0	8	0
-smávvadoallu	ådåtsiekkadus	småbruk	2	0	8	0
 
 stohpogálvu	inventárra	møbel	6	1	4	0
 viessogálvu	inventárra	møbel	7	1	4	0
-stohpogálvu	viessodávver	møbel	6	0	4	0
-viessogálvu	viessodávver	møbel	7	0	4	0
 
 eanu	máhka	onkel	48	13	9	0
 eanu	sibjuk	onkel	48	9	9	0
@@ -257,12 +187,7 @@ luohpan	hivástahttem	frafall	7	6	22	0
 luohpan	hivás	frafall	7	27	22	0
 
 interválla	gávdda	intervall	2	38	2	0
-interválla	ájggegávdda	intervall	2	2	2	0
 interválla	ájgge	intervall	2	2086	2	0
-
-falástallanulbmil	valástallamdoajmma	idrettsformål	1	0	12	0
-valáštallanulbmil	valástallamdoajmma	idrettsformål	1	0	12	0
-falástallandoaibma	valástallamdoajmma	idrettsformål	2	0	12	0
 
 rieibmu	gádja	skrål	0	0	1	0
 riedja	gádja	skrål	20	0	1	0
@@ -285,39 +210,16 @@ riedja	ritjos	skrål	20	0	1	0
 gadja	ritjos	skrål	1	0	1	0
 
 siibma	snuorri	fortom	4	6	0	0
-siibma	giehtasnuorri	fortom	4	0	0	0
 
 bearjjas	suoja	røykskjerm	1	2	0	0
-bearjjas	biekkasuodje	røykskjerm	1	0	0	0
-
-buvttadanhápmi	åvddånbuktemgållo	produksjonsform	1	0	3	0
-buvttadanvuohki	åvddånbuktemgållo	produksjonsform	3	0	3	0
-buvttadanhápmi	buvtadusmetåvddå	produksjonsform	1	0	3	0
-buvttadanvuohki	buvtadusmetåvddå	produksjonsform	3	0	3	0
 
 ovdavuoigatvuohta	ávkke	privilegium	3	387	3	0
 ovdamunni	ávkke	privilegium	69	387	3	2
 ovdavuoigatvuohta	vuojtto	privilegium	3	70	3	0
 ovdamunni	vuojtto	privilegium	69	70	3	0
-ovdavuoigatvuohta	vuostasjriektá	privilegium	3	0	3	0
-ovdamunni	vuostasjriektá	privilegium	69	0	3	0
-
-mearragolgadeapmi	gåldåguolástibme	drivgarnfiske i sjøen	1	0	0	0
-mearragolgadeapmi	viermmeguollim	drivgarnfiske i sjøen	1	0	0	0
-mearragolgadeapmi	gåldåguollim	drivgarnfiske i sjøen	1	0	0	0
 
 gilvočuoigan	sabek	langrenn	3	57	4	0
 gilvočuoigan	tjuojggamgilpos	langrenn	3	0	4	0
-
-oahpaheaddjeoahpporegiovdna	åhpadiddjeoahppaguovllo	læreutdanningsregion	1	0	1	0
-oahpaheaddjeoahpporegiovdna	åhpadiddjeoahppoguovllo	læreutdanningsregion	1	0	1	0
-oahpaheaddjeoahpporegiovdna	åhpadiddjeåhpadusguovllo	læreutdanningsregion	1	0	1	0
-
-boraspiredilálašvuohta	urudisdille	rovviltsituasjon	1	0	4	0
-boraspiredilli	urudisdille	rovviltsituasjon	2	0	4	0
-
-geahččalanbuvttadeapmi	gæhttjaladdamdoajmma	prøveproduksjon	1	0	4	0
-geahččalanbuvttadus	gæhttjaladdamdoajmma	prøveproduksjon	1	0	4	0
 
 olgomátki	mannulahka	ekskursjon	1	36	6	0
 vánddardeapmi	mannulahka	ekskursjon	176	36	6	0
@@ -359,10 +261,6 @@ iešbirgejupmi	iesjrádálasjvuohta	selvhushold/selvhjelp	3	5	2	0
 iešbirgejupmi	iesjbierggim	selvhushold/selvhjelp	3	10	2	0
 iešbirgejupmi	luojvvo	selvhushold/selvhjelp	3	52	2	0
 
-dásseárvoprinsihppa	avtaárvvusasjvuodamodælla	likevektsprinsipp	1	0	1	0
-dásseárvoprinsihppa	avtaárvvusasjvuodaprinsihppa	likevektsprinsipp	1	0	1	0
-dásseárvomálle	avtaárvvusasjvuodaprinsihppa	likevektsprinsipp	1	0	1	0
-
 boaresbárdni	nuorra	ungkar	7	1374	1	0
 boaresbárdni	fuorkke	ungkar	7	0	1	0
 boaresbárdni	bárnne	ungkar	7	912	1	0
@@ -375,15 +273,6 @@ láidesteaddji	dirigænnta	pådriver	21	5	38	0
 ovddasduvdi	oatsodibme	pådriver	1	14	38	0
 láidesteaddji	oatsodibme	pådriver	21	14	38	0
 
-oljomáinnasdilli	oalljo-subtsas	oljeeventyr	0	0	1	0
-oljohistorjá	oalljo-subtsas	oljeeventyr	1	0	1	0
-oljomáinnasdilli	ulljo-subtsas	oljeeventyr	0	0	1	0
-oljohistorjá	ulljo-subtsas	oljeeventyr	1	0	1	0
-
-fievrrádusgeaidnu	fievrrovæddja	transportår	1	0	0	0
-fievrrádusgeaidnu	fievrrorahte	transportår	1	0	0	0
-fievrrádusgeaidnu	fievrrogæjnno	transportår	1	0	0	0
-
 bohcci	sláŋŋa	rør	10	0	12	0
 revre	sláŋŋa	rør	5	0	12	0
 suovvabohcci	sláŋŋa	rør	6	0	12	0
@@ -393,9 +282,6 @@ suovvabohcci	gurkos	rør	6	0	12	0
 bohcci	njammambåhttså	rør	10	2	12	0
 revre	njammambåhttså	rør	5	2	12	0
 suovvabohcci	njammambåhttså	rør	6	2	12	0
-bohcci	nállobåhttså	rør	10	0	12	0
-revre	nállobåhttså	rør	5	0	12	0
-suovvabohcci	nállobåhttså	rør	6	0	12	0
 
 ovttaseallin	aktisasjiellem	sameksistens	10	1	16	0
 ovttaseallin	aktanviessom	sameksistens	10	2	16	1
@@ -407,18 +293,6 @@ govadat	tjuorgas	riss	8	22	6	0
 govadat	girjos	riss	8	3	6	0
 govadat	tjuohpadus	riss	8	0	6	0
 
-árjabidjan	energiddja	innsats	1	0	343	0
-bijus	energiddja	innsats	2	0	343	0
-árjabidjan	vájmmelisvuohta	innsats	1	0	343	0
-árja	vájmmelisvuohta	innsats	101	0	343	0
-árjjalašvuohta	vájmmelisvuohta	innsats	2	0	343	0
-bijus	vájmmelisvuohta	innsats	2	0	343	0
-searat	vájmmelisvuohta	innsats	63	0	343	0
-árjabidjan	åvdedibme	innsats	1	18	343	0
-árja	åvdedibme	innsats	101	18	343	0
-árjjalašvuohta	åvdedibme	innsats	2	18	343	0
-bijus	åvdedibme	innsats	2	18	343	0
-searat	åvdedibme	innsats	63	18	343	0
 árjabidjan	vuorodibme	innsats	1	62	343	2
 árja	vuorodibme	innsats	101	62	343	2
 árjjalašvuohta	vuorodibme	innsats	2	62	343	2
@@ -455,11 +329,8 @@ jahkodat	jáhpe	årssyklus	14	35	4	1
 olbmážat	vidnudahka	kamerat	7	97	5	0
 olbmážat	ráddna	kamerat	7	340	5	0
 olbmážat	tjuovudiddje	kamerat	7	0	5	0
-olbmážat	párrabielle	kamerat	7	1	5	0
 olbmážat	guojmme	kamerat	7	269	5	0
 olbmážat	gállasjguojmme	kamerat	7	36	5	0
-olbmážat	iellemguojmme	kamerat	7	0	5	0
-olbmážat	årromguojmme	kamerat	7	0	5	0
 olbmážat	fárroguojmme	kamerat	7	1	5	0
 olbmážat	gállasj	kamerat	7	34	5	0
 olbmážat	ålmåj	kamerat	7	966	5	0
@@ -473,27 +344,14 @@ stargatvuohta	tjårggisvuohta	stivhet	0	0	1	0
 stirdu	tjårggisvuohta	stivhet	5	0	1	0
 stargatvuohta	nanosvuohta	stivhet	0	10	1	0
 stirdu	nanosvuohta	stivhet	5	10	1	0
-stargatvuohta	nanusvuohta	stivhet	0	0	1	0
-stirdu	nanusvuohta	stivhet	5	0	1	0
-
-erenoamášsuorgi	sierrabájna	spesialitet	1	0	6	0
-erenoamášvuohta	sierrabájna	spesialitet	17	0	6	0
-erenoamášsuorgi	sierralágásjvuohta	spesialitet	1	5	6	0
-erenoamášvuohta	sierralágásjvuohta	spesialitet	17	5	6	0
 
 guoddinnákca	kontinuitiehtta	bærekraft	2	0	42	0
 guoddevašvuohta	kontinuitiehtta	bærekraft	3	0	42	0
 bistevašvuohta	kontinuitiehtta	bærekraft	4	0	42	0
 
-fitnodatdoallu	oasesdoajmma	forretningsdrift	1	0	7	0
-fitnodatdoaibma	oasesdoajmma	forretningsdrift	4	0	7	0
-
 čoarbbealli	tjibbe	hoft	4	4	1	0
 čoarbbealli	nårås	hoft	4	7	1	0
 
-fievrrideapmi	joarkedibme	frakt	40	0	17	0
-fievrrádus	joarkedibme	frakt	3	0	17	0
-geaseheapmi	joarkedibme	frakt	6	0	17	0
 fievrrideapmi	fievrro	frakt	40	23	17	0
 fievrrádus	fievrro	frakt	3	23	17	0
 geaseheapmi	fievrro	frakt	6	23	17	0
@@ -501,24 +359,14 @@ fievrrideapmi	sáhtto	frakt	40	0	17	0
 fievrrádus	sáhtto	frakt	3	0	17	0
 geaseheapmi	sáhtto	frakt	6	0	17	0
 
-oastinšiehtadus	oaseslihtudibme	kjøpekontrakt	2	0	3	0
-gávpešiehtadus	oaseslihtudibme	kjøpekontrakt	3	0	3	0
-oastinšiehtadus	oasestimsjiehtadus	kjøpekontrakt	2	0	3	0
-gávpešiehtadus	oasestimsjiehtadus	kjøpekontrakt	3	0	3	0
-
 čoagganansadji	tjåhkanimsadje	samlingspunkt	1	28	3	2
 čoaggananbáiki	tjåhkanimsadje	samlingspunkt	1	28	3	2
 
 viessohuksensadji	goahtesadje	tomt	1	8	39	0
 viessohuksenbáiki	goahtesadje	tomt	1	8	39	0
 
-váldovuođustus	oajvvesivva	hovedargument	1	4	3	0
-
 koaffar	væssko	koffert	4	5	1	0
 koaffar	giehtavæssko	koffert	4	0	1	0
-
-fievrridanneahtta	fievrronæhtta	overføringsnett	1	0	1	0
-fievrridanfierpmádat	fievrronæhtta	overføringsnett	1	0	1	0
 
 čállinmearkavuogádat	tjála	tegnsett	1	146	22	0
 čállinmearkkat	tjála	tegnsett	5	146	22	0

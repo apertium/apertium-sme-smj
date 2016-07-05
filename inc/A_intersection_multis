@@ -1,5 +1,4 @@
 
-máŋga	ienep	mange	1284	2212	1770	13
 máŋga	ienemus	mange	1284	525	1770	5
 
 individuella	individuálla	individuell	1	4	121	3
@@ -8,11 +7,7 @@ individuella	ájnegasj	individuell	1	223	121	11
 reála	duohta	reell/real	7	485	120	5
 reála	duodalasj	reell/real	7	88	120	0
 
-formála	formalalasj	formell	37	4	152	0
-formála	hámulasj	formell	37	0	152	0
-
 eahpeformála	iehpeformálla	uformell	8	22	21	0
-eahpeformála	iehpeformalalasj	uformell	8	1	21	0
 
 binná bánna	unne	liten	0	1214	1294	23
 binná bánna	uhttse	liten	0	30	1294	0
@@ -33,7 +28,6 @@ návccaheapme	njuoras	svak/næringssvak	6	15	56	0
 návccaheapme	fuonos	svak/næringssvak	6	0	56	0
 
 áššeheapme	sivádibme	uskyldig/usaklig	6	3	3	0
-áššeheapme	iehpeássjálasj	uskyldig/usaklig	6	0	3	0
 
 geahnoheapme	tjuorbbe	svak	33	16	110	0
 geahnoheapme	rassje	svak	33	58	110	4
@@ -44,7 +38,6 @@ geahnoheapme	njuoras	svak	33	15	110	0
 geahnoheapme	fuonos	svak	33	0	110	0
 
 árvvoheapme	gássjel	uverdig	4	502	5	0
-árvvoheapme	gássjelis	vanskelig/uverdig	4	81	266	0
 
 bargguheapme	bargodibme	ledig	33	20	62	1
 bargguheapme	rabás	arbeidsledig/ledig	33	392	37	0
@@ -57,9 +50,7 @@ váfi	visses	svær/tykk	1	102	217	0
 váfi	suohkat	tykk	1	22	6	0
 váfi	jasskat	svær/tykk	1	78	217	0
 
-gustojeaddji	lágálasj	gjeldende/gyldig/angjeldende	60	0	137	0
 gustojeaddji	dågålasj	gjeldende/gyldig/angjeldende	60	44	137	0
-gustojeaddji	dåhkålasj	gjeldende/gyldig/angjeldende	60	0	137	0
 
 njieddji	negatijvva	nedadgående/synkende/negativ	2	7	54	2
 njieddji	negatijvalasj	nedadgående/synkende/negativ	2	16	54	2
@@ -83,9 +74,6 @@ dárki	visses	viss/sikker	17	102	504	3
 oatni	oadne	kort	1	130	245	9
 oatni	ånigasj	kort	1	7	245	1
 
-balddihahtti	balldalahtte	urovekkende	25	0	6	0
-balddihahtti	suorgganahtte	urovekkende	25	14	6	0
-
 siivui	lådje	rolig/lydig	24	31	8	1
 siivui	sijvvo	rolig/snill/lydig	24	9	9	0
 siivui	jasskat	rolig/snill/lydig	24	78	9	1
@@ -106,7 +94,6 @@ sealvi	sjerrat	klar	1	15	492	0
 goavvi	gássjel	hensynsløs/vanskelig/streng	6	502	201	23
 goavvi	garras	hensynsløs/vanskelig/streng	6	323	201	2
 goavvi	rámes	hensynsløs	6	7	1	0
-goavvi	gássjelis	hensynsløs/vanskelig/streng	6	81	201	0
 goavvi	tjavggat	hensynsløs/vanskelig/streng	6	13	201	0
 
 áddjái	nuolle	tidkrevende	63	34	19	0
@@ -122,7 +109,6 @@ assái	gasuk	tykk	10	28	6	0
 assái	suohkat	tykk	10	22	6	0
 
 váivái	gássjel	ubehagelig/vanskelig	1	502	267	23
-váivái	gássjelis	ubehagelig/vanskelig	1	81	267	0
 
 hearvái	hávsske	morsom	26	149	10	0
 hearvái	suohtas	morsom	26	373	10	0
@@ -168,11 +154,9 @@ iežálágan	iesjguhtiklágásj	forskjellig	4	10	218	0
 
 iešlágan	imáj	merkelig/vanskelig	5	29	273	0
 iešlágan	gássjel	merkelig/vanskelig	5	502	273	23
-iešlágan	gássjelis	merkelig/vanskelig	5	81	273	0
 
 eallilan	åvdusj	gammel/voksen	22	6	337	0
 eallilan	dålusj	gammel/voksen	22	657	337	13
-eallilan	boareslágán	gammel/voksen	22	0	337	0
 eallilan	vuoras	gammel/voksen	22	731	337	25
 eallilan	boares	gammel/voksen	22	115	337	6
 
@@ -184,7 +168,6 @@ gárremiin	dievalasj	full	6	11	381	0
 gárremiin	dievas	full	6	205	381	0
 gárremiin	ålles	full	6	1987	381	8
 
-nohkameahttun	agálasj	uendelig	4	0	5	0
 nohkameahttun	ihkálasj	uendelig	4	7	5	0
 
 jođán	valle	snar/rask	170	23	131	0
@@ -247,9 +230,6 @@ liekkus	báhkas	hyggelig/varm	23	43	33	0
 liekkus	liekkas	hyggelig/varm	23	93	33	8
 liekkus	suohtas	hyggelig/varm	23	373	33	0
 
-ovddimus	vuostasj	første/fremre	21	1751	783	76
-ovddimus	åvdep	første/fremre	21	722	783	1
-
 čalmmus	tjielgas	åpenbar/tydelig/oversiktlig	4	463	63	19
 čalmmus	tsuojgos	oversiktlig	4	2	15	0
 
@@ -260,7 +240,6 @@ sámás	sáme	samisk	37	17116	18042	1296
 sámás	sámegielak	samisk	37	549	18042	59
 
 váigat	gássjel	vanskelig/kjedelig	13	502	266	23
-váigat	gássjelis	vanskelig/kjedelig	13	81	266	0
 
 girkat	tjielgas	klar	1	463	492	24
 girkat	gergas	klar	1	61	492	0
@@ -281,7 +260,6 @@ vitmat	smidá	kvikk/skarp/dyktig	3	122	13	2
 lášmat	háhppel	snar/smidig	9	27	81	0
 lášmat	jåhtel	snar/smidig	9	88	81	0
 
-eatnat	ienep	mange	36	2212	1770	6
 eatnat	ienemus	mange	36	525	1770	2
 
 geahppat	álkke	lett	18	484	240	18
@@ -413,7 +391,6 @@ sisriikkalaš	nasjonálla	nasjonal/innenlandsk	8	169	459	39
 sisriikkalaš	nasjåvnålasj	nasjonal/innenlandsk	8	57	459	11
 sisriikkalaš	rijkavijddásasj	nasjonal/innenlandsk	8	7	459	0
 
-guovttegielalaš	guovtegielalasj	tospråklig	77	1	201	0
 guovttegielalaš	guovtegielak	tospråklig	77	278	201	19
 
 buorremielalaš	positijvva	positiv	2	18	478	4
@@ -429,7 +406,6 @@ doaimmalaš	vissjal	handlekraftig/aktiv/driftsmessig/effektiv	32	74	164	1
 doaimmalaš	vájmmel	handlekraftig/aktiv/driftsmessig/effektiv	32	18	164	2
 doaimmalaš	biektel	handlekraftig/aktiv/driftsmessig/effektiv	32	6	164	0
 
-dynámalaš	dynámalasj	dynamisk	12	16	24	2
 dynámalaš	såddjel	dynamisk	12	0	24	0
 
 regiovnnalaš	regionálla	regional	40	13	779	3
@@ -442,11 +418,6 @@ searalaš	garras	selvstendig/sterk/dyktig	3	323	261	1
 searalaš	nanos	selvstendig/sterk/dyktig	3	432	261	23
 searalaš	smidá	selvstendig/sterk/dyktig	3	122	261	3
 
-grammáhtalaš	grammatihkalasj	grammatisk	3	8	5	0
-grammáhtalaš	grammáhtalasj	grammatisk	3	12	5	2
-
-rievttalaš	lágalasj	rettferdig	10	5	52	0
-rievttalaš	lágálasj	rettslig/rettferdig	10	0	102	0
 rievttalaš	rievtuk	rettslig/rettferdig	10	22	102	5
 
 aktiivvalaš	vissjal	aktiv	128	74	473	0
@@ -455,7 +426,6 @@ aktiivvalaš	vájmmel	aktiv	128	18	473	2
 vuoiŋŋalaš	vuojŋŋalasj	immateriell/mental	86	88	16	5
 vuoiŋŋalaš	åskulasj	immateriell/mental	86	66	16	0
 
-ruđalaš	jábálasj	finansiell/rik/økonomisk	99	0	396	0
 ruđalaš	rudálasj	finansiell/rik/økonomisk	99	33	396	3
 
 álššalaš	valle	rask	1	23	115	0
@@ -474,7 +444,6 @@ oinnolaš	tjielgas	synlig	19	463	71	0
 oinnolaš	tsuojgos	synlig	19	2	71	0
 oinnolaš	vuojnos	åpenbar/synlig	19	216	50	18
 
-šattolaš	jábálasj	fruktbar/frodig/rik	33	0	124	0
 šattolaš	suohkat	fruktbar/frodig/rik	33	22	124	0
 
 vásttolaš	muodugasj	tilsvarende/ansvarlig	7	72	290	2
@@ -524,7 +493,6 @@ ovttaveardásaš	dássásasj	likeverdig	14	7	195	0
 
 -jahkásaš	åvdusj	gammel	0	6	430	0
 -jahkásaš	dålusj	gammel	0	657	430	13
--jahkásaš	boareslágán	gammel	0	0	430	0
 -jahkásaš	vuoras	gammel	0	731	430	22
 -jahkásaš	boares	gammel	0	115	430	6
 
@@ -551,9 +519,7 @@ bissovaš	fássta	permanent/kronisk	183	10	80	0
 bissovaš	stádes	permanent/kronisk/fast	183	0	284	0
 bissovaš	stuoves	permanent/kronisk/fast	183	355	284	54
 
-gustovaš	lágálasj	gjeldende/gyldig	58	0	202	0
 gustovaš	dågålasj	gjeldende/gyldig	58	44	202	0
-gustovaš	dåhkålasj	gjeldende/gyldig	58	0	202	0
 
 stuorebuš	stuorre	stor	13	782	3638	17
 stuorebuš	vijdes	stor	13	199	3638	10
