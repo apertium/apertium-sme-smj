@@ -1,3 +1,4 @@
+# Most of this is good:
 
 giellalávgun	giellalávggom	språkbad	21	12	39	2
 
@@ -17,7 +18,7 @@ bargamušsuorgi	barggosuorgge	arbeidsområde	1	11	60	0
 
 oahppansuorgi	åhpadussuorgge	utdanningsområde	1	11	2	1
 
-guolgamearka	boatsojmærkka	reinmerke	1	16	62	0
+@guolgamearka	boatsojmærkka	reinmerke	1	16	62	0
 
 oahpaheaddjeámmát	åhpadiddjevirgge	læreryrke	2	7	4	1
 
@@ -25,12 +26,12 @@ rihppaskuvla	skalloskåvllå	konfirmasjonsskole	5	2	4	0
 
 kránnjágielda	ráddnásuohkan	nabokommune	2	14	6	2
 
-virgejoavku	barggojuogos	yrkesgruppe	1	121	4	0
-fidnojoavku	barggojuogos	yrkesgruppe	1	121	4	0
-ámmátjoavku	barggojuogos	yrkesgruppe	1	121	4	0
-fidnosuorgi	barggojuogos	yrkesgruppe	3	121	4	0
+@virgejoavku	barggojuogos	yrkesgruppe	1	121	4	0
+@fidnojoavku	barggojuogos	yrkesgruppe	1	121	4	0
+@ámmátjoavku	barggojuogos	yrkesgruppe	1	121	4	0
+@fidnosuorgi	barggojuogos	yrkesgruppe	3	121	4	0
 
-skuvlajođiheapmi	skåvllåstivrra	skoleledelse	2	1	6	0
+@skuvlajođiheapmi	skåvllåstivrra	skoleledelse	2	1	6	0
 
 válgasearvan	válggaoassálasstem	valgdeltakelse	2	5	21	4
 válgaoassálastin	válggaoassálasstem	valgdeltakelse	8	5	21	4
@@ -39,13 +40,13 @@ dearvvasvuođaiskkadeapmi	varresvuodaguoradallam	helseundersøkelse	1	2	5	0
 
 biibbaljorgaleapmi	rámátjårggålibme	bibeloversettelse	2	5	4	3
 
-káfestallat	káffabåddå	kaffepause	4	7	1	0
+@káfestallat	káffabåddå	kaffepause	4	7	1	0
 
 gaskkustanvuohki	åvddånbuktemvuohke	formidlingsmåte	1	53	1	0
 
 hálddahushoavda	háldadusoajvve	administrasjonssjef	16	19	5	0
 
-birgenvuođđu	iellemvuodo	livsgrunnlag	1	5	31	0
+@birgenvuođđu	iellemvuodo	livsgrunnlag	1	5	31	0
 
 áššegieđahallan	ássjegiehtadallam	saksbehandling	5	26	154	4
 
@@ -59,24 +60,24 @@ skuvlaortnet	skåvllåásadus	skoleordning	2	1	2	0
 
 oahpaheddjiidoahppu	åhpadiddjeåhpadus	lærerutdanning	1	39	140	0
 
-ámmátoahpahus	virggeåhpadus	yrkesopplæring	1	3	21	0
+@ámmátoahpahus	virggeåhpadus	yrkesopplæring	1	3	21	0
 
-fidnooahppu	virggeåhpadus	yrkesutdanning/yrkesopplæring	9	3	12	0
+@fidnooahppu	virggeåhpadus	yrkesutdanning/yrkesopplæring	9	3	12	0
 
 liigeealáhus	lasseæládus	tilleggsnæring	1	2	17	1
 
-bieggafápmoáŋgiruššan	bieggafábmo	vindkraftsatsing	1	8	1	0
+@bieggafápmoáŋgiruššan	bieggafábmo	vindkraftsatsing	1	8	1	0
 
 feargaruggu	færjjokádja	fergekai	0	13	1	0
 
 guovddášárvu	vuodoárvvo	kjerneverdi	0	5	1	0
 
-bieggafápmoenergiija	bieggafábmo	vindkraftenergi	1	8	1	0
+@bieggafápmoenergiija	bieggafábmo	vindkraftenergi	1	8	1	0
 
-bieggafápmoindustriija	bieggafábmo	vindkraftindustri	1	8	1	0
+@bieggafápmoindustriija	bieggafábmo	vindkraftindustri	1	8	1	0
 
-oahpahandoaibmabidju	åhpadusdoajmma	opplæringstiltak	1	13	12	0
-oahppodoaibmabidju	åhpadusdoajmma	opplæringstiltak	1	13	12	0
+@oahpahandoaibmabidju	åhpadusdoajmma	opplæringstiltak	1	13	12	0
+@oahppodoaibmabidju	åhpadusdoajmma	opplæringstiltak	1	13	12	0
 oahpahusdoaibmabidju	åhpadusdoajmma	opplæringstiltak	1	13	12	0
 
 ealáhusdoaibmabidju	æládusdoajmma	næringstiltak	1	20	5	0
@@ -91,7 +92,7 @@ veahkadatlohku	álmmuklåhko	befolkningstall	2	19	5	0
 
 doaibmabidjoplána	doajmmapládna	tiltaksplan	1	119	24	0
 
-bieggafápmoplána	bieggafábmo	vindkraftplan	2	8	4	0
+@bieggafápmoplána	bieggafábmo	vindkraftplan	2	8	4	0
 
 giellajuogus	giellaåssudahka	språkseksjon	3	1	3	0
 
@@ -106,7 +107,7 @@ fágačehppodat	fáhkamáhtudahka	fagkunnskap	1	18	9	0
 
 gielladáidu	giellamáhtudahka	språkkunnskap	8	63	12	1
 
-bieggafápmoseminára	bieggafábmo	vindkraftseminar	1	8	1	0
+@bieggafápmoseminára	bieggafábmo	vindkraftseminar	1	8	1	0
 
 lummaruhta	sålbbebiednik	lommepenger	1	2	1	0
 
@@ -118,7 +119,7 @@ oahppoguovddáš	åhpadusguovdásj	studiesenter	6	119	3	0
 
 oahpahallanguovddáš	åhpadusguovdásj	opplæringssenter	1	119	1	0
 
-báikenammaregister	bájkkenamma	stednavnregister	1	257	1	0
+@báikenammaregister	bájkkenamma	stednavnregister	1	257	1	0
 
 oahpahansuorgi	åhpadussuorgge	opplæringssektor	1	11	10	2
 
@@ -131,7 +132,7 @@ biibbalvearsa	rámátværssa	bibelvers	2	2	1	0
 
 lohkansadji	oahpposadje	studieplass	2	5	5	0
 
-hárjehallisadji	oahpposadje	læreplass	1	5	8	0
+@hárjehallisadji	oahpposadje	læreplass	1	5	8	0
 
 hárjehallisadji	hárjjidallamsadje	praksisplass	1	2	2	0
 bargohárjehallansadji	hárjjidallamsadje	praksisplass	1	2	2	0
@@ -140,7 +141,7 @@ hávdebáiki	hávddesadje	gravplass	1	1	7	0
 
 geaidnočuovga	gahttuntjuovgga	gatelys	2	1	4	0
 
-heahteguovddášdoaibma	hiehteguovdásj	nødsentralvirksomhet	1	2	1	0
+@heahteguovddášdoaibma	hiehteguovdásj	nødsentralvirksomhet	1	2	1	0
 
 váimmusdoaibma	vuododoajmma	kjerneaktivitet	1	11	1	0
 
@@ -150,7 +151,7 @@ ealáhusdoallu	æládusdoajmma	næringsdrift	2	20	7	0
 
 sohkarbihttá	såhkårbiehkke	sukkerbit	1	5	1	0
 
-bieggafápmoprošeakta	bieggafábmo	vindkraftprosjekt	3	8	6	0
+@bieggafápmoprošeakta	bieggafábmo	vindkraftprosjekt	3	8	6	0
 
 doaibmabidjoorohat	doajmmaguovllo	tiltaksdistrikt	1	16	4	0
 doaibmabidjoguovlu	doajmmaguovllo	tiltaksdistrikt	5	16	4	0
@@ -169,7 +170,7 @@ fidnoeallin	barggoiellem	yrkesliv	1	56	8	0
 eanandoarggástus	ednamdoargestibme	jordskjelv	2	2	2	0
 eanadoarggástus	ednamdoargestibme	jordskjelv	7	2	2	0
 
-silbarávdebiras	silbbasmirjár	sølvsmedmiljø	1	1	1	0
+@silbarávdebiras	silbbasmirjár	sølvsmedmiljø	1	1	1	0
 
 fidnobiras	fáhkabirás	fagmiljø	1	12	28	1
 
