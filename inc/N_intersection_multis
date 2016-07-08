@@ -1,41 +1,42 @@
-
-vanca	vanntsa	båt	3	341	138	3
-vanca	vanás	båt	3	153	138	0
+ # most of these are bad
+ 
++vanca	vanntsa	båt	3	341	138	3
++vanca	vanás	båt	3	153	138	0
 
 vuođđojurdda	prinsihppa	prinsipp/ideologi	28	79	130	6
-vuođđojurdda	vuodoájádus	prinsipp/ideologi	28	8	130	1
++vuođđojurdda	vuodoájádus	prinsipp/ideologi	28	8	130	1
 
-olmmoščearda	ulmusjtjærdda	folkeslag/nasjon	7	17	21	0
++olmmoščearda	ulmusjtjærdda	folkeslag/nasjon	7	17	21	0
 olmmoščearda	nasjåvnnå	folkeslag/nasjon	7	70	21	7
 
-jeaggeravda	jieggerabdda	myr	1	3	41	0
++jeaggeravda	jieggerabdda	myr	1	3	41	0
 jeaggeravda	jiegge	myr	1	80	41	1
 
 jápmindávda	vihke	sykdom	1	128	123	0
 
-stáda	stáda	stat	40	440	1583	0
++stáda	stáda	stat	40	440	1583	0
 stáda	stáhtta	stat	40	607	1583	72
 
 álgovuolgga	ruohttsa	opprinnelse	1	28	27	0
 álgovuolgga	álggo	opprinnelse	1	1161	27	2
 
-cuogga	tjehpudahka	evne/kapasitet	2	127	128	0
++cuogga	tjehpudahka	evne/kapasitet	2	127	128	0
 cuogga	dájddo	evne/kapasitet	2	28	128	3
 cuogga	ækto	evne/kapasitet	2	105	128	0
 
-beaivečuovga	biejvvetjuovgga	dagslys	7	19	3	0
++beaivečuovga	biejvvetjuovgga	dagslys	7	19	3	0
 
-gaskafága	gasskafáhka	mellomfag	7	10	9	0
++gaskafága	gasskafáhka	mellomfag	7	10	9	0
 
 dárogielfága	dárogiella	norsk/norskfaget	4	512	1219	38
 dárogielfága	dárro	norsk/norskfaget	4	644	1219	7
 
-luonddufága	luonndofáhka	naturfag	17	53	30	0
++luonddufága	luonndofáhka	naturfag	17	53	30	0
 
-máđidja	gæjnno	løype/vei	37	196	254	3
++máđidja	gæjnno	løype/vei	37	196	254	3
 máđidja	bálges	løype/vei	37	111	254	2
 
-sudja	sivva	grunn/årsak	5	219	1555	14
++sudja	sivva	grunn/årsak	5	219	1555	14
 sudja	vuodo	grunn	5	1541	2990	14
 
 veahka	famillja	familie/styrke/kraft/makt	92	42	541	7
@@ -51,30 +52,30 @@ gaskasáhka	guládallam	dialog	1	610	376	4
 gaskasáhka	ságastallam	dialog	1	422	376	17
 
 mediapolitihkka	mediapolitihkka	mediapolitikk/mediepolitikk	6	0	3	0
-mediapolitihkka	medijápolitihkka	mediapolitikk/mediepolitikk	6	1	3	0
++mediapolitihkka	medijápolitihkka	mediapolitikk/mediepolitikk	6	1	3	0
 
-sámepolitihkka	sámepolitihkka	samepolitikk	191	78	174	20
++sámepolitihkka	sámepolitihkka	samepolitikk	191	78	174	20
 
-diehtojuohkinpolitihkka	diehtojuohkempolitihkka	informasjonspolitikk	1	0	2	0
++diehtojuohkinpolitihkka	diehtojuohkempolitihkka	informasjonspolitikk	1	0	2	0
 
 várrečohkka	tjåhkkå	bakketopp/fjelltopp	4	152	2	1
-várrečohkka	várretjåhkkå	bakketopp/fjelltopp	4	3	2	0
++várrečohkka	várretjåhkkå	bakketopp/fjelltopp	4	3	2	0
 
 boazomearka	mærkka	reinmerke	9	352	62	1
-boazomearka	boatsojmærkka	reinmerke	9	16	62	9
++boazomearka	boatsojmærkka	reinmerke	9	16	62	9
 
-váŋka	vihke	skade	0	128	227	1
++váŋka	vihke	skade	0	128	227	1
 váŋka	vahák	skade	0	79	227	2
 
 feaila	sivva	feil	31	219	112	1
-feaila	vihke	feil	31	128	112	2
++feaila	vihke	feil	31	128	112	2
 feaila	vierre	feil	31	131	112	0
 
-girjegiella	girjjegiella	skriftspråk	11	6	35	0
++girjegiella	girjjegiella	skriftspråk	11	6	35	0
 
-bargomiella	barggomiella	motivasjon	2	4	50	0
++bargomiella	barggomiella	motivasjon	2	4	50	0
 
-tálla	tálla	tall	3	167	535	7
++tálla	tálla	tall	3	167	535	7
 tálla	låhko	tall	3	299	535	8
 
 gávpedoaibma	doajmma	handelsvirksomhet/virksomhet/forretningsvirksomhet	4	1887	318	26
@@ -89,13 +90,13 @@ bargodoaibma	barggo	oppgave	6	2534	541	3
 bearráigeahččodoaibma	bærrájgæhttje	tilsyn/kontrolloppgave/tilsynsaktivitet	1	12	54	1
 bearráigeahččodoaibma	bærrájgæhttjo	tilsyn/kontrolloppgave/tilsynsaktivitet	1	26	54	2
 
-birasdoaibma	birásdoajmma	miljøtiltak	2	1	13	0
++birasdoaibma	birásdoajmma	miljøtiltak	2	1	13	0
 
-ealáhusdoaibma	æládusdoajmma	næringsliv/næringsvirksomhet	45	20	231	5
++ealáhusdoaibma	æládusdoajmma	næringsliv/næringsvirksomhet	45	20	231	5
 ealáhusdoaibma	æládusiellem	næringsliv	45	45	355	19
 ealáhusdoaibma	æládus	næringsliv/næringsvirksomhet	45	577	231	14
 
-giellačuolbma	giellatjuolmma	språkutfordring/språkproblem	1	0	1	0
++giellačuolbma	giellatjuolmma	språkutfordring/språkproblem	1	0	1	0
 
 árvonamma	bajelttjála	tittel	1	76	56	0
 árvonamma	namma	tittel	1	1880	56	1
@@ -103,21 +104,21 @@ giellačuolbma	giellatjuolmma	språkutfordring/språkproblem	1	0	1	0
 ámmátnamma	bajelttjála	tittel	1	76	56	0
 ámmátnamma	namma	tittel	1	1880	56	1
 
-oahppoprográmma	åhpadusprográmma	utdanningsprogram	23	258	89	36
++oahppoprográmma	åhpadusprográmma	utdanningsprogram	23	258	89	36
 
-sámemiššovdna	sámemisjåvnnå	samemisjon	3	66	6	2
++sámemiššovdna	sámemisjåvnnå	samemisjon	3	66	6	2
 
-ruvdna	kråvnnå	krone	21	403	738	101
++ruvdna	kråvnnå	krone	21	403	738	101
 
-suotna	suodna	åre/streng/sene	8	17	127	1
++suotna	suodna	åre/streng/sene	8	17	127	1
 suotna	árran	åre/streng/sene	8	849	127	4
 
-ovttasbargoorgána	aktisasjbarggoorgádna	samarbeidsorgan	24	10	40	3
++ovttasbargoorgána	aktisasjbarggoorgádna	samarbeidsorgan	24	10	40	3
 
 gielddaplána	gielldapládna	kommuneplan	7	0	38	0
-gielddaplána	suohkanpládna	kommuneplan	7	22	38	1
++gielddaplána	suohkanpládna	kommuneplan	7	22	38	1
 
-gielddaoasseplána	suohkanoassepládna	kommunedelplan	1	6	7	0
++gielddaoasseplána	suohkanoassepládna	kommunedelplan	1	6	7	0
 
 doalloplána	barggopládna	bruksplan	1	13	1	0
 
@@ -125,40 +126,40 @@ beavdeguorra	bievdde	bord	4	210	36	13
 beavdeguorra	fiello	bord	4	44	36	2
 
 gielddastivra	gielldastivrra	kommunestyre	108	12	172	0
-gielddastivra	suohkanstivrra	kommunestyre	108	115	172	10
++gielddastivra	suohkanstivrra	kommunestyre	108	115	172	10
 
 suohkanstivra	gielldastivrra	kommunestyre	115	12	172	0
-suohkanstivra	suohkanstivrra	kommunestyre	115	115	172	12
++suohkanstivra	suohkanstivrra	kommunestyre	115	115	172	12
 
 vuođđostruktuvra	infrastruktuvrra	infrastruktur	6	33	140	1
-vuođđostruktuvra	vuodostruktuvrra	infrastruktur	6	15	140	0
++vuođđostruktuvra	vuodostruktuvrra	infrastruktur	6	15	140	0
 
-sámekultuvra	sámekultuvrra	samekultur	71	58	10	1
++sámekultuvra	sámekultuvrra	samekultur	71	58	10	1
 
-sámekonferánsa	sámekonferánssa	samekonferanse	17	29	18	14
++sámekonferánsa	sámekonferánssa	samekonferanse	17	29	18	14
 
 gursa	gurssa	kurs	3	0	253	0
-gursa	kurssa	kurs	3	262	253	22
++gursa	kurssa	kurs	3	262	253	22
 
-buozanvuohta	dávdda	sykdom	15	85	123	3
++buozanvuohta	dávdda	sykdom	15	85	123	3
 buozanvuohta	vihke	sykdom	15	128	123	0
 
 boasttuvuohta	sivva	feil	42	219	112	1
-boasttuvuohta	vihke	feil	42	128	112	1
++boasttuvuohta	vihke	feil	42	128	112	1
 boasttuvuohta	vierre	feil	42	131	112	0
 
-giellagelbbolašvuohta	giellamáhtudahka	språkkompetanse	11	63	44	29
++giellagelbbolašvuohta	giellamáhtudahka	språkkompetanse	11	63	44	29
 giellagelbbolašvuohta	giellamáhtto	språkkompetanse	11	19	44	2
 
 máhtolašvuohta	oahppa	kunnskap	93	1656	1436	4
 máhtolašvuohta	diehto	kunnskap	93	1839	1436	50
-máhtolašvuohta	máhtto	kunnskap	93	391	1436	35
++máhtolašvuohta	máhtto	kunnskap	93	391	1436	35
 
 veahkaválddálašvuohta	vahágahttem	overgrep/vold	27	30	79	10
 veahkaválddálašvuohta	vierredahko	overgrep/vold	27	32	79	1
 
 dilálašvuohta	gasskavuohta	forhold/omstendighet/situasjon/anledning	236	86	862	3
-dilálašvuohta	dille	forhold/omstendighet/situasjon/anledning	236	819	862	86
++dilálašvuohta	dille	forhold/omstendighet/situasjon/anledning	236	819	862	86
 
 gulahallandilálašvuohta	guládallam	dialog	2	610	376	4
 gulahallandilálašvuohta	ságastallam	dialog	2	422	376	17
@@ -166,31 +167,31 @@ gulahallandilálašvuohta	ságastallam	dialog	2	422	376	17
 gullevašvuohta	aktijvuohta	identitet/tilknytning	93	779	300	5
 gullevašvuohta	aktisasjvuohta	identitet/tilknytning	93	214	300	2
 
-luohttevašvuohta	dårvvo	tillit	10	102	81	0
++luohttevašvuohta	dårvvo	tillit	10	102	81	0
 luohttevašvuohta	luohtádus	tillit	10	48	81	1
 
-boarrásiidruhta	pensjåvnnå	alderspensjon/pensjon	1	23	82	1
++boarrásiidruhta	pensjåvnnå	alderspensjon/pensjon	1	23	82	1
 
-beaiveruhta	biejvveruhta	dagpenger	10	2	4	0
++beaiveruhta	biejvveruhta	dagpenger	10	2	4	0
 
 biebmoruhta	doarjja	bidrag	1	315	164	1
-biebmoruhta	biebbmoruhta	bidrag	1	0	164	0
++biebmoruhta	biebbmoruhta	bidrag	1	0	164	0
 
-álgoprošeakta	åvddåprosjækta	forprosjekt	2	23	64	13
++álgoprošeakta	åvddåprosjækta	forprosjekt	2	23	64	13
 
-bargomokta	barggomiella	initiativ	11	4	229	0
++bargomokta	barggomiella	initiativ	11	4	229	0
 
-stádabušeahtta	stáhtabudsjæhtta	statsbudsjett	1	24	209	7
++stádabušeahtta	stáhtabudsjæhtta	statsbudsjett	1	24	209	7
 
-sohkabuolva	buolvva	generasjon	18	304	160	33
++sohkabuolva	buolvva	generasjon	18	304	160	33
 
 láža	fuolkke	slektning	2	151	26	1
 láža	beraj	slektning	2	149	26	1
 
-ovttasbargoverdde	aktisasjbarggoguojmme	samarbeidspartner	1	26	40	8
++ovttasbargoverdde	aktisasjbarggoguojmme	samarbeidspartner	1	26	40	8
 
 oassebealle	bielle	part i saka/part	16	1052	161	3
-oassebealle	oassebielle	part i saka/part	16	46	161	9
++oassebealle	oassebielle	part i saka/part	16	46	161	9
 
 bargomálle	vuohke	metode/arbeidsrutine/rutine/arbeidsmåte	4	592	42	9
 
@@ -198,73 +199,73 @@ bargomálle	vuohke	metode/arbeidsrutine/rutine/arbeidsmåte	4	592	42	9
 čeahci	iehke	onkel	10	21	9	0
 
 sohkagoddi	fuolkke	slektning/slekt	4	151	49	5
-sohkagoddi	beraj	slektning/slekt	4	149	49	6
++sohkagoddi	beraj	slektning/slekt	4	149	49	6
 
 váldegoddi	rijkka	stat/rike	5	1640	826	14
-váldegoddi	stáhtta	stat/rike	5	607	826	72
++váldegoddi	stáhtta	stat/rike	5	607	826	72
 
 bearašgoddi	fuolkke	slektning	1	151	26	1
 bearašgoddi	beraj	slektning	1	149	26	1
 
-bordi	bievdde	bord	3	210	36	13
++bordi	bievdde	bord	3	210	36	13
 
-beahcevuovdi	biehtsevuovdde	furuskog	11	5	7	1
++beahcevuovdi	biehtsevuovdde	furuskog	11	5	7	1
 
-jagiáigi	gávdda	årstid/sesong	10	38	42	1
++jagiáigi	gávdda	årstid/sesong	10	38	42	1
 
-astoáigi	asstoájgge	fritid	64	144	70	3
++astoáigi	asstoájgge	fritid	64	144	70	3
 astoáigi	assto	fritid	64	178	70	0
 
-luosjuolgi	luossa	laks	6	104	142	3
++luosjuolgi	luossa	laks	6	104	142	3
 luosjuolgi	vuorro	laks	6	113	142	0
 
-mielbargi	aktisasjbarggoguojmme	samarbeidspartner	36	26	40	8
++mielbargi	aktisasjbarggoguojmme	samarbeidspartner	36	26	40	8
 
-ovttasbargi	aktisasjbarggoguojmme	samarbeidspartner	10	26	40	8
++ovttasbargi	aktisasjbarggoguojmme	samarbeidspartner	10	26	40	8
 
-hálddašansuorgi	háldadimguovllo	forvaltningsområde	2	53	300	24
++hálddašansuorgi	háldadimguovllo	forvaltningsområde	2	53	300	24
 
-bargosuorgi	barggosuorgge	arbeidsfelt/arbeidsområde	15	11	37	0
++bargosuorgi	barggosuorgge	arbeidsfelt/arbeidsområde	15	11	37	0
 
-fáddásuorgi	ássjesuorgge	temaområde	1	6	2	0
++fáddásuorgi	ássjesuorgge	temaområde	1	6	2	0
 
 oskálii	dårvvo	tillit	2	102	81	0
 oskálii	luohtádus	tillit	2	48	81	1
 
-máđii	gæjnno	løype/vei	4	196	254	3
++máđii	gæjnno	løype/vei	4	196	254	3
 máđii	bálges	løype/vei	4	111	254	2
 
-neahttasadji	næhttabájkke	nettsted	2	32	39	11
++neahttasadji	næhttabájkke	nettsted	2	32	39	11
 
-bargosadji	barggosadje	arbeidsplass	146	122	128	31
++bargosadji	barggosadje	arbeidsplass	146	122	128	31
 
 oahpposadji	sadje	læreplass/studieplass/plass	14	1653	170	38
-oahpposadji	oahpposadje	læreplass/studieplass/plass	14	5	170	0
++oahpposadji	oahpposadje	læreplass/studieplass/plass	14	5	170	0
 
-stivrrajođiheaddji	stivrrajådediddje	styreleder	67	39	45	6
++stivrrajođiheaddji	stivrrajådediddje	styreleder	67	39	45	6
 
 bohccoduollji	duollje	reinskinn	2	16	10	0
-bohccoduollji	boahttsuduollje	reinskinn	2	0	10	0
++bohccoduollji	boahttsuduollje	reinskinn	2	0	10	0
 
 árji	miella	ønske	5	953	794	1
-árji	sávadus	ønske	5	78	794	6
++árji	sávadus	ønske	5	78	794	6
 
-bargojahki	barggojahke	arbeidsår	2	0	2	0
++bargojahki	barggojahke	arbeidsår	2	0	2	0
 
-čállinvuohki	tjállemvuohke	ortografi/skrivemåte	39	92	19	5
++čállinvuohki	tjállemvuohke	ortografi/skrivemåte	39	92	19	5
 
-bargovuohki	barggovuohke	framgangsmåte/arbeidsform/arbeidsmetode/prosedyre/arbeidsmåte	83	53	22	10
++bargovuohki	barggovuohke	framgangsmåte/arbeidsform/arbeidsmetode/prosedyre/arbeidsmåte	83	53	22	10
 
-ovttasbargovuohki	aktisasjbarggovuohke	samarbeidsform	7	0	14	0
++ovttasbargovuohki	aktisasjbarggovuohke	samarbeidsform	7	0	14	0
 
 buvttadahkki	faktåvrrå	faktor	1	17	81	2
 
-bohcconáhkki	duollje	reinskinn	3	16	10	0
++bohcconáhkki	duollje	reinskinn	3	16	10	0
 
-gielladutki	gielladutke	språkforsker	7	28	2	0
++gielladutki	gielladutke	språkforsker	7	28	2	0
 gielladutki	giellaguoradalle	språkforsker	7	1	2	0
 
-ovttasbargobealli	aktisasjbarggoguojmme	samarbeidspartner	7	26	40	8
++ovttasbargobealli	aktisasjbarggoguojmme	samarbeidspartner	7	26	40	8
 
 doaresbealli	doaresbielle	distrikt	5	4	743	0
 doaresbealli	dáfo	distrikt	5	118	743	1
@@ -273,52 +274,52 @@ doaresbealli	guovllo	distrikt	5	1452	743	4
 badjedilli	boatsojbarggo	reindrift	3	7	2857	1
 badjedilli	ællobarggo	reindrift	3	58	2857	6
 badjedilli	boatsojsujtto	reindrift	3	66	2857	7
-badjedilli	ællosujtto	reindrift	3	184	2857	11
++badjedilli	ællosujtto	reindrift	3	184	2857	11
 
 boazodilli	boatsojbarggo	reindrift	13	7	2857	1
 boazodilli	ællobarggo	reindrift	13	58	2857	6
 boazodilli	boatsojsujtto	reindrift	13	66	2857	7
-boazodilli	ællosujtto	reindrift	13	184	2857	11
++boazodilli	ællosujtto	reindrift	13	184	2857	11
 
 girječálli	tjálle	forfatter	139	1044	84	11
-girječálli	girjjetjálle	forfatter	139	94	84	5
++girječálli	girjjetjálle	forfatter	139	94	84	5
 
-ovttasbarganguoibmi	aktisasjbarggoguojmme	samarbeidspartner	1	26	40	8
++ovttasbarganguoibmi	aktisasjbarggoguojmme	samarbeidspartner	1	26	40	8
 
-bargoguoibmi	barggoguojmme	samarbeidspartner	6	28	40	0
++bargoguoibmi	barggoguojmme	samarbeidspartner	6	28	40	0
 bargoguoibmi	aktisasjbarggoguojmme	samarbeidspartner	6	26	40	8
 
-ovttasbargoguoibmi	aktisasjbarggoguojmme	samarbeidspart/samarbeidspartner	32	26	26	18
++ovttasbargoguoibmi	aktisasjbarggoguojmme	samarbeidspart/samarbeidspartner	32	26	26	18
 
-rievdadeapmi	rievddadibme	endring	87	45	898	7
++rievdadeapmi	rievddadibme	endring	87	45	898	7
 rievdadeapmi	rievddam	endring	87	203	898	22
 rievdadeapmi	rievddadus	endring	87	81	898	14
 
-oaivadeapmi	oajvvadus	veiledning	10	241	248	0
++oaivadeapmi	oajvvadus	veiledning	10	241	248	0
 oaivadeapmi	bagádus	veiledning	10	95	248	4
 
-giellaovddideapmi	giellaåvddånibme	språkutvikling	17	40	90	8
++giellaovddideapmi	giellaåvddånibme	språkutvikling	17	40	90	8
 
 gárggiideapmi	åvddånibme	utvikling	8	414	2502	38
-gárggiideapmi	åvddånahttem	utvikling	8	547	2502	99
++gárggiideapmi	åvddånahttem	utvikling	8	547	2502	99
 
 cuiggodeapmi	kritihkka	kritikk/påpekning/merknad	18	13	102	1
-cuiggodeapmi	tsuojggidus	kritikk/påpekning/merknad	18	15	102	3
++cuiggodeapmi	tsuojggidus	kritikk/påpekning/merknad	18	15	102	3
 
 sártnodeapmi	sáhka	samtale	1	754	173	3
-sártnodeapmi	ságastallam	samtale	1	422	173	42
++sártnodeapmi	ságastallam	samtale	1	422	173	42
 
 fuolaheapmi	berustibme	ivaretakelse	21	242	85	0
-fuolaheapmi	hukso	omsorg/ivaretakelse	21	186	170	12
++fuolaheapmi	hukso	omsorg/ivaretakelse	21	186	170	12
 
 oahpaheapmi	oahppa	opplæring	111	1656	1699	41
-oahpaheapmi	åhpadibme	opplæring	111	439	1699	31
++oahpaheapmi	åhpadibme	opplæring	111	439	1699	31
 oahpaheapmi	åhpadus	opplæring	111	2108	1699	76
 
-giellaoahpaheapmi	giellaåhpadibme	språkopplæring	5	35	102	6
++giellaoahpaheapmi	giellaåhpadibme	språkopplæring	5	35	102	6
 giellaoahpaheapmi	giellaåhpadus	språkopplæring	5	58	102	8
 
-eanageavaheapmi	ednambarggo	landbruk	24	92	391	4
++eanageavaheapmi	ednambarggo	landbruk	24	92	391	4
 
 jođiheapmi	stivrra	ledelse	86	141	183	1
 jođiheapmi	njunnjusj	ledelse	86	129	183	1
@@ -327,10 +328,10 @@ ruvgaleapmi	jiella	trekk	1	2	79	1
 ruvgaleapmi	ålgusj	trekk	1	86	79	0
 
 suodjaleapmi	suodje	vern	157	98	275	1
-suodjaleapmi	suodjalibme	vern	157	188	275	35
++suodjaleapmi	suodjalibme	vern	157	188	275	35
 suodjaleapmi	suodjalus	vern	157	28	275	2
 
-giellaovdáneapmi	giellaåvddånibme	språkutvikling/språklig utvikling	13	40	45	7
++giellaovdáneapmi	giellaåvddånibme	språkutvikling/språklig utvikling	13	40	45	7
 
 hárjáneapmi	åtsådallam	erfaring	24	252	292	40
 hárjáneapmi	vásádus	erfaring	24	93	292	5
@@ -345,9 +346,9 @@ guolásteapmi	guolástus	fiske	202	59	1118	3
 vuorrohálešteapmi	guládallam	dialog	1	610	376	4
 vuorrohálešteapmi	ságastallam	dialog	1	422	376	17
 
-luondduhálddašeapmi	luonndoháldadibme	naturforvaltning	31	2	70	1
++luondduhálddašeapmi	luonndoháldadibme	naturforvaltning	31	2	70	1
 
-ođđafuomášeapmi	ådådahko	nyskapning/innovasjon	1	3	73	1
++ođđafuomášeapmi	ådådahko	nyskapning/innovasjon	1	3	73	1
 ođđafuomášeapmi	innovasjåvnnå	nyskapning/innovasjon	1	12	73	1
 
 veahkkegaskaoapmi	ræjddo	hjelpemiddel	1	111	50	2
@@ -356,25 +357,25 @@ veahkkegaskaoapmi	viehkkenævvo	hjelpemiddel	1	80	50	6
 skuvlejupmi	oahppa	skolegang/utdanning	29	1656	683	14
 skuvlejupmi	åhpadus	skolegang/utdanning	29	2108	683	34
 
-nuppástupmi	rievddadibme	endring	5	45	898	5
++nuppástupmi	rievddadibme	endring	5	45	898	5
 nuppástupmi	rievddam	endring	5	203	898	17
 nuppástupmi	rievddadus	endring	5	81	898	12
 
-davvisápmi	nuorttasábme	nordsame	216	230	2	9
++davvisápmi	nuorttasábme	nordsame	216	230	2	9
 
-boazosápmi	boatsojsábme	reindriftssame	43	5	67	1
++boazosápmi	boatsojsábme	reindriftssame	43	5	67	1
 boazosápmi	ællosábme	reindriftssame	43	46	67	4
 
-doaibmalohpi	konsesjåvnnå	konsesjon/løyve	9	37	68	1
++doaibmalohpi	konsesjåvnnå	konsesjon/løyve	9	37	68	1
 
-virgelohpi	virggeloahpe	permisjon	44	6	172	2
++virgelohpi	virggeloahpe	permisjon	44	6	172	2
 virgelohpi	permisjåvnnå	permisjon	44	8	172	3
 
-bargolohpi	barggoloahpe	arbeidstillatelse	2	0	2	0
++bargolohpi	barggoloahpe	arbeidstillatelse	2	0	2	0
 
 dáiddačeahppi	dájddár	kunstner	8	109	163	36
 
-gaskamearri	gasskamierre	gjennomsnitt	82	9	89	0
++gaskamearri	gasskamierre	gjennomsnitt	82	9	89	0
 
 juksanmearri	ulmme	formål/målsetting/mål	9	1161	825	152
 juksanmearri	mierre	formål/målsetting/mål	9	295	825	2
@@ -406,7 +407,7 @@ sisti	náhkke	skinn	30	43	33	2
 čávgŋi	tsagge	hjørnestolpe/bærende kraft	1	8	0	0
 čávgŋi	vuodo	hjørnestolpe/bærebjelke/bærende kraft/grunnlag	1	1541	280	64
 
-giellaášši	giellaássje	språkspørsmål	8	9	14	2
++giellaášši	giellaássje	språkspørsmål	8	9	14	2
 
 raŧŧi	gæjnno	vei/veg	1	196	327	3
 raŧŧi	bálges	vei/veg	1	111	327	1
@@ -414,10 +415,10 @@ raŧŧi	bálges	vei/veg	1	111	327	1
 veagal	vahágahttem	makt	15	30	56	1
 veagal	fábmo	makt	15	804	56	3
 
-fylkkasuohkan	fylkkasuohkan	fylkeskommune	180	203	1006	96
++fylkkasuohkan	fylkkasuohkan	fylkeskommune	180	203	1006	96
 
 bagadallan	oajvvadus	veiledning	46	241	248	0
-bagadallan	bagádus	veiledning	46	95	248	5
++bagadallan	bagádus	veiledning	46	95	248	5
 
 vuorroságastallan	guládallam	dialog	1	610	376	4
 vuorroságastallan	ságastallam	dialog	1	422	376	17
@@ -425,7 +426,7 @@ vuorroságastallan	ságastallam	dialog	1	422	376	17
 rahčan	vuorodibme	kamp mot hindringer/innsats/kamp	52	62	142	2
 rahčan	doarro	kamp mot hindringer/innsats/slit/kamp/satsing	52	335	158	2
 
-ahtanuššan	åvddånibme	oppvekst/utvikling/vekst	16	414	942	41
++ahtanuššan	åvddånibme	oppvekst/utvikling/vekst	16	414	942	41
 ahtanuššan	bajássjaddam	oppvekst/utvikling/vekst	16	110	942	4
 ahtanuššan	åvddånahttem	oppvekst/utvikling/vekst	16	547	942	101
 ahtanuššan	sjaddo	oppvekst/utvikling/vekst	16	192	942	9
@@ -450,84 +451,84 @@ veagalváldin	vierredahko	misbruk/overgrep/vold	16	32	56	2
 bivdin	bivddo	fiske/fangst	54	89	673	9
 bivdin	guolástus	fiske/fangst	54	59	673	1
 
-bargočoahkkin	barggotjåhkanibme	arbeidsmøte/oppdragsmøte	3	2	4	0
++bargočoahkkin	barggotjåhkanibme	arbeidsmøte/oppdragsmøte	3	2	4	0
 
 cealkin	moallánahka	passus	11	268	4	0
 cealkin	oasse	passus/uttalelse/artikulasjon/uttrykk	11	2133	131	1
 cealkin	åvddånbuktem	passus/uttalelse/artikulasjon/uttrykk	11	249	131	3
-cealkin	javllamus	passus/uttalelse/artikulasjon/uttrykk	11	37	131	3
++cealkin	javllamus	passus/uttalelse/artikulasjon/uttrykk	11	37	131	3
 
-mátkeeallin	mannoæládus	reiseliv	4	49	217	8
++mátkeeallin	mannoæládus	reiseliv	4	49	217	8
 
-bargoeallin	barggoiellem	arbeidsliv	33	56	85	24
++bargoeallin	barggoiellem	arbeidsliv	33	56	85	24
 
-ealáhuseallin	æládusiellem	næringsliv	42	45	355	10
++ealáhuseallin	æládusiellem	næringsliv	42	45	355	10
 ealáhuseallin	æládus	næringsliv	42	577	355	2
 
 máksin	jiella	betaling/trekk	59	2	74	1
-máksin	mákso	betaling/trekk	59	143	74	0
++máksin	mákso	betaling/trekk	59	143	74	0
 máksin	bálkká	betaling/trekk	59	156	74	1
 
 ovdánahttin	åvddånibme	utvikling	149	414	2502	43
-ovdánahttin	åvddånahttem	utvikling	149	547	2502	108
++ovdánahttin	åvddånahttem	utvikling	149	547	2502	108
 
-giellaovdánahttin	giellaåvddånibme	språkutvikling	5	40	90	7
++giellaovdánahttin	giellaåvddånibme	språkutvikling	5	40	90	7
 
-earáhuhttin	rievddadibme	endring	3	45	898	5
++earáhuhttin	rievddadibme	endring	3	45	898	5
 earáhuhttin	rievddam	endring	3	203	898	17
 earáhuhttin	rievddadus	endring	3	81	898	12
 
-nuppástuhttin	rievddadibme	endring	72	45	898	5
++nuppástuhttin	rievddadibme	endring	72	45	898	5
 nuppástuhttin	rievddam	endring	72	203	898	17
 nuppástuhttin	rievddadus	endring	72	81	898	12
 
-goargŋun	lassánibme	økning/oppgang/vekst	4	43	226	10
+9goargŋun	lassánibme	økning/oppgang/vekst	4	43	226	10
 goargŋun	sjaddo	økning/oppgang/vekst	4	192	226	5
 
 bargogohččun	doajmma	oppdrag	1	1887	195	2
 bargogohččun	barggo	oppdrag	1	2534	195	4
 
 fearán	giehtto	historie/episode/hendelse	26	260	153	1
-fearán	dáhpádus	historie/episode/hendelse	26	197	153	13
++fearán	dáhpádus	historie/episode/hendelse	26	197	153	13
 fearán	histåvrrå	historie/episode/hendelse	26	456	153	53
 
-ruvdno	kråvnnå	krone/kr	484	403	1644	115
++ruvdno	kråvnnå	krone/kr	484	403	1644	115
 
-sámeministtar	sámeministar	sameminister	21	4	18	1
++sámeministtar	sámeministar	sameminister	21	4	18	1
 
-bargoskibir	barggoguojmme	kollega	13	28	18	0
++bargoskibir	barggoguojmme	kollega	13	28	18	0
 
 áššebábir	dokumænnta	sakspapir/saksdokument/dokument	47	48	111	9
-áššebábir	ássjepáhper	sakspapir/saksdokument/dokument	47	7	111	0
++áššebábir	ássjepáhper	sakspapir/saksdokument/dokument	47	7	111	0
 
-bargoskihpár	barggoguojmme	kollega	11	28	18	0
++bargoskihpár	barggoguojmme	kollega	11	28	18	0
 
 bargobierggas	ræjddo	redskap/utstyr	2	111	117	2
 
 julkkas	sládja	hjertebank	1	40	0	0
 
 veahkkeávnnas	ræjddo	hjelpemiddel	2	111	50	2
-veahkkeávnnas	viehkkenævvo	hjelpemiddel	2	80	50	6
++veahkkeávnnas	viehkkenævvo	hjelpemiddel	2	80	50	6
 
-oahppoávnnas	oahppamnævvo	læremiddel/læremateriell	9	65	251	4
++oahppoávnnas	oahppamnævvo	læremiddel/læremateriell	9	65	251	4
 oahppoávnnas	oahpponævvo	læremiddel/læremateriell	9	99	251	22
 
 sárggis	linnja	linje/strek	9	226	129	11
 sárggis	suorgge	linje/strek	9	185	129	0
-sárggis	sáhtso	linje/strek	9	22	129	1
++sárggis	sáhtso	linje/strek	9	22	129	1
 
-váldočuokkis	oajvvetjuokkes	hovedtrekk/hovedpunkt	6	1	15	0
++váldočuokkis	oajvvetjuokkes	hovedtrekk/hovedpunkt	6	1	15	0
 
-láhkanjuolggadus	njuolgadustjála	forskrift	6	61	659	21
++láhkanjuolggadus	njuolgadustjála	forskrift	6	61	659	21
 
-bargonjuolggadus	barggonjuolgadus	kjøreregel/arbeidsinstruks	4	2	4	1
++bargonjuolggadus	barggonjuolgadus	kjøreregel/arbeidsinstruks	4	2	4	1
 
 doallonjuolggadus	barggonjuolgadus	bruksregel	3	2	42	0
-doallonjuolggadus	adnonjuolgadus	bruksregel	3	0	42	0
++doallonjuolggadus	adnonjuolgadus	bruksregel	3	0	42	0
 
-bargošiehtadus	barggosjiehtadus	arbeidskontrakt	3	3	0	1
++bargošiehtadus	barggosjiehtadus	arbeidskontrakt	3	3	0	1
 
-ovttasbargošiehtadus	aktisasjbarggosjiehtadus	samarbeidsavtale	85	52	228	44
++ovttasbargošiehtadus	aktisasjbarggosjiehtadus	samarbeidsavtale	85	52	228	44
 
 gárgedus	åvddånibme	utvikling	1	414	2502	38
 gárgedus	åvddånahttem	utvikling	1	547	2502	99
@@ -536,7 +537,7 @@ dovddiidus	åtsådallam	erfaring	5	252	292	40
 dovddiidus	vásádus	erfaring	5	93	292	5
 
 háliidus	miella	ønske	8	953	794	1
-háliidus	sávadus	ønske	8	78	794	7
++háliidus	sávadus	ønske	8	78	794	7
 
 meaddádus	sivva	feil	1	219	112	1
 meaddádus	vihke	feil	1	128	112	1
@@ -548,7 +549,7 @@ sárggus	ålgusj	tegning/trekk	24	86	50	0
 dajahus	moallánahka	joiketekst	11	268	1	0
 dajahus	moalgedibme	joiketekst/uttrykk/utsagn	11	53	112	1
 dajahus	åvddånbuktem	joiketekst/uttrykk/utsagn	11	249	112	3
-dajahus	javllamus	joiketekst	11	37	1	0
++dajahus	javllamus	joiketekst	11	37	1	0
 
 doaimmahus	doajmma	redaksjon/virksomhet	49	1887	485	27
 doaimmahus	dåjmadibme	redaksjon/virksomhet	49	24	485	2
@@ -560,27 +561,27 @@ rávvehus	oajvvadus	veiledning	3	241	248	0
 rávvehus	bagádus	veiledning	3	95	248	4
 
 gielddaráđđehus	gielldastivrra	kommunestyre	13	12	172	0
-gielddaráđđehus	suohkanstivrra	kommunestyre	13	115	172	10
++gielddaráđđehus	suohkanstivrra	kommunestyre	13	115	172	10
 
 álgoevttohus	oajvvadus	utkast/forslag	2	241	1265	53
 álgoevttohus	árvvalus	utkast/forslag	2	64	1265	3
 
 lasáhus	lasse	tillegg	95	218	1435	7
-lasáhus	lasádus	økning/tillegg	95	47	950	4
++lasáhus	lasádus	økning/tillegg	95	47	950	4
 
 bargovásáhus	åtsådallam	erfaring/arbeidserfaring	6	252	149	40
-bargovásáhus	barggoåtsådallam	erfaring/arbeidserfaring	6	0	149	0
++bargovásáhus	barggoåtsådallam	erfaring/arbeidserfaring	6	0	149	0
 bargovásáhus	vásádus	erfaring/arbeidserfaring	6	93	149	5
 
 meattáhus	sivva	feil	18	219	112	1
-meattáhus	vihke	feil	18	128	112	1
++meattáhus	vihke	feil	18	128	112	1
 meattáhus	vierre	feil	18	131	112	0
 
-dearvvasvuođabálvalus	varresvuodadievnastus	helsetjeneste	6	43	75	12
++dearvvasvuođabálvalus	varresvuodadievnastus	helsetjeneste	6	43	75	12
 
 diehtojuohkinčálus	diehtojuohkem	orientering	1	88	87	0
 
-čanus	aktijvuohta	sammenheng/binding/tilknytning	6	779	342	55
++čanus	aktijvuohta	sammenheng/binding/tilknytning	6	779	342	55
 čanus	aktisasjvuohta	sammenheng/binding/tilknytning	6	214	342	1
 
 oahppoplánabuvttus	oahppapládna	læreplanverk	10	61	62	1
@@ -588,17 +589,17 @@ oahppoplánabuvttus	oahppopládna	læreplanverk	10	101	62	0
 
 bargoduođaštus	duodastus	attest	10	114	16	1
 
-válgaboađus	válggaboados	valgresultat/valgoppgjør	13	2	9	3
++válgaboađus	válggaboados	valgresultat/valgoppgjør	13	2	9	3
 
 dolastaddat	dållågádde	bål	1	33	17	1
 dolastaddat	dållå	bål	1	384	17	14
 
 dearvvasvuođafálaldat	varresvuodadievnastus	helsetjeneste/helsetilbud	1	43	52	13
 
-bargofálaldat	barggofálaldahka	arbeidstilbud	4	3	3	0
++bargofálaldat	barggofálaldahka	arbeidstilbud	4	3	3	0
 
 oahpahusfálaldat	oahppofálaldahka	undervisningstilbud	17	12	19	2
-oahpahusfálaldat	åhpadusfálaldahka	opplæringstilbud/utdanningstilbud/undervisningstilbud	17	33	37	1
++oahpahusfálaldat	åhpadusfálaldahka	opplæringstilbud/utdanningstilbud/undervisningstilbud	17	33	37	1
 
 valljodat	boanndudahka	ressurs	13	62	827	2
 valljodat	resurssa	ressurs	13	224	827	62
@@ -621,7 +622,7 @@ mannolat	prosæssa	prosess	5	123	371	33
 mannolat	ássje	prosess	5	1601	371	1
 
 gárastat	tjanástahka	bånd	0	26	26	0
-gárastat	bádde	bånd	0	33	26	2
++gárastat	bádde	bånd	0	33	26	2
 gárastat	tjanás	bånd	0	38	26	0
 
 lápmašuvvat	vihke	skade	5	128	227	1
@@ -649,43 +650,43 @@ doalut	vidnudahka	selskap/arrangement	395	97	100	1
 doalut	doallo	selskap/arrangement	395	384	100	0
 doalut	adno	selskap/arrangement	395	610	100	0
 
-boazoeaiggát	ælloniehkke	reineier	118	40	245	5
+@boazoeaiggát	ælloniehkke	reineier	118	40	245	5
 
 jápminboddu	sårmme	død	1	25	77	1
 jápminboddu	jábmem	død	1	365	77	9
-jápminboddu	jábmembåddå	død	1	3	77	1
+@jápminboddu	jábmembåddå	død	1	3	77	1
 
 miellaguoddu	guoddo	holdning/innstilling	26	51	466	3
-miellaguoddu	miellaguoddo	holdning/innstilling	26	14	466	3
+@miellaguoddu	miellaguoddo	holdning/innstilling	26	14	466	3
 miellaguoddu	árvvalus	holdning/innstilling	26	64	466	10
 
 váddu	sivva	skade/feil	18	219	169	2
-váddu	vihke	skade/feil	18	128	169	3
++váddu	vihke	skade/feil	18	128	169	3
 váddu	vahák	skade/feil	18	79	169	2
 
 veahkkereaidu	ræjddo	hjelpemiddel	1	111	50	2
-veahkkereaidu	viehkkenævvo	hjelpemiddel	1	80	50	7
++veahkkereaidu	viehkkenævvo	hjelpemiddel	1	80	50	7
 
 divvunreaidu	ræjddo	verktøy	2	111	151	19
 divvunreaidu	nævvo	verktøy	2	38	151	5
 
 bargoreaidu	ræjddo	driftsmiddel/redskap/arbeidsredskap	4	111	56	2
 
-bargoriidu	barggorijddo	arbeidskonflikt	0	0	1	0
++bargoriidu	barggorijddo	arbeidskonflikt	0	0	1	0
 
 murdu	vuovdde	skog	0	62	246	3
-murdu	vuobme	skog	0	57	246	1
++murdu	vuobme	skog	0	57	246	1
 murdu	miehttse	skog	0	257	246	3
 
 mearrabivdu	bivddo	fiske/sjøfiske	13	89	566	4
-mearrabivdu	guolástus	fiske/sjøfiske	13	59	566	1
++mearrabivdu	guolástus	fiske/sjøfiske	13	59	566	1
 
 dovdu	åtsådallam	erfaring/følelse	322	252	164	42
 dovdu	vásádus	følelse	322	93	36	0
 
 gálgu	nissun	kvinne/kone	2	673	258	30
 gálgu	áhkko	kvinne/kone	2	383	258	0
-gálgu	áhkká	kvinne/kone	2	400	258	2
++gálgu	áhkká	kvinne/kone	2	400	258	2
 
 giehtabargu	duodje	håndarbeid/håndverk	3	626	18	2
 
@@ -700,53 +701,53 @@ máksobargu	barggo	oppdrag	1	2534	195	4
 čielggadusbargu	tjielgadus	utredning/utredningsarbeid	3	32	233	1
 čielggadusbargu	tjielggidus	utredning/utredningsarbeid	3	126	233	3
 
-bohccobiergu	boahttsubierggo	reinkjøtt	99	31	124	0
++bohccobiergu	boahttsubierggo	reinkjøtt	99	31	124	0
 
 veadju	dájddo	evne/forfatning/kraft	1390	28	155	3
-veadju	fábmo	evne/forfatning/kraft	1390	804	155	7
++veadju	fábmo	evne/forfatning/kraft	1390	804	155	7
 veadju	ækto	evne/forfatning/kraft	1390	105	155	3
 
 ávju	manne	egg	48	51	20	0
-ávju	månne	egg	48	71	20	0
++ávju	månne	egg	48	71	20	0
 
 bahádahku	vihke	skade/hærverk	2	128	114	1
 bahádahku	vahák	skade/hærverk	2	79	114	2
 
-álbmotlohku	álmmuklåhko	folketallsutvikling	2	19	4	0
++álbmotlohku	álmmuklåhko	folketallsutvikling	2	19	4	0
 
-bargojuohku	barggojuohko	oppgavefordeling/arbeidsdeling	6	41	10	0
++bargojuohku	barggojuohko	oppgavefordeling/arbeidsdeling	6	41	10	0
 
-riikkajoavku	rijkajuogos	landslag	57	8	5	0
++riikkajoavku	rijkajuogos	landslag	57	8	5	0
 riikkajoavku	rijkkajuogos	landslag	57	2	5	0
 
-giellajoavku	giellajuogos	språkgruppe	15	29	23	12
++giellajoavku	giellajuogos	språkgruppe	15	29	23	12
 
-bargojoavku	barggojuogos	arbeidsgruppe	221	121	292	64
++bargojoavku	barggojuogos	arbeidsgruppe	221	121	292	64
 
 olmmošjoavku	ulmusj	menneske	14	2598	330	58
 
 ruhtagollu	gållo	utgift	1	69	235	2
-ruhtagollu	ruhtagållo	utgift	1	4	235	0
++ruhtagollu	ruhtagållo	utgift	1	4	235	0
 
 duopmostuollu	riektá	domstol	89	1087	107	6
-duopmostuollu	duobbmoståvllå	domstol	89	74	107	18
++duopmostuollu	duobbmoståvllå	domstol	89	74	107	18
 
 válgaguovlu	válggadáfo	valgdistrikt/valgområde	2	10	1	0
-válgaguovlu	válggaguovllo	valgdistrikt/valgområde	2	1	1	0
++válgaguovlu	válggaguovllo	valgdistrikt/valgområde	2	1	1	0
 
 eanaguovlu	areálla	territorium	6	41	37	0
 
-almmiguovlu	almmeguovllo	himmelretning	2	1	1	2
++almmiguovlu	almmeguovllo	himmelretning	2	1	1	2
 
-hálddahusguovlu	háldadimguovllo	forvaltningsområde	4	53	300	24
++hálddahusguovlu	háldadimguovllo	forvaltningsområde	4	53	300	24
 
-bargoluopmu	barggoloahpe	permisjon	1	0	172	0
++bargoluopmu	barggoloahpe	permisjon	1	0	172	0
 bargoluopmu	permisjåvnnå	permisjon	1	8	172	3
 
 meannu	doajmma	adferd/atferd/handling	13	1887	107	2
 meannu	dahko	adferd/atferd/handling	13	363	107	1
 
-áhpu	ávkke	nytte	67	387	497	6
++áhpu	ávkke	nytte	67	387	497	6
 áhpu	adno	nytte	67	610	497	2
 áhpu	máhtto	nytte	67	391	497	1
 
@@ -766,79 +767,79 @@ allaseahtu	giera	aristokrati/topp	1	37	25	0
 allaseahtu	tjåhkkå	aristokrati/topp	1	152	25	8
 
 veahtu	girjásj	hefte/hindring	1	91	38	11
-veahtu	hieredus	hefte/hindring	1	12	38	1
++veahtu	hieredus	hefte/hindring	1	12	38	1
 
 vásáhusdiehtu	oahppa	kunnskap	1	1656	1436	3
 vásáhusdiehtu	diehto	kunnskap	1	1839	1436	46
 vásáhusdiehtu	máhtto	kunnskap	1	391	1436	34
 
-kulturmuitu	kulturmujtto	kulturminne	244	117	516	55
++kulturmuitu	kulturmujtto	kulturminne	244	117	516	55
 
 bargoleaktu	fártta	tempo	1	9	9	0
 
 giellamáhttu	giellamáhtudahka	språkkunnskap	28	63	12	4
-giellamáhttu	giellamáhtto	språkkunnskap	28	19	12	5
++giellamáhttu	giellamáhtto	språkkunnskap	28	19	12	5
 
 gilvu	doarro	konkurranse/kamp	455	335	94	2
-gilvu	gilpos	kamp	455	39	82	2
++gilvu	gilpos	kamp	455	39	82	2
 
 neavvu	ræjddo	instrument/redskap/verktøy	33	111	103	22
-neavvu	nævvo	instrument/redskap/verktøy	33	38	103	5
++neavvu	nævvo	instrument/redskap/verktøy	33	38	103	5
 
-oahppaneavvu	oahppamnævvo	læremiddel	6	65	496	2
++oahppaneavvu	oahppamnævvo	læremiddel	6	65	496	2
 oahppaneavvu	oahpponævvo	læremiddel	6	99	496	21
 
 bargoneavvu	ræjddo	redskap/verktøy	13	111	138	21
 bargoneavvu	nævvo	redskap/verktøy	13	38	138	5
 
 geahčču	bærrájgæhttje	kontroll/tilsyn/bevoktning	24	12	176	1
-geahčču	bærrájgæhttjo	kontroll/tilsyn/bevoktning	24	26	176	2
++geahčču	bærrájgæhttjo	kontroll/tilsyn/bevoktning	24	26	176	2
 
 mánáidgeahčču	bærrájgæhttje	barnetilsyn/tilsyn/tilsyn av barn	1	12	56	1
 mánáidgeahčču	bærrájgæhttjo	barnetilsyn/tilsyn/tilsyn av barn	1	26	56	2
 
 bargobearráigeahčču	barggobærrájgæhttje	arbeidstilsyn	5	0	6	0
-bargobearráigeahčču	barggobærrájgæhttjo	arbeidstilsyn	5	7	6	13
++bargobearráigeahčču	barggobærrájgæhttjo	arbeidstilsyn	5	7	6	13
 
-dávvirvuorká	dávvervuorkká	musé	17	180	1	0
++dávvirvuorká	dávvervuorkká	musé	17	180	1	0
 
 skuvlamánná	oahppe	skolebarn/elev	30	4514	773	220
-skuvlamánná	skåvllåmánná	skolebarn/elev	30	16	773	1
++skuvlamánná	skåvllåmánná	skolebarn/elev	30	16	773	1
 
 bargobihttá	doajmma	oppgave/arbeidsoppgave	39	1887	291	3
 bargobihttá	barggo	oppgave/arbeidsoppgave	39	2534	291	5
 
-uhcahaš	mánásj	barn	1	52	2302	2
++uhcahaš	mánásj	barn	1	52	2302	2
 uhcahaš	mánná	barn	1	3853	2302	212
 
 sogalaš	famillja	familie/slektning/slekt	8	42	129	6
 sogalaš	fuolkke	familie/slektning/slekt	8	151	129	5
-sogalaš	beraj	familie/slektning/slekt	8	149	129	8
++sogalaš	beraj	familie/slektning/slekt	8	149	129	8
 
 lahkasogalaš	fuolkke	slektning	0	151	26	1
-lahkasogalaš	beraj	slektning	0	149	26	1
++lahkasogalaš	beraj	slektning	0	149	26	1
 
-mearrasápmelaš	merrasábme	sjøsame	31	52	38	1
++mearrasápmelaš	merrasábme	sjøsame	31	52	38	1
 
-boazodoallosápmelaš	ællosábme	reindriftssamisk/reindriftssame	1	46	41	3
++boazodoallosápmelaš	ællosábme	reindriftssamisk/reindriftssame	1	46	41	3
 
 oasálaš	akterra	medvirkende/deltaker/aktør/part/deleier	35	10	131	8
-oasálaš	bielle	medvirkende/deltaker/aktør/part/deleier	35	1052	131	4
++oasálaš	bielle	medvirkende/deltaker/aktør/part/deleier	35	1052	131	4
 
-ovttasbarganoasálaš	aktisasjbarggoguojmme	samarbeidspartner	1	26	40	8
++ovttasbarganoasálaš	aktisasjbarggoguojmme	samarbeidspartner	1	26	40	8
 
-ovttasbargooasálaš	aktisasjbarggoguojmme	samarbeidspartner	2	26	40	8
++ovttasbargooasálaš	aktisasjbarggoguojmme	samarbeidspartner	2	26	40	8
 
-fágaolmmoš	fáhkaulmusj	fagfolk	31	22	54	4
++fágaolmmoš	fáhkaulmusj	fagfolk	31	22	54	4
 
-dievdoolmmoš	ålmåj	mann	31	966	254	15
++dievdoolmmoš	ålmåj	mann	31	966	254	15
 dievdoolmmoš	áddjá	mann	31	368	254	0
 
-visoš	goahte	hus	4	722	310	12
++visoš	goahte	hus	4	722	310	12
 visoš	viesso	hus	4	1001	310	6
 
 viggamuš	vuorodibme	innsats	14	62	343	2
-viggamuš	gæhttjalibme	innsats	14	323	343	0
++viggamuš	gæhttjalibme	innsats	14	323	343	0
 
 bargamuš	doajmma	oppgave	16	1887	541	3
 bargamuš	barggo	oppgave	16	2534	541	3
