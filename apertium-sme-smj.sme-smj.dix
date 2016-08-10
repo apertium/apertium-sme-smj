@@ -197,7 +197,7 @@
     <e><p><l>eambbogat<s n="prn"/></l><r>ienebu<s n="prn"/></r></p></e>
     <e><p><l>eanebut<s n="prn"/></l><r>ienebu<s n="prn"/></r></p></e>
     <e><p><l>eará<s n="prn"/></l><r>ietjá<s n="prn"/></r></p></e>
-    <e><p><l>eatnagat<s n="prn"/></l><r>ednaga<s n="prn"/></r></p></e>
+    <e><p><l>eatnagat<s n="prn"/><s n="ind"/><s n="pl"/><s n="nom"/></l><r>ednak<s n="prn"/><s n="ind"/><s n="pl"/><s n="nom"/></r></p></e>
     <e><p><l>feara<b/>gii<s n="prn"/></l><r>fera<b/>guhti<s n="prn"/></r></p></e>
     <e><p><l>feara<b/>mii<s n="prn"/></l><r>fera<b/>mij<s n="prn"/></r></p></e>
     <e><p><l>gaikkat<s n="prn"/></l><r>gájka<s n="prn"/></r></p></e>
@@ -2695,7 +2695,6 @@
      <e><p><l>hormovdna<s n="n"/></l><r>hormåvnnå<s n="n"/></r></p></e>
      <e><p><l>horti<s n="n"/></l><r>hårtte<s n="n"/></r></p></e>
      <e><p><l>huksenbušeahtta<s n="n"/></l><r>tsieggimbudsjæhtta<s n="n"/></r></p></e>
-     <e><p><l>huksenfága<s n="n"/></l><r>tsieggimfáhka<s n="n"/></r></p></e>
      <e><p><l>huksenplána<s n="n"/></l><r>tsieggimpládna<s n="n"/></r></p></e>
      <e><p><l>huksenprográmma<s n="n"/><s n="g3"/></l><r>tsieggimprográmma<s n="n"/></r></p></e>
      <e><p><l>huksu<s n="n"/></l><r>hukso<s n="n"/></r></p></e>
@@ -3497,7 +3496,6 @@
      <e><p><l>motiiva<s n="n"/></l><r>motijvva<s n="n"/></r></p></e>
      <e><p><l>motivašuvdna<s n="n"/></l><r>motivasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>motorihkka<s n="n"/></l><r>motorihkka<s n="n"/></r></p></e>
-     <e><p><l>muddenláhka<s n="n"/></l><r>regulierimláhka<s n="n"/></r></p></e>
      <e><p><l>muddu<s n="n"/></l><r>muddo<s n="n"/></r></p></e>
      <e><p><l>mugga<s n="n"/></l><r>mugga<s n="n"/></r></p></e>
      <e><p><l>muhamedanisma<s n="n"/></l><r>muhamedanissma<s n="n"/></r></p></e>
@@ -3523,7 +3521,6 @@
      <e><p><l>muorra<s n="n"/></l><r>muorra<s n="n"/></r></p></e>
      <e><p><l>muorrabihttá<s n="n"/></l><r>muorrabihttá<s n="n"/></r></p></e>
      <e><p><l>muorraduodji<s n="n"/></l><r>muorraduodje<s n="n"/></r></p></e>
-     <e><p><l>muorradáidda<s n="n"/></l><r>muorradájdda<s n="n"/></r></p></e>
      <e><p><l>muorragiera<s n="n"/></l><r>muorragiera<s n="n"/></r></p></e>
      <e><p><l>muorragieres<s n="n"/></l><r>muorragieres<s n="n"/></r></p></e>
      <e><p><l>muorraguhpa<s n="n"/></l><r>muorraguhpa<s n="n"/></r></p></e>
@@ -3537,7 +3534,6 @@
      <e><p><l>murren<s n="n"/></l><r>murren<s n="n"/></r></p></e>
      <e><p><l>musea<s n="n"/></l><r>musiedja<s n="n"/></r></p></e>
      <e><p><l>museadoaibma<s n="n"/></l><r>musiedjadoajmma<s n="n"/></r></p></e>
-     <e><p><l>museafága<s n="n"/></l><r>musiedjafáhka<s n="n"/></r></p></e>
      <e><p><l>musihkka<s n="n"/></l><r>musihkka<s n="n"/></r></p></e>
      <e><p><l>musihkkaelemeanta<s n="n"/></l><r>musikkelemænnta<s n="n"/></r></p></e>
      <e><p><l>muslima<s n="n"/></l><r>muslijmma<s n="n"/></r></p></e>
@@ -3591,7 +3587,7 @@
      <e><p><l>mársu<s n="n"/></l><r>mársso<s n="n"/></r></p></e>
      <e><p><l>máska<s n="n"/></l><r>másska<s n="n"/></r></p></e>
      <e><p><l>mátta<s n="n"/></l><r>mátta<s n="n"/></r></p></e>
-     <e><p><l>máttabiegga<s n="n"/></l><r>máttabiegga<s n="n"/></r></p></e>
+     <e><p><l>máttabiegga<s n="n"/></l><r>oarjádakbiegga<s n="n"/></r></p></e>
      <e><p><l>máttadákti<s n="n"/></l><r>máttadákte<s n="n"/></r></p></e>
      <e><p><l>máttar<s n="n"/></l><r>máttar<s n="n"/></r></p></e>
      <e><p><l>máttaráddjá<s n="n"/></l><r>máttaráddjá<s n="n"/></r></p></e>
@@ -3604,7 +3600,6 @@
      <e><p><l>namma<s n="n"/></l><r>namma<s n="n"/></r></p></e>
      <e><p><l>nammagilkor<s n="n"/></l><r>nammagilkor<s n="n"/></r></p></e>
      <e><p><l>nammaloahppa<s n="n"/></l><r>nammaloahppa<s n="n"/></r></p></e>
-     <e><p><l>nammaláhka<s n="n"/></l><r>nammaláhka<s n="n"/></r></p></e>
      <e><p><l>nammaláđđi<s n="n"/></l><r>nammaládde<s n="n"/></r></p></e>
      <e><p><l>nanisma<s n="n"/></l><r>nanissma<s n="n"/></r></p></e>
      <e><p><l>nanudus<s n="n"/></l><r>nanudus<s n="n"/></r></p></e>
@@ -3734,7 +3729,6 @@
      <e><p><l>nuohttebahta<s n="n"/></l><r>nuohttebahta<s n="n"/></r></p></e>
      <e><p><l>nuohtti<s n="n"/></l><r>nuohtte<s n="n"/></r></p></e>
      <e><p><l>nuorra<s n="n"/></l><r>nuorra<s n="n"/></r></p></e>
-     <e><p><l>nuorragánda<s n="n"/></l><r>nuorrabáhttja<s n="n"/></r></p></e>
      <e><p><l>nuorravuohta<s n="n"/></l><r>nuorravuohta<s n="n"/></r></p></e>
      <e><p><l>nuorri<s n="n"/></l><r>nuorre<s n="n"/></r></p></e>
      <e><p><l>nuorta<s n="n"/></l><r>nuortta<s n="n"/></r></p></e>
@@ -3789,9 +3783,8 @@
      <e><p><l>oahppanplána<s n="n"/></l><r>oahppampládna<s n="n"/></r></p></e>
      <e><p><l>oahppaplána<s n="n"/></l><r>oahppapládna<s n="n"/></r></p></e>
      <e><p><l>oahppi<s n="n"/></l><r>oahppe<s n="n"/></r></p></e>
-     <e><p><l>oahppofága<s n="n"/></l><r>oahppofáhka<s n="n"/></r></p></e>
      <e><p><l>oahppoinstitušuvdna<s n="n"/></l><r>oahppoinstitusjåvnnå<s n="n"/></r></p></e>
-     <e><p><l>oahppoláhka<s n="n"/></l><r>oahppoláhka<s n="n"/></r></p></e>
+     <e><p><l>oahppoláhka<s n="n"/></l><r>åhpadusláhka<s n="n"/></r></p></e>
      <e><p><l>oahpponeavvu<s n="n"/><s n="g3"/></l><r>oahppamnævvo<s n="n"/></r></p></e>
      <e><p><l>oahppoorganisašuvdna<s n="n"/></l><r>oahppoorganisasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>oahppoplána<s n="n"/></l><r>oahppopládna<s n="n"/></r></p></e>
@@ -3808,7 +3801,6 @@
      <e><p><l>oaivi<s n="n"/></l><r>oajvve<s n="n"/></r></p></e>
      <e><p><l>oaivil<s n="n"/></l><r>árvvalus<s n="n"/></r></p></e>
      <e><p><l>oaksi<s n="n"/></l><r>oakse<s n="n"/></r></p></e>
-     <e><p><l>oalgeviellja<s n="n"/></l><r>oalggeviellja<s n="n"/></r></p></e>
      <e><p><l>oalgi<s n="n"/></l><r>oalgge<s n="n"/></r></p></e>
      <e><p><l>oalli<s n="n"/></l><r>oalle<s n="n"/></r></p></e>
      <e><p><l>oamastus<s n="n"/></l><r>åmastus<s n="n"/></r></p></e>
@@ -3835,7 +3827,6 @@
      <e><p><l>obbahaddi<s n="n"/></l><r>åbbåhadde<s n="n"/></r></p></e>
      <e><p><l>obbaráksá<s n="n"/></l><r>åbbåráksá<s n="n"/></r></p></e>
      <e><p><l>obdukšuvdna<s n="n"/></l><r>obduksjåvnnå<s n="n"/></r></p></e>
-     <e><p><l>obdukšuvdnalatnja<s n="n"/></l><r>obduksjåvnnåladnja<s n="n"/></r></p></e>
      <e><p><l>objeaktasubordinašuvdna<s n="n"/></l><r>objektsubordinasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>objektivisma<s n="n"/></l><r>objektivissma<s n="n"/></r></p></e>
      <e><p><l>obligašuvdna<s n="n"/></l><r>obligasjåvnnå<s n="n"/></r></p></e>
@@ -3849,7 +3840,6 @@
      <e><p><l>ohcci<s n="n"/></l><r>åhttse<s n="n"/></r></p></e>
      <e><p><l>ohcu<s n="n"/></l><r>åhtso<s n="n"/></r></p></e>
      <e><p><l>ohki<s n="n"/></l><r>åhke<s n="n"/></r></p></e>
-     <e><p><l>ohppiidlatnja<s n="n"/></l><r>oahppijladnja<s n="n"/></r></p></e>
      <e><p><l>okkultisma<s n="n"/></l><r>okkultissma<s n="n"/></r></p></e>
      <e><p><l>okkupašuvdna<s n="n"/></l><r>okkupasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>oksiida<s n="n"/></l><r>oksijdda<s n="n"/></r></p></e>
@@ -3857,7 +3847,6 @@
      <e><p><l>olbmáš<s n="n"/></l><r>ålmmåsj<s n="n"/></r></p></e>
      <e><p><l>olggoš<s n="n"/></l><r>ålgusj<s n="n"/></r></p></e>
      <e><p><l>olgoriikkadepartemeanta<s n="n"/></l><r>ålggorijkkadepartemænnta<s n="n"/></r></p></e>
-     <e><p><l>olgoáibmoláhka<s n="n"/></l><r>ålggoájmmoláhka<s n="n"/></r></p></e>
      <e><p><l>olgu<s n="n"/></l><r>ålggo<s n="n"/></r></p></e>
      <e><p><l>oligarkiija<s n="n"/></l><r>oligarkijja<s n="n"/></r></p></e>
      <e><p><l>oliiva<s n="n"/></l><r>olijvva<s n="n"/></r></p></e>
@@ -3898,14 +3887,12 @@
      <e><p><l>ortografiija<s n="n"/></l><r>ortografijja<s n="n"/></r></p></e>
      <e><p><l>oscillográmma<s n="n"/><s n="g3"/></l><r>oscillográmma<s n="n"/></r></p></e>
      <e><p><l>oseanografiija<s n="n"/></l><r>oseanografijja<s n="n"/></r></p></e>
-     <e><p><l>oskkuviellja<s n="n"/></l><r>åsskoviellja<s n="n"/></r></p></e>
      <e><p><l>osku<s n="n"/></l><r>åssko<s n="n"/></r></p></e>
      <e><p><l>ovdaannuitehta<s n="n"/></l><r>åvddåannuitiehtta<s n="n"/></r></p></e>
      <e><p><l>ovdadilljá<s n="n"/></l><r>åvddådilljá<s n="n"/></r></p></e>
      <e><p><l>ovdagiehta<s n="n"/></l><r>åvddågiehta<s n="n"/></r></p></e>
      <e><p><l>ovdagovva<s n="n"/></l><r>åvddågåvvå<s n="n"/></r></p></e>
-     <e><p><l>ovdaloavdda<s n="n"/></l><r>åvddålåvda<s n="n"/></r></p></e>
-     <e><p><l>ovdamadda<s n="n"/></l><r>åvddåmadda<s n="n"/></r></p></e>
+     <e><p><l>ovdaloavdda<s n="n"/></l><r>åvddågåbtjås<s n="n"/></r></p></e>
      <e><p><l>ovdamearka<s n="n"/></l><r>buojkulvis<s n="n"/></r></p></e>
      <e><p><l>ovdanahttinfoanda<s n="n"/></l><r>åvddånahttemfoannda<s n="n"/></r></p></e>
      <e><p><l>ovdaprošeakta<s n="n"/></l><r>åvddåprosjækta<s n="n"/></r></p></e>
@@ -3965,7 +3952,6 @@
      <e><p><l>pasifisma<s n="n"/></l><r>pasifissma<s n="n"/></r></p></e>
      <e><p><l>passiivavearba<s n="n"/></l><r>passijvvaværbba<s n="n"/></r></p></e>
      <e><p><l>passivitehta<s n="n"/></l><r>passivitiehtta<s n="n"/></r></p></e>
-     <e><p><l>pateantaláhka<s n="n"/></l><r>patænntaláhka<s n="n"/></r></p></e>
      <e><p><l>paternalisma<s n="n"/></l><r>paternalissma<s n="n"/></r></p></e>
      <e><p><l>patologiija<s n="n"/></l><r>patologijja<s n="n"/></r></p></e>
      <e><p><l>patriotisma<s n="n"/></l><r>patriotissma<s n="n"/></r></p></e>
@@ -4005,7 +3991,7 @@
      <e><p><l>plafondamaleriija<s n="n"/></l><r>plafondmalerijja<s n="n"/></r></p></e>
      <e><p><l>plakáhta<s n="n"/></l><r>plakáhtta<s n="n"/></r></p></e>
      <e><p><l>planehta<s n="n"/></l><r>planiehtta<s n="n"/></r></p></e>
-     <e><p><l>planetária<s n="n"/></l><r>planetaria<s n="n"/></r></p></e>
+     <e><p><l>planetária<s n="n"/></l><r>planetarijá<s n="n"/></r></p></e>
      <e><p><l>plasma<s n="n"/></l><r>plássmá<s n="n"/></r></p></e>
      <e><p><l>plastihkka<s n="n"/></l><r>plastihkka<s n="n"/></r></p></e>
      <e><p><l>platonisma<s n="n"/></l><r>platonissma<s n="n"/></r></p></e>
@@ -4019,7 +4005,6 @@
      <e><p><l>pláhta<s n="n"/></l><r>pláhtta<s n="n"/></r></p></e>
      <e><p><l>plána<s n="n"/></l><r>pládna<s n="n"/></r></p></e>
      <e><p><l>plánadokumeanta<s n="n"/></l><r>pládnadokumænnta<s n="n"/></r></p></e>
-     <e><p><l>plánaláhka<s n="n"/></l><r>plánaláhka<s n="n"/></r></p></e>
      <e><p><l>plánen<s n="n"/></l><r>plánim<s n="n"/></r></p></e>
      <e><p><l>poasta<s n="n"/></l><r>poassta<s n="n"/></r></p></e>
      <e><p><l>poastagiro<s n="n"/></l><r>poasstagiro<s n="n"/></r></p></e>
@@ -4175,7 +4160,6 @@
      <e><p><l>regrešuvdna<s n="n"/></l><r>regresjåvnnå<s n="n"/></r></p></e>
      <e><p><l>regulatiiva<s n="n"/></l><r>regulatijvva<s n="n"/></r></p></e>
      <e><p><l>regulerenplána<s n="n"/></l><r>regulierimpládna<s n="n"/></r></p></e>
-     <e><p><l>rehketdoalloláhka<s n="n"/></l><r>rieknikdoallolága<s n="n"/></r></p></e>
      <e><p><l>reive<s n="n"/></l><r>girjje<s n="n"/></r></p></e>
      <e><p><l>rekel<s n="n"/></l><r>riehkil<s n="n"/></r></p></e>
      <e><p><l>reklamašuvdna<s n="n"/></l><r>reklamasjåvnnå<s n="n"/></r></p></e>
@@ -4254,7 +4238,7 @@
      <e><p><l>riisa<s n="n"/></l><r>rijssa<s n="n"/></r></p></e>
      <e><p><l>rikča<s n="n"/></l><r>riktja<s n="n"/></r></p></e>
      <e><p><l>rimsu<s n="n"/></l><r>rimsso<s n="n"/></r></p></e>
-     <e><p><l>risviellja<s n="n"/></l><r>risstaviellja<s n="n"/></r></p></e>
+     <e><p><l>risviellja<s n="n"/></l><r>ristaviellja<s n="n"/></r></p></e>
      <e><p><l>risváhnen<s n="n"/></l><r>ristæjgát<s n="n"/></r></p></e>
      <e><p><l>ritma<s n="n"/></l><r>ritma<s n="n"/></r></p></e>
      <e><p><l>ritni<s n="n"/></l><r>ridne<s n="n"/></r></p></e>
@@ -4322,11 +4306,10 @@
      <e><p><l>ruossadákti<s n="n"/></l><r>ruossadákte<s n="n"/></r></p></e>
      <e><p><l>ruossaliidni<s n="n"/></l><r>ruossalijnne<s n="n"/></r></p></e>
      <e><p><l>ruossamuorra<s n="n"/></l><r>ruossamuorra<s n="n"/></r></p></e>
-     <e><p><l>ruossačiehka<s n="n"/></l><r>ruossatjiehka<s n="n"/></r></p></e>
      <e><p><l>ruosta<s n="n"/></l><r>ruossta<s n="n"/></r></p></e>
      <e><p><l>ruovddáš<s n="n"/></l><r>ruovdásj<s n="n"/></r></p></e>
      <e><p><l>ruovdegáma<s n="n"/></l><r>ruovddegáma<s n="n"/></r></p></e>
-     <e><p><l>ruovdegáŋga<s n="n"/></l><r>ruovddegáŋga<s n="n"/></r></p></e>
+     <e><p><l>ruovdegáŋga<s n="n"/></l><r>ruovddegágga<s n="n"/></r></p></e>
      <e><p><l>ruovdi<s n="n"/></l><r>ruovdde<s n="n"/></r></p></e>
      <e><p><l>ruoŧagiella<s n="n"/></l><r>svierigadárogiella<s n="n"/></r></p></e>
      <e><p><l>ruošša<s n="n"/><s n="g3"/></l><r>ruossja<s n="n"/></r></p></e>
@@ -4382,7 +4365,6 @@
      <e><p><l>rámisvuohta<s n="n"/></l><r>rámesvuohta<s n="n"/></r></p></e>
      <e><p><l>rámma<s n="n"/><s n="g3"/></l><r>rámma<s n="n"/></r></p></e>
      <e><p><l>rámmabušeahtta<s n="n"/></l><r>rámmabudsjæhtta<s n="n"/></r></p></e>
-     <e><p><l>rámmadoarjja<s n="n"/></l><r>rámmadoarjja<s n="n"/></r></p></e>
      <e><p><l>rámmakonvenšuvdna<s n="n"/></l><r>rámmakonvensjåvnnå<s n="n"/></r></p></e>
      <e><p><l>rámmaplána<s n="n"/></l><r>rámmapládna<s n="n"/></r></p></e>
      <e><p><l>rámmaprográmma<s n="n"/><s n="g3"/></l><r>rámmaprográmma<s n="n"/></r></p></e>
@@ -4439,7 +4421,6 @@
      <e><p><l>searvi<s n="n"/></l><r>siebrre<s n="n"/></r></p></e>
      <e><p><l>seaŋaš<s n="n"/></l><r>sieŋasj<s n="n"/></r></p></e>
      <e><p><l>seaŋga<s n="n"/></l><r>sæŋŋga<s n="n"/></r></p></e>
-     <e><p><l>seaŋgalatnja<s n="n"/></l><r>sæŋŋgaladnja<s n="n"/></r></p></e>
      <e><p><l>seaŋáš<s n="n"/></l><r>sæŋásj<s n="n"/></r></p></e>
      <e><p><l>sedimeanta<s n="n"/></l><r>sedimænnta<s n="n"/></r></p></e>
      <e><p><l>segrešuvdna<s n="n"/></l><r>segresjåvnnå<s n="n"/></r></p></e>
@@ -4489,10 +4470,8 @@
      <e><p><l>siellu<s n="n"/></l><r>siello<s n="n"/></r></p></e>
      <e><p><l>sieludilli<s n="n"/></l><r>sielodille<s n="n"/></r></p></e>
      <e><p><l>sierat<s n="n"/></l><r>sierat<s n="n"/></r></p></e>
-     <e><p><l>sierrabibliotehka<s n="n"/></l><r>sierrabibliotiehkka<s n="n"/></r></p></e>
 
      <e><p><l>sierradilli<s n="n"/></l><r>sierradille<s n="n"/></r></p></e>
-     <e><p><l>sierradoarjja<s n="n"/></l><r>sierradoarjja<s n="n"/></r></p></e>
      <e><p><l>sierraiešvuohta<s n="n"/></l><r>sierraiesjvuohta<s n="n"/></r></p></e>
      <e><p><l>sierrapedagoga<s n="n"/></l><r>sierrapedagåvggå<s n="n"/></r></p></e>
      <e><p><l>sierravuohta<s n="n"/></l><r>sierravuohta<s n="n"/></r></p></e>
@@ -4603,8 +4582,7 @@
      <e><p><l>skuvla<s n="n"/></l><r>skåvllå<s n="n"/></r></p></e>
      <e><p><l>skuvlagirjerájus<s n="n"/></l><r>skåvllågirjjevuorkká<s n="n"/></r></p></e>
      <e><p><l>skuvlainternáhta<s n="n"/></l><r>skåvllåinternáhtta<s n="n"/></r></p></e>
-     <e><p><l>skuvlaviellja<s n="n"/></l><r>skåvllåviellja<s n="n"/></r></p></e>
-     <e><p><l>skuvlaáigodat<s n="n"/></l><r>skåvllåájgegávdda<s n="n"/></r></p></e>
+     <e><p><l>skuvlaviellja<s n="n"/></l><r>skåvllåráddna<s n="n"/></r></p></e>
      <e><p><l>skuvri<s n="n"/></l><r>skuvrre<s n="n"/></r></p></e>
      <e><p><l>skábe<s n="n"/></l><r>skáhpe<s n="n"/></r></p></e>
      <e><p><l>skábma<s n="n"/></l><r>sjievnnjisájgge<s n="n"/></r></p></e>
@@ -4657,7 +4635,6 @@
      <e><p><l>soadji<s n="n"/></l><r>soadje<s n="n"/></r></p></e>
      <e><p><l>soadjá<s n="n"/></l><r>soadje<s n="n"/></r></p></e>
      <e><p><l>soahki<s n="n"/></l><r>soahke<s n="n"/></r></p></e>
-     <e><p><l>soahtefáŋga<s n="n"/></l><r>soahtefáŋŋga<s n="n"/></r></p></e>
      <e><p><l>šlápma<s n="n"/></l><r>juhtsa<s n="n"/></r></p></e>
      <e><p><l>soahti<s n="n"/></l><r>soahte<s n="n"/></r></p></e>
      <e><p><l>soajáš<s n="n"/></l><r>soajásj<s n="n"/></r></p></e>
@@ -4773,16 +4750,15 @@
      <e><p><l>stáhtaarkiiva<s n="n"/></l><r>stáhtaarkijvva<s n="n"/></r></p></e>
      <e><p><l>stáhtabušeahtta<s n="n"/></l><r>stáhtabudsjæhtta<s n="n"/></r></p></e>
      <e><p><l>stáhtadieđa<s n="n"/></l><r>stáhtadieda<s n="n"/></r></p></e>
-     <e><p><l>stáhtadoarjja<s n="n"/></l><r>stáhtadoarjja<s n="n"/></r></p></e>
+     <e><p><l>stáhtadoarjja<s n="n"/></l><r>stáhta<b/>ruhtadoarjja<s n="n"/></r></p></e>
      <e><p><l>stáhtainstitušuvdna<s n="n"/></l><r>stáhtainstitusjåvnnå<s n="n"/></r></p></e>
      <e><p><l>stáhtakapitalisma<s n="n"/></l><r>statskapitalissma<s n="n"/></r></p></e>
      <e><p><l>stáhtakássa<s n="n"/><s n="g3"/></l><r>stáhtakássa<s n="n"/></r></p></e>
      <e><p><l>stáhtapolitihkka<s n="n"/></l><r>stáhtapolitihkka<s n="n"/></r></p></e>
-     <e><p><l>stáhtaruhtaministeriija<s n="n"/></l><r>stáhttaruhtaministerijja<s n="n"/></r></p></e>
+     <e><p><l>stáhtaruhtaministeriija<s n="n"/></l><r>ruhtadusdepartemænnta<s n="n"/></r></p></e>
      <e><p><l>stáhtus<s n="n"/></l><r>stáhtus<s n="n"/></r></p></e>
      <e><p><l>stálla<s n="n"/><s n="g3"/></l><r>stálla<s n="n"/></r></p></e>
      <e><p><l>stálle<s n="n"/><s n="g3"/></l><r>stálle<s n="n"/></r></p></e>
-     <e><p><l>stállegáŋga<s n="n"/></l><r>stállegáŋga<s n="n"/></r></p></e>
      <e><p><l>stálli<s n="n"/></l><r>stálle<s n="n"/></r></p></e>
      <e><p><l>stállja<s n="n"/></l><r>stálla<s n="n"/></r></p></e>
      <e><p><l>stállu<s n="n"/></l><r>stállo<s n="n"/></r></p></e>
@@ -4929,14 +4905,11 @@
      <e><p><l>sámediggeráđđi<s n="n"/></l><r>sámedikkeráde<s n="n"/></r></p></e>
      <e><p><l>sámediggi<s n="n"/></l><r>sámedigge<s n="n"/></r></p></e>
      <e><p><l>sámedikkeplána<s n="n"/></l><r>sámedikkepládna<s n="n"/></r></p></e>
-     <e><p><l>sámegielfága<s n="n"/></l><r>sámegielfáhka<s n="n"/></r></p></e>
-     <e><p><l>sámegielgelbbolašvuohta<s n="n"/></l><r>sámegielmáhtudahka<s n="n"/></r></p></e>
      <e><p><l>sámegiella<s n="n"/></l><r>sámegiella<s n="n"/></r></p></e>
      <e><p><l>sámegielnamma<s n="n"/></l><r>sámegielnamma<s n="n"/></r></p></e>
      <e><p><l>sámekonvenšuvdna<s n="n"/></l><r>sámekonvensjåvnnå<s n="n"/></r></p></e>
      <e><p><l>sámeláhka<s n="n"/></l><r>sámeláhka<s n="n"/></r></p></e>
      <e><p><l>sámemiššuvdna<s n="n"/></l><r>sámemisjåvnnå<s n="n"/></r></p></e>
-     <e><p><l>sámemusea<s n="n"/></l><r>sámemusiedja<s n="n"/></r></p></e>
      <e><p><l>sámemánná<s n="n"/></l><r>sámemánná<s n="n"/></r></p></e>
      <e><p><l>sámenamma<s n="n"/></l><r>sámenamma<s n="n"/></r></p></e>
      <e><p><l>sámenuorra<s n="n"/></l><r>sámenuorra<s n="n"/></r></p></e>
@@ -5283,7 +5256,6 @@
      <e><p><l>vuollai<s n="pp"/></l><r>vuolláj<s n="pp"/></r></p></e>
      <e><p><l>vuollebahta<s n="n"/></l><r>vuollebahta<s n="n"/></r></p></e>
      <e><p><l>vuollegašvuohta<s n="n"/></l><r>vuollegisvuohta<s n="n"/></r></p></e>
-     <e><p><l>vuollemadda<s n="n"/></l><r>vuollemadda<s n="n"/></r></p></e>
      <e><p><l>vuolleravda<s n="n"/></l><r>vuollerabdda<s n="n"/></r></p></e>
      <e><p><l>vuolli<s n="n"/></l><r>vuolle<s n="n"/></r></p></e>
      <e><p><l>vuolláičála<s n="n"/></l><r>vuollájtjála<s n="n"/></r></p></e>
@@ -5348,13 +5320,11 @@
      <e><p><l>váldi<s n="n"/><s n="sem_org"/></l><r>fábmodus<s n="n"/></r></p></e>
      <e><p><l>váldocealkka<s n="n"/></l><r>oajvvegárgadis<s n="n"/></r></p></e>
      <e><p><l>váldonjuolggadus<s n="n"/></l><r>oajvvenjuolgadus<s n="n"/></r></p></e>
-     <e><p><l>váldoáigodat<s n="n"/></l><r>oajvveájgegávdda<s n="n"/></r></p></e>
      <e><p><l>váldoášši<s n="n"/>><s n="g3"/></l><r>oajvveássje<s n="n"/></r></p></e>
      <e><p><l>váldu<s n="n"/></l><r>oajvve<s n="n"/></r></p></e>
      <e><p><l>válga<s n="n"/></l><r>válgga<s n="n"/></r></p></e>
      <e><p><l>válgabiire<s n="n"/></l><r>válggabijrra<s n="n"/></r></p></e>
-     <e><p><l>válgalatnja<s n="n"/></l><r>válggaladnja<s n="n"/></r></p></e>
-     <e><p><l>válgaláhka<s n="n"/></l><r>válggaláhka<s n="n"/></r></p></e>
+     <e><p><l>válgalatnja<s n="n"/></l><r>jienastimladnja<s n="n"/></r></p></e>
      <e><p><l>válja<s n="n"/></l><r>vállja<s n="n"/></r></p></e>
      <e><p><l>válká<s n="n"/></l><r>válkká<s n="n"/></r></p></e>
      <e><p><l>válla<s n="n"/></l><r>válla<s n="n"/></r></p></e>
@@ -5368,7 +5338,6 @@
      <e><p><l>várpa<s n="n"/></l><r>várppa<s n="n"/></r></p></e>
      <e><p><l>várpi<s n="n"/></l><r>várppe<s n="n"/></r></p></e>
      <e><p><l>várra<s n="n"/></l><r>várra<s n="n"/></r></p></e>
-     <e><p><l>várreláhka<s n="n"/></l><r>várreláhka<s n="n"/></r></p></e>
      <e><p><l>várrepresideanta<s n="n"/></l><r>várrepresidænnta<s n="n"/></r></p></e>
      <e><p><l>várri<s n="n"/></l><r>várre<s n="n"/></r></p></e>
      <e><p><l>vástádus<s n="n"/></l><r>vásstádus<s n="n"/></r></p></e>
@@ -5393,8 +5362,7 @@
      <e><p><l>áhkkut<s n="n"/></l><r>áhkkut<s n="n"/></r></p></e>
      <e><p><l>áhkká<s n="n"/></l><r>áhkká<s n="n"/></r></p></e>
      <e><p><l>áhkoš<s n="n"/></l><r>áhkusj<s n="n"/></r></p></e>
-     <e><p><l>áhpebiegga<s n="n"/></l><r>áhpebiegga<s n="n"/></r></p></e>
-     <e><p><l>áhpegáddi<s n="n"/></l><r>áhpegádde<s n="n"/></r></p></e>
+     <e><p><l>áhpegáddi<s n="n"/></l><r>merragádde<s n="n"/></r></p></e>
      <e><p><l>áhpelihkká<s n="n"/></l><r>áhpelihkká<s n="n"/></r></p></e>
      <e><p><l>áhpi<s n="n"/></l><r>áhpe<s n="n"/></r></p></e>
      <e><p><l>áhppa<s n="n"/></l><r>áhppa<s n="n"/></r></p></e>
@@ -5448,7 +5416,7 @@
      <e><p><l>áren<s n="n"/></l><r>áren<s n="n"/></r></p></e>
      <e><p><l>árga<s n="n"/></l><r>árgga<s n="n"/></r></p></e>
      <e><p><l>árgabeaivi<s n="n"/></l><r>árggabiejvve<s n="n"/></r></p></e>
-     <e><p><l>ária<s n="n"/></l><r>ária<s n="n"/></r></p></e>
+     <e><p><l>ária<s n="n"/></l><r>arijá<s n="n"/></r></p></e>
      <e><p><l>árka<s n="n"/></l><r>árkka<s n="n"/></r></p></e>
      <e><p><l>árkabisma<s n="n"/></l><r>árkkabissma<s n="n"/></r></p></e>
      <e><p><l>árpu<s n="n"/></l><r>árppo<s n="n"/></r></p></e>
@@ -5488,7 +5456,6 @@
      <e><p><l>čalán<s n="n"/></l><r>tjalán<s n="n"/></r></p></e>
      <e><p><l>šamanisma<s n="n"/></l><r>sjamanissma<s n="n"/></r></p></e>
      <e><p><l>čanas<s n="n"/></l><r>tjanás<s n="n"/></r></p></e>
-     <e><p><l>čanusenergiija<s n="n"/></l><r>tjanosenersjijja<s n="n"/></r></p></e>
      <e><p><l>časkkis<s n="n"/></l><r>tjaskes<s n="n"/></r></p></e>
      <e><p><l>časttas<s n="n"/></l><r>tjastas<s n="n"/></r></p></e>
      <e><p><l>čađačuohpus<s n="n"/></l><r>tjadátjuohpos<s n="n"/></r></p></e>
@@ -53087,8 +53054,8 @@
     <!-- Interjections -->
 
     <e><p><l>bures<s n="ij"/></l><r>buoris<s n="ij"/></r></p></e>
-    <e><p><l>juo<s n="ij"/></l><r>ja<s n="ij"/></r></p></e>
-    <e><p><l>jo<s n="ij"/></l><r>ja<s n="ij"/></r></p></e>
+    <e><p><l>juo<s n="ij"/></l><r>juo<s n="ij"/></r></p></e>
+    <e><p><l>jo<s n="ij"/></l><r>juo<s n="ij"/></r></p></e>
     <e><p><l>maid<s n="ij"/></l><r>majt<s n="ij"/></r></p></e>
      <e><p><l>halleluja<s n="ij"/></l><r>halleluja<s n="ij"/></r></p></e>
      <e><p><l>dearvva<s n="ij"/></l><r>buoris<s n="ij"/></r></p></e>
