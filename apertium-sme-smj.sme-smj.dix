@@ -260,6 +260,7 @@
     <e><p><l>son<s n="prn"/></l><r>sån<s n="prn"/></r></p></e>
     <e><p><l>unnán<s n="prn"/></l><r>binná<s n="adj"/></r></p></e>
     <e><p><l>unnán<s n="prn"/><s n="ind"/><s n="attr"/></l><r>binná<s n="adj"/><s n="attr"/></r></p></e>
+    <e><p><l>unnán<s n="prn"/><s n="ind"/><s n="sg"/><s n="nom"/></l><r>binná<s n="adj"/><s n="sg"/><s n="nom"/></r></p></e>
     <e><p><l>unnánaš<s n="prn"/></l><r>unnánasj<s n="prn"/></r></p></e>
     <e><p><l>vaikko<b/>gii<s n="prn"/></l><r>vájku<b/>guhti<s n="prn"/></r></p></e>
     <e><p><l>vaikko<b/>goabbá<s n="prn"/></l><r>vájku<b/>goabbá<s n="prn"/></r></p></e>
@@ -1195,6 +1196,7 @@
     <e><p><l>miljovdna<s n="num"/></l><r>millijåvnnå<s n="num"/></r></p></e>
     <e><p><l>moadde<s n="num"/></l><r>gallegasj<s n="prn"/><s n="ind"/></r></p></e>
     <e><p><l>máŋga<s n="num"/></l><r>moadda<s n="prn"/><s n="ind"/></r></p></e>
+    <e><p><l>máŋga<s n="num"/><s n="pl"/><s n="nom"/></l><r>moadda<s n="prn"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
     <e><p><l>njeallje<s n="num"/></l><r>niellja<s n="num"/></r></p></e>
      <e><p><l>njeallječuođi<s n="num"/></l><r>nielljatjuohte<s n="num"/></r></p></e>
      <e><p><l>njealljelogiguokte<s n="num"/></l><r>nielljalåkguokta<s n="num"/></r></p></e>
@@ -9428,7 +9430,7 @@
      <e><p><l>riegádit<s n="vblex"/><s n="iv"/></l><r>riegádit<s n="vblex"/></r></p></e>
      <e><p><l>riektat<s n="vblex"/><s n="iv"/></l><r>riektat<s n="vblex"/></r></p></e>
      <e><p><l>riestit<s n="vblex"/><s n="tv"/></l><r>riesstet<s n="vblex"/></r></p></e>
-     <e><p><l>rievdadit<s n="vblex"/><s n="tv"/></l><r>rievddat<s n="vblex"/></r></p></e>
+     <e><p><l>rievdadit<s n="vblex"/><s n="tv"/></l><r>rievdadit<s n="vblex"/></r></p></e>
      <e><p><l>rievddadit<s n="vblex"/><s n="iv"/></l><r>rievddat<s n="vblex"/></r></p></e>
      <e><p><l>rievvut<s n="vblex"/><s n="tv"/></l><r>rievvat<s n="vblex"/></r></p></e>
      <e><p><l>riggut<s n="vblex"/><s n="iv"/></l><r>riggat<s n="vblex"/></r></p></e>
