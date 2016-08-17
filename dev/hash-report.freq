@@ -1,37 +1,29 @@
-   5 #vehi<prn><ind><sg><nom>
    5 #guovtegielak<adj><attr><der_vuota><n><cmp_sggen><cmp>dårjav
-   4 #iehpeformalalasj<adj><attr>
-   4 #formalalasj<adj><attr>
-   3 #tjalmostit<vblex><der_caus><vblex><der_passl><vblex><iv><indic><pres><p3><sg>
    3 #mån<prn><pers><p1><pl><loc>
    3 #guovtegielak<adj><attr><der_vuota><n><cmp_sggen><cmp>dårjaj
    3 #dat<prn><dem><pl><loc><attr>
    2 #vájllo<adj><attr><der_vuota><n><sg><nom>
-   2 #rievtes<adj><sg><nom>
-   2 #rievddat<vblex><der_passl><vblex><indic><pres><p3><pl>
-   2 #moadda<prn><ind><pl><nom>
+   2 #rievdadit<vblex><der_passl><vblex><indic><pres><p3><pl>
    2 #mige<prn><ind><sg><nom><foc_neg-k>
    2 #guovtegielak<adj><attr><der_vuota><n><cmp_sggen><cmp>dårja
    2 #guovtegielak<adj><attr><der_vuota><n><cmp_sggen><cmp>doarjjaj
    2 #fylkka<n><cmp_sggen><cmp>#suohkan<n><der_lasj><adj><attr>
    2 #dat<prn><dem><pl><loc>
-   2 #båhtsijdit<vblex><der_caus><vblex><indic><pres><p3><pl>
-   2 #akta<num><ind><sg><loc>
-   2 #akta<num><ind><sg><ine>
+   2 #akta<prn><ind><sg><loc><foc_neg-k>
    2 #Guovtegielak<adj><attr><der_vuota><n><cmp_sggen><cmp>doarjja
    1 #ækto<n><cmp_sgnom><cmp>
    1 #ássje<n><cmp_sgnom><cmp>
-   1 #árrat<adj><sup><attr>
+   1 #árra<adj><sup><attr>
    1 #álga<n><der_dibme><adj><sg><ine>
    1 #Ålggo<n><cmp_sgnom><cmp>#ståhkam<n><pl><nom>
    1 #vuoras<n><pl><nom>
    1 #vuoras<n><pl><gen>
    1 #vehi<prn><ind><sg><nom>”
+   1 #vehi<prn><ind><sg><nom>
    1 #vehi<prn><ind><attr><foc_neg-k>
    1 #vaddet<vblex><actio><ine>
    1 #tsieggim<n><sg><acc>
    1 #tjiegŋudit<vblex><inf>
-   1 #tjalmostit<vblex><der_caus><vblex><der_passl><vblex><iv><indic><pres><p3><pl>
    1 #sæmmi<prn><ind><sg><acc>
    1 #sávvat<vblex><vabess><adj><attr>
    1 #sáme<adj><pl><nom>
@@ -75,16 +67,12 @@
    1 #diehtet<vblex><indic><pret><conneg>
    1 #dat<prn><dem><sg><loc>
    1 #dakkár<prn><dem><pl><ine><attr>
-   1 #båhtsijdit<vblex><der_caus><vblex><prfprc>
    1 #båhtsijdit<vblex><der_caus><vblex><cond><p3><sg>
    1 #bierrit<vblex><indic><pres><conneg>
    1 #badjelij<adv><px3sg>
    1 #badjelij<adv><px3pl>
    1 #avtagielak<adj><cmp_attr><cmp>
-   1 #akta<num><ind><sg><nom>
-   1 #akta<num><ind><sg><acc><foc_pos-k>
-   1 #akta<num><ind><sg><acc>
-   1 #akta<num><ind><attr>
+   1 #akta<prn><ind><attr><foc_neg-k>
    1 #Tsoavttsot<vblex><der_caus><vblex><prsprc>
    1 #Stáhta
    1 #Soajttet<vblex><der_d><vblex><imp><conneg>
