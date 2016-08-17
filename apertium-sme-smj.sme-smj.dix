@@ -98,6 +98,7 @@
     <sdef n="der_pass" c="Passive derivation (smj)"/>
     <sdef n="der_nomact" c="deverbal noun (action/process)"/>
     <sdef n="der_k" c="der_k"/>
+    <sdef n="der_caus" c="der_caus"/>
 
     <sdef n="sggencmp" c="Singular genitive compound-left"/> <!--TODO-->
     <sdef n="sgnomcmp" c="Singular nominative compound-left"/>
@@ -2543,6 +2544,7 @@
      <e><p><l>guovlu<s n="n"/></l><r>guovllo<s n="n"/></r></p></e>
      <e><p><l>guovssonásti<s n="n"/></l><r>guovsojnásste<s n="n"/></r></p></e>
      <e><p><l>guovttegielalašvuohta<s n="n"/></l><r>guovtegielakvuohta<s n="n"/></r></p></e>
+     <e><p><l>guovttegielatvuođa<s n="n"/></l><r>guovtegielakvuohta<s n="n"/></r></p></e>
      <e><p><l>guovvamánnu<s n="n"/></l><r>guovvamánno<s n="n"/></r></p></e>
      <e><p><l>guppar<s n="n"/></l><r>guppar<s n="n"/></r></p></e>
      <e><p><l>guretgáma<s n="n"/></l><r>nuvtak<s n="n"/></r></p></e>
@@ -5839,7 +5841,7 @@
      <e><p><l>rašši<s n="adj"/></l><r>rassje<s n="adj"/></r></p></e>
      <e><p><l>regála<s n="adj"/></l><r>regálla<s n="adj"/></r></p></e>
      <e><p><l>reiddas<s n="adj"/></l><r>rejdas<s n="adj"/></r></p></e>
-     <e><p><l>riekta<s n="adj"/></l><r>rievtes<s n="adj"/></r></p></e>
+     <e><p><l>riekta<s n="adj"/></l><r>riekta<s n="adj"/></r></p></e>
      <e><p><l>rihča<s n="adj"/></l><r>bitjes<s n="adj"/></r></p></e>
      <e><p><l>riikkaidgaskasaš<s n="adj"/></l><r>rijkajgasskasasj<s n="adj"/></r></p></e>
      <e><p><l>rivggas<s n="adj"/></l><r>rivgas<s n="adj"/></r></p></e>
@@ -10237,6 +10239,7 @@
      <e><p><l>čallat<s n="vblex"/><s n="tv"/></l><r>tjallat<s n="vblex"/></r></p></e>
      <e><p><l>čalludit<s n="vblex"/><s n="tv"/></l><r>tjallodit<s n="vblex"/></r></p></e>
      <e><p><l>čalmmustit<s n="vblex"/><s n="tv"/></l><r>tjalmostit<s n="vblex"/></r></p></e>
+     <e><p><l>čalmmustit<s n="vblex"/><s n="tv"/><s n="der_caus"/><s n="vblex"/><s n="tv"/><s n="der_passl"/><s n="vblex"/><s n="iv"/></l><r>tjalmostahttet<s n="vblex"/><s n="tv"/><s n="der_passl"/><s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>šamponeret<s n="vblex"/><s n="tv"/></l><r>sjamponierit<s n="vblex"/></r></p></e>
      <e><p><l>čanadit<s n="vblex"/><s n="tv"/></l><r>tjadnat<s n="vblex"/></r></p></e>
      <e><p><l>čanahit<s n="vblex"/><s n="tv"/></l><r>tjadnat<s n="vblex"/></r></p></e>
