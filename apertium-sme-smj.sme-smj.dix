@@ -77,6 +77,8 @@
 
     <sdef n="conneg"  c="Negation form"/>
     <sdef n="neg"     c="Negation verb 'ii'"/>
+   
+    <sdef n="sup"     c="Superlative"/>
 
     <sdef n="ij"     c="interjection"/>
     <sdef n="sem_dummytag"     c="sem_dummytag"/>
@@ -241,6 +243,7 @@
     <e><p><l>juohkehaš<s n="prn"/></l><r>juohkkahasj<s n="prn"/></r></p></e>
     <e><p><l>makkár<s n="prn"/></l><r>makkir<s n="prn"/></r></p></e>
     <e><p><l>mihkke<s n="prn"/></l><r>mige<s n="prn"/></r></p></e>
+    <e><p><l>mihkke<s n="prn"/><s n="ind"/><s n="sg"/><s n="nom"/><s n="foc_neg-ge"/></l><r>makkirak<s n="prn"/><s n="ind"/></r></p></e>
     <e><p><l>mihkke<s n="prn"/><s n="ind"/><s n="sg"/><s n="acc"/><s n="foc_neg-ge"/></l><r>mige<s n="prn"/><s n="ind"/><s n="pl"/><s n="acc"/></r></p></e>
     <e><p><l>mii<s n="prn"/></l><r>mij<s n="prn"/></r></p></e>
     <e><p><l>mii<s n="prn"/><s n="itg"/><s n="sg"/><s n="acc"/></l><r>mij<s n="prn"/><s n="itg"/><s n="pl"/><s n="acc"/></r></p></e>
@@ -456,7 +459,7 @@
      <e><p><l>spiehkastit<s n="vblex"/><s n="iv"/></l><r>svahkastit<s n="vblex"/></r></p></e>
      <e><p><l>galledit<s n="vblex"/><s n="tv"/></l><r>guossidit<s n="vblex"/></r></p></e>
      <e><p><l>gallet<s n="vblex"/><s n="tv"/></l><r>guossit<s n="vblex"/></r></p></e>
-    <e><p><l>váilevaš<s n="adj"/></l><r>vájllo<s n="adj"/></r></p></e>
+    <e><p><l>váilevaš<s n="adj"/></l><r>vánes<s n="adj"/></r></p></e>
     <e><p><l>dásseárvosaš<s n="adj"/></l><r>avtaárvvusasj<s n="adj"/></r></p></e>
     <e><p><l>máŋggabealat<s n="adj"/></l><r>moattebelak<s n="adj"/></r></p></e>
     <e><p><l>vealtameahttun<s n="adj"/></l><r>vielldemahtes<s n="adj"/></r></p></e>
@@ -5334,6 +5337,7 @@
      <e><p><l>áldu<s n="n"/></l><r>álldo<s n="n"/></r></p></e>
      <e><p><l>álgga<s n="n"/></l><r>álga<s n="n"/></r></p></e>
      <e><p><l>álggahus<s n="n"/></l><r>álgadus<s n="n"/></r></p></e>
+     <e><p><l>álggaheapmi<s n="n"/></l><r>álgadibme<s n="n"/></r></p></e>
      <e><p><l>álgomotiiva<s n="n"/></l><r>álggomotijvva<s n="n"/></r></p></e>
      <e><p><l>álgoálbmotprográmma<s n="n"/><s n="g3"/></l><r>álggoálmmukprográmma<s n="n"/></r></p></e>
      <e><p><l>álgu<s n="n"/></l><r>álggo<s n="n"/></r></p></e>
@@ -5660,7 +5664,6 @@
      <e><p><l>eatnálaš<s n="adj"/></l><r>ædnálasj<s n="adj"/></r></p></e>
      <e><p><l>ekstensiiva<s n="adj"/></l><r>ekstensijvva<s n="adj"/></r></p></e>
      <e><p><l>erenoamáš<s n="adj"/></l><r>sierralágásj<s n="adj"/></r></p></e>
-     <e><p><l>erenoamáš<s n="adj"/></l><r>ájnas<s n="adj"/></r></p></e>
      <e><p><l>fiinnis<s n="adj"/></l><r>fijnes<s n="adj"/></r></p></e>
      <e><p><l>fortuitiiva<s n="adj"/></l><r>fortuitijvva<s n="n"/></r></p></e>
      <e><p><l>friddja<s n="adj"/></l><r>friddja<s n="adj"/></r></p></e>
@@ -5934,7 +5937,9 @@
      <e><p><l>áigásaš<s n="adj"/></l><r>ájggásasj<s n="adj"/></r></p></e>
      <e><p><l>álki<s n="adj"/></l><r>álkke<s n="adj"/></r></p></e>
      <e><p><l>árbevirolaš<s n="adj"/></l><r>árbbedábálasj<s n="adj"/></r></p></e>
-     <e><p><l>árrat<s n="adj"/></l><r>árra<s n="adj"/></r></p></e>
+     <e><p><l>árrat<s n="adj"/><s n="attr"/></l><r>árra<s n="adj"/><s n="attr"/></r></p></e>
+     <e><p><l>árrat<s n="adj"/><s n="sup"/><s n="attr"/></l><r>árap<s n="adj"/><s n="sup"/><s n="attr"/></r></p></e>
+     <e><p><l>árrat<s n="adj"/><s n="sup"/><s n="sg"/><s n="nom"/></l><r>áraph<s n="adj"/><s n="sup"/><s n="sg"/><s n="nom"/></r></p></e>
      <e><p><l>árvidahtti<s n="adj"/></l><r>árvvedahtte<s n="adj"/></r></p></e>
      <e><p><l>árvosaš<s n="adj"/></l><r>árvvusasj<s n="adj"/></r></p></e>
      <e><p><l>árvvas<s n="adj"/></l><r>árvas<s n="adj"/></r></p></e>
@@ -9432,7 +9437,7 @@
      <e><p><l>riegádit<s n="vblex"/><s n="iv"/></l><r>riegádit<s n="vblex"/></r></p></e>
      <e><p><l>riektat<s n="vblex"/><s n="iv"/></l><r>riektat<s n="vblex"/></r></p></e>
      <e><p><l>riestit<s n="vblex"/><s n="tv"/></l><r>riesstet<s n="vblex"/></r></p></e>
-     <e><p><l>rievdadit<s n="vblex"/><s n="tv"/></l><r>rievdadit<s n="vblex"/></r></p></e>
+     <e><p><l>rievdadit<s n="vblex"/><s n="tv"/></l><r>rievddadit<s n="vblex"/></r></p></e>
      <e><p><l>rievddadit<s n="vblex"/><s n="iv"/></l><r>rievddat<s n="vblex"/></r></p></e>
      <e><p><l>rievvut<s n="vblex"/><s n="tv"/></l><r>rievvat<s n="vblex"/></r></p></e>
      <e><p><l>riggut<s n="vblex"/><s n="iv"/></l><r>riggat<s n="vblex"/></r></p></e>
