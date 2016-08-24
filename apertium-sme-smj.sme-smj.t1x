@@ -23,6 +23,14 @@
       <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
       <cat-item lemma="leat" tags="vblex.*.indic.*.conneg.*"/>
     </def-cat>
+    <def-cat n="geatnegahtton">
+      <cat-item lemma="geatnegahtton" tags="adj.*"/>
+      <cat-item lemma="geatnegahttojuvvon" tags="adj.*"/>
+    </def-cat>
+    <def-cat n="leat-main">
+      <cat-item lemma="leat" tags="*.@+FMAINV"/>
+      <cat-item lemma="leat" tags="*.@-FMAINV"/>
+    </def-cat>
      <def-cat n="bealisPx">
       <cat-item lemma="bealis" tags="adv.px1sg.*"/>
       <cat-item lemma="bealis" tags="adv.px2sg.*"/>
@@ -167,6 +175,10 @@
       <cat-item tags="n.ess.*"/>
       <cat-item tags="np.*"/>
       <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
+    </def-cat>
+    <def-cat n="noun-nom"> 
+      <cat-item tags="n.*.*.nom.*"/>
+      <cat-item tags="n.*.*.*.nom.*"/>
     </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj.*"/>
@@ -1165,6 +1177,38 @@
 
 
   <section-rules>
+  
+  <rule comment="REGLA:geatnegahtton">
+      <pattern>
+        <pattern-item n="noun-nom"/>
+        <pattern-item n="leat-main"/>
+        <pattern-item n="geatnegahtton"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let><out>
+          <chunk name="geatnegahtton" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+  
     <rule comment="REGLA:remove foc">
       <pattern>
         <pattern-item n="mihkkege"/>
