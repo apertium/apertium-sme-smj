@@ -1356,6 +1356,7 @@
     </pattern>
     <action>
       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
       <!-- c="First we copy the temps from mainverb onto negverb" -->
       <let>
         <clip pos="1" side="tl" part="a_temps_mood"/>
@@ -1385,21 +1386,20 @@
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu>
+         <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
         </chunk>
         <b pos="1"/>
-        <chunk name="verb">
+        <chunk name="no">
           <tags>
-            <tag><lit-tag v="SV"/></tag>
-            <tag><var n="func"/></tag>
-            <tag><clip pos="3" side="sl" part="a_mood"/></tag>
-            <tag><clip pos="3" side="sl" part="a_foc"/></tag>
+            <tag><lit-tag v="NP"/></tag>
+            <tag><lit-tag v="OBJ"/></tag>
+            <tag><clip pos="2" side="sl" part="a_foc"/></tag>
           </tags>
           <lu>
             <clip pos="2" side="tl" part="whole"/>
-          </lu>
-          <b pos="2"/>
-          <lu>
-            <clip pos="3" side="tl" part="whole"/>
           </lu>
         </chunk>
       </out>
