@@ -74,7 +74,7 @@ dev/checknouns.txt -text
 dev/fictilemmapos.txt -text
 dev/giza_list.txt -text
 dev/hash-report.freq -text
-dev/manaid_vuoigatvuodat_sme2smj.html -text svneol=unset#application/xml
+dev/manaid_vuoigatvuodat_sme2smj.html -text
 dev/missinglist.txt -text
 dev/mod_per_cadena.py -text
 dev/propernouns_from_saami_schoolhist.txt -text
