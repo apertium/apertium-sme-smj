@@ -162,6 +162,46 @@
       <or><match tags="n.*.pl.*"/>
       <match tags="n.*.*.pl.*"/></or>
     </rule>
+    
+     <rule weight="1.0">
+      <match lemma="geatnegahtton" tags="adj.*">
+        <select lemma="bákkulasj" tags="adj.*"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="geatnegahtton" tags="adj.*">
+        <select lemma="åvdåsvásstádus" tags="n.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="geatnegahtton" tags="adj.*">
+        <select lemma="åvdåsvásstádus" tags="n.*"/>
+      </match>
+      <match tags="vblex.*.inf.*"/>
+    </rule>
+    
+    <rule>
+     <match lemma="geatnegahttojuvvon" tags="adj.*">
+        <select lemma="bákkulasj" tags="adj.*"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="geatnegahttojuvvon" tags="adj.*">
+        <select lemma="åvdåsvásstádus" tags="n.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="geatnegahttojuvvon" tags="adj.*">
+        <select lemma="åvdåsvásstádus" tags="n.*"/>
+      </match>
+      <match tags="vblex.*.inf.*"/>
+    </rule>
   </rules>
 
 
