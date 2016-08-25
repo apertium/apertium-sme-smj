@@ -83,6 +83,7 @@
     <sdef n="ij"     c="interjection"/>
     <sdef n="sem_dummytag"     c="sem_dummytag"/>
     <sdef n="sem_event"     c="sem_event"/>
+    <sdef n="sem_build"     c="sem_build"/>
 
     <!-- Punctuation -->
     <sdef n="punct"   c="Punctuation"/>
@@ -1497,7 +1498,7 @@
      <e><p><l>bearaš<s n="n"/></l><r>famillja<s n="n"/></r></p></e>
      <e><p><l>beargalat<s n="n"/></l><r>bærggal<s n="n"/></r></p></e>
      <e><p><l>bearri<s n="n"/></l><r>bierre<s n="n"/></r></p></e>
-     <e><p><l>beassi<s n="n"/></l><r>biesse<s n="n"/></r></p></e>
+     <e><p><l>beassi<s n="n"/><s n="sem_build"/></l><r>biesse<s n="n"/></r></p></e>
      <e><p><l>beassi<s n="n"/><s n="g3"/></l><r>biesse<s n="n"/></r></p></e>
      <e><p><l>beassážat<s n="n"/></l><r>bæssásj<s n="n"/></r></p></e>
      <e><p><l>beatnatjokŋa<s n="n"/></l><r>svijnnemuorjje<s n="n"/></r></p></e>
@@ -3314,7 +3315,7 @@
      <e><p><l>láhkán<s n="n"/></l><r>láhkán<s n="n"/></r></p></e>
      <e><p><l>láhttenvuohki<s n="n"/></l><r>ulmutjahttem<s n="n"/></r></p></e>
      <e><p><l>láhtti<s n="n"/></l><r>guolbbe<s n="n"/></r></p></e>
-     <e><p><l>láhttu<s n="n"/></l><r>láhtto<s n="n"/></r></p></e>
+     <e><p><l>láhttu<s n="n"/></l><r>ájras<s n="n"/></r></p></e>
      <e><p><l>láhtu<s n="n"/></l><r>láhto<s n="n"/></r></p></e>
      <e><p><l>láibi<s n="n"/></l><r>lájbbe<s n="n"/></r></p></e>
      <e><p><l>láibu<s n="n"/></l><r>lájbbár<s n="n"/></r></p></e>
@@ -7283,7 +7284,7 @@
      <e><p><l>doseret<s n="vblex"/><s n="tv"/></l><r>dosierit<s n="vblex"/></r></p></e>
      <e><p><l>dosseret<s n="vblex"/><s n="tv"/></l><r>dossierit<s n="vblex"/></r></p></e>
      <e><p><l>doteret<s n="vblex"/><s n="tv"/></l><r>dotierit<s n="vblex"/></r></p></e>
-     <e><p><l>dovdat<s n="vblex"/><s n="tv"/></l><r>dåbddåt<s n="vblex"/></r></p></e>
+     <e><p><l>dovdat<s n="vblex"/><s n="tv"/></l><r>dåbddåt¹<s n="vblex"/></r></p></e>
      <e><p><l>dovddadit<s n="vblex"/><s n="iv"/></l><r>dåbddåt<s n="vblex"/></r></p></e>
      <e><p><l>dovddahit<s n="vblex"/><s n="tv"/></l><r>dåbddåt<s n="vblex"/></r></p></e>
      <e><p><l>dovddastit<s n="vblex"/><s n="tv"/></l><r>dåvdåstit<s n="vblex"/></r></p></e>
