@@ -362,9 +362,6 @@
       <attr-item tags="←ext→"/>
       <attr-item tags="←hab→"/>
     </def-attr>
-    <def-attr n="a_attr">
-      <attr-item tags="attr"/>
-    </def-attr>
     <def-attr n="a_south">
       <attr-item tags="south"/>
     </def-attr>
@@ -1088,14 +1085,6 @@
           <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
           </and></test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>
-      </when>
-      </choose>
-      <choose>
-      <when>
-          <test>
-          <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_vuota"/></equal>
-          </test>
-          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
       </when>
       </choose>
       <choose>
