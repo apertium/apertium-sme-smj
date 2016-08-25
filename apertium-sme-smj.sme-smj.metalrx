@@ -202,6 +202,27 @@
       </match>
       <match tags="vblex.*.inf.*"/>
     </rule>
+    
+    <rule weight="1.0">
+      <match lemma="guhkki">
+        <select lemma="guhkke"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="guhkki">
+        <select lemma="guhkev"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="guhkki" tags="adj.*.attr.*">
+        <select lemma="guhkev"/>
+      </match>
+      <match lemma="áigi"/>
+    </rule>
+    
   </rules>
 
 

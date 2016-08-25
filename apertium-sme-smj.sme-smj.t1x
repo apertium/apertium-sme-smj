@@ -3,6 +3,12 @@
 <transfer default="chunk">
 
   <section-def-cats>
+     <def-cat n="guhkki">
+  	 	<cat-item lemma="guhkki" tags="adj.*.attr.*"/>
+  	 </def-cat>
+  	 <def-cat n="áigi">
+  	 	<cat-item lemma="áigi" tags="n.*.sg.*"/>
+  	 </def-cat>
   	 <def-cat n="mihkkege">
   	 	<cat-item lemma="mihkke" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="mihkke" tags="*.foc_pos-ge.*"/>
@@ -1177,6 +1183,28 @@
 
 
   <section-rules>
+  
+  <rule comment="REGLA:guhkev">
+      <pattern>
+        <pattern-item n="guhkki"/>
+        <pattern-item n="áigi"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <let><clip pos="1" side="tl" part="tags"/><lit-tag v="adv"/></let><out>
+          <chunk name="adv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="ADV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
   
   <rule comment="REGLA:geatnegahtton">
       <pattern>
