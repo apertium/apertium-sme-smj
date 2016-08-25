@@ -6,7 +6,7 @@
         <match tags="n.*"/>
         <match tags="adv.*"/>
         <match tags="adj.*"/>
-        <match tags="pr.*"/>
+        <match tags="prn.*"/>
         <match tags="ij.*"/>
       </or>
     </def-seq>
@@ -237,9 +237,24 @@
     </rule>
 
     <rule weight="0.6">
+      <match lemma="vuhtii"/>
       <match lemma="váldit">
         <select lemma="vieledit"/>
       </match>
+    </rule>
+    
+    <rule weight="0.6">
+      <match lemma="váldit">
+        <select lemma="vieledit"/>
+      </match>
+      <match lemma="vuhtii"/>
+    </rule>
+    
+     <rule weight="0.6">
+      <match lemma="váldit">
+        <select lemma="vieledit"/>
+      </match>
+      <repeat upto="3"><seq n="non-verb"/></repeat>
       <match lemma="vuhtii"/>
     </rule>
     
