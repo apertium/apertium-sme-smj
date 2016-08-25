@@ -4,7 +4,7 @@
 
   <section-def-cats>
      <def-cat n="vuhtii">
-  	 	<cat-item lemma="vuhtii" tags="adv"/>
+  	 	<cat-item lemma="vuhtii" tags="adv.*"/>
   	 </def-cat>
   	 <def-cat n="váldit">
   	 	<cat-item lemma="váldit" tags="vblex.*"/>
@@ -1178,7 +1178,7 @@
 
 
   <section-rules>
-    <rule comment="REGLA:vuhtii váldit">
+<!--    <rule comment="REGLA:vuhtii váldit">
       <pattern>
         <pattern-item n="vuhtii"/>
         <pattern-item n="váldit"/>
@@ -1197,7 +1197,7 @@
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
   
   <rule comment="REGLA:guhkev">
       <pattern>
