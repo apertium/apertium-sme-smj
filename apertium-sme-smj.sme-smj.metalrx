@@ -223,6 +223,26 @@
       <match lemma="áigi"/>
     </rule>
     
+    <rule weight="1.0">
+      <match lemma="váldit">
+        <select lemma="válldet"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="váldit">
+        <select lemma="vieledit"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="váldit">
+        <select lemma="vieledit"/>
+      </match>
+      <match lemma="vuhtii"/>
+    </rule>
+    
   </rules>
 
 

@@ -3,6 +3,12 @@
 <transfer default="chunk">
 
   <section-def-cats>
+     <def-cat n="vuhtii">
+  	 	<cat-item lemma="vuhtii" tags="adv"/>
+  	 </def-cat>
+  	 <def-cat n="váldit">
+  	 	<cat-item lemma="váldit" tags="vblex.*"/>
+  	 </def-cat>
      <def-cat n="guhkki">
   	 	<cat-item lemma="guhkki" tags="adj.*.attr.*"/>
   	 </def-cat>
@@ -1172,6 +1178,26 @@
 
 
   <section-rules>
+    <rule comment="REGLA:vuhtii váldit">
+      <pattern>
+        <pattern-item n="vuhtii"/>
+        <pattern-item n="váldit"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out>
+          <chunk name="verb" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
   
   <rule comment="REGLA:guhkev">
       <pattern>
