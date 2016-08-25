@@ -816,6 +816,7 @@
    <e><p><l>jeavddalaččat<s n="adv"/></l><r>juovnnát<s n="adv"/></r></p></e> 
    <e><p><l>dohkálaš<s n="adj"/></l><r>dågålasj<s n="adj"/></r></p></e> 
    <e><p><l>suohkanlaš<s n="adj"/></l><r>gieldalasj<s n="adj"/></r></p></e> 
+   <e><p><l>fylkkasuohkanlaš<s n="adj"/></l><r>fylkkagieldalasj<s n="adj"/></r></p></e> 
 
    <e><p><l>ovddabealde<s n="post"/></l><r>åvddålin<s n="post"/></r></p></e> 
    <e><p><l>ovddabealde<s n="adv"/></l><r>åvddålin<s n="adv"/></r></p></e> 
@@ -4710,7 +4711,7 @@
      <e><p><l>stuđeanta<s n="n"/></l><r>studænnta<s n="n"/></r></p></e>
      <e><p><l>stádion<s n="n"/></l><r>stadio<s n="n"/></r></p></e>
      <e><p><l>stággu<s n="n"/></l><r>stággo<s n="n"/></r></p></e>
-     <e><p><l>stáhta<s n="n"/></l><r>stáhta<s n="n"/></r></p></e>
+     <e><p><l>stáhta<s n="n"/></l><r>stáhtta<s n="n"/></r></p></e>
      <e><p><l>stáhtaarkiiva<s n="n"/></l><r>stáhtaarkijvva<s n="n"/></r></p></e>
      <e><p><l>stáhtabušeahtta<s n="n"/></l><r>stáhtabudsjæhtta<s n="n"/></r></p></e>
      <e><p><l>stáhtadieđa<s n="n"/></l><r>stáhtadieda<s n="n"/></r></p></e>
@@ -6099,8 +6100,8 @@
     <e><p><l>dan<b/>dihte<s n="adv"/></l><r>dan<b/>diehti<s n="adv"/></r></p></e>
     <e><p><l>danne<s n="adv"/></l><r>danne<s n="adv"/></r></p></e>
     <e><p><l>dassážii<s n="adv"/></l><r>dassátjij<s n="adv"/></r></p></e>
-    <e><p><l>datte<s n="adv"/></l><r>lijká<s n="adv"/></r></p></e>
-    <e><p><l>dattetge<s n="adv"/></l><r>lijká<s n="adv"/></r></p></e>
+    <e><p><l>datte<s n="adv"/></l><r>huoman<s n="adv"/></r></p></e>
+    <e><p><l>dattetge<s n="adv"/></l><r>huoman<s n="adv"/></r></p></e>
     <e><p><l>davibui<s n="adv"/></l><r>davebuj<s n="adv"/></r></p></e>
     <e><p><l>davvelaččas<s n="adv"/></l><r>davvelattjas<s n="adv"/></r></p></e>
     <e><p><l>davvelii<s n="adv"/></l><r>davvelij<s n="adv"/></r></p></e>
@@ -7286,7 +7287,7 @@
      <e><p><l>doteret<s n="vblex"/><s n="tv"/></l><r>dotierit<s n="vblex"/></r></p></e>
      <e><p><l>dovdat<s n="vblex"/><s n="tv"/></l><r>dåbddåt¹<s n="vblex"/></r></p></e>
      <e><p><l>dovddadit<s n="vblex"/><s n="iv"/></l><r>dåbddåt<s n="vblex"/></r></p></e>
-     <e><p><l>dovddahit<s n="vblex"/><s n="tv"/></l><r>dåbddåt<s n="vblex"/></r></p></e>
+     <e><p><l>dovddahit<s n="vblex"/><s n="tv"/></l><r>sárnnot<s n="vblex"/></r></p></e>
      <e><p><l>dovddastit<s n="vblex"/><s n="tv"/></l><r>dåvdåstit<s n="vblex"/></r></p></e>
      <e><p><l>dovddiidit<s n="vblex"/><s n="tv"/></l><r>dåbdijdit<s n="vblex"/></r></p></e>
      <e><p><l>dovdáhit<s n="vblex"/><s n="tv"/></l><r>dåbddåt<s n="vblex"/></r></p></e>
@@ -7646,6 +7647,7 @@
      <e><p><l>garradit<s n="vblex"/><s n="tv"/></l><r>garrat<s n="vblex"/></r></p></e>
      <e><p><l>garrudit<s n="vblex"/><s n="tv"/></l><r>garrodit<s n="vblex"/></r></p></e>
      <e><p><l>garvilit<s n="vblex"/><s n="tv"/></l><r>garvvet<s n="vblex"/></r></p></e>
+     <e><p><l>gártat<s n="vblex"/><s n="iv"/></l><r>sjaddat<s n="vblex"/></r></p></e>
      <e><p><l>garvit<s n="vblex"/><s n="tv"/></l><r>garvvet<s n="vblex"/></r></p></e>
      <e><p><l>garvvašit<s n="vblex"/><s n="tv"/></l><r>garvatjit<s n="vblex"/></r></p></e>
      <e><p><l>garvvestit<s n="vblex"/><s n="tv"/></l><r>garvvet<s n="vblex"/></r></p></e>
