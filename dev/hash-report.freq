@@ -1,28 +1,10 @@
-   5 #diedulasj<adj><der_vuota><n><sg><acc>
-   3 #ájnas<adj><der_vuota><n><sg><acc>
-   3 #velgulasj<adj><der_vuota><n><pl><nom>
-   3 #stáhta<n><sg><ine>
-   3 #stáhta<n><sg><gen>
-   3 #stáhta<n><pl><ine>
-   3 #dåbddåt¹<vblex><inf>
-   3 #diedulasj<adj><der_vuota><n><sg><nom>
+   6 #<adv>
    3 #dat<prn><dem><pl><loc><attr>
-   3 #almulasj<adj><der_vuota><n><sg><ine>
-   2 #velgulasj<adj><der_vuota><n><pl><gen>
-   2 #velgulasj<adj><der_vuota><n><pl><acc>
-   2 #stáhta<n><sg><ela>
-   2 #gullevasj<adj><der_vuota><n><sg><acc>
-   2 #fylkka<n><cmp_sggen><cmp>#suohkan<n><der_lasj><adj><attr>
-   2 #dåbddåt¹<vblex><indic><pres><p3><pl>
    2 #dat<prn><dem><pl><loc>
-   2 #almulasj<adj><der_vuota><n><sg><com>
    1 #ækto<n><cmp_sgnom><cmp>
    1 #ássje<n><cmp_sgnom><cmp>
-   1 #ájnas<adj><der_vuota><n><sg><nom>
    1 #vuoras<n><pl><nom>
    1 #vuoras<n><pl><gen>
-   1 #velgulasj<adj><der_vuota><n><sg><acc>
-   1 #velgulasj<adj><der_vuota><n><pl><ine>
    1 #vehi<prn><ind><sg><nom>”
    1 #vehi<prn><ind><sg><nom>
    1 #vehi<prn><ind><attr><foc_neg-k>
@@ -33,8 +15,6 @@
    1 #sávvat<vblex><vabess><adj><attr>
    1 #sáme<adj><pl><nom>
    1 #ståhkat<vblex><indic><pret><conneg>
-   1 #stáhta<n><sg><acc>
-   1 #stáhta<n><pl><nom>
    1 #sihtat<vblex><indic><pret><conneg>
    1 #sierralágásj<adj><cmp_attr><cmp>åhpadusáv
    1 #rihpat<n><pl><acc>
@@ -45,7 +25,6 @@
    1 #oahpástuvvat<vblex><der_d><vblex><inf>
    1 #oahppostipænnda<n><pl><gen>
    1 #njunnjusj<n><cmp_sgnom><cmp>
-   1 #nasjonálla<adj><cmp_sgnom><cmp>#stáhta<n><pl><acc>
    1 #máhttet<vblex><indic><pres><conneg>
    1 #mij<prn><ind><sg><gen>
    1 #mieddem<n><der_lasj><adj><attr><der_vuota><n><cmp_sggen><cmp>hukso
@@ -68,14 +47,8 @@
    1 #guhti<prn><ind><sg><ine><attr><foc_neg-k>
    1 #guhti<prn><ind><sg><ill><attr><foc_neg-k>
    1 #goabbá<prn><ind><nom>
-   1 #girjak<adj><der_vuota><n><sg><nom>
-   1 #girjak<adj><der_vuota><n><sg><ine>
-   1 #fáhkagiella<n><cmp_sgnom><cmp>máhtudahka/máhtudak
+   1 #fáhkagiella<n><cmp_sgnom><cmp>máhtudahka
    1 #ednak<adj><sg><acc>
-   1 #dåbddåt¹<vblex><prsprc>
-   1 #dåbddåt¹<vblex><indic><pres><p3><sg>
-   1 #dåbddåt¹<vblex><indic><conneg>
-   1 #dåbddåt¹<vblex><der_passs><vblex><inf>
    1 #dát<prn><dem><sg><loc><attr>
    1 #diehtet<vblex><indic><pret><conneg>
    1 #diedulasjvuohta<n><der_lasj><adj><attr><der_vuota><n><sg><com>
@@ -85,17 +58,11 @@
    1 #badjelij<adv><px3sg>
    1 #badjelij<adv><px3pl>
    1 #avtagielak<adj><cmp_attr><cmp>
-   1 #almulasj<adj><der_vuota><n><sg><nom>
-   1 #almulasj<adj><der_vuota><n><pl><ine>
    1 #akta<prn><ind><attr><foc_neg-k>
-   1 #Velgulasj<adj><der_vuota><n><sg><ine>
    1 #Tsoavttsot<vblex><der_caus><vblex><prsprc>
-   1 #Stáhta<n><sg><ine>
-   1 #Stáhta<n><sg><gen>
    1 #Stáhta
    1 #Stuora
    1 #Soajttet<vblex><der_d><vblex><imp><conneg>
-   1 #Nasjonálla<adj><cmp_sgnom><cmp>#stáhta<n><sg><nom>
    1 #Interreg<np><cmp_sgnom><cmp><guio>
    1 #Eurohpá<np><top><sg><gen>
    1 #Dát<prn><dem><pl><loc>
