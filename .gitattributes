@@ -23,7 +23,6 @@
 /check_mt-otpt.py -text
 /configure.ac -text
 dev/Olli_kronikk_sme2smj.html -text svneol=unset#application/xml
-dev/Olli_kronikk_sme2smj.tmx -text
 dev/SP_missing.txt -text
 dev/SP_missing_frekv.txt -text
 dev/TriSaami.txt -text
