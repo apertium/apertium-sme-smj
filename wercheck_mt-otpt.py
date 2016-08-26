@@ -201,7 +201,7 @@ def main():
     i_dir = 'tmx_data'
     o_dir = 'otpt_dir'
     src_only = False
-    wer = True
+    wer = False
     htrans = '' 
     mtrans = ''
 
