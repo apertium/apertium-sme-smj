@@ -1076,6 +1076,14 @@
             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
             <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
           </and>
+          <and>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@Num←"/></equal>
+          </and>
+          <and>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@N←"/></equal>
+          </and>
           </or>
           </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
