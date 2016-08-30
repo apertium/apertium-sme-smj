@@ -19,6 +19,10 @@
       <cat-item tags="cnjcoo"/>
       <cat-item tags="cnjcoo.*"/>
     </def-cat>
+    <def-cat n="semyear">
+      <cat-item tags="*.sem_year.sg.*"/>
+      <cat-item tags="*.sem_year.sg"/>
+    </def-cat>
  	 <def-cat n="mihkkege">
   	 	<cat-item lemma="mihkke" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="mihkke" tags="*.foc_pos-ge.*"/>
@@ -77,6 +81,20 @@
       <cat-item lemma="bealis" tags="adv.px2pl.*"/>
       <cat-item lemma="bealis" tags="adv.px3pl.*"/>
    </def-cat>
+    <def-cat n="mánnu">
+      <cat-item lemma="ođđajagemánnu" tags="n.*"/>
+      <cat-item lemma="guovvamánnu" tags="n.*"/>
+      <cat-item lemma="njukčamánnu" tags="n.*"/>
+      <cat-item lemma="cuoŋománnu" tags="n.*"/>
+      <cat-item lemma="miessemánnu" tags="n.*"/>
+      <cat-item lemma="geassemánnu" tags="n.*"/>
+      <cat-item lemma="suoidnemánnu" tags="n.*"/>
+      <cat-item lemma="borgemánnu" tags="n.*"/>
+      <cat-item lemma="čakčamánnu" tags="n.*"/>
+      <cat-item lemma="golggotmánnu" tags="n.*"/>
+      <cat-item lemma="skábmamánnu" tags="n.*"/>
+      <cat-item lemma="juovlamánnu" tags="n.*"/>
+    </def-cat>
      <def-cat n="word">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
@@ -1701,6 +1719,32 @@
     </action>
   </rule>
 
+    <rule comment="REGLA: jagis 2001 - 2 position in-out"> 
+      <pattern> 
+        <pattern-item n="mánnu"/>
+        <pattern-item n="semyear"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"> <with-param pos="1"/><with-param pos="2"/></call-macro>
+         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let> 
+        <let><clip pos="2" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
+                          <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
   <rule comment="REGLA: bealis Px">
     <pattern>
@@ -2568,7 +2612,6 @@
         <call-macro n="convert-deriv-1Param">
           <with-param pos="1"/>
         </call-macro>
-        <let><clip pos="1" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
         <out>
           <chunk name="vblex" case="caseFirstword">
             <tags>

@@ -12,6 +12,8 @@
     <def-cat n="P_left">
         <cat-item tags="NP.@P←.*"/>
         <cat-item tags="NP.@P←"/>
+        <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="NP.@←ADVL"/>
     </def-cat>
 
 
