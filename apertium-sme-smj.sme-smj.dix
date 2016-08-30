@@ -84,6 +84,7 @@
     <sdef n="sem_dummytag"     c="sem_dummytag"/>
     <sdef n="sem_event"     c="sem_event"/>
     <sdef n="sem_build"     c="sem_build"/>
+    <sdef n="sem_amount"     c="sem_amount"/>
 
     <!-- Punctuation -->
     <sdef n="punct"   c="Punctuation"/>
@@ -5629,7 +5630,7 @@
      <e><p><l>dimis<s n="adj"/></l><r>dimes<s n="adj"/></r></p></e>
      <e><p><l>divrras<s n="adj"/></l><r>divras<s n="adj"/></r></p></e>
      <e><p><l>divttis<s n="adj"/></l><r>divtes<s n="adj"/></r></p></e>
-     <e><p><l>doarvi<s n="n"/></l><r>nuoges<s n="adj"/></r></p></e>
+     <e><p><l>doarvi<s n="n"/><s n="sem_amount"/><s n="sg"/><s n="ill"/></l><r>nuoges<s n="adj"/><s n="attr"/></r></p></e>
      <e><p><l>dohkas<s n="adj"/></l><r>dåhkås<s n="adj"/></r></p></e>
      <e><p><l>dološ<s n="adj"/></l><r>dålusj<s n="adj"/></r></p></e>
      <e><p><l>dramáhtalaš<s n="adj"/></l><r>dramáhtalasj<s n="adj"/></r></p></e>
