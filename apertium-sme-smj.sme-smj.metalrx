@@ -257,6 +257,46 @@
       <repeat upto="3"><seq n="non-verb"/></repeat>
       <match lemma="vuhtii"/>
     </rule>
+
+
+     <rule weight="1.0">
+      <match lemma="bidjat">
+        <select lemma="biedjat"/>
+      </match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="bidjat">
+        <select lemma="tjalmostit"/>
+      </match>
+    </rule>
+ 
+    <rule weight="0.6">
+      <match lemma="bidjat">
+        <select lemma="tjalmostit"/>
+      </match>
+      <match lemma="guovddáš"/>
+    </rule>
+    
+       <rule weight="1.0">
+      <match lemma="guovddáš">
+        <select lemma="guovdásj"/>
+      </match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="guovddáš">
+        <select lemma=""/>
+      </match>
+    </rule>
+ 
+    <rule weight="0.6">
+      <match lemma="bidjat"/>
+      <match lemma="guovddáš">
+       <select lemma=""/>
+      </match>
+    </rule>
+    
     
   </rules>
 
