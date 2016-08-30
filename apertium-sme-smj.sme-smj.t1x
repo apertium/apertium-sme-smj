@@ -21,6 +21,10 @@
   	 	<cat-item lemma="guhtemuš" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="guhtemuš" tags="*.foc_pos-ge.*"/>
   	 </def-cat>
+    <def-cat n="adpos">
+      <cat-item tags="post.*"/>
+      <cat-item tags="pr.*"/>
+    </def-cat>
      <def-cat n="miehtá">
        <cat-item lemma="miehtá" tags="pr.*"/>
        <cat-item lemma="miehtá" tags="post.*"/>
@@ -838,6 +842,7 @@
     <def-var n="number"/>
     <def-var n="current_verb"/>
     <def-var n="adpos_chunk_name"/>
+    <def-var n="chunk_name"/>
     <def-var n="caseFirstword"/>  
     <def-var n="ext"/>  
   </section-def-vars>
@@ -1260,6 +1265,42 @@
       </action>
     </rule> -->
   
+  <rule comment="REGLA: prep to postp or prep">
+      <pattern>
+        <pattern-item n="adpos"/>
+      </pattern>
+      <action>
+       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+       <choose>
+         <when><test><and><equal><clip pos="1" side="sl" part="a_adpos"/><lit-tag v="pr"/></equal>
+                          <equal><clip pos="1" side="tl" part="a_adpos"/><lit-tag v="post"/></equal>
+           </and></test>
+           <let><var n="chunk_name"/><lit v="pr_post"/></let></when>
+         <when><test><and><equal><clip pos="1" side="sl" part="a_adpos"/><lit-tag v="post"/></equal>
+                          <equal><clip pos="1" side="tl" part="a_adpos"/><lit-tag v="pr"/></equal>
+           </and></test>
+           <let><var n="chunk_name"/><lit v="post_pr"/></let></when>
+         <when><test><and><equal><clip pos="1" side="sl" part="a_adpos"/><lit-tag v="post"/></equal>
+                          <equal><clip pos="1" side="tl" part="a_adpos"/><lit-tag v="post"/></equal>
+           </and></test>
+           <let><var n="chunk_name"/><lit v="post"/></let></when>
+         <otherwise>
+           <let><var n="chunk_name"/><lit v="pr"/></let>
+         </otherwise>
+       </choose>
+        <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
   <rule comment="REGLA:guhkev">
       <pattern>
         <pattern-item n="guhkki"/>
