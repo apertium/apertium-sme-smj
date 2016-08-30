@@ -15,7 +15,11 @@
   	 <def-cat n="áigi">
   	 	<cat-item lemma="áigi" tags="n.*.sg.*"/>
   	 </def-cat>
-  	 <def-cat n="mihkkege">
+     <def-cat n="cnjcoo">
+      <cat-item tags="cnjcoo"/>
+      <cat-item tags="cnjcoo.*"/>
+    </def-cat>
+ 	 <def-cat n="mihkkege">
   	 	<cat-item lemma="mihkke" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="mihkke" tags="*.foc_pos-ge.*"/>
   	 	<cat-item lemma="guhtemuš" tags="*.foc_neg-ge.*"/>
@@ -465,6 +469,15 @@
       <attr-item tags="ela"/>
       <attr-item tags="ine"/>
     </def-attr>
+    <def-attr n="a_prn_type">
+       <attr-item tags="pers"/>
+       <attr-item tags="ind"/>
+       <attr-item tags="dem"/>
+       <attr-item tags="ref"/>
+       <attr-item tags="rel"/>
+       <attr-item tags="itg"/>
+       <attr-item tags="res"/>
+    </def-attr>
     <def-attr n="a_nbr">
       <attr-item tags="sg"/>
       <attr-item tags="du"/>
@@ -834,7 +847,10 @@
   	 <def-attr n="foclemma">
   	 	<attr-item tags="prn.ind"/>
   	 </def-attr>
-
+    <def-attr n="a_foc-ge">
+      <attr-item tags="foc_neg-ge"/>
+      <attr-item tags="foc_pos-ge"/>
+    </def-attr>
   </section-def-attrs>
 
   <section-def-vars>
@@ -845,6 +861,7 @@
     <def-var n="chunk_name"/>
     <def-var n="caseFirstword"/>  
     <def-var n="ext"/>  
+    <def-var n="case"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -1740,6 +1757,9 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><clip pos="1" side="sl" part="a_prn_type"/></tag>
+<!--              <tag><var n="case"/></tag>  -->
+              <tag><clip pos="1" side="sl" part="a_foc-ge"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2624,6 +2644,27 @@
             <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: cc  - 1 position">
+      <pattern>
+        <pattern-item n="cnjcoo"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro> 
+        <out>
+          <chunk name="cnjcoo" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="cnjcoo"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
