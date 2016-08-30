@@ -13,6 +13,31 @@
         <cat-item tags="SV.@←OBJ"/>
     </def-cat>
 
+    <def-cat n="IMainV">
+         <cat-item tags="SV.@-FMAINV"/>
+         <cat-item tags="SV.@-FMAINV.*"/>
+         <cat-item tags="SV.*.@-FMAINV.*"/>
+         <cat-item tags="SV.*.*.@-FMAINV.*"/>
+         <cat-item lemma="inf" tags="SV.@A←"/>
+         <cat-item lemma="inf" tags="SV.@N←"/>
+         <cat-item lemma="inf" tags="SV.@←OBJ"/>
+         <cat-item lemma="inf" tags="SV.@←OBJ.*"/>
+    </def-cat>
+    <def-cat n="Argument_l">
+        <cat-item tags="NP.@←OBJ.*"/>
+        <cat-item tags="NP.@←OBJ"/>
+        <cat-item tags="NP.@-F←OBJ"/>
+        <cat-item tags="NP.@-F←OBJ.*"/>
+        <cat-item tags="*.@←OPRED"/>
+        <cat-item tags="*.@←OPRED.*"/>
+        <cat-item tags="*.@←ADVL.*"/>
+        <cat-item tags="*.@←ADVL"/>
+        <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="*.@←ADVL-ela.*"/>
+        <cat-item tags="*.@←ADVL-ela"/>
+        <cat-item tags="*.@←ADVL-ine.*"/>
+        <cat-item tags="*.@←ADVL-ine"/>
+    </def-cat>
 
     <def-cat n="NP_Subj">
         <cat-item tags="NP.@SUBJ→.*"/>
@@ -52,10 +77,10 @@
     </def-cat>
     
     <def-cat n="FAuxV">
-        <cat-item tags="SV.@+FMAUXV"/>
-        <cat-item tags="SV.@+FMAUXV.*"/>
-        <cat-item tags="SV.*.@+FMAUXV.*"/>
-        <cat-item tags="SV.*.*.@+FMAUXV.*"/>
+        <cat-item tags="SV.@+FAUXV"/>
+        <cat-item tags="SV.@+FAUXV.*"/>
+        <cat-item tags="SV.*.@+FAUXV.*"/>
+        <cat-item tags="SV.*.*.@+FAUXV.*"/>
     </def-cat>
     
     <def-cat n="CC">
@@ -154,34 +179,29 @@
   </section-def-vars>
 
   <section-rules>
-    <rule> <!--inessive instead of elative in habitive constructions -->
+
+    <rule comment="FAuxV IMainV ADVL_left" > <!--AUX V A becomes AUX A V -->
       <pattern>
-        <pattern-item n="NP"/>
-        <pattern-item n="Vcop"/>
+        <pattern-item n="FAuxV"/>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="Argument_l"/>
       </pattern>
       <action>
-        <choose>
-          <when> 
-            <test>
-              <equal>
-                <clip pos="1" part="case"/>
-                <lit-tag v="ela"/>
-              </equal>
-            </test> 
-            <let>
-              <clip pos="1" part="case"/>
-              <lit-tag v="ine"/>
-            </let>
-          </when>
-        </choose>
         <out>
-          <chunk>
+        <chunk>
             <clip pos="1" part="lemh"/>
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
           </chunk>
           <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
           <chunk>
             <clip pos="2" part="lemh"/>
             <clip pos="2" part="tags"/>
@@ -192,195 +212,7 @@
       </action>
     </rule>
 
- <rule> <!--inessive instead of elative before inessive adverbs -->
-      <pattern>
-        <pattern-item n="NP"/>
-        <pattern-item n="Ine_adverb"/>
-      </pattern>
-      <action>
-        <choose>
-          <when> 
-            <test>
-              <equal>
-                <clip pos="1" part="case"/>
-                <lit-tag v="ela"/>
-              </equal>
-            </test> 
-            <let>
-              <clip pos="1" part="case"/>
-              <lit-tag v="ine"/>
-            </let>
-          </when>
-        </choose>
-        <out>
-          <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
-          <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-    
-     <rule> <!-- coordinated inessive NPs -->
-      <pattern>
-        <pattern-item n="NP"/>
-        <pattern-item n="CC"/>
-        <pattern-item n="NP"/>
-        <pattern-item n="Ine_adverb"/>
-      </pattern>
-      <action>
-      <choose>
-          <when> 
-            <test>
-             <and>
-              <equal>
-                <clip pos="1" part="case"/>
-                <lit-tag v="ela"/>
-              </equal>
-              <equal>
-                <clip pos="3" part="case"/>
-                <lit-tag v="ela"/>
-              </equal>
-             </and>
-            </test> 
-            <let>
-              <clip pos="1" part="case"/>
-              <lit-tag v="ine"/>
-            </let>
-            <let>
-              <clip pos="3" part="case"/>
-              <lit-tag v="ine"/>
-            </let>
-          </when>
-        </choose>
-        <out>
-          <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
-          <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-        <b pos="2"/>
-        <chunk>
-            <clip pos="3" part="lemh"/>
-            <clip pos="3" part="tags"/>
-            <clip pos="3" part="chcontent"/>
-            <clip pos="3" part="lemq"/>
-          </chunk>
-          <b pos="3"/>
-        <chunk>
-            <clip pos="4" part="lemh"/>
-            <clip pos="4" part="tags"/>
-            <clip pos="4" part="chcontent"/>
-            <clip pos="4" part="lemq"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
-<rule> <!-- double coordinated inessive NPs -->
-      <pattern>
-        <pattern-item n="NP"/>
-        <pattern-item n="CC"/>
-        <pattern-item n="NP"/>
-        <pattern-item n="CC"/>
-        <pattern-item n="NP"/>
-        <pattern-item n="Ine_adverb"/>
-      </pattern>
-      <action>
-      <choose>
-          <when> 
-            <test>
-             <and>
-              <equal>
-                <clip pos="1" part="case"/>
-                <lit-tag v="ela"/>
-              </equal>
-              <equal>
-                <clip pos="3" part="case"/>
-                <lit-tag v="ela"/>
-              </equal>
-              <equal>
-                <clip pos="5" part="case"/>
-                <lit-tag v="ela"/>
-              </equal>
-             </and>
-            </test> 
-            <let>
-              <clip pos="1" part="case"/>
-              <lit-tag v="ine"/>
-            </let>
-            <let>
-              <clip pos="3" part="case"/>
-              <lit-tag v="ine"/>
-            </let>
-            <let>
-              <clip pos="5" part="case"/>
-              <lit-tag v="ine"/>
-            </let>
-          </when>
-        </choose>
-        <out>
-          <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
-          <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-        <b pos="2"/>
-        <chunk>
-            <clip pos="3" part="lemh"/>
-            <clip pos="3" part="tags"/>
-            <clip pos="3" part="chcontent"/>
-            <clip pos="3" part="lemq"/>
-          </chunk>
-          <b pos="3"/>
-        <chunk>
-            <clip pos="4" part="lemh"/>
-            <clip pos="4" part="tags"/>
-            <clip pos="4" part="chcontent"/>
-            <clip pos="4" part="lemq"/>
-          </chunk>
-          <b pos="4"/>
-        <chunk>
-            <clip pos="5" part="lemh"/>
-            <clip pos="5" part="tags"/>
-            <clip pos="5" part="chcontent"/>
-            <clip pos="5" part="lemq"/>
-          </chunk>
-          <b pos="5"/>
-        <chunk>
-            <clip pos="6" part="lemh"/>
-            <clip pos="6" part="tags"/>
-            <clip pos="6" part="chcontent"/>
-            <clip pos="6" part="lemq"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
     
     <rule> <!--SVO becomes SOV -->

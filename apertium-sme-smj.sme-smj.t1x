@@ -39,6 +39,21 @@
       <cat-item tags="vblex.*.neg.indic.p3.pl.*"/>
       <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
     </def-cat>
+    <def-cat n="verb-prfprc">
+      <cat-item tags="*.prfprc.*"/>
+    </def-cat>
+    <def-cat n="leat-aux">
+      <cat-item lemma="leat" tags="*.@+FAUXV"/>
+      <cat-item lemma="leat" tags="*.@-FAUXV"/>
+    </def-cat>
+    <def-cat n="verb-fin">
+      <cat-item tags="vblex.*.indic.*"/>
+      <cat-item tags="vblex.*.cond.*"/>
+      <cat-item tags="vblex.*.pot.*"/>
+      <cat-item tags="vblex.*.der_inchl.vblex.indic.*"/>
+      <cat-item tags="vblex.*.der_inchl.vblex.cond.*"/>
+      <cat-item tags="vblex.*.der_inchl.vblex.pot.*"/>
+    </def-cat>
      <def-cat n="liehket">
       <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
       <cat-item lemma="leat" tags="vblex.*.indic.*.conneg.*"/>
@@ -2518,6 +2533,55 @@
       </action>
     </rule>
     
+    <rule comment="REGLA: leat-aux   - 1 position out">
+      <pattern>
+        <pattern-item n="leat-aux"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="cop-auxv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+ <!--             <tag><var n="tense"/></tag> -->
+            </tags>
+
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
+
+
+    <rule comment="REGLA: verb-fin  - 1 position">
+      <pattern>
+        <pattern-item n="verb-fin"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="convert-deriv-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <let><clip pos="1" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="REGLA: mainverb">
       <pattern>
