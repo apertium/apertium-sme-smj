@@ -85,6 +85,7 @@
     <sdef n="sem_event"     c="sem_event"/>
     <sdef n="sem_build"     c="sem_build"/>
     <sdef n="sem_amount"     c="sem_amount"/>
+    <sdef n="sem_plc"     c="sem_plc"/>
 
     <!-- Punctuation -->
     <sdef n="punct"   c="Punctuation"/>
@@ -2543,7 +2544,7 @@
      <e><p><l>guossi<s n="n"/><s n="g3"/></l><r>guosse<s n="n"/></r></p></e>
      <e><p><l>guostta<s n="n"/></l><r>guosta<s n="n"/></r></p></e>
      <e><p><l>guovddáš<s n="n"/></l><r>guovdásj<s n="n"/></r></p></e>
-     <e><p><l>guovddáš<s n="n"/></l><r><s n="n"/></r></p></e> <!-- bidjat guovddážii -> tjalmostit, see lrx-->
+     <e><p><l>guovddáš<s n="n"/><s n="sem_plc"/><s n="sg"/><s n="ill"/></l><r><s n="n"/></r></p></e> <!-- bidjat guovddážii -> tjalmostit, see lrx-->
      <e><p><l>guovddáš<s n="adj"/></l><r>guovdásj<s n="adj"/></r></p></e>
      <e><p><l>guovdi<s n="n"/></l><r>hárjakgermaj<s n="n"/></r></p></e>
      <e><p><l>guovlodepartemeanta<s n="n"/></l><r>guovllodepartemænnta<s n="n"/></r></p></e>
