@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx>
+   <header segtype="sentence"
+           o-tmf="OmegaT TMX"
+           adminlang="EN-US"
+           srclang="sme"
+           datatype="plaintext"/>
+   <body>
+      <tu id="1">
+         <tuv lang="sme">
+<seg>Buore beaivvi!</seg>
+         </tuv>
+         <tuv lang="sma">
+<seg>Buerie biejjie!</seg>
+         </tuv>
+      </tu>
+      <tu id="2">
+         <tuv lang="sme">
+<seg>Romssa universitehta Giellatekno ja Divvun-joavku leaba ráhkadeamen dihtorjorgalanprográmmaid maid jorgaleaddji sáhttá geavahit veahkkin dalle go jorgala teavsttaid.</seg>
+         </tuv>
+         <tuv lang="sma">
+<seg>Romsan universiteeten Giellatekno jïh Divvun-dåehkie lægan daatamasjijnenjarkoestimmieprogrammh darjoeminie mejtie jarkoestæjja maahta utnedh viehkine gosse teeksth jarkoste.</seg>
+         </tuv>
+      </tu>
+      <tu id="3">
+         <tuv lang="sme">
+<seg>Dihtorjorgalanprográmma ii goassege boađe jorgaleaddji sadjái, muhto jurdda lea ahte jorgaleaddji seasttášii áiggi.</seg> 
+         </tuv>
+         <tuv lang="sma">
+<seg>Ij daatamasjijnenjarkoestimmieprogramme gåessie gænnah jarkoestæjjan sæjjan båetieh, mohte åssjalommes lea ahte jarkoestæjja tïjjem njuata.</seg>
+         </tuv>
+      </tu>
+      <tu id="4">
+         <tuv lang="sme">
+<seg>Min bargu lea álgomuttus, muhto háliidit árvvoštallat prográmma dási, ja dasa dárbbašit jorgaleddjiid veahkkin dáinna lágiin:</seg> 
+         </tuv>
+         <tuv lang="sma">
+<seg>Mijjen barkoe lea aalkoevisnie, mohte sijhtieh programmen daltesem vierhtiedalledh, jïh dïsse daarpesjidh jarkoestæjjah viehkine daejnie:</seg>
+         </tuv>
+      </tu>
+      <tu id="5">
+         <tuv lang="sme">
+<seg>Mii sáddet dutnje guokte dárogiel teavstta, A ja B, goappašagain leat su. 300 sáni.</seg> 
+         </tuv>
+         <tuv lang="sma">
+<seg>Mijjieh dutnjien seedtijibie göökte daaroengïeleh teeksth, A jïh B, gåabpatjahkene teekstesne leah 300 baakoeh.</seg>
+         </tuv>
+      </tu>
+      <tu id="6">
+         <tuv lang="sme">
+<seg>B tekstii oaččut maiddái jorgalusa maid min dihtorprográmma lea ráhkadan.</seg> 
+         </tuv>
+         <tuv lang="sma">
+<seg>B teekstese aaj åadtjoeh jarkoestimmie maam mijjen daatamasjijneprogramme dorjeme.</seg>
+         </tuv>
+      </tu>
+      <tu id="7">
+         <tuv lang="sme">
+<seg>Vuosttažettiin háliidit diehtit leago du mielas ávkkálaš geavahit dihtorjorgalusa veahkkin, ja mo don geavahat teavstta, omd. leago dan mađe buorre ahte sáhtát dušše divvut dan, vai čálátgo áibbas ođđa teavstta.</seg>
+         </tuv>
+         <tuv lang="sma">
+<seg>Voestegh sïjhtijibie daejredh mejtie dov mïelesne aevhkie daatajarkoestimmie viehkine utnedh, jïh guktie datne teekstem åtnah, vuesiehtimmien gaavhtan mejtie dan buerie ahte maahtah ajve dam staeriedidh, vuj tjaalah aejvie orre teekstem.</seg>
+         </tuv>
+      </tu>
+      <tu id="8">
+         <tuv lang="sme">
+<seg>Mii háliidit maiddái diehtit man guhkes áiggi don geavahat jorgalit dan guokte teavstta (manaigo johtileappot jorgalit B go A? man ollu johtileappot?).</seg>
+         </tuv>
+         <tuv lang="sma">
+<seg>Mijjieh sïjhtijibie aaj daejredh maam guhkiem datne jarkosth dejtie göökte teekstide (mejtie verkebe jarkoestidh B goh A man verkebe?).</seg>
+         </tuv>
+      </tu>
+      <tu id="9">
+         <tuv lang="sme">
+<seg>Mii sáddet teavsttaid 3-4 jorgaleaddjái, ja áigut maŋŋel čujuhit dasa maid jorgaleaddjit oaivvildit ja mo sii jorgalit eará ládje go mo dihtorprográmma jorgala, muhto eat áiggo makkárge oktavuođas muitalit jorgaleddjiid namaid.</seg> 
+         </tuv>
+         <tuv lang="sma">
+<seg>Mijjieh teeksth seedtijibie 3-4 jarkoestæjjese, jïh sïjhtijibie mænngan dïsse tjaatsestidh maam jarkoestæjjah jiehtieh jïh guktie dah jeatjahlaakan jarkoestieh daatamasjijneprogrammen muhteste, mohte ibie mennie tsiehkesne gænnah gïeh dah jarkoestæjjah leah.</seg>
+         </tuv>
+      </tu>
+      <tu id="10">
+         <tuv lang="sme">
+<seg>Ieš jorgalusat leat maiddái midjiide ávkin go bargat viidáseappot prográmmain.</seg> 
+         </tuv>
+         <tuv lang="sma">
+<seg>Dah jarkoestimmieh jïjtjh leah aaj mijjese nåhtojne goh vijriehkåbpoe programmine barkijibie.</seg>
+         </tuv>
+      </tu>
+      <tu id="11">
+         <tuv lang="sme">
+<seg>Jus don leat mielde dán barggus, de oaččut teavsttaid e-boastta bokte borgemánu loahpas, ja oaččut vahku dán bargui.</seg>
+         </tuv>
+         <tuv lang="sma">
+<seg>Jis datne leah mealtan daennie barkosne, dellie teeksth e-påastine åadtjoeh mïetsken minngiegietjien, jïh våhkoem åadtjoeh daan barkose.</seg>
+         </tuv>
+      </tu>
+      <tu id="12">
+         <tuv lang="sme">
+<seg>Barggu ovddas oaččut 2000 ru.</seg>
+         </tuv>
+         <tuv lang="sma">
+<seg>Barkoen åvteste 2000 kr. åadtjoeh</seg>
+         </tuv>
+      </tu>
+   </body>
+</tmx>
