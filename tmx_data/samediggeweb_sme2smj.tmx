@@ -99,7 +99,7 @@
             <seg>Girjás kultureallin nanne sámi gullevašvuođa ja identitehta, ja dagaha eallás báikegottiid gos olbmot háliidit orrut.</seg>
          </tuv>
          <tuv lang="smj">
-            <seg>Ålolágásj kultuvrraiellem nanni sáme aktavuodav ja ietjas ruohtsajt, ja la viehkken viesso bájkálasj sebrudahkaj gånnå ulmutja sihti årrot. Kultuvrradåjma li dan diehti ájnnasa sáme sebrudagán, ja aj årromij.</seg>
+            <seg>Ålolágásj kultuvrraiellem nanni sáme aktavuodav ja ietjas ruohtsajt, ja la viehkken viesso bájkálasj sebrudahkaj gånnå ulmutja sihti årrot.</seg>
          </tuv>
       </tu>
       <tu id="13">
@@ -107,7 +107,7 @@
             <seg>Danin leat kulturdoaimmat dehálaččat sámi servodagas, ja maiddái ássamii.</seg>
          </tuv>
          <tuv lang="smj">
-            <seg>Sáme kultuvrrabarggo la oasen gárvedit gullevasjvuodav, soapptsomav ja viessomboanndudagáv, lassen kultuvrravuododum barggosajijt.</seg>
+            <seg>Kultuvrradåjma li dan diehti ájnnasa sáme sebrudagán, ja aj årromij.</seg>
          </tuv>
       </tu>
       <tu id="14">
@@ -115,7 +115,7 @@
             <seg>Sámi kulturdoaimmat dagahit gullevašvuođa, čálggu ja eallindási, ja maiddái kulturvuođustuvvon bargosajiid.</seg>
          </tuv>
          <tuv lang="smj">
-            <seg>Sámedigge barggá.</seg>
+            <seg>Sáme kultuvrrabarggo la oasen gárvedit gullevasjvuodav, soapptsomav ja viessomboanndudagáv, lassen kultuvrravuododum barggosajijt.</seg>
          </tuv>
       </tu>
       <tu id="15">
@@ -123,12 +123,20 @@
             <seg>Sámediggi bargá.</seg>
          </tuv>
          <tuv lang="smj">
+            <seg>Sámedigge barggá.</seg>
+         </tuv>
+      </tu>
+      <tu id="15">
+         <tuv lang="sme">
+            <seg>leat bajimuččas bidjamin eavttuid sámi dáidaga ja kultuvrra ovddideapmái.</seg>
+         </tuv>
+         <tuv lang="smj">
             <seg>Vaj galggá liehket åvdemus premissavadde sáme dájda ja kultuvra åvddånahttemin.</seg>
          </tuv>
       </tu>
       <tu id="16">
          <tuv lang="sme">
-            <seg>leat bajimuččas bidjamin eavttuid sámi dáidaga ja kultuvrra ovddideapmái.</seg>
+            <seg>fuolahit dan ahte buohkat galget sáhttit muosáhit sámi kultuvrra doppe gos ásset.</seg>
          </tuv>
          <tuv lang="smj">
             <seg>Vaj juohkkahasj galggá oadtjot oasev válldet sáme kultuvras danna gånnå årru.</seg>
@@ -136,18 +144,10 @@
       </tu>
       <tu id="17">
          <tuv lang="sme">
-            <seg>fuolahit dan ahte buohkat galget sáhttit muosáhit sámi kultuvrra doppe gos ásset.</seg>
-         </tuv>
-         <tuv lang="smj">
-            <seg>Hiebadahtátjit viesso ja moattebelak sáme kulturiellemij buorre kvalitehtajn.</seg>
-         </tuv>
-      </tu>
-      <tu id="18">
-         <tuv lang="sme">
             <seg>láhčá diliid nu ahte mis lea ealli ja girjás sámi kultureallin mas lea buorre dássi.</seg>
          </tuv>
          <tuv lang="smj">
-            <seg>Åvddånahtátjit ja bisodittjat sáme dájdda- ja kulturiellemav gå oassálassti fágalasj tjiehpes ja dåjmalasj sáme tjåhkanimsajij, kulturinstitusjåvnåj ja museaj.</seg>
+            <seg>Hiebadahtátjit viesso ja moattebelak sáme kulturiellemij buorre kvalitehtajn.</seg>
          </tuv>
       </tu>
       <tu id="19">
@@ -155,7 +155,7 @@
             <seg>fuolahit ahte ovddiduvvo, ja bisuhuvvo sámi dáidda- ja kultureallin dainna lágiin ahte leat fágalaččat buorit ja árjjalaš sámi deaivvadanbáikkit, kulturásahusat ja museat fuolahit dan ahte lea eanet barggolašvuohta sámi dáidda- ja kulturvuđot ealáhusa vuođul.</seg>
          </tuv>
          <tuv lang="smj">
-            <seg>Lasedit bargadahttemav sáme dájdda- ja kulturæládusán.</seg>
+            <seg>Åvddånahtátjit ja bisodittjat sáme dájdda- ja kulturiellemav gå oassálassti fágalasj tjiehpes ja dåjmalasj sáme tjåhkanimsajij, kulturinstitusjåvnåj ja museaj. Lasedit bargadahttemav sáme dájdda- ja kulturæládusán.</seg>
          </tuv>
       </tu>
       <tu id="20">
