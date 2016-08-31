@@ -23,6 +23,13 @@
          <cat-item lemma="inf" tags="SV.@←OBJ"/>
          <cat-item lemma="inf" tags="SV.@←OBJ.*"/>
     </def-cat>
+    <def-cat n="adv_l">
+        <cat-item lemma="adv" tags="*.@←ADVL-ine"/>
+        <cat-item lemma="adv" tags="*.@←ADVL-ela"/>
+        <cat-item lemma="adv" tags="*.@←ADVL"/>
+    </def-cat>
+
+
     <def-cat n="Argument_l">
         <cat-item tags="NP.@←OBJ.*"/>
         <cat-item tags="NP.@←OBJ"/>
@@ -179,6 +186,30 @@
   </section-def-vars>
 
   <section-rules>
+
+    <rule comment="MainV adv_l" > 
+      <pattern>
+        <pattern-item n="FMainV"/>
+        <pattern-item n="adv_l"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="FAuxV IMainV ADVL_left" > <!--AUX V A becomes AUX A V -->
       <pattern>
