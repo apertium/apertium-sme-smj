@@ -508,7 +508,10 @@
       <attr-item tags="n"/>
       <attr-item tags="np"/>
     </def-attr>
-    <def-attr n="a_case">
+     <def-attr n="a_attr">
+      <attr-item tags="attr"/>
+    </def-attr>
+   <def-attr n="a_case">
       <attr-item tags="nom"/>
       <attr-item tags="acc"/>
       <attr-item tags="ill"/>
@@ -1047,6 +1050,12 @@
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_dibme"/></let>
         </when>
+        <when>
+          <test>
+               <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_vuota"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
+        </when>
       </choose>
     </def-macro>
 
@@ -1191,7 +1200,8 @@
 
     <def-macro n="general-macro-1Param" npar="1" c="Use for all chunks of one pattern-item">
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
-      <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
+      <call-macro n="foc-1Param"><with-param pos="1"/></call-macro> 
+      <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <choose>
       <when>
           <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
@@ -1259,7 +1269,7 @@
                                                     param2: second pattern-item; used to set func variable">
       <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
+      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro> 
       <choose><when>
         <test><and>
           <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FMAINV"/></equal>
@@ -2090,10 +2100,10 @@
         <pattern-item n="adj"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="noun" case="caseFirstword">
+          <chunk name="adj" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
