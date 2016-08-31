@@ -135,9 +135,10 @@
       <cat-item tags="n.*.ess.*"/>
       <cat-item tags="n.*.*.sg.*"/>
       <cat-item tags="n.*.*.pl.*"/>
-      <cat-item tags="n.sg.*"/>
-      <cat-item tags="n.pl.*"/>
-      <cat-item tags="n.ess.*"/>
+      <cat-item tags="n.*.*.ess.*"/>
+      <cat-item tags="*.n.sg.*"/>
+      <cat-item tags="*.n.pl.*"/>
+      <cat-item tags="*.n.ess.*"/>
     </def-cat>
     <def-cat n="num-ldep">
       <cat-item tags="num.*.@N←"/>
@@ -550,6 +551,9 @@
     <def-attr n="a_trans">
       <attr-item tags="iv"/>
       <attr-item tags="tv"/>
+    </def-attr>
+    <def-attr n="a_actio">
+      <attr-item tags="actio"/>
     </def-attr>
     <def-attr n="a_hab">
       <attr-item tags="←hab→"/>
@@ -991,12 +995,6 @@
         <lit-tag v="prn.ind.pl"/><clip pos="2" side="tl" part="a_case"/> </concat>
       </let>
     </def-macro>
-    <def-macro n="remove-advtag-1Param" npar="1"> <!--  +Adv+Comp +Adv+Superl to +Adv -->
-          <let>
-            <clip pos="1" side="tl" part="a_comp-superl"/>
-            <lit v=""/>
-          </let>
-    </def-macro>
 
     <def-macro n="convert-deriv-1Param" npar="1">
       <choose>
@@ -1216,6 +1214,12 @@
       </when>
       </choose>
       <choose>
+      <when><test><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit v=""/></let>
+          <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
+          <let><clip pos="1" side="tl" part="a_comp-superl"/><lit v=""/></let>
+      </when>
       <when>
          <test><and>
          <not><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="prn"/></equal></not>
@@ -1777,7 +1781,6 @@
       <pattern-item n="adv"/>
     </pattern>
     <action>
-           <call-macro n="remove-advtag-1Param"><with-param pos="1"/></call-macro>
 
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
      <out>
@@ -2558,6 +2561,7 @@
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+        <let><clip pos="2" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
         <out>
           <chunk name="noun-num" case="caseFirstword">
             <tags>
