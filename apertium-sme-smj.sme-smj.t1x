@@ -270,6 +270,12 @@
       <cat-item tags="n.*.*.nom.*"/>
       <cat-item tags="n.*.*.*.nom.*"/>
     </def-cat>
+    <def-cat n="boahtit"> 
+      <cat-item lemma="boahtit" tags="vblex.*"/>
+    </def-cat>
+    <def-cat n="fápmui"> 
+      <cat-item lemma="fápmu" tags="n.*.sg.ill.*"/>
+    </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj.*"/>
       <cat-item tags="n.der_sasj.adj.*"/>
@@ -279,8 +285,20 @@
       <cat-item tags="n.*.der_dibme.adj.*"/>
     </def-cat>
     <def-cat n="adv">
-      <cat-item tags="adj.der_aadv.adv.*"/>
+      <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
+      <cat-item tags="pcle"/>
+      <cat-item tags="pcle.*"/>
+      <cat-item tags="adj.der_aadv.adv"/>
+      <cat-item tags="adj.der_aadv.adv.*"/>
+      <cat-item tags="adj.*.der_aadv.adv"/>
+      <cat-item tags="adj.*.der_aadv.adv.*"/>
+      <cat-item tags="vblex.*.ger"/>
+      <cat-item tags="vblex.*.ger.*"/>
+      <cat-item tags="vblex.*.vgen"/>
+      <cat-item tags="vblex.*.vgen.*"/>
+      <cat-item tags="vblex.*.vabess"/>
+      <cat-item tags="vblex.*.vabess.*"/>
     </def-cat>
     <def-cat n="datpcle">
       <cat-item lemma="dat" tags="pcle.*"/>
@@ -1796,6 +1814,33 @@
       </out>
     </action>
   </rule>
+
+  <rule comment="REGLA: boahtit fápmui">
+    <pattern>
+      <pattern-item n="boahtit"/>
+      <pattern-item n="fápmui"/>
+    </pattern>
+    <action>
+
+      <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+     <out>
+        <chunk name="adv" case="caseFirstword">
+          <tags>
+            <tag><lit-tag v="ADVL"/></tag>
+            <tag><var n="func"/></tag>
+          </tags>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b/>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+      </out>
+    </action>
+  </rule>
+
 
     <rule comment="REGLA: prn">
       <pattern>
