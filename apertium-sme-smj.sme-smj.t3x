@@ -16,6 +16,10 @@
         <cat-item tags="NP.@←ADVL"/>
     </def-cat>
 
+    <def-cat n="NP_Subj_l">
+        <cat-item tags="NP.@←SUBJ"/>
+        <cat-item tags="NP.@←SUBJ.pers"/>
+    </def-cat>
 
     <def-cat n="NP_Subj">
         <cat-item tags="NP.@SUBJ→.*"/>
@@ -154,7 +158,15 @@
   <section-def-vars>
     <def-var n="nombre"/>
     <def-var n="genere"/>
+    <def-var n="caseFirstword"/>
   </section-def-vars>
+  <section-def-macros>
+    <def-macro n="switch_cases" npar="2">
+      <let><var n="caseFirstword"/><get-case-from pos="1"><clip pos="1" part="lem"/></get-case-from></let>
+      <let><clip pos="1" part="lem"/><get-case-from pos="2"><clip pos="1" part="lem"/></get-case-from></let>
+      <modify-case><clip pos="2" part="lem"/><var n="caseFirstword"/></modify-case>
+    </def-macro>
+  </section-def-macros>
 
   <section-rules>
     <rule comment="REGLA: PR_PO">
@@ -172,6 +184,30 @@
         <clip pos="1" part="whole"/>
       </chunk>
     </out>
+      </action>
+    </rule>
+    <rule comment="MAINV SUBJ" > 
+      <pattern>
+        <pattern-item n="FMainV"/>
+        <pattern-item n="NP_Subj_l"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
       </action>
     </rule>
 

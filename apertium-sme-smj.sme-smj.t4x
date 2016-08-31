@@ -183,7 +183,16 @@
   <section-def-vars>
     <def-var n="nombre"/>
     <def-var n="genere"/>
+    <def-var n="caseFirstword"/>
   </section-def-vars>
+  <section-def-macros>
+    <def-macro n="switch_cases" npar="2">
+      <let><var n="caseFirstword"/><get-case-from pos="1"><clip pos="1" part="lem"/></get-case-from></let>
+      <let><clip pos="1" part="lem"/><get-case-from pos="2"><clip pos="1" part="lem"/></get-case-from></let>
+      <modify-case><clip pos="2" part="lem"/><var n="caseFirstword"/></modify-case>
+    </def-macro>
+  </section-def-macros>
+
 
   <section-rules>
 
