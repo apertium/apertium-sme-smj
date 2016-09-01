@@ -2798,7 +2798,10 @@
       </pattern>
       <action>
       <choose><when><test>
-      <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←OBJ"/></equal></test>
+      <or>
+      <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←OBJ"/></equal>
+      <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL"/></equal>
+           </or></test>
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
      </when></choose>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
