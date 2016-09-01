@@ -96,10 +96,10 @@
     </def-cat>
     
     <def-cat n="FAuxV">
-        <cat-item tags="SV.@+FAUXV"/>
-        <cat-item tags="SV.@+FAUXV.*"/>
-        <cat-item tags="SV.*.@+FAUXV.*"/>
-        <cat-item tags="SV.*.*.@+FAUXV.*"/>
+        <cat-item tags="@+FAUXV"/>
+        <cat-item tags="*.@+FAUXV"/>
+        <cat-item tags="*.@+FAUXV.*"/>
+        <cat-item tags="*.*.@+FAUXV.*"/>
     </def-cat>
     
     <def-cat n="CC">
@@ -312,6 +312,46 @@
             <clip pos="3" part="lemq"/>
           </chunk>
           <b />
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+   <rule comment="FAuxV IMainV ADVL_left" > <!--AUX V A becomes AUX A V -->
+      <pattern>
+        <pattern-item n="FAuxV"/>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="Argument_l"/>
+        <pattern-item n="Argument_l"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+           <b pos="2"/>
+          <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
+          </chunk>
+         <b pos="3"/>
           <chunk>
             <clip pos="2" part="lemh"/>
             <clip pos="2" part="tags"/>
