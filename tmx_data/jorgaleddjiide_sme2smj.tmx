@@ -16,7 +16,7 @@
       </tu>
       <tu id="2">
          <tuv lang="sme">
-<seg>Romssa universitehta Giellatekno ja Divvun-joavku leaba ráhkadeamen dihtorjorgalanprográmmaid maid jorgaleaddji sáhttá geavahit veahkkin dalle go jorgala teavsttaid.</seg>
+<seg>Romssa universitehta Giellatekno-joavku lea ráhkadeamen dihtorjorgalanprográmma davvisámegielas julevsámegillii maid jorgaleaddji sáhttá geavahit veahkkin dalle go jorgala teavsttaid.</seg>
          </tuv>
          <tuv lang="smj">
 <seg>Råmså universitiehta Giellatekno-juogos le åvddånahttemin dáhtájårggålimprográmmav nuorttasámegielas julevsámegiellaj majt jårggåliddjijda máhttá viehkken adnet gå tevstajt jårggål.</seg>
@@ -24,10 +24,10 @@
       </tu>
       <tu id="3">
          <tuv lang="sme">
-<seg>Dihtorjorgalanprográmma ii goassege boađe jorgaleaddji sadjái, muhto jurdda lea ahte jorgaleaddji seasttášii áiggi.</seg> 
+<seg>Dihtorjorgalanprográmma ii goassege boađe jorgaleaddji sadjái, muhto jurdda lea ahte jorgaleaddji dáinna veahkkeneavvuin seasttášii áiggi.</seg> 
          </tuv>
          <tuv lang="smj">
-<seg> Dáhtájårggålimprográmma ij dal goassak sjatta boahtet jårggåliddje sadjáj, valla ájádus le jårggåliddje dájna viehkkenævojn sæsstá ájgev.</seg>
+<seg>Dáhtájårggålimprográmma ij dal goassak sjatta boahtet jårggåliddje sadjáj, valla ájádus le jårggåliddje dájna viehkkenævojn sæsstá ájgev.</seg>
          </tuv>
       </tu>
       <tu id="4">
@@ -40,7 +40,7 @@
       </tu>
       <tu id="5">
          <tuv lang="sme">
-<seg>Mii sáddet dutnje guokte dárogiel teavstta, A ja B, goappašagain leat su. 300 sáni.</seg> 
+<seg>Mii sáddet dutnje guokte dárogiel teavstta, A ja B, goappašagain leat sullii 300 sáni.</seg> 
          </tuv>
          <tuv lang="smj">
 <seg>Sáddip dunji guokta dárogieltevsta, A ja B, goappátjijn li sulle 300 bágo.</seg>
@@ -48,23 +48,31 @@
       </tu>
       <tu id="6">
          <tuv lang="sme">
-<seg>B tekstii oaččut maiddái jorgalusa maid min dihtorprográmma lea ráhkadan.</seg> 
+<seg>B-tekstii oaččut maiddái jorgalusa mii lea jorgaluvvon min dihtorprográmmain.</seg> 
          </tuv>
          <tuv lang="smj">
-<seg>B-tækstaj oadtjo duodden jårggålimev mij la mijá dáhtáprográmma baktu jårggåluvvam.</seg>
+<seg>B-tækstaj oattjo duodden jårggålimev mij la mijá dáhtáprográmma baktu jårggåluvvam.</seg>
          </tuv>
       </tu>
       <tu id="7">
          <tuv lang="sme">
-<seg>Vuosttažettiin háliidit diehtit leago du mielas ávkkálaš geavahit dihtorjorgalusa veahkkin, ja mo don geavahat teavstta, omd. leago dan mađe buorre ahte sáhtát dušše divvut dan, vai čálátgo áibbas ođđa teavstta.</seg>
+<seg>Vuosttažettiin háliidit diehtit leago du mielas ávkkálaš geavahit dihtorjorgalusa veahkkin go jorgalat, ja mo don geavahat teavstta.</seg>
          </tuv>
          <tuv lang="smj">
-<seg>Sihtap vuostatjabmusin diehtet jus dáhtájårggålibme l duv mielas ávkálasj viehkken adnet gå jårggåla, ja gåktu aná tevstav. Lej gus duola dagu nav buorre jut dárbahi dåssju divvot tevstav, jali tjálli gus ållu ådå tevstav?</seg>
+<seg>Sihtap vuostatjabmusin diehtet jus dáhtájårggålibme l duv mielas ávkálasj viehkken adnet gå jårggåla, ja gåktu aná tevstav.</seg>
+         </tuv>
+      </tu>
+      <tu id="7">
+         <tuv lang="sme">
+<seg>Leigo dan mađe buorre ahte sáhtát dušše divvut teavstta, vai čálletgo áibbas ođđa teavstta?</seg>
+         </tuv>
+         <tuv lang="smj">
+<seg>Lej gus duola dagu nav buorre jut dárbahi dåssju divvot tevstav, jali tjálli gus ållu ådå tevstav?</seg>
          </tuv>
       </tu>
       <tu id="8">
          <tuv lang="sme">
-<seg>Mii háliidit maiddái diehtit man guhkes áiggi don geavahat jorgalit dan guokte teavstta (manaigo johtileappot jorgalit B go A? man ollu johtileappot?).</seg>
+<seg>Mii háliidit maiddái diehtit man guhkes áiggi don geavahat jorgalit dan guokte teavstta (manaigo johtileappot jorgalit B-teavstta go A? Man ollu johtileappot?).</seg>
          </tuv>
          <tuv lang="smj">
 <seg>Sihtap aj diehtet man guhkev adni jårggålittjat dáv guovtev tevstav (manáj gus jåhtelappot jårggålit B-tevstav gå A? Man ållo jåhtelappot?).</seg>
@@ -88,10 +96,10 @@
       </tu>
       <tu id="11">
          <tuv lang="sme">
-<seg>Jus don leat mielde dán barggus, de oaččut teavsttaid e-boastta bokte borgemánu loahpas, ja oaččut vahku dán bargui.</seg>
+<seg>Jus don leat mielde dán barggus, de oaččut teavsttaid e-boastta bokte čakčamánu gaskkamuttus, ja oaččut vahku dán bargui.</seg>
          </tuv>
          <tuv lang="smj">
-<seg>Jus sebra dán bargguj, de oadtjo tevstajt e-mejla baktu ragátmáno gasskamuttoj ja oadtjo váhkov dán bargguj.</seg>
+<seg>Jus sebra dán bargguj, de oattjo tevstajt e-mejla baktu ragátmáno gasskamuttoj ja oattjo váhkov dán bargguj.</seg>
          </tuv>
       </tu>
       <tu id="12">
@@ -99,7 +107,7 @@
 <seg>Barggu ovddas oaččut 2000 ru.</seg>
          </tuv>
          <tuv lang="smj">
-<seg>Bargo åvdås oadtjo 2000 kr.</seg>
+<seg>Bargo åvdås oattjo 2000 kr.</seg>
          </tuv>
       </tu>
    </body>
