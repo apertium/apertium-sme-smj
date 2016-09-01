@@ -1898,7 +1898,6 @@
       <pattern-item n="adv"/>
     </pattern>
     <action>
-
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
      <out>
         <chunk name="adv" case="caseFirstword">
@@ -2051,6 +2050,17 @@
          </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
       </when>
+      <when>
+          <test>
+          <and>
+         <not><equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
+         <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+          <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+          <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+         </and>
+         </test>
+          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+      </when>
        <when><test><and>
         <equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal>
         <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
@@ -2059,7 +2069,7 @@
          </when>
         </choose> 
         <out>
-          <chunk name="nounnn" case="caseFirstword">
+          <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -2122,6 +2132,17 @@
          </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
           <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ine"/></let>
+      </when>
+      <when>
+          <test>
+          <and>
+         <not><equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
+         <not><equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+          <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+          <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+         </and>
+         </test>
+          <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
       </when>
       </choose>
         <out>
