@@ -15,6 +15,12 @@
         <cat-item tags="NP.@←ADVL.*"/>
         <cat-item tags="NP.@←ADVL"/>
     </def-cat>
+    <def-cat n="ahte">
+      <cat-item lemma="ahte" tags="cnjsub.@CVP"/>
+    </def-cat>
+    <def-cat n="dem">
+      <cat-item lemma="prn" tags="*.dem"/>
+    </def-cat>
 
     <def-cat n="NP_Subj_l">
         <cat-item tags="NP.@←SUBJ"/>
@@ -213,15 +219,16 @@
 
     <rule>
       <pattern>
-        <pattern-item n="NP"/>
+        <pattern-item n="dem"/>
+        <pattern-item n="ahte"/>
       </pattern>
       <action>
         <out>
           <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
           </chunk>
         </out>
       </action>
