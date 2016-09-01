@@ -57,11 +57,11 @@
         <cat-item tags="NP.@→P.*"/>
     </def-cat>
 
-    <def-cat n="FMainV">
-        <cat-item tags="SV.@+FMAINV"/>
-        <cat-item tags="SV.@+FMAINV.*"/>
-        <cat-item tags="SV.*.@+FMAINV.*"/>
-        <cat-item tags="SV.*.*.@+FMAINV.*"/>
+    <def-cat n="FMainV"> <!-- not copula -->
+        <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
+        <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
+        <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
+        <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
 
     <def-cat n="FAuxV">
