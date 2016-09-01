@@ -46,7 +46,10 @@
       <cat-item tags="vblex.*.neg.indic.p3.pl.*"/>
       <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
     </def-cat>
-    <def-cat n="verb-prfprc">
+     <def-cat n="verb-actio">
+      <cat-item tags="vblex.*.actio.*"/>
+    </def-cat>
+   <def-cat n="verb-prfprc">
       <cat-item tags="*.prfprc.*"/>
     </def-cat>
     <def-cat n="leat-aux">
@@ -253,11 +256,13 @@
    <def-cat n="buorre">
       <cat-item lemma="buorre" tags="adj.*.@→N"/>
     </def-cat>
-    <def-cat n="mainverb">
-      <cat-item tags="vblex.*.sg.@+FMAINV"/>
-      <cat-item tags="vblex.*.du.@+FMAINV"/>
-      <cat-item tags="vblex.*.pl.@+FMAINV"/>
-      <cat-item tags="vblex.*.@-FMAINV"/>
+    <def-cat n="verb-inf">
+      <cat-item tags="vblex.*.inf.*"/>
+      <cat-item tags="vblex.*.der_l.v.inf.*"/>
+      <cat-item tags="vblex.*.der_d.v.inf.*"/>
+      <cat-item tags="vblex.*.der_caus.v.inf.*"/>
+      <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
+      <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
     </def-cat>
     <def-cat n="mainverbqst">
       <cat-item tags="vblex.*.qst.@+FMAINV"/>
@@ -544,6 +549,13 @@
       <attr-item tags="abe"/>
       <attr-item tags="ela"/>
       <attr-item tags="ine"/>
+    </def-attr>
+    <def-attr n="a_infin">
+       <attr-item tags="prfprc"/>
+       <attr-item tags="inf"/>
+       <attr-item tags="actio.ess"/>
+       <attr-item tags="prfprc"/>
+       <attr-item tags="ger"/>
     </def-attr>
     <def-attr n="a_prn_type">
        <attr-item tags="pers"/>
@@ -1356,7 +1368,7 @@
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
          <out>
-          <chunk name="verb" case="caseFirstword">
+          <chunk name="vblex" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1575,7 +1587,7 @@
         </choose>
 
         <out>
-          <chunk name="verb" case="caseFirstword">
+          <chunk name="vblex" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@+FAUXV"/></tag>
@@ -1587,7 +1599,7 @@
             </lu>
           </chunk>
           <b pos="1"/>
-          <chunk name="verb">
+          <chunk name="vblex">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1629,7 +1641,7 @@
             <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>
 
         <out>
-          <chunk name="verb" case="caseFirstword">
+          <chunk name="vblex" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1646,7 +1658,7 @@
           </lu>
           </chunk>
           <b pos="1"/>
-          <chunk name="verb">
+          <chunk name="vblex">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1727,7 +1739,7 @@
       </choose>
 
       <out>
-        <chunk name="verb" case="caseFirstword">
+        <chunk name="vblex" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -1785,7 +1797,7 @@
       </choose>
 
       <out>
-        <chunk name="verb" case="caseFirstword">
+        <chunk name="vblex" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -1797,7 +1809,7 @@
           </lu>
         </chunk>
         <b pos="1"/>
-        <chunk name="verb">
+        <chunk name="vblex">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -2002,8 +2014,10 @@
          </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
       </when>
-       <when><test>
-        <equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></test>
+       <when><test><and>
+        <equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal>
+        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+        </and></test>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
          </when>
         </choose> 
@@ -2740,41 +2754,20 @@
 
 
 
-<!--    <rule comment="REGLA: verb-fin  - 1 position">
-      <pattern>
-        <pattern-item n="verb-fin"/>
-      </pattern>
-      <action>
-        <call-macro n="general-macro-1Param">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="convert-deriv-1Param">
-          <with-param pos="1"/>
-        </call-macro>
-        <out>
-          <chunk name="vblex" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule> -->
 
-    <rule comment="REGLA: mainverb">
+    <rule comment="REGLA: verb-inf  - 1 position">
       <pattern>
-        <pattern-item n="mainverb"/>
+        <pattern-item n="verb-inf"/>
       </pattern>
       <action>
+      <choose><when><test>
+      <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←OBJ"/></equal></test>
+       <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
+     </when></choose>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
-        <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
+        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="mainverb" case="caseFirstword">
+          <chunk name="inf" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -2818,7 +2811,73 @@
         </out>
       </action>
     </rule>
+    <rule comment="REGLA: verb-fin  - 1 position">
+      <pattern>
+        <pattern-item n="verb-fin"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="convert-deriv-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
 
+    <rule comment="REGLA: verb-actio - 1 position">
+      <pattern>
+        <pattern-item n="verb-actio"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: verb-prfprc - 1 position">
+      <pattern>
+        <pattern-item n="verb-prfprc"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="REGLA: SENT">
       <pattern>

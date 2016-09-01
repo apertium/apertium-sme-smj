@@ -10,6 +10,10 @@
     <def-cat n="go">
       <cat-item lemma="go" tags="cnjsub.@CVP"/>
     </def-cat>
+    <def-cat n="subsent">
+      <cat-item tags="cnjsub.@CVP"/>
+      <cat-item lemma="prn" tags="*.rel"/>
+    </def-cat>
     <def-cat n="cop-mainv">
       <cat-item lemma="cop-mainv" tags="SV.@+FMAINV"/>
     </def-cat>
@@ -89,10 +93,10 @@
     </def-cat>
     
     <def-cat n="FMainV">
-        <cat-item tags="SV.@+FMAINV"/>
-        <cat-item tags="SV.@+FMAINV.*"/>
-        <cat-item tags="SV.*.@+FMAINV.*"/>
-        <cat-item tags="SV.*.*.@+FMAINV.*"/>
+        <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
+        <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
+        <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
+        <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
     
     <def-cat n="FAuxV">
@@ -252,7 +256,7 @@
 
     <rule comment="moves mainverb after go" >
       <pattern>
-        <pattern-item n="go"/>
+        <pattern-item n="subsent"/>
         <pattern-item n="FMainV"/>
         <pattern-item n="Argument_l"/>
         <pattern-item n="Argument_l"/>
@@ -292,7 +296,7 @@
 
     <rule comment="moves mainverb after go" >
       <pattern>
-        <pattern-item n="go"/>
+        <pattern-item n="subsent"/>
         <pattern-item n="FMainV"/>
         <pattern-item n="Argument_l"/>
       </pattern>
