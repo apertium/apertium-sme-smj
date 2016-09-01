@@ -136,7 +136,6 @@
       <cat-item tags="n.*.*.*.*.@→N"/>
       <cat-item tags="n.*.*.@→N"/>
       <cat-item tags="np.*.@→N"/>
-      <cat-item tags="num.*.@→N"/>
       <cat-item tags="vblex.*.@→N"/>
       <cat-item tags="*.cmp_splitr.*"/>
     </def-cat>
@@ -483,6 +482,11 @@
     </def-attr>
     <def-attr n="a_south">
       <attr-item tags="south"/>
+    </def-attr>
+    <def-attr n="a_numtypes">
+      <attr-item tags="arab"/>
+      <attr-item tags="sem_year"/>
+      <attr-item tags="sem_date"/>
     </def-attr>
     <def-attr n="a_npagree_type">
       <attr-item tags="adj.ord"/>
@@ -1962,6 +1966,7 @@
       <choose>
       <when>
           <test><and>
+        <not><equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
           <equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal>
           <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
           </and></test>
@@ -1970,11 +1975,13 @@
       <when>
           <test><or>
           <and>
+        <not><equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
           <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
           <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
           <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
          </and>
            <and>
+        <not><equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
           <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
           <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
           <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
@@ -1986,7 +1993,8 @@
       <when>
           <test>
           <and>
-          <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+         <not><equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
+         <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
           <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
           <not><equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal></not>
           <not><equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal></not>
@@ -1994,9 +2002,13 @@
          </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
       </when>
-      </choose>
+       <when><test>
+        <equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></test>
+         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+         </when>
+        </choose> 
         <out>
-          <chunk name="noun" case="caseFirstword">
+          <chunk name="nounnn" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -2145,7 +2157,10 @@
           <with-param pos="1"/>
         </call-macro>
         <let><clip pos="1" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
-        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <choose><when><test>
+        <equal><clip pos="1" side="tl" part="num_types"/><lit-tag v="arab"/></equal></test>
+         <let><clip pos="1" side="tl" part="a_case"/><lit v=""/></let></when></choose> 
+       <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstword">
             <tags>
