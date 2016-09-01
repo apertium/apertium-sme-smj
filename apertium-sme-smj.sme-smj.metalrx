@@ -334,27 +334,27 @@
     </rule>
     
        <rule weight="1.0">
-      <match lemma="mielde">
-        <select lemma="mielde"/>
+      <match lemma="mielde" tags="adv.*">
+        <select lemma="mielde" tags="adv.*"/>
       </match>
     </rule>
        
         <rule weight="0.5">
-      <match lemma="mielde">
-        <select lemma=""/>
+      <match lemma="mielde" tags="adv.*">
+        <select lemma="" tags="adv.*"/>
       </match>
     </rule>
  
     <rule weight="0.6">
       <match lemma="váldit"/>
-      <match lemma="mielde">
-       <select lemma=""/>
+      <match lemma="mielde" tags="adv.*">
+       <select lemma="" tags="adv.*"/>
       </match>
     </rule>
     
      <rule weight="0.6">
-      <match lemma="mielde">
-       <select lemma=""/>
+      <match lemma="mielde" tags="adv.*">
+       <select lemma="" tags="adv.*"/>
       </match>
       <match lemma="váldit"/>
     </rule>
