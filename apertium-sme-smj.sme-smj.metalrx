@@ -28,18 +28,18 @@
 
 
     <rule weight="1.0">
-      <match lemma="ovddas"> <select lemma="åvdån"/> </match>
-    </rule>
-
-    <rule weight="0.5">
       <match lemma="ovddas"> <select lemma="åvdås"/> </match>
     </rule>
 
+    <rule weight="0.5">
+      <match lemma="ovddas"> <select lemma="åvdån"/> </match>
+    </rule>
+
     <rule weight="0.6">
-      <match lemma="ovddas"> <select lemma="åvdås" tags="post.@ADVL-ela→"/> </match>
+      <match lemma="ovddas"> <select lemma="åvdån" tags="post.@ADVL-ine→"/> </match>
     </rule>
     <rule weight="0.6">
-      <match lemma="ovddas"> <select lemma="åvdås" tags="post.@←ADVL-ela"/> </match>
+      <match lemma="ovddas"> <select lemma="åvdån" tags="post.@←ADVL-ine"/> </match>
     </rule>
 
 
