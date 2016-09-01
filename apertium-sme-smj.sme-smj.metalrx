@@ -297,6 +297,51 @@
       </match>
     </rule>
     
+     <rule weight="1.0">
+      <match lemma="váldit">
+        <select lemma="váldit"/>
+      </match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="váldit">
+        <select lemma="sebrudahttet"/>
+      </match>
+    </rule>
+ 
+    <rule weight="0.6">
+      <match lemma="váldit">
+        <select lemma="sebrudahttet"/>
+      </match>
+      <match lemma="mielde"/>
+    </rule>
+    
+       <rule weight="1.0">
+      <match lemma="mielde">
+        <select lemma="mielde"/>
+      </match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="mielde">
+        <select lemma=""/>
+      </match>
+    </rule>
+ 
+    <rule weight="0.6">
+      <match lemma="váldit"/>
+      <match lemma="mielde">
+       <select lemma=""/>
+      </match>
+    </rule>
+    
+     <rule weight="0.6">
+      <match lemma="mielde">
+       <select lemma=""/>
+      </match>
+      <match lemma="váldit"/>
+    </rule>
+
     
   </rules>
 

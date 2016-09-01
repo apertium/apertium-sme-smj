@@ -6240,6 +6240,7 @@
     <e><p><l>maŋŋit<s n="adv"/></l><r>maŋŋet<s n="adv"/></r></p></e>
     <e><p><l>miehtelii<s n="adv"/></l><r>miehtelij<s n="adv"/></r></p></e>
     <e><p><l>mielde<s n="adv"/></l><r>maŋen<s n="adv"/></r></p></e>
+    <e><p><l>mielde<s n="adv"/></l><r><s n="adv"/></r></p></e> <!-- váldit mielde -> sebrudahttet (see lrx) -->
     <e><p><l>mieđás<s n="adv"/></l><r>miedás<s n="adv"/></r></p></e>
     <e><p><l>millosit<s n="adv"/></l><r>miellusit<s n="adv"/></r></p></e>
     <e><p><l>minus<s n="adv"/></l><r>minus<s n="adv"/></r></p></e>
@@ -10196,7 +10197,8 @@
      <e><p><l>válddestit<s n="vblex"/><s n="tv"/></l><r>válldet<s n="vblex"/></r></p></e>
      <e><p><l>válddihit<s n="vblex"/><s n="tv"/></l><r>válldet<s n="vblex"/></r></p></e>
      <e><p><l>váldit<s n="vblex"/><s n="tv"/></l><r>válldet<s n="vblex"/></r></p></e>
-     <e><p><l>váldit<s n="vblex"/><s n="tv"/></l><r>vieledit<s n="vblex"/></r></p></e> <!-- only for vuhtti (see lrx and t1x) -->
+     <e><p><l>váldit<s n="vblex"/><s n="tv"/></l><r>sebrudahttet<s n="vblex"/></r></p></e> <!-- instead of váldit mielde (see lrx) -->
+     <e><p><l>váldit<s n="vblex"/><s n="tv"/></l><r>vieledit<s n="vblex"/></r></p></e> <!-- only for vuhtii (see lrx and t1x) -->
      <e><p><l>válljet<s n="vblex"/><s n="tv"/></l><r>válljit<s n="vblex"/></r></p></e>
      <e><p><l>vállut<s n="vblex"/><s n="tv"/></l><r>vállot<s n="vblex"/></r></p></e>
      <e><p><l>vánddardit<s n="vblex"/><s n="iv"/></l><r>vándardit<s n="vblex"/></r></p></e>
