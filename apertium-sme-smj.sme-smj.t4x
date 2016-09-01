@@ -33,10 +33,14 @@
     </def-cat>
 
     <def-cat n="IMainV">
-         <cat-item tags="SV.@-FMAINV"/>
-         <cat-item tags="SV.@-FMAINV.*"/>
-         <cat-item tags="SV.*.@-FMAINV.*"/>
-         <cat-item tags="SV.*.*.@-FMAINV.*"/>
+         <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
+         <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
+         <cat-item lemma="prfprc" tags="SV.*.@-FMAINV.*"/>
+         <cat-item lemma="prfprc" tags="SV.*.*.@-FMAINV.*"/>
+         <cat-item lemma="inf" tags="SV.@-FMAINV"/>
+         <cat-item lemma="inf" tags="SV.@-FMAINV.*"/>
+         <cat-item lemma="inf" tags="SV.*.@-FMAINV.*"/>
+         <cat-item lemma="inf" tags="SV.*.*.@-FMAINV.*"/>
          <cat-item lemma="inf" tags="SV.@A←"/>
          <cat-item lemma="inf" tags="SV.@N←"/>
          <cat-item lemma="inf" tags="SV.@←OBJ"/>
@@ -221,6 +225,7 @@
         <pattern-item n="adv_l"/>
       </pattern>
       <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk>
             <clip pos="2" part="lemh"/>

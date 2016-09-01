@@ -54,11 +54,16 @@
       <cat-item tags="vblex.*.neg.indic.p3.pl.*"/>
       <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
     </def-cat>
-     <def-cat n="verb-actio">
-      <cat-item tags="vblex.*.actio.*"/>
-    </def-cat>
-   <def-cat n="verb-prfprc">
+   <def-cat n="verb-infin">
       <cat-item tags="*.prfprc.*"/>
+      <cat-item tags="vblex.*.inf.*"/>
+      <cat-item tags="vblex.*.der_l.v.inf.*"/>
+      <cat-item tags="vblex.*.der_d.v.inf.*"/>
+      <cat-item tags="vblex.*.der_caus.v.inf.*"/>
+      <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
+      <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
+      <cat-item tags="vblex.*.actio.*"/>
+      <cat-item tags="vblex.*.*.*.conneg.*"/>
     </def-cat>
     <def-cat n="leat-aux">
       <cat-item lemma="leat" tags="*.@+FAUXV"/>
@@ -121,7 +126,7 @@
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
       <cat-item tags="pcle"/>
-      <cat-item tags="pcle.*"/>
+      <cat-item tags="pcle.@PCLE"/>
       <cat-item tags="cnjsub"/>
       <cat-item tags="cnjsub.*"/>
       <cat-item tags="n"/>
@@ -198,10 +203,6 @@
      <def-cat n="liikotverb">
       <cat-item lemma="liikot" tags="vblex.*"/>
     </def-cat>
-     <def-cat n="verbinf">
-      <cat-item tags="vblex.*.inf.*"/>
-      <cat-item tags="vblex.inf.*"/>
-    </def-cat>
    <def-cat n="n-cmp">
       <cat-item tags="*.cmp"/>
       <cat-item tags="*.cmp.guio"/>
@@ -265,14 +266,6 @@
    <def-cat n="buorre">
       <cat-item lemma="buorre" tags="adj.*.@→N"/>
     </def-cat>
-    <def-cat n="verb-inf">
-      <cat-item tags="vblex.*.inf.*"/>
-      <cat-item tags="vblex.*.der_l.v.inf.*"/>
-      <cat-item tags="vblex.*.der_d.v.inf.*"/>
-      <cat-item tags="vblex.*.der_caus.v.inf.*"/>
-      <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
-      <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
-    </def-cat>
     <def-cat n="mainverbqst">
       <cat-item tags="vblex.*.qst.@+FMAINV"/>
     </def-cat>
@@ -314,11 +307,13 @@
       <cat-item tags="n.*.der_lasj.adj.*"/>
       <cat-item tags="n.*.der_dibme.adj.*"/>
     </def-cat>
+    <def-cat n="adv-empty">
+      <cat-item lemma="" tags="adv"/>
+      <cat-item lemma="" tags="adv.*"/>
+    </def-cat>
     <def-cat n="adv">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
-      <cat-item tags="pcle"/>
-      <cat-item tags="pcle.*"/>
       <cat-item tags="adj.der_aadv.adv"/>
       <cat-item tags="adj.der_aadv.adv.*"/>
       <cat-item tags="adj.*.der_aadv.adv"/>
@@ -329,6 +324,9 @@
       <cat-item tags="vblex.*.vgen.*"/>
       <cat-item tags="vblex.*.vabess"/>
       <cat-item tags="vblex.*.vabess.*"/>
+    </def-cat>
+    <def-cat n="pcle">
+      <cat-item tags="pcle.*"/>
     </def-cat>
     <def-cat n="datpcle">
       <cat-item lemma="dat" tags="pcle.*"/>
@@ -530,7 +528,7 @@
       <attr-item tags="pot"/>
       <attr-item tags="imp"/>
     </def-attr>
-    <def-attr n="a_temps">
+    <def-attr n="a_tense">
       <attr-item tags="pret"/>
       <attr-item tags="pres"/>
     </def-attr>
@@ -563,6 +561,9 @@
        <attr-item tags="prfprc"/>
        <attr-item tags="inf"/>
        <attr-item tags="actio.ess"/>
+       <attr-item tags="actio.gen"/>
+       <attr-item tags="actio.loc"/>
+       <attr-item tags="conneg"/>
        <attr-item tags="prfprc"/>
        <attr-item tags="ger"/>
     </def-attr>
@@ -716,6 +717,7 @@
       <attr-item tags="sem_ctain-clth_veh"/>
       <attr-item tags="sem_ctain_feat-phys"/>
       <attr-item tags="sem_ctain_furn"/>
+      <attr-item tags="sem_ctain_plc"/>
       <attr-item tags="sem_ctain_tool"/>
       <attr-item tags="sem_ctain_tool-measr"/>
       <attr-item tags="sem_curr"/>
@@ -963,6 +965,7 @@
     <def-var n="ext"/>  
     <def-var n="case"/>
     <def-var n="lemma"/>
+    <def-var n="qst"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -1248,11 +1251,11 @@
         <choose>
       <when>
           <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_temps"/><lit v=""/></let>
+          <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
       </when>
       <when>
           <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="pot"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_temps"/><lit v=""/></let>
+          <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
       </when>
       </choose>
       <choose>
@@ -1589,23 +1592,23 @@
         <!-- c="First we copy the temps from mainverb onto negverb" -->
         <let>
           <clip pos="1" side="tl" part="a_temps_mood"/>
-          <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
+          <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_tense"/></concat>
         </let>
         <choose>
           <when>
             <test>
               <not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not>
             </test>
-            <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
+            <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
           </when>
           <when>
             <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
-            <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
+            <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
           </when>
         </choose>
 
         <out>
-          <chunk name="vblex" case="caseFirstword">
+          <chunk name="ii" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@+FAUXV"/></tag>
@@ -1617,7 +1620,7 @@
             </lu>
           </chunk>
           <b pos="1"/>
-          <chunk name="vblex">
+          <chunk name="conneg">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1642,18 +1645,18 @@
         <!-- c="First we copy the temps from mainverb onto negverb" -->
         <let>
           <clip pos="1" side="tl" part="a_temps_mood"/>
-          <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_temps"/></concat>
+          <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_tense"/></concat>
         </let>
         <choose>
           <when>
             <test>
               <not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not>
             </test>
-            <let><clip pos="2" side="tl" part="a_temps"/><lit v=""/></let>
+            <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
           </when>
           <when>
             <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
-            <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
+            <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
           </when>
         </choose>
             <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>
@@ -1741,18 +1744,18 @@
       <!-- c="First we copy the temps from mainverb onto negverb" -->
       <let>
         <clip pos="1" side="tl" part="a_temps_mood"/>
-        <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="3" side="tl" part="a_temps"/></concat>
+        <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="3" side="tl" part="a_tense"/></concat>
       </let>
       <choose>
         <when>
           <test>
             <not><equal><clip pos="3" side="tl" part="lem"/><lit v="liehket"/></equal></not>
           </test>
-          <let><clip pos="3" side="tl" part="a_temps"/><lit v=""/></let>
+          <let><clip pos="3" side="tl" part="a_tense"/><lit v=""/></let>
         </when>
         <when>
           <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
+          <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
         </when>
       </choose>
 
@@ -1799,18 +1802,18 @@
       <!-- c="First we copy the temps from mainverb onto negverb" -->
       <let>
         <clip pos="1" side="tl" part="a_temps_mood"/>
-        <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="4" side="tl" part="a_temps"/></concat>
+        <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="4" side="tl" part="a_tense"/></concat>
       </let>
       <choose>
         <when>
           <test>
             <not><equal><clip pos="4" side="tl" part="lem"/><lit v="liehket"/></equal></not>
           </test>
-          <let><clip pos="4" side="tl" part="a_temps"/><lit v=""/></let>
+          <let><clip pos="4" side="tl" part="a_tense"/><lit v=""/></let>
         </when>
         <when>
           <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_temps"/><lit-tag v="pres"/></let>
+          <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
         </when>
       </choose>
 
@@ -1909,11 +1912,47 @@
     </pattern>
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-     <out>
-        <chunk name="adv" case="caseFirstword">
+        <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
+        <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
           <tags>
-            <tag><lit-tag v="ADVL"/></tag>
+            <tag><lit-tag v="ADV"/></tag>
             <tag><var n="func"/></tag>
+          </tags>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+      </out>
+    </action>
+  </rule>
+  <rule comment="REGLA: pcle">
+    <pattern>
+      <pattern-item n="pcle"/>
+    </pattern>
+    <action>
+      <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+      <choose>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_qst"/><lit-tag v="qst"/></equal>
+          </test>
+          <let><var n="qst"/><clip pos="1" side="sl" part="a_qst"/></let>
+        </when>
+        <when>
+          <test>
+            <not><equal><clip pos="1" side="sl" part="a_qst"/><lit-tag v="qst"/></equal></not>
+          </test>
+          <let><var n="qst"/><lit v=""/></let>
+        </when>
+      </choose>
+        <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
+        <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+          <tags>
+            <tag><lit-tag v="PCLE"/></tag>
+            <tag><var n="func"/></tag>
+            <tag><var n="qst"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -1984,8 +2023,8 @@
         <pattern-item n="prn"/>  
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="prn" case="caseFirstword">
@@ -2432,12 +2471,6 @@
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
          </when>
-     <when><test>
-     <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
-     </test>
-        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
-         </when>
 
         <when><test><or><and>
         <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
@@ -2656,12 +2689,6 @@
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
-              <choose>  
-        <when><test><equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal></test>
-        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
-        </when>
-      </choose>  
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -2696,12 +2723,6 @@
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="4"/></call-macro>
-              <choose>  
-        <when><test><equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal></test>
-        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
-        </when>
-      </choose>  
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -2740,12 +2761,6 @@
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
-              <choose>  
-        <when><test><equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal></test>
-        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
-        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
-        </when>
-      </choose>  
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -2823,9 +2838,9 @@
 
 
 
-    <rule comment="REGLA: verb-inf  - 1 position">
+    <rule comment="REGLA: verb-infin  - 1 position">
       <pattern>
-        <pattern-item n="verb-inf"/>
+        <pattern-item n="verb-infin"/>
       </pattern>
       <action>
       <choose><when><test>
@@ -2835,10 +2850,12 @@
            </or></test>
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
      </when></choose>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
+        <let><var n="chunk_name"/><clip pos="1" side="sl" part="a_infin"/></let>
         <out>
-          <chunk name="inf" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -2907,48 +2924,6 @@
       </action>
     </rule> 
 
-    <rule comment="REGLA: verb-actio - 1 position">
-      <pattern>
-        <pattern-item n="verb-actio"/>
-      </pattern>
-      <action>
-        <call-macro n="general-macro-1Param">
-          <with-param pos="1"/>
-        </call-macro>
-        <out>
-          <chunk name="vblex" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-    <rule comment="REGLA: verb-prfprc - 1 position">
-      <pattern>
-        <pattern-item n="verb-prfprc"/>
-      </pattern>
-      <action>
-        <call-macro n="general-macro-1Param">
-          <with-param pos="1"/>
-        </call-macro>
-        <out>
-          <chunk name="vblex" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
     <rule comment="REGLA: SENT">
       <pattern>
