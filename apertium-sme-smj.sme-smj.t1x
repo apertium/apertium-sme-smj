@@ -9,6 +9,14 @@
      <def-cat n="vuhtii">
   	 	<cat-item lemma="vuhtii" tags="adv.*"/>
   	 </def-cat>
+     <def-cat n="eará">
+  	 	<cat-item lemma="eará" tags="prn.*"/>
+  	 	<cat-item lemma="seammá" tags="prn.*"/>
+  	 </def-cat>
+     <def-cat n="ládje">
+  	 	<cat-item lemma="ládje" tags="adv.*"/>
+  	 	<cat-item lemma="láhkai" tags="adv.*"/>
+  	 </def-cat>
   	 <def-cat n="váldit">
   	 	<cat-item lemma="váldit" tags="vblex.*"/>
   	 </def-cat>
@@ -1931,6 +1939,35 @@
       </out>
     </action>
   </rule>
+
+    <rule comment="REGLA: eará ládje">
+      <pattern>
+        <pattern-item n="eará"/>  
+        <pattern-item n="ládje"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
+        <let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.indef.attr"/></let>
+       <out>
+          <chunk name="prn" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+<!--              <tag><var n="case"/></tag>  -->
+              <tag><clip pos="1" side="sl" part="a_foc-ge"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+             <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+         </chunk>
+        </out>
+      </action>
+    </rule>
 
 
     <rule comment="REGLA: prn">
