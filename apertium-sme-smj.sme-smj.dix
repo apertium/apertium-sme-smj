@@ -32,6 +32,8 @@
     <sdef n="comp"   c=""/>
     <sdef n="superl" c=""/>
     <sdef n="nomag" c=""/>
+    <sdef n="cmp_sh" c=""/>
+    <sdef n="cmp" c=""/>
 
     <sdef n="itg" c="Interrogative"/>
     <sdef n="rel"    c="Relative"/>
@@ -460,6 +462,15 @@
      <e><p><l>galledit<s n="vblex"/><s n="tv"/></l><r>guossidit<s n="vblex"/></r></p></e>
      <e><p><l>gallet<s n="vblex"/><s n="tv"/></l><r>guossit<s n="vblex"/></r></p></e>
     <e><p><l>váilevaš<s n="adj"/></l><r>vánes<s n="adj"/></r></p></e>
+    
+     <e><p><l>dárogiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>dárogiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
+     <e><p><l>sámegiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>sámegiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
+     <e><p><l>suomagiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>suomagiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
+     <e><p><l>davvisámegiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>nuorttasámegiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
+     <e><p><l>julevsámegiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>julevsámegiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
+     <e><p><l>lullisámegiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>oarjjelsámegiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
+     <e><p><l>julevsámegiella<s n="n"/></l><r>julevsámegiella<s n="n"/></r></p></e>
+
     <e><p><l>dásseárvosaš<s n="adj"/></l><r>avtaárvvusasj<s n="adj"/></r></p></e>
     <e><p><l>máŋggabealat<s n="adj"/></l><r>moattebelak<s n="adj"/></r></p></e>
     <e><p><l>vealtameahttun<s n="adj"/></l><r>vielldemahtes<s n="adj"/></r></p></e>
