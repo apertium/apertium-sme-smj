@@ -12,7 +12,10 @@
     </def-cat>
     <def-cat n="subsent">
       <cat-item tags="cnjsub.@CVP"/>
-      <cat-item lemma="prn" tags="*.rel"/>
+      <cat-item lemma="prn" tags=".*@OBJ→.rel"/>
+      <cat-item lemma="prn" tags=".*@ADVL→.rel"/>
+      <cat-item lemma="prn" tags=".*@ADVL-ela→.rel"/>
+      <cat-item lemma="prn" tags=".*@ADVL-ine→.rel"/>
     </def-cat>
     <def-cat n="cop-mainv">
       <cat-item lemma="cop-mainv" tags="SV.@+FMAINV"/>

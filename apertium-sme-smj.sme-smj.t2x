@@ -318,27 +318,7 @@
      </action>
     </rule>
 
-    <rule comment="REGLA: ADVL / ADVL left">
-     <pattern>
-       <pattern-item n="ADVL-left"/>
-       <pattern-item n="ADVL-left"/>
-     </pattern>
-     <action>
-       <out>
-         <chunk>
-           <get-case-from pos="1"><lit v="coor_advl"/></get-case-from>
-           <clip pos="1" part="tags"/>
-           <lit v="{"/>
-           <clip pos="1" part="content"/>
-           <b pos="1"/>
-           <clip pos="2" part="content"/>
-           <lit v="}"/>
-           <clip pos="1" part="lemq"/>
-         </chunk>
-       </out>
-     </action>
-    </rule>
-
+ 
 
     <rule comment="REGLA: ADVL CNP ADVL right">
      <pattern>

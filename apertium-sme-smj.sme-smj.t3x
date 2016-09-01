@@ -65,10 +65,10 @@
     </def-cat>
 
     <def-cat n="FAuxV">
-        <cat-item tags="SV.@+FMAUXV"/>
-        <cat-item tags="SV.@+FMAUXV.*"/>
-        <cat-item tags="SV.*.@+FMAUXV.*"/>
-        <cat-item tags="SV.*.*.@+FMAUXV.*"/>
+        <cat-item tags="SV.@+FAUXV"/>
+        <cat-item tags="SV.@+FAUXV.*"/>
+        <cat-item tags="SV.*.@+FAUXV.*"/>
+        <cat-item tags="SV.*.*.@+FAUXV.*"/>
     </def-cat>
 
     <def-cat n="CC">

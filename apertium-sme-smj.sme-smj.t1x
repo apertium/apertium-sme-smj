@@ -138,6 +138,7 @@
    </def-cat>
     <def-cat n="rdep">
       <cat-item tags="prn.pers.*.*.@→N"/>
+      <cat-item tags="prn.ref.*.*.@→N"/>
       <cat-item tags="adj.*.*.@→N"/>
       <cat-item tags="adj.*.@→N"/>
       <cat-item tags="n.*.@→N"/>
@@ -1283,7 +1284,16 @@
           <let><var n="func"/><clip pos="1" side="sl" part="a_func"/></let>
       </when>
       </choose>
-      <choose>
+        <choose><when>
+      <test><and>
+      <equal><clip pos="1" side="sl" part="a_prn"/><lit-tag v="prn.ref"/></equal>
+      <not><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal></not>
+      </and></test>
+       <let><clip pos="1" side="tl" part="tags"/><concat><clip pos="1" side="tl" part="a_prn"/><lit-tag v="sg"/>
+       <clip pos="1" side="tl" part="a_case"/><clip pos="1" side="tl" part="a_poss"/></concat>
+       </let>
+      </when></choose> 
+    <choose>
       <when><test><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
           <let><clip pos="1" side="tl" part="a_case"/><lit v=""/></let>
           <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
@@ -1974,15 +1984,6 @@
         <pattern-item n="prn"/>  
       </pattern>
       <action>
-      <choose><when>
-      <test><and>
-      <equal><clip pos="1" side="sl" part="a_prn"/><lit-tag v="prn.ref"/></equal>
-      <not><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal></not>
-      </and></test>
-       <let><clip pos="1" side="tl" part="tags"/><concat><clip pos="1" side="tl" part="a_prn"/><lit-tag v="sg"/>
-       <clip pos="1" side="tl" part="a_case"/><clip pos="1" side="tl" part="a_poss"/></concat>
-       </let>
-      </when></choose> 
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
@@ -2073,6 +2074,7 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2150,6 +2152,7 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2238,6 +2241,7 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2259,7 +2263,8 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
-            </tags>
+               <tag><var n="ext"/></tag>
+           </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -2279,6 +2284,7 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2301,7 +2307,8 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
-            </tags>
+               <tag><var n="ext"/></tag>
+           </tags>
             <mlu>
               <lu>
                 <clip pos="1" side="tl" part="whole"/>
@@ -2327,6 +2334,7 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
             </tags>
             <mlu>
               <lu>
@@ -2354,6 +2362,7 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
             </tags>
             <mlu>
               <lu>
@@ -2385,6 +2394,7 @@
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
             </tags>
             <mlu>
               <lu>
