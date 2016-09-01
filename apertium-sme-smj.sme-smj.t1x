@@ -3,6 +3,9 @@
 <transfer default="chunk">
 
   <section-def-cats>
+     <def-cat n="cnjsub">
+  	 	<cat-item tags="cnjsub.*"/>
+  	 </def-cat>
      <def-cat n="vuhtii">
   	 	<cat-item lemma="vuhtii" tags="adv.*"/>
   	 </def-cat>
@@ -49,6 +52,14 @@
     <def-cat n="leat-aux">
       <cat-item lemma="leat" tags="*.@+FAUXV"/>
       <cat-item lemma="leat" tags="*.@-FAUXV"/>
+    </def-cat>
+    <def-cat n="leat-main-fin">
+      <cat-item lemma="leat" tags="*.sg.@+FMAINV"/>
+      <cat-item lemma="leat" tags="*.du.@+FMAINV"/>
+      <cat-item lemma="leat" tags="*.pl.@+FMAINV"/>
+    </def-cat>
+    <def-cat n="leat-qst">
+      <cat-item lemma="leat" tags="vblex.*.qst.@+FMAINV"/>
     </def-cat>
     <def-cat n="verb-fin">
       <cat-item tags="vblex.*.indic.*"/>
@@ -183,6 +194,12 @@
    <def-cat n="n-cmp">
       <cat-item tags="*.cmp"/>
       <cat-item tags="*.cmp.guio"/>
+      <cat-item lemma="dárogiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="sámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="davvisámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="julevsámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="lullisámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="suomagiel" tags="adj.*.attr.*"/>
     </def-cat>
   <def-cat n="negverb">
 <!--ij<vblex><iv><neg><indic><pres><p3><sg>--> 
@@ -920,6 +937,7 @@
     <def-var n="caseFirstword"/>  
     <def-var n="ext"/>  
     <def-var n="case"/>
+    <def-var n="lemma"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -1455,6 +1473,53 @@
         </out>
       </action>
     </rule>
+    <rule comment="REGLA: lea  - 1 position">
+      <pattern>
+        <pattern-item n="leat-main-fin"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="cop-mainv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+<!--              <tag><var n="tense"/></tag> -->
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: leat qst">
+      <pattern>
+        <pattern-item n="leat-qst"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+            <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>
+        <out>
+          <chunk name="mainverb" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+           <b/>
+         <lu>
+            <lit v="gus"/>
+            <lit-tag v="pcle.qst"/>
+          </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="REGLA: negverb">
       <pattern>
@@ -1509,7 +1574,7 @@
           <chunk name="verb" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
+              <tag><lit-tag v="@+FAUXV"/></tag>
               <tag><clip pos="1" side="sl" part="a_mood"/></tag>
               <tag><clip pos="1" side="sl" part="a_foc"/></tag>
             </tags>
@@ -2660,7 +2725,7 @@
 
 
 
-    <rule comment="REGLA: verb-fin  - 1 position">
+<!--    <rule comment="REGLA: verb-fin  - 1 position">
       <pattern>
         <pattern-item n="verb-fin"/>
       </pattern>
@@ -2683,7 +2748,7 @@
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
 
     <rule comment="REGLA: mainverb">
       <pattern>
@@ -2712,7 +2777,6 @@
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
         <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
             <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>
         <out>
@@ -2724,7 +2788,13 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
+          </chunk>
            <b/>
+          <chunk name="qst" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="pcle"/></tag>
+              <tag><lit-tag v="PCLE"/></tag>
+            </tags>
          <lu>
             <lit v="gus"/>
             <lit-tag v="pcle.qst"/>
@@ -2836,7 +2906,29 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: DEFAULT">
+     <rule comment="REGLA: cnjsub  - 1 position">
+      <pattern>
+        <pattern-item n="cnjsub"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro>
+        <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
+        <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="cnjsub"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+   <rule comment="REGLA: DEFAULT">
       <pattern>
         <pattern-item n="default"/>
       </pattern>
