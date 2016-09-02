@@ -103,6 +103,7 @@
         <cat-item tags="post"/>
         <cat-item lemma="post" tags="PP.*"/>
         <cat-item lemma="pr" tags="PP.*"/>
+        <cat-item lemma="cnjsub" tags="PP.*"/>
     </def-cat>
 
   </section-def-cats>
