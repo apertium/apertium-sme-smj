@@ -21,7 +21,7 @@
   	 	<cat-item lemma="váldit" tags="vblex.*"/>
   	 </def-cat>
      <def-cat n="guhkki">
-  	 	<cat-item lemma="guhkki" tags="adj.*.attr.*"/>
+  	 	<cat-item lemma="guhkki" tags="adj.sem_dummytag.attr.*"/>
   	 </def-cat>
   	 <def-cat n="áigi">
   	 	<cat-item lemma="áigi" tags="n.*.sg.*"/>
@@ -1444,21 +1444,23 @@
         </out>
       </action>
     </rule>
+ 
   <rule comment="REGLA:guhkev">
       <pattern>
         <pattern-item n="guhkki"/>
         <pattern-item n="áigi"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
-         <let><clip pos="1" side="tl" part="tags"/><lit-tag v="adv"/></let><out>
-          <chunk name="adv" case="caseFirstword">
+       <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+          <out>
+         <chunk name="adv" case="caseFirstword">
             <tags>
               <tag><lit-tag v="ADV"/></tag>
               <tag><var n="func"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+            <lit v="guhkev"/>
+            <lit-tag v="adv"/>
             </lu>
           </chunk>
         </out>
