@@ -157,7 +157,7 @@
       <cat-item tags="*.cmp_splitr.*"/>
     </def-cat>
     <def-cat n="n-not-cmp">
-      <cat-item tags="n.*.sg.*"/>
+      <cat-item tags="n.*.sg.*"/>  
       <cat-item tags="n.*.pl.*"/>
       <cat-item tags="n.*.ess.*"/>
       <cat-item tags="n.*.*.sg.*"/>
@@ -166,6 +166,7 @@
       <cat-item tags="*.n.sg.*"/>
       <cat-item tags="*.n.pl.*"/>
       <cat-item tags="*.n.ess.*"/>
+      <cat-item tags="*.prsprc.*"/>  
     </def-cat>
     <def-cat n="num-ldep">
       <cat-item tags="num.*.@N←"/>
@@ -1739,11 +1740,10 @@
 
 
 
-
   <rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
     <pattern>
       <pattern-item n="negverb"/>
-      <pattern-item n="word"/>
+      <pattern-item n="adv"/>
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
@@ -1778,20 +1778,13 @@
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu>
-         <b pos="2"/>
-          <lu>
-            <clip pos="3" side="tl" part="whole"/>
-          </lu>
-        </chunk>
-        <b pos="1"/>
-        <chunk name="no">
-          <tags>
-            <tag><lit-tag v="NP"/></tag>
-            <tag><lit-tag v="OBJ"/></tag>
-            <tag><clip pos="2" side="sl" part="a_foc"/></tag>
-          </tags>
+         <b pos="1"/>
           <lu>
             <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
           </lu>
         </chunk>
       </out>
@@ -2858,9 +2851,9 @@
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
      </when></choose>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
         <let><var n="chunk_name"/><clip pos="1" side="sl" part="a_infin"/></let>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
