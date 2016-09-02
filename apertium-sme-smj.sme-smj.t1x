@@ -122,6 +122,25 @@
       <cat-item lemma="skábmamánnu" tags="n.*"/>
       <cat-item lemma="juovlamánnu" tags="n.*"/>
     </def-cat>
+     <def-cat n="word_qst">
+      <cat-item tags="adv"/>
+      <cat-item tags="adv.*"/>
+      <cat-item tags="pcle"/>
+      <cat-item tags="pcle.*"/>
+      <cat-item tags="cnjsub"/>
+      <cat-item tags="cnjsub.*"/>
+      <cat-item tags="n"/>
+      <cat-item tags="n.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="vblex"/>
+      <cat-item tags="vblex.*"/>
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.*"/>
+       <cat-item tags="prn.*"/>
+   </def-cat>
      <def-cat n="word">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
@@ -1743,7 +1762,7 @@
   <rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
     <pattern>
       <pattern-item n="negverb"/>
-      <pattern-item n="adv"/>
+      <pattern-item n="word_qst"/>
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
@@ -1794,7 +1813,7 @@
   <rule comment="REGLA: NEGVERB word CONNEGVERB"> 
     <pattern>
       <pattern-item n="negverb"/>
-      <pattern-item n="word"/>
+      <pattern-item n="word_qst"/>
       <pattern-item n="word"/>
       <pattern-item n="connegverb"/>
     </pattern>
