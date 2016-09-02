@@ -521,6 +521,8 @@
       <attr-item tags="ij"/>
       <attr-item tags="num"/>
       <attr-item tags="pcle"/>
+      <attr-item tags="cnjsub"/>
+      <attr-item tags="cnjcoo"/>
     </def-attr>
     <def-attr n="a_mood">
       <attr-item tags="indic"/>
@@ -1409,16 +1411,20 @@
       <action>
        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
        <choose>
-         <when><test><and><equal><clip pos="1" side="sl" part="a_adpos"/><lit-tag v="pr"/></equal>
-                          <equal><clip pos="1" side="tl" part="a_adpos"/><lit-tag v="post"/></equal>
+         <when><test><and><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="pr"/></equal>
+                          <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="post"/></equal>
            </and></test>
            <let><var n="chunk_name"/><lit v="pr_post"/></let></when>
-         <when><test><and><equal><clip pos="1" side="sl" part="a_adpos"/><lit-tag v="post"/></equal>
-                          <equal><clip pos="1" side="tl" part="a_adpos"/><lit-tag v="pr"/></equal>
+          <when><test><and><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="post"/></equal>
+                          <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="cnjsub"/></equal>
+           </and></test>
+           <let><var n="chunk_name"/><lit v="cnjsub"/></let></when>
+        <when><test><and><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="post"/></equal>
+                          <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="pr"/></equal>
            </and></test>
            <let><var n="chunk_name"/><lit v="post_pr"/></let></when>
-         <when><test><and><equal><clip pos="1" side="sl" part="a_adpos"/><lit-tag v="post"/></equal>
-                          <equal><clip pos="1" side="tl" part="a_adpos"/><lit-tag v="post"/></equal>
+         <when><test><and><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="post"/></equal>
+                          <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="post"/></equal>
            </and></test>
            <let><var n="chunk_name"/><lit v="post"/></let></when>
          <otherwise>
