@@ -333,7 +333,7 @@
       <match lemma="mielde"/>
     </rule>
     
-       <rule weight="1.0">
+    <rule weight="1.0">
       <match lemma="mielde" tags="adv.*">
         <select lemma="mielde" tags="adv.*"/>
       </match>
@@ -357,6 +357,26 @@
        <select lemma="" tags="adv.*"/>
       </match>
       <match lemma="váldit"/>
+    </rule>
+    
+    <rule weight="1.0">
+      <match lemma="ala">
+        <select lemma="nali"/>
+      </match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="ala">
+        <select lemma="vaj"/>
+      </match>
+    </rule>
+ 
+    <rule weight="0.6">
+      <match lemma="dat"/>
+      <match lemma="ala">
+        <select lemma="vaj"/>
+      </match>
+      <match lemma="ahte"/>
     </rule>
 
     

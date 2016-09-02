@@ -233,6 +233,24 @@
         </out>
       </action>
     </rule>
+    
+    <rule>
+      <pattern>
+        <pattern-item n="dem"/>
+        <pattern-item n="Adp"/>
+        <pattern-item n="ahte"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
   </section-rules>
 </interchunk>
