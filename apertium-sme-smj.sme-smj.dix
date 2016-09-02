@@ -88,8 +88,6 @@
     <sdef n="sem_build"     c="sem_build"/>
     <sdef n="sem_amount"     c="sem_amount"/>
     <sdef n="sem_plc"     c="sem_plc"/>
-    
-    <sdef n="nomag"     c="nomag"/>
 
     <!-- Punctuation -->
     <sdef n="punct"   c="Punctuation"/>
