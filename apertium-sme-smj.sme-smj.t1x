@@ -2492,6 +2492,12 @@
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
          </when>
+     <when><test>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when>
 
         <when><test><or><and>
         <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
@@ -2598,6 +2604,14 @@
         <pattern-item n="prop-nom"/>
       </pattern>
       <action>
+      
+     <choose><when><test>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when></choose>
+
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
         <out>
@@ -2630,6 +2644,12 @@
         <pattern-item n="prop-nom"/>
       </pattern>
       <action>
+     <choose><when><test>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when></choose>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
@@ -2667,6 +2687,12 @@
         <pattern-item n="prop-nom"/>
       </pattern>
       <action>
+     <choose><when><test>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when></choose>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="5"/></call-macro>
        <out>
@@ -2743,6 +2769,12 @@
         <pattern-item n="n-not-cmp"/>
       </pattern>
       <action>
+     <choose><when><test>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when></choose>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
         <out>
@@ -2777,6 +2809,18 @@
         <pattern-item n="n-not-cmp"/>
       </pattern>
       <action>
+     <choose><when><test>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when></choose>
+     <choose><when><test>
+     <equal><clip pos="2" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="2" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when></choose>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="4"/></call-macro>
         <out>
@@ -2815,6 +2859,18 @@
         <pattern-item n="n-not-cmp"/>
       </pattern>
       <action>
+     <choose><when><test>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when></choose>
+     <choose><when><test>
+     <equal><clip pos="2" side="sl" part="lem"/><lit v="buorre"/></equal>
+     </test>
+        <let><clip pos="2" side="tl" part="a_nbr"/><lit v=""/></let>
+        <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="attr"/></let>
+         </when></choose>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
         <out>
