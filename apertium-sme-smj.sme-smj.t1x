@@ -2700,6 +2700,41 @@
       </action>
     </rule>
 
+   <rule comment="REGLA: n attr attr propnom  - 4 positions: sámedikkeráde Silje Karine Muotka">
+      <pattern>
+        <pattern-item n="n-not-cmp"/>
+        <pattern-item n="prop-attr"/>
+        <pattern-item n="prop-attr"/>
+        <pattern-item n="prop-nom"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+       <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="REGLA: rdep n  - 3 positions">
       <pattern>
