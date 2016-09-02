@@ -2271,9 +2271,10 @@
           <with-param pos="1"/>
         </call-macro>
         <let><clip pos="1" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
+        <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
         <choose><when><test>
         <equal><clip pos="1" side="tl" part="num_types"/><lit-tag v="arab"/></equal></test>
-         <let><clip pos="1" side="tl" part="a_case"/><lit v=""/></let></when></choose> 
+         <let><clip pos="1" side="tl" part="a_case"/><lit v="nom"/></let></when></choose> 
        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstword">
