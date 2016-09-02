@@ -101,6 +101,7 @@
         <cat-item tags="pr"/>
         <cat-item tags="post.*"/>
         <cat-item tags="post"/>
+        <cat-item lemma="post" tags="PP.*"/>
     </def-cat>
 
   </section-def-cats>
