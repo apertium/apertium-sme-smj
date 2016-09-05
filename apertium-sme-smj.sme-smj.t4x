@@ -108,7 +108,7 @@
         <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
     
-        <def-cat n="MainV-ahte">
+        <def-cat n="wordbeforeahte">
          <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
          <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
          <cat-item lemma="prfprc" tags="SV.*.@-FMAINV.*"/>
@@ -117,6 +117,17 @@
          <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
          <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
          <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
+         <cat-item tags="NP.@←ADVL.*"/>
+         <cat-item tags="NP.@←ADVL"/>
+         <cat-item tags="NP.@←ADVL-ela.*"/>
+         <cat-item tags="NP.@←ADVL-ela"/>
+         <cat-item tags="NP.@←ADVL-ine.*"/>
+         <cat-item tags="NP.@←ADVL-ine"/>
+         <cat-item tags="NP.@ADVL.*"/>
+         <cat-item tags="NP.@ADVL"/>
+         <cat-item tags="*.@←ADVL-ine"/>
+         <cat-item tags="*.@←ADVL-ela"/>
+         <cat-item tags="*.@←ADVL"/>
     </def-cat>
     
     <def-cat n="FAuxV">
@@ -688,8 +699,8 @@
     </rule>
     
     <rule>
-      <pattern> <!--remove ahte after finite main verbs and prfprc -->
-        <pattern-item n="MainV-ahte"/>
+      <pattern> <!--remove ahte after finite main verbs, prfprc and adv -->
+        <pattern-item n="wordbeforeahte"/>
         <pattern-item n="ahte"/>
       </pattern>
       <action>
