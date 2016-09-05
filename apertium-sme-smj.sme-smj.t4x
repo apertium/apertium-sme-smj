@@ -106,6 +106,17 @@
         <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
     
+        <def-cat n="MainV-ahte">
+         <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
+         <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
+         <cat-item lemma="prfprc" tags="SV.*.@-FMAINV.*"/>
+         <cat-item lemma="prfprc" tags="SV.*.*.@-FMAINV.*"/>
+         <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
+         <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
+         <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
+         <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
+    </def-cat>
+    
     <def-cat n="FAuxV">
         <cat-item tags="@+FAUXV"/>
         <cat-item tags="*.@+FAUXV"/>
@@ -673,8 +684,23 @@
         </out>
       </action>
     </rule>
-
-
+    
+    <rule>
+      <pattern> <!--remove ahte after finite main verbs and prfprc -->
+        <pattern-item n="MainV-ahte"/>
+        <pattern-item n="ahte"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
   </section-rules>
 </interchunk>
