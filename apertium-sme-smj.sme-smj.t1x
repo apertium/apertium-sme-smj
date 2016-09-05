@@ -74,6 +74,21 @@
    <def-cat n="verb-actio">
       <cat-item tags="vblex.*.actio.*"/>
     </def-cat>
+   <def-cat n="verb-actio-inf">
+      <cat-item tags="vblex.*.actio.*"/>
+      <cat-item tags="vblex.*.inf.*"/>
+      <cat-item tags="vblex.*.der_l.v.inf.*"/>
+      <cat-item tags="vblex.*.der_d.v.inf.*"/>
+      <cat-item tags="vblex.*.der_caus.v.inf.*"/>
+      <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
+      <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
+    </def-cat>
+    <def-cat n="leat-aux-main">
+      <cat-item lemma="leat" tags="*.@+FAUXV"/>
+      <cat-item lemma="leat" tags="*.@-FAUXV"/>
+      <cat-item lemma="leat" tags="*.@+FMAINV"/>
+      <cat-item lemma="leat" tags="*.@-FMAINV"/>
+    </def-cat>
     <def-cat n="leat-aux">
       <cat-item lemma="leat" tags="*.@+FAUXV"/>
       <cat-item lemma="leat" tags="*.@-FAUXV"/>
@@ -94,7 +109,7 @@
       <cat-item tags="vblex.*.der_inchl.vblex.cond.*"/>
       <cat-item tags="vblex.*.der_inchl.vblex.pot.*"/>
     </def-cat>
-     <def-cat n="liehket">
+     <def-cat n="leat-conneg">
       <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
       <cat-item lemma="leat" tags="vblex.*.indic.*.conneg.*"/>
     </def-cat>
@@ -1454,6 +1469,38 @@
       </action>
     </rule> 
 
+
+     <rule comment="REGLA: leat mielde Supn">
+      <pattern>
+        <pattern-item n="leat-aux-main"/>
+        <pattern-item n="mielde_adv"/>
+        <pattern-item n="verb-actio-inf"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+         <let><clip pos="3" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
+         <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
   
   <rule comment="REGLA: prep to postp or prep">
       <pattern>
@@ -1779,7 +1826,7 @@
   <rule comment="REGLA: NEGVERB liehket"> <!-- Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim -->
     <pattern>
       <pattern-item n="negverb23"/>
-      <pattern-item n="liehket"/>
+      <pattern-item n="leat-conneg"/>
       <pattern-item n="word"/>
     </pattern>
     <action>
