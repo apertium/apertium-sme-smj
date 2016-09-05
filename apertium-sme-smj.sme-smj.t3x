@@ -220,7 +220,7 @@
       </action>
     </rule>
 
-    <rule>
+    <rule comment="remove-dem">
       <pattern>
         <pattern-item n="dem"/>
         <pattern-item n="ahte"/>
@@ -237,7 +237,7 @@
       </action>
     </rule>
     
-    <rule>
+    <rule comment="vaj">
       <pattern>
         <pattern-item n="dem"/>
         <pattern-item n="Adp"/>
