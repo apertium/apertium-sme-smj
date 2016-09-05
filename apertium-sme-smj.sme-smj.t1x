@@ -23,6 +23,9 @@
   	 <def-cat n="váldit">
   	 	<cat-item lemma="váldit" tags="vblex.*"/>
   	 </def-cat>
+     <def-cat n="atnu">
+  	 	<cat-item lemma="atnu" tags="n.*.sg.ill.*"/>
+  	 </def-cat>
      <def-cat n="guhkki">
   	 	<cat-item lemma="guhkki" tags="adj.*"/>
   	 </def-cat>
@@ -1495,6 +1498,31 @@
             <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
+     <rule comment="REGLA: váldit atnui">
+      <pattern>
+        <pattern-item n="váldit"/>
+        <pattern-item n="atnu"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@SPRED"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
