@@ -54,16 +54,19 @@
       <cat-item tags="vblex.*.neg.indic.p3.pl.*"/>
       <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
     </def-cat>
-   <def-cat n="verb-infin">
-      <cat-item tags="*.prfprc.*"/>
+   <def-cat n="verb-inf">
       <cat-item tags="vblex.*.inf.*"/>
       <cat-item tags="vblex.*.der_l.v.inf.*"/>
       <cat-item tags="vblex.*.der_d.v.inf.*"/>
       <cat-item tags="vblex.*.der_caus.v.inf.*"/>
       <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
       <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
+    </def-cat>
+   <def-cat n="verb-prfprc">
+      <cat-item tags="*.prfprc.*"/>
+    </def-cat>
+   <def-cat n="verb-actio">
       <cat-item tags="vblex.*.actio.*"/>
-      <cat-item tags="vblex.*.*.*.conneg.*"/>
     </def-cat>
     <def-cat n="leat-aux">
       <cat-item lemma="leat" tags="*.@+FAUXV"/>
@@ -2950,9 +2953,29 @@
 
 
 
-    <rule comment="REGLA: verb-infin  - 1 position">
+    <rule comment="REGLA: verb-actio  - 1 position">
       <pattern>
-        <pattern-item n="verb-infin"/>
+        <pattern-item n="verb-actio"/>
+      </pattern>
+      <action>
+        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="actio" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: verb-inf  - 1 position">
+      <pattern>
+        <pattern-item n="verb-inf"/>
       </pattern>
       <action>
       <choose><when><test>
@@ -2961,11 +2984,29 @@
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
      </when></choose>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
-        <let><var n="chunk_name"/><clip pos="1" side="sl" part="a_infin"/></let>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk namefrom="chunk_name" case="caseFirstword">
+          <chunk name="inf" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: verb-prfprc  - 1 position">
+      <pattern>
+        <pattern-item n="verb-prfprc"/>
+      </pattern>
+      <action>
+        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="prfprc" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
