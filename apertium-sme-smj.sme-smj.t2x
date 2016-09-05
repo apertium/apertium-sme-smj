@@ -67,9 +67,7 @@
     </def-cat>
 
     <def-cat n="NP_Pr">
-        <cat-item tags="NP.@←ADVL.*"/>
         <cat-item tags="NP.@P←.*"/>
-        <cat-item tags="NP.@←ADVL"/>
         <cat-item tags="NP.@P←"/>
     </def-cat>
 
@@ -235,6 +233,29 @@
        <out>
          <chunk>
            <get-case-from pos="1"><lit v="coor_obj"/></get-case-from>
+           <clip pos="1" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <b pos="1"/>
+           <clip pos="2" part="content"/>
+           <b pos="2"/>
+           <clip pos="3" part="content"/>
+           <lit v="}"/>
+           <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule>
+    <rule comment="REGLA: NP_Pr CNP NP_Pr"> 
+     <pattern>
+       <pattern-item n="NP_Pr"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="NP_Pr"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <get-case-from pos="1"><lit v="coor_compl"/></get-case-from>
            <clip pos="1" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
