@@ -6,6 +6,9 @@
      <def-cat n="cnjsub">
   	 	<cat-item tags="cnjsub.*"/>
   	 </def-cat>
+     <def-cat n="mielde_adv">
+  	 	<cat-item lemma="mielde" tags="adv.*"/>
+  	 </def-cat>
      <def-cat n="vuhtii">
   	 	<cat-item lemma="vuhtii" tags="adv.*"/>
   	 </def-cat>
@@ -1409,9 +1412,9 @@
 
 
   <section-rules>
-<!--    <rule comment="REGLA:vuhtii váldit">
+    <rule comment="REGLA:mielde váldit">
       <pattern>
-        <pattern-item n="vuhtii"/>
+        <pattern-item n="mielde_adv"/>
         <pattern-item n="váldit"/>
       </pattern>
       <action>
@@ -1428,7 +1431,29 @@
           </chunk>
         </out>
       </action>
-    </rule> -->
+    </rule> 
+ 
+     <rule comment="REGLA: váldit mielde">
+      <pattern>
+        <pattern-item n="váldit"/>
+        <pattern-item n="mielde_adv"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
   
   <rule comment="REGLA: prep to postp or prep">
       <pattern>

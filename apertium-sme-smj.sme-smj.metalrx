@@ -319,7 +319,7 @@
       </match>
     </rule>
        
-        <rule weight="0.5">
+<!--        <rule weight="0.5">
       <match lemma="mielde" tags="adv.*">
         <select lemma="" tags="adv.*"/>
       </match>
@@ -336,8 +336,8 @@
       <match lemma="mielde" tags="adv.*">
        <select lemma="" tags="adv.*"/>
       </match>
-      <match lemma="váldit"/>
-    </rule>
+      <match lemma="váldit"/> 
+    </rule> -->
     
     <rule weight="1.0">
       <match lemma="ala">
