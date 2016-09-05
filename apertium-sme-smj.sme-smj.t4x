@@ -12,6 +12,7 @@
     </def-cat>
     <def-cat n="subsent">
       <cat-item tags="cnjsub.@CVP"/>
+      <cat-item lemma="prn" tags=".*@SUBJ→.rel"/> <!-- should be here? -->
       <cat-item lemma="prn" tags=".*@OBJ→.rel"/>
       <cat-item lemma="prn" tags=".*@ADVL→.rel"/>
       <cat-item lemma="prn" tags=".*@ADVL-ela→.rel"/>
@@ -54,19 +55,19 @@
 
 
     <def-cat n="Argument_l">
-        <cat-item tags="NP.@←OBJ.*"/>
-        <cat-item tags="NP.@←OBJ"/>
-        <cat-item tags="NP.@-F←OBJ"/>
-        <cat-item tags="NP.@-F←OBJ.*"/>
-        <cat-item tags="*.@←OPRED"/>
-        <cat-item tags="*.@←OPRED.*"/>
-        <cat-item tags="*.@←ADVL.*"/>
-        <cat-item tags="*.@←ADVL"/>
-        <cat-item tags="NP.@←ADVL.*"/>
-        <cat-item tags="*.@←ADVL-ela.*"/>
-        <cat-item tags="*.@←ADVL-ela"/>
-        <cat-item tags="*.@←ADVL-ine.*"/>
-        <cat-item tags="*.@←ADVL-ine"/>
+        <cat-item lemma="noun" tags="NP.@←OBJ.*"/>
+        <cat-item lemma="noun" tags="NP.@←OBJ"/>
+        <cat-item lemma="noun" tags="NP.@-F←OBJ"/>
+        <cat-item lemma="noun" tags="NP.@-F←OBJ.*"/>
+        <cat-item lemma="noun" tags="*.@←OPRED"/>
+        <cat-item lemma="noun" tags="*.@←OPRED.*"/>
+        <cat-item lemma="noun" tags="*.@←ADVL.*"/>
+        <cat-item lemma="noun" tags="*.@←ADVL"/>
+        <cat-item lemma="noun" tags="NP.@←ADVL.*"/>
+        <cat-item lemma="noun" tags="*.@←ADVL-ela.*"/>
+        <cat-item lemma="noun" tags="*.@←ADVL-ela"/>
+        <cat-item lemma="noun" tags="*.@←ADVL-ine.*"/>
+        <cat-item lemma="noun" tags="*.@←ADVL-ine"/>
     </def-cat>
 
     <def-cat n="NP_Subj">

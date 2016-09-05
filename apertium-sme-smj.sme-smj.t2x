@@ -303,7 +303,7 @@
      <action>
        <out>
          <chunk>
-           <get-case-from pos="1"><lit v="coor_obj"/></get-case-from>
+           <get-case-from pos="1"><lit v="coor_advl"/></get-case-from>
            <clip pos="1" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
@@ -329,7 +329,7 @@
      <action>
        <out>
          <chunk>
-           <get-case-from pos="1"><lit v="coor_obj"/></get-case-from>
+           <get-case-from pos="1"><lit v="coor_advl"/></get-case-from>
            <clip pos="1" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
@@ -352,7 +352,7 @@
      <action>
        <out>
          <chunk>
-           <get-case-from pos="1"><lit v="coor_obj"/></get-case-from>
+           <get-case-from pos="1"><lit v="coor_advl"/></get-case-from>
            <clip pos="1" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
