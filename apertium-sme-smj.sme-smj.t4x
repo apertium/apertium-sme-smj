@@ -68,7 +68,8 @@
         <cat-item lemma="noun" tags="*.@←ADVL-ela"/>
         <cat-item lemma="noun" tags="*.@←ADVL-ine.*"/>
         <cat-item lemma="noun" tags="*.@←ADVL-ine"/>
-    </def-cat>
+         <cat-item lemma="noun" tags="*.@←SUBJ.←ext→"/>
+   </def-cat>
 
     <def-cat n="NP_Subj">
         <cat-item tags="NP.@SUBJ→.*"/>

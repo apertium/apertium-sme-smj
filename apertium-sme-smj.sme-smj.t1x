@@ -21,7 +21,10 @@
   	 	<cat-item lemma="váldit" tags="vblex.*"/>
   	 </def-cat>
      <def-cat n="guhkki">
-  	 	<cat-item lemma="guhkki" tags="adj.sem_dummytag.attr.*"/>
+  	 	<cat-item lemma="guhkki" tags="adj.*"/>
+  	 </def-cat>
+     <def-cat n="vuollai">
+  	 	<cat-item lemma="vuollai" tags="post.*"/>
   	 </def-cat>
   	 <def-cat n="áigi">
   	 	<cat-item lemma="áigi" tags="n.*.sg.*"/>
@@ -1490,6 +1493,28 @@
       </action>
     </rule>
 
+  <rule comment="REGLA:guhkev">
+      <pattern>
+        <pattern-item n="guhkki"/>
+        <pattern-item n="áigi"/>
+        <pattern-item n="vuollai"/>
+      </pattern>
+      <action>
+       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+          <out>
+         <chunk name="adv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="ADV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+            <lit v="guhkev"/>
+            <lit-tag v="adv"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
   
   <rule comment="REGLA:geatnegahtton">
       <pattern>
