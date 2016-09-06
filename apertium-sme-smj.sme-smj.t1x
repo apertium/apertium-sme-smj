@@ -213,6 +213,8 @@
       <cat-item tags="*.n.pl.*"/>
       <cat-item tags="*.n.ess.*"/>
       <cat-item tags="*.prsprc.*"/>  
+      <cat-item tags="np.*.*.sg.*"/>  
+      <cat-item tags="np.*.*.pl.*"/>  
     </def-cat>
     <def-cat n="num-ldep">
       <cat-item tags="num.*.@N←"/>
@@ -1593,7 +1595,7 @@
       </action>
     </rule>
 
-  <rule comment="REGLA:guhkev">
+  <rule comment="REGLA:guhkev 2">
       <pattern>
         <pattern-item n="guhkki"/>
         <pattern-item n="áigi"/>
