@@ -2870,6 +2870,7 @@
      <e><p><l>ivdni<s n="n"/></l><r>ivnne<s n="n"/></r></p></e>
      <e><p><l>iđit<s n="n"/></l><r>idet<s n="n"/></r></p></e>
      <e><p><l>jahkedieđáhus<s n="n"/></l><r>jahkediedádus<s n="n"/></r></p></e>
+     <e><p><l>jáhkehahttivuohta<s n="n"/></l><r>åskåldisvuohta<s n="n"/></r></p></e>
      <e><p><l>jahkeplána<s n="n"/></l><r>jahkepládna<s n="n"/></r></p></e>
      <e><p><l>jahki<s n="n"/></l><r>jahke<s n="n"/></r></p></e>
      <e><p><l>jalga<s n="n"/></l><r>jalgga<s n="n"/></r></p></e>
@@ -5673,6 +5674,7 @@
      <e><p><l>dássásaš<s n="adj"/></l><r>dássásasj<s n="adj"/></r></p></e>
      <e><p><l>eahpeáššálaš<s n="adj"/></l><r>iehpeássjálasj<s n="adj"/></r></p></e>
      <e><p><l>eahpeduohta<s n="adj"/></l><r>iehpeduohta<s n="adj"/></r></p></e>
+     <e><p><l>eakti<s n="adj"/></l><r>oalle<s n="adj"/></r></p></e>
      <e><p><l>eallái<s n="adj"/></l><r>ielle<s n="adj"/></r></p></e>
      <e><p><l>eambbo<s n="adj"/></l><r>ienep<s n="adj"/></r></p></e>
      <e><p><l>eanas<s n="adj"/></l><r>ienemus<s n="adj"/></r></p></e>
@@ -39264,9 +39266,9 @@
      <e><p><l>Davvi-Atlanteráhpi<s n="np"/></l><r>Davvi-Atlanteráhpi<s n="np"/></r></p></e>
      <e><p><l>Davvi-Fosen<s n="np"/></l><r>Davvi-Fosen<s n="np"/></r></p></e>
      <e><p><l>Davvi-Friissasullot<s n="np"/></l><r>Davvi-Friissasullot<s n="np"/></r></p></e>
-     <e><p><l>Davvi-Hålogalánda<s n="np"/></l><r>Davvi-Hålogalánnda<s n="np"/></r></p></e>
-     <e><p><l>Davvi-Nordlánda<s n="np"/></l><r>Davvi-Nordlánnda<s n="np"/></r></p></e>
-     <e><p><l>Davvi-Norga<s n="np"/></l><r>Davvi-Norga<s n="np"/></r></p></e>
+     <e><p><l>Davvi-Hålogalánda<s n="np"/></l><r>Nuortta-Hålogalánnda<s n="np"/></r></p></e>
+     <e><p><l>Davvi-Nordlánda<s n="np"/></l><r>Nuortta-Nordlánnda<s n="np"/></r></p></e>
+     <e><p><l>Davvi-Norga<s n="np"/></l><r>Nuortta-Vuodna<s n="np"/></r></p></e>
      <e><p><l>Davvi-Norlánda<s n="np"/></l><r>Davvi-Norlánnda<s n="np"/></r></p></e>
      <e><p><l>Davvi-Norrlánda<s n="np"/></l><r>Davvi-Norrlánnda<s n="np"/></r></p></e>
      <e><p><l>Davvi-Romsa<s n="np"/></l><r>Davvi-Romsa<s n="np"/></r></p></e>
@@ -53043,6 +53045,10 @@
     <e><re>[0-9]+([., \-–]+[0-9]+)*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
     <e><re>[0-9]+([., \-–]+[0-9]+)*</re><p><l><s n="adj"/></l><r><s n="adj"/></r></p></e>
     <e><re>[IVXLMC]+</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
+    
+    <!-- Acronyms -->
+    
+    <e><p><l>PRM<s n="acr"/></l><r>PRM<s n="n"/><s n="acr"/></r></p></e>
 
   </section>
 </dictionary>
