@@ -2766,6 +2766,39 @@
         </out>
       </action>
     </rule>
+
+
+   <rule comment="REGLA:  n propnom  - 3 positions">
+      <pattern>
+        <pattern-item n="n-not-cmp"/>
+        <pattern-item n="prop-attr"/>
+        <pattern-item n="prop-nom"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
    <rule comment="REGLA: rdep n propnom  - 4 positions">
       <pattern>
         <pattern-item n="rdep"/>
