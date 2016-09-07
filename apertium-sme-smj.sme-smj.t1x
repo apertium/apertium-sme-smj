@@ -2903,7 +2903,7 @@
        <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
-              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="LongNP"/></tag>
               <tag><var n="func"/></tag>
               <tag><var n="ext"/></tag>
             </tags>
@@ -2943,7 +2943,7 @@
        <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
-              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="LongNP"/></tag>
               <tag><var n="func"/></tag>
               <tag><var n="ext"/></tag>
             </tags>
