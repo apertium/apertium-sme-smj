@@ -1247,11 +1247,11 @@
           <or>
           <and>
             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            <or>
             <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
-          </and>
-          <and>
-            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
             <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
+            <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal>
+            </or>
           </and>
           <and>
             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
@@ -1272,6 +1272,7 @@
             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
             <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal></not>
             <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal></not>
+            <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal></not>
           </and>
           </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
@@ -2211,20 +2212,17 @@
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>
       </when>
       <when>
-          <test><or>
+          <test>
           <and>
         <not><equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
           <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
           <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+          <or>
           <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
-         </and>
-           <and>
-        <not><equal><clip pos="1" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
-          <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
-          <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
           <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
+            <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal>
+            </or>
          </and>
-        </or>
          </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
       </when>
@@ -2236,6 +2234,7 @@
           <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
           <not><equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal></not>
           <not><equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal></not>
+          <not><equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal></not>
          </and>
          </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
@@ -2296,18 +2295,16 @@
           <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
       </when>
       <when>
-          <test><or>
+          <test>
           <and>
           <not><equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
           <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+          <or>
           <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
-         </and>
-           <and>
-          <not><equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
-          <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
           <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
+            <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal>
+            </or>
          </and>
-        </or>
          </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
           <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ela"/></let>
@@ -2319,6 +2316,7 @@
           <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
           <not><equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal></not>
           <not><equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal></not>
+         <not><equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal></not>
          </and>
          </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
@@ -2629,17 +2627,17 @@
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
          </when>
 
-        <when><test><or><and>
+        <when><test><and>
         <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
         <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@→N"/></equal>
-        <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
-        </and>
-        <and>
-        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
-        <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@→N"/></equal>
-        <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
         <not><equal><clip pos="1" side="sl" part="a_sem"/><lit-tag v="sem_time"/></equal></not>
-        </and></or></test>
+        <or>
+        <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal>
+        <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
+        <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
+        </or>
+        </and>
+        </test>
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
         </when>
         <when>
@@ -2680,17 +2678,16 @@
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
               <choose>  
-        <when><test><or><and>
+        <when><test><and>
         <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
         <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@→N"/></equal>
+        <or>
         <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
-        </and>
-        <and>
-        <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
-        <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@→N"/></equal>
         <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
-        <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_time"/></equal></not>
-        </and></or></test>
+        <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal>
+        </or>
+        </and>
+        </test>
         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ela"/></let>
         </when>
         <when>

@@ -14,6 +14,10 @@
         <cat-item tags="NP.@P←"/>
         <cat-item tags="NP.@←ADVL.*"/>
         <cat-item tags="NP.@←ADVL"/>
+        <cat-item tags="NP.@-F←ADVL-ela.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela"/>
+        <cat-item tags="NP.@-F←ADVL-ine"/>
+        <cat-item tags="NP.@-F←ADVL-ine.*"/>
     </def-cat>
     <def-cat n="ahte">
       <cat-item lemma="ahte" tags="cnjsub.@CVP"/>
@@ -41,6 +45,10 @@
         <cat-item tags="NP.@←ADVL.*"/>
         <cat-item tags="NP.@←ADVL-ela.*"/>
         <cat-item tags="NP.@←ADVL-ine.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela"/>
+        <cat-item tags="NP.@-F←ADVL-ine"/>
+        <cat-item tags="NP.@-F←ADVL-ine.*"/>
   </def-cat>
 
     <def-cat n="NP_Advl">
@@ -51,6 +59,10 @@
         <cat-item tags="NP.@ADVL-ine→.*"/>
         <cat-item tags="NP.@←ADVL-ine.*"/>
         <cat-item tags="NP.@ADVL.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela"/>
+        <cat-item tags="NP.@-F←ADVL-ine"/>
+        <cat-item tags="NP.@-F←ADVL-ine.*"/>
     </def-cat>
 
     <def-cat n="NP_Po">
@@ -131,6 +143,8 @@
      <attr-item tags="@←ADVL"/>
      <attr-item tags="@←ADVL-ine"/>
      <attr-item tags="@←ADVL-ela"/>
+     <attr-item tags="@-F←ADVL-ela"/>
+     <attr-item tags="@-F←ADVL-ine"/>
      <attr-item tags="@ADVL→"/>
      <attr-item tags="@HAB"/>
      <attr-item tags="@Num←"/>

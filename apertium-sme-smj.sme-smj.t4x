@@ -51,6 +51,13 @@
         <cat-item lemma="adv" tags="*.@←ADVL-ine"/>
         <cat-item lemma="adv" tags="*.@←ADVL-ela"/>
         <cat-item lemma="adv" tags="*.@←ADVL"/>
+        <cat-item lemma="adv" tags="*.@←ADVL-ine.*"/>
+        <cat-item lemma="adv" tags="*.@←ADVL-ela.*"/>
+        <cat-item lemma="adv" tags="*.@←ADVL.*"/>
+        <cat-item lemma="adv" tags="*.@-F←ADVL-ela.*"/>
+        <cat-item lemma="adv" tags="*.@-F←ADVL-ela"/>
+        <cat-item lemma="adv" tags="*.@-F←ADVL-ine"/>
+        <cat-item lemma="adv" tags="*.@-F←ADVL-ine.*"/>
     </def-cat>
 
 
@@ -69,6 +76,10 @@
         <cat-item lemma="noun" tags="*.@←ADVL-ine.*"/>
         <cat-item lemma="noun" tags="*.@←ADVL-ine"/>
          <cat-item lemma="noun" tags="*.@←SUBJ.←ext→"/>
+        <cat-item lemma="noun" tags="*.@-F←ADVL-ela.*"/>
+        <cat-item lemma="noun" tags="*.@-F←ADVL-ela"/>
+        <cat-item lemma="noun" tags="*.@-F←ADVL-ine"/>
+        <cat-item lemma="noun" tags="*.@-F←ADVL-ine.*"/>
    </def-cat>
 
     <def-cat n="NP_Subj">
@@ -85,6 +96,13 @@
         <cat-item tags="NP.@←ADVL.*"/>
         <cat-item tags="NP.@←ADVL-ine.*"/>
         <cat-item tags="NP.@←ADVL-ela.*"/>
+        <cat-item tags="NP.@←ADVL"/>
+        <cat-item tags="NP.@←ADVL-ine"/>
+        <cat-item tags="NP.@←ADVL-ela"/>
+        <cat-item tags="NP.@-F←ADVL-ela.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela"/>
+        <cat-item tags="NP.@-F←ADVL-ine"/>
+        <cat-item tags="NP.@-F←ADVL-ine.*"/>
     </def-cat>
     
     <def-cat n="NP_Advl">
@@ -95,6 +113,10 @@
         <cat-item tags="NP.@ADVL-ine→.*"/>
         <cat-item tags="NP.@←ADVL-ine.*"/>
         <cat-item tags="NP.@ADVL.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela"/>
+        <cat-item tags="NP.@-F←ADVL-ine"/>
+        <cat-item tags="NP.@-F←ADVL-ine.*"/>
     </def-cat>
     
     <def-cat n="NP_Po">
@@ -123,6 +145,10 @@
          <cat-item tags="NP.@←ADVL-ela"/>
          <cat-item tags="NP.@←ADVL-ine.*"/>
          <cat-item tags="NP.@←ADVL-ine"/>
+         <cat-item tags="NP.@-F←ADVL-ela.*"/>
+         <cat-item tags="NP.@-F←ADVL-ela"/>
+         <cat-item tags="NP.@-F←ADVL-ine"/>
+         <cat-item tags="NP.@-F←ADVL-ine.*"/>
          <cat-item tags="NP.@ADVL.*"/>
          <cat-item tags="NP.@ADVL"/>
          <cat-item tags="*.@←ADVL-ine"/>
@@ -194,6 +220,8 @@
      <attr-item tags="@←ADVL"/>
      <attr-item tags="@←ADVL-ine"/>
      <attr-item tags="@←ADVL-ela"/>
+     <attr-item tags="@-F←ADVL-ela"/>
+     <attr-item tags="@-F←ADVL-ine"/>
      <attr-item tags="@ADVL→"/>
      <attr-item tags="@HAB"/>
      <attr-item tags="@Num←"/>

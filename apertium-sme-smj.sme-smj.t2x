@@ -54,6 +54,10 @@
         <cat-item tags="NP.@←ADVL-ine.*"/>
         <cat-item tags="NP.@←ADVL-ine"/>
         <cat-item tags="NP.@←ADVL-ela.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela"/>
+        <cat-item tags="NP.@-F←ADVL-ine"/>
+        <cat-item tags="NP.@-F←ADVL-ine.*"/>
         <cat-item tags="NP.@←ADVL-ela"/>
     </def-cat>
     <def-cat n="numcompl">
@@ -154,6 +158,8 @@
      <attr-item tags="@←ADVL"/>
      <attr-item tags="@←ADVL-ine"/>
      <attr-item tags="@←ADVL-ela"/>
+     <attr-item tags="@-F←ADVL-ela"/>
+     <attr-item tags="@-F←ADVL-ine"/>
      <attr-item tags="@ADVL→"/>
      <attr-item tags="@HAB"/>
      <attr-item tags="@Num←"/>
