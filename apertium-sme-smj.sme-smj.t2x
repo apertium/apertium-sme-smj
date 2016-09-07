@@ -9,6 +9,9 @@
     <def-cat n="CONNEG">
       <cat-item lemma="conneg" tags="SV.*"/>
     </def-cat>
+    <def-cat n="comma">
+      <cat-item tags="DEFAULT.*"/>
+    </def-cat>
 
      <def-cat n="NP">
       <cat-item tags="NP"/>
@@ -68,6 +71,7 @@
     
     <def-cat n="NP_Po">
         <cat-item tags="NP.@→P.*"/>
+        <cat-item tags="NP.@→P"/>
     </def-cat>
 
     <def-cat n="NP_Pr">
@@ -125,6 +129,11 @@
         <cat-item lemma="datpcle" tags="PCLE"/>
     </def-cat>
  
+
+    <def-cat n="post">
+        <cat-item lemma="post" tags="PP.*"/>
+    </def-cat>
+
     
     <def-cat n="Adp">
         <cat-item tags="pr.*"/>
@@ -392,6 +401,90 @@
      </action>
     </rule>
  
+
+
+     <rule comment="REGLA: NP_Po CNP NP_Po post ">
+     <pattern>
+       <pattern-item n="NP_Po"/>
+       <pattern-item n="comma"/>
+       <pattern-item n="NP_Po"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="NP_Po"/>
+       <pattern-item n="post"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <get-case-from pos="1"><lit v="coor_pp"/></get-case-from>
+           <clip pos="1" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <b pos="1"/>
+           <clip pos="2" part="content"/>
+           <b pos="2"/>
+           <clip pos="3" part="content"/>
+           <b pos="3"/>
+           <clip pos="4" part="content"/>
+           <b pos="4"/>
+           <clip pos="5" part="content"/>
+           <b pos="5"/>
+           <clip pos="6" part="content"/>
+           <lit v="}"/>
+           <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule>
+
+ 
+     <rule comment="REGLA: NP_Po CNP NP_Po post ">
+     <pattern>
+       <pattern-item n="NP_Po"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="NP_Po"/>
+       <pattern-item n="post"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <get-case-from pos="1"><lit v="coor_pp"/></get-case-from>
+           <clip pos="1" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <b pos="1"/>
+           <clip pos="2" part="content"/>
+           <b pos="2"/>
+           <clip pos="3" part="content"/>
+           <b pos="3"/>
+           <clip pos="4" part="content"/>
+           <lit v="}"/>
+           <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule>
+
+     <rule comment="REGLA: NP_Po CNP NP_Po post ">
+     <pattern>
+       <pattern-item n="NP_Po"/>
+       <pattern-item n="post"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <get-case-from pos="1"><lit v="pp"/></get-case-from>
+           <clip pos="1" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <b pos="1"/>
+           <clip pos="2" part="content"/>
+           <lit v="}"/>
+           <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule>
+
 
 
   </section-rules>
