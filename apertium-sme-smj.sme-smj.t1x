@@ -3,6 +3,9 @@
 <transfer default="chunk">
 
   <section-def-cats>
+    <def-cat n="comma">
+      <cat-item lemma="," tags="cm"/>
+    </def-cat>
      <def-cat n="cnjsub">
   	 	<cat-item tags="cnjsub.*"/>
   	 </def-cat>
@@ -3441,6 +3444,23 @@
             <tags>
               <tag><lit-tag v="cnjsub"/></tag>
               <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: comma">
+      <pattern>
+        <pattern-item n="comma"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="comma" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="CLB"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>

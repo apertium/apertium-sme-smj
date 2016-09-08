@@ -10,7 +10,7 @@
       <cat-item lemma="conneg" tags="SV.*"/>
     </def-cat>
     <def-cat n="comma">
-      <cat-item tags="DEFAULT.*"/>
+      <cat-item lemma="comma" tags="CLB" />
     </def-cat>
 
      <def-cat n="NP">
