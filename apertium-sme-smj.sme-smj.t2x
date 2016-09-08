@@ -416,7 +416,7 @@
        <out>
          <chunk>
            <get-case-from pos="1"><lit v="coor_pp"/></get-case-from>
-           <clip pos="1" part="tags"/>
+           <clip pos="6" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
            <b pos="1"/>
@@ -448,7 +448,7 @@
        <out>
          <chunk>
            <get-case-from pos="1"><lit v="coor_pp"/></get-case-from>
-           <clip pos="1" part="tags"/>
+           <clip pos="4" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
            <b pos="1"/>
@@ -473,13 +473,13 @@
        <out>
          <chunk>
            <get-case-from pos="1"><lit v="pp"/></get-case-from>
-           <clip pos="1" part="tags"/>
+           <clip pos="2" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>
            <b pos="1"/>
            <clip pos="2" part="content"/>
            <lit v="}"/>
-           <clip pos="1" part="lemq"/>
+           <clip pos="2" part="lemq"/>
          </chunk>
        </out>
      </action>

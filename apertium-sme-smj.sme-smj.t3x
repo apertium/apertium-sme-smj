@@ -9,6 +9,11 @@
       <cat-item tags="NP"/>
       <cat-item tags="NP.*"/>
     </def-cat>
+    <def-cat n="ADV">
+      <cat-item tags="ADV.@←ADVL-ela"/>
+      <cat-item tags="ADV.@←ADVL-ine"/>
+      <cat-item tags="ADV.@←ADVL"/>
+    </def-cat>
     <def-cat n="P_left">
         <cat-item tags="NP.@P←.*"/>
         <cat-item tags="NP.@P←"/>
@@ -264,6 +269,30 @@
             <clip pos="2" part="tags"/>
             <clip pos="2" part="chcontent"/>
             <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="moves adverb in front of verb" > 
+      <pattern>
+        <pattern-item n="FMainV"/>
+        <pattern-item n="ADV"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
           </chunk>
         </out>
       </action>

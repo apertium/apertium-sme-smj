@@ -6,6 +6,9 @@
     <def-cat n="comma">
       <cat-item lemma="," tags="cm"/>
     </def-cat>
+    <def-cat n="prosent">
+      <cat-item lemma="%" tags="punct"/>
+    </def-cat>
      <def-cat n="cnjsub">
   	 	<cat-item tags="cnjsub.*"/>
   	 </def-cat>
@@ -3339,7 +3342,6 @@
           <chunk name="sent" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SENT"/></tag>
-              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -3447,6 +3449,30 @@
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: numeral prosent">
+      <pattern>
+        <pattern-item n="numeral"/>
+        <pattern-item n="prosent"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="prosent" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>

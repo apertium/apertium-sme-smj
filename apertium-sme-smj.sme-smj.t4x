@@ -61,25 +61,25 @@
     </def-cat>
 
 
-    <def-cat n="Argument_l">
-        <cat-item lemma="noun" tags="NP.@←OBJ.*"/>
-        <cat-item lemma="noun" tags="NP.@←OBJ"/>
-        <cat-item lemma="noun" tags="NP.@-F←OBJ"/>
-        <cat-item lemma="noun" tags="NP.@-F←OBJ.*"/>
-        <cat-item lemma="noun" tags="*.@←OPRED"/>
-        <cat-item lemma="noun" tags="*.@←OPRED.*"/>
-        <cat-item lemma="noun" tags="*.@←ADVL.*"/>
-        <cat-item lemma="noun" tags="*.@←ADVL"/>
-        <cat-item lemma="noun" tags="NP.@←ADVL.*"/>
-        <cat-item lemma="noun" tags="*.@←ADVL-ela.*"/>
-        <cat-item lemma="noun" tags="*.@←ADVL-ela"/>
-        <cat-item lemma="noun" tags="*.@←ADVL-ine.*"/>
-        <cat-item lemma="noun" tags="*.@←ADVL-ine"/>
-         <cat-item lemma="noun" tags="*.@←SUBJ.←ext→"/>
-        <cat-item lemma="noun" tags="*.@-F←ADVL-ela.*"/>
-        <cat-item lemma="noun" tags="*.@-F←ADVL-ela"/>
-        <cat-item lemma="noun" tags="*.@-F←ADVL-ine"/>
-        <cat-item lemma="noun" tags="*.@-F←ADVL-ine.*"/>
+    <def-cat n="Argument_l"> 
+        <cat-item tags="NP.@←OBJ.*"/>
+        <cat-item tags="NP.@←OBJ"/>
+        <cat-item tags="NP.@-F←OBJ"/>
+        <cat-item tags="NP.@-F←OBJ.*"/>
+        <cat-item tags="*.@←OPRED"/>
+        <cat-item tags="*.@←OPRED.*"/>
+        <cat-item tags="*.@←ADVL.*"/>
+        <cat-item tags="*.@←ADVL"/>
+        <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="*.@←ADVL-ela.*"/>
+        <cat-item tags="*.@←ADVL-ela"/>
+        <cat-item tags="*.@←ADVL-ine.*"/>
+        <cat-item tags="*.@←ADVL-ine"/>
+         <cat-item tags="*.@←SUBJ.←ext→"/>
+        <cat-item tags="*.@-F←ADVL-ela.*"/>
+        <cat-item tags="*.@-F←ADVL-ela"/>
+        <cat-item tags="*.@-F←ADVL-ine"/>
+        <cat-item tags="*.@-F←ADVL-ine.*"/>
    </def-cat>
 
     <def-cat n="NP_Subj">
@@ -104,6 +104,16 @@
         <cat-item tags="NP.@-F←ADVL-ine"/>
         <cat-item tags="NP.@-F←ADVL-ine.*"/>
     </def-cat>
+
+    <def-cat n="NP_Advl_right">
+        <cat-item tags="*.@ADVL→.*"/>
+        <cat-item tags="*.@ADVL-ela→.*"/>
+        <cat-item tags="*.@ADVL-ine→.*"/>
+        <cat-item tags="*.@ADVL→"/>
+        <cat-item tags="*.@ADVL-ela→"/>
+        <cat-item tags="*.@ADVL-ine→"/>
+    </def-cat>
+
     
     <def-cat n="NP_Advl">
         <cat-item tags="NP.@ADVL→.*"/>
@@ -271,30 +281,6 @@
 
   <section-rules>
 
-    <rule comment="moves adverb in front of verb" > 
-      <pattern>
-        <pattern-item n="FMainV"/>
-        <pattern-item n="adv_l"/>
-      </pattern>
-      <action>
-        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <out>
-          <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
-        <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
     <rule comment="removes jut after lea" >  
       <pattern>
@@ -425,6 +411,47 @@
         </out>
       </action>
     </rule>
+
+   <rule comment="NP_Advl_right IMainV ADVL_left" >
+      <pattern>
+        <pattern-item n="NP_Advl_right"/>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="Argument_l"/>
+        <pattern-item n="Argument_l"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+           <b pos="2"/>
+          <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
+          </chunk>
+         <b pos="3"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
 
     <rule comment="FAuxV IMainV ADVL_left" > <!--AUX V A becomes AUX A V -->
