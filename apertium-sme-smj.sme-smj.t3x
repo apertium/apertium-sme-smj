@@ -9,6 +9,10 @@
       <cat-item tags="NP"/>
       <cat-item tags="NP.*"/>
     </def-cat>
+    <def-cat n="SPRED_r">
+       <cat-item tags="*.@SPRED→"/>
+    </def-cat>
+    
     <def-cat n="ADV">
       <cat-item tags="ADV.@←ADVL-ela"/>
       <cat-item tags="ADV.@←ADVL-ine"/>
@@ -212,6 +216,37 @@
         <clip pos="1" part="whole"/>
       </chunk>
     </out>
+      </action>
+    </rule>
+    <rule comment="SPRED MAINV SUBJ - verb should not move" > 
+      <pattern>
+        <pattern-item n="SPRED_r"/>
+        <pattern-item n="FMainV"/>
+        <pattern-item n="NP_Subj_l"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
       </action>
     </rule>
     <rule comment="MAINV SUBJ" > 
