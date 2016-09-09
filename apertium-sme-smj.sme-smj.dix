@@ -792,6 +792,7 @@
      <e><p><l>Matheussen<s n="np"/></l><r>Matheussen<s n="np"/></r></p></e>
      <e><p><l>Boine<s n="np"/></l><r>Boine<s n="np"/></r></p></e>
      <e><p><l>mađe<s n="cnjsub"/></l><r>made<s n="cnjsub"/></r></p></e>
+     <e><p><l>mađe<s n="post"/></l><r>made<s n="post"/></r></p></e>
      <e><p><l>dađe<s n="cnjsub"/></l><r>dade<s n="cnjsub"/></r></p></e>
      <e><p><l>dađi<s n="cnjsub"/></l><r>dadi<s n="cnjsub"/></r></p></e>
     <e><p><l>vázzit<s n="vblex"/><s n="iv"/></l><r>vádtset<s n="vblex"/></r></p></e>
@@ -1541,6 +1542,7 @@
      <e><p><l>bibliotekára<s n="n"/></l><r>bibliotekárra<s n="n"/></r></p></e>
      <e><p><l>biddu<s n="n"/></l><r>biddo<s n="n"/></r></p></e>
      <e><p><l>biebmu<s n="n"/></l><r>biebbmo<s n="n"/></r></p></e>
+     <e><p><l>biebmoruoktu<s n="n"/></l><r>biebbmosijdda<s n="n"/></r></p></e>
      <e><p><l>biedju<s n="n"/></l><r>biedjo<s n="n"/></r></p></e>
      <e><p><l>biegga<s n="n"/></l><r>biegga<s n="n"/></r></p></e>
      <e><p><l>bieggačoalli<s n="n"/></l><r>vuodjamráhkko<s n="n"/></r></p></e>
@@ -5961,6 +5963,7 @@
      <e><p><l>vátnamielalaš<s n="adj"/></l><r>vádnamielalasj<s n="adj"/></r></p></e>
      <e><p><l>váttis<s n="adj"/></l><r>gássjel<s n="adj"/></r></p></e>
      <e><p><l>váttis<s n="adj"/></l><r>gássjelis<s n="adj"/></r></p></e>
+     <e><p><l>ovddasvástideaddji<s n="adj"/></l><r>åvdåsvásstediddje<s n="adj"/></r></p></e>
      <e><p><l>áices<s n="adj"/></l><r>ájttsis<s n="adj"/></r></p></e>
      <e><p><l>áigeguovdil<s n="adj"/></l><r>ájggeguovddelis<s n="adj"/></r></p></e>
      <e><p><l>áigásaš<s n="adj"/></l><r>ájggásasj<s n="adj"/></r></p></e>
@@ -53053,7 +53056,7 @@
     
     <!-- Acronyms -->
     
-    <e><p><l>PRM<s n="acr"/></l><r>PRM<s n="n"/><s n="acr"/></r></p></e>
+    <e><p><l>PRM<s n="acr"/></l><r>PRM<s n="acr"/></r></p></e>
 
   </section>
 </dictionary>
