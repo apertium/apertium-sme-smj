@@ -551,8 +551,9 @@
       <attr-item tags="←ext→"/>
       <attr-item tags="←hab→"/>
     </def-attr>
-    <def-attr n="a_south">
+    <def-attr n="a_spec_sme_tags">
       <attr-item tags="south"/>
+      <attr-item tags="g3"/>
     </def-attr>
     <def-attr n="a_numtypes">
       <attr-item tags="arab"/>
@@ -1385,7 +1386,7 @@
       </choose>
     <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
       <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_south"/><lit v=""/></let>
+      <let><clip pos="1" side="tl" part="a_spec_sme_tags"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
