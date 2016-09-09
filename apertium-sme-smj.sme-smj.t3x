@@ -5,6 +5,10 @@
     <def-cat n="PR_PO">
        <cat-item lemma="pr_post" tags="*"/>
     </def-cat>
+    <def-cat n="prosent">
+       <cat-item lemma="prosent" tags="NP.@←ADVL"/>
+       <cat-item lemma="prosent" tags="NP.@←ADVL.*"/>
+    </def-cat>
     <def-cat n="NP">
       <cat-item tags="NP"/>
       <cat-item tags="NP.*"/>
@@ -308,6 +312,33 @@
         </out>
       </action>
     </rule>
+
+    <rule comment="moves adverb in front of prosent" > 
+      <pattern>
+        <pattern-item n="prosent"/>
+        <pattern-item n="ADV"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
     <rule comment="moves adverb in front of verb" > 
       <pattern>
         <pattern-item n="FMainV"/>

@@ -12,6 +12,9 @@
      <def-cat n="cnjsub">
   	 	<cat-item tags="cnjsub.*"/>
   	 </def-cat>
+     <def-cat n="mod_num">
+  	 	<cat-item tags="*.@→Num"/>
+  	 </def-cat>
      <def-cat n="mielde_adv">
   	 	<cat-item lemma="mielde" tags="adv.*"/>
   	 </def-cat>
@@ -3483,6 +3486,35 @@
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+   <rule comment="REGLA: adv numeral prosent">
+      <pattern>
+        <pattern-item n="mod_num"/>
+        <pattern-item n="numeral"/>
+        <pattern-item n="prosent"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="3"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="prosent" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
