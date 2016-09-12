@@ -118,7 +118,7 @@
     </def-cat>
     <def-cat n="verb-fin">
       <cat-item tags="vblex.*.indic.*"/>
-      <cat-item tags="vblex.*.cond.*"/>
+<!--      <cat-item tags="vblex.*.cond.*"/> -->
       <cat-item tags="vblex.*.pot.*"/>
       <cat-item tags="vblex.*.der_inchl.vblex.indic.*"/>
       <cat-item tags="vblex.*.der_inchl.vblex.cond.*"/>
@@ -1034,6 +1034,7 @@
     <def-var n="case"/>
     <def-var n="lemma"/>
     <def-var n="qst"/>
+    <def-var n="vblex_nbrpers"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -1318,7 +1319,19 @@
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
       <call-macro n="foc-1Param"><with-param pos="1"/></call-macro> 
       <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
-        <choose>
+       <choose>
+        <when>
+          <test>
+            <or>
+              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/></equal>
+              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@+FMAINV"/></equal>
+            </or>
+          </test>
+          <let><var n="vblex_nbrpers"/><concat><clip pos="1" side="tl" part="a_person"/>
+          <clip pos="1" side="tl" part="a_nbr"/></concat></let>
+        </when>
+        </choose>
+       <choose>
       <when>
           <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
           <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
@@ -3650,6 +3663,34 @@
         </out>
       </action>
     </rule>
+    
+    <rule comment="REGLA: conditional  - 2 positions out">
+      <pattern>
+        <pattern-item n="verb-cond"/>
+      </pattern>
+      <action>
+          <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.cond"/>
+              <var n="vblex_nbrpers"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex.inf"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    
    <rule comment="REGLA: DEFAULT">
       <pattern>
         <pattern-item n="default"/>
@@ -3671,30 +3712,6 @@
       </action>
     </rule>
     
-    <rule comment="REGLA: conditional  - 2 positions out">
-      <pattern>
-        <pattern-item n="verb-cond"/>
-      </pattern>
-      <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="vblex" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
-            </tags>
-            <lu>
-              <lit v="liehket"/>
-              <lit-tag v="vblex.*.cond.*"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="1" side="tl" part="verb-inf"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
 
   </section-rules>
 </transfer>
