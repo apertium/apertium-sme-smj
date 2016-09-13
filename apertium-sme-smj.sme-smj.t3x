@@ -16,6 +16,9 @@
     <def-cat n="SPRED_r">
        <cat-item tags="*.@SPRED→"/>
     </def-cat>
+    <def-cat n="emptyadv">
+       <cat-item lemma="" tags="adv"/>
+    </def-cat>
     
     <def-cat n="ADV">
       <cat-item tags="ADV.@←ADVL-ela"/>
@@ -37,6 +40,9 @@
     </def-cat>
     <def-cat n="dem">
       <cat-item lemma="prn" tags="*.dem"/>
+    </def-cat>
+    <def-cat n="verb">
+      <cat-item tags="*.@-FMAINV"/>
     </def-cat>
 
     <def-cat n="NP_Subj_l">
@@ -359,6 +365,23 @@
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="removes empty adv" > 
+      <pattern>
+        <pattern-item n="emptyadv"/>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
           </chunk>
         </out>
       </action>

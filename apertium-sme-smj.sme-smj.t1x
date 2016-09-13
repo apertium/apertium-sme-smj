@@ -945,6 +945,7 @@
     </def-attr>
     <def-attr n="sem_year">
       <attr-item tags="sem_year"/>
+      <attr-item tags="sem_date"/>
     </def-attr>
 
     <def-attr n="a_func">
@@ -2270,6 +2271,7 @@
       </pattern>
       <action>
       <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
       <choose>
       <when>
@@ -2344,6 +2346,96 @@
         </out>
       </action>
     </rule> 
+ 
+     <rule comment="REGLA: mod_num prn-dem pluss noun">
+      <pattern>
+        <pattern-item n="mod_num"/>  
+        <pattern-item n="prn-num"/> 
+        <pattern-item n="noun"/>  
+      </pattern>
+      <action>
+      <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+      <choose>
+      <when>
+          <test><and>
+        <not><equal><clip pos="2" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
+          <equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal>
+          <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+          </and></test>
+          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+      </when>
+      <when>
+          <test>
+          <and>
+        <not><equal><clip pos="2" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
+          <not><equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+          <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+          <or>
+          <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
+          <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
+            <equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal>
+            </or>
+         </and>
+         </test>
+          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ela"/></let>
+      </when>
+      <when>
+          <test>
+          <and>
+         <not><equal><clip pos="2" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
+         <not><equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+          <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+          <not><equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal></not>
+          <not><equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal></not>
+          <not><equal><clip pos="3" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal></not>
+         </and>
+         </test>
+          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ine"/></let>
+      </when>
+      <when>
+          <test>
+          <and>
+         <not><equal><clip pos="2" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal></not>
+         <not><equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+          <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+          <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+         </and>
+         </test>
+          <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+      </when>
+       <when><test><and>
+        <equal><clip pos="2" side="sl" part="a_numtypes"/><lit-tag v="arab"/></equal>
+        <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+        </and></test>
+         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+         </when>
+        </choose> 
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+             <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+             <b/>
+             <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+        </chunk>
+        </out>
+      </action>
+    </rule> 
+
  
     <rule comment="REGLA: prn-dem n-cmp noun">
       <pattern>
