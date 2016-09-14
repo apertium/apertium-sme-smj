@@ -2548,6 +2548,7 @@
       </pattern>
       <action>
       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
       <choose>
       <when>
@@ -2628,6 +2629,8 @@
       </pattern>
       <action>
       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
       <choose>
       <when>
@@ -2710,6 +2713,8 @@
       </pattern>
       <action>
       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
       <choose>
       <when>
@@ -2995,6 +3000,7 @@
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
               <choose>  
      <when><test><and>
@@ -3061,6 +3067,7 @@
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
               <choose>  
         <when><test><and>
@@ -3125,6 +3132,7 @@
          </when></choose>
 
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
@@ -3321,6 +3329,7 @@
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
          </when></choose>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
@@ -3367,6 +3376,8 @@
         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="attr"/></let>
          </when></choose>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="4"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
@@ -3417,6 +3428,8 @@
         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="attr"/></let>
          </when></choose>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
@@ -3461,6 +3474,9 @@
         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="attr"/></let>
          </when></choose>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="4"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
@@ -3497,6 +3513,7 @@
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <let><clip pos="2" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
         <out>
