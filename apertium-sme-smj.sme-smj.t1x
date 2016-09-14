@@ -2318,7 +2318,7 @@
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
-        <let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.indef.attr"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.ind.attr"/></let>
        <out>
           <chunk name="prn" case="caseFirstword">
             <tags>
