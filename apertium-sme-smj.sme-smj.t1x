@@ -161,7 +161,7 @@
       <cat-item lemma="skábmamánnu" tags="n.*"/>
       <cat-item lemma="juovlamánnu" tags="n.*"/>
     </def-cat>
-     <def-cat n="word_qst">
+     <def-cat n="word_qst-not-verb">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
       <cat-item tags="pcle"/>
@@ -174,8 +174,6 @@
       <cat-item tags="np.*"/>
       <cat-item tags="np"/>
       <cat-item tags="np.*"/>
-      <cat-item tags="vblex"/>
-      <cat-item tags="vblex.*"/>
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
        <cat-item tags="prn.*"/>
@@ -193,8 +191,24 @@
       <cat-item tags="np.*"/>
       <cat-item tags="np"/>
       <cat-item tags="np.*"/>
-      <cat-item tags="vblex"/>
-      <cat-item tags="vblex.*"/>
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.*"/>
+       <cat-item tags="prn.*"/>
+       <cat-item tags="vblex.*"/>
+   </def-cat>
+     <def-cat n="word-not-verb">
+      <cat-item tags="adv"/>
+      <cat-item tags="adv.*"/>
+      <cat-item tags="pcle"/>
+      <cat-item tags="pcle.@PCLE"/>
+      <cat-item tags="cnjsub"/>
+      <cat-item tags="cnjsub.*"/>
+      <cat-item tags="n"/>
+      <cat-item tags="n.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
        <cat-item tags="prn.*"/>
@@ -1835,7 +1849,7 @@
         </choose>
 
         <out>
-          <chunk name="ii" case="caseFirstword">
+          <chunk name="neg" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@+FAUXV"/></tag>
@@ -1889,10 +1903,10 @@
             <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>
 
         <out>
-          <chunk name="vblex" case="caseFirstword">
+          <chunk name="neg" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
+              <tag><lit-tag v="@+FAUXV"/></tag>
               <tag><clip pos="1" side="sl" part="a_mood"/></tag>
               <tag><clip pos="1" side="sl" part="a_foc"/></tag>
             </tags>
@@ -1906,7 +1920,7 @@
           </lu>
           </chunk>
           <b pos="1"/>
-          <chunk name="vblex">
+          <chunk name="vvvblex">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1935,15 +1949,21 @@
       </let>
       <let><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></let>
       <out>
-        <chunk name="negverb" case="caseFirstword">
+        <chunk name="neg" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
-            <tag><var n="func"/></tag>
+            <tag><lit-tag v="@-FMAINV"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu>
+        </chunk>
           <b pos="1"/>
+        <chunk name="word">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><var n="func"/></tag>
+          </tags>
           <lu>
             <clip pos="3" side="tl" part="whole"/>
           </lu>
@@ -1957,11 +1977,10 @@
   </rule>
 
 
-
   <rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
     <pattern>
       <pattern-item n="negverb"/>
-      <pattern-item n="word_qst"/>
+      <pattern-item n="word_qst-not-verb"/>
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
@@ -2009,15 +2028,17 @@
     </action>
   </rule>
 
-  <rule comment="REGLA: NEGVERB word CONNEGVERB"> 
+
+
+  <rule comment="REGLA: NEGVERB word word CONNEGVERB"> 
     <pattern>
       <pattern-item n="negverb"/>
-      <pattern-item n="word_qst"/>
-      <pattern-item n="word"/>
+      <pattern-item n="word_qst-not-verb"/>
+      <pattern-item n="word-not-verb"/>
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
-      <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+      <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/><with-param pos="3"/></call-macro>
       <!-- c="First we copy the temps from mainverb onto negverb" -->
       <let>
         <clip pos="1" side="tl" part="a_temps_mood"/>
@@ -2037,10 +2058,81 @@
       </choose>
 
       <out>
-        <chunk name="vblex" case="caseFirstword">
+        <chunk name="neg" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FAUXV"/></tag>
+            <tag><clip pos="1" side="sl" part="a_mood"/></tag>
+            <tag><clip pos="1" side="sl" part="a_foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+        <b pos="1"/>
+        <chunk name="word">
+          <tags>
+            <tag><lit-tag v="NP"/></tag>
             <tag><var n="func"/></tag>
+            <tag><clip pos="3" side="sl" part="a_mood"/></tag>
+            <tag><clip pos="3" side="sl" part="a_foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          <b pos="2"/>
+          <lu>
+            <clip pos="3" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+          <b pos="3"/>
+        <chunk name="conneg">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+          <lu>
+            <clip pos="4" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+      </out>
+    </action>
+  </rule>
+
+  <rule comment="REGLA: NEGVERB word word word CONNEGVERB"> 
+    <pattern>
+      <pattern-item n="negverb"/>
+      <pattern-item n="word_qst-not-verb"/>
+      <pattern-item n="word-not-verb"/>
+      <pattern-item n="word-not-verb"/>
+      <pattern-item n="connegverb"/>
+    </pattern>
+    <action>
+      <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="5"/></call-macro>
+      <call-macro n="general-macro-1Param"><with-param pos="4"/></call-macro>
+      <!-- c="First we copy the temps from mainverb onto negverb" -->
+      <let>
+        <clip pos="1" side="tl" part="a_temps_mood"/>
+        <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="5" side="tl" part="a_tense"/></concat>
+      </let>
+      <choose>
+        <when>
+          <test>
+            <not><equal><clip pos="5" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+          </test>
+          <let><clip pos="5" side="tl" part="a_tense"/><lit v=""/></let>
+        </when>
+        <when>
+          <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
+        </when>
+      </choose>
+
+      <out>
+        <chunk name="neg" case="caseFirstword">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FAUXV"/></tag>
             <tag><clip pos="1" side="sl" part="a_mood"/></tag>
             <tag><clip pos="1" side="sl" part="a_foc"/></tag>
           </tags>
@@ -2068,9 +2160,20 @@
             <clip pos="4" side="tl" part="whole"/>
           </lu>
         </chunk>
+          <b pos="4"/>
+        <chunk name="conneg">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+          <lu>
+            <clip pos="5" side="tl" part="whole"/>
+          </lu>
+        </chunk>
       </out>
     </action>
   </rule>
+
 
     <rule comment="REGLA: jagis 2001 - 2 position in-out"> 
       <pattern> 
@@ -3204,7 +3307,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: rdep n  - 3 positions">
+    <rule comment="REGLA: rdep cmp n  - 3 positions">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="n-cmp"/>
@@ -3524,7 +3627,7 @@
             </lu>
           </chunk>
            <b/>
-          <chunk name="qst" case="caseFirstword">
+          <chunk name="qst">
             <tags>
               <tag><lit-tag v="pcle"/></tag>
               <tag><lit-tag v="PCLE"/></tag>
