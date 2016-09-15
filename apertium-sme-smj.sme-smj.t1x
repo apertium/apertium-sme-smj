@@ -3591,7 +3591,9 @@
       </pattern>
       <action>
       <choose><when><test>
+	  <and>
       <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL"/></equal>
+      <not><equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal></not></and>
            </test>
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
      </when></choose>
