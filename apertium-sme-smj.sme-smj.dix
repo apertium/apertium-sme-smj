@@ -671,7 +671,7 @@
         <e><p><l>dielku<s n="n"/></l><r>dieblle<s n="n"/></r></p></e>
    
        
-       <e><p><l>Sjonfjellet<s n="np"/></l><r>Sjonfjellet<s n="np"/></r></p></e>
+     <e><p><l>Sjonfjellet<s n="np"/></l><r>Sjonfjellet<s n="np"/></r></p></e>
      <e><p><l>Vindkraft<s n="np"/></l><r>Vindkraft<s n="np"/></r></p></e>
      <e><p><l>Nordlandsforskning<s n="np"/></l><r>Nordlandsforskning<s n="np"/></r></p></e>
      <e><p><l>Melleby<s n="np"/></l><r>Melleby<s n="np"/></r></p></e>
@@ -681,12 +681,13 @@
      <e><p><l>NČE<s n="n"/></l><r>NČE<s n="n"/></r></p></e>
      <e><p><l>KV<s n="n"/></l><r>KV<s n="n"/></r></p></e>
      <e><p><l>RPU<s n="n"/></l><r>RPU<s n="n"/></r></p></e>
-      <e><p><l>CO2<s n="n"/></l><r>CO2<s n="n"/></r></p></e>
-    <e><p><l>SANKS<s n="np"/></l><r>SANKS<s n="np"/></r></p></e>
+     <e><p><l>CO2<s n="n"/></l><r>CO2<s n="n"/></r></p></e>
+     <e><p><l>SANKS<s n="np"/></l><r>SANKS<s n="np"/></r></p></e>
      <e><p><l>RDD<s n="n"/></l><r>RDD<s n="n"/></r></p></e>
      <e><p><l>EMRIP<s n="n"/></l><r>EMRIP<s n="n"/></r></p></e>
      <e><p><l>kV<s n="n"/></l><r>kV<s n="n"/></r></p></e>
-     <e><p><l>ON<s n="n"/></l><r>ON<s n="n"/></r></p></e>
+     <e><p><l>ON<s n="n"/></l><r>AN<s n="n"/></r></p></e>
+     <e><p><l>PRM<s n="n"/></l><r>PRM<s n="n"/></r></p></e>
 
      <e><p><l>bihtánsápmi<s n="n"/></l><r>bihtámsábme<s n="n"/></r></p></e>
      <e><p><l>fuolla<s n="n"/></l><r>hukso<s n="n"/></r></p></e>
@@ -53111,10 +53112,6 @@
     <e><re>[0-9]+([., \-–]+[0-9]+)*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
     <e><re>[0-9]+([., \-–]+[0-9]+)*</re><p><l><s n="adj"/></l><r><s n="adj"/></r></p></e>
     <e><re>[IVXLMC]+</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
-    
-    <!-- Acronyms -->
-    
-    <e><p><l>PRM<s n="acr"/></l><r>PRM<s n="acr"/></r></p></e>
-
+ 
   </section>
 </dictionary>
