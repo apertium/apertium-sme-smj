@@ -604,7 +604,7 @@
        <e><p><l>ovttagielat<s n="adj"/></l><r>avtagielak<s n="adj"/></r></p></e>
        <e><p><l>guvllolaš<s n="adj"/></l><r>guovlulasj<s n="adj"/></r></p></e> 
        <e><p><l>guvllolaš<s n="adj"/></l><r>guovlulasj<s n="adj"/></r></p></e> 
-       <e><p><l>regionálalaš<s n="adj"/></l><r>regionalalasj<s n="adj"/></r></p></e> 
+       <e><p><l>regionálalaš<s n="adj"/></l><r>regionálla<s n="adj"/></r></p></e> 
        <e><p><l>ođđaáigásaš<s n="adj"/></l><r>ådåájggásasj<s n="adj"/></r></p></e> 
        <e><p><l>fuotni<s n="adj"/></l><r>fuonos<s n="adj"/></r></p></e> 
        <e><p><l>gearggus<s n="adj"/></l><r>gergas<s n="adj"/></r></p></e> 
@@ -773,7 +773,6 @@
 
 
      <e><p><l>njuovahat<s n="n"/></l><r>njuovadahka<s n="n"/></r></p></e>
-     <e><p><l>mearranjiččehas<s n="n"/></l><r>merranjammelij<s n="n"/></r></p></e>
      <e><p><l>njiččehas<s n="n"/></l><r>njammelij<s n="n"/></r></p></e>
      <e><p><l>inuihtta<s n="n"/></l><r>inuihtta<s n="n"/></r></p></e>
      <e><p><l>boanda<s n="n"/></l><r>båndor<s n="n"/></r></p></e>
@@ -9632,7 +9631,7 @@
      <e><p><l>ráfáidit<s n="vblex"/><s n="iv"/></l><r>ráfedit<s n="vblex"/></r></p></e>
      <e><p><l>ráfáidahttit<s n="vblex"/><s n="tv"/></l><r>ráfájduhttet<s n="vblex"/></r></p></e>
      <e><p><l>ráfáiduhttit<s n="vblex"/><s n="tv"/></l><r>ráfájduhttet<s n="vblex"/></r></p></e>
-     <e><p><l>ráhkadit<s n="vblex"/><s n="tv"/></l><r>stiellit<s n="vblex"/></r></p></e>
+     <e><p><l>ráhkadit<s n="vblex"/><s n="tv"/></l><r>dahkat<s n="vblex"/></r></p></e>
      <e><p><l>ráhkkedit<s n="vblex"/><s n="tv"/></l><r>ráhkkit<s n="vblex"/></r></p></e>
      <e><p><l>ráhkkot<s n="vblex"/><s n="tv"/></l><r>ráhkat<s n="vblex"/></r></p></e>
      <e><p><l>ráhččat<s n="vblex"/><s n="tv"/></l><r>ráhttjat<s n="vblex"/></r></p></e>
@@ -39383,10 +39382,6 @@
      <e><p><l>Deanobohvárri<s n="np"/></l><r>Deanobohvárri<s n="np"/></r></p></e>
      <e><p><l>Deanodat<s n="np"/></l><r>Deanodat<s n="np"/></r></p></e>
      <e><p><l>Deansenjárga<s n="np"/></l><r>Deansenjárga<s n="np"/></r></p></e>
-     <e><p><l>Deanujohka<s n="np"/></l><r>Deanujohka<s n="np"/></r></p></e>
-     <e><p><l>Deanuleahki<s n="np"/></l><r>Deanuleahki<s n="np"/></r></p></e>
-     <e><p><l>Deanuláhka<s n="np"/></l><r>Deanuláhka<s n="np"/></r></p></e>
-     <e><p><l>Deanulávdegoddi<s n="np"/></l><r>Deanunammadus<s n="np"/></r></p></e>
      <e><p><l>Deanumuš<s n="np"/></l><r>Deanumuš<s n="np"/></r></p></e>
      <e><p><l>Deanunjálbmi<s n="np"/></l><r>Deanunjálbmi<s n="np"/></r></p></e>
      <e><p><l>Deanut<s n="np"/></l><r>Deanut<s n="np"/></r></p></e>
@@ -44468,7 +44463,6 @@
      <e><p><l>Luomejávri<s n="np"/></l><r>Luomejávri<s n="np"/></r></p></e>
      <e><p><l>Luomestealli<s n="np"/></l><r>Luomestealli<s n="np"/></r></p></e>
      <e><p><l>Luonddugáhttensearvi<s n="np"/></l><r>Luondosuoddjimsiebrre<s n="np"/></r></p></e>
-     <e><p><l>Luondduhálddašan<s n="np"/></l><r>Luondduhálddašan<s n="np"/></r></p></e>
      <e><p><l>Luopmosvárri<s n="np"/></l><r>Luopmosvárri<s n="np"/></r></p></e>
      <e><p><l>Luopmošjohguolbanat<s n="np"/></l><r>Luopmošjohguolbanat<s n="np"/></r></p></e>
      <e><p><l>Luopmošjohjeaggi<s n="np"/></l><r>Luopmošjohjeaggi<s n="np"/></r></p></e>
@@ -45560,7 +45554,7 @@
      <e><p><l>Mássuorskáidi<s n="np"/></l><r>Mássuorskáidi<s n="np"/></r></p></e>
      <e><p><l>Mátduottar<s n="np"/></l><r>Mátduottar<s n="np"/></r></p></e>
      <e><p><l>Mátduottarčohkka<s n="np"/></l><r>Mátduottarčohkka<s n="np"/></r></p></e>
-     <e><p><l>Mátta-Norga<s n="np"/></l><r>Mátta-Norga<s n="np"/></r></p></e>
+     <e><p><l>Mátta-Norga<s n="np"/></l><r>Oarjje-Vuodna<s n="np"/></r></p></e>
      <e><p><l>Mátta-Romsa<s n="np"/></l><r>Mátta-Romsa<s n="np"/></r></p></e>
      <e><p><l>Mátta-Sápmi<s n="np"/></l><r>Mátta-Sápmi<s n="np"/></r></p></e>
      <e><p><l>Mátta-Tromsa<s n="np"/></l><r>Mátta-Tromsa<s n="np"/></r></p></e>
@@ -52652,11 +52646,8 @@
      <e><p><l>Daerpies<b/>Dierie<s n="np"/></l><r>Daerpies<b/>Dierie<s n="np"/></r></p></e>
      <e><p><l>Davimus<b/>Lovnjisduottar<s n="np"/></l><r>Davimus<b/>Lovnjisduottar<s n="np"/></r></p></e>
      <e><p><l>Davimus<b/>Ovnnusjávri<s n="np"/></l><r>Davimus<b/>Ovnnusjávri<s n="np"/></r></p></e>
-     <e><p><l>Davvi<b/>Dearvvašvuohta<s n="np"/></l><r>Davvi<b/>Dearvvašvuohta<s n="np"/></r></p></e>
      <e><p><l>Davvi<b/>Girji<s n="np"/></l><r>Davvi<b/>Girji<s n="np"/></r></p></e>
      <e><p><l>Davviriikkaid<b/>Ráđđi<s n="np"/></l><r>Davviriikkaid<b/>Ráđđi<s n="np"/></r></p></e>
-     <e><p><l>Deanu<b/>Leagi<b/>cup<s n="np"/></l><r>Deanu<b/>Leagi<b/>cup<s n="np"/></r></p></e>
-     <e><p><l>Deanu<b/>čázádat<s n="np"/></l><r>Deanu<b/>čázádat<s n="np"/></r></p></e>
      <e><p><l>Dearvvašvuođa-<b/>ja<b/>fuolahusdepartemeanta<s n="np"/></l><r>Varresvuoda-<b/>ja<b/>huksodepartemænnta<s n="np"/></r></p></e>
      <e><p><l>Deportivo<b/>Loaŋkodievvá<s n="np"/></l><r>Deportivo<b/>Loaŋkodievvá<s n="np"/></r></p></e>
      <e><p><l>Doajmmasiebbre<b/>Julev-Sabme<s n="np"/></l><r>Doajmmasiebbre<b/>Julev-Sabme<s n="np"/></r></p></e>
