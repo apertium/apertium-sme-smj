@@ -1,3 +1,4 @@
+
 <dictionary>
   <sdefs>
     <sdef n="n"      c="Noun, common"/>
@@ -1549,6 +1550,7 @@
      <e><p><l>bargiidorganisašuvdna<s n="n"/></l><r>barggijorganisasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>bargodepartemeanta<s n="n"/></l><r>barggodepartemænnta<s n="n"/></r></p></e>
      <e><p><l>bargodokumeanta<s n="n"/></l><r>barggodokumænnta<s n="n"/></r></p></e>
+     <e><p><l>bargamuš<s n="n"/></l><r>barggo<s n="n"/></r></p></e>
      <e><p><l>bargu<s n="n"/></l><r>barggo<s n="n"/></r></p></e>
      <e><p><l>baroniija<s n="n"/></l><r>baronijja<s n="n"/></r></p></e>
      <e><p><l>baráhkka<s n="n"/></l><r>baráhkka<s n="n"/></r></p></e>
@@ -1880,6 +1882,7 @@
      <e><p><l>derivašuvdna<s n="n"/></l><r>derivasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>derpmoš<s n="n"/></l><r>dermusj<s n="n"/></r></p></e>
      <e><p><l>desideratiiva<s n="n"/></l><r>desideratijvva<s n="n"/></r></p></e>
+     <e><p><l>design<s n="n"/></l><r>design<s n="n"/></r></p></e>
      <e><p><l>desigrámma<s n="n"/><s n="g3"/></l><r>desigrámma<s n="n"/></r></p></e>
      <e><p><l>desimálasystema<s n="n"/></l><r>desimalsystiebma<s n="n"/></r></p></e>
      <e><p><l>desinfekšuvdna<s n="n"/></l><r>desinfeksjåvnnå<s n="n"/></r></p></e>
@@ -3710,6 +3713,7 @@
      <e><p><l>neoklassisisma<s n="n"/></l><r>neoklassisissma<s n="n"/></r></p></e>
      <e><p><l>neorealisma<s n="n"/></l><r>neorealissma<s n="n"/></r></p></e>
      <e><p><l>nepotisma<s n="n"/></l><r>nepotissma<s n="n"/></r></p></e>
+     <e><p><l>nettobeaktu<s n="n"/></l><r>nettovájkkudus<s n="n"/></r></p></e>
      <e><p><l>neuralgiija<s n="n"/></l><r>neuralgijja<s n="n"/></r></p></e>
      <e><p><l>nevrografiija<s n="n"/></l><r>nevrografijja<s n="n"/></r></p></e>
      <e><p><l>nibba<s n="n"/></l><r>nibba<s n="n"/></r></p></e>
@@ -7461,6 +7465,7 @@
      <e><p><l>dárkkistit<s n="vblex"/><s n="tv"/></l><r>dárkestit<s n="vblex"/></r></p></e>
      <e><p><l>dárostit<s n="vblex"/><s n="iv"/></l><r>dárustit<s n="vblex"/></r></p></e>
      <e><p><l>dárustit<s n="vblex"/><s n="iv"/></l><r>dárustit<s n="vblex"/></r></p></e>
+     <e><p><l>dásáiduvvat<s n="vblex"/><s n="iv"/></l><r>stuovijduvvat<s n="vblex"/></r></p></e>
      <e><p><l>dássidit<s n="vblex"/><s n="tv"/></l><r>dássedit<s n="vblex"/></r></p></e>
      <e><p><l>dávgudit<s n="vblex"/><s n="tv"/></l><r>luvvadit<s n="vblex"/></r></p></e>
      <e><p><l>eadjit<s n="vblex"/><s n="tv"/></l><r>iedjet<s n="vblex"/></r></p></e>
@@ -7676,6 +7681,7 @@
      <e><p><l>fuoikkahit<s n="vblex"/><s n="tv"/></l><r>fuojkkat<s n="vblex"/></r></p></e>
      <e><p><l>fuoikut<s n="vblex"/><s n="tv"/></l><r>fuojkkat<s n="vblex"/></r></p></e>
      <e><p><l>fuolahit<s n="vblex"/><s n="tv"/></l><r>huksat<s n="vblex"/></r></p></e>
+     <e><p><l>fuolastuvvat<s n="vblex"/><s n="tv"/></l><r>måråstit<s n="vblex"/></r></p></e>
      <e><p><l>furageret<s n="vblex"/><s n="tv"/></l><r>furagerit<s n="vblex"/></r></p></e>
      <e><p><l>furasjeret<s n="vblex"/><s n="tv"/></l><r>furasjierit<s n="vblex"/></r></p></e>
      <e><p><l>furašeret<s n="vblex"/><s n="tv"/></l><r>furasjierit<s n="vblex"/></r></p></e>
@@ -7831,6 +7837,7 @@
      <e><p><l>gillet<s n="vblex"/><s n="iv"/></l><r>vissjat<s n="vblex"/></r></p></e>
      <e><p><l>gilljut<s n="vblex"/><s n="tv"/></l><r>gilljot<s n="vblex"/></r></p></e>
      <e><p><l>gillásit<s n="vblex"/><s n="iv"/></l><r>gillat<s n="vblex"/></r></p></e>
+     <e><p><l>gilvvohallat<s n="vblex"/><s n="iv"/></l><r>gilpustallat<s n="vblex"/></r></p></e>
      <e><p><l>gilvit<s n="vblex"/><s n="tv"/></l><r>gilvvet<s n="vblex"/></r></p></e>
      <e><p><l>gimahit<s n="vblex"/><s n="tv"/></l><r>gibmat<s n="vblex"/></r></p></e>
      <e><p><l>ginccihit<s n="vblex"/><s n="iv"/></l><r>ginntsurit<s n="vblex"/></r></p></e>
@@ -49931,6 +49938,7 @@
      <e><p><l>Tanganjikajávri<s n="np"/></l><r>Tanganjikajávri<s n="np"/></r></p></e>
      <e><p><l>Tasmanmearra<s n="np"/></l><r>Tasmanmerra<s n="np"/></r></p></e>
      <e><p><l>Telemárku<s n="np"/></l><r>Telemárku<s n="np"/></r></p></e>
+     <e><p><l>Telemarksforskning<s n="np"/></l><r>Telemarksforskning<s n="np"/></r></p></e>
      <e><p><l>Teorifágagárdin<s n="np"/></l><r>Teorifágagárdin<s n="np"/></r></p></e>
      <e><p><l>Teorifágaviessu<s n="np"/></l><r>Teorifágagoahte<s n="np"/></r></p></e>
      <e><p><l>Thaieana<s n="np"/></l><r>Thaieana<s n="np"/></r></p></e>
