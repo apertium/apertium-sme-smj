@@ -8,8 +8,7 @@ Number of 1-word edit operations needed : 57
 Percent error rate : 24.78%
 
 Evaluating using the perl command:
-perl ~/apertium/trunk/apertium-eval-translator/apertium-eval-translator-line.pl -r smn_mt.txt -t MTeval_IM.txt 
-
+perl ~/apertium/trunk/apertium-eval-translator/apertium-eval-translator-line.pl -r texts/TextB_smj_mt.txt -t texts/TextB_smj_testeval.txt >> results.txt
 
 Statistics about input files
 -------------------------------------------------------
