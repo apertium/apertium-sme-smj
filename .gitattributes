@@ -475,6 +475,9 @@ texts/SP-07-2012_sme.txt -text
 texts/brosjyre_foresatte_np08_sme.txt -text
 texts/brosjyre_foresatte_np08_smj.txt -text
 texts/eval/2016/README.txt -text
+texts/eval/2016/list/TextB_smj_mt.list -text
+texts/eval/2016/list/TextB_smj_testeval.list -text
+texts/eval/2016/list/diff_mt_testeval -text
 texts/eval/2016/results.txt -text
 texts/eval/2016/texts/TextA_nob.txt -text
 texts/eval/2016/texts/TextB_nob.txt -text
