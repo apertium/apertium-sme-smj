@@ -1,0 +1,13 @@
+
+Evaluating using the webpage:
+http://xixona.dlsi.ua.es/~fran/eval/
+
+testeval:
+Number of words in first file:  230
+Number of 1-word edit operations needed : 57
+Percent error rate : 24.78%
+
+Evaluating using the perl command:
+perl ~/apertium/trunk/apertium-eval-translator/apertium-eval-translator-line.pl -r smn_mt.txt -t MTeval_IM.txt 
+
+
