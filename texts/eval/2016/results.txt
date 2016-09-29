@@ -11,3 +11,17 @@ Evaluating using the perl command:
 perl ~/apertium/trunk/apertium-eval-translator/apertium-eval-translator-line.pl -r smn_mt.txt -t MTeval_IM.txt 
 
 
+Statistics about input files
+-------------------------------------------------------
+Number of words in reference: 223
+Number of words in test: 218
+Number of unknown words (marked with a star) in test: 0
+Percentage of unknown words: 0,00 %
+
+Results when removing unknown-word marks (stars)
+-------------------------------------------------------
+Edit distance: 57
+Word error rate (WER): 25,56 %
+Number of position-independent correct words: 174
+Position-independent word error rate (PER): 21,97 %
+
