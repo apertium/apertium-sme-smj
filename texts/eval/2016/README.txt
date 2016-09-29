@@ -33,8 +33,8 @@ Error classification:
 
 The errors are listed in the list catalogue, created as follows:
 
-cat texts/TextB_smj_testeval.txt |preprocess > list/texts/smj_testeval.list
-cat texts/TextB_smj_mt.txt |preprocess > list/texts/smj_mt.list
+cat texts/TextB_smj_testeval.txt |preprocess > list/smj_testeval.list
+cat texts/TextB_smj_mt.txt |preprocess > list/smj_mt.list
 
 diff list/smj_mt.list list/smj_testeval.list |sed 's/^[1-9]/™/g;'|tr '\n' ' '|tr '™' '\n'|cut -d" " -f2- > wer_analysis.csv
 
