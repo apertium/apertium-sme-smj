@@ -482,6 +482,7 @@ texts/eval/2016/texts/TextA_nob.txt -text
 texts/eval/2016/texts/TextB_nob.txt -text
 texts/eval/2016/texts/TextB_smj_mt.txt -text
 texts/eval/2016/texts/TextB_smj_san.txt -text
+texts/eval/2016/wer_analysis.csv -text
 texts/meahccetuvra_sme.txt -text
 texts/num_sentences_sme.txt -text
 texts/pron2sentences_sme.txt -text
