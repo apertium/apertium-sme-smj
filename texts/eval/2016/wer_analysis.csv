@@ -2,45 +2,61 @@ Error classification
 
 Values for classification:
 1 = lexical selection
-2 = error in generation (wrong shape of wordform)
-3 = error in choice of form (wrong wordform selected)
+2 = error in generation (different shape of wordform)
+3 = error in choice of form (different wordform selected)
 4 = word order (word order changed, word deleted or added)
 5 = punctuation mark added or deleted.
+6 = word added/removed because of lexical selection
 
 Sandra:
 
 3 < Buore --- > Buorre 
-1 < stuovijdum < / 
-4 < dasi < lassen < ållo --- > duodden > vásedi > moadda 
+4 < stuovijdum < / 
+
+1 < dasi 
+6 < lassen  -> duodden
+1 < ållo --- > moadda 
+
 4 < vásedi 
-3/4 < lassán --- > l > lassánime 
-4 < guoradallama < vuosedi < maj --- > vuoset > guoradallam > majt 
-< tjadádam 
-> tjadádam 
+
+3 < lassán --- > lassánime 
+4 0 - l > 
+
+
+4 < guoradallama  vuoset
+4 < vuosedi guoradallam
+3 < maj --- > majt 
+
+4< tjadádam > tjadádam 
+
 2 < sámedikkeráde --- > Sámedikkeráde 
+
 1 < tsieggiduvvam --- > åttjuduvvam 
 2 < dan --- > dav 
+
 4 < Dat < vuoset --- > Vuoset > æládusåvddånibme > gæssu 
+
 4 < dáfo < li < gæssut < æládusåvddånibmáj --- > dáfojda 
 1 < rijkaoassesådjo --- > rijkaájggedáhpe 
-> binnum 
-< binnum 
+
+4 > binnum < binnum 
+
 1 < ájnnasit --- > sierraláhkáj 
 3 < æládusiellemin --- > æládusiellemis 
 < oadtjot 
 3 < buoreduvvat --- > buoredahtátjit 
-3 < stuora --- > stuor 
+2 < stuora --- > stuor 
 1 < nanna < , --- > gáktuj 
-4 < dárbahuvvi --- > li 
-> dárbulattja 
-1/4 < Vierttit < rahtjat --- > Vierttiji > vuorodit 
+
+4 < dárbahuvvi --- > li > dárbulattja 
+
+1 < Vierttit < rahtjat --- > Vierttiji > vuorodit 
 3 < barggosajij --- > barggosajijt 
 3 < la --- > le 
 4 < barggosajij < låhko --- > barggosadjelåhko 
 4 < farra < læhkám < ålles --- > vas > gitta 
 3 < lassánibme --- > lassánam 
-4 < miján < stuora < barggon < åttjudit --- > midjij > stuor > barggo > åttjudittjat 
-< nuorajda 
-1/4 < majna < la --- > nuorajda > gejna > li 
+4 < miján < stuora < barggon < åttjudit --- > midjij > stuor > barggo > åttjudittjat  
+1/4 < nuorajda < majna < la --- > nuorajda > gejna > li 
 < vuododittjat 
 1< æládusájt --- > æládusásadibmá 
