@@ -480,6 +480,7 @@ texts/eval/2016/list/smj_san.list -text
 texts/eval/2016/results.txt -text
 texts/eval/2016/texts/TextA_nob.txt -text
 texts/eval/2016/texts/TextB_nob.txt -text
+texts/eval/2016/texts/TextB_sme.txt -text
 texts/eval/2016/texts/TextB_smj_mt.txt -text
 texts/eval/2016/texts/TextB_smj_san.txt -text
 texts/eval/2016/wer_analysis.csv -text
@@ -514,7 +515,6 @@ texts/stp-one_sentence_pr_line/SP-18-2012_sme.txt -text
 texts/stp-one_sentence_pr_line/SP-51-2015_sme.txt -text
 texts/stp-one_sentence_pr_line/SP-52-2015_sme.txt -text
 texts/tarina.sme.txt -text
-texts/textB_sme.txt -text
 tmx_data/Olli_kronikk_sme2smj.tmx -text
 tmx_data/brosjyre_foresatte_np08_sme2smj.tmx -text
 tmx_data/jorgaleddjiide_sme2smj.tmx -text
