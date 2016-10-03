@@ -53,4 +53,4 @@ Original files
 ==============
 
 The original files are in
-techdoc/mt/smesmj/....somewhere
+techdoc/mt/smesmj/evaluierim/1-2016
