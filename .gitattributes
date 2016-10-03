@@ -479,8 +479,12 @@ texts/eval/2016/list/smj_mt.list -text
 texts/eval/2016/list/smj_san.list -text
 texts/eval/2016/results.txt -text
 texts/eval/2016/texts/TextA_nob.txt -text
+texts/eval/2016/texts/TextA_smj_eval1.txt -text
+texts/eval/2016/texts/TextA_smj_eval2.txt -text
 texts/eval/2016/texts/TextB_nob.txt -text
 texts/eval/2016/texts/TextB_sme.txt -text
+texts/eval/2016/texts/TextB_smj_eval1.txt -text
+texts/eval/2016/texts/TextB_smj_eval2.txt -text
 texts/eval/2016/texts/TextB_smj_mt.txt -text
 texts/eval/2016/texts/TextB_smj_san.txt -text
 texts/eval/2016/wer_analysis.csv -text
