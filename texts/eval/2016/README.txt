@@ -37,7 +37,7 @@ The errors are listed in the list catalogue, created as follows:
 cat texts/TextB_smj_san.txt |preprocess > list/smj_san.list
 cat texts/TextB_smj_mt.txt |preprocess > list/smj_mt.list
 
-diff list/smj_mt.list list/smj_san.list |sed 's/^[1-9]/™/g;'|tr '\n' ' '|tr '™' '\n'|cut -d" " -f2- > wer_analysis.csv
+diff list/smj_mt.list list/smj_san.list |sed 's/^[1-9]/™/g;'|tr '\n' ' '|tr '™' '\n'|cut -d" " -f2- >> wer_analysis.csv
 
 The resulting list is put in wer_analysis.ods for classification
 
