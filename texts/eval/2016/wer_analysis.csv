@@ -52,61 +52,111 @@ Eval1:
 
 < Buore --- > Vuogas 
 < stuovijdum < / 
-< ållo < merrasáme --- > enap 
-> merrasámij > dáfojn 
+
+< ållo < merrasáme --- > enap > merrasámij > dáfojn 
+ållo enap
+merrasáme merrasámij
+dáfojn
+
 < ulmusjlåhko < lassán --- > lassánimev > ulmusjlågon 
+< ulmusjlåhko > ulmusjlågon 
+< lassán --- > lassánimev 
+
 < Dav < guoradallama < vuosedi < maj --- > Boados > boahtá > åvddån > guoradallamin > majt 
+< Dav Boados
+< guoradallama guoradallamin
+< vuosedi boahtá
+åvddån
+< maj --- > majt 
+
+
 < sámedikkeráde --- > Sámedikkeráde 
 < huj --- > ihkeva 
-< dájna 
+< dájna - 0
 < divna --- > gájkka 
 < gæhttjap --- > guoradallap 
 < buorre --- > positijvva 
-< sáme < dáfoj 
-> sáme > dáfojn 
-> Jagen 
-< dan 
-< positijvva --- > positijvalattjat > åvddånam 
+< sáme < dáfoj > sáme > dáfojn 
+> 0- Jagen
+< dan - 0
+
+< positijvva --- > positijvalattjat 
+< 0 > åvddånam
+
 < Dat < vuoset --- > Vuoset 
-< gæssut 
-> ájnnasa 
+< Dat - 0
+< vuoset --- > Vuoset 
+
+< gæssut > ájnnasa 
 < rijkaoassesådjo --- > rijkkaájggedáhpe 
-< vájkut 
-> vájkkut 
+< vájkut > vájkkut 
 > ¶ 
 < måråstam --- > mårålasj 
-> jagen 
-< Muotka 
-> Muotka 
-< ájnnasit < måråstam --- > sierraláhkáj > mårålattja 
+> 0 - jagen 
+< Muotka > Muotka 
+
+< ájnnasit < måråstam --- > sierraláhkáj > mårålattja
+< ájnnasit sierraláhkáj
+< måråstam --- > mårålattja
+ 
 < oasse --- > oase 
+
 < Danen --- > Dát > le > ájggedáhpe > ålles > rijkan > , > valla > gå > sáme > dáfojn > le > alep > prosænnta > guollára > , > bånndura > ja > ællobargge > le > vuollánimen > stuoráp > vájkkudus > sáme > dáfojda > . 
+< Danen --- > Dát > le > ájggedáhpe > ålles > rijkan > , > valla > gå > sáme > dáfojn > le > alep > prosænnta > guollára > , > bånndura > ja > ællobargge > le > vuollánimen > stuoráp > vájkkudus > sáme > dáfojda > . 
+
+
 < gæhttjal < oadtjot --- > dajnas > barggá 
 < buoreduvvat --- > báredimijn 
 < valla --- > huoman 
+
 < dárbaha < iehpedit --- > le > guoktáladdam 
+< dárbaha > le
+< iehpedit --- > guoktáladdam 
+
 < ållo --- > måhtijn 
-< daj 
+< daj - 0
 < nanna < , --- > birra 
-< Muotka 
-> Muotka 
-< Vierttit < rahtjat --- > Vuorudit 
+< Muotka > Muotka 
+
+< Vierttit < rahtjat --- > Vuorudit
+< Vierttit - 0
+< rahtjat --- > Vuorudit
+ 
 < barggosajij --- > barggosajijt 
-> ¶ > Barggosaje > priváhta > æládusiellemin > sáme > dáfojn > li > jagen 
-< la < priváhta < æládusiellema < barggosajij < låhko 
+
+> ¶ > Barggosaje > priváhta > æládusiellemin > sáme > dáfojn > li > jagen < la < priváhta < æládusiellema < barggosajij < låhko 
+
 < sáme < dáfojn 
-< nuorajda 
-< majna < la < oahppo --- > nuorajda > oahpujn 
+< nuorajda < majna < la < oahppo --- > nuorajda > oahpujn 
+< nuorajda  nuorajda
+< majna - 0
+< la - 0
+< oahppo ---  > oahpujn 
+
 < måvtåstuhttep --- > måvtåstuhttet 
 < rahtjamav --- > vuorodibmáj 
 < vijddásap < dahkamijn --- > vijddásapgárvedibme 
+< vijddásap - 0
+< dahkamijn --- > vijddásapgárvedibme 
 
 Eval2:
 
-
 < åvddånimvejulasjvuoda < sáme < dáfojn < . --- > åvddånahttemvejulasjvuoda > sámijguovlojn 
-< vidán < jagen < la --- > vidá > jage > le 
+< åvddånimvejulasjvuoda - åvddånahttemvejulasjvuoda
+< sáme  - 0
+< dáfojn sámijguovlojn
+< . --- > 0 
+
+< vidán < jagen < la --- > vidá > jage > le
+< vidán > vidá
+< jagen > jage
+< la --- > le  
+
+
 < sáme < dáfojn --- > sámijguovlojn 
+< sáme - 0
+< dáfojn --- > sámijguovlojn 
+
 < / < stuovijduvvam < , < dasi < lassen < ållo < merrasáme < suohkana --- > . > Ja > vil > duodden 
 > suohkana > merrasámijguovlojn 
 < guoradallama 
