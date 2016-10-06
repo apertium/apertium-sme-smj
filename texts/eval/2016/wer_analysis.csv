@@ -157,10 +157,19 @@ Eval2:
 < sáme - 0
 < dáfojn --- > sámijguovlojn 
 
-< / < stuovijduvvam < , < dasi < lassen < ållo < merrasáme < suohkana --- > . > Ja > vil > duodden 
-> suohkana > merrasámijguovlojn 
-< guoradallama 
-< maj --- > guoradallama > majt 
+< / < stuovijduvvam 
+< , < dasi < lassen < ållo < merrasáme < suohkana --- > . > Ja > vil > duodden > suohkana > merrasámijguovlojn 
+< , > .
+< dasi > Ja 
+< lassen > duodden
+> 0 -vil
+< ållo -0
+< merrasáme - merrasámijguovlojn 
+< suohkana --- > > suohkana
+
+
+< guoradallama - guoradallama
+< maj --- > majt 
 < sámedikkeráde --- > Sámedikkeráde 
 < åvddånimijn --- > åvddånahttemijn 
 > aktan 
@@ -171,14 +180,26 @@ Eval2:
 > ásaduvvam 
 < dan 
 < vuordeduvvam --- > vuordedahtte 
+
 < la < positijvva --- > le > vuogas 
+< la > le 
+< positijvva --- > vuogas 
+
 < Telemarksforskninga < rappårttå --- > Rappårttå > majt > Telemarksforskning 
+< Telemarksforskninga - Rappårttå
+ 0 - > majt 
+< rappårttå --- > Telemarksforskning 
+
 < la --- > , > le 
 < vájkudit --- > vájkkudit 
 < sáme < dáfojn --- > sámijguovlojn 
 < sáme < dáfo --- > sámijguovlo 
 < gæssut --- > miellagiddisa 
 < Negatijva < rijkaoassesådjo --- > Negatijvvalasj > ájggedáhpe > rijkan 
+< Negatijva - Negatijvvalasj
+< rijkaoassesådjo --- >  ájggedáhpe
+0 > rijkan
+
 < vájkut < sáme < dáfojda < . --- > vájkkut > sámijgiovlojn > ¶ 
 < lav < måråstam --- > måråstav 
 > guoradallama > vuosedi 
@@ -186,8 +207,7 @@ Eval2:
 < guoradallama < milta 
 < 17 < prosentajn --- > 17 % > binnum 
 < binnum 
-< Muotka 
-> Muotka 
+< Muotka > Muotka 
 < Mij < lip < ájnnasit < måråstam --- > Sierraláhkáj > måråstip 
 > oase > sámijguovlojn > . > Dát > ájggedáhpe > le > ålles > rijkan > , > valla > gå > sámijguovlojn > le > stuoráp 
 < sáme < dáfoj < æládusiellemin --- > guollárijs > , > bånndurijs > ja > ællobarggijs > de > sjaddi > vájkkudusá > sámijguovlojn > stuorábu 
