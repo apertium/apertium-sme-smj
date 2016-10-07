@@ -1465,7 +1465,7 @@
       </when></choose>
     </def-macro>
 
-    <def-macro n="general-macro-4Param" npar="3" c="Use for all chunks of four pattern-items
+    <def-macro n="general-macro-4Param" npar="4" c="Use for all chunks of four pattern-items
                                                     param1: first pattern-item; used to set caseFirstword
                                                     param2: second pattern-item
                                                     param3: third pattern-item
