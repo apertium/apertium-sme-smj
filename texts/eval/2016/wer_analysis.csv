@@ -10,75 +10,68 @@ Values for classification:
 
 Eval1:
 
-
-        Buore	 |	Vuogas
-        stuovijdum	 <
-        /	 <
-        ållo	 |	enap
-        merrasáme	 <
-        	 >	merrasámij
-        	 >	dáfojn
-        ulmusjlåhko	 |	lassánimev
-        lassán	 |	ulmusjlågon
-        Dav	 |	Boados
-        guoradallama	 |	boahtá
-        vuosedi	 |	åvddån
-        maj	 |	guoradallamin
-        	 >	majt
-        sámedikkeráde	 |	Sámedikkeráde
-        huj	 |	ihkeva
-        dájna	 <
-        divna	 |	gájkka
-        gæhttjap	 |	guoradallap
-        buorre	 |	positijvva
-        sáme	 <
-        dáfoj	 <
-        	 >	sáme
-        	 >	dáfojn
-        	 >	Jagen
-        dan	 <
-        positijvva	 |	positijvalattjat
-        	 >	åvddånam
-        Dat	 |	Vuoset
-        vuoset	 <
-        gæssut	 <
-        	 >	ájnnasa
-        rijkaoassesådjo	 |	rijkkaájggedáhpe
-        vájkut	 <
-        	 >	vájkkut
-        	 >	¶
-        måråstam	 |	mårålasj
-        	 >	jagen
-        Muotka	 <
-        	 >	Muotka
-        ájnnasit	 |	sierraláhkáj
-        måråstam	 |	mårålattja
-        oasse	 |	oase
-        Danen	 |	Dát
-        	 >	le
+1        Buore	 |	Vuogas
+1        stuovijdum	 <
+-        /	 <
+1        ållo	 |	enap
+3        merrasáme	 <
+-        	 >	merrasámij
+6        	 >	dáfojn
+3        ulmusjlåhko	 |	lassánimev
+3        lassán	 |	ulmusjlågon
+6        -
+1        Dav	 |	Boados
+4        guoradallama <	
+1        vuosedi	  |	boahtá
+6        >	åvddån
+3        maj	|	majt 
+-        >	guoradallamin	 
+2        sámedikkeráde	 |	Sámedikkeráde
+1        huj	 |	ihkeva
+4        dájna	 <
+1        divna	 |	gájkka
+1        gæhttjap	 |	guoradallap
+1        buorre	 |	positijvva
+4        sáme	 <
+4        dáfoj	 <
+-        	 >	sáme
+3        	 >	dáfojn
+4        	 >	Jagen
+4        dan	 <
+1        positijvva	 |	positijvalattjat
+6        	 >	åvddånam
+4        Dat	 |	Vuoset
+1        vuoset	 <
+1        gæssut	 <
+-        	 >	ájnnasa
+1        rijkaoassesådjo	 |	rijkkaájggedáhpe
+4        vájkut	 <
+2?        	 >	vájkkut
+1        måråstam	 |	mårålasj
+4        	 >	jagen
+4        Muotka	 <
+-        	 >	Muotka
+1        ájnnasit	 |	sierraláhkáj
+1        måråstam	 |	mårålattja
+3        oasse	 |	oase
+        la	 |	le
         	 >	ájggedáhpe
-        	 >	ålles
-        	 >	rijkan
-        	 >	,
-        	 >	valla
-        	 >	gå
-        	 >	sáme
-        	 >	dáfojn
-        	 >	le
-        	 >	alep
-        	 >	prosænnta
-        	 >	guollára
-        	 >	,
-        	 >	bånndura
-        	 >	ja
-        	 >	ællobargge
-        	 >	le
-        	 >	vuollánimen
-        	 >	stuoráp
-        	 >	vájkkudus
-        	 >	sáme
-        	 >	dáfojda
-        	 >	.
+        rijka	 |	rijkan
+        sådjo	 <
+        danen	 <
+        la	 |	le
+        stuorep	 |	alep
+        prosænntaoasse	 |	prosænnta
+        guollijiddje	 |	guollára
+        ednamdoalle	 |	bånndura
+        ælloniehke	 |	ællobargge
+        ,	 |	le
+        de	 |	vuollánimen
+        la	 |	stuoráp
+        binnomin	 |	vájkkudus
+        stuorep	 <
+        båhtusa	 <
+        Danen	 <
         gæhttjal	 |	dajnas
         oadtjot	 |	barggá
         buoreduvvat	 |	báredimijn
@@ -94,7 +87,6 @@ Eval1:
         Vierttit	 |	Vuorudit
         rahtjat	 <
         barggosajij	 |	barggosajijt
-        	 >	¶
         	 >	Barggosaje
         	 >	priváhta
         	 >	æládusiellemin
@@ -117,6 +109,7 @@ Eval1:
         rahtjamav	 |	vuorodibmáj
         vijddásap	 |	vijddásapgárvedibme
         dahkamijn	 <
+
 
 Eval2:
         
@@ -171,7 +164,7 @@ Eval2:
         	 >	rijkan
         vájkut	 |	vájkkut
         sáme	 |	sámijgiovlojn
-        dáfojda	 |	¶
+        dáfojda	 <
         .	 <
         lav	 |	måråstav
         måråstam	 <
@@ -189,30 +182,30 @@ Eval2:
         lip	 |	måråstip
         ájnnasit	 <
         måråstam	 <
-        	 >	oase
-        	 >	sámijguovlojn
-        	 >	.
-        	 >	Dát
-        	 >	ájggedáhpe
+        oasse	 |	oase
+        sáme	 |	sámijguovlojn
+        dáfoj	 <
+        æládusiellemin	 <
+        la	 |	ájggedáhpe
         	 >	le
-        	 >	ålles
-        	 >	rijkan
-        	 >	,
-        	 >	valla
-        	 >	gå
-        	 >	sámijguovlojn
-        	 >	le
-        	 >	stuoráp
-        sáme	 |	guollárijs
-        dáfoj	 |	,
-        æládusiellemin	 |	bånndurijs
-        	 >	ja
-        	 >	ællobarggijs
-        	 >	de
-        	 >	sjaddi
-        	 >	vájkkudusá
-        	 >	sámijguovlojn
-        	 >	stuorábu
+        rijka	 |	rijkan
+        sådjo	 <
+        danen	 <
+        sáme	 |	sámijguovlojn
+        dáfojn	 |	le
+        la	 |	stuoráp
+        stuorep	 |	oasse
+        prosænntaoasse	 |	guollárijs
+        guollijiddje	 <
+        ednamdoalle	 |	bånndurijs
+        ælloniehke	 |	ællobarggijs
+        ,	 <
+        la	 |	sjaddi
+        binnomin	 |	vájkkudusá
+        stuorep	 |	sámijguovlojn
+        båhtusa	 |	stuorábu
+        sáme	 <
+        dáfojda	 <
         	 >	de
         oadtjot	 |	báredit
         buoreduvvat	 <
@@ -229,7 +222,7 @@ Eval2:
         Muotka	 <
         	 >	Muotka
         barggosajij	 |	barggosajijt
-        .	 |	¶
+        .	 <
         la	 |	li
         æládusiellema	 |	æládus
         barggosajij	 |	barggosaje
@@ -264,10 +257,9 @@ Eval2:
         ådådahkuj	 <
         ja	 <
 
-
 Sandra:
 
-Buore	 |	Buorre
+        Buore	 |	Buorre
         stuovijdum	 <
         /	 <
         dasi	 |	duodden
@@ -292,10 +284,39 @@ Buore	 |	Buorre
         gæssut	 <
         æládusåvddånibmáj	 <
         rijkaoassesådjo	 |	rijkaájggedáhpe
+        ¶	 <
         	 >	binnum
         binnum	 <
         ájnnasit	 |	sierraláhkáj
         æládusiellemin	 |	æládusiellemis
+        .	 <
+        Dát	 <
+        la	 <
+        ålles	 <
+        rijka	 <
+        sådjo	 <
+        ,	 <
+        valla	 <
+        danen	 <
+        gå	 <
+        sáme	 <
+        dáfojn	 <
+        la	 <
+        stuorep	 <
+        prosænntaoasse	 <
+        guollijiddje	 <
+        ,	 <
+        ednamdoalle	 <
+        ja	 <
+        ælloniehke	 <
+        ,	 <
+        de	 <
+        la	 <
+        binnomin	 <
+        stuorep	 <
+        båhtusa	 <
+        sáme	 <
+        dáfojda	 <
         oadtjot	 <
         buoreduvvat	 |	buoredahtátjit
         stuora	 |	stuor
@@ -306,6 +327,7 @@ Buore	 |	Buorre
         Vierttit	 |	Vierttiji
         rahtjat	 |	vuorodit
         barggosajij	 |	barggosajijt
+        ¶	 <
         la	 |	le
         barggosajij	 |	barggosadjelåhko
         låhko	 <
