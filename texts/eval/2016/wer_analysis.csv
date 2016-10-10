@@ -54,61 +54,61 @@ Eval1:
 1        ájnnasit	 |	sierraláhkáj
 1        måråstam	 |	mårålattja
 3        oasse	 |	oase
-        la	 |	le
-        	 >	ájggedáhpe
-        rijka	 |	rijkan
-        sådjo	 <
-        danen	 <
-        la	 |	le
-        stuorep	 |	alep
-        prosænntaoasse	 |	prosænnta
-        guollijiddje	 |	guollára
-        ednamdoalle	 |	bånndura
-        ælloniehke	 |	ællobargge
-        ,	 |	le
-        de	 |	vuollánimen
-        la	 |	stuoráp
-        binnomin	 |	vájkkudus
-        stuorep	 <
-        båhtusa	 <
-        Danen	 <
-        gæhttjal	 |	dajnas
-        oadtjot	 |	barggá
-        buoreduvvat	 |	báredimijn
-        valla	 |	huoman
-        dárbaha	 |	le
-        iehpedit	 |	guoktáladdam
-        ållo	 |	måhtijn
-        daj	 <
-        nanna	 |	birra
-        ,	 <
-        Muotka	 <
-        	 >	Muotka
-        Vierttit	 |	Vuorudit
-        rahtjat	 <
-        barggosajij	 |	barggosajijt
-        	 >	Barggosaje
-        	 >	priváhta
-        	 >	æládusiellemin
-        	 >	sáme
-        	 >	dáfojn
-        	 >	li
-        	 >	jagen
-        la	 <
-        priváhta	 <
-        æládusiellema	 <
-        barggosajij	 <
-        låhko	 <
-        sáme	 <
-        dáfojn	 <
-        nuorajda	 <
-        majna	 |	nuorajda
-        la	 |	oahpujn
-        oahppo	 <
-        måvtåstuhttep	 |	måvtåstuhttet
-        rahtjamav	 |	vuorodibmáj
-        vijddásap	 |	vijddásapgárvedibme
-        dahkamijn	 <
+2        la	 |	le
+1        	 >	ájggedáhpe
+3        rijka	 |	rijkan
+-        sådjo	 <
+4        danen	 <
+2        la	 |	le
+1        stuorep	 |	alep
+1        prosænntaoasse	 |	prosænnta
+1        guollijiddje	 |	guollára
+1        ednamdoalle	 |	bånndura
+1        ælloniehke	 |	ællobargge
+5        ,	 
+2        la |	le
+4        de	 
+1        binnomin |	vuollánimen
+1        stuorep  |	stuoráp
+1        båhtusa	 |	vájkkudus
+1        Danen	 |	dajnas
+1        gæhttjal |	barggá	 
+4        oadtjot	< 
+1        buoreduvvat	 |	báredimijn
+1        valla	 |	huoman
+1        dárbaha	 |	le
+1        iehpedit	 |	guoktáladdam
+1        ållo	 |	måhtijn
+4        daj	 <
+1        nanna	 |	birra
+5        ,	 <
+4        Muotka	 <
+-        	 >	Muotka
+1        Vierttit	 |	Vuorudit
+6        rahtjat	 <
+3        barggosajij	 |	barggosajijt
+4        	 >	Barggosaje
+4        	 >	priváhta
+4        	 >	æládusiellemin
+4        	 >	sáme
+4        	 >	dáfojn
+4        	 >	li
+4        	 >	jagen
+-        la	 <
+-        priváhta	 <
+3        æládusiellema	 <
+3        barggosajij	 <
+4        låhko	 <
+-        sáme	 <
+-        dáfojn	 <
+4        nuorajda |	nuorajda
+4        majna	 <
+4        la	< 
+3        oahppo	 |	oahpujn
+3        måvtåstuhttep	 |	måvtåstuhttet
+1        rahtjamav	 |	vuorodibmáj
+1        vijddásap	 |	vijddásapgárvedibme
+6        dahkamijn	 <
 
 
 Eval2:
