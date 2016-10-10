@@ -53,16 +53,16 @@ Eval1:
 < Buore --- > Vuogas 
 < stuovijdum < / 
 
-< ållo < merrasáme --- > enap > merrasámij > dáfojn 
+#< ållo < merrasáme --- > enap > merrasámij > dáfojn 
 ållo enap
 merrasáme merrasámij
 dáfojn
 
-< ulmusjlåhko < lassán --- > lassánimev > ulmusjlågon 
+#< ulmusjlåhko < lassán --- > lassánimev > ulmusjlågon 
 < ulmusjlåhko > ulmusjlågon 
 < lassán --- > lassánimev 
 
-< Dav < guoradallama < vuosedi < maj --- > Boados > boahtá > åvddån > guoradallamin > majt 
+#< Dav < guoradallama < vuosedi < maj --- > Boados > boahtá > åvddån > guoradallamin > majt 
 < Dav Boados
 < guoradallama guoradallamin
 < vuosedi boahtá
@@ -109,7 +109,7 @@ dáfojn
 < buoreduvvat --- > báredimijn 
 < valla --- > huoman 
 
-< dárbaha < iehpedit --- > le > guoktáladdam 
+#< dárbaha < iehpedit --- > le > guoktáladdam 
 < dárbaha > le
 < iehpedit --- > guoktáladdam 
 
@@ -118,7 +118,7 @@ dáfojn
 < nanna < , --- > birra 
 < Muotka > Muotka 
 
-< Vierttit < rahtjat --- > Vuorudit
+#< Vierttit < rahtjat --- > Vuorudit
 < Vierttit - 0
 < rahtjat --- > Vuorudit
  
@@ -127,7 +127,8 @@ dáfojn
 > ¶ > Barggosaje > priváhta > æládusiellemin > sáme > dáfojn > li > jagen < la < priváhta < æládusiellema < barggosajij < låhko 
 
 < sáme < dáfojn 
-< nuorajda < majna < la < oahppo --- > nuorajda > oahpujn 
+
+#< nuorajda < majna < la < oahppo --- > nuorajda > oahpujn 
 < nuorajda  nuorajda
 < majna - 0
 < la - 0
@@ -141,24 +142,25 @@ dáfojn
 
 Eval2:
 
-< åvddånimvejulasjvuoda < sáme < dáfojn < . --- > åvddånahttemvejulasjvuoda > sámijguovlojn 
+#< åvddånimvejulasjvuoda < sáme < dáfojn < . --- > åvddånahttemvejulasjvuoda > sámijguovlojn 
 < åvddånimvejulasjvuoda - åvddånahttemvejulasjvuoda
 < sáme  - 0
 < dáfojn sámijguovlojn
 < . --- > 0 
 
-< vidán < jagen < la --- > vidá > jage > le
+#< vidán < jagen < la --- > vidá > jage > le
 < vidán > vidá
 < jagen > jage
 < la --- > le  
 
 
-< sáme < dáfojn --- > sámijguovlojn 
+#< sáme < dáfojn --- > sámijguovlojn 
 < sáme - 0
 < dáfojn --- > sámijguovlojn 
 
 < / < stuovijduvvam 
-< , < dasi < lassen < ållo < merrasáme < suohkana --- > . > Ja > vil > duodden > suohkana > merrasámijguovlojn 
+
+#< , < dasi < lassen < ållo < merrasáme < suohkana --- > . > Ja > vil > duodden > suohkana > merrasámijguovlojn 
 < , > .
 < dasi > Ja 
 < lassen > duodden
@@ -181,11 +183,11 @@ Eval2:
 < dan 
 < vuordeduvvam --- > vuordedahtte 
 
-< la < positijvva --- > le > vuogas 
+#< la < positijvva --- > le > vuogas 
 < la > le 
 < positijvva --- > vuogas 
 
-< Telemarksforskninga < rappårttå --- > Rappårttå > majt > Telemarksforskning 
+#< Telemarksforskninga < rappårttå --- > Rappårttå > majt > Telemarksforskning 
 < Telemarksforskninga - Rappårttå
  0 - > majt 
 < rappårttå --- > Telemarksforskning 
@@ -195,20 +197,37 @@ Eval2:
 < sáme < dáfojn --- > sámijguovlojn 
 < sáme < dáfo --- > sámijguovlo 
 < gæssut --- > miellagiddisa 
-< Negatijva < rijkaoassesådjo --- > Negatijvvalasj > ájggedáhpe > rijkan 
+
+#< Negatijva < rijkaoassesådjo --- > Negatijvvalasj > ájggedáhpe > rijkan 
 < Negatijva - Negatijvvalasj
 < rijkaoassesådjo --- >  ájggedáhpe
 0 > rijkan
 
-< vájkut < sáme < dáfojda < . --- > vájkkut > sámijgiovlojn > ¶ 
-< lav < måråstam --- > måråstav 
-> guoradallama > vuosedi 
+#< vájkut < sáme < dáfojda < . --- > vájkkut > sámijgiovlojn > ¶ 
+< vájkut > vájkkut
+< sáme > sámijgiovlojn
+< dáfojda - 0
+< .   > ¶ 
+
+< lav - 0
+< måråstam --- > måråstav 
+
 < teknihkalasj --- > teknihkkalasj 
-< guoradallama < milta 
-< 17 < prosentajn --- > 17 % > binnum 
-< binnum 
+< guoradallama > guoradallama
+< milta  > vuosedi 
+
+< 17 > 17 %
+0 < prosentajn ---   
+< binnum > binnum
+
 < Muotka > Muotka 
-< Mij < lip < ájnnasit < måråstam --- > Sierraláhkáj > måråstip 
+
+#< Mij < lip < ájnnasit < måråstam --- > Sierraláhkáj > måråstip 
+< Mij - 0
+< lip - 0
+< ájnnasit Sierraláhkáj
+< måråstam --- >  måråstip 
+
 > oase > sámijguovlojn > . > Dát > ájggedáhpe > le > ålles > rijkan > , > valla > gå > sámijguovlojn > le > stuoráp 
 < sáme < dáfoj < æládusiellemin --- > guollárijs > , > bånndurijs > ja > ællobarggijs > de > sjaddi > vájkkudusá > sámijguovlojn > stuorábu 
 > de 
