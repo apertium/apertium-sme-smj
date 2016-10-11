@@ -14,39 +14,36 @@ Eval1:
 1        stuovijdum	 <
 -        /	 <
 1        ållo	 |	enap
-3        merrasáme	 <
--        	 >	merrasámij
-6        	 >	dáfojn
-3        ulmusjlåhko	 |	lassánimev
-3        lassán	 |	ulmusjlågon
-6        -
+4        merrasáme	 <
+-        	 >	merrasámij # kasus
+4        	 >	dáfojn
+4        ulmusjlåhko | ulmusjlågon	# kasus 
+1        lassán	 |	lassánimev # 3?	
 1        Dav	 |	Boados
-4        guoradallama <	
+4        guoradallama <
+-        >	guoradallamin		
 1        vuosedi	  |	boahtá
 6        >	åvddån
-3        maj	|	majt 
--        >	guoradallamin	 
+3        maj	|	majt  
 2        sámedikkeráde	 |	Sámedikkeráde
 1        huj	 |	ihkeva
 4        dájna	 <
 1        divna	 |	gájkka
 1        gæhttjap	 |	guoradallap
 1        buorre	 |	positijvva
-4        sáme	 <
-4        dáfoj	 <
--        	 >	sáme
-3        	 >	dáfojn
+4        æládusiellemin	 <
+-        	 >	æládusiellemin
+3        dáfoj	|	dáfojn
 4        	 >	Jagen
 4        dan	 <
 1        positijvva	 |	positijvalattjat
 6        	 >	åvddånam
-4        Dat	 |	Vuoset
-1        vuoset	 <
-1        gæssut	 <
--        	 >	ájnnasa
+4        Dat <	 
+2        vuoset	|	Vuoset 
+1        gæssut	|	ájnnasa
 1        rijkaoassesådjo	 |	rijkkaájggedáhpe
 4        vájkut	 <
-2?        	 >	vájkkut
+- (2)        	 >	vájkkut
 1        måråstam	 |	mårålasj
 4        	 >	jagen
 4        Muotka	 <
@@ -55,9 +52,8 @@ Eval1:
 1        måråstam	 |	mårålattja
 3        oasse	 |	oase
 2        la	 |	le
-1        	 >	ájggedáhpe
+1        sådjo	 |	ájggedáhpe # word order
 3        rijka	 |	rijkan
--        sådjo	 <
 4        danen	 <
 2        la	 |	le
 1        stuorep	 |	alep
@@ -71,13 +67,13 @@ Eval1:
 1        binnomin |	vuollánimen
 1        stuorep  |	stuoráp
 1        båhtusa	 |	vájkkudus
-1        Danen	 |	dajnas
+1        Danen	 |	dajnas # word order
 1        gæhttjal |	barggá	 
-4        oadtjot	< 
+6        oadtjot	< 
 1        buoreduvvat	 |	báredimijn
 1        valla	 |	huoman
 1        dárbaha	 |	le
-1        iehpedit	 |	guoktáladdam
+1        iehpedit	 |	guoktáladdam #hábme
 1        ållo	 |	måhtijn
 4        daj	 <
 1        nanna	 |	birra
@@ -87,23 +83,23 @@ Eval1:
 1        Vierttit	 |	Vuorudit
 6        rahtjat	 <
 3        barggosajij	 |	barggosajijt
-4        	 >	Barggosaje
-4        	 >	priváhta
-4        	 >	æládusiellemin
+4        	 >	Barggosaje (barggosajij)
+4        	 >	priváhta (priváhta)
+4        	 >	æládusiellemin (æládusiellema)
 4        	 >	sáme
 4        	 >	dáfojn
-4        	 >	li
-4        	 >	jagen
+4        	 >	li (la)
+1        	 >	jagen
 -        la	 <
 -        priváhta	 <
-3        æládusiellema	 <
-3        barggosajij	 <
-4        låhko	 <
+-        æládusiellema	 < # kasus
+-        barggosajij	 < # kasus
+-        låhko	 < # lexical selection med jagen?
 -        sáme	 <
 -        dáfojn	 <
-4        nuorajda |	nuorajda
-4        majna	 <
-4        la	< 
+4        hiebaduvvam |	hiebaduvvam
+4        majna	 < # pga word order
+4        la	< # pga word order
 3        oahppo	 |	oahpujn
 3        måvtåstuhttep	 |	måvtåstuhttet
 1        rahtjamav	 |	vuorodibmáj
