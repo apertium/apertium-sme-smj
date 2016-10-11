@@ -2,8 +2,8 @@ Error classification
 
 Values for classification:
 1 = lexical selection
-2 = error in generation (different shape of wordform)
-3 = error in choice of form (different wordform selected)
+2 = difference in generation (different shape of wordform,)
+3 = difference in choice of form (different wordform selected, dvs kasus)
 4 = word order (word order changed, word deleted or added)
 5 = punctuation mark added or deleted.
 6 = word added/removed because of lexical selection
@@ -113,149 +113,153 @@ Eval1:
 
 Eval2:
         
-        åvddånimvejulasjvuoda	 |	åvddånahttemvejulasjvuoda
-        sáme	 |	sámijguovlojn
-        dáfojn	 <
-        .	 <
-        vidán	 |	vidá
-        jagen	 |	jage
-        la	 |	le
-        sáme	 |	sámijguovlojn
-        dáfojn	 <
-        /	 |	.
-        stuovijduvvam	 |	Ja
-        ,	 |	vil
-        dasi	 |	duodden
-        lassen	 <
-        ållo	 <
-        merrasáme	 <
-        suohkana	 <
-        	 >	suohkana
-        	 >	merrasámijguovlojn
-        guoradallama	 <
-        maj	 |	guoradallama
-        	 >	majt
-        sámedikkeráde	 |	Sámedikkeráde
-        åvddånimijn	 |	åvddånahttemijn
-        	 >	aktan
-        åvddånibme	 |	åvddånahttem
-        sáme	 <
-        dáfoj	 <
-        	 >	sámijguovlojn
-        tsieggiduvvam	 <
-        	 >	ásaduvvam
-        dan	 <
-        vuordeduvvam	 |	vuordedahtte
-        la	 |	le
-        positijvva	 |	vuogas
-        Telemarksforskninga	 |	Rappårttå
-        rappårttå	 |	majt
-        	 >	Telemarksforskning
-        la	 |	,
-        	 >	le
-        vájkudit	 |	vájkkudit
-        sáme	 |	sámijguovlojn
-        dáfojn	 <
-        sáme	 |	sámijguovlo
-        dáfo	 <
-        gæssut	 |	miellagiddisa
-        Negatijva	 |	Negatijvvalasj
-        rijkaoassesådjo	 |	ájggedáhpe
-        	 >	rijkan
-        vájkut	 |	vájkkut
-        sáme	 |	sámijgiovlojn
-        dáfojda	 <
-        .	 <
-        lav	 |	måråstav
-        måråstam	 <
-        	 >	guoradallama
-        	 >	vuosedi
-        teknihkalasj	 |	teknihkkalasj
-        guoradallama	 <
-        milta	 <
-        17	 |	17 %
-        prosentajn	 |	binnum
-        binnum	 <
-        Muotka	 <
-        	 >	Muotka
-        Mij	 |	Sierraláhkáj
-        lip	 |	måråstip
-        ájnnasit	 <
-        måråstam	 <
-        oasse	 |	oase
-        sáme	 |	sámijguovlojn
-        dáfoj	 <
-        æládusiellemin	 <
-        la	 |	ájggedáhpe
-        	 >	le
-        rijka	 |	rijkan
-        sådjo	 <
-        danen	 <
-        sáme	 |	sámijguovlojn
-        dáfojn	 |	le
-        la	 |	stuoráp
-        stuorep	 |	oasse
-        prosænntaoasse	 |	guollárijs
-        guollijiddje	 <
-        ednamdoalle	 |	bånndurijs
-        ælloniehke	 |	ællobarggijs
-        ,	 <
-        la	 |	sjaddi
-        binnomin	 |	vájkkudusá
-        stuorep	 |	sámijguovlojn
-        båhtusa	 |	stuorábu
-        sáme	 <
-        dáfojda	 <
-        	 >	de
-        oadtjot	 |	báredit
-        buoreduvvat	 <
-        dárbaha	 |	galga
-        ållo	 |	ietjá
-        dæddo	 |	rahtjamus
-        ja	 <
-        gilpustallam	 <
-        daj	 <
-        ma	 |	majda
-        dárbahuvvi	 |	l
-        vuodoæládusájda	 |	darbbo
-        	 >	vuodoæládusájn
-        Muotka	 <
-        	 >	Muotka
-        barggosajij	 |	barggosajijt
-        .	 <
-        la	 |	li
-        æládusiellema	 |	æládus
-        barggosajij	 |	barggosaje
-        låhko	 |	sámijguovlojn
-        4	 |	nielje
-        prosentajn	 |	%
-        sáme	 <
-        dáfojn	 <
-        la	 |	le
-        læhkám	 |	lassánam
-        ålles	 <
-        lassánibme	 <
-        stuora	 |	stuorra
-        barggon	 |	barggo
-        	 >	hiebadum
-        hiebaduvvam	 |	gejn
-        majna	 <
-        måvtåstuhttep	 |	måvtåstuhttet
-        ådå	 |	ietjá
-        suorgijn	 |	æládussuorgijn
-        rahtjamav	 |	åvdedibme
-        kultuvrraæládusáj	 |	kultuvrraæládusájdi
-        	 >	dagu
-        	 >	mannoæládus
-        mannoæládusáj	 |	hábmedibme
-        designijn	 <
-        duojijn	 |	duodje
-        biebmujn	 |	biebbmo
-        dahkamijn	 |	gárvedibme
-        	 >	li
-        suorggen	 |	suorge
-        ådådahkuj	 <
-        ja	 <
+1        åvddånimvejulasjvuoda	 |	åvddånahttemvejulasjvuoda
+1        sáme	 |	sámijguovlojn
+6        dáfojn	 < # kasus
+5        .	 <
+3        vidán	 |	vidá
+3        jagen	 |	jage
+2        la	 |	le
+1        sáme	 |	sámijguovlojn # kasus
+6        dáfojn	 <
+-        /	 |	
+1        stuovijduvvam	 
+5        ,	 |	.
+4        		>	Ja
+1        dasi	 | vil
+1        lassen	 |	duodden
+6        ållo	 <
+1        merrasáme	 <
+4        vásedi	vásedi
+-        	 >	merrasámijguovlojn       	 
+4        vuosedij	 <
+-                 	 > vuosedij
+3        maj	 |	majt	
+2?        sámedikkeráde	 |	Sámedikkeráde
+1        åvddånimijn	 |	åvddånahttemijn
+4        	 >	aktan
+1        åvddånibme	 |	åvddånahttem
+6        sáme	 <
+1        dáfoj	 | sámijguovlojn # kasus
+6        sáme	 <
+1        dáfoj	 <
+-        	 >	sámijguovlojn # kasus
+1        tsieggiduvvam	 <
+4        	 >	ásaduvvam
+4        dan	 <
+1        vuordeduvvam	 |	vuordedahtte
+2        la	 |	le
+1        positijvva	 |	vuogas
+4        Telemarksforskninga	 |	Rappårttå
+4        	>	majt
+4        rappårttå	 |	Telemarksforskning
+5        	> ,
+2        la	 |	le	 
+2       vájkudit	 |	vájkkudit
+1        sáme	 |	sámijguovlojn
+6        dáfojn	 <
+1        sáme	 |	sámijguovlo
+6        dáfo	 <
+1        gæssut	 |	miellagiddisa
+1        Negatijva	 |	Negatijvvalasj
+1        rijkaoassesådjo	 |	ájggedáhpe
+6        	 >	rijkan
+2        vájkut	 |	vájkkut
+1        sáme	 |	sámijgiovlojn # kasus
+6        dáfojda	 <
+5        .	 <
+1        lav	 |	måråstav
+6        måråstam	 <
+-        	 >	guoradallama
+1        	 >	vuosedi
+4        guoradallama	 <
+-        milta	 <
+2        teknihkalasj	 |	teknihkkalasj #typo
+1        17	 |	17 % # lexical selection?
+6        prosentajn	 
+4        >	binnum
+-        binnum	 <
+4        Muotka	 <
+-        	 >	Muotka
+6        Mij	 |	
+1       lip	 |	måråstip
+1        ájnnasit | Sierraláhkáj
+6        måråstam	 <
+3        oasse	 |	oase
+1        sáme	 |	sámijguovlojn # kasus
+6        dáfoj	 <
+4        æládusiellemin	 <
+2        la	 |	le
+1        	 >	ájggedáhpe
+3        rijka	 |	rijkan
+-        sådjo	 <
+4        danen	 <
+1        sáme	 |	sámijguovlojn # kasus
+6        dáfojn	< 
+2        la	|	le
+1        stuorep	 |	stuoráp
+1        prosænntaoasse	 |	oasse
+1        guollijiddje	 |	guollárijs
+1        ednamdoalle	 |	bånndurijs
+1        ælloniehke	 |	ællobarggijs
+5        ,	 <
+1        la	 |	sjaddi
+4        binnomin <	 
+1        båhtusa	 |	vájkkudusá
+4        stuorep	 
+-        	>	stuorábu # hábme bc word order 
+1        sáme	 |	sámijguovlojn # kasus
+6        dáfojda	 <
+4        	 >	de
+1        oadtjot	 |	báredit
+6        buoreduvvat	 <
+1        dárbaha	 |	galga
+1        ållo	 |	ietjá
+1        dæddo	 |	rahtjamus
+6        ja	 <
+6        gilpustallam	 <
+4        daj	 <
+3        ma	 |	majda
+1        dárbahuvvi	 |	l
+6        	 >	darbbo
+3        vuodoæládusájda	 |	vuodoæládusájn
+4        Muotka	 <
+-        	 >	Muotka
+3        barggosajij	 |	barggosajijt
+5        .	 <
+3        la	 |	li
+1        æládusiellema	 |	æládus
+3        barggosajij	 |	barggosaje
+4        låhko	 
+-        |	sámijguovlojn
+2        4	 |	nielje
+2        prosentajn	 |	%
+1        sáme	 <
+6        dáfojn	 <
+2        la	 |	le
+1        læhkám	 |	lassánam
+6        ålles	 <
+4        lassánibme	 <
+1        stuora	 |	stuorra
+3        barggon	 |	barggo
+4        	 >	hiebadum
+-        hiebaduvvam	< 
+1        majna	 |	gejn
+3        måvtåstuhttep	 |	måvtåstuhttet
+1        ådå	 |	ietjá
+1        suorgijn	 |	æládussuorgijn
+1        rahtjamav	 |	åvdedibme
+3        kultuvrraæládusáj	 |	kultuvrraæládusájdi
+4        	 >	dagu	
+3        mannoæládusáj | mannoæládus 
+1        designijn	 |	hábmedibme
+3        duojijn	 |	duodje
+3        biebmujn	 |	biebbmo
+3        dahkamijn	 |	gárvedibme
+4        	 >	li
+3        suorggen	 |	suorge
+4        ådådahkuj	 <
+4        ja	 <
 
 Sandra:
 
