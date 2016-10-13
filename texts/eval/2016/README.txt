@@ -46,8 +46,6 @@ OLD COMMAND:
 diff list/smj_mt.list list/smj_san.list |sed 's/^[1-9]/™/g;'|tr '\n' ' '|tr '™' '\n'|cut -d" " -f2- >> wer_analysis.csv
 
 
-
-
 The resulting list is put in wer_analysis.ods for classification
 
 Categories for classification:
@@ -58,6 +56,9 @@ Categories for classification:
 5 = punctuation
 6 = word added
 7 = word deleted
+
+Command for the full diff list (also wordpairs not corrected):
+diff -y list/sma_mt.list list/MTeval_MAJA.list|tr -s '\t'|tr -s ' '|sed 's/^/        /' | see
 
 Original files
 ==============
