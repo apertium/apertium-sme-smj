@@ -26,7 +26,7 @@ http://xixona.dlsi.ua.es/~fran/eval/
 
 Commandline:
 The command used for WER and PER is
-perl ~/apertium/trunk/apertium-eval-translator/apertium-eval-translator.pl -r texts/TextB_smj_mt.txt -t texts/TextB_smj_testeval.txt >> results.txt
+perl $GTCORE/scripts/apertium-eval-translator.pl -r texts/TextB_smj_mt.txt -t texts/TextB_smj_eval1.txt
 
 
 Error classification:
