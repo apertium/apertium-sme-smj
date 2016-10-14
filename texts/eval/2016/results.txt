@@ -74,6 +74,9 @@ Percentage of unknown words that were free rides: 0%
 Evaluating, classifiying the errors, cf.
 wer_analysis.csv
 
+Command: 
+cut -d' ' -f1 eval1.txt | grep '[0-9]' | sort | uniq -c | sort -nr | l
+
 Eval1:
 
   31 1
