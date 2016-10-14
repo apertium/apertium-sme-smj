@@ -2,35 +2,117 @@
 Evaluating using the webpage:
 http://xixona.dlsi.ua.es/~fran/eval/
 
-testeval:
-Number of words in first file:  230
-Number of 1-word edit operations needed : 57
-Percent error rate : 24.78%
-
-eval1:
+Eval1:
 Number of words in first file:  256
 Number of 1-word edit operations needed : 94
 Percent error rate : 36.71%
 
-eval2:
+Eval2:
 Number of words in first file:  256
 Number of 1-word edit operations needed : 139
 Percent error rate : 54.29%
 
 Evaluating using the perl command:
-perl ~/apertium/trunk/apertium-eval-translator/apertium-eval-translator-line.pl -r texts/TextB_smj_mt.txt -t texts/TextB_smj_testeval.txt >> results.txt
+perl $GTCORE/scripts/apertium-eval-translator.pl -r texts/TextB_smj_mt.txt -t texts/TextB_smj_eval1.txt
+
+Eval1:
 
 Statistics about input files
 -------------------------------------------------------
-Number of words in reference: 223
-Number of words in test: 218
-Number of unknown words (marked with a star) in test: 0
-Percentage of unknown words: 0,00 %
+Number of words in reference: 247
+Number of words in test: 241
+Number of unknown words (marked with a star) in test: 
+Percentage of unknown words: 0.00 %
 
 Results when removing unknown-word marks (stars)
 -------------------------------------------------------
-Edit distance: 57
-Word error rate (WER): 25,56 %
-Number of position-independent correct words: 174
-Position-independent word error rate (PER): 21,97 %
+Edit distance: 91
+Word error rate (WER): 36.84 %
+Number of position-independent correct words: 172
+Position-independent word error rate (PER): 30.36 %
 
+Results when unknown-word marks (stars) are not removed
+-------------------------------------------------------
+Edit distance: 91
+Word Error Rate (WER): 36.84 %
+Number of position-independent correct words: 172
+Position-independent word error rate (PER): 30.36 %
+
+Statistics about the translation of unknown words
+-------------------------------------------------------
+Number of unknown words which were free rides: 0
+Percentage of unknown words that were free rides: 0%
+
+Eval2:
+
+Statistics about input files
+-------------------------------------------------------
+Number of words in reference: 247
+Number of words in test: 227
+Number of unknown words (marked with a star) in test: 
+Percentage of unknown words: 0.00 %
+
+Results when removing unknown-word marks (stars)
+-------------------------------------------------------
+Edit distance: 137
+Word error rate (WER): 55.47 %
+Number of position-independent correct words: 128
+Position-independent word error rate (PER): 48.18 %
+
+Results when unknown-word marks (stars) are not removed
+-------------------------------------------------------
+Edit distance: 137
+Word Error Rate (WER): 55.47 %
+Number of position-independent correct words: 128
+Position-independent word error rate (PER): 48.18 %
+
+Statistics about the translation of unknown words
+-------------------------------------------------------
+Number of unknown words which were free rides: 0
+Percentage of unknown words that were free rides: 0%
+
+Evaluating, classifiying the errors, cf.
+wer_analysis.csv
+
+Eval1:
+
+  31 1
+  12 7
+   8 4
+   7 4,3
+   6 6
+   6 3
+   5 2
+   2 5
+   2 4,1
+   1 4,2
+   1 1,4
+   1 1,3
+
+Eval2:
+
+  31 1
+  24 7
+  17 3
+  14 2
+  10 6
+   8 1,3
+   7 4
+   6 5
+   4 1,4
+   2 4,3
+   2 1,4,3
+   2 1,2
+   1 4,2
+   1 4,1
+   1 3,3
+
+
+where
+1 = lexical selection
+2 = error in generation (different shape of wordform)
+3 = error in choice of form (different wordform selected)
+4 = word order changed
+5 = punctuation
+6 = word added
+7 = word deleted
