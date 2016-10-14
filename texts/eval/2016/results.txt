@@ -74,8 +74,13 @@ Percentage of unknown words that were free rides: 0%
 Evaluating, classifiying the errors, cf.
 wer_analysis.csv
 
-Command: 
+Commands: 
 cut -d' ' -f1 eval1.txt | grep '[0-9]' | sort | uniq -c | sort -nr | l
+
+cut -d' ' -f1 eval1.txt | grep '[0-9]' | sort | uniq -c | sort -nr | tr -s ' ' | cut -d' ' -f2 | tr '\n' '+'| sed 's/\+$//' | bc
+
+tr -s ' ' < eval1b.txt | cut -d' ' -f2 | tr '\n' '+'| sed 's/\+$//' | bc
+93
 
 Eval1:
 
@@ -92,11 +97,27 @@ Eval1:
    1 1,4
    1 1,3
 
+82 total errors 
+
+where 12 with more than 1 error
+
+grand total of each category:
+
+  35 1
+  18 4
+  12 7
+  14 3
+   6 6
+   6 2
+   2 5 
+
+93 grand total
+
 Eval2:
 
   31 1
   24 7
-  17 3
+  18 3
   14 2
   10 6
    8 1,3
@@ -108,8 +129,23 @@ Eval2:
    2 1,2
    1 4,2
    1 4,1
-   1 3,3
 
+130 total errors
+
+where 20 with more than 1 error
+
+grand total of each category:
+
+  48 1
+  30 3
+  24 7
+  15 2
+  10 6
+  17 4
+   6 5
+   2 2
+   
+152 grand total
 
 where
 1 = lexical selection
