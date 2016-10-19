@@ -1027,6 +1027,7 @@
     <def-attr n="x_func">
       <attr-item tags="←ext→"/>
       <attr-item tags="←hab→"/>
+      <attr-item tags="←vdic→"/>
     </def-attr>
 
   	 <def-attr n="foclemma">
@@ -1045,7 +1046,8 @@
     <def-var n="adpos_chunk_name"/>
     <def-var n="chunk_name"/>
     <def-var n="caseFirstword"/>  
-    <def-var n="ext"/>  
+    <def-var n="ext"/>
+    <def-var n="vdic"/>  
     <def-var n="case"/>
     <def-var n="lemma"/>
     <def-var n="qst"/>
@@ -1377,6 +1379,20 @@
             <not><equal><clip pos="1" side="sl" part="a_exthab"/><lit-tag v="←ext→"/></equal></not>
           </test>
           <let><var n="ext"/><lit v=""/></let>
+        </when>
+      </choose>
+      <choose>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="x_func"/><lit-tag v="←vdic→"/></equal>
+          </test>
+          <let><var n="vdic"/><clip pos="1" side="sl" part="x_func"/></let>
+        </when>
+        <when>
+          <test>
+            <not><equal><clip pos="1" side="sl" part="x_func"/><lit-tag v="←vdic→"/></equal></not>
+          </test>
+          <let><var n="vdic"/><lit v=""/></let>
         </when>
       </choose>
       <choose>
@@ -3708,6 +3724,7 @@
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
+              <tag><lit-tag v="←vdic→"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>

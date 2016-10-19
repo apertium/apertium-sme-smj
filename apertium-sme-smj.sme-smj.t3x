@@ -88,6 +88,11 @@
         <cat-item tags="NP.@→P.*"/>
     </def-cat>
 
+    <def-cat n="FMainV-no-vdic"> <!-- not vdic -->
+        <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
+        <cat-item lemma="vblex" tags="SV.*.@+FMAINV"/>
+    </def-cat>
+
     <def-cat n="FMainV"> <!-- not copula -->
         <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
         <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
@@ -261,7 +266,7 @@
     </rule>
     <rule comment="MAINV SUBJ" > 
       <pattern>
-        <pattern-item n="FMainV"/>
+        <pattern-item n="FMainV-no-vdic"/>
         <pattern-item n="NP_Subj_l"/>
       </pattern>
       <action>
