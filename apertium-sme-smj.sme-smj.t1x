@@ -3,20 +3,216 @@
 <transfer default="chunk">
 
   <section-def-cats>
+    <!-- HARMONISED -->
+
+    <def-cat n="prn">
+      <cat-item tags="prn.*"/>
+    </def-cat>
+
+    <def-cat n="prn-rel">
+      <cat-item tags="prn.rel.*"/>
+    </def-cat>
+
+    <def-cat n="prn-res">
+      <cat-item tags="prn.res.*"/>
+    </def-cat>
+
+    <def-cat n="prn-pers">
+      <cat-item tags="prn.pers.*"/>
+    </def-cat>
+
+    <def-cat n="prn-dem">
+      <cat-item tags="prn.dem.*"/>
+    </def-cat>
+
+    <def-cat n="prn-refl">
+      <cat-item tags="prn.ref.*"/>
+    </def-cat>
+
+    <def-cat n="noun"> 
+      <cat-item tags="*.n.*.sg.*"/>
+      <cat-item tags="*.n.*.pl.*"/>
+      <cat-item tags="*.n.*.ess.*"/>
+      <cat-item tags="*.n.sg.*"/>
+      <cat-item tags="*.n.pl.*"/>
+      <cat-item tags="*.n.ess.*"/>
+      <cat-item tags="n.*.sg.*"/>
+      <cat-item tags="n.*.pl.*"/>
+      <cat-item tags="n.*.ess.*"/>
+      <cat-item tags="n.*.*.sg.*"/>
+      <cat-item tags="n.*.*.pl.*"/>
+      <cat-item tags="n.*.*.ess.*"/>
+      <cat-item tags="n.sg.*"/>
+      <cat-item tags="n.abbr.*"/>
+      <cat-item tags="n.pl.*"/>
+      <cat-item tags="n.ess.*"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
+    </def-cat>
+
+    <def-cat n="adj">
+      <cat-item tags="adj.*"/>
+      <cat-item tags="n.*.der_dibme.adj.*"/>
+      <cat-item tags="n.*.der_lasj.adj.*"/>
+      <cat-item tags="n.der_lasj.adj.*"/>
+      <cat-item tags="n.der_saš.adj.*"/>
+      <cat-item tags="n.*.der_sasj.adj.*"/>
+      <cat-item tags="n.der_sasj.adj.*"/>
+    </def-cat>
+
+    <def-cat n="cnjsub">
+      <cat-item tags="cnjsub"/>
+      <cat-item tags="cnjsub.*"/>
+    </def-cat>
+
+    <def-cat n="cnjcoo">
+      <cat-item tags="cnjcoo"/>
+      <cat-item tags="cnjcoo.*"/>
+    </def-cat>
+
+    <def-cat n="pcle">
+      <cat-item tags="pcle"/>
+      <cat-item tags="pcle.*"/>
+    </def-cat>
+
+    <def-cat n="adpos">
+      <cat-item tags="post.*"/>
+      <cat-item tags="pr.*"/>
+    </def-cat>
+
+    <def-cat n="pr">
+      <cat-item tags="pr"/>
+      <cat-item tags="pr.*"/>
+    </def-cat>
+
+    <def-cat n="post">
+      <cat-item tags="post"/>
+      <cat-item tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="default">
+      <cat-item tags="*"/>
+    </def-cat>
+
+    <def-cat n="foc">
+      <cat-item lemma="ba" tags="pcle.*"/>
+      <cat-item lemma="ban" tags="pcle.*"/>
+      <cat-item lemma="bat" tags="pcle.*"/>
+      <cat-item lemma="ge" tags="pcle.*"/>
+      <cat-item lemma="ges" tags="pcle.*"/>
+      <cat-item lemma="gis" tags="pcle.*"/>
+      <cat-item lemma="hal" tags="pcle.*"/>
+      <cat-item lemma="han" tags="pcle.*"/>
+      <cat-item lemma="nai" tags="pcle.*"/>
+      <cat-item lemma="son" tags="pcle.*"/>
+      <cat-item lemma="nu" tags="pcle.*"/>
+    </def-cat>
+
+    <def-cat n="ja">
+      <cat-item lemma="ja" tags="cnjcoo"/>
+      <cat-item lemma="ja" tags="cnjcoo.*"/>
+    </def-cat>
+
+    <def-cat n="jagis">
+      <cat-item lemma="jahki" tags="n.*.sg.loc.*"/>
+      <cat-item lemma="jahki" tags="n.sg.loc.*"/>
+    </def-cat>
+
+    <def-cat n="jagi">
+      <cat-item lemma="jahki" tags="n.*.sg.gen.*"/>
+      <cat-item lemma="jahki" tags="n.sg.gen.*"/>
+    </def-cat>
+
+    <def-cat n="mánnu">
+      <cat-item lemma="ođđajagemánnu" tags="n.*"/>
+      <cat-item lemma="guovvamánnu" tags="n.*"/>
+      <cat-item lemma="njukčamánnu" tags="n.*"/>
+      <cat-item lemma="cuoŋománnu" tags="n.*"/>
+      <cat-item lemma="miessemánnu" tags="n.*"/>
+      <cat-item lemma="geassemánnu" tags="n.*"/>
+      <cat-item lemma="suoidnemánnu" tags="n.*"/>
+      <cat-item lemma="borgemánnu" tags="n.*"/>
+      <cat-item lemma="čakčamánnu" tags="n.*"/>
+      <cat-item lemma="golggotmánnu" tags="n.*"/>
+      <cat-item lemma="skábmamánnu" tags="n.*"/>
+      <cat-item lemma="juovlamánnu" tags="n.*"/>
+    </def-cat>
+
+    <def-cat n="semyear">
+      <cat-item tags="*.sem_year.sg.*"/>
+      <cat-item tags="*.sem_year.sg"/>
+    </def-cat>
+
+    <def-cat n="ge">
+      <cat-item lemma="ge" tags="pcle.*"/>
+    </def-cat>
+
+    <def-cat n="boaris">
+      <cat-item lemma="boaris" tags="adj.*"/>
+    </def-cat>
+
+    <def-cat n="buorre">
+      <cat-item lemma="buorre" tags="adj.*.@→N"/>
+    </def-cat>
+
+    <def-cat n="mielde_adv">
+      <cat-item lemma="mielde" tags="adv.*"/>
+    </def-cat>
+
+    <def-cat n="dihte">
+      <cat-item lemma="dihte" tags="post.*"/>
+      <cat-item lemma="dihtii" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="miehtá">
+      <cat-item lemma="miehtá" tags="pr.*"/>
+      <cat-item lemma="miehtá" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="váste">
+      <cat-item lemma="váste" tags="post.*"/>
+      <cat-item lemma="várás" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="birra-po">
+      <cat-item lemma="birra" tags="post.*"/>
+    </def-cat>
+    
+    <def-cat n="birra-adv">
+      <cat-item lemma="birra" tags="adv.*"/>
+    </def-cat>
+
+    <def-cat n="liikotverb">
+      <cat-item lemma="liikot" tags="vblex.*"/>
+    </def-cat>
+
+    <def-cat n="geahččatverb">
+      <cat-item lemma="geahččat" tags="vblex.*"/>
+    </def-cat>
+
+    <def-cat n="váikkuhitverb">
+       <cat-item lemma="váikkuhit" tags="vblex.*"/>
+    </def-cat>
+
+    <def-cat n="sent">
+      <cat-item tags="sent.*"/>
+      <cat-item tags="sent"/>
+      <cat-item tags="clb"/>
+      <cat-item tags="clb.*"/>
+    </def-cat>
+
     <def-cat n="comma">
       <cat-item lemma="," tags="cm"/>
     </def-cat>
+
     <def-cat n="prosent">
       <cat-item lemma="%" tags="punct"/>
     </def-cat>
-     <def-cat n="cnjsub">
-  	 	<cat-item tags="cnjsub.*"/>
-  	 </def-cat>
+
+    <!-- PENDING HARMONISERING -->
+
      <def-cat n="mod_num">
   	 	<cat-item tags="*.@→Num"/>
-  	 </def-cat>
-     <def-cat n="mielde_adv">
-  	 	<cat-item lemma="mielde" tags="adv.*"/>
   	 </def-cat>
      <def-cat n="vuhtii">
   	 	<cat-item lemma="vuhtii" tags="adv.*"/>
@@ -44,28 +240,12 @@
   	 <def-cat n="áigi">
   	 	<cat-item lemma="áigi" tags="n.*.sg.*"/>
   	 </def-cat>
-     <def-cat n="cnjcoo">
-      <cat-item tags="cnjcoo"/>
-      <cat-item tags="cnjcoo.*"/>
-    </def-cat>
-    <def-cat n="semyear">
-      <cat-item tags="*.sem_year.sg.*"/>
-      <cat-item tags="*.sem_year.sg"/>
-    </def-cat>
  	 <def-cat n="mihkkege">
   	 	<cat-item lemma="mihkke" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="mihkke" tags="*.foc_pos-ge.*"/>
   	 	<cat-item lemma="guhtemuš" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="guhtemuš" tags="*.foc_pos-ge.*"/>
   	 </def-cat>
-    <def-cat n="adpos">
-      <cat-item tags="post.*"/>
-      <cat-item tags="pr.*"/>
-    </def-cat>
-     <def-cat n="miehtá">
-       <cat-item lemma="miehtá" tags="pr.*"/>
-       <cat-item lemma="miehtá" tags="post.*"/>
-     </def-cat>
      <def-cat n="negverb23">
       <cat-item tags="vblex.neg.indic.p3.pl.*"/>
       <cat-item tags="vblex.neg.indic.p2.sg.*"/>
@@ -147,20 +327,6 @@
       <cat-item lemma="bealis" tags="adv.px2pl.*"/>
       <cat-item lemma="bealis" tags="adv.px3pl.*"/>
    </def-cat>
-    <def-cat n="mánnu">
-      <cat-item lemma="ođđajagemánnu" tags="n.*"/>
-      <cat-item lemma="guovvamánnu" tags="n.*"/>
-      <cat-item lemma="njukčamánnu" tags="n.*"/>
-      <cat-item lemma="cuoŋománnu" tags="n.*"/>
-      <cat-item lemma="miessemánnu" tags="n.*"/>
-      <cat-item lemma="geassemánnu" tags="n.*"/>
-      <cat-item lemma="suoidnemánnu" tags="n.*"/>
-      <cat-item lemma="borgemánnu" tags="n.*"/>
-      <cat-item lemma="čakčamánnu" tags="n.*"/>
-      <cat-item lemma="golggotmánnu" tags="n.*"/>
-      <cat-item lemma="skábmamánnu" tags="n.*"/>
-      <cat-item lemma="juovlamánnu" tags="n.*"/>
-    </def-cat>
      <def-cat n="word_qst-not-verb">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
@@ -262,9 +428,6 @@
     <def-cat n="numeral">
       <cat-item tags="num.*"/>
     </def-cat>
-    <def-cat n="váste">
-      <cat-item lemma="váste" tags="post.*"/>
-    </def-cat>
     <def-cat n="gen">
       <cat-item tags="*.gen.*"/>
     </def-cat>
@@ -272,12 +435,6 @@
       <cat-item tags="num.cmp"/>
       <cat-item tags="num.*.cmp"/>
       <cat-item tags="num.*.guio"/>
-    </def-cat>
-     <def-cat n="geahččatverb">
-      <cat-item lemma="geahččat" tags="vblex.*"/>
-    </def-cat>
-     <def-cat n="liikotverb">
-      <cat-item lemma="liikot" tags="vblex.*"/>
     </def-cat>
    <def-cat n="n-cmp">
       <cat-item tags="*.cmp"/>
@@ -335,35 +492,8 @@
       <cat-item tags="vblex.*.*.*.conneg.*"/>
       <cat-item tags="vblex.*.*.conneg.*"/>
     </def-cat>
-   <def-cat n="foc">
-      <cat-item lemma="ge" tags="pcle.*"/>
-      <cat-item lemma="gis" tags="pcle.*"/>
-    </def-cat>
-   <def-cat n="buorre">
-      <cat-item lemma="buorre" tags="adj.*.@→N"/>
-    </def-cat>
     <def-cat n="mainverbqst">
       <cat-item tags="vblex.*.qst.@+FMAINV"/>
-    </def-cat>
-    <def-cat n="noun"> 
-      <cat-item tags="*.n.*.sg.*"/>
-      <cat-item tags="*.n.*.pl.*"/>
-      <cat-item tags="*.n.*.ess.*"/>
-      <cat-item tags="*.n.sg.*"/>
-      <cat-item tags="*.n.pl.*"/>
-      <cat-item tags="*.n.ess.*"/>
-      <cat-item tags="n.*.sg.*"/>
-      <cat-item tags="n.*.pl.*"/>
-      <cat-item tags="n.*.ess.*"/>
-      <cat-item tags="n.*.*.sg.*"/>
-      <cat-item tags="n.*.*.pl.*"/>
-      <cat-item tags="n.*.*.ess.*"/>
-      <cat-item tags="n.sg.*"/>
-      <cat-item tags="n.abbr.*"/>
-      <cat-item tags="n.pl.*"/>
-      <cat-item tags="n.ess.*"/>
-      <cat-item tags="np.*"/>
-      <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
     </def-cat>
     <def-cat n="noun-nom"> 
       <cat-item tags="n.*.*.nom.*"/>
@@ -375,14 +505,7 @@
     <def-cat n="fápmui"> 
       <cat-item lemma="fápmu" tags="n.*.sg.ill.*"/>
     </def-cat>
-    <def-cat n="adj">
-      <cat-item tags="adj.*"/>
-      <cat-item tags="n.der_sasj.adj.*"/>
-      <cat-item tags="n.der_lasj.adj.*"/>
-      <cat-item tags="n.*.der_sasj.adj.*"/>
-      <cat-item tags="n.*.der_lasj.adj.*"/>
-      <cat-item tags="n.*.der_dibme.adj.*"/>
-    </def-cat>
+
     <def-cat n="adv-empty">
       <cat-item lemma="" tags="adv"/>
       <cat-item lemma="" tags="adv.*"/>
@@ -401,22 +524,12 @@
       <cat-item tags="vblex.*.vabess"/>
       <cat-item tags="vblex.*.vabess.*"/>
     </def-cat>
-    <def-cat n="pcle">
-      <cat-item tags="pcle.*"/>
-    </def-cat>
     <def-cat n="datpcle">
       <cat-item lemma="dat" tags="pcle.*"/>
     </def-cat>
     <def-cat n="num-nomacc">
       <cat-item tags="num.sg.nom.*"/>
       <cat-item tags="num.sg.acc.*"/>
-    </def-cat>
-     <def-cat n="jagi">
-      <cat-item lemma="jahki" tags="n.*.sg.gen.*"/>
-      <cat-item lemma="jahki" tags="n.sg.gen.*"/>
-    </def-cat>
-     <def-cat n="boaris">
-      <cat-item lemma="boaris" tags="adj.*"/>
     </def-cat>
     <def-cat n="agreement-attr">
       <cat-item lemma="vuosttas" tags="adj.ord.attr.*"/> <!-- put under vuosttaš as lemma in sme -->
@@ -434,12 +547,6 @@
     <def-cat n="n-sg-gen">
       <cat-item tags="n.*.sg.gen.*"/>
     </def-cat>
-    <def-cat n="prn">
-      <cat-item tags="prn.*"/>
-    </def-cat>
-    <def-cat n="prn-dem">
-      <cat-item tags="prn.dem.*"/>
-    </def-cat>
     <def-cat n="prn-num">
       <cat-item tags="prn.dem.*"/>
       <cat-item tags="prn.ind.*"/>
@@ -448,12 +555,7 @@
    </def-cat>
 
 <!-- from sme-nob starts -->
-    <def-cat n="prn-rel">
-      <cat-item tags="prn.rel.*"/>
-    </def-cat>
-    <def-cat n="prn-res">
-      <cat-item tags="prn.res.*"/>
-    </def-cat>
+
     <def-cat n="prn-ref">
       <cat-item tags="prn.ref.*"/>
     </def-cat>
@@ -463,9 +565,6 @@
     <def-cat n="prnitg">
       <cat-item tags="prn.itg.*"/>
     </def-cat>
-    <def-cat n="prn-pers">
-      <cat-item tags="prn.pers.*"/>
-    </def-cat>
     <def-cat n="prn-pers-gen">
       <cat-item tags="prn.pers.*.gen.*"/>
     </def-cat>
@@ -473,9 +572,6 @@
       <cat-item tags="prn.pers.*.acc.*"/>
     </def-cat>
 <!-- from sme-nob ends -->
-    <def-cat n="prep">
-      <cat-item tags="pr.*"/>
-    </def-cat>
     <def-cat n="nom-gen">
       <cat-item tags="n.*.sg.gen.*"/>
       <cat-item tags="n.*.pl.gen.*"/>
@@ -520,19 +616,7 @@
     <def-cat n="attr">
       <cat-item tags="adj.attr.*"/>
     </def-cat>
-    <def-cat n="birra-po">
-      <cat-item lemma="birra" tags="post.*"/>
-    </def-cat>
-    <def-cat n="birra-adv">
-      <cat-item lemma="birra" tags="adv.*"/>
-    </def-cat>
 
-    <def-cat n="sent">
-      <cat-item tags="sent"/>
-    </def-cat>
-    <def-cat n="default">
-      <cat-item tags="*"/>
-    </def-cat>
      <def-cat n="vp-boundary">
       <cat-item tags="cm"/>
       <cat-item tags="sent"/>
