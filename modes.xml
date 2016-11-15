@@ -673,22 +673,6 @@
 
   <!-- smj→sme direction: -->
 
-  <mode name="smj-sme-morph" install="no">
-    <pipeline>
-      <program name="hfst-proc --weight-classes 1 -w -e">
-        <file name="smj-sme.automorf.hfst"/>
-      </program>
-    </pipeline>
-  </mode>
-
-  <mode name="usmj-sme-morph" install="no">
-    <pipeline>
-      <program name="hfst-proc --weight-classes 1 -w -e">
-        <file name="smj-sme.automorf-untrimmed.hfst"/>
-      </program>
-    </pipeline>
-  </mode>
-
   <mode name="smj-sme" install="no">
     <pipeline>
       <program name="hfst-proc --weight-classes 1 -w -e">
@@ -724,5 +708,37 @@
       </program>
     </pipeline>
   </mode>
+
+  <mode name="smj-sme-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="smj-sme.automorf.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="usmj-sme-morph" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="smj-sme.automorf-untrimmed.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
+
+  <mode name="smj-sme-disam" install="no">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="smj-sme.automorf.hfst"/>
+      </program>
+      <program name="cg-conv -a"/>
+      <program name="vislcg3 --trace --grammar">
+        <file name="smj-sme.mor.rlx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
 
 </modes>
