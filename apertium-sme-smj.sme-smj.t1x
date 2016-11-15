@@ -29,6 +29,14 @@
       <cat-item tags="prn.ref.*"/>
     </def-cat>
 
+    <def-cat n="prn-itg">
+      <cat-item tags="prn.itg.*"/>
+    </def-cat>
+
+    <def-cat n="prn-ind">
+      <cat-item tags="prn.ind.*"/>
+    </def-cat>
+
     <def-cat n="noun"> 
       <cat-item tags="*.n.*.sg.*"/>
       <cat-item tags="*.n.*.pl.*"/>
@@ -58,6 +66,23 @@
       <cat-item tags="n.der_saš.adj.*"/>
       <cat-item tags="n.*.der_sasj.adj.*"/>
       <cat-item tags="n.der_sasj.adj.*"/>
+    </def-cat>
+
+    <def-cat n="verb-inf">
+      <cat-item tags="vblex.*.inf.*"/>
+      <cat-item tags="vblex.*.der_l.v.inf.*"/>
+      <cat-item tags="vblex.*.der_d.v.inf.*"/>
+      <cat-item tags="vblex.*.der_caus.v.inf.*"/>
+      <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
+      <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
+    </def-cat>
+
+    <def-cat n="prop-nom">
+      <cat-item tags="np.*.sg.nom.*"/>
+    </def-cat>
+
+    <def-cat n="prop-attr">
+      <cat-item tags="np.*.attr.*"/>
     </def-cat>
 
     <def-cat n="cnjsub">
@@ -92,6 +117,23 @@
 
     <def-cat n="default">
       <cat-item tags="*"/>
+    </def-cat>
+
+    <def-cat n="rdep">
+      <cat-item tags="prn.pers.*.*.@→N"/>
+      <cat-item tags="prn.ref.*.*.@→N"/>
+      <cat-item tags="prn.ref.*.*.*.@→N"/>
+      <cat-item tags="adj.*.*.@→N"/>
+      <cat-item tags="adj.*.@→N"/>
+      <cat-item tags="n.*.@→N"/>
+      <cat-item tags="adv.@→N"/>
+      <cat-item tags="adv.*.@→N"/>
+      <cat-item tags="n.*.*.*.@→N"/>
+      <cat-item tags="n.*.*.*.*.@→N"/>
+      <cat-item tags="n.*.*.@→N"/>
+      <cat-item tags="np.*.@→N"/>
+      <cat-item tags="vblex.*.@→N"/>
+      <cat-item tags="*.cmp_splitr.*"/>
     </def-cat>
 
     <def-cat n="foc">
@@ -155,6 +197,10 @@
       <cat-item lemma="buorre" tags="adj.*.@→N"/>
     </def-cat>
 
+    <def-cat n="guhkki">
+      <cat-item lemma="guhkki" tags="adj.*"/>
+    </def-cat>
+
     <def-cat n="mielde_adv">
       <cat-item lemma="mielde" tags="adv.*"/>
     </def-cat>
@@ -194,6 +240,25 @@
        <cat-item lemma="váikkuhit" tags="vblex.*"/>
     </def-cat>
 
+    <def-cat n="word">
+      <cat-item tags="adv"/>
+      <cat-item tags="adv.*"/>
+      <cat-item tags="pcle"/>
+      <cat-item tags="pcle.@PCLE"/>
+      <cat-item tags="cnjsub"/>
+      <cat-item tags="cnjsub.*"/>
+      <cat-item tags="n"/>
+      <cat-item tags="n.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.*"/>
+      <cat-item tags="prn.*"/>
+      <cat-item tags="vblex.*"/>
+    </def-cat>
+
     <def-cat n="sent">
       <cat-item tags="sent.*"/>
       <cat-item tags="sent"/>
@@ -231,9 +296,6 @@
      <def-cat n="atnu">
   	 	<cat-item lemma="atnu" tags="n.*.sg.ill.*"/>
   	 </def-cat>
-     <def-cat n="guhkki">
-  	 	<cat-item lemma="guhkki" tags="adj.*"/>
-  	 </def-cat>
      <def-cat n="vuollai">
   	 	<cat-item lemma="vuollai" tags="post.*"/>
   	 </def-cat>
@@ -252,14 +314,7 @@
       <cat-item tags="vblex.*.neg.indic.p3.pl.*"/>
       <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
     </def-cat>
-   <def-cat n="verb-inf">
-      <cat-item tags="vblex.*.inf.*"/>
-      <cat-item tags="vblex.*.der_l.v.inf.*"/>
-      <cat-item tags="vblex.*.der_d.v.inf.*"/>
-      <cat-item tags="vblex.*.der_caus.v.inf.*"/>
-      <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
-      <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
-    </def-cat>
+
    <def-cat n="verb-prfprc">
       <cat-item tags="*.prfprc.*"/>
     </def-cat>
@@ -344,24 +399,6 @@
       <cat-item tags="adj.*"/>
        <cat-item tags="prn.*"/>
    </def-cat>
-     <def-cat n="word">
-      <cat-item tags="adv"/>
-      <cat-item tags="adv.*"/>
-      <cat-item tags="pcle"/>
-      <cat-item tags="pcle.@PCLE"/>
-      <cat-item tags="cnjsub"/>
-      <cat-item tags="cnjsub.*"/>
-      <cat-item tags="n"/>
-      <cat-item tags="n.*"/>
-      <cat-item tags="np"/>
-      <cat-item tags="np.*"/>
-      <cat-item tags="np"/>
-      <cat-item tags="np.*"/>
-      <cat-item tags="adj"/>
-      <cat-item tags="adj.*"/>
-       <cat-item tags="prn.*"/>
-       <cat-item tags="vblex.*"/>
-   </def-cat>
      <def-cat n="word-not-verb">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
@@ -379,22 +416,7 @@
       <cat-item tags="adj.*"/>
        <cat-item tags="prn.*"/>
    </def-cat>
-    <def-cat n="rdep">
-      <cat-item tags="prn.pers.*.*.@→N"/>
-      <cat-item tags="prn.ref.*.*.@→N"/>
-      <cat-item tags="prn.ref.*.*.*.@→N"/>
-      <cat-item tags="adj.*.*.@→N"/>
-      <cat-item tags="adj.*.@→N"/>
-      <cat-item tags="n.*.@→N"/>
-      <cat-item tags="adv.@→N"/>
-      <cat-item tags="adv.*.@→N"/>
-      <cat-item tags="n.*.*.*.@→N"/>
-      <cat-item tags="n.*.*.*.*.@→N"/>
-      <cat-item tags="n.*.*.@→N"/>
-      <cat-item tags="np.*.@→N"/>
-      <cat-item tags="vblex.*.@→N"/>
-      <cat-item tags="*.cmp_splitr.*"/>
-    </def-cat>
+
     <def-cat n="n-not-cmp">
       <cat-item tags="n.*.sg.*"/>  
       <cat-item tags="n.*.pl.*"/>
@@ -414,12 +436,7 @@
       <cat-item tags="num.*.*.@N←"/>
       <cat-item tags="num.*.*.*.@N←"/>
     </def-cat>
-   <def-cat n="prop-nom">
-      <cat-item tags="np.*.sg.nom.*"/>
-    </def-cat>
-    <def-cat n="prop-attr">
-      <cat-item tags="np.*.attr.*"/>
-    </def-cat>
+
      <def-cat n="propcmp">
       <cat-item tags="np.*.cmp"/>
       <cat-item tags="np.cmp"/>
@@ -556,14 +573,8 @@
 
 <!-- from sme-nob starts -->
 
-    <def-cat n="prn-ref">
-      <cat-item tags="prn.ref.*"/>
-    </def-cat>
     <def-cat n="prn-ref_PRONl">
       <cat-item tags="prn.ref.*.@Pron←"/>
-    </def-cat>
-    <def-cat n="prnitg">
-      <cat-item tags="prn.itg.*"/>
     </def-cat>
     <def-cat n="prn-pers-gen">
       <cat-item tags="prn.pers.*.gen.*"/>
