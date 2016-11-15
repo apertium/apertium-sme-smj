@@ -185,6 +185,10 @@
       <cat-item tags="*.sem_year.sg"/>
     </def-cat>
 
+    <def-cat n="áigi">
+      <cat-item lemma="áigi" tags="n.*"/>
+    </def-cat>
+
     <def-cat n="ge">
       <cat-item lemma="ge" tags="pcle.*"/>
     </def-cat>
@@ -298,9 +302,6 @@
   	 </def-cat>
      <def-cat n="vuollai">
   	 	<cat-item lemma="vuollai" tags="post.*"/>
-  	 </def-cat>
-  	 <def-cat n="áigi">
-  	 	<cat-item lemma="áigi" tags="n.*.sg.*"/>
   	 </def-cat>
  	 <def-cat n="mihkkege">
   	 	<cat-item lemma="mihkke" tags="*.foc_neg-ge.*"/>
