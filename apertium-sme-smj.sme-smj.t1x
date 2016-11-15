@@ -37,6 +37,10 @@
       <cat-item tags="prn.ind.*"/>
     </def-cat>
 
+    <def-cat n="numeral">
+      <cat-item tags="num.*"/>
+    </def-cat>
+
     <def-cat n="noun"> 
       <cat-item tags="*.n.*.sg.*"/>
       <cat-item tags="*.n.*.pl.*"/>
@@ -442,9 +446,6 @@
       <cat-item tags="np.*.cmp"/>
       <cat-item tags="np.cmp"/>
       <cat-item tags="np.*.guio"/>
-    </def-cat>
-    <def-cat n="numeral">
-      <cat-item tags="num.*"/>
     </def-cat>
     <def-cat n="gen">
       <cat-item tags="*.gen.*"/>
