@@ -15,6 +15,7 @@
     <sdef n="pcle"   c="Particle"/>
     <sdef n="qst"    c="Question marker"/>
     <sdef n="acr"    />
+    <sdef n="ord"    />
 
     <sdef n="nom"    c="Nominative"/>
     <sdef n="acc"    c="Accusative"/>
@@ -53109,7 +53110,7 @@
     <e><re>[»\)’”]</re><p><l><s n="rquot"/></l><r><s n="rquot"/></r></p></e>
 
     <e><re>[0-9]+([., \-–]+[0-9]+)*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
-    <e><re>[0-9]+([., \-–]+[0-9]+)*</re><p><l><s n="adj"/></l><r><s n="adj"/></r></p></e>
+    <e><re>([0-9]|[0-3][0-9]+)</re><p><l><s n="adj"/><s n="ord"/></l><r><s n="adj"/><s n="ord"/></r></p></e>
     <e><re>[IVXLMC]+</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
  
   </section>

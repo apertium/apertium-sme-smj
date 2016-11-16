@@ -21,6 +21,14 @@
       <cat-item tags="prn.pers.*"/>
     </def-cat>
 
+    <def-cat n="prn-pers-gen">
+      <cat-item tags="prn.pers.*.gen.*"/>
+    </def-cat>
+
+    <def-cat n="prn-pers-acc">
+      <cat-item tags="prn.pers.*.acc.*"/>
+    </def-cat>
+
     <def-cat n="prn-dem">
       <cat-item tags="prn.dem.*"/>
     </def-cat>
@@ -37,29 +45,108 @@
       <cat-item tags="prn.ind.*"/>
     </def-cat>
 
+    <def-cat n="prn-attr">
+      <cat-item tags="prn.ind.attr"/>
+      <cat-item tags="prn.ind.attr.*"/>
+      <cat-item tags="prn.itg.attr.*"/>
+    </def-cat>
+
+    <def-cat n="prn-dem-sg">
+      <cat-item tags="prn.dem.sg.*"/>
+    </def-cat>
+
     <def-cat n="numeral">
       <cat-item tags="num.*"/>
     </def-cat>
 
+    <def-cat n="num-cmp">
+      <cat-item tags="num.cmp"/>
+      <cat-item tags="num.*.cmp"/>
+      <cat-item tags="num.*.guio"/>
+    </def-cat>
+
+    <def-cat n="num-nomacc">
+      <cat-item tags="num.sg.nom.*"/>
+      <cat-item tags="num.sg.acc.*"/>
+    </def-cat>
+
+    <def-cat n="num-ldep">
+      <cat-item tags="num.*.@N←"/>
+      <cat-item tags="num.*.*.@N←"/>
+      <cat-item tags="num.*.*.*.@N←"/>
+    </def-cat>
+
     <def-cat n="noun"> 
-      <cat-item tags="*.n.*.sg.*"/>
-      <cat-item tags="*.n.*.pl.*"/>
-      <cat-item tags="*.n.*.ess.*"/>
-      <cat-item tags="*.n.sg.*"/>
-      <cat-item tags="*.n.pl.*"/>
-      <cat-item tags="*.n.ess.*"/>
+      <cat-item tags="n.sg.*"/>
       <cat-item tags="n.*.sg.*"/>
+      <cat-item tags="n.*.*.sg.*"/>
+      <cat-item tags="*.n.sg.*"/>
+      <cat-item tags="*.n.*.sg.*"/>
+      <cat-item tags="n.pl.*"/>
+      <cat-item tags="n.*.pl.*"/>
+      <cat-item tags="n.*.*.pl.*"/>
+      <cat-item tags="*.n.pl.*"/>
+      <cat-item tags="*.n.*.pl.*"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="n.ess.*"/>
+      <cat-item tags="n.*.ess.*"/>
+      <cat-item tags="n.*.*.ess.*"/>
+      <cat-item tags="*.n.ess.*"/>
+      <cat-item tags="*.n.*.ess.*"/>
+      <cat-item tags="n.abbr.*"/>
+      <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
+    </def-cat>
+
+    <def-cat n="n-cmp">
+      <cat-item tags="*.cmp"/>
+      <cat-item tags="*.cmp.guio"/>
+      <cat-item lemma="dárogiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="sámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="davvisámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="julevsámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="lullisámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="suomagiel" tags="adj.*.attr.*"/>
+    </def-cat>
+
+    <def-cat n="nom-gen">
+      <cat-item tags="n.*.sg.gen.*"/>
+      <cat-item tags="n.*.pl.gen.*"/>
+      <cat-item tags="np.sg.gen.*"/>
+      <cat-item tags="np.*.pl.gen.*"/>
+      <cat-item tags="np.*.sg.gen.*"/>
+      <cat-item tags="np.pl.gen.*"/>
+      <cat-item tags="prn.*.p3.sg.gen.*"/>
+      <cat-item tags="prn.*.p2.sg.gen.*"/>
+      <cat-item tags="prn.*.p1.sg.gen.*"/>
+      <cat-item tags="prn.*.p3.pl.gen.*"/>
+      <cat-item tags="prn.*.p2.pl.gen.*"/>
+      <cat-item tags="prn.*.p1.pl.gen.*"/>
+      <cat-item tags="prn.*.p3.du.gen.*"/>
+      <cat-item tags="prn.*.p2.du.gen.*"/>
+      <cat-item tags="prn.*.p1.du.gen.*"/>
+    </def-cat>
+
+    <def-cat n="n-not-cmp">
+      <cat-item tags="n.*.sg.*"/>  
       <cat-item tags="n.*.pl.*"/>
       <cat-item tags="n.*.ess.*"/>
       <cat-item tags="n.*.*.sg.*"/>
       <cat-item tags="n.*.*.pl.*"/>
       <cat-item tags="n.*.*.ess.*"/>
-      <cat-item tags="n.sg.*"/>
-      <cat-item tags="n.abbr.*"/>
-      <cat-item tags="n.pl.*"/>
-      <cat-item tags="n.ess.*"/>
-      <cat-item tags="np.*"/>
-      <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
+      <cat-item tags="*.n.sg.*"/>
+      <cat-item tags="*.n.pl.*"/>
+      <cat-item tags="*.n.ess.*"/>
+      <cat-item tags="*.prsprc.*"/>  
+      <cat-item tags="np.*.*.sg.*"/>  
+      <cat-item tags="np.*.*.pl.*"/>  
+    </def-cat>
+
+    <def-cat n="n-sg-nom">
+      <cat-item tags="n.*.sg.nom.*"/>
+    </def-cat>
+
+    <def-cat n="cmp_splitr">
+      <cat-item tags="n.*.*.cmp_splitr.*"/>
     </def-cat>
 
     <def-cat n="adj">
@@ -81,12 +168,46 @@
       <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
     </def-cat>
 
+    <def-cat n="verb-fin">
+      <cat-item tags="vblex.*.indic.*"/>
+      <cat-item tags="vblex.*.cond.*"/> 
+      <cat-item tags="vblex.*.pot.*"/>
+      <cat-item tags="vblex.*.der_inchl.vblex.indic.*"/>
+      <cat-item tags="vblex.*.der_inchl.vblex.cond.*"/>
+      <cat-item tags="vblex.*.der_inchl.vblex.pot.*"/>
+    </def-cat>
+
+    <def-cat n="negverb">
+      <cat-item lemma="ii" tags="vblex.iv.neg.indic.*"/>
+    </def-cat>
+
+    <def-cat n="verb-prfprc">
+      <cat-item tags="*.prfprc.*"/>
+    </def-cat>
+
+    <def-cat n="leat-aux">
+      <cat-item lemma="leat" tags="*.@+FAUXV"/>
+      <cat-item lemma="leat" tags="*.@-FAUXV"/>
+    </def-cat>
+
+    <def-cat n="leat-main-fin">
+      <cat-item lemma="leat" tags="*.sg.@+FMAINV"/>
+      <cat-item lemma="leat" tags="*.du.@+FMAINV"/>
+      <cat-item lemma="leat" tags="*.pl.@+FMAINV"/>
+    </def-cat>
+
     <def-cat n="prop-nom">
       <cat-item tags="np.*.sg.nom.*"/>
     </def-cat>
 
     <def-cat n="prop-attr">
       <cat-item tags="np.*.attr.*"/>
+    </def-cat>
+
+    <def-cat n="prop-cmp">
+      <cat-item tags="np.*.cmp"/>
+      <cat-item tags="np.cmp"/>
+      <cat-item tags="np.*.guio"/>
     </def-cat>
 
     <def-cat n="cnjsub">
@@ -119,6 +240,10 @@
       <cat-item tags="post.*"/>
     </def-cat>
 
+    <def-cat n="abbr">
+      <cat-item tags="*.abbr.*"/>
+    </def-cat>
+
     <def-cat n="default">
       <cat-item tags="*"/>
     </def-cat>
@@ -140,6 +265,18 @@
       <cat-item tags="*.cmp_splitr.*"/>
     </def-cat>
 
+    <def-cat n="mod_num">
+      <cat-item tags="*.@→Num"/>
+    </def-cat>
+
+    <def-cat n="gen">
+      <cat-item tags="*.gen.*"/>
+    </def-cat>
+
+    <def-cat n="dat-pcle">
+      <cat-item lemma="dat" tags="pcle.*"/>
+    </def-cat>
+
     <def-cat n="foc">
       <cat-item lemma="ba" tags="pcle.*"/>
       <cat-item lemma="ban" tags="pcle.*"/>
@@ -157,6 +294,8 @@
     <def-cat n="ja">
       <cat-item lemma="ja" tags="cnjcoo"/>
       <cat-item lemma="ja" tags="cnjcoo.*"/>
+      <cat-item lemma="ahte" tags="cnjcoo.*"/>
+      <cat-item lemma="ahte" tags="cnjcoo"/>
     </def-cat>
 
     <def-cat n="jagis">
@@ -209,8 +348,17 @@
       <cat-item lemma="guhkki" tags="adj.*"/>
     </def-cat>
 
-    <def-cat n="mielde_adv">
+    <def-cat n="geatnegahtton">
+      <cat-item lemma="geatnegahtton" tags="adj.*"/>
+      <cat-item lemma="geatnegahttojuvvon" tags="adj.*"/>
+    </def-cat>
+
+    <def-cat n="mielde-adv">
       <cat-item lemma="mielde" tags="adv.*"/>
+    </def-cat>
+
+    <def-cat n="fárrui">
+      <cat-item lemma="fárrui" tags="adv.*"/>
     </def-cat>
 
     <def-cat n="dihte">
@@ -231,9 +379,59 @@
     <def-cat n="birra-po">
       <cat-item lemma="birra" tags="post.*"/>
     </def-cat>
+
+    <def-cat n="vuollai">
+      <cat-item lemma="vuollai" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="sisa">
+      <cat-item lemma="sisa" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="geahčen">
+      <cat-item lemma="geahčen" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="mielde-post">
+      <cat-item lemma="mielde" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="bokte">
+      <cat-item lemma="bokte" tags="post.*"/>
+      <cat-item lemma="bakte" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="beallai">
+      <cat-item lemma="beallai" tags="post.*"/>
+    </def-cat>
     
     <def-cat n="birra-adv">
       <cat-item lemma="birra" tags="adv.*"/>
+    </def-cat>
+
+    <def-cat n="fápmui"> 
+      <cat-item lemma="fápmu" tags="n.*.sg.ill.*"/>
+    </def-cat>
+
+    <def-cat n="go-qst">
+      <cat-item lemma="go" tags="pcle.qst.*"/>
+    </def-cat>
+
+    <def-cat n="go-cnjsub">
+      <cat-item lemma="go" tags="cnjsub"/>
+      <cat-item lemma="go" tags="cnjsub.*"/>
+    </def-cat>
+
+    <def-cat n="bealis-px">
+      <cat-item lemma="bealis" tags="adv.px1sg.*"/>
+      <cat-item lemma="bealis" tags="adv.px2sg.*"/>
+      <cat-item lemma="bealis" tags="adv.px3sg.*"/>
+      <cat-item lemma="bealis" tags="adv.px1du.*"/>
+      <cat-item lemma="bealis" tags="adv.px2du.*"/>
+      <cat-item lemma="bealis" tags="adv.px3du.*"/>
+      <cat-item lemma="bealis" tags="adv.px1pl.*"/>
+      <cat-item lemma="bealis" tags="adv.px2pl.*"/>
+      <cat-item lemma="bealis" tags="adv.px3pl.*"/>
     </def-cat>
 
     <def-cat n="liikotverb">
@@ -248,23 +446,48 @@
        <cat-item lemma="váikkuhit" tags="vblex.*"/>
     </def-cat>
 
+    <def-cat n="boahtitverb"> 
+      <cat-item lemma="boahtit" tags="vblex.*"/>
+    </def-cat>
+
+    <def-cat n="beassatverb">
+      <cat-item lemma="beassat" tags="vblex.iv.*"/>
+    </def-cat>
+
+    <def-cat n="hupmatverb">
+      <cat-item lemma="hupmat" tags="vblex.*"/>
+      <cat-item lemma="hállat" tags="vblex.*"/>
+      <cat-item lemma="muitalit" tags="vblex.*"/>
+    </def-cat>
+
     <def-cat n="word">
-      <cat-item tags="adv"/>
+      <cat-item tags="adj.*"/>
+      <cat-item tags="adj"/>
       <cat-item tags="adv.*"/>
+      <cat-item tags="adv"/>
+      <cat-item tags="cnjsub.*"/>
+      <cat-item tags="cnjsub"/>
+      <cat-item tags="n.*"/>
+      <cat-item tags="n"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="np"/>
+      <cat-item tags="num.*"/>
       <cat-item tags="pcle"/>
       <cat-item tags="pcle.@PCLE"/>
-      <cat-item tags="cnjsub"/>
-      <cat-item tags="cnjsub.*"/>
-      <cat-item tags="n"/>
-      <cat-item tags="n.*"/>
-      <cat-item tags="np"/>
-      <cat-item tags="np.*"/>
-      <cat-item tags="np"/>
-      <cat-item tags="np.*"/>
-      <cat-item tags="adj"/>
-      <cat-item tags="adj.*"/>
+      <cat-item tags="post.*"/>
+      <cat-item tags="post"/>
       <cat-item tags="prn.*"/>
       <cat-item tags="vblex.*"/>
+    </def-cat>
+
+    <def-cat n="vp-boundary">
+      <cat-item tags="cm"/>
+      <cat-item tags="sent"/>
+      <cat-item tags="cnjcoo.@CVP"/>
+    </def-cat>
+
+    <def-cat n="cnp">
+      <cat-item tags="cnjcoo.@CNP"/>
     </def-cat>
 
     <def-cat n="sent">
@@ -284,9 +507,6 @@
 
     <!-- PENDING HARMONISERING -->
 
-     <def-cat n="mod_num">
-  	 	<cat-item tags="*.@→Num"/>
-  	 </def-cat>
      <def-cat n="vuhtii">
   	 	<cat-item lemma="vuhtii" tags="adv.*"/>
   	 </def-cat>
@@ -304,9 +524,6 @@
      <def-cat n="atnu">
   	 	<cat-item lemma="atnu" tags="n.*.sg.ill.*"/>
   	 </def-cat>
-     <def-cat n="vuollai">
-  	 	<cat-item lemma="vuollai" tags="post.*"/>
-  	 </def-cat>
  	 <def-cat n="mihkkege">
   	 	<cat-item lemma="mihkke" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="mihkke" tags="*.foc_pos-ge.*"/>
@@ -320,9 +537,6 @@
       <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
     </def-cat>
 
-   <def-cat n="verb-prfprc">
-      <cat-item tags="*.prfprc.*"/>
-    </def-cat>
    <def-cat n="verb-actio">
       <cat-item tags="vblex.*.actio.*"/>
     </def-cat>
@@ -341,52 +555,20 @@
       <cat-item lemma="leat" tags="*.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.@-FMAINV"/>
     </def-cat>
-    <def-cat n="leat-aux">
-      <cat-item lemma="leat" tags="*.@+FAUXV"/>
-      <cat-item lemma="leat" tags="*.@-FAUXV"/>
-    </def-cat>
-    <def-cat n="leat-main-fin">
-      <cat-item lemma="leat" tags="*.sg.@+FMAINV"/>
-      <cat-item lemma="leat" tags="*.du.@+FMAINV"/>
-      <cat-item lemma="leat" tags="*.pl.@+FMAINV"/>
-    </def-cat>
+
     <def-cat n="leat-qst">
       <cat-item lemma="leat" tags="vblex.*.qst.@+FMAINV"/>
     </def-cat>
-    <def-cat n="verb-cond">
-      <cat-item tags="vblex.*.cond.*"/>
-    </def-cat>
-    <def-cat n="verb-fin">
-      <cat-item tags="vblex.*.indic.*"/>
-<!--      <cat-item tags="vblex.*.cond.*"/> -->
-      <cat-item tags="vblex.*.pot.*"/>
-      <cat-item tags="vblex.*.der_inchl.vblex.indic.*"/>
-      <cat-item tags="vblex.*.der_inchl.vblex.cond.*"/>
-      <cat-item tags="vblex.*.der_inchl.vblex.pot.*"/>
-    </def-cat>
+
      <def-cat n="leat-conneg">
       <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
       <cat-item lemma="leat" tags="vblex.*.indic.*.conneg.*"/>
-    </def-cat>
-    <def-cat n="geatnegahtton">
-      <cat-item lemma="geatnegahtton" tags="adj.*"/>
-      <cat-item lemma="geatnegahttojuvvon" tags="adj.*"/>
     </def-cat>
     <def-cat n="leat-main">
       <cat-item lemma="leat" tags="*.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.@-FMAINV"/>
     </def-cat>
-     <def-cat n="bealisPx">
-      <cat-item lemma="bealis" tags="adv.px1sg.*"/>
-      <cat-item lemma="bealis" tags="adv.px2sg.*"/>
-      <cat-item lemma="bealis" tags="adv.px3sg.*"/>
-      <cat-item lemma="bealis" tags="adv.px1du.*"/>
-      <cat-item lemma="bealis" tags="adv.px2du.*"/>
-      <cat-item lemma="bealis" tags="adv.px3du.*"/>
-      <cat-item lemma="bealis" tags="adv.px1pl.*"/>
-      <cat-item lemma="bealis" tags="adv.px2pl.*"/>
-      <cat-item lemma="bealis" tags="adv.px3pl.*"/>
-   </def-cat>
+
      <def-cat n="word_qst-not-verb">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
@@ -422,71 +604,8 @@
        <cat-item tags="prn.*"/>
    </def-cat>
 
-    <def-cat n="n-not-cmp">
-      <cat-item tags="n.*.sg.*"/>  
-      <cat-item tags="n.*.pl.*"/>
-      <cat-item tags="n.*.ess.*"/>
-      <cat-item tags="n.*.*.sg.*"/>
-      <cat-item tags="n.*.*.pl.*"/>
-      <cat-item tags="n.*.*.ess.*"/>
-      <cat-item tags="*.n.sg.*"/>
-      <cat-item tags="*.n.pl.*"/>
-      <cat-item tags="*.n.ess.*"/>
-      <cat-item tags="*.prsprc.*"/>  
-      <cat-item tags="np.*.*.sg.*"/>  
-      <cat-item tags="np.*.*.pl.*"/>  
-    </def-cat>
-    <def-cat n="num-ldep">
-      <cat-item tags="num.*.@N←"/>
-      <cat-item tags="num.*.*.@N←"/>
-      <cat-item tags="num.*.*.*.@N←"/>
-    </def-cat>
 
-     <def-cat n="propcmp">
-      <cat-item tags="np.*.cmp"/>
-      <cat-item tags="np.cmp"/>
-      <cat-item tags="np.*.guio"/>
-    </def-cat>
-    <def-cat n="gen">
-      <cat-item tags="*.gen.*"/>
-    </def-cat>
-     <def-cat n="numcmp">
-      <cat-item tags="num.cmp"/>
-      <cat-item tags="num.*.cmp"/>
-      <cat-item tags="num.*.guio"/>
-    </def-cat>
-   <def-cat n="n-cmp">
-      <cat-item tags="*.cmp"/>
-      <cat-item tags="*.cmp.guio"/>
-      <cat-item lemma="dárogiel" tags="adj.*.attr.*"/>
-      <cat-item lemma="sámegiel" tags="adj.*.attr.*"/>
-      <cat-item lemma="davvisámegiel" tags="adj.*.attr.*"/>
-      <cat-item lemma="julevsámegiel" tags="adj.*.attr.*"/>
-      <cat-item lemma="lullisámegiel" tags="adj.*.attr.*"/>
-      <cat-item lemma="suomagiel" tags="adj.*.attr.*"/>
-    </def-cat>
-  <def-cat n="negverb">
-<!--ij<vblex><iv><neg><indic><pres><p3><sg>--> 
-      <cat-item tags="vblex.iv.neg.indic.p1.sg.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.sg.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.sg.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p1.pl.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.pl.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.pl.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p1.du.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.du.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.du.@+FAUXV"/>
 
-      <cat-item tags="vblex.iv.neg.indic.p1.sg.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.sg.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.sg.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p1.pl.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.pl.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.pl.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p1.du.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.du.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.du.foc_neg-ge.@+FAUXV"/>
-    </def-cat>
   <def-cat n="negverbqst">
       <cat-item tags="vblex.iv.neg.indic.p1.sg.qst.*"/>
       <cat-item tags="vblex.iv.neg.indic.p2.sg.qst.*"/>
@@ -518,12 +637,6 @@
       <cat-item tags="n.*.*.nom.*"/>
       <cat-item tags="n.*.*.*.nom.*"/>
     </def-cat>
-    <def-cat n="boahtit"> 
-      <cat-item lemma="boahtit" tags="vblex.*"/>
-    </def-cat>
-    <def-cat n="fápmui"> 
-      <cat-item lemma="fápmu" tags="n.*.sg.ill.*"/>
-    </def-cat>
 
     <def-cat n="adv-empty">
       <cat-item lemma="" tags="adv"/>
@@ -543,25 +656,10 @@
       <cat-item tags="vblex.*.vabess"/>
       <cat-item tags="vblex.*.vabess.*"/>
     </def-cat>
-    <def-cat n="datpcle">
-      <cat-item lemma="dat" tags="pcle.*"/>
-    </def-cat>
-    <def-cat n="num-nomacc">
-      <cat-item tags="num.sg.nom.*"/>
-      <cat-item tags="num.sg.acc.*"/>
-    </def-cat>
     <def-cat n="agreement-attr">
       <cat-item lemma="vuosttas" tags="adj.ord.attr.*"/> <!-- put under vuosttaš as lemma in sme -->
       <cat-item lemma="vuosttaš" tags="adj.ord.attr.*"/>
       <cat-item lemma="muhtun" tags="prn.ind.attr.*"/>
-    </def-cat>
-    <def-cat n="hupmat-v">
-      <cat-item lemma="hupmat" tags="vblex.*"/>
-      <cat-item lemma="hállat" tags="vblex.*"/>
-      <cat-item lemma="muitalit" tags="vblex.*"/>
-    </def-cat>
-    <def-cat n="n-sg-nom">
-      <cat-item tags="n.*.sg.nom.*"/>
     </def-cat>
     <def-cat n="n-sg-gen">
       <cat-item tags="n.*.sg.gen.*"/>
@@ -578,30 +676,8 @@
     <def-cat n="prn-ref_PRONl">
       <cat-item tags="prn.ref.*.@Pron←"/>
     </def-cat>
-    <def-cat n="prn-pers-gen">
-      <cat-item tags="prn.pers.*.gen.*"/>
-    </def-cat>
-    <def-cat n="prn-pers-acc">
-      <cat-item tags="prn.pers.*.acc.*"/>
-    </def-cat>
 <!-- from sme-nob ends -->
-    <def-cat n="nom-gen">
-      <cat-item tags="n.*.sg.gen.*"/>
-      <cat-item tags="n.*.pl.gen.*"/>
-      <cat-item tags="np.sg.gen.*"/>
-      <cat-item tags="np.*.pl.gen.*"/>
-      <cat-item tags="np.*.sg.gen.*"/>
-      <cat-item tags="np.pl.gen.*"/>
-      <cat-item tags="prn.*.p3.sg.gen.*"/>
-      <cat-item tags="prn.*.p2.sg.gen.*"/>
-      <cat-item tags="prn.*.p1.sg.gen.*"/>
-      <cat-item tags="prn.*.p3.pl.gen.*"/>
-      <cat-item tags="prn.*.p2.pl.gen.*"/>
-      <cat-item tags="prn.*.p1.pl.gen.*"/>
-      <cat-item tags="prn.*.p3.du.gen.*"/>
-      <cat-item tags="prn.*.p2.du.gen.*"/>
-      <cat-item tags="prn.*.p1.du.gen.*"/>
-    </def-cat>
+
     <def-cat n="agreem-sg-gen">
       <cat-item tags="n.*.sg.gen.*"/>
       <cat-item tags="n.*.sg.ill.*"/>
@@ -630,11 +706,6 @@
       <cat-item tags="adj.attr.*"/>
     </def-cat>
 
-     <def-cat n="vp-boundary">
-      <cat-item tags="cm"/>
-      <cat-item tags="sent"/>
-      <cat-item tags="cnjcoo.@CVP"/>
-    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -1593,9 +1664,9 @@
 
 
   <section-rules>
-    <rule comment="REGLA:mielde váldit">
+    <rule comment="REGLA: mielde-adv váldit">
       <pattern>
-        <pattern-item n="mielde_adv"/>
+        <pattern-item n="mielde-adv"/>
         <pattern-item n="váldit"/>
       </pattern>
       <action>
@@ -1617,7 +1688,7 @@
      <rule comment="REGLA: váldit mielde">
       <pattern>
         <pattern-item n="váldit"/>
-        <pattern-item n="mielde_adv"/>
+        <pattern-item n="mielde-adv"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -1639,7 +1710,7 @@
      <rule comment="REGLA: leat mielde Supn">
       <pattern>
         <pattern-item n="leat-aux-main"/>
-        <pattern-item n="mielde_adv"/>
+        <pattern-item n="mielde-adv"/>
         <pattern-item n="verb-actio-inf"/>
       </pattern>
       <action>
@@ -2316,9 +2387,9 @@
       </action>
     </rule>
 
-  <rule comment="REGLA: bealis Px">
+  <rule comment="REGLA: bealis-px">
     <pattern>
-      <pattern-item n="bealisPx"/>
+      <pattern-item n="bealis-px"/>
     </pattern>
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
@@ -2398,9 +2469,9 @@
     </action>
   </rule>
 
-  <rule comment="REGLA: boahtit fápmui">
+  <rule comment="REGLA: boahtitverb fápmui">
     <pattern>
-      <pattern-item n="boahtit"/>
+      <pattern-item n="boahtitverb"/>
       <pattern-item n="fápmui"/>
     </pattern>
     <action>
@@ -3779,33 +3850,6 @@
       </action>
     </rule>
     
-    <rule comment="REGLA: conditional  - 2 positions out">
-      <pattern>
-        <pattern-item n="verb-cond"/>
-      </pattern>
-      <action>
-          <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <out>
-          <chunk name="vblex" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
-            </tags>
-            <lu>
-              <lit v="liehket"/>
-              <lit-tag v="vblex.iv.cond"/>
-              <var n="vblex_nbrpers"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <lit-tag v="vblex.inf"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-    
     <rule comment="REGLA: verb-fin  - 1 position">
       <pattern>
         <pattern-item n="verb-fin"/>
@@ -3817,18 +3861,39 @@
         <call-macro n="convert-deriv-1Param">
           <with-param pos="1"/>
         </call-macro>
-        <out>
-          <chunk name="vblex" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
-              <tag><lit-tag v="vdic"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
+        <choose><when><test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
+            <out>
+              <chunk name="liehket_vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                </tags>
+                <lu>
+                  <lit v="liehket"/>
+                  <lit-tag v="vblex.iv.cond"/><var n="vblex_nbrpers"/>
+                </lu>
+                <b/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <lit-tag v="vblex.inf"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+            <out>
+              <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+          </otherwise>
+        </choose>
       </action>
     </rule> 
 
@@ -3853,9 +3918,9 @@
     </rule>
 
     
-     <rule comment="REGLA: dat pcle">
+     <rule comment="REGLA: dat-pcle">
       <pattern>
-        <pattern-item n="datpcle"/>
+        <pattern-item n="dat-pcle"/>
       </pattern>
       <action>
       </action>
