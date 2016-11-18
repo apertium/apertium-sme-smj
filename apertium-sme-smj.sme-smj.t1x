@@ -507,24 +507,24 @@
 
     <!-- PENDING HARMONISERING -->
 
-     <def-cat n="vuhtii">
+     <def-cat n="vuhtii_adv">
   	 	<cat-item lemma="vuhtii" tags="adv.*"/>
   	 </def-cat>
-     <def-cat n="eará">
+     <def-cat n="eará_seammá_prn">
   	 	<cat-item lemma="eará" tags="prn.*"/>
   	 	<cat-item lemma="seammá" tags="prn.*"/>
   	 </def-cat>
-     <def-cat n="ládje">
+     <def-cat n="ladje_post">
   	 	<cat-item lemma="ládje" tags="adv.*"/>
   	 	<cat-item lemma="láhkai" tags="adv.*"/>
   	 </def-cat>
-  	 <def-cat n="váldit">
+  	 <def-cat n="váldit_vblex">
   	 	<cat-item lemma="váldit" tags="vblex.*"/>
   	 </def-cat>
-     <def-cat n="atnu">
+     <def-cat n="atnu_n_ill">
   	 	<cat-item lemma="atnu" tags="n.*.sg.ill.*"/>
   	 </def-cat>
- 	 <def-cat n="mihkkege">
+ 	 <def-cat n="ind_prn_neg">
   	 	<cat-item lemma="mihkke" tags="*.foc_neg-ge.*"/>
   	 	<cat-item lemma="mihkke" tags="*.foc_pos-ge.*"/>
   	 	<cat-item lemma="guhtemuš" tags="*.foc_neg-ge.*"/>
@@ -1667,7 +1667,7 @@
     <rule comment="REGLA: mielde-adv váldit">
       <pattern>
         <pattern-item n="mielde-adv"/>
-        <pattern-item n="váldit"/>
+        <pattern-item n="váldit_vblex"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -1687,7 +1687,7 @@
  
      <rule comment="REGLA: váldit mielde">
       <pattern>
-        <pattern-item n="váldit"/>
+        <pattern-item n="váldit_vblex"/>
         <pattern-item n="mielde-adv"/>
       </pattern>
       <action>
@@ -1740,8 +1740,8 @@
 
      <rule comment="REGLA: váldit atnui">
       <pattern>
-        <pattern-item n="váldit"/>
-        <pattern-item n="atnu"/>
+        <pattern-item n="váldit_vblex"/>
+        <pattern-item n="atnu_n_ill"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -1919,7 +1919,7 @@
   
     <rule comment="REGLA:remove foc">
       <pattern>
-        <pattern-item n="mihkkege"/>
+        <pattern-item n="ind_prn_neg"/>
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
@@ -2497,8 +2497,8 @@
 
     <rule comment="REGLA: eará ládje">
       <pattern>
-        <pattern-item n="eará"/>  
-        <pattern-item n="ládje"/>  
+        <pattern-item n="eará_seammá_prn"/>  
+        <pattern-item n="ladje_post"/>  
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
