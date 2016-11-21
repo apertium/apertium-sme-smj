@@ -882,6 +882,8 @@
       <attr-item tags="der_vuota"/>
       <attr-item tags="der_d"/>
       <attr-item tags="der_h"/>
+      <attr-item tags="der_laakan"/>
+      <attr-item tags="der_laagasj"/>
       <attr-item tags="der_lágan"/>
       <attr-item tags="der_lágán"/>
       <attr-item tags="der_nammasaš"/>
@@ -1337,7 +1339,7 @@
 
         <when>
           <test>
-            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_lágan"/></equal>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_laakan"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lágán"/></let>
         </when>
