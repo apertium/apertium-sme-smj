@@ -674,7 +674,7 @@
 
   <!-- smj→sme direction: -->
 
-  <mode name="smj-sme" install="no">
+  <mode name="smj-sme" install="yes">
     <pipeline>
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="smj-sme.automorf.hfst"/>
