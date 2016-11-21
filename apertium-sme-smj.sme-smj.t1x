@@ -422,7 +422,7 @@
       <cat-item lemma="go" tags="cnjsub.*"/>
     </def-cat>
 
-    <def-cat n="bealis">
+    <def-cat n="bealis-px">
       <cat-item lemma="bealis" tags="adv.px1sg.*"/>
       <cat-item lemma="bealis" tags="adv.px2sg.*"/>
       <cat-item lemma="bealis" tags="adv.px3sg.*"/>
@@ -2394,7 +2394,7 @@
 
   <rule comment="REGLA: bealis-px">
     <pattern>
-      <pattern-item n="bealis"/>
+      <pattern-item n="bealis-px"/>
     </pattern>
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
