@@ -9,49 +9,49 @@
       <cat-item tags="prn.*"/>
     </def-cat>
 
-    <def-cat n="prn-rel">
+    <def-cat n="prn_rel">
       <cat-item tags="prn.rel.*"/>
     </def-cat>
 
-    <def-cat n="prn-res">
+    <def-cat n="prn_res">
       <cat-item tags="prn.res.*"/>
     </def-cat>
 
-    <def-cat n="prn-pers">
+    <def-cat n="prn_pers">
       <cat-item tags="prn.pers.*"/>
     </def-cat>
 
-    <def-cat n="prn-pers-gen">
+    <def-cat n="prn_pers_gen">
       <cat-item tags="prn.pers.*.gen.*"/>
     </def-cat>
 
-    <def-cat n="prn-pers-acc">
+    <def-cat n="prn_pers_acc">
       <cat-item tags="prn.pers.*.acc.*"/>
     </def-cat>
 
-    <def-cat n="prn-dem">
+    <def-cat n="prn_dem">
       <cat-item tags="prn.dem.*"/>
     </def-cat>
 
-    <def-cat n="prn-refl">
+    <def-cat n="prn_refl">
       <cat-item tags="prn.ref.*"/>
     </def-cat>
 
-    <def-cat n="prn-itg">
+    <def-cat n="prn_itg">
       <cat-item tags="prn.itg.*"/>
     </def-cat>
 
-    <def-cat n="prn-ind">
+    <def-cat n="prn_ind">
       <cat-item tags="prn.ind.*"/>
     </def-cat>
 
-    <def-cat n="prn-attr">
+    <def-cat n="prn_attr">
       <cat-item tags="prn.ind.attr"/>
       <cat-item tags="prn.ind.attr.*"/>
       <cat-item tags="prn.itg.attr.*"/>
     </def-cat>
 
-    <def-cat n="prn-dem-sg">
+    <def-cat n="prn_dem_sg">
       <cat-item tags="prn.dem.sg.*"/>
     </def-cat>
 
@@ -59,18 +59,18 @@
       <cat-item tags="num.*"/>
     </def-cat>
 
-    <def-cat n="num-cmp">
+    <def-cat n="num_cmp">
       <cat-item tags="num.cmp"/>
       <cat-item tags="num.*.cmp"/>
       <cat-item tags="num.*.guio"/>
     </def-cat>
 
-    <def-cat n="num-nomacc">
+    <def-cat n="num_nomacc">
       <cat-item tags="num.sg.nom.*"/>
       <cat-item tags="num.sg.acc.*"/>
     </def-cat>
 
-    <def-cat n="num-ldep">
+    <def-cat n="num_ldep">
       <cat-item tags="num.*.@N←"/>
       <cat-item tags="num.*.*.@N←"/>
       <cat-item tags="num.*.*.*.@N←"/>
@@ -97,7 +97,7 @@
       <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
     </def-cat>
 
-    <def-cat n="n-cmp">
+    <def-cat n="n_cmp">
       <cat-item tags="*.cmp"/>
       <cat-item tags="*.cmp.guio"/>
       <cat-item lemma="dárogiel" tags="adj.*.attr.*"/>
@@ -108,7 +108,7 @@
       <cat-item lemma="suomagiel" tags="adj.*.attr.*"/>
     </def-cat>
 
-    <def-cat n="nom-gen">
+    <def-cat n="nom_gen">
       <cat-item tags="n.*.sg.gen.*"/>
       <cat-item tags="n.*.pl.gen.*"/>
       <cat-item tags="np.sg.gen.*"/>
@@ -126,7 +126,7 @@
       <cat-item tags="prn.*.p1.du.gen.*"/>
     </def-cat>
 
-    <def-cat n="n-not-cmp">
+    <def-cat n="n_not_cmp">
       <cat-item tags="n.*.sg.*"/>  
       <cat-item tags="n.*.pl.*"/>
       <cat-item tags="n.*.ess.*"/>
@@ -141,7 +141,7 @@
       <cat-item tags="np.*.*.pl.*"/>  
     </def-cat>
 
-    <def-cat n="n-sg-nom">
+    <def-cat n="n_sg_nom">
       <cat-item tags="n.*.sg.nom.*"/>
     </def-cat>
 
@@ -159,7 +159,7 @@
       <cat-item tags="n.der_sasj.adj.*"/>
     </def-cat>
 
-    <def-cat n="verb-inf">
+    <def-cat n="verb_inf">
       <cat-item tags="vblex.*.inf.*"/>
       <cat-item tags="vblex.*.der_l.v.inf.*"/>
       <cat-item tags="vblex.*.der_d.v.inf.*"/>
@@ -168,7 +168,7 @@
       <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
     </def-cat>
 
-    <def-cat n="verb-fin">
+    <def-cat n="verb_fin">
       <cat-item tags="vblex.*.indic.*"/>
       <cat-item tags="vblex.*.cond.*"/> 
       <cat-item tags="vblex.*.pot.*"/>
@@ -181,30 +181,30 @@
       <cat-item lemma="ii" tags="vblex.iv.neg.indic.*"/>
     </def-cat>
 
-    <def-cat n="verb-prfprc">
+    <def-cat n="verb_prfprc">
       <cat-item tags="*.prfprc.*"/>
     </def-cat>
 
-    <def-cat n="leat-aux">
+    <def-cat n="leat_aux">
       <cat-item lemma="leat" tags="*.@+FAUXV"/>
       <cat-item lemma="leat" tags="*.@-FAUXV"/>
     </def-cat>
 
-    <def-cat n="leat-main-fin">
+    <def-cat n="leat_main_fin">
       <cat-item lemma="leat" tags="*.sg.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.du.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.pl.@+FMAINV"/>
     </def-cat>
 
-    <def-cat n="prop-nom">
+    <def-cat n="prop_nom">
       <cat-item tags="np.*.sg.nom.*"/>
     </def-cat>
 
-    <def-cat n="prop-attr">
+    <def-cat n="prop_attr">
       <cat-item tags="np.*.attr.*"/>
     </def-cat>
 
-    <def-cat n="prop-cmp">
+    <def-cat n="prop_cmp">
       <cat-item tags="np.*.cmp"/>
       <cat-item tags="np.cmp"/>
       <cat-item tags="np.*.guio"/>
@@ -273,7 +273,7 @@
       <cat-item tags="*.gen.*"/>
     </def-cat>
 
-    <def-cat n="dat-pcle">
+    <def-cat n="dat_pcle">
       <cat-item lemma="dat" tags="pcle.*"/>
     </def-cat>
 
@@ -353,7 +353,7 @@
       <cat-item lemma="geatnegahttojuvvon" tags="adj.*"/>
     </def-cat>
 
-    <def-cat n="mielde-adv">
+    <def-cat n="mielde_adv">
       <cat-item lemma="mielde" tags="adv.*"/>
     </def-cat>
 
@@ -392,7 +392,7 @@
       <cat-item lemma="geahčen" tags="post.*"/>
     </def-cat>
 
-    <def-cat n="mielde-post">
+    <def-cat n="mielde_post">
       <cat-item lemma="mielde" tags="post.*"/>
     </def-cat>
 
@@ -413,16 +413,16 @@
       <cat-item lemma="fápmu" tags="n.*.sg.ill.*"/>
     </def-cat>
 
-    <def-cat n="go-qst">
+    <def-cat n="go_qst">
       <cat-item lemma="go" tags="pcle.qst.*"/>
     </def-cat>
 
-    <def-cat n="go-cnjsub">
+    <def-cat n="go_cnjsub">
       <cat-item lemma="go" tags="cnjsub"/>
       <cat-item lemma="go" tags="cnjsub.*"/>
     </def-cat>
 
-    <def-cat n="bealis-px">
+    <def-cat n="bealis_px">
       <cat-item lemma="bealis" tags="adv.px1sg.*"/>
       <cat-item lemma="bealis" tags="adv.px2sg.*"/>
       <cat-item lemma="bealis" tags="adv.px3sg.*"/>
@@ -480,7 +480,7 @@
       <cat-item tags="vblex.*"/>
     </def-cat>
 
-    <def-cat n="vp-boundary">
+    <def-cat n="vp_boundary">
       <cat-item tags="cm"/>
       <cat-item tags="sent"/>
       <cat-item tags="cnjcoo.@CVP"/>
@@ -537,10 +537,10 @@
       <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
     </def-cat>
 
-   <def-cat n="verb-actio">
+   <def-cat n="verb_actio">
       <cat-item tags="vblex.*.actio.*"/>
     </def-cat>
-   <def-cat n="verb-actio-inf">
+   <def-cat n="verb_actio_inf">
       <cat-item tags="vblex.*.actio.*"/>
       <cat-item tags="vblex.*.inf.*"/>
       <cat-item tags="vblex.*.der_l.v.inf.*"/>
@@ -549,27 +549,27 @@
       <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
       <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
     </def-cat>
-    <def-cat n="leat-aux-main">
+    <def-cat n="leat_aux_main">
       <cat-item lemma="leat" tags="*.@+FAUXV"/>
       <cat-item lemma="leat" tags="*.@-FAUXV"/>
       <cat-item lemma="leat" tags="*.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.@-FMAINV"/>
     </def-cat>
 
-    <def-cat n="leat-qst">
+    <def-cat n="leat_qst">
       <cat-item lemma="leat" tags="vblex.*.qst.@+FMAINV"/>
     </def-cat>
 
-     <def-cat n="leat-conneg">
+     <def-cat n="leat_conneg">
       <cat-item lemma="orrut" tags="vblex.*.indic.*.conneg.*"/>
       <cat-item lemma="leat" tags="vblex.*.indic.*.conneg.*"/>
     </def-cat>
-    <def-cat n="leat-main">
+    <def-cat n="leat_main">
       <cat-item lemma="leat" tags="*.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.@-FMAINV"/>
     </def-cat>
 
-     <def-cat n="word_qst-not-verb">
+     <def-cat n="word_qst_not_verb">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
       <cat-item tags="pcle"/>
@@ -586,7 +586,7 @@
       <cat-item tags="adj.*"/>
        <cat-item tags="prn.*"/>
    </def-cat>
-     <def-cat n="word-not-verb">
+     <def-cat n="word_not_verb">
       <cat-item tags="adv"/>
       <cat-item tags="adv.*"/>
       <cat-item tags="pcle"/>
@@ -633,12 +633,12 @@
     <def-cat n="mainverbqst">
       <cat-item tags="vblex.*.qst.@+FMAINV"/>
     </def-cat>
-    <def-cat n="noun-nom"> 
+    <def-cat n="noun_nom"> 
       <cat-item tags="n.*.*.nom.*"/>
       <cat-item tags="n.*.*.*.nom.*"/>
     </def-cat>
 
-    <def-cat n="adv-empty">
+    <def-cat n="adv_empty">
       <cat-item lemma="" tags="adv"/>
       <cat-item lemma="" tags="adv.*"/>
     </def-cat>
@@ -656,15 +656,15 @@
       <cat-item tags="vblex.*.vabess"/>
       <cat-item tags="vblex.*.vabess.*"/>
     </def-cat>
-    <def-cat n="agreement-attr">
+    <def-cat n="agreement_attr">
       <cat-item lemma="vuosttas" tags="adj.ord.attr.*"/> <!-- put under vuosttaš as lemma in sme -->
       <cat-item lemma="vuosttaš" tags="adj.ord.attr.*"/>
       <cat-item lemma="muhtun" tags="prn.ind.attr.*"/>
     </def-cat>
-    <def-cat n="n-sg-gen">
+    <def-cat n="n_sg_gen">
       <cat-item tags="n.*.sg.gen.*"/>
     </def-cat>
-    <def-cat n="prn-num">
+    <def-cat n="prn_num">
       <cat-item tags="prn.dem.*"/>
       <cat-item tags="prn.ind.*"/>
       <cat-item tags="num.sg.*"/>
@@ -673,25 +673,25 @@
 
 <!-- from sme-nob starts -->
 
-    <def-cat n="prn-ref_PRONl">
+    <def-cat n="prn_ref_PRONl">
       <cat-item tags="prn.ref.*.@Pron←"/>
     </def-cat>
 <!-- from sme-nob ends -->
 
-    <def-cat n="agreem-sg-gen">
+    <def-cat n="agreem_sg_gen">
       <cat-item tags="n.*.sg.gen.*"/>
       <cat-item tags="n.*.sg.ill.*"/>
       <cat-item tags="n.*.sg.loc.*"/>
       <cat-item tags="n.*.sg.abe.*"/>
       <cat-item tags="n.*.ess.*"/>
     </def-cat>
-    <def-cat n="agreem-sg">
+    <def-cat n="agreem_sg">
       <cat-item tags="n.*.sg.nom.*"/>
       <cat-item tags="n.*.sg.acc.*"/>
       <cat-item tags="n.*.sg.com.*"/>
     </def-cat>
 
-    <def-cat n="agreem-pl">
+    <def-cat n="agreem_pl">
       <cat-item tags="n.*.pl.nom.*"/>
       <cat-item tags="n.*.pl.gen.*"/>
       <cat-item tags="n.*.pl.acc.*"/>
@@ -699,7 +699,7 @@
       <cat-item tags="n.*.pl.loc.*"/>
       <cat-item tags="n.*.pl.abe.*"/>
     </def-cat>
-    <def-cat n="agreem-pl-gen">
+    <def-cat n="agreem_pl_gen">
       <cat-item tags="n.*.pl.com.*"/>
     </def-cat>
     <def-cat n="attr">
@@ -1671,7 +1671,7 @@
   <section-rules>
     <rule comment="REGLA: mielde-adv váldit">
       <pattern>
-        <pattern-item n="mielde-adv"/>
+        <pattern-item n="mielde_adv"/>
         <pattern-item n="váldit_vblex"/>
       </pattern>
       <action>
@@ -1693,7 +1693,7 @@
      <rule comment="REGLA: váldit mielde">
       <pattern>
         <pattern-item n="váldit_vblex"/>
-        <pattern-item n="mielde-adv"/>
+        <pattern-item n="mielde_adv"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -1714,9 +1714,9 @@
 
      <rule comment="REGLA: leat mielde Supn">
       <pattern>
-        <pattern-item n="leat-aux-main"/>
-        <pattern-item n="mielde-adv"/>
-        <pattern-item n="verb-actio-inf"/>
+        <pattern-item n="leat_aux_main"/>
+        <pattern-item n="mielde_adv"/>
+        <pattern-item n="verb_actio_inf"/>
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
@@ -1857,10 +1857,10 @@
  
  <rule comment="REGLA:geatnegahtton2"> <!-- geatnegahtton=åvdåsvásstádus: Skuvla lea geatnegahtton oahpahit-->
       <pattern>
-        <pattern-item n="noun-nom"/>
-        <pattern-item n="leat-main"/>
+        <pattern-item n="noun_nom"/>
+        <pattern-item n="leat_main"/>
         <pattern-item n="geatnegahtton_adj"/>
-        <pattern-item n="verb-inf"/>
+        <pattern-item n="verb_inf"/>
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
@@ -1894,8 +1894,8 @@
   
   <rule comment="REGLA:geatnegahtton1"> <!-- geatnegahtton=bákkulasj: Skuvla lea geatnegahtton-->
       <pattern>
-        <pattern-item n="noun-nom"/>
-        <pattern-item n="leat-main"/>
+        <pattern-item n="noun_nom"/>
+        <pattern-item n="leat_main"/>
         <pattern-item n="geatnegahtton_adj"/>
       </pattern>
       <action>
@@ -1943,7 +1943,7 @@
     </rule>
     <rule comment="REGLA: lea  - 1 position">
       <pattern>
-        <pattern-item n="leat-main-fin"/>
+        <pattern-item n="leat_main_fin"/>
       </pattern>
       <action>
         <call-macro n="general-macro-1Param">
@@ -1965,7 +1965,7 @@
     </rule>
     <rule comment="REGLA: leat qst">
       <pattern>
-        <pattern-item n="leat-qst"/>
+        <pattern-item n="leat_qst"/>
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
@@ -2129,7 +2129,7 @@
   <rule comment="REGLA: NEGVERB liehket"> <!-- Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim -->
     <pattern>
       <pattern-item n="negverb23"/>
-      <pattern-item n="leat-conneg"/>
+      <pattern-item n="leat_conneg"/>
       <pattern-item n="word"/>
     </pattern>
     <action>
@@ -2170,7 +2170,7 @@
   <rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
     <pattern>
       <pattern-item n="negverb"/>
-      <pattern-item n="word_qst-not-verb"/>
+      <pattern-item n="word_qst_not_verb"/>
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
@@ -2223,8 +2223,8 @@
   <rule comment="REGLA: NEGVERB word word CONNEGVERB"> 
     <pattern>
       <pattern-item n="negverb"/>
-      <pattern-item n="word_qst-not-verb"/>
-      <pattern-item n="word-not-verb"/>
+      <pattern-item n="word_qst_not_verb"/>
+      <pattern-item n="word_not_verb"/>
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
@@ -2292,9 +2292,9 @@
   <rule comment="REGLA: NEGVERB word word word CONNEGVERB"> 
     <pattern>
       <pattern-item n="negverb"/>
-      <pattern-item n="word_qst-not-verb"/>
-      <pattern-item n="word-not-verb"/>
-      <pattern-item n="word-not-verb"/>
+      <pattern-item n="word_qst_not_verb"/>
+      <pattern-item n="word_not_verb"/>
+      <pattern-item n="word_not_verb"/>
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
@@ -2394,7 +2394,7 @@
 
   <rule comment="REGLA: bealis-px">
     <pattern>
-      <pattern-item n="bealis-px"/>
+      <pattern-item n="bealis_px"/>
     </pattern>
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
@@ -2559,7 +2559,7 @@
 
     <rule comment="REGLA: prn-num noun">
       <pattern>
-        <pattern-item n="prn-num"/>  
+        <pattern-item n="prn_num"/>  
         <pattern-item n="noun"/>  
       </pattern>
       <action>
@@ -2644,7 +2644,7 @@
      <rule comment="REGLA: mod_num prn-dem pluss noun">
       <pattern>
         <pattern-item n="mod_num"/>  
-        <pattern-item n="prn-num"/> 
+        <pattern-item n="prn_num"/> 
         <pattern-item n="noun"/>  
       </pattern>
       <action>
@@ -2733,8 +2733,8 @@
  
     <rule comment="REGLA: prn-dem n-cmp noun">
       <pattern>
-        <pattern-item n="prn-num"/>  
-        <pattern-item n="n-cmp"/>          
+        <pattern-item n="prn_num"/>  
+        <pattern-item n="n_cmp"/>          
         <pattern-item n="noun"/>  
       </pattern>
       <action>
@@ -2814,8 +2814,8 @@
 
     <rule comment="REGLA: prn-dem pluss noun">
       <pattern>
-        <pattern-item n="prn-dem"/>  
-        <pattern-item n="prn-num"/>  
+        <pattern-item n="prn_dem"/>  
+        <pattern-item n="prn_num"/>  
         <pattern-item n="noun"/>  
       </pattern>
       <action>
@@ -2899,7 +2899,7 @@
    <rule comment="REGLA: num prn pluss noun"> <!-- luohkás lea okta dain olbmuin geat ledje doppe -->
       <pattern>
         <pattern-item n="numeral"/>  
-        <pattern-item n="prn-dem"/>  
+        <pattern-item n="prn_dem"/>  
         <pattern-item n="noun"/>  
       </pattern>
       <action>
@@ -2964,7 +2964,7 @@
 
     <rule comment="REGLA: váste  - 1 position out"> <!-- illative instead of pp with váste -->
       <pattern>
-        <pattern-item n="n-cmp"/>
+        <pattern-item n="n_cmp"/>
         <pattern-item n="gen"/>
         <pattern-item n="váste_post"/>
       </pattern>
@@ -3065,7 +3065,7 @@
 
     <rule comment="REGLA: nouncmp adj">
       <pattern>
-        <pattern-item n="n-cmp"/>
+        <pattern-item n="n_cmp"/>
         <pattern-item n="adj"/> <!-- usually derivated from noun -->
       </pattern>
       <action>
@@ -3092,7 +3092,7 @@
     </rule>
     <rule comment="REGLA: nnomcmp">
       <pattern>
-        <pattern-item n="n-cmp"/>
+        <pattern-item n="n_cmp"/>
         <pattern-item n="noun"/>
       </pattern>
       <action>
@@ -3119,8 +3119,8 @@
     </rule>
     <rule comment="REGLA: nnomcmp 3 in">
       <pattern>
-        <pattern-item n="n-cmp"/>
-        <pattern-item n="n-cmp"/>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="n_cmp"/>
         <pattern-item n="noun"/>
       </pattern>
       <action>
@@ -3150,9 +3150,9 @@
     </rule>
     <rule comment="REGLA: nnomcmp 4"> <!-- bieggamillofápmorusttet --> 
       <pattern>
-        <pattern-item n="n-cmp"/>
-        <pattern-item n="n-cmp"/>
-        <pattern-item n="n-cmp"/>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="n_cmp"/>
         <pattern-item n="noun"/>
       </pattern>
       <action>
@@ -3187,7 +3187,7 @@
     <rule comment="REGLA: rdep n  - 2 positions">
       <pattern>
         <pattern-item n="rdep"/>
-        <pattern-item n="n-not-cmp"/>
+        <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -3252,9 +3252,9 @@
 
     <rule comment="REGLA: cmp rdep n  - 2 positions">
       <pattern>
-        <pattern-item n="n-cmp"/>
+        <pattern-item n="n_cmp"/>
         <pattern-item n="rdep"/>
-        <pattern-item n="n-not-cmp"/>
+        <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
@@ -3310,8 +3310,8 @@
    <rule comment="REGLA: rdep n propnom  - 3 positions">
       <pattern>
         <pattern-item n="rdep"/>
-        <pattern-item n="n-not-cmp"/>
-        <pattern-item n="prop-nom"/>
+        <pattern-item n="n_not_cmp"/>
+        <pattern-item n="prop_nom"/>
       </pattern>
       <action>
       
@@ -3351,9 +3351,9 @@
 
    <rule comment="REGLA:  n propnom  - 3 positions">
       <pattern>
-        <pattern-item n="n-not-cmp"/>
-        <pattern-item n="prop-attr"/>
-        <pattern-item n="prop-nom"/>
+        <pattern-item n="n_not_cmp"/>
+        <pattern-item n="prop_attr"/>
+        <pattern-item n="prop_nom"/>
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
@@ -3383,9 +3383,9 @@
    <rule comment="REGLA: rdep n propnom  - 4 positions">
       <pattern>
         <pattern-item n="rdep"/>
-        <pattern-item n="n-not-cmp"/>
-        <pattern-item n="prop-attr"/>
-        <pattern-item n="prop-nom"/>
+        <pattern-item n="n_not_cmp"/>
+        <pattern-item n="prop_attr"/>
+        <pattern-item n="prop_nom"/>
       </pattern>
       <action>
      <choose><when><test>
@@ -3425,10 +3425,10 @@
    <rule comment="REGLA: rdep n attr attr propnom  - 5 positions">
       <pattern>
         <pattern-item n="rdep"/>
-        <pattern-item n="n-not-cmp"/>
-        <pattern-item n="prop-attr"/>
-        <pattern-item n="prop-attr"/>
-        <pattern-item n="prop-nom"/>
+        <pattern-item n="n_not_cmp"/>
+        <pattern-item n="prop_attr"/>
+        <pattern-item n="prop_attr"/>
+        <pattern-item n="prop_nom"/>
       </pattern>
       <action>
      <choose><when><test>
@@ -3472,10 +3472,10 @@
 
    <rule comment="REGLA: n attr attr propnom  - 4 positions: sámedikkeráde Silje Karine Muotka">
       <pattern>
-        <pattern-item n="n-not-cmp"/>
-        <pattern-item n="prop-attr"/>
-        <pattern-item n="prop-attr"/>
-        <pattern-item n="prop-nom"/>
+        <pattern-item n="n_not_cmp"/>
+        <pattern-item n="prop_attr"/>
+        <pattern-item n="prop_attr"/>
+        <pattern-item n="prop_nom"/>
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
@@ -3509,8 +3509,8 @@
     <rule comment="REGLA: rdep cmp n  - 3 positions">
       <pattern>
         <pattern-item n="rdep"/> 
-        <pattern-item n="n-cmp"/>
-        <pattern-item n="n-not-cmp"/>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
      <choose><when><test>
@@ -3550,8 +3550,8 @@
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
-        <pattern-item n="n-cmp"/>
-        <pattern-item n="n-not-cmp"/>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
      <choose><when><test>
@@ -3603,7 +3603,7 @@
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
-        <pattern-item n="n-not-cmp"/>
+        <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
      <choose><when><test>
@@ -3649,7 +3649,7 @@
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
-        <pattern-item n="n-not-cmp"/>
+        <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
      <choose><when><test>
@@ -3700,7 +3700,7 @@
     <rule comment="REGLA: n num-ldep  - 2 positions">
       <pattern>
         <pattern-item n="noun"/>
-        <pattern-item n="num-ldep"/>
+        <pattern-item n="num_ldep"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -3728,7 +3728,7 @@
     
     <rule comment="REGLA: leat-aux   - 1 position out">
       <pattern>
-        <pattern-item n="leat-aux"/>
+        <pattern-item n="leat_aux"/>
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
@@ -3753,7 +3753,7 @@
 
     <rule comment="REGLA: verb-actio  - 1 position">
       <pattern>
-        <pattern-item n="verb-actio"/>
+        <pattern-item n="verb_actio"/>
       </pattern>
       <action>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
@@ -3778,7 +3778,7 @@
     </rule>
     <rule comment="REGLA: verb-inf  - 1 position">
       <pattern>
-        <pattern-item n="verb-inf"/>
+        <pattern-item n="verb_inf"/>
       </pattern>
       <action>
       <choose><when><test>
@@ -3805,7 +3805,7 @@
     </rule>
     <rule comment="REGLA: verb-prfprc  - 1 position">
       <pattern>
-        <pattern-item n="verb-prfprc"/>
+        <pattern-item n="verb_prfprc"/>
       </pattern>
       <action>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
@@ -3858,7 +3858,7 @@
     
     <rule comment="REGLA: verb-fin  - 1 position">
       <pattern>
-        <pattern-item n="verb-fin"/>
+        <pattern-item n="verb_fin"/>
       </pattern>
       <action>
         <call-macro n="general-macro-1Param">
@@ -3926,7 +3926,7 @@
     
      <rule comment="REGLA: dat-pcle">
       <pattern>
-        <pattern-item n="dat-pcle"/>
+        <pattern-item n="dat_pcle"/>
       </pattern>
       <action>
       </action>
@@ -3935,7 +3935,7 @@
     <rule comment="REGLA: miehtá noun">
       <pattern>
         <pattern-item n="miehtá_adp"/>
-        <pattern-item n="nom-gen"/>
+        <pattern-item n="nom_gen"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -3960,7 +3960,7 @@
 
     <rule comment="REGLA: noun  miehtá">
       <pattern>
-        <pattern-item n="nom-gen"/>
+        <pattern-item n="nom_gen"/>
         <pattern-item n="miehtá_adp"/>
       </pattern>
       <action>
