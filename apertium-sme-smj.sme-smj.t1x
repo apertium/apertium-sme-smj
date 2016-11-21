@@ -2887,7 +2887,7 @@
       </action>
     </rule>
 
-   <rule comment="REGLA: num prn pluss noun"> <!-- luohkás lea okta dain olbmuin geat ledje doppe -->
+   <rule comment="REGLA: num prn_dem noun" c="luohkás lea okta dain olbmuin geat ledje doppe">
       <pattern>
         <pattern-item n="numeral"/>  
         <pattern-item n="prn_dem"/>  
