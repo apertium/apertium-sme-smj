@@ -1241,6 +1241,7 @@
     <def-var n="ext"/>
     <def-var n="vdic"/>  
     <def-var n="case"/>
+    <def-var n="infin"/>
     <def-var n="lemma"/>
     <def-var n="qst"/>
     <def-var n="vblex_nbrpers"/>
@@ -1529,6 +1530,15 @@
           <let><var n="vblex_nbrpers"/><concat><clip pos="1" side="tl" part="a_person"/>
                  <clip pos="1" side="tl" part="a_nbr"/></concat></let>
         </when>
+        <when c="M[V] infin">
+          <test>
+            <or>
+              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FAUXV"/></equal>
+              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FMAINV"/></equal>
+            </or>
+          </test>
+          <let><var n="infin"/><clip pos="1" side="tl" part="a_infin"/></let>
+        </when>
       </choose>
 
       <choose>
@@ -1706,8 +1716,20 @@
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+       <choose>
+         <when><test><equal><clip pos="2" side="sl" part="a_infin"/><lit-tag v="inf"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="inf"/></let>
+              </when>
+         <when><test><equal><clip pos="2" side="sl" part="a_infin"/><lit-tag v="prfprc"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="prfprc"/></let>
+              </when>
+
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="vblex"/></let>
+       </otherwise>
+       </choose>
          <out>
-          <chunk name="vblex" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1727,8 +1749,20 @@
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+       <choose>
+         <when><test><equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="inf"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="inf"/></let>
+              </when>
+         <when><test><equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="prfprc"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="prfprc"/></let>
+              </when>
+
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="vblex"/></let>
+       </otherwise>
+       </choose>
          <out>
-          <chunk name="vblex" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1748,8 +1782,20 @@
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+       <choose>
+         <when><test><equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="inf"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="inf"/></let>
+              </when>
+         <when><test><equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="prfprc"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="prfprc"/></let>
+              </when>
+
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="vblex"/></let>
+       </otherwise>
+       </choose>
          <out>
-          <chunk name="vblex" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -1801,8 +1847,20 @@
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+       <choose>
+         <when><test><equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="inf"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="inf"/></let>
+              </when>
+         <when><test><equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="prfprc"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="prfprc"/></let>
+              </when>
+
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="vblex"/></let>
+       </otherwise>
+       </choose>
          <out>
-          <chunk name="vblex" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@SPRED"/></tag>
