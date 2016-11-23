@@ -446,7 +446,7 @@
        <cat-item lemma="váikkuhit" tags="vblex.*"/>
     </def-cat>
 
-    <def-cat n="boahtitverb"> 
+    <def-cat n="boahtit_vblex"> 
       <cat-item lemma="boahtit" tags="vblex.*"/>
     </def-cat>
 
@@ -1660,7 +1660,7 @@
 
 
   <section-rules>
-    <rule comment="REGLA: mielde-adv váldit">
+    <rule comment="C[D] mielde_adv váldit_vblex">
       <pattern>
         <pattern-item n="mielde_adv"/>
         <pattern-item n="váldit_vblex"/>
@@ -1681,7 +1681,7 @@
       </action>
     </rule> 
  
-     <rule comment="REGLA: váldit mielde">
+     <rule comment="C[D] mielde_adv mielde_adv">
       <pattern>
         <pattern-item n="váldit_vblex"/>
         <pattern-item n="mielde_adv"/>
@@ -1703,7 +1703,7 @@
     </rule> 
 
 
-     <rule comment="REGLA: leat mielde Supn">
+     <rule comment="C[T] leat_aux_main mielde_adv verb_actio_inf Supn">
       <pattern>
         <pattern-item n="leat_aux_main"/>
         <pattern-item n="mielde_adv"/>
@@ -1721,11 +1721,11 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -1734,7 +1734,7 @@
       </action>
     </rule> 
 
-     <rule comment="REGLA: váldit atnui">
+     <rule comment="C[W] váldit_vblex atnu_n_ill">
       <pattern>
         <pattern-item n="váldit_vblex"/>
         <pattern-item n="atnu_n_ill"/>
@@ -1750,7 +1750,7 @@
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -1760,7 +1760,7 @@
     </rule> 
 
   
-  <rule comment="REGLA: prep to postp or prep">
+  <rule comment="C[ ] adpos" c="prep to postp or prep">
       <pattern>
         <pattern-item n="adpos"/>
       </pattern>
@@ -1801,7 +1801,7 @@
       </action>
     </rule>
  
-  <rule comment="REGLA:guhkev">
+  <rule comment="C[DL] guhkki_adj áigi_n" c="guhkes áigi : guhkev">
       <pattern>
         <pattern-item n="guhkki_adj"/>
         <pattern-item n="áigi_n"/>
@@ -1823,7 +1823,7 @@
       </action>
     </rule>
 
-  <rule comment="REGLA:guhkev 2">
+  <rule comment="C[DL] guhkki_adj áigi_n vuollai_post" c="guhkes áigi vuollai: guhkev">
       <pattern>
         <pattern-item n="guhkki_adj"/>
         <pattern-item n="áigi_n"/>
@@ -1846,7 +1846,7 @@
       </action>
     </rule>
  
- <rule comment="REGLA:geatnegahtton2"> <!-- geatnegahtton=åvdåsvásstádus: Skuvla lea geatnegahtton oahpahit-->
+ <rule comment="C[T] noun_nom leat_main geatnegahtton_adj verb_inf" c="geatnegahtton=åvdåsvásstádus: Skuvla lea geatnegahtton oahpahit"> 
       <pattern>
         <pattern-item n="noun_nom"/>
         <pattern-item n="leat_main"/>
@@ -1864,15 +1864,15 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="3"/>
             <lu>
               <clip pos="4" side="tl" part="whole"/>
             </lu>
@@ -1883,7 +1883,7 @@
 
  
   
-  <rule comment="REGLA:geatnegahtton1"> <!-- geatnegahtton=bákkulasj: Skuvla lea geatnegahtton-->
+  <rule comment="C[ ]geatnegahtton1" c="geatnegahtton=bákkulasj: Skuvla lea geatnegahtton"> 
       <pattern>
         <pattern-item n="noun_nom"/>
         <pattern-item n="leat_main"/>
@@ -1900,11 +1900,11 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -1913,7 +1913,7 @@
       </action>
     </rule>
   
-    <rule comment="REGLA:remove foc">
+    <rule comment="C[T] ind_prn_neg" c="remove foc">
       <pattern>
         <pattern-item n="ind_prn_neg"/>
       </pattern>
@@ -1932,7 +1932,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: lea  - 1 position">
+    <rule comment="C[ ] leat_main_fin">
       <pattern>
         <pattern-item n="leat_main_fin"/>
       </pattern>
@@ -1954,7 +1954,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: leat qst">
+    <rule comment="C[AT] leat_qst">
       <pattern>
         <pattern-item n="leat_qst"/>
       </pattern>
@@ -1980,7 +1980,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: negverb">
+    <rule comment="C[T] negverb">
       <pattern>
         <pattern-item n="negverb"/>
       </pattern>
@@ -2004,7 +2004,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: NEGVERB CONNEGVERB"> <!-- Dábálasj neg: Iv sidá dujna doarrut -->
+    <rule comment="C[T] negverb connegverb" c="Dábálasj neg: Iv sidá dujna doarrut"> 
       <pattern>
         <pattern-item n="negverb"/>
         <pattern-item n="connegverb"/>
@@ -2057,7 +2057,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: NEGVERB qst CONNEGVERB"> 
+    <rule comment="C[T] negverbqst connegverb"> 
       <pattern>
         <pattern-item n="negverbqst"/>
         <pattern-item n="connegverb"/>
@@ -2094,14 +2094,14 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-           <b/>
+            <b pos="1"/>
          <lu>
             <lit v="gus"/>
             <lit-tag v="pcle.qst"/>
           </lu>
           </chunk>
           <b pos="1"/>
-          <chunk name="vvvblex">
+          <chunk name="vblex">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -2117,7 +2117,7 @@
     </rule>
 
 
-  <rule comment="REGLA: NEGVERB liehket"> <!-- Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim -->
+  <rule comment="C[TW] negverb23 leat_conneg word" c="Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim"> 
     <pattern>
       <pattern-item n="negverb23"/>
       <pattern-item n="leat_conneg"/>
@@ -2158,7 +2158,7 @@
   </rule>
 
 
-  <rule comment="REGLA: NEGVERB word CONNEGVERB"> <!-- Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá -->
+  <rule comment="C[T] negverb word_qst_not_verb connegverb" c="Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá">
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word_qst_not_verb"/>
@@ -2211,7 +2211,7 @@
 
 
 
-  <rule comment="REGLA: NEGVERB word word CONNEGVERB"> 
+  <rule comment="C[TW] negverb word_qst_not_verb word_not_verb connegverb"> 
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word_qst_not_verb"/>
@@ -2280,7 +2280,7 @@
     </action>
   </rule>
 
-  <rule comment="REGLA: NEGVERB word word word CONNEGVERB"> 
+  <rule comment="C[T] negverb word_qst_not_verb word_not_verb word_not_verb connegverb"> 
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word_qst_not_verb"/>
@@ -2356,7 +2356,7 @@
   </rule>
 
 
-    <rule comment="REGLA: jagis 2001 - 2 position in-out"> 
+    <rule comment="C[T] months_n semyear"> 
       <pattern> 
         <pattern-item n="months_n"/>
         <pattern-item n="semyear"/>
@@ -2374,7 +2374,7 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
@@ -2383,7 +2383,7 @@
       </action>
     </rule>
 
-  <rule comment="REGLA: bealis-px">
+  <rule comment="C[LT] bealis_px">
     <pattern>
       <pattern-item n="bealis_px"/>
     </pattern>
@@ -2409,7 +2409,7 @@
     </action>
   </rule>
 
-  <rule comment="REGLA: adv">
+  <rule comment="C[ ] adv">
     <pattern>
       <pattern-item n="adv"/>
     </pattern>
@@ -2429,7 +2429,7 @@
       </out>
     </action>
   </rule>
-  <rule comment="REGLA: pcle">
+  <rule comment="C[T] pcle">
     <pattern>
       <pattern-item n="pcle"/>
     </pattern>
@@ -2465,9 +2465,9 @@
     </action>
   </rule>
 
-  <rule comment="REGLA: boahtitverb fápmui">
+  <rule comment="C[W] boahtitverb fápmu_n_ill">
     <pattern>
-      <pattern-item n="boahtitverb"/>
+      <pattern-item n="boahtit_vblex"/>
       <pattern-item n="fápmu_n_ill"/>
     </pattern>
     <action>
@@ -2482,7 +2482,7 @@
           <lu>
             <clip pos="2" side="tl" part="whole"/>
           </lu>
-          <b/>
+            <b pos="1"/>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu>
@@ -2491,7 +2491,7 @@
     </action>
   </rule>
 
-    <rule comment="REGLA: eará ládje">
+    <rule comment="C[T] eará_seammá_prn ladje_post">
       <pattern>
         <pattern-item n="eará_seammá_prn"/>  
         <pattern-item n="ladje_post"/>  
@@ -2511,7 +2511,7 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
              <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
@@ -2521,7 +2521,7 @@
     </rule>
 
 
-    <rule comment="REGLA: prn">
+    <rule comment="C[ ] prn">
       <pattern>
         <pattern-item n="prn"/>  
       </pattern>
@@ -2548,7 +2548,7 @@
 
 
 
-    <rule comment="REGLA: prn-num noun">
+    <rule comment="C[T] prn_num noun">
       <pattern>
         <pattern-item n="prn_num"/>  
         <pattern-item n="noun"/>  
@@ -2623,7 +2623,7 @@
               <lu>
                 <clip pos="1" side="tl" part="whole"/>
               </lu>
-              <b/>
+            <b pos="1"/>
                <lu>
                 <clip pos="2" side="tl" part="whole"/>
               </lu>
@@ -2632,7 +2632,7 @@
       </action>
     </rule> 
  
-     <rule comment="REGLA: mod_num prn-dem pluss noun">
+     <rule comment="C[T] mod_num prn_num noun">
       <pattern>
         <pattern-item n="mod_num"/>  
         <pattern-item n="prn_num"/> 
@@ -2708,11 +2708,11 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
              <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-             <b/>
+            <b pos="2"/>
              <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -2722,7 +2722,7 @@
     </rule> 
 
  
-    <rule comment="REGLA: prn-dem n-cmp noun">
+    <rule comment="C[T] prn_num n_cmp noun">
       <pattern>
         <pattern-item n="prn_num"/>  
         <pattern-item n="n_cmp"/>          
@@ -2789,7 +2789,7 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <mlu>
              <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -2803,7 +2803,7 @@
       </action>
     </rule> 
 
-    <rule comment="REGLA: prn-dem pluss noun">
+    <rule comment="C[T] prn_dem prn_dem noun">
       <pattern>
         <pattern-item n="prn_dem"/>  
         <pattern-item n="prn_num"/>  
@@ -2874,11 +2874,11 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
              <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="2"/>
              <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -2887,7 +2887,7 @@
       </action>
     </rule>
 
-   <rule comment="REGLA: num prn_dem noun" c="luohkás lea okta dain olbmuin geat ledje doppe">
+   <rule comment="C[T] numeral prn_dem noun" c="luohkás lea okta dain olbmuin geat ledje doppe">
       <pattern>
         <pattern-item n="numeral"/>  
         <pattern-item n="prn_dem"/>  
@@ -2916,11 +2916,11 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
              <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="2"/>
              <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -2930,7 +2930,7 @@
     </rule>
 
 
-    <rule comment="REGLA: váste  - 1 position out"> <!-- illative instead of pp with váste -->
+    <rule comment="C[DT] gen váste_post" c="illative instead of pp with váste">
       <pattern>
         <pattern-item n="gen"/>
         <pattern-item n="váste_post"/>
@@ -2953,7 +2953,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: váste  - 1 position out"> <!-- illative instead of pp with váste -->
+    <rule comment="C[DT] n_cmp gen váste_post" c="illative instead of pp with váste"> 
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="gen"/>
@@ -2982,7 +2982,7 @@
       </action>
     </rule>
  
-    <rule comment="REGLA: numeral - 1 position in-out">
+    <rule comment="C[T] numeral">
       <pattern>
         <pattern-item n="numeral"/>
       </pattern>
@@ -3011,7 +3011,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: adj">
+    <rule comment="C[ ] adj">
       <pattern>
         <pattern-item n="adj"/>
       </pattern>
@@ -3032,7 +3032,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: nom">
+    <rule comment="C[ ] noun">
       <pattern>
         <pattern-item n="noun"/>
       </pattern>
@@ -3054,7 +3054,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: nouncmp adj">
+    <rule comment="C[ ] n_cmp adj">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="adj"/> <!-- usually derivated from noun -->
@@ -3081,7 +3081,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: nnomcmp">
+    <rule comment="C[S] n_cmp noun">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="noun"/>
@@ -3108,7 +3108,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: nnomcmp 3 in">
+    <rule comment="C[S] n_cmp n_cmp noun">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="n_cmp"/>
@@ -3139,7 +3139,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: nnomcmp 4"> <!-- bieggamillofápmorusttet --> 
+    <rule comment="C[S] n_cmp n_cmp n_cmp noun" c="bieggamillofápmorusttet">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="n_cmp"/>
@@ -3175,7 +3175,7 @@
       </action>
     </rule>
     
-    <rule comment="REGLA: rdep n  - 2 positions">
+    <rule comment="C[T] rdep n_not_cmp">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3241,7 +3241,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: cmp rdep n  - 2 positions">
+    <rule comment="C[ST] n_cmp rdep n_not_cmp">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="rdep"/>
@@ -3298,7 +3298,7 @@
 
 
 
-   <rule comment="REGLA: rdep n propnom  - 3 positions">
+   <rule comment="C[S] rdep n_not_cmp prop_nom">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3340,7 +3340,7 @@
     </rule>
 
 
-   <rule comment="REGLA:  n propnom  - 3 positions">
+   <rule comment="C[ ] n_not_cmp prop_attr prop_nom">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
@@ -3371,7 +3371,7 @@
       </action>
     </rule>
 
-   <rule comment="REGLA: rdep n propnom  - 4 positions">
+   <rule comment="C[ ] rdep n_not_cmp prop_attr prop_nom">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3413,7 +3413,7 @@
       </action>
     </rule>
 
-   <rule comment="REGLA: rdep n attr attr propnom  - 5 positions">
+   <rule comment="C[ ] rdep n_not_cmp prop_attr prop_attr prop_nom">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3461,7 +3461,7 @@
       </action>
     </rule>
 
-   <rule comment="REGLA: n attr attr propnom  - 4 positions: sámedikkeráde Silje Karine Muotka">
+   <rule comment="C[ ] n_not_cmp prop_attr prop_attr prop_nom" c="sámedikkeráde Silje Karine Muotka">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
@@ -3497,7 +3497,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: rdep cmp n  - 3 positions">
+    <rule comment="C[S] rdep n_cmp n_not_cmp">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="n_cmp"/>
@@ -3537,7 +3537,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: rdep rdep cmp n  - 3 positions out">
+    <rule comment="C[S] rdep rdep n_cmp n_not_cmp">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3590,7 +3590,7 @@
     </rule>
 
 
-    <rule comment="REGLA: rdep rdep cmp n  - 3 positions out">
+    <rule comment="C[ ] rdep rdep n_not_cmp">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3635,7 +3635,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: rdep rdep rdep cmp n  - 4 positions out">
+    <rule comment="C[S] rdep rdep rdep n_not_cmp">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3688,7 +3688,7 @@
     </rule>
 
 
-    <rule comment="REGLA: n num-ldep  - 2 positions">
+    <rule comment="C[ ] noun num-ldep ">
       <pattern>
         <pattern-item n="noun"/>
         <pattern-item n="num_ldep"/>
@@ -3717,7 +3717,7 @@
       </action>
     </rule>
     
-    <rule comment="REGLA: leat-aux   - 1 position out">
+    <rule comment="C[ ] leat_aux">
       <pattern>
         <pattern-item n="leat_aux"/>
       </pattern>
@@ -3742,7 +3742,7 @@
 
 
 
-    <rule comment="REGLA: verb-actio  - 1 position">
+    <rule comment="C[T] verb_actio">
       <pattern>
         <pattern-item n="verb_actio"/>
       </pattern>
@@ -3767,7 +3767,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: verb-inf  - 1 position">
+    <rule comment="C[T] verb_inf">
       <pattern>
         <pattern-item n="verb_inf"/>
       </pattern>
@@ -3794,7 +3794,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: verb-prfprc  - 1 position">
+    <rule comment="C[ ] verb_prfprc">
       <pattern>
         <pattern-item n="verb_prfprc"/>
       </pattern>
@@ -3814,7 +3814,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: mainverbqst">
+    <rule comment="C[AT] mainverbqst">
       <pattern>
         <pattern-item n="mainverbqst"/>
       </pattern>
@@ -3832,7 +3832,7 @@
               <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
-           <b/>
+            <b pos="1"/>
           <chunk name="qst">
             <tags>
               <tag><lit-tag v="pcle"/></tag>
@@ -3847,7 +3847,7 @@
       </action>
     </rule>
     
-    <rule comment="REGLA: verb-fin  - 1 position">
+    <rule comment="C[AT] verb_fin  - 1 position">
       <pattern>
         <pattern-item n="verb_fin"/>
       </pattern>
@@ -3895,7 +3895,7 @@
     </rule> 
 
 
-    <rule comment="REGLA: SENT">
+    <rule comment="C[ ] sent">
       <pattern>
         <pattern-item n="sent"/>
       </pattern>
@@ -3915,7 +3915,7 @@
     </rule>
 
     
-     <rule comment="REGLA: dat-pcle">
+     <rule comment="C[ ] dat_pcle">
       <pattern>
         <pattern-item n="dat_pcle"/>
       </pattern>
@@ -3923,7 +3923,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: miehtá noun">
+    <rule comment="C[TW] miehtá_adp nom_gen">
       <pattern>
         <pattern-item n="miehtá_adp"/>
         <pattern-item n="nom_gen"/>
@@ -3949,7 +3949,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: noun  miehtá">
+    <rule comment="C[T] nom_gen  miehtá_adp">
       <pattern>
         <pattern-item n="nom_gen"/>
         <pattern-item n="miehtá_adp"/>
@@ -3974,7 +3974,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: cc  - 1 position">
+    <rule comment="C[ ] cnjcoo">
       <pattern>
         <pattern-item n="cnjcoo"/>
       </pattern>
@@ -3995,7 +3995,7 @@
         </out>
       </action>
     </rule>
-     <rule comment="REGLA: cnjsub  - 1 position">
+     <rule comment="C[ ] cnjsub">
       <pattern>
         <pattern-item n="cnjsub"/>
       </pattern>
@@ -4017,7 +4017,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: numeral prosent">
+    <rule comment="C[ ] numeral prosent">
       <pattern>
         <pattern-item n="numeral"/>
         <pattern-item n="prosent"/>
@@ -4041,7 +4041,7 @@
         </out>
       </action>
     </rule>
-   <rule comment="REGLA: adv numeral prosent">
+   <rule comment="C[ ] mod_num numeral prosent">
       <pattern>
         <pattern-item n="mod_num"/>
         <pattern-item n="numeral"/>
@@ -4058,11 +4058,11 @@
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="1"/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
-            <b/>
+            <b pos="2"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -4070,7 +4070,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="REGLA: comma">
+    <rule comment="C[ ] comma">
       <pattern>
         <pattern-item n="comma"/>
       </pattern>
@@ -4088,7 +4088,7 @@
       </action>
     </rule>
     
-   <rule comment="REGLA: DEFAULT">
+   <rule comment="C[ ] default">
       <pattern>
         <pattern-item n="default"/>
       </pattern>
