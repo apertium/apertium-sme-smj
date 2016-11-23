@@ -2425,23 +2425,26 @@
     </pattern>
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
- <choose>
- <when>
- <test><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not></test>
-        <out>
-          <chunk namefrom="chunk_name" case="caseFirstword">
-          <tags>
-            <tag><lit-tag v="ADV"/></tag>
-            <tag><var n="func"/></tag>
-          </tags>
-          <lu>
-            <clip pos="1" side="tl" part="whole"/>
-          </lu>
-        </chunk>
-      </out>
-  </when>
-</choose>
+      <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
+      <choose>
+        <when>
+          <test><and><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
+                <!-- To catch when we have an empty lemma -->
+                <not><contains-substring><clip pos="1" side="tl" part="lem"/><lit v="&gt;"/></contains-substring></not>
+                </and></test>
+            <out>
+              <chunk namefrom="chunk_name" case="caseFirstword">
+              <tags>
+                <tag><lit-tag v="ADV"/></tag>
+                <tag><var n="func"/></tag>
+              </tags>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+            </chunk>
+          </out>
+        </when>
+      </choose>
     </action>
   </rule>
 
