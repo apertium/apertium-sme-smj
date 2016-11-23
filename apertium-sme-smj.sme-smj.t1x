@@ -2426,6 +2426,9 @@
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
+ <choose>
+ <when>
+ <test><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not></test>
         <out>
           <chunk namefrom="chunk_name" case="caseFirstword">
           <tags>
@@ -2437,8 +2440,13 @@
           </lu>
         </chunk>
       </out>
+  </when>
+</choose>
     </action>
   </rule>
+
+
+
   <rule comment="C[T] pcle" c="example">
     <pattern>
       <pattern-item n="pcle"/>
