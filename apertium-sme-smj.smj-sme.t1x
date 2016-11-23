@@ -30,6 +30,10 @@
       <attr-item tags="ela"/>
       <attr-item tags="ine"/>
     </def-attr>
+    <def-attr n="a_trans">
+      <attr-item tags="iv"/>
+      <attr-item tags="tv"/>
+    </def-attr>
 
     <def-attr n="a_func">
       <attr-item tags="@→A"/>
@@ -361,6 +365,7 @@
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_dialect"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_ela_ine"/><lit-tag v="loc"/></let>
+      <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>
     </def-macro>
   </section-def-macros>
   <section-rules>
