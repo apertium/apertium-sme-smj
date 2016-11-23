@@ -357,6 +357,12 @@
       <cat-item lemma="mielde" tags="adv.*"/>
     </def-cat>
 
+    <def-cat n="váldit_particle">
+      <cat-item lemma="mielde" tags="adv.*"/>
+      <cat-item lemma="vuhtii" tags="adv.*"/>
+    </def-cat>
+
+
     <def-cat n="fárrui_post">
       <cat-item lemma="fárrui" tags="adv.*"/>
     </def-cat>
@@ -1669,9 +1675,9 @@
 
 
   <section-rules>
-    <rule comment="C[D] mielde_adv váldit_vblex" c="example">
+    <rule comment="C[D] váldit_particle váldit_vblex" c="example">
       <pattern>
-        <pattern-item n="mielde_adv"/>
+        <pattern-item n="váldit_particle"/>
         <pattern-item n="váldit_vblex"/>
       </pattern>
       <action>
@@ -1690,10 +1696,10 @@
       </action>
     </rule> 
  
-     <rule comment="C[D] mielde_adv mielde_adv" c="example">
+     <rule comment="C[D] váldit_particle mielde_adv" c="example">
       <pattern>
         <pattern-item n="váldit_vblex"/>
-        <pattern-item n="mielde_adv"/>
+        <pattern-item n="váldit_particle"/>
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -2426,12 +2432,11 @@
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
       <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
-      <choose>
+<!--      <choose>
         <when>
           <test><and><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
-                <!-- To catch when we have an empty lemma -->
                 <not><contains-substring><clip pos="1" side="tl" part="lem"/><lit v="&gt;"/></contains-substring></not>
-                </and></test>
+                </and></test> -->
             <out>
               <chunk namefrom="chunk_name" case="caseFirstword">
               <tags>
@@ -2443,8 +2448,8 @@
               </lu>
             </chunk>
           </out>
-        </when>
-      </choose>
+<!--         </when>
+     </choose> -->
     </action>
   </rule>
 
