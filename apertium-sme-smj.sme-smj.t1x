@@ -455,6 +455,12 @@
     <def-cat n="boahtit_vblex"> 
       <cat-item lemma="boahtit" tags="vblex.*"/>
     </def-cat>
+    <def-cat n="bidjat_vblex"> 
+      <cat-item lemma="bidjat" tags="vblex.*"/>
+    </def-cat>
+    <def-cat n="guovddáš_n"> 
+      <cat-item lemma="guovddáš" tags="n.*.sg.ill.*"/>
+    </def-cat>
 
     <def-cat n="beassat_vblex">
       <cat-item lemma="beassat" tags="vblex.iv.*"/>
@@ -1675,7 +1681,7 @@
 
 
   <section-rules>
-    <rule comment="C[D] váldit_particle váldit_vblex" c="example">
+    <rule comment="C[D] váldit_particle váldit_vblex" c="Ferte dohkálaččat vuhtii váldit máná kulturduogáža : Viertti dågålattjat vieledit máná kultuvrraduogátjav">
       <pattern>
         <pattern-item n="váldit_particle"/>
         <pattern-item n="váldit_vblex"/>
@@ -1696,13 +1702,34 @@
       </action>
     </rule> 
  
-     <rule comment="C[D] váldit_particle mielde_adv" c="example">
+     <rule comment="C[D] váldit_vblex váldit_particle" c="mánát váldojuvvojit mielde sierralágan bargoproseassaide : máná sebrudahteduvvi sierralágásj barggoprosessajda">
       <pattern>
         <pattern-item n="váldit_vblex"/>
         <pattern-item n="váldit_particle"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+         <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
+     <rule comment="C[D] bidjat_vblex guovddáš_n" c="example">
+      <pattern>
+        <pattern-item n="bidjat_vblex"/>
+        <pattern-item n="guovddáš_n"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
          <out>
           <chunk name="vblex" case="caseFirstword">
             <tags>
