@@ -2220,7 +2220,7 @@
           </lu>
           </chunk>
           <b pos="1"/>
-          <chunk name="vblex">
+          <chunk name="conneg">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -2284,7 +2284,7 @@
       <pattern-item n="connegverb"/>
     </pattern>
     <action>
-      <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="3"/><with-param pos="2"/></call-macro>
       <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
       <!-- c="First we copy the temps from mainverb onto negverb" -->
       <let>
@@ -2305,21 +2305,33 @@
       </choose>
 
       <out>
-        <chunk name="vblex" case="caseFirstword">
+        <chunk name="neg" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
-            <tag><var n="func"/></tag>
+            <tag><lit-tag v="@-FAUXV"/></tag>
             <tag><clip pos="1" side="sl" part="a_mood"/></tag>
             <tag><clip pos="1" side="sl" part="a_foc"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
           </lu>
+         </chunk>
          <b pos="1"/>
+        <chunk name="word" case="caseFirstword">
+          <tags>
+            <tag><lit-tag v="NP"/></tag>
+            <tag><var n="func"/></tag>
+          </tags>
           <lu>
             <clip pos="2" side="tl" part="whole"/>
           </lu>
-        <b pos="2"/>
+          </chunk>
+       <b pos="2"/>
+        <chunk name="conneg" case="caseFirstword">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
           <lu>
             <clip pos="3" side="tl" part="whole"/>
           </lu>
@@ -2441,9 +2453,9 @@
           </lu>
         </chunk>
         <b pos="1"/>
-        <chunk name="vblex">
+        <chunk name="word">
           <tags>
-            <tag><lit-tag v="SV"/></tag>
+            <tag><lit-tag v="NP"/></tag>
             <tag><var n="func"/></tag>
             <tag><clip pos="3" side="sl" part="a_mood"/></tag>
             <tag><clip pos="3" side="sl" part="a_foc"/></tag>
