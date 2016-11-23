@@ -2248,6 +2248,21 @@
       <concat><clip pos="2" side="tl" part="a_temps_mood"/></concat>
       </let>
       <let><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></let>
+       <choose>
+         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="noun"/></let>
+              </when>
+         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="prn"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="prn"/></let>
+              </when>
+         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="adv"/></let>
+              </when>
+
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="word"/></let>
+       </otherwise>
+      </choose>
       <out>
         <chunk name="neg" case="caseFirstword">
           <tags>
@@ -2259,7 +2274,7 @@
           </lu>
         </chunk>
           <b pos="1"/>
-        <chunk name="word">
+              <chunk namefrom="chunk_name">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><var n="func"/></tag>
@@ -2303,6 +2318,21 @@
           <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
         </when>
       </choose>
+       <choose>
+         <when><test><equal><clip pos="2" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="noun"/></let>
+              </when>
+         <when><test><equal><clip pos="2" side="sl" part="a_PoS"/><lit-tag v="prn"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="prn"/></let>
+              </when>
+         <when><test><equal><clip pos="2" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="adv"/></let>
+              </when>
+
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="word"/></let>
+       </otherwise>
+      </choose>
 
       <out>
         <chunk name="neg" case="caseFirstword">
@@ -2317,7 +2347,7 @@
           </lu>
          </chunk>
          <b pos="1"/>
-        <chunk name="word" case="caseFirstword">
+              <chunk namefrom="chunk_name">
           <tags>
             <tag><lit-tag v="NP"/></tag>
             <tag><var n="func"/></tag>
@@ -2327,7 +2357,7 @@
           </lu>
           </chunk>
        <b pos="2"/>
-        <chunk name="conneg" case="caseFirstword">
+        <chunk name="conneg">
           <tags>
             <tag><lit-tag v="SV"/></tag>
             <tag><lit-tag v="@-FMAINV"/></tag>
@@ -2368,6 +2398,21 @@
           <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
         </when>
       </choose>
+       <choose>
+         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="noun"/></let>
+              </when>
+         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="prn"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="prn"/></let>
+              </when>
+         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="adv"/></let>
+              </when>
+
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="word"/></let>
+       </otherwise>
+      </choose>
 
       <out>
         <chunk name="neg" case="caseFirstword">
@@ -2382,7 +2427,7 @@
           </lu>
         </chunk>
         <b pos="1"/>
-        <chunk name="word">
+              <chunk namefrom="chunk_name">
           <tags>
             <tag><lit-tag v="NP"/></tag>
             <tag><var n="func"/></tag>
@@ -2439,6 +2484,21 @@
           <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
         </when>
       </choose>
+       <choose>
+         <when><test><equal><clip pos="4" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="noun"/></let>
+              </when>
+         <when><test><equal><clip pos="4" side="sl" part="a_PoS"/><lit-tag v="prn"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="prn"/></let>
+              </when>
+         <when><test><equal><clip pos="4" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="adv"/></let>
+              </when>
+
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="word"/></let>
+       </otherwise>
+      </choose>
 
       <out>
         <chunk name="neg" case="caseFirstword">
@@ -2453,12 +2513,12 @@
           </lu>
         </chunk>
         <b pos="1"/>
-        <chunk name="word">
+              <chunk namefrom="chunk_name">
           <tags>
             <tag><lit-tag v="NP"/></tag>
             <tag><var n="func"/></tag>
-            <tag><clip pos="3" side="sl" part="a_mood"/></tag>
-            <tag><clip pos="3" side="sl" part="a_foc"/></tag>
+            <tag><clip pos="4" side="sl" part="a_mood"/></tag>
+            <tag><clip pos="4" side="sl" part="a_foc"/></tag>
           </tags>
           <lu>
             <clip pos="2" side="tl" part="whole"/>
