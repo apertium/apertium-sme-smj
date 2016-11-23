@@ -1660,7 +1660,7 @@
 
 
   <section-rules>
-    <rule comment="C[D] mielde_adv váldit_vblex">
+    <rule comment="C[D] mielde_adv váldit_vblex" c="example">
       <pattern>
         <pattern-item n="mielde_adv"/>
         <pattern-item n="váldit_vblex"/>
@@ -1681,7 +1681,7 @@
       </action>
     </rule> 
  
-     <rule comment="C[D] mielde_adv mielde_adv">
+     <rule comment="C[D] mielde_adv mielde_adv" c="example">
       <pattern>
         <pattern-item n="váldit_vblex"/>
         <pattern-item n="mielde_adv"/>
@@ -1703,7 +1703,7 @@
     </rule> 
 
 
-     <rule comment="C[T] leat_aux_main mielde_adv verb_actio_inf Supn">
+     <rule comment="C[T] leat_aux_main mielde_adv verb_actio_inf Supn" c="example">
       <pattern>
         <pattern-item n="leat_aux_main"/>
         <pattern-item n="mielde_adv"/>
@@ -1734,7 +1734,7 @@
       </action>
     </rule> 
 
-     <rule comment="C[W] váldit_vblex atnu_n_ill">
+     <rule comment="C[W] váldit_vblex atnu_n_ill" c="example">
       <pattern>
         <pattern-item n="váldit_vblex"/>
         <pattern-item n="atnu_n_ill"/>
@@ -1913,7 +1913,7 @@
       </action>
     </rule>
   
-    <rule comment="C[T] ind_prn_neg" c="remove foc">
+    <rule comment="C[T] ind_prn_neg removes fac"  c="example">
       <pattern>
         <pattern-item n="ind_prn_neg"/>
       </pattern>
@@ -1932,7 +1932,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] leat_main_fin">
+    <rule comment="C[ ] leat_main_fin" c="example">
       <pattern>
         <pattern-item n="leat_main_fin"/>
       </pattern>
@@ -1954,7 +1954,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[AT] leat_qst">
+    <rule comment="C[AT] leat_qst" c="example">
       <pattern>
         <pattern-item n="leat_qst"/>
       </pattern>
@@ -1980,7 +1980,7 @@
       </action>
     </rule>
 
-    <rule comment="C[T] negverb">
+    <rule comment="C[T] negverb" c="example">
       <pattern>
         <pattern-item n="negverb"/>
       </pattern>
@@ -2057,7 +2057,7 @@
       </action>
     </rule>
 
-    <rule comment="C[T] negverbqst connegverb"> 
+    <rule comment="C[T] negverbqst connegverb" c="example"> 
       <pattern>
         <pattern-item n="negverbqst"/>
         <pattern-item n="connegverb"/>
@@ -2211,7 +2211,7 @@
 
 
 
-  <rule comment="C[TW] negverb word_qst_not_verb word_not_verb connegverb"> 
+  <rule comment="C[TW] negverb word_qst_not_verb word_not_verb connegverb" c="example"> 
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word_qst_not_verb"/>
@@ -2280,7 +2280,7 @@
     </action>
   </rule>
 
-  <rule comment="C[T] negverb word_qst_not_verb word_not_verb word_not_verb connegverb"> 
+  <rule comment="C[T] negverb word_qst_not_verb word_not_verb word_not_verb connegverb" c="example"> 
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word_qst_not_verb"/>
@@ -2356,7 +2356,7 @@
   </rule>
 
 
-    <rule comment="C[T] months_n semyear"> 
+    <rule comment="C[T] months_n semyear" c="example"> 
       <pattern> 
         <pattern-item n="months_n"/>
         <pattern-item n="semyear"/>
@@ -2383,7 +2383,7 @@
       </action>
     </rule>
 
-  <rule comment="C[LT] bealis_px">
+  <rule comment="C[LT] bealis_px" c="example">
     <pattern>
       <pattern-item n="bealis_px"/>
     </pattern>
@@ -2409,7 +2409,7 @@
     </action>
   </rule>
 
-  <rule comment="C[ ] adv">
+  <rule comment="C[ ] adv" c="example">
     <pattern>
       <pattern-item n="adv"/>
     </pattern>
@@ -2429,7 +2429,7 @@
       </out>
     </action>
   </rule>
-  <rule comment="C[T] pcle">
+  <rule comment="C[T] pcle" c="example">
     <pattern>
       <pattern-item n="pcle"/>
     </pattern>
@@ -2465,7 +2465,7 @@
     </action>
   </rule>
 
-  <rule comment="C[W] boahtitverb fápmu_n_ill">
+  <rule comment="C[W] boahtitverb fápmu_n_ill" c="example">
     <pattern>
       <pattern-item n="boahtit_vblex"/>
       <pattern-item n="fápmu_n_ill"/>
@@ -2491,7 +2491,7 @@
     </action>
   </rule>
 
-    <rule comment="C[T] eará_seammá_prn ladje_post">
+    <rule comment="C[T] eará_seammá_prn ladje_post" c="example">
       <pattern>
         <pattern-item n="eará_seammá_prn"/>  
         <pattern-item n="ladje_post"/>  
@@ -2521,7 +2521,7 @@
     </rule>
 
 
-    <rule comment="C[ ] prn">
+    <rule comment="C[ ] prn" c="example">
       <pattern>
         <pattern-item n="prn"/>  
       </pattern>
@@ -2548,7 +2548,7 @@
 
 
 
-    <rule comment="C[T] prn_num noun">
+    <rule comment="C[T] prn_num noun" c="example">
       <pattern>
         <pattern-item n="prn_num"/>  
         <pattern-item n="noun"/>  
@@ -2632,7 +2632,7 @@
       </action>
     </rule> 
  
-     <rule comment="C[T] mod_num prn_num noun">
+     <rule comment="C[T] mod_num prn_num noun" c="example">
       <pattern>
         <pattern-item n="mod_num"/>  
         <pattern-item n="prn_num"/> 
@@ -2722,7 +2722,7 @@
     </rule> 
 
  
-    <rule comment="C[T] prn_num n_cmp noun">
+    <rule comment="C[T] prn_num n_cmp noun" c="example">
       <pattern>
         <pattern-item n="prn_num"/>  
         <pattern-item n="n_cmp"/>          
@@ -2803,7 +2803,7 @@
       </action>
     </rule> 
 
-    <rule comment="C[T] prn_dem prn_dem noun">
+    <rule comment="C[T] prn_dem prn_dem noun" c="example">
       <pattern>
         <pattern-item n="prn_dem"/>  
         <pattern-item n="prn_num"/>  
@@ -2982,7 +2982,7 @@
       </action>
     </rule>
  
-    <rule comment="C[T] numeral">
+    <rule comment="C[T] numeral" c="example">
       <pattern>
         <pattern-item n="numeral"/>
       </pattern>
@@ -3011,7 +3011,7 @@
       </action>
     </rule>
 
-    <rule comment="C[ ] adj">
+    <rule comment="C[ ] adj" c="example">
       <pattern>
         <pattern-item n="adj"/>
       </pattern>
@@ -3032,7 +3032,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] noun">
+    <rule comment="C[ ] noun" c="example">
       <pattern>
         <pattern-item n="noun"/>
       </pattern>
@@ -3054,7 +3054,7 @@
       </action>
     </rule>
 
-    <rule comment="C[ ] n_cmp adj">
+    <rule comment="C[ ] n_cmp adj" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="adj"/> <!-- usually derivated from noun -->
@@ -3081,7 +3081,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[S] n_cmp noun">
+    <rule comment="C[S] n_cmp noun" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="noun"/>
@@ -3108,7 +3108,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[S] n_cmp n_cmp noun">
+    <rule comment="C[S] n_cmp n_cmp noun" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="n_cmp"/>
@@ -3175,7 +3175,7 @@
       </action>
     </rule>
     
-    <rule comment="C[T] rdep n_not_cmp">
+    <rule comment="C[T] rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3241,7 +3241,7 @@
       </action>
     </rule>
 
-    <rule comment="C[ST] n_cmp rdep n_not_cmp">
+    <rule comment="C[ST] n_cmp rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="rdep"/>
@@ -3298,7 +3298,7 @@
 
 
 
-   <rule comment="C[S] rdep n_not_cmp prop_nom">
+   <rule comment="C[S] rdep n_not_cmp prop_nom" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3340,7 +3340,7 @@
     </rule>
 
 
-   <rule comment="C[ ] n_not_cmp prop_attr prop_nom">
+   <rule comment="C[ ] n_not_cmp prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
@@ -3371,7 +3371,7 @@
       </action>
     </rule>
 
-   <rule comment="C[ ] rdep n_not_cmp prop_attr prop_nom">
+   <rule comment="C[ ] rdep n_not_cmp prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3413,7 +3413,7 @@
       </action>
     </rule>
 
-   <rule comment="C[ ] rdep n_not_cmp prop_attr prop_attr prop_nom">
+   <rule comment="C[ ] rdep n_not_cmp prop_attr prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3497,7 +3497,7 @@
       </action>
     </rule>
 
-    <rule comment="C[S] rdep n_cmp n_not_cmp">
+    <rule comment="C[S] rdep n_cmp n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="n_cmp"/>
@@ -3537,7 +3537,7 @@
       </action>
     </rule>
 
-    <rule comment="C[S] rdep rdep n_cmp n_not_cmp">
+    <rule comment="C[S] rdep rdep n_cmp n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3590,7 +3590,7 @@
     </rule>
 
 
-    <rule comment="C[ ] rdep rdep n_not_cmp">
+    <rule comment="C[ ] rdep rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3635,7 +3635,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[S] rdep rdep rdep n_not_cmp">
+    <rule comment="C[S] rdep rdep rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3688,7 +3688,7 @@
     </rule>
 
 
-    <rule comment="C[ ] noun num-ldep ">
+    <rule comment="C[ ] noun num-ldep" c="example">
       <pattern>
         <pattern-item n="noun"/>
         <pattern-item n="num_ldep"/>
@@ -3717,7 +3717,7 @@
       </action>
     </rule>
     
-    <rule comment="C[ ] leat_aux">
+    <rule comment="C[ ] leat_aux" c="example">
       <pattern>
         <pattern-item n="leat_aux"/>
       </pattern>
@@ -3742,7 +3742,7 @@
 
 
 
-    <rule comment="C[T] verb_actio">
+    <rule comment="C[T] verb_actio" c="example">
       <pattern>
         <pattern-item n="verb_actio"/>
       </pattern>
@@ -3767,7 +3767,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[T] verb_inf">
+    <rule comment="C[T] verb_inf" c="example">
       <pattern>
         <pattern-item n="verb_inf"/>
       </pattern>
@@ -3794,7 +3794,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] verb_prfprc">
+    <rule comment="C[ ] verb_prfprc" c="example">
       <pattern>
         <pattern-item n="verb_prfprc"/>
       </pattern>
@@ -3814,7 +3814,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[AT] mainverbqst">
+    <rule comment="C[AT] mainverbqst" c="example">
       <pattern>
         <pattern-item n="mainverbqst"/>
       </pattern>
@@ -3847,7 +3847,7 @@
       </action>
     </rule>
     
-    <rule comment="C[AT] verb_fin  - 1 position">
+    <rule comment="C[AT] verb_fin" c="example">
       <pattern>
         <pattern-item n="verb_fin"/>
       </pattern>
@@ -3915,7 +3915,7 @@
     </rule>
 
     
-     <rule comment="C[ ] dat_pcle">
+     <rule comment="C[ ] dat_pcle" c="example">
       <pattern>
         <pattern-item n="dat_pcle"/>
       </pattern>
@@ -3949,7 +3949,7 @@
       </action>
     </rule>
 
-    <rule comment="C[T] nom_gen  miehtá_adp">
+    <rule comment="C[T] nom_gen miehtá_adp" c="example">
       <pattern>
         <pattern-item n="nom_gen"/>
         <pattern-item n="miehtá_adp"/>
@@ -3974,7 +3974,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] cnjcoo">
+    <rule comment="C[ ] cnjcoo" c="example">
       <pattern>
         <pattern-item n="cnjcoo"/>
       </pattern>
@@ -3995,7 +3995,7 @@
         </out>
       </action>
     </rule>
-     <rule comment="C[ ] cnjsub">
+     <rule comment="C[ ] cnjsub" c="example">
       <pattern>
         <pattern-item n="cnjsub"/>
       </pattern>
@@ -4017,7 +4017,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] numeral prosent">
+    <rule comment="C[ ] numeral prosent" c="example">
       <pattern>
         <pattern-item n="numeral"/>
         <pattern-item n="prosent"/>
@@ -4041,7 +4041,7 @@
         </out>
       </action>
     </rule>
-   <rule comment="C[ ] mod_num numeral prosent">
+   <rule comment="C[ ] mod_num numeral prosent" c="example">
       <pattern>
         <pattern-item n="mod_num"/>
         <pattern-item n="numeral"/>
