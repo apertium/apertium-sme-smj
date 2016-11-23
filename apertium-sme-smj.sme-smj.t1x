@@ -177,8 +177,26 @@
       <cat-item tags="vblex.*.der_inchl.vblex.pot.*"/>
     </def-cat>
 
-    <def-cat n="negverb">
-      <cat-item lemma="ii" tags="vblex.iv.neg.indic.*"/>
+  <def-cat n="negverb"> <!-- no qst or foc_bat -->
+      <cat-item tags="vblex.iv.neg.indic.p1.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.du.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.du.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.du.@+FAUXV"/>
+
+      <cat-item tags="vblex.iv.neg.indic.p1.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p1.du.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p2.du.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.indic.p3.du.foc_neg-ge.@+FAUXV"/>
     </def-cat>
 
     <def-cat n="verb_prfprc">
