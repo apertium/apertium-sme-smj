@@ -772,6 +772,11 @@
     <def-attr n="a_spec_sme_tags">
       <attr-item tags="south"/>
       <attr-item tags="g3"/>
+       <attr-item tags="allegro"/>
+       <attr-item tags="err_orth_nom_gen_mt"/>
+       <attr-item tags="err_orth_mt"/>
+       <attr-item tags="err_orth_nom_acc_mt"/>
+       <attr-item tags="err_orth_a_á_mt"/>
     </def-attr>
     <def-attr n="a_num_type">
       <attr-item tags="arab"/>
@@ -1878,7 +1883,7 @@
     </rule> 
 
   
-  <rule comment="C[ ] adpos" c="prep to postp or prep">
+  <rule comment="C[_] adpos" c="prep to postp or prep">
       <pattern>
         <pattern-item n="adpos"/>
       </pattern>
@@ -2001,7 +2006,7 @@
 
  
   
-  <rule comment="C[ ]geatnegahtton1" c="geatnegahtton=bákkulasj: Skuvla lea geatnegahtton"> 
+  <rule comment="C[_]geatnegahtton1" c="geatnegahtton=bákkulasj: Skuvla lea geatnegahtton"> 
       <pattern>
         <pattern-item n="noun_nom"/>
         <pattern-item n="leat_main"/>
@@ -2050,7 +2055,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] leat_main_fin" c="example">
+    <rule comment="C[_] leat_main_fin" c="example">
       <pattern>
         <pattern-item n="leat_main_fin"/>
       </pattern>
@@ -2600,7 +2605,7 @@
     </action>
   </rule>
 
-  <rule comment="C[ ] adv" c="example">
+  <rule comment="C[_] adv" c="example">
     <pattern>
       <pattern-item n="adv"/>
     </pattern>
@@ -2722,7 +2727,7 @@
     </rule>
 
 
-    <rule comment="C[ ] prn" c="example">
+    <rule comment="C[_] prn" c="example">
       <pattern>
         <pattern-item n="prn"/>  
       </pattern>
@@ -3212,7 +3217,7 @@
       </action>
     </rule>
 
-    <rule comment="C[ ] adj" c="example">
+    <rule comment="C[_] adj" c="example">
       <pattern>
         <pattern-item n="adj"/>
       </pattern>
@@ -3233,7 +3238,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] noun" c="example">
+    <rule comment="C[_] noun" c="example">
       <pattern>
         <pattern-item n="noun"/>
       </pattern>
@@ -3255,7 +3260,7 @@
       </action>
     </rule>
 
-    <rule comment="C[ ] n_cmp adj" c="example">
+    <rule comment="C[_] n_cmp adj" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="adj"/> <!-- usually derivated from noun -->
@@ -3527,7 +3532,7 @@
     </rule>
 
 
-   <rule comment="C[ ] n_not_cmp prop_attr prop_nom" c="example">
+   <rule comment="C[_] n_not_cmp prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
@@ -3558,7 +3563,7 @@
       </action>
     </rule>
 
-   <rule comment="C[ ] rdep n_not_cmp prop_attr prop_nom" c="example">
+   <rule comment="C[_] rdep n_not_cmp prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3594,7 +3599,7 @@
       </action>
     </rule>
 
-   <rule comment="C[ ] rdep n_not_cmp prop_attr prop_attr prop_nom" c="example">
+   <rule comment="C[_] rdep n_not_cmp prop_attr prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3636,7 +3641,7 @@
       </action>
     </rule>
 
-   <rule comment="C[ ] n_not_cmp prop_attr prop_attr prop_nom" c="sámedikkeráde Silje Karine Muotka">
+   <rule comment="C[_] n_not_cmp prop_attr prop_attr prop_nom" c="sámedikkeráde Silje Karine Muotka">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
@@ -3747,7 +3752,7 @@
     </rule>
 
 
-    <rule comment="C[ ] rdep rdep n_not_cmp" c="example">
+    <rule comment="C[_] rdep rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3821,7 +3826,7 @@
     </rule>
 
 
-    <rule comment="C[ ] noun num-ldep" c="example">
+    <rule comment="C[_] noun num-ldep" c="example">
       <pattern>
         <pattern-item n="noun"/>
         <pattern-item n="num_ldep"/>
@@ -3850,7 +3855,7 @@
       </action>
     </rule>
     
-    <rule comment="C[ ] leat_aux" c="example">
+    <rule comment="C[_] leat_aux" c="example">
       <pattern>
         <pattern-item n="leat_aux"/>
       </pattern>
@@ -3927,7 +3932,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] verb_prfprc" c="example">
+    <rule comment="C[_] verb_prfprc" c="example">
       <pattern>
         <pattern-item n="verb_prfprc"/>
       </pattern>
@@ -4028,7 +4033,7 @@
     </rule> 
 
 
-    <rule comment="C[ ] sent">
+    <rule comment="C[_] sent">
       <pattern>
         <pattern-item n="sent"/>
       </pattern>
@@ -4048,7 +4053,7 @@
     </rule>
 
     
-     <rule comment="C[ ] dat_pcle" c="example">
+     <rule comment="C[_] dat_pcle" c="example">
       <pattern>
         <pattern-item n="dat_pcle"/>
       </pattern>
@@ -4107,7 +4112,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] cnjcoo" c="example">
+    <rule comment="C[_] cnjcoo" c="example">
       <pattern>
         <pattern-item n="cnjcoo"/>
       </pattern>
@@ -4128,7 +4133,7 @@
         </out>
       </action>
     </rule>
-     <rule comment="C[ ] cnjsub" c="example">
+     <rule comment="C[_] cnjsub" c="example">
       <pattern>
         <pattern-item n="cnjsub"/>
       </pattern>
@@ -4150,7 +4155,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] numeral prosent" c="example">
+    <rule comment="C[_] numeral prosent" c="example">
       <pattern>
         <pattern-item n="numeral"/>
         <pattern-item n="prosent"/>
@@ -4174,7 +4179,7 @@
         </out>
       </action>
     </rule>
-   <rule comment="C[ ] mod_num numeral prosent" c="example">
+   <rule comment="C[_] mod_num numeral prosent" c="example">
       <pattern>
         <pattern-item n="mod_num"/>
         <pattern-item n="numeral"/>
@@ -4203,7 +4208,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[ ] comma">
+    <rule comment="C[_] comma">
       <pattern>
         <pattern-item n="comma"/>
       </pattern>
@@ -4221,7 +4226,7 @@
       </action>
     </rule>
     
-   <rule comment="C[ ] default">
+   <rule comment="C[_] default">
       <pattern>
         <pattern-item n="default"/>
       </pattern>
