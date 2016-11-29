@@ -777,6 +777,7 @@
        <attr-item tags="err_orth_mt"/>
        <attr-item tags="err_orth_nom_acc_mt"/>
        <attr-item tags="err_orth_a_á_mt"/>
+       <attr-item tags="←logo→"/>
     </def-attr>
     <def-attr n="a_num_type">
       <attr-item tags="arab"/>
