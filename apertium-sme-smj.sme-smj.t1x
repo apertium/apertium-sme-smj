@@ -82,18 +82,18 @@ C[S]-N n_cmp n_cmp noun
 C[S]-N n_cmp n_cmp n_cmp noun
  
 Rules for noun phrases:
-C[S]-NP rdep n_not_cmp prop_nom
+C[S]-NP mod_n n_not_cmp prop_nom
 C[_]-NP n_not_cmp prop_attr prop_nom
-C[_]-NP rdep n_not_cmp prop_attr prop_nom
+C[_]-NP mod_n n_not_cmp prop_attr prop_nom
 C[_]-NP n_not_cmp prop_attr prop_attr prop_nom
-C[_]-NP rdep n_not_cmp prop_attr prop_attr prop_nom
+C[_]-NP mod_n n_not_cmp prop_attr prop_attr prop_nom
 C[DL]-NP guhkki_adj áigi_n
-C[T]-NP rdep n_not_cmp
-C[_]-NP rdep rdep n_not_cmp
-C[S]-NP rdep rdep rdep n_not_cmp
-C[ST]-NP n_cmp rdep n_not_cmp
-C[S]-NP rdep n_cmp n_not_cmp
-C[S]-NP rdep rdep n_cmp n_not_cmp
+C[T]-NP mod_n n_not_cmp
+C[_]-NP mod_n mod_n n_not_cmp
+C[S]-NP mod_n mod_n mod_n n_not_cmp
+C[ST]-NP n_cmp mod_n n_not_cmp
+C[S]-NP mod_n n_cmp n_not_cmp
+C[S]-NP mod_n mod_n n_cmp n_not_cmp
 C[T]-NP months_n semyear
  
 Rules for numeral expressions:
@@ -400,7 +400,7 @@ C[_]-T sent
       <cat-item tags="*"/>
     </def-cat>
 
-    <def-cat n="rdep">
+    <def-cat n="mod_n">
       <cat-item tags="prn.pers.*.*.@→N"/>
       <cat-item tags="prn.ref.*.*.@→N"/>
       <cat-item tags="prn.ref.*.*.*.@→N"/>
@@ -3523,9 +3523,9 @@ C[_]-T sent
       </action>
     </rule>
     
-    <rule comment="C[T]-NP rdep n_not_cmp" c="example">
+    <rule comment="C[T]-NP mod_n n_not_cmp" c="example">
       <pattern>
-        <pattern-item n="rdep"/>
+        <pattern-item n="mod_n"/>
         <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
@@ -3583,10 +3583,10 @@ C[_]-T sent
       </action>
     </rule>
 
-    <rule comment="C[ST]-NP n_cmp rdep n_not_cmp" c="example">
+    <rule comment="C[ST]-NP n_cmp mod_n n_not_cmp" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
-        <pattern-item n="rdep"/>
+        <pattern-item n="mod_n"/>
         <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
@@ -3640,9 +3640,9 @@ C[_]-T sent
 
 
 
-   <rule comment="C[S]-NP rdep n_not_cmp prop_nom" c="example">
+   <rule comment="C[S]-NP mod_n n_not_cmp prop_nom" c="example">
       <pattern>
-        <pattern-item n="rdep"/>
+        <pattern-item n="mod_n"/>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_nom"/>
       </pattern>
@@ -3705,9 +3705,9 @@ C[_]-T sent
       </action>
     </rule>
 
-   <rule comment="C[_]-NP rdep n_not_cmp prop_attr prop_nom" c="example">
+   <rule comment="C[_]-NP mod_n n_not_cmp prop_attr prop_nom" c="example">
       <pattern>
-        <pattern-item n="rdep"/>
+        <pattern-item n="mod_n"/>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
         <pattern-item n="prop_nom"/>
@@ -3741,9 +3741,9 @@ C[_]-T sent
       </action>
     </rule>
 
-   <rule comment="C[_]-NP rdep n_not_cmp prop_attr prop_attr prop_nom" c="example">
+   <rule comment="C[_]-NP mod_n n_not_cmp prop_attr prop_attr prop_nom" c="example">
       <pattern>
-        <pattern-item n="rdep"/>
+        <pattern-item n="mod_n"/>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
         <pattern-item n="prop_attr"/>
@@ -3819,9 +3819,9 @@ C[_]-T sent
       </action>
     </rule>
 
-    <rule comment="C[S]-NP rdep n_cmp n_not_cmp" c="example">
+    <rule comment="C[S]-NP mod_n n_cmp n_not_cmp" c="example">
       <pattern>
-        <pattern-item n="rdep"/> 
+        <pattern-item n="mod_n"/> 
         <pattern-item n="n_cmp"/>
         <pattern-item n="n_not_cmp"/>
       </pattern>
@@ -3853,10 +3853,10 @@ C[_]-T sent
       </action>
     </rule>
 
-    <rule comment="C[S]-NP rdep rdep n_cmp n_not_cmp" c="example">
+    <rule comment="C[S]-NP mod_n mod_n n_cmp n_not_cmp" c="example">
       <pattern>
-        <pattern-item n="rdep"/> 
-        <pattern-item n="rdep"/> 
+        <pattern-item n="mod_n"/> 
+        <pattern-item n="mod_n"/> 
         <pattern-item n="n_cmp"/>
         <pattern-item n="n_not_cmp"/>
       </pattern>
@@ -3894,10 +3894,10 @@ C[_]-T sent
     </rule>
 
 
-    <rule comment="C[_]-NP rdep rdep n_not_cmp" c="example">
+    <rule comment="C[_]-NP mod_n mod_n n_not_cmp" c="example">
       <pattern>
-        <pattern-item n="rdep"/> 
-        <pattern-item n="rdep"/> 
+        <pattern-item n="mod_n"/> 
+        <pattern-item n="mod_n"/> 
         <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
@@ -3927,11 +3927,11 @@ C[_]-T sent
         </out>
       </action>
     </rule>
-    <rule comment="C[S]-NP rdep rdep rdep n_not_cmp" c="example">
+    <rule comment="C[S]-NP mod_n mod_n mod_n n_not_cmp" c="example">
       <pattern>
-        <pattern-item n="rdep"/> 
-        <pattern-item n="rdep"/> 
-        <pattern-item n="rdep"/> 
+        <pattern-item n="mod_n"/> 
+        <pattern-item n="mod_n"/> 
+        <pattern-item n="mod_n"/> 
         <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
