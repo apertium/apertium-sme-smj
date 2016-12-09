@@ -1,5 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- -*- nxml -*- -->
+
+<!--
+Documenting choose-parts in macros
+
+set_caseFirstword
+
+agreement-adj-sg-2Param
+
+agreement-adj-2Param
+
+agreement-ind-pl-2Param
+
+convert-deriv-1Param
+
+inherenttag-px-2Param
+
+assign-case-1Param
+
+foc-1Param
+
+general-macro-1Param
+M[V] verb_nbrpers
+M[V] infin
+M[T] remove tense when cond
+M[T] remove tense when pot
+M[T] change gen to acc when sem_route
+M[V] ext
+M[V] empty ext
+M[V] vdic
+M[V] empty vdic
+M[V] func
+M[T] add sg to prn.ref when not nom
+M[T] remove extra tags from adv
+M[T] remove foc from prn
+M[T] add attr to buorre
+
+general-macro-2Param
+
+general-macro-2Param-headfirst
+
+general-macro-3Param
+
+general-macro-4Param
+ 
+ 
+Rules:
+Rules for verbals:
+C[T]-V negverb
+C[T]-V negverb word_qst_not_verb word_not_verb word_not_verb connegverb
+C[TW]-V negverb word_qst_not_verb word_not_verb connegverb
+C[T]-V negverb word_qst_not_verb connegverb
+C[T]-V negverb connegverb
+C[T]-V negverbqst connegverb
+C[_]-V verb_prfprc
+C[TW]-V negverb23 leat_conneg word
+C[T]-V verb_inf
+C[AT]-V verb_fin
+C[T]-V verb_actio
+C[AT]-V leat_qst
+C[AT]-V mainverbqst
+C[_]-V leat_aux
+ 
+Rules for predicates:
+C[D]-PRED váldit_vblex váldit_particle
+C[W]-PRED boahtitverb fápmu_n_ill
+C[W]-PRED váldit_vblex atnu_n_ill
+C[D]-PRED bidjat_vblex guovddáš_n
+C[T]-PRED leat_aux_main mielde_adv verb_actio_inf Supn
+C[D]-PRED váldit_particle váldit_vblex
+ 
+Rules for adjectives:
+C[_]-A adj
+C[_]-A n_cmp adj
+ 
+Rules for bare nouns and pronouns:
+C[T]-N ind_prn_neg removes Foc
+C[_]-N prn
+C[S]-N n_cmp noun
+C[S]-N n_cmp n_cmp noun
+C[S]-N n_cmp n_cmp n_cmp noun
+ 
+Rules for noun phrases:
+C[S]-NP rdep n_not_cmp prop_nom
+C[_]-NP n_not_cmp prop_attr prop_nom
+C[_]-NP rdep n_not_cmp prop_attr prop_nom
+C[_]-NP n_not_cmp prop_attr prop_attr prop_nom
+C[_]-NP rdep n_not_cmp prop_attr prop_attr prop_nom
+C[DL]-NP guhkki_adj áigi_n
+C[T]-NP rdep n_not_cmp
+C[_]-NP rdep rdep n_not_cmp
+C[S]-NP rdep rdep rdep n_not_cmp
+C[ST]-NP n_cmp rdep n_not_cmp
+C[S]-NP rdep n_cmp n_not_cmp
+C[S]-NP rdep rdep n_cmp n_not_cmp
+C[T]-NP months_n semyear
+ 
+Rules for numeral expressions:
+C[T]-NUM numeral
+C[T]-NUM numeral prn_dem noun
+C[T]-NUM prn_dem prn_dem noun
+C[T]-NUM prn_num noun
+C[T]-NUM mod_num prn_num noun
+C[T]-NUM prn_num n_cmp noun
+C[_]-NUM noun num-ldep
+C[_]-NUM numeral prosent
+C[_]-NUM mod_num numeral prosent
+ 
+Rules for adverbs:
+C[_]-ADV adv
+C[LT]-ADV bealis_px
+ 
+Rules for P phrases:
+C[T]-PP nom_gen miehtá_adp
+C[_]-PP adpos
+C[T]-PP eará_seammá_prn ladje_post
+C[DT]-PP gen váste_post
+C[DT]-PP n_cmp gen váste_post
+C[DL]-PP guhkki_adj áigi_n vuollai_post
+ 
+Rules for other phrases:
+C[T]-PHR noun_nom leat_main geatnegahtton_adj verb_inf
+C[_]-PHR noun_nom leat_main geatnegahtton_adj
+ 
+Small word classes:
+C[T]-PCLE pcle
+C[_]-PCLE dat_pcle
+C[_]-CS cnjsub
+ 
+Technical things:
+C[_]-T comma
+C[_]-T default
+C[_]-T sent
+-->
+
 <transfer default="chunk">
 
   <section-def-cats>
@@ -928,6 +1062,13 @@
       <attr-item tags="comp"/>
       <attr-item tags="sup"/>
     </def-attr>
+    <def-attr n="a_cmp">
+      <attr-item tags="cmp_sggen"/>
+      <attr-item tags="cmp_sgnom"/>
+      <attr-item tags="cmp_attr"/>
+      <attr-item tags="cmp_plgen"/>
+      <attr-item tags="cmp_sh"/>
+    </def-attr>
 
     <def-attr n="a_sem">
       <attr-item tags="sem_act"/>
@@ -1526,7 +1667,7 @@
       <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
 
       <choose>
-        <when c="M[______V_] verb_nbrpers">
+        <when c="M[V] verb_nbrpers">
           <test>
             <or>
               <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/></equal>
@@ -1548,18 +1689,18 @@
       </choose>
 
       <choose>
-        <when c="M[_____T__]">
+        <when c="M[T] remove tense when cond">
           <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
           <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
         </when>
-        <when c="M[_____T__]">
+        <when c="M[T] remove tense when pot">
           <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="pot"/></equal></test>
           <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
         </when>
       </choose>
 
       <choose>
-        <when c="M[_____T__]">
+        <when c="M[T] change gen to acc when sem_route">
           <test><and>
             <equal><clip pos="1" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal>
             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
@@ -1569,13 +1710,13 @@
       </choose>
 
       <choose>
-        <when c="M[______V_] ext">
+        <when c="M[V] ext">
           <test>
             <equal><clip pos="1" side="sl" part="a_exthab"/><lit-tag v="←ext→"/></equal>
           </test>
           <let><var n="ext"/><clip pos="1" side="sl" part="a_exthab"/></let>
         </when>
-        <when c="M[______V_] ext">
+        <when c="M[V] empty ext">
           <test>
             <not><equal><clip pos="1" side="sl" part="a_exthab"/><lit-tag v="←ext→"/></equal></not>
           </test>
@@ -1584,13 +1725,13 @@
       </choose>
 
       <choose>
-        <when c="M[______V_] vdic">
+        <when c="M[V] vdic">
           <test>
             <equal><clip pos="1" side="sl" part="x_func"/><lit-tag v="←vdic→"/></equal>
           </test>
           <let><var n="vdic"/><clip pos="1" side="sl" part="x_func"/></let>
         </when>
-        <when c="M[______V_] vdic">
+        <when c="M[V] empty vdic">
           <test>
             <not><equal><clip pos="1" side="sl" part="x_func"/><lit-tag v="←vdic→"/></equal></not>
           </test>
@@ -1599,14 +1740,14 @@
       </choose>
 
       <choose>
-        <when c="M[______V_] func">
+        <when c="M[V] func">
           <test><not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
           <let><var n="func"/><clip pos="1" side="sl" part="a_func"/></let>
         </when>
       </choose>
 
       <choose>
-        <when c="M[_____T__]">
+        <when c="M[T] add sg to prn.ref when not nom">
           <test><and>
                   <equal><clip pos="1" side="sl" part="a_prn"/><lit-tag v="prn.ref"/></equal>
                   <not><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal></not>
@@ -1618,14 +1759,14 @@
       </choose> 
 
       <choose>
-        <when c="M[_____T__]">
+        <when c="M[T] remove extra tags from adv">
             <test><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
             <let><clip pos="1" side="tl" part="a_case"/><lit v=""/></let>
             <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
             <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
             <let><clip pos="1" side="tl" part="a_comp-superl"/><lit v=""/></let>
         </when>
-        <when c="M[_____T__]">
+        <when c="M[T] remove foc from prn">
            <test><and>
              <not><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="prn"/></equal></not>
              <not><in><clip pos="1" side="tl" part="lem"/><list n="foclemmas"/></in></not>
@@ -1634,7 +1775,7 @@
         </when>
       </choose>
       <choose>
-        <when c="M[_____T__]">
+        <when c="M[T] add attr to buorre">
      <test><and>
      <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
      <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@→N"/></equal>
@@ -1715,7 +1856,7 @@
 
 
   <section-rules>
-    <rule comment="C[D] váldit_particle váldit_vblex" c="Ferte dohkálaččat vuhtii váldit máná kulturduogáža : Viertti dågålattjat vieledit máná kultuvrraduogátjav">
+    <rule comment="C[D]-PRED váldit_particle váldit_vblex" c="Ferte dohkálaččat vuhtii váldit máná kulturduogáža : Viertti dågålattjat vieledit máná kultuvrraduogátjav">
       <pattern>
         <pattern-item n="váldit_particle"/>
         <pattern-item n="váldit_vblex"/>
@@ -1748,7 +1889,7 @@
       </action>
     </rule> 
  
-     <rule comment="C[D] váldit_vblex váldit_particle" c="mánát váldojuvvojit mielde sierralágan bargoproseassaide : máná sebrudahteduvvi sierralágásj barggoprosessajda">
+     <rule comment="C[D]-PRED váldit_vblex váldit_particle" c="mánát váldojuvvojit mielde sierralágan bargoproseassaide : máná sebrudahteduvvi sierralágásj barggoprosessajda">
       <pattern>
         <pattern-item n="váldit_vblex"/>
         <pattern-item n="váldit_particle"/>
@@ -1781,7 +1922,7 @@
       </action>
     </rule> 
 
-     <rule comment="C[D] bidjat_vblex guovddáš_n" c="example">
+     <rule comment="C[D]-PRED bidjat_vblex guovddáš_n" c="example">
       <pattern>
         <pattern-item n="bidjat_vblex"/>
         <pattern-item n="guovddáš_n"/>
@@ -1815,7 +1956,7 @@
     </rule> 
 
 
-     <rule comment="C[T] leat_aux_main mielde_adv verb_actio_inf Supn" c="example">
+     <rule comment="C[T]-PRED leat_aux_main mielde_adv verb_actio_inf Supn" c="example">
       <pattern>
         <pattern-item n="leat_aux_main"/>
         <pattern-item n="mielde_adv"/>
@@ -1846,7 +1987,7 @@
       </action>
     </rule> 
 
-     <rule comment="C[W] váldit_vblex atnu_n_ill" c="example">
+     <rule comment="C[W]-PRED váldit_vblex atnu_n_ill" c="example">
       <pattern>
         <pattern-item n="váldit_vblex"/>
         <pattern-item n="atnu_n_ill"/>
@@ -1884,7 +2025,7 @@
     </rule> 
 
   
-  <rule comment="C[_] adpos" c="prep to postp or prep">
+  <rule comment="C[_]-PP adpos" c="prep to postp or prep">
       <pattern>
         <pattern-item n="adpos"/>
       </pattern>
@@ -1925,7 +2066,7 @@
       </action>
     </rule>
  
-  <rule comment="C[DL] guhkki_adj áigi_n" c="guhkes áigi : guhkev">
+  <rule comment="C[DL]-NP guhkki_adj áigi_n" c="guhkes áigi : guhkev">
       <pattern>
         <pattern-item n="guhkki_adj"/>
         <pattern-item n="áigi_n"/>
@@ -1947,7 +2088,7 @@
       </action>
     </rule>
 
-  <rule comment="C[DL] guhkki_adj áigi_n vuollai_post" c="guhkes áigi vuollai: guhkev">
+  <rule comment="C[DL]-PP guhkki_adj áigi_n vuollai_post" c="guhkes áigi vuollai: guhkev">
       <pattern>
         <pattern-item n="guhkki_adj"/>
         <pattern-item n="áigi_n"/>
@@ -1970,7 +2111,7 @@
       </action>
     </rule>
  
- <rule comment="C[T] noun_nom leat_main geatnegahtton_adj verb_inf" c="geatnegahtton=åvdåsvásstádus: Skuvla lea geatnegahtton oahpahit"> 
+ <rule comment="C[T]-PHR noun_nom leat_main geatnegahtton_adj verb_inf" c="geatnegahtton=åvdåsvásstádus: Skuvla lea geatnegahtton oahpahit"> 
       <pattern>
         <pattern-item n="noun_nom"/>
         <pattern-item n="leat_main"/>
@@ -2007,7 +2148,7 @@
 
  
   
-  <rule comment="C[_]geatnegahtton1" c="geatnegahtton=bákkulasj: Skuvla lea geatnegahtton"> 
+  <rule comment="C[_]-PHR noun_nom leat_main geatnegahtton_adj" c="geatnegahtton=bákkulasj: Skuvla lea geatnegahtton"> 
       <pattern>
         <pattern-item n="noun_nom"/>
         <pattern-item n="leat_main"/>
@@ -2037,7 +2178,7 @@
       </action>
     </rule>
   
-    <rule comment="C[T] ind_prn_neg removes fac"  c="example">
+    <rule comment="C[T]-N ind_prn_neg removes Foc"  c="example">
       <pattern>
         <pattern-item n="ind_prn_neg"/>
       </pattern>
@@ -2079,7 +2220,7 @@
       </action>
     </rule>
 
-    <rule comment="C[AT] leat_qst" c="example">
+    <rule comment="C[AT]-V leat_qst" c="leago : le gus">
       <pattern>
         <pattern-item n="leat_qst"/>
       </pattern>
@@ -2105,7 +2246,7 @@
       </action>
     </rule>
 
-    <rule comment="C[T] negverb" c="example">
+    <rule comment="C[T]-V negverb" c="example">
       <pattern>
         <pattern-item n="negverb"/>
       </pattern>
@@ -2129,7 +2270,7 @@
       </action>
     </rule>
 
-    <rule comment="C[T] negverb connegverb" c="Dábálasj neg: Iv sidá dujna doarrut"> 
+    <rule comment="C[T]-V negverb connegverb" c="Dábálasj neg: Iv sidá dujna doarrut"> 
       <pattern>
         <pattern-item n="negverb"/>
         <pattern-item n="connegverb"/>
@@ -2182,7 +2323,7 @@
       </action>
     </rule>
 
-    <rule comment="C[T] negverbqst connegverb" c="example"> 
+    <rule comment="C[T]-V negverbqst connegverb" c="example"> 
       <pattern>
         <pattern-item n="negverbqst"/>
         <pattern-item n="connegverb"/>
@@ -2242,7 +2383,7 @@
     </rule>
 
 
-  <rule comment="C[TW] negverb23 leat_conneg word" c="Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim"> 
+  <rule comment="C[TW]-V negverb23 leat_conneg word" c="Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim"> 
     <pattern>
       <pattern-item n="negverb23"/>
       <pattern-item n="leat_conneg"/>
@@ -2298,7 +2439,7 @@
   </rule>
 
 
-  <rule comment="C[T] negverb word_qst_not_verb connegverb" c="Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá">
+  <rule comment="C[T]-V negverb word_qst_not_verb connegverb" c="Dábálasj neg. ájnat báhko sierat negverb ja conneg: Ep desti visjá">
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word_qst_not_verb"/>
@@ -2378,7 +2519,7 @@
 
 
 
-  <rule comment="C[TW] negverb word_qst_not_verb word_not_verb connegverb" c="example"> 
+  <rule comment="C[TW]-V negverb word_qst_not_verb word_not_verb connegverb" c="example"> 
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word_qst_not_verb"/>
@@ -2462,7 +2603,7 @@
     </action>
   </rule>
 
-  <rule comment="C[T] negverb word_qst_not_verb word_not_verb word_not_verb connegverb" c="example"> 
+  <rule comment="C[T]-V negverb word_qst_not_verb word_not_verb word_not_verb connegverb" c="example"> 
     <pattern>
       <pattern-item n="negverb"/>
       <pattern-item n="word_qst_not_verb"/>
@@ -2553,7 +2694,7 @@
   </rule>
 
 
-    <rule comment="C[T] months_n semyear" c="example"> 
+    <rule comment="C[T]-NP months_n semyear" c="example"> 
       <pattern> 
         <pattern-item n="months_n"/>
         <pattern-item n="semyear"/>
@@ -2580,7 +2721,7 @@
       </action>
     </rule>
 
-  <rule comment="C[LT] bealis_px" c="example">
+  <rule comment="C[LT]-ADV bealis_px" c="example">
     <pattern>
       <pattern-item n="bealis_px"/>
     </pattern>
@@ -2606,7 +2747,7 @@
     </action>
   </rule>
 
-  <rule comment="C[_] adv" c="example">
+  <rule comment="C[_]-ADV adv" c="example">
     <pattern>
       <pattern-item n="adv"/>
     </pattern>
@@ -2636,7 +2777,7 @@
 
 
 
-  <rule comment="C[T] pcle" c="example">
+  <rule comment="C[T]-PCLE pcle" c="example">
     <pattern>
       <pattern-item n="pcle"/>
     </pattern>
@@ -2672,7 +2813,7 @@
     </action>
   </rule>
 
-  <rule comment="C[W] boahtitverb fápmu_n_ill" c="example">
+  <rule comment="C[W]-PRED boahtitverb fápmu_n_ill" c="example">
     <pattern>
       <pattern-item n="boahtit_vblex"/>
       <pattern-item n="fápmu_n_ill"/>
@@ -2698,7 +2839,7 @@
     </action>
   </rule>
 
-    <rule comment="C[T] eará_seammá_prn ladje_post" c="example">
+    <rule comment="C[T]-PP eará_seammá_prn ladje_post" c="example">
       <pattern>
         <pattern-item n="eará_seammá_prn"/>  
         <pattern-item n="ladje_post"/>  
@@ -2728,7 +2869,7 @@
     </rule>
 
 
-    <rule comment="C[_] prn" c="example">
+    <rule comment="C[_]-N prn" c="example">
       <pattern>
         <pattern-item n="prn"/>  
       </pattern>
@@ -2755,7 +2896,7 @@
 
 
 
-    <rule comment="C[T] prn_num noun" c="example">
+    <rule comment="C[T]-NUM prn_num noun" c="example">
       <pattern>
         <pattern-item n="prn_num"/>  
         <pattern-item n="noun"/>  
@@ -2839,7 +2980,7 @@
       </action>
     </rule> 
  
-     <rule comment="C[T] mod_num prn_num noun" c="example">
+     <rule comment="C[T]-NUM mod_num prn_num noun" c="example">
       <pattern>
         <pattern-item n="mod_num"/>  
         <pattern-item n="prn_num"/> 
@@ -2929,7 +3070,7 @@
     </rule> 
 
  
-    <rule comment="C[T] prn_num n_cmp noun" c="example">
+    <rule comment="C[T]-NUM prn_num n_cmp noun" c="example">
       <pattern>
         <pattern-item n="prn_num"/>  
         <pattern-item n="n_cmp"/>          
@@ -3010,7 +3151,7 @@
       </action>
     </rule> 
 
-    <rule comment="C[T] prn_dem prn_dem noun" c="example">
+    <rule comment="C[T]-NUM prn_dem prn_dem noun" c="example">
       <pattern>
         <pattern-item n="prn_dem"/>  
         <pattern-item n="prn_num"/>  
@@ -3094,7 +3235,7 @@
       </action>
     </rule>
 
-   <rule comment="C[T] numeral prn_dem noun" c="luohkás lea okta dain olbmuin geat ledje doppe">
+   <rule comment="C[T]-NUM numeral prn_dem noun" c="luohkás lea okta dain olbmuin geat ledje doppe">
       <pattern>
         <pattern-item n="numeral"/>  
         <pattern-item n="prn_dem"/>  
@@ -3137,7 +3278,7 @@
     </rule>
 
 
-    <rule comment="C[DT] gen váste_post" c="illative instead of pp with váste">
+    <rule comment="C[DT]-PP gen váste_post" c="illative instead of pp with váste">
       <pattern>
         <pattern-item n="gen"/>
         <pattern-item n="váste_post"/>
@@ -3160,7 +3301,7 @@
       </action>
     </rule>
 
-    <rule comment="C[DT] n_cmp gen váste_post" c="illative instead of pp with váste"> 
+    <rule comment="C[DT]-PP n_cmp gen váste_post" c="illative instead of pp with váste"> 
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="gen"/>
@@ -3189,7 +3330,7 @@
       </action>
     </rule>
  
-    <rule comment="C[T] numeral" c="example">
+    <rule comment="C[T]-NUM numeral" c="example">
       <pattern>
         <pattern-item n="numeral"/>
       </pattern>
@@ -3201,7 +3342,7 @@
         <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
         <choose><when><test>
         <equal><clip pos="1" side="tl" part="num_types"/><lit-tag v="arab"/></equal></test>
-         <let><clip pos="1" side="tl" part="a_case"/><lit v="nom"/></let></when></choose> 
+         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let></when></choose> 
        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstword">
@@ -3218,7 +3359,7 @@
       </action>
     </rule>
 
-    <rule comment="C[_] adj" c="example">
+    <rule comment="C[_]-A adj" c="example">
       <pattern>
         <pattern-item n="adj"/>
       </pattern>
@@ -3261,7 +3402,7 @@
       </action>
     </rule>
 
-    <rule comment="C[_] n_cmp adj" c="example">
+    <rule comment="C[_]-A n_cmp adj" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="adj"/> <!-- usually derivated from noun -->
@@ -3288,7 +3429,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[S] n_cmp noun" c="example">
+    <rule comment="C[S]-N n_cmp noun" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="noun"/>
@@ -3315,7 +3456,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[S] n_cmp n_cmp noun" c="example">
+    <rule comment="C[S]-N n_cmp n_cmp noun" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="n_cmp"/>
@@ -3346,7 +3487,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[S] n_cmp n_cmp n_cmp noun" c="bieggamillofápmorusttet">
+    <rule comment="C[S]-N n_cmp n_cmp n_cmp noun" c="bieggamillofápmorusttet">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="n_cmp"/>
@@ -3382,7 +3523,7 @@
       </action>
     </rule>
     
-    <rule comment="C[T] rdep n_not_cmp" c="example">
+    <rule comment="C[T]-NP rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3442,7 +3583,7 @@
       </action>
     </rule>
 
-    <rule comment="C[ST] n_cmp rdep n_not_cmp" c="example">
+    <rule comment="C[ST]-NP n_cmp rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
         <pattern-item n="rdep"/>
@@ -3499,7 +3640,7 @@
 
 
 
-   <rule comment="C[S] rdep n_not_cmp prop_nom" c="example">
+   <rule comment="C[S]-NP rdep n_not_cmp prop_nom" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3533,7 +3674,7 @@
     </rule>
 
 
-   <rule comment="C[_] n_not_cmp prop_attr prop_nom" c="example">
+   <rule comment="C[_]-NP n_not_cmp prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
@@ -3564,7 +3705,7 @@
       </action>
     </rule>
 
-   <rule comment="C[_] rdep n_not_cmp prop_attr prop_nom" c="example">
+   <rule comment="C[_]-NP rdep n_not_cmp prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3600,7 +3741,7 @@
       </action>
     </rule>
 
-   <rule comment="C[_] rdep n_not_cmp prop_attr prop_attr prop_nom" c="example">
+   <rule comment="C[_]-NP rdep n_not_cmp prop_attr prop_attr prop_nom" c="example">
       <pattern>
         <pattern-item n="rdep"/>
         <pattern-item n="n_not_cmp"/>
@@ -3642,7 +3783,7 @@
       </action>
     </rule>
 
-   <rule comment="C[_] n_not_cmp prop_attr prop_attr prop_nom" c="sámedikkeráde Silje Karine Muotka">
+   <rule comment="C[_]-NP n_not_cmp prop_attr prop_attr prop_nom" c="sámedikkeráde Silje Karine Muotka">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
@@ -3678,7 +3819,7 @@
       </action>
     </rule>
 
-    <rule comment="C[S] rdep n_cmp n_not_cmp" c="example">
+    <rule comment="C[S]-NP rdep n_cmp n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="n_cmp"/>
@@ -3712,7 +3853,7 @@
       </action>
     </rule>
 
-    <rule comment="C[S] rdep rdep n_cmp n_not_cmp" c="example">
+    <rule comment="C[S]-NP rdep rdep n_cmp n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3753,7 +3894,7 @@
     </rule>
 
 
-    <rule comment="C[_] rdep rdep n_not_cmp" c="example">
+    <rule comment="C[_]-NP rdep rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3786,7 +3927,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[S] rdep rdep rdep n_not_cmp" c="example">
+    <rule comment="C[S]-NP rdep rdep rdep n_not_cmp" c="example">
       <pattern>
         <pattern-item n="rdep"/> 
         <pattern-item n="rdep"/> 
@@ -3827,7 +3968,7 @@
     </rule>
 
 
-    <rule comment="C[_] noun num-ldep" c="example">
+    <rule comment="C[_]-NUM noun num-ldep" c="example">
       <pattern>
         <pattern-item n="noun"/>
         <pattern-item n="num_ldep"/>
@@ -3856,7 +3997,7 @@
       </action>
     </rule>
     
-    <rule comment="C[_] leat_aux" c="example">
+    <rule comment="C[_]-V leat_aux" c="example">
       <pattern>
         <pattern-item n="leat_aux"/>
       </pattern>
@@ -3881,7 +4022,7 @@
 
 
 
-    <rule comment="C[T] verb_actio" c="example">
+    <rule comment="C[T]-V verb_actio" c="example">
       <pattern>
         <pattern-item n="verb_actio"/>
       </pattern>
@@ -3906,7 +4047,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[T] verb_inf" c="example">
+    <rule comment="C[T]-V verb_inf" c="example">
       <pattern>
         <pattern-item n="verb_inf"/>
       </pattern>
@@ -3933,7 +4074,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[_] verb_prfprc" c="example">
+    <rule comment="C[_]-V verb_prfprc" c="example">
       <pattern>
         <pattern-item n="verb_prfprc"/>
       </pattern>
@@ -3953,7 +4094,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[AT] mainverbqst" c="example">
+    <rule comment="C[AT]-V mainverbqst" c="example">
       <pattern>
         <pattern-item n="mainverbqst"/>
       </pattern>
@@ -3986,7 +4127,7 @@
       </action>
     </rule>
     
-    <rule comment="C[AT] verb_fin" c="example">
+    <rule comment="C[AT]-V verb_fin" c="example">
       <pattern>
         <pattern-item n="verb_fin"/>
       </pattern>
@@ -4034,7 +4175,7 @@
     </rule> 
 
 
-    <rule comment="C[_] sent">
+    <rule comment="C[_]-T sent">
       <pattern>
         <pattern-item n="sent"/>
       </pattern>
@@ -4054,7 +4195,7 @@
     </rule>
 
     
-     <rule comment="C[_] dat_pcle" c="example">
+     <rule comment="C[_]-PCLE dat_pcle" c="example">
       <pattern>
         <pattern-item n="dat_pcle"/>
       </pattern>
@@ -4088,7 +4229,7 @@
       </action>
     </rule>
 
-    <rule comment="C[T] nom_gen miehtá_adp" c="example">
+    <rule comment="C[T]-PP nom_gen miehtá_adp" c="example">
       <pattern>
         <pattern-item n="nom_gen"/>
         <pattern-item n="miehtá_adp"/>
@@ -4134,7 +4275,7 @@
         </out>
       </action>
     </rule>
-     <rule comment="C[_] cnjsub" c="example">
+     <rule comment="C[_]-CS cnjsub" c="example">
       <pattern>
         <pattern-item n="cnjsub"/>
       </pattern>
@@ -4156,7 +4297,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[_] numeral prosent" c="example">
+    <rule comment="C[_]-NUM numeral prosent" c="example">
       <pattern>
         <pattern-item n="numeral"/>
         <pattern-item n="prosent"/>
@@ -4180,7 +4321,7 @@
         </out>
       </action>
     </rule>
-   <rule comment="C[_] mod_num numeral prosent" c="example">
+   <rule comment="C[_]-NUM mod_num numeral prosent" c="example">
       <pattern>
         <pattern-item n="mod_num"/>
         <pattern-item n="numeral"/>
@@ -4209,7 +4350,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="C[_] comma">
+    <rule comment="C[_]-T comma">
       <pattern>
         <pattern-item n="comma"/>
       </pattern>
@@ -4227,7 +4368,7 @@
       </action>
     </rule>
     
-   <rule comment="C[_] default">
+   <rule comment="C[_]-T default">
       <pattern>
         <pattern-item n="default"/>
       </pattern>

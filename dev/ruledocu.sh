@@ -35,6 +35,7 @@ echo 'Rules for other phrases:' >> doculist
 grep '\-PHR ' rules |rev | sort | rev >> doculist
 echo ' ' >> doculist
 echo 'Small word classes:' >> doculist
+grep '\-PCLE ' rules |rev | sort | rev >> doculist
 grep '\-CC ' rules |rev | sort | rev >> doculist
 grep '\-CS ' rules |rev | sort | rev >> doculist
 grep '\-IJ ' rules |rev | sort | rev >> doculist
