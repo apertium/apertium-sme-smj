@@ -911,6 +911,9 @@ C[_]-T sent
        <attr-item tags="err_orth_mt"/>
        <attr-item tags="err_orth_nom_acc_mt"/>
        <attr-item tags="err_orth_a_á_mt"/>
+       <attr-item tags="err_orth_a_á"/>
+       <attr-item tags="err_orth_nom_acc"/>
+       <attr-item tags="err_orth_nom_gen"/>
        <attr-item tags="←logo→"/>
     </def-attr>
     <def-attr n="a_num_type">
@@ -2754,6 +2757,8 @@ C[_]-T sent
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
       <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
+      <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
+      <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> <!-- remove Px, or should we add ref pronoun? -->
 <!--      <choose>
         <when>
           <test><and><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
