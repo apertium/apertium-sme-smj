@@ -2395,6 +2395,7 @@ C[_]-T sent
     </pattern>
     <action>
       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
       <let><clip pos="1" side="tl" part="a_temps_mood"/>
       <concat><clip pos="2" side="tl" part="a_temps_mood"/></concat>
       </let>
@@ -2532,6 +2533,8 @@ C[_]-T sent
     </pattern>
     <action>
       <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/><with-param pos="3"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
       <!-- c="First we copy the temps from mainverb onto negverb" -->
       <let>
         <clip pos="1" side="tl" part="a_temps_mood"/>
@@ -2618,6 +2621,9 @@ C[_]-T sent
     <action>
       <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="5"/></call-macro>
       <call-macro n="general-macro-1Param"><with-param pos="4"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="4"/></call-macro>
       <!-- c="First we copy the temps from mainverb onto negverb" -->
       <let>
         <clip pos="1" side="tl" part="a_temps_mood"/>
@@ -3386,7 +3392,7 @@ C[_]-T sent
         </out>
       </action>
     </rule>
-    <rule comment="C[_] noun" c="example">
+    <rule comment="C[_]-N noun" c="example">
       <pattern>
         <pattern-item n="noun"/>
       </pattern>
