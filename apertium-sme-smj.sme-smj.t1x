@@ -352,6 +352,12 @@ C[_]-T sent
       <cat-item tags="np.*.sg.nom.*"/>
     </def-cat>
 
+    <def-cat n="prop_nom_pers">
+      <cat-item tags="np.ant.*.sg.nom.*"/>
+      <cat-item tags="np.cog.sg.nom.*"/>
+    </def-cat>
+
+
     <def-cat n="prop_attr">
       <cat-item tags="np.*.attr.*"/>
     </def-cat>
@@ -903,7 +909,20 @@ C[_]-T sent
       <attr-item tags="←ext→"/>
       <attr-item tags="←hab→"/>
     </def-attr>
-    <def-attr n="a_spec_sme_tags">
+    <def-attr n="a_spec_sme_tags1">
+      <attr-item tags="south"/>
+      <attr-item tags="g3"/>
+       <attr-item tags="allegro"/>
+       <attr-item tags="err_orth_nom_gen_mt"/>
+       <attr-item tags="err_orth_mt"/>
+       <attr-item tags="err_orth_nom_acc_mt"/>
+       <attr-item tags="err_orth_a_á_mt"/>
+       <attr-item tags="err_orth_a_á"/>
+       <attr-item tags="err_orth_nom_acc"/>
+       <attr-item tags="err_orth_nom_gen"/>
+       <attr-item tags="←logo→"/>
+    </def-attr>
+    <def-attr n="a_spec_sme_tags2">
       <attr-item tags="south"/>
       <attr-item tags="g3"/>
        <attr-item tags="allegro"/>
@@ -1791,7 +1810,8 @@ C[_]-T sent
       <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
 
       <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_spec_sme_tags"/><lit v=""/></let>
+      <let><clip pos="1" side="tl" part="a_spec_sme_tags1"/><lit v=""/></let>
+      <let><clip pos="1" side="tl" part="a_spec_sme_tags2"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
@@ -3652,16 +3672,16 @@ C[_]-T sent
 
 
 
-   <rule comment="C[S]-NP mod_n n_not_cmp prop_nom" c="example">
+   <rule comment="C[S]-NP mod_n n_not_cmp prop_nom_pers" c="example">
       <pattern>
         <pattern-item n="mod_n"/>
         <pattern-item n="n_not_cmp"/>
-        <pattern-item n="prop_nom"/>
+        <pattern-item n="prop_nom_pers"/>
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -3686,11 +3706,11 @@ C[_]-T sent
     </rule>
 
 
-   <rule comment="C[_]-NP n_not_cmp prop_attr prop_nom" c="example">
+   <rule comment="C[_]-NP n_not_cmp prop_attr prop_nom_pers" c="example">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
-        <pattern-item n="prop_nom"/>
+        <pattern-item n="prop_nom_pers"/>
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
@@ -3718,12 +3738,12 @@ C[_]-T sent
       </action>
     </rule>
 
-   <rule comment="C[_]-NP mod_n n_not_cmp prop_attr prop_nom" c="example">
+   <rule comment="C[_]-NP mod_n n_not_cmp prop_attr prop_nom_pers" c="example">
       <pattern>
         <pattern-item n="mod_n"/>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
-        <pattern-item n="prop_nom"/>
+        <pattern-item n="prop_nom_pers"/>
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
@@ -3756,13 +3776,13 @@ C[_]-T sent
       </action>
     </rule>
 
-   <rule comment="C[_]-NP mod_n n_not_cmp prop_attr prop_attr prop_nom" c="example">
+   <rule comment="C[_]-NP mod_n n_not_cmp prop_attr prop_attr prop_nom_pers" c="example">
       <pattern>
         <pattern-item n="mod_n"/>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
         <pattern-item n="prop_attr"/>
-        <pattern-item n="prop_nom"/>
+        <pattern-item n="prop_nom_pers"/>
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
@@ -3800,12 +3820,12 @@ C[_]-T sent
       </action>
     </rule>
 
-   <rule comment="C[_]-NP n_not_cmp prop_attr prop_attr prop_nom" c="sámedikkeráde Silje Karine Muotka">
+   <rule comment="C[_]-NP n_not_cmp prop_attr prop_attr prop_nom_pers" c="sámedikkeráde Silje Karine Muotka">
       <pattern>
         <pattern-item n="n_not_cmp"/>
         <pattern-item n="prop_attr"/>
         <pattern-item n="prop_attr"/>
-        <pattern-item n="prop_nom"/>
+        <pattern-item n="prop_nom_pers"/>
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
