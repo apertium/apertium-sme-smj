@@ -3694,6 +3694,7 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -3726,6 +3727,8 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -3764,6 +3767,8 @@ C[_]-T sent
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="5"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
        <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -3804,6 +3809,7 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
        <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
