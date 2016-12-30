@@ -1,22 +1,34 @@
-Revision: 67508
-AP_SRC1 (doesn't seem to be a repo)
-AP_SRC2 (doesn't seem to be a repo)
+Revision: 75213
+AP_SRC1 Revision: 145809
+AP_SRC2 Revision: 145746
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
-sme-smj	  Son viehká miehtá máilmmi.
-WORKS	  Sån viehká væráldav miehtáj.
+sme-smj	  Sámediggi áigu oččodit sámi mánáide individuála vuoigatvuođa oažžut sámi mánáidgárdefálaldaga.
+WORKS	  Sámedigge ájggu sáme mánájda åttjudit individuála rievtesvuodav åttjutjit sáme mánájgárddefálaldagáv.
 
 
-sme-smj	  Son viehká máilmmi miehtá.
-WORKS	  Sån viehká væráldav miehtáj.
+sme-smj	  Son sáhtášii ihtin boahtit.
+WORKS	  Sån luluj máhttet idet boahtet.
 
 
-sme-smj	  Isak boahtá goađis.
-WORKS	  Isak boahtá goades.
+sme-smj	  Moai oasttášeimme biilla.
+WORKS	  Måj lulujma oasstet bijlav.
 
 
-sme-smj	  Don čohkahat stuolus.
-WORKS	  Dån tjåhkkåha ståvlån.
+sme-smj	  Leaččan go buot muitán?
+WORKS	  Littjav gus divna mujttám?
+
+
+sme-smj	  Leaččat go buot muitán?
+WORKS	  Littja gus divna mujttám?
+
+
+sme-smj	  Leaččan go buot váldán?
+WORKS	  Littjav gus divna válldám?
+
+
+sme-smj	  Muitaleaččai.
+WORKS	  Subtsastisj.
 
 
 sme-smj	  Ii oro buorre.
@@ -29,6 +41,19 @@ WORKS	  Ejga lim buorre.
 
 sme-smj	  Ehpet orron hávski.
 WORKS	  Ejda lim hávsske.
+
+
+sme-smj	  Mánáidgárdefálaldat galgá organiserejuvvot nu ahte mánát váldojuvvojit mielde sierralágan bargoproseassaide.
+WORKS	  Mánájgárddefálaldahka galggá organisieriduvvat navti vaj máná sebrudahteduvvi sierralágásj barggoprosessajda.
+
+
+sme-smj	  Ferte dohkálaččat vuhtii váldit máná kulturduogáža.
+WORKS	  Viertti dågålattjat vieledit máná kultuvrraduogátjav.
+
+
+sme-smj	  Sámediggi áigu dainna dieđáhusain bidjat guovddážii sámi mánáidgárdefálaldaga.
+	- Sámedigge ájggu dajna diedádusájn sáme mánájgárddefálaldagáv tjalmostit.
+	+ Sámedigge ájggu dajna diedádusájn tjalmostit sáme mánájgárddefálaldagáv.
 
 
 sme-smj	  In.
@@ -60,7 +85,7 @@ WORKS	  Iv sidá dujna doarrot.
 
 
 sme-smj	  Sii eai liiko, go mii hárdit sin.
-WORKS	  Sij e lijkku, gå mij hárddep sijáv.
+WORKS	  Sij e lijkku, gå mij sijáv hárddep.
 
 
 sme-smj	  It go sáhte muitalit?
@@ -143,16 +168,258 @@ sme-smj	  Sii eai lean boahtán.
 WORKS	  Sij ællim boahtám.
 
 
-sme-smj	  Vihken hui johtilit.
-WORKS	  Viehkiv huj jåhtelit.
+sme-smj	  Álgge oahpaheaddjin!
+WORKS	  Álge åhpadiddjen!
 
 
-sme-smj	  Oaččun dan hálbbit.
-WORKS	  Oattjov dav álbet.
+sme-smj	  Sevnnjoda.
+WORKS	  Sjevnjut.
 
 
-sme-smj	  kultursuodjaleapmi.
-WORKS	  kultuvrrasuodjalibme.
+sme-smj	  Sakŋida.
+WORKS	  Sagŋet.
+
+
+sme-smj	  Boađán.
+WORKS	  Boadáv.
+
+
+sme-smj	  Liikojit go guollái?
+WORKS	  Lijkkuji gus guolláj?
+
+
+sme-smj	  Buorre lei go bohtet.
+WORKS	  Buorre lij gå båhti.
+
+
+sme-smj	  Biekkastii.
+WORKS	  Biekkastij.
+
+
+sme-smj	  Son vuittii golli.
+WORKS	  Sån vuojtij gållev.
+
+
+sme-smj	  Boahtti veahkkin.
+WORKS	  Boahtte viehkken.
+
+
+sme-smj	  Čájeheahkki munnje.
+WORKS	  Vuosedihtte munji.
+
+
+sme-smj	  Anne ráhkada biepmu.
+WORKS	  Anne stielli biebmov.
+
+
+sme-smj	  Vuolgit lea suohtas.
+WORKS	  Vuolgget la suohtas.
+
+
+sme-smj	  Isak boahtá.
+WORKS	  Isak boahtá.
+
+
+sme-smj	  Goabbá vuoitá?
+WORKS	  Goabbá vuojttá?
+
+
+sme-smj	  Doppe boahtá áhčči.
+WORKS	  Dåppe áhttje boahtá.
+
+
+sme-smj	  Gii bođii?
+WORKS	  Guhti bådij?
+
+
+sme-smj	  Áddjá lea boahtán.
+WORKS	  Áddjá la boahtám.
+
+
+sme-smj	  Manni doai dohko.
+WORKS	  Manne dåj dåhku.
+
+
+sme-smj	  Gean don oidnet.
+WORKS	  Gev dån vuojnni.
+
+
+sme-smj	  Son liiko guollái.
+WORKS	  Sån lijkku guolláj.
+
+
+sme-smj	  Oro jaska!
+WORKS	  Åro sjávot!
+
+
+sme-smj	  Dál moai boradetne.
+WORKS	  Dálla måj bårådin.
+
+
+sme-smj	  Eahppi go boađe?
+WORKS	  Æhppe gus boade?
+
+
+sme-smj	  Guldalehket.
+WORKS	  Gulldalit.
+
+
+sme-smj	  Maid siđat odne?
+WORKS	  Majt uddni sidá?
+
+
+sme-smj	  Orrut jaska.
+WORKS	  Årrop sjávot.
+
+
+sme-smj	  Bora vai ealát.
+WORKS	  Bårå vaj vieso.
+
+
+sme-smj	  Artihkal 27 geatnegahttá stáhta addit aktiiva doarjaga álgoálbmogiidda.
+WORKS	  Artihkal 27 vælggogissan dahká stáhtav vaddet aktijva dårjav álggoálmmugijda.
+
+
+sme-smj	  Artihkal 2 geatnegahttá stáhtaid álggahit doaimmaid.
+WORKS	  Artihkal 2 vælggogissan dahká stáhtajt álgadit dåjmajt.
+
+
+sme-smj	  Ráđđádallanortnet geatnegahttá maiddái Sámedikki.
+WORKS	  Rádudallamårnik aj vælggogissan dahká Sámedikkev.
+
+
+sme-smj	  Soahpamuš geatnegahttá stáhtaid čađahit konkrehta doaimmaid.
+	- Såbadus vælggogissan dahká stáhtajt tjadádit konkrehta dåjmajt.
+	+ Såbadus vælggogissan dahká stáhtajt tjadádit konkrehta/konkriehta dåjmajt.
+
+
+sme-smj	  Norga lea geatnegahttán iežas sihke rievttalaččat ja politihkalaččat suddjet ja ovddidit min giela.
+WORKS	  Vuodna la ietjas vælggogissan dahkam sihke rievtugit ja politihkalattjat suoddjit ja åvddånahttet mijá gielav.
+
+
+sme-smj	  Isak boahtá goađis.
+WORKS	  Isak boahtá goades.
+
+
+sme-smj	  Don čohkahat stuolus.
+WORKS	  Dån tjåhkkåha ståvlån.
+
+
+sme-smj	  Mii oruimet doppe jagi.
+WORKS	  Mij dåppe årojma jagev.
+
+
+sme-smj	  Soai boahtiba dán geainnu.
+WORKS	  Såj boahteba dáv gæjnov.
+
+
+sme-smj	  Eaba muital suohttasiiddiska earáide.
+WORKS	  Æbá subtsasta suohttasijdeska iehtjádijda.
+
+
+sme-smj	  Leahppi go oaidnán áhčáde?
+WORKS	  Lihppe gus vuojnnám áhtjáda?
+
+
+sme-smj	  Eat muital suohttasiiddámet earáide.
+WORKS	  Ep subtsasta suohttasijdema iehtjádijda.
+
+
+sme-smj	  In muital suohttasiiddán earáide.
+WORKS	  Iv subtsasta suohttasijdám iehtjádijda.
+
+
+sme-smj	  Ean muital suohttasiiddáme earáide.
+WORKS	  En subtsasta suohttasijdema iehtjádijda.
+
+
+sme-smj	  In muital suohttasiiddán earáide.
+WORKS	  Iv subtsasta suohttasijdám iehtjádijda.
+
+
+sme-smj	  Ean muital suohttasiiddáme earáide.
+WORKS	  En subtsasta suohttasijdema iehtjádijda.
+
+
+sme-smj	  Guhkit áiggi vuollái lea leamaš áigumuš álggahit idjadansajiid 20 olbmui.
+	- Guhkev la læhkám ájggomus álgadit idjadimsajijt 20 ulmutjij.
+	+ Guhkebut ájge vuolláj la læhkám ájggomus álgadit idjadimsajijt 20 ulmutjij.
+
+
+sme-smj	  Son vállje juoppá máná.
+WORKS	  Sån vállji juoppáv mánáv.
+
+
+sme-smj	  Son oaččui nuppi mánás reivve.
+WORKS	  Sån oattjoj nuppet mánás girjev.
+
+
+sme-smj	  Mun adden nuppi mánnái skeaŋkka.
+WORKS	  Mån vaddiv nuppe mánnáj vattáldagáv.
+
+
+sme-smj	  Son čállá goappašiid gieđaiguin.
+WORKS	  Sån tjállá goappátjij giedaj.
+
+
+sme-smj	  Maid mii galgat muitalit sutnje?
+WORKS	  Majt mij galggap sunji subtsastit?
+
+
+sme-smj	  Maid sihtabeahtti odne?
+WORKS	  Majt uddni sihtabihtte?
+
+
+sme-smj	  Maid don barggat odne?
+WORKS	  Majt dån uddni barga?
+
+
+sme-smj	  Maid son diehtá?
+WORKS	  Majt sån diehtá?
+
+
+sme-smj	  Mii eat ipmir maidege.
+WORKS	  Mij ep dádjada majdik.
+
+
+sme-smj	  Diet girjjit gullet munnje.
+WORKS	  Da girje gulluji munji.
+
+
+sme-smj	  Diet girji lea mu.
+WORKS	  Dat girjje la muv.
+
+
+sme-smj	  Diet lea mu.
+WORKS	  Dat la muv.
+
+
+sme-smj	  Diet gápmagat leat áhči.
+WORKS	  Da gábmaga li áhtje.
+
+
+sme-smj	  Mii ávkkiid go lásat eai mana gitta?
+WORKS	  Mij ávkijt gå glása e maná gitta?
+
+
+sme-smj	  Mii ávkkiid lea dakkár aššiin?
+WORKS	  Mij ávkijt la dakkár ássjijn?
+
+
+sme-smj	  Sii leat čeahpit.
+WORKS	  Sij li tjiehpe.
+
+
+sme-smj	  Sii leat stuoribut.
+WORKS	  Sij li stuorebu.
+
+
+sme-smj	  Soai leaba čeahpit.
+WORKS	  Såj libá tjiehpe.
+
+
+sme-smj	  Dát ášši lea dehálaš.
+WORKS	  Dát ássje la ájnas.
 
 
 sme-smj	  Dát áššit leat dehálaččat.
@@ -175,72 +442,253 @@ sme-smj	  Girjjit leat hálbbit.
 WORKS	  Girje li álbe.
 
 
-sme-smj	  Sevnnjoda.
-WORKS	  Sjevnjut.
+sme-smj	  Son šaddá buorrin oahpaheaddjin.
+WORKS	  Sån sjaddá buorre åhpadiddjen.
 
 
-sme-smj	  Vuolgit lea suohtas.
-WORKS	  Vuolgget la suohtas.
+sme-smj	  Vihken hui johtilit.
+WORKS	  Viehkiv huj jåhtelit.
 
 
-sme-smj	  Sakŋida.
-WORKS	  Sagŋet.
+sme-smj	  Oaččun dan hálbbit.
+WORKS	  Oattjov dav álbet.
 
 
-sme-smj	  Isak boahtá.
-WORKS	  Isak boahtá.
+sme-smj	  Son lea boaris.
+WORKS	  Sån la vuoras.
 
 
-sme-smj	  Goabbá vuoitá?
-WORKS	  Goabbá vuojttá?
+sme-smj	  Áddjá lea boaris.
+WORKS	  Áddjá la vuoras.
 
 
-sme-smj	  Doppe boahtá áhčči.
-WORKS	  Dåppe boahtá áhttje.
+sme-smj	  Son lea boarráseamos.
+WORKS	  Sån la vuorrasamos.
 
 
-sme-smj	  Boađán.
-WORKS	  Boadáv.
+sme-smj	  Áddjá elii hui boarisin.
+WORKS	  Áddjá viesoj huj vuorrasin.
 
 
-sme-smj	  Gii bođii?
-WORKS	  Guhti bådij?
+sme-smj	  Sii leat boarrásepmosat.
+WORKS	  Sij li vuorrasabmusa.
 
 
-sme-smj	  Liikojit go guollái?
-WORKS	  Lijkkuji gus guolláj?
+sme-smj	  Mu boares áddjá ii šaddan vuolgit.
+WORKS	  Muv vuoras áddjá ittjij sjatta vuolgget.
 
 
-sme-smj	  Áddjá lea boahtán.
-WORKS	  Áddjá la boahtám.
+sme-smj	  Boarrásepmosat sáhttet bargat.
+WORKS	  Vuorrasabmusa máhtti barggat.
 
 
-sme-smj	  Buorre lei go bohtet.
-WORKS	  Buorre lij gå båhti.
+sme-smj	  Skuvla lea geatnegahtton.
+WORKS	  Skåvllå la bákkulasj.
 
 
-sme-smj	  Biekkastii.
-WORKS	  Biekkastij.
+sme-smj	  Skuvla lea geatnegahtton oahpahit.
+	- Skåvlån la åvdåsvásstádus åhpadit.
+	+ Skåvlån la bákkulasj åhpadit.
 
 
-sme-smj	  Čájeheahkki munnje.
-WORKS	  Vuosedihtte munji.
+sme-smj	  Dalle go áhčči lei čieža jagi.
+WORKS	  Dalloj gå áhttje lij giehtja jage.
 
 
-sme-smj	  Manni doai dohko.
-WORKS	  Manne dåj dåhku.
+sme-smj	  Mus lea okta guolli.
+WORKS	  Mujna la akta guolle.
 
 
-sme-smj	  Gean don oidnet.
-WORKS	  Gev dån vuojnni.
+sme-smj	  Golbma guoli leat buoremusat.
+WORKS	  Gålmmå guole li buoremusá.
 
 
-sme-smj	  Son vuittii golli.
-WORKS	  Sån vuojtij gållev.
+sme-smj	  Bussá borrá golbma guoli.
+WORKS	  Gáhtto bårrå gålmåv guolev.
 
 
-sme-smj	  Boahtti veahkkin.
-WORKS	  Boahtte viehkken.
+sme-smj	  Mun dohppen ovtta guoli.
+WORKS	  Mån duohppiv avtav guolev.
+
+
+sme-smj	  Mun dohppen dán ovtta guoli.
+WORKS	  Mån duohppiv dáv avtav guolev.
+
+
+sme-smj	  Diet leat ovtta guoli meađđemat.
+WORKS	  Da li avta guole miedema.
+
+
+sme-smj	  Dát leat guovtti guoli meađđemat.
+WORKS	  Dá li guovte guole miedema.
+
+
+sme-smj	  Dát leat dán guovtti guoli meađđemat.
+WORKS	  Dá li dán guovte guole miedema.
+
+
+sme-smj	  Attán dan guovtti guollái.
+WORKS	  Vattáv dav guovte guolláj.
+
+
+sme-smj	  Mun vuvden girjjiid golmma olbmui.
+WORKS	  Mån vuobddiv girjijt gålmå ulmutjij.
+
+
+sme-smj	  Mun vuvden girjjiid dán golmma olbmui.
+WORKS	  Mån vuobddiv girjijt dán gålmå ulmutjij.
+
+
+sme-smj	  Dat bođii ovtta guolis.
+WORKS	  Dat bådij avtat guoles.
+
+
+sme-smj	  Válden iskosa guovtti guolis.
+WORKS	  Válldiv åtsålvisáv guovtet guoles.
+
+
+sme-smj	  Dat bođii ovtta guolis.
+WORKS	  Dat bådij avtat guoles.
+
+
+sme-smj	  Guovtti guolis ledje dákkárat.
+WORKS	  Guovten guolen lidjin dákkára.
+
+
+sme-smj	  Ovtta guolis lei dielku.
+WORKS	  Avtan guolen lij dieblle.
+
+
+sme-smj	  Sápmelaččat orrot njealji riikkas.
+WORKS	  Sábmelattja årru nieljen rijkan.
+
+
+sme-smj	  Golmma guolis leat meađđemat.
+WORKS	  Gålmån guolen li miedema.
+
+
+sme-smj	  Dán golmma guolis leat meađđemat.
+WORKS	  Dán gålmån guolen li miedema.
+
+
+sme-smj	  Mun boađán dainna golmmain guliin.
+WORKS	  Mån boadáv dajna gålmåjn guolijn.
+
+
+sme-smj	  Áhkku bođii ovttain guliin.
+WORKS	  Áhkko bådij avtajn guolijn.
+
+
+sme-smj	  Diet rehkenastojuvvo golbman guollin.
+WORKS	  Dat riekkniduvvá gålmmån guollen.
+
+
+sme-smj	  Diet rehkenastojuvvo guoktin guollin.
+WORKS	  Dat riekkniduvvá guoktan guollen.
+
+
+sme-smj	  Son viehká miehtá máilmmi.
+WORKS	  Sån viehká væráldav miehtáj.
+
+
+sme-smj	  Son viehká máilmmi miehtá.
+WORKS	  Sån viehká væráldav miehtáj.
+
+
+sme-smj	  Lea deaŧalaš áŋgiruššat dan ala ahte sámi servodat ovddida.
+WORKS	  La ájnas rahtjat vaj sáme sebrudahka åvddånahttá.
+
+
+sme-smj	  Máhtte lea dát iige duot.
+WORKS	  Máhtte la dát ij duot.
+
+
+sme-smj	  Sámit dahjege sápmelaččat ásset Ruoššas, Suomas, Ruoŧas ja Norggas.
+WORKS	  Sáme jali sábmelattja årru Ruossjan, Suoman, Svierigin ja Vuonan.
+
+
+sme-smj	  Oktage.
+WORKS	  Aktak.
+
+
+sme-smj	  Ii oktage boahtán.
+WORKS	  Ittjij aktak boade.
+
+
+sme-smj	  Digaštalle iešguđet hástalusaid.
+WORKS	  Dágástallin iesjguhtik hásstalusájt.
+
+
+sme-smj	  Lahtut berrejit boahtit iešguđet guovlluin.
+WORKS	  Ájrrasa bierriji iesjguhtik dáfojs boahtet.
+
+
+sme-smj	  Iešguhtege.
+WORKS	  Iesjguhtik.
+
+
+sme-smj	  Iibat oaččo basadit?
+WORKS	  Ij gus oattjo basádit?
+
+
+sme-smj	  Boađát go dál?
+WORKS	  Boadá gus dálla?
+
+
+sme-smj	  Leahppi go gávdnan gusade?
+WORKS	  Lihppe gus gávnnam gusáda?
+
+
+sme-smj	  Leahppi go viežžan buot girjjiideatte?
+WORKS	  Lihppe gus viedtjam divna girjijdihtte?
+
+
+sme-smj	  Leat go viežžan buot girjjiidat?
+WORKS	  La gus viedtjam divna girjijdat?
+
+
+sme-smj	  Lehpet go viežžan buot girjjiideattet?
+WORKS	  Lihpit gus viedtjam divna girjijdihtte?
+
+
+sme-smj	  Dárbbašehpet go veahki?
+WORKS	  Dárbahihpit gus viehkev?
+
+
+sme-smj	  Vuolgibeahtti go girdiin?
+WORKS	  Vuolggebihtte gus girddijn?
+
+
+sme-smj	  Lehpet go dárbbašan ollu veahki?
+WORKS	  Lihpit gus dárbaham ållo viehkev?
+
+
+sme-smj	  It go sáhte muitalit midjiide?
+WORKS	  I gus máhte subtsastit midjij?
+
+
+sme-smj	  Gos áhččát lea?
+WORKS	  Gånnå áhttját la?
+
+
+sme-smj	  Gos áhččát lea?
+WORKS	  Gånnå áhttját la?
+
+
+sme-smj	  kultursuodjaleapmi.
+WORKS	  kultuvrrasuodjalibme.
+
+
+sme-smj	  Ráđđehus galgá bealistis sihkkarastit ahte barggut čađahuvvojit.
+WORKS	  Ráddidus galggá ietjas bielestis sihkarasstet jut bargo tjadáduvvi.
+
+
+sme-smj	  Sámediggi bealistis anii dehálažžan oažžut čađahuvvot eará láhkarievdadusaid.
+WORKS	  Sámedigge ietjas bielestis anij ájnnasin oadtjot tjadáduvvat ietjá láhkarievddadimijt.
+
+
+sme-smj	  Bealistan in dieđe dása ollislaš duođaštusaid.
+WORKS	  Iehtjam bielestam iv diede dási åbbålasj duodastusájt.
 
 
 sme-smj	  Isak lea viššalis bargi.
@@ -259,32 +707,57 @@ sme-smj	  Buorre lei go bohtet.
 WORKS	  Buorre lij gå båhti.
 
 
-sme-smj	  Ean muital suohttasiiddáme earáide.
-WORKS	  En subtsasta suohttasijdema iehtjádijda.
-
-
-sme-smj	  Eat muital suohttasiiddámet earáide.
-WORKS	  Ep subtsasta suohttasijdema iehtjádijda.
-
-
-sme-smj	  In muital suohttasiiddán earáide.
-WORKS	  Iv subtsasta suohttasijdám iehtjádijda.
-
-
 sme-smj	  Teáhtera ulbmilin lea nannet sámiid identitehta ja kultuvrra.
 WORKS	  Teáhttara ulmmen la nannit sámij identitiehtav ja kultuvrav.
 
 
-sme-smj	  Anne ráhkada biepmu.
-WORKS	  Anne stielli biebmov.
+sme-smj	  Wikipedia dárbbaša du veahki.
+WORKS	  Wikipedia dárbaj duv viehkev.
 
 
-sme-smj	  Son lea boaris.
-WORKS	  Sån la boares.
+sme-smj	  Oavssit ja lasttat mat gullet oktii.
+WORKS	  Oavse ja lasta ma akti gulluji.
 
 
-sme-smj	  Áddjá lea boaris.
-WORKS	  Áddjá la boares.
+sme-smj	  Oahpaheddjiin lea ollu bargu.
+WORKS	  Åhpadiddjijn la ållo barggo.
 
 
-71 / 71, 100%
+sme-smj	  Dán jagi son lea oahpaheaddjin.
+WORKS	  Dán jage sån la åhpadiddjen.
+
+
+sme-smj	  Son lea oahpaheaddjin hui čeahppi.
+WORKS	  Sån la åhpadiddjen huj tjiehppe.
+
+
+sme-smj	  Son váldá mu gihtii.
+WORKS	  Sån válldá muv giehtaj.
+
+
+sme-smj	  Mun oainnán ahte dii lehpet boahtán.
+WORKS	  Mån vuojnáv dij lihpit boahtám.
+
+
+sme-smj	  Don fertet ieš čállit.
+WORKS	  Dån viertti iesj tjállet.
+
+
+sme-smj	  Sámiid ássanguovlu gohčoduvvo Sápmin.
+WORKS	  Sámij årromguovllo gåhtjuduvvá Sábmen.
+
+
+sme-smj	  Sámegielat Wikipedias leat dál 2,717 artihkkala.
+WORKS	  Sámegielak Wikipedian li dálla 2,717 artihkkala.
+
+
+sme-smj	  Son beroštii arkeologalaš bargguin, ja son čokkii dávviriid ja dávttiid boares hávddiin.
+	- Sån berustij arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt vuoras hávdijs.
+	+ Sån berustij #arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt vuoras hávdijs.
+
+
+sme-smj	  Girjái Áillohaš lea čoaggán historjjálaš govaid sámiin birra máilmmi.
+WORKS	  Girjjáj Áillohaš la histårjålasj gåvåjt sámijs tjoaggám birra værálda.
+
+
+183 / 188
