@@ -262,66 +262,72 @@ Eval2:
 
 Eval3:        
         
-        Buore	 |	Buorre
-        dáfojn	 |	guovlon
-        .	 <
-        vidán	 |	vihtta
-        jagen	 |	jage
-        dáfojn	 |	guovlon
-        /	 <
-        stuovijduvvam	 <
-        dasi	 |	ja
-        lassen	 |	duodden
-        ållo	 |	vásedi
-        vásedi	 |	lassánimev
-        ulmusjlåhko	 <
-        lassán	 <
-        Dav	 |	Telemarkforskninga
-        vuosedi	 |	baktu
-        maj	 <
-        Telemarksforskning	 <
-        la	 <
-        tjadádam	 <
-        	 >	dá
-        	 >	lågo
-        	 >	ilmoduvvi
-        sámedikkeráde	 |	Sámedikkeráde
-        dájna	 <
-        Gå	 |	Æládusáj
-        divna	 |	hárráj
-        æládusájt	 |	åbbålattjat
-        gæhttjap	 <
-        ,	 <
-        de	 <
-        	 >	aj
-        aj	 <
-        dáfoj	 |	dáfojn
-        æládusiellemin	 <
-        	 >	Jages
-        rájes	 <
-        tsieggiduvvam	 |	ihtám
-        gå	 |	majt
-        dan	 |	luluj
-        mij	 |	vuordijma
-        lij	 <
-        vuordeduvvam	 <
-        positijvva	 |	buorre
-        Telemarksforskninga	 |	Telemarkforskninga
-        rappårttå	 |	diedádusá
-        vuoset	 |	milta
-        vejulasj	 |	máhttelis
-        vájkudit	 |	æládusájt
-        æládusiellema	 |	vájkkudit
-        åvddånimev	 |	lassánittjat
-        Dat	 |	Guoradallam
-        dáfo	 |	guovlo
-        gæssut	 |	hiebalgis
-        rijkaoassesådjo	 |	ájggedáhpe
-        	 >	rijkav
-        	 >	miehtáj
-        vájkut	 <
-        dáfojda	 |	guovlojt
-        .	 |	vájkkut
+3        Buore	 |	Buorre
+1,3        dáfojn	 |	guovlon
+5        .	 <
+3        vidán	 |	vihtta
+3        jagen	 |	jage
+1,3        dáfojn	 |	guovlon
+-        /	 <
+7        stuovijduvvam	 <
+1        dasi	 |	ja
+1        lassen	 |	duodden
+7        ållo	 
+4        |	vásedi
+-        vásedi	 
+1        |	lassánimev
+7        ulmusjlåhko	 <
+-        lassán	 <
+4,3        Dav	 
+4        |	Telemarkforskninga
+1        vuosedi	 
+1        |	baktu        maj	 <
+-        Telemarksforskning	 <
+7        la	 <
+7        tjadádam	 <
+-        	 >	dá
+6        	 >	lågo
+-        	 >	ilmoduvvi       	 
+3        sámedikkeráde	 |	Sámedikkeráde
+7        dájna	 <
+1,4        Gå	 |	|	hárráj 
+7        divna	
+3        æládusájt	 Æládusáj
+7        gæhttjap	|	åbbålattjat 
+5        ,	 <
+7        de	 <
+4        	 >	aj
+-        aj	 <
+3        dáfoj	 |	dáfojn
+7        æládusiellemin	 <
+6        	 >	Jages
+7        rájes	 <
+3        tsieggiduvvam	 |	ihtám
+7        gå	 
+7        dan	
+3        mij	 |	majt
+1        lij	  |	luluj
+3        vuordeduvvam	|	vuordijma
+1        positijvva	 |	buorre
+1        Telemarksforskninga	 |	Telemarkforskninga
+1        rappårttå	 |	diedádusá
+1        vuoset	 |	milta
+1        vejulasj	 |	máhttelis
+2,4        vájkudit	 
+-        |	æládusájt
+1        æládusiellema	 
+-        |	vájkkudit
+1,3        åvddånimev	 |	lassánittjat
+1        Dat	 |	Guoradallam
+1        dáfo	 |	guovlo
+1        gæssut	 |	hiebalgis
+1        rijkaoassesådjo	 |	ájggedáhpe
+6        	 >	rijkav
+6        	 >	miehtáj
+3,4        vájkut	 <
+1,3        dáfojda	 |	guovlojt
+-        	vájkkut
+5        	.	 |
         Huoman	 |	Valla
         	 >	huoman
         ,	 <
