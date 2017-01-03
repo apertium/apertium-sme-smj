@@ -328,113 +328,114 @@ Eval3:
 1,3        dáfojda	 |	guovlojt
 -        	vájkkut
 5        	.	 |
-        Huoman	 |	Valla
-        	 >	huoman
-        ,	 <
-        17	 |	jages
-        prosentajn	 <
-        rájes	 <
-        	 >	17
-        	 >	prosenta
-        Mij	 |	Sierraláhkáj
-        lip	 |	dan
-        ájnnasit	 |	diehti
-        måråstam	 <
-        diehtep	 <
-        li	 |	duodaj
-        guovdásj	 |	la
-        ja	 <
-        	 >	æladusás
-        dáfoj	 |	guovlojn
-        æládusiellemin	 <
-        Dát	 |	Ájggedáhpe
-        la	 |	guosská
-        rijka	 |	rijkav
-        sådjo	 <
-        danen	 <
-        dáfojn	 |	guovlojn
-        la	 |	li
-        stuorep	 |	stuorap
-        prosænntaoasse	 |	prosentalasj
-        guollijiddje	 |	oasse
-        	 >	guollarijs
-        ednamdoalle	 |	båndurijs
-        ælloniehke	 |	ællosujttárijs
-        binnomin	 |	vuollánimen
-        stuorep	 |	duodalap
-        Danen	 |	Sámedikke
-        Sámedigge	 |	ájggu
-        gæhttjal	 |	dan
-        oadtjot	 |	diehti
-        	 >	nannit
-        rámmaævtojt	 |	ålgoldisævtojt
-        buoreduvvat	 <
-        ij	 |	avtabuohta
-        dárbaha	 <
-        iehpedit	 <
-        jut	 <
-        ållo	 <
-        bájkijn	 <
-        stuora	 |	stuorra
-        gilpustallam	 |	gilppom
-        daj	 |	arealaj
-        areálaj	 |	gaktuj
-        nanna	 <
-        ma	 |	mij
-        dárbahuvvi	 |	vuodoæládusáj
-        vuodoæládusájda	 |	la
-        	 >	dárbulattjan
-        Muotka	 <
-        	 >	Muotka
-        Vierttit	 |	Hæhttup
-        rahtjat	 |	vuorodit
-        ,	 <
-        barggosajij	 |	barggosajijt
-        .	 <
-        2000	 |	Sáme
-        rájes	 |	guovlojn
-        priváhta	 |	privatalasj
-        æládusiellema	 |	æládusá
-        barggosajij	 |	barggosadjelåhko
-        låhko	 <
-        prosentajn	 |	prosentaj
-        sáme	 |	jages
-        dáfojn	 |	2000
-        Ålles	 |	Vuonarijkan
-        rijkan	 |	åbbålattjat
-        farra	 |	vas
-        læhkám	 |	lassánam
-        ålles	 |	15
-        15 %	 |	prosentaj
-        lassánibme	 <
-        la	 |	hæhttup
-        miján	 |	dahkat
-        stuora	 |	ådå
-        barggon	 <
-        åttjudit	 <
-        ienep	 <
-        	 >	åhpadum
-        majna	 <
-        la	 <
-        oahppo	 <
-        avtabuohta	 |	duooden
-        vuododittjat	 <
-        æládusájt	 |	æláudsájt
-        	 >	ásadittjat
-        rahtjamav	 |	vuorodibme
-        kultuvrraæládusáj	 |	kulturæládusájs
-        mannoæládusáj	 |	mannoæládusás
-        designijn	 <
-        duojijn	 |	designas
-        	 >	,
-        	 >	duojes
-        biebmujn	 |	biebmos
-        	 >	,
-        vijddásap	 |	gárvedimes
-        dahkamijn	 |	la
-        suorggen	 |	suorge
-        ådådahkuj	 |	ådådahkos
-        ådåásadimijda	 |	ådåásadimes
+6        Huoman	 |	Valla
+-        	 >	huoman
+5        ,	 <
+4        17	 
+4,3        prosentajn	 <
+1,4        rájes	 < |	jages
+-        	 >	17
+-        	 >	prosenta
+7        Mij	 
+7        lip	 
+1        ájnnasit |	Sierraláhkáj
+6        |	dan	 
+6        |	diehti
+7        måråstam	 <
+1,4        guovdásj |	duodaj
+7        diehtep	 <  
+3        li	   	|	la 
+7        ja	 <
+1,4        	 >	æladusás æládusiellemin	 <
+1        dáfoj	 |	guovlojn
+7        Dát	 
+1        la	 |	guosská
+3        rijka	 |	rijkav
+1,4        sådjo	 < |	Ájggedáhpe
+7        danen	 <
+1        dáfojn	 |	guovlojn
+3        la	 |	li
+2        stuorep	 |	stuorap
+1        prosænntaoasse	 |	prosentalasj
+6         >	oasse
+1,3        guollijiddje	 |		guollarijs
+1,3        ednamdoalle	 |	båndurijs
+1,3        ælloniehke	 |	ællosujttárijs
+1        binnomin	 |	vuollánimen
+1        stuorep	 |	duodalap
+1,4        Danen	 |	dan
+6        >	diehti
+3        Sámedigge	 |	Sámedikke
+1        gæhttjal	 |	ájggu
+7         oadtjot	< 
+1        rámmaævtojt	 |	ålgoldisævtojt
+1,4        buoreduvvat	 |	nannit
+1        ij	 |	avtabuohta
+7        dárbaha	 <
+7        iehpedit	 <
+7        jut	 <
+7        ållo	 <
+7        bájkijn	 <
+1        stuora	 |	stuorra
+1        gilpustallam	 |	gilppom
+7        daj	 <
+2        areálaj	 |	arealaj
+1        nanna	 |	gaktuj
+3        ma	 |	mij
+1       dárbahuvvi	 |	la
+3        vuodoæládusájda	 |	vuodoæládusáj
+1        	 >	dárbulattjan
+4        Muotka	 <
+-        	 >	Muotka
+1        Vierttit	 |	Hæhttup
+1        rahtjat	 |	vuorodit
+5        ,	 <
+3        barggosajij	 |	barggosajijt
+5        .	 <
+4,3        sáme	 |	Sáme
+4,1        dáfojn	 	 |	guovlojn
+3        priváhta	 |	privatalasj
+1        æládusiellema	 |	æládusá
+1        barggosajij	 |	barggosadjelåhko
+7        låhko	 <
+3        prosentajn	 |	prosentaj
+4,1        rájes |	jages
+4        2000	 |	2000       
+1,4        Ålles	 |	åbbålattjat
+1        rijkan	 |	Vuonarijkan
+1        farra	 |	vas
+7        læhkám	 <
+7        ålles	
+1        %		|	prosentaj 
+1,4        lassánibme	 |	lassánam
+1        la	 |	hæhttup
+7        miján	< 
+7        stuora	 <
+7        barggon	 <
+1        åttjudit	|	dahkat 
+1        ienep	 |	ådå
+7        majna	 <
+7        la	 <
+1,4        oahppo	|	åhpadum
+1        avtabuohta	 |	duooden
+1,4        vuododittjat	 <
+2        æládusájt	 |	æláudsájt
+-        	 >	ásadittjat
+1        rahtjamav	 |	vuorodibme
+3        kultuvrraæládusáj	 |	kulturæládusájs
+3        mannoæládusáj	 |	mannoæládusás
+3        designijn	|	designas
+3        duojijn	 
+5        	 >	,
+-        	 >	duojes
+3        biebmujn	 |	biebmos
+1        	 >	,
+7        vijddásap	 
+1        dahkamijn	|	gárvedimes 
+6        |	la
+1        suorggen	 |	suorge
+3        ådådahkuj	 |	ådådahkos
+3        ådåásadimijda	 |	ådåásadimes
         
         
 Sandra:
