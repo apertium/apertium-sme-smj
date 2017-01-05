@@ -160,6 +160,7 @@
     <e><p><l>go<s n="cnjsub"/></l><r>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>jos<s n="cnjsub"/></l><r>jus<s n="cnjsub"/></r></p></e>
     <e><p><l>jus<s n="cnjsub"/></l><r>jus<s n="cnjsub"/></r></p></e>
+    <e><p><l>juogo<s n="cnjsub"/></l><r>juogu<s n="cnjcoo"/></r></p></e>
     <e><p><l>nu<b/>ahte<s n="cnjsub"/></l><r>navti<b/>vaj<s n="cnjsub"/></r></p></e>
     <e><p><l>nu<b/>guhkásgo<s n="cnjsub"/></l><r>nåv<b/>guhkás<b/>gå<s n="cnjsub"/></r></p></e>
     <e><p><l>nugo<s n="cnjsub"/></l><r>dagu<s n="cnjsub"/></r></p></e>
@@ -471,6 +472,7 @@
      <e><p><l>galledit<s n="vblex"/><s n="tv"/></l><r>guossidit<s n="vblex"/></r></p></e>
      <e><p><l>gallet<s n="vblex"/><s n="tv"/></l><r>guossit<s n="vblex"/></r></p></e>
     <e><p><l>váilevaš<s n="adj"/></l><r>vánes<s n="adj"/></r></p></e>
+    <e><p><l>ráhkis<s n="adj"/></l><r>gieres<s n="adj"/></r></p></e>
     
      <e><p><l>dárogiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>dárogiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
      <e><p><l>sámegiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>sámegiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
@@ -2307,6 +2309,7 @@
      <e><p><l>funksjonalisma<s n="n"/></l><r>funksjonalissma<s n="n"/></r></p></e>
      <e><p><l>funkšuvdna<s n="n"/></l><r>funksjåvnnå<s n="n"/></r></p></e>
      <e><p><l>fuolki<s n="n"/></l><r>fuolkke<s n="n"/></r></p></e>
+     <e><p><l>sogalaš<s n="n"/></l><r>fuolkke<s n="n"/></r></p></e> <!-- check -->
      <e><p><l>fuotnu<s n="n"/></l><r>fuodno<s n="n"/></r></p></e>
      <e><p><l>futurisma<s n="n"/></l><r>futurissma<s n="n"/></r></p></e>
      <e><p><l>fylka<s n="n"/></l><r>fylkka<s n="n"/></r></p></e>
@@ -5611,7 +5614,7 @@
      <e><p><l>almmolaš<s n="adj"/></l><r>almulasj<s n="adj"/></r></p></e>
      <e><p><l>amas<s n="adj"/></l><r>amás<s n="adj"/></r></p></e>
      <e><p><l>antikristus<s n="n"/></l><r>antikrissta<s n="n"/></r></p></e>
-     <e><p><l>arkeologalaš<s n="adj"/></l><r>arkeologalasj<s n="adj"/></r></p></e>
+     <e><p><l>arkeologalaš<s n="adj"/></l><r>arkeologijjalasj<s n="adj"/></r></p></e>
      <e><p><l>árktalaš<s n="adj"/></l><r>arktalasj<s n="adj"/></r></p></e>
      <e><p><l>arvedávgi<s n="n"/></l><r>ádjájuoksa<s n="n"/></r></p></e>
      <e><p><l>asehaš<s n="adj"/></l><r>asidasj<s n="adj"/></r></p></e>
@@ -5722,6 +5725,8 @@
      <e><p><l>geatnegas<s n="adj"/></l><r>velgulasj<s n="adj"/></r></p></e>
      <e><p><l>geatnegahtton<s n="adj"/></l><r>bákkulasj<s n="adj"/></r></p></e>
      <e><p><l>geatnegahttojuvvon<s n="adj"/></l><r>bákkulasj<s n="adj"/></r></p></e>
+     <e><p><l>geatnegahtton<s n="adj"/></l><r>åvdåsvásstádus<s n="n"/></r></p></e>
+     <e><p><l>geatnegahttojuvvon<s n="adj"/></l><r>åvdåsvásstádus<s n="n"/></r></p></e>
      <e><p><l>geatnegahttit<s n="vblex"/></l><r>vælggogissan<b/>dahkat<s n="vblex"/></r></p></e>
      <e><p><l>geazzi<s n="adj"/></l><r>giedtse<s n="adj"/></r></p></e>
      <e><p><l>geográfalaš<s n="adj"/></l><r>geografijjalasj<s n="adj"/></r></p></e>

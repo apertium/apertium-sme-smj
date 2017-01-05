@@ -2300,7 +2300,7 @@ C[_]-T sent
         <pattern-item n="connegverb"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro> 
         <!-- c="First we copy the temps from mainverb onto negverb" -->
         <let>
           <clip pos="1" side="tl" part="a_temps_mood"/>
@@ -2308,17 +2308,33 @@ C[_]-T sent
         </let>
         <choose>
           <when>
-            <test>
+            <test><and>
               <not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+              <not><equal><clip pos="2" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></not></and>
             </test>
             <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
-          </when>
-          <when>
-            <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
+          </when> 
+          <when><test><and>
+            <not><equal><clip pos="2" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></not>
+            <equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></and></test>
             <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
+          </when>  
+          <when c="in jáhkáše : iv jáhke"> <!-- or shouldit have lulu  ? -->
+            <test><and>
+              <not><equal><clip pos="2" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+              <equal><clip pos="2" side="tl" part="a_mood"/><lit-tag v="cond"/></equal>
+            </and></test>
+            <let><clip pos="2" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
+            <let><clip pos="1" side="tl" part="tags"/><concat><lit-tag v="vblex.neg.indic.pres"/>
+            <clip pos="1" side="sl" part="a_person"/><clip pos="1" side="sl" part="a_nbr"/></concat></let>
           </when>
+          <when c="de in livčče jáhkkán : de iv lulu jáhkkám">
+          <test>
+            <equal><clip pos="2" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
+            <let><clip pos="1" side="tl" part="tags"/><concat><lit-tag v="vblex.neg.indic.pres"/>
+            <clip pos="1" side="sl" part="a_person"/><clip pos="1" side="sl" part="a_nbr"/></concat></let>
+          </when> 
         </choose>
-
         <out>
           <chunk name="neg" case="caseFirstword">
             <tags>
