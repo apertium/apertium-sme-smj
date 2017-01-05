@@ -1,6 +1,6 @@
-Revision: 75213
-AP_SRC1 Revision: 145809
-AP_SRC2 Revision: 145746
+Revision: 75345
+AP_SRC1 Revision: 146093
+AP_SRC2 Revision: 146092
 Running Regression-tests with mode "sme-smj" with updated tests ...
 
 sme-smj	  Sámediggi áigu oččodit sámi mánáide individuála vuoigatvuođa oažžut sámi mánáidgárdefálaldaga.
@@ -289,8 +289,7 @@ WORKS	  Rádudallamårnik aj vælggogissan dahká Sámedikkev.
 
 
 sme-smj	  Soahpamuš geatnegahttá stáhtaid čađahit konkrehta doaimmaid.
-	- Såbadus vælggogissan dahká stáhtajt tjadádit konkrehta dåjmajt.
-	+ Såbadus vælggogissan dahká stáhtajt tjadádit konkrehta/konkriehta dåjmajt.
+WORKS	  Såbadus vælggogissan dahká stáhtajt tjadádit konkrehta dåjmajt.
 
 
 sme-smj	  Norga lea geatnegahttán iežas sihke rievttalaččat ja politihkalaččat suddjet ja ovddidit min giela.
@@ -487,8 +486,7 @@ WORKS	  Skåvllå la bákkulasj.
 
 
 sme-smj	  Skuvla lea geatnegahtton oahpahit.
-	- Skåvlån la åvdåsvásstádus åhpadit.
-	+ Skåvlån la bákkulasj åhpadit.
+WORKS	  Skåvlån la åvdåsvásstádus åhpadit.
 
 
 sme-smj	  Dalle go áhčči lei čieža jagi.
@@ -752,12 +750,11 @@ WORKS	  Sámegielak Wikipedian li dálla 2,717 artihkkala.
 
 
 sme-smj	  Son beroštii arkeologalaš bargguin, ja son čokkii dávviriid ja dávttiid boares hávddiin.
-	- Sån berustij arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt vuoras hávdijs.
-	+ Sån berustij #arkeologalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt vuoras hávdijs.
+WORKS	  Sån berustij arkeologijjalasj bargojs, ja sån tjåkkij dávverijt ja dávtijt vuoras hávdijs.
 
 
 sme-smj	  Girjái Áillohaš lea čoaggán historjjálaš govaid sámiin birra máilmmi.
 WORKS	  Girjjáj Áillohaš la histårjålasj gåvåjt sámijs tjoaggám birra værálda.
 
 
-183 / 188
+186 / 188
