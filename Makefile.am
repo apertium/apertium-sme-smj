@@ -233,7 +233,10 @@ apertium_sme_smj_DATA=  \
 	$(BASENAME).$(PREFIX1).t2x	\
 	$(BASENAME).$(PREFIX1).t3x	\
 	$(BASENAME).$(PREFIX1).t4x	\
-	$(BASENAME).$(PREFIX1).t5x
+	$(BASENAME).$(PREFIX1).t5x	\
+	$(BASENAME).$(PREFIX2).t1x	\
+	$(BASENAME).$(PREFIX2).t2x	\
+	$(BASENAME).$(PREFIX2).t3x
 
 
 # All modes are created by the same goal, listing several will just give problems with make -j2
