@@ -1146,6 +1146,8 @@ C[_]-T sent
       <attr-item tags="sem_build_org"/>
       <attr-item tags="sem_build_route"/>
       <attr-item tags="sem_cat"/>
+      <attr-item tags="sem_cat_group_hum"/>
+      <attr-item tags="sem_cat_group_hum_plc"/>
       <attr-item tags="sem_clth"/>
       <attr-item tags="sem_clth-jewl"/>
       <attr-item tags="sem_clth-jewl_curr"/>
@@ -1174,12 +1176,14 @@ C[_]-T sent
       <attr-item tags="sem_dir"/>
       <attr-item tags="sem_domain"/>
       <attr-item tags="sem_domain_food-med"/>
+      <attr-item tags="sem_domain_hum"/>
       <attr-item tags="sem_domain_prod-audio"/>
       <attr-item tags="sem_drink"/>
       <attr-item tags="sem_dummytag"/>
       <attr-item tags="sem_edu"/>
       <attr-item tags="sem_edu_event"/>
       <attr-item tags="sem_edu_group_hum"/>
+      <attr-item tags="sem_edu_hum"/>
       <attr-item tags="sem_edu_mat"/>
       <attr-item tags="sem_edu_org"/>
       <attr-item tags="sem_event"/>
@@ -1324,6 +1328,9 @@ C[_]-T sent
       <attr-item tags="sem_wpn"/>
       <attr-item tags="sem_wthr"/>
       <attr-item tags="sem_year"/>
+      <attr-item tags="top"/>
+      <attr-item tags="cog"/>
+      <attr-item tags="ant"/>
     </def-attr>
     <def-attr n="sem_year">
       <attr-item tags="sem_year"/>
