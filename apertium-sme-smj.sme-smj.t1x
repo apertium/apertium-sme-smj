@@ -912,6 +912,7 @@ C[_]-T sent
     <def-attr n="a_spec_sme_tags1">
       <attr-item tags="south"/>
       <attr-item tags="g3"/>
+      <attr-item tags="←cs→"/>
        <attr-item tags="allegro"/>
        <attr-item tags="err_orth_nom_gen_mt"/>
        <attr-item tags="err_orth_mt"/>
