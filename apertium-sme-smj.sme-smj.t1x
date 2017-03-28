@@ -1396,6 +1396,9 @@ C[_]-T sent
        <attr-item tags="@VOC"/>
        <attr-item tags="@X"/>
     </def-attr>
+    <def-attr n="a_subqst">
+      <attr-item tags="subqst"/>
+    </def-attr>
     <def-attr n="a_qst">
        <attr-item tags="qst"/>
        <attr-item tags="foc_bat"/>
@@ -1800,6 +1803,7 @@ C[_]-T sent
             <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
             <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
             <let><clip pos="1" side="tl" part="a_comp-superl"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="a_subqst"/><lit v=""/></let>
         </when>
         <when c="M[T] remove foc from prn">
            <test><and>
