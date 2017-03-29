@@ -1374,6 +1374,13 @@ C[_]-T sent
        <attr-item tags="@ADVL→"/>
        <attr-item tags="@ADVL-ela→"/>
        <attr-item tags="@ADVL-ine→"/>
+       <attr-item tags="@ADVLcs-ela→"/>
+       <attr-item tags="@ADVLcs-ine→"/>
+       <attr-item tags="@ADVLqst-ela→"/>
+       <attr-item tags="@ADVLqst-ine→"/>
+       <attr-item tags="@ADVLhab→"/>
+       <attr-item tags="@←ADVLhab"/>
+       <attr-item tags="@←SUBJext"/>
        <attr-item tags="@ADVL→CS"/>
        <attr-item tags="@APP-ADVL←"/>
        <attr-item tags="@APP-N←"/>
