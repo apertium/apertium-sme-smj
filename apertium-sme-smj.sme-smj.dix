@@ -92,6 +92,7 @@
     <sdef n="sem_plc"     c="sem_plc"/>
 
     <!-- Punctuation -->
+    <sdef n="clb" c="puctuation"/>
     <sdef n="punct"   c="Punctuation"/>
     <sdef n="sent"    c="Sentence boundary"/>
     <sdef n="cm"      c="Comma"/>
@@ -53036,6 +53037,8 @@
 
     <!-- Punctuation -->
 
+	<e r="LR"><p><l>❡<s n="clb"/></l><r></r></p></e>
+	<e r="LR"><p><l>❡<s n="sent"/></l><r></r></p></e>
     <e><re>[…;:.\?¿¶]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
     <e><p><l>!<s n="sent"/></l><r>!<s n="sent"/></r></p></e>
