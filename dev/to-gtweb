@@ -1,0 +1,89 @@
+#!/bin/bash
+
+
+set -eu
+
+svn () {
+    cd "$(dirname "$0")"/..
+
+    if [[ ! -f Makefile ]]; then
+        echo 'No Makefile found – please compile first!' >&2
+        exit 1
+    elif [[ "$(grep ^prefix Makefile)" != "prefix = /usr/local" ]]; then
+        echo "Please run autogen.sh again without any --prefix" >&2
+        exit 1
+    fi
+
+    echo "Compiling and running sanity check …"
+    make -j
+    make test
+
+    DESTDIR=for_gtweb_jorgal make install
+
+    echo
+    echo "Transferring files to gtweb …"
+    rsync -av for_gtweb_jorgal/ gtweb:for_gtweb_jorgal/
+
+    echo
+    echo "On gtweb, copying to /usr and restarting apy …"
+    script="
+sudo rsync -a for_gtweb_jorgal/usr/local/share/apertium/${PACKAGE}/ /usr/share/apertium/${PACKAGE}/ &&
+sudo systemctl restart apy
+"
+    set -x
+    ssh -t gtweb "${script}"
+}
+
+package () {
+    script="
+sudo dnf clean packages             &&
+sudo dnf update                     &&
+sudo dnf reinstall ${PACKAGE}       &&
+sudo systemctl restart apy
+"
+    set -x
+    ssh -t gtweb "${script}"
+}
+
+fail () {
+    cat >&2 <<EOF
+Usage:
+
+ $0 svn        --  compiles this package, uploads to gtweb and installs it to /usr
+ $0 package    --  reinstalls the nightly package on gtweb
+
+Assumes you have a Host gtweb in ~/.ssh/config
+EOF
+    exit 1
+}
+
+
+### Main:
+
+if [[ $# -ne 1 ]]; then
+    fail
+fi
+if ! grep -q '^Host[[:space:]][[:space:]]*gtweb[[:space:]]*$' ~/.ssh/config; then
+    if [[ ! -d ~/.ssh ]]; then mkdir ~/.ssh; chmod 700 ~/.ssh; fi
+    if [[ ! -f ~/.ssh/config ]]; then touch ~/.ssh/config; fi
+    cat >&2 <<EOF
+To use this script, you need a gtweb entry in ~/.ssh/config, with your
+username on gtweb. For example:
+
+Host gtweb
+  User $USER
+  HostName gtweb.uit.no
+
+EOF
+    exit 1
+fi
+
+e=$(grep "^PACKAGE='apertium-...-...'$" config.log)
+eval "$e"
+export PACKAGE
+
+case $1 in
+    svn) shift; svn "$@";;
+    package) package;;
+    *) fail;;
+esac

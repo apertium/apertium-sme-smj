@@ -104,6 +104,7 @@ dev/star-report.freq -text
 dev/testkorpus.txt -text
 dev/testkorpus_diff.txt -text
 dev/testsentences.txt -text
+dev/to-gtweb -text
 dev/xfst2apertium.relabel -text
 doc/gt2apertium.cg3r -text
 /evaluate_xml.sh -text

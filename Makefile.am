@@ -258,7 +258,15 @@ clean-local:
 ## Test
 ###############################################################################
 
-test: all
+test-install: all
+	DESTDIR=tmp-$@ make install
+	find tmp-$@ -type f -name '*.mode' | xargs sed -i.tmp "s% '\($(prefix)\)% 'tmp-$@/\1%g"
+	echo "Leage buorre" | apertium -d tmp-$@/$(prefix)/share/apertium sme-smj | tee tmp-$@/mt
+	@echo "Liege buorre" > tmp-$@/ref
+	@diff tmp-$@/ref tmp-$@/mt
+	@rm -rf tmp-$@
+
+test: all test-install
 	echo "Leage buorre" | apertium -d . sme-smj | tee .test-mt
 	@echo "Liege buorre" > .test-ref
 	@diff .test-ref .test-mt
