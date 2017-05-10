@@ -1211,6 +1211,8 @@ C[_]-T sent
       <attr-item tags="sem_food-med"/>
       <attr-item tags="sem_food_perc-phys"/>
       <attr-item tags="sem_food_plant"/>
+      <attr-item tags="sem_fruit"/>
+      <attr-item tags="sem_fruit_hum"/>
       <attr-item tags="sem_furn"/>
       <attr-item tags="sem_game"/>
       <attr-item tags="sem_game_obj-play"/>
