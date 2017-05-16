@@ -1095,6 +1095,27 @@ C[_]-T sent
     </def-attr>
 
     <def-attr n="a_sem">
+      <attr-item tags="sem_act_fruit"/>
+      <attr-item tags="sem_ani_group_prod-vis"/>
+      <attr-item tags="sem_body-abstr_feat-cogn"/>
+      <attr-item tags="sem_body_plc-elevate"/>
+      <attr-item tags="sem_build-part_cat"/>
+      <attr-item tags="sem_build-part_cat_ctain"/>
+      <attr-item tags="sem_build-part_cat_ctain_mat"/>
+      <attr-item tags="sem_build-part_ctain"/>
+      <attr-item tags="sem_build-part_ctain_mat"/>
+      <attr-item tags="sem_build-part_ctain_obj"/>
+      <attr-item tags="sem_clth-jewl_curr_obj"/>
+      <attr-item tags="sem_clth-jewl_curr_obj_org"/>
+      <attr-item tags="sem_clth-jewl_fruit"/>
+      <attr-item tags="sem_clth_obj-clo"/>
+      <attr-item tags="sem_edu_geom"/>
+      <attr-item tags="sem_feat-phys_plc"/>
+      <attr-item tags="sem_group_prod-vis"/>
+      <attr-item tags="sem_hum-prof"/>
+      <attr-item tags="sem_hum_mat_tool"/>
+      <attr-item tags="sem_hum_tool-it"/>
+      <attr-item tags="sem_obj_symbol"/>
       <attr-item tags="sem_act"/>
       <attr-item tags="sem_act_group"/>
       <attr-item tags="sem_act_plc"/>
