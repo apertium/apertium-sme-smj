@@ -40,7 +40,7 @@
         <file name="apertium-sme-smj.sme-smj.t5x"/>
         <file name="sme-smj.t5x.bin"/>
       </program>
-      <program name="hfst-proc $1">
+      <program name="hfst-proc --weight-classes 1 $1">
         <file name="sme-smj.autogen.hfst"/>
       </program>
     </pipeline>
@@ -342,7 +342,7 @@
         <file name="apertium-sme-smj.sme-smj.t5x"/>
         <file name="sme-smj.t5x.bin"/>
       </program>
-      <program name="hfst-proc -d">
+      <program name="hfst-proc --weight-classes 1 -d">
         <file name="sme-smj.autogen.hfst"/>
       </program>
     </pipeline>
@@ -388,7 +388,7 @@
         <file name="apertium-sme-smj.sme-smj.t5x"/>
         <file name="sme-smj.t5x.bin"/>
       </program>
-      <program name="hfst-proc $1">
+      <program name="hfst-proc --weight-classes 1 $1">
         <file name="sme-smj.autogen.hfst"/>
       </program>
     </pipeline>
@@ -665,7 +665,7 @@
         <file name="apertium-sme-smj.sme-smj.t5x"/>
         <file name="sme-smj.t5x.bin"/>
       </program>
-      <program name="hfst-proc -d">
+      <program name="hfst-proc --weight-classes 1 -d">
         <file name="sme-smj.autogen.hfst"/>
       </program>
     </pipeline>
@@ -704,7 +704,7 @@
         <file name="apertium-sme-smj.smj-sme.t3x"/>
         <file name="smj-sme.t3x.bin"/>
       </program>
-      <program name="hfst-proc $1">
+      <program name="hfst-proc --weight-classes 1 $1">
         <file name="smj-sme.autogen.hfst"/>
       </program>
     </pipeline>
