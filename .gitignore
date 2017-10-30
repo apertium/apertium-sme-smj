@@ -10,11 +10,13 @@
 /Makefile
 /Makefile.in
 /aclocal.m4
+/ap_include.am
 /config
 /configure
 /install-sh
 /missing
 /modes
+/otpt_dir
 /stamp-h1
 t/*.html
 t/.git
