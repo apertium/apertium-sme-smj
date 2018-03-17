@@ -537,3 +537,8 @@ tmx_data/samastit_skuvlahist_sme2smj.tmx -text
 tmx_data/samediggeweb_sme2smj.tmx -text
 tmx_data/samediggidiedadus_samegiela_birra_2012_sme2smj.tmx -text
 /wercheck_mt-otpt.py -text
+*.dix linguist-language=XML linguist-detectable=true
+*.lrx linguist-language=XML linguist-detectable=true
+*.lsx linguist-language=XML linguist-detectable=true
+*.tsx linguist-language=XML linguist-detectable=true
+*.t[[:digit:]]x linguist-language=XML linguist-detectable=true
