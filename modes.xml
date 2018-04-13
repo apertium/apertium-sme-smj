@@ -792,6 +792,43 @@
     </pipeline>
   </mode>
 
+  <mode name="smj-sme-dgen">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="smj-sme.automorf.hfst"/>
+      </program>
+      <program name="cg-proc">
+        <file name="smj-sme.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="smj-sme.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="smj-sme.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="smj-sme.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-sme-smj.smj-sme.t1x"/>
+        <file name="smj-sme.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-sme-smj.smj-sme.t2x"/>
+        <file name="smj-sme.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-sme-smj.smj-sme.t3x"/>
+        <file name="smj-sme.t3x.bin"/>
+      </program>
+      <program name="hfst-proc --weight-classes 1 -d">
+        <file name="smj-sme.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+
+
 
 
 </modes>
