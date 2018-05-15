@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules>
+  <rule>
+    <match lemma="boahtet" tags="vblex.*">
+      <select lemma="boahtit" tags="vblex.*"/>
+    </match>
+  </rule>
+  <rule>
+    <match lemma="ii"/>
+    <match lemma="orrut" tags="vblex.*">
+      <select lemma="liehket" tags="vblex.*"/>
+    </match>
+  </rule>
+</rules>
