@@ -173,14 +173,17 @@
     <e><p><l>vaikko<s n="cnjsub"/></l><r>vájku<s n="cnjsub"/></r></p></e>
 
     <e><p><l>ahte<s n="cnjcoo"/></l><r>ja<s n="cnjcoo"/></r></p></e>
-    <e><p><l>dahe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
-    <e><p><l>dahege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
+
+    <e r="RL"><p><l>dahje<s n="cnjcoo"/></l><r>jalik<s n="cnjcoo"/></r></p></e>
+    <e r="LR"><p><l>dahe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
+    <e r="LR"><p><l>dahege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>dahje<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
-    <e><p><l>dahjege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
-    <e><p><l>dehe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
-    <e><p><l>dehege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
+    <e r="LR"><p><l>dahjege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
+    <e r="LR"><p><l>dehe<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
+    <e r="LR"><p><l>dehege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
+    <e r="LR"><p><l>elege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
+
     <e><p><l>ele<s n="cnjcoo"/></l><r>valla<s n="cnjcoo"/></r></p></e>
-    <e><p><l>elege<s n="cnjcoo"/></l><r>jali<s n="cnjcoo"/></r></p></e>
     <e><p><l>ja<s n="cnjcoo"/></l><r>ja<s n="cnjcoo"/></r></p></e>
     <e><p><l>muhto<s n="cnjcoo"/></l><r>valla<s n="cnjcoo"/></r></p></e>
     <e><p><l>muhte<s n="cnjcoo"/></l><r>valla<s n="cnjcoo"/></r></p></e>
@@ -195,7 +198,7 @@
     <e><p><l>dakkár<s n="prn"/></l><r>dakkár<s n="prn"/></r></p></e>
     <e><p><l>dakkáraš<s n="prn"/></l><r>dakkárasj<s n="prn"/></r></p></e>
     <e><p><l>dat<s n="prn"/></l><r>dat<s n="prn"/></r></p></e>
-    <e><p><l>diekkár<s n="prn"/></l><r>dákkár<s n="prn"/></r></p></e>
+    <e><p><l>diekkár<s n="prn"/></l><r>dákkir<s n="prn"/></r></p></e>
     <e><p><l>diet<s n="prn"/></l><r>dat<s n="prn"/></r></p></e>
     <e><p><l>dokkár<s n="prn"/></l><r>duokkár<s n="prn"/></r></p></e>
     <e><p><l>dokkáraš<s n="prn"/></l><r>dåkkárasj<s n="prn"/></r></p></e>
@@ -632,6 +635,7 @@
        <e><p><l>psyhkalaš<s n="adj"/></l><r>psykalasj<s n="adj"/></r></p></e>
        <e><p><l>evalueren<s n="n"/></l><r>árvustallam<s n="n"/></r></p></e>
        <e><p><l>eŋgelasgiella<s n="n"/></l><r>ieŋŋilsgiella<s n="n"/></r></p></e>
+       <e><p><l>meängiella<s n="n"/></l><r>meänsgiella<s n="n"/></r></p></e>
        <e><p><l>soaittáhat<s n="n"/></l><r>soajtádahka<s n="n"/></r></p></e>
        <e><p><l>gálga<s n="n"/></l><r>tjehpudahka<s n="n"/></r></p></e>
        <e><p><l>vuođđogálga<s n="n"/></l><r>vuodotjehpudahka<s n="n"/></r></p></e>
@@ -1314,6 +1318,7 @@
     <!-- Nouns -->
 
      <e><p><l>P2-kanála<s n="n"/></l><r>P2-kanálla<s n="n"/></r></p></e>
+     <e><p><l>suoivva<s n="n"/></l><r>sieges<s n="n"/></r></p></e>
      <e><p><l>abbediija<s n="n"/></l><r>abbedijja<s n="n"/></r></p></e>
      <e><p><l>abessiiva<s n="n"/></l><r>abessijvva<s n="n"/></r></p></e>
      <e><p><l>ablatiiva<s n="n"/></l><r>ablatijvva<s n="n"/></r></p></e>
@@ -5606,7 +5611,8 @@
     <e><p><l>čállin<s n="n"/></l><r>tjállem<s n="n"/></r></p></e>
 
     <!-- Adjectives -->
-     <e><p><l>vejolaš<s n="adj"/></l><r>máttelis<s n="adj"/></r></p></e>
+     <e><p><l>bassi<s n="adj"/></l><r>ájlis<s n="adj"/></r></p></e>
+     <e><p><l>vejolaš<s n="adj"/></l><r>máhttelis<s n="adj"/></r></p></e>
      <e><p><l>boaris<s n="adj"/></l><r>vuoras<s n="adj"/></r></p></e>
      <e><p><l>boaris<s n="adj"/></l><r>boares<s n="adj"/></r></p></e>
      <e><p><l>čeahppi<s n="adj"/></l><r>smidá<s n="adj"/></r></p></e>
@@ -6047,6 +6053,7 @@
 
 
     <!-- Adverbs -->
+     <e r="RL"><p><l>nu<s n="adv"/></l><r>nåv<s n="adv"/></r></p></e>
      <e><p><l>ovdal<s n="adv"/></l><r>åvddål<s n="adv"/></r></p></e>
      <e><p><l>mielde<s n="adv"/></l><r>siegen<s n="adv"/></r></p></e>
      <e><p><l>aktiivvalaččat<s n="adv"/></l><r>aktijvalattjat<s n="adv"/></r></p></e>
@@ -6454,6 +6461,7 @@
      <e r="RL"><p><l>dovddastit<s n="vblex"/><s n="tv"/></l><r>dåbddåt<s n="vblex"/></r></p></e>
      <e r="RL"><p><l>galmmašit<s n="vblex"/><s n="tv"/></l><r>galmmet<s n="vblex"/></r></p></e>
      <e r="RL"><p><l>govddidit<s n="vblex"/><s n="tv"/></l><r>gåvdedit<s n="vblex"/></r></p></e>
+     <e><p><l>ovddidit<s n="vblex"/><s n="tv"/></l><r>åvdedit<s n="vblex"/></r></p></e>
      <e r="RL"><p><l>guoskadit<s n="vblex"/><s n="tv"/></l><r>guosskat<s n="vblex"/></r></p></e>
      <e r="RL"><p><l>gáludit<s n="vblex"/><s n="iv"/></l><r>gievddat<s n="vblex"/></r></p></e>
      <e r="RL"><p><l>hilggodit<s n="vblex"/><s n="tv"/></l><r>hilggot<s n="vblex"/></r></p></e>
@@ -7579,6 +7587,7 @@
      <e><p><l>fernisseret<s n="vblex"/><s n="tv"/></l><r>fernissierit<s n="vblex"/></r></p></e>
      <e><p><l>fernisset<s n="vblex"/><s n="tv"/></l><r>fernissit<s n="vblex"/></r></p></e>
      <e><p><l>fertet<s n="vblex"/><s n="iv"/></l><r>vierttit<s n="vblex"/></r></p></e>
+     <e r="RL"><p><l>fertet<s n="vblex"/><s n="iv"/></l><r>hættut<s n="vblex"/></r></p></e>
      <e><p><l>feteret<s n="vblex"/><s n="tv"/></l><r>fetierit<s n="vblex"/></r></p></e>
      <e><p><l>fieradit<s n="vblex"/><s n="iv"/></l><r>vierrat<s n="vblex"/></r></p></e>
      <e><p><l>fierahit<s n="vblex"/><s n="tv"/></l><r>vierrat<s n="vblex"/></r></p></e>
@@ -10313,7 +10322,7 @@
      <e><p><l>čalmmustit<s n="vblex"/><s n="tv"/></l><r>tjalmostit<s n="vblex"/></r></p></e>
      <e><p><l>čalmmustit<s n="vblex"/><s n="tv"/><s n="der_caus"/><s n="vblex"/><s n="tv"/><s n="der_passl"/><s n="vblex"/><s n="iv"/></l><r>tjalmostahttet<s n="vblex"/><s n="tv"/><s n="der_passl"/><s n="vblex"/><s n="iv"/></r></p></e>
      <e><p><l>šamponeret<s n="vblex"/><s n="tv"/></l><r>sjamponierit<s n="vblex"/></r></p></e>
-     <e><p><l>čanadit<s n="vblex"/><s n="tv"/></l><r>tjadnat<s n="vblex"/></r></p></e>
+     <e><p><l>čanadit<s n="vblex"/><s n="tv"/></l><r>tjanádit<s n="vblex"/></r></p></e>
      <e><p><l>čanahit<s n="vblex"/><s n="tv"/></l><r>tjadnat<s n="vblex"/></r></p></e>
      <e><p><l>čanastit<s n="vblex"/><s n="tv"/></l><r>tjadnat<s n="vblex"/></r></p></e>
      <e><p><l>šarmantiseret<s n="vblex"/><s n="tv"/></l><r>sjarmantisierit<s n="vblex"/></r></p></e>
