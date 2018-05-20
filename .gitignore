@@ -6,6 +6,7 @@
 /*.mode
 /*.status
 /.deps
+/*.lrx
 /INSTALL
 /Makefile
 /Makefile.in
@@ -20,3 +21,4 @@
 /stamp-h1
 t/*.html
 t/.git
+misc/*
