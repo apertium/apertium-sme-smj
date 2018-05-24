@@ -145,6 +145,7 @@
 
     <!-- Conjunctions -->
 
+    <e r="RL"><p><l>ahte<s n="cnjsub"/></l><r>ahte<s n="cnjsub"/></r></p></e>
     <e><p><l>ahte<s n="cnjsub"/></l><r>jut<s n="cnjsub"/></r></p></e>
     <e><p><l>amas<s n="cnjsub"/></l><r>vaj<s n="cnjsub"/></r></p></e>
     <e><p><l>dan<b/>botta<b/>go<s n="cnjsub"/></l><r>dav<b/>båttåv<b/>gå<s n="cnjsub"/></r></p></e>
@@ -256,6 +257,7 @@
     <e><p><l>juohke<s n="prn"/></l><r>juohkka<s n="prn"/></r></p></e>
     <e><p><l>juohkehaš<s n="prn"/></l><r>juohkkahasj<s n="prn"/></r></p></e>
     <e><p><l>makkár<s n="prn"/></l><r>makkir<s n="prn"/></r></p></e>
+    <e r="RL"><p><l>makkár<s n="prn"/></l><r>makkár<s n="prn"/></r></p></e>
     <e><p><l>mihkke<s n="prn"/></l><r>mige<s n="prn"/></r></p></e>
     <e><p><l>mihkke<s n="prn"/><s n="ind"/><s n="sg"/><s n="nom"/><s n="foc_neg-ge"/></l><r>makkirak<s n="prn"/><s n="ind"/></r></p></e>
     <e><p><l>mihkke<s n="prn"/><s n="ind"/><s n="sg"/><s n="acc"/><s n="foc_neg-ge"/></l><r>mige<s n="prn"/><s n="ind"/><s n="pl"/><s n="acc"/></r></p></e>
@@ -6055,6 +6057,7 @@
     <!-- Adverbs -->
      <e r="RL"><p><l>nu<s n="adv"/></l><r>nåv<s n="adv"/></r></p></e>
      <e><p><l>ovdal<s n="adv"/></l><r>åvddål<s n="adv"/></r></p></e>
+     <e><p><l>kánske<s n="adv"/></l><r>ihkap<s n="adv"/></r></p></e>
      <e><p><l>mielde<s n="adv"/></l><r>siegen<s n="adv"/></r></p></e>
      <e><p><l>aktiivvalaččat<s n="adv"/></l><r>aktijvalattjat<s n="adv"/></r></p></e>
      <e><p><l>akto<s n="adv"/></l><r>aktu<s n="adv"/></r></p></e>
@@ -10606,6 +10609,7 @@
      <e><p><l>Kárášjohka<s n="np"/></l><r>Kárásjjåhkå<s n="np"/></r></p></e>
      <e><p><l>Finnmárku<s n="np"/></l><r>Finnmárkko<s n="np"/></r></p></e>
      <e><p><l>Romsa<s n="np"/></l><r>Råmsså<s n="np"/></r></p></e>
+     <e r="RL"><p><l>Romsa<s n="np"/></l><r>Tråmsså<s n="np"/></r></p></e>
      <e><p><l>Eira<s n="np"/></l><r>Eira<s n="np"/></r></p></e>
      <e><p><l>Hætta<s n="np"/></l><r>Hætta<s n="np"/></r></p></e>
      <e><p><l>Suopma<s n="np"/></l><r>Suobma<s n="np"/></r></p></e>
