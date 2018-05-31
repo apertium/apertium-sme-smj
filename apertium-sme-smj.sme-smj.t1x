@@ -1094,6 +1094,8 @@ C[_]-T sent
       <attr-item tags="cmp_attr"/>
       <attr-item tags="cmp_plgen"/>
       <attr-item tags="cmp_sh"/>
+      <attr-item tags="cmp_hyph.cmp"/>
+      <attr-item tags="cmp_splitr"/>
     </def-attr>
 
     <def-attr n="a_sem">
