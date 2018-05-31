@@ -290,6 +290,7 @@
 
     <!-- Adpositions -->
 
+    <e><p><l>duogábealde<s n="post"/></l><r>duogen<s n="post"/></r></p></e>
     <e><p><l>ovdal<s n="post"/></l><r>åvddål<s n="post"/></r></p></e>
     <e><p><l>ovdal<s n="pr"/></l><r>åvddål<s n="pr"/></r></p></e>
     <e><p><l>mielde<s n="post"/></l><r>siegen<s n="post"/></r></p></e>
@@ -404,7 +405,7 @@
      <e><p><l>ovddastus<s n="n"/></l><r>åvdåstibme<s n="n"/></r></p></e>
      <e><p><l>bovden<s n="n"/></l><r>gåhttjom<s n="n"/></r></p></e>
      <e><p><l>kr<s n="n"/></l><r>kr<s n="n"/></r></p></e>
-     <e><p><l>NBR<s n="n"/></l><r>NBR<s n="n"/></r></p></e>
+     <e><p><l>NBR<s n="np"/></l><r>NBR<s n="np"/></r></p></e>
      <e><p><l>mW<s n="n"/></l><r>mW<s n="n"/></r></p></e>
      <e><p><l>MW<s n="n"/></l><r>MW<s n="n"/></r></p></e>
      <e><p><l>gártá<s n="n"/></l><r>kártta<s n="n"/></r></p></e>
@@ -482,6 +483,12 @@
      <e><p><l>gallet<s n="vblex"/><s n="tv"/></l><r>guossit<s n="vblex"/></r></p></e>
     <e><p><l>váilevaš<s n="adj"/></l><r>vánes<s n="adj"/></r></p></e>
     <e><p><l>ráhkis<s n="adj"/></l><r>gieres<s n="adj"/></r></p></e>
+    <e><p><l>dovddus<s n="adj"/></l><r>dåbdos<s n="adj"/></r></p></e>
+    <e><p><l>sosiálalaš<s n="adj"/></l><r>sosiálla<s n="adj"/></r></p></e>
+    <e><p><l>vuoiŋŋalaš<s n="adj"/></l><r>vuojŋŋalasj<s n="adj"/></r></p></e>
+    <e><p><l>indoeurohpalaš<s n="adj"/></l><r>indoeuropealasj<s n="adj"/></r></p></e>
+    <e><p><l>eurohpalaš<s n="adj"/></l><r>europealasj<s n="adj"/></r></p></e>
+    <e><p><l>urálalaš<s n="adj"/></l><r>urálalasj<s n="adj"/></r></p></e>
     
      <e><p><l>dárogiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>dárogiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
      <e><p><l>sámegiel<s n="adj"/><s n="sem_dummytag"/><s n="attr"/></l><r>sámegiella<s n="n"/><s n="cmp_sh"/><s n="cmp"/></r></p></e>
@@ -599,6 +606,7 @@
        <e><p><l>goassege<s n="adv"/></l><r>goassak<s n="adv"/></r></p></e>
        <e><p><l>goassige<s n="adv"/></l><r>goassak<s n="adv"/></r></p></e>
        <e><p><l>ges<s n="pcle"/></l><r>vas<s n="adv"/></r></p></e>
+       <e><p><l>o.m.á<s n="adv"/></l><r>å.m.á<s n="adv"/></r></p></e>
        <e><p><l>ee<s n="adv"/><s n="abbr"/></l><r>duola<b/>degu<s n="adv"/></r></p></e>
        <e><p><l>jitnosit<s n="adv"/></l><r>jieddnát<s n="adv"/></r></p></e>
        <e><p><l>váste<s n="post"/></l><r><s n="post"/></r></p></e>
@@ -2321,7 +2329,18 @@
      <e><p><l>funksjonalisma<s n="n"/></l><r>funksjonalissma<s n="n"/></r></p></e>
      <e><p><l>funkšuvdna<s n="n"/></l><r>funksjåvnnå<s n="n"/></r></p></e>
      <e><p><l>fuolki<s n="n"/></l><r>fuolkke<s n="n"/></r></p></e>
-     <e><p><l>sogalaš<s n="n"/></l><r>fuolkke<s n="n"/></r></p></e> <!-- check -->
+     <e><p><l>sogalaš<s n="n"/></l><r>berulasj<s n="n"/></r></p></e> <!-- check -->
+     <e><p><l>vuoni<s n="n"/></l><r>vuonev<s n="n"/></r></p></e>
+     <e><p><l>čeahci<s n="n"/></l><r>tjiehtje<s n="n"/></r></p></e>
+     <e><p><l>olgguldas<s n="n"/></l><r>ålgoldis<s n="n"/></r></p></e>
+     <e><p><l>olgguldas<s n="adj"/></l><r>ålgoldis<s n="adj"/></r></p></e>
+     <e><p><l>dovdomearka<s n="n"/></l><r>dåbddomærkka<s n="n"/></r></p></e>
+     <e><p><l>vádjoleapmi<s n="n"/></l><r>vájaldibme<s n="n"/></r></p></e>
+     <e><p><l>bázahus<s n="n"/></l><r>bátsev<s n="n"/></r></p></e>
+     <e><p><l>njunni<s n="n"/></l><r>njunnje<s n="n"/></r></p></e>
+     <e><p><l>faskkon<s n="n"/></l><r>skuohpá<s n="n"/></r></p></e>
+     <e><p><l>čoahkku<s n="n"/></l><r>tjoahkke<s n="n"/></r></p></e>
+     <e><p><l>fuolkevuohta<s n="n"/></l><r>berajvuohta<s n="n"/></r></p></e>
      <e><p><l>fuotnu<s n="n"/></l><r>fuodno<s n="n"/></r></p></e>
      <e><p><l>futurisma<s n="n"/></l><r>futurissma<s n="n"/></r></p></e>
      <e><p><l>fylka<s n="n"/></l><r>fylkka<s n="n"/></r></p></e>
@@ -3280,6 +3299,7 @@
      <e><p><l>lađđi<s n="n"/></l><r>næhko<s n="n"/></r></p></e>
      <e><p><l>leahki<s n="n"/></l><r>liehke<s n="n"/></r></p></e>
      <e><p><l>leahkku<s n="n"/></l><r>liehkko<s n="n"/></r></p></e>
+     <e><p><l>máihli<s n="n"/></l><r>álos<s n="n"/></r></p></e>
      <e><p><l>leaibi<s n="n"/></l><r>liejbbe<s n="n"/></r></p></e>
      <e><p><l>leaibmi<s n="n"/></l><r>liejmme<s n="n"/></r></p></e>
      <e><p><l>leaika<s n="n"/></l><r>boagos<s n="n"/></r></p></e>
@@ -5149,6 +5169,8 @@
      <e><p><l>veahkkeáhta<s n="n"/></l><r>viehkkenævvo<s n="n"/></r></p></e>
      <e><p><l>veahkki<s n="n"/></l><r>viehkke<s n="n"/></r></p></e>
      <e><p><l>veahčir<s n="n"/></l><r>viehtjer<s n="n"/></r></p></e>
+     <e><p><l>eaŋgalasgiella<s n="n"/></l><r>ieŋŋilsgiella<s n="n"/></r></p></e>
+     <e><p><l>veažir<s n="n"/></l><r>viehtjer<s n="n"/></r></p></e>
      <e><p><l>veaigi<s n="n"/></l><r>viejgge<s n="n"/></r></p></e>
      <e><p><l>veaiki<s n="n"/></l><r>guohpár<s n="n"/></r></p></e>
      <e><p><l>veaiki<s n="n"/></l><r>viejkke<s n="n"/></r></p></e>
@@ -5334,6 +5356,21 @@
      <e><p><l>válla<s n="n"/></l><r>válla<s n="n"/></r></p></e>
      <e><p><l>válljen<s n="n"/></l><r>válljim<s n="n"/></r></p></e>
      <e><p><l>válljenfága<s n="n"/></l><r>válljimfáhka<s n="n"/></r></p></e>
+     <e><p><l>ruoŧŧelaš<s n="n"/></l><r>svænsska<s n="n"/></r></p></e>
+     <e><p><l>dánskalaš<s n="n"/></l><r>dánsska<s n="n"/></r></p></e>
+     <e><p><l>gužža<s n="n"/></l><r>gådtjå<s n="n"/></r></p></e>
+     <e><p><l>dávval<s n="n"/></l><r>tábllo<s n="n"/></r></p></e>
+     <e><p><l>ásodat<s n="n"/></l><r>årudahka<s n="n"/></r></p></e>
+     <e><p><l>jahkeduhát<s n="n"/></l><r>jahkeduhát<s n="n"/></r></p></e>
+     <e><p><l>gievdni<s n="n"/></l><r>giebbme<s n="n"/></r></p></e>
+     <e><p><l>ostu<s n="n"/></l><r>bárkko<s n="n"/></r></p></e>
+     <e><p><l>riekkis<s n="n"/></l><r>rikkas<s n="n"/></r></p></e>
+     <e><p><l>goavddis<s n="n"/></l><r>goabdes<s n="n"/></r></p></e>
+     <e><p><l>bivddus<s n="n"/></l><r>bivddovædtsak<s n="n"/></r></p></e>
+     <e><p><l>mádjit<s n="n"/></l><r>vaddnem<s n="n"/></r></p></e>
+     <e><p><l>vikiŋŋaáigi<s n="n"/></l><r>vikingájgge<s n="n"/></r></p></e>
+     <e><p><l>ovdavánhen<s n="n"/></l><r>ájttek<s n="n"/></r></p></e>
+     <e><p><l>geatki<s n="n"/></l><r>gierkke<s n="n"/></r></p></e>
      <e><p><l>vánheneana<s n="n"/></l><r>ájtteklánnda<s n="n"/></r></p></e>
      <e><p><l>vánisvuohta<s n="n"/></l><r>vánesvuohta<s n="n"/></r></p></e>
      <e><p><l>váre<s n="n"/></l><r>várre<s n="n"/></r></p></e>
@@ -6058,6 +6095,7 @@
 
     <!-- Adverbs -->
      <e r="RL"><p><l>nu<s n="adv"/></l><r>nåv<s n="adv"/></r></p></e>
+     <e><p><l>ovtta<b/>oaivilis<s n="adv"/></l><r>avtan<b/>mielan<s n="adv"/></r></p></e>
      <e><p><l>ovdal<s n="adv"/></l><r>åvddål<s n="adv"/></r></p></e>
      <e><p><l>kánske<s n="adv"/></l><r>ihkap<s n="adv"/></r></p></e>
      <e><p><l>mielde<s n="adv"/></l><r>siegen<s n="adv"/></r></p></e>
@@ -6413,6 +6451,9 @@
     <e><p><l>čoahkkái<s n="adv"/></l><r>tjoahkkáj<s n="adv"/></r></p></e>
     <e><p><l>čorpmadievva<s n="adv"/></l><r>tjårmådievva<s n="adv"/></r></p></e>
     <e><p><l>čuožžut<s n="adv"/></l><r>tjuodtjot<s n="adv"/></r></p></e>
+    <e><p><l>maŋŋelis<s n="adv"/></l><r>maŋŋela<s n="adv"/></r></p></e>
+    <e><p><l>maŋŋelis<s n="post"/></l><r>maŋŋela<s n="post"/></r></p></e>
+    <e><p><l>gaskamuttus<s n="adv"/></l><r>gasskarájen<s n="adv"/></r></p></e>
 
  <!-- TODO: these are not adverbs (or missing) in smj.lexc, need other translations: -->
     <!-- <e><p><l>dainna<s n="adv"/></l><r>dajna<s n="adv"/></r></p></e> -->
@@ -6453,6 +6494,15 @@
 
     <!-- Verbs -->
 
+      <e><p><l>menestuvvat<s n="vblex"/><s n="iv"/></l><r>vuorbástuvvat<s n="vblex"/></r></p></e>
+      <e><p><l>rievidit<s n="vblex"/><s n="tv"/></l><r>rievvot<s n="vblex"/></r></p></e>
+      <e><p><l>koloniseret<s n="vblex"/><s n="tv"/></l><r>kolonisierit<s n="vblex"/></r></p></e>
+      <e><p><l>gávppašit<s n="vblex"/><s n="tv"/></l><r>oasástallat<s n="vblex"/></r></p></e>
+      <e><p><l>njoallut<s n="vblex"/><s n="tv"/></l><r>njoallot<s n="vblex"/></r></p></e>
+      <e><p><l>vuoššat<s n="vblex"/><s n="tv"/></l><r>vuossjat<s n="vblex"/></r></p></e>
+      <e><p><l>doapmalit<s n="vblex"/><s n="iv"/></l><r>gáhtjadit<s n="vblex"/></r></p></e>
+      <e><p><l>durget<s n="vblex"/><s n="tv"/></l><r>duorggit<s n="vblex"/></r></p></e>
+      <e><p><l>liehmudit<s n="vblex"/><s n="iv"/></l><r>biváldit<s n="vblex"/></r></p></e>
       <e><p><l>bovdehit<s n="vblex"/><s n="tv"/></l><r>bivdodit<s n="vblex"/></r></p></e>
      <e c="0"><p><l>orrut<s n="vblex"/><s n="iv"/></l><r>årrot<s n="vblex"/></r></p></e>
      <e r="RL"><p><l>banihit<s n="vblex"/><s n="tv"/></l><r>banedit<s n="vblex"/></r></p></e>
@@ -6834,6 +6884,7 @@
      <e><p><l>bohciidit<s n="vblex"/><s n="iv"/></l><r>båhtsijdit<s n="vblex"/></r></p></e>
      <e><p><l>bohtanit<s n="vblex"/><s n="iv"/></l><r>båhtånit<s n="vblex"/></r></p></e>
      <e><p><l>bohčilit<s n="vblex"/><s n="tv"/></l><r>båhtjet<s n="vblex"/></r></p></e>
+     <e><p><l>bahčit<s n="vblex"/><s n="tv"/></l><r>båhtjet<s n="vblex"/></r></p></e>
      <e><p><l>bohčit<s n="vblex"/><s n="tv"/></l><r>båhtjet<s n="vblex"/></r></p></e>
      <e><p><l>bohčásit<s n="vblex"/><s n="iv"/></l><r>båhtjåsit<s n="vblex"/></r></p></e>
      <e><p><l>boimmodit<s n="vblex"/><s n="tv"/></l><r>boajmmot<s n="vblex"/></r></p></e>
@@ -9925,6 +9976,8 @@
      <e><p><l>surrat<s n="vblex"/><s n="tv"/></l><r>surrat<s n="vblex"/></r></p></e>
      <e><p><l>suspenderet<s n="vblex"/><s n="tv"/></l><r>suspendierit<s n="vblex"/></r></p></e>
      <e><p><l>suteneret<s n="vblex"/><s n="tv"/></l><r>sutenierit<s n="vblex"/></r></p></e>
+     <e><p><l>ealáskit<s n="vblex"/><s n="iv"/></l><r>ællát<s n="vblex"/></r></p></e>
+     <e><p><l>suddat<s n="vblex"/><s n="iv"/></l><r>suddat<s n="vblex"/></r></p></e>
      <e><p><l>suttadit<s n="vblex"/><s n="iv"/></l><r>suddat<s n="vblex"/></r></p></e>
      <e><p><l>suvddihit<s n="vblex"/><s n="tv"/></l><r>suvddet<s n="vblex"/></r></p></e>
      <e><p><l>suvdit<s n="vblex"/><s n="tv"/></l><r>suvddet<s n="vblex"/></r></p></e>
@@ -10697,6 +10750,7 @@
      <e><p><l>Mienna<s n="np"/></l><r>Mienna<s n="np"/></r></p></e>
      <e><p><l>Olav<s n="np"/></l><r>Olav<s n="np"/></r></p></e>
      <e><p><l>Divttasvuotna<s n="np"/></l><r>Divtasvuodna<s n="np"/></r></p></e>
+     <e><p><l>Divtasvuodna<s n="np"/></l><r>Divtasvuodna<s n="np"/></r></p></e>
      <e><p><l>Karen<s n="np"/></l><r>Karen<s n="np"/></r></p></e>
      <e><p><l>Siri<s n="np"/></l><r>Siri<s n="np"/></r></p></e>
      <e><p><l>Terje<s n="np"/></l><r>Terje<s n="np"/></r></p></e>
@@ -10772,6 +10826,10 @@
      <e><p><l>Gunnar<s n="np"/></l><r>Gunnar<s n="np"/></r></p></e>
      <e><p><l>Sammallahti<s n="np"/></l><r>Sammallahti<s n="np"/></r></p></e>
      <e><p><l>Petter<s n="np"/></l><r>Petter<s n="np"/></r></p></e>
+     <e><p><l>Bæverud<s n="np"/></l><r>Bæverud<s n="np"/></r></p></e>
+     <e><p><l>Sárnjárga<s n="np"/></l><r>Sárnjárga<s n="np"/></r></p></e>
+     <e><p><l>Bergstøl<s n="np"/></l><r>Bergstøl<s n="np"/></r></p></e>
+     <e><p><l>Østerdalen<s n="np"/></l><r>Østerdalen<s n="np"/></r></p></e>
      <e><p><l>Berg<s n="np"/></l><r>Berg<s n="np"/></r></p></e>
      <e><p><l>Rune<s n="np"/></l><r>Rune<s n="np"/></r></p></e>
      <e><p><l>Rasmus<s n="np"/></l><r>Rasmus<s n="np"/></r></p></e>
@@ -11669,6 +11727,98 @@
      <e><p><l>Lona<s n="np"/></l><r>Lona<s n="np"/></r></p></e>
      <e><p><l>Rollstad<s n="np"/></l><r>Rollstad<s n="np"/></r></p></e>
      <e><p><l>Sabbasen<s n="np"/></l><r>Sabbasen<s n="np"/></r></p></e>
+     <e><p><l>Svose<s n="np"/></l><r>Svose<s n="np"/></r></p></e>
+     <e><p><l>Snøfrid<s n="np"/></l><r>Snøfrid<s n="np"/></r></p></e>
+     <e><p><l>Waren<b/>Sardne<s n="np"/></l><r>Waren<b/>Sardne<s n="np"/></r></p></e>
+     <e><p><l>Svosa<s n="np"/></l><r>Svosa<s n="np"/></r></p></e>
+     <e><p><l>Gutorm<s n="np"/></l><r>Gutorm<s n="np"/></r></p></e>
+     <e><p><l>Garra-Jorta<s n="np"/></l><r>Garra-Jorta<s n="np"/></r></p></e>
+     <e><p><l>Einnávađđa<s n="np"/></l><r>Einnávađđa<s n="np"/></r></p></e>
+     <e><p><l>Tacitus<s n="np"/></l><r>Tacitus<s n="np"/></r></p></e>
+     <e><p><l>Sabmelaš<s n="np"/></l><r>Sabmelaš<s n="np"/></r></p></e>
+     <e><p><l>Oula<s n="np"/></l><r>Oula<s n="np"/></r></p></e>
+     <e><p><l>Lapland<s n="np"/></l><r>Lapland<s n="np"/></r></p></e>
+     <e><p><l>Kollström<s n="np"/></l><r>Kollström<s n="np"/></r></p></e>
+     <e><p><l>Hardråde<s n="np"/></l><r>Hardråde<s n="np"/></r></p></e>
+     <e><p><l>Diaconus<s n="np"/></l><r>Diaconus<s n="np"/></r></p></e>
+     <e><p><l>ČSV<s n="np"/></l><r>ČSV<s n="np"/></r></p></e>
+     <e><p><l>Östersund<s n="np"/></l><r>Östersund<s n="np"/></r></p></e>
+     <e><p><l>Tuorpun<s n="np"/></l><r>Tuorpun<s n="np"/></r></p></e>
+     <e><p><l>Slembe<s n="np"/></l><r>Slembe<s n="np"/></r></p></e>
+     <e><p><l>Riginaud<s n="np"/></l><r>Riginaud<s n="np"/></r></p></e>
+     <e><p><l>Prokopios<s n="np"/></l><r>Prokopios<s n="np"/></r></p></e>
+     <e><p><l>Outhier<s n="np"/></l><r>Outhier<s n="np"/></r></p></e>
+     <e><p><l>Náššavárri<s n="np"/></l><r>Náššavárri<s n="np"/></r></p></e>
+     <e><p><l>Melker-Máhtte<s n="np"/></l><r>Melker-Máhtte<s n="np"/></r></p></e>
+     <e><p><l>Lappeforening<s n="np"/></l><r>Lappeforening<s n="np"/></r></p></e>
+     <e><p><l>Korhonen<s n="np"/></l><r>Korhonen<s n="np"/></r></p></e>
+     <e><p><l>Itkonen<s n="np"/></l><r>Itkonen<s n="np"/></r></p></e>
+     <e><p><l>Centralförbund<s n="np"/></l><r>Centralförbund<s n="np"/></r></p></e>
+     <e><p><l>Zachrisson<s n="np"/></l><r>Zachrisson<s n="np"/></r></p></e>
+
+     <e><p><l>Waghenaer<s n="np"/></l><r>Waghenaer<s n="np"/></r></p></e>
+     <e><p><l>Vogelius<s n="np"/></l><r>Vogelius<s n="np"/></r></p></e>
+     <e><p><l>Tornberg<s n="np"/></l><r>Tornberg<s n="np"/></r></p></e>
+     <e><p><l>Steggo<s n="np"/></l><r>Steggo<s n="np"/></r></p></e>
+     <e><p><l>Tornæus<s n="np"/></l><r>Tornæus<s n="np"/></r></p></e>
+     <e><p><l>Soffá<s n="np"/></l><r>Soffá<s n="np"/></r></p></e>
+     <e><p><l>Samealbmug<s n="np"/></l><r>Samealbmug<s n="np"/></r></p></e>
+     <e><p><l>Robson<s n="np"/></l><r>Robson<s n="np"/></r></p></e>
+     <e><p><l>Renaelven<s n="np"/></l><r>Renaelven<s n="np"/></r></p></e>
+     <e><p><l>Parsson<s n="np"/></l><r>Parsson<s n="np"/></r></p></e>
+     <e><p><l>Orosius<s n="np"/></l><r>Orosius<s n="np"/></r></p></e>
+     <e><p><l>Olau<s n="np"/></l><r>Olau<s n="np"/></r></p></e>
+     <e><p><l>Nuorttanaste<s n="np"/></l><r>Nuorttanaste<s n="np"/></r></p></e>
+     <e><p><l>Nordvi<s n="np"/></l><r>Nordvi<s n="np"/></r></p></e>
+     <e><p><l>Niurenius<s n="np"/></l><r>Niurenius<s n="np"/></r></p></e>
+     <e><p><l>Nationaldragter<s n="np"/></l><r>Nationaldragter<s n="np"/></r></p></e>
+     <e><p><l>Májajávri<s n="np"/></l><r>Májajávri<s n="np"/></r></p></e>
+     <e><p><l>Muonevárri<s n="np"/></l><r>Muonevárri<s n="np"/></r></p></e>
+     <e><p><l>Motle<s n="np"/></l><r>Motle<s n="np"/></r></p></e>
+     <e><p><l>Mickelsson<s n="np"/></l><r>Mickelsson<s n="np"/></r></p></e>
+     <e><p><l>Låkkangirji<s n="np"/></l><r>Låkkangirji<s n="np"/></r></p></e>
+     <e><p><l>Linschoten<s n="np"/></l><r>Linschoten<s n="np"/></r></p></e>
+     <e><p><l>Lucas<s n="np"/></l><r>Lucas<s n="np"/></r></p></e>
+     <e><p><l>Lavran<s n="np"/></l><r>Lavran<s n="np"/></r></p></e>
+     <e><p><l>Lappia<s n="np"/></l><r>Lappia<s n="np"/></r></p></e>
+     <e><p><l>Klemt<s n="np"/></l><r>Klemt<s n="np"/></r></p></e>
+     <e><p><l>Klemmetsen<s n="np"/></l><r>Klemmetsen<s n="np"/></r></p></e>
+     <e><p><l>Jöns<s n="np"/></l><r>Jöns<s n="np"/></r></p></e>
+     <e><p><l>Jux<s n="np"/></l><r>Jux<s n="np"/></r></p></e>
+     <e><p><l>Jonæ<s n="np"/></l><r>Jonæ<s n="np"/></r></p></e>
+     <e><p><l>Jonzon<s n="np"/></l><r>Jonzon<s n="np"/></r></p></e>
+     <e><p><l>Johansdatter<s n="np"/></l><r>Johansdatter<s n="np"/></r></p></e>
+     <e><p><l>Isaac<s n="np"/></l><r>Isaac<s n="np"/></r></p></e>
+     <e><p><l>Högström<s n="np"/></l><r>Högström<s n="np"/></r></p></e>
+     <e><p><l>Heyghen<s n="np"/></l><r>Heyghen<s n="np"/></r></p></e>
+     <e><p><l>Henriksson<s n="np"/></l><r>Henriksson<s n="np"/></r></p></e>
+     <e><p><l>Helgelandske<s n="np"/></l><r>Helgelandske<s n="np"/></r></p></e>
+     <e><p><l>Guttormsson<s n="np"/></l><r>Guttormsson<s n="np"/></r></p></e>
+     <e><p><l>Grammaticus<s n="np"/></l><r>Grammaticus<s n="np"/></r></p></e>
+     <e><p><l>Gudrød<s n="np"/></l><r>Gudrød<s n="np"/></r></p></e>
+     <e><p><l>Gotormsson<s n="np"/></l><r>Gotormsson<s n="np"/></r></p></e>
+     <e><p><l>Goetze<s n="np"/></l><r>Goetze<s n="np"/></r></p></e>
+     <e><p><l>Gesta<s n="np"/></l><r>Gesta<s n="np"/></r></p></e>
+     <e><p><l>Gerhardus<s n="np"/></l><r>Gerhardus<s n="np"/></r></p></e>
+     <e><p><l>Galapagos<s n="np"/></l><r>Galapagos<s n="np"/></r></p></e>
+     <e><p><l>Fridjof<s n="np"/></l><r>Fridjof<s n="np"/></r></p></e>
+
+     <e><p><l>Fatmomakke<s n="np"/></l><r>Fatmomakke<s n="np"/></r></p></e>
+     <e><p><l>Elgon<s n="np"/></l><r>Elgon<s n="np"/></r></p></e>
+     <e><p><l>Engebrigtsen<s n="np"/></l><r>Engebrigtsen<s n="np"/></r></p></e>
+     <e><p><l>Derga<s n="np"/></l><r>Derga<s n="np"/></r></p></e>
+     <e><p><l>Danorum<s n="np"/></l><r>Danorum<s n="np"/></r></p></e>
+
+
+     <e><p><l>Clemetsen<s n="np"/></l><r>Clemetsen<s n="np"/></r></p></e>
+     <e><p><l>Buolda<s n="np"/></l><r>Buolda<s n="np"/></r></p></e>
+     <e><p><l>Buolbmát<s n="np"/></l><r>Buolbmát<s n="np"/></r></p></e>
+     <e><p><l>Birkala<s n="np"/></l><r>Birkala<s n="np"/></r></p></e>
+
+     <e><p><l>Biarmia<s n="np"/></l><r>Biarmia<s n="np"/></r></p></e>
+     <e><p><l>Aleksanteri<s n="np"/></l><r>Aleksanteri<s n="np"/></r></p></e>
+     <e><p><l>Tore<b/>Hund<s n="np"/></l><r>Tore<b/>Hund<s n="np"/></r></p></e>
+
      <e><p><l>Snøhvit<s n="np"/></l><r>Snøhvit<s n="np"/></r></p></e>
      <e><p><l>Vorren<s n="np"/></l><r>Vorren<s n="np"/></r></p></e>
      <e><p><l>Giske<s n="np"/></l><r>Giske<s n="np"/></r></p></e>
@@ -45618,8 +45768,8 @@
      <e><p><l>Måvsesnjárga<s n="np"/></l><r>Måvsesnjárga<s n="np"/></r></p></e>
      <e><p><l>Mölläroaivvit<s n="np"/></l><r>Mölläroaivvit<s n="np"/></r></p></e>
      <e><p><l>NATO<s n="np"/></l><r>NATO<s n="n"/><s n="acr"/></r></p></e>
-     <e><p><l>NSR<s n="n"/></l><r>NSR<s n="n"/></r></p></e>
-     <e><p><l>SÁB<s n="n"/></l><r>SÁB<s n="n"/></r></p></e>
+     <e><p><l>NSR<s n="np"/></l><r>NSR<s n="np"/></r></p></e>
+     <e><p><l>SÁB<s n="np"/></l><r>SÁB<s n="np"/></r></p></e>
      <e><p><l>NATO-Ruošša<s n="np"/></l><r>NATO-Ruošša<s n="np"/></r></p></e>
      <e><p><l>NAVO<s n="np"/></l><r>NAVO<s n="np"/></r></p></e>
      <e><p><l>NM-cup<s n="np"/></l><r>NM-cup<s n="np"/></r></p></e>
