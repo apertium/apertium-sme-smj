@@ -142,6 +142,7 @@
     <e><p><l>nai<s n="pcle"/></l><r>aj<s n="pcle"/></r></p></e>
     <e><p><l>noa<s n="pcle"/></l><r>na<s n="pcle"/></r></p></e>
     <e><p><l>son<s n="pcle"/></l><r>så<s n="pcle"/></r></p></e>
+    <e><p><l>gis<s n="pcle"/></l><r>gis<s n="pcle"/></r></p></e>
 
     <!-- Conjunctions -->
 
@@ -370,6 +371,13 @@
     <e><p><l>earret<s n="pr"/></l><r>ietján<b/>gå<s n="pr"/></r></p></e>
     <e><p><l>earet<s n="pr"/></l><r>ietján<b/>gå<s n="pr"/></r></p></e>
   
+     <e><p><l>komitea<s n="n"/></l><r>juogos<s n="n"/></r></p></e>
+     <e><p><l>siseana<s n="n"/></l><r>sisednam<s n="n"/></r></p></e>
+     <e><p><l>oahpaheaiskuvla<s n="n"/></l><r>åhpadiddjeskåvllå<s n="n"/></r></p></e>
+     <e><p><l>hárjehus<s n="n"/></l><r>hárjjidus<s n="n"/></r></p></e>
+     <e><p><l>badjesápmelaš<s n="n"/></l><r>boatsojsábme<s n="n"/></r></p></e>
+     <e><p><l>ovdaolmmoš<s n="n"/></l><r>njunnjusj<s n="n"/></r></p></e>
+     <e><p><l>gávnnus<s n="n"/></l><r>gávnos<s n="n"/></r></p></e>
      <e><p><l>AS<s n="n"/></l><r>AS<s n="n"/></r></p></e>
      <e><p><l>bearráigeahččanlávdegoddi<s n="n"/></l><r>bærrájgæhttjamnammadus<s n="n"/></r></p></e>
      <e><p><l>SPR<s n="n"/></l><r>SPR<s n="n"/></r></p></e>
@@ -431,6 +439,12 @@
      <e><p><l>FA<s n="n"/></l><r>FA<s n="n"/></r></p></e>
      <e><p><l>BB<s n="n"/></l><r>BB<s n="n"/></r></p></e>
       <e><p><l>hábmet<s n="vblex"/><s n="tv"/></l><r>hábbmit<s n="vblex"/></r></p></e>
+
+
+     <e><p><l>čoahkkanit<s n="vblex"/><s n="iv"/></l><r>tjåhkanit<s n="vblex"/></r></p></e>
+     <e><p><l>ásaiduvvat<s n="vblex"/><s n="iv"/></l><r>årrudahttet<s n="vblex"/></r></p></e>
+     <e><p><l>vuostálastit<s n="vblex"/><s n="tv"/></l><r>vágodit<s n="vblex"/></r></p></e>
+
      <e><p><l>rávvet<s n="vblex"/><s n="tv"/></l><r>vágodit<s n="vblex"/></r></p></e>
      <e><p><l>gulaskuddat<s n="vblex"/><s n="tv"/></l><r>guláskuddat<s n="vblex"/></r></p></e>
      <e><p><l>bajásšaddat<s n="vblex"/><s n="iv"/></l><r>bajássjaddat<s n="vblex"/></r></p></e>
@@ -542,6 +556,7 @@
      <e><p><l>ovddas<b/>guvlui<s n="adv"/></l><r>åvddålijguovlluj<s n="adv"/></r></p></e>
      <e><p><l>seamma<b/>ládje<s n="adv"/></l><r>sæmmiláhkáj<s n="adv"/></r></p></e>
 
+     <e><p><l>oainnat<s n="adv"/></l><r>vuojn<s n="adv"/></r></p></e>
      <e><p><l>farggamusat<s n="adv"/></l><r>ruvámusát<s n="adv"/></r></p></e>
      <e><p><l>oktanaga<s n="adv"/></l><r>avtabuohta<s n="adv"/></r></p></e>
      <e><p><l>fal<s n="adv"/></l><r>val<s n="adv"/></r></p></e>
@@ -6091,6 +6106,7 @@
     <e><p><l>njálmmálaš<s n="adj"/></l><r>njálmálasj<s n="adj"/></r></p></e>
     <e><p><l>ávkkálaš<s n="adj"/></l><r>ávkálasj<s n="adj"/></r></p></e>
     <e c="0"><p><l>buorre<s n="adj"/></l><r>buorre<s n="adj"/></r></p></e>
+    <e><p><l>gorut<s n="adj"/></l><r>gårut<s n="n"/></r></p></e>
 
 
     <!-- Adverbs -->
@@ -6337,6 +6353,7 @@
     <e><p><l>movt<s n="adv"/></l><r>gåktu<s n="adv"/></r></p></e>
     <e><p><l>mot<s n="adv"/></l><r>gåktu<s n="adv"/></r></p></e>
     <e><p><l>muđui<s n="adv"/></l><r>ietján<s n="adv"/></r></p></e>
+    <e><p><l>muđuid<s n="adv"/></l><r>ietján<s n="adv"/></r></p></e>
     <e><p><l>máhccut<s n="adv"/></l><r>máhttsot<s n="adv"/></r></p></e>
     <e><p><l>mánnosaččat<s n="adv"/></l><r>mánnusattjat<s n="adv"/></r></p></e>
     <e><p><l>nappo<s n="adv"/></l><r>nappu<s n="adv"/></r></p></e>
@@ -10660,6 +10677,7 @@
      <e><p><l>Sámediggi<s n="np"/></l><r>Sámedigge<s n="np"/></r></p></e>
      <e><p><l>Sápmi<s n="np"/></l><r>Sábme<s n="np"/></r></p></e>
      <e><p><l>Norga<s n="np"/></l><r>Vuodna<s n="np"/></r></p></e>
+     <e><p><l>norga<s n="n"/></l><r>Vuodna<s n="np"/></r></p></e>
      <e><p><l>Guovdageaidnu<s n="np"/></l><r>Guovddagæjnno<s n="np"/></r></p></e>
      <e><p><l>Kárášjohka<s n="np"/></l><r>Kárásjjåhkå<s n="np"/></r></p></e>
      <e><p><l>Finnmárku<s n="np"/></l><r>Finnmárkko<s n="np"/></r></p></e>
@@ -11756,6 +11774,7 @@
      <e><p><l>Centralförbund<s n="np"/></l><r>Centralförbund<s n="np"/></r></p></e>
      <e><p><l>Zachrisson<s n="np"/></l><r>Zachrisson<s n="np"/></r></p></e>
 
+     <e><p><l>Pehr<s n="np"/></l><r>Pehr<s n="np"/></r></p></e>
      <e><p><l>Waghenaer<s n="np"/></l><r>Waghenaer<s n="np"/></r></p></e>
      <e><p><l>Vogelius<s n="np"/></l><r>Vogelius<s n="np"/></r></p></e>
      <e><p><l>Tornberg<s n="np"/></l><r>Tornberg<s n="np"/></r></p></e>
