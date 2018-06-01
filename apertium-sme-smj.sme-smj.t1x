@@ -1359,7 +1359,6 @@ C[_]-T sent
       <attr-item tags="sem_veh"/>
       <attr-item tags="sem_wpn"/>
       <attr-item tags="sem_wthr"/>
-      <attr-item tags="sem_year"/>
       <attr-item tags="org"/>
       <attr-item tags="top"/>
       <attr-item tags="cog"/>
@@ -3443,7 +3442,9 @@ C[_]-T sent
         <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
         <choose><when><test>
         <equal><clip pos="1" side="tl" part="a_num_type"/><lit-tag v="arab"/></equal></test>
-         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let></when></choose> 
+         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
+         <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
+         </when></choose>
        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstword">
