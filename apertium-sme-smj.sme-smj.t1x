@@ -1359,9 +1359,9 @@ C[_]-T sent
       <attr-item tags="sem_veh"/>
       <attr-item tags="sem_wpn"/>
       <attr-item tags="sem_wthr"/>
-      <attr-item tags="org"/>
-      <attr-item tags="top"/>
-      <attr-item tags="cog"/>
+<!--      <attr-item tags="org"/>
+      <attr-item tags="top"/>  
+      <attr-item tags="cog"/> -->
     </def-attr>
     <def-attr n="sem_year">
       <attr-item tags="sem_year"/>
@@ -4220,7 +4220,7 @@ C[_]-T sent
               <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
-            <b pos="1"/>
+            <b />
           <chunk name="qst">
             <tags>
               <tag><lit-tag v="pcle"/></tag>
