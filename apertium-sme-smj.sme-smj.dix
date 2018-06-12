@@ -129,6 +129,25 @@
       <e r="LR">  <p><l><s n="ess"/></l><r><s n="pl"/><s n="nom"/></r></p></e>
     </pardef>
 
+    <pardef n="Ø_okta-ovcci" c="includes no empty transition">
+      <e><p><l>okta<s n="num"/></l><r>akta<s n="num"/></r></p></e>
+      <e><p><l>guokte<s n="num"/></l><r>guokta<s n="num"/></r></p></e>
+      <e><p><l>golbma<s n="num"/></l><r>gålmmå<s n="num"/></r></p></e>
+      <e><p><l>njeallje<s n="num"/></l><r>niellja<s n="num"/></r></p></e>
+      <e><p><l>vihtta<s n="num"/></l><r>vihtta<s n="num"/></r></p></e>
+      <e><p><l>guhtta<s n="num"/></l><r>guhtta<s n="num"/></r></p></e>
+      <e><p><l>čieža<s n="num"/></l><r>gietjav<s n="num"/></r></p></e>
+      <e><p><l>gávcci<s n="num"/></l><r>gáktsa<s n="num"/></r></p></e>
+      <e><p><l>ovcci<s n="num"/></l><r>aktse<s n="num"/></r></p></e>
+    </pardef>
+    <pardef n="Ø_logi" c="includes an empty transition">
+      <e><p><l><s n="num"/></l><r><s n="num"/></r></p></e>  <!-- 2  -->
+      <e><p><l>čuođi<s n="num"/></l><r>tjuohte<s n="num"/></r></p></e> <!-- 200  -->
+      <e><p><l>logi<s n="num"/></l><r>låhke<s n="num"/></r></p></e> <!-- 20  -->
+      <e><p><l>čuođi</l><r>tjuohte</r></p><par n="Ø_okta-ovcci"/></e> <!-- 209  -->
+      <e><p><l>logi</l><r>låk</r></p><par n="Ø_okta-ovcci"/></e> <!-- 29  -->
+      <e><p><l>lot</l><r>låk</r></p></e>  <!-- 20 attr  -->
+    </pardef>
   </pardefs>
 
   <section id="main" type="standard">
@@ -1285,18 +1304,19 @@
 
     <!-- Numerals -->
 
-    <e><p><l>čieža<s n="num"/></l><r>gietjav<s n="num"/></r></p></e>
+    <e><p><l>guokte</l><r>guokta</r></p><par n="Ø_logi"/></e>
+    <e><p><l>golbma</l><r>gålmmå</r></p><par n="Ø_logi"/></e>
+    <e><p><l>njeallje</l><r>niellja</r></p><par n="Ø_logi"/></e>
+    <e><p><l>vihtta</l><r>vihtta</r></p><par n="Ø_logi"/></e>
+    <e><p><l>guhtta</l><r>guhtta</r></p><par n="Ø_logi"/></e>
+    <e><p><l>čieža</l><r>gietjav</r></p><par n="Ø_logi"/></e>
+    <e><p><l>golbma</l><r>gålmmå</r></p><par n="Ø_logi"/></e>
+    <e><p><l>gávcci</l><r>gáktsa</r></p><par n="Ø_logi"/></e>
+    <e><p><l>ovcci</l><r>aktse</r></p><par n="Ø_logi"/></e>
     <e><p><l>duhát<s n="num"/></l><r>tuvsán<s n="num"/></r></p></e>
-    <e><p><l>guokte<s n="num"/></l><r>guokta<s n="num"/></r></p></e>
-    <e><p><l>golbma<s n="num"/></l><r>gålmmå<s n="num"/></r></p></e>
-    <e><p><l>guhtta<s n="num"/></l><r>guhtta<s n="num"/></r></p></e>
-    <e><p><l>gávcci<s n="num"/></l><r>gáktsa<s n="num"/></r></p></e>
-    <e><p><l>ovcci<s n="num"/></l><r>aktse<s n="num"/></r></p></e>
-    <e><p><l>guoktelogi<s n="num"/></l><r>guoktalåhke<s n="num"/></r></p></e>
     <e><p><l>gávccinuppelohkái<s n="num"/></l><r>lågenangáktsa<s n="num"/></r></p></e>
     <e><p><l>čuođi<s n="num"/></l><r>tjuohte<s n="num"/></r></p></e>
     <e><p><l>čuohti<s n="num"/></l><r>tjuohte<s n="num"/></r></p></e>
-    <e><p><l>guoktečuođi<s n="num"/></l><r>guoktatjuohte<s n="num"/></r></p></e>
     <e><p><l>guoktenuppelohkái<s n="num"/></l><r>lågenanguokta<s n="num"/></r></p></e>
     <e><p><l>logi<s n="num"/></l><r>lågev<s n="num"/></r></p></e>
     <e><p><l>logi<s n="num"/></l><r>låhke<s n="num"/></r></p></e>
@@ -1307,16 +1327,11 @@
     <e r="RL"><p><l>moadde<s n="num"/></l><r>moaddi<s n="prn"/><s n="ind"/></r></p></e>
     <e><p><l>máŋga<s n="num"/></l><r>moadda<s n="prn"/><s n="ind"/></r></p></e>
     <e><p><l>máŋga<s n="num"/><s n="pl"/><s n="nom"/></l><r>moadda<s n="prn"/><s n="ind"/><s n="sg"/><s n="nom"/></r></p></e>
-    <e><p><l>njeallje<s n="num"/></l><r>niellja<s n="num"/></r></p></e>
-    <e><p><l>njeallječuođi<s n="num"/></l><r>nielljatjuohte<s n="num"/></r></p></e>
     <e><p><l>njealljelogiguokte<s n="num"/></l><r>nielljalåkguokta<s n="num"/></r></p></e>
-    <e><p><l>njealljelogi<s n="num"/></l><r>nielljalåhke<s n="num"/></r></p></e>
     <e><p><l>okta<s n="num"/></l><r>akta<s n="num"/></r></p></e>
     <e><p><l>oktanuppelohkái<s n="num"/></l><r>lågenanakta<s n="num"/></r></p></e>
     <e><p><l>ovccis<s n="n"/></l><r>avtses<s n="n"/></r></p></e>
-    <e><p><l>vihtta<s n="num"/></l><r>vihtta<s n="num"/></r></p></e>
     <e><p><l>vuosttas<s n="adj"/></l><r>vuostasj<s n="adj"/></r></p></e>
-    <e><p><l>vihtta<s n="num"/></l><r>vihtta<s n="num"/></r></p></e>
     <e><p><l>okta-guokte<s n="num"/></l><r>akta-guokta<s n="num"/></r></p></e>
     <e><p><l>guokte-golbma<s n="num"/></l><r>guokta-gålmmå<s n="num"/></r></p></e>
     <e><p><l>golbma-njeallje<s n="num"/></l><r>gålmmå-niellja<s n="num"/></r></p></e>
@@ -5304,7 +5319,6 @@
      <e><p><l>viessu<s n="n"/></l><r>goahte<s n="n"/></r></p></e>
      <e><p><l>vihki<s n="n"/></l><r>vihke<s n="n"/></r></p></e>
      <e><p><l>vihtan<s n="n"/></l><r>vihtan<s n="n"/></r></p></e>
-     <e><p><l>vihtta<s n="n"/></l><r>vihtta<s n="n"/></r></p></e>
      <e><p><l>viidnemuorji<s n="n"/></l><r>vijnnamuorjje<s n="n"/></r></p></e>
      <e><p><l>viidnemuorra<s n="n"/></l><r>vijnnamuorra<s n="n"/></r></p></e>
      <e><p><l>viidni<s n="n"/></l><r>vijnna<s n="n"/></r></p></e>
