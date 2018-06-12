@@ -2799,6 +2799,7 @@ C[_]-T sent
      </pattern>
       <action>
         <call-macro n="general-macro-2Param"> <with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let> 
         <let><clip pos="2" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
                           <out>
