@@ -2293,6 +2293,11 @@
      <e><p><l>fogderiija<s n="n"/></l><r>fogderijja<s n="n"/></r></p></e>
      <e><p><l>folio<s n="n"/></l><r>folio<s n="n"/></r></p></e>
      <e><p><l>fonema<s n="n"/></l><r>foniebma<s n="n"/></r></p></e>
+     <e><p><l>morfema<s n="n"/></l><r>morfiebma<s n="n"/></r></p></e>
+     <e><p><l>morfofonema<s n="n"/></l><r>morfofoniebma<s n="n"/></r></p></e>
+     <e r="RL"><p><l>fonema<s n="n"/></l><r>fonema<s n="n"/></r></p></e>
+     <e r="RL"><p><l>morfema<s n="n"/></l><r>morfema<s n="n"/></r></p></e>
+     <e r="RL"><p><l>morfofonema<s n="n"/></l><r>morfofonema<s n="n"/></r></p></e>
      <e><p><l>fonematihkka<s n="n"/></l><r>fonematihkka<s n="n"/></r></p></e>
      <e><p><l>fonemihkka<s n="n"/></l><r>fonemihkka<s n="n"/></r></p></e>
      <e><p><l>fonetihkka<s n="n"/></l><r>fonetihkka<s n="n"/></r></p></e>
@@ -5611,7 +5616,45 @@
     <e><p><l>čállin<s n="n"/></l><r>tjállem<s n="n"/></r></p></e>
 
     <!-- Adjectives -->
-     <e><p><l>bassi<s n="adj"/></l><r>ájlis<s n="adj"/></r></p></e>
+    <e r="LR"><p><l>arktihkalaš<s n="adj"/></l><r>arktalasj<s n="adj"/></r></p></e>
+    <e><p><l>akademalaš<s n="adj"/></l><r>akademalasj<s n="adj"/></r></p></e>
+    <e><p><l>akademihkalaš<s n="adj"/></l><r>akademalasj<s n="adj"/></r></p></e>
+    <e><p><l>analyhtalaš<s n="adj"/></l><r>analytalasj<s n="adj"/></r></p></e>
+    <e><p><l>kognitiivvalaš<s n="adj"/></l><r>kognitijvalasj<s n="adj"/></r></p></e>
+    <e><p><l>morfologalaš<s n="adj"/></l><r>morfologalasj<s n="adj"/></r></p></e>
+
+    <e><p><l>biográfalaš<s n="adj"/></l><r>biográffalasj<s n="adj"/></r></p></e>
+    <e><p><l>biologalaš<s n="adj"/></l><r>biologijjalasj<s n="adj"/></r></p></e>
+    <e><p><l>demográfalaš<s n="adj"/></l><r>demografijjalasj<s n="adj"/></r></p></e>
+    <e><p><l>demokráhtalaš<s n="adj"/></l><r>demokráhtalasj<s n="adj"/></r></p></e>
+    <e><p><l>didákttalaš<s n="adj"/></l><r>didaktihkalasj<s n="adj"/></r></p></e>
+    <e><p><l>dynámalaš<s n="adj"/></l><r>dynamalasj<s n="adj"/></r></p></e>
+
+    <e><p><l>elektralaš<s n="adj"/></l><r>elektralasj<s n="adj"/></r></p></e>
+    <e><p><l>elektrihkalaš<s n="adj"/></l><r>elektrisitiehtalasj<s n="adj"/></r></p></e>
+    <e><p><l>elektronihkalaš<s n="adj"/></l><r>elektronihkalasj<s n="adj"/></r></p></e>
+    <e><p><l>etihkalaš<s n="adj"/></l><r>etihkalasj<s n="adj"/></r></p></e>
+    <e><p><l>etnihkalaš<s n="adj"/></l><r>etnisitiehtalasj<s n="adj"/></r></p></e>
+    <e><p><l>etnofuturisttalaš<s n="adj"/></l><r>etnofuturalistalasj<s n="adj"/></r></p></e>
+    <e><p><l>etnográfalaš<s n="adj"/></l><r>etnografalasj<s n="adj"/></r></p></e>
+    <e><p><l>etnolingvisttalaš<s n="adj"/></l><r>etnolingvistalasj<s n="adj"/></r></p></e>
+    <e><p><l>etnologalaš<s n="adj"/></l><r>etnografijjalasj<s n="adj"/></r></p></e>
+
+    <e><p><l>fonehtalaš<s n="adj"/></l><r>fonetihkalasj<s n="adj"/></r></p></e>
+    <e><p><l>fonemalaš<s n="adj"/></l><r>fonemihkalasj<s n="adj"/></r></p></e>
+    <e><p><l>genetihkalaš<s n="adj"/></l><r>genetihkalasj<s n="adj"/></r></p></e>
+    <e><p><l>geográfalaš<s n="adj"/></l><r>geográffalasj<s n="adj"/></r></p></e>
+    <e><p><l>geologalaš<s n="adj"/></l><r>geologijjalasj<s n="adj"/></r></p></e>
+    <e><p><l>geometralaš<s n="adj"/></l><r>geometralasj<s n="adj"/></r></p></e>
+
+    <e><p><l>giellasosiologalaš<s n="adj"/></l><r>giellasosiologijjalasj<s n="adj"/></r></p></e>
+    <e><p><l>giellateknologalaš<s n="adj"/></l><r>giellateknologijjalasj<s n="adj"/></r></p></e>
+
+    <e><p><l>grammatihkalaš<s n="adj"/></l><r>grammatihkalasj<s n="adj"/></r></p></e>
+
+    <e><p><l>hierárkkalaš<s n="adj"/></l><r>hierarkijjalasj<s n="adj"/></r></p></e>
+    
+    <e><p><l>bassi<s n="adj"/></l><r>ájlis<s n="adj"/></r></p></e>
      <e><p><l>vejolaš<s n="adj"/></l><r>máhttelis<s n="adj"/></r></p></e>
      <e><p><l>boaris<s n="adj"/></l><r>vuoras<s n="adj"/></r></p></e>
      <e><p><l>boaris<s n="adj"/></l><r>boares<s n="adj"/></r></p></e>
