@@ -9,9 +9,11 @@
        <cat-item lemma="prosent" tags="NP.@←ADVL"/>
        <cat-item lemma="prosent" tags="NP.@←ADVL.*"/>
     </def-cat>
-    <def-cat n="NP">
-      <cat-item tags="NP"/>
-      <cat-item tags="NP.*"/>
+    <def-cat n="SUBJ-OBJr">
+      <cat-item tags="*.@OBJ→"/>
+      <cat-item tags="*.@SUBJ→"/>
+      <cat-item tags="*.@OBJ→.*"/>
+      <cat-item tags="*.@SUBJ→.*"/>
     </def-cat>
     <def-cat n="SPRED_r">
        <cat-item tags="*.@SPRED→"/>
@@ -352,24 +354,31 @@
 
     <rule comment="moves adverb in front of verb" > 
       <pattern>
+        <pattern-item n="SUBJ-OBJr"/>
         <pattern-item n="FMainV"/>
         <pattern-item n="ADV"/>
       </pattern>
       <action>
-        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
-          <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
         <chunk>
             <clip pos="1" part="lemh"/>
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
           </chunk>
         </out>
       </action>
