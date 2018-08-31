@@ -1419,6 +1419,8 @@
     <!-- Nouns -->
 
      <e><p><l>P2-kanála<s n="n"/></l><r>P2-kanálla<s n="n"/></r></p></e>
+     <e><p><l>teoriija<s n="n"/></l><r>teorijja<s n="n"/></r></p></e>
+     <e><p><l>lohkanteasta<s n="n"/></l><r>låhkåmtesta<s n="n"/></r></p></e>
      <e><p><l>suoivva<s n="n"/></l><r>sieges<s n="n"/></r></p></e>
      <e><p><l>abbediija<s n="n"/></l><r>abbedijja<s n="n"/></r></p></e>
      <e><p><l>abessiiva<s n="n"/></l><r>abessijvva<s n="n"/></r></p></e>
@@ -1598,13 +1600,13 @@
      <e><p><l>asyla<s n="n"/></l><r>asijlla<s n="n"/></r></p></e>
      <e><p><l>asymmetriija<s n="n"/></l><r>asymmetrijja<s n="n"/></r></p></e>
      <e><p><l>atavisma<s n="n"/></l><r>atavissma<s n="n"/></r></p></e>
-     <e><p><l>ateasta<s n="n"/></l><r>duodastus<s n="n"/></r></p></e>
      <e><p><l>ateisma<s n="n"/></l><r>ateissma<s n="n"/></r></p></e>
      <e><p><l>atnu<s n="n"/></l><r>adno<s n="n"/></r></p></e>
      <e><p><l>atoma<s n="n"/></l><r>atåvmmå<s n="n"/></r></p></e>
      <e><p><l>atomfysihkka<s n="n"/></l><r>atomfysihkka<s n="n"/></r></p></e>
      <e><p><l>atomisma<s n="n"/></l><r>atomissma<s n="n"/></r></p></e>
      <e><p><l>atteasta<s n="n"/></l><r>duodastus<s n="n"/></r></p></e>
+     <e r="LR"><p><l>ateasta<s n="n"/></l><r>duodastus<s n="n"/></r></p></e>
      <e><p><l>attentiiva<s n="n"/></l><r>attentijvva<s n="n"/></r></p></e>
      <e><p><l>attentáhtta<s n="n"/></l><r>attentáhtta<s n="n"/></r></p></e>
      <e><p><l>audio<s n="n"/></l><r>audio<s n="n"/></r></p></e>
@@ -5787,6 +5789,8 @@
     <e><p><l>analyhtalaš<s n="adj"/></l><r>analytalasj<s n="adj"/></r></p></e>
     <e><p><l>kognitiivvalaš<s n="adj"/></l><r>kognitijvalasj<s n="adj"/></r></p></e>
     <e><p><l>morfologalaš<s n="adj"/></l><r>morfologalasj<s n="adj"/></r></p></e>
+    <e><p><l>ortográfalaš<s n="adj"/></l><r>ortografalasj<s n="adj"/></r></p></e>
+    <e><p><l>kognitiiva<s n="adj"/></l><r>kognitiiva<s n="adj"/></r></p></e>
 
     <e><p><l>biográfalaš<s n="adj"/></l><r>biográffalasj<s n="adj"/></r></p></e>
     <e><p><l>biologalaš<s n="adj"/></l><r>biologijjalasj<s n="adj"/></r></p></e>
