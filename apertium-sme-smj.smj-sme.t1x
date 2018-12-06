@@ -3,6 +3,7 @@
 <transfer default="chunk">
   <section-def-cats>
     <def-cat n="n_cmp">
+      <cat-item tags="*.cmp.*"/>
       <cat-item tags="*.cmp"/>
       <cat-item tags="*.cmp.guio"/>
       <cat-item lemma="dárogiel" tags="adj.*.attr.*"/>
@@ -31,6 +32,10 @@
       <cat-item tags="*.n.*.ess.*"/>
       <cat-item tags="n.abbr.*"/>
       <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
+    </def-cat>
+    <def-cat n="adj"> 
+      <cat-item tags="adj.*"/>
+      <cat-item tags="*.adj.attr.*"/>
     </def-cat>
     <def-cat n="default">
       <cat-item tags="*"/>
@@ -525,6 +530,31 @@
         </out>
       </action>
     </rule>
+    <rule comment="C[S] n_cmp adj" c="avtsejahkásasj : ovccijahkásaš">
+      <pattern>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="adj"/>
+      </pattern>
+      <action>
+        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <call-macro n="default-conversion1"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="adj" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+            </tags>
+            <mlu>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+            </mlu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
     <rule comment="C[S] n_cmp n_cmp noun" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
@@ -618,9 +648,10 @@
       <action>
         <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
         <choose><when>
-	        <test>
+	        <test><and>
        <equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="conneg"/></equal>
-       </test>
+       <equal><clip pos="1" side="sl" part="a_tense"/><lit v=""/></equal>
+           </and></test>
        <let><clip pos="1" side="tl" part="a_infin"/><concat><var n="neg_tense"/><clip pos="1" side="sl" part="a_infin"/></concat></let>
        </when></choose>
         <out>
