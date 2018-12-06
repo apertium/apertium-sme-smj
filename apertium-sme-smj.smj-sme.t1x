@@ -35,6 +35,12 @@
     <def-cat n="default">
       <cat-item tags="*"/>
     </def-cat>
+    <def-cat n="neg-v">
+      <cat-item tags="vblex.*.neg.*"/>
+    </def-cat>
+    <def-cat n="vblex">
+      <cat-item tags="vblex.*"/>
+    </def-cat>
     <def-cat n="nom">
       <cat-item tags="n.*"/>
     </def-cat>
@@ -45,6 +51,35 @@
   <section-def-attrs>
     <def-attr n="a_spec_smj_tags">
       <attr-item tags="sh"/>
+    </def-attr>
+    <def-attr n="a_mood">
+      <attr-item tags="indic"/>
+      <attr-item tags="cond"/>
+      <attr-item tags="pot"/>
+      <attr-item tags="imp"/>
+    </def-attr>
+    <def-attr n="a_tense">
+      <attr-item tags="pret"/>
+      <attr-item tags="pres"/>
+    </def-attr>
+    <def-attr n="a_temps_mood">
+      <attr-item tags="indic"/>
+      <attr-item tags="indic.pres"/>
+      <attr-item tags="indic.pret"/>
+    </def-attr>
+    <def-attr n="a_infin">
+       <attr-item tags="prfprc"/>
+       <attr-item tags="inf"/>
+       <attr-item tags="actio.ess"/>
+       <attr-item tags="actio.gen"/>
+       <attr-item tags="actio.loc"/>
+       <attr-item tags="conneg"/>
+       <attr-item tags="prfprc"/>
+       <attr-item tags="ger"/>
+    </def-attr>
+    <def-attr n="a_foc">
+      <attr-item tags="foc_neg-k"/>
+      <attr-item tags="foc_pos-k"/>
     </def-attr>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
@@ -419,6 +454,7 @@
   <section-def-vars>
     <def-var n="number"/>
     <def-var n="current_verb"/>
+    <def-var n="neg_tense"/>
   </section-def-vars>
   <section-def-macros>
 
@@ -432,6 +468,11 @@
       <let><clip pos="1" side="tl" part="a_spec_smj_tags"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let> <!-- must be twice -->
+	<choose><when><test>
+	<equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-k"/></equal>
+     </test>
+      <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-ge"/></let>
+      </when></choose>
     </def-macro>
   </section-def-macros>
   <section-rules>
@@ -527,6 +568,50 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: neg-v">
+      <pattern>
+        <pattern-item n="neg-v"/>
+      </pattern>
+      <action>
+        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+          <let><var n="neg_tense"/><clip pos="1" side="sl" part="a_tense"/></let>
+          <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
+        <out>
+          <chunk name="verb" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+            </tags>
+            <lu>
+                <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: vblex">
+      <pattern>
+        <pattern-item n="vblex"/>
+      </pattern>
+      <action>
+        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <choose><when>
+	        <test>
+       <equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="conneg"/></equal>
+       </test>
+       <let><clip pos="1" side="tl" part="a_infin"/><concat><var n="neg_tense"/><clip pos="1" side="sl" part="a_infin"/></concat></let>
+       </when></choose>
+        <out>
+          <chunk name="verb" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+            </tags>
+            <lu>
+                <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
     <rule comment="REGLA: DEFAULT">
       <pattern>
         <pattern-item n="default"/>
@@ -552,6 +637,7 @@
         <pattern-item n="sent"/>
       </pattern>
       <action>
+        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="sent" case="caseFirstWord">
             <tags>
