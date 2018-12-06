@@ -579,7 +579,7 @@
     <e><p><l>friija<s n="adj"/></l><r>friddja<s n="adj"/></r></p></e>
     <e><p><l>siviila<s n="adj"/></l><r>sivijlla<s n="adj"/></r></p></e>
     <e><p><l>juohkelágan<s n="adj"/></l><r>juohkkalágásj<s n="adj"/></r></p></e>
-    <e><p><l>smávis<s n="adj"/></l><r>unne<s n="adj"/></r></p></e>
+    <e><p><l>smávis<s n="adj"/></l><r>smávve<s n="adj"/></r></p></e>
     <e><p><l>eaktodáhtolaš<s n="adj"/></l><r>iesjmiellusasj<s n="adj"/></r></p></e>
     <e><p><l>sullasaš<s n="adj"/></l><r>muodugasj<s n="adj"/></r></p></e>
     <e><p><l>erenoamášpedagogalaš<s n="adj"/></l><r>sierrapedagogijjalasj<s n="adj"/></r></p></e>
@@ -6113,7 +6113,8 @@
      <e><p><l>oadjebas<s n="adj"/></l><r>jasska<s n="adj"/></r></p></e>
      <e><p><l>oahpis<s n="adj"/></l><r>oahpes<s n="adj"/></r></p></e>
      <e><p><l>oahppil<s n="adj"/></l><r>oahppel<s n="adj"/></r></p></e>
-     <e><p><l>oamis<s n="adj"/></l><r>oames<s n="adj"/></r></p></e>
+     <e r="LR"><p><l>oamis<s n="adj"/></l><r>oames<s n="adj"/></r></p></e>
+     <e r="RL"><p><l>boaris<s n="adj"/></l><r>oames<s n="adj"/></r></p></e>
      <e><p><l>oarbbis<s n="adj"/></l><r>oarbes<s n="adj"/></r></p></e>
      <e><p><l>obbalaš<s n="adj"/></l><r>åbbålasj<s n="adj"/></r></p></e>
      <e><p><l>oktanuppelogát<s n="adj"/></l><r>lågenanvuostasj<s n="adj"/></r></p></e>
