@@ -35,6 +35,9 @@
     <def-cat n="default">
       <cat-item tags="*"/>
     </def-cat>
+    <def-cat n="refl">
+      <cat-item tags="prn.ref.*"/>
+    </def-cat>
     <def-cat n="neg-v">
       <cat-item tags="vblex.*.neg.*"/>
     </def-cat>
@@ -51,6 +54,14 @@
   <section-def-attrs>
     <def-attr n="a_spec_smj_tags">
       <attr-item tags="sh"/>
+      <attr-item tags="←ext→"/>
+      <attr-item tags="←hab→"/>
+      <attr-item tags="←logo→"/>
+    </def-attr>
+    <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="du"/>
+      <attr-item tags="pl"/>
     </def-attr>
     <def-attr n="a_mood">
       <attr-item tags="indic"/>
@@ -80,6 +91,17 @@
     <def-attr n="a_foc">
       <attr-item tags="foc_neg-k"/>
       <attr-item tags="foc_pos-k"/>
+    </def-attr>
+    <def-attr n="a_poss">
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px3sg"/>
+      <attr-item tags="px1du"/>
+      <attr-item tags="px2du"/>
+      <attr-item tags="px3du"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3pl"/>
     </def-attr>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
@@ -179,6 +201,7 @@
       <attr-item tags="@SPRED←OBJ"/>
       <attr-item tags="@←SUBJ"/>
       <attr-item tags="@SUBJ"/>
+      <attr-item tags="@←SUBJext"/>
       <attr-item tags="@SUBJ→"/>
       <attr-item tags="@SUBJ←ADVL"/>
       <attr-item tags="@SUBJ←OBJ"/>
@@ -604,6 +627,30 @@
           <chunk name="verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
+            </tags>
+            <lu>
+                <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="REGLA: refl">
+      <pattern>
+        <pattern-item n="refl"/>
+      </pattern>
+      <action>
+        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <choose><when>
+	        <test>
+       <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
+       </test>
+       <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+       </when></choose>
+        <out>
+          <chunk name="prn" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
             </tags>
             <lu>
                 <clip pos="1" side="tl" part="whole"/>
