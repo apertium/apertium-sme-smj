@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- -*- nxml -*- -->
+<!--
+This is the first pass.
+
+Macros:
+default-conversion1
+
+Rules:
+C[S] n_cmp noun
+C[S] n_cmp adj
+C[S] n_cmp n_cmp noun
+C[S] n_cmp n_cmp n_cmp noun
+REGLA: neg-v
+REGLA: vblex
+REGLA: refl
+REGLA: DEFAULT
+REGLA: SENT
+-->
+
 <transfer default="chunk">
   <section-def-cats>
     <def-cat n="n_cmp">
