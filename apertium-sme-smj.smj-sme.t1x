@@ -149,6 +149,19 @@ REGLA: SENT
       <attr-item tags="iv"/>
       <attr-item tags="tv"/>
     </def-attr>
+    <def-attr n="a_PoS">
+      <attr-item tags="adv"/>
+      <attr-item tags="num"/>
+      <attr-item tags="adj"/>
+      <attr-item tags="np"/>
+      <attr-item tags="n"/>
+      <attr-item tags="ij"/>
+      <attr-item tags="prn"/>
+      <attr-item tags="vblex"/>
+      <attr-item tags="post"/>
+      <attr-item tags="pr"/>
+      <attr-item tags="pcle"/>
+    </def-attr>
 
     <def-attr n="a_func">
       <attr-item tags="@→A"/>
