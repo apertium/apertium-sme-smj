@@ -3469,7 +3469,7 @@ C[_]-T sent
          </when></choose>
        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="nnum" case="caseFirstword">
+          <chunk name="num" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
