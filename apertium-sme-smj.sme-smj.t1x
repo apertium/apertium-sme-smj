@@ -1379,8 +1379,8 @@ C[_]-T sent
       <attr-item tags="sem_veh"/>
       <attr-item tags="sem_wpn"/>
       <attr-item tags="sem_wthr"/>
-      <attr-item tags="sem_year"/>
-<!--      <attr-item tags="org"/>
+<!--      <attr-item tags="sem_year"/>
+      <attr-item tags="org"/>
       <attr-item tags="top"/>  
       <attr-item tags="cog"/> -->
     </def-attr>
@@ -3469,7 +3469,7 @@ C[_]-T sent
          </when></choose>
        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
-          <chunk name="num" case="caseFirstword">
+          <chunk name="nnum" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
