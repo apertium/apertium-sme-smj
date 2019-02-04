@@ -388,6 +388,7 @@
     <e><p><l>ovddas<s n="post"/></l><r>åvdån<s n="post"/></r></p></e> 
     <e><p><l>ovddas<s n="post"/></l><r>åvdås<s n="post"/></r></p></e>   
     <e><p><l>rájes<s n="post"/></l><r>rájes<s n="post"/></r></p></e>     
+    <e><p><l>siste<s n="post"/></l><r>sinna<s n="post"/></r></p></e>   
     <e><p><l>vuolde<s n="post"/></l><r>vuolen<s n="post"/></r></p></e>   
     <e><p><l>vuollai<s n="post"/></l><r>vuolláj<s n="post"/></r></p></e> 
     <e><p><l>badjel<s n="pr"/></l><r>badjel<s n="pr"/></r></p></e>
@@ -5116,6 +5117,7 @@
      <e><p><l>vegetariána<s n="n"/></l><r>vegetariádna<s n="n"/></r></p></e>
      <e><p><l>vegetašuvdna<s n="n"/></l><r>vegetasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>vejolašvuohta<s n="n"/></l><r>vejulasjvuohta<s n="n"/></r></p></e>
+     <e r="RL"><p><l>vejolašvuohta<s n="n"/></l><r>máhttelisvuohta<s n="n"/></r></p></e>
      <e><p><l>velositehta<s n="n"/></l><r>velositiehtta<s n="n"/></r></p></e>
      <e><p><l>ventilašuvdna<s n="n"/></l><r>ventilasjåvnnå<s n="n"/></r></p></e>
      <e><p><l>verbalisma<s n="n"/></l><r>verbalissma<s n="n"/></r></p></e>
@@ -5583,6 +5585,7 @@
     <e><p><l>állan<s n="n"/></l><r>stihkko<s n="n"/></r></p></e>
 
     <!-- Adjectives -->
+    <e><p><l>vuđolaš<s n="adj"/></l><r>vuodulasj<s n="adj"/></r></p></e>
     <e r="LR"><p><l>arktihkalaš<s n="adj"/></l><r>arktalasj<s n="adj"/></r></p></e>
     <e><p><l>akademalaš<s n="adj"/></l><r>akademalasj<s n="adj"/></r></p></e>
     <e r="LR"><p><l>akademihkalaš<s n="adj"/></l><r>akademalasj<s n="adj"/></r></p></e>
@@ -6085,6 +6088,7 @@
     <!-- Adverbs -->
      <e r="RL"><p><l>nu<s n="adv"/></l><r>nåv<s n="adv"/></r></p></e>
      <e><p><l>ovtta<b/>oaivilis<s n="adv"/></l><r>avtan<b/>mielan<s n="adv"/></r></p></e>
+     <e><p><l>muhtumin<s n="adv"/></l><r>muhttijn<s n="adv"/></r></p></e>
      <e><p><l>ovdal<s n="adv"/></l><r>åvddål<s n="adv"/></r></p></e>
      <e><p><l>kánske<s n="adv"/></l><r>ihkap<s n="adv"/></r></p></e>
      <e><p><l>mielde<s n="adv"/></l><r>siegen<s n="adv"/></r></p></e>
@@ -49085,6 +49089,7 @@
      <e><p><l>doallat<s n="vblex"/><s n="tv"/></l><r>adnalit<s n="vblex"/></r></p></e>
      <e r="LR"><p><l>doallat<s n="vblex"/><s n="tv"/></l><r>adnet<s n="vblex"/></r></p></e>
      <e r="LR"><p><l>geavahit<s n="vblex"/><s n="tv"/></l><r>adnet<s n="vblex"/></r></p></e>
+     <e r="RL"><p><l>geavahit<s n="vblex"/><s n="tv"/></l><r>aneduvvat<s n="vblex"/></r></p></e><!-- lea vejolaš geavahit-->
      <e><p><l>atnit<s n="vblex"/><s n="tv"/></l><r>adnet<s n="vblex"/></r></p></e>
      <e><p><l>adopteret<s n="vblex"/><s n="tv"/></l><r>adoptierit<s n="vblex"/></r></p></e>
      <e><p><l>adresseret<s n="vblex"/><s n="tv"/></l><r>adressierit<s n="vblex"/></r></p></e>
