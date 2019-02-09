@@ -58,7 +58,10 @@
 
 
     <rule weight="1.0">
-      <match lemma="gos"> <select lemma="gånnå"/> </match>
+      <match lemma="gos"  tags="adv.*"> <select lemma="gånnå"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="gos" tags="adv.@ADVLqst-ine→"> <select lemma="gånnå"/> </match>
     </rule>
 
     <rule weight="0.5">
@@ -66,17 +69,7 @@
     </rule>
 
     <rule weight="0.6">
-      <match lemma="gos"> <select lemma="gåsstå"/> </match>
-      <seq n="ela-verbs"/>
-    </rule>
-    <rule weight="0.6">
-      <match lemma="gos"> <select lemma="gåsstå"/> </match>
-      <repeat upto="3"><seq n="non-verb"/></repeat>
-      <seq n="ela-verbs"/>
-    </rule>
-    <rule weight="0.6">
-      <match lemma="gos"> <select lemma="gåsstå"/> </match>
-      <match /> <match /> <seq n="ela-verbs"/>
+      <match lemma="gos" tags="adv.@ADVLqst-ela→"> <select lemma="gåsstå"/> </match>
     </rule>
 
     <rule weight="1.0">
@@ -96,6 +89,21 @@
         <select lemma="vuoras"/>
       </match>
       <match tags="*.sem_hum.*"/>
+    </rule>
+
+
+
+    <rule weight="0.6">
+    <or>
+      <match tags="n.sem_hum.*.nom.*"/>
+      <match tags="n.*.sem_hum.*.nom.*"/>
+      <match tags="n.nomag.*.*.nom.*"/>
+      <match tags="prn.pers.*.*.nom.*"/>
+    </or>
+      <match/>
+      <match lemma="boaris">
+        <select lemma="vuoras"/>
+      </match>
     </rule>
 
     <rule weight="1.0">
