@@ -1746,12 +1746,9 @@ C[_]-T sent
     <def-macro n="foc-1Param" npar="1">
       <choose>
         <when>
-          <test><equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_pos-k"/></let>
-        </when>
-        <when>
-          <test><equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal></test>
-          <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-k"/></let>
+          <test><equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let> <!-- foc_pos-k -->
         </when>
       </choose>
     </def-macro>
