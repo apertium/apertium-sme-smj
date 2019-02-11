@@ -91,6 +91,11 @@
       <match tags="*.sem_hum.*"/>
     </rule>
 
+    <rule weight="1.2">
+      <match lemma="boaris" tags="adj.*.*.nom.*">
+        <select lemma="vuoras"/>
+      </match>
+    </rule>
 
 
     <rule weight="0.6">
@@ -99,6 +104,7 @@
       <match tags="n.*.sem_hum.*.nom.*"/>
       <match tags="n.nomag.*.*.nom.*"/>
       <match tags="prn.pers.*.*.nom.*"/>
+      <match lemma="eallit" tags="vblex.*"/>
     </or>
       <match/>
       <match lemma="boaris">
