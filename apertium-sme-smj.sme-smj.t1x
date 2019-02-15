@@ -312,25 +312,25 @@ C[_]-T sent
     </def-cat>
 
   <def-cat n="negverb"> <!-- no qst or foc_bat -->
-      <cat-item tags="vblex.iv.neg.indic.p1.sg.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.sg.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.sg.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p1.pl.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.pl.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.pl.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p1.du.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.du.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.du.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.sg.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.pl.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.du.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.du.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.du.@+FAUXV"/>
 
-      <cat-item tags="vblex.iv.neg.indic.p1.sg.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.sg.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.sg.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p1.pl.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.pl.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.pl.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p1.du.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p2.du.foc_neg-ge.@+FAUXV"/>
-      <cat-item tags="vblex.iv.neg.indic.p3.du.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.sg.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.pl.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.du.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.du.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.du.foc_neg-ge.@+FAUXV"/>
     </def-cat>
 
     <def-cat n="verb_prfprc">
@@ -2377,6 +2377,12 @@ C[_]-T sent
           <clip pos="1" side="tl" part="a_temps_mood"/>
           <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="2" side="tl" part="a_tense"/></concat>
         </let>
+      <choose>
+        <when>
+          <test><equal><clip pos="2" side="sl" part="a_mood"/><lit-tag v="imp"/></equal></test>
+          <let><clip pos="2" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
+        </when>
+      </choose>
         <choose>
           <when>
             <test><and>
@@ -2577,6 +2583,12 @@ C[_]-T sent
           <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
         </when>
       </choose>
+      <choose>
+        <when>
+          <test><equal><clip pos="3" side="sl" part="a_mood"/><lit-tag v="imp"/></equal></test>
+          <let><clip pos="3" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
+        </when>
+      </choose>
        <choose>
          <when><test><equal><clip pos="2" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></test>
                       <let><var n="chunk_name"/><lit v="noun"/></let>
@@ -2647,6 +2659,12 @@ C[_]-T sent
         <clip pos="1" side="tl" part="a_temps_mood"/>
         <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="4" side="tl" part="a_tense"/></concat>
       </let>
+      <choose>
+        <when>
+          <test><equal><clip pos="4" side="sl" part="a_mood"/><lit-tag v="imp"/></equal></test>
+          <let><clip pos="4" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
+        </when>
+      </choose>
       <choose>
         <when>
           <test>
@@ -2746,6 +2764,12 @@ C[_]-T sent
         <when>
           <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
           <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
+        </when>
+      </choose>
+      <choose>
+        <when>
+          <test><equal><clip pos="5" side="sl" part="a_mood"/><lit-tag v="imp"/></equal></test>
+          <let><clip pos="5" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
         </when>
       </choose>
        <choose>
