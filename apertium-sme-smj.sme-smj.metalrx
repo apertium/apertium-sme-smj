@@ -123,6 +123,17 @@
         <select lemma="smidá"/>
       </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="gierdi" tags="n.*"><select lemma="gierdde"/></match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="gierdi" tags="n.*"><select lemma="bálle"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match tags="adj.ord.sg.*"/>
+      <match lemma="gierdi" tags="n.*.sg.gen.*"><select lemma="bálle"/></match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="eallit">
