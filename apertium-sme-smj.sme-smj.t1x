@@ -310,6 +310,9 @@ C[_]-T sent
       <cat-item tags="vblex.*.der_inchl.vblex.cond.*"/>
       <cat-item tags="vblex.*.der_inchl.vblex.pot.*"/>
     </def-cat>
+  <def-cat n="supneg"> 
+      <cat-item tags="vblex.iv.neg.supn.*"/>
+    </def-cat>
 
   <def-cat n="negverb"> <!-- no qst or foc_bat -->
       <cat-item tags="vblex.iv.neg.*.p1.sg.@+FAUXV"/>
@@ -998,6 +1001,9 @@ C[_]-T sent
       <attr-item tags="ela"/>
       <attr-item tags="ine"/>
     </def-attr>
+    <def-attr n="a_supn">
+       <attr-item tags="supn"/>
+    </def-attr>
     <def-attr n="a_infin">
        <attr-item tags="prfprc"/>
        <attr-item tags="inf"/>
@@ -1097,6 +1103,7 @@ C[_]-T sent
       <attr-item tags="cmp_sh"/>
       <attr-item tags="cmp_hyph.cmp"/>
       <attr-item tags="cmp_splitr"/>
+      <attr-item tags="cmp_cit"/>
     </def-attr>
 
     <def-attr n="a_sem">
@@ -1491,6 +1498,9 @@ C[_]-T sent
   </section-def-vars>
 
   <section-def-lists>
+    <def-list n="ill_verbs">
+      <list-item v="vájkkudit"/>
+    </def-list>
     <def-list n="loc_verbs">
       <list-item v="hállat"/>
       <list-item v="hupmat"/>
@@ -1746,9 +1756,18 @@ C[_]-T sent
     <def-macro n="foc-1Param" npar="1">
       <choose>
         <when>
-          <test><equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
-          </test>
-          <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let> <!-- foc_pos-k -->
+          <test><and>
+	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
+	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal></not>
+      </and></test>
+          <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_pos-k"/></let>
+        </when>
+        <when>
+          <test><and>
+	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
+	          <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal>
+      </and></test>
+          <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
         </when>
       </choose>
     </def-macro>
@@ -2365,6 +2384,50 @@ C[_]-T sent
       </action>
     </rule>
 
+
+    <rule comment="C[T]-V supneg verb_inf" c="sii váruhit amas leavvat beare olu."> 
+      <pattern>
+        <pattern-item n="supneg"/>
+        <pattern-item n="verb_inf"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro> 
+        <!-- c="First we copy the temps from mainverb onto negverb" -->
+        <let><clip pos="1" side="tl" part="a_supn"/><lit v=""/></let>
+        <out>
+          <chunk name="cnjsub" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@CVP"/></tag>
+            </tags>
+            <lu>
+              <lit v="vaj"/>
+              <lit-tag v="cnjsub"/>
+            </lu>
+            <b />
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+                  <lit-tag v="vblex.iv.neg.indic.pres"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+          <b pos="1"/>
+          <chunk name="conneg">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="2" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="2" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+                  <lit-tag v="vblex.indic.conneg"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
     <rule comment="C[T]-V negverb connegverb" c="Dábálasj neg: Iv sidá dujna doarrut"> 
       <pattern>
         <pattern-item n="negverb"/>
