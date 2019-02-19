@@ -147,6 +147,41 @@
       </match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="hukset">
+        <select lemma="dahkat"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="hukset">
+        <select lemma="tsieggit"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="hukset">
+        <select lemma="tsieggit"/>
+      </match>
+      <match tags="n.sem_build.*" />
+    </rule>
+    <rule weight="0.6">
+      <match tags="n.sem_build.*" />
+      <match lemma="hukset">
+        <select lemma="tsieggit"/>
+      </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="illu" tags="n.*.sg.loc.*">
+        <select lemma="ávvo"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="illu">
+        <select lemma="illu"/>
+      </match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="gullat">
