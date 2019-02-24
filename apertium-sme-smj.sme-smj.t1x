@@ -926,8 +926,8 @@ C[_]-T sent
        <attr-item tags="err_orth_a_á"/>
        <attr-item tags="err_orth_nom_acc"/>
        <attr-item tags="err_orth_nom_gen"/>
+       <attr-item tags="←vdic→"/>
        <attr-item tags="←logo→"/>
-      <attr-item tags="←vdic→"/>
     </def-attr>
     <def-attr n="a_spec_sme_tags2">
       <attr-item tags="south"/>
@@ -1841,7 +1841,7 @@ C[_]-T sent
           <test>
             <equal><clip pos="1" side="sl" part="x_func"/><lit-tag v="←vdic→"/></equal>
           </test>
-          <let><var n="vdic"/><clip pos="1" side="sl" part="x_func"/></let>
+          <let><var n="vdic"/><lit-tag v="←vdic→"/></let>
         </when>
         <when c="M[V] empty vdic">
           <test>
@@ -4378,6 +4378,7 @@ C[_]-T sent
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="func"/></tag>
+                  <tag><var n="vdic"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>

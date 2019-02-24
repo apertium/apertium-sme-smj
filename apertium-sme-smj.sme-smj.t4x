@@ -643,8 +643,8 @@
       </action>
     </rule>
     
-        <rule> <!--SVO becomes SOV, verbal objects--><!-- Mun oahpan lohkat girjjiid.-->
-      <pattern>
+<!--        <rule> SVO becomes SOV, verbal objects--><!-- Mun oahpan lohkat girjjiid.-->
+<!--      <pattern>
         <pattern-item n="NP_Subj"/>
         <pattern-item n="FMainV"/>
         <pattern-item n="SV_Obj"/> 
@@ -673,7 +673,7 @@
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
     
     <rule> <!--SVO becomes SOV in questions-->
       <pattern>
