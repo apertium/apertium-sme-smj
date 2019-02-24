@@ -165,7 +165,10 @@
       <match tags="n.sem_build.*" />
     </rule>
     <rule weight="0.6">
+    <or>
       <match tags="n.sem_build.*" />
+      <match lemma="bieggamillu" tags="n.*" />
+    </or>
       <match lemma="hukset">
         <select lemma="tsieggit"/>
       </match>
