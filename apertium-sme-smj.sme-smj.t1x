@@ -710,6 +710,9 @@ C[_]-T sent
       <cat-item tags="vblex.*.neg.indic.p2.sg.*"/>
     </def-cat>
 
+   <def-cat n="verb_actio_modpost">
+      <cat-item tags="vblex.*.actio.gen.@→P"/>
+    </def-cat>
    <def-cat n="verb_actio">
       <cat-item tags="vblex.*.actio.*"/>
     </def-cat>
@@ -2055,6 +2058,28 @@ C[_]-T sent
                       <let><var n="chunk_name"/><lit v="vblex"/></let>
        </otherwise>
        </choose>
+         <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
+     <rule comment="C[D]-PRED verb_actio_modpost dihte_post" c="example">
+      <pattern>
+        <pattern-item n="verb_actio_modpost"/>
+        <pattern-item n="dihte_post"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+         <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
          <out>
           <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
@@ -4273,7 +4298,14 @@ C[_]-T sent
       <not><equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal></not></and>
            </test>
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
-     </when></choose>
+     </when>
+        <when c="inf @N←">
+          <test>
+              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@N←"/></equal>
+          </test>
+         <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
+        </when>
+     </choose>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
@@ -4289,6 +4321,8 @@ C[_]-T sent
         </out>
       </action>
     </rule>
+
+
     <rule comment="C[_]-V verb_prfprc" c="example">
       <pattern>
         <pattern-item n="verb_prfprc"/>

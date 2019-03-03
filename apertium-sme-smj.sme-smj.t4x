@@ -41,6 +41,14 @@
         <cat-item tags="SV.@N←.*"/>
         <cat-item tags="SV.@N←"/>
     </def-cat>
+    <def-cat n="SV_N">
+        <cat-item tags="SV.@N←.*"/>
+        <cat-item tags="SV.@N←"/>
+    </def-cat>
+    <def-cat n="FOBJ">
+        <cat-item tags="NP.@-F←OBJ.*"/>
+        <cat-item tags="NP.@-F←OBJ"/>
+    </def-cat>
  
      <def-cat n="word">
     <cat-item  tags="*"/>
@@ -643,6 +651,32 @@
       </action>
     </rule>
     
+
+        <rule comment=" SV_N FOBJ : FOBJ SV_N " c="example">
+      <pattern>
+        <pattern-item n="SV_N"/>
+        <pattern-item n="FOBJ"/> 
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
 <!--        <rule> SVO becomes SOV, verbal objects--><!-- Mun oahpan lohkat girjjiid.-->
 <!--      <pattern>
         <pattern-item n="NP_Subj"/>
