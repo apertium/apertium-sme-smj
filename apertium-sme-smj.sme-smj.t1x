@@ -1481,6 +1481,8 @@ C[_]-T sent
     <def-attr n="a_foc-ge">
       <attr-item tags="foc_neg-ge"/>
       <attr-item tags="foc_pos-ge"/>
+      <attr-item tags="foc_neg-k"/>
+      <attr-item tags="foc_pos-k"/>
     </def-attr>
   </section-def-attrs>
 
@@ -1767,7 +1769,15 @@ C[_]-T sent
         </when>
         <when>
           <test><and>
+	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal>
+	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal></not>
+      </and></test>
+          <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-k"/></let>
+        </when>
+        <when>
+          <test><and><or>
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
+	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal></or>
 	          <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
@@ -3116,7 +3126,7 @@ C[_]-T sent
               <tag><var n="func"/></tag>
               <tag><clip pos="1" side="sl" part="a_prn_type"/></tag>
 <!--              <tag><var n="case"/></tag>  -->
-              <tag><clip pos="1" side="sl" part="a_foc-ge"/></tag>
+              <tag><clip pos="1" side="tl" part="a_foc-ge"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>

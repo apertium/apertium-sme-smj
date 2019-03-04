@@ -135,6 +135,30 @@
       <match lemma="gierdi" tags="n.*.sg.gen.*"><select lemma="bálle"/></match>
     </rule>
 
+
+    <rule weight="1.0">
+      <match lemma="bárdni">
+        <select lemma="báhttja"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="bárdni">
+        <select lemma="bárnne"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+    <or>
+      <match tags="n.*.sem_hum.*.gen.@→N"/>
+      <match tags="n.sem_hum.*.gen.@→N"/>
+      <match tags="np.ant.*.sg.gen.@→N"/>
+    </or>
+      <match lemma="bárdni">
+        <select lemma="bárnne"/>
+      </match>
+    </rule>
+
     <rule weight="1.0">
       <match lemma="eallit">
         <select lemma="viessot"/>
