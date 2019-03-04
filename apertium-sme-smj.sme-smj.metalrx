@@ -135,6 +135,30 @@
       <match lemma="gierdi" tags="n.*.sg.gen.*"><select lemma="bálle"/></match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="lávdegoddi">
+        <select lemma="juogos"/>
+      </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="lohkat">
+        <select lemma="javllat"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match tags="cm"/>
+      <match lemma="lohkat">
+        <select lemma="javllat"/>
+      </match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="bárdni">
