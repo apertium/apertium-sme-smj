@@ -159,6 +159,27 @@
         <select lemma="javllat"/>
       </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="unnut">
+        <select lemma="unnot"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="unnut">
+        <select lemma="binnot"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+    <or>
+      <match tags="n.*.pl.nom.*"/>
+      <match tags="n.*.*.pl.nom.*"/>
+    </or>
+      <match lemma="unnut">
+        <select lemma="binnot"/>
+      </match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="bárdni">
