@@ -27,8 +27,7 @@
       <cat-item tags="NP.*"/>
     </def-cat>
     
-    <def-cat n="SV_Obj">
-        <cat-item tags="SV.@OBJ→.*"/>
+    <def-cat n="SV_Obj_r">
         <cat-item tags="SV.@←OBJ.*"/>
         <cat-item tags="SV.@←OBJ"/>
     </def-cat>
@@ -97,6 +96,14 @@
         <cat-item lemma="adv" tags="*.@-F←ADVL-ela"/>
         <cat-item lemma="adv" tags="*.@-F←ADVL-ine"/>
         <cat-item lemma="adv" tags="*.@-F←ADVL-ine.*"/>
+    </def-cat>
+
+    <def-cat n="fobj-fadvl_l">
+        <cat-item tags="*.@-F←OBJ"/>
+        <cat-item tags="*.@-F←ADVL-ela.*"/>
+        <cat-item tags="*.@-F←ADVL-ela"/>
+        <cat-item tags="*.@-F←ADVL-ine"/>
+        <cat-item tags="*.@-F←ADVL-ine.*"/>
     </def-cat>
 
 
@@ -677,11 +684,11 @@
     </rule>
 
 
-<!--        <rule> SVO becomes SOV, verbal objects--><!-- Mun oahpan lohkat girjjiid.-->
-<!--      <pattern>
-        <pattern-item n="NP_Subj"/>
-        <pattern-item n="FMainV"/>
-        <pattern-item n="SV_Obj"/> 
+        <rule> <!-- SVO becomes SOV, verbal objects--><!-- Mun oahpan lohkat girjjiid.-->
+     <pattern>
+        <pattern-item n="IFMainV"/>
+        <pattern-item n="SV_Obj_r"/> 
+        <pattern-item n="fobj-fadvl_l"/>
       </pattern>
       <action>
         <out>
@@ -707,7 +714,7 @@
           </chunk>
         </out>
       </action>
-    </rule> -->
+    </rule> 
     
     <rule> <!--SVO becomes SOV in questions-->
       <pattern>

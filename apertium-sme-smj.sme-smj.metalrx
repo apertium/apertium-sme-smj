@@ -281,9 +281,15 @@
     </rule>
 
     <rule weight="1.0">
-      <match lemma="boahtet" tags="vblex.*"><select lemma="boahtit" tags="vblex.*"/></match>
+      <match lemma="boahtit" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="boahtit" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match>
     </rule>
 
+    <rule weight="0.6"> 
+      <match lemma="boahtit" tags="vblex.*"><select lemma="sjaddat" tags="vblex.iv.indic.*.p3.*.@+FAUXV"/></match>
+    </rule>
     <rule weight="1.0">
       <match lemma="ii"/>
       <match lemma="orrut" tags="vblex.*"><select lemma="liehket" tags="vblex.*"/></match>
