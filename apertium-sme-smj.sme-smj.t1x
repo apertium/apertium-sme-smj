@@ -1992,9 +1992,19 @@ C[_]-T sent
       <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_spec_sme_tags1"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_spec_sme_tags2"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+      <choose>
+        <when c="not oarri sem_ani">
+     <test><not><and>
+     <equal><clip pos="1" side="tl" part="lem"/><lit v="oarre"/></equal>
+     <equal><clip pos="1" side="tl" part="a_sem"/><lit-tag v="sem_ani"/></equal>
+     </and></not></test>
+     <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let> 
+        </when>
+      </choose>
+
+
     </def-macro>
 
 
@@ -3072,7 +3082,7 @@ C[_]-T sent
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
       <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
       <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
-      <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> <!-- remove Px, or should we add ref pronoun? -->
+<!--      <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>  remove Px, or should we add ref pronoun? -->
 <!--      <choose>
         <when>
           <test><and><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
