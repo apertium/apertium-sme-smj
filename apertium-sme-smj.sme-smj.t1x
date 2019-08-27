@@ -931,6 +931,7 @@ C[_]-T sent
        <attr-item tags="err_orth_nom_gen"/>
        <attr-item tags="←vdic→"/>
        <attr-item tags="←logo→"/>
+       <attr-item tags="←ind→"/>
     </def-attr>
     <def-attr n="a_spec_sme_tags2">
       <attr-item tags="south"/>
