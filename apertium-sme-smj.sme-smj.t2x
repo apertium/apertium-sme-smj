@@ -40,6 +40,8 @@
     <def-cat n="Obj_l">
         <cat-item tags="NP.@←OBJ.*"/>
         <cat-item tags="NP.@←OBJ"/>
+        <cat-item tags="NP.@-F←OBJ"/>
+        <cat-item tags="NP.@-F←OBJ.*"/>
     </def-cat>
 
     <def-cat n="ADVL-right">
