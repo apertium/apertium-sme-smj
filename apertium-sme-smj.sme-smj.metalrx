@@ -26,6 +26,99 @@
 
   <rules>
 
+    <rule weight="1.0">
+      <match lemma="Sápmi"> <select lemma="Sábme"/> </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="sivdnádus"> <select lemma="sjivnnjádus"/> </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="fárrolaga"> <select lemma="aktan"/> </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="ollet"> <select lemma="jåksåt"/> </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="lihkku"> <select lemma="vuorbbe"/> </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="muitalus"> <select lemma="subtsas"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="muitalus"> <select lemma="giehtto"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="muitalus"> <select lemma="giehtto"/> </match>
+      <match lemma="báikenamma"/> 
+    </rule>
+    <rule weight="0.6">
+      <match lemma="muitalus"> <select lemma="giehtto"/> </match>
+      <match/>
+      <match lemma="báikenamma"/> 
+    </rule>
+    <rule weight="0.6">
+       <match lemma="báikenamma"/> 
+     <match/>
+      <match lemma="muitalus"> <select lemma="giehtto"/> </match>
+    </rule>
+    <rule weight="0.6">
+       <match lemma="báikenamma"/> 
+      <match lemma="muitalus"> <select lemma="giehtto"/> </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="liikká"> <select lemma="ajtu"/> </match>
+    </rule>
+
+
+    <rule weight="1.0">
+      <match lemma="gorut"> <select lemma="gårot"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="gorut"> <select lemma="rumáj"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="n.sem_hum.*.gen.*"/>
+      <match tags="n.sem_hum.*.ill.*"/>
+    </or>
+      <match/>
+      <match lemma="gorut"> <select lemma="rumáj"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="n.sem_hum.*.gen.*"/>
+      <match tags="n.sem_hum.*.ill.*"/>
+    </or>
+      <match lemma="gorut"> <select lemma="rumáj"/> </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="siidu"> <select lemma="bielle"/> </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="ahki"> <select lemma="áldar"/> </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="viissis"> <select lemma="vissa"/> </match>
+    </rule>
+
+
+    <rule weight="1.0">
+      <match lemma="sakka"> <select lemma="sieldes"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="sakka"> <select lemma="sælldásit"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="sakka"> <select lemma="sælldásit"/> </match>
+      <match tags="vblex.*"/>
+    </rule>
+    <rule weight="0.6">
+      <match tags="vblex.*"/>
+      <match lemma="sakka"> <select lemma="sælldásit"/> </match>
+    </rule>
+
 
     <rule weight="1.0">
       <match lemma="ovddas"> <select lemma="åvdås"/> </match>
