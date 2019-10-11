@@ -916,6 +916,7 @@ C[_]-T sent
       <attr-item tags="←hab→"/>
     </def-attr>
     <def-attr n="a_spec_sme_tags1">
+      <attr-item tags="cmp_cit"/>
       <attr-item tags="south"/>
       <attr-item tags="gram_tabbr"/>
       <attr-item tags="g3"/>
@@ -1094,6 +1095,8 @@ C[_]-T sent
       <attr-item tags="der_sasj"/>
       <attr-item tags="der_lasj"/>
       <attr-item tags="der_dibme"/>
+      <attr-item tags="der_geahtes"/>
+      <attr-item tags="der_ahtes"/>
       <attr-item tags="der_car"/>
     </def-attr>
     <def-attr n="a_comp-superl">
@@ -1718,6 +1721,12 @@ C[_]-T sent
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_vuota"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
+        </when>
+        <when>
+          <test>
+               <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_geahtes"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_ahtes"/></let>
         </when>
       </choose>
     </def-macro>
@@ -3107,7 +3116,7 @@ C[_]-T sent
 
 
 
-  <rule comment="C[T]-PCLE pcle" c="example">
+<!--  <rule comment="C[T]-PCLE pcle" c="example">
     <pattern>
       <pattern-item n="pcle"/>
     </pattern>
@@ -3141,7 +3150,7 @@ C[_]-T sent
         </chunk>
       </out>
     </action>
-  </rule>
+  </rule> -->
 
   <rule comment="C[W]-PRED boahtitverb fápmu_n_ill" c="example">
     <pattern>
