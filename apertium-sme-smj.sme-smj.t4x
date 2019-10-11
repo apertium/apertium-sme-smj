@@ -22,6 +22,12 @@
       <cat-item lemma="cop-mainv" tags="SV.@+FMAINV"/>
     </def-cat>
 
+    <def-cat n="intWORD">
+      <cat-item tags="*.@SUBJ→.*"/>
+      <cat-item tags="cnjsub.@CVP"/>
+        <cat-item tags=".*@ADVL→.*"/>
+        <cat-item tags=".*@ADVL→"/>
+    </def-cat>
     <def-cat n="NP">
       <cat-item tags="NP"/>
       <cat-item tags="NP.*"/>
@@ -188,6 +194,9 @@
         <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
     
+    <def-cat n="infiniteFV">
+        <cat-item lemma="inf" tags="SV.@←SUBJ"/>
+    </def-cat>
         <def-cat n="wordbeforeahte">
          <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
          <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
@@ -628,7 +637,7 @@
     
     <rule> <!--SVO becomes SOV -->
       <pattern>
-        <pattern-item n="NP_Subj"/>
+        <pattern-item n="intWORD"/>
         <pattern-item n="FMainV"/>
         <pattern-item n="NP_Obj"/>
       </pattern>
@@ -647,7 +656,7 @@
             <clip pos="3" part="chcontent"/>
             <clip pos="3" part="lemq"/>
           </chunk>
-          <b pos="2"/>
+          <b pos="1"/>
         <chunk>
             <clip pos="2" part="lemh"/>
             <clip pos="2" part="tags"/>
@@ -659,6 +668,29 @@
     </rule>
     
 
+        <rule comment=" infiniteFV FOBJ : FOBJ infiniteFV " c="example">
+      <pattern>
+        <pattern-item n="infiniteFV"/>
+        <pattern-item n="FOBJ"/> 
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
         <rule comment=" SV_N FOBJ : FOBJ SV_N " c="example">
       <pattern>
         <pattern-item n="SV_N"/>
