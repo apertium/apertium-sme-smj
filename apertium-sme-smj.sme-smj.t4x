@@ -12,21 +12,24 @@
     </def-cat>
     <def-cat n="subsent">
       <cat-item tags="cnjsub.@CVP"/>
-      <cat-item lemma="prn" tags=".*@SUBJ→.rel"/> <!-- should be here? -->
-      <cat-item lemma="prn" tags=".*@OBJ→.rel"/>
-      <cat-item lemma="prn" tags=".*@ADVL→.rel"/>
-      <cat-item lemma="prn" tags=".*@ADVL-ela→.rel"/>
-      <cat-item lemma="prn" tags=".*@ADVL-ine→.rel"/>
+      <cat-item lemma="prn" tags="*.@SUBJ→.rel"/> <!-- should be here? -->
+      <cat-item lemma="prn" tags="*.@OBJ→.rel"/>
+      <cat-item lemma="prn" tags="*.@ADVL→.rel"/>
+      <cat-item lemma="prn" tags="*.@ADVL-ela→.rel"/>
+      <cat-item lemma="prn" tags="*.@ADVL-ine→.rel"/>
     </def-cat>
     <def-cat n="cop-mainv">
       <cat-item lemma="cop-mainv" tags="SV.@+FMAINV"/>
     </def-cat>
 
     <def-cat n="intWORD">
+      <cat-item tags="*.@←SUBJ"/>
+      <cat-item tags="*.@SUBJ→"/>
+      <cat-item tags="*.@←SUBJ.*"/>
       <cat-item tags="*.@SUBJ→.*"/>
       <cat-item tags="cnjsub.@CVP"/>
-        <cat-item tags=".*@ADVL→.*"/>
-        <cat-item tags=".*@ADVL→"/>
+        <cat-item tags="*.@ADVL→.*"/>
+        <cat-item tags="*.@ADVL→"/>
     </def-cat>
     <def-cat n="NP">
       <cat-item tags="NP"/>
@@ -638,7 +641,7 @@
     <rule> <!--SVO becomes SOV -->
       <pattern>
         <pattern-item n="intWORD"/>
-        <pattern-item n="FMainV"/>
+        <pattern-item n="IFMainV"/>
         <pattern-item n="NP_Obj"/>
       </pattern>
       <action>
