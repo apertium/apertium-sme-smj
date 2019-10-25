@@ -991,6 +991,11 @@ C[_]-T sent
       <attr-item tags="pret"/>
       <attr-item tags="pres"/>
     </def-attr>
+    <def-attr n="a_temps_indic_imp">
+      <attr-item tags="imp"/>
+      <attr-item tags="indic.pres"/>
+      <attr-item tags="indic.pret"/>
+    </def-attr>
     <def-attr n="a_temps_mood">
       <attr-item tags="indic"/>
       <attr-item tags="indic.pres"/>
@@ -1862,6 +1867,7 @@ C[_]-T sent
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
 	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal></not>
 	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="n"/></equal></not>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_pos-k"/></let>
         </when>
@@ -1870,6 +1876,7 @@ C[_]-T sent
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal>
 	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal></not>
 	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="n"/></equal></not>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-k"/></let>
         </when>
@@ -1878,7 +1885,9 @@ C[_]-T sent
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal></or>
 	      <or><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal>
-	       <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal></or>
+	       <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal>
+	       <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="n"/></equal>
+	       </or>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
         </when>
@@ -2573,7 +2582,7 @@ C[_]-T sent
         </out>
       </action>
     </rule>
-    <rule comment="C[T]-V negverb connegverb" c="Dábálasj neg: Iv sidá dujna doarrut"> 
+    <rule comment="C[T]-V negverb connegverb" c="Dábálasj neg: Iv sidá dujna doarrut adsf"> 
       <pattern>
         <pattern-item n="negverb"/>
         <pattern-item n="connegverb"/>
@@ -2588,7 +2597,7 @@ C[_]-T sent
       <choose>
         <when>
           <test><equal><clip pos="2" side="sl" part="a_mood"/><lit-tag v="imp"/></equal></test>
-          <let><clip pos="2" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
+          <let><clip pos="2" side="tl" part="a_temps_indic_imp"/><lit-tag v="indic.pres"/></let>
         </when>
       </choose>
         <choose>
@@ -3042,6 +3051,39 @@ C[_]-T sent
     </action>
   </rule>
 
+    <rule comment="C[T]-V connegverb" c="connegverb"> 
+      <pattern>
+        <pattern-item n="connegverb"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro> 
+       <choose><when>
+	   <test>
+		<not><equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+	    </test>    
+        <let>
+          <clip pos="1" side="tl" part="a_tense"/><lit v=""/>
+        </let>
+        </when></choose>
+        <let>
+          <clip pos="1" side="tl" part="a_mood"/><lit-tag v="indic"/>
+        </let>
+        <out>
+          <chunk name="conneg">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="1" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tense"/></tag>
+              <tag><clip pos="1" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="C[T]-NP months_n semyear" c="example"> 
       <pattern> 
