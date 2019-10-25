@@ -761,6 +761,8 @@ C[_]-T sent
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
        <cat-item tags="prn.*"/>
+       <cat-item tags="unknown"/>
+       <cat-item tags="unknown.*"/>
    </def-cat>
      <def-cat n="word_not_verb">
       <cat-item tags="adv"/>
@@ -778,6 +780,8 @@ C[_]-T sent
       <cat-item tags="adj"/>
       <cat-item tags="adj.*"/>
        <cat-item tags="prn.*"/>
+       <cat-item tags="unknown"/>
+       <cat-item tags="unknown.*"/>
    </def-cat>
 
 
@@ -916,6 +920,9 @@ C[_]-T sent
       <attr-item tags="←hab→"/>
     </def-attr>
     <def-attr n="a_spec_sme_tags1">
+      <attr-item tags="foc_gis"/>
+      <attr-item tags="foc_han"/>
+      <attr-item tags="foc_naj"/>
       <attr-item tags="cmp_cit"/>
       <attr-item tags="south"/>
       <attr-item tags="gram_tabbr"/>
@@ -935,6 +942,9 @@ C[_]-T sent
        <attr-item tags="←ind→"/>
     </def-attr>
     <def-attr n="a_spec_sme_tags2">
+      <attr-item tags="foc_gis"/>
+      <attr-item tags="foc_han"/>
+      <attr-item tags="foc_naj"/>
       <attr-item tags="south"/>
       <attr-item tags="g3"/>
       <attr-item tags="←sme→"/>
@@ -1851,6 +1861,7 @@ C[_]-T sent
           <test><and>
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
 	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal></not>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_pos-k"/></let>
         </when>
@@ -1858,6 +1869,7 @@ C[_]-T sent
           <test><and>
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal>
 	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal></not>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-k"/></let>
         </when>
@@ -1865,7 +1877,8 @@ C[_]-T sent
           <test><and><or>
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal></or>
-	          <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal>
+	      <or><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal>
+	       <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal></or>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
         </when>
