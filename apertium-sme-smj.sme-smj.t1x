@@ -1089,6 +1089,9 @@ C[_]-T sent
     <def-attr n="a_hab">
       <attr-item tags="←hab→"/>
     </def-attr>
+    <def-attr n="a_vuota">
+      <attr-item tags="ex_attr"/>
+    </def-attr>
     <def-attr n="a_deriv">
       <attr-item tags="der_dimin"/>
       <attr-item tags="der_aadv"/>
@@ -1112,6 +1115,7 @@ C[_]-T sent
       <attr-item tags="der_dibme"/>
       <attr-item tags="der_geahtes"/>
       <attr-item tags="der_ahtes"/>
+      <attr-item tags="der_passs"/>
       <attr-item tags="der_car"/>
     </def-attr>
     <def-attr n="a_comp-superl">
@@ -1727,16 +1731,22 @@ C[_]-T sent
         </when>
         <when>
           <test>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_passs"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_passl"/></let>
+        </when>
+<!--        <when>
+          <test>
             <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_car"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_dibme"/></let>
-        </when>
+        </when> -->
         <when>
           <test>
-               <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_vuota"/></equal>
+               <equal><clip pos="1" side="sl" part="a_vuota"/><lit-tag v="ex_attr"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
-        </when>
+          <let><clip pos="1" side="tl" part="a_vuota"/><lit-tag v="attr"/></let>
+        </when> 
         <when>
           <test>
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_geahtes"/></equal>
@@ -1867,7 +1877,9 @@ C[_]-T sent
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_pos-ge"/></equal>
 	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal></not>
 	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal></not>
-	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="n"/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v=""/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal></not>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_pos-k"/></let>
         </when>
@@ -1876,7 +1888,8 @@ C[_]-T sent
 	          <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal>
 	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal></not>
 	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal></not>
-	     <not><equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="n"/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></not>
+	     <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal></not>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-k"/></let>
         </when>
@@ -1887,6 +1900,7 @@ C[_]-T sent
 	      <or><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="vblex"/></equal>
 	       <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="pers"/></equal>
 	       <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="n"/></equal>
+	       <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal>
 	       </or>
       </and></test>
           <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
@@ -3783,6 +3797,11 @@ C[_]-T sent
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+      <choose><when>
+	  <test>
+	  <not><equal><clip pos="1" side="sl" part="a_qst"/><lit v=""/></equal></not>	      
+      </test>
+	  <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>	      
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -3794,7 +3813,34 @@ C[_]-T sent
               <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
+            <b />
+          <chunk name="qst">
+            <tags>
+              <tag><lit-tag v="pcle"/></tag>
+              <tag><lit-tag v="PCLE"/></tag>
+            </tags>
+         <lu>
+            <lit v="gus"/>
+            <lit-tag v="pcle.qst"/>
+          </lu>
+          </chunk>
         </out>
+        </when>        
+            <otherwise>
+		<out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+            </otherwise>
+            </choose>
       </action>
     </rule>
 
