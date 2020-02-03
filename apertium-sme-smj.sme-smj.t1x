@@ -1107,6 +1107,8 @@ C[_]-T sent
       <attr-item tags="der_laagasj"/>
       <attr-item tags="der_lágan"/>
       <attr-item tags="der_lágán"/>
+      <attr-item tags="der_muš"/>
+      <attr-item tags="der_mus"/>
       <attr-item tags="der_nammasaš"/>
       <attr-item tags="der_nammasasj"/>
       <attr-item tags="der_saš"/>
@@ -1711,6 +1713,12 @@ C[_]-T sent
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_d"/></let>
         </when>
 
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_muš"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_mus"/></let>
+        </when>
         <when>
           <test>
             <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_laakan"/></equal>
