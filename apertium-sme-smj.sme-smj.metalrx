@@ -119,6 +119,22 @@
       <match lemma="sakka"> <select lemma="sælldásit"/> </match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="illudit"> <select lemma="ávvudit"/> </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="illudit"> <select lemma="ávvudallat"/> </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="illudit"> <select lemma="ávvudallat"/> </match>
+      <or>
+      <match tags="*.inf.*"/>  
+      <match tags="*.ill.*"/>  
+      </or>
+    </rule>
+
 
     <rule weight="1.0">
       <match lemma="ovddas"> <select lemma="åvdås"/> </match>
