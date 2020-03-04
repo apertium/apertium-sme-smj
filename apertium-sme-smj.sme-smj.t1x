@@ -1606,6 +1606,7 @@ C[_]-T sent
       <list-item v="hállat"/>
       <list-item v="hupmat"/>
       <list-item v="muitalit"/>
+      <list-item v="ságastallat"/>
     </def-list>
     <def-list n="birrapx_verbs">
       <list-item v="geahččat"/>
@@ -4555,6 +4556,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
       </action>
     </rule>
 
@@ -4657,8 +4659,86 @@ C[_]-T sent
             </out>
           </otherwise>
         </choose>
+        <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
       </action>
     </rule> 
+
+    <rule comment="C[DT]-PP  nom_gen birra_post" c="Sii hupmet nieidda birra. : Sij niejdas hålli.">
+      <pattern>
+        <pattern-item n="nom_gen"/>
+        <pattern-item n="birra_post"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param">
+           <with-param pos="1"/><with-param pos="2"/></call-macro>
+        <choose>
+          <when>
+            <test>
+                <in caseless="yes"><var n="current_verb"/><list n="loc_verbs" /></in>
+            </test>
+            <let><clip pos="2" side="tl" part="whole"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
+          </when>
+        </choose>
+        <out>
+           <chunk name="n" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="1" side="tl" part="a_case"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="tags"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="C[DT]-PP n_cmp nom_gen birra_post" c="Sii ságastallet meahcceskuvlla birra. : ságastalli miehttseskåvlås.">
+      <pattern>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="nom_gen"/>
+        <pattern-item n="birra_post"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param">
+           <with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <choose>
+          <when>
+            <test>
+                <in caseless="yes"><var n="current_verb"/><list n="loc_verbs" /></in>
+            </test>
+            <let><clip pos="3" side="tl" part="whole"/><lit v=""/></let>
+            <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ela"/></let>
+          </when>
+        </choose>
+        <out>
+           <chunk name="n" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="2" side="tl" part="a_case"/></tag>
+            </tags>
+            <mlu>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <lu>  
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            </mlu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
 
 
     <rule comment="C[_]-T sent">
