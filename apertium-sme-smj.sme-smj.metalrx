@@ -120,6 +120,10 @@
     </rule>
 
     <rule weight="1.0">
+      <match lemma="ásahus"> <select lemma="institusjåvnnå"/> </match>
+    </rule>
+
+    <rule weight="1.0">
       <match lemma="illudit"> <select lemma="ávvudit"/> </match>
     </rule>
 
