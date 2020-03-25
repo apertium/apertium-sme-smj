@@ -185,6 +185,34 @@
       <match lemma="gos" tags="adv.@ADVLqst-ela→"> <select lemma="gåsstå"/> </match>
     </rule>
 
+
+    <rule weight="1.0">
+      <match lemma="siste"  tags="adv.*"> <select lemma="sinna"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="siste"  tags="adv.*"> <select lemma="sissta"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="siste" tags="adv.@ADVL-ela→"> <select lemma="sissta"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="siste" tags="adv.←ADVL-ela"> <select lemma="sissta"/> </match>
+    </rule>
+ 
+    <rule weight="1.0">
+      <match lemma="siste"  tags="post.*"> <select lemma="sinna"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="siste"  tags="post.*"> <select lemma="sissta"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="siste" tags="post.@ADVL-ela→"> <select lemma="sissta"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="siste" tags="post.←ADVL-ela"> <select lemma="sissta"/> </match>
+    </rule>
+
+
     <rule weight="1.0">
       <match lemma="boaris">
         <select lemma="boares"/>
