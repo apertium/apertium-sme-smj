@@ -925,7 +925,6 @@ C[_]-T sent
       <attr-item tags="foc_naj"/>
       <attr-item tags="cmp_cit"/>
       <attr-item tags="south"/>
-      <attr-item tags="gram_tabbr"/>
       <attr-item tags="g3"/>
       <attr-item tags="←sme→"/>
       <attr-item tags="←cs→"/>
@@ -1847,7 +1846,7 @@ C[_]-T sent
           <test>
             <or>
               <and>
-                <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+                <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></equal>
                 <or>
                 <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
                 <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
@@ -1871,7 +1870,7 @@ C[_]-T sent
          <when>
           <test>
           <and>
-            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></equal>
             <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal></not>
             <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal></not>
             <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal></not>
