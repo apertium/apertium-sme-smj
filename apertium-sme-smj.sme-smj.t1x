@@ -1118,6 +1118,7 @@ C[_]-T sent
       <attr-item tags="der_ahtes"/>
       <attr-item tags="der_passs"/>
       <attr-item tags="der_car"/>
+      <attr-item tags="der_nomact"/>
     </def-attr>
     <def-attr n="a_comp-superl">
       <attr-item tags="comp"/>
@@ -1716,6 +1717,20 @@ C[_]-T sent
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_d"/></let>
         </when>
+        <when>
+          <test><and>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_lasj"/></equal>
+            <equal><clip pos="1" side="sl" part="a_sem"/><lit-tag v="sem_plc"/></equal>
+          </and></test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_k"/></let>
+        </when> 
+<!--        <when>
+          <test><and>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_nomact"/></equal>
+            <equal><clip pos="1" side="sl" part="a_cmp"/><lit-tag v="cmp_sgnom"/></equal>
+          </and></test>
+          <let><clip pos="1" side="tl" part="a_cmp"/><lit-tag v="cmp_sh"/></let>
+        </when>   -->
 
         <when>
           <test>
