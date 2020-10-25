@@ -1082,6 +1082,10 @@ C[_]-T sent
       <attr-item tags="iv"/>
       <attr-item tags="tv"/>
     </def-attr>
+    <def-attr n="a_nomag">
+      <attr-item tags="nomag"/>
+      <attr-item tags="der_nomag"/>
+    </def-attr>
     <def-attr n="a_actio">
       <attr-item tags="actio"/>
     </def-attr>
@@ -3914,6 +3918,32 @@ C[_]-T sent
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+		<choose>
+        <when>
+        <test><and>
+        <equal><clip pos="1" side="sl" part="lem"/><lit v="várri"/></equal>
+        <equal><clip pos="2" side="sl" part="a_nomag"/><lit-tag v="nomag"/></equal>
+        </and></test>
+        <let><clip pos="1" side="tl" part="lem"/><lit v="sadjásasj"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><lit-tag v="adj.attr"/></let>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+          </chunk>
+        </out>
+        </when>
+        <otherwise>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -3931,6 +3961,8 @@ C[_]-T sent
             </mlu>
           </chunk>
         </out>
+        </otherwise>
+        </choose>
       </action>
     </rule>
     <rule comment="C[S]-N n_cmp n_cmp noun" c="example">
@@ -3942,6 +3974,16 @@ C[_]-T sent
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+		<choose>
+        <when>
+        <test><and>
+        <equal><clip pos="2" side="sl" part="lem"/><lit v="várri"/></equal>
+        <equal><clip pos="3" side="sl" part="a_nomag"/><lit-tag v="nomag"/></equal>
+        </and></test>
+        <let><clip pos="2" side="tl" part="lem"/><lit v="sadjásasj"/></let>
+        <let><clip pos="2" side="tl" part="tags"/><lit-tag v="adj.attr"/></let>
+        </when>
+		</choose>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
