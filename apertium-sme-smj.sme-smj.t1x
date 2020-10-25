@@ -493,6 +493,14 @@ C[_]-T sent
       <cat-item lemma="áigi" tags="n.*"/>
     </def-cat>
 
+    <def-cat n="nammasaš_adj">
+      <cat-item lemma="nammasaš" tags="adj.*"/>
+    </def-cat>
+
+    <def-cat n="np_hyph">
+      <cat-item tags="*.cmp_hyph.cmp"/>
+    </def-cat>
+
     <def-cat n="ge_pcle">
       <cat-item lemma="ge" tags="pcle.*"/>
     </def-cat>
@@ -843,6 +851,12 @@ C[_]-T sent
     </def-cat>
     <def-cat n="n_sg_gen">
       <cat-item tags="n.*.sg.gen.*"/>
+    </def-cat>
+    <def-cat n="num_arab">
+      <cat-item tags="num.arab.*"/>
+    </def-cat>
+    <def-cat n="dii_adv">
+      <cat-item lemma="dii" tags="adv.*"/>
     </def-cat>
     <def-cat n="prn_num">
       <cat-item tags="prn.dem.*"/>
@@ -3138,6 +3152,63 @@ C[_]-T sent
       </action>
     </rule>
 
+
+    <rule comment="C[T]-NP nammasaš" c="Ávvir-nammasaš : Ávvir nammasasj">  
+      <pattern> 
+        <pattern-item n="np_hyph"/>
+        <pattern-item n="nammasaš_adj"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"> <with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+      <let><clip pos="1" side="tl" part="a_cmp"/><lit v=""/></let>
+      <let><clip pos="1" side="tl" part="a_cmp"/><lit-tag v="sg.nom"/></let>
+                          <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="C[T]-NP dii_adv num_arab" c="dii. 12">  
+      <pattern> 
+        <pattern-item n="dii_adv"/>
+        <pattern-item n="num_arab"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"> <with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="adv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="ADV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
     <rule comment="C[T]-NP months_n semyear" c="example"> 
       <pattern> 
         <pattern-item n="months_n"/>
@@ -3206,6 +3277,30 @@ C[_]-T sent
           <test><and><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
                 <not><contains-substring><clip pos="1" side="tl" part="lem"/><lit v="&gt;"/></contains-substring></not>
                 </and></test> -->
+		<choose>
+        <when>
+        <test><and>
+        <equal><clip pos="1" side="sl" part="lem"/><lit v="áigi"/></equal>
+        <equal><clip pos="1" side="tl" part="lem"/><lit v="åvddåla"/></equal>
+        </and></test>
+        <out>
+          <chunk name="adv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="ADV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+              <lu>
+                <lit v="dát"/>
+                <lit-tag v="prn.dem.sg.ela"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+          </chunk>
+        </out>
+        </when>
+        <otherwise>
             <out>
               <chunk namefrom="chunk_name" case="caseFirstword">
               <tags>
@@ -3217,8 +3312,8 @@ C[_]-T sent
               </lu>
             </chunk>
           </out>
-<!--         </when>
-     </choose> -->
+        </otherwise>
+     </choose>
     </action>
   </rule>
 
