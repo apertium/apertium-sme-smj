@@ -638,7 +638,7 @@
 
 
     
-    <rule> <!--SVO becomes SOV -->
+<!--    <rule> SVO becomes SOV 
       <pattern>
         <pattern-item n="intWORD"/>
         <pattern-item n="IFMainV"/>
@@ -668,7 +668,7 @@
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
     
 
         <rule comment=" infiniteFV FOBJ : FOBJ infiniteFV " c="example">
