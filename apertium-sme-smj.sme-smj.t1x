@@ -492,6 +492,17 @@ C[_]-T sent
     <def-cat n="áigi_n">
       <cat-item lemma="áigi" tags="n.*"/>
     </def-cat>
+    <def-cat n="gohcu_n">
+      <cat-item lemma="gohcu" tags="n.*"/>
+    </def-cat>
+    <def-cat n="alde_post">
+      <cat-item lemma="alde" tags="post.*"/>
+    </def-cat>
+
+    <def-cat n="eambbosat_prn">
+      <cat-item lemma="eambbosat" tags="prn.*"/>
+    </def-cat>
+
 
     <def-cat n="nammasaš_adj">
       <cat-item lemma="nammasaš" tags="adj.*"/>
@@ -2283,6 +2294,52 @@ C[_]-T sent
       </action>
     </rule> 
 
+     <rule comment="C[D]-PRED gozuid alde" c="example">
+      <pattern>
+        <pattern-item n="gohcu_n"/>
+        <pattern-item n="alde_post"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+         <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
+
+     <rule comment="C[D]-PRED eambbosat_prn" c="eambbosiid : ienep ulmutjijt">
+      <pattern>
+        <pattern-item n="eambbosat_prn"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+         <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+            <lit v="ienep"/>
+            <lit-tag v="adj.attr"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
 
      <rule comment="C[T]-PRED leat_aux_main mielde_adv verb_actio_inf Supn" c="example">
       <pattern>

@@ -346,6 +346,26 @@
     </rule>
 
     <rule weight="1.0">
+      <match lemma="badjelis" tags="adv.*">
+        <select lemma="badjelin"/>
+      </match>
+    </rule>
+
+<!--    <rule weight="0.5" tags="adv.*">
+      <match tags="n.sem_clth.*"/>
+      <match lemma="badjelis">
+        <select lemma="tjágŋat"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6" tags="adv.*">
+      <match tags="n.sem_clth.*"/>
+      <match lemma="badjelis">
+        <select lemma="tjágŋat"/>
+      </match>
+    </rule> -->
+
+    <rule weight="1.0">
       <match lemma="eallit">
         <select lemma="viessot"/>
       </match>
