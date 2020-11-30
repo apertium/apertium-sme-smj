@@ -56,12 +56,12 @@ cleantst () {
 cleansrc () {
     local -r srclang=$1 trglang=$2
     local -r tdir="\\((${srclang})\\|(${srclang}-${trglang})\\)"
-    grep -o "<li> ${tdir}[^→]*" |$SED "s%</*[^>]*>%%g; s% *${tdir} *%%" | cleantst
+    grep -o "<li> *${tdir}[^→]*" |$SED "s%</*[^>]*>%%g; s% *${tdir} *%%" | cleantst
 }
 cleantrg () {
     local -r srclang=$1 trglang=$2
     local -r tdir="\\((${srclang})\\|(${srclang}-${trglang})\\)"
-    grep -o "<li> ${tdir}.*" | $SED 's%[^→]*→ *%%; s%::.*%%'  | cleantst
+    grep -o "<li> *${tdir}.*" | $SED 's%[^→]*→ *%%; s%::.*%%' | sed 's%</ul>%%g; s%</li>%%g' | cleantst
 }
 
 summary () {
