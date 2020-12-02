@@ -503,6 +503,9 @@ C[_]-T sent
       <cat-item lemma="eambbosat" tags="prn.*"/>
     </def-cat>
 
+    <def-cat n="máŋgačuođi_num">
+      <cat-item lemma="máŋgačuođi" tags="num.*"/>
+    </def-cat>
 
     <def-cat n="nammasaš_adj">
       <cat-item lemma="nammasaš" tags="adj.*"/>
@@ -2341,6 +2344,37 @@ C[_]-T sent
       </action>
     </rule> 
 
+<!--     <rule comment="C[D]-PRED máŋgačuođi_num" c="máŋgačuođi : måttijt tjuodijt">
+      <pattern>
+        <pattern-item n="máŋgačuođi_num"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+         <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+            <lit v="moadda"/>
+            <lit-tag v="prn.ind.pl"/>
+             <clip pos="1" side="tl" part="a_case"/>
+            </lu>
+            <b/>
+            <lu>
+            <lit v="tjuode"/>
+            <lit-tag v="num.pl"/>
+              <clip pos="1" side="tl" part="a_case"/>
+           </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>  -->
+
+
+
+
      <rule comment="C[T]-PRED leat_aux_main mielde_adv verb_actio_inf Supn" c="example">
       <pattern>
         <pattern-item n="leat_aux_main"/>
@@ -2591,13 +2625,6 @@ C[_]-T sent
         <call-macro n="general-macro-1Param">
           <with-param pos="1"/>
         </call-macro>
-      <choose><when><test>
-      <and><equal><clip pos="1" side="sl" part="lem"/><lit v="Leat"/></equal>
-      <equal><clip pos="1" side="sl" part="a_mood"/><lit-tag v="indic"/></equal> </and>
-           </test>
-        <let><clip pos="1" side="tl" part="tags"/><concat><clip pos="1" side="tl" part="tags"/><lit-tag v="qst"/></concat></let>
-     </when>
-     </choose>
         <out>
           <chunk name="cop-mainv" case="caseFirstword">
             <tags>
@@ -4681,13 +4708,6 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-       <choose><when><test>
-      <and><equal><clip pos="1" side="sl" part="lem"/><lit v="Leat"/></equal>
-      <equal><clip pos="1" side="sl" part="a_mood"/><lit-tag v="indic"/></equal> </and>
-           </test>
-        <let><clip pos="1" side="tl" part="tags"/><concat><clip pos="1" side="tl" part="tags"/><lit-tag v="qst"/></concat></let>
-     </when>
-     </choose>
        <out>
           <chunk name="cop-auxv" case="caseFirstword">
             <tags>
