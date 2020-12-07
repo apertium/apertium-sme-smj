@@ -19,6 +19,12 @@
       <attr-item tags="n"/>
       <attr-item tags="np"/>
     </def-attr>
+    <def-attr n="a_mode">
+      <attr-item tags="pot"/>
+      <attr-item tags="imp"/>
+      <attr-item tags="cond"/>
+      <attr-item tags="indic"/>
+    </def-attr>
     <def-attr n="nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
@@ -40,7 +46,12 @@
       <action>
    <choose>
           <when>
-            <test><equal><clip pos="0" part="lem"/><lit v="Cop-auxv"/></equal></test>
+            <test><and>
+	        <equal><clip pos="0" part="lem"/><lit v="Cop-auxv"/></equal>
+	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="pot"/></equal></not>
+	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="imp"/></equal></not>
+            
+            </and></test>
             <out>
               <lu>
                 <clip pos="1" part="lemh"/>

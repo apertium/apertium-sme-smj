@@ -1674,6 +1674,33 @@ C[_]-T sent
       <list-item v="vuolgit"/>
       <list-item v="mannat"/>
     </def-list>
+    <def-list n="alphabet">
+      <list-item v="aalphabet"/>
+      <list-item v="áalphabet"/>
+      <list-item v="balphabet"/>
+      <list-item v="calphabet"/>
+      <list-item v="dalphabet"/>
+      <list-item v="ealphabet"/>
+      <list-item v="falphabet"/>
+      <list-item v="galphabet"/>
+      <list-item v="halphabet"/>
+      <list-item v="ialphabet"/>
+      <list-item v="jalphabet"/>
+      <list-item v="kalphabet"/>
+      <list-item v="lalphabet"/>
+      <list-item v="malphabet"/>
+      <list-item v="nalphabet"/>
+      <list-item v="oalphabet"/>
+      <list-item v="palphabet"/>
+      <list-item v="qalphabet"/>
+      <list-item v="ralphabet"/>
+      <list-item v="salphabet"/>
+      <list-item v="talphabet"/>
+      <list-item v="ualphabet"/>
+      <list-item v="valphabet"/>
+      <list-item v="walphabet"/>
+      <list-item v="zalphabet"/>
+    </def-list>
   <def-list n="foclemmas">
     <list-item v="okta"/>
   </def-list>
@@ -2110,6 +2137,13 @@ C[_]-T sent
         </when>
       </choose>
 
+<!--      <choose>
+        <when>
+          <test>
+            <in><clip pos="1" side="tl" part="lem"/><list n="alphabet"/></in></test>
+          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
+        </when>
+      </choose> -->
 
     </def-macro>
 
@@ -3404,7 +3438,7 @@ C[_]-T sent
 
 
 
-<!--  <rule comment="C[T]-PCLE pcle" c="example">
+  <rule comment="C[T]-PCLE pcle" c="example">
     <pattern>
       <pattern-item n="pcle"/>
     </pattern>
@@ -3415,22 +3449,21 @@ C[_]-T sent
           <test>
             <equal><clip pos="1" side="sl" part="a_qst"/><lit-tag v="qst"/></equal>
           </test>
-          <let><var n="qst"/><clip pos="1" side="sl" part="a_qst"/></let>
+        <let><var n="chunk_name"/><lit v="qst"/></let>
         </when>
         <when>
           <test>
             <not><equal><clip pos="1" side="sl" part="a_qst"/><lit-tag v="qst"/></equal></not>
           </test>
           <let><var n="qst"/><lit v=""/></let>
+        <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
         </when>
       </choose>
-        <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
         <out>
           <chunk namefrom="chunk_name" case="caseFirstword">
           <tags>
-            <tag><lit-tag v="PCLE"/></tag>
+            <tag><lit-tag v="pcle"/></tag>
             <tag><var n="func"/></tag>
-            <tag><var n="qst"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -3438,7 +3471,7 @@ C[_]-T sent
         </chunk>
       </out>
     </action>
-  </rule> -->
+  </rule> 
 
   <rule comment="C[W]-PRED boahtitverb fápmu_n_ill" c="example">
     <pattern>
@@ -4036,7 +4069,7 @@ C[_]-T sent
           <chunk name="qst">
             <tags>
               <tag><lit-tag v="pcle"/></tag>
-              <tag><lit-tag v="PCLE"/></tag>
+              <tag><lit-tag v="@PCLE"/></tag>
             </tags>
          <lu>
             <lit v="gus"/>
@@ -4832,7 +4865,7 @@ C[_]-T sent
           <chunk name="qst">
             <tags>
               <tag><lit-tag v="pcle"/></tag>
-              <tag><lit-tag v="PCLE"/></tag>
+              <tag><lit-tag v="@PCLE"/></tag>
             </tags>
          <lu>
             <lit v="gus"/>
@@ -5164,6 +5197,27 @@ C[_]-T sent
         </out>
       </action>
     </rule>
+
+<!--   <rule comment="C[_]-T pcle">
+      <pattern>
+        <pattern-item n="pcle"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="pcle" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="pcle"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> -->
     
    <rule comment="C[_]-T default">
       <pattern>
