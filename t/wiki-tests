@@ -5,11 +5,11 @@ set -e -u
 ######## Globals:
 
 # You shouldn't have to change this unless the wiki gets a new host:
-if [[ ! -f "$(dirname $0)/../config.log" ]]; then
-    echo "Can't find $(dirname $0)/../config.log, did you forget to run autogen.sh?" >&2
+if [[ ! -f "$(dirname "$0")/../config.log" ]]; then
+    echo "Can't find $(dirname "$0")/../config.log, did you forget to run autogen.sh?" >&2
     exit 1
 fi
-declare -r PACKAGE=$(grep ^PACKAGE= "$(dirname $0)/../config.log" |grep -o "apertium-[^']*") # e.g. apertium-sme-nob
+declare -r PACKAGE=$(grep ^PACKAGE= "$(dirname "$0")/../config.log" |grep -o "apertium-[^']*") # e.g. apertium-sme-nob
 declare -r BASEURL="http://wiki.apertium.org/wiki/${PACKAGE}"
 
 # Workarounds for Mac's:
@@ -51,7 +51,8 @@ cleantst () {
     local zws=$(env printf "\u200B")
     $SED 's/^ *//; s/ *$//; s/\([^,.?!:;]\)$/\1./g; s/   */ /g' \
         | $SED -e "s/﻿//g" \
-        | $SED -e "s/​//g"
+        | $SED -e "s/​//g" \
+        | $SED -e "s/&#160;/ /g"
 }
 cleansrc () {
     local -r srclang=$1 trglang=$2
@@ -101,7 +102,7 @@ echo_revision () {
 }
 showrevisions () {
     echo_revision
-    grep ^AP_SRC "$(dirname $0)/../config.log" | while IFS='=' read -r var dir; do
+    grep ^AP_SRC "$(dirname "$0")/../config.log" | while IFS='=' read -r var dir; do
 	printf "%s " "${var}"
 	( cd "${dir//\'}"; echo_revision )
     done
@@ -135,7 +136,7 @@ main () {
 
     # Derived options:
     declare -r mode="${srclang}-${trglang}"
-    declare -r html="$(dirname $0)/${testtype}.html"
+    declare -r html="$(dirname "$0")/${testtype}.html"
 
     srclist=$(mktemp -t "${mode}-src.XXXXXXXXXX")
     trglist=$(mktemp -t "${mode}-trg.XXXXXXXXXX")
