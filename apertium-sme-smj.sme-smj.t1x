@@ -4886,12 +4886,12 @@ C[_]-T sent
            </test>
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
      </when>
-        <when c="inf @N←">
+   <!--     <when c="inf @N←">
           <test>
               <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@N←"/></equal>
           </test>
          <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
-        </when>
+        </when> -->
      </choose>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
