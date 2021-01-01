@@ -281,6 +281,42 @@
         <select lemma="juogos"/>
       </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="salla">
+        <select lemma="salla"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="salla">
+        <select lemma="fármme"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="salla">
+        <select lemma="fármme"/>
+      </match>
+      <match lemma="dievva"/>
+    </rule>
+    
+    <rule weight="1.0">
+      <match lemma="heahti">
+        <select lemma="hiehte"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="heahti">
+        <select lemma="nieda"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match tags="n.*.pl.acc.*" lemma="heahti">
+        <select lemma="nieda"/>
+      </match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="lohkat">

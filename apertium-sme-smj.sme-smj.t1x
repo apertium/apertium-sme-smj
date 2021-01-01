@@ -334,6 +334,15 @@ C[_]-T sent
       <cat-item tags="vblex.iv.neg.*.p1.du.foc_neg-ge.@+FAUXV"/>
       <cat-item tags="vblex.iv.neg.*.p2.du.foc_neg-ge.@+FAUXV"/>
       <cat-item tags="vblex.iv.neg.*.p3.du.foc_neg-ge.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.sg.foc_ba.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.sg.foc_ba.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.sg.foc_ba.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.pl.foc_ba.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.pl.foc_ba.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.pl.foc_ba.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p1.du.foc_ba.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p2.du.foc_ba.@+FAUXV"/>
+      <cat-item tags="vblex.iv.neg.*.p3.du.foc_ba.@+FAUXV"/>
     </def-cat>
 
     <def-cat n="verb_prfprc">
@@ -2712,7 +2721,29 @@ C[_]-T sent
         <!-- neg verb alone is probably disam. fail with interjection -->
         <let><clip pos="1" side="tl" part="a_temps_mood"/>
              <concat><clip pos="1" side="tl" part="a_mood"/><lit-tag v="pres"/></concat></let>
-        
+      <choose>
+	        <when>
+		        <test><equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_ba"/></equal></test>
+        <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
+            <out>
+              <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                  <tag><var n="vdic"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+                <b/>
+                <lu>
+                  <lit v="ga"/>
+                  <lit-tag v="pcle"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+      <otherwise>
         <out>
           <chunk name="neg" case="caseFirstword">
             <tags>
@@ -2724,6 +2755,8 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+      </otherwise>
+      </choose>
       </action>
     </rule>
 
@@ -2902,6 +2935,125 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+      </action>
+    </rule>
+
+    <rule comment="C[T]-V negverbqst word_not_verb connegverb" c="example"> 
+      <pattern>
+        <pattern-item n="negverbqst"/>
+      <pattern-item n="word_not_verb"/>
+        <pattern-item n="connegverb"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <!-- c="First we copy the temps from mainverb onto negverb" -->
+        <let>
+          <clip pos="1" side="tl" part="a_temps_mood"/>
+          <concat><clip pos="1" side="tl" part="a_mood"/><clip pos="3" side="tl" part="a_tense"/></concat>
+        </let>
+        <choose>
+          <when>
+            <test>
+              <not><equal><clip pos="3" side="tl" part="lem"/><lit v="liehket"/></equal></not>
+            </test>
+            <let><clip pos="3" side="tl" part="a_tense"/><lit v=""/></let>
+          </when>
+          <when>
+            <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal></test>
+            <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="pres"/></let>
+          </when>
+        </choose>
+            <let><clip pos="1" side="tl" part="a_qst"/><lit v=""/></let>
+       <choose>
+         <when><test><equal><clip pos="2" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="noun"/></let>
+              </when>
+         <when><test><equal><clip pos="2" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
+                      <let><var n="chunk_name"/><lit v="adv"/></let>
+              </when>
+       <otherwise>
+                      <let><var n="chunk_name"/><lit v="word"/></let>
+       </otherwise>
+      </choose>
+       <choose>
+         <when><test><equal><clip pos="2" side="sl" part="a_PoS"/><lit-tag v="prn"/></equal></test>
+        <out>
+          <chunk name="neg" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FAUXV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="1" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+         <lu>
+            <lit v="gus"/>
+            <lit-tag v="pcle.qst"/>
+          </lu>
+          </chunk>
+          <b pos="1"/>
+         <b pos="2"/>
+          <chunk name="conneg">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="3" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="3" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+               <otherwise>
+        <out>
+          <chunk name="neg" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FAUXV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="1" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+         <lu>
+            <lit v="gus"/>
+            <lit-tag v="pcle.qst"/>
+          </lu>
+          </chunk>
+          <b pos="1"/>
+              <chunk namefrom="chunk_name">
+          <tags>
+            <tag><lit-tag v="NP"/></tag>
+            <tag><clip pos="2" side="sl" part="a_func"/></tag>
+            <tag><clip pos="2" side="sl" part="a_mood"/></tag>
+            <tag><clip pos="2" side="sl" part="a_foc"/></tag>
+          </tags>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+          </chunk>
+         <b pos="2"/>
+          <chunk name="conneg">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="3" side="sl" part="a_mood"/></tag>
+              <tag><clip pos="3" side="sl" part="a_foc"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+               </otherwise>
+      </choose>
       </action>
     </rule>
 
@@ -4975,7 +5127,8 @@ C[_]-T sent
         <call-macro n="convert-deriv-1Param">
           <with-param pos="1"/>
         </call-macro>
-        <choose><when><test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
+        <choose>
+	        <when><test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
             <out>
               <chunk name="liehket_vblex" case="caseFirstword">
                 <tags>

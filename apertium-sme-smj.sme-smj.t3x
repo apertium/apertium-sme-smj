@@ -266,7 +266,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="MAINV SUBJ" > 
+<!--    <rule comment="MAINV SUBJ" > 
       <pattern>
         <pattern-item n="FMainV-no-vdic"/>
         <pattern-item n="NP_Subj_l"/>
@@ -289,7 +289,7 @@
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
 
     <rule comment="remove-dem">
       <pattern>
