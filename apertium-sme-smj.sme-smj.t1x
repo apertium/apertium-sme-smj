@@ -1717,6 +1717,57 @@ C[_]-T sent
     <list-item v="okta"/>
   </def-list>
 
+    <def-list n="sem_hum">
+      <list-item v="&lt;sem_act_hum_obj&gt;"/>
+      <list-item v="&lt;sem_ani_body-abstr_hum&gt;"/>
+      <list-item v="&lt;sem_ani_build_hum_txt&gt;"/>
+      <list-item v="&lt;sem_ani_feat_hum&gt;"/>
+      <list-item v="&lt;sem_ani_group_hum&gt;"/>
+      <list-item v="&lt;sem_ani_hum&gt;"/>
+      <list-item v="&lt;sem_ani_hum_plc&gt;"/>
+      <list-item v="&lt;sem_ani_hum_time&gt;"/>
+      <list-item v="&lt;sem_aniprod_hum&gt;"/>
+      <list-item v="&lt;sem_body_group_hum&gt;"/>
+      <list-item v="&lt;sem_body_group_hum_time&gt;"/>
+      <list-item v="&lt;sem_body_hum&gt;"/>
+      <list-item v="&lt;sem_cat_group_hum&gt;"/>
+      <list-item v="&lt;sem_cat_group_hum_plc&gt;"/>
+      <list-item v="&lt;sem_clth_hum&gt;"/>
+      <list-item v="&lt;sem_domain_hum&gt;"/>
+      <list-item v="&lt;sem_edu_group_hum&gt;"/>
+      <list-item v="&lt;sem_edu_hum&gt;"/>
+      <list-item v="&lt;sem_event_hum&gt;"/>
+      <list-item v="&lt;sem_feat-phys_hum&gt;"/>
+      <list-item v="&lt;sem_feat-psych_hum&gt;"/>
+      <list-item v="&lt;sem_feat_hum&gt;"/>
+      <list-item v="&lt;sem_fruit_hum&gt;"/>
+      <list-item v="&lt;sem_geom_hum_plc&gt;"/>
+      <list-item v="&lt;sem_group_hum&gt;"/>
+      <list-item v="&lt;sem_group_hum_org&gt;"/>
+      <list-item v="&lt;sem_group_hum_plc&gt;"/>
+      <list-item v="&lt;sem_group_hum_plc-abstr&gt;"/>
+      <list-item v="&lt;sem_group_hum_prod-vis&gt;"/>
+      <list-item v="&lt;sem_group_hum_time&gt;"/>
+      <list-item v="&lt;sem_hum&gt;"/>
+      <list-item v="&lt;sem_hum-abstr&gt;"/>
+      <list-item v="&lt;sem_hum-prof&gt;"/>
+      <list-item v="&lt;sem_hum_lang&gt;"/>
+      <list-item v="&lt;sem_hum_lang_plc&gt;"/>
+      <list-item v="&lt;sem_hum_lang_time&gt;"/>
+      <list-item v="&lt;sem_hum_mat_tool&gt;"/>
+      <list-item v="&lt;sem_hum_obj&gt;"/>
+      <list-item v="&lt;sem_hum_obj_plc&gt;"/>
+      <list-item v="&lt;sem_hum_org&gt;"/>
+      <list-item v="&lt;sem_hum_part&gt;"/>
+      <list-item v="&lt;sem_hum_plant&gt;"/>
+      <list-item v="&lt;sem_hum_plc&gt;"/>
+      <list-item v="&lt;sem_hum_sign&gt;"/>
+      <list-item v="&lt;sem_hum_tool&gt;"/>
+      <list-item v="&lt;sem_hum_tool-catch&gt;"/>
+      <list-item v="&lt;sem_hum_tool-it&gt;"/>
+      <list-item v="&lt;sem_hum_veh&gt;"/>
+      <list-item v="&lt;sem_hum_wthr&gt;"/>
+    </def-list>
 
   </section-def-lists>
   <section-def-macros>
@@ -4314,6 +4365,31 @@ C[_]-T sent
           </chunk>
         </out>
         </when>        
+          <when>
+            <test><and>
+                <in caseless="yes"><var n="current_verb"/><list n="moveverbs" /></in>
+                <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></equal>
+                <equal><clip pos="1" side="sl" part="a_sem"/><lit-tag v="sem_hum"/></equal>
+                <in><clip pos="1" side="sl" part="a_sem"/><list n="sem_hum" /></in>
+            </and></test>
+            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+        <out>
+          <chunk name="post" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b />
+         <lu>
+            <lit v="maŋen"/>
+            <lit-tag v="post"/>
+          </lu>
+          </chunk>
+        </out>
+          </when>
             <otherwise>
 		<out>
           <chunk name="noun" case="caseFirstword">
@@ -5023,6 +5099,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        <let><var n="current_verb"/><clip pos="1" side="sl" part="lem"/></let>
       </action>
     </rule>
     <rule comment="C[T]-V verb_inf" c="example">
