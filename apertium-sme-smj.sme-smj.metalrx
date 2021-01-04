@@ -301,6 +301,210 @@
     </rule>
     
     <rule weight="1.0">
+      <match lemma="njammat">
+        <select lemma="njammat"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="njammat">
+        <select lemma="ruhpat"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="njammat">
+        <select lemma="ruhpat"/>
+      </match>
+            <or>
+      <match tags="n.sem_plc.*.loc.*"/>
+      <match tags="n.sem_plc.*.acc.*"/>
+      <match tags="n.sem_obj-el.*"/>
+      <match tags="n.sem_furn.*"/>
+      <match lemma="ruska"/>
+      <match lemma="doapma"/>
+      <match lemma="gavja"/>
+      </or>
+    </rule>
+    <rule weight="0.6">
+            <or>
+      <match tags="n.sem_plc.*.loc.*"/>
+      <match tags="n.sem_plc.*.acc.*"/>
+      <match tags="n.sem_obj-el.*"/>
+      <match tags="n.sem_furn.*"/>
+      <match lemma="ruska"/>
+      <match lemma="doapma"/>
+      <match lemma="gavja"/>
+      </or>
+      <match lemma="njammat">
+        <select lemma="ruhpat"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="njammat">
+        <select lemma="ruhpat"/>
+      </match>
+        <match/>
+            <or>
+      <match tags="n.sem_plc.*.loc.*"/>
+      <match tags="n.sem_plc.*.acc.*"/>
+      <match tags="n.sem_obj-el.*"/>
+      <match tags="n.sem_furn.*"/>
+      <match lemma="ruska"/>
+      <match lemma="doapma"/>
+      <match lemma="gavja"/>
+      </or>
+    </rule>
+    <rule weight="0.6">
+            <or>
+      <match tags="n.sem_plc.*.loc.*"/>
+      <match tags="n.sem_plc.*.acc.*"/>
+      <match tags="n.sem_obj-el.*"/>
+      <match tags="n.sem_furn.*"/>
+      <match lemma="ruska"/>
+      <match lemma="doapma"/>
+      <match lemma="gavja"/>
+      </or>
+        <match/>
+      <match lemma="njammat">
+        <select lemma="ruhpat"/>
+      </match>
+    </rule>
+
+
+    <rule weight="1.0">
+      <match lemma="gokčat">
+        <select lemma="gåbttjåt"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="gokčat">
+        <select lemma="dahppat"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="gokčat">
+        <select lemma="dahppat"/>
+      </match>
+            <or>
+      <match lemma="uksa"/>
+      <match lemma="lássa"/>
+      <match lemma="glássa"/>
+      <match lemma="láse"/>
+      </or>
+    </rule>
+    <rule weight="0.6">
+            <or>
+      <match lemma="uksa"/>
+      <match lemma="lássa"/>
+      <match lemma="glássa"/>
+      <match lemma="láse"/>
+      </or>
+      <match lemma="gokčat">
+        <select lemma="dahppat"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="gokčat">
+        <select lemma="dahppat"/>
+      </match>
+        <match/>
+            <or>
+      <match lemma="uksa"/>
+      <match lemma="lássa"/>
+      <match lemma="glássa"/>
+      <match lemma="láse"/>
+      </or>
+    </rule>
+    <rule weight="0.6">
+            <or>
+      <match lemma="uksa"/>
+      <match lemma="lássa"/>
+      <match lemma="glássa"/>
+      <match lemma="láse"/>
+      </or>
+        <match/>
+      <match lemma="gokčat">
+        <select lemma="dahppat"/>
+      </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="bivdit">
+        <select lemma="bivddet"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="bivdit">
+        <select lemma="gåhttjot"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match tags="cm"/>
+      <match lemma="bivdit">
+        <select lemma="gåhttjot"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match tags="cm"/>
+      <match tags="*.@SUBJ→"/>
+      <match lemma="bivdit">
+        <select lemma="gåhttjot"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="bivdit">
+        <select lemma="gåhttjot"/>
+      </match>
+      <match tags="np.*.sg.acc.*"/>
+    </rule>
+
+
+    <rule weight="1.0">
+      <match lemma="ruska">
+        <select lemma="ruhtse"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="ruska">
+        <select lemma="ruhke"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match  tags="*.der_dimin.*" lemma="ruska">
+        <select lemma="ruhke"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+    <or>
+      <match lemma="njamistit"/>
+      <match lemma="njammat"/>
+    </or>
+      <match lemma="ruska">
+        <select lemma="ruhke"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="ruska">
+        <select lemma="ruhke"/>
+      </match>
+    <or>
+      <match lemma="njamistit"/>
+      <match lemma="njammat"/>
+    </or>
+    </rule>
+
+    <rule weight="1.0">
       <match lemma="heahti">
         <select lemma="hiehte"/>
       </match>
