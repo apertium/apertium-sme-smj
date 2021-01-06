@@ -431,6 +431,43 @@
       </match>
     </rule>
 
+
+    <rule weight="1.0">
+      <match tags="n.*.sg.loc.*" lemma="eahket">
+        <select lemma="iehkedis"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match tags="n.*.sg.loc.*" lemma="eahket">
+        <select lemma="iehket"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+    <or>
+      <match lemma="šat"/>
+      <match lemma="dárbbašit"/>
+      <match lemma="lávet"/>
+    </or>
+      <match/>
+      <match tags="n.*.sg.loc.*" lemma="eahket">
+        <select lemma="iehket"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+    <or>
+      <match lemma="šat"/>
+      <match lemma="dárbbašit"/>
+      <match lemma="lávet"/>
+    </or>
+      <match tags="n.*.sg.loc.*" lemma="eahket">
+        <select lemma="iehket"/>
+      </match>
+    </rule>
+
+
     <rule weight="1.0">
       <match lemma="bivdit">
         <select lemma="bivddet"/>

@@ -9,6 +9,9 @@
        <cat-item lemma="prosent" tags="NP.@←ADVL"/>
        <cat-item lemma="prosent" tags="NP.@←ADVL.*"/>
     </def-cat>
+    <def-cat n="ajADV">
+       <cat-item lemma="aj" tags="ADV.*"/>
+    </def-cat>
     <def-cat n="SUBJ-OBJr">
       <cat-item tags="*.@OBJ→"/>
       <cat-item tags="*.@SUBJ→"/>
@@ -80,6 +83,19 @@
         <cat-item tags="NP.@ADVL-ine→.*"/>
         <cat-item tags="NP.@←ADVL-ine.*"/>
         <cat-item tags="NP.@ADVL.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela.*"/>
+        <cat-item tags="NP.@-F←ADVL-ela"/>
+        <cat-item tags="NP.@-F←ADVL-ine"/>
+        <cat-item tags="NP.@-F←ADVL-ine.*"/>
+    </def-cat>
+
+    <def-cat n="NP_left">
+        <cat-item tags="NP.@←SUBJ"/>
+        <cat-item tags="NP.@←OBJ"/>
+        <cat-item tags="NP.@-F←OBJ"/>
+        <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="NP.@←ADVL-ela.*"/>
+        <cat-item tags="NP.@←ADVL-ine.*"/>
         <cat-item tags="NP.@-F←ADVL-ela.*"/>
         <cat-item tags="NP.@-F←ADVL-ela"/>
         <cat-item tags="NP.@-F←ADVL-ine"/>
@@ -326,6 +342,30 @@
       </action>
     </rule>
 
+    <rule comment="moves ajADV after NP_left" > 
+      <pattern>
+        <pattern-item n="ajADV"/>
+        <pattern-item n="NP_left"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="moves adverb in front of prosent" > 
       <pattern>
         <pattern-item n="prosent"/>
@@ -383,6 +423,7 @@
         </out>
       </action>
     </rule>
+
     <rule comment="removes empty adv" > 
       <pattern>
         <pattern-item n="emptyadv"/>

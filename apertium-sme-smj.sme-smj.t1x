@@ -3594,8 +3594,7 @@ C[_]-T sent
     </pattern>
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-      <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
-      <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
+      <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let>
 <!--      <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>  remove Px, or should we add ref pronoun? -->
 <!--      <choose>
         <when>
