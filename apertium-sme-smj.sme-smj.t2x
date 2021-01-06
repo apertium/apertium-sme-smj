@@ -102,6 +102,9 @@
     <def-cat n="dovne">
         <cat-item tags="ADV.@→CC"/>
     </def-cat>
+    <def-cat n="post-maŋen">
+        <cat-item lemma="post-maŋen" tags="PP.*"/>
+    </def-cat>
     <def-cat n="CC">
         <cat-item tags="CC.@CNP"/>
         <cat-item tags="SV.*.Neg.Foc_ge"/>
@@ -351,6 +354,35 @@
            <clip pos="3" part="content"/>
            <lit v="}"/>
            <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule>
+
+    <rule comment="REGLA: NP_Po maŋen-post CNP NP_Po maŋen-post"> 
+     <pattern>
+       <pattern-item n="NP_Po"/>
+       <pattern-item n="post-maŋen"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="NP_Po"/>
+       <pattern-item n="post-maŋen"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <get-case-from pos="1"><lit v="coor_PP"/></get-case-from>
+           <clip pos="5" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <b pos="1"/>
+           <clip pos="3" part="content"/>
+           <b pos="2"/>
+           <clip pos="4" part="content"/>
+           <b pos="3"/>
+           <clip pos="5" part="content"/>
+           <b pos="4"/>
+           <lit v="}"/>
+           <clip pos="5" part="lemq"/>
          </chunk>
        </out>
      </action>

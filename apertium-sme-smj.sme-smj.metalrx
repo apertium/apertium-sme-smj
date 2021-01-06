@@ -559,6 +559,81 @@
       </match>
     </rule>
 
+    <rule weight="0.6">
+      <match tags="n.*.sg.loc.*" lemma="heahti">
+        <select lemma="nieda"/>
+      </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="issoras">
+        <select lemma="vasste"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="issoras">
+        <select lemma="sieldes"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match tags="adj.attr.*" lemma="issoras">
+        <select lemma="sieldes"/>
+      </match>
+      <or>
+      <match tags="adj.*"/>
+      <match lemma="dálki"/>
+      </or>
+    </rule>
+
+
+    <rule weight="1.0">
+      <match lemma="coggat">
+        <select lemma="tsåggåt"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="coggat">
+        <select lemma="tjágŋat"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="coggat">
+        <select lemma="tjágŋat"/>
+      </match>
+      <or>
+      <match tags="n.sem_clth.*.acc.*"/>
+      <match tags="n.sem_clth_obj.*.acc.*"/>
+      </or>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="coggat">
+        <select lemma="tjágŋat"/>
+      </match>
+      <match/>
+      <or>
+      <match tags="n.sem_clth.*.acc.*"/>
+      <match tags="n.sem_clth_obj.*.acc.*"/>
+      </or>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="coggat">
+        <select lemma="tjágŋat"/>
+      </match>
+      <match/>
+       <match/>
+     <or>
+      <match tags="n.sem_clth.*.acc.*"/>
+      <match tags="n.sem_clth_obj.*.acc.*"/>
+      </or>
+    </rule>
+
+
     <rule weight="1.0">
       <match lemma="lohkat">
         <select lemma="låhkåt"/>
