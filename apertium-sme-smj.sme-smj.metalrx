@@ -588,6 +588,30 @@
     </rule>
 
 
+
+    <rule weight="1.0">
+      <match lemma="jahkásaš">
+        <select lemma="jahkásasj"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="jahkásaš">
+        <select lemma="jagák"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+    <or>
+          <match tags="num.sg.*"/>
+          <match tags="num.arab.sg.*"/>
+    </or>
+      <match lemma="jahkásaš">
+        <select lemma="jagák"/>
+      </match>
+    </rule>
+
+
     <rule weight="1.0">
       <match lemma="coggat">
         <select lemma="tsåggåt"/>
