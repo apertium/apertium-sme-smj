@@ -1002,6 +1002,9 @@ C[_]-T sent
       <attr-item tags="sem_year"/>
       <attr-item tags="sem_date"/>
     </def-attr>
+    <def-attr n="a_noun_type">
+      <attr-item tags="coll"/>
+    </def-attr>
     <def-attr n="a_npagree_type">
       <attr-item tags="adj.ord"/>
       <attr-item tags="prn.ind"/>
@@ -1118,6 +1121,11 @@ C[_]-T sent
       <attr-item tags="px2pl"/>
       <attr-item tags="px3pl"/>
     </def-attr>
+    <def-attr n="a_pl_poss">
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3pl"/>
+    </def-attr>
     <def-attr n="a_trans">
       <attr-item tags="iv"/>
       <attr-item tags="tv"/>
@@ -1137,6 +1145,8 @@ C[_]-T sent
     </def-attr>
     <def-attr n="a_deriv">
       <attr-item tags="der_dimin"/>
+      <attr-item tags="der_alla"/>
+      <attr-item tags="der_halla"/>
       <attr-item tags="der_aadv"/>
       <attr-item tags="der_caus"/>
       <attr-item tags="der_t"/>
@@ -1164,6 +1174,11 @@ C[_]-T sent
       <attr-item tags="der_car"/>
       <attr-item tags="der_nomact"/>
     </def-attr>
+    <def-attr n="a_deriv2">
+      <attr-item tags="der_dimin"/>
+      <attr-item tags="der_alla"/>
+      <attr-item tags="der_halla"/>
+    </def-attr>
     <def-attr n="a_comp-superl">
       <attr-item tags="comp"/>
       <attr-item tags="sup"/>
@@ -1178,7 +1193,9 @@ C[_]-T sent
       <attr-item tags="cmp_splitr"/>
       <attr-item tags="cmp_cit"/>
     </def-attr>
-
+    <def-attr n="only_cmp">
+      <attr-item tags="cmp"/>
+    </def-attr>
     <def-attr n="a_sem">
       <attr-item tags="sem_act"/>
       <attr-item tags="sem_act_clth"/>
@@ -1850,6 +1867,12 @@ C[_]-T sent
             <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_h"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_d"/></let>
+        </when>
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_halla"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_dalla"/></let>
         </when>
         <when>
           <test><and>
@@ -3808,6 +3831,76 @@ C[_]-T sent
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="foc-1Param"><with-param pos="1"/></call-macro>
+		<choose>
+		<when>
+		<test><and>    
+	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
+	   <equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal>
+		<equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="du"/></equal>
+		<equal><clip pos="1" side="tl" part="a_case"/><lit v=""/></equal>
+		</and></test>
+		<let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg.nom"/></let>
+		</when>
+		<when>
+		<test><and>    
+	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
+	   <equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal>
+		<equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
+		<equal><clip pos="1" side="tl" part="a_case"/><lit v=""/></equal>
+		</and></test>
+		<let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl.nom"/></let>
+		</when>
+		<when>
+		<test><and>    
+	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
+	   <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
+	   <equal><clip pos="1" side="sl" part="a_pl_poss"/><lit v=""/></equal>
+		</and></test>
+		<let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>
+		</when>
+		<when>
+		<test><and>    
+	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
+	   <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
+	   <not><equal><clip pos="1" side="sl" part="a_pl_poss"/><lit v=""/></equal></not>
+		</and></test>
+		<let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
+		<let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>
+		</when>
+		</choose>
+
+<!--		<choose>
+		<when>
+		<test>    
+        <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
+		</test>
+		<let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+       <out>
+          <chunk name="prn" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="1" side="sl" part="a_prn_type"/></tag>
+             <tag><var n="case"/></tag>  
+              <tag><clip pos="1" side="tl" part="a_foc-ge"/></tag> 
+          </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="prn.res"/>
+               <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="nom"/>
+          </lu>
+            <b/>
+            <lu>
+              <lit v="nubbe"/>
+              <lit-tag v="prn.res"/>
+              <clip pos="1" side="sl" part="a_nbr"/>
+              <clip pos="1" side="sl" part="a_case"/>
+            </lu>
+          </chunk>
+       </out>
+		</when>
+		<otherwise> -->
         <out>
           <chunk name="prn" case="caseFirstword">
             <tags>
@@ -3822,6 +3915,8 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+<!--		</otherwise>
+		</choose> -->
       </action>
     </rule>
 
@@ -4555,6 +4650,16 @@ C[_]-T sent
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+		<choose>
+        <when>
+        <test>
+	    <equal><clip pos="2" side="sl" part="a_noun_type"/><lit-tag v="coll"/></equal>
+        </test>
+        <let>
+        <clip pos="1" side="tl" part="only_cmp"/><lit-tag v="cmp_hyph.cmp"/>
+         </let>
+        </when>
+		</choose>
 		<choose>
         <when>
         <test><and>
@@ -5373,6 +5478,18 @@ C[_]-T sent
         <call-macro n="convert-deriv-1Param">
           <with-param pos="1"/>
         </call-macro>
+        <choose>
+        <when>
+          <test><and>
+            <equal><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_d"/></equal>
+            <equal><clip pos="1" side="tl" part="a_deriv2"/><lit-tag v="der_alla"/></equal>
+          </and></test>
+      <let>
+        <clip pos="1" side="tl" part="tags"/><concat>
+        <lit-tag v="vblex.der_dalla.vblex"/><clip pos="1" side="sl" part="a_mood"/><clip pos="1" side="sl" part="a_tense"/><clip pos="1" side="sl" part="a_person"/><clip pos="1" side="sl" part="a_nbr"/></concat>
+      </let>
+        </when>
+        </choose>
         <choose>
 	        <when><test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
             <out>
