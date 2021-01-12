@@ -478,6 +478,7 @@ C[_]-T sent
       <cat-item lemma="jahki" tags="n.sg.gen.*"/>
     </def-cat>
 
+
     <def-cat n="months_n">
       <cat-item lemma="ođđajagemánnu" tags="n.*"/>
       <cat-item lemma="guovvamánnu" tags="n.*"/>
@@ -4801,6 +4802,16 @@ C[_]-T sent
         <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+         </when>
+     <when><test><and><or>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="Ráhkis"/></equal>
+     <equal><clip pos="1" side="sl" part="lem"/><lit v="ráhkis"/></equal>
+     </or>
+     <equal><clip pos="2" side="sl" part="lem"/><lit v="olmmoš"/></equal>
+     </and>
+     </test>
+         <let><clip pos="2" side="tl" part="lem"/><lit v="gájkka"/></let>
+         <let><clip pos="2" side="tl" part="a_PoS"/><lit-tag v="prn.ind"/></let>
          </when>
 
         <when><test><and>
