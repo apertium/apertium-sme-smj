@@ -1712,6 +1712,12 @@ C[_]-T sent
     <def-list n="moveverbs">
       <list-item v="vuolgget"/>
       <list-item v="mannat"/>
+      <list-item v="bisánit"/>
+    </def-list>
+    <def-list n="sme-rek-verbs">
+      <list-item v="lijkkut"/>
+      <list-item v="berustit"/>
+      <list-item v="ballat"/>
     </def-list>
     <def-list n="alphabet">
       <list-item v="aalphabet"/>
@@ -5386,8 +5392,9 @@ C[_]-T sent
 	  <and>
       <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL"/></equal>
       <not><equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal></not>
-      <not><in><clip pos="1" side="tl" part="lem"/><list n="moveverbs"/></in></not></and>
-           </test>
+      <not><in><clip pos="1" side="tl" part="lem"/><list n="moveverbs"/></in></not>
+      <not><in caseless="yes"><var n="current_verb"/><list n="sme-rek-verbs"/></in></not>
+      </and>     </test>
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
      </when>
    <!--     <when c="inf @N←">

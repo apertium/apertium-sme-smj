@@ -606,6 +606,24 @@
       </match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="bisánit">
+        <select lemma="bisánit"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="bisánit">
+        <select lemma="ganugit"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="bisánit">
+        <select lemma="ganugit"/>
+      </match>
+      <match tags="vblex.*.inf.*"/>
+    </rule>
 
 
     <rule weight="1.0">
