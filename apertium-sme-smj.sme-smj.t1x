@@ -1181,8 +1181,8 @@ C[_]-T sent
       <attr-item tags="der_halla"/>
     </def-attr>
     <def-attr n="a_comp-superl">
-      <attr-item tags="comp"/>
-      <attr-item tags="sup"/>
+      <attr-item tags="der_comp"/>
+      <attr-item tags="der_sup"/>
     </def-attr>
     <def-attr n="a_cmp">
       <attr-item tags="cmp_sggen"/>
@@ -3873,6 +3873,11 @@ C[_]-T sent
         <let><var n="chunk_name"/><clip pos="1" side="sl" part="lem"/></let>
         </when>
       </choose>
+      <choose>
+        <when>
+          <test>
+            <not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
+          </test>
         <out>
           <chunk namefrom="chunk_name" case="caseFirstword">
           <tags>
@@ -3884,6 +3889,8 @@ C[_]-T sent
           </lu>
         </chunk>
       </out>
+		</when>
+      </choose>
     </action>
   </rule> 
 
