@@ -302,12 +302,16 @@ C[_]-T sent
       <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
     </def-cat>
 
+    <def-cat n="verb_condFAUXV">
+      <cat-item tags="vblex.*.cond.*.*.@+FAUXV"/> 
+      <cat-item tags="vblex.*.der_inchl.vblex.cond.*.*.@+FAUXV"/>
+    </def-cat>
     <def-cat n="verb_fin">
       <cat-item tags="vblex.*.indic.*"/>
-      <cat-item tags="vblex.*.cond.*"/> 
       <cat-item tags="vblex.*.pot.*"/>
+      <cat-item tags="vblex.*.cond.*.*.@+FMAINV"/> 
+      <cat-item tags="vblex.*.der_inchl.vblex.cond.*.*.@+FMAINV"/>
       <cat-item tags="vblex.*.der_inchl.vblex.indic.*"/>
-      <cat-item tags="vblex.*.der_inchl.vblex.cond.*"/>
       <cat-item tags="vblex.*.der_inchl.vblex.pot.*"/>
     </def-cat>
   <def-cat n="supneg"> 
@@ -1647,6 +1651,7 @@ C[_]-T sent
     </def-attr>
 
     <def-attr n="a_func">
+       <attr-item tags="@+FAUXV"/>
        <attr-item tags="@\+FAUXV"/>
        <attr-item tags="@\+FMAINV"/>
        <attr-item tags="@-F←ADVL"/>
@@ -1914,7 +1919,6 @@ C[_]-T sent
       <list-item v="&lt;sem_hum_tool&gt;"/>
       <list-item v="&lt;sem_hum_tool-catch&gt;"/>
       <list-item v="&lt;sem_hum_tool-it&gt;"/>
-      <list-item v="&lt;sem_hum_veh&gt;"/>
       <list-item v="&lt;sem_hum_wthr&gt;"/>
     </def-list>
 
@@ -3754,7 +3758,7 @@ C[_]-T sent
       </action>
     </rule>
 
-  <rule comment="C[LT]-ADV bealis_px" c="example">
+<!--  <rule comment="C[LT]-ADV bealis_px" c="example">
     <pattern>
       <pattern-item n="bealis_px"/>
     </pattern>
@@ -3778,7 +3782,7 @@ C[_]-T sent
         </chunk>
       </out>
     </action>
-  </rule>
+  </rule> -->
 
   <rule comment="C[_]-ADV adv" c="example">
     <pattern>
@@ -5604,18 +5608,38 @@ C[_]-T sent
         </out>
       </action>
     </rule>
+
+    <rule comment="C[AT]-V verb_condFAUXV" c="example">
+      <pattern>
+        <pattern-item n="verb_condFAUXV"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+            <out>
+              <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                  <tag><var n="vdic"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+        <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
+      </action>
+    </rule> 
+
     
     <rule comment="C[AT]-V verb_fin" c="example">
       <pattern>
         <pattern-item n="verb_fin"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param">
-          <with-param pos="1"/>
-        </call-macro>
-        <call-macro n="convert-deriv-1Param">
-          <with-param pos="1"/>
-        </call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <choose>
         <when>
           <test><and>
@@ -5629,7 +5653,7 @@ C[_]-T sent
         </when>
         </choose>
         <choose>
-	        <when><test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
+               <when><test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>            
             <out>
               <chunk name="liehket_vblex" case="caseFirstword">
                 <tags>

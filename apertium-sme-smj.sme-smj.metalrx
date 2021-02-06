@@ -371,6 +371,61 @@
       </match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="lássa">
+        <select lemma="lássa"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="lássa">
+        <select lemma="vinndek"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="lássa">
+        <select lemma="vinndek"/>
+      </match>
+            <or>
+      <match lemma="gitta"/>
+      <match lemma="gokčat"/>
+      </or>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="lássa">
+        <select lemma="vinndek"/>
+      </match>
+      <match/>
+            <or>
+      <match lemma="gitta"/>
+      <match lemma="gokčat"/>
+      </or>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="lássa">
+        <select lemma="vinndek"/>
+      </match>
+      <match/>
+      <match/>
+            <or>
+      <match lemma="gitta"/>
+      <match lemma="gokčat"/>
+      </or>
+    </rule>
+
+
+    <rule weight="0.6">
+            <or>
+      <match lemma="gitta"/>
+      <match lemma="gokčat"/>
+      </or>
+      <match lemma="lássa">
+        <select lemma="vinndek"/>
+      </match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="gokčat">
