@@ -644,6 +644,9 @@ C[_]-T sent
     <def-cat n="geahččat_vblex">
       <cat-item lemma="geahččat" tags="vblex.*"/>
     </def-cat>
+    <def-cat n="geatnegahttit_vblex">
+      <cat-item lemma="geatnegahttit" tags="vblex.*"/>
+    </def-cat>
 
     <def-cat n="váikkuhit_vblex">
        <cat-item lemma="váikkuhit" tags="vblex.*"/>
@@ -690,8 +693,6 @@ C[_]-T sent
     </def-cat>
 
     <def-cat n="vp_boundary">
-      <cat-item tags="cm"/>
-      <cat-item tags="sent"/>
       <cat-item tags="cnjcoo.@CVP"/>
     </def-cat>
 
@@ -1752,6 +1753,7 @@ C[_]-T sent
     <def-var n="qst"/>
     <def-var n="vblex_nbrpers"/>
     <def-var n="negsup"/>
+    <def-var n="supn_coor"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -1811,6 +1813,9 @@ C[_]-T sent
       <list-item v="lijkkut"/>
       <list-item v="berustit"/>
       <list-item v="ballat"/>
+    </def-list>
+    <def-list n="smj-supn-triggerverbs">
+      <list-item v="dahkat"/>
     </def-list>
     <def-list n="alphabet">
       <list-item v="aalphabet"/>
@@ -5514,12 +5519,24 @@ C[_]-T sent
       <action>
       <choose><when><test>
 	  <and>
+		  <or><and><or>
+      <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←OBJ"/></equal>
+      <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-F←OBJ"/></equal>
+      </or>
+      <or>
+      <equal><var n="supn_coor"/><lit v="supn"/></equal>
+      <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
+      </or>
+      </and>
       <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL"/></equal>
+      </or>
       <not><equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal></not>
       <not><in><clip pos="1" side="tl" part="lem"/><list n="moveverbs"/></in></not>
       <not><in caseless="yes"><var n="current_verb"/><list n="sme-rek-verbs"/></in></not>
-      </and>     </test>
+      </and>     
+      </test>
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
+        <let><var n="supn_coor"/><lit v="supn"/></let>
      </when>
    <!--     <when c="inf @N←">
           <test>
@@ -5530,7 +5547,6 @@ C[_]-T sent
      </choose>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-                               <let><var n="chunk_name"/><lit v="conneg"/></let>
      <choose>
       <when c="neg supn">
           <test>
@@ -5555,6 +5571,39 @@ C[_]-T sent
       </action>
     </rule>
 
+    <rule comment="C[AT]-V geatnegahttit_vblex" c="example">
+      <pattern>
+        <pattern-item n="geatnegahttit_vblex"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+            <out>
+              <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@OPRED→"/></tag>
+                </tags>
+                <lu>
+                  <lit v="vælggogis"/>
+                  <lit-tag v="adj.ess"/>
+                </lu>
+              </chunk>
+                <b />
+              <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                  <tag><var n="vdic"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+        <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
+      </action>
+    </rule> 
 
     <rule comment="C[_]-V verb_prfprc" c="example">
       <pattern>
@@ -5608,6 +5657,9 @@ C[_]-T sent
         </out>
       </action>
     </rule>
+
+
+
 
     <rule comment="C[AT]-V verb_condFAUXV" c="example">
       <pattern>
@@ -5785,6 +5837,10 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+                    <let><var n="qst"/><lit v=""/></let>
+                    <let><var n="current_verb"/><lit v=""/></let>
+                    <let><var n="negsup"/><lit v=""/></let>
+        <let><var n="supn_coor"/><lit v=""/></let>
       </action>
     </rule>
 
@@ -5848,6 +5904,34 @@ C[_]-T sent
         </out>
       </action>
     </rule>
+    
+    <rule comment="C[_] vp_boundary" c="example">
+      <pattern>
+        <pattern-item n="vp_boundary"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param">
+          <with-param pos="1"/>
+        </call-macro> 
+        <out>
+          <chunk name="cnjcoo" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="cnjcoo"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+                    <let><var n="qst"/><lit v=""/></let>
+                    <let><var n="negsup"/><lit v=""/></let>
+	  <let><var n="current_verb"/><lit v=""/></let>  
+        <let><var n="supn_coor"/><lit v=""/></let>
+      </action>
+    </rule>
+    
+    
     <rule comment="C[_] cnjcoo" c="example">
       <pattern>
         <pattern-item n="cnjcoo"/>
@@ -5867,6 +5951,8 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+                    <let><var n="qst"/><lit v=""/></let>
+                    <let><var n="negsup"/><lit v=""/></let>
       </action>
     </rule>
      <rule comment="C[_]-CS cnjsub" c="example">
@@ -5889,6 +5975,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        <let><var n="supn_coor"/><lit v=""/></let>
       </action>
     </rule>
     <rule comment="C[_]-NUM numeral prosent" c="example">
