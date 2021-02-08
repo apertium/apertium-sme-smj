@@ -4190,11 +4190,14 @@ C[_]-T sent
               <and>
              <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
              <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+             <not><equal><clip pos="1" side="tl" part="lem"/><lit v="akta"/></equal></not>
               <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
-              <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+              <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+              <equal><clip pos="1" side="sl" part="a_prn"/><lit v=""/></equal>
              </and>
              </test>
-              <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+              <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+              <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let>
           </when>
            <when> 
             <test><and>
@@ -5581,7 +5584,7 @@ C[_]-T sent
             <out>
               <chunk name="vblex" case="caseFirstword">
                 <tags>
-                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="NP"/></tag>
                   <tag><lit-tag v="@OPRED→"/></tag>
                 </tags>
                 <lu>

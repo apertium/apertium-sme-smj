@@ -161,6 +161,15 @@
         <cat-item tags="NP.@OBJ→"/>
         <cat-item tags="NP.@←OBJ"/>
     </def-cat>
+    <def-cat n="NP_Obj_l">
+        <cat-item tags="*.@←OBJ.*"/>
+        <cat-item tags="NP.@←OBJ.*"/>
+        <cat-item tags="*.@←OBJ"/>
+    </def-cat>
+    <def-cat n="NP_Opred_r">
+        <cat-item tags="*.OPRED→.*"/>
+        <cat-item tags="NP.OPRED→"/>
+    </def-cat>
     
     <def-cat n="NP_Pr">
         <cat-item tags="NP.@←ADVL.*"/>
@@ -715,6 +724,45 @@
       </action>
     </rule>
 
+   <rule comment="FAuxV NP_Opred_r IMainV NP_Obj_l" > 
+      <pattern>
+        <pattern-item n="FAuxV"/>
+        <pattern-item n="NP_Opred_r"/>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="NP_Obj_l"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="3"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
 
 
     
