@@ -35,6 +35,10 @@
       <cat-item lemma="cop-mainv" tags="SV.@+FMAINV"/>
     </def-cat>
 
+    <def-cat n="Cop-mainv">
+      <cat-item lemma="Cop-mainv" tags="SV.@+FMAINV"/>
+    </def-cat>
+
     <def-cat n="intWORD">
       <cat-item tags="*.@←SUBJ"/>
       <cat-item tags="*.@SUBJ→"/>
@@ -154,6 +158,13 @@
         <cat-item tags="NP.@SUBJ→.*"/>
         <cat-item tags="NP.@←SUBJ.*"/>
     </def-cat>
+
+    <def-cat n="NPSubjr">
+        <cat-item tags="NP.@SUBJ→"/>
+    </def-cat>
+    <def-cat n="NPSpredl">
+        <cat-item tags="NP.@←SPRED"/>
+    </def-cat>
     
     <def-cat n="NP_Obj">
         <cat-item tags="NP.@OBJ→.*"/>
@@ -213,20 +224,20 @@
     </def-cat>
     
     <def-cat n="FMainV">
-        <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
-        <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
-        <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
-        <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
+        <cat-item tags="SV.@+FMAINV"/>
+        <cat-item tags="SV.@+FMAINV.*"/>
+        <cat-item tags="SV.*.@+FMAINV.*"/>
+        <cat-item tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
     <def-cat n="FV">
-        <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
-        <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
-        <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
-        <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
-        <cat-item lemma="vblex" tags="SV.@+FAUXV"/>
-        <cat-item lemma="vblex" tags="SV.@+FAUXV.*"/>
-        <cat-item lemma="vblex" tags="SV.*.@+FAUXV.*"/>
-        <cat-item lemma="vblex" tags="SV.*.*.@+FAUXV.*"/>
+        <cat-item tags="SV.@+FMAINV"/>
+        <cat-item tags="SV.@+FMAINV.*"/>
+        <cat-item tags="SV.*.@+FMAINV.*"/>
+        <cat-item tags="SV.*.*.@+FMAINV.*"/>
+        <cat-item tags="SV.@+FAUXV"/>
+        <cat-item tags="SV.@+FAUXV.*"/>
+        <cat-item tags="SV.*.@+FAUXV.*"/>
+        <cat-item tags="SV.*.*.@+FAUXV.*"/>
         <cat-item lemma="mainverb" tags="SV.@+FMAINV"/>
         <cat-item lemma="mainverb" tags="SV.@+FMAINV.*"/>
         <cat-item lemma="mainverb" tags="SV.*.@+FMAINV.*"/>
@@ -491,6 +502,64 @@
             <clip pos="2" part="tags"/>
             <clip pos="2" part="chcontent"/>
             <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="SUBJr FMainV bytter plass" >  
+      <pattern>
+        <pattern-item n="ADVLqst"/>
+        <pattern-item n="NPSubjr"/>
+        <pattern-item n="FMainV"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="Cop-mainv ←SPRED bytter plass" >  
+      <pattern>
+        <pattern-item n="Cop-mainv"/>
+        <pattern-item n="NPSpredl"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
           </chunk>
         </out>
       </action>

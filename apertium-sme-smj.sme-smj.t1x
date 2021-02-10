@@ -4798,7 +4798,7 @@ C[_]-T sent
         <clip pos="1" side="tl" part="only_cmp"/><lit-tag v="cmp_hyph.cmp"/>
          </let>
         </when>
-        <when>
+<!--        <when>
         <test><and>
 	    <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_nomact"/></equal>
 	    <equal><clip pos="1" side="sl" part="a_cmp"/><lit-tag v="cmp_sgnom"/></equal>
@@ -4806,7 +4806,7 @@ C[_]-T sent
         <let>
         <clip pos="1" side="tl" part="a_cmp"/><lit-tag v="cmp_sh"/>
          </let>
-        </when>
+        </when> -->
 		</choose>
 		<choose>
         <when>
