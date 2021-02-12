@@ -2477,7 +2477,7 @@ C[_]-T sent
         <pattern-item n="váldit_particle"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
        <choose>
          <when><test><equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="inf"/></equal></test>
                       <let><var n="chunk_name"/><lit v="inf"/></let>
@@ -2510,7 +2510,7 @@ C[_]-T sent
         <pattern-item n="guovddáš_n"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
        <choose>
          <when><test><equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="inf"/></equal></test>
                       <let><var n="chunk_name"/><lit v="inf"/></let>
@@ -2543,13 +2543,13 @@ C[_]-T sent
         <pattern-item n="dihte_post"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
          <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
          <out>
-          <chunk namefrom="chunk_name" case="caseFirstword">
+          <chunk name="vblex" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-              <tag><var n="func"/></tag>
+              <tag><clip pos="2" side="sl" part="a_func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -2565,9 +2565,9 @@ C[_]-T sent
         <pattern-item n="alde_post"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
          <out>
-          <chunk namefrom="chunk_name" case="caseFirstword">
+          <chunk name="vblex" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -5479,8 +5479,22 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+<!--        <choose>
+          <when>
+            <test><and>
+             <equal><clip pos="1" side="sl" part="a_mood"/><lit-tag v="indic"/></equal>
+             <equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pres"/></equal>
+             <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+             <equal><clip pos="1" side="sl" part="a_person"/><lit-tag v="p3"/></equal>
+       </and></test>
+         <let><var n="chunk_name"/><lit v="cop-auxvclt"/></let>
+          </when>
+          <otherwise> -->
+         <let><var n="chunk_name"/><lit v="cop-aux"/></let>
+ <!--         </otherwise>
+        </choose> -->
        <out>
-          <chunk name="cop-auxv" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
