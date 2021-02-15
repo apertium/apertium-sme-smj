@@ -74,6 +74,9 @@
         <cat-item tags="NP.@-F←OBJ.*"/>
         <cat-item tags="NP.@-F←OBJ"/>
     </def-cat>
+    <def-cat n="l-clt">
+        <cat-item lemma="cop-auxvclt" tags="SV.*"/>
+    </def-cat>
  
      <def-cat n="word">
     <cat-item  tags="*"/>
@@ -1193,6 +1196,24 @@
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
           </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="experiment for å legge til l/la clt">
+      <pattern>  
+        <pattern-item n="word"/>
+        <pattern-item n="l-clt"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+                  <lit-tag v="clt"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
         </out>
       </action>
     </rule>

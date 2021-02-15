@@ -2,11 +2,15 @@
 <!-- -*- nxml -*- -->
 <postchunk>
   <section-def-cats>
-    <def-cat n="cop-auxv">
+    <def-cat n="cop-v"> 
+      <cat-item name="cop-mainv"/>
       <cat-item name="cop-auxv"/>
     </def-cat>
     <def-cat n="nom2">
       <cat-item name="genmod_nom"/>
+    </def-cat>
+    <def-cat n="l-clt">
+      <cat-item name="noun"/>
     </def-cat>
 
     <def-cat n="nom1">
@@ -25,10 +29,22 @@
       <attr-item tags="cond"/>
       <attr-item tags="indic"/>
     </def-attr>
-    <def-attr n="nbr">
+    <def-attr n="a_nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
       <attr-item tags="nn"/>
+    </def-attr>
+    <def-attr n="a_person">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+    <def-attr n="a_tense">
+      <attr-item tags="pres"/>
+      <attr-item tags="pret"/>
+    </def-attr>
+    <def-attr n="clt">
+      <attr-item tags="clt"/>
     </def-attr>
   </section-def-attrs>
 
@@ -39,15 +55,18 @@
 
   <section-rules>
 
-    <rule comment="CHUNK:cop-auxv">
+    <rule comment="CHUNK:cop-v">
       <pattern>
-        <pattern-item n="cop-auxv"/>
+        <pattern-item n="cop-v"/>
       </pattern>
       <action>
    <choose>
           <when>
-            <test><and>
+            <test><and><or>
+	        <equal><clip pos="0" part="lem"/><lit v="Cop-mainv"/></equal>
 	        <equal><clip pos="0" part="lem"/><lit v="Cop-auxv"/></equal>
+	        <equal><clip pos="0" part="lem"/><lit v="Cop-auxvclt"/></equal>
+	        </or>
 	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="pot"/></equal></not>
 	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="imp"/></equal></not>
             
@@ -73,6 +92,7 @@
     </rule>
 
 
+
     <rule comment="CHUNK:">
       <pattern>
         <pattern-item n="nom1"/>
@@ -84,20 +104,20 @@
             <and>
               <not>
                 <equal>
-                  <clip pos="1" part="nbr"/>
+                  <clip pos="1" part="a_nbr"/>
                   <lit-tag v="sg"/>
                 </equal>
               </not>
               <not>
                 <equal>
-                  <clip pos="1" part="nbr"/>
+                  <clip pos="1" part="a_nbr"/>
                   <lit-tag v="pl"/>
                 </equal>
               </not>
              </and>
           </test>
           <let>
-            <clip pos="1" part="nbr"/>
+            <clip pos="1" part="a_nbr"/>
             <lit v=""/>
           </let>
         </when>
@@ -121,20 +141,20 @@
             <and>
               <not>
                 <equal>
-                  <clip pos="2" part="nbr"/>
+                  <clip pos="2" part="a_nbr"/>
                   <lit-tag v="sg"/>
                 </equal>
               </not>
               <not>
                 <equal>
-                  <clip pos="2" part="nbr"/>
+                  <clip pos="2" part="a_nbr"/>
                   <lit-tag v="pl"/>
                 </equal>
               </not>
              </and>
           </test>
           <let>
-            <clip pos="2" part="nbr"/>
+            <clip pos="2" part="a_nbr"/>
             <lit v=""/>
           </let>
         </when>
@@ -150,6 +170,34 @@
         </out>
       </action>
     </rule>
+<!--    <rule comment="experiment for å legge til l/la clt"> 
+      <pattern>
+        <pattern-item n="l-clt"/>
+      </pattern>
+      <action>
+	      <choose>
+          <when>
+            <test>
+	        <equal><clip pos="0" part="clt"/><lit-tag v="clt"/></equal>            
+            </test>
+            <out>
+              <lu>
+                <clip pos="1" part="lemh"/>
+                <clip pos="1" part="tags"/>
+                  <lit-tag v="clt"/>
+              </lu>
+            </out>
+          </when>
+          <otherwise>
+            <out>
+              <lu>
+            <clip pos="1" part="whole"/>
+              </lu>
+            </out>
+          </otherwise>
+	      </choose>
+      </action>
+    </rule> -->
 
 
   </section-rules>
