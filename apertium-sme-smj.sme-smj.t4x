@@ -1199,8 +1199,9 @@
         </out>
       </action>
     </rule>
+
     <rule comment="experiment for å legge til l/la clt">
-      <pattern>  
+      <pattern>
         <pattern-item n="word"/>
         <pattern-item n="l-clt"/>
       </pattern>
@@ -1209,7 +1210,7 @@
           <chunk>
             <clip pos="1" part="lemh"/>
             <clip pos="1" part="tags"/>
-                  <lit-tag v="clt"/>
+            <lit-tag v="clt"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
           </chunk>
