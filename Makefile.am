@@ -38,6 +38,12 @@ TARGETS_COMMON =			\
 # This include desmees goals for install-modes, .deps/.d and .mode files:
 @ap_include@
 
+nouns-sme-smj: dev/nouns-sme-smj/$(PREFIX1).rlx.bin modes/nouns-sme-smj.mode
+
+dev/nouns-sme-smj/$(PREFIX1).rlx.bin: dev/nouns-sme-smj/$(BASENAME).$(PREFIX1).rlx
+	cg-comp $< $@
+
+
 ###############################################################################
 ## Monolingual transducers
 ###############################################################################
