@@ -622,14 +622,14 @@
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
           </chunk>
-          <b />
+          <b pos="1"/>
           <chunk>
             <clip pos="3" part="lemh"/>
             <clip pos="3" part="tags"/>
             <clip pos="3" part="chcontent"/>
             <clip pos="3" part="lemq"/>
           </chunk>
-          <b />
+          <b pos="2"/>
           <chunk>
             <clip pos="2" part="lemh"/>
             <clip pos="2" part="tags"/>
