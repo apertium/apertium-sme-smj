@@ -4611,7 +4611,7 @@ C[_]-T sent
           <with-param pos="1"/>
         </call-macro>
         <let><clip pos="1" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
-        <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+<!--        <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> -->
         <choose><when><test>
         <equal><clip pos="1" side="tl" part="a_num_type"/><lit-tag v="arab"/></equal></test>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
@@ -4985,13 +4985,24 @@ C[_]-T sent
         </when>
       </choose>  
         <let><clip pos="1" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
-      <choose><when>
+      <choose>
+	      <when>
 	  <test><and>
        <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
 	  <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
       </and></test>
 	  <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
-	  </when></choose>
+	  </when>
+	      <when>
+	  <test><and>
+       <equal><var n="current_verb"/><lit v="válldet"/></equal>
+	  <equal><clip pos="2" side="tl" part="lem"/><lit v="giehta"/></equal>	      
+	  <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="ill"/></equal>	      
+      </and></test>
+	  <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ela"/></let>	      
+	  </when>
+	  
+	  </choose>
       <choose>  
           <when>
             <test><and><or>
@@ -5509,20 +5520,20 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <choose> <!-- experiment for å legge til l/la clt -->
+<!--        <choose> experiment for å legge til l/la clt
           <when>
             <test><and>
-              <equal><clip pos="1" side="sl" part="a_mood"/><lit-tag v="indic"/></equal>
-              <equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pres"/></equal>
-              <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
-              <equal><clip pos="1" side="sl" part="a_person"/><lit-tag v="p3"/></equal>
-            </and></test>
-            <let><var n="chunk_name"/><lit v="cop-auxvclt"/></let>
+             <equal><clip pos="1" side="sl" part="a_mood"/><lit-tag v="indic"/></equal>
+             <equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pres"/></equal>
+             <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+             <equal><clip pos="1" side="sl" part="a_person"/><lit-tag v="p3"/></equal>
+       </and></test>
+         <let><var n="chunk_name"/><lit v="cop-auxvclt"/></let>
           </when>
-          <otherwise>
-            <let><var n="chunk_name"/><lit v="cop-auxv"/></let>
-          </otherwise>
-        </choose>
+          <otherwise> -->
+         <let><var n="chunk_name"/><lit v="cop-auxv"/></let>
+ <!--         </otherwise>
+        </choose> -->
        <out>
           <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>

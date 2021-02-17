@@ -2,7 +2,7 @@
 <!-- -*- nxml -*- -->
 <postchunk>
   <section-def-cats>
-    <def-cat n="cop-v">
+    <def-cat n="cop-v"> 
       <cat-item name="cop-mainv"/>
       <cat-item name="cop-auxv"/>
     </def-cat>
@@ -49,8 +49,6 @@
   </section-def-attrs>
 
   <section-def-vars>
-    <def-var n="count"/>
-    <def-var n="clt_tag"/>
     <def-var n="paraula"/>
   </section-def-vars>
 
@@ -71,7 +69,7 @@
 	        </or>
 	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="pot"/></equal></not>
 	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="imp"/></equal></not>
-
+            
             </and></test>
             <out>
               <lu>
@@ -172,81 +170,34 @@
         </out>
       </action>
     </rule>
-
-    <rule comment="experiment for å legge til l/la clt">
+<!--    <rule comment="experiment for å legge til l/la clt"> 
       <pattern>
         <pattern-item n="l-clt"/>
       </pattern>
       <action>
-        <choose>
+	      <choose>
           <when>
-            <test><equal><lu-count/><lit v="1"/></equal></test>
+            <test>
+	        <equal><clip pos="0" part="clt"/><lit-tag v="clt"/></equal>            
+            </test>
             <out>
               <lu>
                 <clip pos="1" part="lemh"/>
                 <clip pos="1" part="tags"/>
-                <clip pos="0" part="clt"/>
-                <clip pos="1" part="lemq"/>
+                  <lit-tag v="clt"/>
               </lu>
             </out>
           </when>
-          <when>
-            <test><equal><lu-count/><lit v="2"/></equal></test>
+          <otherwise>
             <out>
-              <lu><clip pos="1" part="whole"/></lu><b pos="1"/>
               <lu>
-                <clip pos="2" part="lemh"/>
-                <clip pos="2" part="tags"/>
-                <clip pos="0" part="clt"/>
-                <clip pos="2" part="lemq"/>
+            <clip pos="1" part="whole"/>
               </lu>
             </out>
-          </when>
-          <when>
-            <test><equal><lu-count/><lit v="3"/></equal></test>
-            <out>
-              <lu><clip pos="1" part="whole"/></lu><b pos="1"/>
-              <lu><clip pos="2" part="whole"/></lu><b pos="2"/>
-              <lu>
-                <clip pos="3" part="lemh"/>
-                <clip pos="3" part="tags"/>
-                <clip pos="0" part="clt"/>
-                <clip pos="3" part="lemq"/>
-              </lu>
-            </out>
-          </when>
-          <when>
-            <test><equal><lu-count/><lit v="4"/></equal></test>
-            <out>
-              <lu><clip pos="1" part="whole"/></lu><b pos="1"/>
-              <lu><clip pos="2" part="whole"/></lu><b pos="2"/>
-              <lu><clip pos="3" part="whole"/></lu><b pos="3"/>
-              <lu>
-                <clip pos="4" part="lemh"/>
-                <clip pos="4" part="tags"/>
-                <clip pos="0" part="clt"/>
-                <clip pos="4" part="lemq"/>
-              </lu>
-            </out>
-          </when>
-          <when>
-            <test><equal><lu-count/><lit v="5"/></equal></test>
-            <out>
-              <lu><clip pos="1" part="whole"/></lu><b pos="1"/>
-              <lu><clip pos="2" part="whole"/></lu><b pos="2"/>
-              <lu><clip pos="3" part="whole"/></lu><b pos="3"/>
-              <lu><clip pos="4" part="whole"/></lu><b pos="4"/>
-              <lu>
-                <clip pos="5" part="lemh"/>
-                <clip pos="5" part="tags"/>
-                <clip pos="0" part="clt"/>
-                <clip pos="5" part="lemq"/>
-              </lu>
-            </out>
-          </when>
-        </choose>
+          </otherwise>
+	      </choose>
       </action>
-    </rule>
+    </rule> -->
 
 
   </section-rules>

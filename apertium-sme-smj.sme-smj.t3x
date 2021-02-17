@@ -65,6 +65,14 @@
         <cat-item tags="NP.@←OBJ.*"/>
     </def-cat>
 
+    <def-cat n="NP_gen">
+        <cat-item tags="NP.*"/>
+    </def-cat>
+
+    <def-cat n="cop-mainv">
+        <cat-item lemma="cop-mainv" tags="SV.*"/>
+    </def-cat>
+
     <def-cat n="NP_Pr">
         <cat-item tags="NP.@←ADVL.*"/>
         <cat-item tags="NP.@←ADVL-ela.*"/>
@@ -74,6 +82,12 @@
         <cat-item tags="NP.@-F←ADVL-ine"/>
         <cat-item tags="NP.@-F←ADVL-ine.*"/>
   </def-cat>
+
+
+    <def-cat n="ADVL_ine_r">
+        <cat-item tags="NP.@ADVL-ine→.*"/>
+        <cat-item tags="NP.@ADVL-ine→"/>
+    </def-cat>
 
     <def-cat n="NP_Advl">
         <cat-item tags="NP.@ADVL→.*"/>
@@ -342,12 +356,49 @@
       </action>
     </rule>
 
+
+
     <rule comment="moves ajADV after NP_left" > 
       <pattern>
         <pattern-item n="ajADV"/>
-        <pattern-item n="NP_left"/>
+        <pattern-item n="ADVL_ine_r"/>
+        <pattern-item n="cop-mainv"/>
       </pattern>
       <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="moves ajADV after NP_left" > 
+      <pattern>
+        <pattern-item n="ajADV"/>
+        <pattern-item n="NP_gen"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
         <chunk>
             <clip pos="2" part="lemh"/>
