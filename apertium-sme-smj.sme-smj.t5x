@@ -5,6 +5,8 @@
     <def-cat n="cop-v">
       <cat-item name="cop-mainv"/>
       <cat-item name="cop-auxv"/>
+      <cat-item name="cop-mainvclt"/>
+      <cat-item name="cop-auxvclt"/>
     </def-cat>
     <def-cat n="nom2">
       <cat-item name="genmod_nom"/>
@@ -68,6 +70,7 @@
           <when>
             <test><and><or>
 	        <equal><clip pos="0" part="lem"/><lit v="Cop-mainv"/></equal>
+	        <equal><clip pos="0" part="lem"/><lit v="Cop-mainvclt"/></equal>
 	        <equal><clip pos="0" part="lem"/><lit v="Cop-auxv"/></equal>
 	        <equal><clip pos="0" part="lem"/><lit v="Cop-auxvclt"/></equal>
 	        </or>

@@ -82,7 +82,10 @@
     </def-cat>
  
      <def-cat n="word">
-    <cat-item  tags="*"/>
+    <cat-item  tags="SV.*"/>
+    <cat-item  tags="NP.*"/>
+    <cat-item  tags="ADV.*"/>
+    <cat-item  tags="PP.*"/>
     </def-cat>
 
     

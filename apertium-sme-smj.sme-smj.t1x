@@ -5606,6 +5606,7 @@ C[_]-T sent
         <pattern-item n="verb_inf"/>
       </pattern>
       <action>
+         <let><var n="chunk_name"/><lit v="vblex"/></let>
       <choose><when><test>
 	  <and>
 		  <or><and><or>
