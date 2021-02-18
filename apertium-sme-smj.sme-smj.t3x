@@ -71,6 +71,7 @@
 
     <def-cat n="cop-mainv">
         <cat-item lemma="cop-mainv" tags="SV.*"/>
+        <cat-item lemma="cop-mainvclt" tags="SV.*"/>
     </def-cat>
 
     <def-cat n="NP_Pr">

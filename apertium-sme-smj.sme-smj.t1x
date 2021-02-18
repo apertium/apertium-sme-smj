@@ -2839,7 +2839,7 @@ C[_]-T sent
 
  
   
-  <rule comment="C[_]-PHR noun_nom leat_main geatnegahtton_adj" c="geatnegahtton=bákkulasj: Skuvla lea geatnegahtton"> 
+<!--  <rule comment="C[_]-PHR noun_nom leat_main geatnegahtton_adj" c="geatnegahtton=bákkulasj: Skuvla lea geatnegahtton"> 
       <pattern>
         <pattern-item n="noun_nom"/>
         <pattern-item n="leat_main"/>
@@ -2867,7 +2867,7 @@ C[_]-T sent
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
   
     <rule comment="C[T]-N ind_prn_neg removes Foc"  c="example">
       <pattern>
@@ -2897,8 +2897,22 @@ C[_]-T sent
         <call-macro n="general-macro-1Param">
           <with-param pos="1"/>
         </call-macro>
+        <choose> <!-- experiment for å legge til l/la clt -->
+          <when>
+            <test><and>
+             <equal><clip pos="1" side="sl" part="a_mood"/><lit-tag v="indic"/></equal>
+             <equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pres"/></equal>
+             <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+             <equal><clip pos="1" side="sl" part="a_person"/><lit-tag v="p3"/></equal>
+       </and></test>
+         <let><var n="chunk_name"/><lit v="cop-mainvclt"/></let>
+          </when>
+          <otherwise> 
+         <let><var n="chunk_name"/><lit v="cop-mainv"/></let>
+         </otherwise>
+        </choose> 
         <out>
-          <chunk name="cop-mainv" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>

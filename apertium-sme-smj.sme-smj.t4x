@@ -33,10 +33,12 @@
     </def-cat>
     <def-cat n="cop-mainv">
       <cat-item lemma="cop-mainv" tags="SV.@+FMAINV"/>
+      <cat-item lemma="cop-mainvclt" tags="SV.@+FMAINV"/>
     </def-cat>
 
     <def-cat n="Cop-mainv">
       <cat-item lemma="Cop-mainv" tags="SV.@+FMAINV"/>
+      <cat-item lemma="Cop-mainvclt" tags="SV.@+FMAINV"/>
     </def-cat>
 
     <def-cat n="intWORD">
@@ -76,6 +78,7 @@
     </def-cat>
     <def-cat n="l-clt">
         <cat-item lemma="cop-auxvclt" tags="SV.*"/>
+        <cat-item lemma="cop-mainvclt" tags="SV.*"/>
     </def-cat>
  
      <def-cat n="word">
