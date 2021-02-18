@@ -12,6 +12,7 @@
     <def-cat n="l-clt">
       <cat-item name="noun"/>
       <cat-item name="prn"/>
+      <cat-item name="vblex"/>
     </def-cat>
 
     <def-cat n="nom1">
