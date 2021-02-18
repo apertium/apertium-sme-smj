@@ -2255,6 +2255,13 @@ C[_]-T sent
       </choose>
 
       <choose>
+        <when c="M[T] remove cond when conneg">
+          <test><and>
+	          <equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal>
+	          <equal><clip pos="1" side="tl" part="a_infin"/><lit-tag v="conneg"/></equal>
+	          </and></test>
+          <let><clip pos="1" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
+        </when>
         <when c="M[T] remove tense when cond">
           <test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>
           <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
