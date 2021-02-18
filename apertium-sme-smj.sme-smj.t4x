@@ -520,6 +520,37 @@
       <pattern>
         <pattern-item n="ADVLqst"/>
         <pattern-item n="NPSubjr"/>
+        <pattern-item n="l-clt"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <lit-tag v="clt"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
+      </action>
+    </rule>
+
+
+    <rule comment="SUBJr FMainV bytter plass" >  
+      <pattern>
+        <pattern-item n="ADVLqst"/>
+        <pattern-item n="NPSubjr"/>
         <pattern-item n="FMainV"/>
       </pattern>
       <action>
@@ -547,7 +578,6 @@
         </out>
       </action>
     </rule>
-
 
 
     <rule comment="Cop-mainv ←SPRED bytter plass" >  
@@ -1220,8 +1250,11 @@
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
           </chunk>
-          <b pos="1"/>
         </out>
+      <choose><when>
+        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
       </action>
     </rule>
 
