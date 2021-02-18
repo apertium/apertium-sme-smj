@@ -183,10 +183,8 @@
             <test><equal><lu-count/><lit v="1"/></equal></test>
             <out>
               <lu>
-                <clip pos="1" part="lemh"/>
-                <clip pos="1" part="tags"/>
+                <clip pos="1" part="whole"/>
                 <clip pos="0" part="clt"/>
-                <clip pos="1" part="lemq"/>
               </lu>
             </out>
           </when>
@@ -195,10 +193,8 @@
             <out>
               <lu><clip pos="1" part="whole"/></lu><b pos="1"/>
               <lu>
-                <clip pos="2" part="lemh"/>
-                <clip pos="2" part="tags"/>
+                <clip pos="2" part="whole"/>
                 <clip pos="0" part="clt"/>
-                <clip pos="2" part="lemq"/>
               </lu>
             </out>
           </when>
@@ -208,10 +204,8 @@
               <lu><clip pos="1" part="whole"/></lu><b pos="1"/>
               <lu><clip pos="2" part="whole"/></lu><b pos="2"/>
               <lu>
-                <clip pos="3" part="lemh"/>
-                <clip pos="3" part="tags"/>
+                <clip pos="3" part="whole"/>
                 <clip pos="0" part="clt"/>
-                <clip pos="3" part="lemq"/>
               </lu>
             </out>
           </when>
@@ -222,10 +216,8 @@
               <lu><clip pos="2" part="whole"/></lu><b pos="2"/>
               <lu><clip pos="3" part="whole"/></lu><b pos="3"/>
               <lu>
-                <clip pos="4" part="lemh"/>
-                <clip pos="4" part="tags"/>
+                <clip pos="4" part="whole"/>
                 <clip pos="0" part="clt"/>
-                <clip pos="4" part="lemq"/>
               </lu>
             </out>
           </when>
@@ -237,10 +229,8 @@
               <lu><clip pos="3" part="whole"/></lu><b pos="3"/>
               <lu><clip pos="4" part="whole"/></lu><b pos="4"/>
               <lu>
-                <clip pos="5" part="lemh"/>
-                <clip pos="5" part="tags"/>
+                <clip pos="5" part="whole"/>
                 <clip pos="0" part="clt"/>
-                <clip pos="5" part="lemq"/>
               </lu>
             </out>
           </when>
