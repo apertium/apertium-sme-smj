@@ -5528,7 +5528,7 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-<!--        <choose> experiment for å legge til l/la clt
+        <choose> <!-- experiment for å legge til l/la clt -->
           <when>
             <test><and>
              <equal><clip pos="1" side="sl" part="a_mood"/><lit-tag v="indic"/></equal>
@@ -5538,10 +5538,10 @@ C[_]-T sent
        </and></test>
          <let><var n="chunk_name"/><lit v="cop-auxvclt"/></let>
           </when>
-          <otherwise> -->
+          <otherwise> 
          <let><var n="chunk_name"/><lit v="cop-auxv"/></let>
- <!--         </otherwise>
-        </choose> -->
+         </otherwise>
+        </choose> 
        <out>
           <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
