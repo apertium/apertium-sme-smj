@@ -277,6 +277,23 @@
     </rule>
 
     <rule weight="1.0">
+      <match lemma="vejolašvuohta" tags="n.*"><select lemma="máhttelisvuohta"/></match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="vejolašvuohta" tags="n.*"><select lemma="vádá"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="vejolašvuohta" tags="n.*"><select lemma="vádá"/></match>
+      <or>
+      <match lemma="dárbbašit"/>
+      <match lemma="jápmit"/>
+      <match lemma="buohccát"/>
+      <match lemma="geavvat"/>
+      </or>
+    </rule>
+
+    <rule weight="1.0">
       <match lemma="lávdegoddi">
         <select lemma="juogos"/>
       </match>
