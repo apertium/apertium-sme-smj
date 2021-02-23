@@ -55,8 +55,8 @@
       <attr-item tags="pres"/>
       <attr-item tags="pret"/>
     </def-attr>
-    <def-attr n="clt">
-      <attr-item tags="clt"/>
+    <def-attr n="cltl">
+      <attr-item tags="cltl"/>
     </def-attr>
   </section-def-attrs>
 
@@ -197,7 +197,7 @@
             <out>
               <lu>
                 <clip pos="1" part="whole"/>
-                <clip pos="0" part="clt"/>
+                <clip pos="0" part="cltl"/>
               </lu>
             </out>
           </when>
@@ -207,7 +207,7 @@
               <lu><clip pos="1" part="whole"/></lu><b pos="1"/>
               <lu>
                 <clip pos="2" part="whole"/>
-                <clip pos="0" part="clt"/>
+                <clip pos="0" part="cltl"/>
               </lu>
             </out>
           </when>
@@ -218,7 +218,7 @@
               <lu><clip pos="2" part="whole"/></lu><b pos="2"/>
               <lu>
                 <clip pos="3" part="whole"/>
-                <clip pos="0" part="clt"/>
+                <clip pos="0" part="cltl"/>
               </lu>
             </out>
           </when>
@@ -230,7 +230,7 @@
               <lu><clip pos="3" part="whole"/></lu><b pos="3"/>
               <lu>
                 <clip pos="4" part="whole"/>
-                <clip pos="0" part="clt"/>
+                <clip pos="0" part="cltl"/>
               </lu>
             </out>
           </when>
@@ -243,7 +243,7 @@
               <lu><clip pos="4" part="whole"/></lu><b pos="4"/>
               <lu>
                 <clip pos="5" part="whole"/>
-                <clip pos="0" part="clt"/>
+                <clip pos="0" part="cltl"/>
               </lu>
             </out>
           </when>

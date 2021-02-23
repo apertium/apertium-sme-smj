@@ -527,7 +527,7 @@
         <chunk>
             <clip pos="1" part="lemh"/>
             <clip pos="1" part="tags"/>
-            <lit-tag v="clt"/>
+            <lit-tag v="cltl"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
           </chunk>
@@ -604,7 +604,7 @@
       </action>
     </rule>
 
-    <rule comment="moves mainverb after go" >
+<!--    <rule comment="moves mainverb after go" >
       <pattern>
         <pattern-item n="subsent"/>
         <pattern-item n="FMainV"/>
@@ -642,7 +642,7 @@
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
 
     <rule comment="moves mainverb after go" >
       <pattern>
@@ -1246,14 +1246,14 @@
           <chunk>
             <clip pos="1" part="lemh"/>
             <clip pos="1" part="tags"/>
-            <lit-tag v="clt"/>
+            <lit-tag v="cltl"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
           </chunk>
         </out>
       <choose><when>
         <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
-        <out><b pos="2"/></out>
+        <out><b pos="1"/></out>
       </when></choose>
       </action>
     </rule>

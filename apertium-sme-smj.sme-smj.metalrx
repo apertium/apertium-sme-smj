@@ -265,15 +265,15 @@
       </match>
     </rule>
     <rule weight="1.0">
-      <match lemma="gierdi" tags="n.*"><select lemma="gierdde"/></match>
+      <match lemma="geardi" tags="n.*"><select lemma="gierdde"/></match>
     </rule>
 
     <rule weight="0.5">
-      <match lemma="gierdi" tags="n.*"><select lemma="bálle"/></match>
+      <match lemma="geardi" tags="n.*"><select lemma="bálle"/></match>
     </rule>
     <rule weight="0.6">
       <match tags="adj.ord.sg.*"/>
-      <match lemma="gierdi" tags="n.*.sg.gen.*"><select lemma="bálle"/></match>
+      <match lemma="geardi" tags="n.*.sg.gen.*"><select lemma="bálle"/></match>
     </rule>
 
     <rule weight="1.0">
@@ -368,6 +368,79 @@
         <match/>
       <match lemma="njammat">
         <select lemma="ruhpat"/>
+      </match>
+    </rule>
+
+
+    <rule weight="1.0">
+      <match lemma="muhtin">
+        <select lemma="muhtem"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="muhtin">
+        <select lemma="nágin"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="muhtin">
+        <select lemma="nágin"/>
+      </match>
+            <or>
+      <match tags="n.sem_hum.sg.*"/>
+      <match tags="n.*.sem_hum.sg.*"/>
+      </or>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="geavahit">
+        <select lemma="adnet"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="geavahit">
+        <select lemma="válldet"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="geavahit">
+        <select lemma="válldet"/>
+      </match>
+            <or>
+      <match tags="n.sem_food-med.*.acc.*"/>
+      <match tags="n.*.sem_food-med.*.acc.*"/>
+      </or>
+    </rule>
+    <rule weight="0.6">
+            <or>
+      <match tags="n.sem_food-med.*.acc.*"/>
+      <match tags="n.*.sem_food-med.*.acc.*"/>
+      </or>
+      <match lemma="geavahit">
+        <select lemma="válldet"/>
+      </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="mannat">
+        <select lemma="mannat"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="mannat">
+        <select lemma="åvdep"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.6">
+      <match lemma="mannat" tags="*.@→N">
+        <select lemma="åvdep"/>
       </match>
     </rule>
 
