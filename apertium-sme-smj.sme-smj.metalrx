@@ -1154,8 +1154,40 @@
       </match>
       <match lemma="guovddáš"/>
     </rule>
-    
-       <rule weight="1.0">
+         <rule weight="0.5">
+      <match lemma="bidjat">
+        <select lemma="tsahkkidit"/>
+      </match>
+    </rule>
+ 
+    <rule weight="0.6">
+      <match lemma="bidjat">
+        <select lemma="tsahkkidit"/>
+      </match>
+      <match lemma="dolla"/>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="bidjat">
+        <select lemma="tsahkkidit"/>
+      </match>
+      <match lemma="dolla"/>
+      <match />
+    </rule>
+     <rule weight="0.6">
+      <match lemma="dolla"/>
+      <match />
+      <match lemma="bidjat">
+        <select lemma="tsahkkidit"/>
+      </match>
+    </rule>
+     <rule weight="0.6">
+      <match lemma="dolla"/>
+      <match lemma="bidjat">
+        <select lemma="tsahkkidit"/>
+      </match>
+    </rule>
+   
+      <rule weight="1.0">
       <match lemma="guovddáš">
         <select lemma="guovdásj"/>
       </match>
