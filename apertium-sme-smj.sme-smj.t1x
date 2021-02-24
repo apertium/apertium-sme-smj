@@ -302,6 +302,10 @@ C[_]-T sent
       <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
     </def-cat>
 
+    <def-cat n="algit_vblex">
+      <cat-item lemma="álgit" tags="vblex.*"/>
+    </def-cat>
+
     <def-cat n="verb_condFAUXV">
       <cat-item tags="vblex.*.cond.*.*.@+FAUXV"/> 
       <cat-item tags="vblex.*.der_inchl.vblex.cond.*.*.@+FAUXV"/>
@@ -3010,6 +3014,41 @@ C[_]-T sent
       </action>
     </rule> 
 
+
+    <rule comment="C[T]-V algit_vblex verb_inf" c="álgit gaskit"> 
+      <pattern>
+        <pattern-item n="algit_vblex"/>
+        <pattern-item n="verb_inf"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro> 
+      <choose><when><test><equal><var n="func"/><lit-tag v="@-FAUXV"/></equal></test>
+      <let><var n="func"/><lit-tag v="@-FMAINV"/></let>
+      </when>
+	      <otherwise>
+      <let><var n="func"/><lit-tag v="@+FMAINV"/></let>
+	      </otherwise>
+      </choose>      
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+                  <lit-tag v="vblex.der_inchl.vblex"/>
+              <clip pos="1" side="sl" part="a_mood"/>
+              <clip pos="1" side="sl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_person"/>
+              <clip pos="1" side="sl" part="a_nbr"/>
+              <clip pos="1" side="sl" part="a_infin"/>
+            </lu>
+          </chunk>
+        </out>
+      <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
+      </action>
+    </rule> 
 
 <!--    <rule comment="C[T]-V supneg verb_inf" c="sii váruhit amas leavvat beare olu."> 
       <pattern>

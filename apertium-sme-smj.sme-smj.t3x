@@ -46,6 +46,12 @@
         <cat-item tags="NP.@-F←ADVL-ine"/>
         <cat-item tags="NP.@-F←ADVL-ine.*"/>
     </def-cat>
+    <def-cat n="SPREDADVL_left">
+        <cat-item tags="NP.@←SPRED"/>
+        <cat-item tags="NP.@←SPRED.*"/>
+        <cat-item tags="NP.@←ADVL"/>
+        <cat-item tags="NP.@←ADVL.*"/>
+    </def-cat>
     <def-cat n="ahte">
       <cat-item lemma="ahte" tags="cnjsub.@CVP"/>
     </def-cat>
@@ -396,6 +402,38 @@
         <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
         <out><b pos="2"/></out>
       </when></choose>
+      </action>
+    </rule>
+
+    <rule comment="don't move ajADV" c="Njurggu lei maid oalle stuora loddi." > 
+      <pattern>
+        <pattern-item n="cop-mainv"/>
+        <pattern-item n="ajADV"/>
+        <pattern-item n="SPREDADVL_left"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
       </action>
     </rule>
 
