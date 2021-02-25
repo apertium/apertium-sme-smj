@@ -77,8 +77,10 @@
         <cat-item tags="NP.@←OBJ.*"/>
     </def-cat>
 
-    <def-cat n="NP_gen">
-        <cat-item tags="NP.*"/>
+    <def-cat n="NP_arg">
+        <cat-item lemma="noun" tags="NP.@←ADVL"/>
+        <cat-item lemma="noun" tags="NP.@←OBJ"/>
+        <cat-item lemma="noun" tags="NP.@←SUBJ"/>
     </def-cat>
 
     <def-cat n="cop-mainv">
@@ -473,10 +475,10 @@
     </rule>
 
 
-    <rule comment="moves ajADV after NP_left" > 
+    <rule comment="moves ajADV after NP_arg" > 
       <pattern>
         <pattern-item n="ajADV"/>
-        <pattern-item n="NP_gen"/>
+        <pattern-item n="NP_arg"/>
       </pattern>
       <action>
         <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
