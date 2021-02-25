@@ -1000,6 +1000,37 @@
     </rule>
 
 
+       <rule weight="1.0">
+   <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*"/></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pret.*"/></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pret.*"/></match>
+   <match tags="vblex.*.indic.pret.conneg.*"/>
+ </rule>     
+       <rule weight="1.2">
+   <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*.sg.*"/></match>
+   <match lemma="leat" tags="vblex.*.indic.pret.conneg.*"/>
+ </rule>     
+       <rule weight="1.2">
+   <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*.sg.*"/></match>
+   <match />
+   <match lemma="leat" tags="vblex.*.indic.pret.conneg.*"/>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pret.*"/></match>
+   <match />
+   <match tags="vblex.*.indic.pret.conneg.*"/>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pret.*"/></match>
+   <match />
+   <match />
+   <match tags="vblex.*.indic.pret.conneg.*"/>
+ </rule>     
+
 
     <rule weight="1.0">
       <match lemma="boahtit" tags="vblex.*"><select lemma="boahtet" tags="vblex.*"/></match>
