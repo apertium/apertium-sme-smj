@@ -3406,52 +3406,25 @@ C[_]-T sent
     </rule> -->
 
 
-  <rule comment="C[TW]-V negverb23 leat_conneg word" c="Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim"> 
+  <rule comment="C[TW]-V negverb23 leat_conneg" c="Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim"> 
     <pattern>
       <pattern-item n="negverb23"/>
       <pattern-item n="leat_conneg"/>
-      <pattern-item n="word"/>
     </pattern>
     <action>
       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
-      <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
       <let><clip pos="1" side="tl" part="a_temps_mood"/>
       <concat><clip pos="2" side="tl" part="a_temps_mood"/></concat>
       </let>
       <let><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></let>
-       <choose>
-         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="n"/></equal></test>
-                      <let><var n="chunk_name"/><lit v="noun"/></let>
-              </when>
-         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="prn"/></equal></test>
-                      <let><var n="chunk_name"/><lit v="prn"/></let>
-              </when>
-         <when><test><equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal></test>
-                      <let><var n="chunk_name"/><lit v="adv"/></let>
-              </when>
-
-       <otherwise>
-                      <let><var n="chunk_name"/><lit v="word"/></let>
-       </otherwise>
-      </choose>
       <out>
         <chunk name="neg" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
-            <tag><lit-tag v="@-FMAINV"/></tag>
+            <tag><lit-tag v="@+FMAINV"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
-          </lu>
-        </chunk>
-          <b pos="1"/>
-              <chunk namefrom="chunk_name">
-          <tags>
-            <tag><lit-tag v="SV"/></tag>
-            <tag><var n="func"/></tag>
-          </tags>
-          <lu>
-            <clip pos="3" side="tl" part="whole"/>
           </lu>
         </chunk>
       </out>
@@ -3495,7 +3468,7 @@ C[_]-T sent
         <chunk name="neg" case="caseFirstword">
           <tags>
             <tag><lit-tag v="SV"/></tag>
-            <tag><lit-tag v="@-FMAINV"/></tag>
+            <tag><lit-tag v="@+FMAINV"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -4304,6 +4277,7 @@ C[_]-T sent
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+              <let><clip pos="1" side="tl" part="a_foc-ge"/><lit v=""/></let>
         <choose>
           <when>
               <test><and>
