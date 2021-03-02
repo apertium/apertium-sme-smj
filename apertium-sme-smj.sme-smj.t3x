@@ -36,6 +36,22 @@
       <cat-item tags="ADV.@←ADVL-ine"/>
       <cat-item tags="ADV.@←ADVL"/>
     </def-cat>
+    <def-cat n="indef-neg">
+      <cat-item lemma="indef" tags="NP.*.foc-neg"/>
+    </def-cat>
+
+    <def-cat n="gradeADV">
+      <cat-item lemma="ienemusát" tags="ADV.*"/>
+    </def-cat>
+    
+    <def-cat n="conneg">
+      <cat-item lemma="conneg" tags="SV.@-FMAINV"/>
+      <cat-item lemma="conneg" tags="SV.@-FMAINV.*"/>
+    </def-cat>
+    <def-cat n="neg-vblex">
+      <cat-item lemma="neg" tags="SV.@+FAUXV"/>
+    </def-cat>
+    
     <def-cat n="P_left">
         <cat-item tags="NP.@P←.*"/>
         <cat-item tags="NP.@P←"/>
@@ -58,13 +74,14 @@
     <def-cat n="dem">
       <cat-item lemma="prn" tags="*.dem"/>
     </def-cat>
-    <def-cat n="verb">
+    <def-cat n="IVverb">
       <cat-item tags="*.@-FMAINV"/>
     </def-cat>
 
     <def-cat n="NP_Subj_l">
         <cat-item tags="NP.@←SUBJ"/>
         <cat-item tags="NP.@←SUBJ.pers"/>
+        <cat-item tags="NP.@←SUBJ.pers.*"/>
     </def-cat>
 
     <def-cat n="NP_Subj">
@@ -145,6 +162,16 @@
         <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
         <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
         <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
+    </def-cat>
+    <def-cat n="FMainVall">  
+        <cat-item tags="SV.@+FMAINV"/>
+        <cat-item tags="SV.@+FMAINV.*"/>
+        <cat-item tags="SV.*.@+FMAINV.*"/>
+        <cat-item tags="SV.*.*.@+FMAINV.*"/>
+        <cat-item tags="SV.@-FMAINV"/>
+        <cat-item tags="SV.@-FMAINV.*"/>
+        <cat-item tags="SV.*.@-FMAINV.*"/>
+        <cat-item tags="SV.*.*.@-FMAINV.*"/>
     </def-cat>
 
     <def-cat n="FAuxV">
@@ -366,6 +393,7 @@
         <pattern-item n="ahte"/>
       </pattern>
       <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk>
             <clip pos="2" part="lemh"/>
@@ -388,6 +416,7 @@
         <pattern-item n="ahte"/>
       </pattern>
       <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk>
             <clip pos="2" part="lemh"/>
@@ -525,6 +554,69 @@
       </action>
     </rule>
 
+    <rule comment="moves some adverbs to after mainverb" > 
+      <pattern>
+        <pattern-item n="FMainVall"/>
+        <pattern-item n="ADV"/>
+        <pattern-item n="gradeADV"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="moves indefneg to after negverb" > 
+      <pattern>
+        <pattern-item n="neg-vblex"/>
+        <pattern-item n="conneg"/>
+        <pattern-item n="indef-neg"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 <!--    <rule comment="moves adverb in front of verb" > 
       <pattern>
@@ -561,7 +653,7 @@
     <rule comment="removes empty adv" > 
       <pattern>
         <pattern-item n="emptyadv"/>
-        <pattern-item n="verb"/>
+        <pattern-item n="IVverb"/>
       </pattern>
       <action>
         <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>

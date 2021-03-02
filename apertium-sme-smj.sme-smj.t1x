@@ -1055,6 +1055,9 @@ C[_]-T sent
       <attr-item tags="pret"/>
       <attr-item tags="pres"/>
     </def-attr>
+    <def-attr n="a_neg">
+      <attr-item tags="neg"/>
+    </def-attr>
     <def-attr n="a_temps_indic_imp">
       <attr-item tags="imp"/>
       <attr-item tags="indic.pres"/>
@@ -2923,6 +2926,7 @@ C[_]-T sent
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
+              <tag><lit-tag v="foc-neg"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -4173,6 +4177,8 @@ C[_]-T sent
               <tag><var n="func"/></tag>
               <tag><clip pos="1" side="sl" part="a_prn_type"/></tag>
 <!--              <tag><var n="case"/></tag>  -->
+
+              <tag><clip pos="1" side="sl" part="a_person"/></tag>
               <tag><clip pos="1" side="tl" part="a_foc-ge"/></tag>
             </tags>
             <lu>
@@ -5891,6 +5897,17 @@ C[_]-T sent
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <choose>
         <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_neg"/><lit-tag v="neg"/></equal>
+	       </test>
+        <let><var n="chunk_name"/><lit v="neg"/></let>
+        </when>
+        <otherwise>
+        <let><var n="chunk_name"/><lit v="vblex"/></let>
+        </otherwise>
+        </choose>
+        <choose>
+        <when>
           <test><and>
             <equal><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_d"/></equal>
             <equal><clip pos="1" side="tl" part="a_deriv2"/><lit-tag v="der_alla"/></equal>
@@ -5923,7 +5940,7 @@ C[_]-T sent
           </when>
           <otherwise>
             <out>
-              <chunk name="vblex" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="func"/></tag>

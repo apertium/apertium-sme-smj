@@ -1069,6 +1069,50 @@
       <match tags="n.*.*.pl.*"/></or>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="sáhttit" tags="vblex.*">
+        <select lemma="máhttet" tags="vblex.*"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="sáhttit" tags="vblex.*">
+        <select lemma="bessat" tags="vblex.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="sáhttit" tags="vblex.*">
+        <select lemma="bessat" tags="vblex.*"/>
+      </match>
+      <or><match lemma="ohcat"/>
+      <match lemma="mannat"/></or>
+    </rule>
+
+
+
+    <rule weight="1.0">
+      <match lemma="gártat" tags="vblex.*">
+        <select lemma="hæhttut" tags="vblex.*"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="gártat" tags="vblex.*">
+        <select lemma="liehket" tags="vblex.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <or><match tags="n.sem_measr_time.*"/>
+      <match tags="n.sem_time.*"/></or>
+      <match lemma="gártat" tags="vblex.*">
+        <select lemma="liehket" tags="vblex.*"/>
+      </match>
+    </rule>
+
 
     <rule weight="1.0">
       <match lemma="ieš" tags="prn.ref.*">
