@@ -1051,6 +1051,26 @@
       <match lemma="orrut" tags="vblex.*"><select lemma="liehket" tags="vblex.*"/></match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="ain" tags="adv.*">
+        <select lemma="ajn" tags="adv.*"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="ain" tags="adv.*">
+        <select lemma="ienebut" tags="adv.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="ain" tags="adv.*">
+        <select lemma="ienebut" tags="adv.*"/>
+      </match>
+      <or><match lemma="bargat"/>
+      <match lemma="rahčat"/></or>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="ieš" tags="prn.ref.*">

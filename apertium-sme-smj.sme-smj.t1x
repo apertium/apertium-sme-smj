@@ -305,6 +305,12 @@ C[_]-T sent
     <def-cat n="algit_vblex">
       <cat-item lemma="álgit" tags="vblex.*"/>
     </def-cat>
+    <def-cat n="addit_vblex">
+      <cat-item lemma="addit" tags="vblex.*"/>
+    </def-cat>
+    <def-cat n="mokta_n">
+      <cat-item lemma="mokta" tags="n.*"/>
+    </def-cat>
 
     <def-cat n="verb_condFAUXV">
       <cat-item tags="vblex.*.cond.*.*.@+FAUXV"/> 
@@ -3062,6 +3068,57 @@ C[_]-T sent
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
     </rule> 
+    <rule comment="C[T]-V addit_vblex mokta_n" c="addit movtta"> 
+      <pattern>
+        <pattern-item n="addit_vblex"/>
+        <pattern-item n="mokta_n"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro> 
+         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+                 <let><var n="chunk_name"/><lit v="vblex"/></let>
+       <let><clip pos="1" side="tl" part="lem"/><lit v="måvtåstuhttet"/></let>
+        <choose>
+               <when><test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>            
+            <out>
+              <chunk name="liehket_vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                </tags>
+                <lu>
+                  <lit v="liehket"/>
+                  <lit-tag v="vblex.iv.cond"/><var n="vblex_nbrpers"/>
+                </lu>
+                <b/>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <lit-tag v="vblex.inf"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+        
+        <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            </out>
+            </otherwise></choose>
+      <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
+        <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
+      </action>
+    </rule> 
+
+
+
 
 <!--    <rule comment="C[T]-V supneg verb_inf" c="sii váruhit amas leavvat beare olu."> 
       <pattern>
