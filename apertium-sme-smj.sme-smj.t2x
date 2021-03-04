@@ -30,6 +30,10 @@
         <cat-item tags="NP.@←SUBJ.*"/>
     </def-cat>
 
+    <def-cat n="gradeADV">
+      <cat-item lemma="ienemusát" tags="ADV.*"/>
+    </def-cat>
+
 
     <def-cat n="NP_Obj">
         <cat-item tags="NP.@OBJ→.*"/>

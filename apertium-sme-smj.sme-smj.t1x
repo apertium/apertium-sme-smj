@@ -4832,6 +4832,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        <let><var n="number"/><clip pos="1" side="tl" part="lem"/></let>
       </action>
     </rule>
 
@@ -4863,6 +4864,16 @@ C[_]-T sent
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+      <choose>
+	      <when>
+	  <test><and>
+       <in><clip pos="1" side="sl" part="a_sem"/><list n="sem_time" /></in>
+       <not><equal><var n="number"/><lit v=""/></equal></not>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
+	  </when>
+	  </choose>
       <choose>
 	      <when>
 	  <test><and>
