@@ -454,7 +454,8 @@ C[_]-T sent
     </def-cat>
 
     <def-cat n="gen">
-      <cat-item tags="*.gen.*"/>
+      <cat-item tags="n.*.gen.*"/>
+      <cat-item tags="n.*.*.gen.*"/>
     </def-cat>
 
     <def-cat n="dat_pcle">
@@ -585,6 +586,10 @@ C[_]-T sent
       <cat-item lemma="dihtii" tags="post.*"/>
     </def-cat>
 
+    <def-cat n="earret_pr">
+      <cat-item lemma="earret" tags="pr.*"/>
+      <cat-item lemma="earet" tags="pr.*"/>
+    </def-cat>
     <def-cat n="miehtá_adp">
       <cat-item lemma="miehtá" tags="pr.*"/>
       <cat-item lemma="miehtá" tags="post.*"/>
@@ -4809,6 +4814,82 @@ C[_]-T sent
            </mlu>
           </chunk>
         </out>
+      <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
+      </action>
+    </rule>
+
+    <rule comment="C[S]-NP mod_n n_cmp gen váste_post" c="lea vuođđoskuvlla nuppi luohká julevsámegiela skuvlaohppiid várás">
+      <pattern>
+        <pattern-item n="mod_n"/> 
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="gen"/>
+        <pattern-item n="váste_post"/>
+      </pattern>
+      <action>
+            <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></let>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <mlu>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            </mlu>
+          </chunk>
+        </out>
+      <choose><when><test><not><equal><b pos="3"/><lit v=" "/></equal></not></test><out><b pos="3"/></out></when></choose>      
+      </action>
+    </rule>
+
+
+    <rule comment="C[_]-NP mod_n mod_n gen váste_post" c="julevsámegiela vuosttašgiela ohppiid várás">
+      <pattern>
+        <pattern-item n="mod_n"/> 
+        <pattern-item n="mod_n"/> 
+        <pattern-item n="gen"/>
+        <pattern-item n="váste_post"/>
+      </pattern>
+      <action>
+            <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></let>
+       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      <choose><when><test><not><equal><b pos="3"/><lit v=" "/></equal></not></test><out><b pos="3"/></out></when></choose>      
       </action>
     </rule>
  
@@ -6269,6 +6350,37 @@ C[_]-T sent
       <action>
       </action>
     </rule>
+
+
+    <rule comment="C[TW] earret_pr nom_gen">
+      <pattern>
+        <pattern-item n="earret_pr"/>
+        <pattern-item n="nom_gen"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <let><clip pos="1" side="tl" part="lem"/><lit v="duodde"/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ess"/></let>
+        <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ill"/></let>
+        <out>
+          <chunk name="pp" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
 
     <rule comment="C[TW] miehtá_adp nom_gen">
       <pattern>

@@ -1000,6 +1000,39 @@
     </rule>
 
 
+    <rule weight="0.6">
+      <or><match tags="n.*.*.ill.*"/>
+      <match tags="n.*.*.*.ill.*"/>
+      <match tags="prn.*.*.*.ill.*"/>
+      <match lemma="oktii"/>
+      <match lemma="dohko"/>
+      </or>
+      <match lemma="gullat">
+        <select lemma="gullut"/>
+      </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="earret" tags="pr.*">
+        <select lemma="duodde"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="earret" tags="pr.*">
+        <select lemma="duodde"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="earret" tags="pr.*">
+        <select lemma="duodde"/>
+      </match>
+      <or><match tags="n.*.*.gen.*"/>
+      <match tags="n.*.*.*.gen.*"/>
+      <match tags="prn.*.*.*.gen.*"/>
+      </or>
+    </rule>
+
        <rule weight="1.0">
    <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*"/></match>
  </rule>     
@@ -1092,6 +1125,47 @@
       </match>
       <or><match lemma="bivdu"/>
       <match lemma="bivdi"/></or>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="ráhkadit" tags="vblex.*">
+        <select lemma="dahkat" tags="vblex.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="dahkat" tags="vblex.*">
+        <select lemma="stiellit" tags="vblex.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="dahkat" tags="vblex.*">
+        <select lemma="stiellit" tags="vblex.*"/>
+      </match>
+      <or>
+      <match tags="n.sem_food.*"/>
+      <match tags="n.sem_event_food.*"/>
+      </or>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="dahkat" tags="vblex.*">
+        <select lemma="dahkat" tags="vblex.*"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="dahkat" tags="vblex.*">
+        <select lemma="adnet" tags="vblex.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="dahkat" tags="vblex.*">
+        <select lemma="adnet" tags="vblex.*"/>
+      </match>
+      <match lemma="dušši"  tags="n.*"/>
     </rule>
 
 
