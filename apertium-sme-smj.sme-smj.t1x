@@ -5600,6 +5600,26 @@ C[_]-T sent
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+      <choose>
+	      <when>
+	  <test><or><and>
+       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
+		</and>  
+		  <and>
+       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
+      </and></or></test>
+	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+	  <equal><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
+      </and></test>
+	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
+	  </when>
+      </choose>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -5636,6 +5656,26 @@ C[_]-T sent
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="4"/></call-macro>
+      <choose>
+	      <when>
+	  <test><or><and>
+       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+	  <equal><clip pos="4" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
+		</and>  
+		  <and>
+       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+	  <equal><clip pos="4" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
+      </and></or></test>
+	  <let><clip pos="4" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+	  <equal><clip pos="4" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
+      </and></test>
+	  <let><clip pos="4" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
+	  </when>
+      </choose>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -5697,6 +5737,26 @@ C[_]-T sent
       <choose><when><test><not><equal><b pos="2"/><lit v=" "/></equal></not></test><out><b pos="2"/></out></when></choose>      
         </when>
         <otherwise>
+      <choose>
+	      <when>
+	  <test><or><and>
+       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
+		</and>  
+		  <and>
+       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
+      </and></or></test>
+	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+	  <equal><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
+      </and></test>
+	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
+	  </when>
+      </choose>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
