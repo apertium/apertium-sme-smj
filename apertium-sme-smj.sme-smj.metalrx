@@ -1072,6 +1072,29 @@
       <match lemma="rahčat"/></or>
     </rule>
 
+
+    <rule weight="1.0">
+      <match lemma="stággu" tags="n.*">
+        <select lemma="stággo" tags="n.*"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="stággu" tags="n.*">
+        <select lemma="svihtjo" tags="n.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="stággu" tags="n.*">
+        <select lemma="svihtjo" tags="n.*"/>
+      </match>
+      <or><match lemma="bivdu"/>
+      <match lemma="bivdi"/></or>
+    </rule>
+
+
     <rule weight="1.0">
       <match lemma="ieš" tags="prn.ref.*">
         <select lemma="iesj" tags="prn.ref.sg.*"/>
