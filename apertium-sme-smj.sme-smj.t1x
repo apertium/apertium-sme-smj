@@ -453,6 +453,14 @@ C[_]-T sent
       <cat-item tags="*.@→Num"/>
     </def-cat>
 
+    <def-cat n="hum_gen">
+      <cat-item tags="prn.pers.*.gen.*"/>
+      <cat-item tags="n.*.gen.*"/>
+      <cat-item tags="n.*.*.gen.*"/>
+      <cat-item tags="n.*.*.*.gen.*"/>
+    </def-cat>
+
+
     <def-cat n="gen">
       <cat-item tags="n.*.gen.*"/>
       <cat-item tags="n.*.*.gen.*"/>
@@ -593,6 +601,11 @@ C[_]-T sent
     <def-cat n="miehtá_adp">
       <cat-item lemma="miehtá" tags="pr.*"/>
       <cat-item lemma="miehtá" tags="post.*"/>
+    </def-cat>
+
+
+    <def-cat n="ektui_post">
+      <cat-item lemma="ektui" tags="post.*"/>
     </def-cat>
 
     <def-cat n="váste_post">
@@ -3935,7 +3948,7 @@ C[_]-T sent
 
 
 
-    <rule comment="C[T]-NP months_n semyear" c="example"> 
+    <rule comment="C[T]-NP months_n semyear" c="njukčamánus 2021:s : 2021 snjuktjamáno"> 
       <pattern> 
         <pattern-item n="months_n"/>
         <pattern-item n="semyear"/>
@@ -3944,7 +3957,8 @@ C[_]-T sent
         <call-macro n="general-macro-2Param"> <with-param pos="1"/><with-param pos="2"/></call-macro>
       <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let> 
-        <let><clip pos="2" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
+         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let> 
+<!--        <let><clip pos="2" side="tl" part="sem_year"/><lit-tag v="arab"/></let> -->
                           <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -3952,11 +3966,11 @@ C[_]-T sent
               <tag><var n="func"/></tag>
             </tags>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+              <clip pos="2" side="tl" part="whole"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+              <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
@@ -3995,7 +4009,8 @@ C[_]-T sent
     </pattern>
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-      <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let>
+<!--      <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let> -->
+          <let><var n="chunk_name"/><lit v="adv"/></let>
 <!--      <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>  remove Px, or should we add ref pronoun? -->
 <!--      <choose>
         <when>
@@ -4760,6 +4775,29 @@ C[_]-T sent
               <clip pos="3" side="tl" part="whole"/>
             </lu>
          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="C[DT]-PP hum_gen  ektui_post" c="illative instead of pp with ektui">
+      <pattern>
+        <pattern-item n="hum_gen"/>
+        <pattern-item n="ektui_post"/>
+      </pattern>
+      <action>
+           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>
+         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+           <let><var n="func"/><clip pos="2" side="sl" part="a_func"/></let>
+       <out>
+          <chunk name="noun" case="caseFirstword">
+             <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+           <lu>
+            <clip pos="1" side="tl" part="whole"/>            
+           </lu>
+          </chunk>
         </out>
       </action>
     </rule>

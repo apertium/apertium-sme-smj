@@ -400,6 +400,11 @@
         <select lemma="nágin"/>
       </match>
     </rule>
+    <rule weight="0.6">
+      <match lemma="muhtin" tags="prn.ind.*.nom.@SUBJ→">
+        <select lemma="nágin"/>
+      </match>
+    </rule>
 
     <rule weight="0.6">
       <match lemma="muhtin">
@@ -1104,6 +1109,25 @@
       <or><match lemma="bargat"/>
       <match lemma="rahčat"/></or>
     </rule>
+    <rule weight="1.0">
+      <match lemma="nubbi" tags="adj.*">
+        <select lemma="nubbe" tags="adj.ord.*"/>
+      </match>
+    </rule>
+
+
+    <rule weight="0.5">
+      <match lemma="nubbi" tags="adj.*">
+        <select lemma="nuppát" tags="adj.*"/>
+      </match>
+    </rule>
+
+    <rule weight="0.7">
+      <match lemma="nubbi" tags="adj.ord.*.@→N">
+        <select lemma="nuppát" tags="adj.*"/>
+      </match>
+    </rule> 
+
 
 
     <rule weight="1.0">
@@ -1133,13 +1157,13 @@
     </rule>
 
     <rule weight="0.5">
-      <match lemma="dahkat" tags="vblex.*">
+      <match lemma="ráhkadit" tags="vblex.*">
         <select lemma="stiellit" tags="vblex.*"/>
       </match>
     </rule>
 
     <rule weight="0.6">
-      <match lemma="dahkat" tags="vblex.*">
+      <match lemma="ráhkadit" tags="vblex.*">
         <select lemma="stiellit" tags="vblex.*"/>
       </match>
       <or>
