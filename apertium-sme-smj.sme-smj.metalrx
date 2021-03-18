@@ -863,6 +863,18 @@
         <select lemma="javllat"/>
       </match>
     </rule>
+
+    <rule weight="0.6">
+      <match lemma="lohkat">
+        <select lemma="javllat"/>
+      </match><or>
+      <match tags="np.*.*.attr.*"/>
+      <match tags="np.*.@←SUBJ"/>
+      <match tags="n.*.@←SUBJ"/>
+      <match tags="prn.*.@←SUBJ"/>
+      </or>
+    </rule>
+
     <rule weight="1.0">
       <match lemma="unnut">
         <select lemma="unnot"/>

@@ -6135,11 +6135,23 @@ C[_]-T sent
       <action>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <choose>
+        <when>
+          <test>
+            <equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal>
+	       </test>
+        <let><var n="lemma"/><lit-tag v="liehket"/></let>
+        </when>
+        <otherwise>
+        <let><var n="lemma"/><lit v=""/></let>
+        </otherwise>
+        </choose>
         <out>
-          <chunk name="prfprc" case="caseFirstword">
+          <chunk name="pfrprc" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="lemma"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
