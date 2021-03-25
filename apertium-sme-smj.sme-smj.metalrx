@@ -847,17 +847,67 @@
 
     <rule weight="1.0">
       <match lemma="lohkat">
-        <select lemma="låhkåt"/>
+        <select lemma="javllat"/>
       </match>
     </rule>
 
     <rule weight="0.5">
       <match lemma="lohkat">
-        <select lemma="javllat"/>
+        <select lemma="låhkåt"/>
       </match>
     </rule>
 
     <rule weight="0.6">
+      <match lemma="lohkat" tags="vblex.tv.ger.*">
+        <select lemma="låhkåt"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat" tags="vblex.tv.imp.*">
+        <select lemma="låhkåt"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat" tags="vblex.tv.der_nomact.*">
+        <select lemma="låhkåt"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+<or>
+      <match tags="n.sem_txt.*.@←OBJ"/>
+      <match tags="prn.*.@←OBJ"/>
+      </or>
+    </rule>
+
+
+    <rule weight="0.6">
+<or>
+      <match tags="n.sem_txt.*.@OBJ→"/>
+      <match tags="prn.*.@OBJ→"/>
+      </or>
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+<or>
+      <match lemma="máhttit"/>
+      <match lemma="oahppat"/>
+      <match lemma="oahpahit"/>
+      </or>
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+    </rule>
+
+
+
+<!--    <rule weight="0.6">
       <match tags="cm"/>
       <match lemma="lohkat">
         <select lemma="javllat"/>
@@ -873,7 +923,7 @@
       <match tags="n.*.@←SUBJ"/>
       <match tags="prn.*.@←SUBJ"/>
       </or>
-    </rule>
+    </rule> -->
 
     <rule weight="1.0">
       <match lemma="unnut">
@@ -1008,6 +1058,18 @@
       <match lemma="gullat">
         <select lemma="gullut"/>
       </match>
+      <or><match tags="n.*.*.ill.*"/>
+      <match tags="n.*.*.*.ill.*"/>
+      <match tags="prn.*.*.*.ill.*"/>
+      <match lemma="oktii"/>
+      <match lemma="dohko"/>
+      </or>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="gullat">
+        <select lemma="gullut"/>
+      </match>
+      <match />
       <or><match tags="n.*.*.ill.*"/>
       <match tags="n.*.*.*.ill.*"/>
       <match tags="prn.*.*.*.ill.*"/>
