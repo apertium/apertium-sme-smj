@@ -5327,6 +5327,14 @@ C[_]-T sent
         </and></test>
         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let>
         </when>
+        <when>
+        <test><and>
+        <equal><clip pos="1" side="tl" part="lem"/><lit v="moadda"/></equal>
+        <equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>
+        </and></test>
+        <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+        <let><clip pos="1" side="tl" part="a_case"/><clip pos="2" side="tl" part="a_case"/></let>
+        </when>
       </choose>  
         <let><clip pos="1" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
       <choose>

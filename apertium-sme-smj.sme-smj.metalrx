@@ -1112,6 +1112,18 @@
       </or>
     </rule>
 
+
+       <rule weight="1.0">
+   <match lemma="ollu" tags="adj.*"><select lemma="ållo" tags="prn.*"/></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="ollu" tags="adj.*"><select lemma="moadda" tags="prn.*"/></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="ollu" tags="adj.*"><select lemma="moadda" tags="prn.*"/></match>
+   <match lemma="guovlu" tags="n.*"/>
+ </rule>     
+
        <rule weight="1.0">
    <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*"/></match>
  </rule>     
