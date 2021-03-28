@@ -249,6 +249,16 @@
         <cat-item tags="SV.*.@+FMAINV.*"/>
         <cat-item tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
+    <def-cat n="AUXliehket">
+        <cat-item lemma="cop-auxvclt" tags="SV.@+FAUXV"/>
+        <cat-item lemma="cop-auxvclt" tags="SV.@+FAUXV.*"/>
+        <cat-item lemma="cop-auxvclt" tags="SV.@-FAUXV"/>
+        <cat-item lemma="cop-auxvclt" tags="SV.@-FAUXV.*"/>
+        <cat-item lemma="cop-auxv" tags="SV.@+FAUXV"/>
+        <cat-item lemma="cop-auxv" tags="SV.@+FAUXV.*"/>
+        <cat-item lemma="cop-auxv" tags="SV.@-FAUXV"/>
+        <cat-item lemma="cop-auxv" tags="SV.@-FAUXV.*"/>
+    </def-cat>
     <def-cat n="FV">
         <cat-item tags="SV.@+FMAINV"/>
         <cat-item tags="SV.@+FMAINV.*"/>
@@ -336,6 +346,13 @@
         <cat-item tags="post"/>
     </def-cat>
 
+    <def-cat n="barrier">
+        <cat-item tags="comma.*"/>
+        <cat-item tags="*.@CVP"/>
+        <cat-item tags="sent.*"/>
+    </def-cat>
+
+
   </section-def-cats>
 
   <section-def-attrs>
@@ -398,6 +415,7 @@
 
   <section-def-vars>
     <def-var n="nombre"/>
+    <def-var n="aux"/>
     <def-var n="genere"/>
     <def-var n="caseFirstword"/>
   </section-def-vars>
@@ -481,6 +499,22 @@
       </action>
     </rule>
 
+    <rule comment="add var to AUX" >  
+      <pattern>
+        <pattern-item n="AUXliehket"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+         <let><var n="aux"/><lit v="auxliehket"/></let>
+      </action>
+    </rule>
 
 
 
@@ -1204,6 +1238,7 @@
             <clip pos="1" part="lemq"/>
           </chunk>
         </out>
+         <let><var n="aux"/><lit v=""/></let>
       </action>
     </rule>
 
@@ -1213,6 +1248,7 @@
         <pattern-item n="l-clt"/>
       </pattern>
       <action>
+         <let><var n="aux"/><lit v="auxliehket"/></let>
         <out>
           <chunk>
             <clip pos="1" part="lemh"/>
@@ -1234,6 +1270,27 @@
         <pattern-item n="pfrprcliehket"/>
       </pattern>
       <action>
+	   <choose>
+		   <when><test>
+		   <equal><var n="aux"/><lit v="auxliehket"/></equal>
+		   </test>     
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+		</when>
+		<otherwise>
         <out>
           <chunk>
             <clip pos="1" part="lemh"/>
@@ -1250,10 +1307,25 @@
             <clip pos="2" part="lemq"/>
           </chunk>
         </out>
-      <choose><when>
-        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
-        <out><b pos="1"/></out>
-      </when></choose>
+		</otherwise>
+		</choose>
+         <let><var n="aux"/><lit v=""/></let>
+      </action>
+    </rule>
+    <rule comment="barrier for adding var value " >  
+      <pattern>
+        <pattern-item n="barrier"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+         <let><var n="aux"/><lit v=""/></let>
       </action>
     </rule>
 

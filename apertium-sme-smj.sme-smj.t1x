@@ -4010,13 +4010,22 @@ C[_]-T sent
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
 <!--      <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let> -->
-          <let><var n="chunk_name"/><lit v="adv"/></let>
 <!--      <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>  remove Px, or should we add ref pronoun? -->
 <!--      <choose>
         <when>
           <test><and><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
                 <not><contains-substring><clip pos="1" side="tl" part="lem"/><lit v="&gt;"/></contains-substring></not>
                 </and></test> -->
+      <choose>
+	      <when>
+	  <test>
+	  <equal><clip pos="1" side="tl" part="lem"/><lit v="aj"/></equal>	      
+		</test>  
+          <let><var n="chunk_name"/><lit v="aj"/></let></when>
+          <otherwise>
+          <let><var n="chunk_name"/><lit v="adv"/></let>
+	          </otherwise>
+      </choose>
       <choose>
 	      <when>
 	  <test><or><and>
@@ -5954,10 +5963,19 @@ C[_]-T sent
         <pattern-item n="num_ldep"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
         <let><clip pos="2" side="tl" part="sem_year"/><lit-tag v="arab"/></let>
+        <choose> 
+          <when>
+            <test><and>
+             <equal><clip pos="1" side="tl" part="lem"/><lit v="jahke"/></equal>
+             <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></equal>
+       </and></test>
+         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
+          </when>
+        </choose> 
         <out>
           <chunk name="noun-num" case="caseFirstword">
             <tags>

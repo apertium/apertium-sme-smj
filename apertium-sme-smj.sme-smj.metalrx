@@ -1111,10 +1111,55 @@
       <match tags="prn.*.*.*.gen.*"/>
       </or>
     </rule>
-
+       <rule weight="1.0">
+   <match lemma="gillát" tags="vblex.*"><select lemma="vaháguvvat" tags="vblex.*"/></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="gillát" tags="vblex.*"><select lemma="gierddat" tags="vblex.*"/></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="gillát" tags="vblex.*"><select lemma="gierddat" tags="vblex.*"/></match>
+   <or>
+   <match tags="n.*.acc.*"/>
+   <match tags="vblex.*.acc.*"/>
+   <match tags="adj.*.acc.*"/>
+   </or>
+ </rule>     
 
        <rule weight="1.0">
-   <match lemma="ollu" tags="adj.*"><select lemma="ållo" tags="prn.*"/></match>
+   <match lemma="geahpas" tags="adj.*"><select lemma="gæhppat" tags="adj.*"/></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
+   <match lemma="eallin" tags="n.*"/>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
+   <match />
+   <match lemma="eallin" tags="n.*"/>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
+   <match lemma="eallin" tags="n.*"/>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="eallin" tags="n.*"/>
+   <match />
+   <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
+ </rule>     
+
+       <rule weight="0.6">
+   <match lemma="eallin" tags="n.*"/>
+   <match />
+   <match />
+   <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
+ </rule>     
+
+       <rule weight="1.0">
+   <match lemma="ollu" tags="adj.*"><select lemma="ållo" tags="adj.*"/></match>
  </rule>     
        <rule weight="0.5">
    <match lemma="ollu" tags="adj.*"><select lemma="moadda" tags="prn.*"/></match>
