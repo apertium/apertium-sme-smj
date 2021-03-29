@@ -30,6 +30,7 @@
     </def-cat>
     <def-cat n="duodajADV">
        <cat-item lemma="duodaj" tags="ADV.*"/>
+       <cat-item lemma="vargga" tags="ADV.*"/>
     </def-cat>
     <def-cat n="ajADV">
        <cat-item lemma="aj" tags="ADV.*"/>
@@ -206,6 +207,12 @@
         <cat-item lemma="inf" tags="SV.@-FMAINV"/>
         <cat-item lemma="pfrprc" tags="SV.*.@-FMAINV"/>
         <cat-item lemma="inf" tags="SV.*.@-FMAINV"/>
+    </def-cat>
+    <def-cat n="IMainVall"> 
+        <cat-item  tags="SV.@-FMAINV"/>
+        <cat-item  tags="SV.@-FMAINV.*"/>
+        <cat-item  tags="SV.*.@-FMAINV"/>
+        <cat-item  tags="SV.*.@-FMAINV.*"/>
     </def-cat>
     <def-cat n="FMainVall">  
         <cat-item tags="SV.@+FMAINV"/>
@@ -591,7 +598,7 @@
       </action>
     </rule>
 
-    <rule comment="moves duodajADV before vverb" > 
+    <rule comment="moves duodajADV before verb" > 
       <pattern>
         <pattern-item n="FV"/>
         <pattern-item n="duodajADV"/>
@@ -611,6 +618,38 @@
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="moves duodajADV before aux and mainverb" > 
+      <pattern>
+        <pattern-item n="FV"/>
+        <pattern-item n="IMainVall"/>
+        <pattern-item n="duodajADV"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
           </chunk>
         </out>
       </action>

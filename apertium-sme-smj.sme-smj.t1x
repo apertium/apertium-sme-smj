@@ -4022,15 +4022,13 @@ C[_]-T sent
                 </and></test> -->
       <choose>
 	      <when>
-	  <test>
+	  <test><or>
 	  <equal><clip pos="1" side="tl" part="lem"/><lit v="aj"/></equal>	      
-		</test>  
-          <let><var n="chunk_name"/><lit v="aj"/></let></when>
-	      <when>
-	  <test>
 	  <equal><clip pos="1" side="tl" part="lem"/><lit v="duodaj"/></equal>	      
-		</test>  
-          <let><var n="chunk_name"/><lit v="duodaj"/></let></when>
+	  <equal><clip pos="1" side="tl" part="lem"/><lit v="vargga"/></equal>	      
+	  </or></test>
+          <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let>
+	      </when>
           <otherwise>
           <let><var n="chunk_name"/><lit v="adv"/></let>
 	          </otherwise>
