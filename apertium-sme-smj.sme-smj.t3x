@@ -680,6 +680,182 @@
       </action>
     </rule>
 
+    <rule comment="removes prnSUBJr 1" >  
+      <pattern>
+        <pattern-item n="ADVLqst"/>
+        <pattern-item n="prnSUBJr"/>
+        <pattern-item n="FV"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
+      </action>
+    </rule>
+
+    <rule comment="removes prnSUBJ 2" >  
+      <pattern>
+        <pattern-item n="FV"/>
+        <pattern-item n="qstPCLE"/>
+        <pattern-item n="prnSUBJl"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
+      </action>
+    </rule>
+    <rule comment="removes prnSUBJl 3" >  
+      <pattern>
+        <pattern-item n="neg-vblex"/>
+        <pattern-item n="prnSUBJl"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+        <out><b pos="1"/></out>
+      </when></choose>
+      </action>
+    </rule>
+
+    <rule comment="removes prnSUBJl 4" >  
+      <pattern>
+        <pattern-item n="prnSUBJr"/>
+        <pattern-item n="neg-vblex"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+        <out><b pos="1"/></out>
+      </when></choose>
+      </action>
+    </rule>
+    
+    <rule comment="removes prnSUBJl 5" >  
+      <pattern>
+        <pattern-item n="prnSUBJr"/>
+        <pattern-item n="neg-vblex"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+        <out><b pos="1"/></out>
+      </when></choose>
+      </action>
+    </rule>
+
+
+    <rule comment="removes prn12SUBJr 6" >  
+      <pattern>
+        <pattern-item n="prn12SUBJr"/>
+        <pattern-item n="FV"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+        <out><b pos="1"/></out>
+      </when></choose>
+      </action>
+    </rule>
+
+    <rule comment="removes prn12SUBJr ADVleft 6" >  
+      <pattern>
+        <pattern-item n="prn12SUBJr"/>
+        <pattern-item n="FV"/>
+        <pattern-item n="ADVleft"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="3"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
+      </action>
+    </rule>
+  
+
     <rule comment="moves some adverbs closer to mainverb" > 
       <pattern>
         <pattern-item n="FMainVall"/>
@@ -863,153 +1039,6 @@
         </out>
       </action>
     </rule> 
-
-    <rule comment="removes prnSUBJr 1" >  
-      <pattern>
-        <pattern-item n="ADVLqst"/>
-        <pattern-item n="prnSUBJr"/>
-        <pattern-item n="FV"/>
-      </pattern>
-      <action>
-        <out>
-        <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
-          <chunk>
-            <clip pos="3" part="lemh"/>
-            <clip pos="3" part="tags"/>
-            <clip pos="3" part="chcontent"/>
-            <clip pos="3" part="lemq"/>
-          </chunk>
-        </out>
-      <choose><when>
-        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
-        <out><b pos="2"/></out>
-      </when></choose>
-      </action>
-    </rule>
-
-    <rule comment="removes prnSUBJ 2" >  
-      <pattern>
-        <pattern-item n="FV"/>
-        <pattern-item n="qstPCLE"/>
-        <pattern-item n="prnSUBJl"/>
-      </pattern>
-      <action>
-        <out>
-        <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
-          <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-        </out>
-      <choose><when>
-        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
-        <out><b pos="2"/></out>
-      </when></choose>
-      </action>
-    </rule>
-    <rule comment="removes prnSUBJl 3" >  
-      <pattern>
-        <pattern-item n="neg-vblex"/>
-        <pattern-item n="prnSUBJl"/>
-      </pattern>
-      <action>
-        <out>
-        <chunk>
-            <clip pos="1" part="lemh"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-            <clip pos="1" part="lemq"/>
-          </chunk>
-        </out>
-      <choose><when>
-        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
-        <out><b pos="1"/></out>
-      </when></choose>
-      </action>
-    </rule>
-
-    <rule comment="removes prnSUBJl 4" >  
-      <pattern>
-        <pattern-item n="prnSUBJr"/>
-        <pattern-item n="neg-vblex"/>
-      </pattern>
-      <action>
-        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <out>
-        <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-        </out>
-      <choose><when>
-        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
-        <out><b pos="1"/></out>
-      </when></choose>
-      </action>
-    </rule>
-    
-    <rule comment="removes prnSUBJl 5" >  
-      <pattern>
-        <pattern-item n="prnSUBJr"/>
-        <pattern-item n="neg-vblex"/>
-      </pattern>
-      <action>
-        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <out>
-        <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-        </out>
-      <choose><when>
-        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
-        <out><b pos="1"/></out>
-      </when></choose>
-      </action>
-    </rule>
-
-
-    <rule comment="removes prn12SUBJr 6" >  
-      <pattern>
-        <pattern-item n="prn12SUBJr"/>
-        <pattern-item n="FV"/>
-      </pattern>
-      <action>
-        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <out>
-          <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-        </out>
-      <choose><when>
-        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
-        <out><b pos="1"/></out>
-      </when></choose>
-      </action>
-    </rule>
-
-  
      
     <rule comment="removes empty adv" > 
       <pattern>
