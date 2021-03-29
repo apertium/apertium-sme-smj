@@ -22,6 +22,12 @@
         <match lemma="bar"/>
       </or>
     </def-seq>
+    <def-seq n="time">
+      <or>
+        <match tags="n.sem_time.*"/>
+        <match tags="n.sem_measr_time.*"/>
+      </or>
+    </def-seq>
   </def-seqs>
 
   <rules>
@@ -118,6 +124,17 @@
       <match tags="vblex.*"/>
       <match lemma="sakka"> <select lemma="sælldásit"/> </match>
     </rule>
+    <rule weight="0.5">
+      <match lemma="sakka"> <select lemma="nannusit"/> </match>
+    </rule>
+    <rule weight="0.8">
+      <match lemma="sakka"> <select lemma="nannusit"/> </match>
+      <match lemma="deattuhit"/>
+    </rule>
+    <rule weight="0.8">
+      <match lemma="deattuhit"/>
+      <match lemma="sakka"> <select lemma="nannusit"/> </match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="ásahus"> <select lemma="institusjåvnnå"/> </match>
@@ -139,6 +156,35 @@
       </or>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="čujuhit"> <select lemma="vuosedit"/> </match>
+    </rule>
+
+
+    <rule weight="1.0">
+      <match lemma="ge"> <select lemma="aj"/> </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="ge"> <select lemma="ga"/> </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="ii"/>
+      <match lemma="ge"> <select lemma="ga"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="ii"/>
+      <match />
+      <match lemma="ge"> <select lemma="ga"/> </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="ii"/>
+      <match />
+      <match />
+      <match lemma="ge"> <select lemma="ga"/> </match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="ovddas"> <select lemma="åvdås"/> </match>
@@ -1111,7 +1157,7 @@
       <match tags="prn.*.*.*.gen.*"/>
       </or>
     </rule>
-       <rule weight="1.0">
+<!--       <rule weight="1.0">
    <match lemma="gillát" tags="vblex.*"><select lemma="vaháguvvat" tags="vblex.*"/></match>
  </rule>     
        <rule weight="0.5">
@@ -1124,7 +1170,7 @@
    <match tags="vblex.*.acc.*"/>
    <match tags="adj.*.acc.*"/>
    </or>
- </rule>     
+ </rule>     -->
 
        <rule weight="1.0">
    <match lemma="geahpas" tags="adj.*"><select lemma="gæhppat" tags="adj.*"/></match>
@@ -1159,7 +1205,7 @@
  </rule>     
 
        <rule weight="1.0">
-   <match lemma="ollu" tags="adj.*"><select lemma="ållo" tags="adj.*"/></match>
+   <match lemma="ollu" tags="adj.*"><select lemma="ållo" /></match>
  </rule>     
        <rule weight="0.5">
    <match lemma="ollu" tags="adj.*"><select lemma="moadda" tags="prn.*"/></match>
@@ -1168,6 +1214,40 @@
    <match lemma="ollu" tags="adj.*"><select lemma="moadda" tags="prn.*"/></match>
    <match lemma="guovlu" tags="n.*"/>
  </rule>     
+
+       <rule weight="1.0">
+   <match lemma="nubbi" tags="prn.*"><select lemma="nubbe" /></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="nubbi" tags="prn.*"><select lemma="ietjá" /></match>
+ </rule>     
+       <rule weight="0.6">
+   <match tags="vblex.*"/>
+   <match lemma="nubbi" tags="prn.*.@←ADVL"><select lemma="ietjá" /></match>
+ </rule>     
+       <rule weight="1.0">
+   <match lemma="moadde" tags="num.*"><select lemma="gallegasj" /></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="moadde" tags="num.*"><select lemma="muhtem" /></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="moadde" tags="num.*"><select lemma="muhtem" /></match>
+      <or><match tags="n.sem_measr_time.*"/>
+      <match tags="n.sem_time.*"/></or>
+ </rule>     
+
+       <rule weight="1.0">
+   <match lemma="dás" tags="adv.*"><select lemma="dánna" /></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="dás" tags="adv.*"><select lemma="dás" /></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="dás" tags="adv.*"><select lemma="dás" /></match>
+   <match lemma="ovdal"/>
+ </rule>     
+
 
        <rule weight="1.0">
    <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*"/></match>

@@ -28,6 +28,9 @@
        <cat-item lemma="prosent" tags="NP.@←ADVL"/>
        <cat-item lemma="prosent" tags="NP.@←ADVL.*"/>
     </def-cat>
+    <def-cat n="duodajADV">
+       <cat-item lemma="duodaj" tags="ADV.*"/>
+    </def-cat>
     <def-cat n="ajADV">
        <cat-item lemma="aj" tags="ADV.*"/>
     </def-cat>
@@ -36,6 +39,16 @@
       <cat-item tags="*.@SUBJ→"/>
       <cat-item tags="*.@OBJ→.*"/>
       <cat-item tags="*.@SUBJ→.*"/>
+    </def-cat>
+    <def-cat n="ARGr">
+      <cat-item tags="*.@OBJ→"/>
+      <cat-item tags="*.@SUBJ→"/>
+      <cat-item tags="*.@OBJ→.*"/>
+      <cat-item tags="*.@SUBJ→.*"/>
+      <cat-item tags="*.@ADVL-ine→"/>
+      <cat-item tags="*.@ADVL-ine→.*"/>
+      <cat-item tags="*.@ADVL-ela→"/>
+      <cat-item tags="*.@ADVL-ela→.*"/>
     </def-cat>
     <def-cat n="SPRED_r">
        <cat-item tags="*.@SPRED→"/>
@@ -50,10 +63,10 @@
        <cat-item lemma="prfprc" tags="SV.*"/>
     </def-cat>
     
-    <def-cat n="ADV">
-      <cat-item tags="ADV.@←ADVL-ela"/>
-      <cat-item tags="ADV.@←ADVL-ine"/>
-      <cat-item tags="ADV.@←ADVL"/>
+    <def-cat n="ADVleft">
+      <cat-item lemma="adv" tags="ADV.@←ADVL-ela"/>
+      <cat-item lemma="adv" tags="ADV.@←ADVL-ine"/>
+      <cat-item lemma="adv" tags="ADV.@←ADVL"/>
     </def-cat>
     <def-cat n="indef-neg">
       <cat-item lemma="indef" tags="NP.*.foc-neg"/>
@@ -113,10 +126,16 @@
         <cat-item tags="NP.@←OBJ.*"/>
     </def-cat>
 
-    <def-cat n="NP_arg">
+    <def-cat n="NP_arg_l">
         <cat-item lemma="noun" tags="NP.@←ADVL"/>
         <cat-item lemma="noun" tags="NP.@←OBJ"/>
         <cat-item lemma="noun" tags="NP.@←SUBJ"/>
+        <cat-item lemma="prn" tags="NP.@←ADVL"/>
+        <cat-item lemma="prn" tags="NP.@←OBJ"/>
+        <cat-item lemma="prn" tags="NP.@←SUBJ"/>
+        <cat-item lemma="prn" tags="NP.@←ADVL.*"/>
+        <cat-item lemma="prn" tags="NP.@←OBJ.*"/>
+        <cat-item lemma="prn" tags="NP.@←SUBJ.*"/>
     </def-cat>
 
     <def-cat n="cop-mainv">
@@ -181,6 +200,12 @@
         <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
         <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
         <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
+    </def-cat>
+    <def-cat n="IMainV"> <!-- not copula -->
+        <cat-item lemma="pfrprc" tags="SV.@-FMAINV"/>
+        <cat-item lemma="inf" tags="SV.@-FMAINV"/>
+        <cat-item lemma="pfrprc" tags="SV.*.@-FMAINV"/>
+        <cat-item lemma="inf" tags="SV.*.@-FMAINV"/>
     </def-cat>
     <def-cat n="FMainVall">  
         <cat-item tags="SV.@+FMAINV"/>
@@ -541,10 +566,35 @@
     </rule>
 
 
-    <rule comment="moves ajADV after NP_arg" > 
+    <rule comment="moves ajADV after NP_arg_l" > 
       <pattern>
         <pattern-item n="ajADV"/>
-        <pattern-item n="NP_arg"/>
+        <pattern-item n="NP_arg_l"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="moves duodajADV before vverb" > 
+      <pattern>
+        <pattern-item n="FV"/>
+        <pattern-item n="duodajADV"/>
       </pattern>
       <action>
         <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -569,7 +619,7 @@
     <rule comment="moves adverb in front of prosent" > 
       <pattern>
         <pattern-item n="prosent"/>
-        <pattern-item n="ADV"/>
+        <pattern-item n="ADVleft"/>
       </pattern>
       <action>
         <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
@@ -591,10 +641,10 @@
       </action>
     </rule>
 
-    <rule comment="moves some adverbs to after mainverb" > 
+    <rule comment="moves some adverbs closer to mainverb" > 
       <pattern>
         <pattern-item n="FMainVall"/>
-        <pattern-item n="ADV"/>
+        <pattern-item n="ADVleft"/>
         <pattern-item n="gradeADV"/>
       </pattern>
       <action>
@@ -655,11 +705,11 @@
       </action>
     </rule>
 
-<!--    <rule comment="moves adverb in front of verb" > 
+    <rule comment="moves adverb in front of mainverb" > 
       <pattern>
-        <pattern-item n="SUBJ-OBJr"/>
+        <pattern-item n="ARGr"/>
         <pattern-item n="FMainV"/>
-        <pattern-item n="ADV"/>
+        <pattern-item n="ADVleft"/>
       </pattern>
       <action>
         <out>
@@ -685,8 +735,95 @@
           </chunk>
         </out>
       </action>
-    </rule> -->
+    </rule> 
+
+    <rule comment="moves adverb in front of mainverb" > 
+      <pattern>
+        <pattern-item n="ARGr"/> 
+        <pattern-item n="FAuxV"/>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="ADVleft"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
+          </chunk>
+          <b pos="3"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
   
+    <rule comment="moves adverb in front of mainverb" > 
+      <pattern>
+        <pattern-item n="ARGr"/> 
+        <pattern-item n="FAuxV"/>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="NP_arg_l"/>
+        <pattern-item n="ADVleft"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="5" part="lemh"/>
+            <clip pos="5" part="tags"/>
+            <clip pos="5" part="chcontent"/>
+            <clip pos="5" part="lemq"/>
+          </chunk>
+          <b pos="3"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="3"/>
+        <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
 
     <rule comment="removes prnSUBJr 1" >  
       <pattern>

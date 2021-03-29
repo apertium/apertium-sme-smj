@@ -1804,6 +1804,9 @@ C[_]-T sent
   </section-def-vars>
 
   <section-def-lists>
+    <def-list n="loc-com_verbs">
+      <list-item v="rahtjat"/>
+    </def-list>
     <def-list n="com-ill_verbs">
       <list-item v="vásstedit"/>
       <list-item v="oktiivástidit"/>
@@ -2205,6 +2208,7 @@ C[_]-T sent
                 <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL-ela"/></equal>
                 <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@ADVL-ela→"/></equal>
                 <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-F←ADVL-ela"/></equal>
+                <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@N←"/></equal>
                 </or>
               </and>
               <and>
@@ -4022,6 +4026,11 @@ C[_]-T sent
 	  <equal><clip pos="1" side="tl" part="lem"/><lit v="aj"/></equal>	      
 		</test>  
           <let><var n="chunk_name"/><lit v="aj"/></let></when>
+	      <when>
+	  <test>
+	  <equal><clip pos="1" side="tl" part="lem"/><lit v="duodaj"/></equal>	      
+		</test>  
+          <let><var n="chunk_name"/><lit v="duodaj"/></let></when>
           <otherwise>
           <let><var n="chunk_name"/><lit v="adv"/></let>
 	          </otherwise>
@@ -4044,6 +4053,13 @@ C[_]-T sent
 	  <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
       </and></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc-com_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></let>	      
 	  </when>
 	  </choose>
 
@@ -5029,6 +5045,15 @@ C[_]-T sent
       </and></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
 	  </when>
+      </choose>
+      <choose>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc-com_verbs" /></in>
+	  <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></let>	      
+	  </when>
 	  </choose>
       <choose><when>
 	  <test>
@@ -5892,6 +5917,13 @@ C[_]-T sent
       </and></test>
 	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
 	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc-com_verbs" /></in>
+	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="com"/></let>	      
+	  </when>
       </choose>
         <out>
           <chunk name="noun" case="caseFirstword">
@@ -6184,6 +6216,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
       </action>
     </rule>
     <rule comment="C[AT]-V mainverbqst" c="example">
@@ -6277,7 +6310,10 @@ C[_]-T sent
         </when>
         </choose>
         <choose>
-               <when><test><equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal></test>            
+               <when><test><and>
+	               <equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal>
+	            <not><equal><clip pos="1" side="tl" part="lem"/><lit v="galggat"/></equal></not>
+	             </and>  </test>            
             <out>
               <chunk name="liehket_vblex" case="caseFirstword">
                 <tags>

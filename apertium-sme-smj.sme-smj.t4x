@@ -721,7 +721,7 @@
       </action>
     </rule>
 
-   <rule comment="NP_Advl_right IMainV ADVL_left" >
+   <rule comment="NP_Advl_right IMainV Argument_l Argument_l" >
       <pattern>
         <pattern-item n="NP_Advl_right"/>
         <pattern-item n="IMainV"/>
