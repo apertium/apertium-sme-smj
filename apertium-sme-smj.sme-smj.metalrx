@@ -1187,6 +1187,13 @@
    <match />
    <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
  </rule>     
+       <rule weight="0.6">
+   <match lemma="eallin" tags="n.*"/>
+   <match />
+   <match />
+   <match />
+   <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
+ </rule>     
        <rule weight="1.0">
    <match lemma="lahka" tags="adv.*"><select lemma="lahka" /></match>
  </rule>     
