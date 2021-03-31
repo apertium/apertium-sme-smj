@@ -1203,6 +1203,19 @@
    <match />
    <match lemma="geahpas" tags="adj.*"><select lemma="álkke" tags="adj.*"/></match>
  </rule>     
+       <rule weight="1.0">
+   <match lemma="lahka" tags="adv.*"><select lemma="lahka" /></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="lahka" tags="adv.*"><select lemma="vargga" /></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="lahka" tags="adv.*"><select lemma="vargga" /></match>
+   <match tags="num.*"/>
+ </rule>     
+       <rule weight="1.0">
+   <match lemma="ordnet" tags="vblex.*"><select lemma="biejadit" /></match>
+ </rule>     
 
        <rule weight="1.0">
    <match lemma="ollu" tags="adj.*"><select lemma="ållo" /></match>
@@ -1214,7 +1227,48 @@
    <match lemma="ollu" tags="adj.*"><select lemma="moadda" tags="prn.*"/></match>
    <match lemma="guovlu" tags="n.*"/>
  </rule>     
+       <rule weight="0.5">
+   <match lemma="ollu" tags="adj.*"><select lemma="ednak" tags="adj.*"/></match> 
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="ollu" tags="adj.*"><select lemma="ednak" tags="adj.*"/></match>
+   <or>
+   <match lemma="bargu" tags="n.*"/>
+   <match lemma="gijtto" tags="n.*"/>
+   </or>
+ </rule>     
+        <rule weight="1.0">
+   <match lemma="olu" tags="adj.*"><select lemma="ållo" /></match>
+ </rule>     
+      <rule weight="0.5">
+   <match lemma="olu" tags="adj.*"><select lemma="ednak" tags="adj.*"/></match> 
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="olu" tags="adj.*"><select lemma="ednak" tags="adj.*"/></match>
+   <or>
+   <match lemma="bargu" tags="n.*"/>
+   <match lemma="gijtto" tags="n.*"/>
+   </or>
+ </rule>     
 
+       <rule weight="1.0">
+   <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+ </rule>     
+       <rule weight="0.6">
+   <match tags="vblex.*.pl.@+FAUXV"/>
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+ </rule>     
+       <rule weight="0.6">
+   <match tags="vblex.*.pl.@+FAUXV"/>
+   <match />
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+ </rule>     
        <rule weight="1.0">
    <match lemma="nubbi" tags="prn.*"><select lemma="nubbe" /></match>
  </rule>     

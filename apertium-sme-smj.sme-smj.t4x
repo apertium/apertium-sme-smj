@@ -249,15 +249,21 @@
         <cat-item tags="SV.*.@+FMAINV.*"/>
         <cat-item tags="SV.*.*.@+FMAINV.*"/>
     </def-cat>
-    <def-cat n="AUXliehket">
-        <cat-item lemma="cop-auxvclt" tags="SV.@+FAUXV"/>
-        <cat-item lemma="cop-auxvclt" tags="SV.@+FAUXV.*"/>
-        <cat-item lemma="cop-auxvclt" tags="SV.@-FAUXV"/>
-        <cat-item lemma="cop-auxvclt" tags="SV.@-FAUXV.*"/>
-        <cat-item lemma="cop-auxv" tags="SV.@+FAUXV"/>
-        <cat-item lemma="cop-auxv" tags="SV.@+FAUXV.*"/>
-        <cat-item lemma="cop-auxv" tags="SV.@-FAUXV"/>
-        <cat-item lemma="cop-auxv" tags="SV.@-FAUXV.*"/>
+    <def-cat n="FMainVnotliehkit">
+        <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
+        <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
+        <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
+        <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
+    </def-cat>
+    <def-cat n="AUX">
+        <cat-item tags="SV.@+FAUXV"/>
+        <cat-item tags="SV.@+FAUXV.*"/>
+        <cat-item tags="SV.@-FAUXV"/>
+        <cat-item tags="SV.@-FAUXV.*"/>
+        <cat-item tags="SV.@+FAUXV"/>
+        <cat-item tags="SV.@+FAUXV.*"/>
+        <cat-item tags="SV.@-FAUXV"/>
+        <cat-item tags="SV.@-FAUXV.*"/>
     </def-cat>
     <def-cat n="FV">
         <cat-item tags="SV.@+FMAINV"/>
@@ -501,7 +507,7 @@
 
     <rule comment="add var to AUX" >  
       <pattern>
-        <pattern-item n="AUXliehket"/>
+        <pattern-item n="AUX"/>
       </pattern>
       <action>
         <out>
@@ -512,7 +518,7 @@
             <clip pos="1" part="lemq"/>
           </chunk>
         </out>
-         <let><var n="aux"/><lit v="auxliehket"/></let>
+         <let><var n="aux"/><lit v="aux"/></let>
       </action>
     </rule>
 
@@ -650,7 +656,7 @@
     <rule comment="moves mainverb after go" >
       <pattern>
         <pattern-item n="subsent"/>
-        <pattern-item n="FMainV"/>
+        <pattern-item n="FMainVnotliehkit"/>
         <pattern-item n="Argument_l"/>
       </pattern>
       <action>
@@ -1248,7 +1254,7 @@
         <pattern-item n="l-clt"/>
       </pattern>
       <action>
-         <let><var n="aux"/><lit v="auxliehket"/></let>
+         <let><var n="aux"/><lit v="aux"/></let>
         <out>
           <chunk>
             <clip pos="1" part="lemh"/>
@@ -1272,7 +1278,7 @@
       <action>
 	   <choose>
 		   <when><test>
-		   <equal><var n="aux"/><lit v="auxliehket"/></equal>
+		   <equal><var n="aux"/><lit v="aux"/></equal>
 		   </test>     
         <out>
           <chunk>
