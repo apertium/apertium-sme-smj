@@ -828,22 +828,6 @@
       </match>
     </rule>
 
-    <rule weight="0.5">
-      <match lemma="jahkásaš">
-        <select lemma="jagák"/>
-      </match>
-    </rule>
-
-    <rule weight="0.6">
-    <or>
-          <match tags="num.sg.*"/>
-          <match tags="num.arab.sg.*"/>
-    </or>
-      <match lemma="jahkásaš">
-        <select lemma="jagák"/>
-      </match>
-    </rule>
-
 
     <rule weight="1.0">
       <match lemma="coggat">
@@ -1217,8 +1201,15 @@
    <match lemma="ordnet" tags="vblex.*"><select lemma="biejadit" /></match>
  </rule>     
        <rule weight="1.0">
-   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti ahte" /></match>
+   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti vaj" /></match>
  </rule>     
+       <rule weight="0.5">
+   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti vaj" /></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti vaj" /></match>
+   <match tags="vblex.*"/>
+</rule>     
 
        <rule weight="1.0">
    <match lemma="ollu" tags="adj.*"><select lemma="ållo" /></match>
