@@ -537,6 +537,9 @@ C[_]-T sent
     <def-cat n="alde_post">
       <cat-item lemma="alde" tags="post.*"/>
     </def-cat>
+    <def-cat n="muttos_post">
+      <cat-item lemma="muttos" tags="post.*"/>
+    </def-cat>
 
     <def-cat n="eambbosat_prn">
       <cat-item lemma="eambbosat" tags="prn.*"/>
@@ -1807,6 +1810,13 @@ C[_]-T sent
   </section-def-vars>
 
   <section-def-lists>
+    <def-list n="not-move-adv">
+      <list-item v="aj"/>     
+      <list-item v="duodaj"/>      
+      <list-item v="vargga"/>    
+      <list-item v="náv"/>     
+      <list-item v="nav"/>     
+    </def-list>
     <def-list n="loc-com_verbs">
       <list-item v="rahtjat"/>
     </def-list>
@@ -2881,6 +2891,35 @@ C[_]-T sent
       <choose><when><test><not><equal><b pos="2"/><lit v=" "/></equal></not></test><out><b pos="2"/></out></when></choose>      
       </action>
     </rule>
+ 
+  <rule comment="C[DL]-PP prn_dem_sg muttos_post áigi_n" c="dán muttos áigi: dáj muttoj">
+      <pattern>
+        <pattern-item n="prn_dem_sg"/>
+        <pattern-item n="muttos_post"/>
+        <pattern-item n="áigi_n"/>
+      </pattern>
+      <action>
+       <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+         <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
+          <out>
+         <chunk name="adv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="ADV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      <choose><when><test><not><equal><b pos="2"/><lit v=" "/></equal></not></test><out><b pos="2"/></out></when></choose>      
+      </action>
+    </rule>
+ 
  
  <rule comment="C[T]-PHR noun_nom leat_main geatnegahtton_adj verb_inf" c="geatnegahtton=åvdåsvásstádus: Skuvla lea geatnegahtton oahpahit"> 
       <pattern>
@@ -4025,11 +4064,9 @@ C[_]-T sent
                 </and></test> -->
       <choose>
 	      <when>
-	  <test><or>
-	  <equal><clip pos="1" side="tl" part="lem"/><lit v="aj"/></equal>	      
-	  <equal><clip pos="1" side="tl" part="lem"/><lit v="duodaj"/></equal>	      
-	  <equal><clip pos="1" side="tl" part="lem"/><lit v="vargga"/></equal>	      
-	  </or></test>
+	  <test>
+       <in><clip pos="1" side="tl" part="lem"/><list n="not-move-adv"/></in> 
+	  </test>
           <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let>
 	      </when>
           <otherwise>

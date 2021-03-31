@@ -89,8 +89,7 @@
         <cat-item lemma="cop-auxvclt" tags="SV.*"/>
         <cat-item lemma="cop-mainvclt" tags="SV.*"/>
     </def-cat>
- 
-     <def-cat n="word">
+      <def-cat n="word">
     <cat-item  tags="SV.*"/>
     <cat-item  tags="NP.*"/>
     <cat-item  tags="ADV.*"/>

@@ -1216,6 +1216,9 @@
        <rule weight="1.0">
    <match lemma="ordnet" tags="vblex.*"><select lemma="biejadit" /></match>
  </rule>     
+       <rule weight="1.0">
+   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti ahte" /></match>
+ </rule>     
 
        <rule weight="1.0">
    <match lemma="ollu" tags="adj.*"><select lemma="ållo" /></match>
