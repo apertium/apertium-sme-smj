@@ -318,7 +318,7 @@
       <match lemma="geardi" tags="n.*"><select lemma="bálle"/></match>
     </rule>
     <rule weight="0.6">
-      <match tags="adj.ord.sg.*"/>
+      <match tags="adj.ord.*"/>
       <match lemma="geardi" tags="n.*.sg.gen.*"><select lemma="bálle"/></match>
     </rule>
 
@@ -909,6 +909,7 @@
       </match>
 <or>
       <match tags="n.sem_txt.*.@←OBJ"/>
+      <match tags="n.sem_lang.*.@←OBJ"/>
       <match tags="prn.*.@←OBJ"/>
       </or>
     </rule>

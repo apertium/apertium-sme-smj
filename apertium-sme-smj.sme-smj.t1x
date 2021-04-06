@@ -293,6 +293,17 @@ C[_]-T sent
       <cat-item tags="n.der_sasj.adj.*"/>
     </def-cat>
 
+    <def-cat n="adj-prsprc">
+      <cat-item tags="adj.*"/>
+      <cat-item tags="n.*.der_dibme.adj.*"/>
+      <cat-item tags="n.*.der_lasj.adj.*"/>
+      <cat-item tags="n.der_lasj.adj.*"/>
+      <cat-item tags="n.der_saš.adj.*"/>
+      <cat-item tags="n.*.der_sasj.adj.*"/>
+      <cat-item tags="n.der_sasj.adj.*"/>
+      <cat-item tags="vblex.*.prsprc.*"/>
+    </def-cat>
+
     <def-cat n="verb_inf">
       <cat-item tags="vblex.*.inf.*"/>
       <cat-item tags="vblex.*.der_l.v.inf.*"/>
@@ -1816,6 +1827,7 @@ C[_]-T sent
       <list-item v="vargga"/>    
       <list-item v="náv"/>     
       <list-item v="nav"/>     
+      <list-item v="gal"/>     
     </def-list>
     <def-list n="loc-com_verbs">
       <list-item v="rahtjat"/>
@@ -5175,7 +5187,7 @@ C[_]-T sent
     <rule comment="C[_]-A n_cmp adj" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
-        <pattern-item n="adj"/> <!-- usually derivated from noun -->
+        <pattern-item n="adj-prsprc"/> <!-- usually derivated from noun -->
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>

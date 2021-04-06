@@ -28,6 +28,9 @@
        <cat-item lemma="prosent" tags="NP.@←ADVL"/>
        <cat-item lemma="prosent" tags="NP.@←ADVL.*"/>
     </def-cat>
+    <def-cat n="galADV">
+       <cat-item lemma="gal" tags="ADV.*"/>
+    </def-cat>
     <def-cat n="duodajADV">
        <cat-item lemma="duodaj" tags="ADV.*"/>
        <cat-item lemma="vargga" tags="ADV.*"/>
@@ -799,6 +802,38 @@
         <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
         <out><b pos="1"/></out>
       </when></choose>
+      </action>
+    </rule>
+
+    <rule comment="removes not prn12SUBJr 6" >  
+      <pattern>
+        <pattern-item n="galADV"/>
+        <pattern-item n="prn12SUBJr"/>
+        <pattern-item n="FV"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
       </action>
     </rule>
 

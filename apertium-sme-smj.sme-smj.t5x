@@ -13,6 +13,7 @@
     </def-cat>
     <def-cat n="l-clt">
       <cat-item name="noun"/>
+      <cat-item name="pp"/>
       <cat-item name="prn"/>
       <cat-item name="vblex"/>
       <cat-item name="adv"/>
@@ -21,6 +22,8 @@
       <cat-item name="vargga"/>
       <cat-item name="náv"/>
       <cat-item name="nav"/>
+      <cat-item name="gal"/>
+      <cat-item name="go"/>
     </def-cat>
 
     <def-cat n="nom1">

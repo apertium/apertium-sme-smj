@@ -94,6 +94,8 @@
     <cat-item  tags="NP.*"/>
     <cat-item  tags="ADV.*"/>
     <cat-item  tags="PP.*"/>
+    <cat-item  tags="cnjsub.*"/>
+    <cat-item  tags="cnjcoo.*"/>
     </def-cat>
     <def-cat n="pfrprcliehket">
         <cat-item lemma="pfrprc" tags="SV.@-FMAINV.liehket"/>
@@ -1283,6 +1285,7 @@
           <chunk>
             <clip pos="1" part="lemh"/>
             <clip pos="1" part="tags"/>
+            <lit-tag v="cltl"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
           </chunk>
