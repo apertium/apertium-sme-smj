@@ -957,6 +957,37 @@
     </rule> -->
 
     <rule weight="1.0">
+      <match lemma="submi">
+        <select lemma="ruhta"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+    <or>
+      <match tags="n.*.cmp"/>
+      <match tags="adj.*.cmp"/>
+      <match tags="vblex.*.cmp"/>
+      <match tags="adv.*.cmp"/>
+    </or>
+      <match lemma="submi">
+        <select lemma="ruhta"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="submi">
+        <select lemma="tjoahkke"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="submi"  tags="n.sem_money.sg.*">
+        <select lemma="tjoahkke"/>
+      </match>
+    </rule>
+
+
+
+    <rule weight="1.0">
       <match lemma="unnut">
         <select lemma="unnot"/>
       </match>
