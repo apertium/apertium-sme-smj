@@ -908,28 +908,36 @@
         <select lemma="låhkåt"/>
       </match>
 <or>
-      <match tags="n.sem_txt.*.@←OBJ"/>
-      <match tags="n.sem_lang.*.@←OBJ"/>
-      <match tags="prn.*.@←OBJ"/>
-      </or>
+      <match tags="n.sem_rule.*.acc.*"/>
+      <match tags="n.sem_org_txt.*.acc.*"/>
+      <match tags="n.sem_txt.*"/>
+      <match tags="n.sem_lang.*.acc.*"/>
+      <match tags="prn.*.acc.*"/>
+       <match tags="np.sem_edu_org.*.loc.*"/>
+       <match lemma="kapihtal"/>
+       <match lemma="iehčanassii"/>
+      <match tags="n.sem_domain.*"/>
+     </or>
     </rule>
 
 
     <rule weight="0.6">
 <or>
-      <match tags="n.sem_txt.*.@OBJ→"/>
-      <match tags="prn.*.@OBJ→"/>
-      </or>
-      <match lemma="lohkat">
-        <select lemma="låhkåt"/>
-      </match>
-    </rule>
-
-    <rule weight="0.6">
-<or>
+      <match tags="n.sem_rule.*.acc.*"/>
+      <match tags="n.sem_org_txt.*.acc.*"/>
+      <match tags="n.sem_txt.*"/>
+      <match tags="n.sem_lang.*.acc.*"/>
+       <match tags="n.sem_edu_org.*.loc.*"/>
+       <match tags="np.sem_org.*.loc.*"/>
+       <match lemma="kapihtal"/>
+       <match lemma="fáddá"/>
       <match lemma="máhttit"/>
       <match lemma="oahppat"/>
       <match lemma="oahpahit"/>
+      <match lemma="máhttu"/>
+      <match lemma="hállu"/>
+      <match tags="n.sem_domain.*"/>
+       <match lemma="iehčanassii"/>
       </or>
       <match lemma="lohkat">
         <select lemma="låhkåt"/>
@@ -937,9 +945,11 @@
     </rule>
 
 
-
-<!--    <rule weight="0.6">
+    <rule weight="0.6">
+<or>
       <match tags="cm"/>
+      <match lemma="gii" tags="prn.rel.*.acc.*"/>
+</or>
       <match lemma="lohkat">
         <select lemma="javllat"/>
       </match>
@@ -954,7 +964,64 @@
       <match tags="n.*.@←SUBJ"/>
       <match tags="prn.*.@←SUBJ"/>
       </or>
-    </rule> -->
+    </rule> 
+    <rule weight="0.6">
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+      <match/><or>
+      <match lemma="čállit"/>
+      <match tags="n.sem_txt.*"/>
+      <match tags="n.sem_domain.*"/>
+      <match tags="n.sem_edu.*"/>
+       <match tags="n.sem_edu_org.*.loc.*"/>
+       <match tags="np.sem_org.*.loc.*"/>
+       <match lemma="kapihtal"/>
+       <match lemma="fáddá"/>
+      </or>
+    </rule> 
+    <rule weight="0.6">
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+      <match/>
+      <match/>
+      <or>
+      <match lemma="čállit"/>
+      <match tags="n.sem_edu.*"/>
+       <match tags="n.sem_edu_org.*.loc.*"/>
+       <match tags="np.sem_org.*.loc.*"/>
+       <match lemma="kapihtal"/>
+       <match lemma="fáddá"/>
+      <match tags="n.sem_txt.*"/>
+      <match tags="n.sem_domain.*"/>
+      </or>
+    </rule> 
+    <rule weight="0.6">
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+      <match/>
+      <match/>
+      <match/>
+      <or>
+      <match lemma="čállit"/>
+      <match tags="n.sem_edu.*"/>
+       <match tags="n.sem_edu_org.*.loc.*"/>
+       <match tags="np.sem_org.*.loc.*"/>
+       <match lemma="kapihtal"/>
+       <match lemma="fáddá"/>
+      <match tags="n.sem_txt.*"/>
+      <match tags="n.sem_domain.*"/>
+      </or>
+    </rule> 
+    <rule weight="0.6">
+      <match lemma="čállit"/>
+      <match/>
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+    </rule> 
 
     <rule weight="1.0">
       <match lemma="submi">
