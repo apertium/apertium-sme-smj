@@ -1248,6 +1248,42 @@
          <let><var n="aux"/><lit v=""/></let>
       </action>
     </rule>
+    <rule comment="removes jut after lea" >  
+      <pattern>
+        <pattern-item n="wordbeforeahte"/>
+        <pattern-item n="ahte"/>
+        <pattern-item n="cop-mainv"/>
+        <pattern-item n="adv_l"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="3"/><lit v=" "/></equal></not></test>
+        <out><b pos="3"/></out>
+      </when></choose>
+      </action>
+    </rule>
 
     <rule comment="experiment for å legge til l/la clt">
       <pattern>

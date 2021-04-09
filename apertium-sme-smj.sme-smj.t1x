@@ -302,6 +302,7 @@ C[_]-T sent
       <cat-item tags="n.*.der_sasj.adj.*"/>
       <cat-item tags="n.der_sasj.adj.*"/>
       <cat-item tags="vblex.*.prsprc.*"/>
+      <cat-item tags="vblex.*.prfprc.*"/>
     </def-cat>
 
     <def-cat n="verb_inf">
@@ -1241,6 +1242,10 @@ C[_]-T sent
       <attr-item tags="der_car"/>
       <attr-item tags="der_nomact"/>
     </def-attr>
+    <def-attr n="a_passvblex">
+      <attr-item tags="der_passl.vblex"/>
+      <attr-item tags="der_passs.vblex"/>
+    </def-attr>
     <def-attr n="a_deriv2">
       <attr-item tags="der_dimin"/>
       <attr-item tags="der_alla"/>
@@ -1830,14 +1835,14 @@ C[_]-T sent
       <list-item v="nav"/>     
       <list-item v="gal"/>     
     </def-list>
-    <def-list n="loc-com_verbs">
+    <def-list n="loc2com_verbs">
       <list-item v="rahtjat"/>
     </def-list>
-    <def-list n="com-ill_verbs">
+    <def-list n="com2ill_verbs">
       <list-item v="vásstedit"/>
       <list-item v="oktiivástidit"/>
     </def-list>
-    <def-list n="acc-ill_verbs">
+    <def-list n="acc2ill_verbs">
       <list-item v="vájkkudit"/>
       <list-item v="tjágŋat"/>
     </def-list>
@@ -1853,9 +1858,12 @@ C[_]-T sent
     <def-list n="birrapx_verbs">
       <list-item v="geahččat"/>
     </def-list>
-    <def-list n="ill-ine_verbs">
+    <def-list n="ill2ine_verbs">
       <list-item v="báhtset"/>
       <list-item v="báhcit"/>
+    </def-list>
+    <def-list n="loc2acc_verbs">
+      <list-item v="guossidit"/>
     </def-list>
     <def-list n="actio_ill_verbs">
       <list-item v="liikot"/>
@@ -3174,7 +3182,9 @@ C[_]-T sent
                 <b/>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
-                  <lit-tag v="vblex.inf"/>
+                  <lit-tag v="vblex"/>
+                  <clip pos="1" side="tl" part="a_passvblex"/>
+                  <lit-tag v="inf"/>
                 </lu>
               </chunk>
             </out>
@@ -4089,25 +4099,32 @@ C[_]-T sent
       <choose>
 	      <when>
 	  <test><or><and>
-       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="com2ill_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
 		</and>  
 		  <and>
-       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="acc2ill_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
       </and></or></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="ill2ine_verbs" /></in>
 	  <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
       </and></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="loc-com_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2acc_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2com_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
       </and></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></let>	      
@@ -4514,6 +4531,14 @@ C[_]-T sent
             </and></test>
              <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></let>
              </when>
+          </choose> 
+        <choose>
+          <when>
+              <test>
+                <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@Num←"/></equal>
+              </test>
+           <let><var n="func"/><clip pos="1" side="sl" part="a_func"/></let>
+          </when>
           </choose> 
           <choose> 
           <when>
@@ -5079,19 +5104,26 @@ C[_]-T sent
 	  </choose>
       <choose>
 	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2acc_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>	      
+	  </when>
+	      <when>
 	  <test><or><and>
-       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="com2ill_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
 		</and>  
 		  <and>
-       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="acc2ill_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
       </and></or></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="ill2ine_verbs" /></in>
 	  <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
       </and></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
@@ -5100,7 +5132,7 @@ C[_]-T sent
       <choose>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="loc-com_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2com_verbs" /></in>
 	  <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></equal>	      
       </and></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></let>	      
@@ -5433,21 +5465,28 @@ C[_]-T sent
       <choose>
 	      <when>
 	  <test><or><and>
-       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="com2ill_verbs" /></in>
 	  <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
 		</and>  
 		  <and>
-       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="acc2ill_verbs" /></in>
 	  <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
       </and></or></test>
 	  <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="ill2ine_verbs" /></in>
 	  <equal><clip pos="2" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
       </and></test>
 	  <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2acc_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
@@ -5823,18 +5862,25 @@ C[_]-T sent
       <choose>
 	      <when>
 	  <test><or><and>
-       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="com2ill_verbs" /></in>
 	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
 		</and>  
 		  <and>
-       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="acc2ill_verbs" /></in>
 	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
       </and></or></test>
 	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2acc_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="ill2ine_verbs" /></in>
 	  <equal><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
       </and></test>
 	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
@@ -5879,18 +5925,25 @@ C[_]-T sent
       <choose>
 	      <when>
 	  <test><or><and>
-       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="com2ill_verbs" /></in>
 	  <equal><clip pos="4" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
 		</and>  
 		  <and>
-       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="acc2ill_verbs" /></in>
 	  <equal><clip pos="4" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
       </and></or></test>
 	  <let><clip pos="4" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2acc_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="ill2ine_verbs" /></in>
 	  <equal><clip pos="4" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
       </and></test>
 	  <let><clip pos="4" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
@@ -5960,25 +6013,32 @@ C[_]-T sent
       <choose>
 	      <when>
 	  <test><or><and>
-       <in caseless="yes"><var n="current_verb"/><list n="com-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="com2ill_verbs" /></in>
 	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
 		</and>  
 		  <and>
-       <in caseless="yes"><var n="current_verb"/><list n="acc-ill_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="acc2ill_verbs" /></in>
 	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
       </and></or></test>
 	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="ill-ine_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="ill2ine_verbs" /></in>
 	  <equal><clip pos="3" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
       </and></test>
 	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
 	  </when>
 	      <when>
 	  <test><and>
-       <in caseless="yes"><var n="current_verb"/><list n="loc-com_verbs" /></in>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2acc_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2com_verbs" /></in>
 	  <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
       </and></test>
 	  <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="com"/></let>	      
@@ -6426,7 +6486,9 @@ C[_]-T sent
                 <b/>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
-                  <lit-tag v="vblex.inf"/>
+                  <lit-tag v="vblex"/>
+                  <clip pos="1" side="tl" part="a_passvblex"/>
+                  <lit-tag v="inf"/>
                 </lu>
               </chunk>
             </out>
