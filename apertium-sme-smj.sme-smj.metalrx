@@ -1507,8 +1507,46 @@
     </rule>
 
     <rule weight="1.0">
+      <match lemma="ahte" tags="cnjsub.*">
+        <select lemma="jut" tags="cnjsub.*"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="ahte" tags="cnjsub.*">
+        <select lemma="ahte" tags="cnjsub.*"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <or><match lemma="oaidnit"/>
+      <match lemma="gullat"/></or>
+      <match lemma="ahte" tags="cnjsub.*">
+        <select lemma="ahte" tags="cnjsub.*"/>
+      </match>
+    </rule>
+    
+    <rule weight="1.0">
+      <match lemma="dienas" tags="n.*">
+        <select lemma="ruhtavuojtto" tags="cnjsub.*"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="dienas" tags="n.*">
+        <select lemma="sisboahto" tags="cnjsub.*"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match lemma="n.*cmp"/>
+      <match lemma="adj.*cmp"/>
+      </or>
+      <match lemma="dienas" tags="n.*">
+        <select lemma="sisboahto" tags="cnjsub.*"/>
+      </match>
+    </rule>
+
+    <rule weight="1.0">
       <match lemma="ain" tags="adv.*">
-        <select lemma="ajn" tags="adv.*"/>
+        <select lemma="ájn" tags="adv.*"/>
       </match>
     </rule>
 
