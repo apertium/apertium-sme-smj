@@ -13,6 +13,7 @@
     </def-cat>
     <def-cat n="l-clt">
       <cat-item name="noun"/>
+      <cat-item name="adj"/>
       <cat-item name="pp"/>
       <cat-item name="prn"/>
       <cat-item name="vblex"/>
@@ -25,6 +26,8 @@
       <cat-item name="gal"/>
       <cat-item name="go"/>
       <cat-item name="ahte"/>
+      <cat-item name="cnjcoo"/>
+      <cat-item name="cnjsub"/>
     </def-cat>
 
     <def-cat n="nom1">

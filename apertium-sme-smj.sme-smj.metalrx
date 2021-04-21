@@ -972,6 +972,7 @@
       <match tags="np.*.@←SUBJ"/>
       <match tags="n.*.@←SUBJ"/>
       <match tags="prn.*.@←SUBJ"/>
+      <match tags="prn.*.acc.*"/>
       </or>
     </rule> 
     <rule weight="0.6">

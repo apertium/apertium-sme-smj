@@ -104,6 +104,10 @@
         <cat-item tags="NP.@←ADVL"/>
         <cat-item tags="NP.@←ADVL.*"/>
     </def-cat>
+    <def-cat n="cvp">
+      <cat-item tags="cnjsub.@CVP"/>
+      <cat-item tags="cnjcoo.@CVP"/>
+    </def-cat>
     <def-cat n="ahte">
       <cat-item lemma="ahte" tags="cnjsub.@CVP"/>
     </def-cat>
@@ -646,6 +650,37 @@
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="moves SPREDADVL_left before cop-mainv" > 
+      <pattern>
+        <pattern-item n="cvp"/>
+        <pattern-item n="cop-mainv"/>
+        <pattern-item n="SPREDADVL_left"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
           </chunk>
           <b pos="2"/>
           <chunk>

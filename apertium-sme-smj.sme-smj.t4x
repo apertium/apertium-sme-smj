@@ -63,6 +63,10 @@
       <cat-item tags="NP"/>
       <cat-item tags="NP.*"/>
     </def-cat>
+    <def-cat n="adj">
+      <cat-item lemma="adj" tags="NP"/>
+      <cat-item tags="NP.*"/>
+    </def-cat>
     
     <def-cat n="SV_Obj_r">
         <cat-item tags="SV.@←OBJ.*"/>
@@ -100,6 +104,9 @@
     <def-cat n="pfrprcliehket">
         <cat-item lemma="pfrprc" tags="SV.@-FMAINV.liehket"/>
         <cat-item lemma="pfrprc" tags="SV.@-FMAINV.liehket.*"/>
+    </def-cat>
+    <def-cat n="infAl">
+        <cat-item lemma="vblex" tags="SV.@A←"/>
     </def-cat>
     <def-cat n="IFMainV">
         <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
@@ -314,11 +321,19 @@
          <cat-item tags="*.@←ADVL"/>
     </def-cat>
     
-    <def-cat n="FAuxV">
-        <cat-item tags="@+FAUXV"/>
-        <cat-item tags="*.@+FAUXV"/>
-        <cat-item tags="*.@+FAUXV.*"/>
-        <cat-item tags="*.*.@+FAUXV.*"/>
+    <def-cat n="FAuxV"> <!-- not neg -->
+        <cat-item lemma="cop-auxv" tags="@+FAUXV"/>
+        <cat-item lemma="cop-auxv" tags="*.@+FAUXV"/>
+        <cat-item lemma="cop-auxv" tags="*.@+FAUXV.*"/>
+        <cat-item lemma="cop-auxv" tags="*.*.@+FAUXV.*"/>
+        <cat-item lemma="auxv" tags="@+FAUXV"/>
+        <cat-item lemma="auxv" tags="*.@+FAUXV"/>
+        <cat-item lemma="auxv" tags="*.@+FAUXV.*"/>
+        <cat-item lemma="auxv" tags="*.*.@+FAUXV.*"/>
+        <cat-item lemma="vblex" tags="@+FAUXV"/>
+        <cat-item lemma="vblex" tags="*.@+FAUXV"/>
+        <cat-item lemma="vblex" tags="*.@+FAUXV.*"/>
+        <cat-item lemma="vblex" tags="*.*.@+FAUXV.*"/>
     </def-cat>
     
     <def-cat n="CC">
@@ -437,7 +452,7 @@
 
   <section-rules>
 
-   <rule comment="FAuxV IMainV ADVL_left Supinum" > <!--AUX V A A becomes AUX A V A when supinum/inf -->
+   <rule comment="word IMainV Argument_l Argument_l SV_ADVL" > <!--AUX V A A becomes AUX A V A when supinum/inf -->
       <pattern>
         <pattern-item n="word"/>
         <pattern-item n="IFMainV"/>
@@ -523,6 +538,30 @@
       </action>
     </rule>
 
+    <rule comment="legg til l-clt foran infiniv" c="somá oaidnit ahte : suohtas la vuojnnet ahte " >  
+      <pattern>
+        <pattern-item n="adj"/>
+        <pattern-item n="infAl"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <lit-tag v="cltl"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
     <rule comment="SUBJr FMainV bytter plass" >  
