@@ -1933,6 +1933,7 @@ C[_]-T sent
     </def-list>
     <def-list n="smj-supn-triggerverbs">
       <list-item v="dahkat"/>
+      <list-item v="hásstalit"/>
     </def-list>
     <def-list n="alphabet">
       <list-item v="aalphabet"/>
@@ -2082,67 +2083,93 @@ C[_]-T sent
     <def-macro n="ref-to-pers" npar="1">
  		<choose>
 		<when><test>
+          <equal><clip pos="1" side="sl" part="a_prn"/><lit-tag v="prn.ref"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_prn"/><lit-tag v="prn.pers"/></let>
+ 		<choose>
+		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3pl"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="sån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p3.pl.nom"/></let>
           <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p3"/></let>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p3.pl"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
  		</when>
  		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3du"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="sån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p3.du.nom"/></let>
           <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p3"/></let>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="du"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p3.du"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
  		</when>
  		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3sg"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="sån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p3.sg.nom"/></let>
           <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p3"/></let>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p3.sg"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
  		</when>
 		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2pl"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="dån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p2.pl.nom"/></let>
           <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p2"/></let>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p2.pl"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
  		</when>
  		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2du"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="dån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p2.du.nom"/></let>
           <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p2"/></let>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="du"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p2.du"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
  		</when>
  		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2sg"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="dån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p2.sg.nom"/></let>
-          <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p2"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p2.sg"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
           <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
  		</when>
 		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1pl"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="mån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p1.pl.nom"/></let>
-          <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p1"/></let>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p1.pl"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
  		</when>
  		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1du"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="mån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p1.du.nom"/></let>
-          <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p1"/></let>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="du"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p1.du"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
  		</when>
  		<when><test>
 	   <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1sg"/></equal></test>
 		<let><clip pos="1" side="tl" part="lem"/><lit v="mån"/></let>
-		<let><clip pos="1" side="tl" part="tags"/><lit-tag v="prn.pers.p1.sg.nom"/></let>
-          <let><clip pos="1" side="tl" part="a_person"/><lit-tag v="p1"/></let>
-          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+        <let><clip pos="1" side="tl" part="tags"/><concat>
+		<clip pos="1" side="tl" part="a_prn"/>
+		<lit-tag v="p1.sg"/>
+		<clip pos="1" side="tl" part="a_case"/></concat></let>
+ 		</when>
+ 		</choose>
+ 		<choose><when><test>
+	   <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+ 		</when>
+ 		</choose>
  		</when>
  		</choose>
     </def-macro>
@@ -4466,8 +4493,10 @@ C[_]-T sent
 		</choose>
 		<choose>
 		<when>
-		<test><and>    
+		<test><and><or>    
 		<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></equal>
+		<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></equal>
+		</or>
        <in caseless="yes"><var n="current_verb"/><list n="dadjat_verbs" /></in>
 	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="ref"/></equal>
        </and></test>
@@ -6700,6 +6729,7 @@ C[_]-T sent
       </pattern>
       <action>
          <let><var n="chunk_name"/><lit v="vblex"/></let>
+        <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
       <choose><when><test>
 	  <and>
 		  <or><and><or>

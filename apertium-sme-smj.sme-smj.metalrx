@@ -205,14 +205,20 @@
     </rule>
 
     <rule weight="0.5">
+      <match lemma="ovdal" tags="adv.*"> <select lemma="åvddål"/> </match>
+      <match lemma="leat"/>   
+    </rule>
+
+
+    <rule weight="0.5">
       <match lemma="ovdal" tags="adv.*"> <select lemma="åvddåla"/> </match>
     </rule>
 
     <rule weight="0.6">
-      <match lemma="ovdal" tags="adv.*"> <select lemma="åvddåla" tags="adv.@ADVL-ela→"/> </match>
+      <match lemma="ovdal" tags="adv.@ADVL-ela→"> <select lemma="åvddåla" /> </match>
     </rule>
     <rule weight="0.6">
-      <match lemma="ovdal" tags="adv.*"> <select lemma="åvddåla" tags="adv.@←ADVL-ela"/> </match>
+      <match lemma="ovdal" tags="adv.@←ADVL-ela"> <select lemma="åvddåla" /> </match>
     </rule>
 
 
