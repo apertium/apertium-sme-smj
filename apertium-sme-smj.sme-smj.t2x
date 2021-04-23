@@ -2,11 +2,11 @@
 <interchunk>
 
  <section-def-cats>
-    <def-cat n="ii">
-      <cat-item lemma="ii" tags="SV.*"/>
+    <def-cat n="neg">
+      <cat-item lemma="neg" tags="SV.*"/>
     </def-cat>
 
-    <def-cat n="CONNEG">
+    <def-cat n="conneg">
       <cat-item lemma="conneg" tags="SV.*"/>
     </def-cat>
     <def-cat n="comma">
@@ -48,6 +48,10 @@
         <cat-item tags="NP.@-F←OBJ.*"/>
     </def-cat>
 
+    <def-cat n="SPRED-right">
+        <cat-item tags="NP.@SPRED→.*"/>
+    </def-cat>
+
     <def-cat n="ADVL-right">
         <cat-item tags="NP.@ADVL→.*"/>
         <cat-item tags="NP.@ADVL→"/>
@@ -84,6 +88,10 @@
         <cat-item tags="NP.@P←.*"/>
         <cat-item tags="NP.@P←"/>
     </def-cat>
+    <def-cat n="prfprc">
+        <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
+        <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
+    </def-cat>
 
     <def-cat n="FMainV">
         <cat-item tags="SV.@+FMAINV"/>
@@ -95,12 +103,12 @@
     </def-cat>
 
     <def-cat n="FAuxV">
-        <cat-item tags="SV.@+FMAUXV"/>
-        <cat-item tags="SV.@+FMAUXV.*"/>
-        <cat-item tags="SV.*.@+FMAUXV.*"/>
-        <cat-item tags="SV.*.*.@+FMAUXV.*"/>
-        <cat-item tags="SV.*.@+FMAUXV"/>
-        <cat-item tags="SV.*.*.@+FMAUXV"/>
+        <cat-item tags="SV.@+FAUXV"/>
+        <cat-item tags="SV.@+FAUXV.*"/>
+        <cat-item tags="SV.*.@+FAUXV.*"/>
+        <cat-item tags="SV.*.*.@+FAUXV.*"/>
+        <cat-item tags="SV.*.@+FAUXV"/>
+        <cat-item tags="SV.*.*.@+FAUXV"/>
     </def-cat>
 
     <def-cat n="dovne">
@@ -129,9 +137,6 @@
         <cat-item lemma="gitta" tags="Adv.*"/>
     </def-cat>
 
-    <def-cat n="Pcle">
-        <cat-item tags="Pcle.@PCLE"/>
-    </def-cat>
     
     
       <def-cat n="Pcle_delete">
@@ -523,6 +528,37 @@
      </action>
     </rule>
 
+   <rule comment="REGLA: AUX SPRED-right prfprc"> 
+     <pattern>
+       <pattern-item n="FAuxV"/>
+       <pattern-item n="SPRED-right"/>
+       <pattern-item n="prfprc"/>
+     </pattern>
+     <action>
+       <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+     </action>
+    </rule> 
 
 
   </section-rules>

@@ -111,6 +111,9 @@
     <def-cat n="ahte">
       <cat-item lemma="ahte" tags="cnjsub.@CVP"/>
     </def-cat>
+    <def-cat n="ge_pcle">
+        <cat-item lemma="ge" tags="pcle.*"/>
+    </def-cat>
     <def-cat n="dem">
       <cat-item lemma="prn" tags="*.dem"/>
     </def-cat>
@@ -461,6 +464,26 @@
       </action>
     </rule> 
 
+    <rule comment="remove-ge_pcle">
+      <pattern>
+        <pattern-item n="neg-vblex"/>
+        <pattern-item n="ge_pcle"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+        <out><b pos="1"/></out>
+      </when></choose>
+      </action>
+    </rule>
 
 
     <rule comment="remove-dem">

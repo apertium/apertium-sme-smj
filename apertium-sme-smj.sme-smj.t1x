@@ -4513,7 +4513,7 @@ C[_]-T sent
           </lu>
            </chunk>
             <b/>
-          <chunk name="cop-mainvclt">
+          <chunk name="cop-mainv">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@+FMAINV"/></tag>
@@ -4716,7 +4716,7 @@ C[_]-T sent
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@+FMAINV"/></tag>
           </tags>
-            <lu>
+            <lu> 
               <clip pos="2" side="tl" part="lem"/>              
               <lit-tag v="vblex.indic.pres"/>
               <clip pos="1" side="tl" part="a_person"/>
@@ -4738,7 +4738,7 @@ C[_]-T sent
           </lu>
            </chunk>
             <b pos="1"/>
-          <chunk name="cop-mainvclt">
+          <chunk name="cop-mainv">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@+FMAINV"/></tag>
@@ -4799,7 +4799,7 @@ C[_]-T sent
 	     </action>
     </rule> 
 
-   <rule comment="C[T]-N prn_obj opred_l" c="example">
+   <rule comment="C[T]-N prn_obj opred_l" c="Oskal lohká sin duđavaččat doaluiguin. : Oskal javllá sij li dudálattja dáhpádusájn.">
       <pattern>
         <pattern-item n="prn_obj"/>  
         <pattern-item n="opred_l"/>  
@@ -4819,7 +4819,7 @@ C[_]-T sent
            <let><var n="number"/><lit-tag v="p3.sg"/></let>
 		  </when>
 		  <otherwise>
-           <let><var n="number"/><clip pos="1" side="tl" part="a_nbr"/></let>
+           <let><var n="number"/><clip pos="1" side="sl" part="a_nbr"/></let>
 		  </otherwise>
 		  </choose>
       <out>
@@ -4833,7 +4833,7 @@ C[_]-T sent
           </lu>
            </chunk>
             <b pos="1"/>
-          <chunk name="cop-mainvclt">
+          <chunk name="cop-mainv">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@+FMAINV"/></tag>
@@ -4890,7 +4890,7 @@ C[_]-T sent
           </lu>
            </chunk>
             <b pos="1"/>
-          <chunk name="cop-mainvclt">
+          <chunk name="cop-mainv">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><lit-tag v="@+FMAINV"/></tag>
@@ -6837,7 +6837,7 @@ C[_]-T sent
         </otherwise>
         </choose>
         <out>
-          <chunk name="pfrprc" case="caseFirstword">
+          <chunk name="prfprc" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
@@ -7107,6 +7107,7 @@ C[_]-T sent
                     <let><var n="qst"/><lit v=""/></let>
                     <let><var n="current_verb"/><lit v=""/></let>
                     <let><var n="negsup"/><lit v=""/></let>
+                    <let><var n="infin"/><lit v=""/></let>
         <let><var n="supn_coor"/><lit v=""/></let>
         <let><var n="number"/><lit v=""/></let>
       </action>
@@ -7226,6 +7227,7 @@ C[_]-T sent
                     <let><var n="qst"/><lit v=""/></let>
                     <let><var n="negsup"/><lit v=""/></let>
 	  <let><var n="current_verb"/><lit v=""/></let>  
+                    <let><var n="infin"/><lit v=""/></let>
         <let><var n="supn_coor"/><lit v=""/></let>
       </action>
     </rule>

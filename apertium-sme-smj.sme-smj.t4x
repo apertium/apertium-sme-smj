@@ -101,9 +101,13 @@
     <cat-item  tags="cnjsub.*"/>
     <cat-item  tags="cnjcoo.*"/>
     </def-cat>
+    <def-cat n="pfrprc">
+        <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
+        <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
+    </def-cat>
     <def-cat n="pfrprcliehket">
-        <cat-item lemma="pfrprc" tags="SV.@-FMAINV.liehket"/>
-        <cat-item lemma="pfrprc" tags="SV.@-FMAINV.liehket.*"/>
+        <cat-item lemma="prfprc" tags="SV.@-FMAINV.liehket"/>
+        <cat-item lemma="prfprc" tags="SV.@-FMAINV.liehket.*"/>
     </def-cat>
     <def-cat n="infAl">
         <cat-item lemma="vblex" tags="SV.@A←"/>
@@ -1358,17 +1362,17 @@
 		   </test>     
         <out>
           <chunk>
-            <clip pos="2" part="lemh"/>
-            <clip pos="2" part="tags"/>
-            <clip pos="2" part="chcontent"/>
-            <clip pos="2" part="lemq"/>
-          </chunk>
-          <b pos="1"/>
-        <chunk>
             <clip pos="1" part="lemh"/>
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
             <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
           </chunk>
         </out>
 		</when>
