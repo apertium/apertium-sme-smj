@@ -182,6 +182,10 @@ C[_]-T sent
       <cat-item tags="prn.ref.acc.*"/>
     </def-cat>
 
+    <def-cat n="prn_refl_loc">
+      <cat-item tags="prn.ref.loc.*"/>
+    </def-cat>
+
     <def-cat n="prn_itg">
       <cat-item tags="prn.itg.*"/>
     </def-cat>
@@ -268,6 +272,13 @@ C[_]-T sent
       <cat-item lemma="julevsámegiel" tags="adj.*.attr.*"/>
       <cat-item lemma="lullisámegiel" tags="adj.*.attr.*"/>
       <cat-item lemma="suomagiel" tags="adj.*.attr.*"/>
+    </def-cat>
+
+    <def-cat n="noun_acc">
+      <cat-item tags="n.*.sg.acc.*"/>
+      <cat-item tags="n.*.pl.acc.*"/>
+      <cat-item tags="n.*.*.sg.acc.*"/>
+      <cat-item tags="n.*.*.pl.acc.*"/>
     </def-cat>
 
     <def-cat n="nom_gen">
@@ -971,6 +982,13 @@ C[_]-T sent
     </def-cat>
     <def-cat n="n_sg_gen">
       <cat-item tags="n.*.sg.gen.*"/>
+    </def-cat>
+    <def-cat n="n_adj_ess">
+      <cat-item tags="n.*.ess.*"/>
+      <cat-item tags="n.*.*.ess.*"/>
+      <cat-item tags="n.*.*.*.ess.*"/>
+      <cat-item tags="adj.ess.*"/>
+      <cat-item tags="adj.*.ess.*"/>
     </def-cat>
     <def-cat n="num_arab">
       <cat-item tags="num.arab.*"/>
@@ -1966,19 +1984,26 @@ C[_]-T sent
     <list-item v="okta"/>
   </def-list>
   <def-list n="dadjat_verbs">
+    <list-item v="almodit"/>
+    <list-item v="doajvvots"/>  
+    <list-item v="dåbddåt"/>  
+    <list-item v="dåbddåt¹"/>  
+    <list-item v="dåbdåstit"/>  
+    <list-item v="gájbbedit"/> 
+    <list-item v="gielestit"/> 
     <list-item v="javllat"/>
-    <list-item v="låhkåt"/>
-    <list-item v="subtsastit"/>
     <list-item v="jáhkket"/>
+    <list-item v="låhkåt"/>
+    <list-item v="merustallat"/> 
     <list-item v="miejnnit"/>
     <list-item v="mierredit"/>
-    <list-item v="vuosedit"/>
-    <list-item v="almodit"/>
-    <list-item v="gájbbedit"/> 
+    <list-item v="subtsastit"/>
     <list-item v="sárnnot"/> 
     <list-item v="tjielggit"/> 
-    <list-item v="merustallat"/> 
-    <list-item v="dåbddåt"/>  
+    <list-item v="tjuottjodit"/> 
+    <list-item v="vuojnnet"/>  
+    <list-item v="vuornnot"/>  
+    <list-item v="vuosedit"/>
   </def-list>
   <def-list n="passshortverbs">
     <list-item v="vuojnnet"/>
@@ -4445,6 +4470,142 @@ C[_]-T sent
       </action>
     </rule>
 
+
+    <rule comment="C[_]-N prn_ref_acc n_adj_ess" c="In jáhke alddán dávdda">
+      <pattern>
+        <pattern-item n="prn_refl_loc"/>  
+        <pattern-item n="noun_acc"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <choose><when><test>
+       <in caseless="yes"><var n="current_verb"/><list n="dadjat_verbs" /></in></test>
+        <call-macro n="ref-to-pers"><with-param pos="1"/></call-macro>
+	   <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
+	   <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+       <out>
+          <chunk name="prn">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@SUBJ→"/></tag>
+              <tag><clip pos="1" side="sl" part="a_prn_type"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="1"/>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres"/>
+              <lit-tag v="p3"/>
+              <clip pos="2" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+             <b/>
+           <chunk name="adj" case="caseFirstword">
+              <tags>
+                <tag><lit-tag v="NP"/></tag>
+                <tag><lit-tag v="@←SPRED"/></tag>
+              </tags>
+               <lu>
+              <clip pos="2" side="tl" part="whole"/>
+              </lu>
+           </chunk>
+        </out>
+        </when>
+        <otherwise>
+        <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="prn" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="1" side="sl" part="a_prn_type"/></tag>
+              <tag><clip pos="1" side="sl" part="a_person"/></tag>
+              <tag><clip pos="1" side="tl" part="a_foc-ge"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+            <b pos="1"/>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+        </chunk>
+        </out>
+		</otherwise>
+		</choose> 
+      </action>
+    </rule>
+
+    <rule comment="C[_]-N prn_ref_acc n_adj_ess" c="mun dadjen iežan vigiheapmen">
+      <pattern>
+        <pattern-item n="prn_refl_acc"/>  
+        <pattern-item n="n_adj_ess"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="ref-to-pers"><with-param pos="1"/></call-macro>
+        <choose><when><test>
+	   <equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="du"/></equal></test> 
+	   <let><var n="number"/><lit-tag v="pl"/></let></when> 
+	   <otherwise>     
+	   <let><var n="number"/><clip pos="1" side="tl" part="a_nbr"/></let>
+	   </otherwise>
+	   </choose>     
+       <out>
+          <chunk name="prn">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@SUBJ→"/></tag>
+              <tag><clip pos="1" side="sl" part="a_prn_type"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="1"/>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+             <b/>
+           <chunk name="adj" case="caseFirstword">
+              <tags>
+                <tag><lit-tag v="NP"/></tag>
+                <tag><lit-tag v="@←SPRED"/></tag>
+              </tags>
+               <lu>
+                <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_PoS"/>
+              <var n="number"/>
+              <lit-tag v="nom"/>
+              </lu>
+           </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="C[_]-N prn" c="example">
       <pattern>
