@@ -236,7 +236,91 @@
     <rule weight="0.6">
       <match lemma="gos" tags="adv.@ADVLqst-ela→"> <select lemma="gåsstå"/> </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="unnán"  tags="adv.*"> <select lemma="unnán"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="unnán"> <select lemma="binná"/> </match>
+    </rule>
 
+    <rule weight="0.6">
+      <match lemma="diehtit"/>  
+      <match lemma="unnán"> <select lemma="binná"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="unnán"> <select lemma="binná"/> </match>
+      <match lemma="diehtit"/>  
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="uhccán"  tags="adv.*"> <select lemma="unnán"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="uhccán"> <select lemma="binná"/> </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="diehtit"/>  
+      <match lemma="uhccán"> <select lemma="binná"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="uhccán"> <select lemma="binná"/> </match>
+      <match lemma="diehtit"/>  
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="dagahit" > <select lemma="vájkkudit"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="dagahit"> <select lemma="dahkat"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="dagahit"> <select lemma="dahkat"/> </match>
+      <match/>  
+       <match tags="adj.ess.*"/>  
+   </rule>
+
+    <rule weight="0.5">
+      <match lemma="dagahit"> <select lemma="buktet"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="váikkuhus"/>  
+      <match lemma="dagahit"> <select lemma="buktet"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="váikkuhus"/>  
+      <match/>  
+      <match lemma="dagahit"> <select lemma="buktet"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="váikkuhus"/>  
+      <match/>  
+      <match/>  
+      <match lemma="dagahit"> <select lemma="buktet"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="váikkuhus"/>  
+      <match/>  
+      <match/>  
+      <match/>  
+      <match lemma="dagahit"> <select lemma="buktet"/> </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="navdit"> <select lemma="jáhkket"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="navdit"> <select lemma="nabddet"/> </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="navdit"> <select lemma="nabddet"/> </match>
+      <match lemma="prn.*.acc"/>
+      <or>  
+      <match lemma="n.*.ess"/>  
+      <match lemma="np.*.ess"/>  
+      </or>  
+    </rule>
 
     <rule weight="1.0">
       <match lemma="siste"  tags="adv.*"> <select lemma="sinna"/> </match>
