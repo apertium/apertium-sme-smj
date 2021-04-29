@@ -164,7 +164,6 @@
         <cat-item tags="*.@-F←ADVL-ine.*"/>
     </def-cat>
 
-
     <def-cat n="Argument_l"> 
         <cat-item tags="NP.@←OBJ.*"/>
         <cat-item tags="NP.@←OBJ"/>
@@ -326,6 +325,7 @@
     </def-cat>
     
     <def-cat n="FAuxV"> <!-- not neg -->
+        <cat-item lemma="cop-auxvclt" tags="*.@+FAUXV"/>
         <cat-item lemma="cop-auxv" tags="@+FAUXV"/>
         <cat-item lemma="cop-auxv" tags="*.@+FAUXV"/>
         <cat-item lemma="cop-auxv" tags="*.@+FAUXV.*"/>
@@ -731,11 +731,11 @@
 
 
 
-   <rule comment="FAuxV IMainV ADVL_left" > <!--AUX V A A becomes AUX A A V -->
+   <rule comment="FAuxV IMainV adv_l Argument_l" > <!--AUX V A A becomes AUX A A V -->
       <pattern>
         <pattern-item n="FAuxV"/>
         <pattern-item n="IMainV"/>
-        <pattern-item n="Argument_l"/>
+        <pattern-item n="adv_l"/>
         <pattern-item n="Argument_l"/>
       </pattern>
       <action>
@@ -880,6 +880,29 @@
             <clip pos="2" part="tags"/>
             <clip pos="2" part="chcontent"/>
             <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment=" IMainV NP_Obj_l" > <!--AUX V A becomes AUX A V -->
+      <pattern>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="NP_Obj_l"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
           </chunk>
         </out>
       </action>

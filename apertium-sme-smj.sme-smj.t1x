@@ -1855,6 +1855,7 @@ C[_]-T sent
   </section-def-attrs>
 
   <section-def-vars>
+    <def-var n="numphrase"/>  
     <def-var n="func"/>  
     <def-var n="number"/>
     <def-var n="person"/>
@@ -1952,6 +1953,9 @@ C[_]-T sent
     <def-list n="smj-supn-triggerverbs">
       <list-item v="dahkat"/>
       <list-item v="hásstalit"/>
+    </def-list>
+    <def-list n="not-usually-supn-verbs">
+      <list-item v="subtsastit"/>
     </def-list>
     <def-list n="alphabet">
       <list-item v="aalphabet"/>
@@ -2450,7 +2454,8 @@ C[_]-T sent
 	  <test><and>
        <in caseless="yes"><var n="current_verb"/><list n="loc2acc_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
-      </and></test>
+      </and>
+      </test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>	      
 	  </when>
 	      <when>
@@ -2481,12 +2486,29 @@ C[_]-T sent
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></let>	      
 	  </when>
 	      <when>
-	  <test><and>
+	  <test><or>
+		  <and>
+      <in caseless="yes"><var n="current_verb"/><list n="loc_verbs" /></in>
+	  <equal><clip pos="1" side="tl" part="lem"/><lit v="vásádus"/></equal>	      
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
+      </and>
+		  <and>
        <equal><var n="current_verb"/><lit v="válldet"/></equal>
 	  <equal><clip pos="1" side="tl" part="lem"/><lit v="giehta"/></equal>	      
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ill"/></equal>	      
-      </and></test>
+      </and>
+      </or></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>	      
+	  </when>
+	  </choose> 
+      <choose>
+	      <when>
+	  <test><and>
+       <not><equal><var n="number"/><lit v=""/></equal></not>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
+      </and>     
+      </test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>	      
 	  </when>
 	  </choose> 
     </def-macro>
@@ -4108,6 +4130,7 @@ C[_]-T sent
         </out>
         </otherwise>
         </choose>
+        <let><var n="number"/><lit v=""/></let>
       </action>
     </rule>
 
@@ -4398,8 +4421,10 @@ C[_]-T sent
 		  </choose>
 		  </when>
 		  <otherwise> 
-		<choose><when><test>	  
-      <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in></test>
+		<choose><when><test><and>
+      <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
+      <not><in caseless="yes"><clip pos="2" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
+      </and></test>
          <let><clip pos="2" side="tl" part="a_infin"/><lit-tag v="supn"/></let></when></choose>
       <out>
           <chunk name="noun">
@@ -4429,6 +4454,129 @@ C[_]-T sent
 
            <let><var n="number"/><lit v=""/></let>
            <let><var n="person"/><lit v=""/></let>
+	     </action>
+    </rule> 
+
+     <rule comment="C[T]-N mod_n fsubj vblexobj_l" c="Kalstad lohká buot sin bargiid ánssášit fuomášumi">
+      <pattern>
+        <pattern-item n="mod_n"/>  
+        <pattern-item n="fsubj"/>  
+        <pattern-item n="vblexobj_l"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <choose><when><test>
+       <in caseless="yes"><var n="current_verb"/><list n="dadjat_verbs" /></in></test>
+         <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
+        <choose><when><test>
+           <equal><clip pos="3" side="sl" part="a_infin"/><lit-tag v="inf"/></equal>
+	      </test>
+      <out>
+          <chunk name="noun">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@SUBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+            <b pos="1"/>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu> 
+              <clip pos="3" side="tl" part="lem"/>              
+              <lit-tag v="vblex.indic.pres.p3"/>
+              <clip pos="2" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+      </out>
+		  </when>
+		  
+		  <otherwise>
+      <out>
+          <chunk name="noun">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@SUBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+            <b pos="1"/>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres.p3"/>
+              <clip pos="2" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+            <b/>
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+           <lu>
+              <clip pos="3" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+      </out>
+		  </otherwise> 
+		  </choose>
+		  </when>
+		  <otherwise> 
+		<choose><when><test><and>
+      <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
+      <not><in caseless="yes"><clip pos="3" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
+      </and></test>
+         <let><clip pos="3" side="tl" part="a_infin"/><lit-tag v="supn"/></let></when></choose>
+      <out>
+          <chunk name="noun">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@-FSUBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+            <b pos="1"/>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@OBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          </chunk>
+      </out>
+
+		  </otherwise> 
+
+		  </choose>
+
 	     </action>
     </rule> 
 
@@ -4520,6 +4668,7 @@ C[_]-T sent
         </out>
      </otherwise>
      </choose>
+        <let><var n="number"/><lit v=""/></let>
      </action>
     </rule> 
 
@@ -4582,6 +4731,7 @@ C[_]-T sent
             </mlu>
            </chunk>
       </out>
+        <let><var n="number"/><lit v=""/></let>
      </action>
     </rule> 
 
@@ -4783,6 +4933,7 @@ C[_]-T sent
         <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
         </and></test>
          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+         <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="gen"/></let>
          </when>
         </choose> 
         <out>
@@ -4851,19 +5002,20 @@ C[_]-T sent
       <when>
           <test>
           <and>
-         <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
+         <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="num"/></equal></not>
          <not><equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
           <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
           <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
          </and>
          </test>
           <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
-      </when>
+      </when> 
        <when><test><and>
-        <equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal>
+        <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="num"/></equal>
         <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
         </and></test>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+         <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="gen"/></let>
          </when>
         </choose> 
         <out>
@@ -5182,8 +5334,16 @@ C[_]-T sent
         <equal><clip pos="1" side="tl" part="a_num_type"/><lit-tag v="arab"/></equal></test>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
-         </when></choose>
-       <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+         </when>
+        <when><test><and>
+        <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@→N"/></equal>
+        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+        <not><equal><clip pos="1" side="tl" part="lem"/><lit v="akta"/></equal></not>
+	        </and></test>
+         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
+         <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
+         </when></choose>       
+         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstword">
             <tags>
@@ -6272,6 +6432,7 @@ C[_]-T sent
         <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
       <choose><when><test>
 	  <and>
+      <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
 		  <or><and><or>
       <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←OBJ"/></equal>
       <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-F←OBJ"/></equal>
@@ -6332,23 +6493,16 @@ C[_]-T sent
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
             <out>
-              <chunk name="vblex" case="caseFirstword">
+              <chunk name="prfprc" case="caseFirstword">
                 <tags>
-                  <tag><lit-tag v="NP"/></tag>
-                  <tag><lit-tag v="@OPRED→"/></tag>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
                 </tags>
                 <lu>
                   <lit v="vælggogis"/>
                   <lit-tag v="adj.ess"/>
                 </lu>
-              </chunk>
                 <b />
-              <chunk name="vblex" case="caseFirstword">
-                <tags>
-                  <tag><lit-tag v="SV"/></tag>
-                  <tag><var n="func"/></tag>
-                  <tag><var n="vdic"/></tag>
-                </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
                 </lu>

@@ -315,11 +315,33 @@
 
     <rule weight="0.6">
       <match lemma="navdit"> <select lemma="nabddet"/> </match>
-      <match lemma="prn.*.acc"/>
+      <match tags="prn.*.acc"/>
       <or>  
-      <match lemma="n.*.ess"/>  
-      <match lemma="np.*.ess"/>  
+      <match tags="n.*.ess"/>  
+      <match tags="np.*.ess"/>  
       </or>  
+    </rule>
+    <rule weight="1.0">
+      <match lemma="fuomášupmi"> <select lemma="gávnadus"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="fuomášupmi"> <select lemma="vetsadibme"/> </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="ánssášit"/>
+      <match lemma="fuomášupmi"> <select lemma="vetsadibme"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="ánssášit"/>
+      <match />
+      <match lemma="fuomášupmi"> <select lemma="vetsadibme"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="ánssášit"/>
+      <match />
+      <match />
+      <match lemma="fuomášupmi"> <select lemma="vetsadibme"/> </match>
     </rule>
 
     <rule weight="1.0">
@@ -1058,6 +1080,7 @@
       <match lemma="lohkat">
         <select lemma="javllat"/>
       </match><or>
+      <match lemma="ahte"/>
       <match tags="np.*.*.attr.*"/>
       <match tags="np.*.@←SUBJ"/>
       <match tags="n.*.@←SUBJ"/>
@@ -1492,10 +1515,16 @@
    <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
  </rule>     
        <rule weight="0.6">
-   <match tags="vblex.*.pl.@+FAUXV"/>
-   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+   <match lemma="šaddat" tags="vblex.*.@+FAUXV"><select lemma="vierttit" tags="vblex.*"/></match> 
  </rule>     
-       <rule weight="0.6">
+        <rule weight="0.6">
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+   <or>
+    <match tags="vblex.*.inf.*"/>
+    <match tags="vblex.inf.*"/>
+   </or>
+</rule>     
+      <rule weight="0.6">
    <match tags="vblex.*.pl.@+FAUXV"/>
    <match />
    <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 

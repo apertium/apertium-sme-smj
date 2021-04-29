@@ -63,6 +63,9 @@
     <def-cat n="cop-auxvIF">
        <cat-item lemma="cop-auxv" tags="SV.@-FAUXV"/>
     </def-cat>
+    <def-cat n="cop-auxvclt">
+       <cat-item lemma="cop-auxvclt" tags="SV.*"/>
+    </def-cat>
     <def-cat n="prfprc">
        <cat-item lemma="prfprc" tags="SV.*"/>
     </def-cat>
@@ -463,6 +466,37 @@
       </when></choose>
       </action>
     </rule> 
+    <rule comment="cop-auxvclt SPRED_r prfprc " > 
+      <pattern>
+        <pattern-item n="cop-auxvclt"/>
+        <pattern-item n="SPRED_r"/>
+        <pattern-item n="prfprc"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="remove-ge_pcle">
       <pattern>
