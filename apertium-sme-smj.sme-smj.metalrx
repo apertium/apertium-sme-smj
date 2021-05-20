@@ -39,6 +39,9 @@
       <match lemma="sivdnádus"> <select lemma="sjivnnjádus"/> </match>
     </rule>
     <rule weight="1.0">
+      <match lemma="fárrolaga"> <select lemma="siegen"/> </match>
+    </rule>
+    <rule weight="0.5">
       <match lemma="fárrolaga"> <select lemma="aktan"/> </match>
     </rule>
     <rule weight="1.0">
@@ -406,6 +409,12 @@
       <match lemma="eallit" tags="vblex.*"/>
     </or>
       <match/>
+      <match lemma="boaris">
+        <select lemma="vuoras"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="jahki"/>
       <match lemma="boaris">
         <select lemma="vuoras"/>
       </match>
@@ -1455,15 +1464,19 @@
    <match lemma="ordnet" tags="vblex.*"><select lemma="biejadit" /></match>
  </rule>     
        <rule weight="1.0">
-   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti vaj" /></match>
+   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="vaj" /></match>
  </rule>     
        <rule weight="0.5">
-   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti vaj" /></match>
+   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="nav vaj" /></match>
  </rule>     
        <rule weight="0.6">
-   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti vaj" /></match>
-   <match tags="vblex.*"/>
+   <match lemma="nu ahte" tags="cnjsub.*"><select lemma="nav vaj" /></match>
 </rule>     
+
+       <rule weight="1.0">
+   <match lemma="okta" tags="prn.ind.sg.*.foc_pos-ge.*"><select lemma="soames" /></match>
+ </rule>     
+
 
        <rule weight="1.0">
    <match lemma="ollu" tags="adj.*"><select lemma="ållo" /></match>
@@ -1503,7 +1516,8 @@
    <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
  </rule>     
        <rule weight="0.7">
-   <match lemma="ii" />
+      
+   <match tags="vblex.*.@+FAUXV" />
    <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
  </rule>     
        <rule weight="0.7">

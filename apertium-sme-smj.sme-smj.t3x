@@ -982,6 +982,31 @@
       </action>
     </rule>
   
+    <rule comment="removes ge_pcle prnSUBJl 7" >  
+      <pattern>
+        <pattern-item n="neg-vblex"/>
+        <pattern-item n="ge_pcle"/>
+        <pattern-item n="prnSUBJl"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="1"/><lit v=" "/></equal></not></test>
+        <out><b pos="1"/></out>
+      </when></choose>
+      <choose><when>
+        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
+      </action>
+    </rule>
 
     <rule comment="moves some adverbs closer to mainverb" > 
       <pattern>

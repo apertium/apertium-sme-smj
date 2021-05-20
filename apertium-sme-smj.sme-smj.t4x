@@ -143,6 +143,12 @@
          <cat-item lemma="inf" tags="SV.@←OBJ"/>
          <cat-item lemma="inf" tags="SV.@←OBJ.*"/>
     </def-cat>
+    <def-cat n="conneg">
+         <cat-item lemma="conneg" tags="SV.@-FMAINV"/>
+         <cat-item lemma="conneg" tags="SV.@-FMAINV.*"/>
+         <cat-item lemma="conneg" tags="SV.*.@-FMAINV.*"/>
+         <cat-item lemma="conneg" tags="SV.*.*.@-FMAINV.*"/>
+    </def-cat>
     <def-cat n="adv_l">
         <cat-item lemma="adv" tags="*.@←ADVL-ine"/>
         <cat-item lemma="adv" tags="*.@←ADVL-ela"/>
@@ -207,6 +213,12 @@
         <cat-item tags="NP.@←OBJ.*"/>
         <cat-item tags="NP.@OBJ→"/>
         <cat-item tags="NP.@←OBJ"/>
+    </def-cat>
+    <def-cat n="pron_Obj_l">
+        <cat-item lemma="indef" tags="*.@←OBJ.*"/>
+        <cat-item lemma="indef" tags="*.@←OBJ"/>
+        <cat-item lemma="prn" tags="*.@←OBJ.*"/>
+        <cat-item lemma="prn" tags="*.@←OBJ"/>
     </def-cat>
     <def-cat n="NP_Obj_l">
         <cat-item tags="*.@←OBJ.*"/>
@@ -895,6 +907,32 @@
         <pattern-item n="NP_Obj_l"/>
       </pattern>
       <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment=" conneg pron_Obj_l" > <!--AUX V A becomes AUX A V -->
+      <pattern>
+        <pattern-item n="conneg"/>
+        <pattern-item n="pron_Obj_l"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk>
             <clip pos="2" part="lemh"/>
@@ -1270,7 +1308,7 @@
       </action>
     </rule>
 
-    <rule> <!--SVA becomes SAV -->
+<!--    <rule> SVA becomes SAV 
       <pattern>
         <pattern-item n="NP_Subj"/>
         <pattern-item n="FMainV"/>
@@ -1300,7 +1338,7 @@
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
     
     <rule>
       <pattern> <!--remove ahte after finite main verbs, prfprc and adv -->
