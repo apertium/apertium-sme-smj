@@ -101,6 +101,13 @@
     <cat-item  tags="cnjsub.*"/>
     <cat-item  tags="cnjcoo.*"/>
     </def-cat>
+      <def-cat n="word-for-liehket">
+    <cat-item  tags="NP.*"/>
+    <cat-item  tags="ADV.*"/>
+    <cat-item  tags="PP.*"/>
+    <cat-item  tags="cnjsub.*"/>
+    <cat-item  tags="cnjcoo.*"/>
+    </def-cat>
     <def-cat n="pfrprc">
         <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
         <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
@@ -1439,7 +1446,7 @@
     </rule>
     <rule comment="word pfrprcliehket Pedersen leamaš doppe">
       <pattern>
-        <pattern-item n="word"/>
+        <pattern-item n="word-for-liehket"/>
         <pattern-item n="pfrprcliehket"/>
       </pattern>
       <action>

@@ -234,6 +234,14 @@ C[_]-T sent
       <cat-item tags="prn.*.*.*.*.@-FSUBJ→"/>
     </def-cat>
 
+    <def-cat n="subj_h">
+      <cat-item tags="n.*.*.@SUBJ→"/>
+      <cat-item tags="n.*.*.*.@SUBJ→"/>
+      <cat-item tags="n.*.*.*.*.@SUBJ→"/>
+      <cat-item tags="prn.*.*.@SUBJ→"/>
+      <cat-item tags="prn.*.*.*.@SUBJ→"/>
+      <cat-item tags="prn.*.*.*.*.@SUBJ→"/>
+    </def-cat>
 
     <def-cat n="opred_l">
       <cat-item tags="n.*.*.*.@←OPRED"/>
@@ -353,6 +361,9 @@ C[_]-T sent
       <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
     </def-cat>
 
+    <def-cat n="mielddisbuktit_vblex">
+      <cat-item lemma="mielddisbuktit" tags="vblex.*"/>
+    </def-cat>
     <def-cat n="algit_vblex">
       <cat-item lemma="álgit" tags="vblex.*"/>
     </def-cat>
@@ -484,6 +495,8 @@ C[_]-T sent
     </def-cat>
 
     <def-cat n="mod_n">
+      <cat-item tags="prn.ind.*.*.@→N"/>
+      <cat-item tags="prn.ind.*.@→N"/>
       <cat-item tags="prn.pers.*.*.@→N"/>
       <cat-item tags="prn.ref.*.*.@→N"/>
       <cat-item tags="prn.ref.*.*.*.@→N"/>
