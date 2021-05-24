@@ -120,6 +120,9 @@
     <def-cat n="dem">
       <cat-item lemma="prn" tags="*.dem"/>
     </def-cat>
+    <def-cat n="diehte">
+      <cat-item lemma="post" tags="NP.@ADVL→"/>
+    </def-cat>
     <def-cat n="IVverb">
       <cat-item tags="*.@-FMAINV"/>
     </def-cat>
@@ -541,6 +544,26 @@
       </when></choose>
       </action>
     </rule>
+<!--    <rule comment="remove-ahte">
+      <pattern>
+        <pattern-item n="diehte"/>
+        <pattern-item n="ahte"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
+      </action>
+    </rule> -->
     
     <rule comment="vaj">
       <pattern>
