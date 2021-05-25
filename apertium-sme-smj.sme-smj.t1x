@@ -4977,6 +4977,7 @@ C[_]-T sent
              <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
              <not><equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
              <not><equal><clip pos="1" side="tl" part="lem"/><lit v="akta"/></equal></not>
+              <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
               <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
               <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
               <equal><clip pos="1" side="sl" part="a_prn"/><lit v=""/></equal>
@@ -4984,6 +4985,17 @@ C[_]-T sent
              </test>
               <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
               <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+          </when>
+          <when>
+              <test>
+              <and>
+             <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
+              <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+              <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+             </and>
+             </test>
+              <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+              <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
           </when>
            <when> 
             <test><and>
@@ -5539,7 +5551,14 @@ C[_]-T sent
 	        </and></test>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
-         </when></choose>       
+         </when>
+        <when><test><and>
+        <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+	        </and></test>
+         <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
+         </when>
+         </choose>       
          <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstword">
