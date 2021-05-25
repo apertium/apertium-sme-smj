@@ -1981,6 +1981,7 @@ C[_]-T sent
     <def-list n="smj-supn-triggerverbs">
       <list-item v="dahkat"/>
       <list-item v="hásstalit"/>
+      <list-item v="vælggogissan dahkat"/>
       <list-item v="ávvudallat"/>
     </def-list>
     <def-list n="not-usually-supn-verbs">
@@ -6770,7 +6771,7 @@ C[_]-T sent
       </action>
     </rule>
 
-    <rule comment="C[AT]-V geatnegahttit_vblex" c="example">
+<!--    <rule comment="C[AT]-V geatnegahttit_vblex" c="example">
       <pattern>
         <pattern-item n="geatnegahttit_vblex"/>
       </pattern>
@@ -6795,7 +6796,7 @@ C[_]-T sent
             </out>
         <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
       </action>
-    </rule> 
+    </rule>  -->
 
     <rule comment="C[_]-V verb_prfprc" c="example">
       <pattern>
