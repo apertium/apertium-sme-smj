@@ -92,6 +92,10 @@
         <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
         <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
     </def-cat>
+    <def-cat n="inf">
+        <cat-item lemma="inf" tags="SV.@-FMAINV"/>
+        <cat-item lemma="inf" tags="SV.@-FMAINV.*"/>
+    </def-cat>
 
     <def-cat n="FMainV">
         <cat-item tags="SV.@+FMAINV"/>
@@ -285,6 +289,31 @@
        <out>
          <chunk>
            <get-case-from pos="1"><lit v="coor_compl"/></get-case-from>
+           <clip pos="1" part="tags"/>
+           <lit v="{"/>
+           <clip pos="1" part="content"/>
+           <b pos="1"/>
+           <clip pos="2" part="content"/>
+           <b pos="2"/>
+           <clip pos="3" part="content"/>
+           <lit v="}"/>
+           <clip pos="1" part="lemq"/>
+         </chunk>
+       </out>
+     </action>
+    </rule>
+
+
+    <rule comment="REGLA: inf CNP inf"> 
+     <pattern>
+       <pattern-item n="inf"/>
+       <pattern-item n="CNP"/>
+       <pattern-item n="inf"/>
+     </pattern>
+     <action>
+       <out>
+         <chunk>
+           <get-case-from pos="1"><lit v="inf"/></get-case-from>
            <clip pos="1" part="tags"/>
            <lit v="{"/>
            <clip pos="1" part="content"/>

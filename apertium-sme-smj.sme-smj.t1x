@@ -536,6 +536,14 @@ C[_]-T sent
       <cat-item lemma="dat" tags="pcle.*"/>
     </def-cat>
 
+    <def-cat n="dat_gen">
+      <cat-item lemma="dat" tags="prn.dem.sg.gen.*"/>
+    </def-cat>
+
+    <def-cat n="nammii_post">
+      <cat-item lemma="nammii" tags="post.*"/>
+    </def-cat>
+
     <def-cat n="foc">
       <cat-item lemma="ba" tags="pcle.*"/>
       <cat-item lemma="ban" tags="pcle.*"/>
@@ -1979,6 +1987,7 @@ C[_]-T sent
       <list-item v="ballat"/>
     </def-list>
     <def-list n="smj-supn-triggerverbs">
+      <list-item v="barggat"/>
       <list-item v="dahkat"/>
       <list-item v="hásstalit"/>
       <list-item v="vælggogissan dahkat"/>
@@ -2941,6 +2950,17 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+      <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
+      </action>
+    </rule> 
+
+     <rule comment="C[D]-PRED dat_gen nammii_post" c="bargat dan nammii : ">
+      <pattern>
+        <pattern-item n="dat_gen"/>
+        <pattern-item n="nammii_post"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
     </rule> 
@@ -5082,6 +5102,17 @@ C[_]-T sent
       <choose>
       <when>
           <test><and>
+          <equal><clip pos="3" side="tl" part="a_case"/><lit-tag v="ela"/></equal>
+          <equal><clip pos="2" side="tl" part="a_case"/><lit-tag v="ine"/></equal>
+          <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></equal>
+          </and></test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
+          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ela"/></let>
+      </when>
+      </choose>
+      <choose>
+      <when>
+          <test><and>
         <not><equal><clip pos="2" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
           <equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal>
           <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
@@ -5218,6 +5249,15 @@ C[_]-T sent
          <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="gen"/></let>
          </when>
         </choose> 
+      <choose>
+      <when>
+          <test><and>
+          <equal><clip pos="3" side="tl" part="a_case"/><lit-tag v="ela"/></equal>
+          <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></equal>
+          </and></test>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>
+      </when>
+      </choose>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -6719,7 +6759,7 @@ C[_]-T sent
         <pattern-item n="verb_inf"/>
       </pattern>
       <action>
-         <let><var n="chunk_name"/><lit v="vblex"/></let>
+         <let><var n="chunk_name"/><lit v="inf"/></let>
       <choose><when><test>
 	  <and>
       <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>

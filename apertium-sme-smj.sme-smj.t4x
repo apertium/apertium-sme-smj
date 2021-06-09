@@ -228,9 +228,8 @@
         <cat-item lemma="prn" tags="*.@←OBJ"/>
     </def-cat>
     <def-cat n="NP_Obj_l">
-        <cat-item tags="*.@←OBJ.*"/>
         <cat-item tags="NP.@←OBJ.*"/>
-        <cat-item tags="*.@←OBJ"/>
+        <cat-item tags="NP.@←OBJ"/>
     </def-cat>
     <def-cat n="NP_Opred_r">
         <cat-item tags="*.OPRED→.*"/>
@@ -1346,6 +1345,70 @@
         </out>
       </action>
     </rule> -->
+    <rule comment="removes not jut " >  
+      <pattern>
+        <pattern-item n="IFMainV"/>
+        <pattern-item n="ahte"/>
+        <pattern-item n="IMainV"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="removes not jut " >  
+      <pattern>
+        <pattern-item n="IFMainV"/>
+        <pattern-item n="ahte"/>
+        <pattern-item n="IMainV"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
     
     <rule>
       <pattern> <!--remove ahte after finite main verbs, prfprc and adv -->
@@ -1364,6 +1427,8 @@
          <let><var n="aux"/><lit v=""/></let>
       </action>
     </rule>
+
+
     <rule comment="removes jut after lea" >  
       <pattern>
         <pattern-item n="wordbeforeahte"/>

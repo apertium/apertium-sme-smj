@@ -815,9 +815,11 @@
     <rule weight="0.6">
       <match lemma="bivdit">
         <select lemma="gåhttjot"/>
-      </match>
+      </match><or>
       <match tags="np.*.sg.acc.*"/>
-    </rule>
+      <match lemma="veahkki" tags="n.*"/>
+      <match tags="n.sem_hum.*.acc.*"/>
+    </or></rule>
 
 
     <rule weight="1.0">
@@ -959,6 +961,27 @@
         <select lemma="jahke"/>
       </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="riekta" tags="adj.*" >
+        <select lemma="riekta"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="riekta" tags="adj.*" >
+        <select lemma="rievtes"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="riekta" tags="adj.*" >
+        <select lemma="rievtes"/>
+      </match>
+      <or>
+      <match tags="n.sem_hum.*"/>
+      <match tags="n.*.sem_hum.*"/>
+      </or>
+    </rule>
 
 
     <rule weight="1.0">
@@ -1079,6 +1102,7 @@
        <match lemma="bachelor"/>
        <match lemma="studeanta"/>
        <match lemma="boazu"/>
+      <match lemma="ođasášši"/>
       </or>
       <match lemma="lohkat">
         <select lemma="låhkåt"/>
@@ -1114,6 +1138,7 @@
       </match>
       <match/><or>
       <match lemma="čállit"/>
+      <match lemma="ođasášši"/>
       <match tags="n.sem_txt.*"/>
       <match tags="n.sem_domain.*"/>
       <match tags="n.sem_edu.*"/>
@@ -1125,6 +1150,24 @@
        <match tags="n.sem_edu.*"/>
        <match lemma="čuokkis"/>
        <match lemma="boazu"/>
+      </or>
+    </rule> 
+    <rule weight="0.6">
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+      <match/>
+      <or>
+      <match lemma="čállit"/>
+      <match tags="n.sem_edu.*"/>
+       <match tags="n.sem_edu_org.*.loc.*"/>
+       <match tags="np.sem_org.*.loc.*"/>
+       <match lemma="kapihtal"/>
+       <match lemma="fáddá"/>
+      <match tags="n.sem_txt.*"/>
+      <match tags="n.sem_domain.*"/>
+       <match tags="n.sem_edu.*"/>
+       <match lemma="čuokkis"/>
       </or>
     </rule> 
     <rule weight="0.6">
