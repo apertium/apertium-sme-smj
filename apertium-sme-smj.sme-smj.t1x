@@ -4786,6 +4786,149 @@ C[_]-T sent
 	     </action>
     </rule> 
 
+     <rule comment="C[T]-N adv fsubj vblexobj_l" c="Robertsen lohká ráđđehusa dál gárveme ášši">
+      <pattern>
+        <pattern-item n="fsubj"/>  
+        <pattern-item n="adv"/>  
+        <pattern-item n="vblexobj_l"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <choose><when><test>
+       <in caseless="yes"><var n="current_verb"/><list n="dadjat_verbs" /></in></test>
+         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
+        <choose><when><test>
+           <equal><clip pos="3" side="sl" part="a_infin"/><lit-tag v="inf"/></equal>
+	      </test>
+      <out>
+          <chunk name="noun">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@SUBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="1"/>
+          <chunk name="adv">
+            <tags>
+              <tag><lit-tag v="Adv"/></tag>
+              <tag><lit-tag v="@ADVL→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu> 
+              <clip pos="3" side="tl" part="lem"/>              
+              <lit-tag v="vblex.indic.pres.p3"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+      </out>
+		  </when>
+		  
+		  <otherwise>
+      <out>
+          <chunk name="noun">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@SUBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="1"/>
+          <chunk name="adv">
+            <tags>
+              <tag><lit-tag v="Adv"/></tag>
+              <tag><lit-tag v="@ADVL→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres.p3"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+            <b/>
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+           <lu>
+              <clip pos="3" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+      </out>
+		  </otherwise> 
+		  </choose>
+		  </when>
+		  <otherwise> 
+		<choose><when><test><and>
+      <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
+      <not><in caseless="yes"><clip pos="3" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
+      </and></test>
+         <let><clip pos="3" side="tl" part="a_infin"/><lit-tag v="supn"/></let></when></choose>
+      <out>
+          <chunk name="noun">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@-FSUBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          </chunk>
+            <b pos="1"/>
+          <chunk name="adv">
+            <tags>
+              <tag><lit-tag v="ADV"/></tag>
+              <tag><lit-tag v="@ADVL→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@OBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="3" side="tl" part="whole"/>
+          </lu>
+          </chunk>
+      </out>
+
+		  </otherwise> 
+
+		  </choose>
+        <let><var n="number"/><lit v=""/></let>
+
+	     </action>
+    </rule> 
+
+
    <rule comment="C[T]-N prn_obj opred_l" c="Oskal lohká sin duđavaččat doaluiguin. : Oskal javllá sij li dudálattja dáhpádusájn.">
       <pattern>
         <pattern-item n="prn_obj"/>  
@@ -5342,6 +5485,18 @@ C[_]-T sent
          </and>
          </test>
           <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+      </when>
+      </choose>
+      <choose>
+      <when>
+          <test><and>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+          <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+          <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+          </and></test>
+          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+          <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+          <let><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
       </when>
       </choose>
         <out>

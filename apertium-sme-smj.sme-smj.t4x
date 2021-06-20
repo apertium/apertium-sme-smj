@@ -396,9 +396,9 @@
     </def-cat>
 
     <def-cat n="barrier">
-        <cat-item tags="comma.*"/>
+        <cat-item lemma="comma" tags="*"/>
         <cat-item tags="*.@CVP"/>
-        <cat-item tags="sent.*"/>
+        <cat-item lemma="sent" tags="*"/>
     </def-cat>
 
 
@@ -1465,6 +1465,39 @@
       </when></choose>
       </action>
     </rule>
+
+    <rule comment="ikke legge til l/la clt">
+      <pattern>
+        <pattern-item n="word"/>
+        <pattern-item n="l-clt"/>
+        <pattern-item n="barrier"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="experiment for å legge til l/la clt">
       <pattern>
