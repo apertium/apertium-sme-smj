@@ -156,7 +156,7 @@ C[_]-T sent
     </def-cat>
 
     <def-cat n="prn_pers_gen">
-      <cat-item tags="prn.pers.*.gen.*"/>
+      <cat-item tags="prn.pers.*.*.gen.*"/>
     </def-cat>
 
     <def-cat n="prn_pers_acc">
@@ -631,6 +631,10 @@ C[_]-T sent
 
     <def-cat n="nammasaš_adj">
       <cat-item lemma="nammasaš" tags="adj.*"/>
+    </def-cat>
+
+    <def-cat n="ahkásaš_adj">
+      <cat-item lemma="ahkásaš" tags="adj.*"/>
     </def-cat>
 
     <def-cat n="np_hyph">
@@ -3824,6 +3828,39 @@ C[_]-T sent
       </action>
     </rule>
 
+    <rule comment="C[T]-NP prn_pers_gen ahkásaš" c="su ahkásaš :  ">  
+      <pattern> 
+        <pattern-item n="prn_pers_gen"/>
+        <pattern-item n="ahkásaš_adj"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"> <with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+                          <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags> 
+            <lu>
+              <lit v="ulmusj"/>
+              <lit-tag v="n"/>
+              <clip pos="2" side="sl" part="a_nbr"/>
+              <clip pos="2" side="sl" part="a_case"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="C[T]-NP nammasaš" c="Ávvir-nammasaš : Ávvir nammasasj">  
       <pattern> 
@@ -6517,8 +6554,8 @@ C[_]-T sent
         <pattern-item n="prop_nom_pers"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="5"/></call-macro>
+        <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
        <out>

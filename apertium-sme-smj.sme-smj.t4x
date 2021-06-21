@@ -1473,6 +1473,7 @@
         <pattern-item n="barrier"/>
       </pattern>
       <action>
+         <let><var n="aux"/><lit v="aux"/></let>
         <out>
           <chunk>
             <clip pos="1" part="lemh"/>
