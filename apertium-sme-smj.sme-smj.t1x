@@ -5136,7 +5136,7 @@ C[_]-T sent
              <let><clip pos="1" side="tl" part="a_foc-ge"/><lit v=""/></let> 
         </when></choose>
         <choose>
-          <when>
+         <when>
               <test><and>
                 <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
                   <equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal>
@@ -5171,7 +5171,7 @@ C[_]-T sent
              </and>
              </test>
               <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
-          </when>
+          </when> 
           <when>
               <test>
               <and>
@@ -5186,7 +5186,7 @@ C[_]-T sent
              </test>
               <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
               <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let>
-          </when>
+          </when> 
           <when>
               <test>
               <and>
@@ -5197,10 +5197,11 @@ C[_]-T sent
              </test>
               <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
               <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
-          </when>
+          </when> 
            <when> 
             <test><and>
-            <equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal>
+            <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="num"/></equal>
+            <not><equal><clip pos="1" side="tl" part="lem"/><lit v="akta"/></equal></not>
             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
             </and></test>
              <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
@@ -7562,6 +7563,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+       <let><var n="number"/><lit v=""/></let>
       </action>
     </rule>
 
@@ -7604,6 +7606,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+       <let><var n="number"/><lit v=""/></let>
       </action>
     </rule>
     
