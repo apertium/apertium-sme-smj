@@ -32,6 +32,53 @@
 
   <rules>
 
+
+    <rule weight="1.0">
+      <match lemma="hávvi"> <select lemma="hávve"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="hávvi"> <select lemma="bálle"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="num.*"/>
+      <match tags="adj.ord.*"/>
+    </or>
+      <match lemma="hávvi" tags="n.*.sg.*"> <select lemma="bálle"/> </match>
+    </rule>
+
+
+
+    <rule weight="1.0">
+      <match lemma="váibmu"> <select lemma="tsåhke"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="váibmu"> <select lemma="vájmmo"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="váibmu" tags="n.*.sg.*.px3sg.*"> <select lemma="vájmmo"/> </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="váibmu"> <select lemma="vájmmo"/> </match>
+      <or>
+      <match lemma="miella"/> 
+      <match lemma="tsieggat"/> 
+      <match lemma="guoddet"/> 
+      <match lemma="gieresvuohta"/> 
+      </or>
+    </rule>
+
+    <rule weight="0.6">
+      <or>
+      <match lemma="tsieggat"/> 
+      <match lemma="guoddet"/> 
+      <match lemma="gieresvuohta"/> 
+      </or>
+      <match lemma="váibmu"> <select lemma="vájmmo"/> </match>
+    </rule>
+
+
     <rule weight="1.0">
       <match lemma="Sápmi"> <select lemma="Sábme"/> </match>
     </rule>
