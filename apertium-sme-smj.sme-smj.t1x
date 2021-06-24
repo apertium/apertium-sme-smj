@@ -373,6 +373,9 @@ C[_]-T sent
     <def-cat n="mokta_n">
       <cat-item lemma="mokta" tags="n.*"/>
     </def-cat>
+    <def-cat n="jahki_n">
+      <cat-item lemma="jahki" tags="n.*"/>
+    </def-cat>
 
     <def-cat n="verb_condFAUXV">
       <cat-item tags="vblex.*.cond.*.*.@+FAUXV"/> 
@@ -1321,6 +1324,7 @@ C[_]-T sent
       <attr-item tags="der_passs"/>
       <attr-item tags="der_car"/>
       <attr-item tags="der_nomact"/>
+      <attr-item tags="der_inchl"/>
     </def-attr>
     <def-attr n="a_passvblex">
       <attr-item tags="der_passl.vblex"/>
@@ -1996,6 +2000,7 @@ C[_]-T sent
       <list-item v="hásstalit"/>
       <list-item v="vælggogissan dahkat"/>
       <list-item v="ávvudallat"/>
+      <list-item v="ávttjit"/>
     </def-list>
     <def-list n="not-usually-supn-verbs">
       <list-item v="subtsastit"/>
@@ -2056,6 +2061,18 @@ C[_]-T sent
   </def-list>
   <def-list n="passshortverbs">
     <list-item v="vuojnnet"/>
+  </def-list>
+  <def-list n="verb3st">
+    <list-item v="doargestit"/>
+    <list-item v="berustit"/>
+    <list-item v="jienastit"/>
+    <list-item v="substastit"/>
+    <list-item v="sámástit"/>
+    <list-item v="jienastit"/>
+    <list-item v="ságastit"/>
+    <list-item v="dárustit"/>
+    <list-item v="åmastit"/>
+    <list-item v="málestit"/>
   </def-list>
   <def-list n="kin-nouns">
     <list-item v="ieddne"/>
@@ -2419,6 +2436,13 @@ C[_]-T sent
                <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_geahtes"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_ahtes"/></let>
+        </when>
+        <when>
+          <test><and>
+               <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_inchl"/></equal>
+              <in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="verb3st" /></in>
+          </and></test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_ahtja"/></let>
         </when>
       </choose>
     </def-macro>
@@ -3915,6 +3939,61 @@ C[_]-T sent
       </action>
     </rule>
 
+    <rule comment="C[T]-NP jahki_n semyear" c="jagi 2021:s : jagen 2021 "> 
+      <pattern> 
+        <pattern-item n="jahki_n"/>
+        <pattern-item n="semyear"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"> <with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+      <choose>
+	      <when>
+	  <test>
+	  <equal><clip pos="2" side="tl" part="a_case"/><lit-tag v="ine"/></equal>	      
+      </test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
+	  <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>	      
+	  </when>
+	      <when>
+	  <test>
+	  <equal><clip pos="2" side="tl" part="a_case"/><lit-tag v="ela"/></equal>	      
+      </test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>	      
+	  <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>	      
+	  </when>
+	      <when>
+	  <test>
+	  <equal><clip pos="2" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
+      </test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
+	  <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>	      
+	  </when>
+	      <when>
+	  <test>
+	  <equal><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></equal>	      
+      </test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>	      
+	  <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>	      
+	  </when>
+      </choose>
+                          <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
     <rule comment="C[T]-NP months_n semyear" c="njukčamánus 2021:s : 2021 snjuktjamáno"> 
@@ -6971,12 +7050,12 @@ C[_]-T sent
        <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
         <let><var n="supn_coor"/><lit v="supn"/></let>
      </when>
-   <!--     <when c="inf @N←">
+       <when c="inf @A←">
           <test>
-              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@N←"/></equal>
+              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@A←"/></equal>
           </test>
          <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
-        </when> -->
+        </when> 
      </choose>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
@@ -7293,6 +7372,10 @@ C[_]-T sent
               <clip pos="2" side="tl" part="whole"/>
             </lu>
             </mlu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
           </chunk>
         </out>
       </action>

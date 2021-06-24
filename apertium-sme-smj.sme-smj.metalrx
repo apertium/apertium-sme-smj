@@ -47,6 +47,34 @@
       <match lemma="hávvi" tags="n.*.sg.*"> <select lemma="bálle"/> </match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="boagán"> <select lemma="avve"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="boagán"> <select lemma="avudis"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="n.*.cmp"/>
+      <match lemma="čavget"/>
+    </or>
+      <match lemma="boagán"> <select lemma="avudis"/> </match>
+    </rule>
+
+    <rule weight="1.0">
+      <match lemma="čujuhus"> <select lemma="adræssa"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="čujuhus"> <select lemma="tjielggidus"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="tjielggidus"/> </match>
+    </rule>
+
 
 
     <rule weight="1.0">
