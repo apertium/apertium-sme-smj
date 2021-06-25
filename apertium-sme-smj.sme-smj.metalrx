@@ -74,8 +74,47 @@
     </or>
       <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="tjielggidus"/> </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="láhkki"> <select lemma="tjehtik"/> </match>
+    </rule>
 
+    <rule weight="1.0">
+      <match lemma="giddet"> <select lemma="stieggit"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="giddet"> <select lemma="tjadnat"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match lemma="láhkki"/>
+      <match lemma="báddi"/>
+    </or>
+      <match lemma="giddet"> <select lemma="tjadnat"/> </match>
+    </rule>
 
+    <rule weight="0.6">
+    <or>
+      <match lemma="láhkki"/>
+      <match lemma="báddi"/>
+    </or>
+      <match />
+      <match lemma="giddet"> <select lemma="tjadnat"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="giddet"> <select lemma="tjadnat"/> </match>
+       <match />
+   <or>
+      <match lemma="láhkki"/>
+      <match lemma="báddi"/>
+    </or>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="giddet"> <select lemma="tjadnat"/> </match>
+   <or>
+      <match lemma="láhkki"/>
+      <match lemma="báddi"/>
+    </or>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="váibmu"> <select lemma="tsåhke"/> </match>
@@ -2168,30 +2207,37 @@
     </rule>
     
     <rule weight="1.0">
-      <match lemma="mielde" tags="adv.*">
-        <select lemma="mielde" tags="adv.*"/>
+      <match lemma="mielde" tags="post.*">
+        <select lemma="milta" />
       </match>
     </rule>
        
-<!--        <rule weight="0.5">
-      <match lemma="mielde" tags="adv.*">
-        <select lemma="" tags="adv.*"/>
+        <rule weight="0.5">
+      <match lemma="mielde" tags="post.*">
+        <select lemma="maŋen" />
       </match>
     </rule>
  
     <rule weight="0.6">
-      <match lemma="váldit"/>
-      <match lemma="mielde" tags="adv.*">
-       <select lemma="" tags="adv.*"/>
+      <match tags="prn.pers.*.*.gen.*"/>
+      <match lemma="mielde" tags="post.*">
+        <select lemma="maŋen" />
       </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="mielde" tags="post.*">
+        <select lemma="maŋen" />
+      </match>
+      <match lemma="boahtit"/>
     </rule>
     
      <rule weight="0.6">
-      <match lemma="mielde" tags="adv.*">
-       <select lemma="" tags="adv.*"/>
-      </match>
       <match lemma="váldit"/> 
-    </rule> -->
+      <match tags="n.*.acc.*"/>
+      <match lemma="mielde" tags="post.*">
+        <select lemma="maŋen" />
+      </match>
+    </rule> 
     
     <rule weight="1.0">
       <match lemma="ala">
@@ -2213,6 +2259,18 @@
       <match lemma="ahte"/>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="diibmu" tags="n.*"><select lemma="tijmma" /></match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="diibmu" tags="n.*"><select lemma="kloahkka" /></match>
+    </rule>
+ 
+    <rule weight="0.6">
+      <match lemma="diibmu" tags="n.*"><select lemma="kloahkka" /></match>
+      <match tags="num.arab.*"/>
+    </rule>
     
   </rules>
 
