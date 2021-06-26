@@ -373,6 +373,12 @@ C[_]-T sent
     <def-cat n="mokta_n">
       <cat-item lemma="mokta" tags="n.*"/>
     </def-cat>
+    <def-cat n="der_nomact_cmp">
+      <cat-item tags="vblex.*.der_nomact.n.*.cmp_sgnom.cmp"/>
+    </def-cat>
+    <def-cat n="dihtti_n">
+      <cat-item lemma="dihtti" tags="n.*"/>
+    </def-cat>
     <def-cat n="jahki_n">
       <cat-item lemma="jahki" tags="n.*"/>
     </def-cat>
@@ -3850,6 +3856,27 @@ C[_]-T sent
           </chunk>
         </out>
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
+      </action>
+    </rule> 
+     <rule comment="C[D]-PRED der_nomact_cmp dihtti_n" c="example">
+      <pattern>
+        <pattern-item n="der_nomact_cmp"/>
+        <pattern-item n="dihtti_n"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@ADVL"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex.supn"/>
+            </lu>
+          </chunk>
+        </out>
       </action>
     </rule> 
 
