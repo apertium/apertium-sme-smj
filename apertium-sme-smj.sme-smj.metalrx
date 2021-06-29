@@ -2284,6 +2284,18 @@
       <match tags="num.sem_time-clock.*"/>
       </or> 
     </rule>
+
+
+    <rule weight="1.0"><match lemma="gazzat" tags="vblex.*"><select lemma="gadtsat" /></match></rule>
+    <rule weight="0.5"><match lemma="gazzat" tags="vblex.*"><select lemma="válldet" /></match></rule>
+    <rule weight="0.6"><match lemma="gazzat" tags="vblex.*"><select lemma="válldet" /></match>
+      <match tags="n.sem_edu.*"/>
+    </rule>
+    <rule weight="0.6">
+      <match tags="n.sem_edu.*"/>
+      <match lemma="gazzat" tags="vblex.*"><select lemma="válldet" /></match>
+    </rule>
+
     
   </rules>
 
