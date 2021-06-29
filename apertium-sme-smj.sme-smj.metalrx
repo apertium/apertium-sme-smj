@@ -2259,17 +2259,30 @@
       <match lemma="ahte"/>
     </rule>
 
-    <rule weight="1.0">
-      <match lemma="diibmu" tags="n.*"><select lemma="tijmma" /></match>
-    </rule>
-       
-        <rule weight="0.5">
-      <match lemma="diibmu" tags="n.*"><select lemma="kloahkka" /></match>
-    </rule>
- 
-    <rule weight="0.6">
-      <match lemma="diibmu" tags="n.*"><select lemma="kloahkka" /></match>
+    <rule weight="1.0"><match lemma="diibmu" tags="n.*"><select lemma="tijmma" /></match></rule>
+    <rule weight="0.5"><match lemma="diibmu" tags="n.*"><select lemma="kloahkka" /></match></rule>
+    <rule weight="0.6"><match lemma="diibmu" tags="n.*"><select lemma="kloahkka" /></match>
+      <or> 
       <match tags="num.arab.*"/>
+      <match tags="num.sem_time-clock.*"/>
+      </or> 
+    </rule>
+
+    <rule weight="1.0"><match lemma="tiibmu" tags="n.*"><select lemma="tijmma" /></match></rule>
+    <rule weight="0.5"><match lemma="tiibmu" tags="n.*"><select lemma="kloahkka" /></match></rule>
+    <rule weight="0.6"><match lemma="tiibmu" tags="n.*"><select lemma="kloahkka" /></match>
+      <or> 
+      <match tags="num.arab.*"/>
+      <match tags="num.sem_time-clock.*"/>
+      </or> 
+    </rule>
+    <rule weight="1.0"><match lemma="tiibma" tags="n.*"><select lemma="tijmma" /></match></rule>
+    <rule weight="0.5"><match lemma="tiibma" tags="n.*"><select lemma="kloahkka" /></match></rule>
+    <rule weight="0.6"><match lemma="tiibma" tags="n.*"><select lemma="kloahkka" /></match>
+      <or> 
+      <match tags="num.arab.*"/>
+      <match tags="num.sem_time-clock.*"/>
+      </or> 
     </rule>
     
   </rules>
