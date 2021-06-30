@@ -1187,6 +1187,28 @@
        <match lemma="kapihtal"/>
        <match lemma="kritihkalaš"/>
       <match tags="n.sem_domain.*"/>
+       <match tags="n.sem_ani.pl.acc.*"/>
+       <match tags="n.sem_ani-fish.pl.acc.*"/>
+     </or>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat">
+        <select lemma="låhkåt"/>
+      </match>
+      <match />
+<or>
+      <match tags="n.sem_rule.*.acc.*"/>
+      <match tags="n.sem_org_txt.*.acc.*"/>
+      <match tags="n.sem_txt.*"/>
+      <match tags="n.sem_lang.*.acc.*"/>
+      <match tags="n.sem_lang.*.gen.*"/>
+      <match tags="prn.*.acc.*"/>
+       <match tags="np.sem_edu_org.*.loc.*"/>
+       <match lemma="kapihtal"/>
+       <match lemma="kritihkalaš"/>
+      <match tags="n.sem_domain.*"/>
+       <match tags="n.sem_ani.pl.acc.*"/>
+       <match tags="n.sem_ani-fish.pl.acc.*"/>
      </or>
     </rule>
 
@@ -1215,7 +1237,8 @@
        <match lemma="čuokkis"/>
        <match lemma="bachelor"/>
        <match lemma="studeanta"/>
-       <match lemma="boazu"/>
+       <match tags="n.sem_ani.pl.acc.*"/>
+       <match tags="n.sem_ani-fish.pl.acc.*"/>
       <match lemma="ođasášši"/>
       </or>
       <match lemma="lohkat">
@@ -2285,6 +2308,21 @@
       </or> 
     </rule>
 
+    <rule weight="1.0"><match lemma="orohat" tags="n.*"><select lemma="tjiellde" /></match></rule>
+
+    <rule weight="1.0"><match lemma="meašttir" tags="n.*"><select lemma="gilbosvuojtte" /></match></rule>
+    <rule weight="0.5"><match lemma="meašttir" tags="n.*"><select lemma="vuojtte" /></match></rule>
+    <rule weight="0.6"><match lemma="meašttir" tags="n.*.cmp_sgnom.*"><select lemma="vuojtte" /></match></rule>
+    <rule weight="0.6"><match lemma="meašttir" tags="n.*.cmp_sggen.*"><select lemma="vuojtte" /></match></rule>
+    <rule weight="0.6"><or>
+      <match tags="n.*.cmp_plgen.*"/>
+      <match tags="n.*.cmp_sggen.*"/>
+      <match tags="n.*.cmp_sgnom.*"/>
+      <match tags="np.*.cmp_sgnom.*"/>
+      <match tags="adj.*.cmp_attr.*"/>
+      <match tags="adj.cmp_attr.*"/>
+      </or>
+	    <match lemma="meašttir" tags="n.*"><select lemma="vuojtte" /></match></rule>
 
     <rule weight="1.0"><match lemma="gazzat" tags="vblex.*"><select lemma="gadtsat" /></match></rule>
     <rule weight="0.5"><match lemma="gazzat" tags="vblex.*"><select lemma="válldet" /></match></rule>
