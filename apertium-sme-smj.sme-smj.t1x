@@ -1204,6 +1204,9 @@ C[_]-T sent
       <attr-item tags="n"/>
       <attr-item tags="np"/>
     </def-attr>
+    <def-attr n="a_acr">
+      <attr-item tags="acr"/>
+    </def-attr>
      <def-attr n="a_attr">
       <attr-item tags="attr"/>
     </def-attr>
@@ -3441,6 +3444,13 @@ C[_]-T sent
       </test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>	      
 	  </when>
+        <when>
+        <test><and>
+        <equal><clip pos="1" side="tl" part="a_acr"/><lit-tag v="acr"/></equal>
+        <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></equal>
+        </and></test>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+        </when>
 	  </choose> 
     </def-macro>
 
