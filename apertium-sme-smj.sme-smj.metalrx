@@ -2333,6 +2333,11 @@
       <match tags="n.sem_edu.*"/>
       <match lemma="gazzat" tags="vblex.*"><select lemma="válldet" /></match>
     </rule>
+    <rule weight="0.5"><match lemma="busse" tags="n.*"><select lemma="bussa" /></match></rule>
+    <rule weight="0.5"><match lemma="busse" tags="n.*"><select lemma="puvssa" /></match></rule>
+    <rule weight="0.6"><match lemma="gávpi" tags="n.cmp_sgnom.*"/>
+	    <match lemma="busse" tags="n."><select lemma="puvssa" /></match>
+	    </rule>
 
     
   </rules>
