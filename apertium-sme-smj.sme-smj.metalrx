@@ -2333,10 +2333,29 @@
       <match tags="n.sem_edu.*"/>
       <match lemma="gazzat" tags="vblex.*"><select lemma="válldet" /></match>
     </rule>
-    <rule weight="0.5"><match lemma="busse" tags="n.*"><select lemma="bussa" /></match></rule>
+    <rule weight="1.0"><match lemma="busse" tags="n.*"><select lemma="bussa" /></match></rule>
     <rule weight="0.5"><match lemma="busse" tags="n.*"><select lemma="puvssa" /></match></rule>
-    <rule weight="0.6"><match lemma="gávpi" tags="n.cmp_sgnom.*"/>
-	    <match lemma="busse" tags="n."><select lemma="puvssa" /></match>
+    <rule weight="0.6"><match lemma="gávpi" tags="n.*"/>
+	    <match lemma="busse" tags="n.*"><select lemma="puvssa" /></match>
+	    </rule>
+    <rule weight="1.0"><match lemma="čuokkis" tags="n.*"><select lemma="tjuogga" /></match></rule>
+    <rule weight="0.5"><match lemma="čuokkis" tags="n.*"><select lemma="tjuorgga" /></match></rule>
+    <rule weight="0.6"><match tags="num.*"/>
+	    <match lemma="čuokkis" tags="n.*"><select lemma="tjuorgga" /></match></rule>
+    <rule weight="0.6">
+	    <match lemma="čuokkis" tags="n.*"><select lemma="tjuorgga" /></match>
+	    <match lemma="oktiibuot"/>
+	    </rule>
+
+    <rule weight="1.0"><match lemma="mihttu" tags="n.*"><select lemma="mihtto" /></match></rule>
+    <rule weight="0.5"><match lemma="mihttu" tags="n.*"><select lemma="ulmme" /></match></rule>
+    <rule weight="0.6">
+	    <match lemma="mihttu" tags="n.*"><select lemma="ulmme" /></match>
+	    <match tags="vblex.*.inf.*"/>
+	    </rule>
+    <rule weight="0.6">
+	    <match lemma="čielggas" tags="adj.*"/>
+	    <match lemma="mihttu" tags="n.*"><select lemma="ulmme" /></match>
 	    </rule>
 
     
