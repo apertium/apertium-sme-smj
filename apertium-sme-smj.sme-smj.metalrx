@@ -2369,6 +2369,12 @@
 	    <match tags="np.*.*.cmp"/>
 	    <match lemma="márkan" tags="n.*"><select lemma="márnán" /></match>
 	    </rule>
+    <rule weight="1.0"><match lemma="vuoiddas" tags="n.*"><select lemma="vuojdas" /></match></rule>
+    <rule weight="0.5"><match lemma="vuoiddas" tags="n.*"><select lemma="njoarvvenjoarvve" /></match></rule>
+    <rule weight="0.6">
+	    <match tags="n.*.*.cmp"/>
+	    <match lemma="vuoiddas" tags="n.*"><select lemma="njoarvve" /></match>
+	    </rule>
 
     
   </rules>
