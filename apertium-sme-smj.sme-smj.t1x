@@ -2016,8 +2016,12 @@ C[_]-T sent
       <list-item v="subtsastit"/>
       <list-item v="åvddånit"/>
     </def-list>
-    <def-list n="adj_nottriggingsupn">
+    <def-list n="adj_nottriggingsupn"> 
       <list-item v="hiebalasj"/>
+      <list-item v="suohtas"/>
+      <list-item v="vájvve"/>
+      <list-item v="guhkálasj"/>
+      <list-item v="ahket"/>
     </def-list>
     <def-list n="alphabet">
       <list-item v="aalphabet"/>
@@ -4453,6 +4457,30 @@ C[_]-T sent
       <let><var n="func"/><lit-tag v="@+FMAINV"/></let>
 	      </otherwise>
       </choose>      
+      <choose>      
+        <when>
+          <test>
+              <in caseless="yes"><clip pos="2" side="tl" part="lem"/><list n="verb3st" /></in>
+          </test>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+                  <lit-tag v="vblex.der_ahtja.vblex"/>
+              <clip pos="1" side="sl" part="a_mood"/>
+              <clip pos="1" side="sl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_person"/>
+              <clip pos="1" side="sl" part="a_nbr"/>
+              <clip pos="1" side="sl" part="a_infin"/>
+            </lu>
+          </chunk>
+        </out>
+        </when>
+        <otherwise>
         <out>
           <chunk name="vblex" case="caseFirstword">
             <tags>
@@ -4470,9 +4498,12 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        </otherwise>
+      </choose>      
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
     </rule> 
+
     <rule comment="C[T]-V addit_vblex mokta_n" c="addit movtta"> 
       <pattern>
         <pattern-item n="addit_vblex"/>
