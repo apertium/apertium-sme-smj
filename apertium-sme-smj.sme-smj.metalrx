@@ -2375,6 +2375,12 @@
 	    <match tags="n.*.*.cmp"/>
 	    <match lemma="vuoiddas" tags="n.*"><select lemma="njoarvve" /></match>
 	    </rule>
+    <rule weight="1.0"><match lemma="garra" tags="n.*"><select lemma="garra" /></match></rule>
+    <rule weight="0.5"><match lemma="garra" tags="n.*"><select lemma="skádne" /></match></rule>
+    <rule weight="0.6">
+	    <match lemma="šaddu"/>
+	    <match lemma="garra" tags="n.*"><select lemma="skádne" /></match>
+	    </rule>
 
     
   </rules>
