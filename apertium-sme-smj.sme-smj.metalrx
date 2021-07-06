@@ -2351,11 +2351,23 @@
     <rule weight="0.5"><match lemma="mihttu" tags="n.*"><select lemma="ulmme" /></match></rule>
     <rule weight="0.6">
 	    <match lemma="mihttu" tags="n.*"><select lemma="ulmme" /></match>
+	    <or>
 	    <match tags="vblex.*.inf.*"/>
+	    <match lemma="plána" tags="n.*"/>
+	    </or>
 	    </rule>
     <rule weight="0.6">
+	    <or>
+	    <match lemma="plána" tags="n.*"/>
 	    <match lemma="čielggas" tags="adj.*"/>
+	    </or>
 	    <match lemma="mihttu" tags="n.*"><select lemma="ulmme" /></match>
+	    </rule>
+    <rule weight="1.0"><match lemma="márkan" tags="n.*"><select lemma="guovdásjbájkke" /></match></rule>
+    <rule weight="0.5"><match lemma="márkan" tags="n.*"><select lemma="márnán" /></match></rule>
+    <rule weight="0.6">
+	    <match tags="np.*.*.cmp"/>
+	    <match lemma="márkan" tags="n.*"><select lemma="márnán" /></match>
 	    </rule>
 
     

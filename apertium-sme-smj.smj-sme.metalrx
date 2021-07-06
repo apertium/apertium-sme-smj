@@ -15,10 +15,21 @@
   </rule>
   
   <rule>
-    <match lemma="ii"/>
-    <match lemma="orrut" tags="vblex.*"><select lemma="liehket" tags="vblex.*"/></match>
+    <match weight="1.0" lemma="ii"/>
+    <match weight="1.0" lemma="orrut" tags="vblex.*"><select lemma="liehket" tags="vblex.*"/></match>
   </rule>
+    <rule weight="1.0"><match lemma="vuosedit" tags="vblex.*"><select lemma="čájehit" /></match></rule>
+    <rule weight="0.5"><match lemma="vuosedit" tags="vblex.*"><select lemma="čujuhit" /></match></rule>
+    <rule weight="0.6"><match lemma="vuosedit" tags="vblex.*"><select lemma="čujuhit" /></match>
+    <match tags="n.*.ill.*"/> 
+    </rule>
+
+
+    
         
+
+
+
 </rules>
 
 
