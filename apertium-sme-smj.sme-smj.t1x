@@ -1907,6 +1907,7 @@ C[_]-T sent
     <def-var n="number"/>
     <def-var n="person"/>
     <def-var n="current_verb"/>
+    <def-var n="current_adj"/>
     <def-var n="adpos_chunk_name"/>
     <def-var n="chunk_name"/>
     <def-var n="caseFirstword"/>  
@@ -2014,6 +2015,9 @@ C[_]-T sent
     <def-list n="not-usually-supn-verbs">
       <list-item v="subtsastit"/>
       <list-item v="åvddånit"/>
+    </def-list>
+    <def-list n="adj_nottriggingsupn">
+      <list-item v="hiebalasj"/>
     </def-list>
     <def-list n="alphabet">
       <list-item v="aalphabet"/>
@@ -5322,14 +5326,14 @@ C[_]-T sent
 		</and></test>
 		<let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl.nom"/></let>
 		</when>
-		<when>
+<!--		<when>
 		<test><and>    
 	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
 	   <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
 	   <equal><clip pos="1" side="sl" part="a_pl_poss"/><lit v=""/></equal>
 		</and></test>
-		<let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>
-		</when>
+		<let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
+		</when> 
 		<when>
 		<test><and>    
 	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
@@ -5337,8 +5341,8 @@ C[_]-T sent
 	   <not><equal><clip pos="1" side="sl" part="a_pl_poss"/><lit v=""/></equal></not>
 		</and></test>
 		<let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
-		<let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>
-		</when>
+		<let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
+		</when> -->
 		</choose>
 		<choose>
 		<when>
@@ -6748,6 +6752,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        <let><var n="current_adj"/><clip pos="1" side="tl" part="lem"/></let>
       </action>
     </rule>
     <rule comment="C[_]-N noun" c="example">
@@ -7891,9 +7896,10 @@ C[_]-T sent
         <let><var n="supn_coor"/><lit v="supn"/></let>
      </when>
        <when c="inf @A←">
-          <test>
+          <test><and>
               <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@A←"/></equal>
-          </test>
+             <not><in caseless="yes"><var n="current_adj"/><list n="adj_nottriggingsupn"/></in></not>
+          </and></test>
          <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
         </when> 
      </choose>
@@ -7920,6 +7926,7 @@ C[_]-T sent
           </chunk>
         </out>
         <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
+        <let><var n="current_adj"/><lit v=""/></let>
       </action>
     </rule>
 
@@ -8414,6 +8421,7 @@ C[_]-T sent
         </out>
         <let><var n="number"/><lit v=""/></let>
         <let><var n="supn_coor"/><lit v=""/></let>
+        <let><var n="current_adj"/><lit v=""/></let>
       </action>
     </rule>
     <rule comment="C[_]-NUM numeral prosent" c="example">
@@ -8487,6 +8495,7 @@ C[_]-T sent
           </chunk>
         </out>
        <let><var n="number"/><lit v=""/></let>
+        <let><var n="current_adj"/><lit v=""/></let>
       </action>
     </rule>
 
@@ -8530,6 +8539,7 @@ C[_]-T sent
           </chunk>
         </out>
        <let><var n="number"/><lit v=""/></let>
+        <let><var n="current_adj"/><lit v=""/></let>
       </action>
     </rule>
     
