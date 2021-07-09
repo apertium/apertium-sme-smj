@@ -374,7 +374,7 @@ C[_]-T sent
       <cat-item lemma="mokta" tags="n.*"/>
     </def-cat>
     <def-cat n="der_nomact_cmp">
-      <cat-item tags="vblex.*.der_nomact.n.*.cmp_sgnom.cmp"/>
+      <cat-item tags="vblex.*.der_nomact.n.cmp_sgnom.cmp"/>
     </def-cat>
     <def-cat n="dihtti_n">
       <cat-item lemma="dihtti" tags="n.*"/>
@@ -3461,6 +3461,14 @@ C[_]-T sent
         </and></test>
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
         </when>
+           <when> 
+            <test><and>
+            <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="num"/></equal>
+            <not><equal><clip pos="1" side="tl" part="lem"/><lit v="akta"/></equal></not>
+            <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
+            </and></test>
+             <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+             </when>
 	  </choose> 
     </def-macro>
 
@@ -3878,7 +3886,7 @@ C[_]-T sent
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
     </rule> 
-     <rule comment="C[D]-PRED der_nomact_cmp dihtti_n" c="example">
+     <rule comment="C[D]-PRED der_nomact_cmp dihtti_n" c="oađđindihte : oadátjit">
       <pattern>
         <pattern-item n="der_nomact_cmp"/>
         <pattern-item n="dihtti_n"/>
@@ -3897,6 +3905,28 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+      </action>
+    </rule> 
+     <rule comment="C[D]-PRED n_cmp dihtti_n" c="ovddidandihte">
+      <pattern>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="dihtti_n"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@ADVL"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="n.sg.ill"/>
+            </lu>
+          </chunk>
+        </out>
+      <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
     </rule> 
 
@@ -6160,7 +6190,7 @@ C[_]-T sent
             <not><equal><clip pos="1" side="tl" part="lem"/><lit v="akta"/></equal></not>
             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
             </and></test>
-             <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+<!--             <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> -->
              <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let>
              </when>
            <when> 
@@ -6295,7 +6325,7 @@ C[_]-T sent
          </test>
           <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
       </when>
-      <when>
+<!--      <when>
           <test>
           <and>
          <equal><clip pos="2" side="tl" part="a_PoS"/><lit-tag v="num"/></equal>
@@ -6304,7 +6334,7 @@ C[_]-T sent
          </and>
          </test>
           <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
-      </when>
+      </when> -->
        <when><test><and>
         <equal><clip pos="2" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal>
         <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
@@ -6392,7 +6422,7 @@ C[_]-T sent
         <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="num"/></equal>
         <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
         </and></test>
-         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+<!--         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> -->
          <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="gen"/></let>
          </when>
         </choose> 
