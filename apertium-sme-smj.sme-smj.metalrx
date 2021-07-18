@@ -41,6 +41,8 @@
     </rule>
     <rule weight="0.6">
     <or>
+      <match lemma="eará"/>
+      <match lemma="iežá"/>
       <match tags="num.*"/>
       <match tags="adj.ord.*"/>
       <match tags="adj.arab.ord.*"/>
