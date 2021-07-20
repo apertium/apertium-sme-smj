@@ -2402,6 +2402,21 @@
 	    </or>
 	    <match lemma="boahkku" tags="n.*"><select lemma="vaksijnna" /></match>
 	    </rule>
+    <rule weight="1.0"><match lemma="gaskkal" tags="pr.*"><select lemma="gaskav" /></match></rule>
+    <rule weight="0.5"><match lemma="gaskkal" tags="pr.*"><select lemma="gaska" /></match></rule>
+    <rule weight="0.6">
+	    <match lemma="gaskkal" tags="pr.*"><select lemma="gaska" /></match>
+	    <or>
+	    <match tags="adj.ord.*"/>
+	    <match tags="adj.arab.ord.*"/>
+	    <match tags="num.*"/>
+	    <match lemma="diibmu"/>
+	    <match lemma="tiibmu"/>
+	    <match lemma="dii"/>
+	    <match lemma="tii"/>
+	    <match lemma="tiibma"/>
+	    </or>
+	    </rule>
 
     
   </rules>

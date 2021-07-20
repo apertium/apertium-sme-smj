@@ -382,6 +382,16 @@ C[_]-T sent
     <def-cat n="jahki_n">
       <cat-item lemma="jahki" tags="n.*"/>
     </def-cat>
+    <def-cat n="diibmu_n">
+      <cat-item lemma="diibmu" tags="n.*"/>
+      <cat-item lemma="tiibmu" tags="n.*"/>
+      <cat-item lemma="tiibma" tags="n.*"/>
+      <cat-item lemma="dii" tags="n.*"/>
+      <cat-item lemma="tii" tags="n.*"/>
+    </def-cat>
+    <def-cat n="gaskkal_pr">
+      <cat-item lemma="gaskkal" tags="pr.*"/>
+    </def-cat>
 
     <def-cat n="verb_condFAUXV">
       <cat-item tags="vblex.*.cond.*.*.@+FAUXV"/> 
@@ -572,6 +582,10 @@ C[_]-T sent
       <cat-item lemma="ja" tags="cnjcoo.*"/>
       <cat-item lemma="ahte" tags="cnjcoo.*"/>
       <cat-item lemma="ahte" tags="cnjcoo"/>
+    </def-cat>
+    <def-cat n="gaskkal_ja">
+      <cat-item lemma="ja" tags="cnjcoo.*"/>
+      <cat-item lemma="gitta" tags="adv.*"/>
     </def-cat>
     <def-cat n="ahte">
       <cat-item lemma="ahte" tags="cnjsub.*"/>
@@ -4924,6 +4938,89 @@ C[_]-T sent
               <clip pos="2" side="tl" part="whole"/>
             </lu>
             <b pos="1"/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="C[T]-NP gaskkal diibmu num ja num" c="gaskkal diibmu 11:45 ja 13:30"> 
+      <pattern> 
+        <pattern-item n="gaskkal_pr"/>
+        <pattern-item n="diibmu_n"/>
+        <pattern-item n="numeral"/>
+        <pattern-item n="gaskkal_ja"/>
+        <pattern-item n="numeral"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-4Param"> <with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="general-macro-1Param"> <with-param pos="5"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="5"/></call-macro>
+         <let><clip pos="4" side="tl" part="lem"/><lit v="ja"/></let> 
+                          <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+            <b pos="3"/>
+            <lu>
+              <clip pos="5" side="tl" part="whole"/>
+            </lu>
+            <b pos="4"/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="C[T]-NP gaskkal num ja num" c="gaskkal 11:45 ja 13:30"> 
+      <pattern> 
+        <pattern-item n="gaskkal_pr"/>
+        <pattern-item n="numeral"/>
+        <pattern-item n="gaskkal_ja"/>
+        <pattern-item n="numeral"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-4Param"> <with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="4"/></call-macro>
+         <let><clip pos="3" side="tl" part="lem"/><lit v="ja"/></let> 
+                          <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+            <b pos="3"/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
