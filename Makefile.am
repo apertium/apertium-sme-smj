@@ -2,7 +2,6 @@
 ## Makefile for Northern Saami--Lule Saami
 ###############################################################################
 
-VERSION=0.5.1
 LANG1=sme
 LANG2=smj
 PREFIX1=$(LANG1)-$(LANG2)
@@ -267,7 +266,4 @@ test-install: all
 	@rm -rf tmp-$@
 
 test: all test-install
-	echo "Leage buorre" | apertium -d . sme-smj | tee .test-mt
-	@echo "Liege buorre" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
+	apertium-regtest test

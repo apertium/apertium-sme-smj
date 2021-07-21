@@ -22,3 +22,13 @@
 t/*.html
 t/.git
 misc/*
+/*.gz
+/*.pc
+/*.zhfst
+/.DS_Store
+/autom4te.cache
+/config.log
+/config.status
+/*-*.prob
+/config.in
+/test/*-output.txt

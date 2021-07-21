@@ -1,0 +1,14 @@
+{
+    "sme-smj": {
+        "input": "sme-smj-input.txt",
+        "mode": "sme-smj"
+    },
+    "sme-smj-pending": {
+        "input": "sme-smj-pending-input.txt",
+        "mode": "sme-smj"
+    },
+    "sme-smj-regression": {
+        "input": "sme-smj-regression-input.txt",
+        "mode": "sme-smj"
+    }
+}
