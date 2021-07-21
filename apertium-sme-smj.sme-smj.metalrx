@@ -1454,17 +1454,9 @@
       </match>
     </rule> -->
 
-    <rule weight="1.0">
-      <match lemma="eallit">
-        <select lemma="viessot"/>
-      </match>
-    </rule>
-
-    <rule weight="0.5">
-      <match lemma="eallit">
-        <select lemma="iellet"/>
-      </match>
-    </rule>
+    <rule weight="1.0"><match lemma="eallit"><select lemma="viessot"/></match></rule>
+    <rule weight="0.5"><match lemma="eallit"><select lemma="iellet"/></match></rule>
+    <rule weight="0.6"><match lemma="eallit" tags="vblex.iv.imp.p3.*"><select lemma="iellet"/></match></rule>
 
     <rule weight="1.0">
       <match lemma="hukset">
