@@ -3473,10 +3473,18 @@ C[_]-T sent
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>	      
 	  </when>
         <when>
-        <test><and>
+        <test><or><and>
         <equal><clip pos="1" side="tl" part="a_acr"/><lit-tag v="acr"/></equal>
         <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></equal>
-        </and></test>
+        </and>
+        <and>
+        <equal><clip pos="1" side="tl" part="lem"/><lit v="Mo"/></equal>
+        <or>
+        <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></equal>
+        <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></equal>
+        </or>
+        </and> </or>
+        </test>
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
         </when>
            <when> 
