@@ -1732,7 +1732,15 @@
    <match />
    <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
  </rule>     
-       <rule weight="1.0">
+      <rule weight="0.6">
+   <match lemma="nu"/>
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+   <match lemma="nu"/>
+ </rule>     
+      <rule weight="1.0">
    <match lemma="nubbi" tags="prn.*"><select lemma="nubbe" /></match>
  </rule>     
        <rule weight="0.5">
