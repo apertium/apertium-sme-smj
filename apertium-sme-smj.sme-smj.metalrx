@@ -449,16 +449,33 @@
     </rule>
 
     <rule weight="0.6">
+      <match lemma="fuomášupmi"> <select lemma="vetsadibme"/> </match>
+	    <or>
       <match lemma="ánssášit"/>
+      <match lemma="oažžut"/>
+	    </or>
+    </rule>
+    <rule weight="0.6"> 
+	    <or>
+      <match lemma="internationála"/>
+      <match lemma="ánssášit"/>
+      <match lemma="oažžut"/>
+	    </or>
       <match lemma="fuomášupmi"> <select lemma="vetsadibme"/> </match>
     </rule>
     <rule weight="0.6">
+	    <or>
       <match lemma="ánssášit"/>
+      <match lemma="oažžut"/>
+	    </or>
       <match />
       <match lemma="fuomášupmi"> <select lemma="vetsadibme"/> </match>
     </rule>
     <rule weight="0.6">
+	    <or>
       <match lemma="ánssášit"/>
+      <match lemma="oažžut"/>
+	    </or>
       <match />
       <match />
       <match lemma="fuomášupmi"> <select lemma="vetsadibme"/> </match>
