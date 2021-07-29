@@ -2419,6 +2419,7 @@
 	    <match lemma="bidjat"/>
 	    <match lemma="oažžut"/>
 	    <match lemma="addit"/>
+	    <match lemma="dosa"/>
 	    </or>
 	    <match lemma="boahkku" tags="n.*"><select lemma="vaksijnna" /></match>
 	    </rule>
