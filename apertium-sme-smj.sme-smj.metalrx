@@ -2392,7 +2392,10 @@
     <rule weight="1.0"><match lemma="márkan" tags="n.*"><select lemma="guovdásjbájkke" /></match></rule>
     <rule weight="0.5"><match lemma="márkan" tags="n.*"><select lemma="márnán" /></match></rule>
     <rule weight="0.6">
+	    <or>
 	    <match tags="np.*.*.cmp"/>
+	    <match tags="n.*.*.cmp"/>
+	    </or>
 	    <match lemma="márkan" tags="n.*"><select lemma="márnán" /></match>
 	    </rule>
     <rule weight="1.0"><match lemma="vuoiddas" tags="n.*"><select lemma="vuojdas" /></match></rule>
@@ -2420,8 +2423,21 @@
 	    <match lemma="oažžut"/>
 	    <match lemma="addit"/>
 	    <match lemma="dosa"/>
+	    <match lemma="dálkkas"/>
 	    </or>
 	    <match lemma="boahkku" tags="n.*"><select lemma="vaksijnna" /></match>
+	    </rule>
+    <rule weight="0.6">
+	    <match lemma="boahkku" tags="n.*"><select lemma="vaksijnna" /></match>
+	    <or>
+	    <match lemma="korona"/>
+	    <match lemma="covid-19"/>
+	    <match lemma="bidjat"/>
+	    <match lemma="oažžut"/>
+	    <match lemma="addit"/>
+	    <match lemma="dosa"/>
+	    <match lemma="dálkkas"/>
+	    </or>
 	    </rule>
     <rule weight="1.0"><match lemma="gaskkal" tags="pr.*"><select lemma="gaskav" /></match></rule>
     <rule weight="0.5"><match lemma="gaskkal" tags="pr.*"><select lemma="gaskan" /></match></rule>
