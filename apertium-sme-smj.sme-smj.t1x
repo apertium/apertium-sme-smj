@@ -385,6 +385,9 @@ C[_]-T sent
     <def-cat n="jahki_n">
       <cat-item lemma="jahki" tags="n.*"/>
     </def-cat>
+    <def-cat n="dohkketmeahttun_adj">
+      <cat-item lemma="dohkketmeahttun" tags="adj.*.nom.*"/>
+    </def-cat>
     <def-cat n="diibmu_n">
       <cat-item lemma="diibmu" tags="n.*"/>
       <cat-item lemma="tiibmu" tags="n.*"/>
@@ -3856,6 +3859,74 @@ C[_]-T sent
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
     </rule> 
+     <rule comment="C[D]-PRED dohkketmeahttun_adj" c=" ">
+      <pattern>
+        <pattern-item n="dohkketmeahttun_adj"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+         <out>
+         <chunk name="adv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <lit v="ij"/>
+              <lit-tag v="vblex.iv.neg.indic.pres"/>
+              <lit-tag v="p3"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres.conneg"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
+     <rule comment="C[D]-PRED leat_main_fin dohkketmeahttun_adj" c=" "> 
+      <pattern>
+        <pattern-item n="leat_main_fin"/>
+        <pattern-item n="dohkketmeahttun_adj"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out>
+         <chunk name="adv" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <lit v="ij"/>
+              <lit-tag v="vblex.iv.neg.indic"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <lit-tag v="p3"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres.conneg"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
+
+
 
      <rule comment="C[D]-PRED dat_gen nammii_post" c="bargat dan nammii : ">
       <pattern>
@@ -6326,10 +6397,20 @@ C[_]-T sent
               <and>
              <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
               <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
-              <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
              </and>
              </test>
               <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+              <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+          </when> 
+          <when>
+              <test>
+              <and>
+             <equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal>
+              <not><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal></not>
+              <equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
+             </and>
+             </test>
               <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
           </when> 
            <when> 
