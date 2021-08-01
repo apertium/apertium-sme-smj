@@ -930,6 +930,11 @@
 
     <rule weight="0.5">
       <match lemma="bivdit">
+        <select lemma="bivddit"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="bivdit">
         <select lemma="gåhttjot"/>
       </match>
     </rule>
@@ -937,7 +942,7 @@
     <rule weight="0.6">
       <match tags="cm"/>
       <match lemma="bivdit">
-        <select lemma="gåhttjot"/>
+        <select lemma="bivddit"/>
       </match>
     </rule>
 
@@ -945,7 +950,7 @@
       <match tags="cm"/>
       <match tags="*.@SUBJ→"/>
       <match lemma="bivdit">
-        <select lemma="gåhttjot"/>
+        <select lemma="bivddit"/>
       </match>
     </rule>
 
