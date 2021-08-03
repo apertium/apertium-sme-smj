@@ -2415,8 +2415,9 @@
 	    <match lemma="šaddu"/>
 	    <match lemma="garra" tags="n.*"><select lemma="skádne" /></match>
 	    </rule>
-    <rule weight="1.0"><match lemma="boahkku" tags="n.*"><select lemma="guohpár" /></match></rule>
+    <rule weight="1.0"><match lemma="boahkku" tags="n.*"><select lemma="gåhpålahka" /></match></rule>
     <rule weight="0.5"><match lemma="boahkku" tags="n.*"><select lemma="vaksijnna" /></match></rule>
+    <rule weight="0.6"><match lemma="boahkku" tags="n.*.cmp_sgnom.*"><select lemma="vaksijnna" /></match></rule>
     <rule weight="0.6">
 	    <or>
 	    <match tags="adj.ord.*"/>
