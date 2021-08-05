@@ -1059,11 +1059,13 @@ C[_]-T sent
       <cat-item lemma="dii" tags="adv.*"/>
     </def-cat>
     <def-cat n="prn_num">
-      <cat-item tags="prn.dem.*"/>
-      <cat-item tags="prn.ind.*"/>
-      <cat-item tags="num.sg.*"/>
-      <cat-item tags="num.pl.*"/>
-      <cat-item tags="num.arab.sg.*"/>
+      <cat-item tags="prn.dem.*.@→N"/>
+      <cat-item tags="prn.ind.*.@→N"/>
+      <cat-item tags="prn.dem.*.*.@→N"/>
+      <cat-item tags="prn.ind.*.*.@→N"/>
+      <cat-item tags="num.sg.*.@→N"/>
+      <cat-item tags="num.pl.*.@→N"/>
+      <cat-item tags="num.arab.sg.*.@→N"/>
    </def-cat>
 
 <!-- from sme-nob starts -->
