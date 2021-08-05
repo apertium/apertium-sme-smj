@@ -1427,6 +1427,7 @@
     <or>
       <match tags="n.*.pl.nom.*"/>
       <match tags="n.*.*.pl.nom.*"/>
+      <match lemma="lohku"/>
     </or>
       <match lemma="unnut">
         <select lemma="binnot"/>
