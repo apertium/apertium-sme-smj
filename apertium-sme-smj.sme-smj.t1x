@@ -5261,6 +5261,11 @@ C[_]-T sent
           </chunk>
         </out>
         </when>
+        <when>
+        <test>
+        <equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal>
+        </test>
+        </when>
         <otherwise>
             <out>
               <chunk namefrom="chunk_name" case="caseFirstword">

@@ -2290,6 +2290,14 @@
         <select lemma="maŋen" />
       </match>
     </rule> 
+    <rule weight="1.0"><match lemma="mielde" tags="adv.*"><select lemma="maŋen" /></match>
+    </rule>
+    <rule weight="0.5"><match lemma="mielde" tags="adv.*"><select lemma="" /></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="čuovvut"/>
+	    <match lemma="mielde" tags="adv.*"><select lemma="" /></match>
+    </rule>
     
     <rule weight="1.0">
       <match lemma="ala">
