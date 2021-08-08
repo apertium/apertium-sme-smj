@@ -68,14 +68,34 @@
       <match lemma="čujuhus"> <select lemma="adræssa"/> </match>
     </rule>
     <rule weight="0.5">
-      <match lemma="čujuhus"> <select lemma="tjielggidus"/> </match>
+      <match lemma="čujuhus"> <select lemma="gatjálvis"/> </match>
     </rule>
     <rule weight="0.6">
     <or>
+      <match tags="oažžut"/>
       <match tags="lohkat"/>
       <match lemma="čilget"/>
     </or>
-      <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="tjielggidus"/> </match>
+      <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="gatjálvis"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="oažžut"/>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match />
+      <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="gatjálvis"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="oažžut"/>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match />
+      <match />
+      <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="gatjálvis"/> </match>
     </rule>
     <rule weight="1.0">
       <match lemma="láhkki"> <select lemma="tjehtik"/> </match>
@@ -1382,11 +1402,11 @@
 
     <rule weight="1.0">
       <match lemma="submi">
-        <select lemma="ruhta"/>
+        <select lemma="summa"/>
       </match>
     </rule>
 
-    <rule weight="0.6">
+<!--    <rule weight="0.6">
     <or>
       <match tags="n.*.cmp"/>
       <match tags="adj.*.cmp"/>
@@ -1394,7 +1414,7 @@
       <match tags="adv.*.cmp"/>
     </or>
       <match lemma="submi">
-        <select lemma="ruhta"/>
+        <select lemma="summa"/>
       </match>
     </rule>
     <rule weight="0.5">
@@ -1407,7 +1427,7 @@
       <match lemma="submi"  tags="n.sem_money.sg.*">
         <select lemma="tjoahkke"/>
       </match>
-    </rule>
+    </rule> -->
 
 
 
@@ -2168,6 +2188,101 @@
       <match lemma="vuhtii"/>
     </rule>
 
+    <rule weight="0.5">
+      <match lemma="váldit">
+        <select lemma="duosstot"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="váldit"><select lemma="duosstot"/></match>
+      <match lemma="vuostá"/>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="váldit"><select lemma="duosstot"/></match>
+      <match />
+      <match lemma="vuostá"/>
+    </rule>
+
+
+     <rule weight="1.0">
+      <match lemma="luodda"><select lemma="luodda"/></match>
+    </rule>
+     <rule weight="0.5">
+      <match lemma="luodda"><select lemma="rahte"/></match>
+    </rule>
+     <rule weight="0.6">
+	     <or>
+      <match tags="np.*"/>
+      <match lemma="n.sem_veh.*"/>
+      <match lemma="biila"/>
+      <match lemma="johtolat"/>
+      <match lemma="giddet"/>
+      <match lemma="rahpat"/>
+	     </or>
+      <match lemma="luodda"><select lemma="rahte"/></match>
+    </rule>
+     <rule weight="0.6">
+      <match lemma="luodda"><select lemma="rahte"/></match>
+	     <or>
+      <match tags="np.*"/>
+      <match lemma="biila"/>
+      <match lemma="n.sem_veh.*"/>
+      <match lemma="johtolat"/>
+      <match lemma="giddet"/>
+      <match lemma="rahpat"/>
+	     </or>
+    </rule>
+
+     <rule weight="1.0">
+      <match lemma="beare"><select lemma="beru"/></match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="beare"><select lemma="ilá"/></match>
+    </rule>
+ 
+        <rule weight="0.6">
+      <match lemma="beare"><select lemma="ilá"/></match>
+      <or>
+      <match tags="adj.*"/>
+      <match tags="adv.*"/>
+      </or>
+    </rule>
+
+     <rule weight="1.0">
+      <match lemma="áigi"><select lemma="ájgge"/></match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="áigi"><select lemma="muddo"/></match>
+    </rule>
+ 
+        <rule weight="0.6">
+      <match lemma="áigi"><select lemma="muddo"/></match>
+      <or>
+      <match lemma="ahte"/>
+      <match tags="prn.*.sg.ill.*"/>
+      <match tags="n.*.sg.ill.*"/>
+      </or>
+    </rule>
+
+
+    
+     <rule weight="1.0">
+      <match lemma="unnit"><select lemma="unnet"/></match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="unnit"><select lemma="binnep"/></match>
+    </rule>
+ 
+        <rule weight="0.6">
+      <match lemma="unnit"><select lemma="binnep"/></match>
+      <match lemma="go"/>
+      <match tags="num.*"/>
+    </rule>
+
 
      <rule weight="1.0">
       <match lemma="bidjat">
@@ -2297,6 +2412,20 @@
     <rule weight="0.6">
       <match lemma="čuovvut"/>
 	    <match lemma="mielde" tags="adv.*"><select lemma="" /></match>
+    </rule>
+
+    <rule weight="1.0"><match lemma="vuostá" tags="adv.*"><select lemma="vuosstij" /></match>
+    </rule>
+    <rule weight="0.5"><match lemma="vuostá" tags="adv.*"><select lemma="" /></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="váldit"/>
+	    <match lemma="vuostá" tags="adv.*"><select lemma="" /></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="váldit"/>
+      <match />
+	    <match lemma="vuostá" tags="adv.*"><select lemma="" /></match>
     </rule>
     
     <rule weight="1.0">
