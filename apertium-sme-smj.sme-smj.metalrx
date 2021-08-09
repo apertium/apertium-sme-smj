@@ -1895,8 +1895,15 @@
       </match>
     </rule>
     <rule weight="0.6">
-      <or><match lemma="oaidnit"/>
-      <match lemma="gullat"/></or>
+      <or>
+	  <match lemma="dadjat"/>
+	  <match lemma="lohkat"/>
+	  <match lemma="čállit"/>
+	  <match lemma="almmuhit"/>
+	  <match lemma="muitalit"/>
+	  <match lemma="oaidnit"/>
+      <match lemma="gullat"/>
+      </or>
       <match lemma="ahte" tags="cnjsub.*">
         <select lemma="ahte" tags="cnjsub.*"/>
       </match>
@@ -2219,7 +2226,23 @@
       <match lemma="johtolat"/>
       <match lemma="giddet"/>
       <match lemma="rahpat"/>
+      <match lemma="vuodjit"/>
+      <match lemma="badjel"/>
 	     </or>
+      <match lemma="luodda"><select lemma="rahte"/></match>
+    </rule>
+     <rule weight="0.6">
+	     <or>
+      <match tags="np.*"/>
+      <match lemma="n.sem_veh.*"/>
+      <match lemma="biila"/>
+      <match lemma="johtolat"/>
+      <match lemma="giddet"/>
+      <match lemma="rahpat"/>
+      <match lemma="vuodjit"/>
+      <match lemma="badjel"/>
+	     </or>
+      <match />
       <match lemma="luodda"><select lemma="rahte"/></match>
     </rule>
      <rule weight="0.6">
@@ -2231,6 +2254,22 @@
       <match lemma="johtolat"/>
       <match lemma="giddet"/>
       <match lemma="rahpat"/>
+      <match lemma="vuodjit"/>
+      <match lemma="badjel"/>
+	     </or>
+    </rule>
+     <rule weight="0.6">
+      <match lemma="luodda"><select lemma="rahte"/></match>
+      <match />
+	     <or>
+      <match tags="np.*"/>
+      <match lemma="biila"/>
+      <match lemma="n.sem_veh.*"/>
+      <match lemma="johtolat"/>
+      <match lemma="giddet"/>
+      <match lemma="rahpat"/>
+      <match lemma="vuodjit"/>
+      <match lemma="badjel"/>
 	     </or>
     </rule>
 
@@ -2249,6 +2288,21 @@
       <match tags="adv.*"/>
       </or>
     </rule>
+
+
+     <rule weight="1.0">
+      <match lemma="soaitit" tags="vblex.iv.indic.pres.p3.sg.*"><select lemma="soajttet"/></match>
+    </rule>
+       
+        <rule weight="0.5">
+      <match lemma="soaitit" tags="vblex.iv.indic.pres.p3.sg.*"><select lemma="ihkap"/></match>
+    </rule>
+ 
+        <rule weight="0.6">
+      <match lemma="soaitit"><select lemma="ihkap"/></match>
+      <match lemma="leat"/>
+    </rule>
+
 
      <rule weight="1.0">
       <match lemma="áigi"><select lemma="ájgge"/></match>
@@ -2409,9 +2463,20 @@
     </rule>
     <rule weight="0.5"><match lemma="mielde" tags="adv.*"><select lemma="" /></match>
     </rule>
-    <rule weight="0.6">
+    <rule weight="0.6"><or>
       <match lemma="čuovvut"/>
+      <match lemma="leat"/>
+      </or>
 	    <match lemma="mielde" tags="adv.*"><select lemma="" /></match>
+    </rule>
+
+    <rule weight="1.0"><match lemma="leat" tags="vblex.*"><select lemma="liehket" /></match>
+    </rule>
+    <rule weight="0.5"><match lemma="leat" tags="vblex.*"><select lemma="sæbrrat" /></match>
+    </rule>
+    <rule weight="0.6">
+	    <match lemma="leat" tags="vblex.*"><select lemma="sæbrrat" /></match>
+      <match lemma="mielde"/>
     </rule>
 
     <rule weight="1.0"><match lemma="vuostá" tags="adv.*"><select lemma="vuosstij" /></match>

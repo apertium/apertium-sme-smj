@@ -119,6 +119,10 @@
     <def-cat n="infAl">
         <cat-item lemma="vblex" tags="SV.@A←"/>
     </def-cat>
+    <def-cat n="needsahte">
+        <cat-item lemma="prfprc" tags="SV.@-FMAINV.needsahte"/>
+        <cat-item lemma="prfprc" tags="SV.@-FMAINV.needsahte.*"/>
+    </def-cat>
     <def-cat n="IFMainV">
         <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
         <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
@@ -347,7 +351,28 @@
          <cat-item tags="*.@←ADVL"/>
     </def-cat>
     
-    <def-cat n="FAuxV"> <!-- not neg -->
+        <def-cat n="wordafterahte">
+         <cat-item tags="SV.@+FMAINV"/>
+         <cat-item tags="SV.@+FMAINV.*"/>
+         <cat-item tags="SV.*.@+FMAINV.*"/>
+         <cat-item tags="SV.*.*.@+FMAINV.*"/>
+         <cat-item tags="NP.@←ADVL.*"/>
+         <cat-item tags="NP.@←ADVL"/>
+         <cat-item tags="NP.@←ADVL-ela.*"/>
+         <cat-item tags="NP.@←ADVL-ela"/>
+         <cat-item tags="NP.@←ADVL-ine.*"/>
+         <cat-item tags="NP.@←ADVL-ine"/>
+         <cat-item tags="NP.@-F←ADVL-ela.*"/>
+         <cat-item tags="NP.@-F←ADVL-ela"/>
+         <cat-item tags="NP.@-F←ADVL-ine"/>
+         <cat-item tags="NP.@-F←ADVL-ine.*"/>
+         <cat-item tags="NP.@ADVL.*"/>
+         <cat-item tags="NP.@ADVL"/>
+         <cat-item tags="*.@←ADVL-ine"/>
+         <cat-item tags="*.@←ADVL-ela"/>
+         <cat-item tags="*.@←ADVL"/>
+    </def-cat>
+   <def-cat n="FAuxV"> <!-- not neg -->
         <cat-item lemma="cop-auxvclt" tags="*.@+FAUXV"/>
         <cat-item lemma="cop-auxv" tags="@+FAUXV"/>
         <cat-item lemma="cop-auxv" tags="*.@+FAUXV"/>
@@ -1379,9 +1404,40 @@
 
     <rule comment="removes not jut " >  
       <pattern>
-        <pattern-item n="IFMainV"/>
+        <pattern-item n="needsahte"/>
         <pattern-item n="ahte"/>
-        <pattern-item n="IMainV"/>
+        <pattern-item n="l-clt"/>
+      </pattern>
+      <action>
+          <let><var n="aux"/><lit v="aux"/></let>
+       <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <lit-tag v="cltl"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      <choose><when>
+        <test><not><equal><b pos="2"/><lit v=" "/></equal></not></test>
+        <out><b pos="2"/></out>
+      </when></choose>
+      </action>
+    </rule>
+
+    <rule comment="removes not jut " >  
+      <pattern>
+        <pattern-item n="needsahte"/>
+        <pattern-item n="ahte"/>
+        <pattern-item n="wordafterahte"/>
       </pattern>
       <action>
         <out>

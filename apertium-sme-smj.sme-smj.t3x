@@ -125,6 +125,7 @@
     </def-cat>
     <def-cat n="IVverb">
       <cat-item tags="*.@-FMAINV"/>
+      <cat-item tags="*.@-FMAINV.*"/>
     </def-cat>
 
     <def-cat n="NP_Subj_l">

@@ -467,6 +467,10 @@ C[_]-T sent
       <cat-item lemma="leat" tags="*.pl.@+FMAINV"/>
     </def-cat>
 
+    <def-cat n="soaitit_vblex">
+      <cat-item lemma="soaitit" tags="vblex.*"/>
+    </def-cat>
+
     <def-cat n="prop_nom">
       <cat-item tags="np.*.sg.nom.*"/>
     </def-cat>
@@ -830,6 +834,7 @@ C[_]-T sent
       <cat-item lemma="hállat" tags="vblex.*"/>
       <cat-item lemma="muitalit" tags="vblex.*"/>
     </def-cat>
+
 
     <def-cat n="word">
       <cat-item tags="adj.*"/>
@@ -1949,6 +1954,7 @@ C[_]-T sent
     <def-var n="case"/>
     <def-var n="infin"/>
     <def-var n="lemma"/>
+    <def-var n="needsahte"/>
     <def-var n="qst"/>
     <def-var n="vblex_nbrpers"/>
     <def-var n="negsup"/>
@@ -1978,10 +1984,19 @@ C[_]-T sent
       <list-item v="tjágŋat"/>
       <list-item v="guosskat"/>
     </def-list>
+    <def-list n="loc2ill_verbs">
+      <list-item v="sæbrrat"/>
+    </def-list>
     <def-list n="hållat_verbs">
       <list-item v="hållat"/>
       <list-item v="ságastallat"/>
     </def-list>
+    <def-list n="muitalit_vblex"> <!-- jut should not be removed -->
+      <list-item v="subtsastit"/>
+      <list-item v="almodit"/>
+      <list-item v="javllat"/>
+    </def-list>
+
     <def-list n="loc_verbs">
       <list-item v="hållat"/>
       <list-item v="subtsastit"/>
@@ -3463,7 +3478,12 @@ C[_]-T sent
 		  <and>
        <in caseless="yes"><var n="current_verb"/><list n="acc2ill_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
-      </and></or></test>
+      </and>
+		  <and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2ill_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and>
+      </or></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
 	      <when>
@@ -3660,6 +3680,14 @@ C[_]-T sent
             <not><equal><clip pos="1" side="sl" part="x_func"/><lit-tag v="←vdic→"/></equal></not>
           </test>
           <let><var n="vdic"/><lit v=""/></let>
+        </when>
+      </choose>
+      <choose>
+        <when c=" needsahte ahte">
+          <test>
+            <in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="muitalit_vblex"/></in>
+          </test>
+          <let><var n="needsahte"/><lit-tag v="needsahte"/></let>
         </when>
       </choose>
 
@@ -3894,7 +3922,7 @@ C[_]-T sent
          <out>
          <chunk name="adv" case="caseFirstword">
             <tags>
-              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
             </tags>
             <lu>
@@ -3927,7 +3955,7 @@ C[_]-T sent
          <out>
          <chunk name="adv" case="caseFirstword">
             <tags>
-              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
             </tags>
             <lu>
@@ -3951,7 +3979,31 @@ C[_]-T sent
       </action>
     </rule> 
 
-
+     <rule comment="C[D]-PRED soaitit_vblex leat_aux_main " c=" "> 
+      <pattern>
+        <pattern-item n="soaitit_vblex"/>
+        <pattern-item n="leat_aux_main"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out>
+         <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres.p3.sg"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
 
 
      <rule comment="C[D]-PRED dat_gen nammii_post" c="bargat dan nammii : ">
@@ -5267,7 +5319,12 @@ C[_]-T sent
 		  <and>
        <in caseless="yes"><var n="current_verb"/><list n="acc2ill_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>	      
-      </and></or></test>
+      </and>
+      		  <and>
+       <in caseless="yes"><var n="current_verb"/><list n="loc2ill_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+      </and>
+</or></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
 	      <when>
@@ -8320,6 +8377,7 @@ C[_]-T sent
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
               <tag><var n="lemma"/></tag>
+              <tag><var n="needsahte"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
@@ -8327,6 +8385,7 @@ C[_]-T sent
           </chunk>
         </out>
         <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
+        <let><var n="needsahte"/><lit v=""/></let>
       </action>
     </rule>
     <rule comment="C[AT]-V mainverbqst" c="example">
