@@ -340,26 +340,30 @@
     <rule weight="0.6">
       <match lemma="ovddas"> <select lemma="åvdån" tags="post.@←ADVL-ine"/> </match>
     </rule>
+
     <rule weight="1.0">
       <match lemma="ovdal"> <select lemma="åvddål"/> </match>
     </rule>
-
     <rule weight="0.5">
       <match lemma="ovdal" tags="adv.*"> <select lemma="åvddål"/> </match>
       <match lemma="leat"/>   
     </rule>
-
-
     <rule weight="0.5">
       <match lemma="ovdal" tags="adv.*"> <select lemma="åvddåla"/> </match>
     </rule>
-
     <rule weight="0.6">
       <match lemma="ovdal" tags="adv.@ADVL-ela→"> <select lemma="åvddåla" /> </match>
     </rule>
     <rule weight="0.6">
       <match lemma="ovdal" tags="adv.@←ADVL-ela"> <select lemma="åvddåla" /> </match>
     </rule>
+    <rule weight="0.5">
+      <match lemma="ovdal" tags="adv.*"> <select lemma="åvddål gå"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="ovdal" tags="adv.*"> <select lemma="åvddål gå"  /> </match>
+       <match tags="vblex.*.indic.*"/> 
+   </rule>
 
 
     <rule weight="1.0">
@@ -2446,6 +2450,10 @@
       </match>
     </rule>
     <rule weight="0.6">
+	    <or>
+      <match tags="n.sem_veh.*.gen.*"/>
+      <match tags="n.sem_hum.*.gen.*"/>
+	    </or>
       <match lemma="mielde" tags="post.*">
         <select lemma="maŋen" />
       </match>
