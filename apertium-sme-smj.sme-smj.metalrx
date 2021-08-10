@@ -982,28 +982,34 @@
       <match lemma="bivdit">
         <select lemma="gåhttjot"/>
       </match><or>
-      <match tags="np.*.sg.acc.*"/>
+      <match tags="np.*.*.acc.*"/>
       <match lemma="veahkki" tags="n.*"/>
+      <match lemma="doaibmabidju" tags="n.*"/>
+      <match lemma="ruhta" tags="n.*"/>
       <match tags="n.sem_hum.*.acc.*"/>
     </or></rule>
 
+    <rule weight="1.0"><match lemma="movt"><select lemma="gåktu"/></match></rule>
+    <rule weight="0.5"><match lemma="movt"><select lemma="dagu"/></match></rule>
+    <rule weight="0.6"><match lemma="nu"/><match  lemma="movt"><select lemma="dagu"/></match></rule>
+    <rule weight="1.0"><match lemma="mot"><select lemma="gåktu"/></match></rule>
+    <rule weight="0.5"><match lemma="mot"><select lemma="dagu"/></match></rule>
+    <rule weight="0.6"><match lemma="nu"/><match  lemma="mot"><select lemma="dagu"/></match></rule>
+    <rule weight="1.0"><match lemma="mo"><select lemma="gåktu"/></match></rule>
+    <rule weight="0.5"><match lemma="mo"><select lemma="dagu"/></match></rule>
+    <rule weight="0.6"><match lemma="nu"/><match  lemma="mo"><select lemma="dagu"/></match></rule>
+
 
     <rule weight="1.0">
-      <match lemma="ruska">
-        <select lemma="ruhtse"/>
-      </match>
+      <match lemma="ruska"><select lemma="ruhtse"/></match>
     </rule>
 
     <rule weight="0.5">
-      <match lemma="ruska">
-        <select lemma="ruhke"/>
-      </match>
+      <match lemma="ruska"><select lemma="ruhke"/></match>
     </rule>
 
     <rule weight="0.6">
-      <match  tags="*.der_dimin.*" lemma="ruska">
-        <select lemma="ruhke"/>
-      </match>
+      <match  tags="*.der_dimin.*" lemma="ruska"><select lemma="ruhke"/></match>
     </rule>
 
     <rule weight="0.6">

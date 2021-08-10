@@ -610,6 +610,23 @@ C[_]-T sent
       <cat-item lemma="ahte" tags="cnjcoo"/>
     </def-cat>
 
+
+    <def-cat n="time_loc">
+      <cat-item lemma="jahki" tags="n.*.sg.loc.*"/>
+      <cat-item lemma="vahkku" tags="n.*.sg.loc.*"/>
+      <cat-item lemma="buolva" tags="n.*.sg.loc.*"/>
+      <cat-item lemma="mánnu" tags="n.*.sg.loc.*"/>
+      <cat-item lemma="beaivi" tags="n.*.sg.loc.*"/>
+    </def-cat>
+
+    <def-cat n="time_ill">
+      <cat-item lemma="jahki" tags="n.*.sg.ill.*"/>
+      <cat-item lemma="vahkku" tags="n.*.sg.ill.*"/>
+      <cat-item lemma="buolva" tags="n.*.sg.ill.*"/>
+      <cat-item lemma="mánnu" tags="n.*.sg.ill.*"/>
+      <cat-item lemma="beaivi" tags="n.*.sg.ill.*"/>
+    </def-cat>
+
     <def-cat n="jahki_n_loc">
       <cat-item lemma="jahki" tags="n.*.sg.loc.*"/>
       <cat-item lemma="jahki" tags="n.sg.loc.*"/>
@@ -3246,11 +3263,11 @@ C[_]-T sent
     <def-macro n="convert-deriv-1Param" npar="1">
       <choose>
 
-        <when>
+<!--        <when>
           <test>
             <in caseless="yes"><clip pos="1" side="sl" part="lem"/><list n="der_caus2der_d"/></in></test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_d"/></let>
-        </when>
+        </when> -->
         <when>
           <test>
             <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_h"/></equal>
@@ -3411,7 +3428,17 @@ C[_]-T sent
           </test>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>
         </when> -->
-        
+		<when>
+		<test>    
+	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="rel"/></equal></test>
+       <let><var n="qst"/><lit v=""/></let>
+       <let><var n="negsup"/><lit v=""/></let>
+	   <let><var n="current_verb"/><lit v=""/></let>  
+        <let><var n="infin"/><lit v=""/></let>
+        <let><var n="supn_coor"/><lit v=""/></let>
+		</when>
+      </choose>
+	  <choose>        
         <when>
           <test>
             <or>
@@ -4304,6 +4331,34 @@ C[_]-T sent
         </out>
       </action>
     </rule>
+ 
+  <rule comment="C[DL]-NP time_loc time_ill" c="jagis jahkái : ">
+      <pattern>
+        <pattern-item n="time_loc"/>
+        <pattern-item n="time_ill"/>
+      </pattern>
+      <action>
+       <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+          <out>
+         <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>            
+          </chunk>
+        </out>
+      </action>
+    </rule>
+ 
  
   <rule comment="C[DL]-NP guhkki_adj áigi_n" c="guhkes áigi : guhkev">
       <pattern>
@@ -5727,23 +5782,6 @@ C[_]-T sent
 		</and></test>
 		<let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl.nom"/></let>
 		</when>
-<!--		<when>
-		<test><and>    
-	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
-	   <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
-	   <equal><clip pos="1" side="sl" part="a_pl_poss"/><lit v=""/></equal>
-		</and></test>
-		<let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
-		</when> 
-		<when>
-		<test><and>    
-	   <equal><clip pos="1" side="sl" part="a_prn_type"/><lit-tag v="res"/></equal>
-	   <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
-	   <not><equal><clip pos="1" side="sl" part="a_pl_poss"/><lit v=""/></equal></not>
-		</and></test>
-		<let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
-		<let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
-		</when> -->
 		</choose>
 		<choose>
 		<when>
