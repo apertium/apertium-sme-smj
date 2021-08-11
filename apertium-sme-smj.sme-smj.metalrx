@@ -1913,6 +1913,7 @@
 	  <match lemma="muitalit"/>
 	  <match lemma="oaidnit"/>
       <match lemma="gullat"/>
+      <match lemma="mearridit"/>
       </or>
       <match lemma="ahte" tags="cnjsub.*">
         <select lemma="ahte" tags="cnjsub.*"/>
