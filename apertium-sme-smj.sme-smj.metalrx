@@ -1780,6 +1780,14 @@
     <match tags="vblex.inf.*"/>
    </or>
 </rule>     
+        <rule weight="0.6">
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+    <match />
+   <or>
+    <match tags="vblex.*.inf.*"/>
+    <match tags="vblex.inf.*"/>
+   </or>
+</rule>     
       <rule weight="0.6">
    <match tags="vblex.*.pl.@+FAUXV"/>
    <match />
@@ -2595,6 +2603,28 @@
 	    <match lemma="čuokkis" tags="n.*"><select lemma="tjuorgga" /></match>
 	    <match lemma="oktiibuot"/>
 	    </rule>
+
+    <rule weight="1.0"><match lemma="lihppu" tags="n.*"><select lemma="páhperbiehkke" /></match></rule>
+    <rule weight="0.5"><match lemma="lihppu" tags="n.*"><select lemma="billæhtta" /></match></rule>
+    <rule weight="0.6">
+	    <or>
+	    <match tag="n.sem_event.*"/>
+	    <match tag="n.sem_veh.*"/>
+	    <match lemma="nuvttá"/>
+	    <match lemma="divras"/>
+	    <match lemma="hálbi"/>
+	    <match lemma="busse"/>
+	    <match lemma="girdi"/>
+	    <match lemma="konsearta"/>
+	    </or>
+	    <match lemma="lihppu" tags="n.*"><select lemma="billæhtta" /></match>
+	    </rule>
+    <rule weight="0.5"><match lemma="lihppu" tags="n.*"><select lemma="lissta" /></match></rule>
+    <rule weight="0.6">
+	    <match lemma="jienastus"/>
+	    <match lemma="lihppu" tags="n.*"><select lemma="lissta" /></match>
+	    </rule>
+
 
     <rule weight="1.0"><match lemma="mihttu" tags="n.*"><select lemma="mihtto" /></match></rule>
     <rule weight="0.5"><match lemma="mihttu" tags="n.*"><select lemma="ulmme" /></match></rule>
