@@ -1782,6 +1782,15 @@
 </rule>     
         <rule weight="0.6">
    <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+    <match  />
+   <or>
+    <match tags="vblex.*.inf.*"/>
+    <match tags="vblex.inf.*"/>
+   </or>
+</rule>     
+        <rule weight="0.6">
+   <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
+    <match />
     <match />
    <or>
     <match tags="vblex.*.inf.*"/>
