@@ -409,6 +409,13 @@ C[_]-T sent
       <cat-item tags="vblex.*.cond.*.*.@+FAUXV"/> 
       <cat-item tags="vblex.*.der_inchl.vblex.cond.*.*.@+FAUXV"/>
     </def-cat>
+
+    <def-cat n="verb_fin_dadjat">
+
+    <cat-item lemma="lohkat" tags="vblex.*.@+FMAINV"/>
+    <cat-item lemma="dadjat" tags="vblex.*.@+FMAINV"/> 
+    </def-cat>
+
     <def-cat n="verb_fin">
       <cat-item tags="vblex.*.indic.*"/>
       <cat-item tags="vblex.*.pot.*"/>
@@ -2012,6 +2019,7 @@ C[_]-T sent
       <list-item v="subtsastit"/>
       <list-item v="almodit"/>
       <list-item v="javllat"/>
+      <list-item v="mierredit"/>
     </def-list>
 
     <def-list n="loc_verbs">
@@ -5931,10 +5939,18 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
-        <choose><when><test>
+        <choose>
+	        <when><test>
        <in caseless="yes"><var n="current_verb"/><list n="dadjat_verbs" /></in></test>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
         <choose>
+	        <when>
+	        <test>
+           <equal><clip pos="1" side="tl" part="a_prn_type"/><lit-tag v="ref"/></equal>
+	     </test>
+        <call-macro n="ref-to-pers"><with-param pos="1"/></call-macro>
+           <let><var n="number"/><clip pos="1" side="tl" part="a_nbr"/></let>
+		  </when>
 	        <when>
 	        <test><and><or>
            <equal><clip pos="1" side="tl" part="a_prn_type"/><lit-tag v="dem"/></equal>
@@ -5985,6 +6001,49 @@ C[_]-T sent
           </chunk>
       </out>
 		  </when>
+<!--		  <when>
+		   <test><equal><clip pos="1" side="tl" part="a_prn_type"/><lit-tag v="ref"/></equal></test>
+		  <choose>
+		  <when>
+		   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3sg"/></equal></test>
+		   <let><var n="number"/><lit-tag v="p3.sg"/></let>
+		  </when>
+		  <when>
+		   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3du"/></equal></test>
+		   <let><var n="number"/><lit-tag v="p3.du"/></let>
+		  </when>
+		  
+		  <when>
+		   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3pl"/></equal></test>
+		   <let><var n="number"/><lit-tag v="p3.pl"/></let>
+		  </when>
+		  </choose>
+		   
+
+      <out>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres"/>
+              <var n="number"/>
+            </lu>
+          </chunk>
+            <b pos="1"/>
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+      </out>
+		  </when>  -->
 		  
 		  <otherwise>
       <out>
@@ -6196,6 +6255,13 @@ C[_]-T sent
         <choose><when><test>
        <in caseless="yes"><var n="current_verb"/><list n="dadjat_verbs" /></in></test>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
+	        <choose><when>
+	        <test>
+           <equal><clip pos="1" side="tl" part="a_prn_type"/><lit-tag v="ref"/></equal>
+	     </test>
+        <call-macro n="ref-to-pers"><with-param pos="1"/></call-macro>
+           <let><var n="number"/><clip pos="1" side="tl" part="a_nbr"/></let>
+		  </when></choose>
         <choose><when><test>
            <equal><clip pos="3" side="sl" part="a_infin"/><lit-tag v="inf"/></equal>
 	      </test>
@@ -8391,6 +8457,89 @@ C[_]-T sent
       </action>
     </rule>  -->
 
+
+    
+
+
+    <rule comment="C[_]-V verb_fin_dadjat verb_prfprc" c="example">
+      <pattern>
+        <pattern-item n="verb_fin_dadjat"/>
+        <pattern-item n="verb_prfprc"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            <b pos="1"/>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+            <b />
+          <chunk name="prfprc">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+      </out>
+      </action>
+    </rule>
+
+    <rule comment="C[_]-V verb_fin_dadjat verb_inf" c="example">
+      <pattern>
+        <pattern-item n="verb_fin_dadjat"/>
+        <pattern-item n="verb_inf"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            <b pos="1"/>
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <lit-tag v="vblex.indic.pres"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+      </out>
+      </action>
+    </rule>
+
+
     <rule comment="C[_]-V verb_prfprc" c="example">
       <pattern>
         <pattern-item n="verb_prfprc"/>
@@ -8485,7 +8634,6 @@ C[_]-T sent
       </action>
     </rule> 
 
-    
     <rule comment="C[AT]-V verb_fin" c="example">
       <pattern>
         <pattern-item n="verb_fin"/>
@@ -8572,6 +8720,7 @@ C[_]-T sent
                   <tag><lit-tag v="SV"/></tag>
                   <tag><var n="func"/></tag>
                   <tag><var n="vdic"/></tag>
+                  <tag><var n="needsahte"/></tag>
                 </tags>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
@@ -8582,6 +8731,7 @@ C[_]-T sent
         </choose>
         <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
         <let><var n="number"/><lit v=""/></let>
+        <let><var n="needsahte"/><lit v=""/></let>
       </action>
     </rule> 
 

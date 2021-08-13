@@ -120,8 +120,10 @@
         <cat-item lemma="vblex" tags="SV.@A←"/>
     </def-cat>
     <def-cat n="needsahte">
-        <cat-item lemma="prfprc" tags="SV.@-FMAINV.needsahte"/>
-        <cat-item lemma="prfprc" tags="SV.@-FMAINV.needsahte.*"/>
+        <cat-item tags="SV.@-FMAINV.needsahte"/>
+        <cat-item tags="SV.@-FMAINV.needsahte.*"/>
+        <cat-item tags="SV.@+FMAINV.needsahte"/>
+        <cat-item tags="SV.@+FMAINV.needsahte.*"/>
     </def-cat>
     <def-cat n="IFMainV">
         <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
@@ -352,6 +354,8 @@
     </def-cat>
     
         <def-cat n="wordafterahte">
+         <cat-item tags="SV.@+FAUXV"/>
+         <cat-item tags="SV.@+FAUXV.*"/>
          <cat-item tags="SV.@+FMAINV"/>
          <cat-item tags="SV.@+FMAINV.*"/>
          <cat-item tags="SV.*.@+FMAINV.*"/>
