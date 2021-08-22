@@ -5847,6 +5847,7 @@ C[_]-T sent
         </out>
 		</otherwise>
 		</choose> 
+        <let><var n="number"/><lit v=""/></let>
       </action>
     </rule>
 
@@ -8573,6 +8574,7 @@ C[_]-T sent
         </out>
         <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
         <let><var n="needsahte"/><lit v=""/></let>
+        <let><var n="number"/><lit v=""/></let>
       </action>
     </rule>
     <rule comment="C[AT]-V mainverbqst" c="example">
