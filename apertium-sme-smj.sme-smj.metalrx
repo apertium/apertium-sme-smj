@@ -217,6 +217,64 @@
       <match lemma="liikká"> <select lemma="huoman"/> </match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="geiget"> <select lemma="gálggit"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="geiget"> <select lemma="vaddet"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="geiget" tags="vblex.tv.der_passl.vblex.*"> <select lemma="vaddet"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="geiget"> <select lemma="vaddet"/> </match>
+     <or>
+      <match lemma="bálkkašupmi"/>
+      <match lemma="vuoitu"/>
+    </or>
+   </rule>
+    <rule weight="0.6">
+      <match lemma="geiget"> <select lemma="vaddet"/> </match>
+       <match />
+    <or>
+      <match lemma="bálkkašupmi"/>
+      <match lemma="vuoitu"/>
+    </or>
+   </rule>
+
+       <rule weight="1.0">
+    <match lemma="liika" tags="n.*"><select lemma="lijkka" /></match>
+  </rule>     
+        <rule weight="0.5">
+    <match lemma="liika" tags="n.*"><select lemma="jábbmek" /></match>
+  </rule>     
+        <rule weight="0.6">
+              <or>
+    <match lemma="ohcat"/>
+    <match lemma="gávdnat"/>
+              </or>
+    <match lemma="liika" tags="n.*"><select lemma="jábbmek" /></match>
+  </rule>     
+        <rule weight="0.6">
+    <match lemma="liika" tags="n.*"><select lemma="jábbmek" /></match>
+              <or>
+    <match lemma="ohcat"/>
+    <match lemma="gávdnat"/>
+              </or>
+  </rule>     
+       <rule weight="1.0">
+    <match lemma="dat" tags="prn.*"><select lemma="dat" /></match>
+  </rule>     
+        <rule weight="0.5">
+    <match lemma="dat" tags="prn.*"><select lemma="das"  /></match>
+  </rule>     
+        <rule weight="0.6">
+    <match lemma="dat" tags="prn.dem.sg.loc.*"><select lemma="das" tags="adv.*" /></match>
+              <or>
+    <match lemma="maŋŋá"/>
+    <match lemma="maŋŋel"/>
+              </or>
+  </rule>     
 
     <rule weight="1.0">
       <match lemma="gorut"> <select lemma="gårot"/> </match>
