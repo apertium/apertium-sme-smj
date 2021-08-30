@@ -2636,8 +2636,15 @@
 
     <rule weight="1.0"><match lemma="meašttir" tags="n.*"><select lemma="gilbosvuojtte" /></match></rule>
     <rule weight="0.5"><match lemma="meašttir" tags="n.*"><select lemma="vuojtte" /></match></rule>
+    <rule weight="0.5"><match lemma="meašttir" tags="n.*"><select lemma="gilbos" /></match></rule>
     <rule weight="0.6"><match lemma="meašttir" tags="n.*.cmp_sgnom.*"><select lemma="vuojtte" /></match></rule>
     <rule weight="0.6"><match lemma="meašttir" tags="n.*.cmp_sggen.*"><select lemma="vuojtte" /></match></rule>
+    <rule weight="0.8"><match lemma="meašttir" tags="n.*.cmp_sgnom.*"><select lemma="gilbos" /></match>
+    <match lemma="vuoiti" />
+    </rule>
+    <rule weight="0.8"><match lemma="measttir" tags="n.*.cmp_sgnom.*"><select lemma="gilbos" /></match>
+    <match lemma="vuoiti" />
+    </rule>
     <rule weight="0.6"><or>
       <match tags="n.*.cmp_plgen.*"/>
       <match tags="n.*.cmp_sggen.*"/>
