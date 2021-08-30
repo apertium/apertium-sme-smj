@@ -7,11 +7,8 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc" debug-suff="disam-a">
-        <file name="sme-smj.mor.rlx.bin"/>
-      </program>
-      <program name="cg-proc -1 -n -w" debug-suff="syntax-a">
-        <file name="sme-smj.syn.rlx.bin"/>
+      <program name="apertium-tagger -g $2" debug-suff="disam-a">
+        <file name="nob-nno.prob"/>
       </program>
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
