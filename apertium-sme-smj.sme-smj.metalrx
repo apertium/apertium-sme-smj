@@ -164,6 +164,7 @@
       <match lemma="tsieggat"/> 
       <match lemma="guoddet"/> 
       <match lemma="gieresvuohta"/> 
+      <match lemma="ligget"/> 
       </or>
       <match lemma="váibmu"> <select lemma="vájmmo"/> </match>
     </rule>
@@ -2633,7 +2634,7 @@
     </rule>
 
     <rule weight="1.0"><match lemma="orohat" tags="n.*"><select lemma="tjiellde" /></match></rule>
-
+<!--
     <rule weight="1.0"><match lemma="meašttir" tags="n.*"><select lemma="gilbosvuojtte" /></match></rule>
     <rule weight="0.5"><match lemma="meašttir" tags="n.*"><select lemma="vuojtte" /></match></rule>
     <rule weight="0.5"><match lemma="meašttir" tags="n.*"><select lemma="gilbos" /></match></rule>
@@ -2644,7 +2645,7 @@
     </rule>
     <rule weight="0.8"><match lemma="measttir" tags="n.*.cmp_sgnom.*"><select lemma="gilbos" /></match>
     <match lemma="vuoiti" />
-    </rule>
+    </rule> -->
     <rule weight="0.6"><or>
       <match tags="n.*.cmp_plgen.*"/>
       <match tags="n.*.cmp_sggen.*"/>
