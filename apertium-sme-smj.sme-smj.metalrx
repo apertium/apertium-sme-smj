@@ -169,6 +169,21 @@
       <match lemma="váibmu"> <select lemma="vájmmo"/> </match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="badjelii"> <select lemma="badjelij"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="badjelii"> <select lemma=""/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+    <match lemma="coggat" />
+     <match lemma="nahkehit" />
+   </or>
+    <match />
+      <match lemma="badjelii"> <select lemma=""/> </match>
+    </rule>
+
 
     <rule weight="1.0">
       <match lemma="Sápmi"> <select lemma="Sábme"/> </match>
