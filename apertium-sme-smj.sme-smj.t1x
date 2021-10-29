@@ -411,9 +411,13 @@ C[_]-T sent
     </def-cat>
 
     <def-cat n="verb_fin_dadjat">
-
     <cat-item lemma="lohkat" tags="vblex.*.@+FMAINV"/>
     <cat-item lemma="dadjat" tags="vblex.*.@+FMAINV"/> 
+    </def-cat>
+
+    <def-cat n="lohkat_conneg">
+    <cat-item lemma="lohkat" tags="vblex.*.*.*.conneg.*"/>
+    <cat-item lemma="dadjat" tags="vblex.*.*.*.conneg.*"/> 
     </def-cat>
 
     <def-cat n="verb_fin">
@@ -931,7 +935,7 @@ C[_]-T sent
  	 <def-cat n="mihkke_neg_nom">
   	 	<cat-item lemma="mihkke" tags="*.nom.foc_neg-ge.*"/>
   	 </def-cat>
-     <def-cat n="negverb23">
+    <def-cat n="negverb23">
       <cat-item tags="vblex.neg.indic.p3.pl.*"/>
       <cat-item tags="vblex.neg.indic.p2.sg.*"/>
       <cat-item tags="vblex.*.neg.indic.p3.pl.*"/>
@@ -3665,7 +3669,8 @@ C[_]-T sent
           <test><and>
 	          <equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal>
 	          <equal><clip pos="1" side="tl" part="a_infin"/><lit-tag v="conneg"/></equal>
-	          </and></test>
+          <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FAUXV"/></equal></not>	          
+          </and></test>
           <let><clip pos="1" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
         </when>
         <when c="M[T] remove tense when cond">
@@ -4556,6 +4561,9 @@ C[_]-T sent
          <let><var n="chunk_name"/><lit v="cop-mainv"/></let>
          </otherwise>
         </choose> 
+        <choose>
+      <when><test><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></test></when>
+        <otherwise>
         <out>
           <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
@@ -4568,6 +4576,8 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        </otherwise>
+        </choose>
       </action>
     </rule>
 
@@ -5015,10 +5025,7 @@ C[_]-T sent
           <clip pos="1" side="tl" part="a_tense"/><lit v=""/>
         </let>
         </when></choose>
-        <let>
-          <clip pos="1" side="tl" part="a_mood"/><lit-tag v="indic"/>
-        </let>
-        <out>
+		<out>
           <chunk name="conneg">
             <tags>
               <tag><lit-tag v="SV"/></tag>
@@ -7272,6 +7279,29 @@ C[_]-T sent
       </test>
 	  <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="attr.der_vuota"/></let>	 
 	  </when></choose>     
+      <choose><when>
+	  <test>
+	  <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="vblex"/></equal>      
+      </test>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FMAINV"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_PoS"/>
+              <clip pos="1" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="a_infin"/>
+            </lu>
+          </chunk>
+        </out>
+	  </when>
+	  <otherwise>     
         <out>
           <chunk name="adj" case="caseFirstword">
             <tags>
@@ -7285,6 +7315,8 @@ C[_]-T sent
           </chunk>
         </out>
         <let><var n="current_adj"/><clip pos="1" side="tl" part="lem"/></let>
+	  </otherwise>     
+	  </choose>     
       </action>
     </rule>
 
@@ -8636,6 +8668,35 @@ C[_]-T sent
       </action>
     </rule> 
 
+    <rule comment="C[AT]-V negverb lohkat_conneg" c="ii loga">
+      <pattern>
+        <pattern-item n="negverb"/>
+        <pattern-item n="lohkat_conneg"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
+        <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                  <tag><var n="vdic"/></tag>
+                  <tag><var n="needsahte"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="2" side="tl" part="whole"/>
+                </lu>
+            <b pos="1"/>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+               </chunk>
+            </out>
+       </action>
+     </rule>
+      
+
     <rule comment="C[AT]-V verb_fin" c="example">
       <pattern>
         <pattern-item n="verb_fin"/>
@@ -8743,8 +8804,7 @@ C[_]-T sent
         <pattern-item n="birra_post"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-2Param">
-           <with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <choose>
           <when>
             <test>
