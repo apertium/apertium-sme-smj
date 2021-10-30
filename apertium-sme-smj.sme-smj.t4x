@@ -65,7 +65,11 @@
     </def-cat>
     <def-cat n="adj">
       <cat-item lemma="adj" tags="NP"/>
-      <cat-item tags="NP.*"/>
+      <cat-item lemma="adj" tags="NP.*"/>
+    </def-cat>
+
+    <def-cat n="coor_obj">
+        <cat-item lemma="coor_obj" tags="NP.*" />
     </def-cat>
     
     <def-cat n="SV_Obj_r">
@@ -430,6 +434,9 @@
         <cat-item lemma="sent" tags="*"/>
     </def-cat>
 
+    <def-cat n="Comma">
+        <cat-item lemma="comma" tags="*"/>
+    </def-cat>
 
   </section-def-cats>
 
@@ -932,6 +939,45 @@
             <clip pos="2" part="tags"/>
             <clip pos="2" part="chcontent"/>
             <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment=" IMainV NP_Obj_l Comma coor_obj" >  
+      <pattern>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="NP_Obj_l"/>
+         <pattern-item n="Comma"/>
+         <pattern-item n="coor_obj"/>
+     </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="3"/>
+          <chunk>
+            <clip pos="4" part="lemh"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+            <clip pos="4" part="lemq"/>
           </chunk>
         </out>
       </action>

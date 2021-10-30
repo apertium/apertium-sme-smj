@@ -1894,6 +1894,10 @@
    <match />
    <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
  </rule>     
+       <rule weight="0.6">
+   <match lemma="loahpas" />
+   <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
+ </rule>     
        <rule weight="0.5">
    <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
  </rule>     
@@ -1970,6 +1974,21 @@
    <match lemma="ovdal"/>
  </rule>     
 
+       <rule weight="1.0">
+   <match lemma="doallat" tags="vblex.*"><select lemma="adnalit" /></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="doallat" tags="vblex.*"><select lemma="vuolgget" /></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="doallat" tags="vblex.*"><select lemma="vuolgget" /></match>
+   <match tags="np.plc.sg.ill.*"/>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="doallat" tags="vblex.*"><select lemma="vuolgget" /></match>
+   <match tags="adv.*" />
+   <match tags="np.top.sg.ill.*"/>
+ </rule>     
 
        <rule weight="1.0">
    <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*"/></match>
