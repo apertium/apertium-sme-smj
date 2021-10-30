@@ -389,6 +389,7 @@ C[_]-T sent
       <cat-item lemma="instagram" tags="np.*"/>
       <cat-item lemma="facebook" tags="np.*"/>
       <cat-item lemma="girji" tags="n.*"/>
+      <cat-item lemma="mánáidgirji" tags="n.*"/>
     </def-cat>
     <def-cat n="dohkketmeahttun_adj">
       <cat-item lemma="dohkketmeahttun" tags="adj.*.nom.*"/>
@@ -5136,6 +5137,40 @@ C[_]-T sent
         <let><var n="px"/><lit v=""/></let>
       </action>
     </rule>
+    <rule comment="C[T]-NP prn_pers_gen agreement_attr instagram_np" c="su vuosttaš girji :  ">  
+      <pattern> 
+        <pattern-item n="prn_pers_gen"/> 
+        <pattern-item n="agreement_attr"/>
+        <pattern-item n="instagram_np"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"> <with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+      <call-macro n="persgen-to-px1"><with-param pos="1"/></call-macro>
+                          <out>
+          <chunk name="nounx" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags> 
+            <lu>
+              <lit v="iesj"/>
+              <lit-tag v="prn.ref.sg.gen"/> 
+              <var n="px"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b pos="2"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+        <let><var n="px"/><lit v=""/></let>
+      </action>
+    </rule>
 
     <rule comment="C[T]-NP dii_adv num_arab" c="dii. 12">  
       <pattern> 
@@ -5435,12 +5470,13 @@ C[_]-T sent
               <tag><var n="func"/></tag>
             </tags>
               <lu>
-                <lit v="dát"/>
-                <lit-tag v="prn.dem.sg.ela"/>
+                <lit v="dat"/>
+                <lit-tag v="prn.dem.sg.ela.attr"/>
               </lu>
               <b/>
               <lu>
-                <clip pos="1" side="tl" part="whole"/>
+                <lit v="rájes"/>
+                <lit-tag v="post"/>
               </lu>
           </chunk>
         </out>
@@ -6929,6 +6965,7 @@ C[_]-T sent
           <and>
          <not><equal><clip pos="2" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
          <not><equal><clip pos="3" side="sl" part="a_sem"/><lit-tag v="sem_route"/></equal></not>
+         <not><equal><clip pos="2" side="tl" part="lem"/><lit v="muhtem"/></equal></not>
           <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
           <equal><clip pos="3" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
          </and>
