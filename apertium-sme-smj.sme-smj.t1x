@@ -229,6 +229,9 @@ C[_]-T sent
       <cat-item tags="n.*.*.@-FSUBJ→"/>
       <cat-item tags="n.*.*.*.@-FSUBJ→"/>
       <cat-item tags="n.*.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="np.*.*.@-FSUBJ→"/>
+      <cat-item tags="np.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="np.*.*.*.*.@-FSUBJ→"/>
       <cat-item tags="prn.*.*.@-FSUBJ→"/>
       <cat-item tags="prn.*.*.*.@-FSUBJ→"/>
       <cat-item tags="prn.*.*.*.*.@-FSUBJ→"/>
@@ -388,6 +391,8 @@ C[_]-T sent
     <def-cat n="instagram_np">
       <cat-item lemma="instagram" tags="np.*"/>
       <cat-item lemma="facebook" tags="np.*"/>
+      <cat-item lemma="mánná" tags="n.*"/>
+      <cat-item lemma="eatnigiella" tags="n.*"/>
       <cat-item lemma="girji" tags="n.*"/>
       <cat-item lemma="mánáidgirji" tags="n.*"/>
     </def-cat>
@@ -2086,6 +2091,7 @@ C[_]-T sent
       <list-item v="ballat"/>
     </def-list>
     <def-list n="smj-supn-triggerverbs">
+      <list-item v="bivddit"/>
       <list-item v="barggat"/>
       <list-item v="dahkat"/>
       <list-item v="hásstalit"/>
@@ -2098,7 +2104,7 @@ C[_]-T sent
       <list-item v="åvddånit"/>
     </def-list>
     <def-list n="adj_nottriggingsupn"> 
-      <list-item v="asdf"/>
+      <list-item v="álkke"/>
       <list-item v="hiebalasj"/>
       <list-item v="suohtas"/>
       <list-item v="vájvve"/>
@@ -3493,7 +3499,7 @@ C[_]-T sent
          </when>
 
       </choose>
-     <choose>
+<!-- ???    <choose>
 	      <when>
 	  <test><and>
        <in><clip pos="1" side="sl" part="a_sem"/><list n="sem_time" /></in>
@@ -3502,7 +3508,7 @@ C[_]-T sent
       </and></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></let>	      
 	  </when>
-	  </choose>
+	  </choose> -->
       <choose>
 	      <when>
 	  <test><and>
@@ -5956,6 +5962,73 @@ C[_]-T sent
        </action>
      </rule>
 
+    <rule comment="C[AT]-V negverb lohkat_conneg fsubj verb_inf " c="Ii loga Nordkalottfolket heivet dievasčoahkkinjođiheaddjin : javllá Nordkalottfolket ij hieba ållestjåhkanimjådediddjen ">
+      <pattern>
+        <pattern-item n="negverb"/>
+        <pattern-item n="lohkat_conneg"/>
+        <pattern-item n="fsubj"/>  
+        <pattern-item n="verb_inf"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
+        <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FMAINV"/></tag>
+                  <tag><var n="vdic"/></tag>
+                </tags>
+                <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+              <clip pos="2" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+                </lu>
+               </chunk>
+            <b pos="1"/>
+           <chunk name="noun" case="caseFirstword">
+              <tags>
+                <tag><lit-tag v="NP"/></tag>
+                <tag><lit-tag v="@SUBJ→"/></tag>
+              </tags>
+               <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="neg">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FAUXV"/></tag>
+                </tags>
+                <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex.neg"/>
+              <clip pos="1" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <lit-tag v="p3.sg"/>
+                </lu>
+               </chunk>
+             <b pos="3"/>
+         <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+            <lu>
+              <clip pos="4" side="tl" part="lem"/>
+              <lit-tag v="vblex.indic.conneg"/>
+           </lu>
+         </chunk>
+            </out>
+       </action>
+     </rule>
+
+
     <rule comment="C[_]-N prn" c="example">
       <pattern>
         <pattern-item n="prn"/>  
@@ -6158,13 +6231,24 @@ C[_]-T sent
 	        <test><and><or>
            <equal><clip pos="1" side="tl" part="a_prn_type"/><lit-tag v="dem"/></equal>
            <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="n"/></equal>
+           <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="np"/></equal>
 	        </or>
 	       <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
 	     </and></test>
            <let><var n="number"/><lit-tag v="p3.pl"/></let>
 		  </when>
+	        <when>
+	        <test><and><or>
+           <equal><clip pos="1" side="tl" part="a_prn_type"/><lit-tag v="dem"/></equal>
+           <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="n"/></equal>
+           <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="np"/></equal>
+	        </or>
+	       <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+	     </and></test>
+           <let><var n="number"/><lit-tag v="p3.sg"/></let>
+		  </when>
 		  <otherwise>
-           <let><var n="number"/><clip pos="1" side="tl" part="a_nbr"/></let>
+			  <let><var n="number"/><clip pos="1" side="tl" part="a_nbr"/></let>
 		  </otherwise> 
 		  </choose>
         <choose><when><test>
@@ -6241,7 +6325,7 @@ C[_]-T sent
 		  
 		  <otherwise>
       <out>
-          <chunk name="prn">
+          <chunk name="noun">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><lit-tag v="@SUBJ→"/></tag>
@@ -6813,6 +6897,19 @@ C[_]-T sent
               <test>
               <and>
              <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
+             <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="num"/></equal>
+              <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+              <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+              <equal><clip pos="2" side="sl" part="a_sem"/><lit-tag v="sem_measr_time"/></equal>
+             </and>
+             </test>
+              <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+              <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></let>
+          </when> 
+          <when>
+              <test>
+              <and>
+             <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
               <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
              <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
              </and>
@@ -6873,6 +6970,24 @@ C[_]-T sent
               </tags>
                <lu>
                 <clip pos="2" side="tl" part="whole"/>
+              </lu>
+           </chunk>
+          </out>
+      <choose><when><test><not><equal><b pos="2"/><lit v=" "/></equal></not></test><out><b pos="2"/></out></when></choose>      
+          </when>
+          <when>
+              <test><and>
+            <equal><clip pos="1" side="sl" part="lem"/><lit v="mii"/></equal>
+            <equal><clip pos="2" side="sl" part="lem"/><lit v="bealli"/></equal>
+              </and></test>
+          <out>
+            <chunk name="prn" case="caseFirstword">
+              <tags>
+                <tag><lit-tag v="NP"/></tag>
+                <tag><lit-tag v="@OBJ→"/></tag>
+              </tags>
+               <lu>
+                <clip pos="1" side="tl" part="whole"/>
               </lu>
            </chunk>
           </out>
@@ -7543,38 +7658,6 @@ C[_]-T sent
           </chunk>
         </out>
         </when>        
-<!--          <when>
-            <test><and><or>
-                <in caseless="yes"><var n="current_verb"/><list n="moveverbs" /></in>
-                <in caseless="yes"><var n="current_verb"/><list n="verbs_stative" /></in>
-                </or>
-                <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></equal>
-                <in><clip pos="1" side="sl" part="a_sem"/><list n="sem_hum" /></in>
-            </and></test>
-            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
-        <out>
-          <chunk name="noun" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="NP"/></tag>
-              <tag><lit-tag v="@→P"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-            </chunk>
-            <b />
-          <chunk name="post-maŋen" case="caseFirstword">
-            <tags>
-              <tag><lit-tag v="PP"/></tag>
-              <tag><var n="func"/></tag>
-            </tags>
-         <lu>
-            <lit v="maŋen"/>
-            <lit-tag v="post"/>
-          </lu>
-          </chunk>
-        </out>
-          </when> -->
         <when>
         <test>
         <equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal>
@@ -9230,6 +9313,7 @@ C[_]-T sent
         <let><var n="number"/><lit v=""/></let>
         <let><var n="supn_coor"/><lit v=""/></let>
         <let><var n="current_adj"/><lit v=""/></let>
+        <let><var n="current_verb"/><lit v=""/></let>
       </action>
     </rule>
     <rule comment="C[_]-NUM numeral prosent" c="example">
