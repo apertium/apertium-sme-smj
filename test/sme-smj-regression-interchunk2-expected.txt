@@ -30,6 +30,8 @@
 [/5BBksgQuZmf1]
 [5KqvetnCgzFm#0] ^Prn<NP><@SUBJ→><pers><p3>{^sån<prn><pers><p3><sg><nom>$}$ ^vblex<SV><@+FMAINV>{^viehkat<vblex><indic><pres><p3><sg>$}$ ^pp<NP><@←ADVL-ela>{^værált<n><sg><acc>$ ^miehtáj<post>$}$^sent<SENT>{^.<sent>$}$
 [/5KqvetnCgzFm]
+[5Wp-8mbVpKkQ#0] ^Prn<NP><@SUBJ→><pers><p3>{^sån<prn><pers><p3><sg><nom>$}$ ^vblex<SV><@+FMAINV>{^javllat<vblex><indic><pres><p3><sg>$}$ ^neg<SV><@+FAUXV>{^ij<vblex><neg><indic><pres><p3><sg>$}$ ^conneg<SV><@-FMAINV>{^liehket<vblex><iv><indic><pres><conneg>$}$ ^adj<NP><@←SPRED>{^gássjel<adj><sg><nom>$}$ ^inf<SV><@←ADVL>{^gávnnat<vblex><inf>$}$ ^noun<NP><@-F←OBJ>{^rádevadde<n><nomag><sg><acc>$}$^sent<SENT>{^.<sent>$}$
+[/5Wp-8mbVpKkQ]
 [5e9igDqstZMw#0] ^Prn<NP><@SUBJ→><dem>{^dát<prn><dem><pl><nom>$}$ ^cop-mainv<SV><@+FMAINV>{^liehket<vblex><indic><pres><p3><pl>$}$ ^noun<NP><@→N>{^guokta<num><sg><gen>$ ^guolle<n><sg><gen>$}$ ^noun<NP><@←SPRED>{^miedem<n><pl><nom>$}$^sent<SENT>{^.<sent>$}$
 [/5e9igDqstZMw]
 [6HiXSbi54mEq#0] ^noun<NP><@SUBJ→>{^Sámedigge<np><org><sg><nom>$}$ ^vblex<SV><@+FAUXV>{^ájggot<vblex><indic><pres><p3><sg>$}$ ^inf<SV><@-FMAINV>{^åttjudit<vblex><inf>$}$ ^noun<NP><@←ADVL>{^sábme<n><sg><gen>$ ^mánná<n><pl><ill>$}$ ^noun<NP><@←OBJ>{^indivijdalasj<adj><attr>$ ^rievtesvuohta<n><sg><acc>$}$ ^inf<SV><@←ADVL>{^oadtjot<vblex><supn>$}$ ^noun<NP><@-F←OBJ>{^sábme<n><sg><gen>$ ^mánájgárdde<n><cmp_sgnom><cmp>+fálaldahka<n><sg><acc>$}$^sent<SENT>{^.<sent>$}$
