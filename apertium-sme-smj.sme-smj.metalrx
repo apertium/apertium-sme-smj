@@ -1381,6 +1381,7 @@
 
     <rule weight="0.6">
 <or>
+      <match tags="n.sem_measr_time.*"/>
       <match tags="n.sem_rule.*.acc.*"/>
       <match tags="n.sem_org_txt.*.acc.*"/>
       <match tags="n.sem_txt.*"/>
@@ -2754,7 +2755,13 @@
 
     <rule weight="1.0"><match lemma="leat" tags="vblex.*"><select lemma="liehket" /></match></rule>
     <rule weight="0.5"><match lemma="leat" tags="vblex.*"><select lemma="sæbrrat" /></match></rule>
+    <rule weight="0.5"><match lemma="leat" tags="vblex.*"><select lemma="boahtet" /></match></rule>
     <rule weight="0.5"><match lemma="leat" tags="vblex.*"><select lemma="" /></match>
+    </rule>
+    <rule weight="0.8">
+	    <match lemma="leat" tags="vblex.*"><select lemma="boahtet" /></match>
+      <match tags="np.*.loc.*"/>
+      <match lemma="eret"/>
     </rule>
     <rule weight="0.6">
 	    <match lemma="leat" tags="vblex.*"><select lemma="sæbrrat" /></match>
