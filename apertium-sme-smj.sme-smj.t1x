@@ -4563,6 +4563,7 @@ C[_]-T sent
              <equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pres"/></equal>
              <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
              <equal><clip pos="1" side="sl" part="a_person"/><lit-tag v="p3"/></equal>
+             <equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal>
        </and></test>
          <let><var n="chunk_name"/><lit v="cop-mainvclt"/></let>
           </when>
