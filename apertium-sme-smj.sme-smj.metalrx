@@ -1548,6 +1548,32 @@
       </match>
     </rule> -->
 
+    <rule weight="1.0">
+      <match lemma="sápmelaš">
+        <select lemma="sábme"/>
+      </match>
+    </rule>
+
+    <rule weight="0.5">
+      <match lemma="sápmelaš">
+        <select lemma="sábmelasj"/>
+      </match>
+    </rule>
+
+    <rule weight="0.6">
+      <match lemma="sápmi"/>
+      <match lemma="dahje"/>
+      <match lemma="sápmelaš">
+        <select lemma="sábmelasj"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="sápmelaš">
+        <select lemma="sábmelasj"/>
+      </match>
+      <match lemma="dahje"/>
+      <match lemma="sápmi"/>
+    </rule>
 
 
     <rule weight="1.0">
