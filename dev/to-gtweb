@@ -36,9 +36,9 @@ sudo systemctl restart apy
 
 package () {
     script="
-sudo dnf clean packages             &&
-sudo dnf update                     &&
-sudo dnf reinstall ${PACKAGE}       &&
+sudo yum clean packages             &&
+sudo yum update                     &&
+sudo yum reinstall ${PACKAGE}       &&
 sudo systemctl restart apy
 "
     set -x
