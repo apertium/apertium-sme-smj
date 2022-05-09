@@ -49,8 +49,8 @@ dev/nouns-sme-smj/$(PREFIX1).rlx.bin: dev/nouns-sme-smj/$(BASENAME).$(PREFIX1).r
 
 # Override prefixes from ap_include, since we need the derivation-pos-changes:
 .deps/%.autobil.prefixes: %.autobil.bin .deps/.d
-	lt-print $< | sed 's/ /@_SPACE_@/g' > .deps/$*.autobil.att
-	hfst-txt2fst -e ε -i  .deps/$*.autobil.att -o .deps/$*.autobil.hfst
+	lt-print -H $< > .deps/$*.autobil.att
+	hfst-txt2fst --disjunct -i  .deps/$*.autobil.att -o .deps/$*.autobil.hfst
 	hfst-project -p upper .deps/$*.autobil.hfst -o .deps/$*.autobil.upper                                   # bidix
 	echo '[ "<np>" -> [ "<np>" | "<ex_np>" ] ] .o. [ "<n>" -> [ "<n>" | "<ex_n>" ] ] .o. [ "<adj>" -> [ "<adj>" | "<ex_adj>" ] ] .o. [ "<vblex>" -> [ "<vblex>" |"<ex_vblex>" ] ] .o. [ "<iv>" -> [ "<iv>" | "<ex_iv>" ] ] .o. [ "<tv>" -> [ "<tv>" | "<ex_tv>" ] ]' \
 		| hfst-regexp2fst -o .deps/$*.derivpos.hfst
