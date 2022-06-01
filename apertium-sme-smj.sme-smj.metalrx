@@ -2061,6 +2061,24 @@
    <match tags="adv.*" />
    <match tags="np.top.sg.ill.*"/>
  </rule>     
+       <rule weight="0.5">
+   <match lemma="doallat" tags="vblex.*"><select lemma="liehket" /></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="doallat" tags="vblex.*"><select lemma="liehket" /></match>
+   <match lemma="deaivása"/>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="doallat" tags="vblex.*"><select lemma="liehket" /></match>
+   <match />
+   <match lemma="deaivása"/>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="doallat" tags="vblex.*"><select lemma="liehket" /></match>
+   <match />
+   <match />
+   <match lemma="deaivása"/>
+ </rule>     
 
        <rule weight="1.0">
    <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*"/></match>
