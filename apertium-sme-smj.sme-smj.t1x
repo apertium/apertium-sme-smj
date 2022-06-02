@@ -702,6 +702,7 @@ C[_]-T sent
 
     <def-cat n="máŋgačuođi_num">
       <cat-item lemma="máŋgačuođi" tags="num.*"/>
+      <cat-item lemma="máŋgalogi" tags="num.*"/>
     </def-cat>
 
     <def-cat n="nammasaš_adj">
@@ -3360,7 +3361,7 @@ C[_]-T sent
           <test>
                <equal><clip pos="1" side="sl" part="a_vuota"/><lit-tag v="ex_attr"/></equal>
           </test>
-          <let><clip pos="1" side="tl" part="a_vuota"/><lit-tag v="attr"/></let>
+          <let><clip pos="1" side="tl" part="a_vuota"/><lit v=""/></let>
         </when> 
         <when>
           <test>
@@ -4215,7 +4216,7 @@ C[_]-T sent
       </action>
     </rule> 
 
-<!--     <rule comment="C[D]-PRED máŋgačuođi_num" c="máŋgačuođi : måttijt tjuodijt">
+     <rule comment="C[D]-PRED máŋgačuođi_num" c="máŋgačuođi : måttijt tjuodijt">
       <pattern>
         <pattern-item n="máŋgačuođi_num"/>
       </pattern>
@@ -4234,14 +4235,14 @@ C[_]-T sent
             </lu>
             <b/>
             <lu>
-            <lit v="tjuode"/>
+             <clip pos="1" side="tl" part="lem"/>
             <lit-tag v="num.pl"/>
               <clip pos="1" side="tl" part="a_case"/>
            </lu>
           </chunk>
         </out>
       </action>
-    </rule>  -->
+    </rule>  
 
 
 
@@ -5612,7 +5613,7 @@ C[_]-T sent
     </rule>
 
 
-    <rule comment="C[_]-N prn_ref_acc verb_inf" c="example">
+    <rule comment="C[_]-N prn_ref_acc verb_inf" c="ii loga iežas diehtit">
       <pattern>
         <pattern-item n="prn_refl_acc"/>  
         <pattern-item n="verb_inf"/>  
@@ -5818,7 +5819,7 @@ C[_]-T sent
     </rule>
 
 
-    <rule comment="C[AT]-V negverb lohkat_conneg" c="Son ii loga váttisin gávdnat ráđđeaddi : Sån javllá ij la gássjel gávnnat rádevaddev.">
+    <rule comment="C[AT]-V negverb lohkat_conneg n_adj_ess" c="Son ii loga váttisin gávdnat ráđđeaddi : Sån javllá ij la gássjel gávnnat rádevaddev.">
       <pattern>
         <pattern-item n="negverb"/>
         <pattern-item n="lohkat_conneg"/>
@@ -5885,8 +5886,65 @@ C[_]-T sent
         <let><var n="current_adj"/><clip pos="3" side="tl" part="lem"/></let>
        </action>
      </rule>
+
+    <rule comment="C[AT]-V negverb lohkat_conneg verb_inf" c="Bearjadaga ii lohkan diehtit leago guovža doppe : .....">
+      <pattern>
+        <pattern-item n="negverb"/>
+        <pattern-item n="lohkat_conneg"/>
+        <pattern-item n="verb_inf"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FMAINV"/></tag>
+                  <tag><var n="vdic"/></tag>
+                </tags>
+                <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+              <clip pos="2" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+                </lu>
+               </chunk>
+            <b pos="1"/>
+          <chunk name="neg">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FAUXV"/></tag>
+                </tags>
+                <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex.neg"/>
+              <clip pos="1" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <lit-tag v="p3.sg"/>
+                </lu>
+               </chunk>
+             <b pos="2"/>
+         <chunk name="conneg">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+            <lu>
+              <clip pos="3" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+              <clip pos="1" side="tl" part="a_mood"/>
+               <lit-tag v="conneg"/>
+           </lu>
+          </chunk>
+            </out>
+       </action>
+     </rule>
+
      
-    <rule comment="C[AT]-V negverb lohkat_conneg" c="Mun in loga váttisin leamaš gávdnat ráđđeaddi : Javlav ij la læhkám gássjel  rádevaddev gávnnat.">
+    <rule comment="C[AT]-V negverb lohkat_conneg n_adj_ess verb_prfprc" c="Mun in loga váttisin leamaš gávdnat ráđđeaddi : Javlav ij la læhkám gássjel  rádevaddev gávnnat.">
       <pattern>
         <pattern-item n="negverb"/>
         <pattern-item n="lohkat_conneg"/>
@@ -7666,6 +7724,68 @@ C[_]-T sent
         <equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal>
         </test>
         </when>
+          <when>
+            <test><and><or>
+                <in caseless="yes"><var n="current_verb"/><list n="moveverbs" /></in>
+                <in caseless="yes"><var n="current_verb"/><list n="verbs_stative" /></in>
+                </or>
+                <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="com"/></equal>
+                <in><clip pos="1" side="sl" part="a_sem"/><list n="sem_hum" /></in>
+            </and></test>
+            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@→P"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+            <b />
+          <chunk name="post-maŋen" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+         <lu>
+            <lit v="maŋen"/>
+            <lit-tag v="post"/>
+          </lu>
+          </chunk>
+        </out>
+          </when>
+          <when>
+            <test><and>
+                <in caseless="yes"><var n="current_verb"/><list n="loc_verbs" /></in>
+                <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></equal>
+                <equal><clip pos="1" side="tl" part="lem"/><lit v="vásádus"/></equal>
+            </and></test>
+            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@→P"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            </chunk>
+            <b />
+          <chunk name="post" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+         <lu>
+            <lit v="birra"/>
+            <lit-tag v="post"/>
+          </lu>
+          </chunk>
+        </out>
+          </when>
             <otherwise>
 		<out>
           <chunk name="noun" case="caseFirstword">

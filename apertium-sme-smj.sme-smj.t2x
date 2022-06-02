@@ -73,6 +73,10 @@
         <cat-item tags="NP.@-F←ADVL-ine.*"/>
         <cat-item tags="NP.@←ADVL-ela"/>
     </def-cat>
+    <def-cat n="onlyADVL-left">
+        <cat-item tags="NP.@←ADVL.*"/>
+        <cat-item tags="NP.@←ADVL"/>
+    </def-cat>
     <def-cat n="numcompl">
         <cat-item tags="*.@Num←"/>
         <cat-item tags="*.@Num←.*"/>
