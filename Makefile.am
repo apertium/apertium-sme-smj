@@ -16,7 +16,8 @@ TARGETS_COMMON =			\
 	$(PREFIX1).syn.rlx.bin		\
 	$(PREFIX1).autobil.bin		\
 	$(PREFIX1).autolex.bin		\
-	$(PREFIX1).autogen.hfst		\
+	$(PREFIX1).autogen.hfst 	\
+	$(PREFIX1).autopgen.bin 	\
 	$(PREFIX1).t1x.bin		\
 	$(PREFIX1).t2x.bin		\
 	$(PREFIX1).t3x.bin		\
@@ -145,6 +146,14 @@ $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 $(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $<
 	lt-comp rl $< $@
+
+###############################################################################
+## Post-generator
+###############################################################################
+
+$(PREFIX1).autopgen.bin: $(BASENAME).post-$(LANG2).dix
+	apertium-validate-dictionary $<
+	lt-comp lr $< $@
 
 ###############################################################################
 ## Lexical selection rules

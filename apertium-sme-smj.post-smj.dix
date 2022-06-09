@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+  <alphabet/>
+  <sdefs>
+    <sdef n="n" c="Noun"/>
+  </sdefs>
+  <pardefs>
+
+    <pardef n="vowel">
+      <e><i>a</i></e>
+      <e><i>e</i></e>
+      <e><i>i</i></e>
+      <e><i>o</i></e>
+      <e><i>u</i></e>
+      <e><i>y</i></e>
+    </pardef>
+
+    <pardef n="word-end">
+      <e><i><b/></i></e>
+      <e><i>.</i></e>
+      <e><i>,</i></e>
+      <e><i>!</i></e>
+      <e><i>?</i></e>
+      <e><i>;</i></e>
+      <e><i>:</i></e>
+      <e><i>)</i></e>
+    </pardef>
+
+  </pardefs>
+  <section id="main" type="standard">
+    <!-- We want: -->
+    <!--     …VOWEL l  … -->
+    <!-- …CONSONANT la … -->
+    <!-- The input to post-generator is 'la' – we change to 'l' after vowels. -->
+
+    <e>
+      <par n="vowel"/>
+      <p>
+        <l><b/>la</l>
+        <r><b/>l</r>
+      </p>
+      <par n="word-end"/>
+    </e>
+
+  </section>
+</dictionary>
