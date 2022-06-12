@@ -264,6 +264,17 @@
    </rule>
 
        <rule weight="1.0">
+    <match lemma="maŋŋel" tags="adv.*"><select lemma="maŋŋela" /></match>
+  </rule>     
+        <rule weight="0.5">
+    <match lemma="maŋŋel" tags="adv.*"><select lemma="maŋŋelattja" /></match>
+  </rule>     
+        <rule weight="0.6">
+    <match lemma="dakka" tags="adv.*"/>
+    <match lemma="maŋŋel" tags="adv.*"><select lemma="maŋŋelattja" /></match>
+  </rule>     
+
+       <rule weight="1.0">
     <match lemma="liika" tags="n.*"><select lemma="lijkka" /></match>
   </rule>     
         <rule weight="0.5">
