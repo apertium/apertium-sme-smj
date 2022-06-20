@@ -1403,7 +1403,6 @@ C[_]-T sent
       <attr-item tags="der_dibme"/>
       <attr-item tags="der_geahtes"/>
       <attr-item tags="der_ahtes"/>
-      <attr-item tags="der_passs"/>
       <attr-item tags="der_car"/>
       <attr-item tags="der_nomact"/>
       <attr-item tags="der_inchl"/>
@@ -3346,10 +3345,10 @@ C[_]-T sent
         </when>
         <when>
           <test><and>
-            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_passs"/></equal>
+            <equal><clip pos="1" side="sl" part="a_passvblex"/><lit-tag v="der_passs.vblex"/></equal>
              <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="passshortverbs"/></in></not>
           </and></test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_passl"/></let>
+          <let><clip pos="1" side="tl" part="a_passvblex"/><lit-tag v="der_passl.vblex"/></let>
         </when>
 <!--        <when>
           <test>
