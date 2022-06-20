@@ -382,6 +382,7 @@
        <pattern-item n="P_left"/>
     </pattern>
       <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
     <out>
       <chunk>
         <clip pos="2" part="whole"/>
