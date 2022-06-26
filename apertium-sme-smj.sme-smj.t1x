@@ -225,6 +225,20 @@ C[_]-T sent
       <cat-item tags="num.*.*.*.@N←"/>
     </def-cat>
 
+    <def-cat n="fsubj_obj">
+      <cat-item tags="n.*.*.@-FSUBJ→"/>
+      <cat-item tags="n.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="n.*.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="np.*.*.@-FSUBJ→"/>
+      <cat-item tags="np.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="np.*.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="prn.*.*.@-FSUBJ→"/>
+      <cat-item tags="prn.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="prn.*.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="prn.ref.*.*.@←OBJ"/>
+      <cat-item tags="prn.ref.*.*.*.@←OBJ"/>
+    </def-cat>
+
     <def-cat n="fsubj">
       <cat-item tags="n.*.*.@-FSUBJ→"/>
       <cat-item tags="n.*.*.*.@-FSUBJ→"/>
@@ -2022,6 +2036,9 @@ C[_]-T sent
       <list-item v="tjágŋat"/>
       <list-item v="guosskat"/>
     </def-list>
+    <def-list n="acc2ela_verbs">
+      <list-item v="hieredit"/>
+    </def-list>
     <def-list n="loc2ill_verbs">
       <list-item v="sæbrrat"/>
     </def-list>
@@ -3542,6 +3559,13 @@ C[_]-T sent
 	  <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ill"/></equal>	      
       </and></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
+	  </when>
+	      <when>
+	  <test><and>
+       <in caseless="yes"><var n="current_verb"/><list n="acc2ela_verbs" /></in>
+	  <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></equal>	      
+      </and></test>
+	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>	      
 	  </when>
       </choose>
       <choose>
@@ -5612,7 +5636,7 @@ C[_]-T sent
     </rule>
 
 
-    <rule comment="C[_]-N prn_ref_acc verb_inf" c="ii loga iežas diehtit">
+<!--    <rule comment="C[_]-N prn_ref_acc verb_inf" c="ii loga iežas diehtit">
       <pattern>
         <pattern-item n="prn_refl_acc"/>  
         <pattern-item n="verb_inf"/>  
@@ -5646,7 +5670,7 @@ C[_]-T sent
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
 
 
     <rule comment="C[_]-N prn_ref_acc n_adj_ess" c="In jáhke alddán dávdda">
@@ -6026,11 +6050,12 @@ C[_]-T sent
       <pattern>
         <pattern-item n="negverb"/>
         <pattern-item n="lohkat_conneg"/>
-        <pattern-item n="fsubj"/>  
+        <pattern-item n="fsubj_obj"/>  
         <pattern-item n="verb_inf"/>
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <call-macro n="ref-to-pers"><with-param pos="3"/></call-macro>
         <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
         <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="nom"/></let>
         <out>
