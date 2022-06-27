@@ -286,6 +286,7 @@ C[_]-T sent
       <cat-item tags="*.n.*.ess.*"/>
       <cat-item tags="n.abbr.*"/>
       <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
+      <cat-item lemma="miljovdna" tags="num.*"/>
     </def-cat>
 
     <def-cat n="n_cmp">
@@ -4266,7 +4267,86 @@ C[_]-T sent
         </out>
       </action>
     </rule>  
+    
+    
 
+     <rule comment="C[D]-PRED máŋgačuođi_num noun" c="máŋgalot jagi : moadda låk jage">
+      <pattern>
+        <pattern-item n="máŋgačuođi_num"/>
+            <pattern-item n="noun"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
+         <choose>
+	         <when><test><equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="acc"/></equal></test>
+              <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+              <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let></when>
+ 	         <when><test><or>
+	 	         <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="ill"/></equal>
+	 	         <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+	 	         <equal><clip pos="2" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+ 	         </or></test>
+              <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>   </when>          
+              </choose>
+         <choose><when>
+	         <test><and>
+		         <equal><clip pos="1" side="tl" part="a_attr"/><lit-tag v="attr"/></equal>
+		         <equal><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></equal>
+	         </and></test>
+         <out>
+            <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+                <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+            <lit v="moadda"/>
+            <lit-tag v="prn.ind.sg"/>
+            <clip pos="1" side="tl" part="a_case"/>            
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+            <lit-tag v="num.attr"/>
+           </lu>
+            <b pos="1"/>
+               <lu>
+              <clip pos="2" side="tl" part="whole"/>
+              </lu>
+           </chunk>
+          </out></when>
+       <otherwise>
+         <out>
+            <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+                <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+            <lit v="moadda"/>
+            <lit-tag v="prn.ind.sg"/>
+            <clip pos="1" side="tl" part="a_case"/>            
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_PoS"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            <lit-tag v="gen"/>
+           </lu>
+            <b pos="1"/>
+               <lu>
+              <clip pos="2" side="tl" part="whole"/>
+              </lu>
+           </chunk>
+          </out>
+       </otherwise></choose>
+        <let><var n="number"/><lit v=""/></let>
+     </action>
+    </rule> 
 
 
 
@@ -8156,6 +8236,28 @@ C[_]-T sent
           </chunk>
         </out>
           </when>
+        <when><test>
+        <equal><clip pos="1" side="tl" part="lem"/><lit v="lijgge"/></equal>
+	     </test> 
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <mlu>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="n.cmp_sgnom.cmp"/>
+            </lu>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            </mlu>
+          </chunk>
+        </out>
+      <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
+        </when>
         <when><test><and>
         <equal><clip pos="1" side="tl" part="lem"/><lit v="dijmásj"/></equal>
         <equal><clip pos="2" side="tl" part="lem"/><lit v="jahke"/></equal>

@@ -2129,9 +2129,16 @@
     <rule weight="0.5">
       <match lemma="boahtit" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match>
     </rule>
+    <rule weight="0.5">
+      <match lemma="boahtit" tags="vblex.*"><select lemma="ájggot" tags="vblex.*"/></match>
+    </rule>
 
     <rule weight="0.6"> 
       <match lemma="boahtit" tags="vblex.iv.indic.*.p3.*.@+FAUXV"><select lemma="sjaddat" tags="vblex.*"  /></match>
+    </rule>
+    <rule weight="0.6"> 
+      <match lemma="boahtit" tags="vblex.*"><select lemma="ájggot" tags="vblex.*"  /></match>
+      <match tags="vblex.*.inf.*"><select lemma="ájggot" tags="vblex.*"  /></match>
     </rule>
     <rule weight="0.7"> 
       <match lemma="roassu" />
@@ -2141,6 +2148,9 @@
       <match tags="prn.dem.sg.loc.*"/>
       <match lemma="boahtit" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match>
     </rule>
+
+
+
     <rule weight="1.1">
       <match lemma="ii"/>
       <match lemma="orrut" tags="vblex.*"><select lemma="liehket" tags="vblex.*"/></match>
