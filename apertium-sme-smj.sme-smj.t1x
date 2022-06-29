@@ -1800,6 +1800,7 @@ C[_]-T sent
       <attr-item tags="sem_obj_txt"/>
       <attr-item tags="sem_obj_veh"/>
       <attr-item tags="sem_org"/>
+      <attr-item tags="sem_org_buildpart"/>
       <attr-item tags="sem_org_play"/>
       <attr-item tags="sem_org_plc"/>
       <attr-item tags="sem_org_prod-audio"/>
