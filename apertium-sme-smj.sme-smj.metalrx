@@ -2122,6 +2122,24 @@
    <match tags="vblex.*.indic.pret.conneg.*"/>
  </rule>     
 
+    <rule weight="1.0">
+      <match lemma="liige"><select lemma="lijgge" tags="n.*"/></match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="liige"><select lemma="lijgge" tags="n.*.cmp_sgnom.*"/></match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="liige"><select lemma="duodde" tags="n.*"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="liige" ><select lemma="duodde" tags="n.*"/></match>
+	  <or>
+	  <match tags="adj.*"/>
+	  <match tags="num.*"/>
+	  <match tags="n.*.*.cmp_splitr.*"/>
+	  </or>
+    </rule>
+
 
     <rule weight="1.0">
       <match lemma="boahtit" tags="vblex.*"><select lemma="boahtet" tags="vblex.*"/></match>

@@ -4,6 +4,9 @@
   <section-def-cats>
 
 
+    <def-cat n="foc_neg-k">
+      <cat-item lemma="prn" tags="*.foc_neg-k"/>
+    </def-cat>
     <def-cat n="ahte">
       <cat-item lemma="ahte" tags="cnjsub.@CVP"/>
     </def-cat>
@@ -1600,6 +1603,31 @@
             <clip pos="3" part="tags"/>
             <clip pos="3" part="chcontent"/>
             <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="ikke legge til l/la clt">
+      <pattern>
+        <pattern-item n="foc_neg-k"/>
+        <pattern-item n="l-clt"/>
+      </pattern>
+      <action>
+         <let><var n="aux"/><lit v="aux"/></let>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
           </chunk>
         </out>
       </action>

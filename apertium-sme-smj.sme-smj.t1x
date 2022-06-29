@@ -1438,6 +1438,9 @@ C[_]-T sent
     </def-attr>
     <def-attr n="a_comp-whole">
       <attr-item tags="cmp_sgnom.cmp_hyph.cmp"/>
+      <attr-item tags="cmp_sggen.cmp_hyph.cmp"/>
+      <attr-item tags="cmp_sgnom.cmp"/>
+      <attr-item tags="cmp_sggen.cmp"/>
     </def-attr>
     <def-attr n="a_cmp">
       <attr-item tags="cmp_sggen"/>
@@ -3705,7 +3708,7 @@ C[_]-T sent
           <test><and>
 	          <equal><clip pos="1" side="tl" part="a_mood"/><lit-tag v="cond"/></equal>
 	          <equal><clip pos="1" side="tl" part="a_infin"/><lit-tag v="conneg"/></equal>
-          <not><equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FAUXV"/></equal></not>	          
+          <not><equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal></not>	  
           </and></test>
           <let><clip pos="1" side="tl" part="a_mood"/><lit-tag v="indic"/></let>
         </when>
@@ -5323,6 +5326,7 @@ C[_]-T sent
      </pattern>
       <action>
         <call-macro n="general-macro-2Param"> <with-param pos="1"/><with-param pos="2"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
       <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
       <choose>
 	      <when>
@@ -6997,6 +7001,8 @@ C[_]-T sent
      </action>
     </rule> 
 
+
+
     <rule comment="C[T]-NUM prn_num noun" c="example">
       <pattern>
         <pattern-item n="prn_num"/>  
@@ -7006,9 +7012,10 @@ C[_]-T sent
         <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="2"/></call-macro>
-        <choose><when><test>
+        <choose><when><test><and>
                 <not><equal><clip pos="1" side="tl" part="lem"/><lit v="makkir"/></equal></not>
-			</test>
+                <not><equal><clip pos="1" side="tl" part="lem"/><lit v="akta"/></equal></not>
+			</and></test>
              <let><clip pos="1" side="tl" part="a_foc-ge"/><lit v=""/></let> 
         </when></choose>
         <choose>
@@ -7985,7 +7992,7 @@ C[_]-T sent
         </when> -->
 		</choose>
 		<choose>
-        <when>
+        <when>   
         <test><and>
         <equal><clip pos="1" side="sl" part="lem"/><lit v="várri"/></equal>
         <equal><clip pos="2" side="sl" part="a_nomag"/><lit-tag v="nomag"/></equal>
@@ -8009,7 +8016,30 @@ C[_]-T sent
           </chunk>
         </out>
         </when>
-        <otherwise>
+         <when>   
+        <test>
+        <equal><clip pos="2" side="tl" part="lem"/><lit v="guovtes"/></equal>
+        </test>
+        <let><clip pos="1" side="tl" part="a_comp-whole"/><lit v=""/></let>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+                <lit-tag v="sg.gen"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+          </chunk>
+        </out>
+        </when>
+       <otherwise>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -8051,6 +8081,35 @@ C[_]-T sent
         <let><clip pos="2" side="tl" part="tags"/><lit-tag v="adj.attr"/></let>
         </when>
 		</choose>
+         <choose><when>   
+        <test>
+        <equal><clip pos="3" side="tl" part="lem"/><lit v="guovtes"/></equal>
+        </test>
+        <let><clip pos="2" side="tl" part="a_comp-whole"/><lit v=""/></let>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <mlu>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+                <lit-tag v="sg.gen"/>
+              </lu>
+            </mlu>
+              <b/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+          </chunk>
+        </out>
+        </when>
+        <otherwise>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -8071,6 +8130,7 @@ C[_]-T sent
             </mlu>
           </chunk>
         </out>
+        </otherwise></choose>
         <let><var n="number"/><lit v=""/></let>
       </action>
     </rule>
@@ -8620,6 +8680,35 @@ C[_]-T sent
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="assign-case-1Param"><with-param pos="3"/></call-macro>
+		<choose>
+         <when>   
+        <test>
+        <equal><clip pos="3" side="tl" part="lem"/><lit v="guovtes"/></equal>
+        </test>
+        <let><clip pos="2" side="tl" part="a_comp-whole"/><lit v=""/></let>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="ext"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+                <lit-tag v="sg.gen"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+          </chunk>
+        </out>
+        </when>
+        <otherwise>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -8641,6 +8730,7 @@ C[_]-T sent
             </mlu>
           </chunk>
         </out>
+        </otherwise></choose>
         <let><var n="number"/><lit v=""/></let>
       </action>
     </rule>
