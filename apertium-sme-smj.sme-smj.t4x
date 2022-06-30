@@ -334,7 +334,15 @@
     <def-cat n="infiniteFV">
         <cat-item lemma="inf" tags="SV.@←SUBJ"/>
     </def-cat>
-        <def-cat n="wordbeforeahte">
+    <def-cat n="wordbeforeneedsahte">
+         <cat-item tags="*.@←ADVL-ine"/>
+         <cat-item tags="*.@←ADVL-ela"/>
+         <cat-item tags="*.@←ADVL"/>
+         <cat-item tags="*.@←ADVL.*"/>
+         <cat-item tags="*.@←ADVL-ine.*"/>
+         <cat-item tags="*.@←ADVL-ela.*"/>
+    </def-cat>
+    <def-cat n="wordbeforeahte">
          <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
          <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
          <cat-item lemma="prfprc" tags="SV.*.@-FMAINV.*"/>
@@ -1428,6 +1436,37 @@
         <pattern-item n="IFMainV"/>
         <pattern-item n="ahte"/>
         <pattern-item n="IMainV"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+        <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+        <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="removes not jut " >  
+      <pattern>
+        <pattern-item n="wordbeforeneedsahte"/>
+        <pattern-item n="ahte"/>
+        <pattern-item n="FMainV"/>
       </pattern>
       <action>
         <out>

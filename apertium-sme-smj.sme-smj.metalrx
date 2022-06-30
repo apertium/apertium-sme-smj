@@ -2142,6 +2142,22 @@
 
 
     <rule weight="1.0">
+      <match lemma="vel"><select lemma="vil" tags="adv.*"/></match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="vel"><select lemma="ájn" tags="adv.*"/></match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+	  <match tags="vblex.*.neg.*"/>
+	  <match tags="vblex.*.*.*.conneg.*"/>
+	 </or> 
+      <match lemma="vel"><select lemma="ájn" tags="adv.*"/></match>
+    </rule>
+
+
+
+    <rule weight="1.0">
       <match lemma="boahtit" tags="vblex.*"><select lemma="boahtet" tags="vblex.*"/></match>
     </rule>
     <rule weight="0.5">

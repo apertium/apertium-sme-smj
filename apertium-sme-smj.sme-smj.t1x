@@ -4368,25 +4368,32 @@ C[_]-T sent
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
          <let><clip pos="3" side="tl" part="a_infin"/><lit-tag v="supn"/></let>
+        <let><var n="lemma"/><lit-tag v="liehket"/></let>
+       <choose>
+         <when><test>
+	         <equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="prfprc"/></equal></test>
+           <let><var n="chunk_name"/><lit v="prfprc"/></let></when>
+         <otherwise>
+           <let><var n="chunk_name"/><lit v="vblex"/></let>
+         </otherwise>
+       </choose>
          <out>
-          <chunk name="vblex" case="caseFirstword">
+          <chunk namefrom="chunk_name" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><var n="func"/></tag>
+              <tag><var n="lemma"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
             <b pos="1"/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
-            <b pos="2"/>
-            <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
+      <choose><when><test><not><equal><b pos="2"/><lit v=" "/></equal></not></test><out><b pos="2"/></out></when></choose>      
       </action>
     </rule> 
 
@@ -7020,6 +7027,15 @@ C[_]-T sent
              <let><clip pos="1" side="tl" part="a_foc-ge"/><lit v=""/></let> 
         </when></choose>
         <choose>
+        <when><test><and>
+        <equal><clip pos="1" side="tl" part="lem"/><lit v="moadda"/></equal>
+        <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	        </and></test>
+         <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
+         <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
+         </when>
+        </choose>
+        <choose>
          <when>
               <test><and>
                 <not><equal><clip pos="1" side="sl" part="a_num_type"/><lit-tag v="arab"/></equal></not>
@@ -7265,6 +7281,13 @@ C[_]-T sent
          </test>
           <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="acc"/></let>
       </when>
+        <when><test><and>
+        <equal><clip pos="1" side="tl" part="lem"/><lit v="moadda"/></equal>
+        <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	        </and></test>
+         <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
+         <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
+         </when>
 <!--      <when>
           <test>
           <and>
@@ -7715,18 +7738,20 @@ C[_]-T sent
          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
          </when> -->
         <when><test><and>
+        <equal><clip pos="1" side="tl" part="lem"/><lit v="moadda"/></equal>
+        <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	        </and></test>
+         <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
+         </when>
+        </choose>
+        <choose>
+        <when><test><and>
         <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@→N"/></equal>
         <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal>
         <not><equal><clip pos="1" side="tl" part="lem"/><lit v="akta"/></equal></not>
 	        </and></test>
          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let> 
          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
-         </when>
-        <when><test><and>
-        <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
-        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
-	        </and></test>
-         <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
          </when>
          </choose>       
          <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
