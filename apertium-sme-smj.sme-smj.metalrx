@@ -650,7 +650,6 @@
       <match lemma="siste" tags="post.@←ADVL-ela"> <select lemma="sissta"/> </match>
     </rule>
 
-
     <rule weight="1.0">
       <match lemma="boaris">
         <select lemma="boares"/>

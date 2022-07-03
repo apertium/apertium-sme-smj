@@ -828,6 +828,14 @@ C[_]-T sent
     <def-cat n="birra_adv">
       <cat-item lemma="birra" tags="adv.*"/>
     </def-cat>
+    <def-cat n="miilaviissaid_adv">
+      <cat-item lemma="miilaviissaid" tags="adv.*"/>
+      <cat-item lemma="jahkeviissaid" tags="adv.*"/>
+      <cat-item lemma="diibmoviissaid" tags="adv.*"/>
+      <cat-item lemma="jándorviissaid" tags="adv.*"/>
+      <cat-item lemma="mánnoviissaid" tags="adv.*"/>
+      <cat-item lemma="vahkkoviissaid" tags="adv.*"/>
+    </def-cat>
 
     <def-cat n="fápmu_n_ill"> 
       <cat-item lemma="fápmu" tags="n.*.sg.ill.*"/>
@@ -4243,6 +4251,34 @@ C[_]-T sent
         </out>
       </action>
     </rule> 
+
+
+
+     <rule comment="C[D]-PRED miilaviissaid_adv" c="miilaviissaid : måttijt mijlajt">
+      <pattern>
+        <pattern-item n="miilaviissaid_adv"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+         <out>
+          <chunk namefrom="chunk_name" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+            <lit v="moadda"/>
+            <lit-tag v="prn.ind.pl"/>
+             <clip pos="1" side="tl" part="a_case"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+           </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>  
 
      <rule comment="C[D]-PRED máŋgačuođi_num" c="máŋgačuođi : måttijt tjuodijt">
       <pattern>
