@@ -1,4 +1,5 @@
-<metalrx>
+<?xml version="1.0" encoding="UTF-8"?>
+<lrx>
 
   <def-seqs>
     <def-seq n="non-verb">
@@ -2510,7 +2511,7 @@
       <match lemma="váldit">
         <select lemma="vieledit"/>
       </match>
-      <repeat upto="3"><seq n="non-verb"/></repeat>
+      <repeat from="0" upto="3"><seq n="non-verb"/></repeat>
       <match lemma="vuhtii"/>
     </rule>
 
@@ -3001,8 +3002,8 @@
     <rule weight="0.5"><match lemma="lihppu" tags="n.*"><select lemma="billæhtta" /></match></rule>
     <rule weight="0.6">
 	    <or>
-	    <match tag="n.sem_event.*"/>
-	    <match tag="n.sem_veh.*"/>
+	    <match tags="n.sem_event.*"/>
+	    <match tags="n.sem_veh.*"/>
 	    <match lemma="nuvttá"/>
 	    <match lemma="divras"/>
 	    <match lemma="hálbi"/>
@@ -3117,4 +3118,4 @@
       https://wiki.apertium.org/wiki/Learning_rules_from_parallel_and_non-parallel_corpora
   -->
 
-</metalrx>
+</lrx>
