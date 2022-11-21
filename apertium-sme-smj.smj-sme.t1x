@@ -4,7 +4,7 @@
 This is the first pass.
 
 Macros:
-default-conversion1
+general-macro-1Param
 
 Rules:
 C[S] n_cmp noun
@@ -621,13 +621,37 @@ RULE: SENT
   </section-def-vars>
   <section-def-macros>
 
-    <def-macro n="default-conversion1" npar="1">
-      <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_ela_ine"/><lit-tag v="loc"/></let>
-      <let><clip pos="1" side="tl" part="a_spec_smj_tags"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let> <!-- must be twice -->
+    <def-macro n="general-macro-1Param" npar="1">
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>		
+	</when>
+	</choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_sem"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>		
+	</when>
+	</choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_ela_ine"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_ela_ine"/><lit-tag v="loc"/></let>		
+	</when>
+	</choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_spec_smj_tags"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_spec_smj_tags"/><lit v=""/></let>		
+	</when>
+	</choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_trans"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>		
+	</when>
+	</choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_trans"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>		
+	</when>
+	</choose>
 	<choose><when><test>
 	<equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-k"/></equal>
      </test>
@@ -642,7 +666,7 @@ RULE: SENT
         <pattern-item n="noun"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -662,8 +686,8 @@ RULE: SENT
         <pattern-item n="noun"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
-        <call-macro n="default-conversion1"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -688,8 +712,8 @@ RULE: SENT
         <pattern-item n="adj"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
-        <call-macro n="default-conversion1"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
         <out>
           <chunk name="adj" case="caseFirstword">
             <tags>
@@ -715,9 +739,9 @@ RULE: SENT
         <pattern-item n="noun"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
-        <call-macro n="default-conversion1"><with-param pos="2"/></call-macro>
-        <call-macro n="default-conversion1"><with-param pos="3"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="3"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -747,10 +771,10 @@ RULE: SENT
         <pattern-item n="noun"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
-        <call-macro n="default-conversion1"><with-param pos="2"/></call-macro>
-        <call-macro n="default-conversion1"><with-param pos="3"/></call-macro>
-        <call-macro n="default-conversion1"><with-param pos="4"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="3"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="4"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -781,7 +805,7 @@ RULE: SENT
         <pattern-item n="liehket_neg"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="verb" case="caseFirstWord">
             <tags>
@@ -811,7 +835,7 @@ RULE: SENT
         <pattern-item n="neg-v"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
           <let><var n="neg_tense"/><clip pos="1" side="sl" part="a_tense"/></let>
           <let><clip pos="1" side="tl" part="a_tense"/><lit v=""/></let>
         <out>
@@ -831,7 +855,7 @@ RULE: SENT
         <pattern-item n="vblex"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <choose><when>
 	        <test><and>
        <equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="conneg"/></equal>
@@ -856,7 +880,7 @@ RULE: SENT
         <pattern-item n="refl"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <choose><when>
 	        <test>
        <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
@@ -880,7 +904,7 @@ RULE: SENT
         <pattern-item n="default"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="x" case="caseFirstWord">
             <tags>
@@ -900,7 +924,7 @@ RULE: SENT
         <pattern-item n="sent"/>
       </pattern>
       <action>
-        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="sent" case="caseFirstWord">
             <tags>
