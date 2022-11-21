@@ -121,6 +121,9 @@ RULE: SENT
        <attr-item tags="prfprc"/>
        <attr-item tags="ger"/>
     </def-attr>
+    <def-attr n="a_cltl">
+      <attr-item tags="cltl"/>
+    </def-attr>
     <def-attr n="a_foc">
       <attr-item tags="foc_neg-k"/>
       <attr-item tags="foc_pos-k"/>
@@ -619,11 +622,8 @@ RULE: SENT
   <section-def-macros>
 
     <def-macro n="default-conversion1" npar="1">
-      <let><clip pos="1" side="tl" part="a_known"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="x_func"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_dialect"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_ela_ine"/><lit-tag v="loc"/></let>
       <let><clip pos="1" side="tl" part="a_spec_smj_tags"/><lit v=""/></let>
       <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>
@@ -637,6 +637,27 @@ RULE: SENT
   </section-def-macros>
   <section-rules>
 
+    <rule comment="C[S] noun" c="example">
+      <pattern>
+        <pattern-item n="noun"/>
+      </pattern>
+      <action>
+        <call-macro n="default-conversion1"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><clip pos="1" side="sl" part="a_cltl"/></tag>
+            </tags>
+            <mlu>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+            </mlu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
     <rule comment="C[S] n_cmp noun" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
@@ -649,6 +670,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><clip pos="2" side="sl" part="a_cltl"/></tag>
             </tags>
             <mlu>
               <lu>
@@ -674,6 +696,7 @@ RULE: SENT
           <chunk name="adj" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><clip pos="2" side="sl" part="a_cltl"/></tag>
             </tags>
             <mlu>
               <lu>
@@ -701,6 +724,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><clip pos="3" side="sl" part="a_cltl"/></tag>
             </tags>
             <mlu>
               <lu>
@@ -733,6 +757,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><clip pos="4" side="sl" part="a_cltl"/></tag>
             </tags>
             <mlu>
               <lu>
