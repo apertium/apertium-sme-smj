@@ -649,11 +649,9 @@ RULE: SENT
               <tag><lit-tag v="NP"/></tag>
               <tag><clip pos="1" side="sl" part="a_cltl"/></tag>
             </tags>
-            <mlu>
               <lu>
                 <clip pos="1" side="tl" part="whole"/>
               </lu>
-            </mlu>
           </chunk>
         </out>
       </action>
