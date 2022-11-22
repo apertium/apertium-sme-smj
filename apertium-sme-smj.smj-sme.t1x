@@ -51,6 +51,40 @@ RULE: SENT
       <cat-item tags="n.abbr.*"/>
       <cat-item tags="*.cmp_sgnom.cmp_splitr.*"/>
     </def-cat>
+    <def-cat n="mod_n">
+      <cat-item tags="prn.dem.*.*.@→N"/>
+      <cat-item tags="prn.dem.*.@→N"/>
+      <cat-item tags="prn.ind.*.*.@→N"/>
+      <cat-item tags="prn.ind.*.@→N"/>
+      <cat-item tags="prn.pers.*.*.@→N"/>
+      <cat-item tags="prn.ref.*.*.@→N"/>
+      <cat-item tags="prn.ref.*.*.*.@→N"/>
+      <cat-item tags="adj.*.*.@→N"/>
+      <cat-item tags="adj.*.@→N"/>
+      <cat-item tags="n.*.@→N"/>
+      <cat-item tags="adv.@→N"/>
+      <cat-item tags="adv.*.@→N"/>
+      <cat-item tags="n.*.*.*.@→N"/>
+      <cat-item tags="n.*.*.*.*.@→N"/>
+      <cat-item tags="n.*.*.@→N"/>
+      <cat-item tags="np.*.@→N"/>
+      <cat-item tags="vblex.*.@→N"/>
+      <cat-item tags="*.cmp_splitr.*"/>
+    </def-cat>
+    <def-cat n="n_not_cmp">
+      <cat-item tags="n.*.sg.*"/>  
+      <cat-item tags="n.*.pl.*"/>
+      <cat-item tags="n.*.ess.*"/>
+      <cat-item tags="n.*.*.sg.*"/>
+      <cat-item tags="n.*.*.pl.*"/>
+      <cat-item tags="n.*.*.ess.*"/>
+      <cat-item tags="*.n.sg.*"/>
+      <cat-item tags="*.n.pl.*"/>
+      <cat-item tags="*.n.ess.*"/>
+      <cat-item tags="*.prsprc.*"/>  
+      <cat-item tags="np.*.*.sg.*"/>  
+      <cat-item tags="np.*.*.pl.*"/>  
+    </def-cat>
     <def-cat n="liehket_neg"> 
       <cat-item lemma="liehket" tags="vblex.iv.neg.*"/>
     </def-cat>
@@ -680,6 +714,67 @@ RULE: SENT
         </out>
       </action>
     </rule>
+
+    <rule comment="C[S] mod_n n_not_cmp" c="stuora goahte : stuora viessu">
+      <pattern>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="n_not_cmp"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><clip pos="2" side="sl" part="a_cltl"/></tag>
+            </tags>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="C[S] mod_n n_cmp n_not_cmp" c="stuora várregoahte : stuora várreviessu">
+      <pattern>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="n_not_cmp"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-1Param"><with-param pos="3"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><clip pos="3" side="sl" part="a_cltl"/></tag>
+            </tags>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <b pos="1"/>
+            <mlu>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+            </mlu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
     <rule comment="C[S] n_cmp noun" c="example">
       <pattern>
         <pattern-item n="n_cmp"/>
