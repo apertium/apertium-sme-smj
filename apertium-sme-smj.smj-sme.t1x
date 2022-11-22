@@ -667,7 +667,7 @@ RULE: SENT
       <let><var n="caseFirstword"/><lit v="aa"/></let>
       <choose><when>
         <test><not><or>
-          <begins-with><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np"/></begins-with>
+          <begins-with><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="np"/></begins-with>
           <equal><get-case-from pos="1"><lit v="aa"/></get-case-from><lit v="AA"/></equal>
         </or></not></test>
         <let><var n="caseFirstword"/><get-case-from pos="1"><lit v="aa"/></get-case-from></let>
