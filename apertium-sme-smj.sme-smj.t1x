@@ -3860,7 +3860,10 @@ C[_]-T sent
      <equal><clip pos="1" side="tl" part="lem"/><lit v="oarre"/></equal>
      <equal><clip pos="1" side="tl" part="a_sem"/><lit-tag v="sem_ani"/></equal>
      </and></not></test>
-     <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let> 
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_sem"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>		
+	</when></choose>
         </when>
       </choose>
 
