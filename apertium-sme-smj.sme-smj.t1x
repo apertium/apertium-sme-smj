@@ -3546,6 +3546,7 @@ C[_]-T sent
 	  <test><and>
        <in caseless="yes"><var n="current_verb"/><list n="loc2acc_verbs" /></in>
 	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>	      
+	  <not><equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="num"/></equal></not>	      
       </and>
       </test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></let>	      
@@ -3679,7 +3680,10 @@ C[_]-T sent
 	       <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal>
 	       </or>
       </and></test> -->
-          <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_foc"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>		
+	</when></choose>
         </otherwise>
       </choose>
     </def-macro>
@@ -3812,7 +3816,10 @@ C[_]-T sent
              <not><equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="prn"/></equal></not>
              <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="foclemmas"/></in></not>
              </and></test>
-           <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_foc"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>		
+	</when></choose>
         </when>
       </choose>
       <choose>
@@ -3827,11 +3834,26 @@ C[_]-T sent
       </choose>
       <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
 
-      <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_spec_sme_tags1"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_spec_sme_tags2"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>
-      <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_trans"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_trans"/><lit v=""/></let>		
+	</when></choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_spec_sme_tags1"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_spec_sme_tags1"/><lit v=""/></let>		
+	</when></choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_spec_sme_tags2"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_spec_sme_tags2"/><lit v=""/></let>		
+	</when></choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_exthab"/><lit v=""/></let>		
+	</when></choose>
+	<choose><when><test>
+      <not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
+      <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>		
+	</when></choose>
       <choose>
         <when c="not oarri sem_ani">
      <test><not><and>
@@ -7790,7 +7812,6 @@ C[_]-T sent
          <let><clip pos="1" side="tl" part="a_attr"/><lit v=""/></let>
          </when>
          </choose>       
-         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="num" case="caseFirstword">
             <tags>
