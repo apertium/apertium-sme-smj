@@ -175,6 +175,7 @@ RULE: SENT
     </def-attr>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
+      <attr-item tags="np"/>
     </def-attr>
     <def-attr n="a_case">
       <attr-item tags="nom"/>
@@ -652,10 +653,29 @@ RULE: SENT
     <def-var n="number"/>
     <def-var n="current_verb"/>
     <def-var n="neg_tense"/>
+    <def-var n="caseFirstword"/>
+    <def-var n="func"/>
   </section-def-vars>
   <section-def-macros>
 
+    <def-macro n="set_caseFirstword" npar="1"
+               c="Set the typographic case to be carried by the chunk.
+                  - if argument is _not_ a proper noun: caseFirstword is the case of the lemma, and the lemma gets lowercase.
+                  - if argument _is_ a proper noun: caseFirstword is lowercase, and lemma stays unchanged.
+
+                  We treat UPPERCASE as proper nouns.">
+      <let><var n="caseFirstword"/><lit v="aa"/></let>
+      <choose><when>
+        <test><not><or>
+          <begins-with><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np"/></begins-with>
+          <equal><get-case-from pos="1"><lit v="aa"/></get-case-from><lit v="AA"/></equal>
+        </or></not></test>
+        <let><var n="caseFirstword"/><get-case-from pos="1"><lit v="aa"/></get-case-from></let>
+        <modify-case><clip pos="1" side="tl" part="lemh"/><lit v="aa"/></modify-case>
+      </when></choose>
+    </def-macro>
     <def-macro n="general-macro-1Param" npar="1">
+      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
 	<choose><when><test>
       <not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
       <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>		
@@ -692,6 +712,27 @@ RULE: SENT
       <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-ge"/></let>
       </when></choose>
     </def-macro>
+    <def-macro n="general-macro-2Param" npar="2" c="Use for all chunks of two pattern-items
+                                                    param1: first pattern-item; used to set caseFirstword
+                                                    param2: second pattern-item; used to set func variable">
+      <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+      <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+      <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro> 
+      <choose><when>
+        <test><and>
+          <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FMAINV"/></equal>
+          <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/></equal>
+        </and></test>
+        <let><var n="func"/><lit-tag v="@+FMAINV"/></let>
+      </when>
+            <otherwise>
+       <let><var n="func"/><clip pos="2" side="sl" part="a_func"/></let>
+            </otherwise>
+       </choose>
+    </def-macro>
+
+
+
   </section-def-macros>
   <section-rules>
 
@@ -721,8 +762,7 @@ RULE: SENT
         <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -749,8 +789,7 @@ RULE: SENT
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="3"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="3"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -781,8 +820,7 @@ RULE: SENT
         <pattern-item n="noun"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -807,8 +845,7 @@ RULE: SENT
         <pattern-item n="adj"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
         <out>
           <chunk name="adj" case="caseFirstword">
             <tags>
@@ -835,8 +872,7 @@ RULE: SENT
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="3"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="3"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -866,10 +902,8 @@ RULE: SENT
         <pattern-item n="noun"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="2"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="3"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="4"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <call-macro n="general-macro-2Param"><with-param pos="3"/><with-param pos="4"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
@@ -1019,7 +1053,6 @@ RULE: SENT
         <pattern-item n="sent"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <out>
           <chunk name="sent" case="caseFirstWord">
             <tags>
