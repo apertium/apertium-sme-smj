@@ -676,11 +676,13 @@ RULE: SENT
     </def-macro>
     <def-macro n="general-macro-1Param" npar="1">
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
-	<choose><when><test>
-      <not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
-      <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>		
-	</when>
-	</choose>
+      <choose>
+        <when c="add func">
+          <test><not><equal><clip pos="1" side="tl" part="a_func"/><lit v=""/></equal></not></test>
+          <let><var n="func"/><clip pos="1" side="sl" part="a_func"/></let>
+          <let><clip pos="1" side="tl" part="a_func"/><lit v=""/></let>		
+        </when>
+      </choose>
 	<choose><when><test>
       <not><equal><clip pos="1" side="tl" part="a_sem"/><lit v=""/></equal></not></test>
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>		
@@ -770,6 +772,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
               <tag><clip pos="1" side="sl" part="a_cltl"/></tag>
             </tags>
               <lu>
@@ -791,6 +794,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
               <tag><clip pos="2" side="sl" part="a_cltl"/></tag>
             </tags>
               <lu>
@@ -817,6 +821,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
               <tag><clip pos="3" side="sl" part="a_cltl"/></tag>
             </tags>
               <lu>
@@ -848,6 +853,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
               <tag><clip pos="2" side="sl" part="a_cltl"/></tag>
             </tags>
             <mlu>
@@ -873,6 +879,7 @@ RULE: SENT
           <chunk name="adj" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
               <tag><clip pos="2" side="sl" part="a_cltl"/></tag>
             </tags>
             <mlu>
@@ -899,6 +906,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
               <tag><clip pos="3" side="sl" part="a_cltl"/></tag>
             </tags>
             <mlu>
@@ -929,6 +937,7 @@ RULE: SENT
           <chunk name="noun" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
               <tag><clip pos="4" side="sl" part="a_cltl"/></tag>
             </tags>
             <mlu>
@@ -960,6 +969,7 @@ RULE: SENT
           <chunk name="verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
                 <lit v="ii"/>
@@ -992,6 +1002,7 @@ RULE: SENT
           <chunk name="verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
                 <clip pos="1" side="tl" part="whole"/>
@@ -1017,6 +1028,7 @@ RULE: SENT
           <chunk name="verb" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
                 <clip pos="1" side="tl" part="whole"/>
@@ -1041,6 +1053,7 @@ RULE: SENT
           <chunk name="prn" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SN"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
                 <clip pos="1" side="tl" part="whole"/>
@@ -1059,6 +1072,7 @@ RULE: SENT
           <chunk name="x" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SX"/></tag>
+              <tag><var n="func"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
