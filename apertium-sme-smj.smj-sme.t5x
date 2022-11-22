@@ -1,48 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interchunk>
+<postchunk>
   <section-def-cats>
-    <def-cat n="NP">
-      <cat-item tags="NP"/>
-      <cat-item tags="NP.*"/>
+    <def-cat n="sent">
+      <cat-item name="punt"/>
     </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
-    <def-attr n="a_nbr">
+    <def-attr n="nbr">
       <attr-item tags="sg"/>
     </def-attr>
   </section-def-attrs>
 
   <section-def-vars>
-    <def-var n="number"/>
+    <def-var n="paraula"/>
   </section-def-vars>
 
-  <section-def-macros>
-    <def-macro n="test1" npar="1">
-      <let>
-        <var n="number"/>
-        <lit v=""/>
-      </let>
-    </def-macro>
-  </section-def-macros>
-
   <section-rules>
-    <rule comment="REGLA: NP">
+    <rule comment="CHUNK:">
       <pattern>
-        <pattern-item n="NP"/>
+        <pattern-item n="sent"/>
       </pattern>
       <action>
         <out>
-          <chunk>
-            <clip pos="1" part="lem"/>
-            <clip pos="1" part="tags"/>
-            <clip pos="1" part="chcontent"/>
-          </chunk>
+          <lu>
+            <clip pos="1" part="whole"/>
+          </lu>
         </out>
       </action>
     </rule>
   </section-rules>
-</interchunk>
+</postchunk>
 
 <!--
 Resources:
