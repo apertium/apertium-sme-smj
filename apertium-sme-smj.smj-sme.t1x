@@ -187,10 +187,6 @@ RULE: SENT
       <attr-item tags="com"/>
       <attr-item tags="ess"/>
     </def-attr>
-    <def-attr n="a_ela_ine">
-      <attr-item tags="ela"/>
-      <attr-item tags="ine"/>
-    </def-attr>
     <def-attr n="a_trans">
       <attr-item tags="iv"/>
       <attr-item tags="tv"/>
@@ -667,7 +663,7 @@ RULE: SENT
       <let><var n="caseFirstword"/><lit v="aa"/></let>
       <choose><when>
         <test><not><or>
-          <begins-with><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="np"/></begins-with>
+          <begins-with><clip pos="1" side="tl" part="a_nom"/><lit-tag v="np"/></begins-with>
           <equal><get-case-from pos="1"><lit v="aa"/></get-case-from><lit v="AA"/></equal>
         </or></not></test>
         <let><var n="caseFirstword"/><get-case-from pos="1"><lit v="aa"/></get-case-from></let>
@@ -688,9 +684,13 @@ RULE: SENT
       <let><clip pos="1" side="tl" part="a_sem"/><lit v=""/></let>		
 	</when>
 	</choose>
-	<choose><when><test>
-      <not><equal><clip pos="1" side="tl" part="a_ela_ine"/><lit v=""/></equal></not></test>
-      <let><clip pos="1" side="tl" part="a_ela_ine"/><lit-tag v="loc"/></let>		
+	<choose>
+		<when>
+			<test><or>
+      <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></equal>
+      <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></equal>
+	      </or></test>
+      <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></let>		
 	</when>
 	</choose>
 	<choose><when><test>
@@ -722,8 +722,12 @@ RULE: SENT
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro> 
       <choose><when>
         <test><and>
-          <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FMAINV"/></equal>
-          <equal><clip pos="2" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/></equal>
+          <equal>
+	          <clip pos="1" side="sl" part="a_func"/><lit-tag v="@-FMAINV"/>
+	      </equal>
+          <equal>
+	          <clip pos="2" side="sl" part="a_func"/><lit-tag v="@+FAUXV"/>
+	      </equal>
         </and></test>
         <let><var n="func"/><lit-tag v="@+FMAINV"/></let>
       </when>
@@ -816,7 +820,7 @@ RULE: SENT
         <pattern-item n="n_not_cmp"/>
       </pattern>
       <action>
-        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <call-macro n="general-macro-3Param"><with-param pos="3"/><with-param pos="2"/><with-param pos="1"/></call-macro>
         <out>
           <chunk name="noun" case="caseFirstword">
             <tags>
