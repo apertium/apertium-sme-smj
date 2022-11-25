@@ -113,6 +113,7 @@ RULE: SENT
   </section-def-cats>
   <section-def-attrs>
     <def-attr n="a_spec_smj_tags">
+      <attr-item tags="gram_3syll"/>
       <attr-item tags="sh"/>
       <attr-item tags="←ext→"/>
       <attr-item tags="←hab→"/>
