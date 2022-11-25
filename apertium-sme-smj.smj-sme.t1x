@@ -823,6 +823,73 @@ RULE: SENT
       </action>
     </rule>
 
+    <rule comment="C[S] mod_n mod_n n_not_cmp" c="stuora visská goahte : stuora viskes viessu">
+      <pattern>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="n_not_cmp"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="3" side="sl" part="a_cltl"/></tag>
+            </tags>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="C[S] mod_n mod_n mod_n n_not_cmp" c="dat stuora visská goahte : dat stuora viskes viessu">
+      <pattern>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="n_not_cmp"/>
+      </pattern>
+      <action>
+       <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="4" side="sl" part="a_cltl"/></tag>
+            </tags>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <b pos="1"/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b pos="2"/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b pos="3"/>
+              <lu>
+                <clip pos="4" side="tl" part="whole"/>
+              </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="C[S] mod_n n_cmp n_not_cmp" c="stuora várregoahte : stuora várreviessu">
       <pattern>
         <pattern-item n="mod_n"/>
@@ -855,6 +922,41 @@ RULE: SENT
       </action>
     </rule>
 
+    <rule comment="C[S] mod_n mod_n n_cmp n_not_cmp" c="oabme stuora várregoahte : hui stuora várreviessu">
+      <pattern>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="mod_n"/>
+        <pattern-item n="n_cmp"/>
+        <pattern-item n="n_not_cmp"/>
+      </pattern>
+      <action>
+       <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+        <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><clip pos="4" side="sl" part="a_cltl"/></tag>
+            </tags>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+            <b pos="2"/>
+            <mlu>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <lu>
+                <clip pos="4" side="tl" part="whole"/>
+              </lu>
+            </mlu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="C[S] n_cmp noun" c="example">
       <pattern>
