@@ -155,6 +155,7 @@ RULE: SENT
        <attr-item tags="conneg"/>
        <attr-item tags="prfprc"/>
        <attr-item tags="ger"/>
+       <attr-item tags="supn"/>
     </def-attr>
     <def-attr n="a_cltl">
       <attr-item tags="cltl"/>
@@ -687,9 +688,17 @@ RULE: SENT
 	</choose>
 	<choose>
 		<when>
+			<test>
+      <equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="supn"/></equal>
+	      </test>
+      <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="inf"/></let>		
+	</when>
+	</choose>
+	<choose>
+		<when>
 			<test><or>
-      <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></equal>
-      <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></equal>
+      <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ine"/></equal>
+      <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ela"/></equal>
 	      </or></test>
       <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></let>		
 	</when>
