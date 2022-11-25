@@ -26,9 +26,9 @@ RULE: SENT
       <cat-item tags="*.cmp.guio"/>
       <cat-item lemma="dárogiel" tags="adj.*.attr.*"/>
       <cat-item lemma="sámegiel" tags="adj.*.attr.*"/>
-      <cat-item lemma="davvisámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="nuorttasámegiel" tags="adj.*.attr.*"/>
       <cat-item lemma="julevsámegiel" tags="adj.*.attr.*"/>
-      <cat-item lemma="lullisámegiel" tags="adj.*.attr.*"/>
+      <cat-item lemma="oarjjelsámegiel" tags="adj.*.attr.*"/>
       <cat-item lemma="suomagiel" tags="adj.*.attr.*"/>
     </def-cat>
     <def-cat n="noun"> 
