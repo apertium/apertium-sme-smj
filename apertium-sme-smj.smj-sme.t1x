@@ -175,6 +175,9 @@ RULE: SENT
       <attr-item tags="px2pl"/>
       <attr-item tags="px3pl"/>
     </def-attr>
+    <def-attr n="a_prn">
+      <attr-item tags="prn.ref"/>
+    </def-attr>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
       <attr-item tags="np"/>
@@ -291,6 +294,40 @@ RULE: SENT
       <attr-item tags="@X"/>
     </def-attr>
 
+    <def-attr n="a_deriv">
+      <attr-item tags="der_dimin"/>
+      <attr-item tags="der_alla"/>
+      <attr-item tags="der_halla"/>
+      <attr-item tags="der_aadv"/>
+      <attr-item tags="der_caus"/>
+      <attr-item tags="der_t"/>
+      <attr-item tags="der_l"/>
+      <attr-item tags="der_ahtti"/>
+      <attr-item tags="der_ahtte"/>
+      <attr-item tags="der_vuota"/>
+      <attr-item tags="der_d"/>
+      <attr-item tags="der_h"/>
+      <attr-item tags="der_laakan"/>
+      <attr-item tags="der_laagasj"/>
+      <attr-item tags="der_lágan"/>
+      <attr-item tags="der_lágán"/>
+      <attr-item tags="der_muš"/>
+      <attr-item tags="der_mus"/>
+      <attr-item tags="der_nammasaš"/>
+      <attr-item tags="der_nammasasj"/>
+      <attr-item tags="der_saš"/>
+      <attr-item tags="der_sasj"/>
+      <attr-item tags="der_lasj"/>
+      <attr-item tags="der_dibme"/>
+      <attr-item tags="der_geahtes"/>
+      <attr-item tags="der_ahtes"/>
+      <attr-item tags="der_car"/>
+      <attr-item tags="der_nomact"/>
+      <attr-item tags="der_inchl"/>
+      <attr-item tags="der_vuota"/>
+      <attr-item tags="der_passs"/>
+      <attr-item tags="der_passl"/>
+    </def-attr>
 
     <def-attr n="a_sem">
       <attr-item tags="sem_act"/>
@@ -723,7 +760,18 @@ RULE: SENT
      </test>
       <let><clip pos="1" side="tl" part="a_foc"/><lit-tag v="foc_neg-ge"/></let>
       </when></choose>
+        <choose><when>
+	        <test><and>
+       <equal><clip pos="1" side="sl" part="a_prn"/><lit-tag v="prn.ref"/></equal>
+       <not><equal><clip pos="1" side="sl" part="a_poss"/><lit v=""/></equal></not>
+       </and></test>
+       <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+       </when></choose>
+
     </def-macro>
+
+
+
     <def-macro n="general-macro-2Param" npar="2" c="Use for all chunks of two pattern-items
                                                     param1: first pattern-item; used to set caseFirstword
                                                     param2: second pattern-item; used to set func variable">
@@ -771,6 +819,17 @@ RULE: SENT
       <call-macro n="set_caseFirstword"><with-param pos="1"/></call-macro>
     </def-macro>
 
+    <def-macro n="convert-deriv-1Param" npar="1">
+      <choose>
+
+        <when>
+          <test>
+            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_passs"/></equal>
+          </test>
+          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_passl"/></let>
+        </when>
+       </choose>
+   </def-macro>
 
 
   </section-def-macros>
@@ -1133,6 +1192,7 @@ RULE: SENT
       </pattern>
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <choose><when>
 	        <test><and>
        <equal><clip pos="1" side="sl" part="a_infin"/><lit-tag v="conneg"/></equal>
