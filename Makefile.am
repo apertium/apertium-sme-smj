@@ -23,6 +23,7 @@ TARGETS_COMMON =			\
 	$(PREFIX1).t3x.bin		\
 	$(PREFIX1).t4x.bin		\
 	$(PREFIX1).t5x.bin		\
+	$(PREFIX1).rtx.bin		\
 	$(PREFIX2).automorf.hfst	\
 	$(PREFIX2).automorf-untrimmed.hfst \
 	$(PREFIX2).mor.rlx.bin		\
@@ -34,7 +35,8 @@ TARGETS_COMMON =			\
 	$(PREFIX2).t2x.bin		\
 	$(PREFIX2).t3x.bin		\
 	$(PREFIX2).t4x.bin		\
-	$(PREFIX2).t5x.bin
+	$(PREFIX2).t5x.bin		\
+	$(PREFIX2).rtx.bin
 
 
 # This include desmees goals for install-modes, .deps/.d and .mode files:
