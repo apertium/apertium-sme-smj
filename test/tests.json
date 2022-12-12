@@ -10,5 +10,9 @@
     "sme-smj-regression": {
         "input": "sme-smj-regression-input.txt",
         "mode": "sme-smj"
+    },
+    "smj-sme-regression": {
+        "input": "sme-smj-regression-kokeilu.txt",
+        "mode": "smj-sme"
     }
 }
