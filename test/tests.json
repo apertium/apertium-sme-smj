@@ -14,9 +14,5 @@
     "sme-smj-rtx": {
         "input": "sme-smj-rtx-input.txt",
         "mode": "sme-smj_rtx"
-    },
-    "sme-smj-rtx-tree": {
-        "input": "sme-smj-rtx-input.txt",
-        "mode": "sme-smj_rtx-tree"
     }
 }
