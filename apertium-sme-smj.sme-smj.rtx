@@ -1,0 +1,55 @@
+! sme
+! ^Mun<prn><pers><p1><sg><nom><@SUBJ→>/Mån<prn><pers><p1><sg><nom><@SUBJ→>$
+! ^oaidnit<vblex><tv><indic><pres><p1><sg><@+FMAINV>/vuojnnet<vblex><tv><indic><pres><p1><sg><@+FMAINV>$
+! ^don<prn><pers><p2><sg><gen><@→N>/dån<prn><pers><p2><sg><gen><@→N>$
+! ^viellja<n><sem_hum><sg><acc><@←OBJ>/viellja<n><sem_hum><sg><acc><@←OBJ>$
+! smj
+! Mån vuojnáv vieljat.
+! "<Mån>"
+!	"mån" prn pers p1 sg nom
+! "<vuojnáv>"
+! 	"vuojnnet" vblex tv indic pres p1 sg @+FMAINV MAP:3256
+! "<vieljat>"
+!	"viellja" n sem_hum sg acc px2sg
+
+sem = sem_hum ;
+number = sg pl ;
+case = acc nom gen ;
+poss = ("" "") px1sg px1du px1pl px2sg px2du px2pl px3sg px3du px3pl ;
+person = p1 p2 p3 ;
+attr = attr ;
+person_number = "p1.sg" "p1.du" "p1.pl"
+                "p2.sg" "p2.du" "p2.pl"
+                "p3.sg" "p3.du" "p3.pl" ;
+
+person_number > poss : "p1.sg" px1sg, "p1.du" px1du, "p1.pl" px1pl,
+                       "p2.sg" px2sg, "p2.du" px2du, "p2.pl" px2pl,
+                       "p3.sg" px3sg, "p3.du" px3du, "p3.pl" px3pl ;
+! a rule for converting person+number tag pairs to possessive tags
+! this applies if you write poss=1.person_number or 1.person_number>poss
+! "" because these are pairs instead of single tags
+
+n: _.number.case.poss ;
+adj_attr: _.attr ;
+adj_pred: _.number.case ;
+adj: (if (1.attr = attr) 1(adj_attr)
+      else 1(adj_pred)) ;
+NP: _.poss ;
+
+p1_or_p2 = p1 p2 ;
+NP -> prn.pers.[p1_or_p2].*.gen NP
+      { 2[poss=1.person_number]
+       ! the following is equivalent
+       ! 2[poss=(if (1.person = p1 and 1.number = sg) px1sg
+       !         if (1.person = p1 and 1.number = du) px1du
+       !         if (1.person = p1 and 1.number = pl) px1pl
+       !         if (1.person = p2 and 1.number = sg) px2sg
+       !         if (1.person = p2 and 1.number = du) px2du
+       !         if (1.person = p2 and 1.number = pl) px2pl
+       !         if (1.person = p3 and 1.number = sg) px3sg
+       !         if (1.person = p3 and 1.number = du) px3du
+       !         if (1.person = p3 and 1.number = pl) px3pl
+       !        )]
+      } ;
+NP -> n { 1[poss=$poss] } ;
+NP -> "attr adj" adj.attr NP { 1 _ 2[poss=$poss] } ;
