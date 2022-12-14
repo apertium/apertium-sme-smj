@@ -523,6 +523,9 @@
         <file name="sme-smj.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
+      <program name="lsx-proc">
+        <file name="sme-smj.autoseq.bin"/>
+      </program>
       <program name="lt-proc -b">
         <file name="sme-smj.autobil.bin"/>
       </program>
@@ -531,6 +534,9 @@
       </program>
       <program name="rtx-proc">
         <file name="sme-smj.rtx.bin"/>
+      </program>
+      <program name="lsx-proc">
+        <file name="smj-sme.revautoseq.bin"/>
       </program>
       <program name="hfst-proc --weight-classes 1 $1">
         <file name="sme-smj.autogen.hfst"/>
@@ -550,6 +556,9 @@
         <file name="sme-smj.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
+      <program name="lsx-proc">
+        <file name="sme-smj.autoseq.bin"/>
+      </program>
       <program name="lt-proc -b">
         <file name="sme-smj.autobil.bin"/>
       </program>
@@ -558,6 +567,39 @@
       </program>
       <program name="rtx-proc -T">
         <file name="sme-smj.rtx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <mode name="smj-sme_rtx" install="yes" gendebug="yes">
+    <pipeline>
+      <program name="hfst-proc --weight-classes 1 -w -e">
+        <file name="smj-sme.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w">
+        <file name="smj-sme.mor.rlx.bin"/>
+      </program>
+      <program name="cg-proc -n -1 -w">
+        <file name="smj-sme.syn.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lsx-proc" debug-suff="autoseq">
+        <file name="smj-sme.autoseq.bin"/>
+      </program>
+      <program name="lt-proc -b">
+        <file name="smj-sme.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m">
+        <file name="smj-sme.autolex.bin"/>
+      </program>
+      <program name="rtx-proc">
+        <file name="smj-sme.rtx.bin"/>
+      </program>
+      <program name="lsx-proc" debug-suff="revautoseq">
+        <file name="sme-smj.revautoseq.bin"/>
+      </program>
+      <program name="hfst-proc --weight-classes 1 $1">
+        <file name="smj-sme.autogen.hfst"/>
       </program>
     </pipeline>
   </mode>

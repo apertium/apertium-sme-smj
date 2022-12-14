@@ -17,6 +17,7 @@ PKG_CHECK_MODULES(HFST, hfst >= 3.16.0)
 PKG_CHECK_MODULES(CG3, cg3 >= 1.3.6)
 PKG_CHECK_MODULES(APERTIUM_LEX_TOOLS, apertium-lex-tools >= 0.4.0)
 PKG_CHECK_MODULES(APERTIUM_RECURSIVE, apertium-recursive >= 1.1.2)
+PKG_CHECK_MODULES(APERTIUM_SEPARABLE, apertium-separable >= 0.5.0)
 
 AC_PATH_PROG([CGRELABEL], [cg-relabel], [false], [$PATH$PATH_SEPARATOR$with_cg_relabel/bin])
 AS_IF([test x$CGRELABEL = xfalse], [AC_MSG_ERROR([You don't have cg-relabel installed; please upgrade your vislcg3])])

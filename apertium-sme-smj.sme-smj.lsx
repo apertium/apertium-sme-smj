@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary type="separable">
+  <alphabet>aAáÁăảạÆbBcCčdDÐeEéèễệfFgGhHiIíjJkKlLmMnNoOóöớpPqQrRsSšştTŢuUúüưvVwWxXyYzZ</alphabet>
+  <sdefs>
+	<sdef n="adj"/>
+	<sdef n="adv"/>
+	<sdef n="pr"/>
+	<sdef n="n"/>
+	<sdef n="v"/>
+	<sdef n="vblex"/>
+	<sdef n="vbser"/>
+	<sdef n="det"/>
+    <sdef n="dat"/>
+    <sdef n="@←ADVL"/>
+  </sdefs>
+
+  <pardefs>
+	<pardef n="adj">
+	  <e><i><w/><s n="adj"/><j/></i></e>
+	  <e><i><w/><s n="adj"/><t/><j/></i></e>
+	</pardef>
+	<pardef n="adv">
+	  <e><i><w/><s n="adv"/><j/></i></e>
+	  <e><i><w/><s n="adv"/><t/><j/></i></e>
+	</pardef>
+	<pardef n="n">
+	  <e><i><w/><s n="n"/><t/><j/></i></e>
+	</pardef>
+	<pardef n="det">
+	  <e><i><w/><s n="det"/><t/><j/></i></e>
+	</pardef>
+	<pardef n="SN">
+	  <e><par n="n"/></e>
+	  <e><par n="adj"/><par n="n"/></e>
+	  <e><par n="adj"/><par n="adj"/><par n="n"/></e>
+	  <e><par n="det"/><par n="n"/></e>
+	  <e><par n="det"/><par n="adj"/><par n="n"/></e>
+	  <e><par n="det"/><par n="adj"/><par n="adj"/><par n="n"/></e>
+	</pardef>
+    <pardef n="word">
+      <e><i><w/><t/><d/></i></e>
+      <e></e>
+    </pardef>
+    <pardef n="words">
+      <e><par n="word"/><par n="word"/><par n="word"/></e>
+    </pardef>
+    <pardef n="syntax_tags">
+      <e r="LR"><p> <l><t/><d/></l> <r></r> </p></e>
+      <e r="RL"><p> <l><d/></l>     <r></r> </p></e>
+    </pardef>
+  </pardefs>
+  
+  <section id="main" type="standard">
+
+    <!--
+^fange/fangen<vblex><pri><p1><sg>/fangen<vblex><prs><p1><sg>/fangen<vblex><prs><p3><sg>$ ^x/*x$ ^an/an<pr><dat>/an<pr><acc>$^./.<sent>$ -->
+
+    <e>
+      <p><l>váldit</l><r>váldit<b/>mielde</r></p>
+      <i><s n="vblex"/><t/><d/></i>
+      <par n="word"/>
+      <p><l>mielde<s n="adv"/></l><r></r></p><par n="syntax_tags"/>
+    </e>
+  </section>
+</dictionary>
