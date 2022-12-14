@@ -11,7 +11,8 @@
 	<sdef n="vbser"/>
 	<sdef n="det"/>
     <sdef n="dat"/>
-    <sdef n="@←ADVL"/>
+    <sdef n="pcle"/>
+    <sdef n="qst"/>
   </sdefs>
 
   <pardefs>
@@ -48,6 +49,10 @@
       <e r="LR"><p> <l><t/><d/></l> <r></r> </p></e>
       <e r="RL"><p> <l><d/></l>     <r></r> </p></e>
     </pardef>
+    <pardef n="maybe_syntax_tag">
+      <e></e>
+      <e><i><t/></i></e>
+    </pardef>
   </pardefs>
   
   <section id="main" type="standard">
@@ -60,6 +65,19 @@
       <i><s n="vblex"/><t/><d/></i>
       <par n="word"/>
       <p><l>mielde<s n="adv"/></l><r></r></p><par n="syntax_tags"/>
+    </e>
+
+    <!-- we don't want "go" → "go go" -->
+    <e r="LR" w="0.0">
+      <i>go<s n="pcle"/><s n="qst"/><t/><d/></i>
+    </e>
+
+    <e r="LR" w="1.0">
+      <i><w/><t/></i>
+      <p><l><s n="qst"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
     </e>
   </section>
 </dictionary>
