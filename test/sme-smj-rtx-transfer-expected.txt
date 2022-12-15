@@ -34,7 +34,7 @@
 [/SK5RR6iwHpot]
 [SwwA3V_WEWHS#0] ^Sån<prn><pers><p3><du><gen><@→P>$ ^ieddne<n><sg><nom>$ ^liehket<vblex><iv><indic><pres><p3><sg><@+FMAINV>$ ^ståhpe<n><sg><gen>$ ^sinna<post><@←ADVL-ine>$ ^gáhtto<n><sg>$ ^aktan<adv><@←ADVL-ine>$^,<cm>$ ^sån<prn><pers><p3><sg><nom><@SUBJ→>$ ^gæhttjat<vblex><tv><indic><pres><p3><sg><@+FMAINV>$ ^glássa<n>$ ^rájgge<n><sg><acc>$ ^ålgus<adv><@←ADVL>$ ^ja<cnjcoo><@CVP>$ ^vuojnnet<vblex><tv><indic><pres><p3><sg><@+FMAINV>$ ^Duommá<np><ant><m><sg><nom><@←SUBJ>$ ^ja<cnjcoo><@CNP>$ ^Marit<np><ant><f><sg><acc><@-FSUBJ→>$ ^ståhkat<vblex><iv><actio><ess><@←OBJ>$^.<sent>$
 [/SwwA3V_WEWHS]
-[T2BIYsidCpzj#0] ^GÅNNÅ<adv><@ADVLqst-ine→>$ ^DUOMMÁ<np><ant><m><sg><nom><@SUBJ→>$ ^LIEHKET<vblex><iv><indic><pres><p3><sg><@+FMAINV>$^?<sent>$
+[T2BIYsidCpzj#0] ^GÅNNÅ<adv><@ADVLqst-ine→>$ ^DUOMMÁ<np><ant><m><sg><nom>$ ^LIEHKET<vblex><iv><indic><pres><p3><sg>$^?<sent>$
 [/T2BIYsidCpzj]
 [Tu5i0tlrtPSC#0] ^Marit<np><ant><f><sg><nom><@SUBJ→>$ ^tjajmmat<vblex><tv><indic><pres><p3><sg><@+FMAINV>$ ^ja<cnjcoo><@CVP>$ ^javllat<vblex><tv><indic><pres><p3><sg><@+FMAINV>$^:<sent>$ ^"<punct>$^Gávnnat<vblex><tv><indic><pret><p1><sg><@+FMAINV>$ ^dån<prn><pers><p2><sg><acc><@←OBJ>$^!<clb>$^"<punct>$^.<sent>$
 [/Tu5i0tlrtPSC]
@@ -70,6 +70,8 @@
 [/p7gr38pJ2Iv5]
 [r95wrs1edqen#0] ^Marit<np><ant><f><sg><nom><@SUBJ→>$ ^gæhttjat<vblex><tv><indic><pres><p3><sg><@+FMAINV>$ ^ieddne<n><sg><gen>$ ^glássa<n><sg><gen>$ ^duogen<post><@←ADVL-ine>$^,<cm>$ ^sån<prn><pers><p3><sg><gen><@→N>$ ^ieddne<n><sg><nom>$ ^tjajmmat<vblex><tv><indic><pres><p3><sg><@+FMAINV>$^.<sent>$
 [/r95wrs1edqen]
+[rhi_fMVeYq1n#0] ^Mån<prn><pers><p1><pl><nom>$ ^liehket<vblex><iv><indic><pres><p1><pl><@+FMAINV>$ ^aj<adv><@←ADVL-ine>$ ^ávvo<n><sg><ine>$ ^gå<cnjsub><@CVP>$ ^liehket<vblex><iv><indic><pres><p3><pl><@+FMAINV>$ ^nav<adv><@→N>$ ^moattes<prn><sg><nom>$ ^guhti<prn><rel><pl><nom>$ ^@váldit mielde<vblex><tv><indic><pres><p3><pl>$ ^juojggat<vblex><tv><sg>$ ^ådåájggásasj<adj><attr>$ ^musihkka<n><sg><ill>$
+[/rhi_fMVeYq1n]
 [rtfC5S_yOAH0#0] ^Bena<n><sg><nom>$ ^liehket<vblex><iv><indic><pres><p3><sg><@+FMAINV>$ ^huj<adv><@→A>$ ^illo<n><sg><nom>$ ^dálla<adv><@←ADVL-ine>$^.<sent>$
 [/rtfC5S_yOAH0]
 [scTGy9D7WOvE#0] ^Ij<vblex><iv><neg><indic><pres><p3><sg><@+FAUXV>$ ^liehket<vblex><iv><indic><pres><conneg><@-FMAINV>$ ^lådde<n><sg><nom>$ ^ij<vblex><iv><neg><indic><pres><p3><sg><foc_neg-ge><@+FAUXV>$ ^makkir<prn><ind><attr><foc_neg-ge><@→N>$ ^ietjá<prn><ind><attr><@→N>$ ^judos<n><sg><nom>$^.<sent>$
