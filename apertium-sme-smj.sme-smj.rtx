@@ -139,6 +139,8 @@ NP -> %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } ;
 PP -> %n %post {1 _ 2} ; !muora lunna
 
 VP -> %vblex { 1 } ;
+VP -> %vblex cnjcoo vblex { 1 _ 2 _ 3 } ;
+
 VP -> %V.tv NP
       {
         1
