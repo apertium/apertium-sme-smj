@@ -1,17 +1,8 @@
-! sme
-! ^Mun<prn><pers><p1><sg><nom><@SUBJ→>/Mån<prn><pers><p1><sg><nom><@SUBJ→>$
-! ^oaidnit<vblex><tv><indic><pres><p1><sg><@+FMAINV>/vuojnnet<vblex><tv><indic><pres><p1><sg><@+FMAINV>$
-! ^don<prn><pers><p2><sg><gen><@→N>/dån<prn><pers><p2><sg><gen><@→N>$
-! ^viellja<n><sem_hum><sg><acc><@←OBJ>/viellja<n><sem_hum><sg><acc><@←OBJ>$
-! smj
-! Mån vuojnáv vieljat.
-! "<Mån>"
-!	"mån" prn pers p1 sg nom
-! "<vuojnáv>"
-! 	"vuojnnet" vblex tv indic pres p1 sg @+FMAINV MAP:3256
-! "<vieljat>"
-!	"viellja" n sem_hum sg acc px2sg
+!!!!!!!!!!!!!!!
+!!  CATEGORIES
+!!!!!!!!!!!!!!!
 
+function = "@→SUBJ" "@←OBJ" "@→ADVL" "@→ADVL-ine" "@→ADVL-ela" "@←ADVL-ine" "@←ADVL-ela" ;
 gender = f m ;
 sem = sem_hum sem_food ;
 number = sg pl ;
@@ -23,6 +14,9 @@ case = acc nom gen loc ine ela com ess ill ;
 poss = ("" "") px1sg px1du px1pl px2sg px2du px2pl px3sg px3du px3pl ;
 person = p1 p2 p3 ;
 attr = attr ;
+comp = comp sup ;
+vform = inf conneg ;
+neg = neg ;
 qst = qst ;
 transitivity = tv iv ;
 mood = indic imp ;
@@ -31,16 +25,26 @@ person_number = "p1.sg" "p1.du" "p1.pl"
                 "p2.sg" "p2.du" "p2.pl"
                 "p3.sg" "p3.du" "p3.pl" ;
 
-person_number > poss : "p1.sg" px1sg, "p1.du" px1du, "p1.pl" px1pl,
-                       "p2.sg" px2sg, "p2.du" px2du, "p2.pl" px2pl,
-                       "p3.sg" px3sg, "p3.du" px3du, "p3.pl" px3pl ;
-! a rule for converting person+number tag pairs to possessive tags
-! this applies if you write poss=1.person_number or 1.person_number>poss
-! "" because these are pairs instead of single tags
 
-case > case : loc ine ;
+!!!!!!!!!!!!!!!
+!! OUTPUT PATTERNS
+!!!!!!!!!!!!!!!
+
+VP: _.mood.tense.vform ;
+NP: _.function.number.case.poss.sem ;
+PP: _ ;
+S: _ ;
+AdvP: _ ;
+A: _ ;
+AP: _;
+
+cnjcoo: _ ;
 
 n: _.number.case.poss ;
+post: _ ;
+qst: _ ;
+adv: _ ;
+num: _ ;
 
 np_ant: _.<ant>.gender.number.case ;
 np_other: _.np_type.number.case ;
@@ -56,14 +60,59 @@ prn: (if (1.prn_type = pers) 1(prn_pers)
       else 1(prn_other)) ;
 
 adj_attr: _.attr ;
-adj_pred: _.number.case ;
+adj_pred: _.comp.number.case ;
 adj: (if (1.attr = attr) 1(adj_attr)
       else 1(adj_pred)) ;
-cnjcoo: _ ;
-NP: _.number.case.poss.sem ;
-! <vblex><tv><indic><pres><p3><pl>
-vblex: _.transitivity.mood.tense.person.number.qst ;
-VP: _ ;
+      
+vblex_fin: _.transitivity.neg.mood.tense.person.number.qst ; 
+vblex_inf: _.transitivity.vform ;
+vblex: (if (1.vform = "") 1(vblex_fin)
+        else 1(vblex_inf)) ;
+
+
+!!!!!!!!!!!!!!!
+!! TAG-REWRITE RULES
+!!!!!!!!!!!!!!!
+
+person_number > poss : "p1.sg" px1sg, "p1.du" px1du, "p1.pl" px1pl,
+                       "p2.sg" px2sg, "p2.du" px2du, "p2.pl" px2pl,
+                       "p3.sg" px3sg, "p3.du" px3du, "p3.pl" px3pl ;
+! a rule for converting person+number tag pairs to possessive tags
+! this applies if you write poss=1.person_number or 1.person_number>poss
+! "" because these are pairs instead of single tags
+
+case > case : loc ine ;
+
+!!!!!!!!!!!!!!!
+!! REDUCTION RULES
+!!!!!!!!!!!!!!!
+
+AP -> %adj { 1 }
+    | adv %adj { 1 _ 2 }
+    ;
+
+AdvP -> %adv { 1 }
+      | %adv cnjcoo adv { 1 _ 2 _ 3 };
+
+
+NP -> %n { 1[poss=$poss] } ;
+NP -> %n { %1[case=(if (1.case = loc and (1.function = "@←ADVL-ine" or 1.function = "@→ADVL-ine")) ine
+                    if (1.case = loc and (1.function = "@←ADVL-ela" or 1.function = "@→ADVL-ela")) ela
+                    else 1.case)] } ; !gjør loc til ela og ine etter funksjonstaggene fra cg
+
+
+NP -> %np { 1 } ;
+NP -> %prn { 1 } ; 
+NP -> %NP cnjcoo NP { %1 _ 2 _ 3[case=$case] } ;
+
+NP -> %num n {1 _ 2} ;
+NP -> %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat
+
+NP -> %prn.ref %n { 1 _ 2} ; !ietjam viellja
+NP -> %prn.dem %n { 1 _ 2} ; !dav vielja
+
+NP -> "attr adj" adj.attr %NP { 1 _ %2[poss=$poss] } ;
+
 
 p1_or_p2 = p1 p2 ;
 NP -> prn.pers.[p1_or_p2].*.gen %NP
@@ -80,25 +129,51 @@ NP -> prn.pers.[p1_or_p2].*.gen %NP
        !         if (1.person = p3 and 1.number = pl) px3pl
        !        )]
       } ;
-NP -> %n { %1[poss=$poss] } ;
-NP -> "attr adj" adj.attr %NP { 1 _ %2[poss=$poss] } ;
-NP -> %NP cnjcoo NP { %1 _ 2 _ 3[case=$case] } ;
-NP -> %prn { %1 } ; 
-NP -> %np { %1 } ;
+NP -> 2: %n.coll [$number=pl] { 1 } ; !"gålmås båhti fæsstaj". endrer ikke verbet til sg. Trengs fordi regelen S -> NP VP { 1 _ 2[number=1.number] } endrer verbet til sg fordi "Mihcamárat leat geassemánus." må endre verbet til sg, fordi Mihcamárat er sg i lulesamisk. 
 
-!echo 'boratgo? borat go láibbi? láibbi go borat?' |apertium -d . sme-smj_rtx
-!båråk? lájbev båråk? lájbev båråk?
 
+
+PP -> %n %post {1 _ 2} ; !muora lunna
+
+VP -> %vblex { 1 } ;
+VP -> %V.tv NP
+      {
+        1
+        _ 2[case=(if (2.sem = sem_food and 2.case = loc) ela
+                else 2.case)]
+      } ;
+
+VP -> NP %V.tv 
+      {
+        1[case=(if (1.sem = sem_food and 1.case = loc) ela
+                else 1.case)]
+        _ 2
+      } ;
+
+      
+VP -> NP %V.tv { 1 _ 2 } ;
+
+VP -> AdvP %VP { 1 _ %2 } ;
+VP -> %VP AdvP { 1 _ %2 } ;
+
+
+!echo 'boratgo? borat go láibbi? láibbi go borat? > båråk? lájbev båråk? lájbev båråk?
 V: _.transitivity.qst ;
-V -> %vblex { %1 } ;
+V -> %vblex { 1 } ;
 V -> %V go@pcle.qst [$qst=qst] { %1 } ;
 
-VP -> V.tv NP
-      {
-        2[case=(if (2.number = pl) nom
-                if (2.sem = sem_food and 2.case = loc) ela
-                else 2.case)]
-        _ 1
-      } ;
-VP -> NP V.tv { 1 _ 2 } ;
-VP -> NP go@pcle.qst V.tv { 1 _ 3[qst=qst] } ;
+VP -> NP go@pcle.qst %V.tv { 1 _ 3[qst=qst] } ;
+
+
+
+AuxP: _ ;
+AuxP -> ii@vblex.iv.neg VP.*.conneg
+         { 1[tense=2.tense,mood=2.mood] _ 2[tense="",mood=""] } ;
+
+
+S -> NP VP { 1 _ 2[number=1.number] } ;
+S -> AdvP NP VP { 1 _ 2 _ 3  } ;
+S -> AdvP VP NP { 1 _ 2 _ 3  } ;
+
+!S -> NP."@→SUBJ" VP |
+!     VP NP."@←SUBJ" ;
