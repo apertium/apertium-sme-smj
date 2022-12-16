@@ -5,7 +5,7 @@
 function = "@→SUBJ" "@←OBJ" "@→ADVL" "@→ADVL-ine" "@→ADVL-ela" "@←ADVL-ine" "@←ADVL-ela" ;
 gender = f m ;
 sem = sem_hum sem_food ;
-number = sg pl ;
+number = sg du pl ;
 prn_type_other = rel dem indef itg ;
 prn_type = pers ref [prn_type_other] ;
 np_type_other = top hyd cog org al pat ;
@@ -44,7 +44,7 @@ n: _.number.case.poss ;
 post: _ ;
 qst: _ ;
 adv: _ ;
-num: _ ;
+num: _.number.case ;
 
 np_ant: _.<ant>.gender.number.case ;
 np_other: _.np_type.number.case ;
@@ -132,6 +132,9 @@ NP -> prn.pers.[p1_or_p2].*.gen %NP
 NP -> 2: %n.coll [$number=pl] { 1 } ; !"gålmås båhti fæsstaj". endrer ikke verbet til sg. Trengs fordi regelen S -> NP VP { 1 _ 2[number=1.number] } endrer verbet til sg fordi "Mihcamárat leat geassemánus." må endre verbet til sg, fordi Mihcamárat er sg i lulesamisk. 
 
 
+! Son lea vihtta jagi boaris.
+! Sån la vidá jagák.
+NP -> %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } ;
 
 PP -> %n %post {1 _ 2} ; !muora lunna
 
