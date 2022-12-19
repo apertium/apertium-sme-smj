@@ -24,6 +24,7 @@ from subprocess import Popen, PIPE
 from operator import itemgetter
 from xml.dom.minidom import parse, parseString
 from os.path import expanduser
+from importlib import reload
 
 def HTMLEntitiesToUnicode(text):
     """Converts HTML entities to unicode.  For example '&amp;' becomes '&'."""
