@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Translate source strings into target langauge.
 
 Script that takes a tmx file and for each translation unit <tu>
