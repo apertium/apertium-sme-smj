@@ -67,7 +67,7 @@ def getWER(r, h):
     return result
 
 
-def getAMT(f, o_dir, src_only, wer, htrans, mtrans, cmd):
+def getAMT(f, o_dir, mt_only, wer, htrans, mtrans, cmd):
     """Return a XML structure enriched with the Apertium MT output."""
     print("... PROCESSING " + str(f))
 
@@ -112,7 +112,7 @@ def getAMT(f, o_dir, src_only, wer, htrans, mtrans, cmd):
         )
         out, err = p.communicate()
 
-        if not src_only:
+        if not mt_only:
             tr_target_lang = ET.SubElement(o_table, "tr")
             th_target_lang = ET.SubElement(tr_target_lang, "th")
             th_target_lang.set("class", "tg-smj")
@@ -224,14 +224,14 @@ def main():
     i_file = args.file
     i_dir = args.directory
     o_dir = "output_dir"
-    src_only = args.only_machine_translation
+    mt_only = args.only_machine_translation
     wer = args.word_error_rate
     htrans = ""
     mtrans = ""
 
     if i_file is not None:
         if i_file.endswith("tmx"):
-            getAMT(i_file, o_dir, src_only, wer, htrans, mtrans, cmd)
+            getAMT(i_file, o_dir, mt_only, wer, htrans, mtrans, cmd)
         else:
             parser.print_help()
             raise SystemExit("Filename must end with .tmx")
@@ -245,7 +245,7 @@ def main():
                     getAMT(
                         os.path.join(i_dir, f),
                         o_dir,
-                        src_only,
+                        mt_only,
                         wer,
                         htrans,
                         mtrans,
