@@ -66,7 +66,7 @@ def getWER(r, h):
     return result
 
 
-def getAMT(f, o_dir, src_only, wer, htrans, mtrans):
+def getAMT(f, o_dir, src_only, wer, htrans, mtrans, cmd):
     """Return a XML structure enriched with the Apertium MT output."""
     print("... PROCESSING " + str(f))
 
@@ -158,41 +158,52 @@ def getAMT(f, o_dir, src_only, wer, htrans, mtrans):
 
 table_style = '<style type="text/css">\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:8px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg th{text-align:left;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:8px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg .tg-sme{background-color:#c0c0c0;vertical-align:top;font-weight:bold;}\n.tg .tg-smj{background-color:#efefef;vertical-align:top;font-style:normal;}\n.tg .tg-amt{vertical-align:top;font-style:normal;}\n.tg .tg-wer{vertical-align:top;font-style:normal;color:grey;font-style: italic;}\n.hr.vertical{width: 0px; height: 100%;}</style>'
 
-# parameters to be adjusted as needed
-s_lang = "sme"
-t_lang = "smj"
 
-try:
-    os.environ["APERTIUM_HOME"]
-except KeyError:
-    print(
-        "Please set the environment variable APERTIUM_HOME.\n"
-        + "This is the path to the directory where all apertium-SOURCE_LANG-TARGET_LANG reside.\n"
-        + "To set the variable you open the $HOME/.profile file and add the following two line:\n"
-        + "APERTIUM_HOME=/path/to/your/apertium/directory\n"
-        + "export APERTIUM_HOME\n"
-        + "The close the terminal and open it anew."
-    )
-    sys.exit(1)
-apertium_home = os.environ["APERTIUM_HOME"]
+def set_apertium_command(s_lang, t_lang):
+    try:
+        os.environ["APERTIUM_HOME"]
+    except KeyError:
+        print(
+            "Please set the environment variable APERTIUM_HOME.\n"
+            + "This is the path to the directory where all apertium-SOURCE_LANG-TARGET_LANG reside.\n"
+            + "To set the variable you open the $HOME/.profile file and add the following two line:\n"
+            + "APERTIUM_HOME=/path/to/your/apertium/directory\n"
+            + "export APERTIUM_HOME\n"
+            + "The close the terminal and open it anew."
+        )
+        sys.exit(1)
+    apertium_home = os.environ["APERTIUM_HOME"]
 
-atm_dir = apertium_home + "/apertium" + "-" + s_lang + "-" + t_lang
-# print("APT home is " + atm_dir)
-# cmd = '| apertium -d ' + atm_dir + ' ' + s_lang + '-' + t_lang
-# Change previous line to the following line if you want to see the hashform tags
-cmd = "| apertium -d " + atm_dir + " " + s_lang + "-" + t_lang + "-dgen"
+    atm_dir = apertium_home + "/apertium" + "-" + s_lang + "-" + t_lang
+    # print("APT home is " + atm_dir)
+    # cmd = '| apertium -d ' + atm_dir + ' ' + s_lang + '-' + t_lang
+    # Change previous line to the following line if you want to see the hashform tags
+    return "| apertium -d " + atm_dir + " " + s_lang + "-" + t_lang + "-dgen"
 
 
-def main():
+def arg_parser():
     parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
+    parser.add_argument("--source_lang", "-s", help="Source language", default="sme")
+    parser.add_argument("--target_lang", "-t", help="Target language", default="smj")
     parser.add_argument("-f", "--file", help="Process the given file")
     parser.add_argument(
-        "-d", "--directory", help="Process the given directory", default="tmx_data"
+        "-d",
+        "--directory",
+        help="Process the given directory",
+        default="tmx_data",
     )
+
+    return parser
+
+
+def main():
+    parser = args = arg_parser()
     args = parser.parse_args()
+
+    cmd = set_apertium_command(args.source_lang, args.target_lang)
 
     # parameters to be adjusted as needed
     i_file = args.file
@@ -208,7 +219,7 @@ def main():
 
     if i_file is not None:
         if i_file.endswith("tmx"):
-            getAMT(i_file, o_dir, src_only, wer, htrans, mtrans)
+            getAMT(i_file, o_dir, src_only, wer, htrans, mtrans, cmd)
         else:
             parser.print_help()
             raise SystemExit("Filename must end with .tmx")
@@ -219,7 +230,15 @@ def main():
 
             for f in files:
                 if f.endswith("tmx"):
-                    getAMT(os.path.join(i_dir, f), o_dir, src_only, wer, htrans, mtrans)
+                    getAMT(
+                        os.path.join(i_dir, f),
+                        o_dir,
+                        src_only,
+                        wer,
+                        htrans,
+                        mtrans,
+                        cmd,
+                    )
 
     print(f"Finished processing. Results are found in {o_dir}")
 
