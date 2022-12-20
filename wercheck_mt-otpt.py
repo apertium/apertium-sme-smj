@@ -16,16 +16,23 @@
 #
 # the output dir is 'otpt_dir' in the current directory
 
-import re, os, errno, cgi, json, xml
-import sys, codecs, locale, getopt
+import cgi
+import codecs
+import errno
+import getopt
+import json
+import locale
+import os
+import re
+import sys
+import xml
 import xml.etree.ElementTree as ET
-from subprocess import Popen, PIPE
-
+from importlib import reload
 # from BeautifulSoup import BeautifulStoneSoup
 from operator import itemgetter
-from xml.dom.minidom import parse, parseString
 from os.path import expanduser
-from importlib import reload
+from subprocess import PIPE, Popen
+from xml.dom.minidom import parse, parseString
 
 
 def HTMLEntitiesToUnicode(text):
