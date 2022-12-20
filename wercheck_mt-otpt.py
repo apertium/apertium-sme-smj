@@ -114,6 +114,7 @@ def getAMT(f, o_dir, src_only, wer, htrans, mtrans):
             shell=True,
             stdout=PIPE,
             stderr=PIPE,
+            encoding="utf-8",
         )
         out, err = p.communicate()
 
