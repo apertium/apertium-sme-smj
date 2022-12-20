@@ -1,20 +1,13 @@
-# -*- coding:utf-8 -*-
-# Script that takes a tmx file and for each translation unit <tu>
-# takes the source string and translates into the target language.
-# The output is a table with the following structure
-# source_language original STRING
-# target_language original STRING
-# target_language Apertium translated STRING
-#
-# Usage:
-# (1) python check_mt-otpt.py
-#     - the input dir is tmx_data
-# (2) python check_mt-otpt.py -d DIRECTORY_NAME
-#     - the input dir is DIRECTORY_NAME
-# (3)  python check_mt-otpt.py -f FILE_NAME
-#     - the input file is FILE_NAME
-#
-# the output dir is 'otpt_dir' in the current directory
+"""Translate source strings into target langauge.
+
+Script that takes a tmx file and for each translation unit <tu>
+takes the source string and translates into the target language.
+The output is a table with the following structure
+
+source_language original STRING
+target_language original STRING
+target_language Apertium translated STRING
+"""
 import argparse
 import os
 import sys
@@ -191,7 +184,7 @@ cmd = "| apertium -d " + atm_dir + " " + s_lang + "-" + t_lang + "-dgen"
 
 
 def main():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("-f", "--file", help="Process the given file")
     parser.add_argument(
         "-d", "--directory", help="Process the given directory", default="tmx_data"
