@@ -190,6 +190,12 @@ def arg_parser():
     )
     parser.add_argument("--source_lang", "-s", help="Source language", default="sme")
     parser.add_argument("--target_lang", "-t", help="Target language", default="smj")
+    parser.add_argument(
+        "--word_error_rate",
+        "-w",
+        help="If set, calculate word error rate",
+        action="store_true",
+    )
     parser.add_argument("-f", "--file", help="Process the given file")
     parser.add_argument(
         "-d",
@@ -212,7 +218,7 @@ def main():
     i_dir = args.directory
     o_dir = "output_dir"
     src_only = False
-    wer = False
+    wer = args.word_error_rate
     htrans = ""
     mtrans = ""
 
