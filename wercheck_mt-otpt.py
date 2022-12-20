@@ -207,6 +207,7 @@ def main():
         if i_file.endswith("tmx"):
             getAMT(i_file, o_dir, src_only, wer, htrans, mtrans)
         else:
+            parser.print_help()
             raise SystemExit("Filename must end with .tmx")
 
     else:
