@@ -95,11 +95,11 @@ def getAMT(f, o_dir, src_only, wer, htrans, mtrans, cmd):
 
     i_tu_list = i_root.findall(".//tu")
     for tu in i_tu_list:
-        tr_sme = ET.SubElement(o_table, "tr")
-        th_sme = ET.SubElement(tr_sme, "th")
-        th_sme.set("class", "tg-sme")
-        th_sme.set("colspan", "2")
-        th_sme.text = tu[0][0].text
+        tr_source_lang = ET.SubElement(o_table, "tr")
+        th_source_lang = ET.SubElement(tr_source_lang, "th")
+        th_source_lang.set("class", "tg-sme")
+        th_source_lang.set("colspan", "2")
+        th_source_lang.text = tu[0][0].text
 
         print("PROCESSING " + str(tu[0][0].text) + "\n")
 
@@ -113,12 +113,12 @@ def getAMT(f, o_dir, src_only, wer, htrans, mtrans, cmd):
         out, err = p.communicate()
 
         if not src_only:
-            tr_smj = ET.SubElement(o_table, "tr")
-            th_smj = ET.SubElement(tr_smj, "th")
-            th_smj.set("class", "tg-smj")
-            th_smj.set("colspan", "2")
-            th_smj.text = tu[1][0].text
-            htrans = htrans + th_smj.text + " "
+            tr_target_lang = ET.SubElement(o_table, "tr")
+            th_target_lang = ET.SubElement(tr_target_lang, "th")
+            th_target_lang.set("class", "tg-smj")
+            th_target_lang.set("colspan", "2")
+            th_target_lang.text = tu[1][0].text
+            htrans = htrans + th_target_lang.text + " "
 
         tr_amt = ET.SubElement(o_table, "tr")
         th_amt = ET.SubElement(tr_amt, "th")
@@ -130,7 +130,7 @@ def getAMT(f, o_dir, src_only, wer, htrans, mtrans, cmd):
             th_amt.set("style", "border-bottom: 2pt solid;")
 
         if wer:
-            wer_value = getWER(th_smj.text.split(), th_amt.text.split())
+            wer_value = getWER(th_target_lang.text.split(), th_amt.text.split())
             tr_wer = ET.SubElement(o_table, "tr")
             td_wer = ET.SubElement(tr_wer, "td")
             td_wer.set("class", "tg-wer")
