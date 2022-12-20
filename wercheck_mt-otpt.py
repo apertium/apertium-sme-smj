@@ -190,7 +190,14 @@ def arg_parser():
     )
     parser.add_argument("--source_lang", "-s", help="Source language", default="sme")
     parser.add_argument("--target_lang", "-t", help="Target language", default="smj")
-    parser.add_argument(
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
+        "-m",
+        "--only_machine_translation",
+        help="If set, only show machine translation",
+        action="store_true",
+    )
+    group.add_argument(
         "--word_error_rate",
         "-w",
         help="If set, calculate word error rate",
@@ -217,13 +224,10 @@ def main():
     i_file = args.file
     i_dir = args.directory
     o_dir = "output_dir"
-    src_only = False
+    src_only = args.only_machine_translation
     wer = args.word_error_rate
     htrans = ""
     mtrans = ""
-
-    if src_only:
-        wer = False
 
     if i_file is not None:
         if i_file.endswith("tmx"):
