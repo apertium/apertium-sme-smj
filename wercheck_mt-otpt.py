@@ -35,20 +35,6 @@ from subprocess import PIPE, Popen
 from xml.dom.minidom import parse, parseString
 
 
-def HTMLEntitiesToUnicode(text):
-    """Converts HTML entities to unicode.  For example '&amp;' becomes '&'."""
-    text = unicode(
-        BeautifulStoneSoup(text, convertEntities=BeautifulStoneSoup.ALL_ENTITIES)
-    )
-    return text
-
-
-def unicodeToHTMLEntities(text):
-    """Converts unicode to HTML entities.  For example '&' becomes '&amp;'."""
-    text = cgi.escape(text).encode("ascii", "xmlcharrefreplace")
-    return text
-
-
 def indent(elem, level=0):
     i = "\n" + level * "  "
     if len(elem):
@@ -63,13 +49,6 @@ def indent(elem, level=0):
     else:
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
-
-
-def prettify(elem):
-    """Return a pretty-printed XML string for the Element."""
-    rough_string = ElementTree.tostring(elem, "utf-8")
-    reparsed = minidom.parseString(rough_string)
-    return reparsed.toprettyxml(indent="\t")
 
 
 # testing a WER calculation function
