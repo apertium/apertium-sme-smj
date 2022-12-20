@@ -28,6 +28,7 @@ import sys
 import xml
 import xml.etree.ElementTree as ET
 from importlib import reload
+
 # from BeautifulSoup import BeautifulStoneSoup
 from operator import itemgetter
 from os.path import expanduser
@@ -246,6 +247,4 @@ def main():
 
 
 if __name__ == "__main__":
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
     main()
