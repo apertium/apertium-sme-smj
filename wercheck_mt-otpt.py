@@ -184,7 +184,10 @@ cmd = "| apertium -d " + atm_dir + " " + s_lang + "-" + t_lang + "-dgen"
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
     parser.add_argument("-f", "--file", help="Process the given file")
     parser.add_argument(
         "-d", "--directory", help="Process the given directory", default="tmx_data"
