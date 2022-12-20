@@ -224,6 +224,8 @@ def main():
                 if f.endswith("tmx"):
                     getAMT(os.path.join(i_dir, f), o_dir, src_only, wer, htrans, mtrans)
 
+    print(f"Finished processing. Results are found in {o_dir}")
+
 
 if __name__ == "__main__":
     main()
