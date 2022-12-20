@@ -143,8 +143,9 @@ def getAMT(f, o_dir, src_only, wer, htrans, mtrans, cmd):
             td_ble.set("style", "border-bottom: 5pt solid;")
             td_ble.text = "BLEU = value"
 
-    # o_p2 = ET.SubElement(o_body, 'p')
-    # o_p2.text = "WER total = " + str(getWER(htrans.split(),mtrans.split()))
+    if wer:
+        o_p2 = ET.SubElement(o_body, "p")
+        o_p2.text = "WER total = " + str(getWER(htrans.split(), mtrans.split()))
     file_name = os.path.basename(str(f))[:-3] + "html"
     indent(o_root)
     o_tree = ET.ElementTree(o_root)
