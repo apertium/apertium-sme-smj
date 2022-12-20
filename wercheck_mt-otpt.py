@@ -210,33 +210,19 @@ def main():
     if src_only:
         wer = False
 
-    if total == 3:
-        print("... total " + str(total))
-        if str(sys.argv[1]) == "-f":
-            # print '... file ' + str(sys.argv[1])
-            i_file = str(sys.argv[2])
-            if i_file.endswith("tmx"):
-                getAMT(i_file, o_dir, src_only, wer, htrans, mtrans)
-        if str(sys.argv[1]) == "-d":
-            i_dir = str(sys.argv[2])
-            for root, dirs, files in os.walk(i_dir):  # Walk directory tree
-                print("Input dir {0} with {1} files ...".format(root, len(files)))
+    if i_file is not None:
+        if i_file.endswith("tmx"):
+            getAMT(i_file, o_dir, src_only, wer, htrans, mtrans)
+        else:
+            raise SystemExit("Filename must end with .tmx")
 
-                for f in files:
-                    if f.endswith("tmx"):
-                        getAMT(
-                            os.path.join(root, f), o_dir, src_only, wer, htrans, mtrans
-                        )
     else:
-        if i_file == "":
-            for root, dirs, files in os.walk(i_dir):  # Walk directory tree
-                print("Input dir {0} with {1} files ...".format(root, len(files)))
+        for root, _, files in os.walk(i_dir):  # Walk directory tree
+            print("Input dir {0} with {1} files ...".format(root, len(files)))
 
-                for f in files:
-                    if f.endswith("tmx"):
-                        getAMT(
-                            os.path.join(i_dir, f), o_dir, src_only, wer, htrans, mtrans
-                        )
+            for f in files:
+                if f.endswith("tmx"):
+                    getAMT(os.path.join(i_dir, f), o_dir, src_only, wer, htrans, mtrans)
 
 
 if __name__ == "__main__":
