@@ -16,24 +16,10 @@
 #
 # the output dir is 'otpt_dir' in the current directory
 
-import cgi
-import codecs
-import errno
-import getopt
-import json
-import locale
 import os
-import re
 import sys
-import xml
 import xml.etree.ElementTree as ET
-from importlib import reload
-
-# from BeautifulSoup import BeautifulStoneSoup
-from operator import itemgetter
-from os.path import expanduser
 from subprocess import PIPE, Popen
-from xml.dom.minidom import parse, parseString
 
 
 def indent(elem, level=0):
