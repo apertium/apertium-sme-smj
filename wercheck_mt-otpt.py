@@ -15,7 +15,7 @@
 #     - the input file is FILE_NAME
 #
 # the output dir is 'otpt_dir' in the current directory
-
+import argparse
 import os
 import sys
 import xml.etree.ElementTree as ET
@@ -191,11 +191,17 @@ cmd = "| apertium -d " + atm_dir + " " + s_lang + "-" + t_lang + "-dgen"
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-f", "--file", help="Process the given file")
+    parser.add_argument(
+        "-d", "--directory", help="Process the given directory", default="tmx_data"
+    )
+    args = parser.parse_args()
+
     # parameters to be adjusted as needed
-    total = len(sys.argv)
-    i_file = ""
-    i_dir = "tmx_data"
-    o_dir = "otpt_dir"
+    i_file = args.file
+    i_dir = args.directory
+    o_dir = "output_dir"
     src_only = False
     wer = False
     htrans = ""
