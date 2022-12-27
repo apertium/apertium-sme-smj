@@ -113,6 +113,8 @@ NP -> %prn.dem %n { 1 _ 2} ; !dav vielja
 
 NP -> "attr adj" adj.attr %NP { 1 _ %2[poss=$poss] } ;
 
+NP -> adj.attr adj.attr %NP { 1 _ 2 _ %3[poss=$poss] } ;
+
 
 p1_or_p2 = p1 p2 ;
 NP -> prn.pers.[p1_or_p2].*.gen %NP
@@ -137,6 +139,10 @@ NP -> 2: %n.coll [$number=pl] { 1 } ; !"gålmås båhti fæsstaj". endrer ikke v
 NP -> %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } ;
 
 PP -> %n %post {1 _ 2} ; !muora lunna
+
+PP -> %NP %post {1 _ 2} ; !
+
+
 
 VP -> %vblex { 1 } ;
 VP -> %vblex cnjcoo vblex { 1 _ 2 _ 3 } ;
