@@ -165,7 +165,7 @@ VP -> NP %V.tv
 VP -> NP %V.tv { 1 _ 2 } ;
 
 VP -> AdvP %VP { 1 _ %2 } ;
-VP -> %VP AdvP { 1 _ %2 } ;
+VP -> %VP AdvP { %1 _ 2 } ;
 
 
 !echo 'boratgo? borat go láibbi? láibbi go borat? > båråk? lájbev båråk? lájbev båråk?
@@ -177,9 +177,9 @@ VP -> NP go@pcle.qst %V.tv { 1 _ 3[qst=qst] } ;
 
 
 
-AuxP: _ ;
-AuxP -> ii@vblex.iv.neg VP.*.conneg
-         { 1[tense=2.tense,mood=2.mood] _ 2[tense="",mood=""] } ;
+NegP: _ ;
+NegP -> ii@vblex.iv.neg VP.*.conneg
+         { 1[tense=2.tense,mood=2.mood] _ 2[tense="",mood=""] } ; ! noe er feil for det blir  ittjij #máhttet 
 
 
 S -> NP VP { 1 _ 2[number=1.number] } ;
