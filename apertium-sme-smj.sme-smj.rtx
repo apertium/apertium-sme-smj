@@ -179,8 +179,7 @@ VP -> NP go@pcle.qst %V.tv { 1 _ 3[qst=qst] } ;
 
 NegP: _ ;
 NegP -> ii@vblex.iv.neg VP.*.conneg
-         { 1[tense=2.tense,mood=2.mood] _ 2[tense="",mood=""] } ; ! noe er feil for det blir  ittjij #máhttet 
-
+         { 1[tense=2.tense,mood=2.mood] _ 2[tense="",mood=""] } ; 
 
 S -> NP VP { 1 _ 2[number=1.number] } ;
 S -> AdvP NP VP { 1 _ 2 _ 3  } ;
