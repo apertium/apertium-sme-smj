@@ -4305,7 +4305,7 @@ C[_]-T sent
       </action>
     </rule>  
 
-     <rule comment="C[D]-PRED máŋgačuođi_num" c="máŋgačuođi : måttijt tjuodijt">
+<!--     <rule comment="C[D]-PRED máŋgačuođi_num" c="máŋgačuođi : måttijt tjuodijt">
       <pattern>
         <pattern-item n="máŋgačuođi_num"/>
       </pattern>
@@ -4331,7 +4331,7 @@ C[_]-T sent
           </chunk>
         </out>
       </action>
-    </rule>  
+    </rule>   -->
     
     
 
@@ -5445,6 +5445,33 @@ C[_]-T sent
       </action>
     </rule>
 
+    <rule comment="C[T]-NP semyear" c="2021:s : jagen 2021 "> 
+      <pattern> 
+        <pattern-item n="semyear"/>
+     </pattern>
+      <action>
+        <call-macro n="general-macro-1Param"> <with-param pos="1"/></call-macro>
+      <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
+                          <out>
+          <chunk name="noun" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+	           <lit v="jahke"/>
+	           <lit-tag v="n.sg"/>
+	           <clip pos="1" side="tl" part="a_case"/>
+            </lu>
+            <b />
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+	           <lit-tag v="num.sg.nom"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="C[T]-NP months_n semyear" c="njukčamánus 2021:s : 2021 snjuktjamáno"> 
       <pattern> 
