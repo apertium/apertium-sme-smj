@@ -102,7 +102,7 @@
 [/Hlk7URdKKeff]
 [HoAho70Bbyd2#0] ^Adv<ADV><@ADVL→CS>{^dalloj<adv>$}$ ^go<cnjsub><@CVP>{^gå<cnjsub>$}$ ^noun<NP><@SUBJ→>{^áhttje<n><sg><nom>$}$ ^cop-mainv<SV><@+FMAINV>{^liehket<vblex><indic><pret><p3><sg>$}$ ^noun<NP><@←SPRED>{^gietjav<num><sg><nom>$ ^jahke<n><sg><gen>$}$^sent<SENT>{^.<sent>$}$
 [/HoAho70Bbyd2]
-[HqNfHHLmOBGg#0] ^noun<NP><@SUBJ→>{^Isak<np><ant><m><sg><nom>$}$ ^vblex<SV><@+FMAINV>{^boahtet<vblex><indic><pres><p3><sg>$}$ ^noun<NP><@←ADVL-ela>{^goahte<n><sg><ela>$}$^sent<SENT>{^.<sent>$}$
+[HqNfHHLmOBGg#0] ^noun<NP><@SUBJ→>{^Isak<np><ant><m><sg><nom>$}$ ^vblex<SV><@+FMAINV>{^boahtet<vblex><indic><pres><p3><sg>$}$ ^noun<NP><@←ADVL-ela>{^gábmá<n><sg><ela>$}$^sent<SENT>{^.<sent>$}$
 [/HqNfHHLmOBGg]
 [I3kr0lUvRaFT#0] ^Noun<NP><@SUBJ→>{^girjje<n><pl><nom>$}$ ^cop-mainv<SV><@+FMAINV>{^liehket<vblex><indic><pres><p3><pl>$}$ ^adj<NP><@←SPRED>{^álbbe<adj><pl><nom>$}$^sent<SENT>{^.<sent>$}$
 [/I3kr0lUvRaFT]
@@ -180,7 +180,7 @@
 [/Vx1MlsiXWEZc]
 [WEC9vmgcC7eQ#0] ^Cop-Auxv<SV><@+FAUXV>{^liehket<vblex><indic><pres><p2><sg>$}$ ^qst<pcle><@PCLE>{^gus<pcle><qst>$}$ ^noun<NP><@←OBJ>{^divna<prn><ind><attr>$ ^girjje<n><pl><acc><px2sg>$}$ ^prfprc<SV><@-FMAINV>{^viedtjat<vblex><prfprc>$}$^sent<SENT>{^?<sent>$}$
 [/WEC9vmgcC7eQ]
-[Wg54RJGwutj9#0] ^noun<NP><@SUBJ→>{^Isak<np><ant><m><sg><nom>$}$ ^neg<SV><@+FAUXV>{^ij<vblex><neg><indic><pret><p3><sg>$}$ ^conneg<SV><@-FAUXV><indic>{^máhttet<vblex><indic><conneg>$}$ ^inf<SV><@-FMAINV>{^boahtet<vblex><inf>$}$ ^adv<ADV><@←ADVL-ela>{^åvddåla<adv>$}$^sent<SENT>{^.<sent>$}$
+[Wg54RJGwutj9#0] ^noun<NP><@SUBJ→>{^Isak<np><ant><m><sg><nom>$}$ ^neg<SV><@+FAUXV>{^ij<vblex><neg><indic><pret><p3><sg>$}$ ^conneg<SV><@-FAUXV><indic>{^máhttet<vblex><indic><conneg>$}$ ^inf<SV><@-FMAINV>{^boahtet<vblex><inf>$}$ ^adv<ADV><@←ADVL-ela>{^åvddål<adv>$}$^sent<SENT>{^.<sent>$}$
 [/Wg54RJGwutj9]
 [WkEi_SFkR8Gb#0] ^Neg<SV><@+FAUXV>{^ij<vblex><neg><indic><pret><p1><pl>$}$ ^qst<pcle><@PCLE>{^gus<pcle><qst>$}$ ^conneg<SV><@-FAUXV><indic>{^máhttet<vblex><indic><conneg>$}$ ^inf<SV><@-FMAINV>{^vuolgget<vblex><inf>$}$^sent<SENT>{^?<sent>$}$
 [/WkEi_SFkR8Gb]

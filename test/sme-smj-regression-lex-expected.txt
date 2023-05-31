@@ -102,7 +102,7 @@
 [/Hlk7URdKKeff]
 [HoAho70Bbyd2#0] ^Dalle<adv><@ADVL→CS>/Dalloj<adv><@ADVL→CS>$ ^go<cnjsub><@CVP>/gå<cnjsub><@CVP>$ ^áhčči<n><sem_hum><sg><nom><@SUBJ→>/áhttje<n><sem_hum><sg><nom><@SUBJ→>$ ^leat<vblex><iv><indic><pret><p3><sg><@+FMAINV>/liehket<vblex><iv><indic><pret><p3><sg><@+FMAINV>$ ^čieža<num><sg><nom><@←SPRED>/gietjav<num><sg><nom><@←SPRED>$ ^jahki<n><sem_measr_time><sg><gen><@Num←>/jahke<n><sem_measr_time><sg><gen><@Num←>$^.<sent>/.<sent>$
 [/HoAho70Bbyd2]
-[HqNfHHLmOBGg#0] ^Isak<np><ant><m><sg><nom><@SUBJ→>/Isak<np><ant><m><sg><nom><@SUBJ→>$ ^boahtit<vblex><iv><indic><pres><p3><sg><@+FMAINV>/boahtet<vblex><iv><indic><pres><p3><sg><@+FMAINV>$ ^goahti<n><sem_build_obj><sg><loc><@←ADVL-ela>/goahte<n><sem_build_obj><sg><loc><@←ADVL-ela>/gábmá<n><sem_build_obj><sg><loc><@←ADVL-ela>$^.<sent>/.<sent>$
+[HqNfHHLmOBGg#0] ^Isak<np><ant><m><sg><nom><@SUBJ→>/Isak<np><ant><m><sg><nom><@SUBJ→>$ ^boahtit<vblex><iv><indic><pres><p3><sg><@+FMAINV>/boahtet<vblex><iv><indic><pres><p3><sg><@+FMAINV>$ ^goahti<n><sem_build_obj><sg><loc><@←ADVL-ela>/gábmá<n><sem_build_obj><sg><loc><@←ADVL-ela>/låvdagoahte<n><sem_build_obj><sg><loc><@←ADVL-ela>$^.<sent>/.<sent>$
 [/HqNfHHLmOBGg]
 [I3kr0lUvRaFT#0] ^Girji<n><sem_txt><pl><nom><@SUBJ→>/Girjje<n><sem_txt><pl><nom><@SUBJ→>/Hálediddje<n><nomag><sem_txt><pl><nom><@SUBJ→>$ ^leat<vblex><iv><indic><pres><p3><pl><@+FMAINV>/liehket<vblex><iv><indic><pres><p3><pl><@+FMAINV>$ ^hálbi<adj><pl><nom><@←SPRED>/álbbe<adj><pl><nom><@←SPRED>$^.<sent>/.<sent>$
 [/I3kr0lUvRaFT]
@@ -180,7 +180,7 @@
 [/Vx1MlsiXWEZc]
 [WEC9vmgcC7eQ#0] ^Leat<vblex><iv><indic><pres><p2><sg><@+FAUXV>/Liehket<vblex><iv><indic><pres><p2><sg><@+FAUXV>$ ^go<pcle><qst><@PCLE>/gus<pcle><qst><@PCLE>$ ^viežžat<vblex><tv><prfprc><@-FMAINV>/viedtjat<vblex><tv><prfprc><@-FMAINV>$ ^buot<prn><ind><attr><@→N>/divna<prn><ind><attr><@→N>/gájkka<prn><ind><attr><@→N>$ ^girji<n><sem_txt><pl><acc><px2sg><@←OBJ>/girjje<n><sem_txt><pl><acc><px2sg><@←OBJ>/hálediddje<n><nomag><sem_txt><pl><acc><px2sg><@←OBJ>$^?<sent>/?<sent>$
 [/WEC9vmgcC7eQ]
-[Wg54RJGwutj9#0] ^Isak<np><ant><m><sg><nom><@SUBJ→>/Isak<np><ant><m><sg><nom><@SUBJ→>$ ^ii<vblex><iv><neg><indic><p3><sg><@+FAUXV>/ij<vblex><iv><neg><indic><pret><p3><sg><@+FAUXV>$ ^sáhttit<vblex><iv><indic><pret><conneg><@-FAUXV>/máhttet<vblex><tv><indic><pret><conneg><@-FAUXV>$ ^boahtit<vblex><iv><inf><@-FMAINV>/boahtet<vblex><iv><inf><@-FMAINV>$ ^ovdal<adv><@←ADVL-ela>/åvddåla<adv><@←ADVL-ela>$^.<sent>/.<sent>$
+[Wg54RJGwutj9#0] ^Isak<np><ant><m><sg><nom><@SUBJ→>/Isak<np><ant><m><sg><nom><@SUBJ→>$ ^ii<vblex><iv><neg><indic><p3><sg><@+FAUXV>/ij<vblex><iv><neg><indic><pret><p3><sg><@+FAUXV>$ ^sáhttit<vblex><iv><indic><pret><conneg><@-FAUXV>/máhttet<vblex><tv><indic><pret><conneg><@-FAUXV>$ ^boahtit<vblex><iv><inf><@-FMAINV>/boahtet<vblex><iv><inf><@-FMAINV>$ ^ovdal<adv><sem_time><gen><@←ADVL-ela>/åvddål<adv><sem_time><gen><@←ADVL-ela>$^.<sent>/.<sent>$
 [/Wg54RJGwutj9]
 [WkEi_SFkR8Gb#0] ^Ii<vblex><iv><neg><indic><p1><pl><@+FAUXV>/Ij<vblex><iv><neg><indic><pret><p1><pl><@+FAUXV>$ ^go<pcle><qst><@PCLE>/gus<pcle><qst><@PCLE>$ ^sáhttit<vblex><iv><indic><pret><conneg><@-FAUXV>/máhttet<vblex><tv><indic><pret><conneg><@-FAUXV>$ ^vuolgit<vblex><iv><inf><@-FMAINV>/vuolgget<vblex><iv><inf><@-FMAINV>$^?<sent>/?<sent>$
 [/WkEi_SFkR8Gb]
