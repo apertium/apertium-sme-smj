@@ -41,6 +41,30 @@
         </out>
       </action>
     </rule>
+<!--     <rule comment="REGLA: cltl">
+      <pattern>
+        <pattern-item n="cltl"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+           <b />
+           <lit v="^"/>
+           <lit v="verb"/>
+           <lit-tag v="SV"/>
+           <lit v="{"/>
+           <lit v="^"/>
+           <lit v="leat"/>
+           <lit-tag v="vblex.indic.pres.p3.sg"/>
+           <lit v="$"/>
+           <lit v="}"/>
+          </chunk>
+        </out>
+      </action>
+    </rule> -->
   </section-rules>
 </interchunk>
 
