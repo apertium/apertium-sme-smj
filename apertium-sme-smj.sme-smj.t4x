@@ -51,6 +51,8 @@
     <def-cat n="Cop-mainv">
       <cat-item lemma="Cop-mainv" tags="SV.@+FMAINV"/>
       <cat-item lemma="Cop-mainvclt" tags="SV.@+FMAINV"/>
+      <cat-item lemma="Cop-Mainv" tags="SV.@+FMAINV"/>
+      <cat-item lemma="Cop-Mainvclt" tags="SV.@+FMAINV"/>
     </def-cat>
 
     <def-cat n="intWORD">

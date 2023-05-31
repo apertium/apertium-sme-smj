@@ -90,6 +90,10 @@
 	        <equal><clip pos="0" part="lem"/><lit v="Cop-mainvclt"/></equal>
 	        <equal><clip pos="0" part="lem"/><lit v="Cop-auxv"/></equal>
 	        <equal><clip pos="0" part="lem"/><lit v="Cop-auxvclt"/></equal>
+	        <equal><clip pos="0" part="lem"/><lit v="Cop-Mainv"/></equal>
+	        <equal><clip pos="0" part="lem"/><lit v="Cop-Mainvclt"/></equal>
+	        <equal><clip pos="0" part="lem"/><lit v="Cop-Auxv"/></equal>
+	        <equal><clip pos="0" part="lem"/><lit v="Cop-Auxvclt"/></equal>
 	        </or>
 	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="pot"/></equal></not>
 	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="imp"/></equal></not>
@@ -99,7 +103,7 @@
               <lu>
                 <clip pos="1" part="lemh"/>
                 <clip pos="1" part="tags"/>
-                <lit-tag v="gram_sentinit"/>
+                <lit-tag v="sentinit"/>
               </lu>
             </out>
           </when>

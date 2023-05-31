@@ -9077,8 +9077,8 @@ C[_]-T sent
             <test><and>
              <equal><clip pos="1" side="sl" part="a_mood"/><lit-tag v="indic"/></equal>
              <equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pres"/></equal>
-             <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
-             <equal><clip pos="1" side="sl" part="a_person"/><lit-tag v="p3"/></equal>
+<!--             <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>	   -->
+<!--             <equal><clip pos="1" side="sl" part="a_person"/><lit-tag v="p3"/></equal> -->
        </and></test>
          <let><var n="chunk_name"/><lit v="cop-auxvclt"/></let>
           </when>
