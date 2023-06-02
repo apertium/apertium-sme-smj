@@ -1,42 +1,58 @@
 !!!!!!!!!!!!!!!
-!!  CATEGORIES
+!!  ATTRIBUTE CATEGORIES
 !!!!!!!!!!!!!!!
 
 function = "@→SUBJ" "@←OBJ" "@→ADVL" "@→ADVL-ine" "@→ADVL-ela" "@←ADVL-ine" "@←ADVL-ela" ;
 gender = f m ;
 sem = sem_hum sem_food ;
 number = sg du pl ;
-prn_type_other = rel dem indef itg ;
-prn_type = pers ref [prn_type_other] ;
-np_type_other = top hyd cog org al pat ;
+prn_type_other = rel dem ind itg ;
+prn_type = pers ref res [prn_type_other] ;
+np_type_other = top cog org sem_ani ;
 np_type = ant [np_type_other] ;
+n_type = g3 nomag ;
 case = acc nom gen loc ine ela com ess ill ;
 poss = ("" "") px1sg px1du px1pl px2sg px2du px2pl px3sg px3du px3pl ;
 person = p1 p2 p3 ;
 attr = attr ;
-comp = comp sup ;
-vform = inf conneg ;
+comp = der_comp der_sup ;
+infin = inf conneg prfprc ger "actio.ess" "actio.gen" "actio.loc" ;
 neg = neg ;
 qst = qst ;
-transitivity = tv iv ;
-mood = indic imp ;
+trans = tv iv ;
+mood = indic imp cond pot ;
 tense = pres pret ;
+a_nomag = nomag der_nomag ;
+a_actio = actio ;
+a_hab = ←hab→ ;
+adpos = pr post ;
+a_vuota = ex_attr ;
 person_number = "p1.sg" "p1.du" "p1.pl"
                 "p2.sg" "p2.du" "p2.pl"
                 "p3.sg" "p3.du" "p3.pl" ;
+deriv = der_dimin der_alla der_halla der_aadv der_caus der_t der_l der_ahtti der_ahtte der_vuota der_d der_h der_laakan der_laagasj der_lágan der_lágán der_muš der_mus der_nammasaš der_nammasasj der_saš der_sasj der_lasj der_dibme der_geahtes der_ahtes der_car der_nomact der_inchl der_vuota ;
 
+deriv2 = der_dimin der_alla der_halla ;
+cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_hyph cmp_splitr cmp_oblhyph cmp_cit ;
+
+semhum = sem_group sem_hum sem_hum-abstr sem_hum-prof sem_act_hum sem_ani_body-abstr_hum sem_ani_build_hum_txt sem_ani_group_hum sem_ani_hum sem_ani_hum_plc sem_ani_hum_time sem_aniprod_hum sem_body_group_hum sem_body_group_hum_time sem_body_hum sem_cat_group_hum sem_cat_group_hum_plc sem_clth_hum sem_domain_hum sem_edu_group_hum sem_edu_hum sem_event_hum sem_feat-psych_hum sem_fruit_hum sem_geom_hum_plc sem_group_hum sem_group_hum_org sem_group_hum_plc sem_group_hum_plc-abstr sem_group_hum_prod-vis sem_group_hum_time sem_hum_lang sem_hum_lang_plc sem_hum_lang_time sem_hum_mat_tool sem_hum_obj sem_hum_org sem_hum_part sem_hum_plant sem_hum_plc sem_hum_sign sem_hum_tool sem_hum_tool-it sem_hum_veh sem_hum_wthr ;
+
+semtime = sem_time sem_time-clock sem_ani_hum_time sem_ani_time sem_body_group_hum_time sem_body_time sem_event_time sem_group_hum_time sem_hum_lang_time sem_measr_obj_time sem_measr_time sem_plc_time sem_plc_time_wthr sem_time_wthr ;
+semother = sem_act sem_adr sem_amount sem_ani sem_aniprod sem_body sem_body-abstr sem_build sem_build-room sem_buildpart sem_cat sem_clth sem_clth-jewl sem_clthpart sem_ctain sem_ctain-abstr sem_ctain-clth sem_curr sem_date sem_dance sem_dir sem_domain sem_drink sem_dummytag sem_edu sem_event sem_feat sem_feat-phys sem_feat-psych sem_feat-measr sem_fem sem_food sem_food-med sem_fruit sem_furn sem_game sem_geom sem_ideol sem_id sem_lang sem_mal sem_mat sem_measr sem_money sem_obj sem_obj-clo sem_obj-cogn sem_obj-el sem_obj-ling sem_obj-rope sem_obj-surfc sem_org sem_part sem_perc-cogn sem_perc-emo sem_perc-phys sem_perc-psych sem_phonenr sem_plant sem_plantpart sem_plc sem_plc-abstr sem_plc-elevate sem_plc-line sem_plc-water sem_pos sem_process sem_prod sem_prod-audio sem_prod-cogn sem_prod-ling sem_prod-vis sem_rel sem_route sem_rule sem_semcon sem_sign sem_sport sem_state sem_state-sick sem_substnc sem_sur sem_symbol sem_tool sem_tool-catch sem_tool-clean sem_tool-it sem_tool-measr sem_tool-music sem_tool-write sem_txt sem_veh sem_wpn sem_wthr sem_year sem_act_fruit sem_act_group sem_act_plc sem_act_route sem_act_tool-it sem_amount_build sem_amount_semcon sem_ani_build sem_ani_buildpart sem_ani-fish sem_ani_group sem_ani_group_prod-vis sem_ani_plc sem_ani_plc_txt sem_ani_veh sem_aniprod_obj-clo sem_aniprod_perc-phys sem_aniprod_plc sem_aniprod_plc_route sem_body-abstr_feat-psych sem_body-abstr_prod-audio_semcon sem_body_body-abstr sem_body_clth sem_body_food sem_body_mat sem_body_measr sem_body_obj_tool-catch sem_body_plc sem_body_plc-elevate sem_build_clthpart sem_build_edu_org sem_build_event_org sem_build_obj sem_build_org sem_build_route sem_build-room_cat_ctain_mat sem_buildpart_cat sem_buildpart_cat_ctain sem_buildpart_cat_ctain_mat sem_buildpart_ctain sem_buildpart_ctain_mat sem_buildpart_ctain_obj sem_cat_edu sem_cat_obj sem_clth-jewl_curr sem_clth-jewl_curr_obj sem_clth-jewl_curr_obj_org sem_clth-jewl_fruit sem_clth-jewl_money sem_clth-jewl_plant sem_clth_obj-clo sem_ctain-abstr_org sem_ctain-clth_plant sem_ctain-clth_veh sem_ctain_feat-phys sem_ctain_furn sem_ctain_plc sem_ctain_tool sem_ctain_tool-measr sem_curr_org sem_dance_org sem_dance_prod-audio sem_domain_food-med sem_domain_prod-audio sem_drink_plant sem_edu_event sem_edu_geom sem_edu_mat sem_edu_org sem_event_food sem_event_plc sem_event_plc-elevate sem_feat-measr_plc sem_feat-phys_tool-write sem_feat-phys_veh sem_feat-phys_wthr sem_feat-psych_plc sem_food_obj-surfc sem_feat_plant sem_food_perc-phys sem_food_plant sem_food_sign sem_game_obj-play sem_geom_obj sem_group_org sem_group_prod-vis sem_group_sign sem_group_txt sem_lang_tool sem_mat_plant sem_mat_txt sem_measr_sign sem_money_obj sem_money_org sem_money_part sem_money_txt sem_obj-play sem_obj-play_sport sem_obj_semcon sem_obj_sign sem_obj_veh sem_clth-jewl_org sem_obj_symbol sem_org_rule sem_org_buildpart sem_org_txt sem_org_veh sem_part_prod-cogn sem_part_substnc sem_perc-emo_wthr sem_plant_plantpart sem_plant_tool sem_plant_tool-measr sem_plc-abstr_rel_state sem_plc-abstr_route sem_plc_pos sem_plc_route sem_plc_semcon sem_plc_state sem_plc_substnc sem_plc_substnc_wthr sem_plc_tool-catch sem_plc_txt sem_plc_wthr sem_prod-audio_txt sem_prod-cogn_txt sem_semcon_txt sem_obj_state sem_substnc_wthr sem_state-sick_substnc sem_obj-ling_obj-surfc sem_org_prod-audio sem_org_prod-cogn sem_org_prod-vis ;
+
+sem_tag = [semtime] [semhum] [semother] ;
 
 !!!!!!!!!!!!!!!
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
-VP: _.mood.tense.vform ;
-NP: _.function.number.case.poss.sem ;
+VP: _.mood.tense.infin ; !? 
+NP: _.function.number.case.poss.sem ; 
 PP: _ ;
-S: _ ;
+S: _ ; !?
 AdvP: _ ;
 A: _ ;
-AP: _;
+AP: _ ;
 
 cnjcoo: _ ;
 
@@ -64,9 +80,9 @@ adj_pred: _.comp.number.case ;
 adj: (if (1.attr = attr) 1(adj_attr)
       else 1(adj_pred)) ;
       
-vblex_fin: _.transitivity.neg.mood.tense.person.number.qst ; 
-vblex_inf: _.transitivity.vform ;
-vblex: (if (1.vform = "") 1(vblex_fin)
+vblex_fin: _.trans.neg.mood.tense.person.number.qst ; 
+vblex_inf: _.trans.infin ;
+vblex: (if (1.infin = "") 1(vblex_fin)
         else 1(vblex_inf)) ;
 
 
@@ -108,8 +124,8 @@ NP -> %NP cnjcoo NP { %1 _ 2 _ 3[case=$case] } ;
 NP -> %num n {1 _ 2} ;
 NP -> %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat
 
-NP -> %prn.ref %n { 1 _ 2} ; !ietjam viellja
-NP -> %prn.dem %n { 1 _ 2} ; !dav vielja
+NP -> prn.ref %n { 1 _ 2} ; !ietjam viellja
+NP -> prn.dem %n { 1 _ 2} ; !dav vielja
 
 NP -> "attr adj" adj.attr %NP { 1 _ %2[poss=$poss] } ;
 
@@ -138,14 +154,14 @@ NP -> 2: %n.coll [$number=pl] { 1 } ; !"gålmås båhti fæsstaj". endrer ikke v
 ! Sån la vidá jagák.
 NP -> %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } ;
 
-PP -> %n %post {1 _ 2} ; !muora lunna
+PP -> %n post {1 _ 2} ; !muora lunna
 
-PP -> %NP %post {1 _ 2} ; !
+PP -> %NP post {1 _ 2} ; !
 
 
 
 VP -> %vblex { 1 } ;
-VP -> %vblex cnjcoo vblex { 1 _ 2 _ 3 } ;
+VP -> vblex cnjcoo %vblex { 1 _ 2 _ 3 } ;
 
 VP -> %V.tv NP
       {
@@ -169,7 +185,7 @@ VP -> %VP AdvP { %1 _ 2 } ;
 
 
 !echo 'boratgo? borat go láibbi? láibbi go borat? > båråk? lájbev båråk? lájbev båråk?
-V: _.transitivity.qst ;
+V: _.trans.qst ;
 V -> %vblex { 1 } ;
 V -> %V go@pcle.qst [$qst=qst] { %1 } ;
 
