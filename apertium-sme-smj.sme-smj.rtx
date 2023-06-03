@@ -195,9 +195,9 @@ NP -> %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } ;
 
 
 
-PP ->  %NP post { 1 _ 2 } 
-      | pr %NP ?(1.adpos/tl = post) { 2 _ 1 }  !miehtá beavddi > bievde miehtáj
-      | pr %NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge
+PP -> "NP post" 1: %NP post { 1 _ 2 } 
+      | "pre/post NP" 2: pr %NP ?(1.adpos/tl = post) { 2 _ 1 }  !miehtá beavddi > bievde miehtáj
+      | "pre NP" 1: pr %NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge
      ; !
 
 
