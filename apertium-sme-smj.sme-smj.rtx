@@ -52,11 +52,14 @@ S: _ ; !?
 AdvP: _ ;
 A: _ ;
 AP: _ ;
+PP: _ ;
 
 cnjcoo: _ ;
 
 n: _.number.case.poss ;
 post: _ ;
+pr: _ ;
+adpos: _ ;
 qst: _ ;
 adv: _ ;
 num: _.number.case ;
@@ -68,6 +71,7 @@ np: (if (1.np_type = ant) 1(np_ant)
 
 prn_pers: _.<pers>.person.number.case ;
 prn_ref: _.<ref>.number.case.poss ;
+
 
 prn_other: _.prn_type_other.number.case ;
 prn: (if (1.prn_type = pers) 1(prn_pers)
@@ -162,9 +166,9 @@ NP -> %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } 
 NP -> prn.ref %n { 1 _ 2} ; !ietjam viellja
 NP -> prn.dem %n { 1 _ 2} ; !dav vielja
 
-NP -> "attr adj" adj.attr %NP { 1 _ %2[poss=$poss] } ;
-
-NP -> adj.attr adj.attr %NP { 1 _ 2 _ %3[poss=$poss] } ;
+NP -> adj.attr adj.attr %NP { 1 _ %2[poss=$poss] } 
+    | adj.attr adj.attr %NP { 1 _ 2 _ %3[poss=$poss] } 
+    ;
 
 
 p1_or_p2 = p1 p2 ;
@@ -189,10 +193,12 @@ NP -> 2: %n.coll [$number=pl] { 1 } ; !"gålmås båhti fæsstaj". endrer ikke v
 ! Sån la vidá jagák.
 NP -> %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } ;
 
-PP -> %n post {1 _ 2} ; !muora lunna
 
-PP -> %NP post {1 _ 2} ; !
 
+PP ->  %NP post { 1 _ 2 } 
+      | pr %NP ?(1.adpos/tl = post) { 2 _ 1 }  !miehtá beavddi > bievde miehtáj
+      | pr %NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge
+     ; !
 
 
 VP -> %vblex { 1 } ;
