@@ -26,6 +26,7 @@ a_actio = actio ;
 a_hab = ←hab→ ;
 adpos = pr post ;
 cc = cnjcoo ;
+cs = cnjsub ;
 pcle = pcle ;
 a_vuota = ex_attr ;
 person_number = "p1.sg" "p1.du" "p1.pl"
@@ -48,7 +49,7 @@ semtag = [semtime] [semhum] [semother] ;
 !!!!!!!!!!!!!!!
 
 VP: _.mood.tense.infin ; !? 
-NP: _.semtag.number.case.poss.function ; 
+NP: _.semtag.number.case.poss ; 
 PRN: _.prn_type.person.number.case ; 
 PP: _ ;
 S: _ ; !?
@@ -56,9 +57,10 @@ AdvP: _ ;
 A: _ ;
 AP: _ ;
 PP: _ ;
-CC: _ ;
+C: _ ;
 
 cnjcoo: _ ;
+cnjsub: _ ;
 
 n: _.number.case.poss ;
 post: _ ;
@@ -152,7 +154,9 @@ AP -> "adj" %adj { 1 }
     ;
 
 AdvP -> %adv { 1 }
-      | %adv cnjcoo adv { 1 _ 2 _ 3 };
+      | %adv cnjcoo adv { 1 _ 2 _ 3 }
+      | adv %adv { 1 _ 2 }
+      ;
 
 
 NP -> %n { 1[poss=$poss] } ;
@@ -215,67 +219,90 @@ PP -> "NP post" 1: NP %post { 1 _ 2 }
 
 
 VP -> "enkeltverb"      %vblex                    { 1 } 
-    |     "ikke"      %ii@vblex.iv.neg vblex.*.conneg  { 1 _ 2 } 
-    |     "ikke"      %ii@vblex.iv.neg vblex.*.conneg vblex_inf  { 1 _ 2 _ 3} 
-    |                2: %vblex vblex_inf    { 1  _ 2 }    
-    |                2: %vblex PP    { 1 _ 2 }    
-    |                1: %vblex NP    { 1 _ 2 }
-    |                3: %vblex NP PP { 1 _ 2 _ 3}    
+    | "ikke"  2:   ii@vblex.iv.neg %vblex.*.conneg  { 1 _ 2 } 
+    | "ikke"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1 _ 2 _ 3} 
+    |         1: vblex %vblex    { 1  _ 2 }   ! hvorfor fungerer det ikke med vblex_inf? 
+    ;
+    
+!    |         1: vblex %vblex NP   { 1  _ 2 _ 3 }   ! 
+!    |         1: vblex %vblex NP NP  { 1  _ 2 _ 3 _ 4 }   ! 
+!    |         1: %vblex AdvP    { 1 _ 2 }    
+
+VP -> "verb + adv"   %VP   AdvP   { 1 _ 2 }
+	 |                %VP   pcle   { 1 _ 2 }
+ 	 |                %VP   pcle AdvP   { 1 _ 2 _ 3 }
+    ;  
+
+
+
+VP ->         1: %VP PP    { 1 _ 2 }    
+    |         1: %VP PP AdvP    { 1 _ 2 _ 3 }    
+    |         1: %VP PP pcle    { 1 _ 2 _ 3 }    
+    |         1: %VP NP    { 1 _ 2 }
+    |         1: %VP NP AdvP   { 1 _ 2 _ 3 }    
+    |         1: %VP NP pcle   { 1 _ 2 _ 3 }    
+    |         3: %VP NP PP { 1 _ 2 _ 3}    
     | "V adj" 1: %leat@vblex AP {%1 _ 2}
+    | "V NP ine" 2: %[ill2ine_verbs]@vblex NP.*.ill {1 _ %2[case=ine] } ! fungerer ikke
+    | "V NP ill" 2: %[acc2ill_verbs]@vblex NP.*.acc {1 _ %2[case=ill] } ! fungerer ikke
+!   | "V NP ine" 2: %vblex NP.*.ill {1 _ %2[case=(if (1.lem in_caseless ill2ine_verbs) ine)]}
     ;
 
 VP -> vblex cnjcoo %vblex { 1 _ 2 _ 3 } 
      ;
 
 
-VP -> %V.tv NP
-      {
-        1
-        _ 2[case=(if (2.semtag = sem_food and 2.case = loc) ela
-                else 2.case)]
-      } ;
 
-VP -> NP %V.tv 
-      {
-        1[case=(if (1.semtag = sem_food and 1.case = loc) ela
-                else 1.case)]
-        _ 2
-      } ;
+!VP -> %V.tv NP
+!      {
+!        1
+!        _ 2[case=(if (2.semtag = sem_food and 2.case = loc) ela
+!                else 2.case)]
+!      } ;
+!
+!VP -> NP %V.tv 
+!      {
+!        1[case=(if (1.semtag = sem_food and 1.case = loc) ela
+!                else 1.case)]
+!        _ 2
+!      } ;
+!
+!      
+!VP -> NP %V.tv { 1 _ 2 } ;
+!
+!VP -> AdvP %VP { 1 _ %2 } ;
+!VP -> %VP AdvP { %1 _ 2 } ;
+!
+!
+!!echo 'boratgo? borat go láibbi? láibbi go borat? > båråk? lájbev båråk? lájbev båråk?
+!V: _.trans.pcle ;
+!!V -> %vblex { 1 } ;
+!V -> %V go@pcle.qst [$qst=qst] { %1 } ;
+!
+!VP -> NP go@pcle.qst %V.tv { 1 _ 3[qst=qst] } ;
+!
+!
+!
+!NegP: _ ;
+!NegP -> ii@vblex.iv.neg VP.*.conneg
+!         { 1[tense=2.tense,mood=2.mood] _ 2[tense="",mood=""] } ; 
 
-      
-VP -> NP %V.tv { 1 _ 2 } ;
-
-VP -> AdvP %VP { 1 _ %2 } ;
-VP -> %VP AdvP { %1 _ 2 } ;
+C -> cnjcoo {1} 
+   | cnjsub {1}
+   ;
 
 
-!echo 'boratgo? borat go láibbi? láibbi go borat? > båråk? lájbev båråk? lájbev båråk?
-V: _.trans.pcle ;
-!V -> %vblex { 1 } ;
-V -> %V go@pcle.qst [$qst=qst] { %1 } ;
-
-VP -> NP go@pcle.qst %V.tv { 1 _ 3[qst=qst] } ;
-
-
-
-NegP: _ ;
-NegP -> ii@vblex.iv.neg VP.*.conneg
-         { 1[tense=2.tense,mood=2.mood] _ 2[tense="",mood=""] } ; 
-
-CC -> "cnjcoo" %cnjcoo { 1 } ;
-
-
-S -> "NP VP" NP %VP { 1 _ 2[number=1.number] } 
-    | "NP VP pcle" NP %VP pcle { 1 _ 2[number=1.number] _ 3 } 
-    | "NP VP NP" NP %VP NP { 1 _ 2[number=1.number] _ 3 } 
-    | "NP VP pcle NP" NP %VP pcle NP { 1 _ 2[number=1.number] _ 3 _ 4 } 
+S -> "NP VP" NP %VP { 1 _ 2 } 
+    | "NP VP pcle" NP %VP pcle { 1 _ 2 _ 3 } 
+    | "NP VP NP" NP %VP NP { 1 _ 2 _ 3 } 
+    | "NP VP pcle NP" NP %VP pcle NP { 1 _ 2 _ 3 _ 4 } 
+    | AdvP NP VP { 1 _ 2 _ 3  }
+    | AdvP VP NP { 1 _ 2 _ 3  }
+    | NP pcle VP { 1 _ 2 _ 3 }
     ;
 
-S -> AdvP NP VP { 1 _ 2 _ 3  } ;
-S -> AdvP VP NP { 1 _ 2 _ 3  } ;
-
-S -> "S CC S" S CC %S { 1 _ 2 _ 3  } 
-     | CC S { 1 _ 2 } 
+S -> "S C S" S C %S { 1 _ 2 _ 3  } 
+     | C S { 1 _ 2 } 
     ;
 
 !S -> NP."@→SUBJ" VP |
