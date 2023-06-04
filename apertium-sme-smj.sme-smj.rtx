@@ -91,7 +91,7 @@ adj: (if (1.attr = attr) 1(adj_attr)
       else 1(adj_pred)) ;
       
 vblex_fin: _.trans.neg.mood.tense.person.number.qst ; 
-vblex_inf: _.trans.infin ;
+vblex_inf: _.trans.mood.tense.infin ;
 vblex: (if (1.infin = "") 1(vblex_fin)
         else 1(vblex_inf)) ;
 
@@ -217,12 +217,15 @@ PP -> "NP post" 1: NP %post { 1 _ 2 }
      ; !
 
 
+
 VP -> "enkeltverb"      %vblex                    { 1 } 
-    | "ikke"  2:   ii@vblex.iv.neg %vblex.*.conneg  { 1 _ 2 } 
-    | "ikke"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1 _ 2 _ 3} 
-    |         1: vblex %vblex    { 1  _ 2 }   ! hvorfor fungerer det ikke med vblex_inf? 
+    | "ikke conneg"  2:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ 2[tense=(if (2.lem = liehket) 2.tense else "")] } 
+    | "ikke conneg vblex"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense,mood=2.mood] _ 2 _ 3} 
+    | "vblex vblex"     1: vblex %vblex    { 1  _ 2 }   ! hvorfor fungerer det ikke med vblex_inf? 
+    | "ikke NP conneg"  2:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense,mood=3.mood] _ 2 _ 3 } 
+    | "ikke AdvP conneg"  2:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense,mood=3.mood] _ 2 _ 3 } 
     ;
-    
+
 
 VP -> "verb + adv"   %VP   AdvP   { 1 _ 2 }
 	 |                %VP   pcle   { 1 _ 2 }
@@ -279,9 +282,6 @@ VP -> vblex cnjcoo %vblex { 1 _ 2 _ 3 }
 !
 !
 !
-!NegP: _ ;
-!NegP -> ii@vblex.iv.neg VP.*.conneg
-!         { 1[tense=2.tense,mood=2.mood] _ 2[tense="",mood=""] } ; 
 
 C -> cnjcoo {1} 
    | cnjsub {1}
