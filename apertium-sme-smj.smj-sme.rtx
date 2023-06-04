@@ -81,8 +81,7 @@ person_number > poss : "p1.sg" px1sg, "p1.du" px1du, "p1.pl" px1pl,
 ! this applies if you write poss=1.person_number or 1.person_number>poss
 ! "" because these are pairs instead of single tags
 
-case > case : ine loc ; !hjelp, hvordan får jeg ela hit også?
-case > case : ela loc ; !hjelp, hvordan får jeg ela hit også?
+case > case : ine loc , ela loc ;
 
 
 !!!!!!!!!!!!!!!
@@ -106,8 +105,8 @@ NP -> %NP cnjcoo NP { %1 _ 2 _ 3[case=$case] } ;
 NP -> %num n {1 _ 2} ;
 !NP -> %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat Brukt for sme-smj
 
-NP -> %prn.ref %n { 1 _ 2} ; !ietjam viellja
-NP -> %prn.dem %n { 1 _ 2} ; !dav vielja
+NP -> prn.ref %n { 1 _ 2} ; !ietjam viellja
+NP -> prn.dem %n { 1 _ 2} ; !dav vielja
 
 NP -> "attr adj" adj.attr %NP { 1 _ %2[poss=$poss] } ;
 
@@ -136,9 +135,9 @@ NP -> prn.pers.[p1_or_p2].*.gen %NP
 
 NP -> %num jagák@adj { 1[case=nom] _ jahki@n.gen _ 2[lem=boaris] } ; !feil, hva gjør jeg?
 
-PP -> %n %post {1 _ 2} ; !muora lunna
-
-PP -> %NP %post {1 _ 2} ; !
+PP -> n  %post {1 _ 2}  !muora lunna
+    | NP %post {1 _ 2} 
+    ; 
 
 
 
