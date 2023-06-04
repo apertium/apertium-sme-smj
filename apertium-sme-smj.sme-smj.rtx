@@ -142,7 +142,7 @@ acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
 
-dadjat_verbs = "almodit" "ballat" "doajvvots" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gájbbedit" "gielestit" "javllat" "jáhkket" "låhkåt" "merustallat" "miejnnit" "mierredit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet" "vuornnot" "vuosedit" ;
+dadjat_verbs = "almodit" "ballat" "doajvvot" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gájbbedit" "gielestit" "javllat" "jáhkket" "låhkåt" "merustallat" "miejnnit" "mierredit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet" "vuornnot" "vuosedit" ;
 
 passshortverbs = "vuojnnet" ;
 
@@ -159,7 +159,7 @@ AdvP -> %adv { 1 }
       ;
 
 
-NP -> %n { 1[poss=$poss] } ;
+NP -> %n { %1 } ;
 NP -> %n { %1[case=(if (1.case = loc and (1.function = "@←ADVL-ine" or 1.function = "@ADVL-ine→")) ine
                     if (1.case = loc and (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→")) ela
                     else 1.case)] } ; !gjør loc til ela og ine etter funksjonstaggene fra cg
@@ -176,8 +176,7 @@ NP -> prn.dem %n { 1 _ 2} ; !dav vielja
 
 !PRN -> prn.prn_type { 1 } ;
 
-NP -> "n" %n { 1[poss=$poss] } 
-    | "adj NP" adj.attr  %NP { 1 _ %2[poss=$poss] }
+NP ->  "adj NP" adj.attr  %NP { 1 _ %2[poss=$poss] }
     | "buorre NP" buorre@adj  %NP { 1 _ %2[poss=$poss] }
     | "adj adj NP" adj.attr adj.attr %NP { 1 _ 2 _ %3[poss=$poss] } 
     | "prn.gen NP" prn.*.gen  %NP { 1 _ %2[poss=$poss] }
@@ -224,9 +223,6 @@ VP -> "enkeltverb"      %vblex                    { 1 }
     |         1: vblex %vblex    { 1  _ 2 }   ! hvorfor fungerer det ikke med vblex_inf? 
     ;
     
-!    |         1: vblex %vblex NP   { 1  _ 2 _ 3 }   ! 
-!    |         1: vblex %vblex NP NP  { 1  _ 2 _ 3 _ 4 }   ! 
-!    |         1: %vblex AdvP    { 1 _ 2 }    
 
 VP -> "verb + adv"   %VP   AdvP   { 1 _ 2 }
 	 |                %VP   pcle   { 1 _ 2 }
@@ -243,8 +239,8 @@ VP ->         1: %VP PP    { 1 _ 2 }
     |         1: %VP NP pcle   { 1 _ 2 _ 3 }    
     |         3: %VP NP PP { 1 _ 2 _ 3}    
     | "V adj" 1: %leat@vblex AP {%1 _ 2}
-    | "V NP ine" 2: %[ill2ine_verbs]@vblex NP.*.ill {1 _ %2[case=ine] } ! fungerer ikke
-    | "V NP ill" 2: %[acc2ill_verbs]@vblex NP.*.acc {1 _ %2[case=ill] } ! fungerer ikke
+    | "V NP ine" 2: %[ill2ine_verbs]@vblex NP.*.ill {1 _ %2[case=ine] } ! Mun báhcen gávpogii > stadan
+    | "V NP ill" 2: %[acc2ill_verbs]@vblex NP.*.acc {1 _ %2[case=ill] } ! 
 !   | "V NP ine" 2: %vblex NP.*.ill {1 _ %2[case=(if (1.lem in_caseless ill2ine_verbs) ine)]}
     ;
 
