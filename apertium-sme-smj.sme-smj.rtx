@@ -58,6 +58,7 @@ A: _ ;
 AP: _ ;
 PP: _ ;
 C: _ ;
+PCLE: _ ;
 
 cnjcoo: _ ;
 cnjsub: _ ;
@@ -67,7 +68,7 @@ post: _ ;
 pr: _ ;
 adpos: _ ;
 qst: _ ;
-pcle : _ ;
+pcle : _.qst ;
 adv: _ ;
 num: _.number.case ;
 
@@ -219,11 +220,11 @@ PP -> "NP post" 1: NP %post { 1 _ 2 }
 
 
 VP -> "enkeltverb"      %vblex                    { 1 } 
-    | "ikke conneg"  2:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ 2[tense=(if (2.lem = liehket) 2.tense else "")] } 
-    | "ikke conneg vblex"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense,mood=2.mood] _ 2 _ 3} 
+    | "ikke conneg"  2:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] } 
+    | "ikke conneg vblex"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense] _ 2[tense=""] _ 3} 
     | "vblex vblex"     1: vblex %vblex    { 1  _ 2 }   ! hvorfor fungerer det ikke med vblex_inf? 
-    | "ikke NP conneg"  2:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense,mood=3.mood] _ 2 _ 3 } 
-    | "ikke AdvP conneg"  2:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense,mood=3.mood] _ 2 _ 3 } 
+    | "ikke NP conneg"  2:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ 3[tense=""] } 
+    | "ikke AdvP conneg"  2:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ 3[tense=""] } 
     ;
 
 
@@ -283,23 +284,25 @@ VP -> vblex cnjcoo %vblex { 1 _ 2 _ 3 }
 !
 !
 
-C -> cnjcoo {1} 
-   | cnjsub {1}
+C -> %cnjcoo {1} 
+   | %cnjsub {1}
    ;
 
+PCLE -> %pcle {1} ;
 
-S -> "NP VP" NP %VP { 1 _ 2 } 
-    | "NP VP pcle" NP %VP pcle { 1 _ 2 _ 3 } 
-    | "NP VP NP" NP %VP NP { 1 _ 2 _ 3 } 
-    | "NP VP pcle NP" NP %VP pcle NP { 1 _ 2 _ 3 _ 4 } 
-    | AdvP NP VP { 1 _ 2 _ 3  }
-    | AdvP VP NP { 1 _ 2 _ 3  }
-    | NP pcle VP { 1 _ 2 _ 3 }
-    ;
 
-S -> "S C S" S C %S { 1 _ 2 _ 3  } 
-     | C S { 1 _ 2 } 
-    ;
+!S -> "NP VP" NP %VP { 1 _ 2 } 
+!    | "NP VP pcle" NP %VP pcle { 1 _ 2 _ 3 } 
+!    | "NP VP NP" NP %VP NP { 1 _ 2 _ 3 } 
+!    | "NP VP pcle NP" NP %VP pcle NP { 1 _ 2 _ 3 _ 4 } 
+!    | AdvP NP VP { 1 _ 2 _ 3  }
+!    | AdvP VP NP { 1 _ 2 _ 3  }
+!    | NP pcle VP { 1 _ 2 _ 3 }
+!    ;
+!
+!S -> "S C S" S C %S { 1 _ 2 _ 3  } 
+!     | C S { 1 _ 2 } 
+!    ;
 
 !S -> NP."@→SUBJ" VP |
 !     VP NP."@←SUBJ" ;
