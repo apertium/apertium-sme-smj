@@ -16,6 +16,9 @@ person = p1 p2 p3 ;
 attr = attr ;
 comp = der_comp der_sup ;
 infin = inf conneg prfprc ger "actio.ess" "actio.gen" "actio.loc" ;
+actiocase = "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
+actioloc = "actio.loc" ;
+actioela = "actio.ela" ;
 neg = neg ;
 qst = qst ;
 trans = tv iv ;
@@ -35,7 +38,9 @@ person_number = "p1.sg" "p1.du" "p1.pl"
 deriv = der_dimin der_alla der_halla der_aadv der_caus der_t der_l der_ahtti der_ahtte der_vuota der_d der_h der_laakan der_laagasj der_lágan der_lágán der_muš der_mus der_nammasaš der_nammasasj der_saš der_sasj der_lasj der_dibme der_geahtes der_ahtes der_car der_nomact der_inchl der_vuota ;
 
 deriv2 = der_dimin der_alla der_halla ;
-cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_hyph cmp_splitr cmp_oblhyph cmp_cit ;
+cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_hyph cmp_oblhyph cmp_cit ;
+onlycmp = cmp ;
+cmpsplitr = cmp_splitr ;
 
 semhum = sem_group sem_hum sem_hum-abstr sem_hum-prof sem_act_hum sem_ani_body-abstr_hum sem_ani_build_hum_txt sem_ani_group_hum sem_ani_hum sem_ani_hum_plc sem_ani_hum_time sem_aniprod_hum sem_body_group_hum sem_body_group_hum_time sem_body_hum sem_cat_group_hum sem_cat_group_hum_plc sem_clth_hum sem_domain_hum sem_edu_group_hum sem_edu_hum sem_event_hum sem_feat-psych_hum sem_fruit_hum sem_geom_hum_plc sem_group_hum sem_group_hum_org sem_group_hum_plc sem_group_hum_plc-abstr sem_group_hum_prod-vis sem_group_hum_time sem_hum_lang sem_hum_lang_plc sem_hum_lang_time sem_hum_mat_tool sem_hum_obj sem_hum_org sem_hum_part sem_hum_plant sem_hum_plc sem_hum_sign sem_hum_tool sem_hum_tool-it sem_hum_veh sem_hum_wthr ;
 
@@ -63,7 +68,7 @@ PCLE: _ ;
 cnjcoo: _ ;
 cnjsub: _ ;
 
-n: _.number.case.poss ;
+n: _.number.case.poss.cmp.onlycmp ;
 post: _ ;
 pr: _ ;
 adpos: _ ;
@@ -107,6 +112,8 @@ person_number > poss : "p1.sg" px1sg, "p1.du" px1du, "p1.pl" px1pl,
 ! a rule for converting person+number tag pairs to possessive tags
 ! this applies if you write poss=1.person_number or 1.person_number>poss
 ! "" because these are pairs instead of single tags
+
+actioloc > actioela : "actio.loc" "actio.ela" ;
 
 case > case : loc ine ;
 
@@ -159,8 +166,9 @@ AdvP -> %adv { 1 }
       | adv %adv { 1 _ 2 }
       ;
 
-
-NP -> %n { %1 } ;
+NP -> 1: %n { %1 } 
+      | 2: n.*.cmp  %n { 1 + %2 }  ! fungerer her, men ikke videre for NP i andre regler
+      ;
 NP -> %n { %1[case=(if (1.case = loc and (1.function = "@←ADVL-ine" or 1.function = "@ADVL-ine→")) ine
                     if (1.case = loc and (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→")) ela
                     else 1.case)] } ; !gjør loc til ela og ine etter funksjonstaggene fra cg
@@ -169,11 +177,13 @@ NP -> %n { %1[case=(if (1.case = loc and (1.function = "@←ADVL-ine" or 1.funct
 !NP -> "np" %np { 1 } 
 !     | "prn" %prn { 1 } ; 
 
-NP -> %num n {1 _ 2} ;
-NP -> %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat
+NP -> %num n {1 _ 2} 
+ | %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat
 
-NP -> prn.ref %n { 1 _ 2} ; !ietjam viellja
-NP -> prn.dem %n { 1 _ 2} ; !dav vielja
+NP -> prn.ref %n { 1 _ 2}  !ietjam viellja
+    | prn.dem %n { 1 _ 2} ; !dav vielja
+
+!NP -> 
 
 !PRN -> prn.prn_type { 1 } ;
 
@@ -218,11 +228,11 @@ PP -> "NP post" 1: NP %post { 1 _ 2 }
      ; !
 
 
-
-VP -> "enkeltverb"      %vblex                    { 1 } 
+VP -> "enkeltverb" 1:     %vblex                    { 1 } 
     | "ikke conneg"  2:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] } 
     | "ikke conneg vblex"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense] _ 2[tense=""] _ 3} 
     | "vblex vblex"     1: vblex %vblex    { 1  _ 2 }   ! hvorfor fungerer det ikke med vblex_inf? 
+    | "actio.loc vblex" 2: vblex %vblex.*.actioloc { 1 _ %2[actiocase=2.actioloc] } ! fungerer ikke
     | "ikke NP conneg"  2:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ 3[tense=""] } 
     | "ikke AdvP conneg"  2:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ 3[tense=""] } 
     ;
@@ -235,13 +245,13 @@ VP -> "verb + adv"   %VP   AdvP   { 1 _ 2 }
 
 
 
-VP ->         1: %VP PP    { 1 _ 2 }    
-    |         1: %VP PP AdvP    { 1 _ 2 _ 3 }    
-    |         1: %VP PP pcle    { 1 _ 2 _ 3 }    
-    |         1: %VP NP    { 1 _ 2 }
-    |         1: %VP NP AdvP   { 1 _ 2 _ 3 }    
-    |         1: %VP NP pcle   { 1 _ 2 _ 3 }    
-    |         3: %VP NP PP { 1 _ 2 _ 3}    
+VP ->         1: %VP PP    { %1 _ 2 }    
+    |         1: %VP PP AdvP    { %1 _ 2 _ 3 }    
+    |         1: %VP PP pcle    { %1 _ 2 _ 3 }    
+    |         1: %VP NP    { %1 _ 2 }
+    |         1: %VP NP AdvP   { %1 _ 2 _ 3 }    
+    |         1: %VP NP pcle   { %1 _ 2 _ 3 }    
+    |         3: %VP NP PP { %1 _ 2 _ 3}    
     | "V adj" 1: %leat@vblex AP {%1 _ 2}
     | "V NP ine" 2: %[ill2ine_verbs]@vblex NP.*.ill {1 _ %2[case=ine] } ! Mun báhcen gávpogii > stadan
     | "V NP ill" 2: %[acc2ill_verbs]@vblex NP.*.acc {1 _ %2[case=ill] } ! 
