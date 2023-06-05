@@ -154,7 +154,7 @@ acc2ela_verbs = "hieredit" ;
 acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
-auxverbs = "máhttet" ;
+auxverbs = "máhttet" "sáhttit" "áigut" ;
 
 dadjat_verbs = "almodit" "ballat" "doajvvot" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gájbbedit" "gielestit" "javllat" "jáhkket" "låhkåt" "merustallat" "miejnnit" "mierredit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet" "vuornnot" "vuosedit" ;
 
@@ -242,7 +242,8 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.le
     | "ikke AdvP conneg"  3:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
 
-VP -> "condverb" 2:     %vblex.*.cond { %1[tense=""] } !%[auxverbs]@vblex*.cond fungerer ikke
+VP -> "condauxverb" 3:     %[auxverbs]@vblex.*.cond { %1[tense=""] } ! sáhtášin > máhtáluluv
+    | "condverb" 2:     %vblex.*.cond { liehket@vblex.iv.cond.[1.person_number] _ %1[tense="",mood="",infin=inf] } ! boađášin > luluv boahtet
     | "enkeltverb" 1:     %vblex                    { %1  } 
     | "vblex vblex"     1: VP %vblex.*.inf   { 1  _ %2 }   ! 
     | "vblex AdvP vblex"     1: vblex AdvP %vblex    { 1 _ 2 _ %3 }   ! 
