@@ -232,6 +232,9 @@ VP -> "enkeltverb" 1:     %vblex                    { 1 }
     | "ikke conneg"  2:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] } 
     | "ikke conneg vblex"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense] _ 2[tense=""] _ 3} 
     | "vblex vblex"     1: vblex %vblex    { 1  _ 2 }   ! hvorfor fungerer det ikke med vblex_inf? 
+    | "vblex AdvP vblex"     1: vblex AdvP %vblex    { 1 _ 2 _ 3 }   ! 
+    | "vblex pcle vblex"     1: vblex pcle %vblex    { 1 _ 2 _ 3 }   ! 
+    | "vblex NP vblex"     1: vblex NP %vblex    { 1 _ 2 _ 3 }   ! 
     | "actio.loc vblex" 2: vblex %vblex.*.actioloc { 1 _ %2[actiocase=2.actioloc] } ! fungerer ikke
     | "ikke NP conneg"  2:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ 3[tense=""] } 
     | "ikke AdvP conneg"  2:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ 3[tense=""] } 
