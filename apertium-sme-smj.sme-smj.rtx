@@ -14,8 +14,11 @@ case = acc nom gen loc ine ela com ess ill ;
 poss = ("" "") px1sg px1du px1pl px2sg px2du px2pl px3sg px3du px3pl ;
 person = p1 p2 p3 ;
 attr = attr ;
+inf = inf ;
+foc = foc_neg-ge ;
 comp = der_comp der_sup ;
-infin = inf conneg prfprc ger "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
+infin = conneg inf prfprc ger "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
+conneg = conneg ;
 actiocase = "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
 actioloc = "actio.loc" ;
 actioela = "actio.ela" ;
@@ -53,9 +56,10 @@ semtag = [semtime] [semhum] [semother] ;
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
-VP: _.trans.mood.tense.infin ; !? 
-NP: _.semtag.number.case.poss.cmp.onlycmp ; 
-PRN: _.prn_type.person.number.case ; 
+VP: _.trans.mood.tense.infin ; !?
+NegVP:  _.trans.neg.mood.tense.conneg ;
+NP: _.semtag.number.case.poss.cmp.onlycmp.foc ; 
+PRN: _.prn_type.person.number.case.foc ; 
 PP: _ ;
 S: _ ; !?
 AdvP: _ ;
@@ -87,7 +91,7 @@ prn_pers: _.<pers>.person.number.case ;
 prn_ref: _.<ref>.number.case.poss ;
 
 
-prn_other: _.prn_type_other.number.case ;
+prn_other: _.prn_type_other.number.case.foc ;
 prn: (if (1.prn_type = pers) 1(prn_pers)
       elif (1.prn_type = ref) 1(prn_ref)
       else 1(prn_other)) ;
@@ -101,7 +105,6 @@ vblex_fin: _.trans.neg.mood.tense.person.number.qst ;
 vblex_inf: _.trans.mood.tense.infin ;
 vblex: (if (1.infin = "") 1(vblex_fin)
         else 1(vblex_inf)) ;
-
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
@@ -151,6 +154,7 @@ acc2ela_verbs = "hieredit" ;
 acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
+auxverbs = "máhttet" ;
 
 dadjat_verbs = "almodit" "ballat" "doajvvot" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gájbbedit" "gielestit" "javllat" "jáhkket" "låhkåt" "merustallat" "miejnnit" "mierredit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet" "vuornnot" "vuosedit" ;
 
@@ -196,7 +200,7 @@ NP ->  "adj NP" adj.attr  %NP { 1 _ %2[poss=$poss] }
     | "adj adj NP" adj.attr adj.attr %NP { 1 _ 2 _ %3[poss=$poss] } 
     | "prn.gen NP" prn.*.gen  %NP { 1 _ %2[poss=$poss] }
     | "np" %np { 1 } 
-    | "prn" %prn { 1 } 
+    | "prn" %prn { %1 } 
     ;
 
 NP -> NP cnjcoo %NP { 1 _ 2 _ %3[case=$case] } ;
@@ -231,18 +235,20 @@ PP -> "NP post" 1: NP %post { 1 _ 2 }
       | "pre NP" 1: %pr NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge
      ; !
 
+NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] } 
+    | "ikke conneg vblex"  3:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense] _ 2[tense=""] _ 3} 
+    | "ikke NP conneg"  3:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
+    | "ikke NP conneg vblex"  3:  ii@vblex.iv.neg NP vblex.*.conneg %vblex { 1[tense=3.tense] _ 2 _ %3[mood=3.mood,tense=""] _ 4 } 
+    | "ikke AdvP conneg"  3:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
+    ;
 
-VP -> "condverb" 1:     %vblex.*.cond                    { %1[tense="",trans=""] } 
+VP -> "condverb" 2:     %vblex.*.cond { %1[tense=""] } !%[auxverbs]@vblex*.cond fungerer ikke
     | "enkeltverb" 1:     %vblex                    { %1  } 
-    | "ikke conneg"  2:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] } 
-    | "ikke conneg vblex"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense] _ 2[tense=""] _ 3} 
-    | "vblex vblex"     1: VP %VP   { 1  _ %2 }   ! 
+    | "vblex vblex"     1: VP %vblex.*.inf   { 1  _ %2 }   ! 
     | "vblex AdvP vblex"     1: vblex AdvP %vblex    { 1 _ 2 _ %3 }   ! 
     | "vblex pcle vblex"     1: vblex pcle %vblex    { 1 _ 2 _ %3 }   ! 
     | "vblex NP vblex"     1: vblex NP %vblex    { 1 _ 2 _ %3 }   ! 
     | "actio.loc vblex" 2: vblex %vblex.*.actio.loc { 1 _ %2[infin="actio.ela"] } ! fungerer ikke
-    | "ikke NP conneg"  2:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
-    | "ikke AdvP conneg"  2:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
 
 
@@ -253,10 +259,16 @@ VP -> "verb + adv"   %VP   AdvP   { 1 _ 2 }
 
 
 
-VP ->         1: %VP PP    { %1 _ 2 }    
+VP ->         1: %VP PP    { %1 _ 2 }  
+    |         2: %NegVP PP    { %1 _ 2 }   
+    |         2: %NegVP AdvP    { %1 _ 2 }   
+    |         2: %NegVP PP AdvP    { %1 _ 2 _ 3 }    
     |         1: %VP PP AdvP    { %1 _ 2 _ 3 }    
+    |         2: %NegVP PP pcle    { %1 _ 2 _ 3 }    
     |         1: %VP PP pcle    { %1 _ 2 _ 3 }    
+    |         2: %NegVP NP    { %1 _ 2 }
     |         1: %VP NP    { %1 _ 2 }
+    |         2: %NegVP NP AdvP   { %1 _ 2 _ 3 }    
     |         1: %VP NP AdvP   { %1 _ 2 _ 3 }    
     |         1: %VP NP pcle   { %1 _ 2 _ 3 }    
     |         3: %VP NP PP { %1 _ 2 _ 3}    
@@ -317,10 +329,10 @@ PCLE -> %pcle {1} ;
 !    | AdvP VP NP { 1 _ 2 _ 3  }
 !    | NP pcle VP { 1 _ 2 _ 3 }
 !    ;
-!
-!S -> "S C S" S C %S { 1 _ 2 _ 3  } 
-!     | C S { 1 _ 2 } 
-!    ;
+
+S -> "S C S" S C %S { 1 _ 2 _ 3  } 
+     | C S { 1 _ 2 } 
+    ;
 
 !S -> NP."@→SUBJ" VP |
 !     VP NP."@←SUBJ" ;
