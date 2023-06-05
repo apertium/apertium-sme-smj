@@ -15,7 +15,7 @@ poss = ("" "") px1sg px1du px1pl px2sg px2du px2pl px3sg px3du px3pl ;
 person = p1 p2 p3 ;
 attr = attr ;
 comp = der_comp der_sup ;
-infin = inf conneg prfprc ger "actio.ess" "actio.gen" "actio.loc" ;
+infin = inf conneg prfprc ger "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
 actiocase = "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
 actioloc = "actio.loc" ;
 actioela = "actio.ela" ;
@@ -53,7 +53,7 @@ semtag = [semtime] [semhum] [semother] ;
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
-VP: _.mood.tense.infin ; !? 
+VP: _.trans.mood.tense.infin ; !? 
 NP: _.semtag.number.case.poss.cmp.onlycmp ; 
 PRN: _.prn_type.person.number.case ; 
 PP: _ ;
@@ -114,10 +114,10 @@ person_number > poss : "p1.sg" px1sg, "p1.du" px1du, "p1.pl" px1pl,
 ! this applies if you write poss=1.person_number or 1.person_number>poss
 ! "" because these are pairs instead of single tags
 
-actiocase > actiocase : "actio.loc" "actio.ela" ;
+!actiocase > actiocase : "actio.loc" "actio.ela" ;
 
 case > case : loc ine ;
-mood > mood : "cond.pres" "cond" ;
+mood > mood : "cond.pres" cond ;
 
 !!!!!!!!!!!!!!!
 !! REDUCTION RULES
@@ -232,16 +232,17 @@ PP -> "NP post" 1: NP %post { 1 _ 2 }
      ; !
 
 
-VP -> "enkeltverb" 1:     %vblex                    { %1[cond=$cond] } 
+VP -> "condverb" 1:     %vblex.*.cond                    { %1[tense="",trans=""] } 
+    | "enkeltverb" 1:     %vblex                    { %1  } 
     | "ikke conneg"  2:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] } 
     | "ikke conneg vblex"  2:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense] _ 2[tense=""] _ 3} 
-    | "vblex vblex"     1: vblex %vblex    { 1  _ 2 }   ! hvorfor fungerer det ikke med vblex_inf? 
-    | "vblex AdvP vblex"     1: vblex AdvP %vblex    { 1 _ 2 _ 3 }   ! 
-    | "vblex pcle vblex"     1: vblex pcle %vblex    { 1 _ 2 _ 3 }   ! 
-    | "vblex NP vblex"     1: vblex NP %vblex    { 1 _ 2 _ 3 }   ! 
-    | "actio.loc vblex" 2: vblex %vblex.*.actio.loc { 1 _ %2[actiocase=$actiocase] } ! fungerer ikke
-    | "ikke NP conneg"  2:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ 3[tense=""] } 
-    | "ikke AdvP conneg"  2:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ 3[tense=""] } 
+    | "vblex vblex"     1: VP %VP   { 1  _ %2 }   ! 
+    | "vblex AdvP vblex"     1: vblex AdvP %vblex    { 1 _ 2 _ %3 }   ! 
+    | "vblex pcle vblex"     1: vblex pcle %vblex    { 1 _ 2 _ %3 }   ! 
+    | "vblex NP vblex"     1: vblex NP %vblex    { 1 _ 2 _ %3 }   ! 
+    | "actio.loc vblex" 2: vblex %vblex.*.actio.loc { 1 _ %2[infin="actio.ela"] } ! fungerer ikke
+    | "ikke NP conneg"  2:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
+    | "ikke AdvP conneg"  2:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
 
 
