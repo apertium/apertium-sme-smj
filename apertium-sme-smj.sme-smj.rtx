@@ -54,7 +54,7 @@ semtag = [semtime] [semhum] [semother] ;
 !!!!!!!!!!!!!!!
 
 VP: _.mood.tense.infin ; !? 
-NP: _.semtag.number.case.poss ; 
+NP: _.semtag.number.case.poss.cmp.onlycmp ; 
 PRN: _.prn_type.person.number.case ; 
 PP: _ ;
 S: _ ; !?
@@ -68,7 +68,8 @@ PCLE: _ ;
 cnjcoo: _ ;
 cnjsub: _ ;
 
-n: _.number.case.poss.cmp.onlycmp ;
+N: _.semtag.number.case.poss.cmp.onlycmp ; 
+n: _.semtag.number.case.poss.cmp.onlycmp ; 
 post: _ ;
 pr: _ ;
 adpos: _ ;
@@ -166,9 +167,11 @@ AdvP -> %adv { 1 }
       | adv %adv { 1 _ 2 }
       ;
 
-NP -> 1: %n { %1 } 
-      | 2: n.*.cmp  %n { 1 + %2 }  ! fungerer her, men ikke videre for NP i andre regler
-      ;
+N ->    1: %n { %1[semtag=""] }
+	  | 2: %n.*.cmp  N { %1[semtag="",number="",case=""] + 2[semtag=""] } ;
+
+NP ->  %N { %1 } ;
+
 NP -> %n { %1[case=(if (1.case = loc and (1.function = "@←ADVL-ine" or 1.function = "@ADVL-ine→")) ine
                     if (1.case = loc and (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→")) ela
                     else 1.case)] } ; !gjør loc til ela og ine etter funksjonstaggene fra cg
@@ -195,7 +198,7 @@ NP ->  "adj NP" adj.attr  %NP { 1 _ %2[poss=$poss] }
     | "prn" %prn { 1 } 
     ;
 
-NP -> %NP cnjcoo NP { %1 _ 2 _ 3[case=$case] } ;
+NP -> NP cnjcoo %NP { 1 _ 2 _ %3[case=$case] } ;
 
 
 p1_or_p2 = p1 p2 ;
