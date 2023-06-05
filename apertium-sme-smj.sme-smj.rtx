@@ -236,7 +236,7 @@ PP -> "NP post" 1: NP %post { 1 _ 2 }
      ; !
 
 NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] } 
-    | "ikke conneg vblex"  3:  ii@vblex.iv.neg vblex.*.conneg %vblex  { 1[tense=2.tense] _ 2[tense=""] _ 3} 
+    | "ikke conneg vblex"  3:  ii@vblex.iv.neg %vblex.*.conneg vblex  { 1[tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] _ 3} 
     | "ikke NP conneg"  3:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
     | "ikke NP conneg vblex"  3:  ii@vblex.iv.neg NP vblex.*.conneg %vblex { 1[tense=3.tense] _ 2 _ %3[mood=3.mood,tense=""] _ 4 } 
     | "ikke AdvP conneg"  3:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
@@ -245,7 +245,8 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.le
 VP -> "condauxverb" 3:     %[auxverbs]@vblex.*.cond { %1[tense=""] } ! sáhtášin > máhtáluluv
     | "condverb" 2:     %vblex.*.cond { liehket@vblex.iv.cond.[1.person_number] _ %1[tense="",mood="",infin=inf] } ! boađášin > luluv boahtet
     | "enkeltverb" 1:     %vblex                    { %1  } 
-    | "vblex vblex"     1: VP %vblex.*.inf   { 1  _ %2 }   ! 
+    | "leat vblex"     1: leat@vblex %vblex   { 1  _ %2 }   ! lean borran
+!    | "vblex vblex"     1: VP %vblex.*.inf   { 1  _ %2 }   ! sáhtán borrat
     | "vblex AdvP vblex"     1: vblex AdvP %vblex    { 1 _ 2 _ %3 }   ! 
     | "vblex pcle vblex"     1: vblex pcle %vblex    { 1 _ 2 _ %3 }   ! 
     | "vblex NP vblex"     1: vblex NP %vblex    { 1 _ 2 _ %3 }   ! 
