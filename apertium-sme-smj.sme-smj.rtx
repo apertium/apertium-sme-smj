@@ -2,7 +2,7 @@
 !!  ATTRIBUTE CATEGORIES
 !!!!!!!!!!!!!!!
 
-function = "@+FAUXV" "@\+FAUXV" "@\+FMAINV" "@-F←ADVL" "@-F←ADVL-ine" "@-F←ADVL-ela" "@-F←OBJ" "@-F←OPRED" "@-F←SUBJ" "@-FADVL→" "@-FAUXV" "@-FMAINV" "@-FOBJ→" "@-FSUBJ→" "@←ADVL" "@←ADVL-ela" "@←ADVL-ine" "@←OBJ" "@←OPRED" "@←PPRED" "@←SPRED" "@←SUBJ" "@→A" "@→ADVL" "@→CC" "@→N" "@→Num" "@→P" "@→Pron" "@A←" "@ADVL" "@ADVL←" "@ADVL→" "@ADVL-ela→" "@ADVL-ine→" "@ADVLcs-ela→" "@ADVLcs-ine→" "@ADVLqst-ela→" "@ADVLqst-ine→" "@ADVLhab→" "@←ADVLhab" "@←SUBJext" "@ADVL→CS" "@APP-ADVL←" "@APP-N←" "@APP-Pron←" "@CNP" "@COMP-CS←" "@CVP" "@HNOUN" "@INTERJ" "@N←" "@Num←" "@OBJ→" "@OPRED→" "@P←" "@PCLE" "@Pron←" "@SPRED←OBJ" "@SPRED→" "@SUBJ→" "@VOC" "@X"  ;
+function = "@+FAUXV" "@\+FAUXV" "@\+FMAINV" "@+FMAINV" "@-F←ADVL" "@-F←ADVL-ine" "@-F←ADVL-ela" "@-F←OBJ" "@-F←OPRED" "@-F←SUBJ" "@-FADVL→" "@-FAUXV" "@-FMAINV" "@-FOBJ→" "@-FSUBJ→" "@←ADVL" "@←ADVL-ela" "@←ADVL-ine" "@←OBJ" "@←OPRED" "@←PPRED" "@←SPRED" "@←SUBJ" "@→A" "@→ADVL" "@→CC" "@→N" "@→Num" "@→P" "@→Pron" "@A←" "@ADVL" "@ADVL←" "@ADVL→" "@ADVL-ela→" "@ADVL-ine→" "@ADVLcs-ela→" "@ADVLcs-ine→" "@ADVLqst-ela→" "@ADVLqst-ine→" "@ADVLhab→" "@←ADVLhab" "@←SUBJext" "@ADVL→CS" "@APP-ADVL←" "@APP-N←" "@APP-Pron←" "@CNP" "@COMP-CS←" "@CVP" "@HNOUN" "@INTERJ" "@N←" "@Num←" "@OBJ→" "@OPRED→" "@P←" "@PCLE" "@Pron←" "@SPRED←OBJ" "@SPRED→" "@SUBJ→" "@VOC" "@X"  ;
 gender = f m ;
 number = sg du pl ;
 prn_type_other = rel dem ind itg ;
@@ -57,6 +57,7 @@ semtag = [semtime] [semhum] [semother] ;
 !!!!!!!!!!!!!!!
 
 VP: _.trans.mood.tense.infin ; !?
+V: _.trans.mood.tense.infin ; !?
 NegVP:  _.trans.neg.mood.tense.conneg ;
 NP: _.semtag.number.case.poss.cmp.onlycmp.foc ; 
 PRN: _.prn_type.person.number.case.foc ; 
@@ -154,7 +155,7 @@ acc2ela_verbs = "hieredit" ;
 acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
-auxverbs = "máhttet" "sáhttit" "áigut" ;
+auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" ;
 
 dadjat_verbs = "almodit" "ballat" "doajvvot" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gájbbedit" "gielestit" "javllat" "jáhkket" "låhkåt" "merustallat" "miejnnit" "mierredit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet" "vuornnot" "vuosedit" ;
 
@@ -177,7 +178,7 @@ N ->    1: %n { %1[semtag=""] }
 
 NP ->  %N { %1 } ;
 
-NP -> %n { %1[case=(if (1.case = loc and (1.function = "@←ADVL-ine" or 1.function = "@ADVL-ine→")) ine
+NP -> 3: %N.*.loc { %1[case=(if (1.case = loc and (1.function = "@←ADVL-ine" or 1.function = "@ADVL-ine→")) ine
                     if (1.case = loc and (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→")) ela
                     else 1.case)] } ; !gjør loc til ela og ine etter funksjonstaggene fra cg
 
@@ -242,15 +243,17 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.le
     | "ikke AdvP conneg"  3:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
 
-VP -> "condauxverb" 3:     %[auxverbs]@vblex.*.cond { %1[tense=""] } ! sáhtášin > máhtáluluv
+V -> "condauxverb" 3:     %[auxverbs]@vblex.*.cond { %1[tense=""] } ! sáhtášin > máhtáluluv
     | "condverb" 2:     %vblex.*.cond { liehket@vblex.iv.cond.[1.person_number] _ %1[tense="",mood="",infin=inf] } ! boađášin > luluv boahtet
-    | "enkeltverb" 1:     %vblex                    { %1  } 
-    | "leat vblex"     1: leat@vblex %vblex   { 1  _ %2 }   ! lean borran
-!    | "vblex vblex"     1: VP %vblex.*.inf   { 1  _ %2 }   ! sáhtán borrat
-    | "vblex AdvP vblex"     1: vblex AdvP %vblex    { 1 _ 2 _ %3 }   ! 
-    | "vblex pcle vblex"     1: vblex pcle %vblex    { 1 _ 2 _ %3 }   ! 
-    | "vblex NP vblex"     1: vblex NP %vblex    { 1 _ 2 _ %3 }   ! 
-    | "actio.loc vblex" 2: vblex %vblex.*.actio.loc { 1 _ %2[infin="actio.ela"] } ! fungerer ikke
+     |   "enkeltverb" 1:     %vblex                    { %1  } 
+     ;
+
+VP ->  "leat vblex"     1: leat@V %V   { 1  _ %2 }   ! lean borran
+    | "vblex vblex"     1: V %V.*.inf   { 1  _ %2 }   ! sáhtán borrat
+    | "vblex AdvP vblex"     1: V AdvP %V    { 1 _ 2 _ %3 }   ! 
+    | "vblex pcle vblex"     1: V pcle %V    { 1 _ 2 _ %3 }   ! 
+    | "vblex NP vblex"     1: V NP %V    { 1 _ 2 _ %3 }   ! 
+    | "actio.loc vblex" 2: V %vblex.*.actio.loc { 1 _ %2[infin="actio.ela"] } ! fungerer ikke
     ;
 
 
