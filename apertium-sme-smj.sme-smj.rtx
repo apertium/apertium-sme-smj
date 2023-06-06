@@ -97,11 +97,11 @@ prn: (if (1.prn_type = pers) 1(prn_pers)
       elif (1.prn_type = ref) 1(prn_ref)
       else 1(prn_other)) ;
 
-adj_attr: _.attr ;
-adj_pred: _.comp.number.case ;
+adj_attr: _.semtag.attr.cmp.onlycmp ;
+adj_pred: _.semtag.comp.number.case.cmp.onlycmp ;
 adj: (if (1.attr = attr) 1(adj_attr)
       else 1(adj_pred)) ;
-      
+     
 vblex_fin: _.trans.neg.mood.tense.person.number.qst ; 
 vblex_inf: _.trans.mood.tense.infin ;
 vblex: (if (1.infin = "") 1(vblex_fin)
@@ -174,7 +174,8 @@ AdvP -> %adv { 1 }
       ;
 
 N ->    1: %n { %1[semtag=""] }
-	  | 2: %n.*.cmp  N { %1[semtag=""] + 2[semtag=""] } ;
+	  | 2: %n.*.cmp  N { %1[semtag=""] + 2[semtag=""] } 
+	  | 2: %adj.*.cmp  N { %1[semtag=""] + 2[semtag=""] } ;
 
 NP ->  %N { %1 } ;
 
