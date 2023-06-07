@@ -52,6 +52,17 @@ dev/nouns-sme-smj/$(PREFIX1).rlx.bin: dev/nouns-sme-smj/$(BASENAME).$(PREFIX1).r
 	cg-comp $< $@
 
 
+# Fast build of sme→smj – nearly everything but dictionaries:
+r: modes/$(PREFIX1).mode  \
+   $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).t4x.bin $(PREFIX1).t5x.bin \
+   $(PREFIX1).autolex.bin \
+   $(PREFIX1).autoseq.bin \
+   $(PREFIX2).revautoseq.bin \
+   $(PREFIX1).rtx.bin
+
+# there is no $(LANG2).autoseq.bin yet
+
+
 ###############################################################################
 ## Monolingual transducers
 ###############################################################################
