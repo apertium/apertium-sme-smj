@@ -7,10 +7,10 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc" debug-suff="disam-a">
+      <program name="cg-proc" debug-suff="disam">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
-      <program name="cg-proc -1 -n -w" debug-suff="syntax-a">
+      <program name="cg-proc -1 -n -w" debug-suff="syntax">
         <file name="sme-smj.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -404,10 +404,10 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="smj-sme.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc -w" debug-suff="syntax">
         <file name="smj-sme.mor.rlx.bin"/>
       </program>
-      <program name="cg-proc -n -1 -w">
+      <program name="cg-proc -n -1 -w" debug-suff="syntax">
         <file name="smj-sme.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -516,14 +516,14 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc" debug-suff="disam-a">
+      <program name="cg-proc" debug-suff="disam">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
-      <program name="cg-proc -1 -n -w" debug-suff="syntax-a">
+      <program name="cg-proc -1 -n -w" debug-suff="syntax">
         <file name="sme-smj.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
-      <program name="lsx-proc">
+      <program name="lsx-proc" debug-suff="autoseq">
         <file name="sme-smj.autoseq.bin"/>
       </program>
       <program name="lt-proc -b">
@@ -535,7 +535,7 @@
       <program name="rtx-proc">
         <file name="sme-smj.rtx.bin"/>
       </program>
-      <program name="lsx-proc">
+      <program name="lsx-proc" debug-suff="revautoseq">
         <file name="smj-sme.revautoseq.bin"/>
       </program>
       <program name="hfst-proc --weight-classes 1 $1">
