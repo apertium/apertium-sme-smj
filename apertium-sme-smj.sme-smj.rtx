@@ -15,7 +15,7 @@ poss = ("" "") px1sg px1du px1pl px2sg px2du px2pl px3sg px3du px3pl ;
 person = p1 p2 p3 ;
 attr = attr ;
 inf = inf ;
-foc = foc_neg-ge foc_pos-ge ;
+foc = foc_neg-ge foc_pos-ge foc_neg-k foc_pos-k ;
 comp = der_comp der_sup ;
 infin = conneg inf prfprc ger "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
 conneg = conneg ;
@@ -26,7 +26,7 @@ neg = neg ;
 qst = qst ;
 cltl = cltl ;
 trans = tv iv ;
-mood = indic imp cond pot ;
+mood = indic imp cond pot "pot.pres"  "cond.pres" ;
 tense = pres pret ;
 a_nomag = nomag der_nomag ;
 a_actio = actio ;
@@ -121,7 +121,8 @@ person_number > poss : "p1.sg" px1sg, "p1.du" px1du, "p1.pl" px1pl,
 !actiocase > actiocase : "actio.loc" "actio.ela" ;
 
 case > case : loc ine ;
-mood > mood : "cond.pres" cond ;
+mood > mood : "cond.pres" cond, "pot.pres" pot  ;
+foc > foc : foc_pos-ge foc_pos-k, foc_neg-ge foc_neg-k ; !from sme to smj type
 
 !!!!!!!!!!!!!!!
 !! REDUCTION RULES
