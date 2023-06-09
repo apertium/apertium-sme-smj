@@ -16,8 +16,8 @@ person = p1 p2 p3 ;
 attr = attr ;
 inf = inf ;
 foc = foc_neg-ge foc_pos-ge foc_neg-k foc_pos-k ;
-comp = der_comp der_sup ;
-infin = conneg inf prfprc ger "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
+comp = der_comp der_superl ;
+infin = conneg supn inf prfprc ger "actio.ess" "actio.gen" "actio.loc" "actio.ela" "actio.ess" ;
 conneg = conneg ;
 actiocase = "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
 actioloc = "actio.loc" ;
@@ -92,15 +92,17 @@ np: (if (1.np_type = ant) 1(np_ant)
 prn_pers: _.<pers>.person.number.case ;
 prn_ref: _.<ref>.number.case.poss ;
 
-
+noun_to_vblex_infin: <vblex>.trans.mood.tense.infin ;
 prn_other: _.prn_type_other.number.case.attr.foc ;
 prn: (if (1.prn_type = pers) 1(prn_pers)
       elif (1.prn_type = ref) 1(prn_ref)
       else 1(prn_other)) ;
 
-adj_attr: _.semtag.attr.cmp.onlycmp ;
-adj_pred: _.semtag.comp.number.case.cmp.onlycmp ;
-adj: (if (1.attr = attr) 1(adj_attr)
+adj_attr: _.attr.cmp.onlycmp ;
+adj_pred: _.number.case.cmp.onlycmp ;
+adj_comp: _.comp.<adj>.number.attr.case.cmp.onlycmp ;
+
+adj: (if (1.comp = der_superl or 1.comp = der_comp) 1(adj_comp) elif (1.attr = attr) 1(adj_attr)
       else 1(adj_pred)) ;
      
 vblex_fin: _.trans.neg.mood.tense.person.number.qst ; 
@@ -186,10 +188,10 @@ AP -> %adj {%1}
 
 
 N ->    1: %n { %1[semtag=""] }
-      | 2: %n.*."@HNOUN" { %1[semtag="BINGO"] }
 	  | 2: %n.*.cmp  N { %1[semtag=""] + 2[semtag=""] } 
 	  | 2: %adj.*.cmp  N { %1[semtag=""] + 2[semtag=""] } 
       | 3: %n.*.loc { %1[semtag="",case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
+      | 4: %gohcu@n.*.pl.gen { %1(noun_to_vblex_infin) } !denne må generaliseres, hvordan uttrykke pos?
       ; 
 
 PRN ->  2: %[mihkkeprn]@prn  { %1[foc=""] }

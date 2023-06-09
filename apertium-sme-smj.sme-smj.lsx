@@ -6,13 +6,31 @@
 	<sdef n="adv"/>
 	<sdef n="pr"/>
 	<sdef n="n"/>
-	<sdef n="v"/>
+	<sdef n="p3"/>
+	<sdef n="sg"/>
+	<sdef n="nom"/>
+	<sdef n="tv"/>
+	<sdef n="iv"/>
+	<sdef n="neg"/>
+	<sdef n="conneg"/>
+	<sdef n="indic"/>
+	<sdef n="pres"/>
 	<sdef n="vblex"/>
 	<sdef n="vbser"/>
 	<sdef n="det"/>
     <sdef n="dat"/>
     <sdef n="pcle"/>
     <sdef n="qst"/>
+    <sdef n="actio"/>
+    <sdef n="gen"/>
+    <sdef n="supn"/>
+    <sdef n="inf"/>
+    <sdef n="post"/>
+    <sdef n="der_nomact"/>
+    <sdef n="cmp_sgnom"/>
+    <sdef n="cmp"/>
+    <sdef n="sem_ani"/>
+    <sdef n="allegro"/>
   </sdefs>
 
   <pardefs>
@@ -60,13 +78,59 @@
     <!--
 ^fange/fangen<vblex><pri><p1><sg>/fangen<vblex><prs><p1><sg>/fangen<vblex><prs><p3><sg>$ ^x/*x$ ^an/an<pr><dat>/an<pr><acc>$^./.<sent>$ -->
 
+    <e> <!-- oađđin dihte > oađđit supn -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="iv"/><s n="actio"/><s n="gen"/><t/><d/></l><r><s n="vblex"/><s n="iv"/><s n="supn"/><t/><d/></r></p>
+      <p><l>dihte<s n="post"/></l><r></r></p><par n="syntax_tags"/>
+    </e>
+    <e> <!-- čállin dihte > čállit supn -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="tv"/><s n="actio"/><s n="gen"/><t/><d/></l><r><s n="vblex"/><s n="tv"/><s n="supn"/><t/><d/></r></p>
+      <p><l>dihte<s n="post"/></l><r></r></p><par n="syntax_tags"/>
+    </e>
+    <e> <!-- oađđindihte > oađđit supn -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="iv"/><s n="der_nomact"/><s n="n"/><s n="cmp_sgnom"/><s n="cmp"/><d/></l><r><s n="vblex"/><s n="iv"/><s n="supn"/><d/></r></p>
+      <p><l>dihtti<s n="n"/><s n="sem_ani"/><s n="sg"/><s n="gen"/><s n="allegro"/></l><r></r></p><par n="syntax_tags"/>
+    </e>
+
     <e>
-      <p><l>váldit</l><r>váldit<b/>mielde</r></p>
-      <i><s n="vblex"/><t/><d/></i>
-      <par n="word"/>
+      <p><l>gohcu</l><r>gohcu</r></p>
+      <i><t/><d/></i> 
+      <p><l>alde<s n="post"/></l><r></r></p><par n="syntax_tags"/>
+    </e>
+
+    <e>
+      <p><l>váldit</l><r>searvadit</r></p>
+      <p><l><s n="vblex"/><s n="tv"/><t/><d/></l><r><s n="vblex"/><s n="iv"/><t/><d/></r></p>
       <p><l>mielde<s n="adv"/></l><r></r></p><par n="syntax_tags"/>
     </e>
 
+    <e>
+      <p><l>váldit</l><r>vuhtiiváldit</r></p>
+      <i><s n="vblex"/><t/><d/></i>
+      <p><l>vuhtii</l><r></r></p>
+       <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
+   </e>
+    <e>
+      <p><l>vuhtii</l><r></r></p>
+       <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
+      <p><l>váldit</l><r>vuhtiiváldit</r></p>
+      <i><s n="vblex"/><t/><d/></i>
+   </e>
+
+    <e>
+      <p><l>dađi</l><r>dađistaga</r></p>
+      <i><s n="adv"/><t/><d/></i>
+      <p><l>mielde</l><r></r></p>
+       <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
+   </e>
+    <e>
+      <p><l>dohkketmeahttun</l><r>ii</r></p>
+      <p><l><s n="adj"/><s n="sg"/><s n="nom"/><t/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/></r></p><par n="syntax_tags"/>
+      <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
+       <p><l></l><r>dohkálaš<s n="adj"/><s n="sg"/><s n="nom"/></r></p><par n="syntax_tags"/>
+   </e>
     <!-- we don't want "go" → "go go" -->
     <e r="LR" w="0.0">
       <i>go<s n="pcle"/><s n="qst"/><t/><d/></i>
