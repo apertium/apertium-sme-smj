@@ -26,7 +26,8 @@ neg = neg ;
 qst = qst ;
 cltl = cltl ;
 trans = tv iv ;
-mood = indic imp cond pot "pot.pres"  "cond.pres" ;
+mood = indic imp cond pot ;
+mood_tense = "pot.pres" "cond.pres" ;
 tense = pres pret ;
 a_nomag = nomag der_nomag ;
 a_actio = actio ;
@@ -121,7 +122,7 @@ person_number > poss : "p1.sg" px1sg, "p1.du" px1du, "p1.pl" px1pl,
 !actiocase > actiocase : "actio.loc" "actio.ela" ;
 
 case > case : loc ine ;
-mood > mood : "cond.pres" cond, "pot.pres" pot  ;
+mood_tense > mood : "cond.pres" cond, "pot.pres" pot  ; ! denne fungerer ikke, derfor er det regler for dette lenger ned.
 foc > foc : foc_pos-ge foc_pos-k, foc_neg-ge foc_neg-k ; !from sme to smj type
 
 !!!!!!!!!!!!!!!
@@ -143,6 +144,8 @@ not-usually-supn-verbs = "subtsastit" "åvddånit" ;
 sme-rek-verbs = "lijkkut" "berustit" "ballat" ;
 
 moveverbs = "vuolgget" "mannat" "bisánit" ;
+mihkkeprn = "mihkke" "guhtemuš" ;
+
 
 actio_ill_verbs = "liikot" ;
 loc2acc_verbs = "guossidit" ;
@@ -189,12 +192,15 @@ N ->    1: %n { %1[semtag=""] }
       | 3: %n.*.loc { %1[semtag="",case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
       ; 
 
-
+PRN ->  2: %[mihkkeprn]@prn  { %1[foc=""] }
+       | 1:  %prn  { %1 }
+       ;
 
 NP ->  %N { %1 } 
       | %N PCLE { %1 _ 2 }
-      | %prn  { %1 }
-      | %prn PCLE { %1 _ 2 }
+      | %PRN  { %1 }
+      | %PRN  { %1 }
+      | %PRN PCLE { %1 _ 2 }
       ;
 
 
