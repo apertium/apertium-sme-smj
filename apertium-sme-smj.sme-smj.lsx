@@ -4,33 +4,37 @@
   <sdefs>
 	<sdef n="adj"/>
 	<sdef n="adv"/>
-	<sdef n="pr"/>
-	<sdef n="n"/>
-	<sdef n="p3"/>
-	<sdef n="sg"/>
-	<sdef n="nom"/>
-	<sdef n="tv"/>
-	<sdef n="iv"/>
-	<sdef n="neg"/>
+	<sdef n="cond"/>
 	<sdef n="conneg"/>
+	<sdef n="det"/>
 	<sdef n="indic"/>
+	<sdef n="iv"/>
+	<sdef n="n"/>
+	<sdef n="neg"/>
+	<sdef n="nom"/>
+	<sdef n="p3"/>
+	<sdef n="pr"/>
 	<sdef n="pres"/>
+	<sdef n="sg"/>
+	<sdef n="tv"/>
 	<sdef n="vblex"/>
 	<sdef n="vbser"/>
-	<sdef n="det"/>
-    <sdef n="dat"/>
-    <sdef n="pcle"/>
-    <sdef n="qst"/>
     <sdef n="actio"/>
-    <sdef n="gen"/>
-    <sdef n="supn"/>
-    <sdef n="inf"/>
-    <sdef n="post"/>
-    <sdef n="der_nomact"/>
-    <sdef n="cmp_sgnom"/>
-    <sdef n="cmp"/>
-    <sdef n="sem_ani"/>
     <sdef n="allegro"/>
+    <sdef n="cmp"/>
+    <sdef n="cmp_sgnom"/>
+    <sdef n="dat"/>
+    <sdef n="der_nomact"/>
+    <sdef n="ela"/>
+    <sdef n="gen"/>
+    <sdef n="inf"/>
+    <sdef n="loc"/>
+    <sdef n="pcle"/>
+    <sdef n="post"/>
+    <sdef n="pot"/>
+    <sdef n="qst"/>
+    <sdef n="sem_ani"/>
+    <sdef n="supn"/>
   </sdefs>
 
   <pardefs>
@@ -99,6 +103,37 @@
       <i><t/><d/></i> 
       <p><l>alde<s n="post"/></l><r></r></p><par n="syntax_tags"/>
     </e>
+
+    <e> <!-- láibumis > actio.ela -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="tv"/><s n="actio"/><s n="loc"/></l><r><s n="vblex"/><s n="tv"/><s n="actio"/><s n="ela"/></r></p><par n="syntax_tags"/>
+    </e>
+    <e> <!-- láibumis > actio.ela -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="iv"/><s n="actio"/><s n="loc"/></l><r><s n="vblex"/><s n="iv"/><s n="actio"/><s n="ela"/></r></p><par n="syntax_tags"/>
+    </e>
+
+    <e> <!-- pot.pres > pot -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="iv"/><s n="pot"/><s n="pres"/></l><r><s n="vblex"/><s n="iv"/><s n="pot"/></r></p>
+      <i><t/></i><par n="syntax_tags"/>
+    </e>
+    <e> <!-- pot.pres > pot -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="tv"/><s n="pot"/><s n="pres"/></l><r><s n="vblex"/><s n="tv"/><s n="pot"/></r></p>
+      <i><t/></i><par n="syntax_tags"/>
+    </e>
+    <e> <!-- cond.pres > cond -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="iv"/><s n="cond"/><s n="pres"/></l><r><s n="vblex"/><s n="iv"/><s n="cond"/></r></p>
+      <i><t/></i><par n="syntax_tags"/>
+    </e>
+    <e> <!-- cond.pres > cond -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="tv"/><s n="cond"/><s n="pres"/></l><r><s n="vblex"/><s n="tv"/><s n="cond"/></r></p>
+      <i><t/></i><par n="syntax_tags"/>
+    </e>
+
 
     <e>
       <p><l>váldit</l><r>searvadit</r></p>
