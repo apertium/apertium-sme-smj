@@ -10,6 +10,7 @@ prn_type = pers ref res [prn_type_other] ;
 np_type_other = top cog org sem_ani ;
 np_type = ant [np_type_other] ;
 n_type = g3 nomag ;
+num_type = arab ;
 case = acc nom gen loc ine ela com ess ill ;
 poss = ("" "") px1sg px1du px1pl px2sg px2du px2pl px3sg px3du px3pl ;
 person = p1 p2 p3 ;
@@ -29,7 +30,7 @@ trans = tv iv ;
 mood = indic imp cond pot ;
 mood_tense = "pot.pres" "cond.pres" ;
 tense = pres pret ;
-a_nomag = nomag der_nomag ;
+a_nomag = nomag ;
 a_actio = actio ;
 a_hab = ←hab→ ;
 adpos = pr post ;
@@ -63,7 +64,7 @@ semtag = [semtime] [semhum] [semother] ;
 VP: _.trans.mood.tense.person.number.infin ; !?
 V: _.trans.mood.tense.person.number.infin ; !?
 NegVP:  _.trans.neg.mood.tense.conneg ;
-NP: _.semtag.number.case.poss.cmp.onlycmp.foc.cltl ; 
+NP: _.n_type.semtag.number.case.poss.cmp.onlycmp.foc.cltl ; 
 PRN: _.prn_type.person.number.case.attr.foc ; 
 S: _ ; !?
 AdvP: _ ;
@@ -76,15 +77,15 @@ PCLE: _ ;
 cnjcoo: _ ;
 cnjsub: _ ;
 
-N: _.semtag.number.case.poss.cmp.onlycmp ; 
-n: _.semtag.number.case.poss.cmp.onlycmp.cltl ; 
+N: _.n_type.semtag.number.case.poss.cmp.onlycmp ; 
+n: _.n_type.semtag.number.case.poss.cmp.onlycmp.cltl ; 
 post: _ ;
 pr: _ ;
 adpos: _ ;
 qst: _ ;
 pcle : _.qst ;
 adv: _ ;
-num: _.number.case ;
+num: _.num_type.number.case ;
 
 np_ant: _.<ant>.gender.number.case ;
 np_other: _.np_type.number.case ;
@@ -163,7 +164,7 @@ acc2ela_verbs = "hieredit" ;
 acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
-auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" ;
+auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" "leat" "leahkit" ;
 
 dadjat_verbs = "almodit" "ballat" "doajvvot" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gájbbedit" "gielestit" "javllat" "jáhkket" "låhkåt" "merustallat" "miejnnit" "mierredit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet" "vuornnot" "vuosedit" ;
 
@@ -194,6 +195,7 @@ N ->    1: %n { %1[semtag=""] }
 	  | 2: %adj.*.cmp  N { %1[semtag=""] + 2[semtag=""] } 
       | 3: %n.*.loc { %1[semtag="",case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
       | 4: %gohcu@n.*.pl.gen { %1(noun_to_vblex_infin) } !denne må generaliseres, hvordan uttrykke pos?
+      | 1: %num { %1 }
       ; 
 
 PRN ->  2: %[mihkkeprn]@prn  { %1[foc=""] }
@@ -269,6 +271,7 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.le
 V -> "condverb" 2: %vblex.*.cond (if (1.lem incl auxverbs) { %1 } else 
      { liehket@vblex.iv.cond.[1.person_number] _ %1[tense="",mood="",infin=inf] }) ! boađášin > luluv boahtet
       |    "enkeltverb" 1:     %vblex { %1 } !
+      | "livččii verb" 3: leat@vblex.*.cond %vblex { 1 _ %2} 
      ;
 
 VP ->  "leat vblex"     1: V %V   { 1  _ %2 }   ! lean borran

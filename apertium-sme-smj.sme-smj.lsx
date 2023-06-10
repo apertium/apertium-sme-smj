@@ -130,6 +130,16 @@
       <p><l><s n="vblex"/><s n="tv"/><s n="pot"/><s n="pres"/></l><r><s n="vblex"/><s n="tv"/><s n="pot"/></r></p>
       <i><t/></i><par n="syntax_tags"/>
     </e>
+    <e> <!-- pot.pret > pot -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="iv"/><s n="pot"/><s n="pret"/></l><r><s n="vblex"/><s n="iv"/><s n="pot"/></r></p>
+      <i><t/></i><par n="syntax_tags"/>
+    </e>
+    <e> <!-- pot.pret > pot -->
+      <i><w/></i> 
+      <p><l><s n="vblex"/><s n="tv"/><s n="pot"/><s n="pret"/></l><r><s n="vblex"/><s n="tv"/><s n="pot"/></r></p>
+      <i><t/></i><par n="syntax_tags"/>
+    </e>
     <e> <!-- cond.pres > cond -->
       <i><w/></i> 
       <p><l><s n="vblex"/><s n="iv"/><s n="cond"/><s n="pres"/></l><r><s n="vblex"/><s n="iv"/><s n="cond"/></r></p>
