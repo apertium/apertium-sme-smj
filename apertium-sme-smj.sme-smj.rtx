@@ -266,7 +266,7 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.le
     | "ikke pcle conneg"  3:  ii@vblex.iv.neg pcle %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
 
-V -> "condverb" 2: %vblex.*.cond (if (1.lem in auxverbs) { %1 } else 
+V -> "condverb" 2: %vblex.*.cond (if (1.lem incl auxverbs) { %1 } else 
      { liehket@vblex.iv.cond.[1.person_number] _ %1[tense="",mood="",infin=inf] }) ! boađášin > luluv boahtet
       |    "enkeltverb" 1:     %vblex { %1 } !
      ;
@@ -277,7 +277,7 @@ VP ->  "leat vblex"     1: V %V   { 1  _ %2 }   ! lean borran
     | "vblex vblex"     1: V %V.*.inf   { 1  _ %2 }   ! sáhtán borrat
     | "vblex AdvP vblex"     1: V AdvP %V    { 1 _ 2 _ %3 }   ! 
     | "vblex pcle vblex"     1: V pcle %V    { 1 _ 2 _ %3 }   ! 
-    | "vblex NP vblex"     1: V NP %V    { 1 _ 2 _ %3[infin=(if (1.lem in smj-supn-triggerverbs) supn  else 3.infin)] }   ! and 1.lem not in not-usually-supn-verbs
+    | "vblex NP vblex"     1: V NP %V    { 1 _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs) supn  else 3.infin)] }   ! hvordan legge til betingelsen 'and 1.lem not in not-usually-supn-verbs' ?
 !    | "vblex NP vblex"     1: V NP %V    { 1 _ 2 _ %3 }   ! 
     | "vblex NP AdvP"     1: %V NP AdvP    { %1 _ 2 _ 3 }   ! 
     ;
