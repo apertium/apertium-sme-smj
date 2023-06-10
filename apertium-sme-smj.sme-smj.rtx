@@ -224,7 +224,12 @@ NP ->  %N { %1 }
 NP -> %num.*.loc n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _ 
       %2[semtag="",case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] } 
     | %num n {1[case=(if (1.case = acc and 2.case = acc) nom else 1.case)]  _ 2[semtag="", case=(if (1.case = acc and 2.case = acc) gen else 2.case)]} 
+    | prn.dem %num.*.loc n.*.loc { 1 _ 2[case=(if (3.function = "@←ADVL-ela" or 3.function = "@ADVL-ela→") ela else ine)] _ 
+      %3[semtag="",case=(if (3.function = "@←ADVL-ela" or 3.function = "@ADVL-ela→") ela else ine)] }
+    | prn.dem %num n {1 _ 2[case=(if (2.case = acc and 3.case = acc) nom else 2.case)]  _ 3[semtag="", case=(if (2.case = acc and 3.case = acc) gen else 3.case)]} 
     ;
+    
+    
 ! | %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number,semtag=""] } ; !for shit in guokte biillat
 
 NP -> prn.ref %n { 1 _ 2[semtag=""]}  !ietjam viellja
