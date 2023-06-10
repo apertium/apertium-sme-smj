@@ -94,11 +94,11 @@ pr: _ ;
 adpos: _ ;
 qst: _ ;
 pcle : _.qst ;
-adv: _ ;
-num: _.num_type.number.case ;
+adv: _.poss ;
+num: _.num_type.number.case.attr ;
 
-np_ant: _.<ant>.gender.number.case ;
-np_other: _.np_type.number.case ;
+np_ant: _.<ant>.gender.number.case.attr ;
+np_other: _.np_type.number.case.attr ;
 np: (if (1.np_type = ant) 1(np_ant)
       else 1(np_other)) ;
 
@@ -221,12 +221,15 @@ NP ->  %N { %1 }
 
 
 
-NP -> %num n {1 _ 2} 
- | %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat
+NP -> %num.*.loc n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _ 
+      %2[semtag="",case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] } 
+    | %num n {1[case=(if (1.case = acc and 2.case = acc) nom else 1.case)]  _ 2[semtag="", case=(if (1.case = acc and 2.case = acc) gen else 2.case)]} 
+    ;
+! | %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number,semtag=""] } ; !for shit in guokte biillat
 
-NP -> prn.ref %n { 1 _ 2}  !ietjam viellja
-    | prn.dem %n { 1 _ 2}  !dav vielja
-    | prn %n { 1 _ 2} !juohke sajis
+NP -> prn.ref %n { 1 _ 2[semtag=""]}  !ietjam viellja
+    | prn.dem %n { 1 _ 2[semtag=""]}  !dav vielja
+    | prn %n { 1 _ 2[semtag=""]} !juohke sajis
     ;
 
 
@@ -297,7 +300,7 @@ VP ->  "leat vblex" 1: V %V   { 1  _ %2 }   ! lean borran
     | "vblex NP AdvP"     1: %V NP AdvP    { %1 _ 2 _ 3 }   ! 
     ;
 
-S -> 2: prn %V (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number)
+S -> 2: prn.pers %V (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number)
         { %2[lemcase=1.lemcase] } else { 1 _ %2 }) !Mun boran  > Båråv         
     ;
 
