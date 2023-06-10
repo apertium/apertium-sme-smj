@@ -43,10 +43,11 @@ person_number = "p1.sg" "p1.du" "p1.pl"
                 "p3.sg" "p3.du" "p3.pl" ;
 first_sec_person_number = "p1.sg" "p1.du" "p1.pl" "p2.sg" "p2.du" "p2.pl" ;
                 
-deriv = der_dimin der_alla der_halla der_aadv der_caus der_t der_l der_ahtti der_ahtte der_vuota der_d der_h der_laakan der_laagasj der_lágan der_lágán der_muš der_mus der_nammasaš der_nammasasj der_saš der_sasj der_lasj der_dibme der_geahtes der_ahtes der_car der_nomact der_inchl der_vuota ;
+deriv = der_nomag der_dimin der_alla der_halla der_aadv der_caus der_t der_l der_ahtti der_ahtte der_vuota der_d der_h der_laakan der_laagasj der_lágan der_lágán der_muš der_mus der_nammasaš der_nammasasj der_saš der_sasj der_lasj der_dibme der_geahtes der_ahtes der_car der_nomact der_inchl der_vuota ;
 
 deriv2 = der_dimin der_alla der_halla ;
 cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_hyph cmp_oblhyph cmp_cit ;
+hyph = cmp_hyph ;
 onlycmp = cmp ;
 cmpsplitr = cmp_splitr ;
 
@@ -64,7 +65,7 @@ semtag = [semtime] [semhum] [semother] ;
 VP: _.trans.mood.tense.person.number.infin ; !?
 V: _.trans.mood.tense.person.number.infin ; !?
 NegVP:  _.trans.neg.mood.tense.conneg ;
-NP: _.n_type.semtag.number.case.poss.cmp.onlycmp.foc.cltl ; 
+NP: _.n_type.semtag.number.case.poss.cmp.hyph.onlycmp.foc.cltl ; 
 PRN: _.prn_type.person.number.case.attr.foc ; 
 S: _ ; !?
 AdvP: _ ;
@@ -77,8 +78,17 @@ PCLE: _ ;
 cnjcoo: _ ;
 cnjsub: _ ;
 
-N: _.n_type.semtag.number.case.poss.cmp.onlycmp ; 
-n: _.n_type.semtag.number.case.poss.cmp.onlycmp.cltl ; 
+N: _.n_type.semtag.number.case.poss.cmp.hyph.onlycmp ; 
+n: _.n_type.semtag.number.case.poss.cmp.hyph.onlycmp.cltl ; 
+vblex_der_n: _.trans.deriv.<n>.number.case.poss.cmp.onlycmp.cltl ;
+
+
+!n: (if (1.deriv = der_nomag or 1.deriv = der_nomag) 1(vblex_der_n)  
+!      else 1(n_norm)) ;
+
+
+!n_der: _.semtag.deriv.<n>.number.case.poss.cmp.onlycmp.cltl ;
+
 post: _ ;
 pr: _ ;
 adpos: _ ;
@@ -102,16 +112,16 @@ prn: (if (1.prn_type = pers) 1(prn_pers)
       else 1(prn_other)) ;
 
 adj_attr: _.attr.cmp.onlycmp ;
-adj_pred: _.number.case.cmp.onlycmp ;
-adj_comp: _.comp.<adj>.number.attr.case.cmp.onlycmp ;
+adj_pred: _.number.case.poss.cmp.onlycmp ;
+adj_comp: _.comp.<adj>.number.attr.case.poss.cmp.onlycmp ;
 
 adj: (if (1.comp = der_superl or 1.comp = der_comp) 1(adj_comp) elif (1.attr = attr) 1(adj_attr)
       else 1(adj_pred)) ;
      
 vblex_fin: _.trans.neg.mood.tense.person.number.qst ; 
 vblex_inf: _.trans.mood.tense.infin ;
-vblex: (if (1.infin = "") 1(vblex_fin)
-        else 1(vblex_inf)) ;
+vblex: (if (1.infin = "") 1(vblex_fin)  else 1(vblex_inf)) ;
+
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
@@ -190,7 +200,7 @@ AP -> %adj {%1}
     ;
 
 
-N ->    1: %n { %1[semtag=""] }
+N ->    1: %n { %1[semtag="",n_type=(if (1.n_type/tl="") "" else 1.n_type)] }  
 	  | 2: %n.*.cmp  N { %1[semtag=""] + 2[semtag=""] } 
 	  | 2: %adj.*.cmp  N { %1[semtag=""] + 2[semtag=""] } 
       | 3: %n.*.loc { %1[semtag="",case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
@@ -268,15 +278,17 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.le
     | "ikke pcle conneg"  3:  ii@vblex.iv.neg pcle %vblex.*.conneg  { 1[tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
 
-V -> "condverb" 2: %vblex.*.cond (if (1.lem incl auxverbs) { %1 } else 
+V -> "condverb" 2: %vblex.*.cond (if (1.qst="" and 1.lem incl auxverbs) { %1 } else-if (1.qst=qst and 1.lem incl auxverbs) { %1[qst=""] _ gus@pcle.qst } else-if (1.qst=qst)    { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[tense="",mood="",infin=inf] } else
      { liehket@vblex.iv.cond.[1.person_number] _ %1[tense="",mood="",infin=inf] }) ! boađášin > luluv boahtet
       |    "enkeltverb" 1:     %vblex { %1 } !
       | "livččii verb" 3: leat@vblex.*.cond %vblex { 1 _ %2} 
      ;
 
-VP ->  "leat vblex"     1: V %V   { 1  _ %2 }   ! lean borran
-    | %NegVP { %1 }
-    |                  NegVP %V { 1  _ %2 } 
+VP ->  "leat vblex" 1: V %V   { 1  _ %2 }   ! lean borran
+ !   1: %NegVP { %1 }
+    |  2: prn.pers.*.nom %NegVP { %2[lemcase=1.lemcase] }
+    |  2:                NegVP %V { 1  _ %2 } 
+    |  3: prn.pers.*.nom %NegVP vblex { %2[lemcase=1.lemcase]  _ 3 } 
     | "vblex vblex"     1: V %V.*.inf   { 1  _ %2 }   ! sáhtán borrat
     | "vblex AdvP vblex"     1: V AdvP %V    { 1 _ 2 _ %3 }   ! 
     | "vblex pcle vblex"     1: V pcle %V    { 1 _ 2 _ %3 }   ! 
@@ -370,6 +382,7 @@ S -> "NP VP" NP %VP { 1 _ 2 }
     | AdvP VP NP { 1 _ 2 _ 3  }
     | NP pcle VP { 1 _ 2 _ 3 }
      | S %NP { 1 _ %2 } !Mun boran láibbi > Båråv lájbev
+     | S %AP { 1 _ %2 } !
     ;
 
 S -> "S C S" S C %S { 1 _ 2 _ 3  } 
