@@ -55,41 +55,41 @@
 
   <pardefs>
 	<pardef n="adj">
-	  <e r="LR"><i><w/><s n="adj"/><j/></i></e>
-	  <e r="LR"><i><w/><s n="adj"/><t/><j/></i></e>
+	  <e><i><w/><s n="adj"/><j/></i></e>
+	  <e><i><w/><s n="adj"/><t/><j/></i></e>
 	</pardef>
 	<pardef n="adv">
-	  <e r="LR"><i><w/><s n="adv"/><j/></i></e>
-	  <e r="LR"><i><w/><s n="adv"/><t/><j/></i></e>
+	  <e><i><w/><s n="adv"/><j/></i></e>
+	  <e><i><w/><s n="adv"/><t/><j/></i></e>
 	</pardef>
 	<pardef n="n">
-	  <e r="LR"><i><w/><s n="n"/><t/><j/></i></e>
+	  <e><i><w/><s n="n"/><t/><j/></i></e>
 	</pardef>
 	<pardef n="det">
-	  <e r="LR"><i><w/><s n="det"/><t/><j/></i></e>
+	  <e><i><w/><s n="det"/><t/><j/></i></e>
 	</pardef>
 	<pardef n="SN">
-	  <e r="LR"><par n="n"/></e>
-	  <e r="LR"><par n="adj"/><par n="n"/></e>
-	  <e r="LR"><par n="adj"/><par n="adj"/><par n="n"/></e>
-	  <e r="LR"><par n="det"/><par n="n"/></e>
-	  <e r="LR"><par n="det"/><par n="adj"/><par n="n"/></e>
-	  <e r="LR"><par n="det"/><par n="adj"/><par n="adj"/><par n="n"/></e>
+	  <e><par n="n"/></e>
+	  <e><par n="adj"/><par n="n"/></e>
+	  <e><par n="adj"/><par n="adj"/><par n="n"/></e>
+	  <e><par n="det"/><par n="n"/></e>
+	  <e><par n="det"/><par n="adj"/><par n="n"/></e>
+	  <e><par n="det"/><par n="adj"/><par n="adj"/><par n="n"/></e>
 	</pardef>
     <pardef n="word">
-      <e r="LR"><i><w/><t/><d/></i></e>
-      <e r="LR"></e>
+      <e><i><w/><t/><d/></i></e>
+      <e></e>
     </pardef>
     <pardef n="words">
-      <e r="LR"><par n="word"/><par n="word"/><par n="word"/></e>
+      <e><par n="word"/><par n="word"/><par n="word"/></e>
     </pardef>
     <pardef n="syntax_tags">
-      <e r="LR"><p> <l><t/><d/></l> <r></r> </p></e>
+      <e><p> <l><t/><d/></l> <r></r> </p></e>
       <e r="RL"><p> <l><d/></l>     <r></r> </p></e>
     </pardef>
     <pardef n="maybe_syntax_tag">
-      <e r="LR"></e>
-      <e r="LR"><i><t/></i></e>
+      <e></e>
+      <e><i><t/></i></e>
     </pardef>
   </pardefs>
   
