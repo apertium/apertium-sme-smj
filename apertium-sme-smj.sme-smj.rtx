@@ -3,6 +3,7 @@
 !!!!!!!!!!!!!!!
 
 function = "@+FAUXV" "@\+FAUXV" "@\+FMAINV" "@+FMAINV" "@-F←ADVL" "@-F←ADVL-ine" "@-F←ADVL-ela" "@-F←OBJ" "@-F←OPRED" "@-F←SUBJ" "@-FADVL→" "@-FAUXV" "@-FMAINV" "@-FOBJ→" "@-FSUBJ→" "@←ADVL" "@←ADVL-ela" "@←ADVL-ine" "@←OBJ" "@←OPRED" "@←PPRED" "@←SPRED" "@←SUBJ" "@→A" "@→ADVL" "@→CC" "@→N" "@→Num" "@→P" "@→Pron" "@A←" "@ADVL" "@ADVL←" "@ADVL→" "@ADVL-ela→" "@ADVL-ine→" "@ADVLcs-ela→" "@ADVLcs-ine→" "@ADVLqst-ela→" "@ADVLqst-ine→" "@ADVLhab→" "@←ADVLhab" "@←SUBJext" "@ADVL→CS" "@APP-ADVL←" "@APP-N←" "@APP-Pron←" "@CNP" "@COMP-CS←" "@CVP" "@HNOUN" "@INTERJ" "@N←" "@Num←" "@OBJ→" "@OPRED→" "@P←" "@PCLE" "@Pron←" "@SPRED←OBJ" "@SPRED→" "@SUBJ→" "@VOC" "@X"  ;
+pos = n adj ;
 gender = f m ;
 number = sg du pl ;
 prn_type_other = rel dem ind itg ;
@@ -43,7 +44,7 @@ person_number = "p1.sg" "p1.du" "p1.pl"
                 "p3.sg" "p3.du" "p3.pl" ;
 first_sec_person_number = "p1.sg" "p1.du" "p1.pl" "p2.sg" "p2.du" "p2.pl" ;
                 
-deriv = der_nomag der_dimin der_alla der_halla der_aadv der_caus der_t der_l der_ahtti der_ahtte der_vuota der_d der_h der_laakan der_laagasj der_lágan der_lágán der_muš der_mus der_nammasaš der_nammasasj der_saš der_sasj der_lasj der_dibme der_geahtes der_ahtes der_car der_nomact der_inchl der_vuota ;
+deriv = der_nomag der_dimin der_alla der_halla der_aadv der_caus der_t der_l der_ahtti der_ahtte der_vuota der_d der_h der_laakan der_laagasj der_lágan der_lágán der_muš der_mus der_nammasaš der_nammasasj der_saš der_sasj der_lasj der_dibme der_geahtes der_ahtes der_car der_nomact der_inchl der_vuota der_passl der_passs ;
 
 deriv2 = der_dimin der_alla der_halla ;
 cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_hyph cmp_oblhyph cmp_cit ;
@@ -79,9 +80,8 @@ cnjcoo: _ ;
 cnjsub: _ ;
 
 N: _.n_type.semtag.number.case.poss.cmp.hyph.onlycmp ; 
-n: _.n_type.semtag.number.case.poss.cmp.hyph.onlycmp.cltl ; 
-vblex_der_n: _.trans.deriv.<n>.number.case.poss.cmp.onlycmp.cltl ;
-
+n: _.n_type.semtag.number.case.attr.poss.cmp.hyph.onlycmp.cltl ; 
+adj_to_noun: <n>.n_type.semtag.number.case ;
 
 !n: (if (1.deriv = der_nomag or 1.deriv = der_nomag) 1(vblex_der_n)  
 !      else 1(n_norm)) ;
@@ -114,13 +114,17 @@ prn: (if (1.prn_type = pers) 1(prn_pers)
 adj_attr: _.attr.cmp.onlycmp ;
 adj_pred: _.number.case.poss.cmp.onlycmp ;
 adj_comp: _.comp.<adj>.number.attr.case.poss.cmp.onlycmp ;
+adj_adv:_.<der_aadv>.<adv> ;
 
-adj: (if (1.comp = der_superl or 1.comp = der_comp) 1(adj_comp) elif (1.attr = attr) 1(adj_attr)
+adj: (if (1.deriv = der_aadv) 1(adj_adv) elif (1.comp = der_superl or 1.comp = der_comp) 1(adj_comp) elif (1.attr = attr) 1(adj_attr)
       else 1(adj_pred)) ;
      
 vblex_fin: _.trans.neg.mood.tense.person.number.qst ; 
 vblex_inf: _.trans.mood.tense.infin ;
-vblex: (if (1.infin = "") 1(vblex_fin)  else 1(vblex_inf)) ;
+vblex_der_n: _.trans.deriv.<n>.number.case.poss.cmp.onlycmp.cltl ;
+vblex_der_vblex: _.trans.deriv.<vblex>.mood.infin.tense.person.number.qst ;
+
+vblex: (if (1.deriv = der_passl or 1.deriv = der_passs) 1(vblex_der_vblex) elif (1.deriv = der_nomag or 1.deriv = der_nomact) 1(vblex_der_n) elif  (1.infin = "") 1(vblex_fin)  else 1(vblex_inf)) ;
 
 
 !!!!!!!!!!!!!!!
@@ -174,7 +178,7 @@ acc2ela_verbs = "hieredit" ;
 acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
-auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" "leat" "leahkit" ;
+auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" "leat" "leahkit" "galggat" ;
 
 dadjat_verbs = "almodit" "ballat" "doajvvot" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gájbbedit" "gielestit" "javllat" "jáhkket" "låhkåt" "merustallat" "miejnnit" "mierredit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet" "vuornnot" "vuosedit" ;
 
@@ -194,7 +198,7 @@ AdvP -> %adv { %1 }
 !    | "adv  adj" adv %adj { 1 _ 2 }
 !    ;
 
-AP -> %adj {%1}
+AP -> %adj (if (1.pos/tl=n) {%1(adj_to_noun)} else-if (1.deriv=der_aadv) {%1(adj_adv)} else {%1})
     | AdvP  %adj { 1 _ %2}
     | adj C %adj { %1 _ 2 _ %3} 
     ;
@@ -288,11 +292,12 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[tense=(if (2.le
 
 V -> "condverb" 2: %vblex.*.cond (if (1.qst="" and 1.lem incl auxverbs) { %1 } else-if (1.qst=qst and 1.lem incl auxverbs) { %1[qst=""] _ gus@pcle.qst } else-if (1.qst=qst)    { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[tense="",mood="",infin=inf] } else
      { liehket@vblex.iv.cond.[1.person_number] _ %1[tense="",mood="",infin=inf] }) ! boađášin > luluv boahtet
-      |    "enkeltverb" 1:     %vblex { %1 } !
+      |    "deriv enkeltverb" 1:     %vblex.*.der_passl { %1(vblex_der_vblex)} !
+      |    "enkeltverb" 1:     %vblex { %1[infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
       | "livččii verb" 3: leat@vblex.*.cond %vblex { 1 _ %2} 
      ;
 
-VP ->  "leat vblex" 1: V %V   { 1  _ %2 }   ! lean borran
+VP ->  "leat vblex" 1: [auxverbs]@V %V   { 1  _ %2 }   ! lean borran
  !   1: %NegVP { %1 }
     |  2: prn.pers.*.nom %NegVP { %2[lemcase=1.lemcase] }
     |  2:                NegVP %V { 1  _ %2 } 
@@ -300,9 +305,10 @@ VP ->  "leat vblex" 1: V %V   { 1  _ %2 }   ! lean borran
     | "vblex vblex"     1: V %V.*.inf   { 1  _ %2 }   ! sáhtán borrat
     | "vblex AdvP vblex"     1: V AdvP %V    { 1 _ 2 _ %3 }   ! 
     | "vblex pcle vblex"     1: V pcle %V    { 1 _ 2 _ %3 }   ! 
-    | "vblex NP vblex"     1: V NP %V    { 1 _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs) supn  else 3.infin)] }   ! hvordan legge til betingelsen 'and 1.lem not in not-usually-supn-verbs' ?
+    | "vblex NP vblex"     2: V NP %vblex    { 1 _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs) supn  else 3.infin)] }   ! hvordan legge til betingelsen 'and 1.lem not in not-usually-supn-verbs' ?
 !    | "vblex NP vblex"     1: V NP %V    { 1 _ 2 _ %3 }   ! 
     | "vblex NP AdvP"     1: %V NP AdvP    { %1 _ 2 _ 3 }   ! 
+    | "vblex NP AP"     1: %V NP AP    { %1 _ 2 _ 3 }   ! 
     ;
 
 S -> 2: prn.pers %V (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number)
