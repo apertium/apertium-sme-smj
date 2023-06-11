@@ -6,6 +6,7 @@
 	<sdef n="adj"/>
 	<sdef n="adv"/>
 	<sdef n="attr"/>
+	<sdef n="cltl"/>
 	<sdef n="cond"/>
 	<sdef n="cnjcoo"/>
 	<sdef n="cnjsub"/>
@@ -213,13 +214,17 @@
       <p><l>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p2"/><s n="sg"/></l><r></r></p><par n="syntax_tags"/>
       <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/></r></p><par n="syntax_tags"/>
    </e>
+   
+    <e r="RL">
+      <i><w/><t/></i>
+      <p><l></l><r><s n="cltl"/></r></p><par n="syntax_tags"/>
+    </e>
+   
+   
     <!-- we don't want "go" → "go go" -->
     <e r="LR" w="0.0">
       <i>go<s n="pcle"/><s n="qst"/><t/><d/></i>
     </e>
-
-
-
     <e r="LR" w="1.0">
       <i><w/><t/></i>
       <p><l><s n="qst"/></l><r></r></p>
