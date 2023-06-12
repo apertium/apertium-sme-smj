@@ -10,6 +10,7 @@
 	<sdef n="vblex"/>
 	<sdef n="vbser"/>
 	<sdef n="det"/>
+	<sdef n="cltl"/>
     <sdef n="dat"/>
   </sdefs>
 
@@ -44,17 +45,15 @@
       <e><par n="word"/><par n="word"/><par n="word"/></e>
     </pardef>
   </pardefs>
-  
+
   <section id="main" type="standard">
 
-    <!--
-^fange/fangen<vblex><pri><p1><sg>/fangen<vblex><prs><p1><sg>/fangen<vblex><prs><p3><sg>$ ^x/*x$ ^an/an<pr><dat>/an<pr><acc>$^./.<sent>$ -->
+    <e r="RL">
+      <i><w/><t/></i>
+      <p><l><s n="cltl"/></l><r></r></p> <!-- legg til cltl -->
+      <i><d/></i>
+      <p><l></l>             <r>liehket<t/><d/></r> </p> <!-- slett liehket -->
+    </e>
 
-    <!--<e>
-      <p><l>fangen</l><r>anfangen</r></p>
-      <i><s n="vblex"/><t/><d/></i>
-      <par n="words"/>
-      <p><l>an<s n="pr"/><s n="dat"/><d/></l><r></r></p>
-    </e>-->
   </section>
 </dictionary>
