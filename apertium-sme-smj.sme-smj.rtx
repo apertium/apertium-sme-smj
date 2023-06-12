@@ -290,19 +290,19 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[lemcase=$lemcas
     | "ikke pcle conneg"  3:  ii@vblex.iv.neg pcle %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
 
-V -> "condverb" 2: %vblex.*.cond (if (1.qst="" and 1.lem incl auxverbs) { %1 } else-if (1.qst=qst and 1.lem incl auxverbs) { %1[qst=""] _ gus@pcle.qst } else-if (1.qst=qst)    { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[tense="",mood="",infin=inf] } else
+V -> "condverb" 2: %vblex.*.cond (if (1.qst="" and 1.lem incl auxverbs) { %1[lemcase=$lemcase] } else-if (1.qst=qst and 1.lem incl auxverbs) { %1[qst="",lemcase=$lemcase] _ gus@pcle.qst } else-if (1.qst=qst)    { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[tense="",mood="",infin=inf] } else
      { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[tense="",mood="",infin=inf] }) ! boađášin > luluv boahtet
       |    "deriv enkeltverb" 1:     %vblex.*.der_passl { %1(vblex_der_vblex)[lemcase=$lemcase]} !
       |    "enkeltverb" 1:     %vblex { %1[lemcase=$lemcase,infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
-      | "livččii verb" 3: leat@vblex.*.cond %vblex { 1 _ %2} 
+      | "livččii verb" 3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
      ;
 
-VP ->  "leat vblex" 1: [auxverbs]@V %V   { 1[lemcase=$lemcase]  _ %2 }   ! lean borran
+VP ->  "leat vblex" 1: [auxverbs]@V %V   { %1[lemcase=$lemcase]  _ 2 }   ! lean borran
  !   1: %NegVP { %1 }
     |  2: prn.pers.*.nom %NegVP { %2[lemcase=1.lemcase] }
     |  2:                NegVP %V { 1[lemcase=$lemcase]  _ %2 } 
     |  3: prn.pers.*.nom %NegVP vblex { %2[lemcase=1.lemcase]  _ 3 } 
-    | "vblex vblex"     1: V %V.*.inf   { 1[lemcase=$lemcase]  _ %2 }   ! sáhtán borrat
+    | "vblex vblex"     1: %V V.*.inf   { %1[lemcase=$lemcase]  _ 2 }   ! sáhtán borrat
     | "vblex AdvP vblex"     1: V AdvP %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
     | "vblex pcle vblex"     1: V pcle %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
     | "vblex NP vblex"     2: V NP %vblex    { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs) supn  else 3.infin)] }   ! hvordan legge til betingelsen 'and 1.lem not in not-usually-supn-verbs' ?
@@ -312,37 +312,39 @@ VP ->  "leat vblex" 1: [auxverbs]@V %V   { 1[lemcase=$lemcase]  _ %2 }   ! lean 
     ;
 
 S -> 2: prn.pers %V (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) 
-        { %2[lemcase=1.lemcase] } else { 1 _ %2 }) !Mun boran  > Båråv         
+        { %2[lemcase=1.lemcase] } else { 1 _ %2 }) !Mun boran  > Båråv 
+    | 2: prn.pers %VP (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) 
+        { %2[lemcase=1.lemcase] } else { 1 _ %2 }) !Mun ferten borrat  > Båråv             
     ;
 
 
-VP -> "verb + adv"   %VP   AdvP   { 1 _ 2 }
-	 |                %VP   pcle   { 1 _ 2 }
- 	 |                %VP   pcle AdvP   { 1 _ 2 _ 3 }
+VP -> "verb + adv"   %VP   AdvP   { 1[lemcase=$lemcase] _ 2 }
+	 |                %VP   pcle   { 1[lemcase=$lemcase] _ 2 }
+ 	 |                %VP   pcle AdvP   { 1[lemcase=$lemcase] _ 2 _ 3 }
     ;  
 
 
 
-VP ->         1: %VP PP    { %1 _ 2 }  
-    |         2: %NegVP PP    { %1 _ 2 }   
-    |         2: %NegVP AdvP    { %1 _ 2 }   
-    |         2: %NegVP PP AdvP    { %1 _ 2 _ 3 }    
-    |         1: %VP PP AdvP    { %1 _ 2 _ 3 }    
-    |         2: %NegVP PP pcle    { %1 _ 2 _ 3 }    
-    |         1: %VP PP pcle    { %1 _ 2 _ 3 }    
-    |         2: %NegVP NP    { %1 _ 2 }
-    |         1: %VP NP    { %1 _ 2 }
-    |         2: %NegVP NP AdvP   { %1 _ 2 _ 3 }    
-    |         1: %VP NP AdvP   { %1 _ 2 _ 3 }    
-    |         1: %VP NP pcle   { %1 _ 2 _ 3 }    
-    |         3: %VP NP PP { %1 _ 2 _ 3}    
-    | "V adj" 1: %leat@vblex AP {%1 _ 2}
-    | "V NP ine" 2: %[ill2ine_verbs]@vblex NP.*.ill {1 _ %2[case=ine] } ! Mun báhcen gávpogii > stadan
-    | "V NP ill" 2: %[acc2ill_verbs]@vblex NP.*.acc {1 _ %2[case=ill] } ! 
-!   | "V NP ine" 2: %vblex NP.*.ill {1 _ %2[case=(if (1.lem incl ill2ine_verbs) ine)]}
+VP ->         1: %VP PP    { %1[lemcase=$lemcase] _ 2 }  
+    |         2: %NegVP PP    { %1[lemcase=$lemcase] _ 2 }   
+    |         2: %NegVP AdvP    { %1[lemcase=$lemcase] _ 2 }   
+    |         2: %NegVP PP AdvP    { %1[lemcase=$lemcase] _ 2 _ 3 }    
+    |         1: %VP PP AdvP    { %1[lemcase=$lemcase] _ 2 _ 3 }    
+    |         2: %NegVP PP pcle    { %1[lemcase=$lemcase] _ 2 _ 3 }    
+    |         1: %VP PP pcle    { %1[lemcase=$lemcase] _ 2 _ 3 }    
+    |         2: %NegVP NP    { %1[lemcase=$lemcase] _ 2 }
+    |         1: %VP NP    { %1[lemcase=$lemcase] _ 2 }
+    |         2: %NegVP NP AdvP   { %1[lemcase=$lemcase] _ 2 _ 3 }    
+    |         1: %VP NP AdvP   { %1[lemcase=$lemcase] _ 2 _ 3 }    
+    |         1: %VP NP pcle   { %1[lemcase=$lemcase] _ 2 _ 3 }    
+    |         3: %VP NP PP { %1[lemcase=$lemcase] _ 2 _ 3}    
+    | "V adj" 1: %leat@vblex AP {%1[lemcase=$lemcase] _ 2}
+    | "V NP ine" 2: %[ill2ine_verbs]@vblex NP.*.ill {1[lemcase=$lemcase] _ %2[case=ine] } ! Mun báhcen gávpogii > stadan
+    | "V NP ill" 2: %[acc2ill_verbs]@vblex NP.*.acc {1[lemcase=$lemcase] _ %2[case=ill] } ! 
+!   | "V NP ine" 2: %vblex NP.*.ill {1[lemcase=$lemcase] _ %2[case=(if (1.lem incl ill2ine_verbs) ine)]}
     ;
 
-VP -> vblex cnjcoo %vblex { 1 _ 2 _ 3 } 
+VP -> vblex cnjcoo %vblex { 1[lemcase=$lemcase] _ 2 _ 3 } 
      ;
 
 
@@ -387,10 +389,10 @@ PCLE -> %pcle {1} ;
 S -> "TEST" %NP V AdvP  {%1[cltl=cltl] _ 2 _ 3} !fungerer ikke, hvordan få lagt til cltl?
 	 ;
 
-S -> "NP VP" NP %VP { 1 _ 2 } 
-    |  "NP VP NP" NP %VP NP { 1 _ 2 _ 3 } 
-    | "NP VP pcle" NP %VP pcle { 1 _ 2 _ 3 } 
-    | "NP VP NP" NP %VP NP { 1 _ 2 _ 3 } 
+S -> "NP VP" NP %VP { 1[lemcase=$lemcase] _ 2 } 
+    |  "NP VP NP" NP %VP NP { 1[lemcase=$lemcase] _ 2 _ 3 } 
+    | "NP VP pcle" NP %VP pcle { 1[lemcase=$lemcase] _ 2 _ 3 } 
+    | "NP VP NP" NP %VP NP { 1[lemcase=$lemcase] _ 2 _ 3 } 
     | "NP VP pcle NP" NP %VP pcle NP { 1 _ 2 _ 3 _ 4 } 
     | AdvP NP VP { 1 _ 2 _ 3  }
     | AdvP VP NP { 1 _ 2 _ 3  }
