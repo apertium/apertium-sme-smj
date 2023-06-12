@@ -84,7 +84,7 @@
       <e><par n="word"/><par n="word"/><par n="word"/></e>
     </pardef>
     <pardef n="syntax_tags">
-      <e><p> <l><t/><d/></l> <r></r> </p></e>
+      <e r="LR"><p> <l><t/><d/></l> <r></r> </p></e>
       <e r="RL"><p> <l><d/></l>     <r></r> </p></e>
     </pardef>
     <pardef n="maybe_syntax_tag">
