@@ -129,37 +129,6 @@
       <p><l><s n="vblex"/><s n="iv"/><s n="actio"/><s n="loc"/></l><r><s n="vblex"/><s n="iv"/><s n="actio"/><s n="ela"/></r></p><par n="syntax_tags"/>
     </e>
 
-    <e r="LR"> <!-- pot.pres > pot -->
-      <i><w/></i> 
-      <p><l><s n="vblex"/><s n="iv"/><s n="pot"/><s n="pres"/></l><r><s n="vblex"/><s n="iv"/><s n="pot"/></r></p>
-      <i><t/></i><par n="syntax_tags"/>
-    </e>
-    <e r="LR"> <!-- pot.pres > pot -->
-      <i><w/></i> 
-      <p><l><s n="vblex"/><s n="tv"/><s n="pot"/><s n="pres"/></l><r><s n="vblex"/><s n="tv"/><s n="pot"/></r></p>
-      <i><t/></i><par n="syntax_tags"/>
-    </e>
-    <e r="LR"> <!-- pot.pret > pot -->
-      <i><w/></i> 
-      <p><l><s n="vblex"/><s n="iv"/><s n="pot"/><s n="pret"/></l><r><s n="vblex"/><s n="iv"/><s n="pot"/></r></p>
-      <i><t/></i><par n="syntax_tags"/>
-    </e>
-    <e r="LR"> <!-- pot.pret > pot -->
-      <i><w/></i> 
-      <p><l><s n="vblex"/><s n="tv"/><s n="pot"/><s n="pret"/></l><r><s n="vblex"/><s n="tv"/><s n="pot"/></r></p>
-      <i><t/></i><par n="syntax_tags"/>
-    </e>
-    <e r="LR"> <!-- cond.pres > cond -->
-      <i><w/></i> 
-      <p><l><s n="vblex"/><s n="iv"/><s n="cond"/><s n="pres"/></l><r><s n="vblex"/><s n="iv"/><s n="cond"/></r></p>
-      <i><t/></i><par n="syntax_tags"/>
-    </e>
-    <e r="LR"> <!-- cond.pres > cond -->
-      <i><w/></i> 
-      <p><l><s n="vblex"/><s n="tv"/><s n="cond"/><s n="pres"/></l><r><s n="vblex"/><s n="tv"/><s n="cond"/></r></p>
-      <i><t/></i><par n="syntax_tags"/>
-    </e>
-
 
 
     <e r="LR">

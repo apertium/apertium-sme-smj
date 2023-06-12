@@ -121,10 +121,17 @@ adj: (if (1.deriv = der_aadv) 1(adj_adv) elif (1.comp = der_superl or 1.comp = d
      
 vblex_fin: _.trans.neg.mood.tense.person.number.qst ; 
 vblex_inf: _.trans.mood.tense.infin ;
+vblex_cond: _.trans.neg.mood.person.number.qst ;
 vblex_der_n: _.trans.deriv.<n>.number.case.poss.cmp.onlycmp.cltl ;
 vblex_der_vblex: _.trans.deriv.<vblex>.mood.infin.tense.person.number.qst ;
 
-vblex: (if (1.deriv = der_passl or 1.deriv = der_passs) 1(vblex_der_vblex) elif (1.deriv = der_nomag or 1.deriv = der_nomact) 1(vblex_der_n) elif  (1.infin = "") 1(vblex_fin)  else 1(vblex_inf)) ;
+vblex: (
+        if (1.deriv = der_passl or 1.deriv = der_passs) 1(vblex_der_vblex)
+        elif (1.deriv = der_nomag or 1.deriv = der_nomact) 1(vblex_der_n)
+        elif (1.mood = "cond") 1(vblex_cond)
+        elif (1.infin = "") 1(vblex_fin)
+        else 1(vblex_inf)
+       ) ;
 
 
 !!!!!!!!!!!!!!!
@@ -141,7 +148,6 @@ vblex: (if (1.deriv = der_passl or 1.deriv = der_passs) 1(vblex_der_vblex) elif 
 !actiocase > actiocase : "actio.loc" "actio.ela" ;
 
 case > case : loc ine ;
-mood_tense > mood : "cond.pres" cond, "pot.pres" pot  ; ! denne fungerer ikke, derfor er det regler for dette lenger ned.
 foc > foc : foc_pos-ge foc_pos-k, foc_neg-ge foc_neg-k ; !from sme to smj type
 
 !!!!!!!!!!!!!!!
@@ -290,11 +296,13 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[lemcase=$lemcas
     | "ikke pcle conneg"  3:  ii@vblex.iv.neg pcle %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
 
-V -> "condverb" 2: %vblex.*.cond (if (1.qst="" and 1.lem incl auxverbs) { %1[lemcase=$lemcase] } else-if (1.qst=qst and 1.lem incl auxverbs) { %1[qst="",lemcase=$lemcase] _ gus@pcle.qst } else-if (1.qst=qst)    { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[tense="",mood="",infin=inf] } else
-     { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[tense="",mood="",infin=inf] }) ! boađášin > luluv boahtet
-      |    "deriv enkeltverb" 1:     %vblex.*.der_passl { %1(vblex_der_vblex)[lemcase=$lemcase]} !
-      |    "enkeltverb" 1:     %vblex { %1[lemcase=$lemcase,infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
-      | "livččii verb" 3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
+V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$lemcase, trans=""] }
+      | "aux condverb.q" 4: %[auxverbs]@vblex.*.cond ?(1.qst=qst) { %1[qst="",lemcase=$lemcase] _ gus@pcle.qst }
+      | "condverb.q"     3:            %vblex.*.cond ?(1.qst=qst) { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[mood="",infin=inf] }
+      | "condverb"       2:            %vblex.*.cond              { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[mood="",infin=inf] } ! boađášin > luluv boahtet
+      | "deriv enkeltverb" 1:     %vblex.*.der_passl   { %1(vblex_der_vblex)[lemcase=$lemcase]} !
+      | "enkeltverb"       1:     %vblex               { %1[lemcase=$lemcase,infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
+      | "livččii verb"     3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
      ;
 
 VP ->  "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean borran
