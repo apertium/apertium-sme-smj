@@ -85,6 +85,22 @@
   </pardefs>
 
   <section id="main" type="standard">
+    <e r="RL" w="1.0"> <!-- ij la > illa -->
+      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
+   </e>
+    <e r="RL" w="1.0"> <!-- ij la > illa -->
+      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
+   </e>
+    <e r="RL" w="1.0"> <!-- ij la > illa -->
+      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
+   </e>
+    <e r="RL" w="1.0"> <!-- ij la > illa -->
+      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
+   </e>
 
     <e r="RL">
       <i><w/><t/></i>
