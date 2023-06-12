@@ -14,6 +14,7 @@
 	<sdef n="det"/>
 	<sdef n="du"/>
 	<sdef n="ess"/>
+	<sdef n="foc_bat"/>
 	<sdef n="gen"/>
 	<sdef n="indic"/>
 	<sdef n="iv"/>
@@ -190,7 +191,7 @@
    
     <e r="RL">
       <i><w/><t/></i>
-      <p><l></l><r><s n="cltl"/></r></p><par n="syntax_tags"/>
+      <p><l><s n="cltl"/></l><r></r></p><par n="syntax_tags"/>
     </e>
    
    
@@ -201,6 +202,13 @@
     <e r="LR" w="1.0">
       <i><w/><t/></i>
       <p><l><s n="qst"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
+    </e>
+    <e r="LR" w="1.0">
+      <i><w/><t/></i>
+      <p><l><s n="foc_bat"/></l><r></r></p>
       <par n="maybe_syntax_tag"/>
       <i><d/></i>
       <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>

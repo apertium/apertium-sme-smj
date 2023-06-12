@@ -121,14 +121,14 @@ adj: (if (1.deriv = der_aadv) 1(adj_adv) elif (1.comp = der_superl or 1.comp = d
      
 vblex_fin: _.trans.neg.mood.tense.person.number.qst ; 
 vblex_inf: _.trans.mood.tense.infin ;
-vblex_cond: _.trans.neg.mood.person.number.qst ;
+vblex_mood2: _.trans.neg.mood.person.number.qst ;
 vblex_der_n: _.trans.deriv.<n>.number.case.poss.cmp.onlycmp.cltl ;
 vblex_der_vblex: _.trans.deriv.<vblex>.mood.infin.tense.person.number.qst ;
 
 vblex: (
         if (1.deriv = der_passl or 1.deriv = der_passs) 1(vblex_der_vblex)
         elif (1.deriv = der_nomag or 1.deriv = der_nomact) 1(vblex_der_n)
-        elif (1.mood = "cond") 1(vblex_cond)
+        elif (1.mood = "cond" or 1.mood = "pot") 1(vblex_mood2)
         elif (1.infin = "") 1(vblex_fin)
         else 1(vblex_inf)
        ) ;
@@ -214,6 +214,7 @@ N ->    1: %n { %1[lemcase=$lemcase,semtag="",n_type=(if (1.n_type/tl="") "" els
 	  | 2: %n.*.cmp  N { %1[semtag=""] + 2[semtag=""] } 
 	  | 2: %adj.*.cmp  N { %1[semtag=""] + 2[semtag=""] } 
       | 3: %n.*.loc { %1[semtag="",case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
+      | 4: prn %n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _  %2[semtag="",case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 
       | 4: %gohcu@n.*.pl.gen { %1(noun_to_vblex_infin) } !denne må generaliseres, hvordan uttrykke pos?
       | 1: %num { %1 }
       ; 
@@ -224,11 +225,11 @@ PRN ->  2: %[mihkkeprn]@prn  { %1[foc=""] }
 
 NP ->  %N { %1[lemcase=$lemcase] } 
       | %N PCLE { %1 _ 2 }
+!      | PRN %N { 1[case=(if (2.case = ela) ela else ine)] _ %2 }
       | %PRN  { %1 }
       | %PRN  { %1 }
       | %PRN PCLE { %1 _ 2 }
       ;
-
 
 
 NP -> %num.*.loc n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _ 
@@ -299,7 +300,7 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[lemcase=$lemcas
 V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$lemcase, trans=""] }
       | "aux condverb.q" 4: %[auxverbs]@vblex.*.cond ?(1.qst=qst) { %1[qst="",lemcase=$lemcase] _ gus@pcle.qst }
       | "condverb.q"     3:            %vblex.*.cond ?(1.qst=qst) { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[mood="",infin=inf] }
-      | "condverb"       2:            %vblex.*.cond              { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[mood="",infin=inf] } ! boađášin > luluv boahtet
+      | "condverb"       2:            %vblex.*.cond              { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[mood="",tense="",infin=inf] } ! boađášin > luluv boahtet
       | "deriv enkeltverb" 1:     %vblex.*.der_passl   { %1(vblex_der_vblex)[lemcase=$lemcase]} !
       | "enkeltverb"       1:     %vblex               { %1[lemcase=$lemcase,infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
       | "livččii verb"     3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
@@ -308,6 +309,8 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
 VP ->  "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean borran
  !   1: %NegVP { %1 }
     |  2: prn.pers.*.nom %NegVP { %2[lemcase=1.lemcase] }
+    |  2: prn.pers.*.nom %NegVP AP { %2[lemcase=1.lemcase] _ 3 }
+    |  2: prn.pers.*.nom %NegVP NP { %2[lemcase=1.lemcase] _ 3 }
     |  2:                NegVP %V { 1[lemcase=$lemcase]  _ %2 } 
     |  3: prn.pers.*.nom %NegVP vblex { %2[lemcase=1.lemcase]  _ 3 } 
     | "vblex vblex"     1: %V V.*.inf   { %1[lemcase=$lemcase]  _ 2 }   ! sáhtán borrat
@@ -394,7 +397,7 @@ C -> %cnjcoo {1}
 
 PCLE -> %pcle {1} ;
 
-S -> "TEST" %NP V AdvP  {%1[cltl=cltl] _ 2 _ 3} !fungerer ikke, hvordan få lagt til cltl?
+S -> "TEST" %NP V AdvP  {%1 _ 2 _ 3} 
 	 ;
 
 S -> "NP VP" NP %VP { 1[lemcase=$lemcase] _ 2 } 
@@ -406,7 +409,7 @@ S -> "NP VP" NP %VP { 1[lemcase=$lemcase] _ 2 }
     | AdvP VP NP { 1 _ 2 _ 3  }
     | NP pcle VP { 1 _ 2 _ 3 }
      | S %NP { 1 _ %2 } !Mun boran láibbi > Båråv lájbev
-     | S %AP { 1 _ %2 } !
+!     | S %AP { 1 _ %2 } !
     ;
 
 S -> "S C S" S C %S { 1 _ 2 _ 3  } 

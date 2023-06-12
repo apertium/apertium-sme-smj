@@ -83,8 +83,12 @@
       <e><par n="word"/><par n="word"/><par n="word"/></e>
     </pardef>
   </pardefs>
-
   <section id="main" type="standard">
+    <e r="RL"> <!-- guhka ájge > guhkev -->
+      <p><l></l><r>guhkke<s n="adj"/><s n="attr"/><d/></r></p>
+      <p><l></l><r>ájgge<s n="n"/><s n="sg"/><s n="gen"/><d/></r></p>
+      <p><l>guhkev<s n="adv"/><d/></l><r>vuolláj<s n="post"/><d/></r></p>
+   </e>
     <e r="RL" w="1.0"> <!-- ij la > illa -->
       <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
       <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
