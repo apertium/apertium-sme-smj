@@ -2,16 +2,54 @@
 <dictionary type="separable">
   <alphabet>aAáÁăảạÆbBcCčdDÐeEéèễệfFgGhHiIíjJkKlLmMnNoOóöớpPqQrRsSšştTŢuUúüưvVwWxXyYzZ</alphabet>
   <sdefs>
+	<sdef n="acc"/>
 	<sdef n="adj"/>
 	<sdef n="adv"/>
-	<sdef n="pr"/>
+	<sdef n="attr"/>
+	<sdef n="cltl"/>
+	<sdef n="cond"/>
+	<sdef n="cnjcoo"/>
+	<sdef n="cnjsub"/>
+	<sdef n="conneg"/>
+	<sdef n="det"/>
+	<sdef n="du"/>
+	<sdef n="ess"/>
+	<sdef n="foc_bat"/>
+	<sdef n="gen"/>
+	<sdef n="indic"/>
+	<sdef n="iv"/>
 	<sdef n="n"/>
-	<sdef n="v"/>
+	<sdef n="neg"/>
+	<sdef n="nom"/>
+	<sdef n="p1"/>
+	<sdef n="p2"/>
+	<sdef n="p3"/>
+	<sdef n="pl"/>
+	<sdef n="pr"/>
+	<sdef n="pres"/>
+	<sdef n="pret"/>
+	<sdef n="sg"/>
+	<sdef n="tv"/>
 	<sdef n="vblex"/>
 	<sdef n="vbser"/>
-	<sdef n="det"/>
-	<sdef n="cltl"/>
+    <sdef n="actio"/>
+    <sdef n="allegro"/>
+    <sdef n="cmp"/>
+    <sdef n="cmp_sgnom"/>
     <sdef n="dat"/>
+    <sdef n="der_nomact"/>
+    <sdef n="der_nomag"/>
+    <sdef n="ela"/>
+    <sdef n="gen"/>
+    <sdef n="inf"/>
+    <sdef n="loc"/>
+    <sdef n="n"/>
+    <sdef n="num"/>
+    <sdef n="pcle"/>
+    <sdef n="post"/>
+    <sdef n="pot"/>
+    <sdef n="qst"/>
+    <sdef n="supn"/>
   </sdefs>
 
   <pardefs>
@@ -52,7 +90,7 @@
       <i><w/><t/></i>
       <p><l><s n="cltl"/></l><r></r></p> <!-- legg til cltl -->
       <i><d/></i>
-      <p><l></l>             <r>liehket<t/><d/></r> </p> <!-- slett liehket -->
+      <p><l></l>   <r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><d/></r> </p> <!-- slett liehket -->
     </e>
 
   </section>
