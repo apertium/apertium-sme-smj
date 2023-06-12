@@ -297,7 +297,7 @@ V -> "condverb" 2: %vblex.*.cond (if (1.qst="" and 1.lem incl auxverbs) { %1[lem
       | "livččii verb" 3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
      ;
 
-VP ->  "leat vblex" 1: [auxverbs]@V %V   { %1[lemcase=$lemcase]  _ 2 }   ! lean borran
+VP ->  "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean borran
  !   1: %NegVP { %1 }
     |  2: prn.pers.*.nom %NegVP { %2[lemcase=1.lemcase] }
     |  2:                NegVP %V { 1[lemcase=$lemcase]  _ %2 } 
