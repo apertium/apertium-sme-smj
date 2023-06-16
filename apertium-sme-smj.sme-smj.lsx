@@ -134,6 +134,13 @@
       <p><l><s n="vblex"/><s n="iv"/><s n="actio"/><s n="loc"/></l><r><s n="vblex"/><s n="iv"/><s n="actio"/><s n="ela"/></r></p><par n="syntax_tags"/>
     </e>
 
+    <e r="LR"> <!-- son lea geatnegahtton > sus lea ovddasvástádus -->
+      <i><w/><t/></i>
+      <p><l><s n="nom"/><t/><d/></l><r><s n="loc"/><t/><d/></r></p>
+      <p><l>leat<s n="vblex"/><t/><d/></l><r>leat<s n="vblex"/><t/><d/></r></p>
+      <p><l>geatnegahtton<s n="adj"/><s n="sg"/><s n="nom"/><t/><d/></l><r>ovddasvástádus<s n="n"/><s n="sg"/><s n="nom"/><t/><d/></r></p>
+      <i><w/><s n="vblex"/><s n="tv"/><s n="inf"/><t/><d/></i>
+   </e>
 
 
 

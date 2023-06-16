@@ -15,6 +15,10 @@
 	<sdef n="du"/>
 	<sdef n="ess"/>
 	<sdef n="foc_bat"/>
+	<sdef n="foc_neg-ge"/>
+	<sdef n="foc_neg-k"/>
+	<sdef n="foc_pos-ge"/>
+	<sdef n="foc_pos-k"/>
 	<sdef n="gen"/>
 	<sdef n="indic"/>
 	<sdef n="iv"/>
@@ -43,6 +47,8 @@
     <sdef n="der_nomag"/>
     <sdef n="ela"/>
     <sdef n="gen"/>
+    <sdef n="ill"/>
+    <sdef n="ine"/>
     <sdef n="inf"/>
     <sdef n="loc"/>
     <sdef n="n"/>
@@ -105,7 +111,13 @@
       <e><par n="word"/><par n="word"/><par n="word"/></e>
     </pardef>
   </pardefs>
-  <section id="main" type="standard">
+  <section id="main" type="standard"> <!-- son váldá mu gihtii > sån válldá muv giedas -->
+    <e r="RL"> 
+      <i>válldet<t/><d/></i>
+      <i><w/><t/><s n="gen"/><d/></i>
+      <i>giehta<s n="n"/><s n="sg"/></i>
+      <p><l><s n="ela"/><d/></l><r><s n="ill"/><d/></r></p>
+   </e>
     <e r="RL"> <!-- guhka ájge > guhkev -->
       <p><l></l><r>guhkke<s n="adj"/><s n="attr"/><d/></r></p>
       <p><l></l><r>ájgge<s n="n"/><s n="sg"/><s n="gen"/><d/></r></p>
@@ -127,6 +139,15 @@
       <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
       <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
    </e>
+
+    <e r="RL" w="1.0">  
+    <i><w/><t/></i>     
+    <p><l><s n="foc_neg-k"/><d/></l><r><s n="foc_neg-ge"/><d/></r></p> 
+  </e>
+    <e r="RL" w="1.0">  
+    <i><w/><t/></i>     
+    <p><l><s n="foc_pos-k"/><d/></l><r><s n="foc_pos-ge"/><d/></r></p> 
+  </e>
 
     <e r="RL" w="1.0">  
      <i>iesj<s n="prn"/><s n="ref"/></i>
