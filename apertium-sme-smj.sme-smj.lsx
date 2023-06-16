@@ -11,6 +11,7 @@
 	<sdef n="cnjcoo"/>
 	<sdef n="cnjsub"/>
 	<sdef n="conneg"/>
+	<sdef n="der_caus"/>
 	<sdef n="det"/>
 	<sdef n="du"/>
 	<sdef n="ess"/>
@@ -41,6 +42,7 @@
     <sdef n="der_nomag"/>
     <sdef n="ela"/>
     <sdef n="gen"/>
+    <sdef n="ill"/>
     <sdef n="inf"/>
     <sdef n="loc"/>
     <sdef n="n"/>
@@ -48,8 +50,10 @@
     <sdef n="pcle"/>
     <sdef n="post"/>
     <sdef n="pot"/>
+    <sdef n="prn"/>
     <sdef n="qst"/>
     <sdef n="sem_ani"/>
+    <sdef n="sem_plc"/>
     <sdef n="supn"/>
     <sdef n="@→N"/>
   </sdefs>
@@ -132,11 +136,28 @@
 
 
 
+
     <e r="LR">
       <p><l>váldit</l><r>searvadit</r></p>
-      <p><l><s n="vblex"/><s n="tv"/><t/><d/></l><r><s n="vblex"/><s n="iv"/><t/><d/></r></p>
-      <p><l>mielde<s n="adv"/></l><r></r></p><par n="syntax_tags"/>
-    </e>
+      <p><l><s n="vblex"/><s n="tv"/></l><r><s n="vblex"/><s n="iv"/><s n="der_caus"/><s n="vblex"/><s n="tv"/><t/></r></p>
+      <i><t/></i>
+      <p><l></l><r></r></p><par n="syntax_tags"/>
+      <p><l>mielde</l><r></r></p>
+       <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
+   </e>
+
+    <e r="LR">
+      <p><l>bidjat</l><r>čalmmustit</r></p>
+      <i><t/><d/></i>
+      <p><l>guovddáš<s n="n"/><s n="sem_plc"/><s n="sg"/><s n="ill"/></l><r></r></p><par n="syntax_tags"/>
+   </e>
+
+    <e r="LR"> <!-- áŋgiruššat dan ala ahte > rahtjat vaj -->
+      <p><l>dat<s n="prn"/></l><r>vai<s n="cnjsub"/></r></p>
+      <i><t/><d/></i>
+      <p><l>ala<s n="post"/></l><r></r></p><par n="syntax_tags"/>
+      <p><l>ahte<s n="cnjsub"/></l><r></r></p><par n="syntax_tags"/>
+   </e>
 
     <e r="LR">
       <p><l>váldit</l><r>vuhtiiváldit</r></p>
