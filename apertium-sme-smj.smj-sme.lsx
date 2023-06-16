@@ -50,7 +50,17 @@
     <sdef n="pcle"/>
     <sdef n="post"/>
     <sdef n="pot"/>
+    <sdef n="px1du"/>
+    <sdef n="px2du"/>
+    <sdef n="px3du"/>
+    <sdef n="px1sg"/>
+    <sdef n="px2sg"/>
+    <sdef n="px3sg"/>
+    <sdef n="px1pl"/>
+    <sdef n="px2pl"/>
+    <sdef n="px3pl"/>
     <sdef n="qst"/>
+    <sdef n="ref"/>
     <sdef n="supn"/>
   </sdefs>
 
@@ -77,6 +87,7 @@
 	  <e><par n="det"/><par n="adj"/><par n="n"/></e>
 	  <e><par n="det"/><par n="adj"/><par n="adj"/><par n="n"/></e>
 	</pardef>
+	
   <pardef n="cltl-words">
       <e><i><w/><s n="vblex"/><t/></i></e>
       <e><i><w/><s n="n"/><t/></i></e>
@@ -116,6 +127,52 @@
       <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
       <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
    </e>
+
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="sg"/></l><r></r></p> 
+      <i><t/><s n="px3sg"/></i>
+  </e>
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="sg"/></l><r></r></p> 
+      <i><t/><s n="px2sg"/></i>
+  </e>
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="sg"/></l><r></r></p> 
+      <i><t/><s n="px1sg"/></i>
+  </e>
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="pl"/></l><r></r></p> 
+      <i><t/><s n="px3pl"/></i>
+  </e>
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="pl"/></l><r></r></p> 
+      <i><t/><s n="px2pl"/></i>
+  </e>
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="pl"/></l><r></r></p> 
+      <i><t/><s n="px1pl"/></i>
+  </e>
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="sg"/></l><r></r></p> 
+      <i><t/><s n="px3du"/></i>
+  </e>
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="sg"/></l><r></r></p> 
+      <i><t/><s n="px2du"/></i>
+  </e>
+    <e r="RL" w="1.0">  
+     <i>iesj<s n="prn"/><s n="ref"/></i>
+     <p><l><s n="sg"/></l><r></r></p> 
+      <i><t/><s n="px1du"/></i>
+  </e>
 
     <e r="RL">
      <par n="cltl-words"/>      

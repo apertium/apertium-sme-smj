@@ -187,7 +187,7 @@ acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
 auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" "leat" "liehket" "galggat" "hæhttut" "ájggot" ;
-attrprn = "juohke" "juohkka" ;
+attrprn = "juohke" "juohkka" "dakkár" ;
 
 dadjat_verbs = "almodit" "ballat" "doajvvot" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gájbbedit" "gielestit" "javllat" "jáhkket" "låhkåt" "merustallat" "miejnnit" "mierredit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet" "vuornnot" "vuosedit" ;
 
@@ -311,6 +311,7 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
       | "deriv enkeltverb" 1:     %vblex.*.der_passl   { %1(vblex_der_vblex)[lemcase=$lemcase]} !
       | "enkeltverb"       1:     %vblex.*.$function               { %1[lemcase=$lemcase,infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
       | "livččii verb"     3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
+    | "aux inf"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*.inf."@-FMAINV"   { %1[lemcase=$lemcase]  _ 2 }   ! sáhtán borrat
      ;
 
 VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean borran
@@ -335,7 +336,7 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
 
 S -> 2: prn.pers %V (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) 
         { %2[lemcase=1.lemcase,lemcase=$lemcase] } else { 1 _ %2 }) !Mun boran  > Båråv 
-    | 2: prn.pers %VP (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) 
+    | 3: prn.pers %VP (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) 
         { %2[lemcase=1.lemcase] } else { 1 _ %2 }) !Mun ferten borrat  > Båråv             
     | 2: C prn.pers %V NP (if (2.person_number in first_sec_person_number and  2.person_number= 3.person_number) 
         { 1 _ 4 _ %3[lemcase=1.lemcase] } else { 1 _ 2 _ 4 _ %3 }) !Mun boran  > Båråv 
@@ -411,6 +412,7 @@ C -> %cnjcoo {1}
 PCLE -> %pcle {1} ;
 
 S -> "TEST" %NP V AdvP  {%1 _ 2 _ 3} 
+     | "TEST2" %NP V aj@AdvP NP  {%1 _ 2 _ 4 _ 3}
 	 ;
 
 S ->! "NP VP" NP %VP { 1[lemcase=$lemcase] _ 2 } 
