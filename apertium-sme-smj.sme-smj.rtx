@@ -186,7 +186,7 @@ acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
 auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" "leat" "liehket" "galggat" "hæhttut" "ájggot" ;
-attrprn = "juohke" "juohkka" "dakkár" "iesjguhti" "iešguhtet" ;
+attrprn = "juohke" "juohkka" "dakkár" "iesjguhti" "iešguhtet" "galle" "galla" ;
 prnnotfocsme =  "mihkke" "guhtemuš" "iešguhtet" ;
 prnnotfocsmj = "soames" "mige" "iesjguhti" ;
 
@@ -266,7 +266,7 @@ NP ->  "adj NP" AP  %NP { 1 _ %2[poss=$poss] }
     | "prn" %prn { %1 } 
     ;
 
-NP -> NP cnjcoo %NP { 1 _ 2 _ %3[case=$case] } ;
+!NP -> NP cnjcoo %NP { 1 _ 2 _ %3[case=$case] } ;
 
 
 !p1_or_p2 = p1 p2 ;
@@ -302,7 +302,8 @@ NegVP -> "ikke conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[lemcase=$lemcas
     | "ikke conneg vblex"  3:  ii@vblex.iv.neg %vblex.*.conneg vblex  { 1[lemcase=$lemcase,tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[tense=(if (2.lem = liehket) 2.tense else "")] _ 3} 
     | "ikke NP conneg"  3:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] } 
     | "ikke conneg NP"  3:  ii@vblex.iv.neg %vblex.*.conneg NP { 1[lemcase=$lemcase,tense=2.tense] _ 3 _ %2[tense=""] } 
-    | "ikke NP conneg vblex"  3:  ii@vblex.iv.neg NP vblex.*.conneg %vblex { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[mood=3.mood,tense=""] _ 4 } 
+    | "ikke NP conneg vblex"  3:  ii@vblex.iv.neg NP vblex.*.conneg %vblex { 1[lemcase=$lemcase,tense=3.tense]  _ %3[mood=3.mood,tense=""] _ 2 _ 4 } 
+    | "ikke conneg NP vblex"  5:  ii@vblex.iv.neg vblex.*.conneg NP  %vblex { 1[lemcase=$lemcase,tense=(if (2.lem = liehket) pres else 2.tense)] _ %2[mood=2.mood,tense=(if (2.lem = liehket) 2.tense else "")]  _ 3 _ 4 } 
     | "ikke AdvP conneg"  3:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] } 
     | "ikke pcle conneg"  3:  ii@vblex.iv.neg pcle %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] } 
     ;
@@ -314,7 +315,8 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
       | "deriv enkeltverb" 1:     %vblex.*.der_passl   { %1(vblex_der_vblex)[lemcase=$lemcase]} !
       | "enkeltverb"       1:     %vblex.*.$function               { %1[lemcase=$lemcase,infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
       | "livččii verb"     3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
-    | "aux inf"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*.inf."@-FMAINV"   { %1[lemcase=$lemcase]  _ 2 }   ! sáhtán borrat
+    | "aux inf"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV"   { %1[lemcase=$lemcase]  _ 2 }   ! sáhtán borrat
+    | "aux inf N"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 3  _ 2 }   ! sáhtán láibbi borrat
      ;
 
 VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean borran
@@ -331,6 +333,7 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
     | "vblex vblex NP"     2: V.trans.mood.$person.$number."@+FAUXV" pcle %V.*."@-FMAINV" NP  { 1[lemcase=$lemcase] _ 2 _ 4 _ %3 }   !  
     | "vblex AdvP vblex"     1: V AdvP %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
     | "vblex pcle vblex"     1: V pcle %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
+    | "vblex pcle vblex NP"     1: V pcle %V NP    { 1[lemcase=$lemcase] _ 2 _ 4 _ %3 }   ! 
     | "vblex NP vblex"     2: V NP %vblex    { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs) supn  else 3.infin)] }   ! hvordan legge til betingelsen 'and 1.lem not in not-usually-supn-verbs' ?
 !    | "vblex NP vblex"     1: V NP %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
     | "vblex NP AdvP"     1: %V NP AdvP    { %1[lemcase=$lemcase] _ 2 _ 3 }   ! 
@@ -426,6 +429,7 @@ S ->! "NP VP" NP %VP { 1[lemcase=$lemcase] _ 2 }
     | "NP VP NP" NP %VP NP { 1[lemcase=$lemcase] _ 2 _ 3 } 
     | "NP VP pcle NP" NP %VP pcle NP { 1 _ 2 _ 3 _ 4 } 
     | AdvP NP VP { 1 _ 2 _ 3  }
+    | C NP VP { 1 _ 2 _ 3  }
     | AdvP VP NP { 1 _ 2 _ 3  }
     | NP pcle VP { 1 _ 2 _ 3 }
     | "vblex NP AP C"    %VP NP AP C    { %1[lemcase=$lemcase] _ 2 _ 3 _ 4 }   ! 
