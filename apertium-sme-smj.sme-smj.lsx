@@ -155,6 +155,12 @@
        <p><l>vásáhus<s n="n"/><t/><s n="acc"/><t/><d/></l><r>vásáhus<s n="n"/><t/><s n="gen"/><t/><d/></r></p>
       <p><l></l><r>birra<s n="post"/><d/></r></p>
    </e>
+    <e r="LR"> <!--   -->
+      <i>muitalit<s n="vblex"/><t/><d/></i>
+      <i><w/><t/><d/></i>
+       <p><l>vásáhus<s n="n"/><t/><s n="acc"/><t/><d/></l><r>vásáhus<s n="n"/><t/><s n="gen"/><t/><d/></r></p>
+      <p><l></l><r>birra<s n="post"/><d/></r></p>
+   </e>
 
 
 
@@ -231,10 +237,6 @@
       <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/></r></p><par n="syntax_tags"/>
    </e>
    
-    <e r="RL">
-      <i><w/><t/></i>
-      <p><l><s n="cltl"/></l><r></r></p><par n="syntax_tags"/>
-    </e>
    
    
     <!-- we don't want "go" → "go go" -->
