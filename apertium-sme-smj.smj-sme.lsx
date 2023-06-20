@@ -93,6 +93,23 @@
 	  <e><par n="det"/><par n="adj"/><par n="n"/></e>
 	  <e><par n="det"/><par n="adj"/><par n="adj"/><par n="n"/></e>
 	</pardef>
+    <pardef n="vblex_trans">
+      <e><i><w/><s n="vblex"/><s n="iv"/></i></e>
+      <e><i><w/><s n="vblex"/><s n="tv"/></i></e>
+    </pardef>
+    <pardef n="ref_sg_px">
+      <e><i><t/><s n="px1sg"/></i></e>
+      <e><i><t/><s n="px2sg"/></i></e>
+      <e><i><t/><s n="px3sg"/></i></e>
+      <e><i><t/><s n="px1du"/></i></e>
+      <e><i><t/><s n="px2du"/></i></e>
+      <e><i><t/><s n="px3du"/></i></e>
+    </pardef>
+    <pardef n="ref_pl_px">
+      <e><i><t/><s n="px1pl"/></i></e>
+      <e><i><t/><s n="px2pl"/></i></e>
+      <e><i><t/><s n="px3pl"/></i></e>
+    </pardef>
 	
   <pardef n="cltl-words">
       <e><i><w/><s n="vblex"/><t/></i></e>
@@ -186,47 +203,12 @@
     <e r="RL" w="1.0">  
      <i>iesj<s n="prn"/><s n="ref"/></i>
      <p><l><s n="sg"/></l><r></r></p> 
-      <i><t/><s n="px3sg"/></i>
-  </e>
-    <e r="RL" w="1.0">  
-     <i>iesj<s n="prn"/><s n="ref"/></i>
-     <p><l><s n="sg"/></l><r></r></p> 
-      <i><t/><s n="px2sg"/></i>
-  </e>
-    <e r="RL" w="1.0">  
-     <i>iesj<s n="prn"/><s n="ref"/></i>
-     <p><l><s n="sg"/></l><r></r></p> 
-      <i><t/><s n="px1sg"/></i>
+      <par n="ref_sg_px"/>      
   </e>
     <e r="RL" w="1.0">  
      <i>iesj<s n="prn"/><s n="ref"/></i>
      <p><l><s n="pl"/></l><r></r></p> 
-      <i><t/><s n="px3pl"/></i>
-  </e>
-    <e r="RL" w="1.0">  
-     <i>iesj<s n="prn"/><s n="ref"/></i>
-     <p><l><s n="pl"/></l><r></r></p> 
-      <i><t/><s n="px2pl"/></i>
-  </e>
-    <e r="RL" w="1.0">  
-     <i>iesj<s n="prn"/><s n="ref"/></i>
-     <p><l><s n="pl"/></l><r></r></p> 
-      <i><t/><s n="px1pl"/></i>
-  </e>
-    <e r="RL" w="1.0">  
-     <i>iesj<s n="prn"/><s n="ref"/></i>
-     <p><l><s n="sg"/></l><r></r></p> 
-      <i><t/><s n="px3du"/></i>
-  </e>
-    <e r="RL" w="1.0">  
-     <i>iesj<s n="prn"/><s n="ref"/></i>
-     <p><l><s n="sg"/></l><r></r></p> 
-      <i><t/><s n="px2du"/></i>
-  </e>
-    <e r="RL" w="1.0">  
-     <i>iesj<s n="prn"/><s n="ref"/></i>
-     <p><l><s n="sg"/></l><r></r></p> 
-      <i><t/><s n="px1du"/></i>
+      <par n="ref_pl_px"/>      
   </e>
 
     <e r="RL" w="2.0">  
