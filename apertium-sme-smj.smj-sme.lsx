@@ -123,22 +123,56 @@
       <p><l></l><r>ájgge<s n="n"/><s n="sg"/><s n="gen"/><d/></r></p>
       <p><l>guhkev<s n="adv"/><d/></l><r>vuolláj<s n="post"/><d/></r></p>
    </e>
-    <e r="RL" w="1.0"> <!-- ij la > illa -->
+    <e r="RL" w="0.0"> <!-- ij la > illa -->
       <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/><d/></r></p>
    </e>
-    <e r="RL" w="1.0"> <!-- ij la > illa -->
+    <e r="RL" w="0.0"> <!-- ij la > illa -->
       <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/><d/></r></p>
    </e>
-    <e r="RL" w="1.0"> <!-- ij la > illa -->
-      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
+    <e r="RL" w="0.0"> <!-- ij la > illa -->
+      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/><d/></r></p>
    </e>
-    <e r="RL" w="1.0"> <!-- ij la > illa -->
-      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
+    <e r="RL" w="0.0"> <!-- ij la > illa -->
+      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/><d/></r></p>
    </e>
+    <e r="RL" w="1.0">  
+      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/></i>
+      <i><t/><d/></i>
+      <i>liehket<s n="vblex"/><s n="iv"/><s n="indic"/></i>
+      <p><l><s n="pres"/><s n="conneg"/><d/></l><r><s n="conneg"/><d/></r></p>
+   </e>
+    <e r="RL" w="1.0">  
+      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/></i>
+      <i><t/><d/></i>
+      <i>liehket<s n="vblex"/><s n="iv"/><s n="indic"/></i>
+      <p><l><s n="pret"/><s n="conneg"/><d/></l><r><s n="conneg"/><d/></r></p>
+   </e>
+
+    <e r="RL"> <!-- adj du > pl -->
+    <i><w/><s n="adj"/></i>     
+      <p><l><s n="pl"/></l><r><s n="du"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="RL" w="2.0">  
+      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <p><l><s n="pres"/><s n="p1"/></l><r><s n="p1"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="RL" w="2.0">  
+      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <p><l><s n="pres"/><s n="p2"/></l><r><s n="p2"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="RL" w="2.0">  
+      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <p><l><s n="pres"/><s n="p3"/></l><r><s n="p3"/></r></p>
+      <i><t/><d/></i>
+   </e>
+
 
     <e r="RL" w="1.0">  
     <i><w/><t/></i>     

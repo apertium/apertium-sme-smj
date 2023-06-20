@@ -216,43 +216,167 @@
       <p><l><s n="adj"/><t/></l><r><s n="adj"/><s n="attr"/></r></p>
       <p><l><s n="@→N"/><d/></l><r><s n="@→N"/><d/></r></p>
    </e>
-    <e r="LR"> <!-- eai leat > ælla -->
+    <e r="LR" w="0.0"> <!-- eai leat > ælla -->
       <p><l>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p3"/><s n="pl"/></l><r></r></p><par n="syntax_tags"/>
       <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/></r></p><par n="syntax_tags"/>
    </e>
-    <e r="LR"> <!-- eai lean > ællim -->
+    <e r="LR" w="0.0"> <!-- eai lean > ællim -->
       <p><l>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p3"/><s n="pl"/></l><r></r></p><par n="syntax_tags"/>
       <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/></r></p><par n="syntax_tags"/>
    </e>
-    <e r="RL"> <!-- e la > ælla -->
-      <p><l>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/></l><r></r></p><par n="syntax_tags"/>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/></r></p><par n="syntax_tags"/>
-   </e>
-    <e r="LR"> <!-- it lean > ællim -->
+    <e r="LR" w="0.0"> <!-- it lean > ællim -->
       <p><l>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p2"/><s n="sg"/></l><r></r></p><par n="syntax_tags"/>
       <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/></r></p><par n="syntax_tags"/>
    </e>
-    <e r="LR"> <!-- it lean > illim -->
+    <e r="LR" w="0.0"> <!-- it lean > illim -->
       <p><l>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p2"/><s n="sg"/></l><r></r></p><par n="syntax_tags"/>
       <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/></r></p><par n="syntax_tags"/>
    </e>
    
-   
+    <e r="LR" w="0.5"> <!-- ii leat -->
+      <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <p><l></l><r><s n="pres"/></r></p>
+      <i><t/><d/></i>
+      <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></r></p>
+            <i><t/><d/></i>
+   </e>
+    <e r="LR" w="0.5"> <!-- ii leat -->
+      <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <p><l></l><r><s n="pres"/></r></p>
+      <i><t/><d/></i>
+      <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="1.0"> <!-- ii iv pres -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/></r></p>
+      <i><t/><d/></i>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r><s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="1.0"> <!-- ii iv pret -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/></r></p>
+      <i><t/><d/></i>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r><s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="1.0"> <!-- ii tv pres -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/></r></p>
+      <i><t/><d/></i>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="tv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r><s n="vblex"/><s n="tv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="1.0"> <!-- ii tv pret -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/></r></p>
+      <i><t/><d/></i>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="tv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r><s n="vblex"/><s n="tv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+  
+    <e r="LR" w="0.0"> <!-- iigo leat -->
+      <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <p><l></l><r><s n="pres"/></r></p>
+      <i><t/></i>
+      <p><l><s n="qst"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
+      <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></r></p>
+            <i><t/><d/></i>
+   </e>
+    <e r="LR" w="0.0"> <!-- iigo leat -->
+      <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <p><l></l><r><s n="pres"/></r></p>
+      <i><t/></i>
+      <p><l><s n="qst"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
+      <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="0.0"> <!-- iigo iv pres -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/></r></p>
+      <i><t/></i>
+      <p><l><s n="qst"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r><s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="0.0"> <!-- iigo iv pret -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/></r></p>
+      <i><t/></i>
+      <p><l><s n="qst"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r><s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="0.0"> <!-- iigo tv pres -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/></r></p>
+      <i><t/></i>
+      <p><l><s n="qst"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="tv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r><s n="vblex"/><s n="tv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="0.0"> <!-- iibat tv pres -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/></r></p>
+      <i><t/></i>
+      <p><l><s n="foc_bat"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="tv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r><s n="vblex"/><s n="tv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR" w="0.0"> <!-- iigo tv pret -->
+      <i>ii</i>
+      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/></r></p>
+      <i><t/></i>
+      <p><l><s n="qst"/></l><r></r></p>
+      <par n="maybe_syntax_tag"/>
+      <i><d/></i>
+      <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
+      <i><w/></i>
+      <p><l><s n="vblex"/><s n="tv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r><s n="vblex"/><s n="tv"/><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e>
    
     <!-- we don't want "go" → "go go" -->
     <e r="LR" w="0.0">
       <i>go<s n="pcle"/><s n="qst"/><t/><d/></i>
     </e>
-    <e r="LR" w="1.0">
+    <e r="LR" w="0.0">
       <i><w/><t/></i>
       <p><l><s n="qst"/></l><r></r></p>
       <par n="maybe_syntax_tag"/>
       <i><d/></i>
       <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
     </e>
-    <e r="LR" w="1.0">
+    <e r="LR" w="0.0">
       <i><w/><t/></i>
-      <p><l><s n="foc_bat"/></l><r></r></p>
+      <p><l><s n="sg"/><s n="foc_bat"/></l><r><s n="sg"/></r></p>
       <par n="maybe_syntax_tag"/>
       <i><d/></i>
       <p><l></l><r>go<s n="pcle"/><s n="qst"/><d/></r></p>
