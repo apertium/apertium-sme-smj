@@ -180,7 +180,7 @@ foclemmas = "okta" ;
 
 not-move-adv = "aj" "duodaj" "vargga" "náv" "nav" "gal" "de" ;
 
-smj-supn-triggerverbs = "bivddit" "barggat" "dahkat" "hásstalit" "vælggogissan dahkat" "ávvudallat" "ávttjit" ;
+smj-supn-triggerverbs = "bivddit" "barggat" "dahkat" "hásstalit" "vælggogissan dahkat" "ávvudallat" "ávttjit" "geatnegahttit" ;
 
 adj_nottriggingsupn = "álkke" "hiebalasj" "suohtas" "vájvve" "guhkálasj" "ahket" "ájnas" "gássjel" "tjiehppe" ;
 
@@ -353,13 +353,15 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
       | "enkeltverb"       1:     %vblex.*.$function               { %1[lemcase=$lemcase,infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
       | "livččii verb"     3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
     | "aux inf"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV"   { %1[lemcase=$lemcase]  _ 2 }   ! sáhtán borrat
-    | "aux inf NP"     3: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 3  _ 2 }   ! sáhtán láibbi borrat
+    | "aux inf NP"     3: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP (if (2.lem=sjaddat or 2.lem=liehket) { %1[lemcase=$lemcase] _ 2  _ 3 } else  { %1[lemcase=$lemcase] _ 3  _ 2 })   ! sáhtán láibbi borrat
     | "aux NP inf NP"     3: %vblex.*.$person.$number."@+FAUXV" NP vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 2 _ 4  _ 3 }   
     | "aux PRN inf NP"     3: %vblex.*.$person.$number."@+FAUXV" PRN vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 2 _ 4  _ 3 }   
     | "aux AdvP inf NP"     3: %vblex.*.$person.$number."@+FAUXV" AdvP vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 2 _ 4  _ 3 }   
     !!! Hæhttu dågålattjat máná kultuvrraduogátjav vieledit. 
     | "aux inf PRN"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" PRN ?(1.lem not = ii)  { %1[lemcase=$lemcase] _ 3  _ 2 }   ! sáhtán láibbi borrat
     | "aux NP inf "     2: %vblex.*.$person.$number."@+FAUXV" NP vblex.*."@-FMAINV"   { %1[lemcase=$lemcase] _ 2  _ 3 }   ! sáhtán láibbi borrat
+    | "@N← @-F←OBJ "     2: %vblex.*."@N←" n.*."@-F←OBJ"   { %2[lemcase=$lemcase,number=2.number] _ 1 }   
+    !!! álggahit idjadansajiid > idjadimsajijt álgadit
      ;
 
 VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean borran
@@ -395,7 +397,7 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
     | "vblex NP vblex"     2: V.*."@+FMAINV" NP %vblex    { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs) supn  else 3.infin)] }   ! hvordan legge til betingelsen 'and 1.lem not in not-usually-supn-verbs' ?
 !    | "vblex NP vblex"     1: V NP %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
     | "vblex NP AdvP"     1: %V NP AdvP    { %1[lemcase=$lemcase] _ 2 _ 3 }   ! 
-    | "vblex NP AP"     1: %V NP AP    { %1[lemcase=$lemcase] _ 2 _ 3 }   ! 
+!    | "vblex NP AP"     1: %V NP AP    { %1[lemcase=$lemcase] _ 2 _ 3 }   ! 
     | "vblex NP AP C"     1: %V NP AP C    { %1[lemcase=$lemcase] _ 2 _ 3 _ 4 }   ! 
     | "vblex PRN AP C"     1: %V PRN AP C    { %1[lemcase=$lemcase] _ 2 _ 3 _ 4 }   ! 
     ;
