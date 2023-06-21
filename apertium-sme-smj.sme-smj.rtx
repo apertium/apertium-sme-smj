@@ -66,7 +66,7 @@ semtag = [semtime] [semhum] [semother] ;
 VP: _.trans.mood.tense.person.number.infin ; !?
 V: _.trans.mood.tense.person.number.infin.function ; !?
 NegVP:  _.trans.neg.mood.tense.conneg ;
-NP: _.n_type.semtag.number.case.poss.cmp.hyph.onlycmp.foc.cltl ; 
+NP: _.n_type.number.case.poss.cmp.hyph.onlycmp.foc.cltl ; 
 PRN: _.prn_type.person.number.case.poss.attr.foc ; 
 S: _.function ; !?
 InfinS: _ ;
@@ -80,15 +80,15 @@ PCLE: _ ;
 cnjcoo: _ ;
 cnjsub: _ ;
 
-N: _.n_type.semtag.number.case.poss.cmp.hyph.onlycmp ; 
-n: _.n_type.semtag.number.case.attr.poss.cmp.hyph.onlycmp.cltl ; 
-adj_to_noun: <n>.n_type.semtag.number.case ;
+N: _.n_type.number.case.poss.cmp.hyph.onlycmp ; 
+n: _.n_type.number.case.attr.poss.cmp.hyph.onlycmp.cltl ; 
+adj_to_noun: <n>.n_type.number.case ;
 
 !n: (if (1.deriv = der_nomag or 1.deriv = der_nomag) 1(vblex_der_n)  
 !      else 1(n_norm)) ;
 
 
-!n_der: _.semtag.deriv.<n>.number.case.poss.cmp.onlycmp.cltl ;
+!n_der: _.deriv.<n>.number.case.poss.cmp.onlycmp.cltl ;
 
 post: _ ;
 pr: _ ;
@@ -229,12 +229,12 @@ AP -> %adj (if (1.pos/tl=n) {%1(adj_to_noun)} else-if (1.deriv=der_aadv) {%1(adj
     ;
 
 
-N ->    1: %n { %1[lemcase=$lemcase,semtag="",n_type=(if (1.n_type/tl="") "" else 1.n_type)] }  
-	  | 2: n.*.cmp  %N { 1[semtag=""] + %2[semtag=""] } 
-	  | 2: adj.*.cmp  %N { 1[semtag=""] + %2[semtag=""] } 
-      | 3: %n.*.loc { %1[semtag="",case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
-      | 4: [attrprn]@prn %n.*.loc { 1[foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] _  %2[semtag="",case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 
-      | 4: prn %n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _  %2[semtag="",case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 
+N ->    1: %n { %1[lemcase=$lemcase,n_type=(if (1.n_type/tl="") "" else 1.n_type)] }  
+	  | 2: n.*.cmp  %N { 1 + %2 } 
+	  | 2: adj.*.cmp  %N { 1 + %2 } 
+      | 3: %n.*.loc { %1[case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
+      | 4: [attrprn]@prn %n.*.loc { 1[foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] _  %2[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 
+      | 4: prn %n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _  %2[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 
       | 4: %gohcu@n.*.pl.gen { %1(noun_to_vblex_infin) } !denne må generaliseres, hvordan uttrykke pos?
       | 3: %num.sem_year.sg.loc  {  jahke@n.sg.ine _ %1[case=nom] }
       | 3: %num.sem_year.sg.ill  {  jahke@n.sg.ill _ %1[case=nom] }
@@ -248,27 +248,27 @@ PRN ->  2: %[prnnotfocsme]@prn  { %1[foc=""] }
 NP ->  %N { %1[lemcase=$lemcase] } 
       | %N PCLE { %1 _ 2 }
 !      | PRN %N { 1[case=(if (2.case = ela) ela else ine)] _ %2 }
-!     | 2: n.*."@→N" %N { 1 _ 2[semtag=""]} !sámi mánáfálaldaga
+!     | 2: n.*."@→N" %N { 1 _ 2} !sámi mánáfálaldaga
       | %prn  { %1[poss=$poss] }
       | %prn PCLE { %1 _ 2 }
       ;
 
 
 NP -> 2: %num.*.loc n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _ 
-      %2[semtag="",case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] } 
-    | 2: %num n {1[case=(if (1.lem = akta) 1.case elif (1.case = acc and 2.case = acc) nom else 1.case)]  _ 2[semtag="", case=(if (1.lem = akta) 2.case elif (1.case = acc and 2.case = acc) gen else 2.case)]} 
+      %2[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] } 
+    | 2: %num n {1[case=(if (1.lem = akta) 1.case elif (1.case = acc and 2.case = acc) nom else 1.case)]  _ 2[case=(if (1.lem = akta) 2.case elif (1.case = acc and 2.case = acc) gen else 2.case)]} 
     | 2: prn.dem %num.*.loc n.*.loc { 1 _ 2[case=(if (3.function = "@←ADVL-ela" or 3.function = "@ADVL-ela→") ela else ine)] _ 
-      %3[semtag="",case=(if (3.function = "@←ADVL-ela" or 3.function = "@ADVL-ela→") ela else ine)] }
-    | 2: prn.dem %num n {1 _ 2[case=(if (2.lem = akta) 2.case elif (2.case = acc and 3.case = acc) nom else 2.case)]  _ 3[semtag="", case=(if (2.lem = akta) 3.case elif (2.case = acc and 3.case = acc) gen else 3.case)]}  !3.lem not = akta (1.case not = 2.case)
+      %3[case=(if (3.function = "@←ADVL-ela" or 3.function = "@ADVL-ela→") ela else ine)] }
+    | 2: prn.dem %num n {1 _ 2[case=(if (2.lem = akta) 2.case elif (2.case = acc and 3.case = acc) nom else 2.case)]  _ 3[case=(if (2.lem = akta) 3.case elif (2.case = acc and 3.case = acc) gen else 3.case)]}  !3.lem not = akta (1.case not = 2.case)
     ;
     
     
-! | %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number,semtag=""] } ; !for shit in guokte biillat
+! | %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat
 
-NP -> prn.ref %n { 1 _ 2[semtag=""]}  !ietjam viellja
-    | prn.dem %n { 1 _ 2[semtag=""]}  !dav vielja
-    | prn %n { 1 _ 2[semtag=""]} !juohke sajis
-    | 2: n.*."@→N" %N { 1 _ 2[semtag=""]} !sámi máná
+NP -> prn.ref %n { 1 _ 2}  !ietjam viellja
+    | prn.dem %n { 1 _ 2}  !dav vielja
+    | prn %n { 1 _ 2} !juohke sajis
+    | 2: n.*."@→N" %N { 1 _ 2} !sámi máná
     ;
 
 
@@ -330,9 +330,9 @@ NegVP ->  "ii lohkat_verbs@conneg ess"  3:  ii@vblex.iv.neg %[lohkat_verbs]@vble
     !!! in jáhke nieidda boahtit > iv jáhke næjttso boahtá
     | "ii conneg PRN vblex, også dadjat_verbs"  6:  ii@vblex.iv.neg %vblex.*.conneg prn  vblex { 1[lemcase=$lemcase] _ %2[mood=2.mood,conneg=2.conneg]  _ 3[case=(if (3.case=acc and 2.lem in dadjat_verbs) nom else 3.case)] _ 4[infin=(if (3.case=acc and 2.lem in dadjat_verbs) "" else 4.infin),mood=(if (3.case=acc and 2.lem in dadjat_verbs) indic else ""),tense=(if (3.case=acc and 2.lem in dadjat_verbs) pres else ""),person=(if (3.case=acc and 2.lem in dadjat_verbs) p3 else ""),number=(if (3.case=acc and 2.lem in dadjat_verbs) 3.number else "")] }  
     !!! ii jáhke su/dan boahtit > iv jáhke sån/dat boahtá
-    | "ii dadjat_verbs@conneg PRN n.ess"  6:  ii@vblex.iv.neg %[dadjat_verbs]@vblex.*.conneg prn.*.acc  n.*.ess { 1[lemcase=$lemcase] _ %2  _ 3[case=nom] _ liehket(vblex)[trans=iv,mood=indic,tense=2.tense,person=3.person,number=3.number] _ 4[semtag="",number=3.number,case=nom] }  
+    | "ii dadjat_verbs@conneg PRN n.ess"  6:  ii@vblex.iv.neg %[dadjat_verbs]@vblex.*.conneg prn.*.acc  NP.*.ess { 1[lemcase=$lemcase] _ %2  _ 3[case=nom] _ liehket(vblex)[trans=iv,mood=indic,tense=2.tense,person=3.person,number=3.number] _ 4[number=3.number,case=nom] }  
     !!! ii jáhke su nieidan
-    | "ii dadjat_verbs@conneg PRN adj"  6:  ii@vblex.iv.neg %[dadjat_verbs]@vblex.*.conneg prn.*.acc  adj { 1[lemcase=$lemcase] _ %2  _ 3[case=nom] _ liehket@vblex.iv.indic.[2.tense][person=3.person,number=3.number] _ 4[semtag="",number=3.number,case=nom] }  
+    | "ii dadjat_verbs@conneg PRN adj"  6:  ii@vblex.iv.neg %[dadjat_verbs]@vblex.*.conneg prn.*.acc  adj { 1[lemcase=$lemcase] _ %2  _ 3[case=nom] _ liehket@vblex.iv.indic.[2.tense][person=3.person,number=3.number] _ 4[number=3.number,case=nom] }  
     !!! ii jáhke su dohkalažžan
     | "ii AdvP conneg"  3:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] } 
     | "ii pcle conneg"  3:  ii@vblex.iv.neg pcle %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] } 
@@ -485,6 +485,8 @@ S ->! "NP VP" NP %VP { 1[lemcase=$lemcase] _ 2 }
 !    | AdvP NP %V (if (1.function="@ADVLqst-ine→" or 1.function="@ADVLqst-ela→") { 1 _ %3 _ 2  } else { 1 _ 2 _ %3 }) ! Gos áhččát lea? > Gånnå la áhttját?
     | AdvP %VP NP { 1 _ %2 _ 3  }
     | NP pcle %VP { 1 _ 2 _ %3 }
+    | %V ahte@C (if (1.function="@+FMAINV") { %1 } else { %1 _ 2 }) 
+    !!!lohká ahte > lohká 
     | "vblex NP AP C"    %VP NP AP C    { %1[lemcase=$lemcase] _ 2 _ 3 _ 4 }   ! 
      | S %NP { 1 _ %2 } !Mun boran láibbi > Båråv lájbev
      | %S AdvP { 2[lemcase=1.lemcase] _ %1[lemcase=2.lemcase] } !Mun boran odne > Båråv lájbev
