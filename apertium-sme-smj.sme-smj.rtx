@@ -407,6 +407,8 @@ S -> 2: prn.pers %V.*.$function (if (1.person_number in first_sec_person_number 
         { %2[lemcase=1.lemcase] } else { 1 _ %2 }) !Mun ferten borrat  > Båråv             
     | 2: C prn.pers %V NP (if (2.person_number in first_sec_person_number and  2.person_number= 3.person_number) 
         { 1 _ 4 _ %3[lemcase=1.lemcase] } else { 1 _ 2 _ 4 _ %3 }) !Mun boran  > Båråv 
+    | 2: C prn.pers %V PRN (if (2.person_number in first_sec_person_number and  2.person_number= 3.person_number) 
+        { 1 _ 4 _ %3[lemcase=1.lemcase] } else { 1 _ 2 _ 4 _ %3 }) !  
     ;
 
 
