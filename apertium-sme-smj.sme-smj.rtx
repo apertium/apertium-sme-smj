@@ -235,9 +235,10 @@ AP -> %adj (if (1.pos/tl=n) {%1(adj_to_noun)} else-if (1.deriv=der_aadv) {%1(adj
     ;
 
 
-N ->    1: %n { %1[lemcase=$lemcase,n_type=(if (1.n_type/tl="") "" else 1.n_type)] }  
+N ->    1: %n { %1[lemcase=$lemcase] }  
 	  | 2: n.*.cmp  %N { 1 + %2 } 
 	  | 2: adj.*.cmp  %N { 1 + %2 } 
+	  | 1: N cnjcoo."@CNP" %N ?(1.function = 3.function) { 1 _ 2 _ %3 } !!! coordination
       | 3: %n.*.loc { %1[case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
       | 4: [attrprn]@prn %n.*.loc { 1[foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] _  %2[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 
       | 4: prn %n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _  %2[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 
@@ -352,7 +353,11 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
       | "enkeltverb"       1:     %vblex.*.$function               { %1[lemcase=$lemcase,infin=(if (1.function = "@←ADVL") supn else 1.infin)]} !
       | "livččii verb"     3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
     | "aux inf"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV"   { %1[lemcase=$lemcase]  _ 2 }   ! sáhtán borrat
-    | "aux inf NP"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 3  _ 2 }   ! sáhtán láibbi borrat
+    | "aux inf NP"     3: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 3  _ 2 }   ! sáhtán láibbi borrat
+    | "aux NP inf NP"     3: %vblex.*.$person.$number."@+FAUXV" NP vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 2 _ 4  _ 3 }   
+    | "aux PRN inf NP"     3: %vblex.*.$person.$number."@+FAUXV" PRN vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 2 _ 4  _ 3 }   
+    | "aux AdvP inf NP"     3: %vblex.*.$person.$number."@+FAUXV" AdvP vblex.*."@-FMAINV" NP  { %1[lemcase=$lemcase] _ 2 _ 4  _ 3 }   
+    !!! Hæhttu dågålattjat máná kultuvrraduogátjav vieledit. 
     | "aux inf PRN"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" PRN ?(1.lem not = ii)  { %1[lemcase=$lemcase] _ 3  _ 2 }   ! sáhtán láibbi borrat
     | "aux NP inf "     2: %vblex.*.$person.$number."@+FAUXV" NP vblex.*."@-FMAINV"   { %1[lemcase=$lemcase] _ 2  _ 3 }   ! sáhtán láibbi borrat
      ;
