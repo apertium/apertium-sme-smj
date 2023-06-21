@@ -81,7 +81,13 @@ cnjcoo: _ ;
 cnjsub: _ ;
 
 N: _.n_type.number.case.poss.cmp.hyph.onlycmp ; 
-n: _.n_type.number.case.attr.poss.cmp.hyph.onlycmp.cltl ; 
+n_only: _.number.case.attr.poss.cmp.hyph.onlycmp ; 
+n_type: _.n_type.number.case.poss ; 
+
+n: (if (1.n_type/tl = "") 1(n_only)  
+      else 1(n_type)) ;
+
+
 adj_to_noun: <n>.n_type.number.case ;
 
 !n: (if (1.deriv = der_nomag or 1.deriv = der_nomag) 1(vblex_der_n)  
