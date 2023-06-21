@@ -373,11 +373,11 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
      !!!jáhkká su váikkuhit > jáhkká sån vájkkut
      | "dadjat_verbs prn.dem.acc vblex.inf"     4: [dadjat_verbs]@vblex prn.dem.*.acc %vblex.*.inf    { 1[lemcase=$lemcase] _ 2[case=nom] _ %3[infin="",mood=indic,tense=1.tense,person=p3,number=2.number] } 
      !!!jáhkká dan váikkuhit > jáhkká dat vájkkut
-     | "dadjat_verbs prn.acc vblex.inf"     4: [dadjat_verbs]@vblex prn.*.acc %vblex.*.prfprc    { 1[lemcase=$lemcase] _ 2[case=nom] _ liehket(vblex)[trans=iv,mood=indic,tense=pres,person=2.person,number=2.number] _ 3 } 
+     | "dadjat_verbs prn.acc vblex.prfprc"     4: [dadjat_verbs]@vblex prn.*.acc %vblex.*.prfprc    { 1[lemcase=$lemcase] _ 2[case=nom] _ liehket(vblex)[trans=iv,mood=indic,tense=pres,person=2.person,number=2.number] _ 3 } 
      !!!lohká sin árvvoštallan > javllá sij li árvustallam DON'T FUNCTION
      | "dadjat_verbs n.acc vblex.inf"     4: [dadjat_verbs]@vblex n.*.acc %vblex.*.inf    { 1[lemcase=$lemcase] _ 2[case=nom] _ %3[infin="",mood=indic,tense=1.tense,person=p3,number=2.number] } 
      !!!jáhkká skuvlla váikkuhit > jáhkká skåvllå vájkkut
-    | "dadjat_verbs ieš.case ess"  5:  [dadjat_verbs]@vblex %ieš@prn.ref adj.*.ess 
+    | "dadjat_verbs ieš.case ess"  5:  %[dadjat_verbs]@vblex ieš@prn.ref adj.*.ess 
  { 1[lemcase=$lemcase] _ %2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=nom,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif (2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ liehket(vblex)[trans=iv,mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3[number=2.poss,case=nom]} 
  	 !!! Son lohká iežaset duđavažžan. > Sån javllá sij li dudálattja.
 
@@ -390,6 +390,7 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
     ;
 
 S -> 2: prn.pers %V.*.$function (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) 
+        { %2[lemcase=1.lemcase,lemcase=$lemcase] } elif (2.lem = ij) 
         { %2[lemcase=1.lemcase,lemcase=$lemcase] } else { 1 _ %2 }) !Mun boran  > Båråv 
     | 3: prn.pers %VP.$function (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) 
         { %2[lemcase=1.lemcase] } else { 1 _ %2 }) !Mun ferten borrat  > Båråv             
