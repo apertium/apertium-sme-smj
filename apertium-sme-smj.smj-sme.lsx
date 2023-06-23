@@ -156,17 +156,19 @@
       <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></r></p>
       <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/><d/></r></p>
    </e>
-    <e r="RL" w="1.0">  
-      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/></i>
-      <i><t/><d/></i>
-      <i>liehket<s n="vblex"/><s n="iv"/><s n="indic"/></i>
-      <p><l><s n="pres"/><s n="conneg"/><d/></l><r><s n="conneg"/><d/></r></p>
-   </e>
-    <e r="RL" w="1.0">  
-      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/></i>
+    <e r="RL" w="1.0">  <!-- fjerne pres, for verb som blir liehket undervegs, f.eks. orrut -->
+      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>      
+      <p><l><s n="pres"/></l><r><s n="pret"/></r></p>
       <i><t/><d/></i>
       <i>liehket<s n="vblex"/><s n="iv"/><s n="indic"/></i>
       <p><l><s n="pret"/><s n="conneg"/><d/></l><r><s n="conneg"/><d/></r></p>
+   </e>
+    <e r="RL" w="1.0">  <!-- fjerne pret, for verb som blir liehket undervegs -->
+      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>      
+      <p><l><s n="pres"/></l><r><s n="pres"/></r></p>
+      <i><t/><d/></i>
+      <i>liehket<s n="vblex"/><s n="iv"/><s n="indic"/></i>
+      <p><l><s n="pres"/><s n="conneg"/><d/></l><r><s n="conneg"/><d/></r></p>
    </e>
 
     <e r="RL"> <!-- adj du > pl -->
@@ -191,21 +193,21 @@
    </e>
 
 
-    <e r="RL" w="1.0">  
+    <e r="RL" w="0.0">  <!-- endre tagg uansett -->
     <i><w/><t/></i>     
     <p><l><s n="foc_neg-k"/><d/></l><r><s n="foc_neg-ge"/><d/></r></p> 
   </e>
-    <e r="RL" w="1.0">  
+    <e r="RL" w="0.0">  <!-- endre tagg uansett -->
     <i><w/><t/></i>     
     <p><l><s n="foc_pos-k"/><d/></l><r><s n="foc_pos-ge"/><d/></r></p> 
   </e>
 
-    <e r="RL" w="1.0">  
+    <e r="RL" w="1.0">  <!-- legg til sg -->
      <i>iesj<s n="prn"/><s n="ref"/></i>
      <p><l><s n="sg"/></l><r></r></p> 
       <par n="ref_sg_px"/>      
   </e>
-    <e r="RL" w="1.0">  
+    <e r="RL" w="1.0">  <!-- legg pl -->
      <i>iesj<s n="prn"/><s n="ref"/></i>
      <p><l><s n="pl"/></l><r></r></p> 
       <par n="ref_pl_px"/>      
