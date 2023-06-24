@@ -237,36 +237,6 @@
       <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/></r></p><par n="syntax_tags"/>
    </e>
    
-    <e r="LR" w="0.5"> <!-- ii leat -->
-      <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
-      <p><l></l><r><s n="pres"/></r></p>
-      <i><t/><d/></i>
-      <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/></r></p>
-            <i><t/><d/></i>
-   </e>
-    <e r="LR" w="0.5"> <!-- ii leat -->
-      <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
-      <p><l></l><r><s n="pres"/></r></p>
-      <i><t/><d/></i>
-      <p><l>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/></r></p>
-      <i><t/><d/></i>
-   </e>
-    <e r="LR" w="1.0"> <!-- ii pres -->
-      <i>ii</i>
-      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/></r></p>
-      <i><t/><d/></i>
-      <par n="vblex_trans"/>      
-      <p><l><s n="indic"/><s n="pres"/><s n="conneg"/></l><r><s n="vblex"/><s n="iv"/><s n="indic"/><s n="conneg"/></r></p>
-      <i><t/><d/></i>
-   </e>
-    <e r="LR" w="1.0"> <!-- ii pret -->
-      <i>ii</i>
-      <p><l><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></l><r><s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/></r></p>
-      <i><t/><d/></i>
-      <par n="vblex_trans"/>      
-      <p><l><s n="indic"/><s n="pret"/><s n="conneg"/></l><r><s n="indic"/><s n="conneg"/></r></p>
-      <i><t/><d/></i>
-   </e>
   
     <e r="LR" w="0.0"> <!-- iigo leat -->
       <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
