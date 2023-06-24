@@ -85,8 +85,10 @@ n_only: _.number.case.attr.poss.cmp.hyph.onlycmp ;
 n_type: _.n_type.number.case.poss ; 
 n_der_n: _.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
 n_type_der_n: _.n_type.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
+n_adj: _.deriv.<adj>.number.case.poss.cmp.hyph.onlycmp ;
 
 n: (if (1.deriv = der_dimin) 1(n_der_n)
+      elif (1.deriv = der_lasj) 1(n_adj)
       elif (1.n_type/tl = "" and 1.deriv = "") 1(n_only)
       elif (1.deriv = "") 1(n_type)
       else 1(n_type_der_n)) ;
@@ -125,12 +127,10 @@ prn: (if (1.prn_type = pers) 1(prn_pers)
 adj_attr: _.attr.cmp.onlycmp ;
 adj_pred: _.number.case.poss.cmp.onlycmp ;
 adj_comp: _.comp.<adj>.number.attr.case.poss.cmp.onlycmp ;
-adj_n: _.deriv.<adj>.number.case.poss.cmp.hyph.onlycmp ;
 adj_adv_comp:_.comp.<adj>.<der_aadv>.<adv> ;
 adj_adv:_.<der_aadv>.<adv> ;
 
-adj: (if (1.deriv = der_lasj) 1(adj_n)
-     elif (1.deriv = der_aadv and 1.comp ="") 1(adj_adv)
+adj: (if (1.deriv = der_aadv and 1.comp ="") 1(adj_adv)
      elif (1.deriv = der_aadv and 1.comp in comp) 1(adj_adv_comp)
      elif (1.deriv = "" and 1.comp in comp) 1(adj_comp) 
      elif (1.attr = attr) 1(adj_attr)
