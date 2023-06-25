@@ -264,7 +264,7 @@ AP -> %adj (if (1.pos/tl=n) {%1(adj_to_noun)} elif (1.deriv=der_aadv and 1.comp 
 
 N ->    1: %n { %1[lemcase=$lemcase] }  
       | "np" %np.*.$function { %1[lemcase=$lemcase] } 
-      | "np cnp np" np cnjcoo."@CNP" %np.*.$function { 1[lemcase=$lemcase] _ 2 _ %3 }
+      | "np cnp np" np cnjcoo."@CNP" %np.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else pl)] { 1[lemcase=$lemcase] _ 2 _ %3 }
       | "prn" %prn { %1[lemcase=$lemcase] } 
 	  | 2: n.*.cmp  %N { 1[lemcase=$lemcase] + %2 } 
 	  | 3: adj.*.cmp  %N { 1[lemcase=$lemcase] + %2 } 
