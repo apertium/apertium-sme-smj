@@ -12,6 +12,7 @@ np_type_other = top cog org sem_ani ;
 np_type = ant [np_type_other] ;
 n_type = g3 nomag ;
 num_type = arab ;
+sentinit = sentinit ;
 adj_type = ord ;
 abbr = abbr ;
 gramtag = gram_tabbr gram_iabbr gram_numnoabbr gram_tnumabbr  ;
@@ -71,7 +72,7 @@ semtag = [semtime] [semhum] [semother] ;
 !!!!!!!!!!!!!!!
 
 VP: _.trans.mood.tense.person.number.infin ; !?
-V: _.trans.mood.tense.person.number.infin.function ; !?
+V: _.trans.mood.tense.person.number.infin.function.sentinit ; !?
 NegVP:  _.trans.neg.mood.tense.conneg ;
 NP: _.n_type.number.case.poss.cmp.hyph.onlycmp.foc ; 
 PRN: _.prn_type.person.number.case.poss.attr.foc ; 
@@ -103,12 +104,6 @@ n: (if (1.deriv = der_dimin) 1(n_der_n)
       else 1(n_type_der_n)) ;
 
 adj_to_noun: <n>.n_type.number.case ;
-
-!n: (if (1.deriv = der_nomag or 1.deriv = der_nomag) 1(vblex_der_n)  
-!      else 1(n_norm)) ;
-
-
-!n_der: _.deriv.<n>.number.case.poss.cmp.onlycmp ;
 
 post: _ ;
 pr: _ ;
@@ -148,6 +143,7 @@ adj: (if
      else 1(adj_pred)) ;
      
 vblex_fin: <vblex>.trans.neg.mood.tense.person.number.qst ; 
+vblex_liehket_fin: <vblex>.trans.neg.mood.tense.person.number.qst.sentinit ; 
 vblex_inf: <vblex>.trans.tense.infin ;
 vblex_conneg: <vblex>.trans.mood.conneg ;
 vblex_liehket_conneg: <vblex>.trans.mood.tense.conneg ;
@@ -161,8 +157,9 @@ vblex: (
         elif (1.conneg = conneg and 1.lem/tl = liehket ) 1(vblex_liehket_conneg)
         elif (1.conneg = conneg ) 1(vblex_conneg)
         elif (1.mood = "cond" or 1.mood = "pot") 1(vblex_mood2)
-        elif (1.infin = "") 1(vblex_fin)
-        else 1(vblex_inf)
+        elif (1.infin = "" and 1.lem/tl equal-cl liehket) 1(vblex_liehket_fin)
+        else (if (1.infin = "") 1(vblex_fin)
+        else 1(vblex_inf))
        ) ;
 
 
@@ -451,10 +448,10 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
       | "adj_nottriggingsupn vblex"       3:  [adj_nottriggingsupn]@adj.ess   %vblex.*.inf    { 1[lemcase=$lemcase] _ %2 }
     ;
 
-S -> 3: prn.pers %V.*.$function  (if (1.function="@-FSUBJ→" and 2.infin="actio.ess") {1[lemcase=$lemcase,case=nom] _ liehket(vblex_fin)[trans=iv,mood=indic,tense=pres,person=p3,number=1.number] _ %2} 
-        else (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) { %2[lemcase=1.lemcase] } 
-        elif (2.lem = ij) { %2[lemcase=1.lemcase] } 
-        elif (2.lem incl liehket and 2.infin = prfprc) { 1[lemcase=$lemcase] _ %liehket(vblex)[trans=iv,neg="",mood=indic,tense=pres,person=1.person,number=1.number,infin=""] _ %2 }
+S -> 3: prn.pers %V.*.$function.$sentinit  (if (1.function="@-FSUBJ→" and 2.infin="actio.ess") {1[lemcase=$lemcase,case=nom] _ liehket(vblex_liehket_fin)[trans=iv,mood=indic,tense=pres,person=p3,number=1.number] _ %2} 
+        else (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) { %2[lemcase=1.lemcase,sentinit=1.sentinit] } 
+        elif (2.lem incl ij) { %2[lemcase=1.lemcase] } 
+        elif (2.lem incl liehket and 2.infin = prfprc) { 1[lemcase=$lemcase,sentinit=1.sentinit] _ %liehket(vblex)[trans=iv,neg="",mood=indic,tense=pres,person=1.person,number=1.number,infin=""] _ %2 }
          else { 1 _ %2 })) 
         !!!Mun boran  > Båråv, oainnán su stoahkamin > oainnán son lea stoahkamin 
     | 3: prn.pers %leat@vblex.*."@+FMAINV" { 1 _ %2 }     
