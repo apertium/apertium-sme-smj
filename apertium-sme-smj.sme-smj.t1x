@@ -1229,6 +1229,7 @@ C[_]-T sent
        <attr-item tags="←vdic→"/>
        <attr-item tags="←logo→"/>
        <attr-item tags="←ind→"/>
+       <attr-item tags="sentinit"/>
     </def-attr>
     <def-attr n="a_spec_sme_tags2">
       <attr-item tags="foc_gis"/>
