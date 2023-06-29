@@ -10,6 +10,7 @@ prn_type = pers ref res [prn_type_other] ;
 np_type_other = top cog org sem_ani ;
 np_type = ant [np_type_other] ;
 n_type = g3 nomag ;
+acr = acr ;
 num_type = arab ;
 sentinit = sentinit ;
 adj_type = ord ;
@@ -124,7 +125,7 @@ adv: (if (1.pos_tag/tl=n) 1(adv_to_noun)
 num: _.num_type.number.case.attr ;
 
 np_ant: _.<ant>.gender.number.case.attr ;
-np_other: _.number.case.attr ;
+np_other: _.np_type_other.acr.number.case.attr ;
 np: (if (1.np_type = ant) 1(np_ant)
       else 1(np_other)) ;
 
@@ -273,7 +274,7 @@ AP -> 1: %adj {%1}
 
 
 N ->    1: %n { %1[lemcase=$lemcase] }  
-      |  "np" %np.*.$function { %1[lemcase=$lemcase,case=(if (1.case=loc and 1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela elif (1.case=loc) ine elif (1.function = "@-FSUBJ→") nom else 1.case)] } 
+      |  "np" %np.*.$function { %1[case=(if (1.case=loc and 1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela elif (1.case=loc) ine elif (1.function = "@-FSUBJ→") nom else 1.case)] } 
       | "np.attr np" np.*."@→N" %np { 1 _ %2 } 
       | "np.attr np.attr np" np.*."@→N" np.*."@→N" %np { 1 _ 2 _ %3 } 
       | "np.attr np.attr np.attr np" np.*."@→N" np.*."@→N" np.*."@→N" %np { 1 _ 2 _ 3 _ %4 } 
