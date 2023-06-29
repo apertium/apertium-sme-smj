@@ -94,10 +94,6 @@
 	  <e><par n="det"/><par n="adj"/><par n="n"/></e>
 	  <e><par n="det"/><par n="adj"/><par n="adj"/><par n="n"/></e>
 	</pardef>
-    <pardef n="vblex_trans">
-      <e><i><w/><s n="vblex"/><s n="iv"/></i></e>
-      <e><i><w/><s n="vblex"/><s n="tv"/></i></e>
-    </pardef>
     <pardef n="ref_sg_px">
       <e><i><t/><s n="px1sg"/></i></e>
       <e><i><t/><s n="px2sg"/></i></e>
@@ -142,28 +138,28 @@
       <p><l>guhkev<s n="adv"/><d/></l><r>vuolláj<s n="post"/><d/></r></p>
    </e>
     <e r="RL" w="0.0"> <!-- ij la > illa -->
-      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
+      <p><l></l><r>ij<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
    </e>
     <e r="RL" w="0.0"> <!-- e lim > ællim -->
-      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
+      <p><l></l><r>ij<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="indic"/><s n="pres"/><s n="conneg"/><d/></r></p>
    </e>
     <e r="RL" w="0.0"> <!-- i lim > illim -->
-      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
+      <p><l></l><r>ij<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
    </e>
     <e r="RL" w="0.0"> <!-- e lim > ællim -->
-      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
+      <p><l></l><r>ij<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
    </e>
     <e r="RL" w="0.0"> <!-- i lim > illim -->
-      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
+      <p><l></l><r>ij<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p2"/><s n="sg"/><d/></l><r>liehket<s n="vblex"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
    </e>
     <e r="RL" w="0.0"> <!-- e lim > ællim -->
-      <p><l></l><r>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
-      <p><l>liehket<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
+      <p><l></l><r>ij<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
+      <p><l>liehket<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
    </e>
 
     <e r="RL"> <!-- adj du > pl -->
@@ -172,17 +168,17 @@
       <i><t/><d/></i>
    </e>
     <e r="RL" w="2.0">  
-      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <i>ij<s n="vblex"/><s n="neg"/><s n="indic"/></i>
       <p><l><s n="pres"/><s n="p1"/></l><r><s n="p1"/></r></p>
       <i><t/><d/></i>
    </e>
     <e r="RL" w="2.0">  
-      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <i>ij<s n="vblex"/><s n="neg"/><s n="indic"/></i>
       <p><l><s n="pres"/><s n="p2"/></l><r><s n="p2"/></r></p>
       <i><t/><d/></i>
    </e>
     <e r="RL" w="2.0">  
-      <i>ij<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <i>ij<s n="vblex"/><s n="neg"/><s n="indic"/></i>
       <p><l><s n="pres"/><s n="p3"/></l><r><s n="p3"/></r></p>
       <i><t/><d/></i>
    </e>
@@ -210,7 +206,7 @@
      <par n="cltl-words"/>      
      <p><l><s n="cltl"/></l><r></r></p> <!-- legg til cltl -->
       <i><d/></i>
-      <p><l></l>   <r>liehket<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><d/></r> </p> <!-- slett liehket -->
+      <p><l></l>   <r>liehket<s n="vblex"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><d/></r> </p> <!-- slett liehket -->
     </e>
 
   </section>
