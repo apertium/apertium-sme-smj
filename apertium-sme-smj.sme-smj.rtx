@@ -125,7 +125,7 @@ adv: (if (1.pos_tag/tl=n) 1(adv_to_noun)
 num: _.num_type.number.case.attr ;
 
 np_ant: _.<ant>.gender.number.case.attr ;
-np_other: _.np_type_other.acr.number.case.attr ;
+np_other: _.acr.number.case.attr ;
 np: (if (1.np_type = ant) 1(np_ant)
       else 1(np_other)) ;
 
@@ -405,7 +405,7 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
     | "verb placetimeadv"  1: %vblex.*.$function [placetimeadv]@adv.*."@←ADVL-ine"              { %2[lemcase=1.lemcase] _ 1[lemcase=2.lemcase]} 
     !!! soai stoahkaba álo ovttas > soai álo stoahkaba ovttas 
     | "enkeltverb"       2:     %vblex.*.inf.$function               { %1[lemcase=$lemcase,infin=(if (1.lem incl not-usually-supn-verbs) 1.infin else (if (1.function = "@←ADVL") supn else 1.infin))]} !
-    | "verb@+FMAINV verb"  2:  vblex.*."@+FMAINV"  %vblex.*.inf.$function  { 1[lemcase=$lemcase] _ %2[infin=(if (2.lem incl not-usually-supn-verbs) 2.infin else (if (1.lem incl sme-rek-verbs) 2.infin else (if (2.function = "@←ADVL") supn else 2.infin)))]} !
+    | "verb@+FMAINV verb"  2:  %vblex.*.$person.$number."@+FMAINV"  vblex.*.inf  { %1[lemcase=$lemcase] _ 2[infin=(if (2.lem incl not-usually-supn-verbs) 2.infin else (if (1.lem incl sme-rek-verbs) 2.infin else (if (2.function = "@←ADVL") supn else 2.infin)))]} !
     | "livččii verb"     3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2} 
     | "aux inf"     2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV"   { %1[lemcase=$lemcase,tense=(if (1. lem incl ij and 2.lem incl liehket) pres else 1.tense)]  _ 2 }   ! sáhtán borrat
     | "aux inf NP"     3: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP (if (2.lem incl copulas) { %1[lemcase=$lemcase] _ 2  _ 3 } else  { %1[lemcase=$lemcase] _ 3  _ 2 })   ! sáhtán láibbi borrat
