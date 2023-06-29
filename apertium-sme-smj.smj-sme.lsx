@@ -34,6 +34,7 @@
 	<sdef n="pres"/>
 	<sdef n="pret"/>
 	<sdef n="prn"/>
+	<sdef n="sentinit"/>
 	<sdef n="sg"/>
 	<sdef n="tv"/>
 	<sdef n="vblex"/>
@@ -185,8 +186,6 @@
       <p><l><s n="pres"/><s n="p3"/></l><r><s n="p3"/></r></p>
       <i><t/><d/></i>
    </e>
-
-
     <e r="RL" w="0.0">  <!-- endre tagg uansett -->
     <i><w/><t/></i>     
     <p><l><s n="foc_neg-k"/><d/></l><r><s n="foc_neg-ge"/><d/></r></p> 

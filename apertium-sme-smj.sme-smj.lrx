@@ -1348,6 +1348,11 @@
         <select lemma="låhkåt"/>
       </match>
     </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat" tags="vblex.tv.actio.*">
+        <select lemma="låhkåt"/>
+      </match>
+    </rule>
 
     <rule weight="0.6">
       <match lemma="lohkat">
@@ -1558,6 +1563,37 @@
         <select lemma="tjoahkke"/>
       </match>
     </rule> -->
+
+    <rule weight="1.0">
+      <match lemma="gii">
+        <select lemma="guhti"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="gii">
+        <select lemma="akta" tags="prn.*"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="gii">
+        <select lemma="akta" tags="prn.ind.*.*.foc_neg-ge"/>
+      </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="duohken">
+        <select lemma="duogen"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="duohken">
+        <select lemma="duoges" tags="*.@←ADVL-ela"/>
+      </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="duohken">
+        <select lemma="duoges" tags="*.@←ADVL-ela"/>
+      </match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="sápmelaš">
