@@ -11,6 +11,8 @@
 	<sdef n="cnjcoo"/>
 	<sdef n="cnjsub"/>
 	<sdef n="conneg"/>
+	<sdef n="der_passs"/>
+	<sdef n="der_passl"/>
 	<sdef n="det"/>
 	<sdef n="du"/>
 	<sdef n="ess"/>
@@ -189,6 +191,16 @@
     <e r="RL" w="0.0">  <!-- endre tagg uansett -->
     <i><w/><t/></i>     
     <p><l><s n="foc_pos-k"/><d/></l><r><s n="foc_pos-ge"/><d/></r></p> 
+  </e>
+    <e r="RL" w="1.0">  <!-- vuojnnet der_passs -->
+    <i>vuojnnet<t/></i>     
+    <p><l><s n="der_passs"/></l><r><s n="der_passs"/></r></p> 
+    <i><t/><d/></i>     
+  </e>
+    <e r="RL" w="0.0">  <!-- der_passs > der_passl -->
+    <i><w/><t/></i>     
+    <p><l><s n="der_passl"/></l><r><s n="der_passs"/></r></p> 
+    <i><t/><d/></i>     
   </e>
 
     <e r="RL" w="1.0">  <!-- legg til sg -->
