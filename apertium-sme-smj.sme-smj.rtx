@@ -58,6 +58,7 @@ v2v = der_alla der_halla der_caus der_l der_inchl der_passl der_passs der_ahtja 
 np2n = der_k ;
 n2n = der_dimin ;
 n2adj = der_lasj ;
+adj2n = der_vuota ;
 cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_hyph cmp_oblhyph cmp_cit ;
 hyph = cmp_hyph ;
 onlycmp = cmp ;
@@ -98,16 +99,20 @@ cnjsub: _ ;
 N: _.number.case.poss.cmp.hyph.onlycmp.function ; 
 n_only: <n>.number.case.attr.poss.cmp.hyph.onlycmp ; 
 ntype: <n>.n_type.number.case.poss.cmp.hyph.onlycmp ; 
-n_der_n: <n>.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
-n_type_der_n: <n>.n_type.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
+nsplitr: <n>.n_type.cmp.cmpsplitr.onlycmp ; 
+n_n: <n>.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
+n_type_n: <n>.n_type.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
 n_adj: <n>.deriv.<adj>.number.case.attr.poss.cmp.hyph.onlycmp ;
 n_comp: <n>.comp.<adj>.number.case.attr.poss.cmp.hyph.onlycmp ;
+n_adj_n:<n>.deriv.<adj>.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
 
-n: (if (1.pos_tag/tl=np) 1(np_to_n)
-      elif (1.n_type/tl in n_type and 1.deriv in n2n) 1(n_type_der_n) 
+n: (if (1.cmpsplitr=cmp_splitr) 1(nsplitr)
+      elif (1.pos_tag/tl=np) 1(np_to_n)
+      elif (1.n_type/tl in n_type and 1.deriv in n2n) 1(n_type_n) 
       elif (1.n_type/tl in n_type) 1(ntype) 
-      elif (1.deriv in n2n) 1(n_der_n)
+      elif (1.deriv in n2n) 1(n_n)
       elif (1.deriv in n2adj) 1(n_adj)
+      elif (1.deriv in adj2n) 1(n_adj_n)
       elif (1.comp in comp) 1(n_comp)
       else 1(n_only)) ;
 
@@ -263,15 +268,12 @@ verb3st = "vájbbadit" "hiebadit" "sjaddadit" "gájddadit" "suddadit" "navddadit
 
 AdvP -> %adv.*.$function (if (1.lem/tl="") { } else { %1 })
       | %adv cnjcoo adv { %1 _ 2 _ 3 }
-!      | adv %adv { 1 _ %2 }
+      | adv."@→ADVL" %adv { 1 _ %2 }
       | pcle %adv { 1 _ %2 }
       |  %adv pcle { %1 _ 2 }
       ;
 
 
-!AP -> "adj" %adj { 1 }
-!    | "adv  adj" adv %adj { 1 _ 2 }
-!    ;
 
 AP -> 1: %adj {%1}
     | 1: AdvP  %adj { 1 _ %2}
@@ -279,17 +281,20 @@ AP -> 1: %adj {%1}
     ;
 
 
-N ->    1: %n { %1[lemcase=$lemcase] }  
+N ->    1: %n ?(1.cmp = "") { %1[lemcase=$lemcase] }  
       |  "np" %np.*.$function { %1[case=(if (1.case=loc and 1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela elif (1.case=loc) ine elif (1.function = "@-FSUBJ→") nom else 1.case)] } 
       | "np.attr np" np.*."@→N" %np { 1 _ %2 } 
       | "np.attr np.attr np" np.*."@→N" np.*."@→N" %np { 1 _ 2 _ %3 } 
       | "np.attr np.attr np.attr np" np.*."@→N" np.*."@→N" np.*."@→N" %np { 1 _ 2 _ 3 _ %4 } 
       | "np cnp np" np cnjcoo."@CNP" %np.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
       | "prn" %prn { %1[lemcase=$lemcase] } 
+	  | 3: %n.*.cmpsplitr.cmp  { %1[lemcase=$lemcase] } 
 	  | 3: n.*.cmp  %N { 1[lemcase=$lemcase] + %2 } 
 	  | 3: adj.*.cmp  %N { 1[lemcase=$lemcase] + %2 } 
 	  | 3: n.*.cmp  %vblex { 1[lemcase=$lemcase] + %2 } !!! koronačavgen
+	  | 3: N.*.cmp  %N { 1[lemcase=$lemcase] + %2 } !!! ráđđeaddinbálvalus
 	  | 1: N cnjcoo."@CNP" %N ?(1.function = 3.function) { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
+	  | 1: n.*."@→N" cnjcoo."@CNP" %N  { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
       | 3: %n.*.loc { %1[case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
       | 4: [attrprn]@prn %n.*.loc { 1[foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] _  %2[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 
       | 4: prn %n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _  %2[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)]} 

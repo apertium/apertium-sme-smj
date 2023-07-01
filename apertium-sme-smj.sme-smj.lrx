@@ -447,17 +447,17 @@
     </rule>
 
     <rule weight="1.0">
-      <match lemma="ovddas"> <select lemma="åvdås"/> </match>
+      <match lemma="ovddas"> <select lemma="åvdås" tags="post.*"/> </match>
     </rule>
 
     <rule weight="0.5">
-      <match lemma="ovddas"> <select lemma="åvdån"/> </match>
+      <match lemma="ovddas"> <select lemma="åvdån" tags="post.*"/> </match>
     </rule>
 
     <rule weight="0.6">
       <match lemma="ovddas"> <select lemma="åvdån" tags="post.@ADVL-ine→"/> </match>
     </rule>
-    <rule weight="0.6">
+    <rule weight="1.0">
       <match lemma="ovddas"> <select lemma="åvdån" tags="post.@←ADVL-ine"/> </match>
     </rule>
 
