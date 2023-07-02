@@ -100,7 +100,9 @@ cnjsub: _ ;
 
 N: _.number.case.poss.cmp.hyph.onlycmp.function ; 
 n_only: <n>.acr.number.case.attr.poss.cmp.hyph.cmpsplitr.onlycmp ; 
-n_abbr: <n>.abbr.gramtnumabbr.number.case.attr.hyph.cmpsplitr.onlycmp ;  !!! bare gramtnumabbr
+n_abbr: <n>.abbr.gramtag.number.case.attr.cmpsplitr.onlycmp ;  !!! 
+n_abbr_hyph: <n>.abbr.number.case.attr.hyph.onlycmp ;  !!! bare gramtnumabbr
+n_abbr_splitr: <n>.abbr.cmp.cmpsplitr.onlycmp ;  !!! bare gramtnumabbr
 ntype: <n>.n_type.number.case.poss.cmp.hyph.onlycmp ; 
 nsplitr: <n>.n_type.cmp.cmpsplitr.onlycmp ; 
 n_n: <n>.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
@@ -109,7 +111,9 @@ n_adj: <n>.deriv.<adj>.number.case.attr.poss.cmp.hyph.onlycmp ;
 n_comp: <n>.comp.<adj>.number.case.attr.poss.cmp.hyph.onlycmp ;
 n_adj_n:<n>.n2adj.<adj>.adj2n.<n>.number.case.poss.cmp.hyph.onlycmp ;
 
-n: (if (1.abbr=abbr) 1(n_abbr)
+n: (if (1.abbr=abbr and 1.hyph = cmp_hyph) 1(n_abbr_hyph)
+      elif (1.abbr=abbr and 1.cmpsplitr = cmp_splitr) 1(n_abbr_splitr)
+      elif (1.abbr=abbr and 1.hyph="") 1(n_abbr)
       elif (1.pos_tag/tl=np and 1.deriv in np2n) 1(np_n)
       elif (1.pos_tag/tl=np) 1(np_other)
       elif (1.pos_tag/tl=prn) 1(prn_other)
@@ -149,6 +153,7 @@ np: (if (1.np_type = ant) 1(np_ant)
 
 prn_pers: _.<pers>.person.number.case ;
 prn_ref: _.<ref>.number.case.poss ;
+prn_res: <prn>.<res>.case.person.number ;
 
 prn_other: <prn>.prn_type_other.number.case.attr.foc ;
 prn: (if (1.prn_type = pers) 1(prn_pers)
@@ -161,9 +166,10 @@ adj_pred: <adj>.adj_type.number.case.poss.cmp.onlycmp ;
 adj_comp: <adj>.comp.<adj>.number.attr.case.poss.cmp.onlycmp ;
 adj_adv_comp:<adj>.comp.<adj>.<der_aadv>.<adv> ;
 adj_adv:_.<der_aadv>.<adv> ;
+adj_to_n: <n>.<sg>.<nom> ; 
 
 adj: (if (1.pos_tag/tl=n and 1.case/tl=gen) 1(adj_to_noungen)
-     elif (1.pos_tag/tl=n) 1(n_only)
+     elif (1.pos_tag/tl=n) 1(adj_to_n)
      elif (1.pos_tag/tl=prn) 1(prn_other)
      elif (1.pos_tag/tl=vblex) 1(vblex_infin)
      elif (1.deriv = der_aadv and 1.comp ="") 1(adj_adv)
@@ -284,7 +290,7 @@ AdvP -> %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (1.number/tl
 
 
 
-AP -> 1: %adj {%1}
+AP -> 1: %adj { %1 }
     | 1: AdvP  %adj { 1 _ %2}
 !    | 1: vblex.*.prsprc { %1 }
     | 1: adj C %adj { %1 _ 2 _ %3} 
@@ -303,7 +309,8 @@ N ->    1: %n ?(1.cmp = "") { %1[lemcase=$lemcase] }
 	  | "n.cmp N" 3: n.*.cmp  %N { 1[lemcase=$lemcase] + %2 } 
 	  | "adj.cmp N" 3: adj.*.cmp  %N { 1[lemcase=$lemcase] + %2 } 
 	  | "n.cmp vblex" 3: n.*.cmp  %vblex { 1[lemcase=$lemcase] + %2 } !!! koronačavgen
-	  | "N.cmp N" 3: N.*.cmp  %N { 1[lemcase=$lemcase] + %2 } !!! ráđđeaddinbálvalus
+	  | "np.cmp vblex" 3: np.*.cmp  %N { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Nobelkomitea
+	  | "N.cmp N" 2: N.*.cmp  %N { 1[lemcase=$lemcase] + %2 } !!! ráđđeaddinbálvalus
 	  | "vblex.cmp n" 2:   vblex.*.cmp %N { 1[lemcase=$lemcase] + %2 } 
 	  | 1: N cnjcoo."@CNP" %N ?(1.function = 3.function) { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
 	  | 1: n.*."@→N" cnjcoo."@CNP" %N  { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
@@ -316,9 +323,10 @@ N ->    1: %n ?(1.cmp = "") { %1[lemcase=$lemcase] }
       | 1: %num  { %1 }
       ; 
 
-PRN ->  2: %[prnnotfocsme]@prn  { %1[foc=""] }
-       | 1:  %prn  { %1[lemcase=$lemcase,foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] }
-       | 1:  prn.res.attr %prn.res  { 1[lemcase=$lemcase] _ %2 }
+PRN ->   "prnnotfocsme" 2: %[prnnotfocsme]@prn  { %1[foc=""] }
+       | "prn not res" 1:  %prn ?(1.prn_type not = res)  { %1[lemcase=$lemcase,foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] }
+       | "prn.res not nubbe" 2:  %prn.res ?(1.lem not = nubbe)  { %1(prn_res) }
+       | "prn.res nubbe nuppe" 2:  prn.res.attr %prn.res  { 1[lemcase=$lemcase] _ %2 }
        | 1:  ii@vblex.iv.neg %prn.*."foc_neg-ge" NP  {1[lemcase=$lemcase,tense=pres] _ %2[foc=(if (2.lem in prnnotfocsmj) "" else 2.foc)] _ 3 } 
        !!!ige makkárge eará ealli > ij makkirak ietjá judos
        | 1:  %prn.*.nom prn.*.nom  { %1[lemcase=$lemcase] _ 2[foc=(if (2.lem in prnnotfocsmj) "" else 2.foc)] } !soai goappašaga
@@ -425,7 +433,7 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
       | "aux condverb.q" 4: %[auxverbs]@vblex.*.cond ?(1.qst=qst) { %1[qst="",lemcase=$lemcase] _ gus@pcle.qst }
       | "condverb.q"     3:            %vblex.*.cond ?(1.qst=qst) { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[mood="",infin=inf] }
       | "condverb"       2:            %vblex.*.cond              { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[mood="",tense="",infin=inf] } ! boađášin > luluv boahtet
-      | "enkeltverb"       1: %vblex.*.$function               { %1[lemcase=$lemcase,deriv=(if (1.deriv=der_inchl and 1.lem incl verb3st) der_ahtja else 1.deriv)]} !
+      | "enkeltverb"       1: %vblex.*.$function ?(1.onlycmp = "") { %1[lemcase=$lemcase,deriv=(if (1.deriv=der_inchl and 1.lem incl verb3st) der_ahtja else 1.deriv)]} !
       | "dadjat_verbs ahte"       1: %[dadjat_verbs]@vblex.*."@+FMAINV" ahte@cnjsub { %1[lemcase=$lemcase]} !
     | "verb placetimeadv"  1: %vblex.*.$function [placetimeadv]@adv.*."@←ADVL-ine" { %2[lemcase=1.lemcase] _ 1[lemcase=2.lemcase]} 
     !!! soai stoahkaba álo ovttas > soai álo stoahkaba ovttas 

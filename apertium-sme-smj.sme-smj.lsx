@@ -210,6 +210,11 @@
      <p><l>ovttas<s n="adv"/></l><r>fárrolaga<s n="adv"/></r></p>
        <i><t/><d/></i>
    </e>
+   <e r="LR"> <!-- nu mo > nugo navtik -->
+      <p><l>nu</l><r>nugo</r></p>
+      <i><s n="adv"/><t/><d/></i>
+      <p><l>mo<s n="adv"/><t/></l><r></r></p><par n="syntax_tags"/>
+   </e>
     <e r="LR">
       <p><l></l><r>eanet<s n="adj"/><s n="attr"/><d/></r></p>
       <p><l>eambbosat<s n="prn"/><s n="ind"/></l><r>olmmoš<s n="n"/></r></p>
