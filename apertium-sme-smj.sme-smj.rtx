@@ -410,6 +410,9 @@ NegVP ->  "ii dadjat_verbs@conneg ieš.case acc"  5:  ii@vblex.iv.neg [dadjat_ve
 
 NegVP ->  "ii lohkat_verbs@conneg ess"  3:  ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg adj.ess  { %2[conneg="",tense=2.tense,person=1.person,number=1.number] _ 1 _ liehket@vblex.iv.indic.pres.conneg _ 3[number=sg,case=nom]} 
 	!!! ii loga váttisin > javllá ij la gássjel
+	|"ii lohkat_verbs@conneg ieš inf"  3:  ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg ieš@prn.ref vblex.*.inf  
+	{ %2[conneg="",tense=2.tense,person=1.person,number=1.number] _ 2(prn_pers)[person=3.poss,number=3.poss,case=nom,lem=(if (3.poss=px1sg or 3.poss=px1du or 3.poss=px1pl) mån elif (3.poss=px2sg or 3.poss=px2du or 3.poss=px2pl) dån else sån)] _ 1[person=3.poss,number=3.poss] _ 4[infin="",mood=indic,person=1.person,number=1.number,conneg=conneg]} 
+    !!! ii loga iežas healkkehit. > javllá sån ij hielkeda.
     |  "ii lohkat_verbs@conneg ess.@←OPRED vblex.inf"  3:  ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg adj.*."@←OPRED" vblex.*.inf  { %2[lemcase=$lemcase,conneg="",tense=2.tense,person=1.person,number=1.number] _ 1 _ liehket@vblex.iv.indic.pres.conneg _ 3[number=sg,case=nom] _ 4[infin=inf]} 
     !   | "ii conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[lemcase=$lemcase] _ %2 } 
     | "ii conneg vblex"  3:  ii@vblex.iv.neg %vblex.*.conneg vblex  { 1[lemcase=$lemcase,tense=2.tense] _ %2 _ 3} 
