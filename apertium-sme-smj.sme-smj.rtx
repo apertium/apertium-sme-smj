@@ -25,7 +25,7 @@ attr = attr ;
 inf = inf ;
 foc = foc_neg-ge foc_pos-ge foc_neg-k foc_pos-k ;
 comp = der_comp der_superl ;
-infin = supn inf prfprc prsprc ger "actio.ess" "actio.gen" "actio.loc" "actio.ela" "actio.ess" ;
+infin = supn inf prfprc vabess prsprc ger "actio.ess" "actio.gen" "actio.loc" "actio.ela" "actio.ess" ;
 conneg = conneg ;
 actiocase = "actio.ess" "actio.gen" "actio.loc" "actio.ela" ;
 actioloc = "actio.loc" ;
@@ -56,7 +56,7 @@ deriv = der_nomag der_dimin der_alla der_halla der_aadv der_caus der_t der_l der
 deriv2 = der_dimin der_alla der_halla ;
 pass = der_passl der_passs ;
 v2n = der_nomact der_nomag ;
-v2v = der_alla der_halla der_caus der_l der_inchl der_passl der_passs der_ahtja ;
+v2v = der_alla der_halla der_caus der_l der_inchl der_passl der_passs der_ahtja der_d ;
 np2n = der_k ;
 n2n = der_dimin ;
 n2adj = der_lasj ;
@@ -151,8 +151,8 @@ np: (if (1.np_type = ant) 1(np_ant)
      elif (1.deriv in np2n) 1(np_n)
       else 1(np_other)) ;
 
-prn_pers: _.<pers>.person.number.case ;
-prn_ref: _.<ref>.number.case.poss ;
+prn_pers: <prn>.<pers>.person.number.case ;
+prn_ref: <prn>.<ref>.number.case.poss ;
 prn_res: <prn>.<res>.case.person.number ;
 
 prn_other: <prn>.prn_type_other.number.case.attr.foc ;
@@ -185,15 +185,17 @@ vblex_infin: <vblex>.tense.infin ;
 vblex_conneg: <vblex>.mood.conneg ;
 vblex_liehket_conneg: <vblex>.mood.tense.conneg ;
 vblex_mood2: <vblex>.neg.mood.person.number.qst ;
-vblex_n: <vblex>.deriv.<n>.number.case.poss.cmp.onlycmp ;
+vblex_n: <vblex>.v2n.<n>.number.case.poss.cmp.onlycmp ;
 vblex_vblex: <vblex>.v2v.<vblex>.mood.infin.tense.person.number.qst ;
+vblex_vblex_n: <vblex>.v2v.<vblex>.v2n.<n>.number.case.poss.cmp.onlycmp ;
 vblex_vblex_conneg: <vblex>.v2v.<vblex>.mood.conneg ;
 vblex_to_adj: <adj>.attr.number.case ;
 
-vblex: (if (1.deriv in v2v  and 1.conneg = "") 1(vblex_vblex)
+vblex: (if (1.v2v in v2v and 1.v2n in v2n) 1(vblex_vblex_n)
+        elif (1.deriv in v2v  and 1.conneg = "") 1(vblex_vblex)
         elif (1.deriv in v2v and 1.conneg = conneg) 1(vblex_vblex_conneg)
         elif (1.deriv in v2n) 1(vblex_n)
-        elif (1.conneg = conneg and 1.lem/tl = liehket) 1(vblex_liehket_conneg)
+        elif (1.conneg = conneg and 1.lem/tl = liehket and 1.mood = "indic") 1(vblex_liehket_conneg)
         elif (1.conneg = conneg) 1(vblex_conneg)
         elif (1.mood = "cond" or 1.mood = "pot") 1(vblex_mood2)
         elif (1.infin = "" and 1.lem/tl equal-cl liehket) 1(vblex_liehket_fin)
@@ -330,6 +332,7 @@ PRN ->   "prnnotfocsme" 2: %[prnnotfocsme]@prn  { %1[foc=""] }
        | 1:  ii@vblex.iv.neg %prn.*."foc_neg-ge" NP  {1[lemcase=$lemcase,tense=pres] _ %2[foc=(if (2.lem in prnnotfocsmj) "" else 2.foc)] _ 3 } 
        !!!ige makkárge eará ealli > ij makkirak ietjá judos
        | 1:  %prn.*.nom prn.*.nom  { %1[lemcase=$lemcase] _ 2[foc=(if (2.lem in prnnotfocsmj) "" else 2.foc)] } !soai goappašaga
+      | %prn PCLE { %1 _ 2 }
        ;
 
 NP ->  %N  { %1[lemcase=$lemcase] } 
@@ -337,7 +340,6 @@ NP ->  %N  { %1[lemcase=$lemcase] }
 !      | PRN %N { 1[case=(if (2.case = ela) ela else ine)] _ %2 }
 !     | 2: n.*."@→N" %N { 1 _ 2} !sámi mánáfálaldaga
       | %prn  { %1[poss=$poss] }
-      | %prn PCLE { %1 _ 2 }
       | "N cnp N" N cnjcoo."@CNP" %N.*.$function { 1[lemcase=$lemcase] _ 2 _ %3 }
 
       ;
@@ -565,7 +567,7 @@ CLB ->  1: %cm {1}
    ;
 
 
-PCLE -> %pcle {1} ;
+PCLE -> %pcle (if (1.lem/tl="") { } else {1}) ;
 
 S -> "prn vfmain placetimeadv" 1: %PRN V.*."@+FMAINV" [placetimeadv]@AdvP  {%1 _ 3 _ 2} 
      | "placetimeadv np vfmain" 1: [placetimeadv]@AdvP NP  %V.*."@+FMAINV" {1 _ %3 _ 2} 

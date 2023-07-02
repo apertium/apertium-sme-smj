@@ -213,7 +213,7 @@
    <e r="LR"> <!-- nu mo > nugo navtik -->
       <p><l>nu</l><r>nugo</r></p>
       <i><s n="adv"/><t/><d/></i>
-      <p><l>mo<s n="adv"/><t/></l><r></r></p><par n="syntax_tags"/>
+      <p><l>mo<s n="adv"/></l><r></r></p><par n="syntax_tags"/>
    </e>
     <e r="LR">
       <p><l></l><r>eanet<s n="adj"/><s n="attr"/><d/></r></p>
