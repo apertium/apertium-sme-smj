@@ -1973,6 +1973,10 @@
    <match lemma="loahpas" />
    <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
  </rule>     
+       <rule weight="0.6">
+   <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
+   <match tags="*.der_comp.*" />
+ </rule>     
        <rule weight="0.5">
    <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
  </rule>     

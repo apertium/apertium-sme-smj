@@ -9,7 +9,7 @@ prn_type_other = rel dem ind itg res ;
 prn_type = pers ref [prn_type_other] ;
 np_type_other = top cog org sem_ani ;
 np_type = ant [np_type_other] ;
-n_type = g3 nomag ;
+n_type = g3 nomag coll ;
 acr = acr ;
 num_type = arab ;
 sentinit = sentinit ;
@@ -17,6 +17,7 @@ adj_type = ord ;
 abbr = abbr ;
 gramtag = gram_tabbr gram_iabbr gram_numnoabbr gram_tnumabbr  ;
 case = acc nom gen loc ine ela com ess ill ;
+comine = com ine ;
 poss = ("" "") px1sg px1du px1pl px2sg px2du px2pl px3sg px3du px3pl ;
 person = p1 p2 p3 ;
 attr = attr ;
@@ -97,7 +98,8 @@ cnjcoo: _ ;
 cnjsub: _ ;
 
 N: _.number.case.poss.cmp.hyph.onlycmp.function ; 
-n_only: <n>.acr.number.case.attr.poss.cmp.hyph.onlycmp ; 
+n_only: <n>.acr.number.case.attr.poss.cmp.hyph.cmpsplitr.onlycmp ; 
+n_abbr: <n>.abbr.number.case.hyph.cmpsplitr.onlycmp ; 
 ntype: <n>.n_type.number.case.poss.cmp.hyph.onlycmp ; 
 nsplitr: <n>.n_type.cmp.cmpsplitr.onlycmp ; 
 n_n: <n>.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
@@ -106,7 +108,7 @@ n_adj: <n>.deriv.<adj>.number.case.attr.poss.cmp.hyph.onlycmp ;
 n_comp: <n>.comp.<adj>.number.case.attr.poss.cmp.hyph.onlycmp ;
 n_adj_n:<n>.n2adj.<adj>.adj2n.<n>.number.case.poss.cmp.hyph.onlycmp ;
 
-n: (if (1.cmpsplitr=cmp_splitr) 1(nsplitr)
+n: (if (1.abbr=abbr) 1(n_abbr)
       elif (1.pos_tag/tl=np and 1.deriv in np2n) 1(np_n)
       elif (1.pos_tag/tl=np) 1(np_other)
       elif (1.pos_tag/tl=prn) 1(prn_other)
@@ -263,7 +265,7 @@ prnnotfocsme =  "mihkke" "guhtemuš" "iešguhtet" ;
 prnnotfocsmj = "soames" "mige" "iesjguhti" ;
 placetimeadv = "odne" "ikte" "ihttin" "dalle" "uddni" "idet" "iektu" "dalloj" "doppe" "gos" "gånnå" "álo" "ain" "ájn" ;
 
-dadjat_verbs = "almmuhit" "almodit" "ballat" "dadjat" "doajvvot" "dovdat" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gáibidit" "gájbbedit" "gielestit" "javllat" "jáhkket" "jáhkkit" "lohkat" "låhkåt" "meidnet" "meroštallat" "merustallat" "miejnnit" "mierredit" "muitalit" "oaidnit" "oaivvildit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet"  "vuornnot" "vuosedit"  ;
+dadjat_verbs = "almmuhit" "almodit" "ballat" "čájehit" "dadjat" "doajvvot" "dovdat" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gáibidit" "gájbbedit" "gielestit" "javllat" "jáhkket" "jáhkkit" "lohkat" "låhkåt" "meidnet" "meroštallat" "merustallat" "miejnnit" "mierredit" "muitalit" "oaidnit" "oaivvildit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet"  "vuornnot" "vuosedit"  ;
 
 lohkat_verbs = "lohkat" "dadjat" "javllat" ; !ii loga váttisin
 
@@ -282,6 +284,7 @@ AdvP -> %adv.*.$function (if (1.lem/tl="") { } else { %1 })
 
 AP -> 1: %adj {%1}
     | 1: AdvP  %adj { 1 _ %2}
+!    | 1: vblex.*.prsprc { %1 }
     | 1: adj C %adj { %1 _ 2 _ %3} 
     ;
 
@@ -293,7 +296,7 @@ N ->    1: %n ?(1.cmp = "") { %1[lemcase=$lemcase] }
       | "np.attr np.attr np.attr np" np.*."@→N" np.*."@→N" np.*."@→N" %np { 1 _ 2 _ 3 _ %4 } 
       | "np cnp np" np cnjcoo."@CNP" %np.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
       | "prn" %prn { %1[lemcase=$lemcase] } 
-	  | "n.splitr n" 3: %n.*.cmpsplitr.cmp  { %1[lemcase=$lemcase] } 
+	  | "n.splitr" 3: %n.*."cmp_splitr"  { %1[lemcase=$lemcase] } ! A-
 	  | "n.cmp N" 3: n.*.cmp  %N { 1[lemcase=$lemcase] + %2 } 
 	  | "adj.cmp N" 3: adj.*.cmp  %N { 1[lemcase=$lemcase] + %2 } 
 	  | "n.cmp vblex" 3: n.*.cmp  %vblex { 1[lemcase=$lemcase] + %2 } !!! koronačavgen
@@ -420,7 +423,8 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
       | "condverb.q"     3:            %vblex.*.cond ?(1.qst=qst) { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[mood="",infin=inf] }
       | "condverb"       2:            %vblex.*.cond              { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[mood="",tense="",infin=inf] } ! boađášin > luluv boahtet
       | "enkeltverb"       1: %vblex.*.$function               { %1[lemcase=$lemcase,deriv=(if (1.deriv=der_inchl and 1.lem incl verb3st) der_ahtja else 1.deriv)]} !
-    | "verb placetimeadv"  1: %vblex.*.$function [placetimeadv]@adv.*."@←ADVL-ine"              { %2[lemcase=1.lemcase] _ 1[lemcase=2.lemcase]} 
+      | "dadjat_verbs ahte"       1: %[dadjat_verbs]@vblex.*."@+FMAINV" ahte@cnjsub { %1[lemcase=$lemcase]} !
+    | "verb placetimeadv"  1: %vblex.*.$function [placetimeadv]@adv.*."@←ADVL-ine" { %2[lemcase=1.lemcase] _ 1[lemcase=2.lemcase]} 
     !!! soai stoahkaba álo ovttas > soai álo stoahkaba ovttas 
     | "enkeltverb"       2:     %vblex.*.inf.$function               { %1[lemcase=$lemcase,infin=(if (1.lem incl not-usually-supn-verbs) 1.infin else (if (1.function = "@←ADVL") supn else 1.infin))]} !
     | "verb@+FMAINV verb"  2:  %vblex.*.$person.$number."@+FMAINV"  vblex.*.inf  { %1[lemcase=$lemcase] _ 2[infin=(if (2.lem incl not-usually-supn-verbs) 2.infin else (if (1.lem incl sme-rek-verbs) 2.infin else (if (2.function = "@←ADVL") supn else 2.infin)))]} !
