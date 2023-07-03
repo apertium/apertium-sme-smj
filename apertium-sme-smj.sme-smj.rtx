@@ -51,16 +51,16 @@ person_number = "p1.sg" "p1.du" "p1.pl"
                 "p3.sg" "p3.du" "p3.pl" ;
 first_sec_person_number = "p1.sg" "p1.du" "p1.pl" "p2.sg" "p2.du" "p2.pl" ;
                 
-deriv = der_nomag der_dimin der_alla der_halla der_aadv der_caus der_t der_l der_ahtti der_ahtte der_vuota der_d der_h der_laakan der_laagasj der_lágan der_lágán der_muš der_mus der_nammasaš der_nammasasj der_saš der_sasj der_lasj der_dibme der_geahtes der_ahtes der_car der_nomact der_inchl der_vuota der_passl der_passs der_ahtja der_k ;
+deriv = der_aadv der_adda der_ahkes der_ahtes der_ahtja der_ahtte der_ahttjá der_ahtti der_alla der_asste der_car der_caus der_d der_dahka der_dahtte der_dalla der_dasste der_dibme der_dimin der_duhtte der_duvva der_geahtes der_h der_halla der_inchl der_k der_l der_laagasj der_laakan der_ladda der_lahtte der_lasj der_lasste der_lágan der_lágán der_lis der_muš der_mus der_n der_nammasaš der_nammasasj der_nomact der_nomag der_nominstr der_passd der_passl der_passs der_r der_saš der_sasj der_segak der_st der_stahtte der_stalla der_stasste der_t der_tj der_u_a_åd der_vuota ;
 
 deriv2 = der_dimin der_alla der_halla ;
-pass = der_passl der_passs ;
-v2n = der_nomact der_nomag ;
-v2v = der_alla der_halla der_caus der_l der_inchl der_passl der_passs der_ahtja der_d ;
+pass = der_passl der_passs der_passd ;
+v2n = der_dahka der_mus der_nomact der_nomag der_nominstr der_r ;
+v2v = der_adda der_ahtja der_ahttjá der_alla der_asste der_caus der_d der_dahtte der_dalla der_dasste der_duhtte der_duvva der_inchl der_halla der_l der_ladda der_lahtte der_lasste der_passd der_passl der_passs der_st der_stahtte der_stalla der_stasste der_tj der_u_a_åd ;
 np2n = der_k ;
-v2adj = der_lis der_ahkes  ; !!Der/NomAct+N+Der/ahtes
-n2n = der_dimin ;
-n2adj = der_lasj der_car der_ahtes ; 
+v2adj = der_lis der_ahkes  ;
+n2n = der_dimin der_lasj ;
+n2adj = der_ahtes der_car der_lasj der_n der_sasj der_segak ; 
 adj2n = der_vuota ;
 cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_oblhyph cmp_cit ;
 hyph = cmp_hyph ;
@@ -406,8 +406,11 @@ NP -> %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } ;
 
 
 PP -> "NP post" 1: NP %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
+       | "PRN post" 1: PRN %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
       | "pre/post NP" 2: %pr NP ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] }  !miehtá beavddi > bievde miehtáj
+      | "pre/post PRN" 2: %pr PRN ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] }  !miehtá beavddi > bievde miehtáj
       | "pre NP" 1: %pr NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
+      | "pre PRN" 1: %pr PRN { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
      ; !
 
 NegVP ->  "ii dadjat_verbs@conneg ieš.case acc"  5:  ii@vblex.iv.neg [dadjat_verbs]@vblex.*.conneg %ieš@prn.ref n.*.acc 
