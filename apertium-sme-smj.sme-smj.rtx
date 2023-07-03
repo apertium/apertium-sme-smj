@@ -161,6 +161,7 @@ prn_other: <prn>.prn_type_other.number.case.attr.foc ;
 prn: (if (1.prn_type = pers) 1(prn_pers)
       elif (1.prn_type = ref) 1(prn_ref)
       elif (1.pos_tag/tl=adj) 1(adj_attr)
+      elif (1.pos_tag/tl=n) 1(adj_to_n)
       else 1(prn_other)) ;
 
 adj_to_noungen: <n>.n_type.<sg>.<gen> ;
@@ -364,7 +365,7 @@ NP -> 2: %num.*.loc n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.funct
 ! | %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat
 
 NP -> prn.ref %N { 1 _ 2}  !ietjam viellja !! denne treffer nå også feildisambiguering, mer robust
-    | prn %N ?(1.function not = "@←OBJ") { 1 _ 2}  !dav vielja, juohke sajis
+    | prn %N ?(1.function not = "@←OBJ") { 1[number=(if (1. lem in attrprn) "" else 1.number),case= (if (1. lem in attrprn) "" else 1.case)] _ 2}  !dav vielja, juohke sajis
 !!!    | prn %N { 1 _ 2} !juohke sajis
     | 2: prn.*."@→N" %NP { 1 _ 2} !juohke sajis
     | 2: n.*."@→N" %N { 1 _ 2} !sámi máná
@@ -421,14 +422,13 @@ NegVP ->  "ii lohkat_verbs@conneg ess"  3:  ii@vblex.iv.neg %[lohkat_verbs]@vble
 	{ %2[conneg="",tense=2.tense,person=1.person,number=1.number] _ 2(prn_pers)[person=3.poss,number=3.poss,case=nom,lem=(if (3.poss=px1sg or 3.poss=px1du or 3.poss=px1pl) mån elif (3.poss=px2sg or 3.poss=px2du or 3.poss=px2pl) dån else sån)] _ 1[person=3.poss,number=3.poss] _ 4[infin="",mood=indic,person=1.person,number=1.number,conneg=conneg]} 
     !!! ii loga iežas healkkehit. > javllá sån ij hielkeda.
     |  "ii lohkat_verbs@conneg ess.@←OPRED vblex.inf"  3:  ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg adj.*."@←OPRED" vblex.*.inf  { %2[lemcase=$lemcase,conneg="",tense=2.tense,person=1.person,number=1.number] _ 1 _ liehket@vblex.iv.indic.pres.conneg _ 3[number=sg,case=nom] _ 4[infin=inf]} 
-    !   | "ii conneg"  3:  ii@vblex.iv.neg %vblex.*.conneg  { 1[lemcase=$lemcase] _ %2 } 
-    | "ii conneg vblex"  3:  ii@vblex.iv.neg %vblex.*.conneg vblex  { 1[lemcase=$lemcase,tense=2.tense] _ %2 _ 3} 
-    | "ii NP conneg"  3:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] } 
-    | "ii PRN conneg"  3:  ii@vblex.iv.neg PRN %vblex.*.conneg (if (2.prn_type = pers and 2.case=nom) { 1[lemcase=$lemcase,tense=3.tense]  _ %3[tense=""] } else   { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=""] }) 
+    | "ii conneg vblex"  3:  ii@vblex.iv.neg %vblex.*.conneg vblex  { 1[lemcase=$lemcase,tense=2.tense] _ %2[mood=indic] _ 3} 
+    | "ii NP conneg"  3:  ii@vblex.iv.neg NP %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[mood=indic,tense=""] } 
+    | "ii PRN conneg"  3:  ii@vblex.iv.neg PRN %vblex.*.conneg (if (2.prn_type = pers and 2.case=nom) { 1[lemcase=$lemcase,tense=3.tense]  _ %3[mood=indic,tense=""] } else   { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[mood=indic,tense=""] }) 
     !!!  ii son sáhte > ij máhte
-    | "ii conneg NP"  3:  ii@vblex.iv.neg %vblex.*.conneg N ?(2.lem not = liehket){ 1[lemcase=$lemcase,tense=2.tense] _ %2 _ 3 } 
-    | "ii conneg PRN"  3:  ii@vblex.iv.neg %vblex.*.conneg prn ?(3.prn_type not = ref) { 1[lemcase=$lemcase,tense=2.tense] _ 3[foc=(if (3.lem in prnnotfocsmj) "" else 3.foc)] _ %2 } 
-    | "ii NP conneg vblex"  3:  ii@vblex.iv.neg NP %vblex.*.conneg vblex { 1[lemcase=$lemcase,tense=3.tense]  _ %3[mood=3.mood] _ 2 _ 4 } 
+    | "ii conneg NP"  3:  ii@vblex.iv.neg %vblex.*.conneg N ?(2.lem not = liehket){ 1[lemcase=$lemcase,tense=2.tense] _ %2[mood=indic] _ 3 } 
+    | "ii conneg PRN"  3:  ii@vblex.iv.neg %vblex.*.conneg prn ?(3.prn_type not = ref) { 1[lemcase=$lemcase,tense=2.tense] _ 3[foc=(if (3.lem in prnnotfocsmj) "" else 3.foc)] _ %2[mood=indic] } 
+    | "ii NP conneg vblex"  3:  ii@vblex.iv.neg NP %vblex.*.conneg vblex { 1[lemcase=$lemcase,tense=3.tense]  _ %3[mood=indic] _ 2 _ 4 } 
     | "ii conneg NP vblex, også dadjat_verbs"  6:  ii@vblex.iv.neg %vblex.*.conneg NP  vblex ?(4.infin not = "") { 1[lemcase=$lemcase,tense=2.tense] _ %2[mood=2.mood,conneg=2.conneg]  _ 3[case=(if (3.case=acc and 2.lem in dadjat_verbs) nom else 3.case)] _ 4[infin=(if (3.case=acc and 2.lem in dadjat_verbs) "" else 4.infin),mood=(if (3.case=acc and 2.lem in dadjat_verbs) indic else ""),tense=(if (3.case=acc and 2.lem in dadjat_verbs) pres else ""),person=(if (3.case=acc and 2.lem in dadjat_verbs) p3 else ""),number=(if (3.case=acc and 2.lem in dadjat_verbs) 3.number else "")] } 
     !!! in jáhke nieidda boahtit > iv jáhke næjttso boahtá
     | "ii conneg PRN vblex, også dadjat_verbs"  6:  ii@vblex.iv.neg %vblex.*.conneg prn  vblex { 1[lemcase=$lemcase,tense=2.tense] _ %2[mood=2.mood,conneg=2.conneg]  _ 3[case=(if (3.case=acc and 2.lem in dadjat_verbs) nom else 3.case)] _ 4[infin=(if (3.case=acc and 2.lem in dadjat_verbs) "" else 4.infin),mood=(if (3.case=acc and 2.lem in dadjat_verbs) indic else ""),tense=(if (3.case=acc and 2.lem in dadjat_verbs) pres else ""),person=(if (3.case=acc and 2.lem in dadjat_verbs) p3 else ""),number=(if (3.case=acc and 2.lem in dadjat_verbs) 3.number else "")] }  
@@ -437,14 +437,14 @@ NegVP ->  "ii lohkat_verbs@conneg ess"  3:  ii@vblex.iv.neg %[lohkat_verbs]@vble
     !!! ii jáhke su nieidan
     | "ii dadjat_verbs@conneg PRN adj"  6:  ii@vblex.iv.neg %[dadjat_verbs]@vblex.*.conneg prn.*.acc  adj { 1[lemcase=$lemcase,tense=2.tense] _ %2  _ 3[case=nom] _ liehket@vblex.iv.indic.[2.tense][person=3.person,number=3.number] _ 4[number=3.number,case=nom] }  
     !!! ii jáhke su dohkalažžan
-    | "ii AdvP conneg"  3:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=(if (3.lem incl liehket) pres else "")] } 
-    | "ii pcle conneg"  3:  ii@vblex.iv.neg pcle %vblex.*.conneg (if (2.lem = ga) { 1[lemcase=$lemcase,tense=3.tense] _ %3[tense=(if (3.lem incl liehket) pres else "")] } else   { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=(if (3.lem incl liehket) pres else "")] }) 
+    | "ii AdvP conneg"  3:  ii@vblex.iv.neg AdvP %vblex.*.conneg  { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[mood=indic,tense=(if (3.lem incl liehket) pres else "")] } 
+    | "ii pcle conneg"  3:  ii@vblex.iv.neg pcle %vblex.*.conneg (if (2.lem = ga) { 1[lemcase=$lemcase,tense=3.tense] _ %3[mood=indic,tense=(if (3.lem incl liehket) pres else "")] } else   { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[tense=(if (3.lem incl liehket) pres else "")] }) 
     ;
 
 V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$lemcase] }
       | "aux condverb.q" 4: %[auxverbs]@vblex.*.cond ?(1.qst=qst) { %1[qst="",lemcase=$lemcase] _ gus@pcle.qst }
       | "condverb.q"     3:            %vblex.*.cond ?(1.qst=qst) { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[mood="",infin=inf] }
-      | "condverb"       2:            %vblex.*.cond              { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[mood="",tense="",infin=inf] } ! boađášin > luluv boahtet
+      | "condverb"       2:            %vblex.*.cond    { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[mood="",tense="",infin=inf] } ! boađášin > luluv boahtet
       | "enkeltverb"       1: %vblex.*.$function ?(1.onlycmp = "") { %1[lemcase=$lemcase,deriv=(if (1.deriv=der_inchl and 1.lem incl verb3st) der_ahtja else 1.deriv)]} !
       | "dadjat_verbs ahte"       1: %[dadjat_verbs]@vblex.*."@+FMAINV" ahte@cnjsub { %1[lemcase=$lemcase]} !
     | "verb placetimeadv"  1: %vblex.*.$function [placetimeadv]@adv.*."@←ADVL-ine" { %2[lemcase=1.lemcase] _ 1[lemcase=2.lemcase]} 
@@ -505,7 +505,7 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
  { 1[lemcase=$lemcase] _ %2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=nom,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif (2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3[number=2.poss,case=nom]} 
  	 !!! Son lohká iežaset duđavažžan. > Sån javllá sij li dudálattja.
 
-    | "vblex N vblex"     2: V.*."@+FMAINV" N %vblex ?(3.onlycmp = "") (if (2.function="@-FSUBJ→" and 3.infin="actio.ess") {1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag = N and 2.number = du) sg else 2.number)] _ liehket(vblex_fin)[mood=indic,tense=1.tense,person=p3,number=2.number] _ %3} else    { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl not-usually-supn-verbs) 1.infin else (if (1.lem incl smj-supn-triggerverbs) supn  else 3.infin))] })   !
+    | "vblex N vblex"     2: V.*."@+FMAINV" N %vblex ?(3.onlycmp = "") (if (2.function="@-FSUBJ→" and 3.infin="actio.ess") {1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag = N and 2.number = du) sg else 2.number)] _ liehket(vblex_fin)[mood=indic,tense=1.tense,person=p3,number=2.number] _ %3} else    { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl not-usually-supn-verbs) 1.infin else (if (1.lem incl smj-supn-triggerverbs or 3. function="@←ADVL") supn else 3.infin))] })   !
      !!! oainnán nieidda stoahkamin > oainnán nieida lea stoahkamin 
 !    | "vblex NP vblex"     1: V NP %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
     | "vblex NP AdvP"     1: %V NP AdvP    { %1[lemcase=$lemcase] _ 2 _ 3 }   ! 

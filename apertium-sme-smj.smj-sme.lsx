@@ -11,6 +11,8 @@
 	<sdef n="cnjcoo"/>
 	<sdef n="cnjsub"/>
 	<sdef n="conneg"/>
+	<sdef n="der_ahtes"/>
+	<sdef n="der_nomact"/>
 	<sdef n="der_passs"/>
 	<sdef n="der_passl"/>
 	<sdef n="det"/>
@@ -127,7 +129,7 @@
       <e><par n="word"/><par n="word"/><par n="word"/></e>
     </pardef>
   </pardefs>
-  <section id="main" type="standard"> <!-- son váldá mu gihtii > sån válldá muv giedas -->
+  <section id="main" type="standard"> 
     <e r="RL"> 
       <i>válldet<t/><d/></i>
       <i><w/><t/><s n="gen"/><d/></i>
@@ -210,7 +212,7 @@
   </e>
     <e r="RL" w="1.0">  <!-- legg pl -->
      <i>iesj<s n="prn"/><s n="ref"/></i>
-     <p><l><s n="pl"/></l><r></r></p> 
+     <p><l><s n="sg"/></l><r></r></p> 
       <par n="ref_pl_px"/>      
   </e>
 
