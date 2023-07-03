@@ -16,7 +16,10 @@
 	<sdef n="com"/>
 	<sdef n="cond"/>
 	<sdef n="conneg"/>
+	<sdef n="der_ahtes"/>
 	<sdef n="der_caus"/>
+	<sdef n="der_geahtes"/>
+	<sdef n="der_nomact"/>
 	<sdef n="det"/>
 	<sdef n="du"/>
 	<sdef n="ess"/>
@@ -231,6 +234,11 @@
       <i><s n="cmp_hyph"/><s n="cmp"/></i>
    </e>
 
+    <e r="LR"> <!-- -keahtes > -ahtes -->
+	  <i><w/><s n="vblex"/><s n="tv"/></i>
+      <p><l><s n="der_geahtes"/></l><r><s n="der_nomact"/><s n="n"/><s n="der_ahtes"/></r></p>
+      <i><t/><d/></i>
+   </e>
 
     <e r="LR">
       <p><l>váldit</l><r>vuhtiiváldit</r></p>
