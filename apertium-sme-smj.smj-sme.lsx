@@ -23,12 +23,15 @@
 	<sdef n="foc_neg-k"/>
 	<sdef n="foc_pos-ge"/>
 	<sdef n="foc_pos-k"/>
+	<sdef n="g3"/>
 	<sdef n="gen"/>
+	<sdef n="ind"/>
 	<sdef n="indic"/>
 	<sdef n="iv"/>
 	<sdef n="n"/>
 	<sdef n="neg"/>
 	<sdef n="nom"/>
+	<sdef n="nomag"/>
 	<sdef n="np"/>
 	<sdef n="p1"/>
 	<sdef n="p2"/>
@@ -114,7 +117,12 @@
 	
   <pardef n="cltl-words">
       <e><i><w/><s n="vblex"/><t/></i></e>
-      <e><i><w/><s n="n"/><t/></i></e>
+      <e><i><w/><s n="n"/><s n="sg"/><t/></i></e>
+      <e><i><w/><s n="n"/><s n="pl"/><t/></i></e>
+      <e><i><w/><s n="n"/><s n="nomag"/><s n="sg"/><t/></i></e>
+      <e><i><w/><s n="n"/><s n="nomag"/><s n="pl"/><t/></i></e>
+      <e><i><w/><s n="n"/><s n="g3"/><s n="sg"/><t/></i></e>
+      <e><i><w/><s n="n"/><s n="g3"/><s n="pl"/><t/></i></e>
       <e><i><w/><s n="adj"/><t/></i></e>
       <e><i><w/><s n="adv"/></i></e>
       <e><i><w/><s n="prn"/><t/></i></e>
@@ -214,6 +222,11 @@
      <i>iesj<s n="prn"/><s n="ref"/></i>
      <p><l><s n="sg"/></l><r></r></p> 
       <par n="ref_pl_px"/>      
+  </e>
+    <e r="RL" w="1.0">  <!-- legg pl -->
+     <i>iesjguhti<s n="prn"/><s n="ind"/></i>
+     <p><l><s n="sg"/></l><r><s n="pl"/></r></p> 
+      <i><t/><d/></i>      
   </e>
 
     <e r="RL" w="2.0">  

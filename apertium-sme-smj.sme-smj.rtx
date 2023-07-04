@@ -59,7 +59,7 @@ v2n = der_dahka der_mus der_nomact der_nomag der_nominstr der_r ;
 v2v = der_adda der_ahtja der_ahttjá der_alla der_asste der_caus der_d der_dahtte der_dalla der_dasste der_duhtte der_duvva der_inchl der_halla der_l der_ladda der_lahtte der_lasste der_passd der_passl der_passs der_st der_stahtte der_stalla der_stasste der_tj der_u_a_åd ;
 np2n = der_k ;
 v2adj = der_lis der_ahkes  ;
-n2n = der_dimin der_lasj ;
+n2n = der_dimin ;
 n2adj = der_ahtes der_car der_lasj der_n der_sasj der_segak ; 
 adj2n = der_vuota ;
 cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_oblhyph cmp_cit ;
@@ -101,10 +101,10 @@ cnjsub: _ ;
 
 N: _.number.case.poss.cmp.hyph.onlycmp.function ; 
 n_only: <n>.acr.number.case.attr.poss.cmp.hyph.cmpsplitr.onlycmp ; 
-n_abbr: <n>.abbr.gramtag.number.case.attr.cmpsplitr.onlycmp ;  !!! 
+n_abbr: <n>.abbr.gramtag.number.case.attr.hyph.cmpsplitr.onlycmp ;  !!! 
 n_abbr_hyph: <n>.abbr.number.case.attr.hyph.onlycmp ;  !!! bare gramtnumabbr
 n_abbr_splitr: <n>.abbr.cmp.cmpsplitr.onlycmp ;  !!! bare gramtnumabbr
-ntype: <n>.n_type.number.case.poss.cmp.hyph.onlycmp ; 
+ntype: <n>.n_type.number.case.poss.cmp.hyph.cmpsplitr.onlycmp ; 
 nsplitr: <n>.n_type.cmp.cmpsplitr.onlycmp ; 
 n_n: <n>.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
 n_type_n: <n>.n_type.deriv.<n>.number.case.poss.cmp.hyph.onlycmp ;
@@ -165,8 +165,8 @@ prn: (if (1.prn_type = pers) 1(prn_pers)
       else 1(prn_other)) ;
 
 adj_to_noungen: <n>.n_type.<sg>.<gen> ;
-adj_attr: <adj>.num_type.adj_type.attr.cmp.onlycmp ;
-adj_pred: <adj>.adj_type.number.case.poss.cmp.onlycmp ;
+adj_attr: <adj>.num_type.adj_type.attr.cmp.cmpsplitr.onlycmp ;
+adj_pred: <adj>.adj_type.number.case.poss.cmp.cmpsplitr.onlycmp ;
 adj_comp: <adj>.comp.<adj>.number.attr.case.poss.cmp.onlycmp ;
 adj_adv_comp:<adj>.comp.<adj>.<der_aadv>.<adv> ;
 adj_adv:_.<der_aadv>.<adv> ;
@@ -178,8 +178,7 @@ adj: (if (1.pos_tag/tl=n and 1.case/tl=gen) 1(adj_to_noungen)
      elif (1.pos_tag/tl=vblex) 1(vblex_infin)
      elif (1.deriv = der_aadv and 1.comp ="") 1(adj_adv)
      elif (1.deriv = der_aadv and 1.comp in comp) 1(adj_adv_comp)
-     elif 
-     (1.deriv = "" and 1.comp in comp) 1(adj_comp) 
+     elif (1.deriv = "" and 1.comp in comp) 1(adj_comp) 
      elif (1.attr = attr) 1(adj_attr)
      else 1(adj_pred)) ;
      
@@ -277,9 +276,9 @@ acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
 auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" "leat" "liehket" "galggat" "hæhttut" "ájggot" "sáhttit" "áiggut" ;
-attrprn = "eará" "ietjá" "juohke" "juohkka" "dakkár" "iesjguhti" "iešguhtet" "galle" "galla" "buot" "makkir" "makkár" "muhtem" "muhtin" ;
+attrprn = "eará" "ietjá" "juohke" "juohkka" "dakkár" "iešguhte" "iesjguhti" "iešguhtet" "galle" "galla" "buot" "makkir" "makkár" "muhtem" "muhtin" ;
 prnnotfocsme =  "mihkke" "guhtemuš" "iešguhtet" ;
-prnnotfocsmj = "soames" "mige" "iesjguhti" ;
+prnnotfocsmj = "soames" "mige" ;
 placetimeadv = "odne" "ikte" "ihttin" "dalle" "uddni" "idet" "iektu" "dalloj" "doppe" "gos" "gånnå" "álo" "ain" "ájn" ;
 
 dadjat_verbs = "almmuhit" "almodit" "ballat" "čájehit" "dadjat" "doajvvot" "dovdat" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gáibidit" "gájbbedit" "gielestit" "javllat" "jáhkket" "jáhkkit" "lohkat" "låhkåt" "meidnet" "meroštallat" "merustallat" "miejnnit" "mierredit" "muitalit" "oaidnit" "oaivvildit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet"  "vuornnot" "vuosedit"  ;
@@ -401,12 +400,15 @@ NP ->  "adj NP" AP  %NP { 1 _ %2[poss=$poss] }
 
 ! Son lea vihtta jagi boaris.
 ! Sån la vidá jagák.
-NP -> %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } ;
+AP ->   2: %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } 
+      | 2: %num.cmp_hyph.cmp jahkásaš@adj { 1[number=sg,case=gen,cmp="",onlycmp="",hyph="",num_type=arab] _ 2[lem=jagák] } 
+      ;
 
 
 
 PP -> "NP post" 1: NP %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
        | "PRN post" 1: PRN %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
+      | "dás post" 1: dás@adv %post  { 1 _ %2 }
       | "pre/post NP" 2: %pr NP ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] }  !miehtá beavddi > bievde miehtáj
       | "pre/post PRN" 2: %pr PRN ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] }  !miehtá beavddi > bievde miehtáj
       | "pre NP" 1: %pr NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
