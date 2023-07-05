@@ -55,12 +55,12 @@ deriv = der_aadv der_adda der_ahkes der_ahtes der_ahtja der_ahtte der_ahttjá de
 
 deriv2 = der_dimin der_alla der_halla ;
 pass = der_passl der_passs der_passd ;
-v2n = der_dahka der_mus der_nomact der_nomag der_nominstr der_r ;
-v2v = der_adda der_ahtja der_ahttjá der_alla der_asste der_caus der_d der_dahtte der_dalla der_dasste der_duhtte der_duvva der_inchl der_halla der_l der_ladda der_lahtte der_lasste der_passd der_passl der_passs der_st der_stahtte der_stalla der_stasste der_tj der_u_a_åd ;
+v2n = der_dahka der_mus der_muš der_nomact der_nomag der_nominstr der_r ;
+v2v = der_adda der_ahtti der_ahtja der_ahttjá der_alla der_asste der_caus der_d der_dahtte der_dalla der_dasste der_duhtte der_duvva der_h der_halla der_inchl der_l der_ladda der_lahtte der_lasste der_passd der_passl der_passs der_st der_stahtte der_stalla der_stasste der_tj der_u_a_åd ;
 np2n = der_k ;
 v2adj = der_lis der_ahkes  ;
 n2n = der_dimin ;
-n2adj = der_ahtes der_car der_lasj der_n der_sasj der_segak ; 
+n2adj = der_ahtes der_car der_geahtes der_lasj der_n der_sasj der_segak ; 
 adj2n = der_vuota ;
 cmp = cmp_sggen cmp_sgnom cmp_attr cmp_plgen cmp_sh cmp_oblhyph cmp_cit ;
 hyph = cmp_hyph ;
@@ -237,6 +237,7 @@ poss > number : px1sg sg, px1du du, px1pl pl,
 
 case > case : loc ine ;
 foc > foc : foc_pos-ge foc_pos-k, foc_neg-ge foc_neg-k ; !from sme to smj type
+deriv > deriv : der_halla der_dalla ;
 
 !!!!!!!!!!!!!!!
 !! REDUCTION RULES
@@ -299,7 +300,7 @@ AdvP -> %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (1.number/tl
 
 
 AP -> 1: %adj { %1 }
-    | 1: AdvP  %adj { 1 _ %2}
+     | 1: AdvP  %adj { 1 _ %2}
 !    | 1: "num.cmp adj" 3: num.cmp  %adj { 1 + %2 } !Could not find output pattern
 !    | 1: vblex.*.prsprc { %1 }
     | 1: adj C %adj { %1 _ 2 _ %3} 
@@ -321,6 +322,9 @@ N ->    1: %n ?(1.cmp = "") { %1[lemcase=$lemcase] }
 	  | "np.cmp vblex" 3: np.*.cmp  %N { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Nobelkomitea
 	  | "N.cmp N" 2: N.*.cmp  %N { 1[lemcase=$lemcase] + %2 } !!! ráđđeaddinbálvalus
 	  | "vblex.cmp n" 2:   vblex.*.cmp %N { 1[lemcase=$lemcase] + %2 } 
+	  | "vblex.cmp vblex" 2:   vblex.*.cmp %vblex { 1[lemcase=$lemcase] + %2 } 
+      | "enkeltverb.v2n "       2: %vblex.*.[v2n].*.$function ?(1.onlycmp = "") { %1[lemcase=$lemcase,v2n=(if (1.v2n=der_muš) der_mus else 1.v2n)]} !
+
 	  | 1: N cnjcoo."@CNP" %N ?(1.function = 3.function) { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
 	  | 1: n.*."@→N" cnjcoo."@CNP" %N  { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
       | 3: %n.*.loc { %1[case=(if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine)] } 
@@ -354,7 +358,8 @@ NP ->  %N  { %1[lemcase=$lemcase] }
 
 NP -> 2: %num.*.loc n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] _ 
       %2[case=(if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine)] } 
-    | 2: %num n {1[case=(if (1.lem = akta) 1.case elif (1.case = acc) nom else 1.case)]  _ 2[case=(if (1.lem = akta) 2.case elif (1.case = acc and 2.case = acc) gen else 2.case)]} 
+    | 2: %num n {1[case=(if (1.lem = akta) 1.case elif (1.case = acc) nom else 1.case)]  _ 2[case=(if (2.case = loc) (if (2.function = "@←ADVL-ela" or 2.function = "@ADVL-ela→") ela else ine) elif (1.lem = akta) 2.case elif (1.case = acc and 2.case = acc) gen else 2.case)]}  
+    !!!2009-2013 áigodagas
     | 2: prn.dem %num.*.loc n.*.loc { 1 _ 2[case=(if (3.function = "@←ADVL-ela" or 3.function = "@ADVL-ela→") ela else ine)] _ 
       %3[case=(if (3.function = "@←ADVL-ela" or 3.function = "@ADVL-ela→") ela else ine)] }
     | 2: prn.dem %num n {1 _ 2[case=(if (2.lem = akta) 2.case elif (2.case = acc and 3.case = acc) nom else 2.case)]  _ 3[case=(if (2.lem = akta) 3.case elif (2.case = acc and 3.case = acc) gen else 3.case)]}  !3.lem not = akta (1.case not = 2.case)
@@ -364,7 +369,7 @@ NP -> 2: %num.*.loc n.*.loc { 1[case=(if (2.function = "@←ADVL-ela" or 2.funct
 ! | %num n [$number=(if (1.lem = "1") sg else pl)] { 1 _ 2[number=1.number] } ; !for shit in guokte biillat
 
 NP -> prn.ref %N { 1 _ 2}  !ietjam viellja !! denne treffer nå også feildisambiguering, mer robust
-    | prn %N ?(1.function not = "@←OBJ") { 1[number=(if (1. lem in attrprn) "" else 1.number),case= (if (1. lem in attrprn) "" else 1.case)] _ 2}  !dav vielja, juohke sajis
+    | prn %N ?(1.function not = "@←OBJ") { 1[number=(if (1. lem in attrprn) "" else 1.number),case= (if (1. lem in attrprn) ""  elif (1.case = loc) (if (1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") ela else ine) else 1.case)] _ 2}  !dav vielja, juohke sajis
 !!!    | prn %N { 1 _ 2} !juohke sajis
     | 2: prn.*."@→N" %NP { 1 _ 2} !juohke sajis
     | 2: n.*."@→N" %N { 1 _ 2} !sámi máná
@@ -450,7 +455,8 @@ V ->    "aux condverb"   5: %[auxverbs]@vblex.*.cond ?(1.qst="")  { %1[lemcase=$
       | "aux condverb.q" 4: %[auxverbs]@vblex.*.cond ?(1.qst=qst) { %1[qst="",lemcase=$lemcase] _ gus@pcle.qst }
       | "condverb.q"     3:            %vblex.*.cond ?(1.qst=qst) { liehket@vblex.iv.cond.[1.person_number][lemcase=1.lemcase] _  gus@pcle.qst _ %1[mood="",infin=inf] }
       | "condverb"       2:            %vblex.*.cond    { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ %1[mood="",tense="",infin=inf] } ! boađášin > luluv boahtet
-      | "enkeltverb"       1: %vblex.*.$function ?(1.onlycmp = "") { %1[lemcase=$lemcase,deriv=(if (1.deriv=der_inchl and 1.lem incl verb3st) der_ahtja else 1.deriv)]} !
+      | "enkeltverb.v2v "       2: %vblex.*.[v2v].*.$function ?(1.onlycmp = "") { %1[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla  elif (1.v2v=der_h) der_d elif (1.v2v=der_ahtti) der_caus elif (1.v2v=der_passs) der_passl else 1.v2v)]} !
+      | "enkeltverb"       1: %vblex.*.$function ?(1.onlycmp = "") { %1[lemcase=$lemcase]} !
       | "dadjat_verbs ahte"       1: %[dadjat_verbs]@vblex.*."@+FMAINV" ahte@cnjsub { %1[lemcase=$lemcase]} !
     | "verb placetimeadv"  1: %vblex.*.$function [placetimeadv]@adv.*."@←ADVL-ine" { %2[lemcase=1.lemcase] _ 1[lemcase=2.lemcase]} 
     !!! soai stoahkaba álo ovttas > soai álo stoahkaba ovttas 

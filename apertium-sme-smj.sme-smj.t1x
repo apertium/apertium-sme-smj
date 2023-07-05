@@ -3358,12 +3358,6 @@ C[_]-T sent
         </when>
         <when>
           <test>
-            <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_laakan"/></equal>
-          </test>
-          <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_lágán"/></let>
-        </when>
-        <when>
-          <test>
             <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_ahtti"/></equal>
           </test>
           <let><clip pos="1" side="tl" part="a_deriv"/><lit-tag v="der_caus"/></let>

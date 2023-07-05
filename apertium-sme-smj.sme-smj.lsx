@@ -16,6 +16,7 @@
 	<sdef n="com"/>
 	<sdef n="cond"/>
 	<sdef n="conneg"/>
+	<sdef n="dem"/>
 	<sdef n="der_ahtes"/>
 	<sdef n="der_caus"/>
 	<sdef n="der_geahtes"/>
@@ -122,9 +123,13 @@
   
   <section id="main" type="standard">
 
-    <!--
-^fange/fangen<vblex><pri><p1><sg>/fangen<vblex><prs><p1><sg>/fangen<vblex><prs><p3><sg>$ ^x/*x$ ^an/an<pr><dat>/an<pr><acc>$^./.<sent>$ -->
 
+
+    <e r="LR"> <!-- ovddidandihte > åvddånahttemij -->
+      <i><w/><s n="n"/><t/></i> 
+      <p><l><s n="cmp_sgnom"/><s n="cmp"/><d/></l><r><s n="sg"/><s n="ill"/><d/></r></p>
+      <p><l>dihtti<s n="n"/><s n="sem_ani"/><s n="sg"/><s n="gen"/><s n="allegro"/></l><r></r></p><par n="syntax_tags"/>
+    </e>
     <e r="LR"> <!-- oađđin dihte > oađđit supn -->
       <i><w/></i> 
       <p><l><s n="vblex"/><s n="iv"/><s n="actio"/><s n="gen"/><t/><d/></l><r><s n="vblex"/><s n="iv"/><s n="supn"/><t/><d/></r></p>
@@ -170,7 +175,7 @@
       <p><l>geatnegahtton<s n="adj"/><s n="sg"/><s n="nom"/><t/><d/></l><r>ovddasvástádus<s n="n"/><s n="sg"/><s n="nom"/><t/><d/></r></p>
       <i><w/><s n="vblex"/><s n="iv"/><s n="inf"/><t/><d/></i>
    </e>
-    <e r="LR"> <!-- son lea geatnegahtton > sus lea ovddasvástádus -->
+<!--    <e r="LR"  w="0.0"> 
       <i>máŋga<s n="prn"/><s n="ind"/></i>
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
@@ -178,14 +183,38 @@
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
    </e>
-    <e r="LR"> <!-- son lea geatnegahtton > sus lea ovddasvástádus -->
+    <e r="LR"  w="0.0"> 
       <i>máŋga<s n="prn"/><s n="ind"/></i>
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
       <i><w/><s n="n"/><t/></i>
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
-   </e>
+   </e> -->
+    <e r="LR" w="1.0"> <!-- máŋgačuođi > moadda tjuode -->
+      <p><l>máŋgačuođi<s n="num"/></l><r>máŋga<s n="prn"/><s n="ind"/></r></p>
+      <i><t/><d/></i>
+      <p><l></l><r>čuohti<s n="num"/><s n="sg"/><s n="gen"/><d/></r></p>
+   </e> 
+    <e r="LR" w="1.0"> <!-- máŋgalot > moadda låk -->
+      <p><l>máŋgalogi<s n="num"/></l><r>máŋga<s n="prn"/><s n="ind"/></r></p>
+      <i><t/></i>
+      <p><l><s n="attr"/><t/><d/></l><r><d/></r></p>
+      <p><l></l><r>logi<s n="num"/><s n="attr"/><d/></r></p>
+   </e> 
+    <e r="LR" w="1.0"> <!-- dán muttos áigi > dáj muttoj -->
+      <p><l>dát<s n="prn"/><s n="dem"/><s n="sg"/><s n="gen"/></l><r>dát<s n="prn"/><s n="dem"/><s n="pl"/><s n="gen"/></r></p>
+      <i><t/><d/></i>
+      <i>muttos<s n="post"/><t/><d/></i>
+      <p><l>áigi<s n="n"/><t/></l><r></r></p><par n="syntax_tags"/>
+   </e> 
+    <e r="LR" w="1.0"> <!-- amas leavvat > vaj ij gæjvvana -->
+      <p><l>amas<s n="adj"/><t/><d/></l><r>vai<s n="cnjsub"/><d/></r></p>
+      <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><d/></r></p>
+      <i><w/><s n="vblex"/><s n="iv"/></i>
+      <p><l><s n="inf"/></l><r><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e> 
 
     <e r="LR"> <!--   -->
       <i>muitalit<s n="vblex"/><t/><d/></i>
