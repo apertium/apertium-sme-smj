@@ -208,11 +208,19 @@
       <i>muttos<s n="post"/><t/><d/></i>
       <p><l>áigi<s n="n"/><t/></l><r></r></p><par n="syntax_tags"/>
    </e> 
-    <e r="LR" w="1.0"> <!-- amas leavvat > vaj ij gæjvvana -->
+    <e r="LR" w="1.0"> <!-- amas leavvat (med feil disam) > vaj ij gæjvvana -->
       <p><l>amas<s n="adj"/><t/><d/></l><r>vai<s n="cnjsub"/><d/></r></p>
       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><d/></r></p>
       <i><w/><s n="vblex"/><s n="iv"/></i>
       <p><l><s n="inf"/></l><r><s n="indic"/><s n="conneg"/></r></p>
+      <i><t/><d/></i>
+   </e> 
+    <e r="LR" w="1.0"> <!-- amas leavvat (riktig disam) > vaj ij gæjvvana -->
+      <p><l></l><r>vai<s n="cnjsub"/><d/></r></p>
+      <p><l>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="supn"/></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></r></p>
+      <i><t/><d/></i>
+       <i><w/></i>
+     <p><l><s n="vblex"/><t/><s n="inf"/></l><r><s n="vblex"/><t/><s n="indic"/><s n="conneg"/></r></p>
       <i><t/><d/></i>
    </e> 
 
