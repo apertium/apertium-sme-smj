@@ -83,7 +83,7 @@ VP: _.mood.tense.person.number.infin ; !?
 V: _.mood.tense.person.number.infin.function.sentinit ; !?
 NegVP:  _.neg.mood.tense.conneg.function ;
 NP: _.number.case.poss.cmp.hyph.onlycmp.foc.function ; 
-PRN: _.prn_type.person.number.case.poss.attr.foc ; 
+PRN: _.prn_type.person.number.case.poss.attr.foc.function ; 
 S: _.function ; !?
 InfinS: _ ;
 AdvP: _.abbr.poss.function ;
@@ -293,14 +293,15 @@ verb3st = "vájbbadit" "hiebadit" "sjaddadit" "gájddadit" "suddadit" "navddadit
 AdvP -> %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (1.number/tl=sg) sg else "")] })
       | %adv cnjcoo adv { %1 _ 2 _ 3 }
       | adv."@→ADVL" %adv { 1 _ %2 }
-      | pcle %adv { 1 _ %2 }
-      |  %adv pcle { %1 _ 2 }
+      | pcle %adv (if (1.lem/tl="") { %2 } else  { 1 _ %2 })
+      |  %adv pcle (if (2.lem/tl="") { %1 } else { %1 _ 2 })
       ;
 
 
 
 AP -> 1: %adj { %1 }
      | 1: AdvP  %adj { 1 _ %2}
+     | 1: AdvP  prn.*."@←SUBJ" %adj.*."@←SPRED" { 1 _ 2 _ %3} !dieđusge dat dehálaš
 !    | 1: "num.cmp adj" 3: num.cmp  %adj { 1 + %2 } !Could not find output pattern
 !    | 1: vblex.*.prsprc { %1 }
     | 1: adj C %adj { %1 _ 2 _ %3} 
@@ -335,7 +336,7 @@ N ->    1: %n ?(1.cmp = "") { %1[lemcase=$lemcase] }
       | 3: %num.sem_year.sg.loc  {  jahke@n.sg.ine _ %1[case=nom] }
       | 3: %num.sem_year.sg.ill  {  jahke@n.sg.ill _ %1[case=nom] }
       | 1: %num  { %1 }
-      | 1: %N pcle { %1 _ 2}
+      | 1: %N pcle (if (2.lem/tl="") { %1 } else  { %1 _ 2})
       ; 
 
 PRN ->   "prnnotfocsme" 2: %[prnnotfocsme]@prn  { %1[foc=""] }
@@ -414,6 +415,7 @@ AP ->   2: %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] }
 
 
 PP -> "NP post" 1: NP %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
+!!!     | "@→P NP post" 1: prn.*."@→P" NP %post (if (2.pos_tag/tr=n) { 1 _ 2 _ %3(n_only)} else {1 _  2[case=(if (3.lem = miehtáj) acc else 2.case)] _ 3 }) 
        | "PRN post" 1: PRN %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
       | "dás post" 1: dás@adv %post  { 1 _ %2 }
       | "pre/post NP" 2: %pr NP ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] }  !miehtá beavddi > bievde miehtáj
@@ -537,6 +539,11 @@ S -> 3: prn.pers %V.*.$function.$sentinit  (if (1.function="@-FSUBJ→" and 2.in
     | 3: go@cnjsub %V.*."@+FMAINV"  NP  { 1[lemcase=$lemcase] _ 3 _ %2 }
         !!! go hállet beatnagiiguin
     | 3: prn.pers %leat@vblex.*."@+FMAINV" { 1 _ %2 }     
+    | 3:  %leat@vblex.*."@+FMAINV" N.*."@←SUBJext" { %1 _ 2 }     
+    | 3:  %leat@vblex.*."@+FMAINV" N.*."@←SUBJ" { %1 _ 2 }     
+    | 3:  %leat@vblex.*."@+FMAINV" N.*."@←SUBJ" prn.*."@←SUBJ" { %1 _ 2 _ 3 }  !guovttis earát   
+    | " @+FMAINV @←SUBJ" 1:   %V.*."@+FMAINV" N.*."@←SUBJ" { %1 _ 2 }     
+!    | "@OBJ→  @+FMAINV @←SUBJ" 1:  NP.*."@OBJ→" %V.*."@+FMAINV" N.*."@←SUBJ" { 1 _ %2 _ 3 }     
     | 2: prn.pers %VP.$function (if (1.person_number in first_sec_person_number and  1.person_number= 2.person_number) 
         { %2[lemcase=1.lemcase] } else { 1 _ %2 }) !Mun ferten borrat  > Båråv             
     | 2: C prn.pers %V NP (if (2.person_number in first_sec_person_number and  2.person_number= 3.person_number) 
@@ -619,6 +626,7 @@ S ->! "NP VP" NP %VP { 1[lemcase=$lemcase] _ 2 }
     | "V AP V" 1: %V AP V.*.[infin] ?(3.lem not incl copulas)    { %1[lemcase=$lemcase] _ 2 _ 3 }   ! 
 !!!      | 1: C %V NP { 1 _ %2 _ 3 } !  må arbeides med
     | 1: S %NP { 1 _ %2 } ! 
+    | 1: S %NP AdvP { 1 _ %2 _ 3 } ! 
      | 1: S prn.ind %NP { 1 _ 2 _ %3 } ! 
      | 1: %S."@+FMAINV" [placetimeadv]@AdvP { 2[lemcase=1.lemcase] _ %1[lemcase=2.lemcase] } 
 !!! Maid don barggat odne? > Majt uddni barga? skal ikke treffe aktan i soai stoahkaba álo ovttas šiljus stuora dálu olgobealde
