@@ -249,7 +249,7 @@ foclemmas = "okta" ;
 
 not-move-adv = "aj" "duodaj" "vargga" "náv" "nav" "gal" "de" ;
 
-smj-supn-triggerverbs = "bivddit" "barggat" "dahkat" "hásstalit" "vælggogissan dahkat" "ávvudallat" "ávttjit" "geatnegahttit" ;
+smj-supn-triggerverbs = "bivddit" "barggat" "dahkat" "hásstalit" "vælggogissan dahkat" "ávvudallat" "ávttjit" "geatnegahttit" "åhtsåt" "ohcat" ;
 
 adj_nottriggingsupn = "álkke" "hiebalasj" "suohtas" "vájvve" "guhkálasj" "ahket" "ájnas" "gássjel" "tjiehppe" "váttis" ;
 
@@ -276,13 +276,13 @@ acc2ela_verbs = "hieredit" ;
 acc2ill_verbs = "vájkkudit" "tjágŋat" "guosskat" ;
 com2ill_verbs = "vásstedit" "oktiivástidit" ;
 loc2com_verbs = "rahtjat" ;
-auxverbs = "máhttet" "sáhttit" "áigut" "máhttit" "leat" "liehket" "galggat" "hæhttut" "ájggot" "sáhttit" "áiggut" ;
+auxverbs = "máhttet" "sáhttit" "áigut" "ájádallat" "máhttit" "leat" "liehket" "galggat" "hæhttut" "ájggot" "sáhttit" "áiggut" ;
 attrprn = "eará" "ietjá" "juohke" "juohkka" "dakkár" "iešguhte" "iesjguhti" "iešguhtet" "galle" "galla" "buot" "makkir" "makkár" "muhtem" "muhtin" ;
 prnnotfocsme =  "mihkke" "guhtemuš" "iešguhtet" ;
 prnnotfocsmj = "soames" "mige" ;
 placetimeadv = "odne" "ikte" "ihttin" "dalle" "uddni" "idet" "iektu" "dalloj" "doppe" "gos" "gånnå" "álo" "ain" "ájn" ;
 
-dadjat_verbs = "almmuhit" "almodit" "ballat" "čájehit" "dadjat" "doajvvot" "dovdat" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gáibidit" "gájbbedit" "gielestit" "javllat" "jáhkket" "jáhkkit" "lohkat" "låhkåt" "meidnet" "meroštallat" "merustallat" "miejnnit" "mierredit" "muitalit" "oaidnit" "oaivvildit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet"  "vuornnot" "vuosedit"  ;
+dadjat_verbs = "almmuhit" "almodit" "ballat" "čájehit" "dadjat" "doajvvot" "dovdat" "dåbddåt" "dåbddåt¹" "dåbdåstit" "gáibidit" "gájbbedit" "gielestit" "javllat" "jáhkket" "jáhkkit" "jurddahit" "jurddašit" "lohkat" "låhkåt" "meidnet" "meroštallat" "merustallat" "miejnnit" "mierredit" "muitalit" "oaidnit" "oaivvildit" "subtsastit" "sárnnot" "tjielggit" "tjuottjodit" "vuojnnet"  "vuornnot" "vuosedit"  ;
 
 lohkat_verbs = "lohkat" "dadjat" "javllat" ; !ii loga váttisin
 
@@ -410,6 +410,8 @@ NP ->  "adj NP" AP  %NP { 1 _ %2[poss=$poss] }
 ! Sån la vidá jagák.
 AP ->   2: %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } 
       | 2: %num.cmp_hyph.cmp jahkásaš@adj { 1[number=sg,case=gen,cmp="",onlycmp="",hyph="",num_type=arab] _ 2[lem=jagák] } 
+      | 2: num.sg.gen %jahkásaš@adj { 1 _ %2[lem=jagák] } 
+      | 2: num.sg.gen %jahkásaččat@adv { 1 _ %2[lem=jagák,pos_tag=adj,number=pl,case=nom] }  ! feil disambiguering
       ;
 
 
@@ -505,7 +507,7 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
     !!! Son geahččala ain ohcat Jaakko. > Sån ájn gæhttjal Jaakkov åhtsåt.
     | "vblex pcle vblex"     1: V pcle %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
     | "vblex pcle vblex NP"     1: V pcle %V NP (if (3.lem = liehket) { 1[lemcase=$lemcase] _ 2  _ %3 _ 4 } else  { 1[lemcase=$lemcase] _ 2 _ 4 _ %3 })   ! 
-    | "vblex NP vblex"     2: V.*."@-FMAINV" NP %vblex    { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs) supn  else 3.infin)] }   
+    | "vblex NP vblex"     2: V.*."@-FMAINV" NP %vblex    { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs and 3.infin=inf) supn  else 3.infin)] }   
      | "dadjat_verbs prn.pers.acc ess"     4: %[dadjat_verbs]@vblex prn.pers.*.acc adj    { 1[lemcase=$lemcase] _ 2[case=nom] _ %liehket(vblex)[mood=indic,tense=1.tense,person=2.person,number=2.number] _ 3[number=2.number,case=nom] } 
      !!!Son lohká sin duđavaččat > Sån javllá sij li dudálattja
      | "dadjat_verbs prn.pers.acc vblex.inf"     4: [dadjat_verbs]@vblex prn.pers.*.acc %vblex.*.inf    { 1[lemcase=$lemcase] _ 2[case=nom] _ %3[infin="",mood=indic,tense=1.tense,person=2.person,number=2.number] } 
@@ -520,7 +522,7 @@ VP -> ! "leat vblex" 1: %[auxverbs]@V V   { %1[lemcase=$lemcase]  _ 2 }   ! lean
  { 1[lemcase=$lemcase] _ %2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=nom,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif (2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3[number=2.poss,case=nom]} 
  	 !!! Son lohká iežaset duđavažžan. > Sån javllá sij li dudálattja.
 
-    | "vblex N vblex"     2: V.*."@+FMAINV" N %vblex ?(3.onlycmp = "") (if (2.function="@-FSUBJ→" and 3.infin="actio.ess") {1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag = N and 2.number = du) sg else 2.number)] _ liehket(vblex_fin)[mood=indic,tense=1.tense,person=p3,number=2.number] _ %3} else    { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl not-usually-supn-verbs) 1.infin else (if (1.lem incl smj-supn-triggerverbs or 3. function="@←ADVL") supn else 3.infin))] })   !
+    | "vblex N vblex"     2: V.*."@+FMAINV" N %vblex ?(3.onlycmp = "") (if (2.function="@-FSUBJ→" and 3.infin="actio.ess") {1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag = N and 2.number = du) sg else 2.number)] _ liehket(vblex_fin)[mood=indic,tense=1.tense,person=p3,number=2.number] _ %3} else    { 1[lemcase=$lemcase] _ 2 _ %3[infin= (if (3.lem incl not-usually-supn-verbs) 3.infin elif (3.infin=inf) (if (1.lem incl smj-supn-triggerverbs or 3. function="@←ADVL") supn else 3.infin) else 3.infin) ] })   !
      !!! oainnán nieidda stoahkamin > oainnán nieida lea stoahkamin 
 !    | "vblex NP vblex"     1: V NP %V    { 1[lemcase=$lemcase] _ 2 _ %3 }   ! 
     | "vblex NP AdvP"     1: %V NP AdvP    { %1[lemcase=$lemcase] _ 2 _ 3 }   ! 

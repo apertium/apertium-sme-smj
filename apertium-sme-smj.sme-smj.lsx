@@ -11,8 +11,10 @@
 	<sdef n="cltl"/>
     <sdef n="cmp_hyph"/>
     <sdef n="cmp_oblhyph"/>
+    <sdef n="cmp_sggen"/>
 	<sdef n="cnjcoo"/>
 	<sdef n="cnjsub"/>
+	<sdef n="coll"/>
 	<sdef n="com"/>
 	<sdef n="cond"/>
 	<sdef n="conneg"/>
@@ -242,6 +244,16 @@
         <i><t/><d/></i>
    </e>
 
+    <e r="LR"> <!-- Nieiddaguovttos > Nieidda guovttos   -->
+        <i><w/><s n="n"/><t/></i>
+       <p><l><s n="cmp_sggen"/><s n="cmp"/><d/></l><r><s n="sg"/><s n="gen"/><d/></r></p>
+       <i>guovttos<s n="n"/><s n="coll"/><t/><d/></i>
+   </e>
+    <e r="LR"> <!-- Nieiddaguovttos > Nieidda guovttos   -->
+        <i><w/><s n="n"/><t/></i>
+       <p><l><s n="cmp_sgnom"/><s n="cmp"/><d/></l><r><s n="sg"/><s n="gen"/><d/></r></p>
+       <i>guovttos<s n="n"/><s n="coll"/><t/><d/></i>
+   </e>
     <e r="LR"> <!--   -->
       <i>muitalit<s n="vblex"/><t/><d/></i>
        <p><l>vásáhus<s n="n"/><t/><s n="acc"/><t/><d/></l><r>vásáhus<s n="n"/><t/><s n="gen"/><t/><d/></r></p>
