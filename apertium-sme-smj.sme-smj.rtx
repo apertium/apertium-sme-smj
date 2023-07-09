@@ -145,7 +145,9 @@ adv: (if (1.pos_tag/tl=n) 1(adv_to_noun)
      else 1(adv_only)) ;
 
 
-num: _.num_type.number.case.attr.cmp.hyph.cmpsplitr.onlycmp ;
+num_only: _.num_type.number.case.attr.cmp.hyph.cmpsplitr.onlycmp ;
+num: (if (1.pos_tag/tl=prn) 1(prn_other)
+	  else 1(num_only)) ;
 
 np_ant: <np>.<ant>.gender.number.case.attr.cmp.hyph.onlycmp ;
 np_other: <np>.acr.number.case.attr.cmp.hyph.onlycmp ;
@@ -308,6 +310,12 @@ N ->    "N:n" 1: %n ?(1.cmp = "") { %1[lemcase=$lemcase] }
 Name ->  "N:np" %np.*.[case].$function ?(1.cmp= "") { %1[case=(if (1.case=loc and 1.function = "@←ADVL-ela" or 1.function = "@ADVL-ela→") 
 	ela elif (1.case=loc) ine elif (1.function = "@-FSUBJ→") nom else 1.case)] } 
 	| "N:np.cmp np" 3: np.*.cmp  %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
+	| "NP:np.attr np" np.*."@→N" %Name { 1 _ %2 } 
+	| "NP:np.attr np.attr np" np.*."@→N" np.*."@→N" %Name { 1 _ 2 _ %3 } 
+	| "NP:np.attr np.attr np.attr np" np.*."@→N" np.*."@→N" np.*."@→N" %Name { 1 _ 2 _ 3 _ %4 } 
+	| "NP:np.attr np.attr np.attr np.attr np" np.*."@→N" np.*."@→N" np.*."@→N" np.*."@→N" %Name { 1 _ 2 _ 3 _ 4 _ %5 } 
+	| "NP:np cnp np" Name cnjcoo."@CNP" %Name.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] 
+	{ 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
 	;
 
 
@@ -328,12 +336,6 @@ NP ->  %N  { %1[lemcase=$lemcase] }
 	| "NP:gohcuid alde > V" 4: %gohcu@n.*.pl.gen { %1(vblex_infin) } !denne må generaliseres, hvordan uttrykke pos?
 
 	| "NP:Name" %Name { %1 }
-	| "NP:np.attr np" np.*."@→N" %Name { 1 _ %2 } 
-	| "NP:np.attr np.attr np" np.*."@→N" np.*."@→N" %Name { 1 _ 2 _ %3 } 
-	| "NP:np.attr np.attr np.attr np" np.*."@→N" np.*."@→N" np.*."@→N" %Name { 1 _ 2 _ 3 _ %4 } 
-	| "NP:np.attr np.attr np.attr np.attr np" np.*."@→N" np.*."@→N" np.*."@→N" np.*."@→N" %Name { 1 _ 2 _ 3 _ 4 _ %5 } 
-	| "NP:np cnp np" Name cnjcoo."@CNP" %Name.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] 
-	{ 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
 
 	| "NP:num.sem_year.loc" 3: %num.sem_year.sg.loc  {  jahke@n.sg.ine _ %1[case=nom] }
 	| "NP:num.sem_year.ill" 3: %num.sem_year.sg.ill  {  jahke@n.sg.ill _ %1[case=nom] }
@@ -362,6 +364,7 @@ PRN -> "prnnotfocsme" 1: %[prnnotfocsme]@prn  { %1[foc=""] }
 	| "ii prn N" 1:  ii@vblex.iv.neg %prn.*."foc_neg-ge" N  {1[lemcase=$lemcase,tense=pres] _ %2[foc=(if (2.lem in prnnotfocsmj) 
 	"" else 2.foc)] _ 3 } 	!!!ige makkárge eará ealli > ij makkirak ietjá judos
 	| "prn.nom prn.nom" 1:  %prn.*.nom prn.*.nom  { %1[lemcase=$lemcase] _ 2[foc=(if (2.lem in prnnotfocsmj) "" else 2.foc)] } !soai goappašaga
+	| "okta ge" 1: %okta@num ge@pcle { %1[pos_tag=prn,prn_type_other=ind,foc=foc_neg-k]}
 	| "prn PCLE" 1: %prn PCLE { %1 _ 2 }
 	| "prn n.@Pron←" 1: %prn n.*."@Pron←" { %1 _ 2 } !mii ávkkiid
 	;
@@ -413,8 +416,9 @@ NegVP -> "ii dadjat@conneg ieš N.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.*
 	3[number=sg,case=nom] _ 4[infin=inf]} 
 	| "ii conneg vblex" 3: ii@vblex.iv.neg %vblex.*.conneg vblex { 1[lemcase=$lemcase,tense=2.tense] _ %2[mood=indic] _ 3} 
 	| "ii NP conneg" 3: ii@vblex.iv.neg NP %vblex.*.conneg { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[mood=indic,tense=""] } 
-	| "ii prn conneg" 3: ii@vblex.iv.neg prn %vblex.*.conneg (if (2.prn_type = pers and 2.case=nom) { 1[lemcase=$lemcase,tense=3.tense] _ 
-	%3[mood=indic,tense=""] } else { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[mood=indic,tense=""] }) !!! ii son sáhte > ij máhte
+	| "ii PRN conneg" 3: ii@vblex.iv.neg PRN %vblex.*.conneg (if (2.prn_type = pers and 2.case=nom) { 1[lemcase=$lemcase,tense=3.tense] 
+	_ %3[mood=indic,tense=(if (3.lem = liehket) 3.tense else "")] } else { 1[lemcase=$lemcase,tense=3.tense] _ 2 _ %3[mood=indic,tense=(if 
+	(3.lem = liehket) 3.tense else "")] }) !!! ii son sáhte > ij máhte
 	| "ii conneg NP" 3: ii@vblex.iv.neg %vblex.*.conneg NP ?(2.lem not = liehket){ 1[lemcase=$lemcase,tense=2.tense] _ %2[mood=indic] _ 3 } 
 	| "ii conneg prn" 3: ii@vblex.iv.neg %vblex.*.conneg prn ?(3.prn_type not = ref) { 1[lemcase=$lemcase,tense=2.tense] _ 3[foc=(if 
 	(3.lem in prnnotfocsmj) "" else 3.foc)] _ %2[mood=indic] } 
