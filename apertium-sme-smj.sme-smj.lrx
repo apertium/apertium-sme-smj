@@ -1955,6 +1955,9 @@
    <match lemma="gijtto" tags="n.*"/>
    </or>
  </rule>     
+       <rule weight="1.0">
+   <match lemma="iešalddis" tags="adv.*"><select lemma="iesj" tags="*.ine.px3sg.*"/></match> 
+ </rule>     
 
        <rule weight="1.0">
    <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
@@ -2688,6 +2691,16 @@
       <match tags="vblex.*.inf.*"/>
       <match lemma="ahte"/>
       </or>
+    </rule>
+     <rule weight="1.0">
+      <match lemma="seanadit"><select lemma="semadit"/></match>
+    </rule>
+     <rule weight="0.5">
+      <match lemma="seanadit"><select lemma="såbadit"/></match>
+    </rule>
+     <rule weight="0.6">
+      <match lemma="seanadit"><select lemma="såbadit"/></match>
+      <match lemma="proseassa"/>
     </rule>
 
     

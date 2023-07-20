@@ -9,6 +9,7 @@
 	<sdef n="cltl"/>
 	<sdef n="cmp_attr"/>
 	<sdef n="cmp_sgnom"/>
+	<sdef n="com"/>
 	<sdef n="cond"/>
 	<sdef n="cnjcoo"/>
 	<sdef n="cnjsub"/>
@@ -19,6 +20,7 @@
 	<sdef n="der_passl"/>
 	<sdef n="det"/>
 	<sdef n="du"/>
+	<sdef n="ela"/>
 	<sdef n="ess"/>
 	<sdef n="foc_bat"/>
 	<sdef n="foc_neg-ge"/>
@@ -27,8 +29,10 @@
 	<sdef n="foc_pos-k"/>
 	<sdef n="g3"/>
 	<sdef n="gen"/>
+	<sdef n="ill"/>
 	<sdef n="ind"/>
 	<sdef n="indic"/>
+	<sdef n="ine"/>
 	<sdef n="iv"/>
 	<sdef n="n"/>
 	<sdef n="neg"/>
@@ -103,22 +107,30 @@
 	  <e><par n="det"/><par n="adj"/><par n="n"/></e>
 	  <e><par n="det"/><par n="adj"/><par n="adj"/><par n="n"/></e>
 	</pardef>
+    <pardef n="cases">
+      <e><i><s n="nom"/></i></e>
+      <e><i><s n="acc"/></i></e>
+      <e><i><s n="gen"/></i></e>
+      <e><i><s n="ill"/></i></e>
+      <e><i><s n="com"/></i></e>
+      <e><i><s n="ine"/></i></e>
+      <e><i><s n="ela"/></i></e>
+    </pardef>
     <pardef n="ref_sg_px">
-      <e><i><t/><s n="px1sg"/></i></e>
-      <e><i><t/><s n="px2sg"/></i></e>
-      <e><i><t/><s n="px3sg"/></i></e>
-      <e><i><t/><s n="px1du"/></i></e>
-      <e><i><t/><s n="px2du"/></i></e>
-      <e><i><t/><s n="px3du"/></i></e>
+      <e><i><s n="px1sg"/></i></e>
+      <e><i><s n="px2sg"/></i></e>
+      <e><i><s n="px3sg"/></i></e>
+      <e><i><s n="px1du"/></i></e>
+      <e><i><s n="px2du"/></i></e>
+      <e><i><s n="px3du"/></i></e>
     </pardef>
     <pardef n="ref_pl_px">
-      <e><i><t/><s n="px1pl"/></i></e>
-      <e><i><t/><s n="px2pl"/></i></e>
-      <e><i><t/><s n="px3pl"/></i></e>
+      <e><i><s n="px1pl"/></i></e>
+      <e><i><s n="px2pl"/></i></e>
+      <e><i><s n="px3pl"/></i></e>
     </pardef>
 	
   <pardef n="cltl-words">
-      <e><i><w/><s n="vblex"/><t/></i></e>
       <e><i><w/><s n="n"/><s n="sg"/><t/></i></e>
       <e><i><w/><s n="n"/><s n="pl"/><t/></i></e>
       <e><i><w/><s n="n"/><s n="nomag"/><s n="sg"/><t/></i></e>
@@ -218,11 +230,13 @@
     <e r="RL" w="1.0">  <!-- legg til sg -->
      <i>iesj<s n="prn"/><s n="ref"/></i>
      <p><l><s n="sg"/></l><r></r></p> 
+      <par n="cases"/>      
       <par n="ref_sg_px"/>      
   </e>
     <e r="RL" w="1.0">  <!-- legg pl -->
      <i>iesj<s n="prn"/><s n="ref"/></i>
      <p><l><s n="sg"/></l><r></r></p> 
+      <par n="cases"/>      
       <par n="ref_pl_px"/>      
   </e>
     <e r="RL" w="1.0">  <!-- legg pl -->
