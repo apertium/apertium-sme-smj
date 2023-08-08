@@ -92,7 +92,7 @@ semtag = [semtime] [semhum] [semother] ;
 !! OUTPUT PATTERNS
 !!!!!!!!!!!!!!!
 
-VP: _.mood.tense.person.number.infin ; !?
+VP: _.mood.tense.person.number.infin.sentinit ; !?
 V: _.mood.tense.person.number.infin.function.sentinit ; !?
 NegVP:  _.neg.mood.tense.conneg.function ;
 NP: _.number.case.poss.cmp.hyph.onlycmp.foc.function ; 
@@ -536,6 +536,7 @@ VP -> "pers NegVP" 2: prn.*.nom %NegVP { %2[lemcase=1.lemcase] }
 	!!! jáhkká veaga viežžan > 
 	| "dadjat n.acc inf" 4: [dadjat_verbs]@vblex n.*."@-FSUBJ→" %vblex.*.inf { 1[lemcase=$lemcase] _ 2[case=nom] _ 
 	%3[infin="",mood=indic,tense=(if (1.tense="") pres else 1.tense),person=p3,number=2.number] } !!!jáhkká skuvlla váikkuhit > jáhkká skåvllå vájkkut
+	| "dadjat inf" 4: [dadjat_verbs]@vblex %vblex.*.inf."@←OBJ" { 1[lemcase=$lemcase] _ %2[infin="",mood=indic,tense=(if (1.tense="") pres else 1.tense),person=p3,number=1.number] } !!!son lohká dovdat > jáhkká skåvllå vájkkut
 !!!	| "dadjat ieš.ref prfprc" 5: %[dadjat_verbs]@vblex ieš@prn.ref vblex.*.prfprc { 1[lemcase=$lemcase] _ 
 !!!	%2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=nom,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif 
 !!!	(2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3} !!! Son muitala iežas fitnan. > Sån subtsas sån la guossidam.
