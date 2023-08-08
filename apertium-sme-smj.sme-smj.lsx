@@ -28,6 +28,7 @@
 	<sdef n="der_superl"/>
 	<sdef n="det"/>
 	<sdef n="du"/>
+	<sdef n="ela"/>
 	<sdef n="ess"/>
 	<sdef n="ex_adj"/>
 	<sdef n="ex_np"/>
@@ -37,6 +38,7 @@
 	<sdef n="gram_tnumabbr"/>
 	<sdef n="ind"/>
 	<sdef n="indic"/>
+	<sdef n="ine"/>
 	<sdef n="iv"/>
 	<sdef n="n"/>
 	<sdef n="neg"/>
@@ -78,7 +80,16 @@
     <sdef n="sem_plc"/>
     <sdef n="sem_sign"/>
     <sdef n="supn"/>
-    <sdef n="@→N"/>
+    <sdef n="@ADVLhab→"/>
+    <sdef n="@←ADVL-ine"/>
+    <sdef n="@ADVL-ela→"/>
+    <sdef n="@←ADVL-ela"/>
+    <sdef n="@ADVLcs-ela→"/>
+    <sdef n="@ADVLqst-ela→"/>
+    <sdef n="@-F←ADVL-ela"/>
+    <sdef n="@-FSUBJ→"/> 
+    <sdef n="@→N"/> 
+    <sdef n="@N←"/>
   </sdefs>
 
   <pardefs>
@@ -112,8 +123,11 @@
       <e><i><w/><t/><d/></i></e>
       <e></e>
     </pardef>
-    <pardef n="words">
+    <pardef n="maybe_words">
       <e><par n="word"/><par n="word"/><par n="word"/></e>
+      <e><par n="word"/><par n="word"/></e>
+      <e><par n="word"/></e>
+      <e></e>
     </pardef>
     <pardef n="vblex_trans">
       <e><i><w/><s n="vblex"/><s n="iv"/></i></e>
@@ -122,6 +136,38 @@
     <pardef n="syntax_tags">
       <e r="LR"><p> <l><t/><d/></l> <r></r> </p></e>
       <e r="RL"><p> <l><d/></l>     <r></r> </p></e>
+    </pardef>
+    <pardef n="ela_syntax_tag">
+      <e><i><s n="@←ADVL-ela"/></i></e>
+      <e><i><s n="@ADVL-ela→"/></i></e>
+      <e><i><s n="@ADVLcs-ela→"/></i></e>
+      <e><i><s n="@ADVLqst-ela→"/></i></e>
+      <e><i><s n="@-F←ADVL-ela"/></i></e>
+      <e><i><s n="@N←"/></i></e>
+      <e><i><t/><s n="@←ADVL-ela"/></i></e>
+      <e><i><t/><s n="@ADVL-ela→"/></i></e>
+      <e><i><t/><s n="@ADVLcs-ela→"/></i></e>
+      <e><i><t/><s n="@ADVLqst-ela→"/></i></e>
+      <e><i><t/><s n="@-F←ADVL-ela"/></i></e>
+      <e><i><t/><s n="@N←"/></i></e>
+    </pardef>
+    <pardef n="fsub_tag">
+      <e><i><t/><s n="@-FSUBJ→"/><d/></i></e>
+      <e><i><s n="@-FSUBJ→"/><d/></i></e>
+    </pardef>
+    <pardef n="dadjat">
+      <e><i>dadjat<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>vuosedit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>jurddašit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>muitalit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>oaivvildit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>oaidnit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>lohkat<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>almmuhit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>ballat<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>gáibidit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>gielestit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>jáhkkit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
     </pardef>
     <pardef n="maybe_syntax_tag">
       <e></e>
@@ -160,28 +206,18 @@
       <p><l>alde<s n="post"/></l><r></r></p><par n="syntax_tags"/>
     </e>
 
-    <e r="LR"> <!-- láibumis > actio.ela -->
-      <i><w/></i> 
-      <p><l><s n="vblex"/><s n="tv"/><s n="actio"/><s n="loc"/></l><r><s n="vblex"/><s n="tv"/><s n="actio"/><s n="ela"/></r></p><par n="syntax_tags"/>
-    </e>
-    <e r="LR"> <!-- láibumis > actio.ela -->
-      <i><w/></i> 
-      <p><l><s n="vblex"/><s n="iv"/><s n="actio"/><s n="loc"/></l><r><s n="vblex"/><s n="iv"/><s n="actio"/><s n="ela"/></r></p><par n="syntax_tags"/>
+    <e r="LR" w="1.0"> <!-- láibumis > actio.ela -->
+      <i><w/><s n="vblex"/><t/></i> 
+	   <p><l><s n="actio"/><s n="loc"/></l><r><s n="actio"/><s n="ela"/></r></p><par n="syntax_tags"/>
     </e>
 
     <e r="LR"> <!-- son lea geatnegahtton > sus lea ovddasvástádus -->
       <i><w/><t/></i>
-      <p><l><s n="nom"/><t/><d/></l><r><s n="loc"/><t/><d/></r></p>
-      <p><l>leat<s n="vblex"/><t/><d/></l><r>leat<s n="vblex"/><t/><d/></r></p>
-      <p><l>geatnegahtton<s n="adj"/><s n="sg"/><s n="nom"/><t/><d/></l><r>ovddasvástádus<s n="n"/><s n="sg"/><s n="nom"/><t/><d/></r></p>
-      <i><w/><s n="vblex"/><s n="tv"/><s n="inf"/><t/><d/></i>
-   </e>
-    <e r="LR"> <!-- son lea geatnegahtton > sus lea ovddasvástádus -->
-      <i><w/><t/></i>
-      <p><l><s n="nom"/><t/><d/></l><r><s n="loc"/><t/><d/></r></p>
-      <p><l>leat<s n="vblex"/><t/><d/></l><r>leat<s n="vblex"/><t/><d/></r></p>
-      <p><l>geatnegahtton<s n="adj"/><s n="sg"/><s n="nom"/><t/><d/></l><r>ovddasvástádus<s n="n"/><s n="sg"/><s n="nom"/><t/><d/></r></p>
-      <i><w/><s n="vblex"/><s n="iv"/><s n="inf"/><t/><d/></i>
+      <p><l><s n="nom"/></l><r><s n="ine"/></r></p>
+      <i><t/><d/></i>
+      <i>leat<t/><d/></i>
+      <p><l>geatnegahtton<s n="adj"/><s n="sg"/><s n="nom"/><t/><d/></l><r>ovddasvástádus<s n="n"/><s n="sg"/><s n="nom"/><d/></r></p>
+      <i><w/><s n="vblex"/><t/><s n="inf"/><t/><d/></i>
    </e>
 <!--    <e r="LR"  w="0.0"> 
       <i>máŋga<s n="prn"/><s n="ind"/></i>
@@ -445,6 +481,34 @@
       <p><l><s n="indic"/><s n="pret"/><s n="conneg"/></l><r><s n="indic"/><s n="conneg"/></r></p>
       <i><t/><d/></i>
    </e>
+    <e r="LR" w="0.0">
+      <i><w/><t/></i>
+      <p><l><s n="loc"/></l><r><s n="ela"/></r></p>
+      <par n="ela_syntax_tag"/>
+    </e>
+    <e r="LR" w="1.0">
+      <i>geatnegahttit<s n="vblex"/><t/><d/></i>
+      <i><w/><t/></i>
+      <p><l><s n="acc"/></l><r><s n="acc"/></r></p>
+      <par n="fsub_tag"/>
+    </e>
+    <e r="LR" w="0.0">
+      <par n="dadjat"/>
+      <par n="maybe_words"/>
+      <i><w/><t/></i>
+      <p><l><s n="acc"/></l><r><s n="nom"/></r></p>
+      <par n="fsub_tag"/>
+    </e>
+    <e r="LR" w="0.0">
+      <par n="dadjat"/>
+      <i><w/><t/></i>
+      <p><l><s n="acc"/></l><r><s n="nom"/></r></p>
+      <par n="fsub_tag"/>
+      <i><w/><t/><d/></i>
+      <i><w/><t/></i>
+      <p><l><s n="acc"/></l><r><s n="nom"/></r></p>
+      <par n="fsub_tag"/>
+    </e>
    
     <!-- we don't want "go" → "go go" -->
     <e r="LR" w="0.0">
