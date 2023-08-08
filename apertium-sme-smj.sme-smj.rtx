@@ -437,6 +437,7 @@ PP -> "NP post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=
 	| "prn post" 1: prn %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
 	| "dás post" 1: dás@adv %post  { 1 _ %2 }
 	| "pre/post NP" 2: %pr N ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] }  !miehtá beavddi >  bievdev miehtáj
+	| "pre/post NP" 2: %pr Name ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1 }  !miehtá beavddi >  bievdev miehtáj
 	| "pre/post prn" 2: %pr prn ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] }  !miehtá beavddi > bievdev miehtáj
 	| "pre NP" 1: %pr NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
 	| "pre prn" 1: %pr prn { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
@@ -450,9 +451,9 @@ NegVP -> "ii dadjat@conneg ieš N.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.*
 	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1[person=p3,number=sg] _ liehket@vblex.iv.indic.pres.conneg _ 
 	3[number=sg,case=nom]} !!! eai loga váttisin > javlli ij la gássjel
 	|"ii lohkat@conneg ieš inf" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg ieš@prn.ref vblex.*.inf 
-	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 2(prn_pers)[person=3.poss,number=3.poss,case=nom,lem=(if 
+	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 2(prn_pers)[person=3.poss,number=3.poss,case=3.case,lem=(if 
 	(3.poss=px1sg or 3.poss=px1du or 3.poss=px1pl) mån elif (3.poss=px2sg or 3.poss=px2du or 3.poss=px2pl) dån else sån)] 
-	_ 1[person=3.poss,number=3.poss] _ 4[infin="",mood=indic,person=1.person,number=1.number,conneg=conneg]} !!! ii loga iežas healkkehit > javllá sån ij hielkeda.
+	_ 1[person=3.poss,number=3.poss] _ 4[infin="",mood=indic,person=1.person,number=1.number,conneg=conneg,tense=(if (4.lem=liehket) 1.tense else "")]} !!! ii loga iežas healkkehit > javllá sån ij hielkeda.
 	|"ii lohkat@conneg ieš ess" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg ieš@prn.ref adj.ess 
 	{ %2[lemcase=1.lemcase,conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1(prn_pers)[case=nom,lem=(if (3.poss=px1sg or 3.poss=px1du or 3.poss=px1pl) mån elif (3.poss=px2sg or 3.poss=px2du or 3.poss=px2pl) dån else sån)] _ 1 _ liehket@vblex.iv.indic.pres.conneg _ 4[number=1.number,case=nom]} !!! Son ii loga iežas árgin > javllá sån ij la hárgge
 !!!	| "ii lohkat@conneg ess.@←OPRED vblex.inf" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg adj.*."@←OPRED" vblex.*.inf 
