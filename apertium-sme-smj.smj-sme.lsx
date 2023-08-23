@@ -245,6 +245,11 @@
      <p><l><s n="sg"/></l><r><s n="pl"/></r></p> 
       <i><t/><d/></i>      
   </e>
+    <e r="RL" w="1.0">  <!-- sæbrrat actioess -->
+    <i>sæbrrat<t/><d/></i>
+    <i><w/></i>     
+    <p><l><s n="vblex"/><s n="supn"/><d/></l><r><s n="vblex"/><s n="actio"/><s n="ess"/><d/></r></p> 
+  </e>
 
     <e r="RL" w="2.0">  
      <par n="cltl-words"/>      
