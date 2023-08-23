@@ -2919,6 +2919,11 @@
 	    <match lemma="leat" tags="vblex.*"><select lemma="sæbrrat" /></match>
       <match lemma="mielde"/>
     </rule>
+    <rule weight="0.8">
+	    <match lemma="leat" tags="vblex.*"><select lemma="liehket" /></match>
+	    <match lemma="leat" tags="vblex.*"><select lemma="sæbrrat" /></match>
+      <match lemma="mielde"/>
+    </rule>
     <rule weight="0.6">
 	    <match lemma="leat" tags="vblex.*"><select lemma="sæbrrat" /></match>
       <match />
