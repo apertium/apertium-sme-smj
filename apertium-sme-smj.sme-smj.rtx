@@ -238,6 +238,15 @@ vblex: (if (1.v2v in v2v and 1.v2n in v2n) 1(vblex_vblex_n)
         else 1(vblex_infin)
        ) ;
 
+vblex_v2v: (
+          if (1.v2v=der_inchl and 1.lem incl verb3st)   1(vblex)[v2v=der_ahtja]
+        elif (1.v2v=der_halla)                          1(vblex)[v2v=der_dalla]
+        elif (1.v2v=der_h and 1.lem in verb3st)         1(vblex)[v2v=der_caus]
+        elif (1.v2v=der_h)                              1(vblex)[v2v=der_d]
+        elif (1.v2v=der_passs)                          1(vblex)[v2v=der_passl]
+        else                                            1(vblex)
+       ) ;
+
 
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
@@ -329,14 +338,14 @@ N ->    "N:n" 1: %n ?(1.onlycmp = "") { %1[lemcase=$lemcase] }
 	| "N:num.cmp n" 3: num.*.cmp  %n ?(2.onlycmp= "") { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} !!! njealje-bearraša
 	| "N:adj.cmp n" 3: adj.*.cmp  %n ?(2.onlycmp= "") { 1[lemcase=$lemcase,cmp=(if (1.adj_type="") cmp_attr else 1.cmp)] + %2} 
 	| "N:adj.cmp n n" 3: adj.*.cmp n.*.cmp %n ?(3.onlycmp= "")  { 1[lemcase=$lemcase,cmp=(if (1.adj_type="") cmp_attr else 1.cmp)] + 2 + %3} 
-	| "N:n.cmp vblex" 3: n.*.cmp  %vblex ?(2.onlycmp= "") { 1[lemcase=$lemcase] + %2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem incl verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)] } !!! koronačavgen
+	| "N:n.cmp vblex" 3: n.*.cmp  %vblex ?(2.onlycmp= "") { 1[lemcase=$lemcase] + %2(vblex_v2v) } !!! koronačavgen
 	| "N:n.cmp vblex n" 2: n.*.cmp vblex.*.cmp %n ?(3.onlycmp= "") { 1[lemcase=$lemcase] + 2 + %3} 
 	| "N:n.cmp n.cmp vblex" 2: n.*.cmp n.*.cmp %vblex ?(3.onlycmp= "") { 1[lemcase=$lemcase] + 2 + %3} 
-	| "N:vblex.cmp n" 2: vblex.*.cmp %n ?(2.onlycmp= "") { 1[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] + %2} 
-	| "N:vblex.cmp vblex" 2: vblex.*.cmp %vblex ?(2.onlycmp= "") { 1[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] + %2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)] } 
-	| "N:vblex.cmp vblex.cmp n" 2: vblex.*.cmp vblex.*.cmp %n ?(3.onlycmp= "") { 1[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] + 2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)] + %3} 
-	| "N:vblex.cmp n.cmp vblex" 2: vblex.*.cmp n.*.cmp %vblex ?(3.onlycmp= "") { 1[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] + 2 + %3[v2v=(if (3.v2v=der_inchl and 3.lem incl verb3st) der_ahtja elif (3.v2v=der_halla) der_dalla elif (3.v2v=der_h and 3.lem in verb3st) der_caus elif (3.v2v=der_h) der_d elif (3.v2v=der_passs) der_passl else 3.v2v)] } 
-	| "N:vblex.cmp n.cmp n" 2: vblex.*.cmp n.*.cmp %n ?(3.onlycmp= "") { 1[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] + 2 + %3} 
+	| "N:vblex.cmp n" 2: vblex.*.cmp %n ?(2.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + %2} 
+	| "N:vblex.cmp vblex" 2: vblex.*.cmp %vblex ?(2.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + %2(vblex_v2v) } 
+	| "N:vblex.cmp vblex.cmp n" 2: vblex.*.cmp vblex.*.cmp %n ?(3.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + 2(vblex_v2v) + %3} 
+	| "N:vblex.cmp n.cmp vblex" 2: vblex.*.cmp n.*.cmp %vblex ?(3.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + 2 + %3(vblex_v2v) } 
+	| "N:vblex.cmp n.cmp n" 2: vblex.*.cmp n.*.cmp %n ?(3.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + 2 + %3} 
 	| "N:vblex.v2n" 2: %vblex.*.[v2n].*.$function ?(1.onlycmp = "") { %1[lemcase=$lemcase,v2n=(if (1.v2n=der_muš) 
 	der_mus else 1.v2n),v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)]} !
 	| "n.splitr" 3: %n.*."cmp_splitr"  { %1[lemcase=$lemcase] } ! A-
@@ -509,8 +518,8 @@ V -> "aux condvblex" 5: %[auxverbs]@vblex.*.cond ?(1.qst="") { %1[lemcase=$lemca
 !!!	| "vblex.inf" 2: %vblex.*.inf.$function { %1[lemcase=$lemcase,infin=(if (1.lem incl not-usually-supn-verbs) 1.infin else (if (1.function = "@←ADVL") supn else 1.infin))]} !
 	| "dadjat ahte" 1: %[dadjat_verbs]@vblex.*.[mainv] ahte@cnjsub { %1[lemcase=$lemcase]} !
 	| "vblex placetimeadv" 1: %vblex.*.$function [placetimeadv]@adv.*."@←ADVL-ine" { %2[lemcase=1.lemcase] _ 1[lemcase=2.lemcase]} !!! soai stoahkaba álo ovttas > soai álo stoahkaba ovttas 
-	| "@+FMAINV inf" 2: %vblex.*.$person.$number.[mainv] vblex.*.inf { %1[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] _ 2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v),infin=(if (2.lem incl not-usually-supn-verbs) 2.infin else (if (1.lem incl sme-rek-verbs) 2.infin else (if (2.function = "@←ADVL") supn else 2.infin)))]} !
-	| "livččii vblex" 3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)]} 
+	| "@+FMAINV inf" 2: %vblex.*.$person.$number.[mainv] vblex.*.inf { %1(vblex_v2v)[lemcase=$lemcase] _ 2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v),infin=(if (2.lem incl not-usually-supn-verbs) 2.infin else (if (1.lem incl sme-rek-verbs) 2.infin else (if (2.function = "@←ADVL") supn else 2.infin)))]} !
+	| "livččii vblex" 3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2(vblex_v2v)} 
 	;
 
 VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemcase=$lemcase] _ %2} else  { %2[lemcase=1.lemcase] }) 
@@ -522,7 +531,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	| "pers NegVP vblex" 3: prn.pers.*.nom %NegVP vblex (if (2.lem in lohkat_verbs) {1[lemcase=$lemcase] _ %2 _ 3 } else { %2[lemcase=1.lemcase] _ 3 })
 
 	| "NegVP vblex NP" 2: NegVP %vblex NP { 1[lemcase=$lemcase] _ 3 _ %2} 
-	| "FAUXV FMAINV" 2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" { %1[lemcase=$lemcase,tense=(if (1. lem incl ij and 2.lem incl liehket) pres else 1.tense)] _ 2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)] } ! sáhtán borrat
+	| "FAUXV FMAINV" 2: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" { %1[lemcase=$lemcase,tense=(if (1. lem incl ij and 2.lem incl liehket) pres else 1.tense)] _ 2(vblex_v2v) } ! sáhtán borrat
 
 	| "FAUXV vblex NP.acc" 2: vblex.trans.mood.$person.$number."@+FAUXV" %vblex.*."@-FMAINV" NP.*.acc { 1[lemcase=$lemcase] _ 3 _ %2 } ! 
 	| "FAUXV pcle FMAINV NP" 2: vblex.trans.mood.$person.$number."@+FAUXV" pcle %V.*."@-FMAINV" NP { 1[lemcase=$lemcase] _ 2 _ 4 _ %3 }! 
@@ -593,8 +602,8 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	| "NegVP PP pcle" 2: %NegVP PP pcle { %1[lemcase=$lemcase] _ 2 _ 3 }
 	| "NegVP NP" 2: %NegVP NP { %1[lemcase=$lemcase] _ 2 }
 	| "NegVP NP AdvP" 2: %NegVP NP AdvP { %1[lemcase=$lemcase] _ 2 _ 3 }
-	| "FAUXV FMAINV NP" 4: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP.*.[leftobjadvl] (if (2.lem incl copulas) { %1[lemcase=$lemcase] _ 2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)] _ 3 } else { %1[lemcase=$lemcase] _ 3 _ 2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)] }) ! sáhtán láibbi borrat
-	| "FAUXV FMAINV NP PP" 4: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP.*.[leftobjadvl] PP (if (2.lem incl copulas) { %1[lemcase=$lemcase] _ 2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)] _ 3 _ 4 } else { %1[lemcase=$lemcase] _ 3 _ 2[v2v=(if (2.v2v=der_inchl and 2.lem incl verb3st) der_ahtja elif (2.v2v=der_halla) der_dalla elif (2.v2v=der_h and 2.lem in verb3st) der_caus elif (2.v2v=der_h) der_d elif (2.v2v=der_passs) der_passl else 2.v2v)] _ 4 }) ! sáhtán láibbi borrat
+	| "FAUXV FMAINV NP" 4: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP.*.[leftobjadvl] (if (2.lem incl copulas) { %1[lemcase=$lemcase] _ 2(vblex_v2v) _ 3 } else { %1[lemcase=$lemcase] _ 3 _ 2(vblex_v2v) }) ! sáhtán láibbi borrat
+	| "FAUXV FMAINV NP PP" 4: %vblex.*.$person.$number."@+FAUXV" vblex.*."@-FMAINV" NP.*.[leftobjadvl] PP (if (2.lem incl copulas) { %1[lemcase=$lemcase] _ 2(vblex_v2v) _ 3 _ 4 } else { %1[lemcase=$lemcase] _ 3 _ 2(vblex_v2v) _ 4 }) ! sáhtán láibbi borrat
 	| "FAUXV NP FMAINV NP" 3: %vblex.*.$person.$number."@+FAUXV" NP vblex.*."@-FMAINV" NP.*.[leftobj] { %1[lemcase=$lemcase] _ 2 _ 4 _ 3[v2v=(if (3.v2v=der_inchl and 3.lem incl verb3st) der_ahtja elif (3.v2v=der_halla) der_dalla elif (3.v2v=der_h) der_d elif (3.v2v=der_ahtti) der_caus elif (3.v2v=der_passs) der_passl else 3.v2v)] } 
 	| "FAUXV PRN FMAINV NP" 3: %vblex.*.$person.$number."@+FAUXV" PRN vblex.*."@-FMAINV" NP { %1[lemcase=$lemcase] _ 2 _ 4 _ 3[v2v=(if (3.v2v=der_inchl and 3.lem incl verb3st) der_ahtja elif (3.v2v=der_halla) der_dalla elif (3.v2v=der_h) der_d elif (3.v2v=der_ahtti) der_caus elif (3.v2v=der_passs) der_passl else 3.v2v)] } 
 	| "FAUXV AdvP FMAINV NP" 3: %vblex.*.$person.$number."@+FAUXV" AdvP vblex.*."@-FMAINV" NP { %1[lemcase=$lemcase] _ 2 _ 4 _ 3[v2v=(if (3.v2v=der_inchl and 3.lem incl verb3st) der_ahtja elif (3.v2v=der_halla) der_dalla elif (3.v2v=der_h) der_d elif (3.v2v=der_ahtti) der_caus elif (3.v2v=der_passs) der_passl else 3.v2v)] } !!! Hæhttu dågålattjat máná kultuvrraduogátjav vieledit. 
