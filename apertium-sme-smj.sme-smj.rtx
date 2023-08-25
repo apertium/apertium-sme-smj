@@ -658,7 +658,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	!!!oainnán su stoahkamin > oainnán son lea stoahkamin 
 
 
-	| "pers V NP" 3: PRN.*."@SUBJ→" %V.*.$function.$sentinit NP ?(3.leftspred="") (if 
+	| "pers V NP" 2: PRN.*."@SUBJ→" %V.*.$function.$sentinit NP ?(3.leftspred="") (if 
 	(1.person_number in first_sec_person_number and 1.person_number=2.person_number) { %2[lemcase=1.lemcase,sentinit=1.sentinit] _ 3 } 
 	elif (2.lem incl ij) { %2[lemcase=1.lemcase] _ 3 } 
 	elif (2.lem incl liehket and 2.infin = prfprc) { 1[lemcase=$lemcase,sentinit=1.sentinit] _ 
