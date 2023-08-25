@@ -365,9 +365,10 @@ Name ->  "N:np" %np.*.[case].$function ?(1.onlycmp= "") { %1 }
 	{ 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
 	;
 
-
-NP ->  %N  { %1[lemcase=$lemcase,case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] } 
-	| %N PCLE { %1[lemcase=$lemcase,case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ 2 }
+NP ->     "NP N" 3: %N ?(1.case=loc and 1.function in advlela) { %1[lemcase=$lemcase,case=ela] }
+        | "NP N" 2: %N ?(1.case=loc)                           { %1[lemcase=$lemcase,case=ine] }
+        | "NP N" 1: %N                                         { %1[lemcase=$lemcase] }
+	| "NP PCLE" %N PCLE { %1[lemcase=$lemcase,case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ 2 }
 	| "NP:N cnjcoo N" 2: N cnjcoo."@CNP" %N { 1[lemcase=$lemcase,case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ 2 _ %3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine else 3.case)] } !!! coordination
 	| "NP:NP cnjcoo NP" 1: NP cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
 	| "NP:N cnjcoo N" 1: N.*."@→N" cnjcoo."@CNP" %N  { 1[lemcase=$lemcase] _ 2 _ %3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine else 3.case)] } !!! coordination
@@ -442,7 +443,8 @@ AdvP -> "AdvP:adv" %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (
 	| 2: %adj.der_aadv { %1 }
 	;
 
-PP -> "NP post" 1: NP %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
+PP -> ! "N post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
+	 "NP post" 1: NP %post { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ %2 }
 	| "NP C NP post" 1: NP cnjcoo NP %post {1[case=(if (4.lem = miehtáj) acc else 1.case)] _ 2 _ 3[case=(if (4.lem = miehtáj) acc else 3.case)] _ 4 }
 	| "prn post" 1: prn %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
 	| "dás post" 1: dás@adv %post  { 1 _ %2 }
