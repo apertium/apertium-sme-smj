@@ -352,32 +352,32 @@ N ->    "N:n" 1: %n ?(1.onlycmp = "") { %1[lemcase=$lemcase] }
 	| "n.splitr" 3: %vblex.*.[v2n].*."cmp_splitr"  { %1(vblex_cmpsplitr)[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] } ! várren- ja ohcanlobiid
 	;
 
-Name ->  "N:np" %np.*.[case].$function ?(1.onlycmp= "") { %1 } 
+Name ->  "N:np" 1: %np.*.[case].$function ?(1.onlycmp= "") { %1 } 
 	| "N:np.cmp np" 3: np.*.cmp  %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
 	| "N:n.cmp np" 3: n.*.cmp  %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
-	| "NP:N Name" N.*."@→N" %Name {1 _ %2 } !gonagas Harald
-	| "NP:N Name" Name.*."@→N" %Name {1 _ %2 } !
-	| "NP:N Name" np.*."@→N" %Name {1 _ %2 } !
-	| "NP:N Name" Name.*."@→N" %N {1 _ %2 } ! ! Verdens Gang aviisii
-	| "NP:N Name" Name.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
-	| "NP:N Name" Name.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
-	| "NP:np cnp np" Name cnjcoo."@CNP" %Name.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] 
-	{ 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
+	| "NP:N Name" 1: N.*."@→N" %Name {1 _ %2 } !gonagas Harald
+	| "NP:N Name" 1: Name.*."@→N" %Name {1 _ %2 } !
+	| "NP:N Name" 1: np.*."@→N" %Name {1 _ %2 } !
+	| "NP:N Name" 1: Name.*."@→N" %N {1 _ %2 } ! ! Verdens Gang aviisii
+	| "NP:N Name" 1: Name.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
+	| "NP:N Name" 1: Name.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
+	| "NP:np cnp np" 1: Name cnjcoo."@CNP" %Name.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] 
+            { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
 	;
 
 NP ->     "NP N" 3: %N ?(1.case=loc and 1.function in advlela) { %1[lemcase=$lemcase,case=ela] }
         | "NP N" 2: %N ?(1.case=loc)                           { %1[lemcase=$lemcase,case=ine] }
         | "NP N" 1: %N                                         { %1[lemcase=$lemcase] }
-	| "NP PCLE" %N PCLE { %1[lemcase=$lemcase,case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ 2 }
+	| "NP PCLE" 1: %N PCLE { %1[lemcase=$lemcase,case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ 2 }
 	| "NP:N cnjcoo N" 2: N cnjcoo."@CNP" %N { 1[lemcase=$lemcase,case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ 2 _ %3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine else 3.case)] } !!! coordination
 	| "NP:NP cnjcoo NP" 1: NP cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
 	| "NP:N cnjcoo N" 1: N.*."@→N" cnjcoo."@CNP" %N  { 1[lemcase=$lemcase] _ 2 _ %3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine else 3.case)] } !!! coordination
 	| "NP:N N" 2: N.*."@→N" %N { 1 _ 2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine else 2.case)]} !sámi máná
 	| "NP:N N" 2: adv.[right] N.*."@→N" %N { 1 _ 2 _ %3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine else 3.case)]} !
 	| "NP:N N" 2: adv.[right] N.*."@→N" %Name { 1 _ 2 _ %3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine else 3.case)]} !nu fámolaš Suomas
-	| "NP:AP N" AP.*."@→N"  %N { 1 _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine else 2.case)] }
-	| "NP:adv N" adv."@→N"  %NP { 1 _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine else 2.case)] }
-	| "NP:buorre N" buorre@adj  %N { 1 _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine else 2.case)] }
+	| "NP:AP N" 1: AP.*."@→N"  %N { 1 _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine else 2.case)] }
+	| "NP:adv N" 1: adv."@→N"  %NP { 1 _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine else 2.case)] }
+	| "NP:buorre N" 1: buorre@adj  %N { 1 _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine else 2.case)] }
 
 	| "NP:attrprn N" 4: [attrprn]@prn.*."@→N" %N { 1[foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] _  
 	%2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine else 2.case)]} 
@@ -387,7 +387,7 @@ NP ->     "NP N" 3: %N ?(1.case=loc and 1.function in advlela) { %1[lemcase=$lem
 	| "NP:prn AP N" 3: prn.*."@→N" adj.*."@→N" %N { 1[lemcase=$lemcase,case=(if (1.case=loc and 3.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ 2 _ %3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine else 3.case)]} 
 	| "NP:gohcuid alde > V" 4: %gohcu@n.*.pl.gen { %1(vblex_infin)[lemcase=$lemcase] } !denne må generaliseres, hvordan uttrykke pos?
 
-	| "NP:Name" %Name { %1[case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] }
+	| "NP:Name" 1: %Name { %1[case=(if (1.case=loc and 1.function in advlela) ela elif (1.case=loc) ine else 1.case)] }
 
 	| "NP:num.sem_year.loc" 3: %num.sem_year.sg.loc  {  jahke@n.sg.ine _ %1[case=nom] }
 	| "NP:num.sem_year.ill" 3: %num.sem_year.sg.ill  {  jahke@n.sg.ill _ %1[case=nom] }
@@ -427,19 +427,19 @@ AP -> "AP:adj" 1: %adj ?(1.onlycmp="") { %1 }
 !    | 1: "num.cmp adj" 3: num.*.cmp  %adj { 1 + %2 } !Could not find output pattern
 !    | 1: vblex.*.prsprc { %1 }
     | "AP:AP cnjcoo AP" 1: AP cnjcoo %AP { %1 _ 2 _ %3} 
-    | "AP:num jagi boaris"  2: %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } 
+    | "AP:num jagi boaris" 2: %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } 
 	| "AP:numcmp jahkásaš" 2: %num.cmp_hyph.cmp jahkásaš@adj { 1[number=sg,case=gen,cmp="",onlycmp="",hyph="",num_type=arab] 
 	_ 2[lem=jagák] } 
 	| "AP:num jahkásaš" 2: num.sg.gen %jahkásaš@adj { 1 _ %2[lem=jagák] } 
 	| "AP:num jahkásaččat.adv" 2: num.sg.gen %jahkásaččat@adv { 1 _ %2[lem=jagák,pos_tag=adj,number=pl,case=nom] } ! feil disambiguering
 	;
 
-AdvP -> "AdvP:adv" %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (1.number/tl not = "") 1.number)] })
-	| "AdvP:adv cnjcoo adv " %adv cnjcoo adv { %1 _ 2 _ 3 }
-	| "AdvP:adv adv" adv."@→ADVL" %adv { 1 _ %2[number=(if (2.number/tl not = "") 2.number)] } !ienep vuojnnusij
-	| "AdvP:pcle adv" pcle %adv (if (1.lem/tl="") { %2 } else { 1 _ %2 })
-	| "AdvP:adv pcle" %adv pcle (if (2.lem/tl="") { %1 } else { %1 _ 2 })
-	| "AdvP:prn adv" %prn.pers.*.loc adv."@←ADVL-ine" { %1[number=1.number,person=1.person,case=(if (1.function in advlela) ela else ine)] _ 2 } !sus badjelis
+AdvP -> "AdvP:adv" 1: %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (1.number/tl not = "") 1.number)] })
+	| "AdvP:adv cnjcoo adv " 1:  %adv cnjcoo adv { %1 _ 2 _ 3 }
+	| "AdvP:adv adv" 1: adv."@→ADVL" %adv { 1 _ %2[number=(if (2.number/tl not = "") 2.number)] } !ienep vuojnnusij
+	| "AdvP:pcle adv" 1: pcle %adv (if (1.lem/tl="") { %2 } else { 1 _ %2 })
+	| "AdvP:adv pcle" 1: %adv pcle (if (2.lem/tl="") { %1 } else { %1 _ 2 })
+	| "AdvP:prn adv" 1: %prn.pers.*.loc adv."@←ADVL-ine" { %1[number=1.number,person=1.person,case=(if (1.function in advlela) ela else ine)] _ 2 } !sus badjelis
 	| 2: %adj.der_aadv { %1 }
 	;
 
@@ -453,7 +453,7 @@ PP -> ! "N post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case
 	| "pre/post prn" 2: %pr prn ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] }  !miehtá beavddi > bievdev miehtáj
 	| "pre NP" 1: %pr NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
 	| "pre prn" 1: %pr prn { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
-        | "lone post" %post { 1 }
+        | "lone post" 1: %post { 1 }
 	; !
 
 NegVP -> "ii dadjat@conneg ieš N.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.*.conneg %ieš@prn.ref N.*.acc 
@@ -589,8 +589,8 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	| "vblex cnjcoo vblex" 1: V cnjcoo %V { 1[lemcase=$lemcase] _ 2 _ 3 } 
 	| "inf cnjcoo inf" 2: vblex.*.inf cnjcoo %vblex.*.inf { 1[lemcase=$lemcase, infin=(if (1.function = "@←ADVL") supn else 1.infin)] _ 2 _ 3[infin=(if (3.function = "@←ADVL") supn else 3.infin)] } 
 	| "adj_nottriggingsupn,edd vblex,inf" 3: [adj_nottriggingsupn]@adj.ess %vblex.*.inf { 1[lemcase=$lemcase] _ %2 }
-	| "VP pcle" %VP pcle { 1[lemcase=$lemcase] _ 2 }
-	| "VP pcle AdvP" %VP pcle AdvP { 1[lemcase=$lemcase] _ 2 _ 3 }
+	| "VP pcle" 1: %VP pcle { 1[lemcase=$lemcase] _ 2 }
+	| "VP pcle AdvP" 1: %VP pcle AdvP { 1[lemcase=$lemcase] _ 2 _ 3 }
 	| "VP PP" 1: %VP PP { %1[lemcase=$lemcase] _ 2 } 
 	| "VP PP pcle " 1: %VP PP pcle { %1[lemcase=$lemcase] _ 2 _ 3 }
 	| "VP NP AdvP" 1: %VP NP AdvP { %1[lemcase=$lemcase] _ 2 _ 3 }
@@ -692,19 +692,19 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 ;
 
 
-PCLE -> %pcle (if (1.lem/tl="") { } else {1}) ;
+PCLE -> 1: %pcle (if (1.lem/tl="") { } else {1}) ;
 
-APP -> "cm NP AdvP" cm NP %AdvP  { 1 _ 2 _ %3}
-	| "cm NP NP AdvP" cm NP NP %AdvP  { 1 _ 2 _ 3 _ %4}
+APP -> "cm NP AdvP" 1: cm NP %AdvP  { 1 _ 2 _ %3}
+	| "cm NP NP AdvP" 1: cm NP NP %AdvP  { 1 _ 2 _ 3 _ %4}
 	;
 
 
-C -> 1: %cnjcoo {1} 
-	| 1: %cnjsub {1}
+C -> "CLB cm" 1: %cnjcoo {1} 
+	| "C" 1: %cnjsub {1}
 	;
 
-CLB ->  1: %cm {1} 
-	|  1: %sent {1}
+CLB -> "CLB cm" 1: %cm {1} 
+	| "CLB sent" 1: %sent {1}
 	;
 
 
