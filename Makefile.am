@@ -18,6 +18,7 @@ TARGETS_COMMON =			\
 	$(PREFIX1).autolex.bin		\
 	$(PREFIX1).autogen.hfst 	\
 	$(PREFIX1).autopgen.bin 	\
+	$(PREFIX1).ref.t1x.bin		\
 	$(PREFIX1).t1x.bin		\
 	$(PREFIX1).t2x.bin		\
 	$(PREFIX1).t3x.bin		\
@@ -54,6 +55,7 @@ dev/nouns-sme-smj/$(PREFIX1).rlx.bin: dev/nouns-sme-smj/$(BASENAME).$(PREFIX1).r
 
 # Fast build of sme→smj – nearly everything but dictionaries:
 r: modes/$(PREFIX1).mode  \
+   $(PREFIX1).ref.t1x.bin \
    $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).t4x.bin $(PREFIX1).t5x.bin \
    $(PREFIX1).autolex.bin \
    $(PREFIX1).autoseq.bin \
@@ -190,6 +192,11 @@ $(PREFIX2).autolex.bin: $(BASENAME).$(PREFIX2).lrx
 ## Structural transfer rules
 ###############################################################################
 
+$(PREFIX1).ref.t1x.bin: $(BASENAME).$(PREFIX1).ref.t1x
+	apertium-validate-transfer $<
+	apertium-preprocess-transfer $< $@
+
+
 $(PREFIX1).t1x.bin: $(BASENAME).$(PREFIX1).t1x
 	apertium-validate-transfer $<
 	apertium-preprocess-transfer $< $@
@@ -239,6 +246,7 @@ $(PREFIX2).t5x.bin: $(BASENAME).$(PREFIX2).t5x
 # Files which are distributed, but not built:
 EXTRA_DIST=				\
 	$(BASENAME).$(PREFIX1).lex	\
+	$(BASENAME).$(PREFIX1).ref.t1x	\
 	$(BASENAME).$(PREFIX1).t1x	\
 	$(BASENAME).$(PREFIX1).t2x	\
 	$(BASENAME).$(PREFIX1).t3x	\
@@ -263,6 +271,7 @@ apertium_sme_smjdir=$(prefix)/share/apertium/$(BASENAME)/
 # Files which should be installed to $(prefix)/share/apertium/$(BASENAME)/:
 apertium_sme_smj_DATA=  \
         $(TARGETS_COMMON)		\
+	$(BASENAME).$(PREFIX1).ref.t1x	\
 	$(BASENAME).$(PREFIX1).t1x	\
 	$(BASENAME).$(PREFIX1).t2x	\
 	$(BASENAME).$(PREFIX1).t3x	\

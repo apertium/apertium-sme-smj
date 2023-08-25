@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transfer>
+  <!-- This applies the currrent @subj tag to the "ref" side of lu's
+  -->
+
+  <section-def-cats>
+    <def-cat n="any">
+      <cat-item tags="*"/>
+      <cat-item tags=""/>
+    </def-cat>
+    <def-cat n="subj">
+      <cat-item tags="*.@subj"/>
+      <cat-item tags="*.@subj.*"/>
+    </def-cat>
+    <def-cat n="sent_OR_at.clb">
+      <cat-item tags="sent.*"/>
+      <cat-item tags="sent"/>
+      <cat-item lemma="ahte" tags="cnjcoo.*"/>
+      <cat-item lemma="ahte" tags="cnjcoo"/>
+    </def-cat>
+  </section-def-cats>
+
+  <section-def-attrs>
+    <def-attr n="nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+  </section-def-attrs>
+
+  <section-def-vars>
+    <def-var n="cur_subj"/>
+  </section-def-vars>
+
+  <section-def-lists>
+    <def-list n="l_foo">
+      <list-item v="foo"/>
+    </def-list>
+  </section-def-lists>
+
+  <section-def-macros>
+    <def-macro n="set_cur_subj" npar="1">
+      <let><var n="cur_subj"/><clip pos="1" side="tl" part="whole"/></let>
+    </def-macro>
+  </section-def-macros>
+
+
+  <section-rules>
+
+    <!-- ***** The simple rules: Store, Clear, Apply ***** -->
+
+    <rule c="Found a subject, store it in variable">
+      <pattern>
+        <pattern-item n="subj"/>
+      </pattern>
+      <action>
+        <call-macro n="set_cur_subj"><with-param pos="1"/></call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="sl" part="whole"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            <lit v="/"/>
+            <var n="cur_subj"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+    <rule c="Clear the prev- and current-subject variables on sentence end or ‘that’">
+      <pattern>
+        <pattern-item n="sent_OR_at.clb"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="sl" part="whole"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            <lit v="/"/>
+            <var n="cur_subj"/>
+          </lu>
+        </out>
+        <let><var n="cur_subj"/><lit v=""/></let>
+      </action>
+    </rule>
+
+    <rule c="Add the current subject to the ref field of the lexical unit, clear syntax tags">
+      <pattern>
+        <pattern-item n="any"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="sl" part="whole"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            <lit v="/"/>
+            <var n="cur_subj"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+  </section-rules>
+</transfer>

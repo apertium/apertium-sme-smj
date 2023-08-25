@@ -7,10 +7,10 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc" debug-suff="disam">
+      <program name="cg-proc" debug-suff="disam-a">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
-      <program name="cg-proc -1 -n -w" debug-suff="syntax">
+      <program name="cg-proc -1 -n -w" debug-suff="syntax-a">
         <file name="sme-smj.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -404,10 +404,10 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="smj-sme.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w" debug-suff="syntax">
+      <program name="cg-proc -w" debug-suff="disam-a">
         <file name="smj-sme.mor.rlx.bin"/>
       </program>
-      <program name="cg-proc -n -1 -w" debug-suff="syntax">
+      <program name="cg-proc -n -1 -w" debug-suff="syntax-a">
         <file name="smj-sme.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -516,10 +516,10 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="sme-smj.automorf.hfst"/>
       </program>
-      <program name="cg-proc" debug-suff="disam">
+      <program name="cg-proc" debug-suff="disam-a">
         <file name="sme-smj.mor.rlx.bin"/>
       </program>
-      <program name="cg-proc -1 -n -w" debug-suff="syntax">
+      <program name="cg-proc -1 -n -w" debug-suff="syntax-a">
         <file name="sme-smj.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
@@ -531,6 +531,10 @@
       </program>
       <program name="lrx-proc">
         <file name="sme-smj.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b" debug-suff="ref">
+	<file name="apertium-sme-smj.sme-smj.ref.t1x"/>
+	<file name="sme-smj.ref.t1x.bin"/>
       </program>
       <program name="rtx-proc">
         <file name="sme-smj.rtx.bin"/>
@@ -565,6 +569,10 @@
       <program name="lrx-proc">
         <file name="sme-smj.autolex.bin"/>
       </program>
+      <program name="apertium-transfer -b" debug-suff="ref">
+	<file name="apertium-sme-smj.sme-smj.ref.t1x"/>
+	<file name="sme-smj.ref.t1x.bin"/>
+      </program>
       <program name="rtx-proc -T">
         <file name="sme-smj.rtx.bin"/>
       </program>
@@ -576,10 +584,10 @@
       <program name="hfst-proc --weight-classes 1 -w -e">
         <file name="smj-sme.automorf.hfst"/>
       </program>
-      <program name="cg-proc -w">
+      <program name="cg-proc -w" debug-suff="disam-a">
         <file name="smj-sme.mor.rlx.bin"/>
       </program>
-      <program name="cg-proc -n -1 -w">
+      <program name="cg-proc -n -1 -w" debug-suff="syntax-a">
         <file name="smj-sme.syn.rlx.bin"/>
       </program>
       <program name="apertium-pretransfer"/>
