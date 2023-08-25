@@ -699,8 +699,8 @@ APP -> "cm NP AdvP" 1: cm NP %AdvP  { 1 _ 2 _ %3}
 	;
 
 
-C -> "CLB cm" 1: %cnjcoo {1} 
-	| "C" 1: %cnjsub {1}
+C -> "CLB coo" 1: %cnjcoo {%1}
+	| "CLB sub" 1: %cnjsub {%1}
 	;
 
 CLB -> "CLB cm" 1: %cm {1} 
@@ -739,6 +739,7 @@ S ->
 	| "rel VP" 1: PRN.rel %VP {1 _ %2 }
 	| "rel S " 1: PRN.rel %S {1 _ %2 }
 	| "S C S " 1: %S C S {%1 _ 2 _ 3 }
+	| "C S " 1: C %S { 1 _ %2 }
 
 !!!	| "S cm C S" 1: S cm C %S { 1 _ 2 _ %3  } 
 !!!	| "AdvP S" 1: AdvP %S {1 _ %2 } 
