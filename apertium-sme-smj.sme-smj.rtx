@@ -335,10 +335,10 @@ N ->    "N:n" 1: %n ?(1.onlycmp = "") { %1[lemcase=$lemcase] }
 	| "N:num.cmp n" 3: num.*.cmp  %n ?(2.onlycmp= "") { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} !!! njealje-bearraša
 	| "N:adj.cmp n" 3: adj.*.cmp  %n ?(2.onlycmp= "") { 1[lemcase=$lemcase,cmp=(if (1.adj_type="") cmp_attr else 1.cmp)] + %2} 
 	| "N:adj.cmp n n" 3: adj.*.cmp n.*.cmp %n ?(3.onlycmp= "")  { 1[lemcase=$lemcase,cmp=(if (1.adj_type="") cmp_attr else 1.cmp)] + 2 + %3} 
-	| "N:n.cmp vblex" 3: n.*.cmp  %vblex ?(2.onlycmp= "") { 1[lemcase=$lemcase] + %2(vblex_v2v) } !!! koronačavgen
+	| "N:n.cmp vblex" 3: n.*.cmp  %vblex ?(2.onlycmp= "") { 1[lemcase=$lemcase] + %2 } !!! koronačavgen
 	| "N:n.cmp vblex n" 2: n.*.cmp vblex.*.cmp %n ?(3.onlycmp= "") { 1[lemcase=$lemcase] + 2 + %3} 
 	| "N:n.cmp n.cmp vblex" 2: n.*.cmp n.*.cmp %vblex ?(3.onlycmp= "") { 1[lemcase=$lemcase] + 2 + %3} 
-	| "N:vblex.cmp n" 2: vblex.*.cmp %n ?(2.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + %2} 
+	| "N:vblex.cmp n" 2: vblex.*.cmp %n ?(2.onlycmp= "") { 1[lemcase=$lemcase] + %2} 
 	| "N:vblex.cmp vblex" 2: vblex.*.cmp %vblex ?(2.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + %2(vblex_v2v) } 
 	| "N:vblex.cmp vblex.cmp n" 2: vblex.*.cmp vblex.*.cmp %n ?(3.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + 2(vblex_v2v) + %3} 
 	| "N:vblex.cmp n.cmp vblex" 2: vblex.*.cmp n.*.cmp %vblex ?(3.onlycmp= "") { 1(vblex_v2v)[lemcase=$lemcase] + 2 + %3(vblex_v2v) } 
@@ -385,6 +385,7 @@ NP ->   !!!  "NP N" 3: %N ?(1.case=loc and 1.function in advlela) { %1[lemcase=$
 
 	| "NP:Name" 1: %Name { %1 }
 
+	| "NP:num.sem_year.ine" 3: %num.sem_year.sg.loc  {  jahke@n.sg.ine _ %1[case=nom] }
 	| "NP:num.sem_year.ine" 3: %num.sem_year.sg.ine  {  jahke@n.sg.ine _ %1[case=nom] }
 	| "NP:num.sem_year.ela" 3: %num.sem_year.sg.ela  {  jahke@n.sg.ela _ %1[case=nom] }
 	| "NP:num.sem_year.ill" 3: %num.sem_year.sg.ill  {  jahke@n.sg.ill _ %1[case=nom] }
