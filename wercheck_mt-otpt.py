@@ -180,7 +180,7 @@ def set_apertium_command(s_lang, t_lang):
     # print("APT home is " + atm_dir)
     # cmd = '| apertium -d ' + atm_dir + ' ' + s_lang + '-' + t_lang
     # Change previous line to the following line if you want to see the hashform tags
-    return "| apertium -d " + atm_dir + " " + s_lang + "-" + t_lang + "-dgen"
+    return f"| apertium -d {atm_dir} {s_lang}-{t_lang}_rtx"
 
 
 def arg_parser():
