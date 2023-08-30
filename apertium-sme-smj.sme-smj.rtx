@@ -350,16 +350,16 @@ NP ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase] }
 	| "n.splitr" 3: %vblex.*.[v2n].*."cmp_splitr" { %1(vblex_cmpsplitr)[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] } ! várren- ja ohcanlobiid
 	;
 
-Name -> "Name:np" 1: %np.*.[case].$function { %1 } 
+NP -> "Name:np" 1: %np.*.[case].$function { %1 } 
 	| "Name:np.cmp np" 3: np.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
 	| "Name:n.cmp np" 3: n.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
-	| "Name:N Name" 1: NP.*."@→N" %Name {1 _ %2 } !gonagas Harald
-	| "Name:N Name" 1: Name.*."@→N" %Name {1 _ %2 } !
-	| "Name:N Name" 1: np.*."@→N" %Name {1 _ %2 } !
-	| "Name:N Name" 1: Name.*."@→N" %N {1 _ %2 } ! ! Verdens Gang aviisii
-	| "Name:N Name" 1: Name.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
-	| "Name:N Name" 1: Name.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
-	| "Name:np cnp np" 1: Name cnjcoo."@CNP" %Name.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
+	| "Name:N Name" 1: NP.*."@→N" %np {1 _ %2 } !gonagas Harald
+	| "Name:N Name" 1: np.*."@→N" %np {1 _ %2 } !
+	| "Name:N Name" 1: np.*."@→N" %np {1 _ %2 } !
+	| "Name:N Name" 1: np.*."@→N" %N {1 _ %2 } ! ! Verdens Gang aviisii
+	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
+	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
+	| "Name:np cnp np" 1: np cnjcoo."@CNP" %np.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
 	;
 
 NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
@@ -369,7 +369,7 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "NP:NP cnjcoo N" 1: NP.*."@→N" cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
 	| "NP:NP N" 2: NP.*."@→N" %NP { 1 _ 2} !sámi máná
 	| "NP:NP N" 2: adv.[right] NP.*."@→N" %NP { 1 _ 2 _ %3} !
-	| "NP:NP N" 2: adv.[right] NP.*."@→N" %Name { 1 _ 2 _ %3} !nu fámolaš Suomas
+!!!	| "NP:NP N" 2: adv.[right] NP.*."@→N" %Name { 1 _ 2 _ %3} !nu fámolaš Suomas
 	| "NP:AP N" 1: AP.*."@→N" %NP { 1 _ %2 }
 	| "NP:adv N" 1: adv."@→N" %NP { 1 _ %2}
 	| "NP:buorre N" 1: buorre@adj %NP { 1 _ %2}
@@ -380,7 +380,7 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "NP:prn AP N" 3: prn.*."@→N" adj.*."@→N" %NP { 1[lemcase=$lemcase] _ 2 _ %3} 
 	| "NP:gohcuid alde > V" 4: %gohcu@n.*.pl.gen { %1(vblex_infin)[lemcase=$lemcase] } !denne må generaliseres, hvordan uttrykke pos?
 
-	| "NP:Name" 1: %Name { %1 }
+!!!	| "NP:Name" 1: %Name { %1 }
 
 	| "NP:num.sem_year" 1: %num.sem_year { %1[case=nom] }
 	| "NP:num.sem_year.ine" 3: %num.sem_year.sg.loc { jahke@n.sg.ine _ %1[case=nom] }
@@ -445,7 +445,7 @@ PP -> ! "N post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case
 	| "prn post" 1: prn %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
 	| "dás post" 1: dás@adv %post { 1 _ %2 }
 	| "pre/post NP" 2: %pr NP ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] } !miehtá beavddi > bievdev miehtáj
-	| "pre/post NP" 2: %pr Name ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1 } !miehtá beavddi > bievdev miehtáj
+!!!	| "pre/post NP" 2: %pr Name ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1 } !miehtá beavddi > bievdev miehtáj
 	| "pre/post prn" 2: %pr prn ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] } !miehtá beavddi > bievdev miehtáj
 	| "pre NP" 1: %pr NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
 	| "pre prn" 1: %pr prn { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
