@@ -37,6 +37,8 @@
 	<sdef n="ex_adj"/>
 	<sdef n="ex_np"/>
 	<sdef n="foc_bat"/>
+	<sdef n="foc_neg-ge"/>
+	<sdef n="foc_neg-k"/>
 	<sdef n="gen"/>
 	<sdef n="gram_tabbr"/>
 	<sdef n="gram_tnumabbr"/>
@@ -76,6 +78,7 @@
 	<sdef n="sg"/>
 	<sdef n="tv"/>
 	<sdef n="vblex"/>
+    <sdef n="@→A"/> 
     <sdef n="@ADVLhab→"/>
     <sdef n="@←ADVL-ine"/>
     <sdef n="@ADVL-ela→"/>
@@ -494,6 +497,20 @@
       <par n="vblex_trans"/>      
       <p><l><s n="indic"/><s n="pret"/><s n="conneg"/></l><r><s n="indic"/><s n="conneg"/></r></p>
       <i><t/><d/></i>
+   </e>
+    <e r="LR" w="1.0"> <!-- son ii leat makkárge veara -->
+      <i><w/><s n="n"/><t/></i>      
+      <p><l><s n="nom"/></l><r><s n="ine"/></r></p>
+      <i><t/><d/></i>
+      <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>
+      <p><l></l><r><s n="pres"/></r></p>
+      <i><t/><d/></i>
+      <i>leat</i>
+      <i><t/><d/></i>
+      <p><l>mihkke<s n="prn"/><s n="ind"/><s n="sg"/><s n="gen"/></l><r>makkár<s n="prn"/><s n="ind"/><s n="attr"/></r></p>
+      <p><l><s n="foc_neg-ge"/><s n="@→A"/><d/></l><r><s n="foc_neg-k"/><s n="@→N"/><d/></r></p>
+      <p><l>veara<s n="adj"/></l><r>árvu<s n="n"/></r></p>
+      <i><t/><d/></i> 
    </e>
     <e r="LR" w="0.0">
       <i><w/><t/></i>
