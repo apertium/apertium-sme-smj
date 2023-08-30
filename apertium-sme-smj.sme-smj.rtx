@@ -355,7 +355,6 @@ NP -> "Name:np" 1: %np.*.[case].$function { %1 }
 	| "Name:n.cmp np" 3: n.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
 	| "Name:N Name" 1: NP.*."@→N" %np {1 _ %2 } !gonagas Harald
 	| "Name:N Name" 1: np.*."@→N" %np {1 _ %2 } !
-	| "Name:N Name" 1: np.*."@→N" %np {1 _ %2 } !
 	| "Name:N Name" 1: np.*."@→N" %N {1 _ %2 } ! ! Verdens Gang aviisii
 	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
 	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
