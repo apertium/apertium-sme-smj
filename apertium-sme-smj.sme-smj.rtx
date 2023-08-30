@@ -22,7 +22,7 @@ prnref = ref ;
 np_type = ant [np_type_other] ;
 n_type = g3 nomag coll ;
 acr = acr ;
-num_type = arab ;
+num_type = arab sem_year ;
 sentinit = sentinit ;
 adj_type = ord ;
 abbr = abbr ;
@@ -111,11 +111,11 @@ CLB: _ ;
 cm: _ ;
 sent: _ ;
 APP: _ ;
-
 cnjcoo: _ ;
 cnjsub: _ ;
 Name: _.np_type.number.case.function ; 
 N: _.number.case.poss.cmp.hyph.onlycmp.function ; 
+NUM: _.number.case ; 
 n_only: <n>.acr.number.case.attr.poss.cmp.hyph.cmpsplitr.onlycmp ; 
 n_abbr: <n>.abbr.gramtag.number.case.attr.hyph.cmpsplitr.onlycmp ;  !!! 
 n_abbr_hyph: <n>.abbr.number.case.attr.hyph.onlycmp ;  !!! bare gramtnumabbr
@@ -326,7 +326,7 @@ passshortverbs = "vuojnnet" ;
 
 verb3st = "vájbbadit" "hiebadit" "sjaddadit" "gájddadit" "suddadit" "navddadit" "vavddadit" "gievddadit" "rievddadit" "háldadit" "niegadit" "jegadit" "segadit" "tsieggadit" "salggadit" "tjálggadit" "gærggadit" "ravggadit" "tjielgadit" "vuolgadit" "álgadit" "juogadit" "bargadit" "njágadit" "idjadit" "dádjadit" "biejadit" "goarjjadit" "tjuojadit" "gehtjadit" "gáhtjadit" "tjuottjadit" "báhkadit" "sáhkadit" "liekkadit" "tsiekkadit" "vikkadit" "davkkadit" "hávkkadit" "jávkkadit" "valkadit" "sjåpkadit" "jaskadit" "miesskadit" "guosskadit" "njuosskadit" "huvkadit" "gieladit" "bievlladit" "dibmadit" "semadit" "tjajmadit" "dåjmadit" "tjuolmadit" "nammadit" "almmadit" "tjalmmadit" "tjuolmmadit" "ármmadit" "gámadit" "dåmadit" "jiednadit" "viednadit" "vihpadit" "åhpadit" "låhpadit" "gahppadit" "sieradit" "bátsadit" "vuovsadit" "nahtadit" "giehtadit" "duhtadit" "ruhtadit" "láktadit" "mastadit" "asstadit" "masstadit" "goasstadit" "gástadit" "sjiehttadit" "suhttadit" "buvtadit" "åjvadit" "dálvadit" "livvadit" "oajvvadit" "suovvadit" "hærvvadit" "luvvadit" "sagŋadit" "loabedit" "gájbbedit" "álbedit" "hálbedit" "tjuorbedit" "gåbdedit" "diededit" "miededit" "bidedit" "vijdedit" "sirdedit" "åvdedit" "gåvdedit" "rádedit" "jådedit" "ráfedit" "irggedit" "bárggedit" "moalgedit" "tjuovgedit" "sjuvgedit" "bajedit" "ruodjedit" "galjedit" "sjivnnjedit" "givnjedit" "vuojedit" "galsjedit" "gietjedit" "miehtjedit" "bultjedit" "gártjedit" "loattjedit" "stávtjedit" "sloahkedit" "viehkedit" "sjuohkedit" "guhkedit" "gajkedit" "biesjkedit" "siekkedit" "bilkkedit" "rákkedit" "båkkedit" "njalkedit" "skoalkedit" "hielkedit" "baskedit" "tjoaskedit" "nuoskedit" "biesskedit" "tsuskedit" "nåskedit" "tsavkedit" "livkedit" "nivkedit" "bávkedit" "jaledit" "skoaledit" "tsieledit" "vieledit" "biledit" "bielledit" "vuoledit" "háledit" "tjáledit" "hábmedit" "galmmedit" "gåmedit" "banedit" "manedit" "oanedit" "loanedit" "guddnedit" "ienedit" "dienedit" "jienedit" "linedit" "riejnedit" "bijnedit" "binnedit" "sárnnedit" "unnedit" "gánnedit" "iehpedit" "giehpedit" "duoppedit" "dáppedit" "dåppedit" "smaredit" "goaredit" "goabredit" "ieredit" "hieredit" "vieredit" "buoredit" "stuoredit" "doarredit" "dierredit" "mierredit" "láhkamierredit" "lasedit" "lamsedit" "vuosedit" "dássedit" "joatsedit" "uhtsedit" "giettsedit" "váttsedit" "gåtsedit" "givsedit" "mávsedit" "másedit" "vásedit" "låsedit" "luohtedit" "hiejtedit" "goastedit" "koastedit" "vásstedit" "moattedit" "guottedit" "gáttedit" "davedit" "slijvedit" "rujvedit" "vájvedit" "gárvedit" "buolvvedit" "árvvedit" "maŋedit" "tjieŋedit" "sagŋedit" "sisŋedit" "sahkkidit" "tsahkkidit" "dåhkkidit" "tjåhkkidit" "validit" "gallidit" "viellidit" "buollidit" "ållidit" "dållidit" "háhppidit" "sjierridit" "ánssidit" "guossidit" "aktidit" "duolvvidit" "guggŋidit" "dåbdijdit" "bådijdit" "salgijdit" "njálgijdit" "gålgijdit" "njålgijdit" "gurgijdit" "bårgijdit" "jårgijdit" "tjuovgijdit" "risjijdit" "tjátjijdit" "smáhkijdit" "låsjkijdit" "mukkijdit" "tjåskijdit" "guosmijdit" "tsivnijdit" "dabrijdit" "jurijdit" "tjivrijdit" "suvrijdit" "gárijdit" "mårijdit" "habsijdit" "bisijdit" "hapsijdit" "guohtsijdit" "båhtsijdit" "njattijdit" "skilájdit" "imájdit" "vájaldit" "syhkaldit" "jakkaldit" "jiekkaldit" "suojvaldit" "bárggeldit" "tjuottjeldit" "åskeldit" "maneldit" "vuosteldit" "vatteldit" "naveldit" "sájveldit" "tjievvildit" "vajoldit" "budáldit" "ganjáldit" "biváldit" "njárbbodit" "tjábbodit" "noadodit" "vijddodit" "buojddodit" "vájddodit" "gærddodit" "suddodit" "vuododit" "bivdodit" "soaggodit" "lijggodit" "rájggodit" "nælggodit" "ålgodit" "gurgodit" "vágodit" "oadjodit" "vuodjodit" "lådjodit" "galljodit" "luojodit" "girjodit" "buossjodit" "rássjodit" "gártjodit" "tjuottjodit" "tsoahkodit" "suohkodit" "buojkodit" "næjkodit" "boakkodit" "biekkodit" "goalkodit" "tsoalkodit" "nuoskodit" "basskodit" "tjoasskodit" "båŋkodit" "boalodit" "allodit" "tjallodit" "goallodit" "sillodit" "juollodit" "vuollodit" "gálodit" "hibmodit" "fábmodit" "almodit" "ilmodit" "joajmmodit" "slæmmodit" "gåmodit" "binnodit" "sánodit" "gihpodit" "dæhppodit" "vuorodit" "garrodit" "irrodit" "hirrodit" "skirrodit" "gievrrodit" "divrrodit" "suvrrodit" "várrodit" "værrodit" "návrodit" "basodit" "hasodit" "bisodit" "guossodit" "låssodit" "hæssodit" "håhtsodit" "njátsodit" "viertodit" "goasstodit" "vasstodit" "ruosstodit" "hástodit" "dættodit" "ævtodit" "gárvodit" "livvodit" "tjiegŋodit" "slimbardit" "slåbardit" "skuoldardit" "vándardit" "tjiegardit" "guokkardit" "lillardit" "gabmardit" "giemardit" "sáŋardit" "náberdit" "skutjerdit" "gåbmerdit" "dieverdit" "skidárdit" "slidárdit" "tjagárdit" "gitjárdit" "gamárdit" "vitsárdit" "jårbudit" "rádudit" "ráfudit" "vielgudit" "gilgudit" "suorgudit" "tjuovgudit" "bahudit" "addjudit" "sjevnjudit" "gåhtjudit" "åttjudit" "måjudit" "tsehkudit" "rusjkudit" "vájkkudit" "låkkudit" "småkkudit" "vuorkudit" "viskudit" "tjeludit" "jalludit" "lásjmudit" "almmudit" "germudit" "gámudit" "ruonudit" "lånudit" "tjáhpudit" "smårudit" "ruopsudit" "juvsudit" "fásstudit" "dålvudit" "ávvudit" "vuorbbádit" "tjadádit" "noaddádit" "hávddádit" "bagádit" "lagádit" "riegádit" "fággádit" "virgádit" "snjurgádit" "mugádit" "mægádit" "rægádit" "risjádit" "gatjádit" "snjibtjádit" "tjiehkádit" "goajkádit" "jæskádit" "njoaládit" "ælládit" "suoládit" "tjajmádit" "tjanádit" "manádit" "tjáhppádit" "moarádit" "sirádit" "basádit" "muossádit" "gæssádit" "luojttádit" "mujttádit" "såjddådit" "nårddådit" "håjggådit" "tjålggådit" "dåssjådit" "gåttjådit" "måjådit" "tjåhkådit" "gåjkkådit" "tsåkkådit" "gållådit" "mållådit" "gålådit" "tjårmmådit" "bårådit" "håhtsådit" "åtsådit" "gåtsådit" "njåtsådit" "jåvsådit" "båsådit" "gåsådit" "jåttådit" "gåvådit" "dågŋådit" "sjánjagit" "bávtjagit" "ganugit" "dárbahit" "návddahit" "givnnjahit" "jalkkahit" "merkahit" "vellahit" "vællahit" "huomahit" "dabrrahit" "gahtsahit" "huhttahit" "vájvahit" "duodjuhit" "háhkuhit" "ræjnnuhit" "ruhtsuhit" "huomáhit" "tjåhkkåhit" "idatjit" "girdatjit" "vuordatjit" "bårdatjit" "bivdatjit" "ådatjit" "begatjit" "sjavnjatjit" "vuotjatjit" "bajkatjit" "belkatjit" "gáskatjit" "buolatjit" "gálatjit" "tjálatjit" "tsábmatjit" "bájnatjit" "bånatjit" "váratjit" "váttsatjit" "mávsatjit" "bájtatjit" "májstatjit" "åstatjit" "garvatjit" "harvatjit" "baldáskit" "vaddalit" "rijddalit" "guoddalit" "tjoavddalit" "bivddalit" "balldalit" "gulldalit" "válldalit" "tsirggalit" "gurggalit" "gárggalit" "suodjalit" "dådjalit" "doarjjalit" "várjjalit" "sáhtjalit" "gæhttjalit" "næjkkalit" "goalkkalit" "ravkkalit" "livkkalit" "nivkkalit" "gasskalit" "adnalit" "vuojnnalit" "bassalit" "diehtalit" "båhtalit" "biktalit" "buktalit" "nuktalit" "hásstalit" "bæsstalit" "bæhttalit" "gijttalit" "luojttalit" "mujttalit" "hæjttalit" "æjvvalit" "árvvalit" "dieddelit" "vuodjelit" "tjuodtjelit" "tjuovvolit" "skerrulit" "navválit" "gåddålit" "bårggålit" "jårggålit" "tsåggålit" "dådjålit" "råhkålit" "åhtsålit" "håhttsålit" "jåhtålit" "båktålit" "giddanit" "liegganit" "suorgganit" "sadjanit" "lahkanit" "sahkanit" "sehkanit" "tjåhkanit" "báhkkanit" "boarkkanit" "tsuovkkanit" "gibmanit" "almmanit" "rájnnanit" "hehpanit" "duohpanit" "sierranit" "njuorranit" "bæjsstanit" "luottanit" "hevvanit" "gæjvvanit" "luovvanit" "ålggunit" "bahunit" "hedjunit" "vádnunit" "nannunit" "guorrunit" "gárvvunit" "sjávvunit" "maŋŋunit" "duobbánit" "dábbánit" "vijddánit" "gáddánit" "rájggánit" "badjánit" "ádjánit" "hádjánit" "tjádjánit" "hárjjánit" "lassjánit" "boaktjánit" "gajkkánit" "hoavkkánit" "allánit" "gallánit" "doallánit" "vuollánit" "lullánit" "hállánit" "vællánit" "gæhppánit" "buorránit" "ærránit" "værránit" "bisánit" "lassánit" "bissánit" "guoktánit" "davvánit" "gárvvánit" "åvddånit" "gåvddånit" "hådjånit" "bårjjånit" "håhkkånit" "smållånit" "gåbmånit" "sårmmånit" "dårrånit" "båhtånit" "báhtarit" "stávttjurit" "njimmurit" "ginntsurit" "tsaggasit" "tjavggasit" "tsakkasit" "tjiesskasit" "nuollasit" "njámmasit" "tjadnasit" "rahpasit" "dahppasit" "guorrasit" "sárrasit" "njadtsasit" "máhttsasit" "harttsasit" "rahtasit" "basstasit" "konkurssit" "buodusit" "hádjusit" "mådjusit" "målssusit" "ávvusit" "tjoavddásit" "tjuolldásit" "juohkásit" "njuohkásit" "gásskásit" "tjállásit" "jávvásit" "tjávvásit" "bådnjåsit" "båhtjåsit" "råhtåsit" "rábastit" "duodastit" "sárgastit" "ságastit" "berjastit" "vilsjastit" "ruossjastit" "gehtjastit" "tjuottjastit" "njahkastit" "svahkastit" "sihkastit" "tsakkastit" "biekkastit" "dálkastit" "njaskastit" "illastit" "lávlastit" "tjuojmastit" "duolmastit" "suomastit" "tjuormastit" "åmastit" "jienastit" "májnastit" "tjerastit" "subtsastit" "gartsastit" "hartsastit" "gattsastit" "njattsastit" "ruohtastit" "suovastit" "skielbestit" "rubestit" "srubestit" "strubestit" "oadestit" "soadestit" "bidestit" "tjidestit" "suojgestit" "doargestit" "gurgestit" "gárgestit" "bårgestit" "jårgestit" "jugestit" "sluvgestit" "bávtjestit" "rájkestit" "bálkestit" "dárkestit" "duvkestit" "alestit" "gielestit" "málestit" "njamestit" "ármestit" "lånestit" "oahpestit" "doarestit" "oasestit" "tsåjtsestit" "luojtestit" "vattestit" "rejddistit" "boagostit" "boakkostit" "gaskostit" "bælostit" "tjalmostit" "njálmostit" "guovdustit" "berustit" "merustit" "ájrustit" "dárustit" "vástustit" "ladástit" "jugástit" "ijástit" "salástit" "gulástit" "sulástit" "sámástit" "ganástit" "nuppástit" "birástit" "gæsástit" "dåbdåstit" "låjdåstit" "åvdåstit" "ådåstit" "bådåstit" "jårgåstit" "bårjåstit" "måhkåstit" "råkkåstit" "bålåstit" "båråstit" "måråstit" "målsåstit" "måttsåstit" "båsåstit" "båltåstit" "gåvåstit" ;
 
-N ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase] } 
+NP ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase] } 
 	| "N:n.cmp n" 3: n.*.cmp %n.*.[case] { 1[lemcase=$lemcase,cmp=(if (1.pos_tag/tr=adj) cmp_attr else 1.cmp)] + %2 } 
 	| "N:np.cmp n" 3: np.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} 
 	| "N:np.cmp n" 3: np.*.cmp n.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2 + %3} ! Norggameašttirgilvvut
@@ -350,51 +350,54 @@ N ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase] }
 	| "n.splitr" 3: %vblex.*.[v2n].*."cmp_splitr" { %1(vblex_cmpsplitr)[lemcase=$lemcase,v2v=(if (1.v2v=der_inchl and 1.lem incl verb3st) der_ahtja elif (1.v2v=der_halla) der_dalla elif (1.v2v=der_h and 1.lem in verb3st) der_caus elif (1.v2v=der_h) der_d elif (1.v2v=der_passs) der_passl else 1.v2v)] } ! várren- ja ohcanlobiid
 	;
 
-Name -> "N:np" 1: %np.*.[case].$function { %1 } 
-	| "N:np.cmp np" 3: np.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
-	| "N:n.cmp np" 3: n.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
-	| "NP:N Name" 1: N.*."@→N" %Name {1 _ %2 } !gonagas Harald
-	| "NP:N Name" 1: Name.*."@→N" %Name {1 _ %2 } !
-	| "NP:N Name" 1: np.*."@→N" %Name {1 _ %2 } !
-	| "NP:N Name" 1: Name.*."@→N" %N {1 _ %2 } ! ! Verdens Gang aviisii
-	| "NP:N Name" 1: Name.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
-	| "NP:N Name" 1: Name.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
-	| "NP:np cnp np" 1: Name cnjcoo."@CNP" %Name.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
+Name -> "Name:np" 1: %np.*.[case].$function { %1 } 
+	| "Name:np.cmp np" 3: np.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
+	| "Name:n.cmp np" 3: n.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
+	| "Name:N Name" 1: NP.*."@→N" %Name {1 _ %2 } !gonagas Harald
+	| "Name:N Name" 1: Name.*."@→N" %Name {1 _ %2 } !
+	| "Name:N Name" 1: np.*."@→N" %Name {1 _ %2 } !
+	| "Name:N Name" 1: Name.*."@→N" %N {1 _ %2 } ! ! Verdens Gang aviisii
+	| "Name:N Name" 1: Name.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
+	| "Name:N Name" 1: Name.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
+	| "Name:np cnp np" 1: Name cnjcoo."@CNP" %Name.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
 	;
 
-NP -> "NP N" 1: %N { %1[lemcase=$lemcase] }
-	| "NP PCLE" 1: %N PCLE { %1[lemcase=$lemcase] _ 2 }
-	| "NP:N cnjcoo N" 2: N cnjcoo."@CNP" %N { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
+NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
+	| "NP:N num.arab" 1: %NP  num.arab { %1[lemcase=$lemcase] _ 2 }
+	| "NP:NP cnjcoo N" 2: NP cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
 	| "NP:NP cnjcoo NP" 1: NP cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
-	| "NP:N cnjcoo N" 1: N.*."@→N" cnjcoo."@CNP" %N { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
-	| "NP:N N" 2: N.*."@→N" %N { 1 _ 2} !sámi máná
-	| "NP:N N" 2: adv.[right] N.*."@→N" %N { 1 _ 2 _ %3} !
-	| "NP:N N" 2: adv.[right] N.*."@→N" %Name { 1 _ 2 _ %3} !nu fámolaš Suomas
-	| "NP:AP N" 1: AP.*."@→N" %N { 1 _ %2 }
+	| "NP:NP cnjcoo N" 1: NP.*."@→N" cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
+	| "NP:NP N" 2: NP.*."@→N" %NP { 1 _ 2} !sámi máná
+	| "NP:NP N" 2: adv.[right] NP.*."@→N" %NP { 1 _ 2 _ %3} !
+	| "NP:NP N" 2: adv.[right] NP.*."@→N" %Name { 1 _ 2 _ %3} !nu fámolaš Suomas
+	| "NP:AP N" 1: AP.*."@→N" %NP { 1 _ %2 }
 	| "NP:adv N" 1: adv."@→N" %NP { 1 _ %2}
-	| "NP:buorre N" 1: buorre@adj %N { 1 _ %2}
+	| "NP:buorre N" 1: buorre@adj %NP { 1 _ %2}
 
-	| "NP:attrprn N" 4: [attrprn]@prn.*."@→N" %N { 1[foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] _ %2} 
-	| "NP:prn N" 3: prn.*."@→N" %N { 1[lemcase=$lemcase,case=(if (1.case=loc and 2.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ %2} 
+	| "NP:attrprn N" 4: [attrprn]@prn.*."@→N" %NP { 1[foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] _ %2} 
+	| "NP:prn N" 3: prn.*."@→N" %NP { 1[lemcase=$lemcase,case=(if (1.case=loc and 2.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ %2} 
 	| "NP:prn N" 3: prn.*."@→N" %NP { 1[lemcase=$lemcase] _ %2} 
-	| "NP:prn AP N" 3: prn.*."@→N" adj.*."@→N" %N { 1[lemcase=$lemcase] _ 2 _ %3} 
+	| "NP:prn AP N" 3: prn.*."@→N" adj.*."@→N" %NP { 1[lemcase=$lemcase] _ 2 _ %3} 
 	| "NP:gohcuid alde > V" 4: %gohcu@n.*.pl.gen { %1(vblex_infin)[lemcase=$lemcase] } !denne må generaliseres, hvordan uttrykke pos?
 
 	| "NP:Name" 1: %Name { %1 }
 
+	| "NP:num.sem_year" 1: %num.sem_year { %1[case=nom] }
 	| "NP:num.sem_year.ine" 3: %num.sem_year.sg.loc { jahke@n.sg.ine _ %1[case=nom] }
 	| "NP:num.sem_year.ine" 3: %num.sem_year.sg.ine { jahke@n.sg.ine _ %1[case=nom] }
 	| "NP:num.sem_year.ela" 3: %num.sem_year.sg.ela { jahke@n.sg.ela _ %1[case=nom] }
 	| "NP:num.sem_year.ill" 3: %num.sem_year.sg.ill { jahke@n.sg.ill _ %1[case=nom] }
-	| "NP:num" 1: %num { %1 }
-	| "NP:N pcle" 1: %N pcle (if (2.lem/tl="") { %1 } else { %1 _ 2})
-	| "NP:num N" 2: num %N ?(1.function not = "@→A") {1[case=(if (1.case=loc and 2.function in advlela) ela elif (1.case=loc) ine elif (1.lem = akta) 1.case elif (1.case = acc) nom else 1.case)] _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine elif (1.lem = akta) 2.case elif (1.case=acc and 2.case=acc) gen else 2.case)]} !!!2009-2013 áigodagas
-	| "NP:prn.dem num N" 2: prn.dem %num N {1 _ 2[case=(if (2.case=loc and 3.function in advlela) ela elif (2.case=loc) ine elif (2.lem = akta) 2.case elif (2.case = acc and 3.case = acc) nom else 2.case)] _ 3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine elif (2.lem = akta) 3.case elif (2.case = acc and 3.case = acc) gen else 3.case)]} !3.lem not = akta (1.case not = 2.case)
-	| "NP:prn.ref N" 2: prn.ref %N { 1 _ 2} !ietjam viellja !! denne treffer nå også feildisambiguering, mer robust
-	| "NP:attrprn N" 2: [attrprn]@prn %N { 1[number="",case="",attr=attr] _ 2} !iešguđetge doaimmaid, mer robust, i tilfelle feil syntagg  
-	| "NP:prn N" 3: prn.*."@→N" %N { 1[number=(if (1. lem in attrprn) "" else 1.number),case= (if (1. lem in attrprn) "" else 1.case)] _ 2} !dav vielja, juohke sajis !!!  
-	| "NP:N NP.@N←" 8: %N NP.*.@N← { %1 _ 2} !oassi dán barggus FUNGERER IKKE 
-	| "TEST: NP:N + REL" 3: %N prn.rel V AdvP { %1 _ 2 _ 3 _ 4}
+	| "NP:NP pcle" 1: %NP pcle (if (2.lem/tl="") { %1 } else { %1 _ 2})
+	| "NP:num N" 2: num %NP ?(1.function not = "@→A") {1[case=(if (1.case=loc and 2.function in advlela) ela elif (1.case=loc) ine elif (1.lem = akta) 1.case elif (1.case = acc) nom else 1.case)] _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine elif (1.lem = akta) 2.case elif (1.case=acc and 2.case=acc) gen else 2.case)]} !!!2009-2013 áigodagas
+	| "NP:prn.dem num N" 2: prn.dem %num NP {1 _ 2[case=(if (2.case=loc and 3.function in advlela) ela elif (2.case=loc) ine elif (2.lem = akta) 2.case elif (2.case = acc and 3.case = acc) nom else 2.case)] _ 3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine elif (2.lem = akta) 3.case elif (2.case = acc and 3.case = acc) gen else 3.case)]} !3.lem not = akta (1.case not = 2.case)
+	| "NP:prn.ref N" 2: prn.ref %NP { 1 _ 2} !ietjam viellja !! denne treffer nå også feildisambiguering, mer robust
+	| "NP:attrprn N" 2: [attrprn]@prn %NP { 1[number="",case="",attr=attr] _ 2} !iešguđetge doaimmaid, mer robust, i tilfelle feil syntagg  
+	| "NP:prn N" 3: prn.*."@→N" %NP { 1[number=(if (1. lem in attrprn) "" else 1.number),case= (if (1. lem in attrprn) "" else 1.case)] _ 2} !dav vielja, juohke sajis !!!  
+	| "NP:NP NP.@N←" 8: %NP NP.*.@N← { %1 _ 2} !oassi dán barggus FUNGERER IKKE 
+	| "TEST: NP:NP + REL" 3: %NP prn.rel V AdvP { %1 _ 2 _ 3 _ 4}
+	;
+
+NUM -> "NP:num" 1: %num { %1 }
 	;
 
 
@@ -437,11 +440,11 @@ AdvP -> "AdvP:adv" 1: %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(i
 	;
 
 PP -> ! "N post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
-	 "NP post" 1: NP %post { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ %2 }
+	 "NP post" 2: NP %post { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ %2 }
 	| "NP C NP post" 1: NP cnjcoo NP %post {1[case=(if (4.lem = miehtáj) acc else 1.case)] _ 2 _ 3[case=(if (4.lem = miehtáj) acc else 3.case)] _ 4 }
 	| "prn post" 1: prn %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case=(if (2.lem = miehtáj) acc else 1.case)] _ 2 }) 
 	| "dás post" 1: dás@adv %post { 1 _ %2 }
-	| "pre/post NP" 2: %pr N ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] } !miehtá beavddi > bievdev miehtáj
+	| "pre/post NP" 2: %pr NP ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] } !miehtá beavddi > bievdev miehtáj
 	| "pre/post NP" 2: %pr Name ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1 } !miehtá beavddi > bievdev miehtáj
 	| "pre/post prn" 2: %pr prn ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] } !miehtá beavddi > bievdev miehtáj
 	| "pre NP" 1: %pr NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
@@ -449,14 +452,14 @@ PP -> ! "N post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case
 	| "lone post" 1: %post { 1 }
 	; !
 
-NegVP -> "ii dadjat@conneg ieš N.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.*.conneg %ieš@prn.ref N.*.acc 
+NegVP -> "ii dadjat@conneg ieš NP.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.*.conneg %ieš@prn.ref NP.*.acc 
 	{ 1[lemcase=$lemcase,tense=(if (2.tense="") pres else 2.tense)] _ 2 _ %3[pos_tag=prn,prn_type=pers,person=3.poss,number=3.poss,lem=(if 
 	(3.poss=px1sg or 3.poss=px1du or 3.poss=px1pl) mån elif (3.poss=px2sg or 3.poss=px2du or 3.poss=px2pl) dån else sån)] 
 	_ liehket@vblex.indic.pres.p3.[4.number] _ 4[case=nom]} !!! Ii jáhkkán alddis dávdda. > Ittjij jáhke sujna la dávdda.
 	| "ii lohkat@conneg adj.ess" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg adj.ess 
 	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1[person=p3,number=sg] _ liehket@vblex.iv.indic.pres.conneg _ 
 	3[number=sg,case=nom]} !!! eai loga váttisin > javlli ij la gássjel
-	| "ii lohkat@conneg N.ess" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg N.ess 
+	| "ii lohkat@conneg NP.ess" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg NP.ess 
 	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1[person=p3,number=sg] _ liehket@vblex.iv.indic.pres.conneg _ 
 	3[number=sg,case=nom]} !!! eai loga leaikan > javlli ij la boagos
 	|"ii lohkat@conneg ieš inf" 4: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg ieš@prn vblex.*.[infin] 
@@ -495,7 +498,7 @@ NegVP -> "ii dadjat@conneg ieš N.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.*
 	else 4.infin),mood=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) indic else ""),tense=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) pres 
 	else ""),person=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) p3 else ""),number=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) 3.number 
 	else "")] } !!! ii jáhke su/dan boahtit > iv jáhke sån/dat boahtá
-	| "ii dadjat@conneg prn NP.ess" 6: %ii@vblex.iv.neg [dadjat_verbs]@vblex.*.conneg prn.*.acc N.*.ess 
+	| "ii dadjat@conneg prn NP.ess" 6: %ii@vblex.iv.neg [dadjat_verbs]@vblex.*.conneg prn.*.acc NP.*.ess 
 	{1[lemcase=$lemcase,tense=(if (2.tense="") pres else 2.tense)] _ 2 _ 3[case=nom] _ %liehket(vblex_fin)[neg="",mood=indic,tense=(if (2.tense="") pres else 2.tense),person=(if (3.prn_type=dem) p3 else 3.person),number=3.number] _ 4[number=3.number,case=nom] } !!! ii jáhke su nieidan
 	| "ii dadjat@conneg prn adj" 6: ii@vblex.iv.neg %[dadjat_verbs]@vblex.*.conneg prn.*.acc adj { 1[lemcase=$lemcase,tense=(if (2.tense="") pres else 2.tense)] _ %2 
 	_ 3[case=nom] _ liehket@vblex.iv.indic.[2.tense][person=3.person,number=3.number] _ 4[number=3.number,case=nom] } 
@@ -550,7 +553,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	| "dadjat prn.acc prfprc" 4: %[dadjat_verbs]@vblex prn.*."@-FSUBJ→" vblex.*.prfprc { 1[lemcase=$lemcase] _ 2[case=nom] _ 
 	%liehket(vblex)[mood=indic,tense=pres,person=(if (2.prn_type=dem) p3 else 2.person),number=2.number] _ 3 } 
 	!!!lohká sin árvvoštallan > javllá sij li árvustallam 
-	| "dadjat NP prfprc" 4: %[dadjat_verbs]@vblex N.*."@-FSUBJ→" vblex.*.prfprc { 1[lemcase=$lemcase] _ 2[case=nom] _ 
+	| "dadjat NP prfprc" 4: %[dadjat_verbs]@vblex NP.*."@-FSUBJ→" vblex.*.prfprc { 1[lemcase=$lemcase] _ 2[case=nom] _ 
 	%liehket(vblex)[mood=indic,tense=pres,person=(if (2.prn_type=dem) p3 else 2.person),number=2.number] _ 3 } 
 	!!! jáhkká veaga viežžan > 
 	| "dadjat n.acc inf" 4: [dadjat_verbs]@vblex n.*."@-FSUBJ→" %vblex.*.inf { 1[lemcase=$lemcase] _ 2[case=nom] _ 
@@ -606,7 +609,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	| "FAUXV NP FMAINV" 2: %vblex.*.$person.$number."@+FAUXV" NP vblex.*."@-FMAINV" { %1[lemcase=$lemcase] _ 2 _ 3[v2v=(if (3.v2v=der_inchl and 3.lem incl verb3st) der_ahtja elif (3.v2v=der_halla) der_dalla elif (3.v2v=der_h) der_d elif (3.v2v=der_ahtti) der_caus elif (3.v2v=der_passs) der_passl else 3.v2v)] } ! sáhtán láibbi borrat
 	| "FAUXV @SPRED→ FMAINV" 2: %vblex.*.$person.$number."@+FAUXV" adj.*."@SPRED→" vblex.*."@-FMAINV" { %1[lemcase=$lemcase] _ 3 _ 2 } !!! lea váttis leamaš > la læhkám gássjel
 	| "vblexN← N@-F←OBJ" 3: %vblex.*."@N←" NP.*."@-F←OBJ" { %2[number=2.number] _ 1 } !!! álggahit idjadansajiid > idjadimsajijt álgadit
-	| "vblex@N← adv@→N n@-F←OBJ" 3: %vblex.*."@N←" adv."@→N" N.*."@-F←OBJ" { 2 _ %3[number=3.number] _ 1 } !!! juhkat veaháš čázi > veaháš čázi juhkat
+	| "vblex@N← adv@→N n@-F←OBJ" 3: %vblex.*."@N←" adv."@→N" NP.*."@-F←OBJ" { 2 _ %3[number=3.number] _ 1 } !!! juhkat veaháš čázi > veaháš čázi juhkat
 	| "vblex NP vblex@N← prn@-F←OBJ" 3: vblex NP %vblex.*."@N←" prn.*."@-F←OBJ" { 1[lemcase=$lemcase] _ 2 _ %4[number=4.number] _ 3 } 
 
 	| "@+FMAINV NP vblex" 3: V.*.[mainv] NP %vblex ?(3.onlycmp = "") (if (2.function="@-FSUBJ→" and 2.case=nom and 3.infin in accinfitforms) 
