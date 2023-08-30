@@ -396,7 +396,9 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "TEST: NP:NP + REL" 3: %NP prn.rel V AdvP { %1 _ 2 _ 3 _ 4}
 	;
 
-NUM -> "NP:num" 1: %num { %1 }
+NUM -> "NUM:num" 1: %num { %1 }
+	| "NUM:num num" 1: %num num { %1 _ 2 }
+	| "NUM:num num num" 1: %num num num { %1 _ 2 _ 3 }
 	;
 
 
@@ -421,6 +423,7 @@ AP -> "AP:adj" 1: %adj.*.[caseattr] { %1 }
 	| 1: AdvP prn.*."@←SUBJ" %adj.*."@←SPRED" { 1 _ 2 _ %3} !dieđusge dat dehálaš n2adj
 !	| 1: "num.cmp adj" 3: num.*.cmp  %adj { 1 + %2 } !Could not find output pattern
 !	| 1: vblex.*.prsprc { %1 }
+	| "AP:n.cmp n.attr" 3: n.*.cmp %n.*.attr { 1[lemcase=$lemcase] + %2 } !sámepolitihkalaš
 	| "AP:AP cnjcoo AP" 1: AP cnjcoo %AP { %1 _ 2 _ %3} 
 	| "AP:num jagi boaris" 2: %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } 
 	| "AP:numcmp jahkásaš" 2: %num.cmp_hyph.cmp jahkásaš@adj { 1[number=sg,case=gen,cmp="",onlycmp="",hyph="",num_type=arab] 
