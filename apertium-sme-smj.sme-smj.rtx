@@ -357,13 +357,10 @@ NP ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase] }
 NP -> "Name:np" 1: %np.*.[case].$function { %1 } 
 	| "Name:np.cmp np" 3: np.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
 	| "Name:n.cmp np" 3: n.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
-	| "Name:N Name" 1: NP.*."@→N" %np {1 _ %2 } !gonagas Harald
-	| "Name:N Name" 1: np.*."@→N" %NP {1 _ %2 } !Samuel John N. Anti
-	| "Name:N Name" 1: n.*."@→N" %np {1 _ %2 } !
-	| "Name:N Name" 1: np.*."@→N" %n {1 _ %2 } ! ! Verdens Gang aviisii
+	| "Name:N Name" 1: np.*."@→N" %NP {1 _ %2 } !Samuel John N. Anti, Verdens Gang aviisii
 	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
 	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
-	| "Name:np cnp np" 1: np cnjcoo."@CNP" %np.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
+!!!	| "Name:np cnp np" 1: NP cnjcoo."@CNP" %NP.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
 	;
 
 NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
@@ -437,8 +434,8 @@ AP -> "AP:adj" 1: %adj.*.[caseattr] { %1 }
 	| "AP:num jagi boaris" 2: %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } 
 	| "AP:numcmp jahkásaš" 2: %num.cmp_hyph.cmp jahkásaš@adj { 1[number=sg,case=gen,cmp="",onlycmp="",hyph="",num_type=arab] 
 	_ 2[lem=jagák] } 
-	| "AP:num jahkásaš" 2: num.sg.gen %jahkásaš@adj { 1 _ %2[lem=jagák] } 
-	| "AP:num jahkásaččat.adv" 2: num.sg.gen %jahkásaččat@adv { 1 _ %2[lem=jagák,pos_tag=adj,number=pl,case=nom] } ! feil disambiguering
+	| "AP:num jahkásaš" 3: num %jahkásaš@adj { 1 _ %2[lem=jagák] } 
+	| "AP:num jahkásaččat.adv" 2: num %jahkásaččat@adv { 1 _ %2[lem=jagák,pos_tag=adj,number=pl,case=nom] } ! feil disambiguering
 	;
 
 AdvP -> "AdvP:adv" 1: %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (1.number/tl not = "") 1.number)] })
