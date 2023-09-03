@@ -250,6 +250,10 @@
     <i><w/></i>     
     <p><l><s n="vblex"/><s n="supn"/><d/></l><r><s n="vblex"/><s n="actio"/><s n="ess"/><d/></r></p> 
   </e>
+    <e r="RL" w="1.0">  <!-- fjern maŋen -->
+     <i>sebrudahttet<s n="vblex"/><t/><d/></i>
+     <p><l></l><r>maŋen<s n="adv"/><d/></r></p> 
+  </e>
 
     <e r="RL" w="2.0">  
      <par n="cltl-words"/>      
