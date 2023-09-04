@@ -392,6 +392,7 @@ NP -> "Name:np" 1: %np.*.[case].$function { %1 }
 	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
 	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
 !!!	| "Name:np cnp np" 1: NP cnjcoo."@CNP" %NP.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
+!!!	| "Name:np missing" %np.*.attr  { %1 }
 	;
 
 NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
@@ -406,7 +407,7 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "NP:AP N" 1: n.[n2adj].*."@→N" %NP { 1 _ %2 } !ulbmillaš áŋgiruššan
 !!!	| "NP:A to N" 1: adj.*.[adj2n] {%1(adj_n)[lemcase=$lemcase] } !girjáivuođa
 	| "NP:adv N" 1: adv."@→N" %NP { 1 _ %2}
-	| "NP:buorre N" 1: buorre@adj %NP { 1 _ %2}
+!!!	| "NP:buorre N" 1: buorre@adj %NP { 1 _ %2}
 
 	| "NP:attrprn N" 4: [attrprn]@prn.*."@→N" %NP { 1[foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] _ %2} 
 	| "NP:prn N" 3: prn.*."@→N" %NP { 1[lemcase=$lemcase,case=(if (1.case=loc and 2.function in advlela) ela elif (1.case=loc) ine else 1.case)] _ %2} 
@@ -430,7 +431,8 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "NP:prn N" 3: prn.*."@→N" %NP { 1[number=(if (1. lem in attrprn) "" else 1.number),case= (if (1. lem in attrprn) "" else 1.case)] _ 2} !dav vielja, juohke sajis !!!  
 	| "NP:NP NP.@N←" 8: %NP NP.*.@N← { %1 _ 2} !oassi dán barggus FUNGERER IKKE 
 !!!	| "TEST: NP:NP + REL" 3: %NP prn.rel V AdvP { %1 _ 2 _ 3 _ 4}
-	| 1: %NUM { %1 }
+	| "NUM" 1: %NUM { %1 }
+
 	;
 
 NUM -> "NUM:num" 1: %num.*.[case] { %1 }
@@ -438,6 +440,7 @@ NUM -> "NUM:num" 1: %num.*.[case] { %1 }
 	| "NUM:num num num" 1: %num num num { %1 _ 2 _ 3 }
 	| "NUM:@→Num NUM" 1: n.*."@→Num" %NUM { 1 _ %2 } ! tlf 23
 	| "NUM:@→Num NUM" 1: n.*.attr PCT %NUM { 1 _ 2 _ %3 } ! tlf +47 (egentlig bør +47 finnes i dix)
+	| "NUM:num.splitr" 3: %num."cmp_splitr" { %1[lemcase=$lemcase] } ! 5-
 	;
 
 
@@ -490,7 +493,7 @@ PP -> ! "N post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case
 !!!	| "pre/post NP" 2: %pr Name ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1 } !miehtá beavddi > bievdev miehtáj
 	| "pre/post prn" 2: %pr prn ?(1.adpos/tl = post) { 2[lemcase=1.lemcase,case=(if (1.lem = miehtáj) acc else 2.case)] _ 1[lemcase=2.lemcase] } !miehtá beavddi > bievdev miehtáj
 	| "pre NP" 1: %pr NP { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
-	| "pre prn" 1: %pr prn { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
+	| "pre prn" 2: %pr prn.*."@P←" { 1 _ 2 } !maŋŋá bargoáiggi > maŋŋela barggoájge px1sg
 	| "lone post" 1: %post { 1 }
 	; !
 
@@ -753,6 +756,7 @@ CLB -> "CLB cm" 1: %cm {1}
 S -> 
 	"go @+FMAINV NP" 3: go@cnjsub %V.*."@+FMAINV" NP { 1[lemcase=$lemcase] _ 3 _ %2 }!!! go hállet beatnagiiguin
 	| "AP V C" 1: AP %V.*."@+FMAINV" C { 1[lemcase=$lemcase] _ %2 _ 3 } ! Buorre lei go
+	| "NP VP" 1: NP %V  { 1[lemcase=$lemcase] _ %2 } !  Øystein muitala
 	| "VP cnjcoo VP" 1: %VP cnjcoo VP { 1[lemcase=$lemcase] _ %2 _ 3 } !
 	| "V PCLE PRN NP" 1: %V PCLE PRN NP { %1 _ 2 _ 3 _ 4 } !!! leat go dus appelsiinnat?
 	| "VP PRN PP" 1: %VP PRN PP { %1 _ 2 _ 3 } !!! mii leamaš stuorra giksin sutnje nuoraidskuvlla rájes.  
@@ -768,8 +772,9 @@ S ->
 	| "juoga rel S" 1: juoga@prn PRN.rel %S {1 _ 2 _ %3 } ! juoga masa
 	| "NP VP NP" 1: NP %VP NP.*."@←SPRED" { 1[lemcase=$lemcase] _ %2 _ 3 } !Dán jagi son lea oahpaheaddjin.
 	| "NP VP NP ADVL ADVL" 3: NP %VP NP NP.*.[advlleft] NP.*.[advlleft] { 1[lemcase=$lemcase] _ %2 _ 3 _ 4 _ 5 } !ja dát várri lea stuora áittan máŋgga dállodollui Olmmáivákkis.
-	| "NP VP" 1: NP %VP { 1[lemcase=$lemcase] _ %2 } !Sámediggi áigu dainna dieđáhusain bidjat guovddážii fálaldaga.
-!!!	| "NP V NP" 1: NP %V NP { 1[lemcase=$lemcase] _ %2 _ 3 } 
+	| "NP VP" 1: NP %VP ?(1.function not = "@P←") { 1[lemcase=$lemcase] _ %2 } !Sámediggi áigu dainna dieđáhusain bidjat guovddážii fálaldaga.
+	| "PP VP" 1: PP %VP  { 1[lemcase=$lemcase] _ %2 } !maŋŋel juovllaid leat
+	| "NP PP VP" 1: NP PP %VP { 1[lemcase=$lemcase] _ 2 _ %3 } !buolvvat ovdal min leat gillán
 	| "NP v aj np" 2: %NP vblex aj@AdvP NP {%1 _ 2 _ 4 _ 3}
 	| "C pers V NP" 2: C prn.pers %V NP (if (2.person_number in first_sec_person_number and 2.person_number= 3.person_number) { 1 _ 4 
 	_ %3[lemcase=1.lemcase] } else { 1 _ 2 _ 4 _ %3 }) !Mun boran > Båråv 
