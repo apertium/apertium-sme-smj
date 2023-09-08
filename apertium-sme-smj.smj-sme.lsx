@@ -14,6 +14,7 @@
 	<sdef n="cnjcoo"/>
 	<sdef n="cnjsub"/>
 	<sdef n="conneg"/>
+	<sdef n="dem"/>
 	<sdef n="der_ahtes"/>
 	<sdef n="der_nomact"/>
 	<sdef n="der_passs"/>
@@ -159,6 +160,11 @@
       <i>giehta<s n="n"/><s n="sg"/></i>
       <p><l><s n="ela"/><d/></l><r><s n="ill"/><d/></r></p>
    </e>
+    <e r="RL"> <!-- råhttit vuojŋŋat > båssit -->
+      <p><l>båssit<s n="vblex"/></l><r>råhttit<s n="vblex"/></r></p>
+      <i><t/><d/></i>
+      <p><l></l><r>vuojŋadahka<s n="n"/><t/><d/></r></p>
+   </e>
     <e r="RL"> <!-- guhka ájge > guhkev -->
       <p><l></l><r>guhkke<s n="adj"/><s n="attr"/><d/></r></p>
       <p><l></l><r>ájgge<s n="n"/><s n="sg"/><s n="gen"/><d/></r></p>
@@ -188,7 +194,6 @@
       <p><l></l><r>ij<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><d/></r></p>
       <p><l>liehket<s n="vblex"/><s n="neg"/><s n="indic"/><s n="pret"/><s n="p3"/><s n="pl"/><d/></l><r>liehket<s n="vblex"/><s n="indic"/><s n="pret"/><s n="conneg"/><d/></r></p>
    </e>
-
     <e r="RL"> <!-- adj du > pl -->
     <i><w/><s n="adj"/></i>     
       <p><l><s n="pl"/></l><r><s n="du"/></r></p>

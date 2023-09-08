@@ -90,6 +90,7 @@
     <sdef n="@←ADVL-ine"/>
     <sdef n="@ADVLcs-ine→"/>
     <sdef n="@ADVLqst-ine→"/>
+    <sdef n="@CVP"/>
     <sdef n="@-F←ADVL-ine"/>
     <sdef n="@-FMAINV"/>
     <sdef n="@+FAUXV"/>
@@ -338,7 +339,11 @@
      <p><l>ovttas<s n="adv"/></l><r>fárrolaga<s n="adv"/></r></p>
        <i><t/><d/></i>
    </e>
-   <e r="LR"> <!-- nu mo > nugo navtik -->
+    <e r="LR"> <!-- dallego > dalle go -->
+      <p><l>dallego<s n="cnjsub"/><t/><d/></l><r>dalle<s n="adv"/><s n="@←ADVL-ine"/><d/></r></p>
+      <p><l></l><r>gå<s n="cnjsub"/><s n="@CVP"/></r></p>
+   </e>
+  <e r="LR"> <!-- nu mo > nugo navtik -->
       <p><l>nu</l><r>nugo</r></p>
       <i><s n="adv"/><t/><d/></i>
       <p><l>mo<s n="adv"/></l><r></r></p><par n="syntax_tags"/>
