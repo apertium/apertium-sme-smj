@@ -143,7 +143,9 @@
       <e><i><w/><s n="prn"/><t/></i></e>
       <e><i><w/><s n="num"/><t/></i></e>
       <e><i><w/><s n="np"/><t/></i></e>
-      <e><i><w/><s n="cnjsub"/><t/></i></e>
+      <e><i><w/><s n="cnjsub"/></i></e>
+      <e><i><w/><s n="cnjcoo"/></i></e>
+      <e><i><w/><s n="post"/></i></e>
     </pardef>
     <pardef n="word">
       <e><i><w/><t/><d/></i></e>
@@ -264,7 +266,7 @@
      <par n="cltl-words"/>      
      <p><l><s n="cltl"/></l><r></r></p> <!-- legg til cltl -->
       <i><d/></i>
-      <p><l></l>   <r>liehket<s n="vblex"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><d/></r> </p> <!-- slett liehket -->
+      <p><l></l><r>liehket<s n="vblex"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><d/></r> </p> <!-- slett liehket -->
     </e>
 
   </section>

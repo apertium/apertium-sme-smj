@@ -339,21 +339,42 @@
     <rule weight="1.0">
       <match lemma="viissis"> <select lemma="vissa"/> </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="olahus"> <select lemma="rekoardda"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="olahus"> <select lemma="mihttomierre"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="dehálaš"/>
+      <match lemma="olahus"> <select lemma="mihttomierre"/> </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="várohit"> <select lemma="várrodit"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="várohit"> <select lemma="gáddet"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="várohit"> <select lemma="gáddet"/> </match>
+      <match />
+      <match lemma="gárremiin"/>
+     </rule>
 
 
     <rule weight="1.0">
       <match lemma="sakka"> <select lemma="sieldes"/> </match>
     </rule>
     <rule weight="0.5">
-      <match lemma="sakka"> <select lemma="sælldát"/> </match>
+      <match lemma="sakka"> <select lemma="sælldásit"/> </match>
     </rule>
     <rule weight="0.6">
-      <match lemma="sakka"> <select lemma="sælldát"/> </match>
+      <match lemma="sakka"> <select lemma="sælldásit"/> </match>
       <match tags="vblex.*"/>
     </rule>
     <rule weight="0.6">
       <match tags="vblex.*"/>
-      <match lemma="sakka"> <select lemma="sælldát"/> </match>
+      <match lemma="sakka"> <select lemma="sælldásit"/> </match>
     </rule>
     <rule weight="0.6">
       <match tags="vblex.*"/>
@@ -1920,6 +1941,11 @@
 <match lemma="de"/>
 <match lemma="leat"/>
 </rule>     
+<rule weight="0.5"><match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti ahte" /></match></rule>     
+<rule weight="0.7">
+   <match lemma="leat"/>
+	<match lemma="nu ahte" tags="cnjsub.*"><select lemma="navti ahte" /></match>
+	</rule>     
 
        <rule weight="1.0">
    <match lemma="okta" tags="prn.ind.sg.*.foc_pos-ge.*"><select lemma="soames" /></match>
