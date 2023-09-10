@@ -415,6 +415,24 @@
     <rule weight="1.0">
       <match lemma="čujuhit"> <select lemma="vuosedit"/> </match>
     </rule>
+    <rule weight="5.0">
+      <match lemma="čujuhit"> <select lemma="vuosedit"/> </match>
+    </rule>
+    <rule weight="6.0">
+      <match lemma="čujuhit"> <select lemma="rádjat"/> </match>
+      <match lemma="buohcceviessu" tags="*.ill.*"/>  
+    </rule>
+    <rule weight="6.0">
+      <match lemma="čujuhit"> <select lemma="rádjat"/> </match>
+      <match />  
+      <match lemma="buohcceviessu" tags="*.ill.*"/>  
+    </rule>
+    <rule weight="6.0">
+      <match lemma="čujuhit"> <select lemma="rádjat"/> </match>
+      <match />  
+      <match />  
+      <match lemma="buohcceviessu" tags="*.ill.*"/>  
+    </rule>
 
     <rule weight="1.0"><match lemma="boahttevaš"> <select lemma="boahttevasj"/> </match></rule>
     <rule weight="0.5"><match lemma="boahttevaš"> <select lemma="boahtte"/> </match></rule>
@@ -422,6 +440,14 @@
     <or>
       <match tags="n.*.sg.*"/>
       <match tags="n.*.*.sg.*"/>
+    </or>
+    </rule>
+    <rule weight="1.0"><match lemma="áibbas"> <select lemma="ållu"/> </match></rule>
+    <rule weight="0.5"><match lemma="áibbas"> <select lemma="ájbbas"/> </match></rule>
+    <rule weight="0.6"><match lemma="áibbas"> <select lemma="ájbbas"/> </match>
+    <or>
+      <match lemma="vuostá"/>
+      <match lemma="ovttagielat"/>
     </or>
     </rule>
 
@@ -2295,6 +2321,8 @@
 	  <match lemma="dadjat"/>
 	  <match lemma="lohkat"/>
 	  <match lemma="čállit"/>
+	  <match lemma="sávvat"/>
+	  <match lemma="háliidit"/>
 	  <match lemma="almmuhit"/>
 	  <match lemma="muitalit"/>
 	  <match lemma="oaidnit"/>

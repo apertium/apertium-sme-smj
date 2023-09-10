@@ -382,6 +382,23 @@
       <p><l>váldit</l><r>vuhtiiváldit</r></p>
       <i><s n="vblex"/><t/><d/></i>
    </e>
+    <e r="LR">
+      <i><w/><t/></i>
+      <p><l><s n="nom"/></l><r><s n="gen"/></r></p>
+      <i><t/><d/></i>
+      <p><l>mielddisbuktit<s n="vblex"/><t/></l><r></r></p><par n="syntax_tags"/>
+      <p><l>ahte<s n="cnjsub"/></l><r>dihte<s n="post"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR">
+      <i><w/><t/></i>
+      <p><l><s n="nom"/></l><r><s n="gen"/></r></p>
+      <i><t/><d/></i>
+      <par n="word"/>
+      <p><l>mielddisbuktit<s n="vblex"/><t/></l><r></r></p><par n="syntax_tags"/>
+      <p><l>ahte<s n="cnjsub"/></l><r>dihte<s n="post"/></r></p>
+      <i><t/><d/></i>
+   </e>
 
     <e r="LR">
       <p><l>dađi</l><r>dađistaga</r></p>
