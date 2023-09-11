@@ -12,6 +12,13 @@
       <cat-item tags="*.@subj"/>
       <cat-item tags="*.@subj.*"/>
     </def-cat>
+    <def-cat n="mainv">
+      <cat-item tags="@+FMAINV"/>
+      <cat-item tags="@-FMAINV"/>
+      <cat-item tags="@←OBJ"/>
+      <cat-item tags="@←ADVL"/>
+      <cat-item tags="@SUBJ→"/>
+    </def-cat>
     <def-cat n="sent_OR_at.clb">
       <cat-item tags="sent.*"/>
       <cat-item tags="sent"/>
@@ -31,6 +38,7 @@
 
   <section-def-vars>
     <def-var n="cur_subj"/>
+    <def-var n="current_verb"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -43,6 +51,9 @@
     <def-macro n="set_cur_subj" npar="1">
       <let><var n="cur_subj"/><clip pos="1" side="tl" part="whole"/></let>
     </def-macro>
+    <def-macro n="set_current_verb" npar="1">
+      <let><var n="current_verb"/><clip pos="1" side="tl" part="whole"/></let>
+    </def-macro>
   </section-def-macros>
 
 
@@ -50,6 +61,23 @@
 
     <!-- ***** The simple rules: Store, Clear, Apply ***** -->
 
+    <rule c="Found a mainverb, store it in variable">
+      <pattern>
+        <pattern-item n="mainv"/>
+      </pattern>
+      <action>
+        <call-macro n="set_current_verb"><with-param pos="1"/></call-macro>
+        <out>
+          <lu>
+            <clip pos="1" side="sl" part="whole"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            <lit v="/"/>
+            <var n="current_verb"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
     <rule c="Found a subject, store it in variable">
       <pattern>
         <pattern-item n="subj"/>
