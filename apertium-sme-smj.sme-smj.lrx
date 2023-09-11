@@ -53,6 +53,22 @@
     </rule>
 
     <rule weight="1.0">
+      <match lemma="vázzit"> <select lemma="vádtset"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="vázzit"> <select lemma="guorrat"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="vázzit"> <select lemma="guorrat"/> </match>
+      <match lemma="bálggis"/>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="vázzit"> <select lemma="guorrat"/> </match>
+      <match/>
+      <match lemma="bálggis"/>
+    </rule>
+
+    <rule weight="1.0">
       <match lemma="boagán"> <select lemma="avve"/> </match>
     </rule>
     <rule weight="0.5">
@@ -63,6 +79,9 @@
       <match tags="n.*.cmp"/>
       <match lemma="čavget"/>
     </or>
+      <match lemma="boagán"> <select lemma="avudis"/> </match>
+    </rule>
+    <rule weight="0.6">
       <match lemma="boagán"> <select lemma="avudis"/> </match>
     </rule>
 
@@ -2967,7 +2986,13 @@
       <match tags="np.*.*.ill.*"/>
 	    </or>
     </rule>
+	    
 
+    <rule weight="1.0"><match lemma="eret"><select lemma="ierit" /></match></rule>
+    <rule weight="0.5"><match lemma="eret"><select lemma="" /></match></rule>
+    <rule weight="0.6">
+      <match tags="np.*.*.ela.*"/>
+    <match lemma="eret"><select lemma="" /></match></rule>
 
 
     <rule weight="1.0"><match lemma="oba" tags="adv.*"><select lemma="åbbå" /></match></rule>
