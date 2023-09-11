@@ -7,12 +7,12 @@ fsubj = "@-FSUBJ→" ;
 leftobj = "@-F←OBJ" "@←OBJ" ;
 fsubjadvl = "@-FSUBJ→" "@←ADVL-ela" "@←ADVL-ine" "@←ADVL" "@ADVLhab→" ;
 leftspred = "@←SPRED" ;
-mainv = "@+FMAINV" "@-FMAINV" ;
+mainv = "@+FMAINV" "@-FMAINV" "@←OBJ" ;
 right = "@→N" "@→A" ;
 leftobjadvl = "@-F←OBJ" "@←ADVL-ine" "@←ADVL-ela" "@←ADVL" "@-F←ADVL-ine" "@-F←ADVL-ela" "@←OBJ" ;
 advlleft = "@←ADVL-ine" "@←ADVL-ela" "@←ADVL" "@-F←ADVL-ine" "@-F←ADVL-ela";
 advline = "@←ADVL-ine" "@ADVL-ine→" "@ADVLqst-ine→" "@ADVLcs-ine→" "@-F←ADVL-ine" ;
-advlela = "@←ADVL-ela" "@ADVL-ela→" "@ADVLcs-ela→" "@ADVLqst-ela→" "@-F←ADVL-ela" "@N←"   ;
+advlela = "@←ADVL-ela" "@ADVL-ela→" "@ADVLcs-ela→" "@ADVLqst-ela→" "@-F←ADVL-ela" "@N←" "@Num←"   ;
 gender = f m ;
 number = sg du pl ;
 prn_type_other = rel dem ind itg res ;
@@ -200,7 +200,7 @@ prn_other: <prn>.prn_type_other.number.case.attr.foc ;
 prn: (if (1.prn_type = pers) 1(prn_pers)
       elif (1.prn_type = ref) 1(prn_ref)
       elif (1.pos_tag/tl=adj) 1(adj)
-      elif (1.pos_tag/tl=n) 1(adj_to_n)
+      elif (1.pos_tag/tl=n) 1(adj_to_nnom)
       else 1(prn_other)) ;
 
 adj_to_noungen: <n>.n_type.<sg>.<gen> ;
@@ -211,12 +211,13 @@ adj_adv_comp:<adj>.comp.<adj>.<der_aadv>.<adv> ;
 adj_adv:_.<der_aadv>.<adv> ;
 adj_adj:_.<der_dimin>.<adj>.number.case.attr  ;
 adj_comp_adj:_.comp.<adj>.<der_dimin>.<adj>.number.case.attr  ;
-adj_to_n: <n>.<sg>.<nom> ; 
+adj_to_nnom: <n>.<sg>.<nom> ; 
 adj_n: <adj>.adj2n.<n>.number.case.poss.cmp.hyph.onlycmp ;
+adj_to_n: <n>.number.case.poss.cmp.hyph.onlycmp ;
 
 adj: (if (1.pos_tag/tl=n and 1.case/tl=gen) 1(adj_to_noungen)
      elif (1.pos_tag/tl=n and 1.deriv in n2adj) 1(n_adj)
-     elif (1.pos_tag/tl=n) 1(n_only)
+     elif (1.pos_tag/tl=n) 1(adj_to_n)
      elif (1.pos_tag/tl=prn) 1(prn_other)
      elif (1.pos_tag/tl=vblex) 1(vblex_infin)
      elif (1.deriv = der_aadv and 1.comp ="") 1(adj_adv)
@@ -481,7 +482,8 @@ AP -> "AP:adj" 1: %adj.*.[caseattr] { %1[case=(if (1.lem=buorre and 1.function="
 	| "AP:num jagi boaris" 2: %num jahki@n boaris@adj { 1[case=gen] _ 3[lem=jagák] } 
 	| "AP:numcmp jahkásaš" 2: %num.cmp_hyph.cmp jahkásaš@adj { 1[number=sg,case=gen,cmp="",onlycmp="",hyph="",num_type=arab] 
 	_ 2[lem=jagák] } 
-	| "AP:num jahkásaš" 5: num %jahkásaš@adj { 1 _ %2[lem=jagák] } 
+	| "AP:num jahkásaš" 5: num.*.cmp %jahkásaš@adj { 1[lemcase=$lemcase,cmp="",onlycmp="",case=gen,number=sg] _ %2[lem=jagák] } 
+	| "AP:num jahkásaš" 5: num %jahkásaš@adj { 1[lemcase=$lemcase] _ %2[lem=jagák] } 
 	| "AP:num jahkásaččat.adv" 4: num.*.gen %jahkásaččat@adv { 1 _ %2[lem=jagák,pos_tag=adj,number=pl,case=nom] } ! feil disambiguering
 	;
 
@@ -552,7 +554,7 @@ NegVP -> "ii dadjat@conneg ieš NP.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.
 	(3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) "" else 4.infin),mood=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) indic else ""),
 	tense=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) pres else ""),person=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) p3 else ""),
 	number=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) 3.number else "")] } !!! in jáhke nieidda boahtit > iv jáhke næjttso boahtá
-	| "ii conneg prn vblex" 6: ii@vblex.iv.neg %vblex.*.conneg prn vblex ?(3.prnref = "") { 1[lemcase=$lemcase,tense=(if (2.tense="") pres else 2.tense)] _ %2[mood=2.mood,conneg=2.conneg] 
+	| "ii conneg prn vblex" 6: ii@vblex.iv.neg %vblex.*.conneg prn vblex.*.[mainv] ?(3.prnref = "") { 1[lemcase=$lemcase,tense=(if (2.tense="") pres else 2.tense)] _ %2[mood=2.mood,conneg=2.conneg] 
 	_ 3[case=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) nom else 3.case)] _ 4[infin=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) "" 
 	else 4.infin),mood=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) indic else ""),tense=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) pres 
 	else ""),person=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) p3 else ""),number=(if (3.function="@-FSUBJ→" and 2.lem in dadjat_verbs) 3.number 

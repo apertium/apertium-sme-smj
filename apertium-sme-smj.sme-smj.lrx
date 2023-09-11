@@ -456,13 +456,17 @@
     <rule weight="0.5"><match lemma="nieida"> <select lemma="niejdda"/> </match></rule>
     <rule weight="0.6">
     <or>
-       <match tags="prn.*.*.gen.*"/>
+       <match tags="prn.pers.*.*.gen.@→N"/>
        <match tags="n.sem_hum.*.gen.*"/>
        <match tags="np.sem_fem.sg.gen.*"/>
        <match tags="np.sem_mal.sg.gen.*"/>
        <match tags="np.sem_sur.sg.gen.*"/>
     </or>
    <match lemma="nieida"> <select lemma="niejdda"/> </match></rule>
+    <rule weight="0.8">
+   <match lemma="nieida" tags="*.px3sg.*"> <select lemma="niejdda"/> 
+	   
+   </match></rule>
 
 
     <rule weight="1.0"><match lemma="ge"> <select lemma="aj"/> </match></rule>
@@ -1773,6 +1777,11 @@
 
     <rule weight="1.0">
       <match lemma="illu" tags="n.*.sg.loc.*">
+        <select lemma="ávvo"/>
+      </match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="illu" tags="n.*.sg.ine.*">
         <select lemma="ávvo"/>
       </match>
     </rule>

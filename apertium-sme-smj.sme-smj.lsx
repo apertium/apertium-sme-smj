@@ -68,6 +68,15 @@
 	<sdef n="pret"/>
     <sdef n="prfprc"/>
 	<sdef n="prn"/>
+	<sdef n="px1sg"/>
+	<sdef n="px2sg"/>
+	<sdef n="px3sg"/>
+	<sdef n="px1du"/>
+	<sdef n="px2du"/>
+	<sdef n="px3du"/>
+	<sdef n="px1pl"/>
+	<sdef n="px2pl"/>
+	<sdef n="px3pl"/>
     <sdef n="qst"/>
     <sdef n="sem_ani"/>
     <sdef n="sem_hum"/>
@@ -97,6 +106,7 @@
     <sdef n="@-FSUBJ→"/> 
     <sdef n="@→N"/> 
     <sdef n="@N←"/>
+    <sdef n="@Num←"/>
     <sdef n="@SUBJ→"/> 
   </sdefs>
 
@@ -131,6 +141,18 @@
       <e><par n="word"/></e>
       <e></e>
     </pardef>
+    <pardef n="kin">
+      <e><i>eadni</i></e>
+      <e><i>áhčči</i></e>
+      <e><i>áddjá</i></e>
+      <e><i>áhkku</i></e>
+      <e><i>viellja</i></e>
+      <e><i>oabbá</i></e>
+    </pardef>
+    <pardef n="hum_number_case">
+      <e><i><s n="n"/><s n="sem_hum"/><s n="sg"/><t/></i></e>
+      <e><i><s n="n"/><s n="sem_hum"/><s n="pl"/><t/></i></e>
+    </pardef>
     <pardef n="vblex_trans">
       <e><i><w/><s n="vblex"/><s n="iv"/></i></e>
       <e><i><w/><s n="vblex"/><s n="tv"/></i></e>
@@ -146,12 +168,14 @@
       <e><i><s n="@ADVLqst-ela→"/></i></e>
       <e><i><s n="@-F←ADVL-ela"/></i></e>
       <e><i><s n="@N←"/></i></e>
+      <e><i><s n="@Num←"/></i></e>
       <e><i><t/><s n="@←ADVL-ela"/></i></e>
       <e><i><t/><s n="@ADVL-ela→"/></i></e>
       <e><i><t/><s n="@ADVLcs-ela→"/></i></e>
       <e><i><t/><s n="@ADVLqst-ela→"/></i></e>
       <e><i><t/><s n="@-F←ADVL-ela"/></i></e>
       <e><i><t/><s n="@N←"/></i></e>
+      <e><i><t/><s n="@Num←"/></i></e>
     </pardef>
     <pardef n="ine_syntax_tag">
       <e><i><s n="@ADVLhab→"/></i></e>
@@ -369,6 +393,17 @@
       <p><l><s n="der_geahtes"/></l><r><s n="der_nomact"/><s n="n"/><s n="der_ahtes"/></r></p>
       <i><t/><d/></i>
    </e>
+    <e r="LR"> <!-- dan nammii > dasa  -->
+	  <i><w/><t/></i>
+      <p><l><s n="gen"/></l><r><s n="ill"/></r></p>
+	  <i><t/><d/></i>
+      <p><l>nammii<s n="post"/></l><r></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR"> <!-- beaivvát ala > dalá  -->
+      <p><l>beaivi<t/><d/></l><r></r></p>
+      <p><l>ala<s n="post"/></l><r>dalá<s n="adv"/></r></p>
+      <i><t/><d/></i>
+   </e>
 
     <e r="LR">
       <p><l>váldit</l><r>vuhtiiváldit</r></p>
@@ -399,7 +434,60 @@
       <p><l>ahte<s n="cnjsub"/></l><r>dihte<s n="post"/></r></p>
       <i><t/><d/></i>
    </e>
-
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px1sg"/></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p1"/><s n="du"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px1du"/></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px1pl"/></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px2sg"/></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p2"/><s n="du"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px2du"/></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px2pl"/></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px3sg"/></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p3"/><s n="du"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px3du"/></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR">
+      <p><l><w/><s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
+	  <par n="kin"/>      
+	  <par n="hum_number_case"/>      
+	  <p><l></l><r><s n="px3pl"/></r></p><par n="syntax_tags"/>
+   </e>
     <e r="LR">
       <p><l>dađi</l><r>dađistaga</r></p>
       <i><s n="adv"/><t/><d/></i>
