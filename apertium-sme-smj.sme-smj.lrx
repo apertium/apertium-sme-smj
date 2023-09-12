@@ -382,7 +382,7 @@
 
 
     <rule weight="1.0">
-      <match lemma="sakka"> <select lemma="sieldes"/> </match>
+      <match lemma="sakka"> <select lemma="sælldásit"/> </match>
     </rule>
     <rule weight="0.5">
       <match lemma="sakka"> <select lemma="sælldásit"/> </match>
@@ -2994,6 +2994,12 @@
       <match tags="np.*.*.ela.*"/>
     <match lemma="eret"><select lemma="" /></match></rule>
 
+    <rule weight="1.0"><match lemma="šaddu"><select lemma="sjaddo" /></match></rule>
+    <rule weight="0.5"><match lemma="šaddu"><select lemma="muorjem" /></match></rule>
+    <rule weight="0.6">
+    <match lemma="šaddu"><select lemma="muorjem" /></match>
+    <match lemma="gore"/>
+    </rule>
 
     <rule weight="1.0"><match lemma="oba" tags="adv.*"><select lemma="åbbå" /></match></rule>
     <rule weight="0.5"><match lemma="oba" tags="adv.*"><select lemma="åvvånis" /></match></rule>

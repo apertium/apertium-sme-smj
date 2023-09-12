@@ -436,7 +436,7 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "NP:num.sem_year.ill" 3: %num.sem_year.sg.ill { jahke@n.sg.ill _ %1[case=nom] }
 	| "NP:NP pcle" 1: %NP pcle (if (2.lem/tl="") { %1 } else { %1 _ 2})
 	| "NP:num N" 2: num %NP ?(1.function not = "@→A") {1[case=(if (1.case=loc and 2.function in advlela) ela elif (1.case=loc) ine elif (1.lem = akta) 1.case elif (1.case = acc) nom else 1.case)] _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine elif (1.lem = akta) 2.case elif (1.case=acc and 2.case=acc) gen else 2.case)]} !!!2009-2013 áigodagas
-	| "NP:prn.dem num N" 2: prn.dem %num NP {1 _ 2[case=(if (2.case=loc and 3.function in advlela) ela elif (2.case=loc) ine elif (2.lem = akta) 2.case elif (2.case = acc and 3.case = acc) nom else 2.case)] _ 3[case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine elif (2.lem = akta) 3.case elif (2.case = acc and 3.case = acc) gen else 3.case)]} !3.lem not = akta (1.case not = 2.case)
+	| "NP:prn.dem num N" 2: prn.dem %num NP {1[number=2.number,case=(if (2.case=loc and 3.function in advlela) ela elif (2.case=loc) ine else 1.case),attr=(if (1.case=loc) attr else 1.attr)] _ 2[case=(if (2.case=loc and 3.function in advlela) ela elif (2.case=loc) ine elif (2.lem = akta) 2.case elif (2.case = acc and 3.case = acc) nom else 2.case)] _ 3[number=2.number,case=(if (3.case=loc and 3.function in advlela) ela elif (3.case=loc) ine elif (2.lem = akta) 3.case elif (2.case = acc and 3.case = acc) gen else 3.case)]} !3.lem not = akta (1.case not = 2.case)
 	| "NP:prn.ref N" 2: prn.ref %NP { 1 _ 2} !ietjam viellja !! denne treffer nå også feildisambiguering, mer robust
 	| "NP:attrprn N" 2: [attrprn]@prn %NP { 1[number="",case="",attr=attr] _ 2} !iešguđetge doaimmaid, mer robust, i tilfelle feil syntagg  
 	| "NP:prn N" 3: prn.*."@→N" %NP { 1[number=(if (1. lem in attrprn) "" else 1.number),case= (if (1. lem in attrprn) "" else 1.case)] _ 2} !dav vielja, juohke sajis !!!  
@@ -598,7 +598,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 
 	| "FAUXV vblex NP.acc" 2: vblex.trans.mood.$person.$number."@+FAUXV" %vblex.*."@-FMAINV" NP.*.acc { 1[lemcase=$lemcase] _ 3 _ %2 } ! 
 	| "FAUXV pcle FMAINV NP" 2: vblex.trans.mood.$person.$number."@+FAUXV" pcle %V.*."@-FMAINV" NP { 1[lemcase=$lemcase] _ 2 _ 4 _ %3 }! 
-	| "@-FMAINV NP vblex" 2: vblex.*."@-FMAINV" NP %vblex { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs and 3.infin=inf) supn else 3.infin)] }
+	| "@-FMAINV NP vblex" 2: vblex.*."@-FMAINV" NP %vblex ?(3.onlycmp= "") { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs and 3.infin=inf) supn else 3.infin)] }
 	| "vblex AdvP vblex" 1: vblex AdvP %vblex ?(3.onlycmp="") (if (1.function="@+FMAINV" and 2.lem incl placetimeadv) { 2[lemcase=1.lemcase] 
 	_ 1[lemcase=2.lemcase] _ %3 } else { 1[lemcase=$lemcase] _ 2 _ %3 })! 
 	| "vblex AdvP vblex" 1: %V.*."@+FMAINV" prn AdvP { %1[lemcase=$lemcase] _ 2 _ 3 } ! Oaččun dan hálbbit
@@ -792,8 +792,8 @@ S ->
 	| "VP cnjcoo VP" 1: %VP cnjcoo VP { 1[lemcase=$lemcase] _ %2 _ 3 } !
 	| "V PCLE PRN NP" 1: %V PCLE PRN NP { %1 _ 2 _ 3 _ 4 } !!! leat go dus appelsiinnat?
 	| "VP PRN PP" 1: %VP PRN PP { %1 _ 2 _ 3 } !!! mii leamaš stuorra giksin sutnje nuoraidskuvlla rájes.  
-	| "leat@+FMAINV SUBJext" 3: %leat@vblex.*."@+FMAINV" NP.*."@←SUBJext" { %1 _ 2 }   
-	| "leat@+FMAINV NP@←SUBJ" 3: %leat@vblex.*."@+FMAINV" NP.*."@←SUBJ" { %1 _ 2 }   
+	| "leat@+FMAINV SUBJext" 3: %leat@vblex.*."@+FMAINV" NP.*."@←SUBJext" { %1[lemcase=$lemcase,number=2.number] _ 2 } !  
+	| "leat@+FMAINV NP@←SUBJ" 3: %leat@vblex.*."@+FMAINV" NP.*."@←SUBJ" { %1[lemcase=$lemcase,number=2.number] _ 2 }   
 	| "leat@+FMAINV NP@←SUBJ prn@←SUBJ" 3: %leat@vblex.*."@+FMAINV" NP.*."@←SUBJ" prn.*."@←SUBJ" { %1 _ 2 _ 3 } !guovttis earát  
 	| "@+FMAINV NP@←SUBJ" 1: %vblex.*."@+FMAINV" NP.*."@←SUBJ" { %1[number=2.number] _ 2 }!Beassážiid áiggi lávejit márkanat   
 	| "@+FMAINV prn@←SUBJ" 1: %vblex.*."@+FMAINV" prn.*."@←SUBJ" { %1 _ 2 }   
