@@ -172,12 +172,13 @@ adpos: _ ;
 qst: _ ;
 pcle : _.qst ;
 adv_only: _.abbr.gramtag.poss ;
-adv_to_noun: <n>.number.case ;
+adv_to_noun: <n>.number.case ;  
+adv_to_prn: <prn>.prn_type.case.person.number.attr ;  
 
 adv: (if (1.pos_tag/tl=n) 1(adv_to_noun)
      elif (1.pos_tag/tl=adj) 1(adj_pred)
      elif (1.pos_tag/tl=cnjcoo) 1(cnjcoo)
-     elif (1.pos_tag/tl=prn) 1(prn_ref)
+     elif (1.pos_tag/tl=prn) 1(adv_to_prn)
      else 1(adv_only)) ;
 
 
@@ -461,7 +462,7 @@ NUM -> "NUM:num" 1: %num.*.[case] ?(1.right="") { %1 }
 
 
 PRN -> "prnnotfocsme" 1: %[prnnotfocsme]@prn { %1[foc=""] }
-	| "adv to prn.ref" 1: %adv ?(1.pos_tag/tr=prn) { %1 } !iesj<prn><ref><sg><ine><px3sg> iesj<prn><ref><sg><ine><px3sg>
+	| "adv to prn" 1: %adv ?(1.pos_tag/tr=prn) { %1[lemcase=$lemcase] } !iesj<prn><ref><sg><ine><px3sg> iesj<prn><ref><sg><ine><px3sg>
 	| "prn not res" 1: %prn ?(1.prn_type not = res) { %1[lemcase=$lemcase,foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] }
 	| "prn.res not nubbe" 2: %prn.res ?(1.lem not = nubbe)  { %1(prn_res) }
 	| "prn.res nubbe nuppe" 2: prn.res %prn.res { 1[lemcase=$lemcase] _ %2 }
