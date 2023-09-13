@@ -260,6 +260,7 @@ vblex_splitr: (if (1.cmpsplitr in cmpsplitr and 1.v2v in v2v) 1(vblex_vblex_cmps
 
 
 vblex: (if (1.conneg = conneg and 1.lem/tl incl liehket and 1.mood = "indic") 1(vblex_liehket_conneg)
+        elif (1.pos_tag/tl=adj) 1(vblex_to_adj)
         elif (1.infin = "" and 1.conneg = "" and 1.lem/tl incl liehket and 1.mood = "indic") 1(vblex_liehket_fin)
         elif (1.v2v in v2v and 1.v2vv in v2vv and 1.v2n in v2n) 1(vblex_vblex_vblex_n)
         elif (1.v2v in v2v and 1.v2n in v2n) 1(vblex_vblex_n)
@@ -276,7 +277,6 @@ vblex: (if (1.conneg = conneg and 1.lem/tl incl liehket and 1.mood = "indic") 1(
         elif (1.conneg = conneg) 1(vblex_conneg)
         elif (1.mood = "cond" or 1.mood = "pot") 1(vblex_mood2)
         elif  (1.infin = "") 1(vblex_fin)
-        elif (1.pos_tag/tl=adj) 1(vblex_to_adj)
         else 1(vblex_infin)
        ) ;
 
@@ -377,7 +377,7 @@ NP ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase]}
 	| "N:np.cmp n" 3: np.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} !!! Nobelkomitea
 	| "N:num.cmp n" 3: num.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} !!! njealje-bearraša
 	| "N:adj.cmp n" 3: adj.*.cmp %n.*.[case] { 1[lemcase=$lemcase,cmp=(if (1.adj_type="") cmp_attr else 1.cmp)] + %2} 
-	| "N:adj.cmp n n" 3: adj.*.cmp n.*.cmp %n.*.[case] { 1[lemcase=$lemcase,cmp=(if (1.adj_type="") cmp_attr else 1.cmp)] + 2 + %3} 
+	| "N:adj.cmp n n" 3: adj.*.cmp n.*.cmp %n.*.[case] { 1[lemcase=$lemcase,cmp=(if (1.pos_tag/tl=n) cmp_sgnom elif (1.adj_type="") cmp_attr else 1.cmp)] + 2 + %3} 
 	| "N:n.cmp vblex" 3: n.*.cmp %vblex ?(2.onlycmp= "") { 1[lemcase=$lemcase] + %2(vblex_v2v) } !!! koronačavgen
 	| "N:n.cmp vblex n" 2: n.*.cmp vblex.*.cmp %n.*.[case] { 1[lemcase=$lemcase] + 2 + %3} 
 	| "N:n.cmp n.cmp vblex" 2: n.*.cmp n.*.cmp %vblex ?(3.onlycmp= "") { 1[lemcase=$lemcase] + 2 + %3} 
@@ -394,7 +394,9 @@ NP ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase]}
 
 NP -> "Name:np" 1: %np.*.[case].$function { %1 } 
 	| "Name:np eret" 1: %np.*.ela eret@adv { %1 }
-	| "Name:np.cmp np" 3: np.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
+	| "Name:np.cmp np" 3: np.*.cmp %np.*.[caseattr] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
+	| "Name:np.cmp np.cmp np" 3: np.*.cmp np.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2[hyph=cmp_hyph] + %3 } !!! 
+	| "Name:np.cmp np.cmp np" 3: np.*.cmp np.*.cmp %n { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2[hyph=cmp_hyph] + %3 } !!! 
 	| "Name:n.cmp np" 3: n.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
 	| "Name:N Name" 1: np.*."@→N" %NP {1 _ %2 } !Samuel John N. Anti, Verdens Gang aviisii
 	| "Name:N Name" 1: n.*."@→N" %np {1 _ %2 } !Nils I. Hætta
@@ -600,8 +602,8 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	| "FAUXV pcle FMAINV NP" 2: vblex.trans.mood.$person.$number."@+FAUXV" pcle %V.*."@-FMAINV" NP { 1[lemcase=$lemcase] _ 2 _ 4 _ %3 }! 
 	| "@-FMAINV NP vblex" 2: vblex.*."@-FMAINV" NP %vblex ?(3.onlycmp= "") { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if (1.lem incl smj-supn-triggerverbs and 3.infin=inf) supn else 3.infin)] }
 	| "vblex AdvP vblex" 1: vblex AdvP %vblex ?(3.onlycmp="") (if (1.function="@+FMAINV" and 2.lem incl placetimeadv) { 2[lemcase=1.lemcase] 
-	_ 1[lemcase=2.lemcase] _ %3 } else { 1[lemcase=$lemcase] _ 2 _ %3 })! 
-	| "vblex AdvP vblex" 1: %V.*."@+FMAINV" prn AdvP { %1[lemcase=$lemcase] _ 2 _ 3 } ! Oaččun dan hálbbit
+	_ 1[lemcase=2.lemcase] _ %3[infin= (if (3.function in supnfunction) supn else 3.infin)]} else { 1[lemcase=$lemcase] _ 2 _ %3[infin= (if (3.function in supnfunction) supn else 3.infin)] })! 
+	| "vblex AdvP vblex" 1: %V.*."@+FMAINV" prn AdvP { %1[lemcase=$lemcase] _ 2 _ 3[infin= (if (3.function in supnfunction) supn else 3.infin)] } ! Oaččun dan hálbbit
 	| "vblex AdvP vblex NP" 1: vblex AdvP %vblex NP (if (1.function="@+FMAINV" and 2.lem incl placetimeadv) { 2[lemcase=1.lemcase] 
 	_ 1[lemcase=2.lemcase] _ 4 _ %3 } else { 1[lemcase=$lemcase] _ 2 _ 4 _ %3 })
 	!!! Son geahččala ain ohcat Jaakko. > Sån ájn gæhttjal Jaakkov åhtsåt.

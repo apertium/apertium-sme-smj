@@ -161,7 +161,10 @@
       <i>giehta<s n="n"/><s n="sg"/></i>
       <p><l><s n="ela"/><d/></l><r><s n="ill"/><d/></r></p>
    </e>
-    <e r="RL"> <!-- råhttit vuojŋŋat > båssit -->
+     <e r="RL"> <!-- tom adv -->
+      <p><l></l><r><s n="adv"/><d/></r></p>
+   </e>
+   <e r="RL"> <!-- råhttit vuojŋŋat > båssit -->
       <p><l>båssit<s n="vblex"/></l><r>råhttit<s n="vblex"/></r></p>
       <i><t/><d/></i>
       <p><l></l><r>vuojŋadahka<s n="n"/><t/><d/></r></p>

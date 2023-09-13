@@ -379,6 +379,16 @@
       <match />
       <match lemma="gárremiin"/>
      </rule>
+    <rule weight="1.0">
+      <match lemma="muđui"> <select lemma="dasi duodden"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="muđui"> <select lemma="ietján"/> </match>
+    </rule>
+    <rule weight="0.6">
+       <match />
+     <match lemma="muđui"> <select lemma="ietján"/> </match>
+    </rule>
 
 
     <rule weight="1.0">
