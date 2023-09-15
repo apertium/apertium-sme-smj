@@ -181,7 +181,6 @@ adv: (if (1.pos_tag/tl=n) 1(adv_to_noun)
      elif (1.pos_tag/tl=prn) 1(adv_to_prn)
      else 1(adv_only)) ;
 
-
 num_only: _.num_type.number.case.attr.cmp.hyph.cmpsplitr.onlycmp ;
 num: (if (1.pos_tag/tl=prn) 1(prn_other)
 	  elif (1.num_type = arab and 1.case = acc) 1(num_only)[case=nom]
@@ -292,6 +291,21 @@ vblex_v2v: (
        ) ;
 
 
+refl2pers: (
+          if (1.poss=px1sg)   1(prn_pers)[lem=mån,number=sg,person=p1]
+          elif (1.poss=px2sg)   1(prn_pers)[lem=dån,number=sg,person=p2]
+          elif (1.poss=px3sg)   1(prn_pers)[lem=sån,number=sg,person=p3]
+          if (1.poss=px1du)   1(prn_pers)[lem=mån,number=du,person=p1]
+          elif (1.poss=px2du)   1(prn_pers)[lem=dån,number=du,person=p2]
+          elif (1.poss=px3du)   1(prn_pers)[lem=sån,number=du,person=p3]
+          if (1.poss=px1pl)   1(prn_pers)[lem=mån,number=pl,person=p1]
+          elif (1.poss=px2pl)   1(prn_pers)[lem=dån,number=pl,person=p2]
+          elif (1.poss=px3pl)   1(prn_pers)[lem=sån,number=pl,person=p3]
+      else 1(prn_pers)
+       ) ;
+
+
+
 !!!!!!!!!!!!!!!
 !! TAG-REWRITE RULES
 !!!!!!!!!!!!!!!
@@ -341,8 +355,9 @@ moveverbs = "vuolgget" "mannat" "bisánit" ;
 copulas = "liehket" "leat" "šaddat" "sjaddat" ;
 liehket = "liehket" ;
 ij = "ij" ;
+nonumprn = "visot" ;
 
-
+possadv = "bieles" "gaskan" "vuolen" ;
 actio_ill_verbs = "liikot" ;
 loc2acc_verbs = "guossidit" ;
 ill2ine_verbs = "báhtset" "báhcit" ;
@@ -463,7 +478,7 @@ NUM -> "NUM:num" 1: %num.*.[case] ?(1.right="") { %1 }
 
 PRN -> "prnnotfocsme" 1: %[prnnotfocsme]@prn { %1[foc=""] }
 	| "adv to prn" 1: %adv ?(1.pos_tag/tr=prn) { %1[lemcase=$lemcase] } !iesj<prn><ref><sg><ine><px3sg> iesj<prn><ref><sg><ine><px3sg>
-	| "prn not res" 1: %prn ?(1.prn_type not = res) { %1[lemcase=$lemcase,foc=(if (1.lem in prnnotfocsmj) "" else 1.foc)] }
+	| "prn not res" 1: %prn ?(1.prn_type not = res) { %1[lemcase=$lemcase,foc=(if (1.lem in prnnotfocsmj) "" else 1.foc),number=(if (1.number/tl="") "" else 1.number)] }
 	| "prn.res not nubbe" 2: %prn.res ?(1.lem not = nubbe)  { %1(prn_res) }
 	| "prn.res nubbe nuppe" 2: prn.res %prn.res { 1[lemcase=$lemcase] _ %2 }
 	| "ii prn N" 1: ii@vblex.iv.neg %prn.*."foc_neg-ge" N {1[lemcase=$lemcase,tense=pres] _ %2[foc=(if (2.lem in prnnotfocsmj) 
@@ -493,8 +508,8 @@ AP -> "AP:adj" 1: %adj.*.[caseattr] { %1[case=(if (1.lem=buorre and 1.function="
 	| "AP:num jahkásaččat.adv" 4: num.*.gen %jahkásaččat@adv { 1 _ %2[lem=jagák,pos_tag=adj,number=pl,case=nom] } ! feil disambiguering
 	;
 
-AdvP -> "AdvP:adv" 1: %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (1.number/tl not = "") 1.number)] })
-	| "AdvP:adv cnjcoo adv " 1: %adv cnjcoo adv { %1 _ 2 _ 3 }
+AdvP -> "AdvP:adv" 1: %adv.*.$function (if (1.lem/tl="") { } else { %1[number=(if (1.number/tl not = "") 1.number),poss=(if (1.lem incl possadv) 1.poss else "")] })
+	| "AdvP:adv cnjcoo adv " 1: %adv cnjcoo adv { %1[poss=(if (1.lem in possadv) 1.poss else "")] _ 2 _ 3[poss=(if (3.lem in possadv) 3.poss else "")] }
 	| "AdvP:adv adv" 1: adv."@→ADVL" %adv { 1 _ %2[number=(if (2.number/tl not = "") 2.number)] } !ienep vuojnnusij
 	| "AdvP:pcle adv" 1: pcle %adv (if (1.lem/tl="") { %2 } else { 1 _ %2 })
 	| "AdvP:adv pcle" 1: %adv pcle (if (2.lem/tl="") { %1 } else { %1 _ 2 })
@@ -518,8 +533,7 @@ PP -> ! "N post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case
 	; !
 
 NegVP -> "ii dadjat@conneg ieš NP.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.*.conneg %ieš@prn.ref NP.*.acc 
-	{ 1[lemcase=$lemcase,tense=(if (2.tense="") pres else 2.tense)] _ 2 _ %3[pos_tag=prn,prn_type=pers,person=3.poss,number=3.poss,lem=(if 
-	(3.poss=px1sg or 3.poss=px1du or 3.poss=px1pl) mån elif (3.poss=px2sg or 3.poss=px2du or 3.poss=px2pl) dån else sån)] 
+	{ 1[lemcase=$lemcase,tense=(if (2.tense="") pres else 2.tense)] _ 2 _ %3(refl2pers) 
 	_ liehket@vblex.indic.pres.p3.[4.number] _ 4[case=nom]} !!! Ii jáhkkán alddis dávdda. > Ittjij jáhke sujna la dávdda.
 	| "ii lohkat@conneg adj.ess" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg adj.ess 
 	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1[person=p3,number=sg] _ liehket@vblex.iv.indic.pres.conneg _ 
@@ -528,8 +542,7 @@ NegVP -> "ii dadjat@conneg ieš NP.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.
 	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1[person=p3,number=sg] _ liehket@vblex.iv.indic.pres.conneg _ 
 	3[number=sg,case=nom]} !!! eai loga leaikan > javlli ij la boagos
 	|"ii lohkat@conneg ieš inf" 4: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg ieš@prn vblex.*.[infin] 
-	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 2(prn_pers)[person=3.poss,number=3.poss,case=3.case,lem=(if 
-	(3.poss=px1sg or 3.poss=px1du or 3.poss=px1pl) mån elif (3.poss=px2sg or 3.poss=px2du or 3.poss=px2pl) dån else sån)] 
+	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 3(refl2pers) 
 	_ 1[person=3.poss,number=3.poss,tense=(if (3.infin=prfprc) pret else pres)] _ 4[infin="",mood=indic,person=1.person,number=1.number,conneg=conneg,tense=(if (4.lem=liehket) 1.tense else "")]} !!! ii loga iežas healkkehit > javllá sån ij hielkeda.
 	|"ii lohkat@conneg inf" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg vblex.*.[infin] (if (3.infin="actio.ess") 
 	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ sån(prn_pers)[case=nom,lem=(if (1.person=p1) mån elif (1.person=p2) dån else sån),number=1.number,person=1.person] _ 1[tense=(if (3.infin=prfprc) pret else pres)] _ liehket@vblex.iv.indic.pres.conneg _ 3} 
@@ -541,7 +554,7 @@ NegVP -> "ii dadjat@conneg ieš NP.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.
 	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 3[case=nom] 
 	_ 1[person=p3,number=3.number] _ 4[infin="",mood=indic,person=1.person,number=1.number,conneg=conneg,tense=(if (4.lem=liehket) 1.tense else "")]} !!! ii loga nieiddaid diehtit > javllá næjtso e diede
 	|"ii lohkat@conneg ieš ess" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg ieš@prn.ref adj.ess 
-	{ %2[lemcase=1.lemcase,conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1(prn_pers)[case=(if (3.case=acc) nom else 3.case),lem=(if (3.poss=px1sg or 3.poss=px1du or 3.poss=px1pl) mån elif (3.poss=px2sg or 3.poss=px2du or 3.poss=px2pl) dån else sån)] _ 1 _ liehket@vblex.iv.indic.pres.conneg _ 4[number=1.number,case=nom]} !!! Son ii loga iežas árgin > javllá sån ij la hárgge
+	{ %2[lemcase=1.lemcase,conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 3(refl2pers)[case=(if (3.case=acc) nom else 3.case)] _ 1 _ liehket@vblex.iv.indic.pres.conneg _ 4[number=1.number,case=nom]} !!! Son ii loga iežas árgin > javllá sån ij la hárgge
 !!!	| "ii lohkat@conneg ess.@←OPRED vblex.inf" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg adj.*."@←OPRED" vblex.*.inf 
 !!!	{ %2[lemcase=$lemcase,conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1 _ liehket@vblex.iv.indic.pres.conneg _ 
 !!!	3[number=sg,case=nom] _ 4[infin=inf]} !sii eai loga váttisin čuoigat > javlli ij la gássjel tjuojggat OVERFLØDIG
@@ -634,21 +647,16 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	%3[infin="",mood=indic,tense=(if (1.tense="") pres else 1.tense),person=p3,number=2.number] } !!!jáhkká skuvlla váikkuhit > jáhkká skåvllå vájkkut
 	| "dadjat inf" 4: [dadjat_verbs]@vblex %vblex.*.inf."@←OBJ" { 1[lemcase=$lemcase] _ %2[infin="",mood=indic,tense=(if (1.tense="") pres else 1.tense),person=p3,number=1.number] } !!!son lohká dovdat > jáhkká skåvllå vájkkut
 !!!	| "dadjat ieš.ref prfprc" 5: %[dadjat_verbs]@vblex ieš@prn.ref vblex.*.prfprc { 1[lemcase=$lemcase] _ 
-!!!	%2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=nom,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif 
-!!!	(2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3} !!! Son muitala iežas fitnan. > Sån subtsas sån la guossidam.
-	| "dadjat ieš.ref infin" 5: %[dadjat_verbs]@vblex ieš@prn.ref vblex.*.[infin] ?(1.conneg="") (if (2.function in fsubjadvl and 2.case in casenotacc and 3.infin in accinfitforms) { 1[lemcase=$lemcase] _ %2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=nom,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif 
-	(2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3} 
-	!!! Son muitala iežas fitnan. > Sån subtsas sån la guossidam.
+!!!	%2(refl2pers) _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3} !!! Son muitala iežas fitnan. > Sån subtsas sån la guossidam.
+	| "dadjat ieš.ref infin" 5: %[dadjat_verbs]@vblex ieš@prn.ref vblex.*.[infin] ?(1.conneg="") 
+	(if (2.function in fsubjadvl and 2.case in casenotacc and 3.infin in accinfitforms) { 1[lemcase=$lemcase] _ %2(refl2pers) _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3} 
 	elif (2.function in fsubjadvl and 2.case in casenotacc and 3.infin=inf) 
-	{ 1[lemcase=$lemcase] _ %2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=2.case,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif 
-	(2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ 3[infin="",mood=indic,tense=pres,person=2.poss,number=2.poss]} 
+	{ 1[lemcase=$lemcase] _ %2(refl2pers) _ 3[infin="",mood=indic,tense=pres,person=2.poss,number=2.poss]} 
 	else { %1[lemcase=$lemcase] _ 2 _ 3 })
-		| "dadjat ieš.ref prfprc v.ess" 5: %[dadjat_verbs]@vblex ieš@prn.ref vblex.*.prfprc vblex.*.ess { 1[lemcase=$lemcase] _ 
-	%2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=nom,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif 
-	(2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3 _ 4[infin=inf]} !!! Son muitala iežas fitnan. > Sån subtsas sån la guossidam.
+	| "dadjat ieš.ref prfprc v.ess" 5: %[dadjat_verbs]@vblex ieš@prn.ref vblex.*.prfprc vblex.*.ess { 1[lemcase=$lemcase] _ 
+	%2(refl2pers) _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 3 _ 4[infin=inf]} !!! Son muitala iežas fitnan. > Sån subtsas sån la guossidam.
 	| "dadjat ieš.ref adj.ess" 5: %[dadjat_verbs]@vblex ieš@prn.ref adj.*.ess { 1[lemcase=$lemcase] _ 
-	%2[pos_tag=prn,prn_type=pers,person=2.poss,number=2.poss,case=nom,lem=(if (2.poss=px1sg or 2.poss=px1du or 2.poss=px1pl) mån elif 
-	(2.poss=px2sg or 2.poss=px2du or 2.poss=px2pl) dån else sån)] _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 
+	%2(refl2pers)[case=nom] _ liehket(vblex)[mood=indic,tense=pres,person=2.poss,number=2.poss] _ 
 	3[number=2.poss,case=nom]} !!! Son lohká iežaset duđavažžan. > Sån javllá sij li dudálattja.
 	| "dadjat n adj.ess" 5: %[dadjat_verbs]@vblex NP.*.acc adj.*.ess { 1[lemcase=$lemcase] _ %2[case=nom] _ liehket(vblex)[mood=indic,tense=pres,person=p3,number=2.number] _ 3[number=2.number,case=nom]} !!! Son lohká ášši miellagiddevažžan. > Sån javllá ássje l miellagiddis
 	| "dadjat adj.ess" 5: %[dadjat_verbs]@vblex adj.*.ess { %1[lemcase=$lemcase] _ liehket(vblex)[mood=indic,tense=pres,person=p3,number=sg] _ 2[number=sg,case=nom]} !!! Son lohká miellagiddevažžan. > Sån javllá l miellagiddis
@@ -690,7 +698,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	| "vblex NP vblex@N← prn@-F←OBJ" 3: vblex NP %vblex.*."@N←" prn.*."@-F←OBJ" { 1[lemcase=$lemcase] _ 2 _ %4[number=4.number] _ 3 } 
 	| "leat@prfprc NP vblex" 3: liehket@V.prfprc.[mainv].sentinit NP %vblex {liehket(vblex_fin)[lemcase=1.lemcase,mood=indic,tense=pres,person=p3,number=sg] _ 1[lemcase=2.lemcase] _ 2 _ %3 }
 	| "@mainv NP vblex" 3: V.*.[mainv] NP %vblex ?(3.onlycmp = "") (if (2.function="@-FSUBJ→" and 2.case=nom and 3.infin in accinfitforms) 
-	{1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag = N and 2.number = du) sg else 2.number)] _ 
+	{1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag=n and 2.number = du) sg else 2.number)] _ 
 	liehket(vblex_fin)[mood=indic,tense=(if (1.tense="") pres else 1.tense),person=p3,number=2.number] _ %3} elif 
 	(2.function="@-FSUBJ→" and 2.case=nom and 3.infin=inf) 
 	{1[lemcase=$lemcase] _ 2[case=nom] _ %3[infin="",mood=indic,tense=pres,person=p3,number=2.number]}
@@ -699,7 +707,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	else 3.infin) else 3.infin) ] }) !!! oainnán nieidda stoahkamin > oainnán nieida lea stoahkamin 
 
 	| "@+FMAINV NP AdvP vblex" 3: V.*.[mainv] NP AdvP %V ?(4.onlycmp = "") (if (2.function="@-FSUBJ→" and 2.case=nom and 4.infin in accinfitforms) 
-	{1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag = N and 2.number = du) sg else 2.number)] _ 3 _ 
+	{1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag=n and 2.number = du) sg else 2.number)] _ 3 _ 
 	liehket(vblex_fin)[mood=indic,tense=(if (1.tense="") pres else 1.tense),person=p3,number=2.number] _ %4} elif 
 	(2.function="@-FSUBJ→" and 2.case=nom and 4.infin=inf) 
 	{1[lemcase=$lemcase] _ 3 _ 2[case=nom] _ %4[infin="",mood=indic,tense=pres,person=p3,number=2.number]}
@@ -708,7 +716,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	else 4.infin) else 4.infin) ] }) !!! jáhkká gádjunveaga dál viežžan dihtora > 
 
 	| "@+FMAINV NP vblex AdvP" 2: V.*.[mainv] N %vblex AdvP ?(3.onlycmp = "") (if (2.function="@-FSUBJ→" and 2.case=nom and 3.infin in accinfitforms) 
-	{1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag = N and 2.number = du) sg else 2.number)] _ 
+	{1[lemcase=$lemcase] _ 2[case=nom,number=(if (2.pos_tag=n and 2.number = du) sg else 2.number)] _ 
 	liehket(vblex_fin)[mood=indic,tense=(if (1.tense="") pres else 1.tense),person=p3,number=2.number] _ %3 _ 4} else { 1[lemcase=$lemcase] _ 2 _ %3[infin=(if 
 	(3.lem incl not-usually-supn-verbs) 3.infin elif (3.infin=inf) (if (1.lem incl smj-supn-triggerverbs or 3.function in supnfunction) supn 
 	else 3.infin) else 3.infin) ] _ 4 }) !!! oainnán nieidda stoahkamin > oainnán nieida lea stoahkamin 

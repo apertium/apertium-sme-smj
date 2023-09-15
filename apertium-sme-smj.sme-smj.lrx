@@ -2070,9 +2070,12 @@
    <match lemma="loahpas" />
    <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
  </rule>     
-       <rule weight="0.6">
+       <rule weight="0.8">
    <match lemma="šaddat" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match> 
+   <or>
    <match tags="*.der_comp.*" />
+   <match lemma="dárbu" />
+   </or>
  </rule>     
        <rule weight="0.5">
    <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 

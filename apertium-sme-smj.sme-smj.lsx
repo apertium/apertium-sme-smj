@@ -412,6 +412,12 @@
        <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
    </e>
     <e r="LR">
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
+     <p><l>veadjemeahttun<s n="adj"/></l><r>vejolaš<s n="adj"/></r></p>
+      <i><t/><d/></i>
+   </e>
+    <e r="LR">
       <p><l>vuhtii</l><r></r></p>
        <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
       <p><l>váldit</l><r>vuhtiiváldit</r></p>
