@@ -1471,6 +1471,7 @@
       <match tags="prn.*.acc.*"/>
        <match tags="np.sem_edu_org.*.loc.*"/>
        <match lemma="kapihtal"/>
+       <match lemma="vásáhus"/>
        <match lemma="kritihkalaš"/>
       <match tags="n.sem_domain.*"/>
        <match tags="n.sem_ani.pl.acc.*"/>
@@ -1848,6 +1849,27 @@
     <rule weight="0.6">
       <match lemma="goappašagat"/>
     <match lemma="gullevaš" tags="adj.*"><select lemma="gullut" tags="vblex.indic.pres.p3.du.*" /></match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="lullin"><select lemma="oarjján"/></match></rule>
+    <rule weight="0.5">
+      <match lemma="lullin"><select lemma="oarjját"/></match></rule>
+    <rule weight="0.6">
+      <match lemma="lullin" tags="adv.@←ADVL-ela"><select lemma="oarjját"/></match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="máddin"><select lemma="oarjján"/></match></rule>
+    <rule weight="0.5">
+      <match lemma="máddin"><select lemma="oarjját"/></match></rule>
+    <rule weight="0.6">
+      <match lemma="máddin" tags="adv.@←ADVL-ela"><select lemma="oarjját"/></match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="davvin"><select lemma="nuorttan"/></match></rule>
+    <rule weight="0.5">
+      <match lemma="davvin"><select lemma="nuorttat"/></match></rule>
+    <rule weight="0.6">
+      <match lemma="davvin" tags="adv.@←ADVL-ela"><select lemma="nuorttat"/></match>
     </rule>
 
     <rule weight="1.0">

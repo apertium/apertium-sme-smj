@@ -88,6 +88,7 @@
 	<sdef n="tv"/>
 	<sdef n="vblex"/>
     <sdef n="@→A"/> 
+    <sdef n="@ADVL"/>
     <sdef n="@ADVLhab→"/>
     <sdef n="@←ADVL-ine"/>
     <sdef n="@ADVL-ela→"/>
@@ -210,6 +211,9 @@
       <e><i>gáibidit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>gielestit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>jáhkkit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>sávvat<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>dáhttut<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>doaivut<s n="vblex"/><s n="tv"/><t/><d/></i></e>
     </pardef>
     <pardef n="maybe_syntax_tag">
       <e></e>
@@ -409,6 +413,17 @@
       <p><l>váldit</l><r>vuhtiiváldit</r></p>
       <i><s n="vblex"/><t/><d/></i>
       <p><l>vuhtii</l><r></r></p>
+       <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
+   </e>
+     <e r="LR">
+      <p><l>guokte<s n="num"/><s n="sg"/><t/></l><r>guktii<s n="adv"/><s n="@ADVL"/></r></p>
+      <i><d/></i>
+      <p><l>geardi<s n="n"/><t/></l><r></r></p><par n="syntax_tags"/>
+   </e>
+   <e r="LR">
+      <p><l>váldit</l><r>dustet</r></p>
+      <i><s n="vblex"/><t/><d/></i>
+      <p><l>vuostá</l><r></r></p>
        <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
    </e>
     <e r="LR">
