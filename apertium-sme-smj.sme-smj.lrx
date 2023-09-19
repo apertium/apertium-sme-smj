@@ -928,12 +928,12 @@
 
     <rule weight="0.5">
       <match lemma="muhtin">
-        <select lemma="nágin"/>
+        <select lemma="soames"/>
       </match>
     </rule>
     <rule weight="0.6">
       <match lemma="muhtin" tags="prn.ind.*.nom.@SUBJ→">
-        <select lemma="nágin"/>
+        <select lemma="soames"/>
       </match>
     </rule>
 
@@ -1406,42 +1406,26 @@
 
 
     <rule weight="1.0">
-      <match lemma="lohkat">
-        <select lemma="javllat"/>
-      </match>
+      <match lemma="lohkat"><select lemma="javllat"/></match>
     </rule>
-
     <rule weight="0.5">
-      <match lemma="lohkat">
-        <select lemma="låhkåt"/>
-      </match>
+      <match lemma="lohkat"><select lemma="låhkåt"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat" tags="vblex.tv.ger.*"><select lemma="låhkåt"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat" tags="vblex.tv.imp.*"><select lemma="låhkåt"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat" tags="vblex.tv.der_nomact.*"><select lemma="låhkåt"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat" tags="vblex.tv.actio.*"><select lemma="låhkåt"/></match>
     </rule>
 
     <rule weight="0.6">
-      <match lemma="lohkat" tags="vblex.tv.ger.*">
-        <select lemma="låhkåt"/>
-      </match>
-    </rule>
-    <rule weight="0.6">
-      <match lemma="lohkat" tags="vblex.tv.imp.*">
-        <select lemma="låhkåt"/>
-      </match>
-    </rule>
-    <rule weight="0.6">
-      <match lemma="lohkat" tags="vblex.tv.der_nomact.*">
-        <select lemma="låhkåt"/>
-      </match>
-    </rule>
-    <rule weight="0.6">
-      <match lemma="lohkat" tags="vblex.tv.actio.*">
-        <select lemma="låhkåt"/>
-      </match>
-    </rule>
-
-    <rule weight="0.6">
-      <match lemma="lohkat">
-        <select lemma="låhkåt"/>
-      </match>
+      <match lemma="lohkat"><select lemma="låhkåt"/></match>
 <or>
       <match tags="n.sem_rule.*.acc.*"/>
       <match tags="n.sem_org_txt.*.acc.*"/>
@@ -1451,6 +1435,7 @@
       <match tags="prn.*.acc.*"/>
        <match tags="np.sem_edu_org.*.loc.*"/>
        <match lemma="kapihtal"/>
+       <match lemma="galle"/>
        <match lemma="kritihkalaš"/>
       <match tags="n.sem_domain.*"/>
        <match tags="n.sem_ani.pl.acc.*"/>
@@ -2782,13 +2767,16 @@
       <match lemma="soaitit" tags="vblex.iv.indic.pres.p3.sg.*"><select lemma="soajttet"/></match>
     </rule>
        
-        <rule weight="0.5">
+      <rule weight="0.6">
+      <match lemma="soaitit"><select lemma="soajttet"/></match>
+      <match tags="vblex.*.inf.*"/>
+    </rule>
+       <rule weight="0.5">
       <match lemma="soaitit" tags="vblex.iv.indic.pres.p3.sg.*"><select lemma="ihkap"/></match>
     </rule>
  
         <rule weight="0.6">
-      <match lemma="soaitit"><select lemma="ihkap"/></match>
-      <match lemma="leat"/>
+      <match lemma="soaitit" tags="vblex.iv.indic.pres.p3.sg.*"><select lemma="ihkap"/></match>
     </rule>
 
 
