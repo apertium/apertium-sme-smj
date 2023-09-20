@@ -199,6 +199,11 @@
       <e><i><t/><s n="@-FSUBJ→"/><d/></i></e>
       <e><i><s n="@-FSUBJ→"/><d/></i></e>
     </pardef>
+    <pardef n="duhat">
+      <e><i>duhát<s n="num"/></i></e>
+      <e><i>čuohte<s n="num"/></i></e>
+      <e><i>čuođi<s n="num"/></i></e>
+    </pardef>
     <pardef n="dadjat">
       <e><i>dadjat<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>vuosedit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
@@ -276,18 +281,18 @@
       <i>máŋga<s n="prn"/><s n="ind"/></i>
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
-      <i><w/><s n="num"/></i>
+      <par n="duhat"/>
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
    </e>
-    <e r="LR"  w="0.0">  <!-- máŋggaid jagiid  -->
+<!--    <e r="LR"  w="0.0">  
       <i>máŋga<s n="prn"/><s n="ind"/></i>
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
       <i><w/><s n="n"/><t/></i>
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
-   </e> 
+   </e> -->
     <e r="LR" w="1.0"> <!-- máŋgačuođi > moadda tjuode -->
       <p><l>máŋgačuođi<s n="num"/></l><r>máŋga<s n="prn"/><s n="ind"/></r></p>
       <i><t/><d/></i>
@@ -457,7 +462,7 @@
       <i><w/><t/></i>
       <p><l><s n="nom"/></l><r><s n="gen"/></r></p>
       <i><t/><d/></i>
-      <par n="word"/>
+      <p><l><w/><s n="pcle"/></l><r></r></p><par n="syntax_tags"/>
       <p><l>mielddisbuktit<s n="vblex"/><t/></l><r></r></p><par n="syntax_tags"/>
       <p><l>ahte<s n="cnjsub"/></l><r>dihte<s n="post"/></r></p>
       <i><t/><d/></i>
@@ -672,26 +677,6 @@
       <p><l><s n="acc"/></l><r><s n="nom"/></r></p>
       <par n="fsub_tag"/>
     </e>
-<!--    <e r="LR" w="0.0">
-      <i>mun<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="nom"/><t/><d/></i>
-      <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="p1"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
-      <i>leat<s n="vblex"/><s n="iv"/><s n="prfprc"/><s n="@-FMAINV"/><d/></i>
-    </e>
-    <e r="LR" w="0.0">
-      <i><w/><t/><s n="p2"/><s n="sg"/><s n="nom"/><t/><d/></i>
-      <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="p2"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
-      <i>leat<s n="vblex"/><s n="iv"/><s n="prfprc"/><s n="@-FMAINV"/><d/></i>
-    </e>
-    <e r="LR" w="1.0">
-      <i><w/><t/><s n="sg"/><s n="nom"/><t/><d/></i>
-      <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
-      <i>leat<s n="vblex"/><s n="iv"/><s n="prfprc"/><s n="@-FMAINV"/><d/></i>
-    </e>
-    <e r="LR" w="1.0">
-      <i><w/><t/><s n="pl"/><s n="nom"/><t/><d/></i>
-      <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="pl"/><s n="@+FAUXV"/><d/></r></p>
-      <i>leat<s n="vblex"/><s n="iv"/><s n="prfprc"/><s n="@-FMAINV"/><d/></i>
-    </e>  -->
    
     <!-- we don't want "go" → "go go" -->
     <e r="LR" w="0.0">

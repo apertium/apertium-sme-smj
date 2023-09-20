@@ -146,6 +146,8 @@
 [/MS5ZK_5wETEC]
 [MVuV10NdfBec#0] ^Norga<np><top><sg><nom><@SUBJ→>$ ^leat<vblex><iv><indic><pres><p3><sg><@+FAUXV>$ ^geatnegahttit<vblex><tv><prfprc><@-FMAINV>$ ^ieš<prn><ref><acc><px3sg><@←OBJ>$ ^sihke<adv><@→CC>$ ^rievttálaš<adj><der_aadv><adv><@←ADVL-ine>$ ^ja<cnjcoo><@CNP>$ ^politihkalaš<adj><der_aadv><adv><@←ADVL-ine>$ ^suddjet<vblex><tv><inf><@-FMAINV>$ ^ja<cnjcoo><@CNP>$ ^ovddidit<vblex><tv><inf><@-FMAINV>$ ^mun<prn><pers><p1><pl><gen><@→N>$ ^giella<n><sem_lang_tool><sg><acc><@←OBJ>$^.<sent>$
 [/MVuV10NdfBec]
+[NtpH_MjecFsz#0] ^Vuokko<np><ant><f><attr><@→N>$ ^Hirvonen<np><cog><sg><nom><@SUBJ→>$ ^leat<vblex><iv><indic><pres><p3><sg><@+FMAINV>$ ^Ohcejohka<np><top><sg><loc><@←ADVL-ela>$ ^eret<adv><@←ADVL-ine>$^.<sent>$
+[/NtpH_MjecFsz]
 [OouHus12xMTX#0] ^Álgit<vblex><iv><imp><p2><sg><@+FMAINV>$ ^oahpaheaddji<n><nomag><sem_hum><ess><@←SPRED>$^!<sent>$
 [/OouHus12xMTX]
 [OwiRfNto836M#0] ^Lohkat<vblex><tv><indic><pres><p3><sg><@+FMAINV>$ ^leat<vblex><iv><indic><pres><p3><sg><@+FMAINV>$ ^vuosttaš<adj><ord><attr><@→N>$ ^geardi<n><sem_plc_time><sg><gen><allegro><@←ADVL>$ ^go<cnjsub><@CVP>$ ^leat<vblex><iv><prfprc><@-FMAINV>$ ^pop-up<adj><attr><@→N>$ ^buvda<n><sem_build_org><sg><nom><←ext→><@←SUBJext>$ ^Girjjálašvuohta<n><sem_txt><cmp_sggen><cmp>+guovddáš<n><sem_plc><sg><loc><@←ADVL-ine>$^.<sent>$
@@ -306,6 +308,8 @@
 [/kZhyhQjfF7Vt]
 [kgE6SJNMzGSC#0] ^Ohcat<vblex><tv><der_inchl><vblex><indic><pres><p3><pl><@+FMAINV>$ ^navdit<vblex><tv><der_passs><vblex><iv><prfprc><@→N>$ ^jápmit<vblex><iv><prfprc><@→N>$ ^olmmoš<n><sem_hum><sg><acc><@←OBJ>$ ^beana<n><sem_ani><pl><com><@←ADVL>$ ^mii<prn><rel><pl><nom><@SUBJ→>$ ^haksit<vblex><tv><indic><pres><p3><pl><@+FMAINV>$ ^liika<n><sem_body><cmp_sgnom><cmp>+hádja<n><sem_aniprod_perc-phys><sg><acc><@←OBJ>$^.<sent>$
 [/kgE6SJNMzGSC]
+[kpbK8GURe507#0] ^Toril<np><ant><f><sg><nom><@SUBJ→>$ ^ii<vblex><iv><neg><indic><p3><sg><@+FAUXV>$ ^ballat<vblex><tv><indic><pres><conneg><@-FMAINV>$ ^bargu<n><sem_act_plc><sg><loc><@←ADVL-ela>$ ^ja<cnjcoo><@CVP>$ ^son<prn><pers><p3><sg><nom><@SUBJ→>$ ^leat<vblex><iv><indic><pres><p3><sg><@+FAUXV>$ ^bargat<vblex><tv><prfprc><@-FMAINV>$ ^dat<prn><dem><sg><gen><@→P>$ ^rájes<post><@←ADVL-ine>$ ^go<cnjsub><@CVP>$ ^leat<vblex><iv><indic><pret><p3><sg><@+FMAINV>$ ^13<num><arab><sg><nom><@→A>$ ^jahki<n><sem_measr_time><sg><gen><@Num←>$ ^boaris<adj><sg><nom><@←SPRED>$^.<sent>$
+[/kpbK8GURe507]
 [l-8zDi8kX6zz#0] ^Viehkat<vblex><iv><indic><pret><p1><sg><@+FMAINV>$ ^hui<adv><@→ADVL>$ ^johtilit<adv><@←ADVL-ela>$
 [/l-8zDi8kX6zz]
 [lWOI0QwmlfCH#0] ^Ii<vblex><iv><neg><indic><p2><du><@+FAUXV>$ ^go<pcle><qst><@PCLE>$ ^boahtit<vblex><iv><indic><pres><conneg><@-FMAINV>$^?<sent>$
