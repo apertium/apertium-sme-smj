@@ -105,6 +105,50 @@
       <match tags="lohkat"/>
       <match lemma="čilget"/>
     </or>
+      <match lemma="čujuhus" tags="n.*.*.ine.*"> <select lemma="gatjálvis"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="oažžut"/>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match lemma="čujuhus" tags="n.*.*.ela.*"> <select lemma="gatjálvis"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="oažžut"/>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match />
+      <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="gatjálvis"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="oažžut"/>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match />
+      <match lemma="čujuhus" tags="n.*.*.ine.*"> <select lemma="gatjálvis"/> </match>
+    </rule>
+     <rule weight="0.6">
+   <or>
+      <match tags="oažžut"/>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match />
+      <match lemma="čujuhus" tags="n.*.*.ela.*"> <select lemma="gatjálvis"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="oažžut"/>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match />
       <match />
       <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="gatjálvis"/> </match>
     </rule>
@@ -116,7 +160,17 @@
     </or>
       <match />
       <match />
-      <match lemma="čujuhus" tags="n.*.*.loc.*"> <select lemma="gatjálvis"/> </match>
+      <match lemma="čujuhus" tags="n.*.*.ela.*"> <select lemma="gatjálvis"/> </match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match tags="oažžut"/>
+      <match tags="lohkat"/>
+      <match lemma="čilget"/>
+    </or>
+      <match />
+      <match />
+      <match lemma="čujuhus" tags="n.*.*.ine.*"> <select lemma="gatjálvis"/> </match>
     </rule>
     <rule weight="1.0">
       <match lemma="láhkki"> <select lemma="tjehtik"/> </match>
@@ -322,6 +376,20 @@
   </rule>     
         <rule weight="0.6">
     <match lemma="dat" tags="prn.dem.sg.loc.*"><select lemma="das" tags="adv.*" /></match>
+              <or>
+    <match lemma="maŋŋá"/>
+    <match lemma="maŋŋel"/>
+              </or>
+  </rule>     
+        <rule weight="0.6">
+    <match lemma="dat" tags="prn.dem.sg.ine.*"><select lemma="das" tags="adv.*" /></match>
+              <or>
+    <match lemma="maŋŋá"/>
+    <match lemma="maŋŋel"/>
+              </or>
+  </rule>     
+        <rule weight="0.6">
+    <match lemma="dat" tags="prn.dem.sg.ela.*"><select lemma="das" tags="adv.*" /></match>
               <or>
     <match lemma="maŋŋá"/>
     <match lemma="maŋŋel"/>
@@ -866,6 +934,8 @@
       </match>
             <or>
       <match tags="n.sem_plc.*.loc.*"/>
+      <match tags="n.sem_plc.*.ela.*"/>
+      <match tags="n.sem_plc.*.ine.*"/>
       <match tags="n.sem_plc.*.acc.*"/>
       <match tags="n.sem_obj-el.*"/>
       <match tags="n.sem_furn.*"/>
@@ -877,6 +947,8 @@
     <rule weight="0.6">
             <or>
       <match tags="n.sem_plc.*.loc.*"/>
+      <match tags="n.sem_plc.*.ela.*"/>
+      <match tags="n.sem_plc.*.ine.*"/>
       <match tags="n.sem_plc.*.acc.*"/>
       <match tags="n.sem_obj-el.*"/>
       <match tags="n.sem_furn.*"/>
@@ -895,6 +967,8 @@
         <match/>
             <or>
       <match tags="n.sem_plc.*.loc.*"/>
+      <match tags="n.sem_plc.*.ela.*"/>
+      <match tags="n.sem_plc.*.ine.*"/>
       <match tags="n.sem_plc.*.acc.*"/>
       <match tags="n.sem_obj-el.*"/>
       <match tags="n.sem_furn.*"/>
@@ -906,6 +980,8 @@
     <rule weight="0.6">
             <or>
       <match tags="n.sem_plc.*.loc.*"/>
+      <match tags="n.sem_plc.*.ela.*"/>
+      <match tags="n.sem_plc.*.ine.*"/>
       <match tags="n.sem_plc.*.acc.*"/>
       <match tags="n.sem_obj-el.*"/>
       <match tags="n.sem_furn.*"/>
@@ -1118,9 +1194,29 @@
         <select lemma="iehkedis"/>
       </match>
     </rule>
+    <rule weight="1.0">
+      <match tags="n.*.sg.ela.*" lemma="eahket">
+        <select lemma="iehkedis"/>
+      </match>
+    </rule>
+    <rule weight="1.0">
+      <match tags="n.*.sg.ine.*" lemma="eahket">
+        <select lemma="iehkedis"/>
+      </match>
+    </rule>
 
     <rule weight="0.5">
       <match tags="n.*.sg.loc.*" lemma="eahket">
+        <select lemma="iehket"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match tags="n.*.sg.ine.*" lemma="eahket">
+        <select lemma="iehket"/>
+      </match>
+    </rule>
+    <rule weight="0.5">
+      <match tags="n.*.sg.ela.*" lemma="eahket">
         <select lemma="iehket"/>
       </match>
     </rule>
@@ -1132,9 +1228,25 @@
       <match lemma="lávet"/>
     </or>
       <match/>
-      <match tags="n.*.sg.loc.*" lemma="eahket">
-        <select lemma="iehket"/>
-      </match>
+      <match tags="n.*.sg.loc.*" lemma="eahket"><select lemma="iehket"/></match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match lemma="šat"/>
+      <match lemma="dárbbašit"/>
+      <match lemma="lávet"/>
+    </or>
+      <match/>
+      <match tags="n.*.sg.ine.*" lemma="eahket"><select lemma="iehket"/></match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match lemma="šat"/>
+      <match lemma="dárbbašit"/>
+      <match lemma="lávet"/>
+    </or>
+      <match/>
+      <match tags="n.*.sg.ela.*" lemma="eahket"><select lemma="iehket"/></match>
     </rule>
 
     <rule weight="0.6">
@@ -1143,11 +1255,25 @@
       <match lemma="dárbbašit"/>
       <match lemma="lávet"/>
     </or>
-      <match tags="n.*.sg.loc.*" lemma="eahket">
-        <select lemma="iehket"/>
-      </match>
+      <match tags="n.*.sg.loc.*" lemma="eahket"><select lemma="iehket"/></match>
     </rule>
 
+    <rule weight="0.6">
+    <or>
+      <match lemma="šat"/>
+      <match lemma="dárbbašit"/>
+      <match lemma="lávet"/>
+    </or>
+      <match tags="n.*.sg.ine.*" lemma="eahket"><select lemma="iehket"/></match>
+    </rule>
+    <rule weight="0.6">
+    <or>
+      <match lemma="šat"/>
+      <match lemma="dárbbašit"/>
+      <match lemma="lávet"/>
+    </or>
+      <match tags="n.*.sg.ela.*" lemma="eahket"><select lemma="iehket"/></match>
+    </rule>
 
     <rule weight="1.0">
       <match lemma="bivdit">
@@ -1254,9 +1380,13 @@
     </rule>
 
     <rule weight="0.6">
-      <match tags="n.*.sg.loc.*" lemma="heahti">
-        <select lemma="nieda"/>
-      </match>
+      <match tags="n.*.sg.loc.*" lemma="heahti"><select lemma="nieda"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match tags="n.*.sg.ine.*" lemma="heahti"><select lemma="nieda"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match tags="n.*.sg.ela.*" lemma="heahti"><select lemma="nieda"/></match>
     </rule>
 
     <rule weight="1.0">
@@ -1434,6 +1564,8 @@
       <match tags="n.sem_lang.*.gen.*"/>
       <match tags="prn.*.acc.*"/>
        <match tags="np.sem_edu_org.*.loc.*"/>
+       <match tags="np.sem_edu_org.*.ine.*"/>
+       <match tags="np.sem_edu_org.*.ela.*"/>
        <match lemma="kapihtal"/>
        <match lemma="galle"/>
        <match lemma="kritihkalaš"/>
@@ -1455,7 +1587,9 @@
       <match tags="n.sem_lang.*.gen.*"/>
       <match tags="prn.*.acc.*"/>
        <match tags="np.sem_edu_org.*.loc.*"/>
-       <match lemma="kapihtal"/>
+        <match tags="np.sem_edu_org.*.ine.*"/>
+       <match tags="np.sem_edu_org.*.ela.*"/>
+      <match lemma="kapihtal"/>
        <match lemma="vásáhus"/>
        <match lemma="kritihkalaš"/>
       <match tags="n.sem_domain.*"/>
@@ -1476,7 +1610,9 @@
        <match tags="n.sem_edu_org.*"/>
        <match tags="n.sem_edu.*"/>
        <match tags="np.sem_org.*.loc.*"/>
-       <match lemma="kapihtal"/>
+       <match tags="np.sem_org.*.ine.*"/>
+       <match tags="np.sem_org.*.ela.*"/>
+      <match lemma="kapihtal"/>
        <match lemma="fáddá"/>
       <match lemma="máhttit"/>
       <match lemma="oahppat"/>
@@ -1534,6 +1670,8 @@
       <match tags="n.sem_edu.*"/>
        <match tags="n.sem_edu_org.*"/>
        <match tags="np.sem_org.*.loc.*"/>
+       <match tags="np.sem_org.*.ine.*"/>
+       <match tags="np.sem_org.*.ela.*"/>
        <match lemma="kapihtal"/>
        <match lemma="fáddá"/>
        <match lemma="bachelor"/>
@@ -1552,6 +1690,8 @@
       <match tags="n.sem_edu.*"/>
        <match tags="n.sem_edu_org.*.loc.*"/>
        <match tags="np.sem_org.*.loc.*"/>
+       <match tags="np.sem_org.*.ine.*"/>
+       <match tags="np.sem_org.*.ela.*"/>
        <match lemma="kapihtal"/>
        <match lemma="fáddá"/>
       <match tags="n.sem_txt.*"/>
@@ -1570,7 +1710,11 @@
       <match lemma="čállit"/>
       <match tags="n.sem_edu.*"/>
        <match tags="n.sem_edu_org.*.loc.*"/>
+       <match tags="n.sem_edu_org.*.ine.*"/>
+       <match tags="n.sem_edu_org.*.ela.*"/>
        <match tags="np.sem_org.*.loc.*"/>
+       <match tags="np.sem_org.*.ine.*"/>
+       <match tags="np.sem_org.*.ela.*"/>
        <match lemma="kapihtal"/>
        <match lemma="fáddá"/>
       <match tags="n.sem_txt.*"/>
@@ -1590,7 +1734,11 @@
       <match lemma="čállit"/>
       <match tags="n.sem_edu.*"/>
        <match tags="n.sem_edu_org.*.loc.*"/>
+       <match tags="n.sem_edu_org.*.ine.*"/>
+       <match tags="n.sem_edu_org.*.ela.*"/>
        <match tags="np.sem_org.*.loc.*"/>
+       <match tags="np.sem_org.*.ine.*"/>
+       <match tags="np.sem_org.*.ela.*"/>
        <match lemma="kapihtal"/>
        <match lemma="fáddá"/>
       <match tags="n.sem_txt.*"/>
@@ -1791,14 +1939,13 @@
     </rule>
 
     <rule weight="1.0">
-      <match lemma="illu" tags="n.*.sg.loc.*">
-        <select lemma="ávvo"/>
-      </match>
+      <match lemma="illu" tags="n.*.sg.loc.*"><select lemma="ávvo"/></match>
     </rule>
     <rule weight="1.0">
-      <match lemma="illu" tags="n.*.sg.ine.*">
-        <select lemma="ávvo"/>
-      </match>
+      <match lemma="illu" tags="n.*.sg.ela.*"><select lemma="ávvo"/></match>
+    </rule>
+    <rule weight="1.0">
+      <match lemma="illu" tags="n.*.sg.ine.*"><select lemma="ávvo"/></match>
     </rule>
 
     <rule weight="0.5">
@@ -2330,7 +2477,11 @@
       <match lemma="boahtit" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*" /></match>
     </rule>
     <rule weight="0.7"> 
+	    <or>
       <match tags="prn.dem.sg.loc.*"/>
+      <match tags="prn.dem.sg.ela.*"/>
+      <match tags="prn.dem.sg.ine.*"/>
+	    </or>
       <match lemma="boahtit" tags="vblex.*"><select lemma="sjaddat" tags="vblex.*"/></match>
     </rule>
 
@@ -3037,7 +3188,11 @@
     </rule>
     <rule weight="0.8">
 	    <match lemma="leat" tags="vblex.*"><select lemma="boahtet" /></match>
+	    <or>
       <match tags="np.*.loc.*"/>
+      <match tags="np.*.ela.*"/>
+      <match tags="np.*.ine.*"/>
+	    </or>
       <match lemma="eret"/>
     </rule>
     <rule weight="0.6">
