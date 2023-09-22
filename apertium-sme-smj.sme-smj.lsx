@@ -89,6 +89,7 @@
 	<sdef n="tv"/>
 	<sdef n="vblex"/>
     <sdef n="@→A"/> 
+    <sdef n="@←ADVL"/>
     <sdef n="@ADVL"/>
     <sdef n="@ADVLhab→"/>
     <sdef n="@←ADVL-ine"/>
@@ -218,7 +219,6 @@
       <e><i>gielestit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>jáhkkit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>sávvat<s n="vblex"/><s n="tv"/><t/><d/></i></e>
-      <e><i>dáhttut<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>doaivut<s n="vblex"/><s n="tv"/><t/><d/></i></e>
     </pardef>
     <pardef n="maybe_syntax_tag">
@@ -410,10 +410,9 @@
       <i><t/><d/></i>
    </e>
     <e r="LR"> <!-- dan nammii > dasa  -->
-	  <i><w/><t/></i>
-      <p><l><s n="gen"/></l><r><s n="ill"/></r></p>
-	  <i><t/><d/></i>
+      <p><l>dat<s n="prn"/><s n="dem"/><s n="sg"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
       <p><l>nammii<s n="post"/></l><r></r></p><par n="syntax_tags"/>
+      <p><l>ahte<s n="cnjsub"/></l><r></r></p><par n="syntax_tags"/>
    </e>
     <e r="LR"> <!-- beaivvát ala > dalá  -->
       <p><l>beaivi<t/><d/></l><r></r></p>
@@ -559,6 +558,12 @@
             <i><t/><d/></i>
    </e>
    
+    <e r="LR" w="0.0"> <!-- go leamaš > gå la læhkám -->
+      <i>go<s n="cnjsub"/><t/><d/></i>
+      <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
+      <i>leat<s n="vblex"/><s n="iv"/><s n="prfprc"/></i>
+      <i><t/><d/></i>
+   </e>
   
     <e r="LR" w="0.0"> <!-- iigo leat -->
       <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/></i>

@@ -189,6 +189,16 @@
     </or>
       <match lemma="giddet"> <select lemma="tjadnat"/> </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="láhki"> <select lemma="láhke"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="láhki"> <select lemma="vuohke"/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="láhki"> <select lemma="vuohke"/> </match>
+      <match lemma="mielde"/>
+    </rule>
 
     <rule weight="0.6">
     <or>
