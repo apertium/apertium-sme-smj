@@ -8,16 +8,20 @@
       <cat-item tags="*"/>
       <cat-item tags=""/>
     </def-cat>
+    <def-cat n="clb">
+      <cat-item tags="cm"/>
+      <cat-item tags="sent"/>
+    </def-cat>
     <def-cat n="subj">
       <cat-item tags="*.@subj"/>
       <cat-item tags="*.@subj.*"/>
     </def-cat>
     <def-cat n="mainv">
-      <cat-item tags="@+FMAINV"/>
-      <cat-item tags="@-FMAINV"/>
-      <cat-item tags="@←OBJ"/>
-      <cat-item tags="@←ADVL"/>
-      <cat-item tags="@SUBJ→"/>
+      <cat-item tags="*.@+FMAINV"/>
+      <cat-item tags="*.@-FMAINV"/>
+      <cat-item tags="*.@←OBJ"/>
+      <cat-item tags="*.@←ADVL"/>
+      <cat-item tags="*.@SUBJ→"/>
     </def-cat>
     <def-cat n="sent_OR_at.clb">
       <cat-item tags="sent.*"/>
@@ -34,6 +38,71 @@
       <attr-item tags="sp"/>
       <attr-item tags="ND"/>
     </def-attr>
+    <def-attr n="a_func">
+       <attr-item tags="@+FAUXV"/>
+       <attr-item tags="@\+FAUXV"/>
+       <attr-item tags="@\+FMAINV"/>
+       <attr-item tags="@-F←ADVL"/>
+       <attr-item tags="@-F←ADVL-ine"/>
+       <attr-item tags="@-F←ADVL-ela"/>
+       <attr-item tags="@-F←OBJ"/>
+       <attr-item tags="@-F←OPRED"/>
+       <attr-item tags="@-F←SUBJ"/>
+       <attr-item tags="@-FADVL→"/>
+       <attr-item tags="@-FAUXV"/>
+       <attr-item tags="@-FMAINV"/>
+       <attr-item tags="@-FOBJ→"/>
+       <attr-item tags="@-FSUBJ→"/>
+       <attr-item tags="@←ADVL"/>
+       <attr-item tags="@←ADVL-ela"/>
+       <attr-item tags="@←ADVL-ine"/>
+       <attr-item tags="@←OBJ"/>
+       <attr-item tags="@←OPRED"/>
+       <attr-item tags="@←PPRED"/>
+       <attr-item tags="@←SPRED"/>
+       <attr-item tags="@←SUBJ"/>
+       <attr-item tags="@→A"/>
+       <attr-item tags="@→ADVL"/>
+       <attr-item tags="@→CC"/>
+       <attr-item tags="@→N"/>
+       <attr-item tags="@→Num"/>
+       <attr-item tags="@→P"/>
+       <attr-item tags="@→Pron"/>
+       <attr-item tags="@A←"/>
+       <attr-item tags="@ADVL"/>
+       <attr-item tags="@ADVL←"/>
+       <attr-item tags="@ADVL→"/>
+       <attr-item tags="@ADVL-ela→"/>
+       <attr-item tags="@ADVL-ine→"/>
+       <attr-item tags="@ADVLcs-ela→"/>
+       <attr-item tags="@ADVLcs-ine→"/>
+       <attr-item tags="@ADVLqst-ela→"/>
+       <attr-item tags="@ADVLqst-ine→"/>
+       <attr-item tags="@ADVLhab→"/>
+       <attr-item tags="@←ADVLhab"/>
+       <attr-item tags="@←SUBJext"/>
+       <attr-item tags="@ADVL→CS"/>
+       <attr-item tags="@APP-ADVL←"/>
+       <attr-item tags="@APP-N←"/>
+       <attr-item tags="@APP-Pron←"/>
+       <attr-item tags="@CNP"/>
+       <attr-item tags="@COMP-CS←"/>
+       <attr-item tags="@CVP"/>
+       <attr-item tags="@HNOUN"/>
+       <attr-item tags="@INTERJ"/>
+       <attr-item tags="@N←"/>
+       <attr-item tags="@Num←"/>
+       <attr-item tags="@OBJ→"/>
+       <attr-item tags="@OPRED→"/>
+       <attr-item tags="@P←"/>
+       <attr-item tags="@PCLE"/>
+       <attr-item tags="@Pron←"/>
+       <attr-item tags="@SPRED←OBJ"/>
+       <attr-item tags="@SPRED→"/>
+       <attr-item tags="@SUBJ→"/>
+       <attr-item tags="@VOC"/>
+       <attr-item tags="@X"/>
+    </def-attr>
   </section-def-attrs>
 
   <section-def-vars>
@@ -45,39 +114,179 @@
     <def-list n="l_foo">
       <list-item v="foo"/>
     </def-list>
+    <def-list n="not-move-adv">
+      <list-item v="aj"/>     
+      <list-item v="duodaj"/>      
+      <list-item v="vargga"/>    
+      <list-item v="náv"/>     
+      <list-item v="nav"/>     
+      <list-item v="gal"/>     
+      <list-item v="de"/>     
+    </def-list>
+    <def-list n="loc2com_verbs">
+      <list-item v="rahtjat"/>
+    </def-list>
+    <def-list n="com2ill_verbs">
+      <list-item v="vásstedit"/>
+      <list-item v="oktiivástidit"/>
+    </def-list>
+    <def-list n="acc2ill_verbs">
+      <list-item v="vájkkudit"/>
+      <list-item v="tjágŋat"/>
+      <list-item v="guosskat"/>
+    </def-list>
+    <def-list n="acc2ela_verbs">
+      <list-item v="hieredit"/>
+    </def-list>
+    <def-list n="loc2ill_verbs">
+      <list-item v="sæbrrat"/>
+    </def-list>
+    <def-list n="hållat_verbs">
+      <list-item v="hållat"/>
+      <list-item v="ságastallat"/>
+    </def-list>
+    <def-list n="muitalit_vblex"> <!-- jut should not be removed -->
+      <list-item v="subtsastit"/>
+      <list-item v="almodit"/>
+      <list-item v="javllat"/>
+      <list-item v="mierredit"/>
+    </def-list>
+
+    <def-list n="loc_verbs">
+      <list-item v="hållat"/>
+      <list-item v="subtsastit"/>
+      <list-item v="ságastallat"/>
+      <list-item v="báhtset"/>
+      <list-item v="hupmat"/>
+      <list-item v="muitalit"/>
+      <list-item v="ságastallat"/>
+    </def-list>
+    <def-list n="birrapx_verbs">
+      <list-item v="geahččat"/>
+    </def-list>
+    <def-list n="ill2ine_verbs">
+      <list-item v="báhtset"/>
+      <list-item v="báhcit"/>
+    </def-list>
+    <def-list n="loc2acc_verbs">
+      <list-item v="guossidit"/>
+    </def-list>
+    <def-list n="actio_ill_verbs">
+      <list-item v="liikot"/>
+    </def-list>
+    <def-list n="der_caus2der_d">
+      <list-item v="einnostit"/>
+    </def-list>
+    <def-list n="moveverbs">
+      <list-item v="vuolgget"/>
+      <list-item v="mannat"/>
+      <list-item v="bisánit"/>
+    </def-list>
+    <def-list n="sme-rek-verbs">
+      <list-item v="lijkkut"/>
+      <list-item v="berustit"/>
+      <list-item v="ballat"/>
+    </def-list>
+    <def-list n="smj-supn-triggerverbs">
+      <list-item v="bivddit"/>
+      <list-item v="bovdet"/>
+      <list-item v="barggat"/>
+      <list-item v="dahkat"/>
+      <list-item v="hásstalit"/>
+      <list-item v="vælggogissan dahkat"/>
+      <list-item v="ávvudallat"/>
+      <list-item v="ávttjit"/>
+      <list-item v="geatnegahttit"/>
+      <list-item v="åhtsåt"/>
+      <list-item v="ohcat"/>
+    </def-list>
+    <def-list n="not-usually-supn-verbs">
+      <list-item v="subtsastit"/>
+      <list-item v="liehket"/>
+    </def-list>
+    <def-list n="adj_nottriggingsupn"> 
+      <list-item v="álkke"/>
+      <list-item v="hiebalasj"/>
+      <list-item v="suohtas"/>
+      <list-item v="vájvve"/>
+      <list-item v="guhkálasj"/>
+      <list-item v="gássjel"/>
+      <list-item v="ahket"/>
+      <list-item v="ájnas"/>
+      <list-item v="gássjel"/>
+      <list-item v="tjiehppe"/>
+      <list-item v="váttis"/>
+    </def-list> 
   </section-def-lists>
 
   <section-def-macros>
     <def-macro n="set_cur_subj" npar="1">
       <let><var n="cur_subj"/><clip pos="1" side="tl" part="whole"/></let>
     </def-macro>
-    <def-macro n="set_current_verb" npar="1">
-      <let><var n="current_verb"/><clip pos="1" side="tl" part="whole"/></let>
+     <def-macro n="set_current_verb" npar="1">
+      <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
     </def-macro>
-  </section-def-macros>
+ </section-def-macros>
 
 
   <section-rules>
 
     <!-- ***** The simple rules: Store, Clear, Apply ***** -->
 
-    <rule c="Found a mainverb, store it in variable">
+<!--    <rule c="Found a mainverb, store it in variable">					    -->
+<!--      <pattern>															    -->
+<!--        <pattern-item n="mainv"/>										    -->
+<!--      </pattern>														    -->
+<!--      <action>															    -->
+<!--        <call-macro n="set_current_verb"><with-param pos="1"/></call-macro> -->
+<!--        <out>															    -->
+<!--          <lu>															    -->
+<!--            <clip pos="1" side="sl" part="whole"/>						    -->
+<!--            <lit v="/"/>												    -->
+<!--            <clip pos="1" side="tl" part="whole"/>						    -->
+<!--            <lit v="/"/>												    -->
+<!--            <var n="current_verb"/>										    -->
+<!--          </lu>															    -->
+<!--        </out>															    -->
+<!--      </action>															    -->
+<!--    </rule>																    -->
+
+
+<rule c="Found a mainverb, store it in variable">
       <pattern>
         <pattern-item n="mainv"/>
       </pattern>
       <action>
-        <call-macro n="set_current_verb"><with-param pos="1"/></call-macro>
-        <out>
+		<choose><when><test>
+			<and> 
+      <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
+      <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
+         </and>
+        </test>
+		<out>
           <lu>
             <clip pos="1" side="sl" part="whole"/>
             <lit v="/"/>
             <clip pos="1" side="tl" part="whole"/>
-            <lit v="/"/>
-            <var n="current_verb"/>
-          </lu>
+            <lit-tag v="SUPN"/>
+            </lu>
         </out>
-      </action>
+        </when>
+         <otherwise>
+		<out>
+          <lu> 
+            <clip pos="1" side="sl" part="whole"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            </lu>
+        </out>
+         </otherwise>
+         </choose>
+         <call-macro n="set_current_verb"><with-param pos="1"/></call-macro>
+     </action>
     </rule>
+
+
     <rule c="Found a subject, store it in variable">
       <pattern>
         <pattern-item n="subj"/>
@@ -128,6 +337,24 @@
             <var n="cur_subj"/>
           </lu>
         </out>
+      </action>
+    </rule>
+
+
+    <rule comment="C[_]-T clb">
+      <pattern>
+        <pattern-item n="clb"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="sl" part="whole"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            <lit v="/"/>
+          </lu>
+        </out>
+       <let><var n="current_verb"/><lit v=""/></let>
       </action>
     </rule>
 
