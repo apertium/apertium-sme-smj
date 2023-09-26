@@ -13,15 +13,25 @@
       <cat-item tags="sent"/>
     </def-cat>
     <def-cat n="subj">
-      <cat-item tags="*.@subj"/>
-      <cat-item tags="*.@subj.*"/>
+      <cat-item tags="*.@@SUBJ→"/>
+      <cat-item tags="*.@@SUBJ→.*"/>
     </def-cat>
     <def-cat n="mainv">
-      <cat-item tags="*.@+FMAINV"/>
-      <cat-item tags="*.@-FMAINV"/>
-      <cat-item tags="*.@←OBJ"/>
-      <cat-item tags="*.@←ADVL"/>
-      <cat-item tags="*.@SUBJ→"/>
+      <cat-item tags="vblex.*.*.@+FMAINV"/>
+      <cat-item tags="vblex.*.*.@-FMAINV"/>
+      <cat-item tags="vblex.*.*.@←OBJ"/>
+      <cat-item tags="vblex.*.*.@←ADVL"/>
+      <cat-item tags="vblex.*.*.@SUBJ→"/>
+      <cat-item tags="vblex.*.*.*.@+FMAINV"/>
+      <cat-item tags="vblex.*.*.*.@-FMAINV"/>
+      <cat-item tags="vblex.*.*.*.@←OBJ"/>
+      <cat-item tags="vblex.*.*.*.@←ADVL"/>
+      <cat-item tags="vblex.*.*.*.@SUBJ→"/>
+      <cat-item tags="vblex.*.*.*.*.@+FMAINV"/>
+      <cat-item tags="vblex.*.*.*.*.@-FMAINV"/>
+      <cat-item tags="vblex.*.*.*.*.@←OBJ"/>
+      <cat-item tags="vblex.*.*.*.*.@←ADVL"/>
+      <cat-item tags="vblex.*.*.*.*.@SUBJ→"/>
     </def-cat>
     <def-cat n="sent_OR_at.clb">
       <cat-item tags="sent.*"/>
@@ -37,6 +47,16 @@
       <attr-item tags="pl"/>
       <attr-item tags="sp"/>
       <attr-item tags="ND"/>
+    </def-attr>
+    <def-attr n="a_infin">
+       <attr-item tags="prfprc"/>
+       <attr-item tags="inf"/>
+       <attr-item tags="actio.ess"/>
+       <attr-item tags="actio.gen"/>
+       <attr-item tags="actio.loc"/>
+       <attr-item tags="conneg"/>
+       <attr-item tags="prfprc"/>
+       <attr-item tags="ger"/>
     </def-attr>
     <def-attr n="a_func">
        <attr-item tags="@+FAUXV"/>
@@ -187,6 +207,12 @@
       <list-item v="berustit"/>
       <list-item v="ballat"/>
     </def-list>
+    <def-list n="sme-supn-triggerverbs">
+      <list-item v="bovdet"/>
+      <list-item v="dahkat"/>
+      <list-item v="geatnegahttit"/>
+      <list-item v="ohcat"/>
+    </def-list>
     <def-list n="smj-supn-triggerverbs">
       <list-item v="bivddit"/>
       <list-item v="bovdet"/>
@@ -261,11 +287,13 @@
 			<and> 
       <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
       <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
+             <equal><clip pos="1" side="tl" part="a_infin"/><lit-tag v="inf"/></equal> 
          </and>
         </test>
 		<out>
           <lu>
             <clip pos="1" side="sl" part="whole"/>
+            <lit-tag v="SUPN"/>
             <lit v="/"/>
             <clip pos="1" side="tl" part="whole"/>
             <lit-tag v="SUPN"/>
@@ -351,7 +379,6 @@
             <clip pos="1" side="sl" part="whole"/>
             <lit v="/"/>
             <clip pos="1" side="tl" part="whole"/>
-            <lit v="/"/>
           </lu>
         </out>
        <let><var n="current_verb"/><lit v=""/></let>
