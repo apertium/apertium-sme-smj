@@ -301,6 +301,7 @@
         </out>
         </when>
          <otherwise>
+         <call-macro n="set_current_verb"><with-param pos="1"/></call-macro>
 		<out>
           <lu> 
             <clip pos="1" side="sl" part="whole"/>
@@ -310,7 +311,6 @@
         </out>
          </otherwise>
          </choose>
-         <call-macro n="set_current_verb"><with-param pos="1"/></call-macro>
      </action>
     </rule>
 
