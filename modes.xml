@@ -536,7 +536,7 @@
 	<file name="apertium-sme-smj.sme-smj.ref.t1x"/>
 	<file name="sme-smj.ref.t1x.bin"/>
       </program>
-      <program name="rtx-proc">
+      <program name="rtx-proc --anaphora">
         <file name="sme-smj.rtx.bin"/>
       </program>
       <program name="lsx-proc" debug-suff="revautoseq">
@@ -573,7 +573,7 @@
 	<file name="apertium-sme-smj.sme-smj.ref.t1x"/>
 	<file name="sme-smj.ref.t1x.bin"/>
       </program>
-      <program name="rtx-proc -T">
+      <program name="rtx-proc --anaphora --tree">
         <file name="sme-smj.rtx.bin"/>
       </program>
     </pipeline>
@@ -600,7 +600,7 @@
       <program name="lrx-proc -m">
         <file name="smj-sme.autolex.bin"/>
       </program>
-      <program name="rtx-proc">
+      <program name="rtx-proc --anaphora">
         <file name="smj-sme.rtx.bin"/>
       </program>
       <program name="lsx-proc" debug-suff="revautoseq">
