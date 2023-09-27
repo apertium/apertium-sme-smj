@@ -199,6 +199,16 @@
       <match lemma="láhki"> <select lemma="vuohke"/> </match>
       <match lemma="mielde"/>
     </rule>
+    <rule weight="1.0">
+      <match lemma="jávkadit"> <select lemma="gádodit"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="jávkadit"> <select lemma="jávkkadit"/> </match>
+    </rule>
+    <rule weight="0.6">
+     <match lemma="vahát"/>
+     <match lemma="jávkadit"> <select lemma="jávkkadit"/> </match>
+    </rule>
 
     <rule weight="0.6">
     <or>
