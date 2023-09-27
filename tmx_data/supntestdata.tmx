@@ -83,7 +83,7 @@
 <seg>Oallugat jorgalit mánáid ovddosguvlui čohkkát ovdal dan agi mii lea ávžžuhuvvon.</seg>
          </tuv>
          <tuv lang="smj">
-<seg>Moattes jårggåli mánájt åvdåsguovlluj tjåhkkåhittjat åvddål dan álldara mij la ávttjiduvvam.</seg>
+<seg>Moattes jårggåli mánájt åvdås guovlluj tjåhkkåhittjat åvddål dan álldara mij la ávttjiduvvam.</seg>
          </tuv>
       </tu>
 
@@ -92,7 +92,7 @@
 <seg>Trygg Trafikk ávžžuha mánáid čohkkát maŋosguvlui dassážii go leat unnimusat 4 jagi boarrásat.</seg>
          </tuv>
          <tuv lang="smj">
-<seg>Trygg Trafikk ávttji mánájt tjåhkkåhittjat maŋusguovlluj dallutjij gå li unnemusá 4 jage vuorrasa.</seg>
+<seg>Trygg Trafikk ávttji mánájt tjåhkkåhittjat maŋus guovlluj dallutjij gå li unnemusá 4 jage vuorrasa.</seg>
          </tuv>
       </tu>
 
@@ -209,7 +209,7 @@
 <seg>Ávžžuha fuomášuhttit doarjagiid.</seg>
          </tuv>
          <tuv lang="smj">
-<seg>Ávttji dårjajt huomájahtttet.</seg>
+<seg>Ávttji dårjajt huomájahttet.</seg>
          </tuv>
       </tu>
 
@@ -251,7 +251,7 @@
 
       <tu id="1">
          <tuv lang="sme">
-<seg>xxxx.</seg>
+<seg>Jahkásaččat lágiduvvo kampánja mii galggašii movttiidahttit ja muittuhit nissonolbmuid čađahit goaŧŧočottaiskkadeami.</seg>
          </tuv>
          <tuv lang="smj">
 <seg>Jahkásattjat ásaduvvá #åtsådahteietjat-kampánnja mij galgaluluj måvtåstuhttet ja mujttádit nissunijt tjadádittjat skoahtonjálmmeåtsålvisáv.</seg>
@@ -260,7 +260,7 @@
 
       <tu id="1">
          <tuv lang="sme">
-<seg>Lea buorre jus studeanttat ožžot eanet stipeandda ja ahte šaddá geasuheaddjin sijiide go gávdnet liigenávccaid váldit oahpu mii lea sámegillii, lohká Sámi allaskuvlla prorektor Ylva Jannok Nutti Ávvirii.</seg>
+<seg>Lea buorre jus studeanttat ožžot eanet stipeandda ja ahte šaddá geasuheaddjin sidjiide go gávdnet liigenávccaid váldit oahpu mii lea sámegillii, lohká Sámi allaskuvlla prorektor Ylva Jannok Nutti Ávvirii.</seg>
          </tuv>
          <tuv lang="smj">
 <seg>Le buorre jus studenta oadtju ienep stipendav ja jut sjaddá hullijiddje sidjij gå gávnni lijggefámojt váldátjit oahpov mij la sámegiellaj, javllá Sáme allaskåvlå prorievtor Ylva Jannok Nutti Ávvirij.</seg>
@@ -308,7 +308,7 @@
 <seg>Mis lea buorre mokta ja mis lea duođaid dáhttu gávdnat čovdosiid ja gullat sin váibmoáššiid maid dáhttot vuoruhit ovddasguvlui.</seg>
          </tuv>
          <tuv lang="smj">
-<seg>Miján la buorre miella ja miján la duodaj miella gávnnat tjoavddusijt ja gullat sijá vájmmoássjij birra majt sihti åvddålijguovlluj vuorodit.</seg>
+<seg>Miján la buorre miella ja miján la duodaj miella gávnnat tjoavddusijt ja gullat sijá vájmmoássjij birra majt sihti åvddålij guovlluj vuorodit.</seg>
          </tuv>
       </tu>
 
@@ -344,7 +344,7 @@
 <seg>Eará mainna Hirvonen garrasit barggai lei oažžut doavttergráda oahpahusa allaskuvlii.</seg>
          </tuv>
          <tuv lang="smj">
-<seg>Ietjá majna Hirvonen garrasit bargaj lij dåktårgrádav åhpadusáv oadtjot allaskåvllåj.</seg>
+<seg>Ietjá majna Hirvonen garrasit bargaj lij dåktårgráda åhpadusáv oadtjot allaskåvllåj.</seg>
          </tuv>
       </tu>
 
@@ -383,6 +383,43 @@
 <seg>Miján la ambisjåvnnå bisodit dajt barggijt gudi li dálásj mánájgárden, ja gávnnat bæjválasj jådediddjev guhti máhttá bargojt barggat mijá vidnudagán aj, javllá sån. .</seg>
          </tuv>
       </tu>
+
+      <tu id="1">
+         <tuv lang="sme">
+<seg>Norga lea geatnegahttán iežas sihke rievttalaččat ja politihkalaččat suddjet ja ovddidit min giela.</seg>
+         </tuv>
+         <tuv lang="smj">
+<seg>Vuodna l vælggogissan dahkam ietjas sihke rievtugit ja politihkalattjat suoddjitjit ja åvdedittjat mijá gielav.</seg>
+         </tuv>
+      </tu>
+
+      <tu id="1">
+         <tuv lang="sme">
+<seg>Ráđđádallanortnet geatnegahttá maiddái Sámedikki.</seg>
+         </tuv>
+         <tuv lang="smj">
+<seg>Rádudallamårdnik vælggogissan dahká Sámedikkev aj.</seg>
+         </tuv>
+      </tu>
+
+      <tu id="1">
+         <tuv lang="sme">
+<seg>Sámediggi áigu oččodit sámi mánáide individuála vuoigatvuođa oažžut sámi mánáidgárdefálaldaga.</seg>
+         </tuv>
+         <tuv lang="smj">
+<seg>Sámedigge ájggu sáme mánájda åttjudit indivijdalasj rievtesvuodav oattjotjit sáme mánájgárddefálaldagáv.</seg>
+         </tuv>
+      </tu>
+
+      <tu id="1">
+         <tuv lang="sme">
+<seg>Sunná ávžžuha buohkaid rahpasit muitalit váttis áššiid birra.</seg>
+         </tuv>
+         <tuv lang="smj">
+<seg>Sunná ávttji gájkajt rahpasit subtsastit gássjelis ássjij birra.</seg>
+         </tuv>
+      </tu>
+
 
    </body>
 </tmx>
