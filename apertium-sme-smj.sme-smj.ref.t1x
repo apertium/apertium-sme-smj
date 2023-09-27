@@ -315,7 +315,7 @@
     </rule> 
 
 
-<!--    <rule c="Found a subject, store it in variable">
+    <rule c="Found a subject, store it in variable">
       <pattern>
         <pattern-item n="subj"/>
       </pattern>
@@ -366,7 +366,7 @@
           </lu>
         </out>
       </action>
-    </rule> -->
+    </rule> 
 
 
     <rule comment="C[_]-T clb">
