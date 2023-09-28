@@ -16,6 +16,9 @@
       <cat-item tags="*.@SUBJ→"/>
       <cat-item tags="*.@SUBJ→.*"/>
     </def-cat>
+    <def-cat n="noun">
+      <cat-item tags="n.*"/>
+    </def-cat>
     <def-cat n="mainv">
       <cat-item tags="vblex.*.*.@+FMAINV"/>
       <cat-item tags="vblex.*.*.@-FMAINV"/>
@@ -122,6 +125,18 @@
        <attr-item tags="@SUBJ→"/>
        <attr-item tags="@VOC"/>
        <attr-item tags="@X"/>
+    </def-attr>
+   <def-attr n="a_case">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="ill"/>
+      <attr-item tags="par"/>
+      <attr-item tags="ess"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="loc"/>
+      <attr-item tags="com"/>
+      <attr-item tags="ela"/>
+      <attr-item tags="ine"/>
     </def-attr>
   </section-def-attrs>
 
@@ -283,7 +298,8 @@
         <pattern-item n="mainv"/>
       </pattern>
       <action>
-		<choose><when><test>
+		<choose>
+			<when><test>
 			<and> 
       <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
       <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
@@ -302,6 +318,38 @@
         </when>
          <otherwise>
          <call-macro n="set_current_verb"><with-param pos="1"/></call-macro>
+		<out>
+          <lu> 
+            <clip pos="1" side="sl" part="whole"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            </lu>
+        </out>
+         </otherwise>
+         </choose>
+     </action>
+    </rule> 
+ <rule c="Found a noun, add a tag">
+      <pattern>
+        <pattern-item n="noun"/>
+      </pattern>
+      <action>
+		<choose>
+			<when><test><and>
+      <in caseless="yes"><var n="current_verb"/><list n="loc2ill_verbs"/></in>
+              <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ine"/></equal> 
+       </and></test>
+		<out>
+          <lu>
+            <clip pos="1" side="sl" part="whole"/>
+            <lit-tag v="ILL"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            <lit-tag v="ILL"/>
+            </lu>
+        </out>
+        </when>
+         <otherwise>
 		<out>
           <lu> 
             <clip pos="1" side="sl" part="whole"/>
@@ -351,7 +399,7 @@
       </action>
     </rule> -->
 
-    <rule c="Add the current subject to the ref field of the lexical unit, clear syntax tags">
+    <rule c="any">
       <pattern>
         <pattern-item n="any"/>
       </pattern>
@@ -362,7 +410,7 @@
             <lit v="/"/>
             <clip pos="1" side="tl" part="whole"/>
             <lit v="/"/>
-<!--            <var n="cur_subj"/> -->
+            <var n="cur_subj"/> 
           </lu>
         </out>
       </action>
