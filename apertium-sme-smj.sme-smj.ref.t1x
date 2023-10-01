@@ -19,6 +19,10 @@
     <def-cat n="noun">
       <cat-item tags="n.*"/>
     </def-cat>
+    <def-cat n="currentverbstop">
+      <cat-item tags="*.@>P"/>
+    </def-cat>
+    
     <def-cat n="mainv">
       <cat-item tags="vblex.*.*.@+FMAINV"/>
       <cat-item tags="vblex.*.*.@-FMAINV"/>
@@ -262,7 +266,7 @@
 
   <section-def-macros>
     <def-macro n="set_cur_subj" npar="1">
-      <let><var n="cur_subj"/><clip pos="1" side="tl" part="whole"/></let>
+      <let><var n="cur_subj"/><clip pos="1" side="tl" part="lem"/></let>
     </def-macro>
      <def-macro n="set_current_verb" npar="1">
       <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
@@ -336,7 +340,7 @@
       <action>
 		<choose>
 			<when><test><and>
-      <in caseless="yes"><var n="current_verb"/><list n="loc2ill_verbs"/></in>
+              <in caseless="yes"><var n="current_verb"/><list n="loc2ill_verbs"/></in>
               <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ine"/></equal> 
        </and></test>
 		<out>
@@ -362,6 +366,22 @@
      </action>
     </rule> 
 
+ <rule c="remove current_verb">
+      <pattern>
+        <pattern-item n="currentverbstop"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <clip pos="1" side="sl" part="whole"/>
+            <lit v="/"/>
+            <clip pos="1" side="tl" part="whole"/>
+            <lit v="/"/>
+          </lu>
+        </out>
+       <let><var n="current_verb"/><lit v=""/></let>
+     </action>
+    </rule> 
 
 <!--    <rule c="Found a subject, store it in variable">
       <pattern>
@@ -410,7 +430,6 @@
             <lit v="/"/>
             <clip pos="1" side="tl" part="whole"/>
             <lit v="/"/>
-            <var n="cur_subj"/> 
           </lu>
         </out>
       </action>

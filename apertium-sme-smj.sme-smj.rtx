@@ -577,7 +577,7 @@ PP -> ! "N post" 1: N %post (if (2.pos_tag/tr=n) { 1 _ %2(n_only)} else { 1[case
 
 NegVP -> "ii dadjat@conneg ieš NP.acc" 5: ii@vblex.iv.neg [dadjat_verbs]@vblex.*.conneg %ieš@prn.ref NP.*.acc 
 	{ 1[lemcase=$lemcase,tense=(if (2.tense="") pres else 2.tense)] _ 2 _ %3(refl2pers) 
-	_ liehket@vblex.indic.pres.p3.[4.number] _ 4[case=nom]} !!! Ii jáhkkán alddis dávdda. > Ittjij jáhke sujna la dávdda.
+	_ liehket@vblex.indic.[1.tense].p3.[4.number] _ 4[case=nom]} !!! Ii jáhkkán alddis dávdda. > Ittjij jáhke sujna la dávdda.
 	| "ii lohkat@conneg adj.ess" 3: ii@vblex.iv.neg %[lohkat_verbs]@vblex.*.conneg adj.ess 
 	{ %2[conneg="",tense=(if (2.tense="") pres else 2.tense),person=1.person,number=1.number] _ 1[person=p3,number=sg] _ liehket@vblex.iv.indic.pres.conneg _ 
 	3[number=sg,case=nom]} !!! eai loga váttisin > javlli ij la gássjel
@@ -639,7 +639,7 @@ V -> "V:auxcondvblex" 5: %[auxverbs]@vblex.*.cond ?(1.qst="") { %1[lemcase=$lemc
 	| "V:condvblex qst" 4: %vblex.*.cond go@pcle.qst { liehket@vblex.iv.cond.[1.person_number][lemcase=$lemcase] _ 2 _ %1(vblex_v2v)[mood="",tense="",infin=inf,person="",number=""] } ! boađášin go > luluv gus boahtet
 	| "V:vblex.supnfunction" 3: %vblex.*.inf.[supnfunction]  { %1(vblex_v2v)[lemcase=$lemcase,infin=(if (1.lem incl not-usually-supn-verbs) inf else supn)]} !
 	| "V:vblex" 2: %vblex.*.SUPN ?(1.onlycmp = "") { %1(vblex_v2v)[lemcase=$lemcase,infin=supn]} !
-	| "V:vblex" 2: %vblex ?(1.onlycmp = "") { %1(vblex_v2v)[lemcase=$lemcase]} !
+	| "V:vblex" 3: %vblex ?(1.onlycmp = "") { %1(vblex_v2v)[lemcase=$lemcase]} !
 	| "V:vblex maid" 2: %vblex.*.$function maid@adv  { %1(vblex_v2v)[lemcase=$lemcase,infin=(if (1.lem incl not-usually-supn-verbs) 1.infin elif (1.infin=inf and 1.function in supnfunction) supn else 1.infin)] _ 2} !
 
 !!!	| "vblex.inf" 2: %vblex.*.inf.$function { %1(vblex_v2v)[lemcase=$lemcase,infin=(if (1.lem incl not-usually-supn-verbs) 1.infin else (if (1.function in supnfunction) supn else 1.infin))]} !
@@ -728,6 +728,7 @@ VP -> "pers NegVP" 2: prn.pers.*.nom %NegVP (if (2.lem in lohkat_verbs) {1[lemca
 	3[number=2.poss,case=nom]} !!! Son lohká iežaset duđavažžan. > Sån javllá sij li dudálattja.
 	| "dadjat n adj.ess" 5: %[dadjat_verbs]@vblex NP.*.acc adj.*.ess { 1[lemcase=$lemcase] _ %2[case=nom] _ liehket(vblex)[mood=indic,tense=pres,person=p3,number=2.number] _ 3[number=2.number,case=nom]} !!! Son lohká ášši miellagiddevažžan. > Sån javllá ássje l miellagiddis
 	| "dadjat adj.ess" 5: %[dadjat_verbs]@vblex adj.*.ess { %1[lemcase=$lemcase] _ liehket(vblex)[mood=indic,tense=pres,person=p3,number=sg] _ 2[number=sg,case=nom]} !!! Son lohká miellagiddevažžan. > Sån javllá l miellagiddis
+	| "dadjat maid adj.ess" 5: %[dadjat_verbs]@vblex maid@adv adj.*.ess { %1[lemcase=$lemcase] _ 2 _ liehket(vblex)[mood=indic,tense=pres,person=p3,number=sg]  _ 3[number=sg,case=nom]} !!! lohká maid gearggusin > javllá aj la gárves
 	| "leat AP" 1: %leat@vblex AP {%1[lemcase=$lemcase] _ 2}
 !!!	| "leat aj AP" 1: %leat@vblex aj@AdvP AP {%1[lemcase=$lemcase] _ 2 _ 3}
 	| "leat@prfprc AP" 3: liehket@V.prfprc.[mainv].sentinit %AP {liehket(vblex_fin)[lemcase=1.lemcase,mood=indic,tense=pres,person=p3,number=sg] _ 1[lemcase=2.lemcase] _ %2 }
@@ -896,6 +897,7 @@ S ->
 	| "PP VP" 1: PP %VP  { 1[lemcase=$lemcase] _ %2 } !maŋŋel juovllaid leat
 	| "NP PP VP" 1: NP PP %VP { 1[lemcase=$lemcase] _ 2 _ %3 } !buolvvat ovdal min leat gillán
 	| "NP v aj np" 2: %NP vblex aj@AdvP NP {%1 _ 2 _ 4 _ 3}
+	| "C pers V NP" 3: C prn.pers %liehket@V NP (if (2.person_number in first_sec_person_number and 2.person_number= 3.person_number) { 1[lemcase=$lemcase] _ %3 _ 4 } else { 1[lemcase=$lemcase] _ 2 _ %3 _ 4 }) !go mun lean báikkis > gå lav bájken
 	| "C pers V NP" 2: C prn.pers %V NP (if (2.person_number in first_sec_person_number and 2.person_number= 3.person_number) { 1 _ 4 
 	_ %3[lemcase=1.lemcase] } else { 1 _ 2 _ 4 _ %3 }) !Mun boran > Båråv 
 	| "C pers V NP AdvP" 2: C prn.pers %V NP AdvP (if (2.person_number in first_sec_person_number and 2.person_number= 3.person_number) { 1 _ 5 _ %3[lemcase=1.lemcase] _ 4 } else { 1 _ 2 _ 5 _ %3 _ 4 }) !  
