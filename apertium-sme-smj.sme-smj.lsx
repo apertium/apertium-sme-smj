@@ -436,7 +436,7 @@
       <p><l>vuostá</l><r></r></p>
        <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
    </e>
-    <e r="LR">
+    <e r="LR"  w="5.0">
        <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
        <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
      <p><l>veadjemeahttun<s n="adj"/></l><r>vejolaš<s n="adj"/></r></p>
@@ -658,7 +658,7 @@
       <p><l><s n="loc"/></l><r><s n="ine"/></r></p>
       <par n="ine_syntax_tag"/>
     </e>
-    <e r="LR" w="1.0">
+    <e r="LR" w="0.0">
       <i>geatnegahttit<s n="vblex"/><t/><d/></i>
       <i><w/><t/></i>
       <p><l><s n="acc"/></l><r><s n="acc"/></r></p>
@@ -670,7 +670,7 @@
       <i><w/><t/></i>
       <p><l><s n="acc"/></l><r><s n="nom"/></r></p>
       <par n="fsub_tag"/>
-    </e>
+    </e> 
     <e r="LR" w="0.0">
       <par n="dadjat"/>
       <i><w/><t/></i>

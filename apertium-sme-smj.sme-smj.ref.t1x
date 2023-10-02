@@ -21,17 +21,21 @@
     </def-cat>
     <def-cat n="currentverbstop">
       <cat-item tags="*.@>P"/>
+      <cat-item tags="*.@+FAUXV"/>
+      <cat-item tags="cnjsub.*"/>
     </def-cat>
     
     <def-cat n="mainv">
       <cat-item tags="vblex.*.*.@+FMAINV"/>
       <cat-item tags="vblex.*.*.@-FMAINV"/>
       <cat-item tags="vblex.*.*.@←OBJ"/>
+      <cat-item tags="vblex.*.*.@N←"/>
       <cat-item tags="vblex.*.*.@←ADVL"/>
       <cat-item tags="vblex.*.*.@SUBJ→"/>
       <cat-item tags="vblex.*.*.*.@+FMAINV"/>
       <cat-item tags="vblex.*.*.*.@-FMAINV"/>
       <cat-item tags="vblex.*.*.*.@←OBJ"/>
+      <cat-item tags="vblex.*.*.*.@N←"/>
       <cat-item tags="vblex.*.*.*.@←ADVL"/>
       <cat-item tags="vblex.*.*.*.@SUBJ→"/>
       <cat-item tags="vblex.*.*.*.*.@+FMAINV"/>
@@ -231,24 +235,33 @@
       <list-item v="dahkat"/>
       <list-item v="geatnegahttit"/>
       <list-item v="ohcat"/>
+      <list-item v="luoitit"/>
     </def-list>
     <def-list n="smj-supn-triggerverbs">
       <list-item v="bivddit"/>
       <list-item v="bovdet"/>
       <list-item v="barggat"/>
       <list-item v="dahkat"/>
+      <list-item v="gávnnat"/>
       <list-item v="hásstalit"/>
+      <list-item v="luojttet"/>
+      <list-item v="mujttádit"/>
       <list-item v="vælggogissan dahkat"/>
       <list-item v="ávvudallat"/>
       <list-item v="ávttjit"/>
       <list-item v="geatnegahttit"/>
       <list-item v="åhtsåt"/>
       <list-item v="ohcat"/>
+      <list-item v="sjaddat"/>
     </def-list>
     <def-list n="not-usually-supn-verbs">
       <list-item v="subtsastit"/>
       <list-item v="liehket"/>
     </def-list>
+    <def-list n="adj_triggingsupn"> 
+      <list-item v="vissjal"/>
+      <list-item v="áŋgir"/>
+    </def-list> 
     <def-list n="adj_nottriggingsupn"> 
       <list-item v="álkke"/>
       <list-item v="hiebalasj"/>
@@ -258,7 +271,6 @@
       <list-item v="gássjel"/>
       <list-item v="ahket"/>
       <list-item v="ájnas"/>
-      <list-item v="gássjel"/>
       <list-item v="tjiehppe"/>
       <list-item v="váttis"/>
     </def-list> 
