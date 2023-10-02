@@ -2473,6 +2473,16 @@
       <match lemma="vel"><select lemma="vil" tags="adv.*"/></match>
     </rule>
 
+    <rule weight="1.0">
+      <match lemma="iskkadeapmi"><select lemma="guoradallam"/></match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="iskkadeapmi"><select lemma="åtsålvis"/></match>
+    </rule>
+    <rule weight="0.6">
+	  <match tags="n.sem_body.*"/>
+      <match lemma="iskkadeapmi"><select lemma="åtsålvis"/></match>
+    </rule>
 
 
     <rule weight="1.0">

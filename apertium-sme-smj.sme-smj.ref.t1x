@@ -25,23 +25,39 @@
       <cat-item tags="cnjsub.*"/>
     </def-cat>
     
-    <def-cat n="mainv">
+    <def-cat n="not-auxverb">
       <cat-item tags="vblex.*.*.@+FMAINV"/>
       <cat-item tags="vblex.*.*.@-FMAINV"/>
       <cat-item tags="vblex.*.*.@←OBJ"/>
       <cat-item tags="vblex.*.*.@N←"/>
+      <cat-item tags="vblex.*.*.@A←"/>
       <cat-item tags="vblex.*.*.@←ADVL"/>
       <cat-item tags="vblex.*.*.@SUBJ→"/>
       <cat-item tags="vblex.*.*.*.@+FMAINV"/>
       <cat-item tags="vblex.*.*.*.@-FMAINV"/>
       <cat-item tags="vblex.*.*.*.@←OBJ"/>
       <cat-item tags="vblex.*.*.*.@N←"/>
+      <cat-item tags="vblex.*.*.*.@A←"/>
       <cat-item tags="vblex.*.*.*.@←ADVL"/>
       <cat-item tags="vblex.*.*.*.@SUBJ→"/>
       <cat-item tags="vblex.*.*.*.*.@+FMAINV"/>
       <cat-item tags="vblex.*.*.*.*.@-FMAINV"/>
       <cat-item tags="vblex.*.*.*.*.@←OBJ"/>
       <cat-item tags="vblex.*.*.*.*.@←ADVL"/>
+      <cat-item tags="vblex.*.*.*.*.@SUBJ→"/>
+    </def-cat>
+    <def-cat n="mainv">
+      <cat-item tags="vblex.*.*.@+FMAINV"/>
+      <cat-item tags="vblex.*.*.@-FMAINV"/>
+      <cat-item tags="vblex.*.*.@←OBJ"/>
+      <cat-item tags="vblex.*.*.@SUBJ→"/>
+      <cat-item tags="vblex.*.*.*.@+FMAINV"/>
+      <cat-item tags="vblex.*.*.*.@-FMAINV"/>
+      <cat-item tags="vblex.*.*.*.@←OBJ"/>
+      <cat-item tags="vblex.*.*.*.@SUBJ→"/>
+      <cat-item tags="vblex.*.*.*.*.@+FMAINV"/>
+      <cat-item tags="vblex.*.*.*.*.@-FMAINV"/>
+      <cat-item tags="vblex.*.*.*.*.@←OBJ"/>
       <cat-item tags="vblex.*.*.*.*.@SUBJ→"/>
     </def-cat>
     <def-cat n="sent_OR_at.clb">
@@ -73,6 +89,7 @@
        <attr-item tags="@+FAUXV"/>
        <attr-item tags="@\+FAUXV"/>
        <attr-item tags="@\+FMAINV"/>
+       <attr-item tags="@-FMAINV"/>
        <attr-item tags="@-F←ADVL"/>
        <attr-item tags="@-F←ADVL-ine"/>
        <attr-item tags="@-F←ADVL-ela"/>
@@ -146,16 +163,36 @@
       <attr-item tags="ela"/>
       <attr-item tags="ine"/>
     </def-attr>
+    <def-attr n="a_PoS">
+      <attr-item tags="adv"/>
+      <attr-item tags="prn"/>
+      <attr-item tags="vblex"/>
+      <attr-item tags="n"/>
+      <attr-item tags="np"/>
+      <attr-item tags="adj"/>
+      <attr-item tags="post"/>
+      <attr-item tags="pr"/>
+      <attr-item tags="ij"/>
+      <attr-item tags="num"/>
+      <attr-item tags="pcle"/>
+      <attr-item tags="cnjsub"/>
+      <attr-item tags="cnjcoo"/>
+    </def-attr>
   </section-def-attrs>
 
   <section-def-vars>
     <def-var n="cur_subj"/>
     <def-var n="current_verb"/>
+    <def-var n="current_adj"/>
   </section-def-vars>
 
   <section-def-lists>
-    <def-list n="l_foo">
-      <list-item v="foo"/>
+    <def-list n="mainvfunc">
+      <list-item v="@+FMAINV"/>
+      <list-item v="@-FMAINV"/>
+      <list-item v="@\-FMAINV"/>
+      <list-item v="@←OBJ"/>
+      <list-item v="@SUBJ→"/>
     </def-list>
     <def-list n="not-move-adv">
       <list-item v="aj"/>     
@@ -262,6 +299,12 @@
       <list-item v="vissjal"/>
       <list-item v="áŋgir"/>
     </def-list> 
+    <def-list n="vblex_nottriggingsupn"> 
+      <list-item v="lijkkut"/>
+      <list-item v="jåksåt"/>
+      <list-item v="ollet"/>
+      <list-item v="gæhttjalit"/>
+    </def-list> 
     <def-list n="adj_nottriggingsupn"> 
       <list-item v="álkke"/>
       <list-item v="hiebalasj"/>
@@ -271,7 +314,7 @@
       <list-item v="gássjel"/>
       <list-item v="ahket"/>
       <list-item v="ájnas"/>
-      <list-item v="tjiehppe"/>
+<!--      <list-item v="tjiehppe"/> -->
       <list-item v="váttis"/>
     </def-list> 
   </section-def-lists>
@@ -282,6 +325,9 @@
     </def-macro>
      <def-macro n="set_current_verb" npar="1">
       <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
+    </def-macro>
+     <def-macro n="set_current_adj" npar="1">
+      <let><var n="current_adj"/><clip pos="1" side="tl" part="lem"/></let>
     </def-macro>
  </section-def-macros>
 
@@ -311,15 +357,25 @@
 
  <rule c="Found a mainverb, add a tag">
       <pattern>
-        <pattern-item n="mainv"/>
+        <pattern-item n="not-auxverb"/>
       </pattern>
       <action>
-		<choose>
+		<choose> 
 			<when><test>
 			<and> 
-      <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
-      <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
              <equal><clip pos="1" side="tl" part="a_infin"/><lit-tag v="inf"/></equal> 
+      <not><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="not-usually-supn-verbs"/></in></not>
+      <or>
+      <in caseless="yes"><var n="current_verb"/><list n="smj-supn-triggerverbs"/></in>
+      <and>
+              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@A←"/></equal> 
+      <not><in caseless="yes"><var n="current_adj"/><list n="adj_nottriggingsupn"/></in></not>
+         </and>
+      <and>
+              <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@←ADVL"/></equal> 
+      <not><in caseless="yes"><var n="current_verb"/><list n="vblex_nottriggingsupn"/></in></not>
+         </and>
+        </or>
          </and>
         </test>
 		<out>
@@ -332,7 +388,7 @@
             </lu>
         </out>
         </when>
-         <otherwise>
+        <otherwise>
          <call-macro n="set_current_verb"><with-param pos="1"/></call-macro>
 		<out>
           <lu> 
@@ -392,6 +448,7 @@
           </lu>
         </out>
        <let><var n="current_verb"/><lit v=""/></let>
+       <let><var n="current_adj"/><lit v=""/></let>
      </action>
     </rule> 
 
@@ -436,6 +493,16 @@
         <pattern-item n="any"/>
       </pattern>
       <action>
+		<choose>
+			<when><test><and>
+              <equal><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="adj"/></equal> 
+              <or>
+              <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></equal> 
+              <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ess"/></equal> 
+              </or>
+       </and></test>
+         <call-macro n="set_current_adj"><with-param pos="1"/></call-macro>
+         </when></choose>
         <out>
           <lu>
             <clip pos="1" side="sl" part="whole"/>
@@ -461,6 +528,7 @@
           </lu>
         </out>
        <let><var n="current_verb"/><lit v=""/></let>
+       <let><var n="current_adj"/><lit v=""/></let>
       </action>
     </rule>
 
