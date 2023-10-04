@@ -588,16 +588,28 @@
 
     <rule weight="1.0"><match lemma="ge"> <select lemma="aj"/> </match></rule>
     <rule weight="0.5"><match lemma="ge"> <select lemma="ga"/> </match></rule>
+    <rule weight="0.5"><match lemma="ge"> <select lemma="vån"/> </match></rule>
     <rule weight="0.5"><match lemma="ge"> <select lemma=""/> </match></rule>
 
     <rule weight="0.6">
       <match lemma="ii"/>
       <match lemma="ge"> <select lemma="ga"/> </match>
     </rule>
+    <rule weight="1.0">
+      <match lemma="ii"/>
+      <match lemma="ge"> <select lemma="vån"/> </match>
+      <match tags="vblex.*"/>
+    </rule>
     <rule weight="0.6">
       <match lemma="ii"/>
       <match tags="vblex.*"/>
       <match lemma="ge"> <select lemma=""/> </match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="ii"/>
+      <match tags="vblex.*"/>
+      <match tags="n.*"/>
+     <match lemma="ge"> <select lemma=""/> </match>
     </rule>
 
     <rule weight="0.6">
@@ -2270,6 +2282,9 @@
        <rule weight="0.6">
    <match lemma="šaddat" tags="vblex.*.@+FAUXV"><select lemma="vierttit" tags="vblex.*"/></match> 
  </rule>     
+<!--       <rule weight="0.6">
+   <match lemma="šaddat" tags="vblex.*.@-FAUXV"><select lemma="vierttit" tags="vblex.*"/></match> 
+ </rule>   -->   
         <rule weight="0.6">
    <match lemma="šaddat" tags="vblex.*"><select lemma="vierttit" tags="vblex.*"/></match> 
    <or>
@@ -2386,6 +2401,17 @@
      <rule weight="0.6">
        <match tags="*.cmp"/>
    <match lemma="goddi" tags="n.*"><select lemma="juogos" /></match>
+ </rule>     
+
+       <rule weight="1.0">
+   <match lemma="goargŋut" tags="vblex.*"><select lemma="goarŋŋot" /></match>
+ </rule>     
+       <rule weight="0.5">
+   <match lemma="goargŋut" tags="vblex.*"><select lemma="goarrit" /></match>
+ </rule>     
+       <rule weight="0.6">
+   <match lemma="goargŋut" tags="vblex.*"><select lemma="goarrit" /></match>
+   <match lemma="johka"/>
  </rule>     
 
        <rule weight="1.0">
@@ -2507,9 +2533,12 @@
     <rule weight="0.5">
       <match lemma="boahtit" tags="vblex.*"><select lemma="ájggot" tags="vblex.*"/></match>
     </rule>
+    <rule weight="0.6"> 
+      <match lemma="boahtit" tags="vblex.iv.*.@-FAUXV"><select lemma="sjaddat" tags="vblex.*"  /></match>
+    </rule>
 
     <rule weight="0.6"> 
-      <match lemma="boahtit" tags="vblex.iv.indic.*.p3.*.@+FAUXV"><select lemma="sjaddat" tags="vblex.*"  /></match>
+      <match lemma="boahtit" tags="vblex.iv.*.@+FAUXV"><select lemma="sjaddat" tags="vblex.*"  /></match>
     </rule>
     <rule weight="0.6"> 
       <match lemma="boahtit" tags="vblex.*"><select lemma="ájggot" tags="vblex.*"  /></match>

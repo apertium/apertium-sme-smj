@@ -273,6 +273,7 @@
       <list-item v="geatnegahttit"/>
       <list-item v="ohcat"/>
       <list-item v="luoitit"/>
+      <list-item v="viehkehit"/>
     </def-list>
     <def-list n="smj-supn-triggerverbs">
       <list-item v="bivddit"/>
@@ -290,9 +291,9 @@
       <list-item v="åhtsåt"/>
       <list-item v="ohcat"/>
       <list-item v="sjaddat"/>
+      <list-item v="viehkedit"/>
     </def-list>
     <def-list n="not-usually-supn-verbs">
-      <list-item v="subtsastit"/>
       <list-item v="liehket"/>
     </def-list>
     <def-list n="adj_triggingsupn"> 

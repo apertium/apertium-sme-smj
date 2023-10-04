@@ -83,6 +83,7 @@
     <sdef n="sem_measr_time"/>
     <sdef n="sem_perc-emo"/>
     <sdef n="sem_plc"/>
+    <sdef n="sem_plc-water"/>
     <sdef n="sem_sign"/>
     <sdef n="supn"/>
 	<sdef n="sg"/>
@@ -107,9 +108,11 @@
     <sdef n="@-FMAINV"/>
     <sdef n="@+FAUXV"/>
     <sdef n="@-FSUBJ→"/> 
+    <sdef n="@PCLE"/>    
     <sdef n="@→N"/> 
     <sdef n="@N←"/>
     <sdef n="@Num←"/>
+    <sdef n="@←OBJ"/> 
     <sdef n="@SUBJ→"/> 
   </sdefs>
 
@@ -136,6 +139,17 @@
 	</pardef>
     <pardef n="word">
       <e><i><w/><t/><d/></i></e>
+      <e></e>
+    </pardef>
+    <pardef n="word_not_verb">
+      <e><i><w/><s n="n"/><t/><d/></i></e>
+      <e><i><w/><s n="adj"/><t/><d/></i></e>
+      <e><i><w/><s n="adv"/><t/><d/></i></e>
+      <e><i><w/><s n="prn"/><t/><d/></i></e>
+    </pardef>
+    <pardef n="maybe_words_not_verb">
+      <e><par n="word_not_verb"/><par n="word_not_verb"/></e>
+      <e><par n="word_not_verb"/></e>
       <e></e>
     </pardef>
     <pardef n="maybe_words">
@@ -219,6 +233,8 @@
       <e><i>gielestit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>jáhkkit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>doaivut<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>sávvat<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>vuordit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
     </pardef>
     <pardef n="maybe_syntax_tag">
       <e></e>
@@ -255,6 +271,17 @@
       <p><l>gohcu</l><r>gohcu</r></p>
       <i><t/><d/></i> 
       <p><l>alde<s n="post"/></l><r></r></p><par n="syntax_tags"/>
+    </e>
+    <e r="LR" w="0.0"> <!-- guhkes áigi > guhká -->
+      <p><l>guhkki<s n="adj"/><t/><d/></l><r></r></p>
+      <p><l>áigi<s n="n"/><t/><d/></l><r></r></p>
+      <p><l>vuollai<s n="post"/></l><r>guhká<s n="adv"/></r></p>
+       <i><t/><d/></i> 
+    </e>
+    <e r="LR" w="1.0"> <!-- guhkes áigi > guhká -->
+      <p><l>guhkki<s n="adj"/><t/></l><r></r></p><par n="syntax_tags"/>
+      <p><l>áigi<s n="n"/><t/></l><r>guhká<s n="adv"/></r></p>
+       <i><t/><d/></i> 
     </e>
 
     <e r="LR" w="1.0"> <!-- láibumis > actio.ela -->
@@ -324,12 +351,6 @@
      <p><l><s n="vblex"/><t/><s n="inf"/></l><r><s n="vblex"/><t/><s n="indic"/><s n="conneg"/></r></p>
       <i><t/><d/></i>
    </e> 
-    <e r="LR" w="1.0"> <!-- alimusriekti > alimus riekti > alemusriektá  -->
-        <i><w/></i>
-     <p><l><s n="ex_adj"/></l><r><s n="adj"/></r></p>
-         <i><s n="der_superl"/><s n="adj"/></i>
-     <p><l><s n="cmp_sgnom"/><s n="cmp"/><d/></l><r><s n="attr"/><s n="@→N"/><d/></r></p>
-   </e>
     <e r="LR" w="1.0"> <!-- sveitsalaš > Svejtsak   -->
         <i><w/></i>
      <p><l><s n="ex_np"/></l><r><s n="np"/></r></p>
@@ -436,6 +457,24 @@
       <p><l>vuostá</l><r></r></p>
        <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
    </e>
+   <e r="LR" w="0.0">
+      <i>johka<s n="n"/><s n="sem_plc-water"/><t/></i>
+      <p><l><s n="gen"/><t/><d/></l><r><s n="acc"/><s n="@←ADVL"/><d/></r></p>
+      <p><l>mielde<s n="post"/></l><r></r></p><par n="syntax_tags"/>
+   </e>
+    <e r="LR" w="0.0">
+       <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></i>
+       <p><l></l><r>ge<s n="pcle"/><s n="@PCLE"/><d/></r></p>
+      <i><w/><s n="vblex"/><t/><d/></i>
+      <i><w/><s n="n"/><t/><d/></i>
+       <p><l>ge<s n="pcle"/><s n="@PCLE"/><d/></l><r></r></p>
+     </e>
+    <e r="LR"  w="0.0">
+       <i>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></i>
+       <p><l></l><r>gal<s n="adv"/><s n="@←ADVL-ine"/><d/></r></p>
+      <i><w/><s n="vblex"/><t/><d/></i>
+       <p><l>gal<s n="adv"/><t/><d/></l><r></r></p>
+     </e>
     <e r="LR"  w="5.0">
        <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
        <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
@@ -666,7 +705,7 @@
     </e>
     <e r="LR" w="0.0">
       <par n="dadjat"/>
-      <par n="maybe_words"/>
+      <par n="maybe_words_not_verb"/>
       <i><w/><t/></i>
       <p><l><s n="acc"/></l><r><s n="nom"/></r></p>
       <par n="fsub_tag"/>
