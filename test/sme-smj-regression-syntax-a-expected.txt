@@ -18,6 +18,8 @@
 [/2RN8ZW_i0GaV]
 [2TF5GHaF5upb#0] ^Mun<prn><pers><p1><sg><nom><@SUBJ→>$ ^fuobmát<vblex><tv><indic><pret><p1><sg><@+FMAINV>$ ^ahte<cnjsub><@CVP>$ ^dárbbašit<vblex><tv><indic><pres><p1><sg><@+FMAINV>$ ^sámegiella<n><sem_lang><sg><acc><@←OBJ>$ ^go<cnjsub><@CVP>$ ^bargat<vblex><tv><indic><pres><p1><sg><@+FMAINV>$ ^nuorra<n><sem_hum><pl><com><@←ADVL>$ ^ja<cnjcoo><@CVP>$ ^nu<adv><@ADVL-ine→>$ ^mun<prn><pers><p1><sg><nom><@SUBJ→>$ ^álgit<vblex><iv><indic><pret><p1><sg><@+FAUXV>$ ^oahpahallat<vblex><tv><inf><@-FMAINV>$^.<sent>$
 [/2TF5GHaF5upb]
+[3Ux_I4rWfMFb#0] ^Son<prn><pers><p3><pl><loc><sentinit><←hab→><@ADVLhab→>$ ^leat<vblex><iv><indic><pres><p3><sg><@+FMAINV>$ ^čoahkkin<n><sem_event><sg><nom><←ext→><@←SUBJext>$ ^son<prn><pers><p3><pl><com><@←ADVL>$ ^boahtte<adj><attr><@→N>$ ^vuossárga<n><sem_time><sg><gen><@←ADVL>$^,<cm>$ ^gos<adv><@ADVLcs-ine→>$ ^fertet<vblex><iv><indic><pres><p3><pl><@+FAUXV>$ ^čielggadit<vblex><tv><inf><@-FMAINV>$ ^áigut<vblex><tv><indic><pres><p3><pl><@+FAUXV>$ ^go<pcle><qst><@PCLE>$ ^váhnen<n><sem_hum><pl><nom><@←SUBJ>$ ^ieš<prn><ref><pl><nom><@N←>$ ^álggahit<vblex><tv><inf><@-FMAINV>$ ^mánáidgárdi<n><sem_build_org><sg><acc><@←OBJ>$ ^vai<cnjsub><@CVP>$ ^ii<vblex><iv><neg><indic><p3><sg><@+FAUXV>$^.<sent>$
+[/3Ux_I4rWfMFb]
 [3mKOjfQhiI7z#0] ^Buorre<adj><sg><nom><@SPRED→>$ ^leat<vblex><iv><indic><pret><p3><sg><@+FMAINV>$ ^go<cnjsub><@CVP>$ ^boahtit<vblex><iv><indic><pret><p2><sg><@+FMAINV>$^.<sent>$
 [/3mKOjfQhiI7z]
 [3ozZaP1J2-SE#0] ^Ii<vblex><iv><neg><indic><p2><pl><@+FAUXV>$ ^orrut<vblex><iv><indic><pret><conneg><@-FMAINV>$ ^hávski<adj><sg><nom><@X>$^.<sent>$
@@ -346,6 +348,8 @@
 [/okLHLU1YhIwW]
 [p1N46uCB5vxh#0] ^Áddjá<n><sem_hum><sg><nom><@SUBJ→>$ ^leat<vblex><iv><indic><pres><p3><sg><@+FAUXV>$ ^boahtit<vblex><iv><prfprc><@-FMAINV>$^.<sent>$
 [/p1N46uCB5vxh]
+[p7-YbhPmuenb#0] ^Thor<np><ant><m><attr><@→N>$ ^Thrane<np><cog><sg><nom><@SUBJ→>$ ^lohkat<vblex><tv><indic><pres><p3><sg><@+FMAINV>$ ^váttis<adj><ess><@←OPRED>$ ^dadjat<vblex><tv><inf><@-FMAINV>$ ^nannet<vblex><tv><indic><pres><p3><pl><@+FMAINV>$ ^go<pcle><qst><@PCLE>$ ^Sámediggi<np><org><sg><nom><@←SUBJ>$ ^politihkalaš<adj><attr><@→N>$ ^bargu<n><sem_act_plc><sg><acc><@←OBJ>$ ^go<cnjsub><@CVP>$ ^lasihit<vblex><tv><indic><pres><p3><pl><@+FMAINV>$ ^politihkalaš<adj><attr><@→N>$ ^ráđđeaddi<n><nomag><sem_hum><cmp_sgnom><cmp>+virgi<n><sem_pos><pl><acc><@←OBJ>$^.<sent>$
+[/p7-YbhPmuenb]
 [q7N8pOMcQRaP#0] ^Dávda<n><sem_state-sick><sg><nom><@SUBJ→>$ ^sáhttit<vblex><iv><indic><pres><p3><sg><@+FAUXV>$ ^dagahit<vblex><tv><inf><@-FMAINV>$ ^šattalmas<n><sem_dummytag><sg><acc><@←OBJ>$ ^ja<cnjcoo><@CNP>$ ^oktiišaddan<n><sem_act><sg><acc><@←OBJ>$^.<sent>$
 [/q7N8pOMcQRaP]
 [qE7iQid8d3rb#0] ^Son<prn><pers><p3><sg><nom><@SUBJ→>$ ^čállit<vblex><tv><indic><pres><p3><sg><@+FMAINV>$ ^goappašat<prn><ind><pl><com><attr><@→N>$ ^giehta<n><sem_body><pl><com><@←ADVL>$^.<sent>$

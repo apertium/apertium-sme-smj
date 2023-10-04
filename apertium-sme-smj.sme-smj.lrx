@@ -798,6 +798,23 @@
     </rule>
 
     <rule weight="1.0">
+      <match lemma="vejolaš"  tags="adj.*"> <select lemma="vejulasj"/> </match>
+    </rule>
+    <rule weight="0.5">
+      <match lemma="vejolaš"  tags="adj.*"> <select lemma="máhttelis"/> </match>
+    </rule>
+    <rule weight="0.6">
+	   <match lemma="go"/> 
+      <match lemma="vejolaš" tags="adj.*"> <select lemma="máhttelis"/> </match>
+    </rule>
+    <rule weight="0.6">
+	   <match lemma="go"/> 
+	   <match /> 
+      <match lemma="vejolaš" tags="adj.*"> <select lemma="máhttelis"/> </match>
+    </rule>
+
+
+    <rule weight="1.0">
       <match lemma="siste"  tags="adv.*"> <select lemma="sinna"/> </match>
     </rule>
     <rule weight="0.5">
@@ -824,29 +841,22 @@
     </rule>
 
     <rule weight="1.0">
-      <match lemma="boaris">
-        <select lemma="boares"/>
-      </match>
+      <match lemma="boaris"><select lemma="boares"/></match>
     </rule>
 
     <rule weight="0.5">
-      <match lemma="boaris">
-        <select lemma="vuoras"/>
-      </match>
+      <match lemma="boaris"><select lemma="vuoras"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="doarvái"/>
+      <match lemma="boaris"><select lemma="boares"/></match>
     </rule>
 
     <rule weight="0.6">
-      <match lemma="boaris">
-        <select lemma="vuoras"/>
-      </match>
+      <match lemma="boaris"><select lemma="vuoras"/></match>
       <match tags="*.sem_hum.*"/>
     </rule>
 
-    <rule weight="1.2">
-      <match lemma="boaris" tags="adj.*.*.nom.*">
-        <select lemma="vuoras"/>
-      </match>
-    </rule>
 
 
     <rule weight="0.6">
@@ -1572,6 +1582,9 @@
     </rule>
     <rule weight="0.6">
       <match lemma="lohkat" tags="vblex.tv.actio.*"><select lemma="låhkåt"/></match>
+    </rule>
+    <rule weight="0.6">
+      <match lemma="lohkat" tags="*.←vdic→.*"><select lemma="javllat"/></match>
     </rule>
 
     <rule weight="0.6">
@@ -2559,7 +2572,7 @@
       <match lemma="mearridit"/>
       </or>
       <match lemma="ahte" tags="cnjsub.*">
-        <select lemma="ahte" tags="cnjsub.*"/>
+        <select lemma="jut" tags="cnjsub.*"/>
       </match>
     </rule>
     
