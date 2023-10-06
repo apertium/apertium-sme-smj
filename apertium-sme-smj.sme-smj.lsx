@@ -158,6 +158,29 @@
       <e><par n="word"/></e>
       <e></e>
     </pardef>
+    <pardef n="meahttun_attr">
+      <e><p><l>áddemeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+      <e><p><l>dárkilmeahttun<s n="adj"/></l><r>dárkil<s n="adj"/></r></p></e>
+      <e><p><l>dearvvašmeahttun<s n="adj"/></l><r>dearvvaš<s n="adj"/></r></p></e>
+      <e><p><l>heivemeahttun<s n="adj"/></l><r>heivvolaš<s n="adj"/></r></p></e>
+      <e><p><l>ipmirmeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+      <e><p><l>veadjemeahttun<s n="adj"/></l><r>vejolaš<s n="adj"/></r></p></e>
+
+    </pardef>
+
+    <pardef n="meahttun">
+      <e><p><l>áddemeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+      <e><p><l>dárkilmeahttun<s n="adj"/></l><r>dárkil<s n="adj"/></r></p></e>
+      <e><p><l>dearvvašmeahttun<s n="adj"/></l><r>dearvvaš<s n="adj"/></r></p></e>
+      <e><p><l>dohkkemeahttun<s n="adj"/></l><r>dohkálaš<s n="adj"/></r></p></e>
+      <e><p><l>dohkketmeahttun<s n="adj"/></l><r>dohkálaš<s n="adj"/></r></p></e>
+      <e><p><l>gierdameahttun<s n="adj"/></l><r>gierdavaš<s n="adj"/></r></p></e>
+      <e><p><l>guoskameahttun<s n="adj"/></l><r>dohkálaš<s n="adj"/></r></p></e>
+      <e><p><l>ipmirmeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+      <e><p><l>veadjemeahttun<s n="adj"/></l><r>vejolaš<s n="adj"/></r></p></e>
+
+      <e><p><l>ipmirmeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+    </pardef>
     <pardef n="kin">
       <e><i>eadni</i></e>
       <e><i>áhčči</i></e>
@@ -235,6 +258,7 @@
       <e><i>doaivut<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>sávvat<s n="vblex"/><s n="tv"/><t/><d/></i></e>
       <e><i>vuordit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
+      <e><i>navdit<s n="vblex"/><s n="tv"/><t/><d/></i></e>
     </pardef>
     <pardef n="maybe_syntax_tag">
       <e></e>
@@ -475,12 +499,60 @@
       <i><w/><s n="vblex"/><t/><d/></i>
        <p><l>gal<s n="adv"/><t/><d/></l><r></r></p>
      </e>
-    <e r="LR"  w="5.0">
+    <e r="LR"  w="0.0">
+       <p><l>leat<s n="vblex"/><t/><d/></l><r></r></p>
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="pl"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
+	  <par n="meahttun_attr"/>      
+      <i><s n="attr"/><t/><d/></i>
+      <i><w/><t/><s n="pl"/><t/><d/></i>
+   </e>
+    <e r="LR"  w="0.0">
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="pl"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
+	  <par n="meahttun_attr"/>      
+      <i><s n="attr"/><t/><d/></i>
+       <i><w/><t/><s n="pl"/><t/><d/></i>
+  </e>
+    <e r="LR"  w="0.0">
+       <p><l>leat<s n="vblex"/><t/><d/></l><r></r></p>
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
+	  <par n="meahttun_attr"/>      
+      <i><s n="attr"/><t/><d/></i>
+   </e>
+    <e r="LR"  w="0.0">
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
+	  <par n="meahttun_attr"/>      
+      <i><s n="attr"/><t/><d/></i>
+   </e>
+    <e r="LR"  w="0.0">
+       <p><l>leat<s n="vblex"/><t/><d/></l><r></r></p>
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
+	  <par n="meahttun"/>      
+      <i><s n="sg"/><t/><d/></i>
+   </e>
+    <e r="LR"  w="0.0">
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
+	  <par n="meahttun"/>      
+      <i><s n="sg"/><t/><d/></i>
+   </e>
+ <!--   <e r="LR"  w="0.0">
+       <p><l>leat<s n="vblex"/><t/><d/></l><r></r></p>
        <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
        <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
      <p><l>veadjemeahttun<s n="adj"/></l><r>vejolaš<s n="adj"/></r></p>
       <i><t/><d/></i>
    </e>
+    <e r="LR"  w="0.0">
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="sg"/><s n="p3"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
+     <p><l>veadjemeahttun<s n="adj"/></l><r>vejolaš<s n="adj"/></r></p>
+      <i><t/><d/></i> 
+   </e> -->
     <e r="LR">
       <p><l>vuhtii</l><r></r></p>
        <p><l><s n="adv"/></l><r></r></p><par n="syntax_tags"/>
