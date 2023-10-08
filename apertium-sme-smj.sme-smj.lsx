@@ -156,20 +156,23 @@
       <e><par n="word"/><par n="word"/><par n="word"/></e>
       <e><par n="word"/><par n="word"/></e>
       <e><par n="word"/></e>
-      <e></e>
+      <e></e> 
     </pardef>
     <pardef n="meahttun_attr">
       <e><p><l>áddemeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+      <e><p><l>áddetmeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
       <e><p><l>dárkilmeahttun<s n="adj"/></l><r>dárkil<s n="adj"/></r></p></e>
       <e><p><l>dearvvašmeahttun<s n="adj"/></l><r>dearvvaš<s n="adj"/></r></p></e>
       <e><p><l>heivemeahttun<s n="adj"/></l><r>heivvolaš<s n="adj"/></r></p></e>
       <e><p><l>ipmirmeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+      <e><p><l>jáhkkemeahttun<s n="adj"/></l><r>jáhkehahtti<s n="adj"/></r></p></e>
       <e><p><l>veadjemeahttun<s n="adj"/></l><r>vejolaš<s n="adj"/></r></p></e>
 
     </pardef>
 
     <pardef n="meahttun">
       <e><p><l>áddemeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+      <e><p><l>áddetmeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
       <e><p><l>dárkilmeahttun<s n="adj"/></l><r>dárkil<s n="adj"/></r></p></e>
       <e><p><l>dearvvašmeahttun<s n="adj"/></l><r>dearvvaš<s n="adj"/></r></p></e>
       <e><p><l>dohkkemeahttun<s n="adj"/></l><r>dohkálaš<s n="adj"/></r></p></e>
@@ -177,6 +180,7 @@
       <e><p><l>gierdameahttun<s n="adj"/></l><r>gierdavaš<s n="adj"/></r></p></e>
       <e><p><l>guoskameahttun<s n="adj"/></l><r>dohkálaš<s n="adj"/></r></p></e>
       <e><p><l>ipmirmeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
+      <e><p><l>jáhkkemeahttun<s n="adj"/></l><r>jáhkehahtti<s n="adj"/></r></p></e>
       <e><p><l>veadjemeahttun<s n="adj"/></l><r>vejolaš<s n="adj"/></r></p></e>
 
       <e><p><l>ipmirmeahttun<s n="adj"/></l><r>ipmirdahtti<s n="adj"/></r></p></e>
