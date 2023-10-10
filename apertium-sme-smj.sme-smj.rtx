@@ -407,11 +407,11 @@ verb3st = "vájbbadit" "hiebadit" "sjaddadit" "gájddadit" "suddadit" "navddadit
 NP ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase]} 
 	| "N:n" 3: %n.*.[case].*.ILL { %1[lemcase=$lemcase,case=ill]} 
 	| "N:n.cmp n" 3: n.*.cmp %n.*.[case] { 1[lemcase=$lemcase,cmp=(if (1.pos_tag/tr=adj) cmp_attr else 1.cmp)] + %2 } 
-	| "N:np.cmp n" 3: np.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} 
-	| "N:np.cmp n" 3: np.*.cmp n.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2 + %3} ! Norggameašttirgilvvut
+	| "N:np.cmp n" 3: np.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} !!! Nobelkomitea
+	| "N:np.cmp n.cmp n" 3: np.*.cmp n.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2 + %3} ! Norggameašttirgilvvut
+	| "NP:np.cmp np.cmp n" 3: np.*.cmp np.*.cmp %n { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2[hyph=cmp_hyph] + %3 } !!! 
 	| "N:n.cmp n.cmp n" 3: n.*.cmp n.*.cmp %n.*.[case] { 1[lemcase=$lemcase] + 2 + %3} ! ráđđeaddinbálvalus
 	| "N:n.cmp n.cmp n.cmp n" 3: n.*.cmp n.*.cmp n.*.cmp %n.*.[case] { 1[lemcase=$lemcase] + 2 + 3 + %4} !!! skuvlaohcanáigemearit
-	| "N:np.cmp n" 3: np.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} !!! Nobelkomitea
 	| "N:num.cmp n" 3: num.*.cmp %n.*.[case] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2} !!! njealje-bearraša
 	| "N:adj.cmp n" 3: adj.*.cmp %n.*.[case] { 1[lemcase=$lemcase,cmp=(if (1.adj_type="") cmp_attr else 1.cmp)] + %2} 
 	| "N:adj.cmp n n" 3: adj.*.cmp n.*.cmp %n.*.[case] { 1[lemcase=$lemcase,cmp=(if (1.pos_tag/tl=n) cmp_sgnom elif (1.adj_type="") cmp_attr else 1.cmp)] + 2 + %3} 
@@ -434,18 +434,27 @@ NP ->  "N:n" 1: %n.*.[case] { %1[lemcase=$lemcase]}
 	| "NP:NP vblex" 1:  %NP vblex.*."@N←" { %1[lemcase=$lemcase] _ 2}
 	;
 
-NP -> "Name:np" 1: %np.*.[case].$function { %1 } 
-	| "Name:np eret" 1: %np.*.ela eret@adv { %1 }
-	| "Name:np.cmp np" 3: np.*.cmp %np.*.[caseattr] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
-	| "Name:np.cmp np.cmp np" 3: np.*.cmp np.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2[hyph=cmp_hyph] + %3 } !!! 
-	| "Name:np.cmp np.cmp np" 3: np.*.cmp np.*.cmp %n { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2[hyph=cmp_hyph] + %3 } !!! 
-	| "Name:n.cmp np" 3: n.*.cmp %np { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
-	| "Name:N Name" 1: np.*."@→N" %NP {1 _ %2 } !Samuel John N. Anti, Verdens Gang aviisii
-	| "Name:N Name" 1: n.*."@→N" %np {1 _ %2 } !Nils I. Hætta
-	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" %NP {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
-	| "Name:N Name" 1: np.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
-!!!	| "Name:np cnp np" 1: NP cnjcoo."@CNP" %NP.*.$function [$number=(if (1.np_type=ant and 3.np_type=ant) du else 3.number)] { 1[lemcase=$lemcase] _ 2 _ %3[number=3.number] }
-	| "Name:np missing" %np.*.attr unknown  { %1 _ 2 }
+
+Name -> "Name:np.cmp np" 1: np.*.cmp %np.*.[caseattr] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Ann-Marie
+	| "Name:n.cmp np" 1: n.*.cmp %np.[caseattr] { 1[lemcase=$lemcase,hyph=cmp_hyph] + %2 } !!! Davvi-Suopma	
+	| "Name:np.cmp np.cmp np" 3: np.*.cmp np.*.cmp %np.[caseattr] { 1[lemcase=$lemcase,hyph=cmp_hyph] + 2[hyph=cmp_hyph] + %3 } 
+	| "Name:np" 1: %np.*.[caseattr].$function { %1 }
+	;
+
+
+NP ->  "NP:Name eret" 1: %Name.*.ela eret@adv { %1 }
+	| "NP:Name Name" 1: Name.*."@→N" %Name {1 _ %2 } !Nils Hætta
+	| "NP:Name Name Name" 1: Name.*."@→N" Name.*."@→N" %Name.*.[case] {1 _ 2 _ %3 } !
+	| "NP:Name Name Name Name" 1: Name.*."@→N" Name.*."@→N" Name.*."@→N" %Name.*.[case] {1 _ 2 _ 3 _ %4 } !
+
+	| "NP:Name n Name" 1: Name.*."@→N" n.*."@→N" %Name {1 _ 2 _ %3 } !Nils I. Hætta
+	| "NP:Name Name n Name" 1: Name.*."@→N" Name.*."@→N" n.*."@→N" %Name {1 _ 2 _ 3 _ %4 } !Samuel John N. Anti, 
+	| "NP:Name n Name Name" 1: Name.*."@→N" n.*."@→N" Name.*."@→N" %Name {1 _ 2 _ 3 _ %4 } !Samuel N. Eira Anti, 
+
+	| "NP:Name adj n" 1: Name.*."@→N" adj.*."@→N" %n {1 _ 2 _ %3 } ! ! Suoma Alimushálddáhusriektái
+	| "NP:Name n adj adj n" 1: Name.*."@→N" adj.*."@→N" adj.*."@→N" %NP {1 _ 2 _ 3 _ %4 } ! ! Deanu gieldda ođđa sadjásaš ráđđealmmái
+	| "NP:Name" %Name.*.[case]  { %1 }
+	| "NP:Name missing" %Name.*.attr unknown  { %1 _ 2 }
 	;
 
 NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
@@ -455,7 +464,7 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "NP:NP cnjcoo N" 1: NP.*."@→N" cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] _ 2 _ %3 } !!! coordination
 !!!	| "NP:NP, NP cnjcoo NP" 1: NP ,@cm NP cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] 2 _ 3 _ 4 _ %5 } !!! coordination
 !!!	| "NP:NP, NP, NP cnjcoo NP" 1: NP ,@cm NP ,@cm NP cnjcoo."@CNP" %NP { 1[lemcase=$lemcase] 2 _ 3 4 _ 5 _ 6 _ %7 } !!! coordination
-	| "NP:NP@→N N" 2: NP.*."@→N" %NP { 1 _ 2} !sámi máná
+	| "NP:NP@→N NP" 2: NP.*."@→N" %NP { 1 _ 2} !sámi máná
 	| "NP:adv NP@→N N" 2: adv.[right] NP.*."@→N" %NP { 1 _ 2 _ %3} !
 !!!	| "NP:adv NP@→N Name" 2: adv.[right] NP.*."@→N" %Name { 1 _ 2 _ %3} !nu fámolaš Suomas
 	| "NP:buorre N" 3: buorre@adj.*."@→N" %NP { 1[attr=attr,number=""] _ %2 }
@@ -473,8 +482,6 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "NP:prn N" 3: prn.*."@→N" %NP { 1[lemcase=$lemcase] _ %2} 
 	| "NP:prn AP N" 3: prn.*."@→N" adj.*."@→N" %NP { 1[lemcase=$lemcase] _ 2 _ %3} 
 	| "NP:gohcuid alde > V" 4: %gohcu@n.*.pl.gen { %1(vblex_infin)[lemcase=$lemcase] } !denne må generaliseres, hvordan uttrykke pos?
-
-!!!	| "NP:Name" 1: %Name { %1 }
 
 	| "NP:jagi num.sem_year" 1: %jahki@n.*.gen num.sem_year {  %1[case=ine] _ 2 }
 	| "NP:num.sem_year" 1: %num.sem_year { %1[case=nom] }
@@ -668,6 +675,7 @@ V -> "V:auxcondvblex" 5: %[auxverbs]@vblex.*.cond ?(1.qst="") { %1[lemcase=$lemc
 	| "V:@+FMAINV inf" 2: %vblex.*.indic.*.$person.$number.[mainv] vblex.*.inf { %1(vblex_v2v)[lemcase=$lemcase] _ 2(vblex_v2v)[infin=(if (2.trigger=SUPN) supn else 2.infin)]} !
 	| "V:livččii vblex" 3: leat@vblex.*.cond %vblex { 1[lemcase=$lemcase] _ %2(vblex_v2v)} 
 	| "V:FAUXV FAUXV" 1: %vblex.*."@+FAUXV" vblex.*."@-FAUXV" { %1[lemcase=$lemcase,tense=(if (1. lem incl ij and 2.lem incl liehket) pres else 1.tense)] _ 2 } ! sáhtán borrat
+	| "FAUXV SUBJ" 1: %vblex.*."@+FAUXV" n.*."@←SUBJ" { %1 _ 2} 
 	;
 
 VP ->  "NegVP vblex NP" 2: %NegVP vblex NP { %1[lemcase=$lemcase] _ 3 _ 2} 
