@@ -484,11 +484,11 @@ NP -> "NP:N PCLE" 1: %NP PCLE { %1[lemcase=$lemcase] _ 2 }
 	| "NP:gohcuid alde > V" 4: %gohcu@n.*.pl.gen { %1(vblex_infin)[lemcase=$lemcase] } !denne må generaliseres, hvordan uttrykke pos?
 
 	| "NP:jagi num.sem_year" 1: %jahki@n.*.gen num.sem_year {  %1[case=ine] _ 2 }
-	| "NP:num.sem_year" 1: %num.sem_year { %1[case=nom] }
+!!!	| "NP:num.sem_year" 1: %num.sem_year { %1[case=nom] }
 	| "NP:num.sem_year.ine" 3: %num.sem_year.sg.loc { jahke@n.sg.ine _ %1[case=nom] }
 	| "NP:num.sem_year.ine" 3: %num.sem_year.sg.ine { jahke@n.sg.ine _ %1[case=nom] }
 	| "NP:num.sem_year.ela" 3: %num.sem_year.sg.ela { jahke@n.sg.ela _ %1[case=nom] }
-	| "NP:num.sem_year.ill" 3: %num.sem_year.sg.ill { jahke@n.sg.ill _ %1[case=nom] }
+	| "NP:num.sem_year.ill" 3: %num.sem_year.sg.ill.[function] { jahke@n.sg.ill _ %1[case=nom] }
 	| "NP:NP pcle" 1: %NP pcle (if (2.lem/tl="") { %1 } else { %1 _ 2})
 	| "NP:num N" 2: num %NP ?(1.function not="@→A") {1[case=(if (1.case=loc and 2.function in advlela) ela elif (1.case=loc) ine elif (1.lem=akta) 1.case elif (1.case=acc) nom else 1.case)] _ %2[case=(if (2.case=loc and 2.function in advlela) ela elif (2.case=loc) ine elif (1.lem=akta) 2.case elif (1.case=acc and 2.case=acc) gen else 2.case)]} !!!2009-2013 áigodagas
 	| "NP:num C num NP" 2: num C num %NP {1[case=(if (1.case=loc and 4.function in advlela) ela elif (1.case=loc) ine elif (1.lem=akta) 1.case elif (1.case=acc) nom else 1.case)] _ 2 _  3[case=(if (3.case=loc and 4.function in advlela) ela elif (3.case=loc) ine elif (3.lem=akta) 3.case elif (3.case=acc) nom else 3.case)] _ %4[case=(if (4.case=loc and 4.function in advlela) ela elif (4.case=loc) ine elif (1.lem=akta) 4.case elif (1.case=acc and 4.case=acc) gen else 4.case)]} !!!ovtta dahje guokte ođđa ossodaga
