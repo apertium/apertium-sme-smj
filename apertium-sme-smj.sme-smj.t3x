@@ -744,7 +744,7 @@
         </out>
       </action>
     </rule>
-    <rule comment="moves SPREDADVL_left before cop-mainv" > 
+<!--    <rule comment="moves SPREDADVL_left before cop-mainv" > 
       <pattern>
         <pattern-item n="cvp"/>
         <pattern-item n="cop-mainv"/>
@@ -774,7 +774,7 @@
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
 
     <rule comment="moves adverb in front of prosent" > 
       <pattern>
