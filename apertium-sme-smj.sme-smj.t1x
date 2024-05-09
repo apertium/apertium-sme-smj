@@ -207,6 +207,9 @@ C[_]-T sent
     <def-cat n="numeral">
       <cat-item tags="num.*"/>
     </def-cat>
+    <def-cat n="num_gen">
+      <cat-item tags="num.sg.gen.*"/>
+    </def-cat>
 
     <def-cat n="num_cmp">
       <cat-item tags="num.cmp"/>
@@ -672,6 +675,9 @@ C[_]-T sent
     <def-cat n="jahki_n_gen">
       <cat-item lemma="jahki" tags="n.*.sg.gen.*"/>
       <cat-item lemma="jahki" tags="n.sg.gen.*"/>
+    </def-cat>
+    <def-cat n="jahkasaccat">
+      <cat-item lemma="jahkásaččat" tags="adv.*"/>
     </def-cat>
 
     <def-cat n="duohtandahkat_vblex">
@@ -9820,6 +9826,58 @@ C[_]-T sent
         <let><var n="supn_coor"/><lit v=""/></let>
         <let><var n="current_adj"/><lit v=""/></let>
         <let><var n="current_verb"/><lit v=""/></let>
+      </action>
+    </rule>
+    <rule comment="C[_]-NUM numeral jahki_n_gen" c="son lea guhtta jagi boaris">
+      <pattern>
+        <pattern-item n="numeral"/>
+        <pattern-item n="jahki_n_gen"/>
+        <pattern-item n="boaris_adj"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+        <let><clip pos="3" side="tl" part="lem"/><lit v="jagák"/></let>
+        <out>
+          <chunk name="adj" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment="C[_]-NUM num_gen jahkasaccat" c="soai leaba guđa jahkasaččat, with incorrect disam">
+      <pattern>
+        <pattern-item n="num_gen"/>
+        <pattern-item n="jahkasaccat"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="adj" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+                  <lit v="jagák"/>
+                  <lit-tag v="adj.pl.nom"/>
+            </lu>
+          </chunk>
+        </out>
       </action>
     </rule>
     <rule comment="C[_]-NUM numeral prosent" c="example">
