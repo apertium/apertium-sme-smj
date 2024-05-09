@@ -1,10 +1,10 @@
 {
     "sme-smj": {
         "input": "sme-smj-input.txt",
-        "mode": "sme-smj_rtx"
+        "mode": "sme-smj"
     },
     "sme-smj-regression": {
         "input": "sme-smj-regression-input.txt",
-        "mode": "sme-smj_rtx"
+        "mode": "sme-smj"
     }
 }
