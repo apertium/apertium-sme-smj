@@ -89,6 +89,7 @@
     </def-cat>
     <def-cat n="neg-vblex">
       <cat-item lemma="neg" tags="SV.@+FAUXV"/>
+      <cat-item lemma="neg" tags="SV.@+FMAINV"/>
     </def-cat>
     
     <def-cat n="P_left">

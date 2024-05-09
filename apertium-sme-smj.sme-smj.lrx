@@ -2448,6 +2448,10 @@
    <match lemma="deaivása"/>
  </rule>     
 
+       <rule weight="1.1">
+   <match tags="*.conneg.*"/>
+   <match lemma="ii" tags="vblex.iv.neg.indic.*.*.foc_neg-ge.*"><select lemma="jalik" tags="cnjcoo.*"/></match>
+ </rule>     
        <rule weight="1.0">
    <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*"/></match>
  </rule>     
@@ -2461,6 +2465,13 @@
        <rule weight="1.2">
    <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*.sg.*"/></match>
    <match lemma="leat" tags="vblex.*.indic.pret.conneg.*"/>
+ </rule>     
+       <rule weight="1.2">
+   <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*.du.*"/></match>
+   <or>
+   <match lemma="leat" tags="vblex.*.indic.pret.conneg.*"/>
+   <match lemma="orrut" tags="vblex.*.indic.pret.conneg.*"/>
+   </or>
  </rule>     
        <rule weight="1.2">
    <match lemma="ii" tags="vblex.*"><select lemma="ij" tags="vblex.iv.neg.indic.pres.*.sg.*"/></match>
@@ -3233,7 +3244,10 @@
     <rule weight="1.0"><match lemma="eret"><select lemma="ierit" /></match></rule>
     <rule weight="0.5"><match lemma="eret"><select lemma="" /></match></rule>
     <rule weight="0.6">
+	    <or>
       <match tags="np.*.*.ela.*"/>
+      <match tags="np.*.*.loc.@←ADVL-ela"/>
+	    </or>
     <match lemma="eret"><select lemma="" /></match></rule>
 
     <rule weight="1.0"><match lemma="šaddu"><select lemma="sjaddo" /></match></rule>

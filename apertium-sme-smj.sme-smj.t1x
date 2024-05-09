@@ -496,6 +496,9 @@ C[_]-T sent
     </def-cat>
 
     <def-cat n="leat_main_fin">
+      <cat-item lemma="leat" tags="*.sg.*.@+FMAINV"/>
+      <cat-item lemma="leat" tags="*.du.*.@+FMAINV"/>
+      <cat-item lemma="leat" tags="*.pl.*.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.sg.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.du.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.pl.@+FMAINV"/>
@@ -1230,6 +1233,7 @@ C[_]-T sent
        <attr-item tags="←logo→"/>
        <attr-item tags="←ind→"/>
        <attr-item tags="sentinit"/>
+       <attr-item tags="gram_tnumabbr"/>
     </def-attr>
     <def-attr n="a_spec_sme_tags2">
       <attr-item tags="foc_gis"/>
@@ -1246,6 +1250,9 @@ C[_]-T sent
        <attr-item tags="err_orth_nom_acc"/>
        <attr-item tags="err_orth_nom_gen"/>
        <attr-item tags="←logo→"/>
+    </def-attr>
+    <def-attr n="gramtags">
+       <attr-item tags="gram_tnumabbr"/>
     </def-attr>
     <def-attr n="a_num_type">
       <attr-item tags="arab"/>
@@ -4254,7 +4261,7 @@ C[_]-T sent
       <action>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
          <out>
-          <chunk namefrom="chunk_name" case="caseFirstword">
+          <chunk name="prn" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
               <tag><var n="func"/></tag>
@@ -4766,6 +4773,7 @@ C[_]-T sent
         </out>
         </otherwise>
         </choose>
+        <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
       </action>
     </rule>
 
@@ -5140,6 +5148,34 @@ C[_]-T sent
     </action>
   </rule>
 
+
+<!--  <rule comment="C[TW]-V negverb leat_conneg" c="æba lim"> 
+    <pattern>
+      <pattern-item n="negverb"/>
+      <pattern-item n="leat_conneg"/>
+    </pattern>
+    <action>
+      <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+      <out>
+        <chunk name="neg" case="caseFirstword">
+          <tags>
+            <tag><lit-tag v="SV"/></tag>
+            <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+            <b pos="1"/>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        </chunk>
+      </out>
+        <let><var n="current_verb"/><clip pos="2" side="tl" part="lem"/></let>
+    </action>
+  </rule> -->
+
+
   <rule comment="C[TW]-V negverb23 word leat_conneg word" c="Viehkkeverba neg. sg2 ja pl3: illa/illim ja ælla/ællim"> 
     <pattern>
       <pattern-item n="negverb23"/>
@@ -5196,6 +5232,7 @@ C[_]-T sent
         <let><var n="current_verb"/><clip pos="3" side="tl" part="lem"/></let>
     </action>
   </rule>
+
 
 
     <rule comment="C[T]-V connegverb" c="connegverb"> 
@@ -8074,6 +8111,15 @@ C[_]-T sent
          </let>
         </when>
         <when>
+        <test><and>
+	    <equal><clip pos="1" side="sl" part="a_PoS"/><lit-tag v="adv"/></equal>
+	    <equal><clip pos="1" side="sl" part="lem"/><lit v="B"/></equal>
+        </and></test>
+        <let><clip pos="1" side="tl" part="lem"/><lit v="balphabet"/></let>
+        <let><clip pos="1" side="tl" part="a_PoS"/><lit-tag v="n"/></let>
+        <let><clip pos="1" side="tl" part="gramtags"/><lit v=""/></let>
+        </when>
+        <when> 
         <test>
 	    <equal><clip pos="2" side="sl" part="a_noun_type"/><lit-tag v="coll"/></equal>
         </test>
@@ -9401,6 +9447,13 @@ C[_]-T sent
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
         <choose>
         <when>
+          <test><and>
+            <equal><clip pos="1" side="sl" part="a_neg"/><lit-tag v="neg"/></equal>
+            <equal><clip pos="1" side="tl" part="lem"/><lit v="jalik"/></equal>
+	       </and></test>
+        <let><var n="chunk_name"/><lit v="cnjcoo"/></let>
+        </when>
+        <when>
           <test>
             <equal><clip pos="1" side="sl" part="a_neg"/><lit-tag v="neg"/></equal>
 	       </test>
@@ -9451,6 +9504,7 @@ C[_]-T sent
 		        <test><and>
 			        <equal><clip pos="1" side="sl" part="a_foc"/><lit-tag v="foc_neg-ge"/></equal>
 			     <not><equal><clip pos="1" side="tl" part="lem"/><lit v="ij"/></equal></not>
+			     <not><equal><clip pos="1" side="tl" part="lem"/><lit v="jalik"/></equal></not>
 		        </and></test>
         <let><clip pos="1" side="tl" part="a_foc"/><lit v=""/></let>
             <out>
