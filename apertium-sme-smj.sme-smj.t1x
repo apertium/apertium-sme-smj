@@ -952,6 +952,9 @@ C[_]-T sent
 
     <!-- PENDING HARMONISERING -->
 
+     <def-cat n="elativ_post">
+  	 	<cat-item lemma="rájes" tags="post.*"/>
+  	 </def-cat>
      <def-cat n="vuhtii_adv">
   	 	<cat-item lemma="vuhtii" tags="adv.*"/>
   	 </def-cat>
@@ -4171,6 +4174,34 @@ C[_]-T sent
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
     </rule> 
+
+
+     <rule comment="C[D]-PRED dat_gen elativ_post" c="dan rájes : dat rájes">
+      <pattern>
+        <pattern-item n="dat_gen"/>
+        <pattern-item n="elativ_post"/>
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="1"/><with-param pos="2"/></call-macro>
+         <out>
+          <chunk name="post" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+              <tag><clip pos="2" side="sl" part="a_func"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+                  <lit-tag v="prn.dem.sg.ela.attr"/>
+            </lu>
+            <b pos="1"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
 
      <rule comment="C[D]-PRED verb_actio_modpost dihte_post" c="example">
       <pattern>
@@ -9853,6 +9884,7 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+      <choose><when><test><not><equal><b pos="2"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
     </rule>
     <rule comment="C[_]-NUM num_gen jahkasaccat" c="soai leaba guđa jahkasaččat, with incorrect disam">
