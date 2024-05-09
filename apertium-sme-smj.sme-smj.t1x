@@ -9385,19 +9385,39 @@ C[_]-T sent
       </pattern>
       <action>
         <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
-        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
         <choose>
         <when>
-          <test>
-            <equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal>
-	       </test>
-        <let><var n="lemma"/><lit-tag v="liehket"/></let>
+          <test><and>
+            <equal><clip pos="1" side="tl" part="lem"/><lit v="Liehket"/></equal>
+            <equal><clip pos="1" side="sl" part="a_spec_sme_tags1"/><lit-tag v="sentinit"/></equal>
+	       </and></test>
+        <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="cop-auxvclt" case="caseFirstword">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FAUXV"/></tag>
+            </tags>
+            <lu>
+                  <lit v="liehket"/>
+                  <lit-tag v="vblex.indic.pres.p3.sg"/>
+            </lu>
+          </chunk>
+            <b />
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
         </when>
         <otherwise>
-        <let><var n="lemma"/><lit v=""/></let>
-        </otherwise>
-        </choose>
-        <out>
+         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+       <out>
           <chunk name="prfprc" case="caseFirstword">
             <tags>
               <tag><lit-tag v="SV"/></tag>
@@ -9410,11 +9430,14 @@ C[_]-T sent
             </lu>
           </chunk>
         </out>
+        </otherwise>
+        </choose>
         <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
         <let><var n="needsahte"/><lit v=""/></let>
         <let><var n="number"/><lit v=""/></let>
       </action>
     </rule>
+
     <rule comment="C[AT]-V mainverbqst" c="example">
       <pattern>
         <pattern-item n="verbqst"/>
@@ -9898,7 +9921,7 @@ C[_]-T sent
           <chunk name="adj" case="caseFirstword">
             <tags>
               <tag><lit-tag v="NP"/></tag>
-              <tag><var n="func"/></tag>
+              <tag><lit-tag v="@←SPRED"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
