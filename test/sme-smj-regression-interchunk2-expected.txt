@@ -82,6 +82,8 @@
 [/CEgxpmicLNip]
 [CIOTHtqdNwym#0] ^Prn<NP><@SUBJ→><pers><p3>{^sån<prn><pers><p3><sg><nom>$}$ ^vblex<SV><@+FMAINV>{^javllat<vblex><indic><pres><p3><sg>$}$ ^prn<NP><@SUBJ→>{^sån<prn><pers><p3><pl><nom>$}$ ^cop-mainv<SV><@+FMAINV>{^liehket<vblex><iv><indic><pres><p3><pl>$}$ ^vblex<SV><@-FMAINV>{^árvustallat<vblex><prfprc>$}$ ^adv<ADV><@ADVLcs-ine→>{^gåktu<adv>$}$ ^prn<NP><@SUBJ→><dem>{^dát<prn><dem><sg><nom>$}$ ^vblex<SV><@+FAUXV>{^máhttet<vblex><indic><pres><p3><sg>$}$ ^inf<SV><@-FMAINV>{^sjaddat<vblex><inf>$}$ ^adj<NP><@←SPRED>{^buorre<adj><ess>$}$ ^noun<NP><@←ADVL>{^boahtteájgge<n><sg><ill>$}$^sent<SENT>{^.<sent>$}$
 [/CIOTHtqdNwym]
+[CuQVjZvXoymK#0] ^Noun<NP><@→Num>{^láhka<n><sg><gen>$ ^paragráffa<n><sg><gen>$}$ ^num<NP><@N←>{^15<num><arab><sg><nom>$}$ ^post<PP><@ADVL-ine→>{^milta<post>$}$ ^neg<SV><@+FAUXV>{^ij<vblex><neg><indic><pres><p3><sg>$}$ ^conneg<SV><@-FMAINV><indic><pres>{^liehket<vblex><indic><pres><conneg>$}$ ^noun<NP><@←SPRED>{^loahpe<n><sg><nom>$}$ ^noun<NP><@OBJ→>{^lådde<n><cmp_sggen><cmp>+biesse<n><sg><acc>$}$ ^inf<SV><@-FMAINV>{^biledit<vblex><inf>$}$ ^prn<NP><@OBJ→><rel>{^mij<prn><rel><sg><acc>$}$ ^prn<NP><@SUBJ→><dem>{^dat<prn><dem><sg><nom>$}$ ^cop-auxvclt<SV><@+FAUXV>{^liehket<vblex><indic><pres><p3><sg>$}$ ^adv<ADV><@ADVL-ine→>{^juo<adv>$}$ ^vblex<SV><@-FMAINV>{^dahkat<vblex><der_inchl><vblex><prfprc>$}$^sent<SENT>{^.<sent>$}$
+[/CuQVjZvXoymK]
 [DEtPAQ-Mr4XC#0] ^Noun<NP><@SUBJ→>{^áddjá<n><sg><nom>$}$ ^vblex<SV><@+FMAINV>{^viessot<vblex><indic><pret><p3><sg>$}$ ^adv<ADV><@→A>{^huj<adv>$}$ ^adj<NP><@←SPRED>{^vuoras<adj><ess>$}$^sent<SENT>{^.<sent>$}$
 [/DEtPAQ-Mr4XC]
 [DTq8Nmbjnwjy#0] ^noun<NP><@HNOUN>{^kultuvrrasuodjalibme<n><sg><nom>$}$
@@ -308,6 +310,8 @@
 [/qFXna98R_lvG]
 [qWDNk1v35wl5#0] ^Prn<NP><@OBJ→><itg>{^mij<prn><itg><pl><acc>$}$ ^adv<ADV><@←ADVL-ine>{^uddni<adv>$}$ ^vblex<SV><@+FMAINV>{^sihtat<vblex><indic><pres><p2><du>$}$^sent<SENT>{^?<sent>$}$
 [/qWDNk1v35wl5]
+[rdnXhxFPZJ0f#0] ^Noun<NP><@OBJ→>{^láhka<n><sg><gen>$ ^paragráffa<n><sg><acc>$}$ ^num<NP><@N←>{^15<num><arab><sg><ela>$}$ ^vblex<SV><@+FMAINV><needsahte>{^javllat<vblex><der_passl><vblex><iv><indic><pres><p3><sg>$}$ ^náv<ADV><@←ADVL-ine>{^náv<adv>$}$^sent<SENT>{^.<sent>$}$
+[/rdnXhxFPZJ0f]
 [rn2hWuVRe-uw#0] ^Noun<NP><@→N>{^buvtadiddje<n><nomag><sg><nom>$}$ ^noun<NP><@SUBJ→>{^Elle<np><ant><f><attr>$ ^Mari<np><ant><f><attr>$ ^Dunfjell<np><cog><attr>$ ^Oskal<np><top><sg><nom>$}$ ^vblex<SV><@+FMAINV><needsahte>{^javllat<vblex><indic><pres><p3><sg>$}$ ^prn<NP><@SUBJ→>{^sån<prn><pers><p3><pl><nom>$}$ ^cop-mainv<SV><@+FMAINV>{^liehket<vblex><iv><indic><pres><p3><pl>$}$ ^adj<NP><@←SPRED>{^dudálasj<adj><pl><nom>$}$ ^noun<NP><@←ADVL>{^dáhpádus<n><sg><com>$}$^sent<SENT>{^.<sent>$}$
 [/rn2hWuVRe-uw]
 [sNVDOzwRkj9P#0] ^Noun<NP><@SUBJ→>{^dat<prn><dem><pl><nom>$ ^girjje<n><pl><nom>$}$ ^vblex<SV><@+FMAINV>{^gullut<vblex><indic><pres><p3><pl>$}$ ^prn<NP><@←ADVL><pers><p1>{^mån<prn><pers><p1><sg><ill>$}$^sent<SENT>{^.<sent>$}$
