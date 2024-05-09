@@ -235,6 +235,8 @@ C[_]-T sent
       <cat-item tags="np.*.*.@-FSUBJ→"/>
       <cat-item tags="np.*.*.*.@-FSUBJ→"/>
       <cat-item tags="np.*.*.*.*.@-FSUBJ→"/>
+      <cat-item tags="np.*.*.*.@←OBJ"/>
+      <cat-item tags="np.*.*.*.*.@←OBJ"/>
       <cat-item tags="prn.*.*.@-FSUBJ→"/>
       <cat-item tags="prn.*.*.*.@-FSUBJ→"/>
       <cat-item tags="prn.*.*.*.*.@-FSUBJ→"/>
@@ -381,6 +383,12 @@ C[_]-T sent
       <cat-item tags="vblex.*.der_caus.v.*.inf.*"/>
       <cat-item tags="vblex.*.der_inchl.v.inf.*"/>
     </def-cat>
+
+    <def-cat n="verb_inf_prfprc">
+      <cat-item tags="vblex.*.inf.*"/>
+      <cat-item tags="vblex.*.prfprc.*"/>
+    </def-cat>
+
 
     <def-cat n="mielddisbuktit_vblex">
       <cat-item lemma="mielddisbuktit" tags="vblex.*"/>
@@ -2035,6 +2043,7 @@ C[_]-T sent
     <def-var n="vdic"/>  
     <def-var n="case"/>
     <def-var n="infin"/>
+    <def-var n="temp"/>
     <def-var n="lemma"/>
     <def-var n="needsahte"/>
     <def-var n="qst"/>
@@ -6164,14 +6173,24 @@ C[_]-T sent
        </action>
      </rule>
 
-    <rule comment="C[AT]-V negverb lohkat_conneg verb_inf" c="Bearjadaga ii lohkan diehtit leago guovža doppe : .....">
+    <rule comment="C[AT]-V negverb lohkat_conneg verb_inf" c="Bearjadaga ii lohkan diehtit leago guovža doppe : Bierjjedagá javllá ij diede jus biernna la dåppe">
       <pattern>
         <pattern-item n="negverb"/>
         <pattern-item n="lohkat_conneg"/>
-        <pattern-item n="verb_inf"/>
+        <pattern-item n="verb_inf_prfprc"/>
       </pattern>
       <action>
         <call-macro n="general-macro-3Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/></call-macro>
+		<choose><when>
+		<test>    
+	   <equal><clip pos="3" side="sl" part="a_infin"/><lit-tag v="inf"/></equal>
+		</test>
+		<let><var n="temp"/><lit-tag v="pres"/></let>
+		</when>
+		<otherwise>
+		<let><var n="temp"/><lit-tag v="pret"/></let>
+		</otherwise>
+		</choose>
         <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
         <out>
           <chunk name="vblex" case="caseFirstword">
@@ -6199,7 +6218,7 @@ C[_]-T sent
               <clip pos="1" side="tl" part="lem"/>
               <lit-tag v="vblex.neg"/>
               <clip pos="1" side="tl" part="a_mood"/>
-              <clip pos="1" side="tl" part="a_tense"/>
+              <var n="temp"/>
               <lit-tag v="p3.sg"/>
                 </lu>
                </chunk>
@@ -6213,7 +6232,7 @@ C[_]-T sent
               <clip pos="3" side="tl" part="lem"/>
               <lit-tag v="vblex"/>
               <clip pos="1" side="tl" part="a_mood"/>
-               <lit-tag v="conneg"/>
+              <lit-tag v="conneg"/>
            </lu>
           </chunk>
             </out>
@@ -6305,13 +6324,34 @@ C[_]-T sent
         <pattern-item n="negverb"/>
         <pattern-item n="lohkat_conneg"/>
         <pattern-item n="fsubj_obj"/>  
-        <pattern-item n="verb_inf"/>
+        <pattern-item n="verb_inf_prfprc"/>
       </pattern>
       <action>
         <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
         <call-macro n="ref-to-pers"><with-param pos="3"/></call-macro>
         <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
         <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+		<choose><when>
+		<test>    
+	   <equal><clip pos="4" side="sl" part="a_infin"/><lit-tag v="inf"/></equal>
+		</test>
+		<let><var n="temp"/><lit-tag v="pres"/></let>
+		</when>
+		<otherwise>
+		<let><var n="temp"/><lit-tag v="pret"/></let>
+		</otherwise>
+		</choose>
+		<choose><when>
+		<test><or>    
+	   <equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="n"/></equal>
+	   <equal><clip pos="3" side="sl" part="a_PoS"/><lit-tag v="np"/></equal>
+		</or></test>
+		<let><var n="person"/><lit-tag v="p3"/></let>
+		</when>
+		<otherwise>
+		<let><var n="person"/><clip pos="3" side="tl" part="a_person"/></let>
+		</otherwise>
+		</choose>
         <out>
           <chunk name="vblex" case="caseFirstword">
                 <tags>
@@ -6348,8 +6388,9 @@ C[_]-T sent
               <clip pos="1" side="tl" part="lem"/>
               <lit-tag v="vblex.neg"/>
               <clip pos="1" side="tl" part="a_mood"/>
-              <clip pos="1" side="tl" part="a_tense"/>
-              <lit-tag v="p3.sg"/>
+			  <var n="temp"/>              
+			  <var n="person"/>              
+			  <clip pos="3" side="tl" part="a_nbr"/>
                 </lu>
                </chunk>
              <b pos="3"/>
@@ -7265,7 +7306,7 @@ C[_]-T sent
 			</and></test>
              <let><clip pos="1" side="tl" part="a_foc-ge"/><lit v=""/></let> 
         </when></choose>
-        <choose>
+<!--        <choose>
         <when><test><and>
         <equal><clip pos="1" side="tl" part="lem"/><lit v="moadda"/></equal>
         <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
@@ -7273,7 +7314,7 @@ C[_]-T sent
          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
          <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let> 
          </when>
-        </choose>
+        </choose> -->
         <choose>
          <when>
               <test><and>
