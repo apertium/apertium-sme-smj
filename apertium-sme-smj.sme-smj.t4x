@@ -33,7 +33,7 @@
       <cat-item lemma="qst" tags="pcle.@PCLE"/>
     </def-cat>
     <def-cat n="subsent">
-      <cat-item tags="cnjsub.@CVP"/>
+      <cat-item lemma="go" tags="cnjsub.@CVP"/>
       <cat-item lemma="prn" tags="*.@SUBJ→.rel"/> <!-- should be here? -->
       <cat-item lemma="prn" tags="*.@OBJ→.rel"/>
       <cat-item lemma="prn" tags="*.@ADVL→.rel"/>
@@ -345,14 +345,14 @@
          <cat-item tags="*.@←ADVL-ela.*"/>
     </def-cat>
     <def-cat n="wordbeforeahte">
-         <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
+<!--         <cat-item lemma="prfprc" tags="SV.@-FMAINV"/>
          <cat-item lemma="prfprc" tags="SV.@-FMAINV.*"/>
          <cat-item lemma="prfprc" tags="SV.*.@-FMAINV.*"/>
          <cat-item lemma="prfprc" tags="SV.*.*.@-FMAINV.*"/>
          <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
          <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
          <cat-item lemma="vblex" tags="SV.*.@+FMAINV.*"/>
-         <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/>
+         <cat-item lemma="vblex" tags="SV.*.*.@+FMAINV.*"/> -->
          <cat-item tags="NP.@←ADVL.*"/>
          <cat-item tags="NP.@←ADVL"/>
          <cat-item tags="NP.@←ADVL-ela.*"/>
@@ -768,6 +768,8 @@
         </out>
       </action>
     </rule> -->
+
+
 
     <rule comment="moves mainverb after go" >
       <pattern>
