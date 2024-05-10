@@ -593,55 +593,64 @@
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px1sg"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px1sg"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p1"/><s n="du"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px1du"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px1du"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px1pl"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px1pl"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px2sg"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px2sg"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p2"/><s n="du"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px2du"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px2du"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px2pl"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px2pl"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px3sg"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px3sg"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p3"/><s n="du"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px3du"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px3du"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l><w/><s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
 	  <par n="kin"/>      
 	  <par n="hum_number_case"/>      
-	  <p><l></l><r><s n="px3pl"/></r></p><par n="syntax_tags"/>
+	  <p><l></l><r><s n="px3pl"/></r></p>
+      <i><t/></i>
    </e>
     <e r="LR">
       <p><l>dađi</l><r>dađistaga</r></p>
@@ -659,6 +668,12 @@
       <p><l>buorre</l><r>buorre</r></p>
       <p><l><s n="adj"/><t/></l><r><s n="adj"/><s n="attr"/></r></p>
       <p><l><s n="@→N"/><d/></l><r><s n="@→N"/><d/></r></p>
+   </e>
+    <e r="LR">
+      <p><l>rohttet</l><r>bosihit</r></p>
+      <p><l><s n="vblex"/><s n="tv"/></l><r><s n="vblex"/><s n="iv"/></r></p>
+      <i><t/><d/></i>
+      <p><l>vuoiŋŋahat<t/></l><r></r></p>
    </e>
 <!--    <e r="LR" w="0.0">  eai leat > ælla 
       <p><l>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p3"/><s n="pl"/></l><r></r></p><par n="syntax_tags"/>
@@ -788,7 +803,7 @@
       <p><l><s n="acc"/></l><r><s n="acc"/></r></p>
       <par n="fsub_tag"/>
     </e>
-    <e r="LR" w="0.0">
+<!--    <e r="LR" w="0.0">
       <par n="dadjat"/>
       <par n="maybe_words_not_verb"/>
       <i><w/><t/></i>
@@ -804,7 +819,7 @@
       <i><w/><t/></i>
       <p><l><s n="acc"/></l><r><s n="nom"/></r></p>
       <par n="fsub_tag"/>
-    </e>
+    </e> -->
    
     <!-- we don't want "go" → "go go" -->
     <e r="LR" w="0.0">
