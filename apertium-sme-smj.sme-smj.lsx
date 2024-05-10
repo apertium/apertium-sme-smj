@@ -114,6 +114,7 @@
     <sdef n="@N←"/>
     <sdef n="@Num←"/>
     <sdef n="@←OBJ"/> 
+    <sdef n="@OBJ→"/> 
     <sdef n="@SUBJ→"/> 
   </sdefs>
 
@@ -674,6 +675,12 @@
       <p><l><s n="vblex"/><s n="tv"/></l><r><s n="vblex"/><s n="iv"/></r></p>
       <i><t/><d/></i>
       <p><l>vuoiŋŋahat<t/></l><r></r></p>
+   </e>
+    <e r="LR"> <!-- add 'leat' aux, now only for p3 sg3 -->
+	  <i><w/><t/></i>
+      <p><l><s n="sg"/><s n="nom"/><s n="@SUBJ→"/><d/></l><r><s n="sg"/><s n="nom"/><s n="@SUBJ→"/><d/></r></p>
+      <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
+      <p><l>leat<s n="vblex"/><s n="iv"/><s n="prfprc"/><t/></l><r>leat<s n="vblex"/><s n="iv"/><s n="prfprc"/><t/></r></p>
    </e>
 <!--    <e r="LR" w="0.0">  eai leat > ælla 
       <p><l>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p3"/><s n="pl"/></l><r></r></p><par n="syntax_tags"/>
