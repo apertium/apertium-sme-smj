@@ -186,6 +186,10 @@ C[_]-T sent
       <cat-item tags="prn.ref.loc.*"/>
     </def-cat>
 
+    <def-cat n="prn_refl_ill">
+      <cat-item tags="prn.ref.ill.*"/>
+    </def-cat>
+
     <def-cat n="prn_itg">
       <cat-item tags="prn.itg.*"/>
     </def-cat>
@@ -5936,7 +5940,7 @@ C[_]-T sent
     </rule> -->
 
 
-    <rule comment="C[_]-N prn_ref_acc n_adj_ess" c="In jáhke alddán dávdda">
+    <rule comment="C[_]-N prn_ref_acc n_adj_ess" c="In jáhke alddán dávdda : Iv jáhke mujna la dávdda">
       <pattern>
         <pattern-item n="prn_refl_loc"/>  
         <pattern-item n="noun_acc"/>  
@@ -6441,6 +6445,87 @@ C[_]-T sent
               <tags>
                 <tag><lit-tag v="NP"/></tag>
                 <tag><lit-tag v="@SUBJ→"/></tag>
+              </tags>
+               <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="neg">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FAUXV"/></tag>
+                </tags>
+                <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex.neg"/>
+              <clip pos="1" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <lit-tag v="p3.sg"/>
+                </lu>
+               </chunk>
+             <b pos="3"/>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+             <b/>
+           <chunk name="adj" case="caseFirstword">
+              <tags>
+                <tag><lit-tag v="NP"/></tag>
+                <tag><lit-tag v="@←SPRED"/></tag>
+              </tags>
+               <lu>
+                <clip pos="4" side="tl" part="lem"/>
+              <clip pos="4" side="tl" part="a_PoS"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="nom"/>
+              </lu>
+           </chunk>
+            </out>
+       </action>
+     </rule>
+
+    <rule comment="C[AT]-V negverb lohkat_conneg prn_refl ess " c="Son ii loga alcces unohassan : Sån javllá sunji ij la unugis">
+      <pattern>
+        <pattern-item n="negverb"/>
+        <pattern-item n="lohkat_conneg"/>
+        <pattern-item n="prn_refl_ill"/>  
+        <pattern-item n="n_adj_ess"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/><with-param pos="3"/></call-macro>
+        <call-macro n="ref-to-pers"><with-param pos="3"/></call-macro>
+        <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FMAINV"/></tag>
+                  <tag><var n="vdic"/></tag>
+                </tags>
+                <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+              <clip pos="2" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+                </lu>
+               </chunk>
+            <b pos="1"/>
+           <chunk name="noun" case="caseFirstword">
+              <tags>
+                <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
               </tags>
                <lu>
                 <clip pos="3" side="tl" part="whole"/>
