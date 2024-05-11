@@ -1020,6 +1020,7 @@ C[_]-T sent
       <cat-item lemma="leat" tags="*.@-FAUXV"/>
       <cat-item lemma="leat" tags="*.@+FMAINV"/>
       <cat-item lemma="leat" tags="*.@-FMAINV"/>
+      <cat-item lemma="leat" tags="*.@←OBJ"/>
     </def-cat>
 
     <def-cat n="leat_qst">
@@ -5835,7 +5836,7 @@ C[_]-T sent
           <chunk namefrom="chunk_name" case="caseFirstword">
           <tags>
             <tag><lit-tag v="pcle"/></tag>
-            <tag><var n="func"/></tag>
+            <tag><lit-tag v="PCLE"/></tag>
           </tags>
           <lu>
             <clip pos="1" side="tl" part="whole"/>
@@ -6019,6 +6020,7 @@ C[_]-T sent
 		</choose> 
       </action>
     </rule>
+
 
     <rule comment="C[_]-N prn_ref_acc n_adj_ess" c="mun dadjen iežan vigiheapmen : javlliv mån lav vigedibme">
       <pattern>
@@ -6569,6 +6571,72 @@ C[_]-T sent
               <clip pos="4" side="tl" part="a_PoS"/>
               <clip pos="1" side="tl" part="a_nbr"/>
               <lit-tag v="nom"/>
+              </lu>
+           </chunk>
+            </out>
+       </action>
+     </rule>
+    <rule comment="C[AT]-V negverb lohkat_conneg prn_refl ess " c="Son ii loga alddis leat ruhta : Sån javllá sujna ij la ruhta">
+      <pattern>
+        <pattern-item n="negverb"/>
+        <pattern-item n="lohkat_conneg"/>
+        <pattern-item n="prn_refl_loc"/>  
+        <pattern-item n="leat_aux_main"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="4"/><with-param pos="3"/></call-macro>
+        <call-macro n="ref-to-pers"><with-param pos="3"/></call-macro>
+        <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="ine"/></let>
+        <let><clip pos="2" side="tl" part="a_tense"/><lit v=""/></let>
+        <let><clip pos="4" side="tl" part="a_infin"/><lit-tag v="indic.pres.conneg"/></let>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FMAINV"/></tag>
+                  <tag><var n="vdic"/></tag>
+                </tags>
+                <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+              <clip pos="2" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+                </lu>
+               </chunk>
+            <b pos="1"/>
+           <chunk name="noun" case="caseFirstword">
+              <tags>
+                <tag><lit-tag v="NP"/></tag>
+              <tag><var n="func"/></tag>
+              </tags>
+               <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+           </chunk>
+            <b pos="2"/>
+          <chunk name="neg">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><lit-tag v="@+FAUXV"/></tag>
+                </tags>
+                <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex.neg"/>
+              <clip pos="1" side="tl" part="a_mood"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <lit-tag v="p3.sg"/>
+                </lu>
+               </chunk>
+             <b pos="3"/>
+          <chunk name="cop-mainv">
+              <tags>
+                <tag><lit-tag v="SV"/></tag>
+                <tag><lit-tag v="@-FMAINV"/></tag>
+              </tags>
+               <lu>
+                <clip pos="4" side="tl" part="whole"/>
               </lu>
            </chunk>
             </out>
@@ -8142,7 +8210,8 @@ C[_]-T sent
       <action>
         <call-macro n="assign-case-1Param"><with-param pos="1"/></call-macro>
         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
-      <choose><when>
+      <choose>
+	      <when>
 	  <test>
 	  <equal><clip pos="1" side="sl" part="a_deriv"/><lit-tag v="der_vuota"/></equal>      
       </test>
@@ -9505,6 +9574,50 @@ C[_]-T sent
     </rule>  -->
 
 
+    <rule comment="C[_]-N verb_fin_dadjat n_adj_ess" c="Thor lohká váttisin dadjat dan  :  javllá la gássjel javllat">
+      <pattern>
+        <pattern-item n="verb_fin_dadjat"/>
+        <pattern-item n="n_adj_ess"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-2Param"><with-param pos="2"/><with-param pos="1"/></call-macro>
+        <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="sg.nom"/></let>
+        <out>
+          <chunk name="vblex" case="caseFirstword">
+                <tags>
+                  <tag><lit-tag v="SV"/></tag>
+                  <tag><var n="func"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+              </chunk>
+            <b pos="1"/>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres"/>
+              <clip pos="1" side="tl" part="a_person"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+          </chunk>
+            <b />
+          <chunk name="adj">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@SPRED"/></tag>
+          </tags>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+      </out>
+      </action>
+    </rule>
     
 
 
