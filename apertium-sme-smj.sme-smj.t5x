@@ -11,6 +11,9 @@
     <def-cat n="nom2">
       <cat-item name="genmod_nom"/>
     </def-cat>
+    <def-cat n="jusgus">
+      <cat-item name="jusgus"/>
+    </def-cat>
     <def-cat n="l-clt">
       <cat-item name="noun"/>
       <cat-item name="adj"/>
@@ -119,6 +122,20 @@
       </action>
     </rule>
 
+
+    <rule comment="gus -> jus">
+      <pattern>
+        <pattern-item n="jusgus"/>
+      </pattern>
+      <action>
+        <out>
+          <lu>
+            <lit v="jus"/>
+            <lit-tag v="cnjsub"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
 
 
     <rule comment="CHUNK:">
