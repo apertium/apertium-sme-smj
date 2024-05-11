@@ -1361,6 +1361,7 @@ C[_]-T sent
        <attr-item tags="conneg"/>
        <attr-item tags="prfprc"/>
        <attr-item tags="ger"/>
+       <attr-item tags="vabess"/>
     </def-attr>
     <def-attr n="a_prn_type">
        <attr-item tags="pers"/>
@@ -2067,6 +2068,7 @@ C[_]-T sent
       <list-item v="nav"/>     
       <list-item v="gal"/>     
       <list-item v="de"/>     
+      <list-item v="rahpasit"/>     
     </def-list>
     <def-list n="loc2com_verbs">
       <list-item v="rahtjat"/>
@@ -5713,6 +5715,12 @@ C[_]-T sent
        <in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="not-move-adv"/></in> 
 	  </test>
           <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let>
+	      </when>
+	      <when>
+	  <test>
+       <equal><clip pos="1" side="tl" part="a_infin"/><lit-tag v="vabess"/></equal> 
+	  </test>
+          <let><var n="chunk_name"/><lit v="vabess"/></let>
 	      </when>
           <otherwise>
           <let><var n="chunk_name"/><lit v="adv"/></let>

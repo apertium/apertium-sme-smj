@@ -29,6 +29,11 @@
       <cat-item tags="*.@ADVLqst-ela→"/>
       <cat-item tags="*.@ADVLqst-ine→"/>
     </def-cat>
+    <def-cat n="rel">
+      <cat-item lemma="prn" tags="*.rel"/>
+      <cat-item lemma="adv" tags="*.@ADVLcs-ine→"/>
+      <cat-item lemma="adv" tags="*.@ADVLcs-ela→"/>
+    </def-cat>
     <def-cat n="qstPCLE">
       <cat-item lemma="qst" tags="pcle.@PCLE"/>
     </def-cat>
@@ -993,6 +998,38 @@
             <clip pos="4" part="tags"/>
             <clip pos="4" part="chcontent"/>
             <clip pos="4" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    <rule comment=" IMainV NP_Obj_l rel" > <!-- keep word order -->
+      <pattern>
+        <pattern-item n="IMainV"/>
+        <pattern-item n="NP_Obj_l"/>
+        <pattern-item n="rel"/>
+      </pattern>
+      <action>
+        <call-macro n="switch_cases"><with-param pos="1"/><with-param pos="2"/></call-macro>
+        <out>
+          <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
           </chunk>
         </out>
       </action>
