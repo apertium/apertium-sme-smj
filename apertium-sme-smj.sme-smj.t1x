@@ -504,6 +504,9 @@ C[_]-T sent
     <def-cat n="verb_prfprc">
       <cat-item tags="*.prfprc.*"/>
     </def-cat>
+    <def-cat n="verb_supn">
+      <cat-item tags="*.supn.*"/>
+    </def-cat>
 
     <def-cat n="leat_aux">
       <cat-item lemma="leat" tags="*.@+FAUXV"/>
@@ -1359,9 +1362,9 @@ C[_]-T sent
        <attr-item tags="actio.gen"/>
        <attr-item tags="actio.loc"/>
        <attr-item tags="conneg"/>
-       <attr-item tags="prfprc"/>
        <attr-item tags="ger"/>
        <attr-item tags="vabess"/>
+       <attr-item tags="supn"/>
     </def-attr>
     <def-attr n="a_prn_type">
        <attr-item tags="pers"/>
@@ -4218,7 +4221,7 @@ C[_]-T sent
       </action>
     </rule> 
 
-
+<!--
      <rule comment="C[D]-PRED verb_actio_modpost dihte_post" c="example">
       <pattern>
         <pattern-item n="verb_actio_modpost"/>
@@ -4330,7 +4333,7 @@ C[_]-T sent
           </chunk>
         </out>
       </action>
-    </rule> 
+    </rule>  -->
 
 
 
@@ -4390,7 +4393,7 @@ C[_]-T sent
     
     
 
-     <rule comment="C[D]-PRED máŋgačuođi_num noun" c="máŋgalot jagi : moadda låk jage">
+<!--     <rule comment="C[D]-PRED máŋgačuođi_num noun" c="máŋgalot jagi : moadda låk jage">
       <pattern>
         <pattern-item n="máŋgačuođi_num"/>
             <pattern-item n="noun"/>  
@@ -4471,7 +4474,7 @@ C[_]-T sent
        </otherwise></choose>
         <let><var n="number"/><lit v=""/></let>
      </action>
-    </rule> 
+    </rule> -->
 
 
 
@@ -4620,7 +4623,7 @@ C[_]-T sent
     </rule>
  
  
-  <rule comment="C[DL]-NP guhkki_adj áigi_n" c="guhkes áigi : guhkev">
+<!--  <rule comment="C[DL]-NP guhkki_adj áigi_n" c="guhkes áigi : guhkev">
       <pattern>
         <pattern-item n="guhkki_adj"/>
         <pattern-item n="áigi_n"/>
@@ -4641,7 +4644,7 @@ C[_]-T sent
         </out>
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
-    </rule>
+    </rule> -->
 
   <rule comment="C[DL]-PP guhkki_adj áigi_n vuollai_post" c="guhkes áigi vuollai/badjel: guhkev">
       <pattern>
@@ -6822,7 +6825,7 @@ C[_]-T sent
       </action>
     </rule>
     
-     <rule comment="C[T]-N fsubj vblexobj_l" c="example">
+     <rule comment="C[T]-N fsubj vblexobj_l" c="Son oaidná Máreha stoahkame : Sån vuojnná Marit la ståhkamin">
       <pattern>
         <pattern-item n="fsubj"/>  
         <pattern-item n="vblexobj_l"/>  
@@ -7020,6 +7023,63 @@ C[_]-T sent
            <let><var n="person"/><lit v=""/></let>
 	     </action>
     </rule> 
+
+     <rule comment="C[T]-N fsubj cnjcoo fsubj vblexobj_l" c="Son oaidná Jaakko ja Máreha stoahkame : Sån vuojnná Jaakko ja Marit libá ståhkamin">
+      <pattern>
+        <pattern-item n="fsubj"/>  
+        <pattern-item n="cnjcoo"/>
+        <pattern-item n="fsubj"/>  
+        <pattern-item n="vblexobj_l"/>  
+      </pattern>
+      <action>
+        <call-macro n="general-macro-4Param"><with-param pos="1"/><with-param pos="2"/><with-param pos="3"/><with-param pos="4"/></call-macro>
+           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+           <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+		        <out>
+          <chunk name="noun">
+            <tags>
+              <tag><lit-tag v="NP"/></tag>
+              <tag><lit-tag v="@SUBJ→"/></tag>
+          </tags>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+          </lu>
+            <b pos="1"/>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+          </lu>
+            <b pos="2"/>
+           <lu>
+              <clip pos="3" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+            <b pos="3"/>
+          <chunk name="cop-mainv">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@+FMAINV"/></tag>
+          </tags>
+            <lu>
+              <lit v="liehket"/>
+              <lit-tag v="vblex.iv.indic.pres.p3.du"/>
+            </lu>
+          </chunk>
+            <b />
+          <chunk name="vblex">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><lit-tag v="@-FMAINV"/></tag>
+          </tags>
+           <lu>
+              <clip pos="4" side="tl" part="whole"/>
+          </lu>
+           </chunk>
+      </out>
+           <let><var n="number"/><lit v=""/></let>
+           <let><var n="person"/><lit v=""/></let>
+	     </action>
+    </rule> 
+
 
      <rule comment="C[T]-N mod_n fsubj vblexobj_l" c="Kalstad lohká buot sin bargiid ánssášit fuomášumi">
       <pattern>
@@ -9761,6 +9821,31 @@ C[_]-T sent
         </out>
         </otherwise>
         </choose>
+        <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
+        <let><var n="needsahte"/><lit v=""/></let>
+        <let><var n="number"/><lit v=""/></let>
+      </action>
+    </rule>
+    <rule comment="C[_]-V verb_supn" c="son barggai dan ovddidan dihte giela">
+      <pattern>
+        <pattern-item n="verb_supn"/>
+      </pattern>
+      <action>
+        <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
+         <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
+       <out>
+          <chunk name="supn" case="caseFirstword"> 
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><var n="func"/></tag>
+              <tag><var n="lemma"/></tag>
+              <tag><var n="needsahte"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
         <let><var n="current_verb"/><clip pos="1" side="tl" part="lem"/></let>
         <let><var n="needsahte"/><lit v=""/></let>
         <let><var n="number"/><lit v=""/></let>

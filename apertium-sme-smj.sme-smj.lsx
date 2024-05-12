@@ -109,10 +109,12 @@
     <sdef n="@-FMAINV"/>
     <sdef n="@+FAUXV"/>
     <sdef n="@-FSUBJ→"/> 
-    <sdef n="@PCLE"/>    
+    <sdef n="@PCLE"/> 
+    <sdef n="@Pron←"/> 
     <sdef n="@→N"/> 
     <sdef n="@N←"/>
     <sdef n="@Num←"/>
+    <sdef n="@→Num"/>
     <sdef n="@←OBJ"/> 
     <sdef n="@OBJ→"/> 
     <sdef n="@SUBJ→"/> 
@@ -283,12 +285,12 @@
     </e>
     <e r="LR"> <!-- oađđin dihte > oađđit supn -->
       <i><w/></i> 
-      <p><l><s n="vblex"/><s n="iv"/><s n="actio"/><s n="gen"/><t/><d/></l><r><s n="vblex"/><s n="iv"/><s n="supn"/><t/><d/></r></p>
+      <p><l><s n="vblex"/><s n="iv"/><s n="actio"/><s n="gen"/><t/><d/></l><r><s n="vblex"/><s n="iv"/><s n="supn"/><s n="@-FMAINV"/><d/></r></p>
       <p><l>dihte<s n="post"/></l><r></r></p><par n="syntax_tags"/>
     </e>
     <e r="LR"> <!-- čállin dihte > čállit supn -->
       <i><w/></i> 
-      <p><l><s n="vblex"/><s n="tv"/><s n="actio"/><s n="gen"/><t/><d/></l><r><s n="vblex"/><s n="tv"/><s n="supn"/><t/><d/></r></p>
+      <p><l><s n="vblex"/><s n="tv"/><s n="actio"/><s n="gen"/><t/><d/></l><r><s n="vblex"/><s n="tv"/><s n="supn"/><s n="@-FMAINV"/><d/></r></p>
       <p><l>dihte<s n="post"/></l><r></r></p><par n="syntax_tags"/>
     </e>
     <e r="LR"> <!-- oađđindihte > oađđit supn -->
@@ -298,7 +300,7 @@
     </e>
 
     <e r="LR">
-      <p><l>gohcu</l><r>gohcu</r></p>
+      <p><l>gohcu</l><r>gohcu</r></p> <!-- gozuid alde > gohcime -->
       <i><t/><d/></i> 
       <p><l>alde<s n="post"/></l><r></r></p><par n="syntax_tags"/>
     </e>
@@ -352,13 +354,13 @@
     <e r="LR" w="1.0"> <!-- máŋgačuođi > moadda tjuode -->
       <p><l>máŋgačuođi<s n="num"/></l><r>máŋga<s n="prn"/><s n="ind"/></r></p>
       <i><t/><d/></i>
-      <p><l></l><r>čuohti<s n="num"/><s n="sg"/><s n="gen"/><d/></r></p>
+      <p><l></l><r>čuohti<s n="num"/><s n="sg"/><s n="gen"/><s n="@Pron←"/><d/></r></p>
    </e> 
     <e r="LR" w="1.0"> <!-- máŋgalot > moadda låk -->
       <p><l>máŋgalogi<s n="num"/></l><r>máŋga<s n="prn"/><s n="ind"/></r></p>
       <i><t/></i>
       <p><l><s n="attr"/><t/><d/></l><r><d/></r></p>
-      <p><l></l><r>logi<s n="num"/><s n="attr"/><d/></r></p>
+      <p><l></l><r>logi<s n="num"/><s n="attr"/><s n="@Pron←"/><d/></r></p>
    </e> 
     <e r="LR" w="1.0"> <!-- dán muttos áigi > dáj muttoj -->
       <p><l>dát<s n="prn"/><s n="dem"/><s n="sg"/><s n="gen"/></l><r>dát<s n="prn"/><s n="dem"/><s n="pl"/><s n="gen"/></r></p>
@@ -439,8 +441,8 @@
       <p><l>mo<s n="adv"/></l><r></r></p><par n="syntax_tags"/>
    </e>
     <e r="LR">
-      <p><l></l><r>eanet<s n="adj"/><s n="attr"/><d/></r></p>
-      <p><l>eambbosat<s n="prn"/><s n="ind"/></l><r>olmmoš<s n="n"/></r></p>
+      <p><l></l><r>eanet<s n="adj"/><s n="attr"/><s n="@→N"/><d/></r></p>
+      <p><l>eambbosat<s n="prn"/><s n="ind"/></l><r>olmmoš<s n="n"/><s n="sem_hum"/></r></p>
       <i><t/><d/></i>
    </e>
     <e r="LR"> <!-- feil input: 13 proseanttain -->
