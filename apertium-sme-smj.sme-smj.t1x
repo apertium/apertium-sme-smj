@@ -3970,7 +3970,7 @@ C[_]-T sent
 
 
   <section-rules>
-    <rule comment="C[D]-PRED váldit_particle váldit_vblex" c="Ferte dohkálaččat vuhtii váldit máná kulturduogáža : Viertti dågålattjat vieledit máná kultuvrraduogátjav">
+<!--    <rule comment="C[D]-PRED váldit_particle váldit_vblex" c="Ferte dohkálaččat vuhtii váldit máná kulturduogáža : Viertti dågålattjat vieledit máná kultuvrraduogátjav">
       <pattern>
         <pattern-item n="váldit_particle"/>
         <pattern-item n="váldit_vblex"/>
@@ -4001,7 +4001,7 @@ C[_]-T sent
           </chunk>
         </out>
       </action>
-    </rule> 
+    </rule> -->
  
      <rule comment="C[D]-PRED váldit_vblex váldit_particle" c="mánát váldojuvvojit mielde sierralágan bargoproseassaide : máná sebrudahteduvvi sierralágásj barggoprosessajda">
       <pattern>
@@ -4035,7 +4035,7 @@ C[_]-T sent
         </out>
       </action>
     </rule> 
-     <rule comment="C[D]-PRED dađi mielde_adv" c="dađi mielde : maŋenagi">
+<!--     <rule comment="C[D]-PRED dađi mielde_adv" c="dađi mielde : maŋenagi">
       <pattern>
         <pattern-item n="dadi_adv"/>
         <pattern-item n="mielde_adv"/>
@@ -4120,7 +4120,7 @@ C[_]-T sent
           </chunk>
         </out>
       </action>
-    </rule> 
+    </rule> -->
 
      <rule comment="C[D]-PRED soaitit_vblex leat_aux_main " c=" "> 
       <pattern>
@@ -4644,7 +4644,7 @@ C[_]-T sent
         </out>
       <choose><when><test><not><equal><b pos="1"/><lit v=" "/></equal></not></test><out><b pos="1"/></out></when></choose>      
       </action>
-    </rule> -->
+    </rule> 
 
   <rule comment="C[DL]-PP guhkki_adj áigi_n vuollai_post" c="guhkes áigi vuollai/badjel: guhkev">
       <pattern>
@@ -4733,7 +4733,7 @@ C[_]-T sent
           </chunk>
         </out>
       </action>
-    </rule>
+    </rule> -->
 
  
   
@@ -4858,7 +4858,7 @@ C[_]-T sent
         </out>
       </action>
     </rule>
-   <rule comment="C[T]-V supneg" c="sii váruhit amas leavvat beare olu"> 
+<!--   <rule comment="C[T]-V supneg" c="sii váruhit amas leavvat beare olu"> 
       <pattern>
         <pattern-item n="supneg"/>
       </pattern>
@@ -4885,7 +4885,7 @@ C[_]-T sent
         </out>
           <let><var n="negsup"/><lit v="negsup"/></let>
       </action>
-    </rule> 
+    </rule>  -->
 
 
     <rule comment="C[T]-V subj_h mielddisbuktit_vblex ahte" c="roassu mielddisbuvttii ahte"> 
@@ -4923,7 +4923,7 @@ C[_]-T sent
     </rule> 
 
 
-    <rule comment="C[T]-V subj_h mielddisbuktit_vblex ahte" c="roassu mielddisbuvttii ahte"> 
+<!--    <rule comment="C[T]-V subj_h mielddisbuktit_vblex ahte" c="roassu mielddisbuvttii ahte"> 
       <pattern>
         <pattern-item n="subj_h"/>
         <pattern-item n="mielddisbuktit_vblex"/>
@@ -4984,7 +4984,7 @@ C[_]-T sent
         </out>
       <choose><when><test><not><equal><b pos="3"/><lit v=" "/></equal></not></test><out><b pos="3"/></out></when></choose>      
       </action>
-    </rule> 
+    </rule> -->
 
 
     <rule comment="C[T]-V algit_vblex verb_inf" c="álgit gaskit"> 
