@@ -1363,6 +1363,7 @@ C[_]-T sent
        <attr-item tags="actio.loc"/>
        <attr-item tags="conneg"/>
        <attr-item tags="ger"/>
+       <attr-item tags="prsprc"/>
        <attr-item tags="vabess"/>
        <attr-item tags="supn"/>
     </def-attr>
@@ -3852,7 +3853,7 @@ C[_]-T sent
 	</when></choose>
         </when>
       </choose>
-      <choose>
+<!--      <choose>
         <when c="M[T] add attr to buorre">
      <test><and>
      <equal><clip pos="1" side="sl" part="lem"/><lit v="buorre"/></equal>
@@ -3861,7 +3862,7 @@ C[_]-T sent
         <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
         <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="attr"/></let>
         </when>
-      </choose>
+      </choose> -->
       <call-macro n="convert-deriv-1Param"><with-param pos="1"/></call-macro>
 
 	<choose><when><test>
@@ -4888,7 +4889,7 @@ C[_]-T sent
     </rule>  -->
 
 
-    <rule comment="C[T]-V subj_h mielddisbuktit_vblex ahte" c="roassu mielddisbuvttii ahte"> 
+    <rule comment="C[T]-V subj_h mielddisbuktit_vblex ahte" c="roassu dávjá mielddisbuvttii ahte"> 
       <pattern>
         <pattern-item n="subj_h"/>
         <pattern-item n="adv"/>
@@ -5706,7 +5707,7 @@ C[_]-T sent
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
 <!--      <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let> -->
-<!--      <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let>  remove Px, or should we add ref pronoun? -->
+     <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
 <!--      <choose>
         <when>
           <test><and><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
@@ -9582,6 +9583,7 @@ C[_]-T sent
        <when c="inf @A←">
           <test><and>
               <equal><clip pos="1" side="sl" part="a_func"/><lit-tag v="@A←"/></equal>
+          <not><equal><clip pos="1" side="tl" part="lem"/><lit v="liehket"/></equal></not>
              <not><in caseless="yes"><var n="current_adj"/><list n="adj_nottriggingsupn"/></in></not>
           </and></test>
          <let><clip pos="1" side="tl" part="a_infin"/><lit-tag v="supn"/></let>

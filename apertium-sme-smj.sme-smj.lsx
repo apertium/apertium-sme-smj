@@ -201,6 +201,10 @@
       <e><i><s n="n"/><s n="sem_hum"/><s n="sg"/><t/></i></e>
       <e><i><s n="n"/><s n="sem_hum"/><s n="pl"/><t/></i></e>
     </pardef>
+    <pardef n="number_case">
+      <e><i><s n="sg"/><t/></i></e>
+      <e><i><s n="pl"/><t/></i></e>
+    </pardef>
     <pardef n="vblex_trans">
       <e><i><w/><s n="vblex"/><s n="iv"/></i></e>
       <e><i><w/><s n="vblex"/><s n="tv"/></i></e>
@@ -357,6 +361,11 @@
       <p><l><s n="pl"/></l><r><s n="sg"/></r></p>
       <i><t/><d/></i>
    </e> -->
+    <e r="LR" w="1.0"> <!-- máŋgaduhát > moadda tuvsána -->
+      <p><l>máŋgaduhát<s n="num"/></l><r>máŋga<s n="prn"/><s n="ind"/></r></p>
+      <i><t/><d/></i>
+      <p><l></l><r>duhát<s n="num"/><s n="sg"/><s n="gen"/><s n="@Pron←"/><d/></r></p>
+   </e> 
     <e r="LR" w="1.0"> <!-- máŋgačuođi > moadda tjuode -->
       <p><l>máŋgačuođi<s n="num"/></l><r>máŋga<s n="prn"/><s n="ind"/></r></p>
       <i><t/><d/></i>
@@ -364,9 +373,8 @@
    </e> 
     <e r="LR" w="1.0"> <!-- máŋgalot > moadda låk -->
       <p><l>máŋgalogi<s n="num"/></l><r>máŋga<s n="prn"/><s n="ind"/></r></p>
-      <i><t/></i>
-      <p><l><s n="attr"/><t/><d/></l><r><d/></r></p>
-      <p><l></l><r>logi<s n="num"/><s n="attr"/><s n="@Pron←"/><d/></r></p>
+      <i><t/><d/></i>
+      <p><l></l><r>logi<s n="num"/><s n="sg"/><s n="gen"/><s n="@Pron←"/><d/></r></p>
    </e> 
     <e r="LR" w="1.0"> <!-- dán muttos áigi > dáj muttoj -->
       <p><l>dát<s n="prn"/><s n="dem"/><s n="sg"/><s n="gen"/></l><r>dát<s n="prn"/><s n="dem"/><s n="pl"/><s n="gen"/></r></p>
@@ -469,8 +477,8 @@
    </e>
     <e r="LR"> <!-- dan nammii > dasa  -->
       <p><l>dat<s n="prn"/><s n="dem"/><s n="sg"/><s n="gen"/></l><r></r></p><par n="syntax_tags"/>
-      <p><l>nammii<s n="post"/></l><r></r></p><par n="syntax_tags"/>
-      <p><l>ahte<s n="cnjsub"/></l><r></r></p><par n="syntax_tags"/>
+      <p><l>nammii<s n="post"/></l><r>nu<s n="adv"/></r></p>
+      <i><t/><d/></i>
    </e>
     <e r="LR"> <!-- beaivvát ala > dalá  -->
       <p><l>beaivi<t/><d/></l><r></r></p>
@@ -530,13 +538,13 @@
   </e>
     <e r="LR"  w="0.0">
        <p><l>leat<s n="vblex"/><t/><d/></l><r></r></p>
-       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
        <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
 	  <par n="meahttun_attr"/>      
       <i><s n="attr"/><t/><d/></i>
    </e>
     <e r="LR"  w="0.0">
-       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="pres"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
+       <p><l></l><r>ii<s n="vblex"/><s n="iv"/><s n="neg"/><s n="indic"/><s n="p3"/><s n="sg"/><s n="@+FAUXV"/><d/></r></p>
        <p><l></l><r>leat<s n="vblex"/><s n="iv"/><s n="indic"/><s n="pres"/><s n="conneg"/><s n="@-FMAINV"/><d/></r></p>
 	  <par n="meahttun_attr"/>      
       <i><s n="attr"/><t/><d/></i>
@@ -675,8 +683,18 @@
    </e>
     <e r="LR">
       <p><l>buorre</l><r>buorre</r></p>
-      <p><l><s n="adj"/><t/></l><r><s n="adj"/><s n="attr"/></r></p>
-      <p><l><s n="@→N"/><d/></l><r><s n="@→N"/><d/></r></p>
+      <p><l><s n="adj"/><s n="sg"/><t/></l><r><s n="adj"/><s n="attr"/></r></p>
+      <i><s n="@→N"/><d/></i>
+   </e>
+    <e r="LR">
+      <p><l>buorre</l><r>buorre</r></p>
+      <p><l><s n="adj"/><s n="pl"/><t/></l><r><s n="adj"/><s n="attr"/></r></p>
+      <i><s n="@→N"/><d/></i>
+   </e>
+    <e r="LR">
+      <p><l>buorre</l><r>buorre</r></p>
+      <p><l><s n="adj"/><s n="ess"/></l><r><s n="adj"/><s n="attr"/></r></p>
+      <i><s n="@→N"/><d/></i>
    </e>
     <e r="LR">
       <p><l>rohttet</l><r>bosihit</r></p>
