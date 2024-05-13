@@ -5707,7 +5707,7 @@ C[_]-T sent
     <action>
       <call-macro n="general-macro-1Param"><with-param pos="1"/></call-macro>
 <!--      <let><var n="chunk_name"/><clip pos="1" side="tl" part="lem"/></let> -->
-     <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> 
+<!--     <let><clip pos="1" side="tl" part="a_poss"/><lit v=""/></let> -->
 <!--      <choose>
         <when>
           <test><and><not><equal><clip pos="1" side="tl" part="lem"/><lit v=""/></equal></not>
