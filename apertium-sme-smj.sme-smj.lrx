@@ -2599,7 +2599,7 @@
       </match>
     </rule>
     <rule weight="0.6">
-      <or>
+<!--      <or> jut?
 	  <match lemma="dadjat"/>
 	  <match lemma="lohkat"/>
 	  <match lemma="čállit"/>
@@ -2610,9 +2610,10 @@
 	  <match lemma="oaidnit"/>
       <match lemma="gullat"/>
       <match lemma="mearridit"/>
-      </or>
+      </or> -->
+      <match lemma="nu"/>
       <match lemma="ahte" tags="cnjsub.*">
-        <select lemma="jut" tags="cnjsub.*"/>
+        <select lemma="ahte" tags="cnjsub.*"/>
       </match>
     </rule>
     
