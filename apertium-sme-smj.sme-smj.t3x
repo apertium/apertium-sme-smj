@@ -232,6 +232,13 @@
         <cat-item lemma="pfrprc" tags="SV.*.@-FMAINV"/>
         <cat-item lemma="inf" tags="SV.*.@-FMAINV"/>
         <cat-item lemma="vblex" tags="SV.@+FMAINV"/>
+        <cat-item lemma="pfrprc" tags="SV.@-FMAINV.*"/>
+        <cat-item lemma="inf" tags="SV.@-FMAINV.*"/>
+        <cat-item lemma="pfrprc" tags="SV.*.@-FMAINV.*"/>
+        <cat-item lemma="inf" tags="SV.*.@-FMAINV.*"/>
+        <cat-item lemma="vblex" tags="SV.@+FMAINV.*"/>
+        <cat-item lemma="conneg" tags="SV.*.@-FMAINV.*"/>
+        <cat-item lemma="conneg" tags="SV.@-FMAINV.*"/>
     </def-cat>
     <def-cat n="IMainVall"> 
         <cat-item  tags="SV.@-FMAINV"/>
@@ -1234,6 +1241,38 @@
             <clip pos="4" part="lemq"/>
           </chunk>
           <b pos="3"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+        </out>
+      </action>
+    </rule> 
+
+    <rule comment="indirect question" > 
+      <pattern>
+        <pattern-item n="IFMainV"/>
+        <pattern-item n="FV"/>
+        <pattern-item n="qstPCLE"/>
+      </pattern>
+      <action>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <lit v="jusgus"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
           <chunk>
             <clip pos="2" part="lemh"/>
             <clip pos="2" part="tags"/>
