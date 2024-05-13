@@ -22,7 +22,7 @@
 [/3ozZaP1J2-SE]
 [3qWelJypL-Ex#0] ^Sån<prn><pers><p3><sg><nom>$ ^sjaddat<vblex><indic><pres><p3><sg>$ ^buorre<adj><attr>$ ^åhpadiddje<n><nomag><ess>$^.<sent>$
 [/3qWelJypL-Ex]
-[4k97M4JmjUau#0] ^Sån<prn><pers><p3><pl><nom>$ ^liehket<vblex><neg><indic><pret><p3><pl>$ ^boahtet<vblex><prfprc>$^.<sent>$
+[4k97M4JmjUau#0] ^Liehket<vblex><neg><indic><pret><p3><pl>$ ^boahtet<vblex><prfprc>$^.<sent>$
 [/4k97M4JmjUau]
 [4zCoKcK9uqQv#0] ^Årrot<vblex><indic><pres><p1><pl>$ ^sjávot<adv>$^.<sent>$
 [/4zCoKcK9uqQv]
@@ -98,11 +98,11 @@
 [/GnLp9eUJyhVG]
 [GvkAGr22A76u#0] ^Liehket<vblex><neg><indic><pres><p2><sg>$ ^nav<adv>$ ^jåhtel<adj><sg><nom>$^.<sent>$
 [/GvkAGr22A76u]
-[HHwiVMUo7UHY#0] ^Liehket<vblex><indic><pres><p2><du>$ ^gus<pcle><qst>$ ^divna<prn><ind><attr>$ ^girjje<n><pl><acc><px2du>$ ^viedtjat<vblex><prfprc>$^?<sent>$
+[HHwiVMUo7UHY#0] ^Liehket<vblex><indic><pres><p2><du><sentinit>$ ^gus<pcle><qst>$ ^divna<prn><ind><attr>$ ^girjje<n><pl><acc><px2du>$ ^viedtjat<vblex><prfprc>$^?<sent>$
 [/HHwiVMUo7UHY]
-[Hlk7URdKKeff#0] ^Ij<vblex><neg><indic><pres><p1><pl>$ ^desti<adv>$ ^vissjat<vblex><iv><indic><conneg>$^.<sent>$
+[Hlk7URdKKeff#0] ^Ij<vblex><neg><indic><pres><p1><pl>$ ^desti<adv>$ ^vissjat<vblex><indic><conneg>$^.<sent>$
 [/Hlk7URdKKeff]
-[HoAho70Bbyd2#0] ^Dalloj<adv>$ ^gå<cnjsub>$ ^áhttje<n><sg><nom>$ ^liehket<vblex><indic><pret><p3><sg>$ ^gietjav<num><sg><nom>$ ^jahke<n><sg><gen>$^.<sent>$
+[HoAho70Bbyd2#0] ^Dalloj<adv>$ ^gå<cnjsub>$ ^áhttje<n><sg><nom>$ ^liehket<vblex><indic><pret><p3><sg>$ ^giehtja<num><sg><nom>$ ^jahke<n><sg><gen>$^.<sent>$
 [/HoAho70Bbyd2]
 [HqNfHHLmOBGg#0] ^Isak<np><ant><m><sg><nom>$ ^boahtet<vblex><indic><pres><p3><sg>$ ^gábmá<n><sg><ela>$^.<sent>$
 [/HqNfHHLmOBGg]
@@ -116,11 +116,11 @@
 [/Iqvcb_bTfUzV]
 [JauR8PJBrFhn#0] ^Åhpadiddje<n><nomag><pl><ine><cltl>$ ^ednak<adj><attr>$ ^barggo<n><sg><nom>$^.<sent>$
 [/JauR8PJBrFhn]
-[JlLqVtWYgwUO#0] ^Mij<prn><itg><sg><nom>$ ^ávkke<n><pl><acc><cltl>$ ^dakkár<prn><dem><attr>$ ^ássje<n><g3><pl><ine>$^?<sent>$
+[JlLqVtWYgwUO#0] ^Mij<prn><itg><sg><nom>$ ^ávkke<n><pl><acc><cltl>$ ^dakkár<prn><dem><attr>$ ^ássje<n><pl><ine>$^?<sent>$
 [/JlLqVtWYgwUO]
 [K9B3lumnOrTf#0] ^Ij<vblex><neg><indic><pres><p3><du>$ ^liehket<vblex><indic><pres><conneg>$^.<sent>$
 [/K9B3lumnOrTf]
-[KOoksWISieJM#0] ^Vuojnnet<vblex><indic><pres><p1><sg>$ ^liehket<vblex><indic><pres><p2><pl>$ ^boahtet<vblex><prfprc>$^.<sent>$
+[KOoksWISieJM#0] ^Vuojnnet<vblex><indic><pres><p1><sg>$ ^jut<cnjsub>$ ^liehket<vblex><indic><pres><p2><pl>$ ^boahtet<vblex><prfprc>$^.<sent>$
 [/KOoksWISieJM]
 [KStiGpUmdtae#0] ^Sån<prn><pers><p3><sg><nom><cltl>$ ^åhpadiddje<n><nomag><ess>$ ^huj<adv>$ ^tjiehppe<adj><sg><nom>$^.<sent>$
 [/KStiGpUmdtae]
@@ -140,21 +140,21 @@
 [/OouHus12xMTX]
 [P5ewTZgmWRLK#0] ^Sån<prn><pers><p3><pl><nom>$ ^liehket<vblex><indic><pres><p3><pl>$ ^vuoras<adj><der_superl><adj><pl><nom>$^.<sent>$
 [/P5ewTZgmWRLK]
-[PX3tavYvx9kN#0] ^Vuolgget<vblex><indic><pres><p2><du>$ ^gus<pcle><qst>$ ^girdde<n><nomag><sg><com>$^?<sent>$
+[PX3tavYvx9kN#0] ^Vuolgget<vblex><indic><pres><p2><du>$ ^gus<pcle><qst>$ ^girdán<n><sg><com>$^?<sent>$
 [/PX3tavYvx9kN]
 [QHqtS9CT3EsV#0] ^Duohppit<vblex><indic><pres><p1><sg>$ ^dát<prn><dem><sg><acc>$ ^akta<num><sg><acc>$ ^guolle<n><sg><acc>$^.<sent>$
 [/QHqtS9CT3EsV]
 [QlEDlFJvtzuA#0] ^Hæhttut<vblex><indic><pres><p3><sg>$ ^dågålattjat<adv>$ ^mánná<n><sg><gen>$ ^kultuvrra<n><cmp_sgnom><cmp>+duogásj<n><sg><acc>$ ^vieledit<vblex><inf>$^.<sent>$
 [/QlEDlFJvtzuA]
-[QnMPylbwaGko#0] ^Ij<vblex><neg><indic><pret><p2><du>$ ^liehket<vblex><indic><pret><conneg>$^.<sent>$
+[QnMPylbwaGko#0] ^Ij<vblex><neg><indic><pres><p2><du>$ ^liehket<vblex><indic><pret><conneg>$^.<sent>$
 [/QnMPylbwaGko]
-[RpVRB5gR1hEO#0] ^Sån<prn><pers><p3><pl><nom>$ ^liehket<vblex><neg><indic><pres><p3><pl>$ ^nav<adv>$ ^jåhtel<adj><pl><nom>$^.<sent>$
+[RpVRB5gR1hEO#0] ^Liehket<vblex><neg><indic><pres><p3><pl>$ ^nav<adv>$ ^jåhtel<adj><pl><nom>$^.<sent>$
 [/RpVRB5gR1hEO]
 [RuNLIs-yZ5AU#0] ^Dunfjell<np><cog><attr>$ ^Oskal<np><top><sg><nom>$ ^ij<vblex><neg><indic><pres><p3><sg>$ ^jáhkket<vblex><indic><conneg>$ ^dat<prn><dem><sg><nom>$ ^vájkkudit<vblex><indic><pres><p3><sg>$ ^boahttevasj<adj><attr>$ ^festiválla<n><pl><ill>$^.<sent>$
 [/RuNLIs-yZ5AU]
 [RzHDBjFM4X5t#0] ^Dát<prn><dem><pl><nom>$ ^liehket<vblex><indic><pres><p3><pl>$ ^dát<prn><dem><sg><gen>$ ^guokta<num><sg><gen>$ ^guolle<n><sg><gen>$ ^miedem<n><pl><nom>$^.<sent>$
 [/RzHDBjFM4X5t]
-[Rzy1uQQ6EyyO#0] ^Dát<prn><dem><sg><nom>$ ^ássje<n><g3><sg><nom><cltl>$ ^ájnas<adj><sg><nom>$^.<sent>$
+[Rzy1uQQ6EyyO#0] ^Dát<prn><dem><sg><nom>$ ^ássje<n><sg><nom><cltl>$ ^ájnas<adj><sg><nom>$^.<sent>$
 [/Rzy1uQQ6EyyO]
 [Sb8xnNOfmTGo#0] ^Bieles<adv><px1sg>$ ^ij<vblex><neg><indic><pres><p1><sg>$ ^diehtet<vblex><indic><conneg>$ ^dát<prn><dem><sg><ill>$ ^åbbålasj<adj><attr>$ ^duodastus<n><pl><acc>$
 [/Sb8xnNOfmTGo]
@@ -164,11 +164,11 @@
 [/Srkl3TfmKsRs]
 [TlTNnfO0drl6#0] ^Sån<prn><pers><p3><sg><nom>$ ^válldet<vblex><indic><pres><p3><sg>$ ^mån<prn><pers><p1><sg><gen>$ ^giehta<n><sg><ela>$^.<sent>$
 [/TlTNnfO0drl6]
-[UOJEq1pSmTJ5#0] ^Liehket<vblex><indic><pres><p2><du>$ ^gus<pcle><qst>$ ^áhttje<n><sg><acc><px2du>$ ^vuojnnet<vblex><prfprc>$^?<sent>$
+[UOJEq1pSmTJ5#0] ^Liehket<vblex><indic><pres><p2><du><sentinit>$ ^gus<pcle><qst>$ ^áhttje<n><sg><acc><px2du>$ ^vuojnnet<vblex><prfprc>$^?<sent>$
 [/UOJEq1pSmTJ5]
 [UcQgCf1udAci#0] ^Mánno<n><cmp_sgnom><cmp>+dávdda<n><sg><nom>$ ^dahkat<vblex><indic><pret><p3><sg>$ ^sån<prn><pers><p3><sg><acc>$ ^delas<adj><ess>$ ^ja<cnjcoo>$ ^buktet<vblex><indic><pret><p3><sg>$ ^garras<adj><attr>$ ^bávtjas<n><pl><acc>$^.<sent>$
 [/UcQgCf1udAci]
-[UsUv-6yWtWc_#0] ^Liehket<vblex><indic><pres><p2><pl>$ ^gus<pcle><qst>$ ^ållo<adj><attr>$ ^viehkke<n><sg><acc>$ ^dárbahit<vblex><prfprc>$^?<sent>$
+[UsUv-6yWtWc_#0] ^Liehket<vblex><indic><pres><p2><pl><sentinit>$ ^gus<pcle><qst>$ ^ållo<adj><attr>$ ^viehkke<n><sg><acc>$ ^dárbahit<vblex><prfprc>$^?<sent>$
 [/UsUv-6yWtWc_]
 [Uwg_fLZZnjlj#0] ^Ij<vblex><neg><indic><pres><p3><pl>$ ^lijkkut<vblex><indic><conneg>$^,<cm>$ ^gå<cnjsub>$ ^sån<prn><pers><p3><pl><acc>$ ^hárddet<vblex><indic><pres><p1><pl>$^.<sent>$
 [/Uwg_fLZZnjlj]
@@ -178,11 +178,11 @@
 [/VmEXK5gBsmK2]
 [VmNF7_zRMUVy#0] ^Oadtjot<vblex><indic><pres><p1><sg>$ ^dat<prn><dem><sg><acc>$ ^álbbe<adj><der_aadv><adv>$
 [/VmNF7_zRMUVy]
-[Vx1MlsiXWEZc#0] ^Liehket<vblex><indic><pres><p2><du>$ ^gus<pcle><qst>$ ^gussa<n><sg><acc><px2du>$ ^gávnnat<vblex><prfprc>$^?<sent>$
+[Vx1MlsiXWEZc#0] ^Liehket<vblex><indic><pres><p2><du><sentinit>$ ^gus<pcle><qst>$ ^gussa<n><sg><acc><px2du>$ ^gávnnat<vblex><prfprc>$^?<sent>$
 [/Vx1MlsiXWEZc]
-[WEC9vmgcC7eQ#0] ^Liehket<vblex><indic><pres><p2><sg>$ ^gus<pcle><qst>$ ^divna<prn><ind><attr>$ ^girjje<n><pl><acc><px2sg>$ ^viedtjat<vblex><prfprc>$^?<sent>$
+[WEC9vmgcC7eQ#0] ^Liehket<vblex><indic><pres><p2><sg><sentinit>$ ^gus<pcle><qst>$ ^divna<prn><ind><attr>$ ^girjje<n><pl><acc><px2sg>$ ^viedtjat<vblex><prfprc>$^?<sent>$
 [/WEC9vmgcC7eQ]
-[Wg54RJGwutj9#0] ^Isak<np><ant><m><sg><nom>$ ^ij<vblex><neg><indic><pret><p3><sg>$ ^máhttet<vblex><indic><conneg>$ ^boahtet<vblex><inf>$ ^åvddål<adv>$^.<sent>$
+[Wg54RJGwutj9#0] ^Isak<np><ant><m><sg><nom>$ ^ij<vblex><neg><indic><pret><p3><sg>$ ^máhttet<vblex><indic><conneg>$ ^boahtet<vblex><inf>$ ^åvddåla<adv>$^.<sent>$
 [/Wg54RJGwutj9]
 [WkEi_SFkR8Gb#0] ^Ij<vblex><neg><indic><pret><p1><pl>$ ^gus<pcle><qst>$ ^máhttet<vblex><indic><conneg>$ ^vuolgget<vblex><inf>$^?<sent>$
 [/WkEi_SFkR8Gb]
@@ -190,7 +190,7 @@
 [/XYemq2bsTNti]
 [Xp5QDdTzNpVK#0] ^Tjåhkkåhit<vblex><indic><pres><p2><sg>$ ^ståvllå<n><sg><ine>$^.<sent>$
 [/Xp5QDdTzNpVK]
-[Xq8QJubt6Ju1#0] ^Sån<prn><pers><p3><pl><nom>$ ^liehket<vblex><neg><indic><pret><p3><pl>$ ^nav<adv>$ ^jåhtel<adj><pl><nom>$^.<sent>$
+[Xq8QJubt6Ju1#0] ^Liehket<vblex><neg><indic><pret><p3><pl>$ ^nav<adv>$ ^jåhtel<adj><pl><nom>$^.<sent>$
 [/Xq8QJubt6Ju1]
 [Xx62S6V0zLEq#0] ^Liehket<vblex><pot><p2><sg>$ ^gus<pcle><qst>$ ^divna<prn><ind><attr>$ ^mujttet<vblex><prfprc>$^?<sent>$
 [/Xx62S6V0zLEq]
@@ -218,7 +218,7 @@
 [/c1zipq8ZXAsd]
 [c9cJxYS45rv8#0] ^Dat<prn><dem><pl><nom>$ ^liehket<vblex><indic><pres><p3><pl>$ ^akta<num><sg><gen>$ ^guolle<n><sg><gen>$ ^miedem<n><pl><nom>$^.<sent>$
 [/c9cJxYS45rv8]
-[cAEDNcN5hvds#0] ^Ij<vblex><neg><indic><pres><p1><sg>$ ^jáhkket<vblex><indic><conneg>$ ^dat<prn><dem><sg><nom>$ ^liehket<vblex><iv><indic><pres><p3><sg>$ ^tabu<n><cmp_sgnom><cmp_hyph><cmp>+ássje<n><g3><sg><nom>$^.<sent>$
+[cAEDNcN5hvds#0] ^Ij<vblex><neg><indic><pres><p1><sg>$ ^jáhkket<vblex><indic><conneg>$ ^dat<prn><dem><sg><nom>$ ^liehket<vblex><iv><indic><pres><p3><sg>$ ^tabu<n><cmp_sgnom><cmp_hyph><cmp>+ássje<n><sg><nom>$^.<sent>$
 [/cAEDNcN5hvds]
 [cStlTQI3RsEC#0] ^Boahtet<vblex><indic><pres><p1><sg>$ ^dat<prn><dem><sg><com>$ ^gålmmå<num><sg><com>$ ^guolle<n><sg><com>$^.<sent>$
 [/cStlTQI3RsEC]
@@ -244,7 +244,7 @@
 [/fR35-EHBXyTf]
 [fiGTuYsN_qVb#0] ^Sån<prn><pers><p3><pl><nom>$ ^liehket<vblex><indic><pres><p3><pl>$ ^tjiehppe<adj><pl><nom>$
 [/fiGTuYsN_qVb]
-[fuUCinIa2yfN#0] ^Mánájgárdde<n><cmp_sgnom><cmp>+fálaldahka<n><sg><nom>$ ^galggat<vblex><indic><pres><p3><sg>$ ^organisierit<vblex><der_passl><vblex><iv><inf>$ ^nav vaj<cnjsub>$ ^mánná<n><pl><nom>$ ^sebrudahttet<vblex><der_passl><vblex><iv><indic><pres><p3><pl>$ ^sierralágásj<adj><attr>$ ^barggo<n><cmp_sgnom><cmp>+prosæssa<n><g3><pl><ill>$^.<sent>$
+[fuUCinIa2yfN#0] ^Mánájgárdde<n><cmp_sgnom><cmp>+fálaldahka<n><sg><nom>$ ^galggat<vblex><indic><pres><p3><sg>$ ^organisierit<vblex><der_passl><vblex><iv><inf>$ ^nav vaj<cnjsub>$ ^mánná<n><pl><nom>$ ^sebrudahttet<vblex><der_passl><vblex><iv><indic><pres><p3><pl>$ ^sierralágásj<adj><attr>$ ^barggo<n><cmp_sgnom><cmp>+prosæssa<n><pl><ill>$^.<sent>$
 [/fuUCinIa2yfN]
 [gGvhkPU8iSMD#0] ^Sån<prn><pers><p3><sg><nom>$ ^lijkkut<vblex><indic><pres><p3><sg>$ ^guolle<n><sg><ill>$^.<sent>$
 [/gGvhkPU8iSMD]
@@ -256,9 +256,9 @@
 [/hYKbwu-HLECG]
 [hjXnddTPV0tc#0] ^Dálla<adv>$ ^ájggot<vblex><indic><pres><p3><pl>$ ^sån<prn><pers><p3><pl><nom>$ ^hásstalit<vblex><inf>$ ^suohkan<n><pl><acc>$ ^válldet<vblex><supn>$ ^dat<prn><dem><sg><acc>$ ^åvdåsvásstádus<n><sg><acc>$^.<sent>$
 [/hjXnddTPV0tc]
-[hnY_ux-nqcUL#0] ^Liehket<vblex><indic><pres><p2><pl>$ ^gus<pcle><qst>$ ^divna<prn><ind><attr>$ ^girjje<n><pl><acc><px2pl>$ ^viedtjat<vblex><prfprc>$^?<sent>$
+[hnY_ux-nqcUL#0] ^Liehket<vblex><indic><pres><p2><pl><sentinit>$ ^gus<pcle><qst>$ ^divna<prn><ind><attr>$ ^girjje<n><pl><acc><px2pl>$ ^viedtjat<vblex><prfprc>$^?<sent>$
 [/hnY_ux-nqcUL]
-[hpboRk0L89Q1#0] ^Vuoras<adj><der_superl><adj><pl><nom>$ ^máhttet<vblex><indic><pres><p3><pl>$ ^barggat<vblex><inf>$^.<sent>$
+[hpboRk0L89Q1#0] ^Boares<adj><der_superl><adj><pl><nom>$ ^máhttet<vblex><indic><pres><p3><pl>$ ^barggat<vblex><inf>$^.<sent>$
 [/hpboRk0L89Q1]
 [iclxbIfeTA-b#0] ^Ij<vblex><neg><indic><pres><p3><sg>$ ^liehket<vblex><indic><pret><conneg>$^.<sent>$
 [/iclxbIfeTA-b]
@@ -270,7 +270,7 @@
 [/jrx7HOh2ao8K]
 [kIGfO8TTHLKB#0] ^Oakse<n><pl><nom>$ ^ja<cnjcoo>$ ^lassta<n><pl><nom>$ ^mij<prn><rel><pl><nom>$ ^akti<adv>$ ^gullut<vblex><indic><pres><p3><pl>$^.<sent>$
 [/kIGfO8TTHLKB]
-[kIfae0hq0cHB#0] ^Ij<vblex><neg><indic><pret><p3><du>$ ^liehket<vblex><indic><pret><conneg>$ ^buorre<adj><sg><nom>$^.<sent>$
+[kIfae0hq0cHB#0] ^Ij<vblex><neg><indic><pres><p3><du>$ ^liehket<vblex><indic><pret><conneg>$ ^buorre<adj><sg><nom>$^.<sent>$
 [/kIfae0hq0cHB]
 [kZhyhQjfF7Vt#0] ^Liehket<vblex><neg><indic><pres><p2><sg>$ ^nav<adv>$ ^jåhtel<adj><sg><nom>$^.<sent>$
 [/kZhyhQjfF7Vt]
@@ -284,7 +284,7 @@
 [/ltqeVOetbQFp]
 [mX8rsZhZvfyz#0] ^Dát<prn><dem><sg><gen>$ ^jahke<n><sg><gen>$ ^sån<prn><pers><p3><sg><nom><cltl>$ ^åhpadiddje<n><nomag><ess>$^.<sent>$
 [/mX8rsZhZvfyz]
-[mYs8V6HTYsSG#0] ^Dát<prn><dem><pl><nom>$ ^ássje<n><g3><pl><nom>$ ^liehket<vblex><indic><pres><p3><pl>$ ^ájnas<adj><pl><nom>$^.<sent>$
+[mYs8V6HTYsSG#0] ^Dát<prn><dem><pl><nom>$ ^ássje<n><pl><nom>$ ^liehket<vblex><indic><pres><p3><pl>$ ^ájnas<adj><pl><nom>$^.<sent>$
 [/mYs8V6HTYsSG]
 [n2W5qmjsPb5K#0] ^Artihkal<n><sg><nom>$ ^27<num><arab><sg><nom>$ ^vælggogissan dahkat<vblex><indic><pres><p3><sg>$ ^stáhtta<n><sg><acc>$ ^vaddet<vblex><supn>$ ^aktijvva<adj><attr>$ ^doarjja<n><sg><acc>$ ^álggoálmmuk<n><pl><ill>$^.<sent>$
 [/n2W5qmjsPb5K]
@@ -302,7 +302,7 @@
 [/okLHLU1YhIwW]
 [p1N46uCB5vxh#0] ^Áddjá<n><sg><nom><cltl>$ ^boahtet<vblex><prfprc>$^.<sent>$
 [/p1N46uCB5vxh]
-[q7N8pOMcQRaP#0] ^Dávdda<n><sg><nom>$ ^máhttet<vblex><indic><pres><p3><sg>$ ^sjattalvis<n><sg><acc>$ ^ja<cnjcoo>$ ^aktijsjaddam<n><sg><acc>$ ^dahkat<vblex><inf>$^.<sent>$
+[q7N8pOMcQRaP#0] ^Dávdda<n><sg><nom>$ ^máhttet<vblex><indic><pres><p3><sg>$ ^sjattalvis<n><sg><acc>$ ^ja<cnjcoo>$ ^aktij sjaddam<n><sg><acc>$ ^dahkat<vblex><inf>$^.<sent>$
 [/q7N8pOMcQRaP]
 [qE7iQid8d3rb#0] ^Sån<prn><pers><p3><sg><nom>$ ^tjállet<vblex><indic><pres><p3><sg>$ ^goappátja<prn><ind><pl><com><attr>$ ^giehta<n><pl><com>$^.<sent>$
 [/qE7iQid8d3rb]
@@ -322,7 +322,7 @@
 [/snrNb25woA0q]
 [suJKkbquFgB0#0] ^Direkterra<n><sg><nom>$ ^javllat<vblex><indic><pres><p3><sg>$ ^allaskåvllå<n><sg><acc>$ ^dåjmadit<vblex><inf>$ ^dábálasj<adj><attr>$ ^dille<n><sg><ine>$ ^máhttet<vblex><indic><pres><p3><sg>$ ^liehket<vblex><inf>$ ^hásstalit<vblex><der_nomag><n><ess>$^.<sent>$
 [/suJKkbquFgB0]
-[t0uPvbcu7vP-#0] ^Skåvllå<n><sg><ine>$ ^liehket<vblex><indic><pres><p3><sg>$ ^åvdåsvásstádus<n><sg><nom>$ ^åhpadit<vblex><inf>$^.<sent>$
+[t0uPvbcu7vP-#0] ^Skåvllå<n><sg><ine><cltl>$ ^åvdåsvásstádus<n><sg><nom>$ ^åhpadit<vblex><supn>$^.<sent>$
 [/t0uPvbcu7vP-]
 [t3J052ZPgVSA#0] ^Mij<prn><itg><pl><acc>$ ^galggat<vblex><indic><pres><p1><pl>$ ^sån<prn><pers><p3><sg><ill>$ ^subtsastit<vblex><inf>$^?<sent>$
 [/t3J052ZPgVSA]
@@ -352,7 +352,7 @@
 [/wf9lqa2jO5Yq]
 [xIs5JaFo7FfP#0] ^Ij<vblex><neg><indic><pres><p3><sg>$ ^gus<pcle><qst>$ ^oadtjot<vblex><indic><conneg>$ ^basádit<vblex><inf>$^?<sent>$
 [/xIs5JaFo7FfP]
-[xTfrkwoRI-Ib#0] ^Sunná<np><ant><f><sg><nom>$ ^ávttjit<vblex><indic><pres><p3><sg>$ ^gájkka<prn><ind><pl><acc>$ ^rahpasit<adv>$ ^subtsastit<vblex><inf>$ ^gássjel<adj><attr>$ ^ássje<n><g3><pl><gen>$ ^birra<post>$^.<sent>$
+[xTfrkwoRI-Ib#0] ^Sunná<np><ant><f><sg><nom>$ ^ávttjit<vblex><indic><pres><p3><sg>$ ^gájkka<prn><ind><pl><acc>$ ^rahpasit<adv>$ ^subtsastit<vblex><inf>$ ^gássjel<adj><attr>$ ^ássje<n><pl><gen>$ ^birra<post>$^.<sent>$
 [/xTfrkwoRI-Ib]
 [yMFC8VTgQCX-#0] ^Vuobddet<vblex><indic><pret><p1><sg>$ ^girjje<n><pl><acc>$ ^dát<prn><dem><sg><ill><attr>$ ^gålmmå<num><sg><ill><attr>$ ^ulmusj<n><sg><ill>$^.<sent>$
 [/yMFC8VTgQCX-]
@@ -360,7 +360,7 @@
 [/yMW5Ojrx_0Fz]
 [yTDSYc6kc75a#0] ^Gáhtto<n><sg><nom>$ ^bårråt¹<vblex><indic><pres><p3><sg>$ ^gålmmå<num><sg><nom>$ ^guolle<n><sg><gen>$^.<sent>$
 [/yTDSYc6kc75a]
-[yTZFF7xxUwi9#0] ^Liehket<vblex><indic><pres><p3><sg>$ ^ájnas<adj><sg><nom>$ ^rahtjat<vblex><inf>$ ^vaj<cnjsub>$ ^sábme<n><sg><gen>$ ^sebrudahka<n><sg><nom>$ ^åvddånit<vblex><indic><pres><p3><sg>$^.<sent>$
+[yTZFF7xxUwi9#0] ^Liehket<vblex><indic><pres><p3><sg><sentinit>$ ^ájnas<adj><sg><nom>$ ^rahtjat<vblex><inf>$ ^vaj<cnjsub>$ ^sábme<n><sg><gen>$ ^sebrudahka<n><sg><nom>$ ^åvddånit<vblex><indic><pres><p3><sg>$^.<sent>$
 [/yTZFF7xxUwi9]
 [yVai_9zMdI5i#0] ^Sån<prn><pers><p3><pl><nom>$ ^liehket<vblex><indic><pres><p3><pl>$ ^stuorre<adj><der_comp><adj><pl><nom>$^.<sent>$
 [/yVai_9zMdI5i]
