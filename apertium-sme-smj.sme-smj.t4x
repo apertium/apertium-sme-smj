@@ -939,6 +939,32 @@
         <pattern-item n="Argument_l"/>
       </pattern>
       <action>
+	      <choose><when>
+        <test><equal><clip pos="3" part="lem"/><lit v="nav"/></equal></test>
+        <out>
+        <chunk>
+            <clip pos="1" part="lemh"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+            <clip pos="1" part="lemq"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lemh"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+            <clip pos="2" part="lemq"/>
+          </chunk>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lemh"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+            <clip pos="3" part="lemq"/>
+          </chunk>
+        </out>
+	      </when>
+	      <otherwise>
         <out>
         <chunk>
             <clip pos="1" part="lemh"/>
@@ -961,6 +987,7 @@
             <clip pos="2" part="lemq"/>
           </chunk>
         </out>
+        </otherwise></choose>
       </action>
     </rule>
     <rule comment=" IMainV NP_Obj_l Comma coor_obj" >  
