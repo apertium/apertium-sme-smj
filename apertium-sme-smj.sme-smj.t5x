@@ -100,6 +100,7 @@
 	        </or>
 	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="pot"/></equal></not>
 	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="imp"/></equal></not>
+	        <not><equal><clip pos="1" part="a_mode"/><lit-tag v="cond"/></equal></not>
 
             </and></test>
             <out>
