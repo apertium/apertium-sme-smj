@@ -2081,6 +2081,9 @@ C[_]-T sent
       <list-item v="vásstedit"/>
       <list-item v="oktiivástidit"/>
     </def-list>
+    <def-list n="com2ela_verbs">
+      <list-item v="gærggat"/>
+    </def-list>
     <def-list n="acc2ill_verbs">
       <list-item v="vájkkudit"/>
       <list-item v="tjágŋat"/>
@@ -3606,10 +3609,15 @@ C[_]-T sent
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ine"/></let>	      
 	  </when>
 	      <when>
-	  <test><and>
+	  <test><or>
+		  <and>
+       <in caseless="yes"><var n="current_verb"/><list n="com2ela_verbs" /></in>
+	  <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="com"/></equal>	      
+      </and> 
+	  <and>
        <in caseless="yes"><var n="current_verb"/><list n="acc2ela_verbs" /></in>
 	  <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></equal>	      
-      </and></test>
+      </and> </or></test>
 	  <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ela"/></let>	      
 	  </when>
       </choose>
