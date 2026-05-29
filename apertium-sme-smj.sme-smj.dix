@@ -61,6 +61,7 @@
     <sdef n="sem_cat"   c="sem_cat"/>
     <sdef n="sem_curr"   c="sem_curr"/>
     <sdef n="sem_hum"   c="sem_hum"/>
+    <sdef n="sem_hum_pos"   c="sem_hum_pos"/>
     <sdef n="sem_ctain-clth_veh"   c="sem_ctain-clth_veh"/>
     <sdef n="sem_ctain-clth"   c="sem_ctain-clth"/>
     <sdef n="sem_veh"   c="sem_veh"/>

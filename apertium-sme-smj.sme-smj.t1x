@@ -1539,6 +1539,7 @@ C[_]-T sent
       <attr-item tags="sem_ani_body"/>
       <attr-item tags="sem_ani_body-abstr_hum"/>
       <attr-item tags="sem_ani_build"/>
+      <attr-item tags="sem_ani_build_hum_obj-clo_txt"/>
       <attr-item tags="sem_ani_build_hum_txt"/>
       <attr-item tags="sem_ani_buildpart"/>
       <attr-item tags="sem_ani_cat"/>
@@ -1778,9 +1779,12 @@ C[_]-T sent
       <attr-item tags="sem_hum_obj"/>
       <attr-item tags="sem_hum_obj_plc"/>
       <attr-item tags="sem_hum_org"/>
+      <attr-item tags="sem_hum_org_pos"/>
       <attr-item tags="sem_hum_part"/>
       <attr-item tags="sem_hum_plant"/>
       <attr-item tags="sem_hum_plc"/>
+      <attr-item tags="sem_hum_pos"/>
+      <attr-item tags="sem_hum_prod-vis"/>
       <attr-item tags="sem_hum_sign"/>
       <attr-item tags="sem_hum_state"/>
       <attr-item tags="sem_hum_tool"/>
@@ -3093,6 +3097,7 @@ C[_]-T sent
       <list-item v="&lt;sem_act_hum_obj&gt;"/>
       <list-item v="&lt;sem_ani_body-abstr_hum&gt;"/>
       <list-item v="&lt;sem_ani_build_hum_txt&gt;"/>
+      <list-item v="&lt;sem_ani_build_hum_obj-clo_txt&gt;"/>
       <list-item v="&lt;sem_ani_feat_hum&gt;"/>
       <list-item v="&lt;sem_ani_group_hum&gt;"/>
       <list-item v="&lt;sem_ani_hum&gt;"/>
@@ -3133,9 +3138,12 @@ C[_]-T sent
       <list-item v="&lt;sem_hum_obj&gt;"/>
       <list-item v="&lt;sem_hum_obj_plc&gt;"/>
       <list-item v="&lt;sem_hum_org&gt;"/>
+      <list-item v="&lt;sem_hum_org_pos&gt;"/>
       <list-item v="&lt;sem_hum_part&gt;"/>
       <list-item v="&lt;sem_hum_plant&gt;"/>
       <list-item v="&lt;sem_hum_plc&gt;"/>
+      <list-item v="&lt;sem_hum_pos&gt;"/>
+      <list-item v="&lt;sem_hum_prod-vis&gt;"/>
       <list-item v="&lt;sem_hum_sign&gt;"/>
       <list-item v="&lt;sem_hum_state&gt;"/>
       <list-item v="&lt;sem_hum_tool&gt;"/>

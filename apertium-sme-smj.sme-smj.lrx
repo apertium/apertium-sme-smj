@@ -426,6 +426,8 @@
     <or>
       <match tags="n.sem_hum.*.gen.*"/>
       <match tags="n.sem_hum.*.ill.*"/>
+      <match tags="n.sem_hum_pos.*.gen.*"/>
+      <match tags="n.sem_hum_pos.*.ill.*"/>
     </or>
       <match/>
       <match lemma="gorut"> <select lemma="rumáj"/> </match>
@@ -434,6 +436,8 @@
     <or>
       <match tags="n.sem_hum.*.gen.*"/>
       <match tags="n.sem_hum.*.ill.*"/>
+      <match tags="n.sem_hum_pos.*.gen.*"/>
+      <match tags="n.sem_hum_pos.*.ill.*"/>
     </or>
       <match lemma="gorut"> <select lemma="rumáj"/> </match>
     </rule>
@@ -575,6 +579,7 @@
     <or>
        <match tags="prn.pers.*.*.gen.@→N"/>
        <match tags="n.sem_hum.*.gen.*"/>
+       <match tags="n.sem_hum_pos.*.gen.*"/>
        <match tags="np.sem_fem.sg.gen.*"/>
        <match tags="np.sem_mal.sg.gen.*"/>
        <match tags="np.sem_sur.sg.gen.*"/>
@@ -866,7 +871,10 @@
 
     <rule weight="0.6">
       <match lemma="boaris"><select lemma="vuoras"/></match>
+    <or>
       <match tags="*.sem_hum.*"/>
+      <match tags="*.sem_hum_pos.*"/>
+    </or>
     </rule>
 
 
@@ -875,6 +883,8 @@
     <or>
       <match tags="n.sem_hum.*.nom.*"/>
       <match tags="n.*.sem_hum.*.nom.*"/>
+      <match tags="n.sem_hum_pos.*.nom.*"/>
+      <match tags="n.*.sem_hum_pos.*.nom.*"/>
       <match tags="n.nomag.*.*.nom.*"/>
       <match tags="prn.pers.*.*.nom.*"/>
       <match lemma="eallit" tags="vblex.*"/>
@@ -1062,7 +1072,9 @@
             <or>
       <match tags="n.sem_hum.sg.*"/>
       <match tags="n.*.sem_hum.sg.*"/>
-      </or>
+       <match tags="n.sem_hum_pos.sg.*"/>
+      <match tags="n.*.sem_hum_pos.sg.*"/>
+     </or>
     </rule>
 
     <rule weight="1.0">
@@ -1358,6 +1370,7 @@
       <match lemma="doaibmabidju" tags="n.*"/>
       <match lemma="ruhta" tags="n.*"/>
       <match tags="n.sem_hum.*.acc.*"/>
+      <match tags="n.sem_hum_pos.*.acc.*"/>
     </or></rule>
 
     <rule weight="1.0"><match lemma="movt"><select lemma="gåktu"/></match></rule>
@@ -1527,6 +1540,8 @@
       <or>
       <match tags="n.sem_hum.*"/>
       <match tags="n.*.sem_hum.*"/>
+      <match tags="n.sem_hum_pos.*"/>
+      <match tags="n.*.sem_hum_pos.*"/>
       </or>
     </rule>
 
@@ -1925,6 +1940,8 @@
     <or>
       <match tags="n.*.sem_hum.*.gen.@→N"/>
       <match tags="n.sem_hum.*.gen.@→N"/>
+      <match tags="n.*.sem_hum_pos.*.gen.@→N"/>
+      <match tags="n.sem_hum_pos.*.gen.@→N"/>
       <match tags="np.ant.*.sg.gen.@→N"/>
     </or>
       <match lemma="bárdni">
@@ -3178,6 +3195,7 @@
 	    <or>
       <match tags="n.sem_veh.*.gen.*"/>
       <match tags="n.sem_hum.*.gen.*"/>
+      <match tags="n.sem_hum_pos.*.gen.*"/>
       <match tags="prn.ind.*.*.gen.*"/>
 	    </or>
       <match lemma="mielde" tags="post.*">
